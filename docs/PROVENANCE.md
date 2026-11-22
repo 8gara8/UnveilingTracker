@@ -1,0 +1,156 @@
+# Provenance
+
+The Unveiling Tracker is forked from **8gara8/CyberTracker at `3ced1fbb55dae010efcae659c0eabe36e43934f8`**
+(`main` on 2026-11-16 at 08:12 Taipei, 00:12 UTC: "P5 report: go-live report, the task as set up, start
+times (row 186)"). It is the newest code commit when the fork was made on 2026-11-22: every later commit on
+CyberTracker's `main` changes only `content/`. Nothing was merged from Git history: files were copied by
+hand into a fresh repository and changed as below. CyberTracker itself is a fork of 8gara8/EuropeTracker
+(its own `docs/PROVENANCE.md`).
+
+Verdicts:
+
+- **copied:** the same code, with only comments, names and imports changed;
+- **adapted:** the same job, changed where this project differs (the "What changed" column);
+- **later (Pn):** not copied in the Foundation PR; the phase named copies it from the fork commit and
+  adapts it, and that phase's PR moves the row to copied or adapted;
+- **dropped:** not carried over (SPEC §2 "Dropped from CyberTracker" says why);
+- **replaced:** written anew for this project;
+- **new:** no CyberTracker source.
+
+Every copied or adapted file names its CyberTracker source in its header comment. "Cyber's X" in SPEC.md
+means file X at the fork commit.
+
+## Scaffolding and repository files
+
+| CyberTracker file | Verdict | What changed |
+|---|---|---|
+| `package.json` | adapted | Name `unveilingtracker`; the same packages and exact pins (SPEC §2); only the Foundation scripts (`postinstall` writing `node_modules/.ut-lock-sha`, `typecheck`, `test`, `check`); each later script lands with the phase that builds its file (SPEC §8.1) |
+| `package-lock.json` | adapted | CyberTracker's lockfile with the name changed, so the dependency tree is the one CyberTracker runs on Kobol; `npm ci` installs it |
+| `tsconfig.json` | copied | |
+| `vitest.config.ts` | copied | Comment only; it loads `tests/setup/offline.ts` from Foundation on |
+| `.gitignore` | copied | In the bootstrap commit; exactly SPEC §3's list |
+| `.github/workflows/ci.yml` | copied | SPEC §9.2 |
+| `.github/pull_request_template.md` | copied | SPEC §10 |
+| `.github/ISSUE_TEMPLATE/config.yml` | copied | Blank issues off |
+| `.github/ISSUE_TEMPLATE/correction.yml` | dropped | Replaced by `error-report.yml` (new): three fields, the finding id, what is wrong and an evidence link (SPEC §9.2) |
+| `.gitattributes` | later (P1) | Marks this project's generated fixtures and schemas |
+| `next.config.ts`, `postcss.config.mjs` | later (P4) | The content security policy with `figure_hosts` (SPEC §3, §7) |
+| `README.md`, `AGENTS.md`, `CLAUDE.md`, `SPEC.md` | replaced | Written for this project |
+| `docs/DESIGN.md` | replaced | Design v0.4 exported from its Claude Doc and frozen |
+| `docs/PROVENANCE.md` | replaced | This file |
+| `docs/RUNBOOK.md` | later (P3) | This project's morning, error codes and recovery |
+| `docs/SOURCES.md` | later (P2) | This project's feeds, their terms and credit lines |
+| `docs/SEED-CONFIG.md` | dropped | SPEC §4.11 and Appendix B hold this project's seeds |
+| `docs/reports/**`, `docs/screenshots/**` | dropped | CyberTracker's own records |
+| `content/**` | dropped | CyberTracker's published data |
+
+## Config (`config/`)
+
+| CyberTracker file | Verdict | What changed |
+|---|---|---|
+| `config/run.json` | adapted | SPEC §4.11: this project's site, repo, siblings, schedule (03:15 to 04:25), budgets (the Chinese pass, the reading grade, reports), pack window, Pace settings, paths, user agent and task name |
+| `config/sources.yaml` | adapted | Drafted from SPEC §4.13 in CyberTracker's registry format with `fields`, `parser` and `budget` added and the language, region, coverage, freshness and zone keys dropped; P2 finalises every URL on Kobol |
+| `config/source-tiers.json` | later (P1) | Rewritten as the primary-source allowlist and the press deny list (SPEC §4.11) |
+| `config/annotations.json` | later (P1) | Becomes `markers.json`: dated chart markers in both languages |
+| `config/standing-stories.json` | later (P1) | The same idea for this project's long-running stories; empty at version 1 |
+| `config/{actors,ai-finders,claims,regions,vendors,watch-windows}.json` | dropped | CyberTracker's domain and the Thesis Scoreboard (SPEC §2) |
+
+## Libraries (`lib/`)
+
+| CyberTracker file | Verdict | What changed |
+|---|---|---|
+| `lib/dates.ts` | copied | Comments only. The data cutoff, ISO weeks and windows serve the Pace (SPEC §4.1, §5.3) |
+| `lib/json.ts` | copied | Comment only |
+| `lib/format.ts`, `lib/metrics/stats.ts` | later (P1) | The date formatters and §5.2's statistics and display helpers (`wilson80`, `newcombe80`, `roundTo`, `pct`); the EPSS notes dropped |
+| `lib/sanitize.ts` | later (P1) | `sanitize()` and the untrusted-text wrapper, with P1's `INJECTION_PATTERNS` |
+| `lib/text.ts` | later (P1) | `countWords()`; the CVE and advisory number patterns dropped |
+| `lib/urls.ts` | later (P1) | `normalizeUrl()`, `hostOf()`, `hostMatches()`, `extractUrls()`; the defang helpers dropped; the tier lookups give way to `lib/primary.ts` |
+| `lib/vocab.ts` | later (P1) | Every vocabulary in both languages (SPEC §4.2); `BLOCKED_HOSTS` without the exploit archives and code hosts, plus the shadow libraries |
+| `lib/schema/common.ts` | later (P1) | `IsoDate`, `IsoTimestamp`, `PublishedAt`, `Interval`, plus `L10n` and this project's shared types |
+| `lib/schema/{brief,config,context,draft-brief,index,metrics,misc,pack,registry,status}.ts`, `lib/schema/item.ts` | later (P1) | Rewritten for findings, briefs, the Chinese draft and this project's configs (SPEC §4); `item.ts` becomes `finding.ts` |
+| `lib/schema/reference.ts` | later (P2) | This project's Appendix D reference |
+| `lib/schema/scoreboard.ts` | dropped | No Scoreboard (SPEC §2) |
+| `lib/validate.ts`, `lib/json-schema.ts`, `lib/rules/{types,index,shared}.ts` | later (P1) | The validator's frame, `validateAll()`, the compact JSON Schema printer |
+| `lib/rules/{words,sources,computed,snapshots,grounding,meta,ids}.ts` | later (P1) | The rules whose job is the same, rewritten for findings and both languages (SPEC §4.12) |
+| `lib/rules/{ai,items}.ts` | later (P1) | Rewritten as the AI-role and finding rules |
+| `lib/rules/{cves,naming,safety}.ts` | dropped | CVE rules, victims and attribution, the exploit and live-indicator rules; DUAL_USE replaces them (SPEC §2, §4.12) |
+| `lib/config.ts`, `lib/chat.ts`, `lib/page-text.ts` | later (P1) | `loadConfig()`; the chat edition (SPEC §8.8); every page string in both languages |
+| `lib/sources.ts` | later (P1) | Source kinds and publishers (SPEC §3) |
+| `lib/ids.ts` | later (P1) | The explicit comparators; the CVE and advisory comparators dropped |
+| `lib/items.ts` | later (P1) | Display order and the fields computed from a finding alone |
+| `lib/collect.ts`, `lib/rank.ts` | later (P2) | The collector's pure parts and the pack; ranking and the 40 cap (SPEC §5.9) |
+| `lib/feeds/{http,cache,rss,types}.ts` | later (P2) | `fetchFeed()` with generic limits and `UT_FIXTURE_FEEDS`; this project's cache paths and parsers |
+| `lib/feeds/{anthropic-cvd,cvelist,epss,exchange,ghsa,github,kev,myjvn,nvd,zip}.ts` | dropped | CyberTracker's feeds (SPEC §2) |
+| `lib/metrics/index.ts` | later (P2) | The pattern for this project's metrics run (SPEC §5) |
+| `lib/metrics/{ai-credit,fix-side,flood,headline,home-vendors,kev-index,notes,reference,series,window}.ts` | dropped | The Gap, the Window, the Flood, AI credit and the fix side (SPEC §2); the Pace is new (`pace.ts`, `ledger-stats.ts`, `counters.ts`) |
+| `lib/context.ts`, `lib/apply.ts`, `lib/data-only.ts`, `lib/run-inputs.ts` | later (P3) | The agent contexts, drafts to writes, the data-only edition, the run's inputs |
+| `lib/html-text.ts` | later (P3) | Page text for the snapshots and the link check |
+| `lib/site.ts`, `lib/site-data.ts`, `lib/content.ts`, `lib/stale.ts`, `lib/markdown.ts` | later (P4) | The site's constants, loaders, keep-last-good rule, stale banner and Markdown (P1 copies `lib/site.ts` early if the chat edition needs it) |
+| `lib/regions.ts`, `lib/record-links.ts`, `lib/withhold.ts`, `lib/withhold-mask.ts` | dropped | Region levels, CVE record links and withholding (SPEC §2) |
+
+## Scripts (`scripts/`)
+
+| CyberTracker file | Verdict | What changed |
+|---|---|---|
+| `scripts/lib/run.ts`, `scripts/lib/lock.ts`, `scripts/lib/log.ts` | copied | Comments only |
+| `scripts/lib/git.ts` | adapted | The fallback commit identity is `UnveilingTracker` `run@unveilingtracker.invalid` |
+| `scripts/lib/clock.ts` | adapted | The --no-deadline gaps are SPEC §8.2's: the retry cutoff 35 minutes and the Chinese pass's start 20 minutes before the hard stop (CyberTracker: 50, no Chinese pass); the other limits are CyberTracker's TIMEOUTS, which P3 checks against §8.2 |
+| `scripts/lib/keychain.ts` | adapted | The service is `unveiling-claude-oauth` |
+| `scripts/lib/{agent,transcript,evidence,validate-loop,status,deploy,paths,prune,run-lines,snapshot}.ts` | later (P3) | The agent harness for two passes, transcripts, evidence, the repair loop, status records, the deploy check, paths, pruning, run lines and page snapshots |
+| `scripts/lib/{feeds,feed-cache}.ts` | later (P2) | The feed readers and what the metrics read back from `cache/` |
+| `scripts/lib/{appendix-d,cve-facts,cve-fetch,cve-read-worker,cvelist-clone,git-source,kev-source}.ts` | dropped | CyberTracker's reference numbers, the CVE List clone and its workers, the advisory and KEV sources (SPEC §2) |
+| `scripts/daily.sh` | later (P3) | Exactly as SPEC §8.2 shows it |
+| `scripts/{daily,preflight,publish,recheck,build-context,agent-check}.ts` | later (P3) | The morning run with the Chinese pass, preflight, publish's commit forms, the rung watch and report intake, the contexts, `agent:check` for both passes |
+| `scripts/{validate,gen-json-schema,chat}.ts` | later (P1) | |
+| `scripts/{collect,metrics,backfill}.ts` | later (P2) | The backfill is rewritten for the Pace from 2015 (SPEC §8.4); `ledger-seed.ts` is new in P2 |
+| `scripts/{color-check.ts,screenshots.mjs}` | later (P4) | |
+
+## Routine (`routine/`)
+
+| CyberTracker file | Verdict | What changed |
+|---|---|---|
+| `routine/STYLE.md` | later (P1) | Rewritten for this project; `STYLE-ZH.md` is new |
+| `routine/schema/draft-brief.schema.json` | later (P1) | Generated from this project's schema; `draft-zh.schema.json` is new |
+| `routine/TASK.md`, `routine/PROMPT.md`, `routine/REPAIR.md` | later (P3) | Rewritten (SPEC §11); `PROMPT-ZH.md` and `REPAIR-ZH.md` are new |
+| `routine/agent-settings.json` | later (P3) | SPEC §9.5; `agent-settings-zh.json` is new |
+
+## Site (`app/`, `components/`)
+
+| CyberTracker file | Verdict | What changed |
+|---|---|---|
+| `app/{layout.tsx,globals.css,not-found.tsx,page.tsx}`, `app/{about,archive,methodology}/page.tsx`, `app/brief/[date]/page.tsx`, `app/feed.xml/route.ts` | later (P4) | The paper look in two root layouts, `app/(en)/` and `app/(zh)/zh/` (SPEC §6) |
+| `app/items/[id]/page.tsx` | later (P4) | Becomes `findings/[id]` |
+| `components/Markdown.tsx`, `components/layout/**`, `components/ui/{ExternalLink,PlainText,Tag,Counted}.tsx`, `components/charts/{parts.tsx,scale.ts,labels.ts}`, `components/pages/{archive-text,edition-meta,feed,labels,site-text,methodology-data}.ts`, `components/pages/ItemPage.tsx`, `components/brief/{BriefView,EditionMasthead,Lead,CorrectionBanner,CorrectionsList,Elsewhere,ItemCard,ItemDetails,ItemRow,brief-parts,item-parts,sources}.tsx`, `components/brief/props.ts` | later (P4) | The frame and the parts whose job is the same (SPEC §7) |
+| `components/ui/{AIChip,SeverityPips}.tsx` | later (P4) | Become the AI-role chip and the significance pips |
+| `components/brief/{ActorChips,AngleLine,EpssMovers,FixSideStrip,GapPanel,RegionRow,ScoreboardSection,TaiwanLens}.tsx`, `components/charts/{AiCreditedChart,FloodChart,WindowChart,WindowPeriods}.tsx` | dropped | CyberTracker's domain (SPEC §2); the Pace charts are new |
+
+## Fixtures (`fixtures/`)
+
+| CyberTracker folder | Verdict | What changed |
+|---|---|---|
+| `fixtures/src/` | later (P1) | The builder's pattern; every fixture is this project's own |
+| `fixtures/{drafts,context,evidence,metrics,packs,site-content,empty-content,config,state,recheck}/` | later (P1 to P3) | Rebuilt with this project's data |
+| `fixtures/injection/` | later (P1) | The planted page and RSS item, rewritten, plus the Chinese pass's planted string |
+| `fixtures/agent/` | later (P3) | `fake-claude.mjs`, transcripts and the pinned CLI's help |
+| `fixtures/feeds/` | later (P2) | This project's scrubbed captures |
+| `fixtures/{ai-credit,cvelist,cvelist-clone,reference,regions-input}/` | dropped | CyberTracker's data; P2 writes this project's `fixtures/reference/` and `fixtures/openalex/` |
+
+## Tests (`tests/`)
+
+| CyberTracker file | Verdict | What changed |
+|---|---|---|
+| `tests/setup/offline.ts` | copied | Comments and the guard's key; loaded from Foundation on |
+| `tests/helpers/model-names.ts` | copied | Comment only |
+| `tests/no-network.test.ts` | adapted | The `fetchFeed()` case returns in P2 |
+| `tests/lib.test.ts` | adapted | Only the date cases, with this project's data cutoff, 13-week window and 260-week baseline, plus json cases; the URL, word-count and blocked-host cases return in P1 |
+| `tests/run.test.ts` | adapted | The sample state file holds weekly counts; the advisory reader's case is dropped |
+| `tests/git.test.ts` | adapted | `syncMain()` on a local bare remote, plus `ensureIdentity()`, `withRetry()`, `porcelainPaths()`, `onOriginMain()` and the deadline; the publish cases return in P3 |
+| `tests/lock.test.ts` | copied | The temporary folder's name |
+| `tests/clock.test.ts` | adapted | This run's 03:15 start and 04:25 hard stop, and a check of the --no-deadline gaps |
+| `tests/no-europe-strings.test.ts` | replaced | By `tests/no-cyber-strings.test.ts` (SPEC §10 Foundation step 6) |
+| none | new | `tests/keychain.test.ts` (the service name and `readSecret()` with a stand-in tool) and `tests/repo-files.test.ts` (the files SPEC.md shows, the registry's format, the error-report form, the PR template) |
+| `tests/helpers/{harness,pipeline-world,publish-world,stale-cases}.ts`, `tests/{agent,agent-check,daily,data-only,deploy,evidence,fake-agent,harness,links,p3-contract,pipeline-draft,preflight,prompts,prune,publish,recheck,snapshot,status,transcript,validate-loop,apply,context}.test.ts` | later (P3) | With the code they test |
+| `tests/{chat,config,contract,fixtures,fixtures-base,fixtures-state,fixture-safety,helpers,json-schema,page-text,rules-meta-items,rules-words-sources,rules-naming-safety-computed,sanitize,schema,shared,style,validate,validate-engine}.test.ts` | later (P1) | With the code they test; the CVE, victim and exploit cases dropped |
+| `tests/{backfill,captures,collect,compute-metrics,feed-readers,feeds,http,metrics,metrics-script,rank,reference,sources-check}.test.ts` | later (P2) | With the code they test |
+| `tests/{content,site,stale,color-check,screenshots}.test.ts(x)` | later (P4) | With the code they test |
+| `tests/{ai-credit,angle-numbers,fix-side,flood,regions,registry,rules-cves-grounding-ai,series,window,withhold}.test.ts`, `tests/helpers/{d6,fixture-clone,zip}.ts` | dropped | CyberTracker's domain; P1 writes this project's rule tests and P2 its registry test |
