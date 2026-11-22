@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "site": {
+    "name": "Unveiling Tracker",
+    "tagline": {
+      "en": "What AI is helping us discover, explained",
+      "zh": "AI 正在幫我們發現什麼，說清楚、講明白"
+    },
+    "url": "https://unveilingtracker.vercel.app"
+  },
+  "repos": {
+    "repo": "8gara8/UnveilingTracker",
+    "branch": "main"
+  },
+  "siblings": {
+    "me": "https://metracker.vercel.app",
+    "europe": "https://europetracker.vercel.app",
+    "cyber": "https://cybertracker-alpha.vercel.app"
+  },
+  "schedule": {
+    "timezone": "Asia/Taipei",
+    "start": "03:15",
+    "data_only_target": "03:35",
+    "full_target": "04:15",
+    "retry_cutoff": "03:50",
+    "zh_start_by": "04:05",
+    "hard_stop": "04:25",
+    "stale_after": "08:00",
+    "publish_until": "11:00"
+  },
+  "budgets": {
+    "agent_minutes": 30,
+    "zh_minutes": 12,
+    "zh_reserve_minutes": 14,
+    "web_fetches": 40,
+    "zh_fetches": 10,
+    "repair_rounds": 2,
+    "zh_repair_rounds": 1,
+    "attempts_max": 2,
+    "candidates_max": 40,
+    "deep_read_max": 15,
+    "findings_max": 5,
+    "typical_findings": [
+      3,
+      5
+    ],
+    "words_target": 1000,
+    "words_max": 1300,
+    "zh_factor": 1.8,
+    "reading_grade_soft": 12,
+    "reading_grade_max": 14,
+    "reports_max": 5,
+    "zh_backlog_max": 5,
+    "rung_watch_max": 300,
+    "publish_reserve_minutes": 4,
+    "deploy_wait_minutes": 8
+  },
+  "pack": {
+    "window_end": "03:15",
+    "window_hours": 24,
+    "lookback_hours": 48
+  },
+  "pace": {
+    "window_weeks": 13,
+    "provisional_weeks": 8,
+    "min_cases": 30,
+    "min_ratio": 1.25,
+    "hold_after_days": 182
+  },
+  "paths": {
+    "content_dir": "content",
+    "cache": "cache",
+    "packs": "packs",
+    "drafts": "drafts",
+    "logs": "logs",
+    "needs_review": "needs-review"
+  },
+  "user_agent": "UnveilingTracker/1.0 (+https://github.com/8gara8/UnveilingTracker)",
+  "task_name": "Unveiling morning"
+}
