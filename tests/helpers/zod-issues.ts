@@ -42,10 +42,15 @@ export function expectOnlyIssue(schema: z.ZodType, value: unknown, path: string,
   if (part !== undefined) expect(found[0]!.message).toContain(part);
 }
 
-/** `mutate` changes a copy of `value`; the copy then fails at `path` (and, with `part`, with a message that holds it). */
+/**
+ * `mutate` changes a copy of `value`; the copy then fails at `path` (and, with `part`, with a message that holds it).
+ * The value itself must not fail there already, so that the change is what the issue answers to.
+ */
 export function expectMutationFails(
   schema: z.ZodType, value: unknown, mutate: (v: any) => void, path: string, part?: string,
 ): void {
+  const before = issuesOf(schema, value).find((i) => i.path === path && (part === undefined || i.message.includes(part)));
+  expect(before, `the unchanged value already has the issue at "${path}": ${JSON.stringify(before)}`).toBeUndefined();
   const changed = copy(value);
   mutate(changed);
   expectIssue(schema, changed, path, part);

@@ -98,7 +98,8 @@ describe("FeedEntry", () => {
 
   it("takes date_zone as a UTC offset such as +08:00, or null for UTC, never Z", () => {
     for (const date_zone of ["+08:00", "-05:00", "+00:00", "+05:30", "+14:00", "-12:00", null]) expectValid(FeedEntry, { ...feed(), date_zone });
-    for (const bad of ["Z", "08:00", "+8:00", "+0800", "+15:00", "+08:60", "UTC", "+08", ""]) {
+    // Nothing may come before or after the offset: the whole string is the offset.
+    for (const bad of ["Z", "08:00", "+8:00", "+0800", "+15:00", "+08:60", "UTC", "+08", "", "x+08:00", "+08:00x", "+08:00 ", " +08:00", "+08:00\n"]) {
       expectMutationFails(FeedEntry, feed(), (f) => { f.date_zone = bad; }, "date_zone");
     }
   });
@@ -158,9 +159,7 @@ describe("SourcesFile", () => {
 
   it("refuses a feed id used twice, naming the second", () => {
     expectMutationFails(SourcesFile, file(), (f) => { f.feeds[1].id = "arxiv-math"; }, "feeds.1.id", "used twice");
-    expectMutationFails(
-      SourcesFile, { ...file(), feeds: [...file().feeds, { ...feed(), id: "biorxiv" }] }, () => {}, "feeds.2.id", "biorxiv is used twice",
-    );
+    expectIssue(SourcesFile, { ...file(), feeds: [...file().feeds, { ...feed(), id: "biorxiv" }] }, "feeds.2.id", "biorxiv is used twice");
   });
 
   it("judges each feed by the feed schema, naming its place", () => {

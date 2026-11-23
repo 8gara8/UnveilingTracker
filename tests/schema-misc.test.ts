@@ -389,6 +389,8 @@ describe("ArchiveRef", () => {
     expectIssue(ArchiveRef, "2026-02-30/brief", "", "real calendar date");
     expectIssue(ArchiveRef, "2026-13-01/brief", "", "real calendar date");
     expectIssue(ArchiveRef, "bio-2026-1", "", "math-2026-0142");
+    // a ref that is no ref at all has the one shape issue, however it ends
+    for (const bad of ["zzzz/brief", "bio-2026-1/brief", "2026-11-2/brief", "x2026-11-23/brief"]) expectOnlyIssue(ArchiveRef, bad, "", "math-2026-0142");
     for (const bad of [null, 7, ["bio-2026-0001"]]) expect(ArchiveRef.safeParse(bad).success).toBe(false);
   });
 });
@@ -454,7 +456,8 @@ describe("ArchiveUrl", () => {
     expectMutationFails(ArchiveUrl, url(), (u) => { u.extra = 1; }, "", "Unrecognized key");
     expectMutationFails(ArchiveUrl, url(), (u) => { u.first_cited = null; }, "first_cited");
     expectMutationFails(ArchiveUrl, url(), (u) => { u.refs = null; }, "refs");
-    expect(Object.keys(url())).toEqual(["first_cited", "refs", "sha256", "hashed_at", "last_check"]);
+    expect(Object.keys(ArchiveUrl.shape)).toEqual(["first_cited", "refs", "sha256", "hashed_at", "last_check"]);
+    expect(Object.keys(ArchiveUrl.parse(Object.fromEntries(Object.entries(url()).reverse())))).toEqual(Object.keys(ArchiveUrl.shape));
   });
 
   it("allows at most 20 refs, each once, each a finding id or an edition's brief", () => {

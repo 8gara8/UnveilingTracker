@@ -188,6 +188,8 @@ describe("Recheck and LinkCheck", () => {
     expectValid(LinkCheck, { ...links(), broken: [] });
     expectValid(LinkCheck, { ...links(), broken: [{ url: "https://example.org/y", ref: "2026-11-22/brief", result: "changed", http: null }] });
     expect(Object.keys(LinkCheck.shape)).toEqual(["checked_at", "checked", "ok", "unknown", "broken"]);
+    expect(Object.keys(LinkCheck.shape.broken.element.shape)).toEqual(["url", "ref", "result", "http"]);
+    expect(LinkCheck.shape.broken.element.shape.result.options).toEqual(["broken", "changed"]);
   });
 
   it("LinkCheck needs every key and refuses an unknown key and a bad entry", () => {
@@ -274,7 +276,7 @@ describe("RunRecord", () => {
   });
 
   it("has the budgets the spec gives, with the Chinese pass's own", () => {
-    expect(Object.keys(run().budgets)).toEqual([
+    expect(Object.keys(RunRecord.shape.budgets.shape)).toEqual([
       "agent_seconds", "zh_agent_seconds", "web_fetches", "web_searches", "repair_rounds", "tokens_in", "tokens_out", "usage", "safety_stops",
     ]);
     for (const key of Object.keys(run().budgets)) expectMutationFails(RunRecord, run(), (r) => delete r.budgets[key], `budgets.${key}`);
@@ -285,6 +287,23 @@ describe("RunRecord", () => {
     expectMutationFails(RunRecord, run(), (r) => { r.budgets.extra = 1; }, "budgets", "Unrecognized key");
     expectMutationFails(RunRecord, run(), (r) => { r.budgets.tokens_in = -5; }, "budgets.tokens_in");
     expectValid(RunRecord, { ...run(), budgets: { ...run().budgets, tokens_in: 1200, tokens_out: 300 } });
+  });
+
+  it("keeps the key order of each object inside the record, in the schema and not only in the test's data", () => {
+    const shape = RunRecord.shape;
+    expect(Object.keys(shape.budgets.shape.usage.unwrap().shape)).toEqual(["window", "utilization"]);
+    expect(Object.keys(shape.candidates.unwrap().shape)).toEqual(["ranked", "kept", "deep_read"]);
+    expect(Object.keys(shape.validation.unwrap().shape)).toEqual(["errors", "warnings", "codes"]);
+    expect(Object.keys(shape.soft_gates.unwrap().shape)).toEqual(["checked", "dropped", "by_code"]);
+    expect(Object.keys(shape.deploy.shape)).toEqual(["triggered", "ready_at", "shows_date", "shows_edition"]);
+    expect(Object.keys(shape.zh.unwrap().shape)).toEqual(Object.keys(ZhRecord.shape));
+    expect(Object.keys(shape.recheck.unwrap().shape)).toEqual(Object.keys(Recheck.shape));
+    expect(Object.keys(LinkCheck.shape.broken.element.shape)).toEqual(["url", "ref", "result", "http"]);
+    // Parsing writes the schema's order whatever the order it was given (lib/json.ts's `jsonText` relies on it).
+    const shuffled = { ...run(), budgets: Object.fromEntries(Object.entries(run().budgets).reverse()), deploy: Object.fromEntries(Object.entries(run().deploy).reverse()) };
+    const parsed = RunRecord.parse(shuffled);
+    expect(Object.keys(parsed.budgets)).toEqual(Object.keys(shape.budgets.shape));
+    expect(Object.keys(parsed.deploy)).toEqual(Object.keys(shape.deploy.shape));
   });
 
   it("has a usage window and a utilization, or null", () => {
@@ -455,11 +474,19 @@ describe("Share", () => {
     expectValid(Share, { k: 2, n: 3, share: 0.6667, ci80: [0.1, 0.9] });
   });
 
+  it("takes either rounding of a share exactly half a unit of the fourth decimal from k over n, and nothing further", () => {
+    // 1 / 20000 is 0.00005: rounded to four decimals it is 0.0001 (Math.round) or 0, and a script that rounds the other way is within the half unit.
+    expectValid(Share, { k: 1, n: 20000, share: 0.0001, ci80: [0, 0.001] });
+    expectValid(Share, { k: 1, n: 20000, share: 0, ci80: [0, 0.001] });
+    expectMutationFails(Share, { k: 1, n: 20000, share: 0.0001, ci80: [0, 0.001] }, (s) => { s.share = 0.0002; }, "share", "k / n");
+    expectMutationFails(Share, { k: 1, n: 20000, share: 0.0001, ci80: [0, 0.001] }, (s) => { s.k = 4; }, "share", "k / n");
+  });
+
   it("has a share of no papers be 0 with the interval [0, 1]", () => {
     expectMutationFails(Share, { k: 0, n: 0, share: 0, ci80: [0, 1] }, (s) => { s.share = 0.5; }, "share", "no papers");
     expectMutationFails(Share, { k: 0, n: 0, share: 0, ci80: [0, 1] }, (s) => { s.ci80 = [0, 0.5]; }, "ci80", "[0, 1]");
     expectMutationFails(Share, { k: 0, n: 0, share: 0, ci80: [0, 1] }, (s) => { s.ci80 = [0.1, 1]; }, "ci80", "[0, 1]");
-    expectMutationFails(Share, { k: 1, n: 0, share: 0, ci80: [0, 1] }, (s) => s, "k", "at most n");
+    expectIssue(Share, { k: 1, n: 0, share: 0, ci80: [0, 1] }, "k", "at most n");
   });
 
   it("has the interval hold the share", () => {
@@ -547,6 +574,8 @@ describe("PaceCell, PaceSet and PaceBlock", () => {
     expectMutationFails(PaceBlock, pace(), (p) => { p.quotable = { "pace.leading": "" }; }, "quotable.pace.leading");
     expectMutationFails(PaceBlock, pace(), (p) => { p.quotable = { "pace.leading": 20 }; }, "quotable.pace.leading");
     expectValid(PaceBlock, { ...pace(), quotable: {} });
+    // A figure may be a single character, such as a count of 5.
+    expectValid(PaceBlock, { ...pace(), quotable: { "landmarks.baseline.ai": "5" } });
     expectValid(PaceBlock, { ...pace(), sentence: l("An English-only edition's sentence.") });
   });
 
@@ -697,8 +726,8 @@ describe("MetricsFile", () => {
 
   it("ends its data on a Sunday, the newest Sunday on or before the date minus two days when the data is fresh", () => {
     expectMutationFails(MetricsFile, metrics(), (m) => { m.data_cutoff = "2026-11-14"; }, "data_cutoff", "Sunday");
-    expectMutationFails(MetricsFile, metrics(), (m) => { m.data_cutoff = "2026-11-08"; }, "data_cutoff", "2026-11-15");
-    expectMutationFails(MetricsFile, metrics(), (m) => { m.data_cutoff = "2026-11-22"; }, "data_cutoff", "2026-11-15");
+    expectMutationFails(MetricsFile, metrics(), (m) => { m.data_cutoff = "2026-11-08"; }, "data_cutoff", "data_cutoff is the newest Sunday on or before the date minus 2 days (2026-11-15)");
+    expectMutationFails(MetricsFile, metrics(), (m) => { m.data_cutoff = "2026-11-22"; }, "data_cutoff", "data_cutoff is the newest Sunday on or before the date minus 2 days (2026-11-15)");
     expectValid(MetricsFile, { ...metrics(), date: "2026-11-24", data_cutoff: "2026-11-22" });
     expectMutationFails(MetricsFile, { ...metrics(), date: "2026-11-24", data_cutoff: "2026-11-22" }, (m) => { m.data_cutoff = "2026-11-15"; }, "data_cutoff", "2026-11-22");
     expectValid(MetricsFile, { ...metrics(), date: "2026-11-25", data_cutoff: "2026-11-22" });
@@ -714,8 +743,8 @@ describe("MetricsFile", () => {
   });
 
   it("ends its data after the window", () => {
-    expectMutationFails(MetricsFile, { ...metrics(), status: "stale", data_cutoff: "2026-09-20" }, () => {}, "data_cutoff", "after the window");
-    expectMutationFails(MetricsFile, { ...metrics(), status: "stale", data_cutoff: "2026-09-13" }, () => {}, "data_cutoff", "after the window");
+    expectIssue(MetricsFile, { ...metrics(), status: "stale", data_cutoff: "2026-09-20" }, "data_cutoff", "after the window");
+    expectIssue(MetricsFile, { ...metrics(), status: "stale", data_cutoff: "2026-09-13" }, "data_cutoff", "after the window");
     expectValid(MetricsFile, { ...metrics(), status: "stale", data_cutoff: "2026-09-27" });
   });
 

@@ -90,6 +90,8 @@ describe("dates and timestamps", () => {
     }
     expectIssue(IsoDate, "2026-02-30", "", "real calendar date");
     expectIssue(IsoDate, "23 Nov 2026", "", "YYYY-MM-DD");
+    // the shape is anchored at both ends: text around a date is a shape error, with that one issue and no other
+    for (const d of ["x2026-11-23", "2026-11-23x", " 2026-11-23", "2026-11-23 ", "2026-11-23\n"]) expectOnlyIssue(IsoDate, d, "", "YYYY-MM-DD");
     expect(IsoDate.safeParse(20261123).success).toBe(false);
     expect(IsoDate.safeParse(null).success).toBe(false);
   });
@@ -104,6 +106,24 @@ describe("dates and timestamps", () => {
     for (const t of bad) expect(IsoTimestamp.safeParse(t).success, t).toBe(false);
     expectIssue(IsoTimestamp, "2026-11-23T03:15:12", "", "offset");
     expectIssue(IsoTimestamp, "2026-02-30T00:00:00Z", "", "real timestamp");
+  });
+
+  it("IsoTimestamp takes the last instant of a day and the offsets of the world, and no more", () => {
+    // The newest hour, minute and second, the oldest, and the offsets from -12:00 to +14:00 (Kiribati's, the greatest).
+    for (const t of [
+      "2026-11-23T23:59:59+08:00", "2026-11-23T00:00:00Z", "2026-11-23T00:00+08:00", "2026-11-23T23:59:59.999Z",
+      "2026-11-23T10:30:00+14:00", "2026-11-23T10:30:00-14:00", "2026-11-23T10:30:00-12:00", "2026-11-23T10:30:00+05:45",
+      "2026-11-23T10:30:00+00:59", "2026-11-23T10:30:00-00:59",
+      "2024-02-29T12:00:00Z",
+    ]) expectValid(IsoTimestamp, t);
+    // One step past each limit: an offset beyond 14:00 names no zone, and 24:00 is not part of the day.
+    for (const t of [
+      "2026-11-23T10:30:00+14:01", "2026-11-23T10:30:00-14:01", "2026-11-23T10:30:00+14:30", "2026-11-23T10:30:00+23:59",
+      "2026-11-23T24:00:00+08:00", "2026-11-23T24:00:00Z", "2026-11-23T10:30:00+08:00 ", " 2026-11-23T10:30:00+08:00",
+      "2026-11-23T10:30:00+8:00", "2026-11-23T10:30:00+0800", "2026-11-23t10:30:00z", "2025-02-29T12:00:00Z", "2026-11-31T12:00:00Z",
+    ]) expect(IsoTimestamp.safeParse(t).success, t).toBe(false);
+    expect(IsoTimestamp.safeParse(1795000000).success).toBe(false);
+    expect(IsoTimestamp.safeParse(null).success).toBe(false);
   });
 
   it("PublishedAt is a timestamp, a bare date or null, never anything else", () => {
@@ -165,6 +185,9 @@ describe("numbers and helpers", () => {
       expect(HttpsUrl.safeParse(v).success, v).toBe(false);
     }
     expectIssue(HttpsUrl, "http://example.org", "", "https URL");
+    // Only a bad format gets that message: a number is told what a string is, not what an https URL is.
+    expect(issuesOf(HttpsUrl, 5)[0]?.message).not.toContain("https URL");
+    expect(issuesOf(HttpsUrl, null)[0]?.message).not.toContain("https URL");
   });
 });
 
@@ -307,11 +330,11 @@ describe("sources", () => {
     expectValid(FindingSource, source());
     expectValid(BriefSource, { ...source(), id: "b1" });
     expectMutationFails(FindingSource, source(), (s) => { s.id = "b1"; }, "id");
-    expectMutationFails(BriefSource, source(), (s) => { s.id = "s1"; }, "id");
+    expectIssue(BriefSource, { ...source(), id: "s1" }, "id");
     expectValid(DraftFindingSource, draftSource());
     expectValid(DraftBriefSource, { ...draftSource(), id: "b2" });
     expectMutationFails(DraftFindingSource, draftSource(), (s) => { s.id = "b1"; }, "id");
-    expectMutationFails(DraftBriefSource, draftSource(), (s) => { s.id = "s1"; }, "id");
+    expectIssue(DraftBriefSource, { ...draftSource(), id: "s1" }, "id");
     expect(Object.keys(FindingSource.shape)[0]).toBe("id");
   });
 

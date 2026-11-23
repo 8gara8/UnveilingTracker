@@ -169,6 +169,14 @@ describe("Finding: ids, vocabularies and formats", () => {
     expectOnlyIssue(Finding, { ...finding(), field: "physics" }, "id", "phys-");
   });
 
+  it("dates the id of a published finding by its first brief, and of a history entry by its first publication", () => {
+    // A paper from December 2025 first briefed in November 2026 keeps the year of the brief.
+    expectValid(Finding, { ...finding(), first_published: "2025-12-15" });
+    expectValid(Finding, { ...historyEntry(), first_published: "2020-12-31" });
+    expectOnlyIssue(Finding, { ...historyEntry(), first_published: "2021-01-01" }, "id", "A history entry's id carries the year of first_published");
+    expectOnlyIssue(Finding, { ...finding(), first_brief: "2027-01-02", briefs: ["2027-01-02"] }, "id", "The id carries the year of the first brief");
+  });
+
   it("refuses a field, kind, significance, rung or depth outside its vocabulary", () => {
     expectMutationFails(Finding, finding(), (f) => { f.field = "astronomy"; }, "field");
     expectMutationFails(Finding, finding(), (f) => { f.kind = "idea"; }, "kind");
@@ -357,8 +365,11 @@ describe("Term", () => {
   it("leaves the 40-word budget and the official term's page to WORDS and ZH_OFFICIAL", () => {
     expectValid(Term, { ...term(), en: { term: "protein folding", definition: Array(60).fill("word").join(" ") } });
     expectValid(Term, { ...term(), zh: { ...term().zh, official: "蛋白質摺疊", official_url: null } });
-    expectMutationFails(Term, term(), (t) => { t.en.definition = ""; }, "en.definition");
-    expectMutationFails(Term, term(), (t) => { t.zh.term = ""; }, "zh.term");
+    // An absent value is null, never an empty string, in every string of both languages.
+    for (const key of ["term", "definition"]) expectMutationFails(Term, term(), (t) => { t.en[key] = ""; }, `en.${key}`);
+    for (const key of ["term", "definition", "official", "official_url"]) expectMutationFails(Term, term(), (t) => { t.zh[key] = ""; }, `zh.${key}`);
+    // One Chinese character is a whole term (熵, entropy), so no minimum length above 1 applies.
+    expectValid(Term, { ...term(), id: "entropy", en: { term: "entropy", definition: "A measure of disorder." }, zh: { ...term().zh, term: "熵", official: "熵" } });
     expectValid(Term, { ...term(), en: { term: "protein folding", definition: "This text was removed." } });
   });
 });
