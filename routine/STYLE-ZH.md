@@ -40,14 +40,18 @@ Hong Kong's. To choose a word, go in this order:
    Research keeps the official terms on 樂詞網 (terms.naer.edu.tw), the authority for them, so look a word up
    when you are unsure (§7). If you and the site do not know it, describe it plainly: never invent a term.
 
-**The `avoid` list** (the context's `avoid` is the one in force): 人工智能 → 人工智慧, 算法 → 演算法,
+**The `avoid` list** (the context's `avoid` is the one in force, and it holds more than the first thirteen printed here; `config/terms-zh.json` has all of it): 人工智能 → 人工智慧, 算法 → 演算法,
 軟件 → 軟體, 視頻 → 影片, 芯片 → 晶片, 數據庫 → 資料庫, 服務器 → 伺服器, 激光 → 雷射, 納米 → 奈米,
 硅 → 矽, 等離子體 → 電漿, 量子比特 → 量子位元, 博客 → 部落格. Chinese has no spaces, so a term can sit inside a
 Taiwan word, which is fine: 演算法, 運算法則, 計算法, 估算法, 推算法 and 預算法 hold 算法; 電視頻道 holds 視頻;
 刺激光 holds 激光; 納米比亞, Taiwan's name for Namibia, holds 納米.
 
-**Also write the Taiwan form.** No script catches the other form, because Taiwan writes some of them too, but
-this is the house style. 質量 stays for mass, and `fixed` requires 神經網路 and 基因體 for neural network and genome.
+**Also write the Taiwan form.** Most of the table is checked: `ZH_AVOID` fails the forms in the Not column that
+Taiwan's own dictionary never uses, and `ZH_TERMS` requires the Write column's form when the English has the
+term. The rest is house style, because Taiwan writes both forms or the evidence is thin: 網路 and 網絡, 最佳化
+and 優化, 資訊 and 信息, 訊號 and 信號, 程式 and 程序, 程式碼 and 代碼, 檔案 and 文件, 記憶體 and 內存, 影像辨識
+and 圖像識別, 追蹤 and 隨訪, 西元 and 公元, 教宗 and 教皇, 帕金森氏症 and 帕金森病, 居禮 and 居里. 質量 stays for
+mass, and `fixed` requires 神經網路 and 基因體 for neural network and genome.
 
 | | Write | Not |
 |---|---|---|
@@ -88,9 +92,9 @@ China. 台灣 and 臺灣 are both right: use 台灣 in running text, and keep an
 **Checked by** `ZH_TRADITIONAL`.
 
 Write Taiwan's standard Traditional forms. The checker fails every character on `simplified_only` (这 项 机 学
-们 说 and some 6,700 more) and every one on `japanese_only`: 広 図 駅 気 売 読 価 様 歩 戦 険 験 剤 渋 黒 鉄 薬. A
-Japanese name takes Taiwan's characters: 廣島, never 広島; 東京大學, never 東京大学. The same holds for a form
-that list has not met yet: 沖繩, never 沖縄.
+们 说 and some 6,700 more) and every one on `japanese_only` (167 in `config/terms-zh.json`, for example 広 図 駅 気 売 読 価 様 歩 戦 険 験
+剤 渋 黒 鉄 薬). A Japanese name takes Taiwan's characters: 廣島, never 広島; 東京大學, never 東京大学; 沖繩,
+never 沖縄 (縄 is on the list).
 
 **The checker may not see these**, because Taiwan's own list holds both characters. They are still errors.
 

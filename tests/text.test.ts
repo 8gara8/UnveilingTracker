@@ -49,7 +49,7 @@ describe("countWords", () => {
 
   it("counts a Chinese or Japanese run without spaces as one word", () => {
     expect(countWords("資安 漏洞")).toBe(2);
-    expect(countWords("ゼロデイ攻撃")).toBe(1);
+    expect(countWords("ゲノム編集")).toBe(1);
   });
 });
 
