@@ -7,6 +7,8 @@
     "postinstall": "node -e \"const f=require('node:fs'),c=require('node:crypto');f.writeFileSync('node_modules/.ut-lock-sha',c.createHash('sha256').update(f.readFileSync('package-lock.json')).digest('hex'))\"",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
+    "fixtures:gen": "tsx fixtures/src/build.ts",
+    "fixtures:check": "tsx fixtures/src/build.ts --check",
     "check": "npm run typecheck && npm test"
   },
   "dependencies": {

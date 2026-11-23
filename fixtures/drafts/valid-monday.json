@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-12",
+  "generated_at": "2026-10-12T03:44:52+08:00",
+  "lead": [
+    {
+      "text": "An AI controller kept a hot gas steady in a fusion test machine for longer than the standard controller.",
+      "refs": [
+        "new-1"
+      ]
+    },
+    {
+      "text": "Last week's review picks out the AI antibiotic and weighs it against a journal setback and a retracted paper.",
+      "refs": [
+        "bio-2026-0143",
+        "soc-2026-0144",
+        "phys-2026-0134"
+      ]
+    }
+  ],
+  "story": null,
+  "items": [
+    "new-1"
+  ],
+  "new_findings": [
+    {
+      "ref": "new-1",
+      "field": "physics",
+      "subfield": "plasma-fusion",
+      "kind": "result",
+      "title": "SAMPLE: An AI controller steadies a fusion test machine",
+      "explainer": {
+        "found": "An AI controller held a plasma steady in a fusion test machine for 90 seconds, three times longer than the standard controller.",
+        "matters": "Fusion machines need steady control to work, and long runs are hard to reach. Better control is one step toward fusion power.",
+        "ai_helped": "Fernhill Fusion Group built the Fernhill Controller, which adjusted the magnets 1,000 times a second. It learned from practice runs.",
+        "how_sure": "Checked. Fusion Science Reports published the paper after peer review. Fernhill Fusion Group built the controller, and other groups have not yet repeated the run.",
+        "background": "Fusion power needs a very hot gas held in place by magnets.",
+        "could_lead": "If other groups repeat the run, AI control could become a standard part of fusion machines."
+      },
+      "go_deeper": [
+        "s1",
+        "s2"
+      ],
+      "ai": {
+        "role": "ai_ran",
+        "confidence": "claimed",
+        "systems": [
+          {
+            "name": "Fernhill Controller",
+            "maker": "Fernhill Fusion Group"
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "s1",
+            "quote": "The controller, built by Fernhill Fusion Group, adjusted the magnets 1,000 times a second",
+            "from_claimant": true
+          }
+        ]
+      },
+      "significance": "notable",
+      "rung_history": [
+        {
+          "rung": "checked",
+          "date": "2026-10-11",
+          "source_id": "s1",
+          "note": null
+        }
+      ],
+      "sources": [
+        {
+          "id": "s1",
+          "kind": "paper",
+          "title": "SAMPLE: An AI controller holds a plasma steady in a test machine",
+          "publisher": "Fusion Science Reports",
+          "url": "https://link.springer.com/article/10.1007/ut-sample-0020",
+          "doi": "10.1007/ut-sample-0020",
+          "published_at": "2026-10-11T18:00:00+08:00"
+        },
+        {
+          "id": "s2",
+          "kind": "statement",
+          "title": "SAMPLE: Fernhill team shows AI control of a fusion plasma",
+          "publisher": "Fernhill University",
+          "url": "https://www.fernhill-sample.edu/news/ut-sample-plasma-controller",
+          "doi": null,
+          "published_at": "2026-10-11T17:00:00+08:00"
+        }
+      ],
+      "reactions": [],
+      "artefacts": {
+        "doi": [
+          "10.1007/ut-sample-0020"
+        ],
+        "arxiv": [],
+        "lean": [],
+        "trial": [],
+        "pdb": []
+      },
+      "figure": null,
+      "who": [
+        {
+          "name": "Fernhill Fusion Group (SAMPLE)",
+          "ror": null
+        }
+      ],
+      "terms": [
+        {
+          "new": true,
+          "term": "plasma",
+          "definition": "A very hot gas whose atoms have lost electrons, the state of matter in the sun and in fusion machines."
+        }
+      ],
+      "related": [
+        "phys-2026-0134"
+      ],
+      "first_published": "2026-10-11"
+    }
+  ],
+  "returning": [],
+  "rung_changes": [],
+  "ideas": [],
+  "also": [],
+  "deep_dive": null,
+  "review": {
+    "big_picture": "The week mixed progress with warnings. The clearest progress came where someone other than the makers tested a result. A new weather model beat the standard method in tests on past weather. A proof about tiles was read and checked by two mathematicians who were not on the paper.\n\nThe week's largest result involved no AI at all. Two mathematicians proved that tiles of one kind can fill a flat surface only in patterns that never repeat. We list it because a result of that size should never be missed, and we say plainly that no AI role is known.\n\nWhere AI did play a part, the stage of the evidence varied. The weather tests were the maker's own. A robotic lab found a cheap metal mixture that splits water, but in one lab so far. An AI model proposed an antibiotic that cleared an infection in mice, and the first safety trial in people has only begun. In each case we mark how sure we are and who says so.\n\nThe week also held harm. A journal found that reviewers had pasted unpublished papers into a public chatbot. A paper from a robot lab on a magnetic material was retracted after its authors found errors in the raw data. The second case matters most to this tracker, because AI helped make the first claim and the claim did not stand.\n\nTwo items were about the rules and tools around the science. A research council proposed that applicants say whether AI helped write a proposal. A lab released a large set of AI-run survey interviews that other researchers can study.\n\nOur reading is cautious. The best evidence came from checks by people outside the team that made the claim. The weakest came from claims that rest on one lab. This week we will watch whether other labs repeat the antibiotic tests and what the research council decides.",
+    "remarkable": {
+      "finding_id": "bio-2026-0143",
+      "note": "An AI model proposed a new antibiotic that cleared a drug-resistant infection in mice. People made and tested every molecule, and the first safety trial in people has begun."
+    },
+    "strongest_against": {
+      "text": "Reviewers at the journal eLife pasted unpublished manuscripts into a public AI chatbot. A robot lab's paper on a magnetic material, planned by an AI, was retracted after the authors found errors in the raw data.",
+      "finding_ids": [
+        "phys-2026-0134",
+        "soc-2026-0144"
+      ],
+      "source_ids": [
+        "b1",
+        "b2"
+      ]
+    }
+  },
+  "corrections": [],
+  "report_decisions": [],
+  "sources": [
+    {
+      "id": "b1",
+      "kind": "statement",
+      "title": "SAMPLE: eLife says reviewers shared unpublished papers with an AI chatbot",
+      "publisher": "eLife",
+      "url": "https://elifesciences.org/for-the-press/ut-sample-reviewer-ai-chatbot",
+      "doi": null,
+      "published_at": "2026-10-08T17:00:00+08:00"
+    },
+    {
+      "id": "b2",
+      "kind": "notice",
+      "title": "SAMPLE: Retraction: A robot lab reports a new magnetic material",
+      "publisher": "Physical Review Letters",
+      "url": "https://doi.org/10.1103/ut-sample-0017",
+      "doi": "10.1103/ut-sample-0017",
+      "published_at": "2026-10-08"
+    }
+  ]
+}

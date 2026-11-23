@@ -1,0 +1,27 @@
+{
+  "urls": [
+    "https://www.pnas.org/doi/10.1073/ut-sample.0061",
+    "https://www.cambridge.org/core/journals/ut-sample-census-history-review/article/ut-sample-0063",
+    "https://www.biorxiv.org/content/10.1101/2026.10.31.990062v1",
+    "https://link.springer.com/article/10.1007/ut-sample-0064"
+  ],
+  "fetched": [],
+  "texts": {
+    "https://pnas.org/doi/10.1073/ut-sample.0061": "SAMPLE: Counting trees from the air with deep learning\nSAMPLE page, invented for tests and never fetched. A deep learning model counted trees in aerial photographs. Foresters counted some plots on foot to check it.",
+    "https://cambridge.org/core/journals/ut-sample-census-history-review/article/ut-sample-0063": "SAMPLE: Old census pages read with machine learning\nSAMPLE page, invented for tests and never fetched. Machine learning read handwritten census pages. Historians checked a sample of pages.",
+    "https://biorxiv.org/content/10.1101/2026.10.31.990062v1": "SAMPLE: A graph neural network for gene networks\nSAMPLE page, invented for tests and never fetched. A graph neural network guessed links between genes. Some guesses were tested in yeast.",
+    "https://link.springer.com/article/10.1007/ut-sample-0064": "SAMPLE: Correction to a paper on cement strength\nSAMPLE page, invented for tests and never fetched. A figure label in the paper was wrong and has been corrected."
+  },
+  "seen_as": {
+    "https://pnas.org/doi/10.1073/ut-sample.0061": "pack",
+    "https://cambridge.org/core/journals/ut-sample-census-history-review/article/ut-sample-0063": "pack",
+    "https://biorxiv.org/content/10.1101/2026.10.31.990062v1": "pack",
+    "https://link.springer.com/article/10.1007/ut-sample-0064": "pack"
+  },
+  "types": {
+    "https://pnas.org/doi/10.1073/ut-sample.0061": [
+      "Research Article"
+    ]
+  },
+  "resolved": {}
+}

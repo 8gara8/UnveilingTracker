@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-18",
+  "generated_at": "2026-10-18T03:43:07+08:00",
+  "lead": [
+    {
+      "text": "A university says its AI drafted a Bible translation for a small language group.",
+      "refs": [
+        "new-1"
+      ]
+    },
+    {
+      "text": "Today's deep dive follows an AI-proposed antibiotic from the first ranking to a second lab's tests.",
+      "refs": [
+        "bio-2026-0143"
+      ]
+    }
+  ],
+  "story": null,
+  "items": [
+    "new-1"
+  ],
+  "new_findings": [
+    {
+      "ref": "new-1",
+      "field": "humanities",
+      "subfield": "scripture-translation",
+      "kind": "capability",
+      "title": "SAMPLE: A university says AI drafted a Bible translation",
+      "explainer": {
+        "found": "Quillon University says its language lab used an AI model to draft a Bible translation in a language with 60,000 speakers.",
+        "matters": "Many languages still have no full Bible. A draft that native speakers review could reach readers sooner.",
+        "ai_helped": "Quillon University built the Quill Translator, which wrote the draft. Native speakers will review each verse before the translation is shared.",
+        "how_sure": "Claimed. Quillon University says so in its own statement, and the lab has not published a paper. The university built the system.",
+        "background": "Translators have long worked by hand, one verse at a time.",
+        "could_lead": "If reviewers find the drafts sound, the method could help smaller language groups."
+      },
+      "go_deeper": [
+        "s1",
+        "s2"
+      ],
+      "ai": {
+        "role": "ai_tool",
+        "confidence": "claimed",
+        "systems": [
+          {
+            "name": "Quill Translator",
+            "maker": "Quillon University"
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "s1",
+            "quote": "used an AI model, the Quill Translator, to draft a Bible translation",
+            "from_claimant": true
+          }
+        ]
+      },
+      "significance": "notable",
+      "rung_history": [
+        {
+          "rung": "claimed",
+          "date": "2026-10-17",
+          "source_id": "s1",
+          "note": null
+        }
+      ],
+      "sources": [
+        {
+          "id": "s1",
+          "kind": "statement",
+          "title": "SAMPLE: Quillon lab says its AI drafted a Bible translation",
+          "publisher": "Quillon University",
+          "url": "https://www.quillon-sample.edu/news/ut-sample-bible-translation-draft",
+          "doi": null,
+          "published_at": "2026-10-17T15:00:00+08:00"
+        },
+        {
+          "id": "s2",
+          "kind": "dataset",
+          "title": "SAMPLE: Draft verses released for review",
+          "publisher": "Hugging Face",
+          "url": "https://huggingface.co/datasets/ut-sample/quillon-bible-draft",
+          "doi": null,
+          "published_at": "2026-10-17T15:30:00+08:00"
+        }
+      ],
+      "reactions": [],
+      "artefacts": {
+        "doi": [],
+        "arxiv": [],
+        "lean": [],
+        "trial": [],
+        "pdb": []
+      },
+      "figure": null,
+      "who": [
+        {
+          "name": "Quillon University language lab (SAMPLE)",
+          "ror": null
+        }
+      ],
+      "terms": [],
+      "related": [],
+      "first_published": "2026-10-17"
+    }
+  ],
+  "returning": [],
+  "rung_changes": [],
+  "ideas": [],
+  "also": [],
+  "deep_dive": {
+    "finding_id": "bio-2026-0143",
+    "text": "Some germs have stopped responding to the drugs that used to kill them. This is called antimicrobial resistance. It makes some infections hard to treat, and doctors need new antibiotics.\n\nFinding a new antibiotic has always been slow. A lab can make and test only a few molecules, and the list of molecules that might work is huge. That is where the AI model came in.\n\nHalden Research built an AI model called Halden Design. Its paper says the model ranked about 12 million molecules for their chance of killing drug-resistant bacteria. The ranking gave the lab a short list to work from. A ranking is a guess, and it only becomes a finding when someone makes the molecule and tests it.\n\nPeople took over from there. They made 40 of the top molecules and tested them. Three of the 40 stopped the growth of drug-resistant bacteria in dishes. The best of these cleared a drug-resistant skin infection in 8 of 10 mice.\n\nThe Coldwater Institute says its team ran the tests in mice. It also runs a first safety trial in people. The trial plans to enrol 24 healthy volunteers. It tests safety, not cure, so it cannot yet tell us whether the compound treats an infection.\n\nSo who did what? The AI model proposed which molecules to make. People made them, ran every test and judged the results.\n\nHow sure are we? At first the record was one paper. Cell published it after peer review, so we marked it Checked. But Halden Research, which built the model, helped write the paper, and no other lab had repeated the tests. Our ladder has five steps, and a claim moves up only when the record earns it.\n\nThat changed this week. A second lab, at Kestrel College, repeated the mouse tests with its own mice and its own samples of the compound. Cell Reports Medicine published its paper. The compound cleared the infection in 7 of 10 mice, close to the 8 of 10 that the first team reported. The lab says it has no tie to Halden Research.\n\nA matching result from a lab with no tie to the first team is what moves a claim up our ladder. The record now stands at Confirmed. It is still a result in mice.\n\nFor this tracker, the order of events matters. The AI model made its proposals first, and people tested them afterwards. That order is what lets us say the AI helped, and it is what a second lab could check.\n\nMuch is still open. Mice are not people, so a compound that works in mice may not work in a person. The safety trial has only begun. If it goes well, later trials could test whether the compound treats infections. It might also show that AI can find other new antibiotics, but that would take more cases. Other labs could test those cases, and their results would tell us how far the method reaches.",
+    "source_ids": [
+      "b1",
+      "b2",
+      "b3",
+      "b4"
+    ],
+    "why_today": "news"
+  },
+  "review": null,
+  "corrections": [],
+  "report_decisions": [],
+  "sources": [
+    {
+      "id": "b1",
+      "kind": "paper",
+      "title": "SAMPLE: An AI model proposes a new antibiotic that clears resistant infections in mice",
+      "publisher": "Cell",
+      "url": "https://www.cell.com/cell/abstract/ut-sample-0014",
+      "doi": "10.1016/ut-sample-0014",
+      "published_at": "2026-10-07T22:00:00+08:00"
+    },
+    {
+      "id": "b2",
+      "kind": "registry",
+      "title": "SAMPLE: First safety trial of a new antibiotic",
+      "publisher": "ClinicalTrials.gov",
+      "url": "https://clinicaltrials.gov/study/NCT09999001",
+      "doi": null,
+      "published_at": "2026-10-07"
+    },
+    {
+      "id": "b3",
+      "kind": "statement",
+      "title": "SAMPLE: Coldwater team tests an AI-proposed antibiotic",
+      "publisher": "Coldwater Institute",
+      "url": "https://www.coldwater-sample.edu/news/ut-sample-new-antibiotic",
+      "doi": null,
+      "published_at": "2026-10-07T21:00:00+08:00"
+    },
+    {
+      "id": "b4",
+      "kind": "paper",
+      "title": "SAMPLE: A second lab repeats tests of an AI-proposed antibiotic in mice",
+      "publisher": "Cell Reports Medicine",
+      "url": "https://www.cell.com/cell-reports-medicine/fulltext/ut-sample-0015",
+      "doi": "10.1016/ut-sample-0015",
+      "published_at": "2026-10-15T22:00:00+08:00"
+    }
+  ]
+}

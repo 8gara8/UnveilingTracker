@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "window": {
+    "start": "2026-11-01T03:15:00+08:00",
+    "end": "2026-11-02T03:15:00+08:00"
+  },
+  "generated_at": "2026-11-02T03:16:20+08:00",
+  "arxiv_announcement": null,
+  "degraded": false,
+  "feeds": [
+    {
+      "id": "arxiv-math",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 4,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "d9b3868480ef8c3c262b7c29fbf865f75668dce3aef501775ac96e80f06685d6"
+    },
+    {
+      "id": "arxiv-physics",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 7,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "23cd63938ee75ff2df7e69948eb426b97d0d3dc6403b28a4ce21226064c4c05c"
+    },
+    {
+      "id": "arxiv-astro-ph",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 10,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "d65728864ea24b5418ad6ccfb0cb329001bc0d400ca8b51449c5bcef43ccdd89"
+    },
+    {
+      "id": "arxiv-cond-mat",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 6,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "aab7b0e0d89d0eb8b51b58de7c650aac73f06b6ccffbe09014c74aec6dfb18f7"
+    },
+    {
+      "id": "arxiv-quant-ph",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 9,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "90744d7f291a21054b46a02514390b8117ac31bbac8b06222679da9d89433ab0"
+    },
+    {
+      "id": "arxiv-q-bio",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 5,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "6a5a38748e9d794168c12e7b5f8700c31f55c69d966d0318fcce843a9e490458"
+    },
+    {
+      "id": "arxiv-physics-chem-ph",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 8,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "98870ab51b7cd309ea5514279827e5f24d9e620f86f6c265e9f0ed2a2c8db81f"
+    },
+    {
+      "id": "arxiv-stat-ml",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 4,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "baa618793854f0a68913caf213b598d65807cb6a551630d9c876f106aeb22101"
+    },
+    {
+      "id": "biorxiv",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-11-01T09:00:00+08:00",
+      "items_total": 8,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "ff13335f49567db31437e85b509cced5747f5b240f8bc34e95b52c8edcab3258"
+    },
+    {
+      "id": "medrxiv",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 10,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "db4a50b9f334d19b2ec910db1a4ca85b104cc5a2c40318342c97fddd798effc1"
+    },
+    {
+      "id": "pubmed",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 6,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "f064b5b6459e48a89d536808eb582349791ae1a0e6b6ac06d65d9321fa649cb8"
+    },
+    {
+      "id": "crossref-journals",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-11-01T10:00:00+08:00",
+      "items_total": 10,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "adcbd6147107ab56918ed9d609cb82bb40899b7e99296aebc7b17a223660690c"
+    },
+    {
+      "id": "journal-nature",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 5,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "7217cbeb17c3fa2acbcb7eaefd61b6594970c4a8ec9da21f9d29d1ef7bf9fdd7"
+    },
+    {
+      "id": "journal-science",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 8,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "0b2f8f0038a7a73f1a8ceb3df5e41d16c7fc8ed774f656ac8dc14ce9a9e078fb"
+    },
+    {
+      "id": "journal-pnas",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-11-01T05:00:00+08:00",
+      "items_total": 5,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "0364394150960e2953c9e96c7c6b83b03b6dd407325334c6eddf3000a981409e"
+    },
+    {
+      "id": "eurekalert",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 7,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "8f8dfe5c37b34e8bdaa6c75a4d140ae3bacbbc3e3bb809fb26ad15717641047c"
+    },
+    {
+      "id": "lab-deepmind",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 10,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "19a47972e90db344662571591a014e3b8163a9170423cee5a820f060c72d64e0"
+    },
+    {
+      "id": "smc-reactions",
+      "kind": "page",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 6,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "3ece3a39297bad0ca1aab17a8492933106f587d5c667eff0672210ad55055ff0"
+    },
+    {
+      "id": "crossref-updates",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-11-01T16:00:00+08:00",
+      "items_total": 10,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "7edbee987d0f7caba426ef1d47531fef52e03785c72f5f9ee85dac3123259985"
+    },
+    {
+      "id": "ctgov",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 5,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "5e5260a44c073e32cc377a763d6928a9d2bc930c6f4fcfa4f7a2467f043fc5ad"
+    },
+    {
+      "id": "rcsb",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 8,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "c8c90de41b524013b6b00772f718a9b9af0df90e6da070e004ad18cc07151188"
+    },
+    {
+      "id": "scrollprize",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-31",
+      "items_total": 4,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "971fc7b523d975da308d13c86e30fad189b376765be8f543dd31e8372ea90b16"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "cand-01",
+      "source_id": "journal-pnas",
+      "title": "SAMPLE: Counting trees from the air with deep learning",
+      "abstract": "SAMPLE page, invented for tests and never fetched. A deep learning model counted trees in aerial photographs. Foresters counted some plots on foot to check it.",
+      "url": "https://www.pnas.org/doi/10.1073/ut-sample.0061",
+      "doi": "10.1073/ut-sample.0061",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-11-01T05:00:00+08:00",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "fields": [
+        "earth"
+      ],
+      "ai_terms_matched": [
+        "deep learning"
+      ],
+      "journal_leading": true,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 8,
+      "deep_read": true
+    },
+    {
+      "id": "cand-02",
+      "source_id": "crossref-journals",
+      "title": "SAMPLE: Old census pages read with machine learning",
+      "abstract": "SAMPLE page, invented for tests and never fetched. Machine learning read handwritten census pages. Historians checked a sample of pages.",
+      "url": "https://www.cambridge.org/core/journals/ut-sample-census-history-review/article/ut-sample-0063",
+      "doi": "10.1017/ut-sample-0063",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-11-01T10:00:00+08:00",
+      "journal": "Eastvale Census History Review",
+      "fields": [
+        "social"
+      ],
+      "ai_terms_matched": [
+        "machine learning"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 6,
+      "deep_read": true
+    },
+    {
+      "id": "cand-03",
+      "source_id": "biorxiv",
+      "title": "SAMPLE: A graph neural network for gene networks",
+      "abstract": "SAMPLE page, invented for tests and never fetched. A graph neural network guessed links between genes. Some guesses were tested in yeast.",
+      "url": "https://www.biorxiv.org/content/10.1101/2026.10.31.990062v1",
+      "doi": "10.1101/2026.10.31.990062",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-11-01T09:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "biology"
+      ],
+      "ai_terms_matched": [
+        "neural network",
+        "graph neural network"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 5,
+      "deep_read": true
+    },
+    {
+      "id": "cand-04",
+      "source_id": "crossref-updates",
+      "title": "SAMPLE: Correction to a paper on cement strength",
+      "abstract": "SAMPLE page, invented for tests and never fetched. A figure label in the paper was wrong and has been corrected.",
+      "url": "https://link.springer.com/article/10.1007/ut-sample-0064",
+      "doi": "10.1007/ut-sample-0064",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-11-01T16:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "chemistry"
+      ],
+      "ai_terms_matched": [],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 0,
+      "deep_read": true
+    }
+  ],
+  "injection_flags": 0
+}
