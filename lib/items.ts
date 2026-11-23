@@ -60,8 +60,8 @@ function compareFilings(a: FilingCorrection, b: FilingCorrection): number {
   return byCodeUnit(a.date, b.date) || byCodeUnit(a.id, b.id);
 }
 
-/** The latest valid correction at each filing path for this finding, dated on or before `date`. */
-function latestFilings(id: string, corrections: readonly FilingCorrection[], date: IsoDate): Map<FilingPath, string> {
+/** The latest valid correction at each filing path for this finding, dated on or before `date`. Exported for the rule views (lib/rules/views.ts), which file a finding whose record is partial. */
+export function latestFilings(id: string, corrections: readonly FilingCorrection[], date: IsoDate): Map<FilingPath, string> {
   const latest = new Map<FilingPath, FilingCorrection>();
   for (const c of corrections) {
     if (c.finding_id !== id || c.type === "removed" || c.date > date) continue;
