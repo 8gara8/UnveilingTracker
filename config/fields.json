@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "version": 1,
+  "fields": [
+    {
+      "id": "mathematics",
+      "openalex_fields": [
+        26
+      ],
+      "subfields": [
+        {
+          "id": "number-theory",
+          "en": "Number theory",
+          "zh": "數論"
+        },
+        {
+          "id": "combinatorics",
+          "en": "Combinatorics",
+          "zh": "組合學"
+        },
+        {
+          "id": "geometry-topology",
+          "en": "Geometry and topology",
+          "zh": "幾何與拓樸"
+        },
+        {
+          "id": "algebra",
+          "en": "Algebra",
+          "zh": "代數"
+        },
+        {
+          "id": "analysis-probability",
+          "en": "Analysis and probability",
+          "zh": "分析與機率"
+        },
+        {
+          "id": "formal-proof",
+          "en": "Formal proof",
+          "zh": "形式化證明"
+        }
+      ]
+    },
+    {
+      "id": "physics",
+      "openalex_fields": [
+        31
+      ],
+      "subfields": [
+        {
+          "id": "particles-nuclei",
+          "en": "Particles and nuclei",
+          "zh": "粒子與原子核"
+        },
+        {
+          "id": "astronomy",
+          "en": "Astronomy and cosmology",
+          "zh": "天文與宇宙學"
+        },
+        {
+          "id": "condensed-matter",
+          "en": "Condensed matter",
+          "zh": "凝態物理"
+        },
+        {
+          "id": "quantum",
+          "en": "Quantum physics and computing",
+          "zh": "量子物理與量子計算"
+        },
+        {
+          "id": "plasma-fusion",
+          "en": "Plasma and fusion",
+          "zh": "電漿與核融合"
+        },
+        {
+          "id": "atoms-optics",
+          "en": "Atomic and optical physics",
+          "zh": "原子與光學物理"
+        }
+      ]
+    },
+    {
+      "id": "chemistry",
+      "openalex_fields": [
+        16,
+        25,
+        15
+      ],
+      "subfields": [
+        {
+          "id": "materials",
+          "en": "Materials",
+          "zh": "材料"
+        },
+        {
+          "id": "catalysis",
+          "en": "Catalysis",
+          "zh": "催化"
+        },
+        {
+          "id": "energy-materials",
+          "en": "Batteries and energy materials",
+          "zh": "電池與能源材料"
+        },
+        {
+          "id": "synthesis",
+          "en": "Synthesis and new molecules",
+          "zh": "合成與新分子"
+        },
+        {
+          "id": "automated-labs",
+          "en": "Automated labs",
+          "zh": "自動化實驗室"
+        }
+      ]
+    },
+    {
+      "id": "biology",
+      "openalex_fields": [
+        13,
+        27,
+        24,
+        28,
+        30,
+        11,
+        29,
+        36,
+        35,
+        34
+      ],
+      "subfields": [
+        {
+          "id": "proteins",
+          "en": "Proteins and structure",
+          "zh": "蛋白質與結構"
+        },
+        {
+          "id": "drugs",
+          "en": "Drugs and trials",
+          "zh": "藥物與臨床試驗"
+        },
+        {
+          "id": "genomics",
+          "en": "Genes and genomes",
+          "zh": "基因與基因體"
+        },
+        {
+          "id": "cells",
+          "en": "Cells and molecular biology",
+          "zh": "細胞與分子生物學"
+        },
+        {
+          "id": "neuroscience",
+          "en": "Neuroscience",
+          "zh": "神經科學"
+        },
+        {
+          "id": "diagnosis",
+          "en": "Diagnosis and imaging",
+          "zh": "診斷與醫學影像"
+        },
+        {
+          "id": "infection-immunity",
+          "en": "Infection and immunity",
+          "zh": "感染與免疫"
+        }
+      ]
+    },
+    {
+      "id": "earth",
+      "openalex_fields": [
+        19,
+        23
+      ],
+      "subfields": [
+        {
+          "id": "weather",
+          "en": "Weather forecasting",
+          "zh": "天氣預報"
+        },
+        {
+          "id": "climate",
+          "en": "Climate",
+          "zh": "氣候"
+        },
+        {
+          "id": "geology",
+          "en": "Geology and earthquakes",
+          "zh": "地質與地震"
+        },
+        {
+          "id": "ecology",
+          "en": "Ecology and biodiversity",
+          "zh": "生態與生物多樣性"
+        },
+        {
+          "id": "oceans-polar",
+          "en": "Oceans and polar regions",
+          "zh": "海洋與極地"
+        },
+        {
+          "id": "planetary",
+          "en": "Planetary science",
+          "zh": "行星科學"
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "openalex_fields": [
+        33,
+        20,
+        32,
+        14,
+        18
+      ],
+      "subfields": [
+        {
+          "id": "replication",
+          "en": "Replication and methods",
+          "zh": "重複驗證與研究方法"
+        },
+        {
+          "id": "economics",
+          "en": "Economics",
+          "zh": "經濟學"
+        },
+        {
+          "id": "psychology",
+          "en": "Psychology and behaviour",
+          "zh": "心理與行為"
+        },
+        {
+          "id": "politics-society",
+          "en": "Politics and society",
+          "zh": "政治與社會"
+        },
+        {
+          "id": "history-at-scale",
+          "en": "History at scale",
+          "zh": "大規模歷史研究"
+        },
+        {
+          "id": "surveys-experiments",
+          "en": "Surveys and experiments",
+          "zh": "問卷調查與實驗"
+        }
+      ]
+    },
+    {
+      "id": "humanities",
+      "openalex_fields": [
+        12
+      ],
+      "subfields": [
+        {
+          "id": "ancient-texts",
+          "en": "Ancient texts",
+          "zh": "古代文獻"
+        },
+        {
+          "id": "scripture-translation",
+          "en": "Scripture translation",
+          "zh": "經文翻譯"
+        },
+        {
+          "id": "theology",
+          "en": "Theology and religious studies",
+          "zh": "神學與宗教研究"
+        },
+        {
+          "id": "archaeology",
+          "en": "Archaeology and heritage",
+          "zh": "考古與文化資產"
+        },
+        {
+          "id": "languages",
+          "en": "Languages and linguistics",
+          "zh": "語言與語言學"
+        },
+        {
+          "id": "literature-arts",
+          "en": "Literature and the arts",
+          "zh": "文學與藝術"
+        },
+        {
+          "id": "philosophy",
+          "en": "Philosophy",
+          "zh": "哲學"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    17,
+    22,
+    21
+  ]
+}

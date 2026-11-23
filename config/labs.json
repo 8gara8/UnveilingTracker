@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "labs": [
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "hosts": [
+        "deepmind.google",
+        "deepmind.com"
+      ],
+      "paths": [
+        "/"
+      ]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "hosts": [
+        "openai.com",
+        "www.openai.com"
+      ],
+      "paths": [
+        "/"
+      ]
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "hosts": [
+        "www.anthropic.com",
+        "anthropic.com",
+        "claude.com"
+      ],
+      "paths": [
+        "/"
+      ]
+    },
+    {
+      "id": "meta-fair",
+      "name": "Meta FAIR",
+      "hosts": [
+        "ai.meta.com"
+      ],
+      "paths": [
+        "/blog/",
+        "/research/"
+      ]
+    },
+    {
+      "id": "microsoft-research-ai-for-science",
+      "name": "Microsoft Research AI for Science",
+      "hosts": [
+        "www.microsoft.com",
+        "microsoft.com"
+      ],
+      "paths": [
+        "/en-us/research/"
+      ]
+    },
+    {
+      "id": "futurehouse",
+      "name": "FutureHouse",
+      "hosts": [
+        "www.futurehouse.org",
+        "futurehouse.org"
+      ],
+      "paths": [
+        "/"
+      ]
+    },
+    {
+      "id": "periodic-labs",
+      "name": "Periodic Labs",
+      "hosts": [
+        "periodic.com",
+        "www.periodic.com"
+      ],
+      "paths": [
+        "/"
+      ]
+    },
+    {
+      "id": "isomorphic-labs",
+      "name": "Isomorphic Labs",
+      "hosts": [
+        "www.isomorphiclabs.com",
+        "isomorphiclabs.com"
+      ],
+      "paths": [
+        "/"
+      ]
+    },
+    {
+      "id": "lila-sciences",
+      "name": "Lila Sciences",
+      "hosts": [
+        "lila.ai",
+        "www.lila.ai"
+      ],
+      "paths": [
+        "/"
+      ]
+    },
+    {
+      "id": "sakana-ai",
+      "name": "Sakana AI",
+      "hosts": [
+        "sakana.ai"
+      ],
+      "paths": [
+        "/"
+      ]
+    },
+    {
+      "id": "arc-institute",
+      "name": "Arc Institute",
+      "hosts": [
+        "arcinstitute.org",
+        "www.arcinstitute.org"
+      ],
+      "paths": [
+        "/"
+      ]
+    },
+    {
+      "id": "allen-institute-for-ai",
+      "name": "Allen Institute for AI",
+      "hosts": [
+        "allenai.org",
+        "www.allenai.org"
+      ],
+      "paths": [
+        "/"
+      ]
+    }
+  ]
+}

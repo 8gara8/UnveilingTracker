@@ -622,8 +622,9 @@ Cyber's §4.1, with these changes:
 - **Sentences** are `splitSentences()` (`lib/text.ts`, Cyber's, rewritten to these rules, the one splitter
   that `lib/readability.ts`, the rules and `lib/chat.ts` import): split after `.`, `?` or `!` followed by
   a space and a capital letter, a digit or a quote mark, never inside a number ("2.5"), a known
-  abbreviation (`ABBREVIATIONS` in `lib/vocab.ts`: "e.g.", "i.e.", "et al.", "Dr.", "St.", "No.", "vs.") or
-  a quoted span. Chinese sentences split after `。`, `？` or `！`.
+  abbreviation (`ABBREVIATIONS` in `lib/vocab.ts`: "e.g.", "i.e.", "et al.", "Dr.", "St.", "No.", "vs.",
+  "U.S.", "U.K.", "Prof.", "Fig.", "Eq.", "cf.", "approx.", "Jr.") or a quoted span. Chinese sentences
+  split after `。`, `？` or `！`.
 - **URLs** through Cyber's `normalizeUrl()`. DOIs are lower-cased and stored without `https://doi.org/`.
 - **Numbers.** Counts are integers; shares and interval bounds are fractions in [0, 1] to 4 decimal
   places; displayed through §5.2's helpers only.

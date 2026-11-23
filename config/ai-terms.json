@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "version": 1,
+  "phrases": [
+    {
+      "phrase": "machine learning",
+      "in_pace": true
+    },
+    {
+      "phrase": "deep learning",
+      "in_pace": true
+    },
+    {
+      "phrase": "neural network",
+      "in_pace": true
+    },
+    {
+      "phrase": "artificial intelligence",
+      "in_pace": true
+    },
+    {
+      "phrase": "large language model",
+      "in_pace": true
+    },
+    {
+      "phrase": "language model",
+      "in_pace": true
+    },
+    {
+      "phrase": "transformer model",
+      "in_pace": true
+    },
+    {
+      "phrase": "reinforcement learning",
+      "in_pace": true
+    },
+    {
+      "phrase": "generative model",
+      "in_pace": true
+    },
+    {
+      "phrase": "diffusion model",
+      "in_pace": true
+    },
+    {
+      "phrase": "graph neural network",
+      "in_pace": true
+    },
+    {
+      "phrase": "foundation model",
+      "in_pace": true
+    },
+    {
+      "phrase": "AlphaFold",
+      "in_pace": true
+    },
+    {
+      "phrase": "convolutional neural",
+      "in_pace": true
+    },
+    {
+      "phrase": "random forest",
+      "in_pace": true
+    },
+    {
+      "phrase": "support vector machine",
+      "in_pace": true
+    },
+    {
+      "phrase": "Bayesian optimization",
+      "in_pace": true
+    },
+    {
+      "phrase": "active learning",
+      "in_pace": true
+    },
+    {
+      "phrase": "autonomous laboratory",
+      "in_pace": true
+    },
+    {
+      "phrase": "self-driving laboratory",
+      "in_pace": true
+    }
+  ]
+}
