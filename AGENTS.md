@@ -58,8 +58,12 @@ secondary: one Pace line a day, and charts on Mondays (SPEC §1).
   `unveilingtracker.vercel.app`. Before the PR opened, an independent review of the spec found 83
   problems; 17 groups fixed them, then a consistency pass by part and a follow-up pass settled what lay
   between the groups, and four short rounds fixed the seams between those, every step checked again by a
-  second reader (SPEC §0.4 rows 3 to 100). The final commit's checks ran in the cloud container and in
-  CI; Kobol runs them again when it is next reachable.
+  second reader (SPEC §0.4 rows 3 to 100). PR #1 opened ready for review on 2026-11-23 at 09:21 Taipei
+  (01:21 UTC) on `551103e`. Codex round 1 found two P2s, both checked by independent readers and fixed in
+  the next commit: `syncMain()` now reads each local commit's paths and the rebase's result (row 101),
+  and Appendix C keeps only what the build relies on (row 102; the username in the paths stays, as code
+  defaults, and is JL's call). The final commit's checks ran in the cloud container and in CI; Kobol
+  runs them again when it is next reachable.
 - **Decisions by JL (do not reopen; design v0.4):**
   - A daily brief, a Monday week in review and a Sunday deep dive from the Ledger. Morning only,
     everything ready before 08:00 Taipei. No alerts of any kind. No day count.

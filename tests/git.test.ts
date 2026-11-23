@@ -3,7 +3,9 @@
 // deadline. Each case runs on a bare remote standing in for GitHub and its clone, in a temporary folder;
 // nothing reaches the network. Cyber's tests/git.test.ts at the fork commit, adapted: the publish cases
 // (commit subjects and the content layout) return in P3 with scripts/publish.ts, so the layout here is a
-// stand-in (docs/PROVENANCE.md).
+// stand-in, and six cases check that syncMain() reads each local commit and the rebase's result: a revert,
+// a rename into the layout, a merge with -s ours, a local merge of origin's main, a merge's own change and
+// an edit that follows a file origin moved (docs/PROVENANCE.md).
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
@@ -125,6 +127,95 @@ describe("syncMain", () => {
     r.git("add", "scripts");
     r.git("commit", "-q", "-m", "code: local");
     await expect(syncMain(git(r.root), LAYOUT)).rejects.toThrow(/outside the content layout/);
+  }, T);
+
+  it("G1: a code commit and its revert are a SyncError, though the tip's tree changes content/ alone", async () => {
+    const r = makeRepo();
+    write(r, "content/briefs/2026-11-23.json", "{}\n");
+    r.git("add", "content");
+    r.git("commit", "-q", "-m", "edition: 2026-11-23 (full)");
+    write(r, "scripts/x.ts", "export const x = 1;\n");
+    r.git("add", "scripts");
+    r.git("commit", "-q", "-m", "code: by mistake");
+    r.git("revert", "--no-edit", "HEAD");
+    r.commitOnRemote({ "content/status/2026-11-24.json": "{}\n" }, "status: 2026-11-24");
+    const head = r.git("rev-parse", "HEAD");
+    await expect(syncMain(git(r.root), LAYOUT)).rejects.toThrow(/touching scripts\/x\.ts, outside the content layout/);
+    expect(r.git("rev-parse", "HEAD")).toBe(head);
+  }, T);
+
+  it("G1: moving a tracked file outside the layout into content/ is a SyncError (a rename counts as a delete)", async () => {
+    const r = makeRepo();
+    const code = Array.from({ length: 10 }, (_, i) => `export const k${i} = ${i};`).join("\n") + "\n";
+    r.commitOnRemote({ "scripts/keep.ts": code }, "code: keep.ts");
+    r.git("pull", "-q", "--ff-only", "origin", "main");
+    r.git("mv", "scripts/keep.ts", "content/keep.ts");
+    r.git("commit", "-q", "-m", "content: move keep");
+    r.commitOnRemote({ "content/status/2026-11-24.json": "{}\n" }, "status: 2026-11-24");
+    await expect(syncMain(git(r.root), LAYOUT)).rejects.toThrow(/touching scripts\/keep\.ts, outside the content layout/);
+  }, T);
+
+  it("G1: a side branch's code commit merged with -s ours is a SyncError (the rebase would replay it)", async () => {
+    const r = makeRepo();
+    r.git("switch", "-q", "-c", "side");
+    write(r, "scripts/x.ts", "export const x = 1;\n");
+    r.git("add", "scripts");
+    r.git("commit", "-q", "-m", "code: side");
+    r.git("switch", "-q", "main");
+    write(r, "content/briefs/2026-11-23.json", "{}\n");
+    r.git("add", "content");
+    r.git("commit", "-q", "-m", "edition: 2026-11-23 (full)");
+    r.git("merge", "-q", "-s", "ours", "-m", "merge side", "side");
+    r.commitOnRemote({ "content/status/2026-11-24.json": "{}\n" }, "status: 2026-11-24");
+    await expect(syncMain(git(r.root), LAYOUT)).rejects.toThrow(/touching scripts\/x\.ts, outside the content layout/);
+  }, T);
+
+  it("G1: a local merge of origin's main is rebased flat, leaving the content commits alone", async () => {
+    const r = makeRepo();
+    write(r, "content/briefs/2026-11-23.json", "{}\n");
+    r.git("add", "content");
+    r.git("commit", "-q", "-m", "edition: 2026-11-23 (full)");
+    r.commitOnRemote({ "scripts/pr.ts": "export {};\n" }, "code: a merged PR");
+    r.git("fetch", "-q", "origin", "main");
+    r.git("merge", "-q", "--no-ff", "-m", "merge origin/main", "origin/main");
+    write(r, "content/briefs/2026-11-24.json", "{}\n");
+    r.git("add", "content");
+    r.git("commit", "-q", "-m", "edition: 2026-11-24 (full)");
+    r.commitOnRemote({ "content/status/2026-11-24.json": "{}\n" }, "status: 2026-11-24");
+    await expect(syncMain(git(r.root), LAYOUT)).resolves.toEqual({ ahead: 3, moved: true });
+    expect(r.git("rev-list", "--merges", "origin/main..HEAD")).toBe("");
+    expect(r.git("log", "--no-renames", "--format=", "--name-only", "origin/main..HEAD").split("\n").sort()).toEqual(["content/briefs/2026-11-23.json", "content/briefs/2026-11-24.json"]);
+  }, T);
+
+  it("G1: a merge commit's own change outside the layout is still a SyncError", async () => {
+    const r = makeRepo();
+    r.git("switch", "-q", "-c", "side");
+    write(r, "content/briefs/2026-11-22.json", "{}\n");
+    r.git("add", "content");
+    r.git("commit", "-q", "-m", "edition: 2026-11-22 (full)");
+    r.git("switch", "-q", "main");
+    r.git("merge", "-q", "--no-ff", "--no-commit", "side");
+    write(r, "scripts/evil.ts", "export {};\n");
+    r.git("add", "scripts");
+    r.git("commit", "-q", "-m", "merge side");
+    r.commitOnRemote({ "content/status/2026-11-24.json": "{}\n" }, "status: 2026-11-24");
+    await expect(syncMain(git(r.root), LAYOUT)).rejects.toThrow(/touching scripts\/evil\.ts, outside the content layout/);
+  }, T);
+
+  it("G1: a content edit the rebase moves to where origin moved the file is a SyncError, and main is kept", async () => {
+    const r = makeRepo();
+    write(r, "content/status/2026-11-23.json", "{\"local\": true}\n");
+    r.git("commit", "-q", "-am", "status: local");
+    const head = r.git("rev-parse", "HEAD");
+    const other = path.join(r.root, "..", "mover");
+    gitIn(path.dirname(other), ["clone", "-q", `file://${r.remote}`, other]);
+    fs.mkdirSync(path.join(other, "scripts"));
+    gitIn(other, ["mv", "content/status/2026-11-23.json", "scripts/seed.json"]);
+    gitIn(other, ["commit", "-q", "-m", "code: move the seed"]);
+    gitIn(other, ["push", "-q", "origin", "main"]);
+    await expect(syncMain(git(r.root), LAYOUT)).rejects.toThrow(/rebased commits touch scripts\/seed\.json/);
+    expect(r.git("rev-parse", "HEAD")).toBe(head);
+    expect(r.git("status", "--porcelain")).toBe("");
   }, T);
 
   it("G1: a rebase conflict is aborted and thrown as a SyncError", async () => {

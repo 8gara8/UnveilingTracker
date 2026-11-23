@@ -300,6 +300,8 @@ in the same PR and is listed here.
 | 98 | #1 | §4.12 (Stored records) | No test that reads `config/` or a `run.json` budget reads a correction's `before`, which publish copies from text published earlier (§8.7). | Pre-PR review: those tests run on the corrections being published, so a list change after a text was published, such as a new avoid-list term, would make publish refuse any correction of that text, and refuse one that JL upheld every morning, since the report comes back until the correction is stored. |
 | 99 | #1 | §8.9 (safety flags), §10 (P3 step 6) | A correction written on a term before its name began to fail `DUAL_USE` or `BLOCKED_HOST` still names it by `term_id`, as does each brief that lists that correction, so P3 settles what the PR that deletes the term does with them, with its test and a §0.4 row; §10 P3 step 6 lists it. | Pre-PR review: XREF fails a correction or brief that names a deleted term (corrections name existing records, with sequential ids), so the PR that §8.9 asks for would turn CI red, and the spec gave it no way through. |
 | 100 | #1 | §4.3 (`RungEntry.date`), §4.10, §4.12 (`CLAIMED_CAP`, `LANDMARK_BASIS`), §8.9 (To the agent), §11 (`PROMPT.md` step 4, `STYLE.md` §12) | An upheld report on a wrong rung, which no correction may name (row 97), is answered by a rung entry dated D, in `rung_changes` or the returning entry's `rung`, that cites the record showing the right rung, beside a correction of the finding's `explainer.how_sure` that carries the `report_id`, and a `significance` correction when CLAIMED_CAP or LANDMARK_BASIS needs one: CLAIMED_CAP also judges a finding that a draft rung entry moves to claimed or preprint, and LANDMARK_BASIS a Landmark that one moves from confirmed or applied to checked. `RungEntry.date` is D for such an entry, so RUNG_ORDER passes it. `PROMPT.md` step 4 says so, and `STYLE.md` §12 says so too and that a `field` correction comes with its `subfield` one. `tests/validate.test.ts` passes such a draft through RUNG_ORDER, REPORT_DECISION and REPORT_UPHELD, and fails LANDMARK_BASIS on one that moves a Landmark with one reaction from confirmed to checked with no `significance` correction. | Pre-PR review: once SCHEMA failed every correction on `rung` (row 97), an upheld report on a wrong rung had no valid answer, so the report would have come back every morning, and an entry dated by its record, older than the wrong one, would have failed RUNG_ORDER; and once the rung was put right, a Landmark whose only basis was the wrong confirmed rung would have stayed a counted Landmark. |
+| 101 | #1 | §8.7, §10 Foundation step 2, `docs/PROVENANCE.md` | `syncMain()` reads the paths of each local commit origin lacks (a rename as a delete and an add) as well as the tip's diff against the merge base, which holds a merge's own change, and after the rebase checks the rebased commits the same way, putting main back where it was and refusing when one touches a path outside the layout. `tests/git.test.ts` adds six cases: a revert, a rename into the layout, a merge with `-s ours`, a local merge of origin's main, a merge's own change, and an edit that follows a file origin moved. | PR 1 review: Cyber's reads only the tip's diff, so a code commit undone by a later revert, moved into `content/` or merged with `-s ours` passed the check while the rebase replayed it onto main, and publish's next push would have sent code to origin's `main`, which takes only `content/` from publish (§0.2). |
+| 102 | #1 | Appendix C | Appendix C records only what the build relies on, and its intro says so. It drops the macOS version and build, the sleep readout, the disk figures, the exact versions of Node, npm and `gh`, and `gh`'s scope list; Node and npm keep their major versions, the CLI its pin 2.1.316, and `gh` the access the build needs (pushing the CI workflow file). The paths under `/Users/kobol` stay, as code defaults (row 4). | PR 1 review: the repo is public (§0.2), and none of those details had a use in the build. The paths are the design, as in Cyber's spec, so the username stays and that part of the comment is answered in words and left for JL (§0.1 item 5). |
 
 ---
 ## 1. Project overview
@@ -2765,6 +2767,14 @@ layout check, push with retries, `pushPending()` and `dropPendingEditions()`), w
 | full | `briefs/D.json` and any earlier brief a `removed` correction rewrites, new and changed `findings/*.json`, `glossary.json`, `corrections.json`, `reports.json`, `archive-index.json` | `edition: D (full)`, `(partial)`, `(full, English-only)` or `(partial, English-only)` (English-only when `languages.zh` is false) |
 | state | `state/pace-weekly.json` alone, never a metrics file (after go-live, `backfill --push`) | `state: pace to <cutoff>` |
 
+Its `syncMain()` (`scripts/lib/git.ts`, kept in Foundation) is Cyber's with a stricter layout check
+(§0.4 row 101). Cyber's reads only the tip's diff, which a commit undone by its revert, a rename into
+`content/` or a branch merged with `-s ours` leaves clean, though the rebase replays each of those
+commits. This one also reads the paths of each local commit origin lacks, counting a rename as a delete
+and an add. After the rebase it checks the rebased commits the same way and, when one touches a path
+outside the layout (a local edit follows a file that origin has moved out of it), puts main back where
+it was and refuses.
+
 `applyDraft()` (`lib/apply.ts`) turns the two drafts into writes: new findings get ids (§4.3), `depth`,
 `first_brief`, `briefs`, `terms`, `seen_as` and `added`; returning findings get their `since_then` note,
 new sources (ids continuing their list) and rung entries; every finding written gets its `disclosure`
@@ -3422,10 +3432,11 @@ this spec, the design, the agent guide, CI, the Vercel project and the CLI on Ko
    `scripts/lib/` `run.ts`, `lock.ts`, `log.ts`, `git.ts`, `clock.ts` and `keychain.ts`,
    `tsconfig.json`, `vitest.config.ts`, `tests/setup/offline.ts`, the CI workflow, the PR template and
    the lockfile; rename `CT_` to `UT_`, `.ct-lock-sha` to `.ut-lock-sha`, `cybertracker-claude-oauth` to
-   `unveiling-claude-oauth`, `/Users/kobol/.cybertracker/` to `/Users/kobol/.unveiling/`. Every other kept
-   or adapted file is copied by the phase that adapts it, from the fork commit, as Cyber's own Foundation
-   did, so nothing is stubbed and no test is skipped. `PROVENANCE.md` lists every file of Cyber's tree
-   outside `content/` as copied, adapted, later (with its phase), dropped or replaced.
+   `unveiling-claude-oauth`, `/Users/kobol/.cybertracker/` to `/Users/kobol/.unveiling/`; `git.ts` also
+   gets §8.7's stricter `syncMain()`. Every other kept or adapted file is copied by the phase that adapts
+   it, from the fork commit, as Cyber's own Foundation did, so nothing is stubbed and no test is skipped.
+   `PROVENANCE.md` lists every file of Cyber's tree outside `content/` as copied, adapted, later (with
+   its phase), dropped or replaced.
 3. **This spec** as `SPEC.md`; **`docs/DESIGN.md`**, design v0.4 exported from the Claude Doc to
    Markdown, with a header line giving its link, version and the date JL settled it; **`AGENTS.md`** and
    **`CLAUDE.md`** (§3); **README.md** with a status line and the data credits to come.
@@ -4064,16 +4075,18 @@ P2" are checked on Kobol before P2 finishes. After P1, `config/` governs.
 
 ## Appendix C. Kobol facts
 
-What the build relies on about Kobol; times are Asia/Taipei. Facts carried from CyberTracker's
-Appendix C (checked 2026-11-07 to 16) were rechecked in Foundation on 2026-11-22 at about 20:40 and
-21:10, from the Remote Control session on Kobol.
+What the build relies on about Kobol, and nothing more, since the repo is public (§0.2): no OS version
+or build, no exact version of a tool the build does not pin (its major version is enough), no disk
+figures and no token scopes. Times are Asia/Taipei. Facts carried from CyberTracker's Appendix C
+(checked 2026-11-07 to 16) were rechecked in Foundation on 2026-11-22 at about 20:40 and 21:10, from the
+Remote Control session on Kobol.
 
 | Fact | Value | Checked |
 |---|---|---|
-| Machine | MacBook Pro, Apple silicon (`uname -m` arm64), macOS 27.2.1 (build 26B131); user `kobol`, home `/Users/kobol`; `pmset -g` shows system sleep 0 (never); 743 GiB free of 926 GiB | 2026-11-22 |
+| Machine | MacBook Pro, Apple silicon (`uname -m` arm64), macOS; user `kobol`, home `/Users/kobol`, which the code defaults use (§0.2); set never to sleep, as the 03:15 task needs (§9.3) | 2026-11-22 |
 | Time zone | `/etc/localtime` is Asia/Taipei, so the task's 03:15 is Taipei time | 2026-11-22 |
-| Node | `/opt/homebrew/bin/node` v26.13.0 (Mach-O arm64) and `/opt/homebrew/bin/npm` 11.20.0; never `/usr/local/bin/node` (x86_64) | 2026-11-22 |
-| Git and `gh` | `/usr/bin/git`; `gh` 2.103.3 at `/opt/homebrew/bin/gh`, logged in as 8gara8 (keyring; `repo` and `workflow` among its scopes) | 2026-11-22 |
+| Node | Node 26 at `/opt/homebrew/bin/node` (Mach-O arm64) and npm 11 at `/opt/homebrew/bin/npm`; never `/usr/local/bin/node` (x86_64) | 2026-11-22 |
+| Git and `gh` | `/usr/bin/git`; `gh` at `/opt/homebrew/bin/gh`, logged in as 8gara8 (§9.6), able to push branches, the CI workflow file included | 2026-11-22 |
 | Repo | `/Users/kobol/Projects/UnveilingTracker` (never under `~/Documents`), cloned with the repo-level git identity CyberTracker's checkout uses; CyberTracker's fork commit read-only at `/Users/kobol/.unveiling/cyber-base` | 2026-11-22 |
 | Claude CLIs | JL's `~/.local/bin/claude` is x86_64 under Rosetta: never use. The agents': Cyber's pinned version 2.1.316, `/Users/kobol/.unveiling/cli/node_modules/.bin/claude` (Mach-O arm64); config dir `/Users/kobol/.unveiling/claude`, mode 700, not logged in; the token helper `/Users/kobol/.unveiling/store-token.zsh`, mode 700, not yet run | 2026-11-22 |
 | Token | Login keychain, service `unveiling-claude-oauth`, absent until JL creates it in P3 | P3 |

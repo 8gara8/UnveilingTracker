@@ -5,7 +5,8 @@ import { run, type RunResult } from "./run";
 // so publishing can't run past the hard stop. Output is kept up to GIT_STDOUT_MAX_BYTES (`git show` of a
 // state or metrics file can pass run()'s 1 MB default); output cut at the limit is a GitOutputCut error,
 // never a string that looks whole. Cyber's scripts/lib/git.ts at the fork commit, adapted: the fallback
-// commit identity names this project (docs/PROVENANCE.md).
+// commit identity names this project, and syncMain() checks the paths of each local commit and of the
+// rebase's result, where Cyber's reads only the tip's diff (SPEC §8.7, docs/PROVENANCE.md).
 
 export class GitError extends Error {}
 
@@ -94,12 +95,29 @@ export function porcelainPaths(status: string): string[] {
 }
 
 /**
+ * The paths outside `layout` that main's unpushed commits touch: those of each non-merge commit in
+ * origin/main..HEAD on its own, since the rebase replays each one (a change and its revert, or a side branch
+ * merged with `-s ours`, leave the tip's tree clean), and the tip's tree against the merge base, which holds a
+ * merge commit's own changes. A rename counts as a delete and an add; -z keeps names unquoted, and
+ * --no-show-signature keeps a log.showSignature setting from adding lines.
+ */
+async function pathsOutside(g: Git, layout: Layout): Promise<string[]> {
+  const names = async (args: string[]) => (await g(args)).split("\0").filter(Boolean);
+  const touched = [
+    ...(await names(["log", "--no-merges", "--no-renames", "--no-show-signature", "-z", "--format=", "--name-only", "origin/main..HEAD"])),
+    ...(await names(["diff", "--no-renames", "-z", "--name-only", "origin/main...HEAD"])),
+  ];
+  return [...new Set(touched)].filter((f) => !layout(f));
+}
+
+/**
  * Brings the checked-out main up to date with origin's (SPEC §8.7, Cyber's §8.7 step 2). Refuses (SyncError) when the
  * working tree is dirty, with untracked files counted, or when a local commit origin lacks touches a path
- * outside `layout`. With no local commits it fast-forwards (`merge --ff-only`); otherwise it rebases them
- * onto origin's main, aborting and throwing on conflict. No `--autostash`: staged files live in cache/, so
- * a clean tree is all a sync ever needs. `moved` is true when local commits now sit on newer commits from
- * origin.
+ * outside `layout` (pathsOutside()). With no local commits it fast-forwards (`merge --ff-only`); otherwise it
+ * rebases them onto origin's main, aborting and throwing on conflict, and puts main back where it was and
+ * throws when the rebased commits touch such a path (a local edit follows a file origin has moved out of the
+ * layout). No `--autostash`: staged files live in cache/, so a clean tree is all a sync ever needs. `moved`
+ * is true when local commits now sit on newer commits from origin.
  */
 export async function syncMain(g: Git, layout: Layout): Promise<{ ahead: number; moved: boolean }> {
   const dirty = porcelainPaths(await g(["status", "--porcelain", "--untracked-files=all"]));
@@ -110,7 +128,7 @@ export async function syncMain(g: Git, layout: Layout): Promise<{ ahead: number;
     await g(["merge", "--ff-only", "origin/main"]);
     return { ahead, moved: false };
   }
-  const other = (await g(["diff", "--name-only", "origin/main...HEAD"])).split("\n").filter((f) => f && !layout(f));
+  const other = await pathsOutside(g, layout);
   if (other.length) throw new SyncError(`main has ${ahead} local commit(s) touching ${other.slice(0, 3).join(", ")}, outside the content layout.`);
   const before = await g(["rev-parse", "HEAD"]);
   // A rebase writes commits, so it needs a committer identity, which a fresh machine may lack.
@@ -120,6 +138,13 @@ export async function syncMain(g: Git, layout: Layout): Promise<{ ahead: number;
   } catch (e) {
     await g(["rebase", "--abort"]).catch(() => {});
     throw new SyncError(`Couldn't put main's unpushed commits on top of origin's main: ${(e as Error).message}`);
+  }
+  // The rebase carries a local edit to wherever origin has since moved the file, so check what it wrote too.
+  // The tree was clean before the rebase, so the reset loses nothing.
+  const replayed = await pathsOutside(g, layout);
+  if (replayed.length) {
+    await g(["reset", "-q", "--hard", before]);
+    throw new SyncError(`main's rebased commits touch ${replayed.slice(0, 3).join(", ")}, outside the content layout; main is back at ${before.slice(0, 7)}.`);
   }
   return { ahead, moved: (await g(["rev-parse", "HEAD"])) !== before };
 }

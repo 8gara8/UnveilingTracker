@@ -95,7 +95,7 @@ means file X at the fork commit.
 | CyberTracker file | Verdict | What changed |
 |---|---|---|
 | `scripts/lib/run.ts`, `scripts/lib/lock.ts`, `scripts/lib/log.ts` | copied | Comments only |
-| `scripts/lib/git.ts` | adapted | The fallback commit identity is `UnveilingTracker` `run@unveilingtracker.invalid` |
+| `scripts/lib/git.ts` | adapted | The fallback commit identity is `UnveilingTracker` `run@unveilingtracker.invalid`; `syncMain()` also reads the paths of each local commit origin lacks (a rename as a delete and an add) and checks the rebased commits, putting main back when one touches a path outside the layout, where CyberTracker's reads only the tip's diff, which a revert, a rename into `content/` or a merge with `-s ours` leaves clean (SPEC §8.7, §0.4 row 101) |
 | `scripts/lib/clock.ts` | adapted | The --no-deadline gaps are SPEC §8.2's: the retry cutoff 35 minutes and the Chinese pass's start 20 minutes before the hard stop (CyberTracker: 50, no Chinese pass); the other limits are CyberTracker's TIMEOUTS, which P3 checks against §8.2 |
 | `scripts/lib/keychain.ts` | adapted | The service is `unveiling-claude-oauth` |
 | `scripts/lib/{agent,transcript,validate-loop,status,deploy,paths,prune,run-lines}.ts` | later (P3) | The agent harness for two passes, transcripts, the repair loop, status records, the deploy check, paths, pruning and run lines |
@@ -148,7 +148,7 @@ means file X at the fork commit.
 | `tests/no-network.test.ts` | adapted | The `fetchFeed()` case returns in P2 |
 | `tests/lib.test.ts` | adapted | Only the date cases, with this project's data cutoff, 13-week window and 260-week baseline, plus json cases; the URL, word-count and blocked-host cases return in P1 |
 | `tests/run.test.ts` | adapted | The sample state file holds weekly counts; the advisory reader's case is dropped |
-| `tests/git.test.ts` | adapted | `syncMain()` on a local bare remote, plus `ensureIdentity()`, `withRetry()`, `porcelainPaths()`, `onOriginMain()` and the deadline; the publish cases return in P3 |
+| `tests/git.test.ts` | adapted | `syncMain()` on a local bare remote, plus `ensureIdentity()`, `withRetry()`, `porcelainPaths()`, `onOriginMain()` and the deadline; six new `syncMain()` cases (a revert, a rename into the layout, a merge with `-s ours`, a local merge of origin's main, a merge's own change, an edit that follows a file origin moved); the publish cases return in P3 |
 | `tests/lock.test.ts` | copied | The temporary folder's name |
 | `tests/clock.test.ts` | adapted | This run's 03:15 start and 04:25 hard stop, and a check of the --no-deadline gaps |
 | `tests/no-europe-strings.test.ts` | replaced | By `tests/no-cyber-strings.test.ts` (SPEC §10 Foundation step 6) |
