@@ -1,0 +1,767 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Unveiling Tracker DraftBrief",
+  "description": "The English drafting agent's one output file, drafts/YYYY-MM-DD.json (SPEC.md §4.5). Generated from lib/schema/draft.ts by `npm run schema:gen`; do not edit by hand. This file shows structure only: every key of an object is required, no other key is allowed, and each value has the type, enum, id pattern, length or item count shown. The word budgets, counts, cross-references and other rules in the descriptions are enforced by the validator (SPEC.md §4.12), together with checks no JSON Schema keyword can state, such as a real calendar date and ai_helped agreeing with ai.role. A draft that satisfies this file can still fail validation.",
+  "type": "object",
+  "properties": {
+    "schema_version": {"type":"number","const":1},
+    "date": {"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$","description":"The edition date from the context"},
+    "generated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,9})?)?(?:Z|[+-]\\d{2}:\\d{2})$",
+      "description": "When you finished: between the context's window end and its deadline"
+    },
+    "lead": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {"type":"string","minLength":1,"description":"One sentence"},
+          "refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^(?:new-[1-9][0-9]*|(?:math|phys|chem|bio|earth|soc|hum)-\\d{4}-\\d{4})$"
+            },
+            "description": "At least 1 finding in this brief, except on a day with none"
+          }
+        },
+        "required": ["text","refs"],
+        "additionalProperties": false
+      },
+      "description": "1 to 3 sentences, at most 60 words in all; write it last. A quiet day says so"
+    },
+    "story": {
+      "anyOf": [
+        {"type":"string","pattern":"^(?:new-[1-9][0-9]*|(?:math|phys|chem|bio|earth|soc|hum)-\\d{4}-\\d{4})$"},
+        {"type":"null"}
+      ],
+      "description": "The story of the day, or null when there is no finding; on a Monday or a Sunday only a Major or Landmark finding"
+    },
+    "items": {
+      "type": "array",
+      "items": {"type":"string","pattern":"^(?:new-[1-9][0-9]*|(?:math|phys|chem|bio|earth|soc|hum)-\\d{4}-\\d{4})$"},
+      "description": "In display order; story plus items at most the context's budgets.findings_max, at most 2 on a Monday or a Sunday"
+    },
+    "new_findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ref": {"type":"string","pattern":"^new-[1-9][0-9]*$","description":"new-1, new-2, ... in order"},
+          "field": {
+            "type": "string",
+            "enum": ["mathematics","physics","chemistry","biology","earth","social","humanities"]
+          },
+          "subfield": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "description": "An id under the field, from the context's config.fields"
+          },
+          "kind": {"type":"string","enum":["result","capability","check","setback","infrastructure","policy_people"]},
+          "title": {"type":"string","minLength":1,"description":"At most 12 words, plain, no hype word"},
+          "explainer": {
+            "type": "object",
+            "properties": {
+              "found": {"type":"string","minLength":1,"description":"What was found. Story at most 55 words"},
+              "matters": {"type":"string","minLength":1,"description":"Why it matters. Story at most 50 words"},
+              "ai_helped": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "How AI helped, naming the system and its maker. Story at most 60 words. null exactly when ai.role is none"
+                  },
+                  {"type":"null"}
+                ]
+              },
+              "how_sure": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Starts with the rung's label and names who says so. Story at most 60 words"
+              },
+              "background": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Story at most 35 words; any other finding at most 40"
+              },
+              "could_lead": {
+                "type": "string",
+                "minLength": 1,
+                "description": "A possibility, never a promise. Story at most 35 words; any other finding at most 40"
+              }
+            },
+            "required": ["found","matters","ai_helped","how_sure","background","could_lead"],
+            "additionalProperties": false,
+            "description": "The story of the day: all six parts together 230 to 280 words. Any other finding: the first four parts together 70 to 100 words"
+          },
+          "go_deeper": {
+            "type": "array",
+            "items": {"type":"string","pattern":"^s[1-9][0-9]*$"},
+            "description": "1 to 3 ids of this finding's primary sources"
+          },
+          "ai": {
+            "type": "object",
+            "properties": {
+              "role": {
+                "type": "string",
+                "enum": ["ai_proposed","ai_solved","ai_ran","ai_tool","ai_checked","none"],
+                "description": "One primary role"
+              },
+              "confidence": {
+                "anyOf": [{"type":"string","enum":["confirmed","claimed"]},{"type":"null"}],
+                "description": "null exactly when role is none"
+              },
+              "systems": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 60,
+                      "description": "At most 60 characters, e.g. AlphaFold 3"
+                    },
+                    "maker": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 60,
+                      "description": "At most 60 characters, e.g. Google DeepMind"
+                    }
+                  },
+                  "required": ["name","maker"],
+                  "additionalProperties": false
+                },
+                "description": "At least one with an AI role, except on a setback, infrastructure or policy_people finding whose sources name no system"
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "source_id": {"type":"string","pattern":"^s[1-9][0-9]*$","description":"A source of this finding"},
+                    "quote": {
+                      "type": "string",
+                      "minLength": 1,
+                      "description": "At most 25 words, verbatim from that source"
+                    },
+                    "from_claimant": {
+                      "type": "boolean",
+                      "description": "true when the source is the maker or a lab that benefits"
+                    }
+                  },
+                  "required": ["source_id","quote","from_claimant"],
+                  "additionalProperties": false
+                },
+                "description": "At least one unless role is none"
+              }
+            },
+            "required": ["role","confidence","systems","evidence"],
+            "additionalProperties": false
+          },
+          "significance": {"type":"string","enum":["landmark","major","notable","watch"]},
+          "rung_history": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "rung": {
+                  "type": "string",
+                  "enum": ["claimed","preprint","checked","confirmed","applied","disputed","retracted"]
+                },
+                "date": {
+                  "type": "string",
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                  "description": "The event's own date, or the edition's date when the entry puts a wrong rung right"
+                },
+                "source_id": {
+                  "type": "string",
+                  "pattern": "^s[1-9][0-9]*$",
+                  "description": "One of this finding's sources (s1, s2, ...)"
+                },
+                "note": {"anyOf":[{"type":"string","minLength":1,"description":"At most 25 words"},{"type":"null"}]}
+              },
+              "required": ["rung","date","source_id","note"],
+              "additionalProperties": false
+            },
+            "description": "Oldest first: your view of the record so far"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^s[1-9][0-9]*$",
+                  "description": "s1, s2, ... in a finding and b1, b2, ... in a brief, in array order, no gaps"
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "paper",
+                    "preprint",
+                    "proof",
+                    "dataset",
+                    "registry",
+                    "statement",
+                    "lab_post",
+                    "checker",
+                    "reaction",
+                    "notice"
+                  ]
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200,
+                  "description": "As published, at most 200 characters, in any language"
+                },
+                "publisher": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80,
+                  "description": "At most 80 characters, e.g. \"Nature\", \"arXiv\", \"ClinicalTrials.gov\""
+                },
+                "url": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "An https URL of a primary record, from the pack, a page you fetched or a search result. Never press, an archive or a redirect wrapper"
+                },
+                "doi": {
+                  "anyOf": [{"type":"string","pattern":"^10\\.\\d{4,9}\\/\\S+$"},{"type":"null"}],
+                  "description": "Lower case, without https://doi.org/; null when the source has none"
+                },
+                "published_at": {
+                  "anyOf": [
+                    {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,9})?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+                        },
+                        {"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"}
+                      ]
+                    },
+                    {"type":"null"}
+                  ],
+                  "description": "ISO 8601 timestamp with offset when the source gives a time, YYYY-MM-DD when it gives only the day, else null. Never invent a time"
+                }
+              },
+              "required": ["id","kind","title","publisher","url","doi","published_at"],
+              "additionalProperties": false
+            },
+            "description": "s1 to sN, in order, no gaps"
+          },
+          "reactions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_id": {"type":"string","pattern":"^s[1-9][0-9]*$"},
+                "who": {"type":"string","minLength":1,"maxLength":80},
+                "affiliation": {"type":"string","minLength":1,"maxLength":100},
+                "quote": {"type":"string","minLength":1,"description":"At most 25 words, verbatim"}
+              },
+              "required": ["source_id","who","affiliation","quote"],
+              "additionalProperties": false
+            },
+            "description": "At most 4"
+          },
+          "artefacts": {
+            "type": "object",
+            "properties": {
+              "doi": {"type":"array","items":{"type":"string","minLength":1}},
+              "arxiv": {
+                "type": "array",
+                "items": {"type":"string","minLength":1},
+                "description": "arXiv ids such as 2501.01234, matched without the version"
+              },
+              "lean": {
+                "type": "array",
+                "items": {"type":"string","minLength":1},
+                "description": "https URLs of Lean files on github.com"
+              },
+              "trial": {"type":"array","items":{"type":"string","minLength":1},"description":"NCT numbers"},
+              "pdb": {"type":"array","items":{"type":"string","minLength":1},"description":"Protein Data Bank ids"}
+            },
+            "required": ["doi","arxiv","lean","trial","pdb"],
+            "additionalProperties": false
+          },
+          "figure": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "source_id": {
+                    "type": "string",
+                    "pattern": "^s[1-9][0-9]*$",
+                    "description": "The paper or dataset the figure comes from"
+                  },
+                  "image_url": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "https, on a host in config/source-tiers.json figure_hosts (FIGURE_LICENCE)"
+                  },
+                  "licence": {"type":"string","enum":["CC-BY-4.0","CC-BY-SA-4.0","CC0-1.0","public-domain"]},
+                  "licence_quote": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "At most 25 words, verbatim from the source page, stating the licence"
+                  },
+                  "credit": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 120,
+                    "description": "At most 120 characters, e.g. \"Figure 2 from Parker et al., Science (2025), CC BY 4.0\""
+                  },
+                  "alt": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "At most 40 words: what the figure shows, plainly"
+                  }
+                },
+                "required": ["source_id","image_url","licence","licence_quote","credit","alt"],
+                "additionalProperties": false
+              },
+              {"type":"null"}
+            ]
+          },
+          "who": {
+            "minItems": 1,
+            "maxItems": 8,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {"type":"string","minLength":1,"maxLength":100},
+                "ror": {
+                  "anyOf": [{"type":"string","pattern":"^0[a-z0-9]{8}$"},{"type":"null"}],
+                  "description": "The ROR id when a feed gives it, else null"
+                }
+              },
+              "required": ["name","ror"],
+              "additionalProperties": false
+            }
+          },
+          "terms": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "new": {"type":"boolean","const":true},
+                    "term": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 60,
+                      "description": "The English term, at most 60 characters; its id is its kebab-case form"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "minLength": 1,
+                      "description": "At most 40 words, plain, using no other undefined jargon"
+                    }
+                  },
+                  "required": ["new","term","definition"],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "new": {"type":"boolean","const":false},
+                    "id": {
+                      "type": "string",
+                      "maxLength": 60,
+                      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+                      "description": "The id of a term already in the glossary"
+                    }
+                  },
+                  "required": ["new","id"],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "related": {
+            "type": "array",
+            "items": {"type":"string","pattern":"^(?:math|phys|chem|bio|earth|soc|hum)-\\d{4}-\\d{4}$"},
+            "description": "At most 5 existing findings"
+          },
+          "first_published": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "description": "The result's own first public date, from its earliest source"
+          }
+        },
+        "required": [
+          "ref",
+          "field",
+          "subfield",
+          "kind",
+          "title",
+          "explainer",
+          "go_deeper",
+          "ai",
+          "significance",
+          "rung_history",
+          "sources",
+          "reactions",
+          "artefacts",
+          "figure",
+          "who",
+          "terms",
+          "related",
+          "first_published"
+        ],
+        "additionalProperties": false
+      },
+      "description": "One for each new-N ref, in order"
+    },
+    "returning": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "finding_id": {
+            "type": "string",
+            "pattern": "^(?:math|phys|chem|bio|earth|soc|hum)-\\d{4}-\\d{4}$",
+            "description": "An existing finding with new facts; it appears in story or items"
+          },
+          "update": {"type":"string","minLength":1,"description":"At most 60 words: the new facts"},
+          "source_ids": {
+            "type": "array",
+            "items": {"type":"string","pattern":"^[sb][1-9][0-9]*$"},
+            "description": "The sources that show the new facts, at least one added this run"
+          },
+          "rung": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "rung": {
+                    "type": "string",
+                    "enum": ["claimed","preprint","checked","confirmed","applied","disputed","retracted"]
+                  },
+                  "date": {
+                    "type": "string",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                    "description": "The event's own date, or the edition's date when the entry puts a wrong rung right"
+                  },
+                  "source_id": {
+                    "type": "string",
+                    "pattern": "^[sb][1-9][0-9]*$",
+                    "description": "The source that shows the rung: one of the finding's own (s1) or one of this draft's brief-level sources (b1)"
+                  },
+                  "note": {"anyOf":[{"type":"string","minLength":1,"description":"At most 25 words"},{"type":"null"}]}
+                },
+                "required": ["rung","date","source_id","note"],
+                "additionalProperties": false
+              },
+              {"type":"null"}
+            ],
+            "description": "A new dated rung entry, or null"
+          }
+        },
+        "required": ["finding_id","update","source_ids","rung"],
+        "additionalProperties": false
+      }
+    },
+    "rung_changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "finding_id": {
+            "type": "string",
+            "pattern": "^(?:math|phys|chem|bio|earth|soc|hum)-\\d{4}-\\d{4}$",
+            "description": "An existing finding that is not in story or items"
+          },
+          "rung": {
+            "type": "object",
+            "properties": {
+              "rung": {
+                "type": "string",
+                "enum": ["claimed","preprint","checked","confirmed","applied","disputed","retracted"]
+              },
+              "date": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                "description": "The event's own date, or the edition's date when the entry puts a wrong rung right"
+              },
+              "source_id": {
+                "type": "string",
+                "pattern": "^[sb][1-9][0-9]*$",
+                "description": "The source that shows the rung: one of the finding's own (s1) or one of this draft's brief-level sources (b1)"
+              },
+              "note": {"anyOf":[{"type":"string","minLength":1,"description":"At most 25 words"},{"type":"null"}]}
+            },
+            "required": ["rung","date","source_id","note"],
+            "additionalProperties": false
+          }
+        },
+        "required": ["finding_id","rung"],
+        "additionalProperties": false
+      }
+    },
+    "ideas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {"type":"string","minLength":1,"description":"At most 40 words"},
+          "who": {"type":"string","minLength":1,"description":"The person whose own published argument it is"},
+          "source_id": {"type":"string","pattern":"^b[1-9][0-9]*$"}
+        },
+        "required": ["text","who","source_id"],
+        "additionalProperties": false
+      },
+      "description": "0 to 2"
+    },
+    "also": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {"type":"string","minLength":1,"description":"At most 20 words"},
+          "field": {
+            "type": "string",
+            "enum": ["mathematics","physics","chemistry","biology","earth","social","humanities"]
+          },
+          "source_id": {"type":"string","pattern":"^b[1-9][0-9]*$"}
+        },
+        "required": ["title","field","source_id"],
+        "additionalProperties": false
+      },
+      "description": "0 to 5"
+    },
+    "deep_dive": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "finding_id": {
+              "type": "string",
+              "pattern": "^(?:math|phys|chem|bio|earth|soc|hum)-\\d{4}-\\d{4}$",
+              "description": "A candidate of the context's ledger_for_sunday"
+            },
+            "text": {"type":"string","minLength":1,"description":"450 to 550 words"},
+            "source_ids": {"type":"array","items":{"type":"string","pattern":"^b[1-9][0-9]*$"}},
+            "why_today": {
+              "type": "string",
+              "enum": ["news","anniversary","rotation"],
+              "description": "One of the candidate's reasons"
+            }
+          },
+          "required": ["finding_id","text","source_ids","why_today"],
+          "additionalProperties": false
+        },
+        {"type":"null"}
+      ],
+      "description": "Sundays only; null on every other day"
+    },
+    "review": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "big_picture": {
+              "type": "string",
+              "minLength": 1,
+              "description": "270 to 330 words, or at most 120 in a week of fewer than 3 findings"
+            },
+            "remarkable": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "finding_id": {
+                      "type": "string",
+                      "pattern": "^(?:math|phys|chem|bio|earth|soc|hum)-\\d{4}-\\d{4}$",
+                      "description": "A finding of the context's week"
+                    },
+                    "note": {"type":"string","minLength":1,"description":"At most 30 words"}
+                  },
+                  "required": ["finding_id","note"],
+                  "additionalProperties": false
+                },
+                {"type":"null"}
+              ],
+              "description": "null exactly when the week has no finding"
+            },
+            "strongest_against": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "At most 50 words, or exactly \"None found this week.\""
+                },
+                "finding_ids": {
+                  "type": "array",
+                  "items": {"type":"string","pattern":"^(?:math|phys|chem|bio|earth|soc|hum)-\\d{4}-\\d{4}$"},
+                  "description": "Every setback and every finding that fell this week; [] only with the exact words"
+                },
+                "source_ids": {"type":"array","items":{"type":"string","pattern":"^b[1-9][0-9]*$"}}
+              },
+              "required": ["text","finding_ids","source_ids"],
+              "additionalProperties": false
+            }
+          },
+          "required": ["big_picture","remarkable","strongest_against"],
+          "additionalProperties": false
+        },
+        {"type":"null"}
+      ],
+      "description": "Non-null exactly on Mondays"
+    },
+    "corrections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "finding_id": {
+            "anyOf": [
+              {"type":"string","pattern":"^(?:math|phys|chem|bio|earth|soc|hum)-\\d{4}-\\d{4}$"},
+              {"type":"null"}
+            ]
+          },
+          "edition_date": {"anyOf":[{"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"},{"type":"null"}]},
+          "term_id": {"anyOf":[{"type":"string","maxLength":60,"pattern":"^[a-z0-9]+(?:-[a-z0-9]+)*$"},{"type":"null"}]},
+          "type": {"type":"string","enum":["correction","clarification","update","removed"]},
+          "path": {
+            "type": "string",
+            "maxLength": 60,
+            "pattern": "^[a-z][a-z0-9_]*(?:\\.[a-z0-9_]+)*$",
+            "description": "Dotted, indices from 0: \"explainer.how_sure\", \"title\", \"lead.1.text\"; on a term \"term\" or \"definition\""
+          },
+          "after": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300,
+            "description": "At most 300 characters: the corrected text or value; for removed, exactly the removed-text string"
+          },
+          "reason": {"type":"string","minLength":1,"description":"At most 40 words"},
+          "source_url": {
+            "anyOf": [{"type":"string","minLength":1},{"type":"null"}],
+            "description": "The primary source that shows the correction is right, or null"
+          },
+          "report_id": {
+            "anyOf": [{"type":"string","pattern":"^R-\\d{4}$"},{"type":"null"}],
+            "description": "Set only on the correction for a report JL upheld, else null"
+          }
+        },
+        "required": ["finding_id","edition_date","term_id","type","path","after","reason","source_url","report_id"],
+        "additionalProperties": false,
+        "description": "Exactly one of finding_id, edition_date and term_id is set: a finding, an edition's brief-level text, or a glossary term"
+      }
+    },
+    "report_decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "report_id": {"type":"string","pattern":"^R-\\d{4}$","description":"An open report of the context"},
+          "outcome": {"type":"string","enum":["upheld","rejected"]},
+          "reason": {"type":"string","minLength":1,"description":"At most 40 words"},
+          "correction": {
+            "anyOf": [{"type":"integer","minimum":0,"maximum":9007199254740991},{"type":"null"}],
+            "description": "When upheld, the index of the correction in corrections that answers it; else null"
+          }
+        },
+        "required": ["report_id","outcome","reason","correction"],
+        "additionalProperties": false
+      },
+      "description": "One for each open report of the context"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^b[1-9][0-9]*$",
+            "description": "s1, s2, ... in a finding and b1, b2, ... in a brief, in array order, no gaps"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "paper",
+              "preprint",
+              "proof",
+              "dataset",
+              "registry",
+              "statement",
+              "lab_post",
+              "checker",
+              "reaction",
+              "notice"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200,
+            "description": "As published, at most 200 characters, in any language"
+          },
+          "publisher": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "description": "At most 80 characters, e.g. \"Nature\", \"arXiv\", \"ClinicalTrials.gov\""
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1,
+            "description": "An https URL of a primary record, from the pack, a page you fetched or a search result. Never press, an archive or a redirect wrapper"
+          },
+          "doi": {
+            "anyOf": [{"type":"string","pattern":"^10\\.\\d{4,9}\\/\\S+$"},{"type":"null"}],
+            "description": "Lower case, without https://doi.org/; null when the source has none"
+          },
+          "published_at": {
+            "anyOf": [
+              {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,9})?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+                  },
+                  {"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"}
+                ]
+              },
+              {"type":"null"}
+            ],
+            "description": "ISO 8601 timestamp with offset when the source gives a time, YYYY-MM-DD when it gives only the day, else null. Never invent a time"
+          }
+        },
+        "required": ["id","kind","title","publisher","url","doi","published_at"],
+        "additionalProperties": false
+      },
+      "description": "b1 to bN, in order, no gaps: what the brief-level text cites"
+    }
+  },
+  "required": [
+    "schema_version",
+    "date",
+    "generated_at",
+    "lead",
+    "story",
+    "items",
+    "new_findings",
+    "returning",
+    "rung_changes",
+    "ideas",
+    "also",
+    "deep_dive",
+    "review",
+    "corrections",
+    "report_decisions",
+    "sources"
+  ],
+  "additionalProperties": false
+}
