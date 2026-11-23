@@ -95,12 +95,20 @@ describe("files the spec shows", () => {
 });
 
 describe("config/sources.yaml (SPEC §4.13)", () => {
-  const reg = parse(read("config/sources.yaml")) as { schema_version: number; feeds: Record<string, unknown>[] };
-  const KEYS = ["id", "name", "kind", "url", "fallback_url", "priority", "must_match", "fields", "parser", "budget"];
+  const reg = parse(read("config/sources.yaml")) as { schema_version: number; arxiv_skipped: unknown[]; feeds: Record<string, unknown>[] };
+  const KEYS = ["id", "name", "kind", "url", "fallback_url", "priority", "fresh_days", "must_match", "date_zone", "fields", "parser", "budget"];
 
   it("S1: every feed has every key, in order, with a value of the right kind", () => {
     expect(reg.schema_version).toBe(1);
-    expect(Object.keys(reg)).toEqual(["schema_version", "feeds"]);
+    expect(Object.keys(reg)).toEqual(["schema_version", "arxiv_skipped", "feeds"]);
+    // The US dates of the announcements arXiv skips (§4.13): arXiv announces Sunday to Thursday.
+    const skipped = reg.arxiv_skipped as string[];
+    expect(Array.isArray(skipped)).toBe(true);
+    for (const d of skipped) {
+      expect(d).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect([0, 1, 2, 3, 4], d).toContain(new Date(`${d}T00:00:00Z`).getUTCDay());
+    }
+    expect([...new Set(skipped)].sort()).toEqual(skipped);
     for (const f of reg.feeds) {
       expect(Object.keys(f), String(f.id)).toEqual(KEYS);
       expect(String(f.id)).toMatch(/^[a-z0-9][a-z0-9-]*$/);
@@ -109,7 +117,10 @@ describe("config/sources.yaml (SPEC §4.13)", () => {
       expect(String(f.url)).toMatch(/^https:\/\//);
       if (f.fallback_url !== null) expect(String(f.fallback_url)).toMatch(/^https:\/\//);
       expect([1, 2, 3]).toContain(f.priority);
+      expect(f.fresh_days === null || (Number.isInteger(f.fresh_days) && (f.fresh_days as number) >= 1), String(f.id)).toBe(true);
       expect(typeof f.must_match).toBe("boolean");
+      // Cyber's UtcOffset: "+08:00", never "Z" (null reads zone-less times as UTC).
+      if (f.date_zone !== null) expect(String(f.date_zone)).toMatch(/^[+-](?:0\d|1[0-4]):[0-5]\d$/);
       for (const field of f.fields as string[]) expect(FIELDS).toContain(field);
       expect(Number.isInteger(f.budget) && (f.budget as number) >= 0).toBe(true);
     }
@@ -124,14 +135,15 @@ describe("config/sources.yaml (SPEC §4.13)", () => {
       expect(ids, id).toContain(id);
     }
     for (const prefix of ["arxiv-", "journal-", "lab-"]) expect(ids.some((i) => i.startsWith(prefix)), prefix).toBe(true);
-    // Only the Chinese pass reads 樂詞網, and only through its own sandbox (§9.5).
+    // Collect never reads 樂詞網: the Chinese pass fetches it through its own sandbox (§9.5), and stage 8
+    // snapshots the pages it fetched (§8.2), neither against a feed's budget (§4.13).
     expect(reg.feeds.find((f) => f.id === "naer-terms")).toMatchObject({ parser: "none", budget: 0 });
   });
 });
 
 describe("the error-report form (SPEC §9.2)", () => {
   const form = parse(read(".github/ISSUE_TEMPLATE/error-report.yml")) as {
-    name: string; description: string; labels: string[]; body: { type: string; id: string; attributes: { options?: string[] }; validations: { required: boolean } }[];
+    name: string; description: string; labels: string[]; body: { type: string; id: string; attributes: { description?: string; options?: string[] }; validations: { required: boolean } }[];
   };
   const KINDS = [
     "A fact or number is wrong",
@@ -159,6 +171,12 @@ describe("the error-report form (SPEC §9.2)", () => {
     expect(form.description).toMatch(/next morning/);
     expect(form.description).toMatch(/只讀取下方三個欄位/);
     expect(parse(read(".github/ISSUE_TEMPLATE/config.yml"))).toEqual({ blank_issues_enabled: false });
+  });
+
+  it("E4: the finding id's description says in both languages that an id matching no finding is ignored (SPEC §8.9)", () => {
+    const description = form.body[0]!.attributes.description ?? "";
+    expect(description).toMatch(/If the id matches no finding, the report is ignored\./);
+    expect(description).toMatch(/若編號對應不到任何一則發現，這份回報會被略過。/);
   });
 });
 

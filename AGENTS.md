@@ -3,7 +3,7 @@
 > Internal AI working notes in a public repo: keep secrets, tokens, personal data and Kobol's security
 > details out. Never publish this file on the site.
 
-Last reviewed 2026-11-22 · Folder: /Users/kobol/Projects/UnveilingTracker (Kobol) · Repo
+Last reviewed 2026-11-23 · Folder: /Users/kobol/Projects/UnveilingTracker (Kobol) · Repo
 8gara8/UnveilingTracker · Claude project: Geo Tracker
 
 ## 1. Who and what
@@ -47,10 +47,19 @@ secondary: one Pace line a day, and charts on Mondays (SPEC §1).
   tapped "Start Foundation" at 20:31 Taipei (12:31 UTC).
 - **Foundation on `p0-setup`, PR #1 (open):** the repo was created on Kobol with `gh` in a Remote Control
   session, its bootstrap commit `507b843` on `main` (README and `.gitignore`); CyberTracker is cloned
-  read-only at `/Users/kobol/.unveiling/cyber-base` at the fork commit `3ced1fb`; the agents' CLI
-  2.1.316 is in `/Users/kobol/.unveiling/cli` with its config dir. The Foundation code (the kept
-  helpers and their tests, the configs, CI, the form, the docs) was built in the cloud container; its
-  checks run on Kobol before the PR opens.
+  read-only at `/Users/kobol/.unveiling/cyber-base` at the fork commit `3ced1fb`; the agents' CLI 2.1.316
+  is in `/Users/kobol/.unveiling/cli` with its config dir. The Foundation code (the kept helpers and
+  their tests, the configs, CI, the form, the docs) was built in the cloud container. On Kobol
+  (2026-11-22, about 21:10 Taipei) `npm ci` and `npm run check` passed on `dadd7f6` (9 files, 69 tests),
+  as did the Foundation milestone; the repo settings match SPEC §9.2 as created (no protection, no
+  auto-merge, issues on, Dependabot alerts and security updates off); the token helper was written (mode
+  700, `zsh -n` clean, not run). The Vercel project was made through the connector on 2026-11-22 at 21:11
+  Taipei (13:11 UTC), linked to the repo, with SPEC §9.1's settings; Vercel assigned it
+  `unveilingtracker.vercel.app`. Before the PR opened, an independent review of the spec found 83
+  problems; 17 groups fixed them, then a consistency pass by part and a follow-up pass settled what lay
+  between the groups, and four short rounds fixed the seams between those, every step checked again by a
+  second reader (SPEC §0.4 rows 3 to 100). The final commit's checks ran in the cloud container and in
+  CI; Kobol runs them again when it is next reachable.
 - **Decisions by JL (do not reopen; design v0.4):**
   - A daily brief, a Monday week in review and a Sunday deep dive from the Ledger. Morning only,
     everything ready before 08:00 Taipei. No alerts of any kind. No day count.
@@ -93,8 +102,9 @@ secondary: one Pace line a day, and charts on Mondays (SPEC §1).
   Code CLI 2.1.316 (arm64, the version CyberTracker pins) in `/Users/kobol/.unveiling/cli`; its config
   dir `/Users/kobol/.unveiling/claude` (mode 700); the token helper `/Users/kobol/.unveiling/store-token.zsh`
   (SPEC §9.6). The keychain item `unveiling-claude-oauth` does not exist until JL creates it in P3.
-- **Ids** (not secrets; kept here and in no code or config file): Vercel project `unveilingtracker`, ids
-  recorded here when it is made. The fork base is 8gara8/CyberTracker at
+- **Ids** (not secrets; kept here and in no code or config file): Vercel project `unveilingtracker`
+  `prj_dRr7vgiehjobHBM3IhUuF1Uu0I2V`, team "8gara8's projects" `team_xxXFmwmVsAfTU86OFG8fcX3S` (the
+  siblings' team). The fork base is 8gara8/CyberTracker at
   `3ced1fbb55dae010efcae659c0eabe36e43934f8` (`docs/PROVENANCE.md`).
 - **How Codex reviews work** (as on CyberTracker's PRs):
   - The bot's login is `chatgpt-codex-connector[bot]`.

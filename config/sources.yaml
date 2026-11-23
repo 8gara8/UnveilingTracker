@@ -9,21 +9,34 @@
 #   url           where the feed is read; for an api, the endpoint the parser builds its query on
 #   fallback_url  read when url fails, or null
 #   priority      1: the morning needs it (a problem fails sources:check); 2: wanted; 3: counters and extras
+#   fresh_days    the feed is stale when its newest item is more than this many days old (judged at the pack
+#                 window's end by collect, at the clock by sources:check); null for a feed with no dated
+#                 items to judge (counts, figures, records looked up by id)
 #   must_match    true: an item enters the pack only if its title or abstract matches config/ai-terms.json
+#   date_zone     the UTC offset (+08:00) of the feed's times written without a zone when the feed names
+#                 none, or null, which reads them as UTC (P2's sources:check settles it and fresh_days)
 #   fields        the fields (SPEC §4.2 FIELDS) its items belong to; [] when each item is mapped on its own
 #                 (OpenAlex topic, journal or arXiv category, SPEC §8.3)
-#   parser        atom | json | rss | html | csv | none (none: read only by the Chinese pass, never by collect)
+#   parser        atom | json | rss | html | csv | none (none: never read by collect)
 #   budget        the most requests the feed may make in one morning
+#
+# arxiv_skipped: the US dates of the arXiv announcements that arXiv's blog says it skips for holidays (a
+# Friday holiday skips the Sunday announcement after it); each announcement's list runs from the deadline
+# of the previous announcement not listed (SPEC §4.13). P2 seeds it from arXiv's availability page and
+# blog; a PR adds each later notice.
 schema_version: 1
+arxiv_skipped: []
 feeds:
   # ── Preprint servers and indexes ──────────────────────────────────────────────────────────────
   - id: arxiv-math
-    name: arXiv API, mathematics (the previous announcement day)
+    name: arXiv API, mathematics (each announcement's new submissions)
     kind: api
     url: https://export.arxiv.org/api/query
     fallback_url: null
     priority: 1
+    fresh_days: 7
     must_match: true
+    date_zone: null
     fields: [mathematics]
     parser: atom
     budget: 2
@@ -33,7 +46,9 @@ feeds:
     url: https://export.arxiv.org/api/query
     fallback_url: null
     priority: 1
+    fresh_days: 7
     must_match: true
+    date_zone: null
     fields: [physics]
     parser: atom
     budget: 2
@@ -43,7 +58,9 @@ feeds:
     url: https://export.arxiv.org/api/query
     fallback_url: null
     priority: 2
+    fresh_days: 7
     must_match: true
+    date_zone: null
     fields: [physics]
     parser: atom
     budget: 2
@@ -53,7 +70,9 @@ feeds:
     url: https://export.arxiv.org/api/query
     fallback_url: null
     priority: 2
+    fresh_days: 7
     must_match: true
+    date_zone: null
     fields: [physics, chemistry]
     parser: atom
     budget: 2
@@ -63,7 +82,9 @@ feeds:
     url: https://export.arxiv.org/api/query
     fallback_url: null
     priority: 2
+    fresh_days: 7
     must_match: true
+    date_zone: null
     fields: [physics]
     parser: atom
     budget: 2
@@ -73,7 +94,9 @@ feeds:
     url: https://export.arxiv.org/api/query
     fallback_url: null
     priority: 2
+    fresh_days: 7
     must_match: true
+    date_zone: null
     fields: [biology]
     parser: atom
     budget: 2
@@ -83,7 +106,9 @@ feeds:
     url: https://export.arxiv.org/api/query
     fallback_url: null
     priority: 2
+    fresh_days: 7
     must_match: true
+    date_zone: null
     fields: [chemistry]
     parser: atom
     budget: 2
@@ -93,7 +118,9 @@ feeds:
     url: https://export.arxiv.org/api/query
     fallback_url: null
     priority: 2
+    fresh_days: 7
     must_match: true
+    date_zone: null
     fields: []
     parser: atom
     budget: 2
@@ -103,7 +130,9 @@ feeds:
     url: https://api.biorxiv.org/details/biorxiv
     fallback_url: null
     priority: 1
+    fresh_days: 3
     must_match: true
+    date_zone: null
     fields: [biology]
     parser: json
     budget: 5
@@ -113,7 +142,9 @@ feeds:
     url: https://api.biorxiv.org/details/medrxiv
     fallback_url: null
     priority: 2
+    fresh_days: 3
     must_match: true
+    date_zone: null
     fields: [biology]
     parser: json
     budget: 5
@@ -123,7 +154,9 @@ feeds:
     url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi
     fallback_url: null
     priority: 2
+    fresh_days: 4
     must_match: true
+    date_zone: null
     fields: [biology]
     parser: json
     budget: 4
@@ -133,7 +166,9 @@ feeds:
     url: https://api.crossref.org/works
     fallback_url: null
     priority: 1
+    fresh_days: 4
     must_match: true
+    date_zone: null
     fields: []
     parser: json
     budget: 30
@@ -144,7 +179,9 @@ feeds:
     url: https://www.nature.com/nature.rss
     fallback_url: null
     priority: 1
+    fresh_days: 4
     must_match: true
+    date_zone: null
     fields: []
     parser: rss
     budget: 1
@@ -154,7 +191,9 @@ feeds:
     url: https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science
     fallback_url: null
     priority: 1
+    fresh_days: 8
     must_match: true
+    date_zone: null
     fields: []
     parser: rss
     budget: 1
@@ -164,7 +203,9 @@ feeds:
     url: https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=pnas
     fallback_url: null
     priority: 2
+    fresh_days: 8
     must_match: true
+    date_zone: null
     fields: []
     parser: rss
     budget: 1
@@ -175,7 +216,9 @@ feeds:
     url: https://www.eurekalert.org/rss.xml
     fallback_url: null
     priority: 2
+    fresh_days: 4
     must_match: true
+    date_zone: null
     fields: []
     parser: rss
     budget: 2
@@ -185,17 +228,21 @@ feeds:
     url: https://deepmind.google/blog/rss.xml
     fallback_url: null
     priority: 2
+    fresh_days: 30
     must_match: false
+    date_zone: null
     fields: []
     parser: rss
     budget: 1
   - id: smc-reactions
-    name: Science Media Centre expert reactions (pointers to scientists' own published reactions)
+    name: Science Media Centre expert reactions, each a named scientist's own published reaction
     kind: page
     url: https://www.sciencemediacentre.org/
     fallback_url: null
     priority: 3
+    fresh_days: 14
     must_match: true
+    date_zone: null
     fields: []
     parser: html
     budget: 2
@@ -206,27 +253,33 @@ feeds:
     url: https://api.openalex.org/works
     fallback_url: null
     priority: 1
+    fresh_days: null
     must_match: false
+    date_zone: null
     fields: []
     parser: json
-    budget: 40
+    budget: 100
   - id: crossref-updates
     name: Crossref retractions, corrections and expressions of concern for stored DOIs (SPEC §5.8)
     kind: api
     url: https://api.crossref.org/works
     fallback_url: null
     priority: 2
+    fresh_days: null
     must_match: false
+    date_zone: null
     fields: []
     parser: json
     budget: 10
   - id: retraction-watch
-    name: The Retraction Watch data file that Crossref publishes (counter, SPEC §5.7)
+    name: The Retraction Watch data file that Crossref publishes (counter, SPEC §5.7; rung watch, SPEC §5.8)
     kind: file
     url: https://gitlab.com/crossref/retraction-watch-data/-/raw/main/retraction_watch.csv
     fallback_url: null
     priority: 3
+    fresh_days: 30
     must_match: false
+    date_zone: null
     fields: []
     parser: csv
     budget: 1
@@ -236,17 +289,21 @@ feeds:
     url: https://clinicaltrials.gov/api/v2/studies
     fallback_url: null
     priority: 2
+    fresh_days: null
     must_match: false
+    date_zone: null
     fields: [biology]
     parser: json
     budget: 10
   - id: rcsb
-    name: RCSB PDB search API, entries released in a period (counter)
+    name: RCSB PDB search API, released entries by deposit date (counter, SPEC §5.7)
     kind: api
     url: https://search.rcsb.org/rcsbsearch/v2/query
     fallback_url: null
     priority: 3
+    fresh_days: null
     must_match: false
+    date_zone: null
     fields: [biology]
     parser: json
     budget: 2
@@ -256,7 +313,9 @@ feeds:
     url: https://leanprover-community.github.io/mathlib_stats.html
     fallback_url: null
     priority: 3
+    fresh_days: null
     must_match: false
+    date_zone: null
     fields: [mathematics]
     parser: html
     budget: 1
@@ -266,7 +325,9 @@ feeds:
     url: https://www.erdosproblems.com/
     fallback_url: null
     priority: 3
+    fresh_days: null
     must_match: false
+    date_zone: null
     fields: [mathematics]
     parser: html
     budget: 2
@@ -274,20 +335,24 @@ feeds:
     name: The Vesuvius Challenge's own announcements
     kind: rss
     url: https://scrollprize.substack.com/feed
-    fallback_url: https://scrollprize.org/
+    fallback_url: null
     priority: 3
+    fresh_days: 60
     must_match: false
+    date_zone: null
     fields: [humanities]
     parser: rss
     budget: 1
-  # ── Read only by the Chinese pass (its one allowed host, SPEC §9.5) ───────────────────────────
+  # ── The Chinese pass's one allowed host (SPEC §9.5); stage 8 snapshots the pages it fetched ───
   - id: naer-terms
     name: 樂詞網, the National Academy for Educational Research's term database (official Taiwan terms)
     kind: page
     url: https://terms.naer.edu.tw/
     fallback_url: null
     priority: 3
+    fresh_days: null
     must_match: false
+    date_zone: null
     fields: []
     parser: none
     budget: 0

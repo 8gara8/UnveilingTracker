@@ -10,7 +10,7 @@ body:
     id: finding_id
     attributes:
       label: Finding id · 發現編號
-      description: Filled in by the finding's page. · 由發現的頁面自動填入。
+      description: Filled in by the finding's page. If the id matches no finding, the report is ignored. · 由發現的頁面自動填入。若編號對應不到任何一則發現，這份回報會被略過。
       placeholder: math-2026-0142
     validations:
       required: true
