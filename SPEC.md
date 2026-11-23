@@ -300,7 +300,7 @@ in the same PR and is listed here.
 | 98 | #1 | §4.12 (Stored records) | No test that reads `config/` or a `run.json` budget reads a correction's `before`, which publish copies from text published earlier (§8.7). | Pre-PR review: those tests run on the corrections being published, so a list change after a text was published, such as a new avoid-list term, would make publish refuse any correction of that text, and refuse one that JL upheld every morning, since the report comes back until the correction is stored. |
 | 99 | #1 | §8.9 (safety flags), §10 (P3 step 6) | A correction written on a term before its name began to fail `DUAL_USE` or `BLOCKED_HOST` still names it by `term_id`, as does each brief that lists that correction, so P3 settles what the PR that deletes the term does with them, with its test and a §0.4 row; §10 P3 step 6 lists it. | Pre-PR review: XREF fails a correction or brief that names a deleted term (corrections name existing records, with sequential ids), so the PR that §8.9 asks for would turn CI red, and the spec gave it no way through. |
 | 100 | #1 | §4.3 (`RungEntry.date`), §4.10, §4.12 (`CLAIMED_CAP`, `LANDMARK_BASIS`), §8.9 (To the agent), §11 (`PROMPT.md` step 4, `STYLE.md` §12) | An upheld report on a wrong rung, which no correction may name (row 97), is answered by a rung entry dated D, in `rung_changes` or the returning entry's `rung`, that cites the record showing the right rung, beside a correction of the finding's `explainer.how_sure` that carries the `report_id`, and a `significance` correction when CLAIMED_CAP or LANDMARK_BASIS needs one: CLAIMED_CAP also judges a finding that a draft rung entry moves to claimed or preprint, and LANDMARK_BASIS a Landmark that one moves from confirmed or applied to checked. `RungEntry.date` is D for such an entry, so RUNG_ORDER passes it. `PROMPT.md` step 4 says so, and `STYLE.md` §12 says so too and that a `field` correction comes with its `subfield` one. `tests/validate.test.ts` passes such a draft through RUNG_ORDER, REPORT_DECISION and REPORT_UPHELD, and fails LANDMARK_BASIS on one that moves a Landmark with one reaction from confirmed to checked with no `significance` correction. | Pre-PR review: once SCHEMA failed every correction on `rung` (row 97), an upheld report on a wrong rung had no valid answer, so the report would have come back every morning, and an entry dated by its record, older than the wrong one, would have failed RUNG_ORDER; and once the rung was put right, a Landmark whose only basis was the wrong confirmed rung would have stayed a counted Landmark. |
-| 101 | #1 | §8.7, §10 Foundation step 2, `docs/PROVENANCE.md` | `syncMain()` reads the paths of each local commit origin lacks (a rename as a delete and an add) as well as the tip's diff against the merge base, which holds a merge's own change, and after the rebase checks the rebased commits the same way, putting main back where it was and refusing when one touches a path outside the layout. `tests/git.test.ts` adds six cases: a revert, a rename into the layout, a merge with `-s ours`, a local merge of origin's main, a merge's own change, and an edit that follows a file origin moved. | PR 1 review: Cyber's reads only the tip's diff, so a code commit undone by a later revert, moved into `content/` or merged with `-s ours` passed the check while the rebase replayed it onto main, and publish's next push would have sent code to origin's `main`, which takes only `content/` from publish (§0.2). |
+| 101 | #1 | §8.7, §10 Foundation step 2, `docs/PROVENANCE.md` | `syncMain()` reads the paths of each local commit origin lacks (a rename as a delete and an add) as well as the tip's diff against the merge base, which holds a merge's own change, and after the rebase checks the rebased commits the same way, putting main back where it was and refusing when one touches a path outside the layout. `tests/git.test.ts` adds six cases: a revert, a rename into the layout, a merge with `-s ours`, a local merge of origin's main, a merge's own change, and an edit that follows a file origin moved. Publish's push loop (P3) gets the same check for its one rebase after a push rejected as not a fast-forward: its clash check reads the incoming commits with `--no-renames`, and straight after the rebase it runs `pathsOutside()`, which P3 exports from `scripts/lib/git.ts`, resetting main to where the loop started and throwing `SyncError` when a rebased commit touches a path outside the layout; `tests/publish.test.ts` adds two cases. | PR 1 review: Cyber's reads only the tip's diff, so a code commit undone by a later revert, moved into `content/` or merged with `-s ours` passed the check while the rebase replayed it onto main, and publish's next push would have sent code to origin's `main`, which takes only `content/` from publish (§0.2). The review of that fix found the same gap in publish's push loop, whose rebase carries a local edit to wherever origin has just moved the file. |
 | 102 | #1 | Appendix C | Appendix C records only what the build relies on, and its intro says so. It drops the macOS version and build, the sleep readout, the disk figures, the exact versions of Node, npm and `gh`, and `gh`'s scope list; Node and npm keep their major versions, the CLI its pin 2.1.316, and `gh` the access the build needs (pushing the CI workflow file). The paths under `/Users/kobol` stay, as code defaults (row 4). | PR 1 review: the repo is public (§0.2), and none of those details had a use in the build. The paths are the design, as in Cyber's spec, so the username stays and that part of the comment is answered in words and left for JL (§0.1 item 5). |
 
 ---
@@ -2767,13 +2767,25 @@ layout check, push with retries, `pushPending()` and `dropPendingEditions()`), w
 | full | `briefs/D.json` and any earlier brief a `removed` correction rewrites, new and changed `findings/*.json`, `glossary.json`, `corrections.json`, `reports.json`, `archive-index.json` | `edition: D (full)`, `(partial)`, `(full, English-only)` or `(partial, English-only)` (English-only when `languages.zh` is false) |
 | state | `state/pace-weekly.json` alone, never a metrics file (after go-live, `backfill --push`) | `state: pace to <cutoff>` |
 
-Its `syncMain()` (`scripts/lib/git.ts`, kept in Foundation) is Cyber's with a stricter layout check
-(§0.4 row 101). Cyber's reads only the tip's diff, which a commit undone by its revert, a rename into
+Its `syncMain()` (`scripts/lib/git.ts`, kept in Foundation) is Cyber's with a stricter layout check (§0.4
+row 101). Cyber's reads only the tip's diff, which a commit undone by its revert, a rename into
 `content/` or a branch merged with `-s ours` leaves clean, though the rebase replays each of those
 commits. This one also reads the paths of each local commit origin lacks, counting a rename as a delete
 and an add. After the rebase it checks the rebased commits the same way and, when one touches a path
-outside the layout (a local edit follows a file that origin has moved out of it), puts main back where
-it was and refuses.
+outside the layout (a local edit follows a file that origin has moved out of it), puts main back where it
+was and refuses.
+
+Publish's push loop (Cyber's `pushLoop()`, which `pushPending()` also uses) gets the same check for its
+one fetch and rebase after a push rejected as not a fast-forward (Cyber's §8.7 step 8). Its clash check
+reads the incoming commits with `--no-renames`, so a path of this commit that origin has moved counts as
+touched. Straight after the rebase, before `revalidate()`, it runs `pathsOutside()`, which P3 exports
+from `scripts/lib/git.ts`; when a rebased commit touches a path outside the layout, it resets main to
+where the loop started and throws `SyncError`. The reset uses a git handle with no deadline, as Cyber's
+loop does when it aborts a failed rebase, so it still runs once the run's deadline has passed.
+`tests/publish.test.ts` has origin move a file out of `content/` between the sync and the push. When the
+file is one this commit edits, the clash check refuses before any rebase, and its error names the file's
+old path in `content/`. When only an earlier unpushed commit edits it, the check after the rebase refuses
+and main is back where the loop started. Either way nothing reaches origin's `main`.
 
 `applyDraft()` (`lib/apply.ts`) turns the two drafts into writes: new findings get ids (§4.3), `depth`,
 `first_brief`, `briefs`, `terms`, `seen_as` and `added`; returning findings get their `since_then` note,
@@ -4083,7 +4095,7 @@ Remote Control session on Kobol.
 
 | Fact | Value | Checked |
 |---|---|---|
-| Machine | MacBook Pro, Apple silicon (`uname -m` arm64), macOS; user `kobol`, home `/Users/kobol`, which the code defaults use (§0.2); set never to sleep, as the 03:15 task needs (§9.3) | 2026-11-22 |
+| Machine | MacBook Pro, Apple silicon (`uname -m` arm64), macOS; user `kobol`, home `/Users/kobol`, which the code defaults use (§0.2); never sleeps on AC power, as the 03:15 task needs (§9.3) | 2026-11-22 |
 | Time zone | `/etc/localtime` is Asia/Taipei, so the task's 03:15 is Taipei time | 2026-11-22 |
 | Node | Node 26 at `/opt/homebrew/bin/node` (Mach-O arm64) and npm 11 at `/opt/homebrew/bin/npm`; never `/usr/local/bin/node` (x86_64) | 2026-11-22 |
 | Git and `gh` | `/usr/bin/git`; `gh` at `/opt/homebrew/bin/gh`, logged in as 8gara8 (§9.6), able to push branches, the CI workflow file included | 2026-11-22 |
