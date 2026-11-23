@@ -247,7 +247,7 @@ In a finding's explainer (`new.<ref>.explainer.<part>` and `backlog.<id>.explain
 
 **Checked by** `ZH_RUNG_LABEL`.
 
-The site already has Chinese for every field, kind, rung, AI role and significance level, and the context's
+The site already has Chinese for every field, rung, AI role and significance level, and the context's
 `labels` holds them (English to Chinese). Wherever the English names one, use that Chinese: Landmark is 里程碑
 and Preprint is 預印本. Never translate one afresh. The seven rungs at this writing, with `labels` the
 authority: Claimed 宣稱, Preprint 預印本, Checked 已查核, Confirmed 已證實, Applied 已應用, Disputed 有爭議,
@@ -305,8 +305,8 @@ Not checked by a script; the reader and the review judge it. Write plain, short,
 
 **Checked by** `ZH_CHARS`.
 
-The count is each Han character as 1 and each run of Latin letters or digits as 1; punctuation and spaces are
-0. So AlphaFold 3 is 2, and 蛋白質摺疊（protein folding）is 7. Leave a margin of a few characters, since a
+The count is each Han character as 1 and each run of Latin letters or digits as 1; punctuation and spaces are 0.
+So AlphaFold 3 is 2, and 蛋白質摺疊（protein folding）is 7. Leave a margin of a few characters, since a
 decimal or a number with commas may count as more than one run. The context's `cap_chars` and `group` are
 the caps in force. At the seed they are these.
 
