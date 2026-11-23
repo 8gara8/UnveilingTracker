@@ -54,7 +54,7 @@ export const MUST_HOLD: readonly string[] = [..."个这体极们说为发现学�
 
 /** 50 characters Taiwan writes, which `simplified_only` must not hold. */
 export const MUST_NOT_HOLD: readonly string[] = [
-  ..."台后里面干系只准制才了胜向周余云采范斗松咸志出划卜占谷蒙征御凶板表秋辟丑伙折卷奸岳几于厘胡沈筑坂涂芸",
+  ..."台后里面干系只准制才了胜向周余云采范斗松咸志出划卜占谷蒙征御凶板表秋辟丑伙折卷奸岳几于郁胡沈筑坂涂芸",
 ];
 
 export interface UnihanVariants {
