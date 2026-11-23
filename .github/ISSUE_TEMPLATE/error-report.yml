@@ -1,0 +1,36 @@
+name: Report an error · 回報錯誤
+description: >-
+  Report an error in a finding. Only the three fields below are read; the title is ignored. Claude checks
+  the report against the finding's sources the next morning, and the outcome appears on the finding's page.
+  回報某則發現中的錯誤。系統只讀取下方三個欄位，不讀標題。Claude 會在隔天早上依據這則發現的來源查核回報，結果會顯示在這則發現的頁面上。
+title: Error report · 錯誤回報
+labels: ["error-report"]
+body:
+  - type: input
+    id: finding_id
+    attributes:
+      label: Finding id · 發現編號
+      description: Filled in by the finding's page. If the id matches no finding, the report is ignored. · 由發現的頁面自動填入。若編號對應不到任何一則發現，這份回報會被略過。
+      placeholder: math-2026-0142
+    validations:
+      required: true
+  - type: dropdown
+    id: report_kind
+    attributes:
+      label: What is wrong · 哪裡有誤
+      options:
+        - A fact or number is wrong · 事實或數字有誤
+        - The source does not say this · 來源沒有這樣說
+        - The ladder rung or AI role is wrong · 查證階梯的層級或 AI 角色有誤
+        - A link is broken or goes to the wrong page · 連結失效或連到錯誤的頁面
+        - It gives detail that could help cause harm · 內容提供了可能被用來造成危害的細節
+    validations:
+      required: true
+  - type: input
+    id: evidence_url
+    attributes:
+      label: Evidence link (optional) · 佐證連結（選填）
+      description: A link to a primary source that shows the error. · 能說明錯誤的原始來源連結。
+      placeholder: https://
+    validations:
+      required: false
