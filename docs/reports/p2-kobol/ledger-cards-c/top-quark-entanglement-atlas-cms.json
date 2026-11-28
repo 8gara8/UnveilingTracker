@@ -1,0 +1,52 @@
+{
+ "slug": "top-quark-entanglement-atlas-cms",
+ "title": "ATLAS and CMS observe quantum entanglement between top quarks",
+ "first_published": "2023-11-13",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://cms-results.web.cern.ch/cms-results/public-results/publications/TOP-23-001/index.html",
+   "search": false,
+   "final_url": "https://cms-results.web.cern.ch/cms-results/public-results/publications/TOP-23-001/index.html",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "CMS-TOP-23-001",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "entanglement",
+    "top quark",
+    "5.1",
+    "ATLAS"
+   ],
+   "passages": [
+    "Recently, the ATLAS Collaboration reported the first observation of entanglement in the top quark-antiquark ($ \\mathrm{t} \\bar{\\mathrm{t}} $) system [21] wih a result indicating slight deviation from MC simulation.",
+    "This result has an observed (expected) significance of 5.1 (4.7) $ \\sigma $, corresponding to the observation of top quark entanglement.",
+    "Compact Muon Solenoid LHC, CERN Visit us: CMS Public Website, CMS Physics ; Contact us: CMS Publications Committee CMS-TOP-23-001 ; CERN-EP-2024-137 Observation of quantum entanglement in top quark pair production in proton-proton collisions at $ \\sqrt{s}= $ 13 TeV CMS Collaboration 6 June 2024 Rep.",
+    "An entanglement-sensitive observable $ D $ is derived from the top quark spin-dependent parts of the $ \\mathrm{t} \\bar{\\mathrm{t}} $ production density matrix and measured in the region of the $ \\mathrm{t} \\bar{\\mathrm{t}} $ production threshold.",
+    "With an observed significance of 5.1 standard deviations with respect to the non-entangled hypothesis, this provides observation of quantum mechanical entanglement within $ \\mathrm{t} \\bar{\\mathrm{t}} $ pairs in this phase space.",
+    "Unlike ATLAS, the CMS result is derived from a binned likelihood fit to extract the entanglement proxy, rather than using a calibration curve.",
+    "We directly measure entanglement at the parton level, whereas ATLAS reports their observable at the particle level.",
+    "This result contrasts with the ATLAS Collaboration's findings in several key ways.",
+    "Entanglement is an intrinsic property of quantum mechanics and is predicted to be exhibited in the particles produced at the Large Hadron Collider.",
+    "Additionally, our analysis is the first to consider non-relativistic bound-state effects in the production threshold by including the ground state of toponium, $\\eta$t, which were not included in the ATLAS result."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,249 @@
+{
+ "slug": "speech-neuroprostheses-stanford-ucsf-2023",
+ "title": "Two brain implants turn attempted speech into text and voice",
+ "first_published": "2023-08-23",
+ "items": [
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=brain+implant+speech",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=brain+implant+speech",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "brain implant speech | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "brain implant",
+    "speech",
+    "expert reaction",
+    "paralysis",
+    "brain-computer interface"
+   ],
+   "passages": [
+    "Dr. … read more April 25, 2019 expert reaction to study decoding brain activity to speech Research published in Nature demonstrates a neural decoder that uses cortical activity to synthesize audible speech."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [
+    {
+     "slug": "speech-neuroprostheses-stanford-ucsf-2023",
+     "role": "source",
+     "i": "6-via-1",
+     "via": "https://www.sciencemediacentre.org/?s=brain+implant+speech",
+     "link_text": "expert reaction to study decoding brain activity to speech",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-study-decoding-brain-activity-to-speech/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-study-decoding-brain-activity-to-speech/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to study decoding brain activity to speech | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "Prof Tom Otis, Chief Scientific Officer at Sainsbury Wellcome Centre for Neural Circuits, University College London (UCL), said: “This is a foundational paper which demonstrates the feasibility of a brain prosthetic for speech production.",
+      "It will be interesting to follow the progress of this work.” ‘Speech synthesis from neural decoding of spoken sentences’ by Gopala Anumanchipalli et al. was published in Nature at 18:00 UK time on Wednesday 24th April.",
+      "“Although the study was limited to 5 patients without medical conditions affecting their speech, the performance of the processing algorithm converting neural signals into synthesised speech was impressive.",
+      "Prof Sophie Scott, Group Leader for Speech Communication Neuroscience Group, University College London (UCL), said: “This is very interesting work from a great lab but it must be noted that it is at very early stages and is not close to clinical applications yet.",
+      "It is an important step forward in research for patients suffering from loss of speech as a result of various neurological insults such as neurodegenerative diseases or injuries to the brainstem, spinal cord and vocal musculature.",
+      "This would result in improvements in the intelligibility of the speech produced over time.”",
+      "This work asked listeners to try and recognise the speech produced through this technique but they were able to select from a closed set of options – a list of 25 or 50 words."
+     ],
+     "verdict": "usable"
+    },
+    {
+     "slug": "speech-neuroprostheses-stanford-ucsf-2023",
+     "role": "source",
+     "i": "6-via-2",
+     "via": "https://www.sciencemediacentre.org/?s=brain+implant+speech",
+     "link_text": "expert reaction to study describing a language decoder reconstructing meaning from brain scans",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-study-describing-a-language-decoder-reconstructing-meaning-from-brain-scans/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-study-describing-a-language-decoder-reconstructing-meaning-from-brain-scans/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to study describing a language decoder reconstructing meaning from brain scans | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "Rainer Goebel, Head of the Department of Cognitive Neuroscience, Maastricht University, said: “This speech decoder works non-invasively, i.e. no electrodes need to be inserted into the brain (no invasive neurosurgery required as with ‘Neuralink’, for example).",
+      "“The decoder presented in the study must first learn the relationship between speech semantics and brain activity so that it can later match the measured brain activity to the most likely phrases in new texts.",
+      "Since brains are roughly similar in structure but quite different at the level of a resolution of a few millimetres, the relation between speech segments and brain activity patterns has to be established individually for each subject and that takes many hours of training.”",
+      "“The decoder does not work with acoustic information (heard speech) as input, but with already recoded (processed) semantic speech information for which a speech model (GPT-1) was used (invasive decoders can work directly with heard speech information).",
+      "“Applications of the non-invasive speech decoder therefore require the full willingness to participate in a long series of uncomfortable experiments, with the willingness to also actively cooperate mentally.",
+      "So it is virtually impossible for someone to secretly gain access to a person’s mind with the non-invasive speech decoder.”",
+      "However, the relevant studies are lacking and the exemplary results for converting inner speech or watching movies, while ‘statistically significant’, are too poor to be trusted BCI."
+     ],
+     "verdict": "usable"
+    }
+   ],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2314132",
+   "search": false,
+   "final_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2314132",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "speech neuroprosthesis",
+    "intracortical",
+    "ALS",
+    "words per minute",
+    "University of California, Davis"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 8,
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-024-07735-z",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-024-07735-z?error=cookies_not_supported&code=a6740cba-ca09-4a8d-b000-4c1021354a0c",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Author Correction: A high-performance neuroprosthesis for speech decoding and avatar control",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-06-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-07-04"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-07-04"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-07-04"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-07-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-07-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-07-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-07-04"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-07-04"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Metzger, Sean L.",
+    "Littlejohn, Kaylo T.",
+    "Silva, Alexander B.",
+    "Moses, David A.",
+    "Seaton, Margaret P.",
+    "Wang, Ran",
+    "Dougherty, Maximilian E.",
+    "Liu, Jessie R.",
+    "Wu, Peter",
+    "Berger, Michael A.",
+    "Zhuravleva, Inga",
+    "Tu-Chan, Adelyn"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-024-07735-z",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07735-z",
+    "resolves": true,
+    "title": "Author Correction: A high-performance neuroprosthesis for speech decoding and avatar control",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-7-4",
+    "authors_first3": [
+     "Metzger",
+     "Littlejohn",
+     "Silva"
+    ],
+    "author_count": 15,
+    "update_to": [
+     {
+      "doi": "10.1038/s41586-023-06443-4",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "Erratum"
+   },
+   "meta_description": null,
+   "terms": [
+    "Correction",
+    "Metzger",
+    "avatar",
+    "In the version of this article"
+   ],
+   "passages": [
+    "Author Correction: A high-performance neuroprosthesis for speech decoding and avatar control.",
+    "After correction, results that support our finding of persistent somatotopy in speech-motor cortex despite anarthria have been strengthened."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

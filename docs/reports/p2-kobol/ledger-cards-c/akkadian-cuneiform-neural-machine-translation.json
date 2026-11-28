@@ -1,0 +1,129 @@
+{
+ "slug": "akkadian-cuneiform-neural-machine-translation",
+ "title": "Neural network translates Akkadian cuneiform texts into English",
+ "first_published": "2023-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10153418/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10153418/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Translating Akkadian to English with neural machine translation",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-05-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-04-30"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Gai Gutherz",
+    "Shai Gordin",
+    "Luis Sáenz",
+    "Omer Levy",
+    "Jonathan Berant"
+   ],
+   "who_hint": null,
+   "doi": "10.1093/pnasnexus/pgad096",
+   "crossref": {
+    "doi": "10.1093/pnasnexus/pgad096",
+    "resolves": true,
+    "title": "Translating Akkadian to English with neural machine translation",
+    "container": "PNAS Nexus",
+    "publisher": "Oxford University Press (OUP)",
+    "type": "journal-article",
+    "issued": "2023-5",
+    "authors_first3": [
+     "Gutherz",
+     "Gordin",
+     "Sáenz"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Cuneiform is one of the earliest writing systems in recorded human history (ca. 3,400 BCE–75 CE). Hundreds of thousands of such texts were found over the last two centuries, most of which are written in Sumerian and Akkadian. We show the high ...",
+   "terms": [
+    "Babylonian Engine",
+    "Assyriolog",
+    "scholars",
+    "evaluation",
+    "hallucination",
+    "Oracc",
+    "limitations",
+    "Discussion",
+    "convolutional",
+    "open source"
+   ],
+   "passages": [
+    "We show the high potential in assisting scholars and interested laypeople alike, by using natural language processing (NLP) methods such as convolutional neural networks (CNN), to automatically translate Akkadian from cuneiform Unicode glyphs directly to English (C2E) and from transliteration to English (T2E).",
+    "Using a million tokens from ORACC, another group of scholars recently completed missing signs with 89% success for the top 5 predictions based on a language model that was pretrained on 104 different languages from Wikipedia (14).",
+    "Human evaluation of NMT Expert human evaluation was performed by the same person on the best test results of T2E and C2E, to assess the models’ efficacy for scholarship in real-world scenarios (see full test results in Supplemental Data Sets S1 and S2).",
+    "This paper presents a state of the art neural machine translation model for the automatic translation of Akkadian texts into English, from Unicode cuneiform glyphs and from transliterations of the cuneiform signs, achieving 36.52 and 37.47 Best Bilingual Evaluation Understudy 4 (BLEU4) scores, respectively.",
+    "A convolutional neural network (CNN) is a type of artificial neural network commonly used in image recognition and processing, which has been shown to work well for low-resource and character-level machine translation (8).",
+    "PT, proper translation; IT, improper translation; IH, intrinsic hallucination; and EH, extrinsic hallucination.Challenges in translating Akkadian There are several challenges in translating an ancient language like Akkadian.",
+    "6 and 7); and (iii) hallucination, the model has produced a meaningful translation in the target language, but that meaning is inadequate to the source (10).",
+    "Open in a new tab Example of an improper translation from the 5-text test with C2E.There are 2 types of hallucinations (11): an intrinsic hallucination means that the model has produced a translation error using the input present in the source (see Fig.",
+    "For the literature of later periods, from the tenth century BCE until the end of the cuneiform script, scholars assume that Akkadian and Sumerian were understood as one and the same language with different codes, as they were fully and mutually translatable (24).",
+    "We show that high-quality translations can be obtained when translating directly from cuneiform to English, as we get 36.52 and 37.47 Best Bilingual Evaluation Understudy 4 (BLEU4) scores for C2E and T2E, respectively."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=Akkadian+cuneiform",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=Akkadian+cuneiform",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Akkadian cuneiform | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Akkadian",
+    "cuneiform",
+    "Babylonian",
+    "machine translation",
+    "Assyriologist",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

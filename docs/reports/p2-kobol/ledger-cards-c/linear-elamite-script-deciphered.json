@@ -1,0 +1,185 @@
+{
+ "slug": "linear-elamite-script-deciphered",
+ "title": "Linear Elamite, a 4,000-year-old Iranian script, is deciphered",
+ "first_published": "2022",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://doi.org/10.1515/za-2022-0003",
+   "search": false,
+   "final_url": "https://www.degruyterbrill.com/document/doi/10.1515/za-2022-0003/html",
+   "status": 202,
+   "readable": false,
+   "reason": "202 AWS WAF challenge",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-07-01"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.1515/za-2022-0003",
+   "crossref": {
+    "doi": "10.1515/za-2022-0003",
+    "resolves": true,
+    "title": "<b>The Decipherment of Linear Elamite Writing</b>",
+    "container": "Zeitschrift für Assyriologie und vorderasiatische Archäologie",
+    "publisher": "Walter de Gruyter GmbH",
+    "type": "journal-article",
+    "issued": "2022-7-1",
+    "authors_first3": [
+     "Desset",
+     "Tabibzadeh",
+     "Kervran"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Linear Elamite",
+    "decipherment",
+    "signs",
+    "Puzur-Inshushinak",
+    "Susa",
+    "Akkadian",
+    "silver",
+    "Gunagi",
+    "published online"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://doi.org/10.2307/jj.20785734.12",
+   "search": false,
+   "final_url": "https://www.jstor.org/stable/10.2307/jj.20785734.12",
+   "status": 200,
+   "readable": false,
+   "reason": "200 client challenge (JavaScript)",
+   "title_found": "Client Challenge",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-10-10"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.2307/jj.20785734.12",
+   "crossref": {
+    "doi": "10.2307/jj.20785734.12",
+    "resolves": true,
+    "title": "Le déchiffrement de l’élamite linéaire, un système d’écriture iranien du 3e millénaire av. J.-C.",
+    "container": "Dechiffrements / Decipherments",
+    "publisher": "IFAO",
+    "type": "book-chapter",
+    "issued": "2022-10-10",
+    "authors_first3": [
+     "Desset"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-part-of": [
+      "https://doi.org/10.2307/jj.20785734"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Linear Elamite",
+    "dechiffrement",
+    "elamite lineaire",
+    "signes",
+    "Desset"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://doi.org/10.1515/za-2025-0012",
+   "search": false,
+   "final_url": "https://www.degruyterbrill.com/document/doi/10.1515/za-2025-0012/html",
+   "status": 202,
+   "readable": false,
+   "reason": "202 AWS WAF challenge",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2025-11-26"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.1515/za-2025-0012",
+   "crossref": {
+    "doi": "10.1515/za-2025-0012",
+    "resolves": true,
+    "title": "New Radiocarbon Evidence from Shahdad and the Earliest Datable Linear Elamite Text",
+    "container": "Zeitschrift für Assyriologie und vorderasiatische Archäologie",
+    "publisher": "Walter de Gruyter GmbH",
+    "type": "journal-article",
+    "issued": "2025-11-26",
+    "authors_first3": [
+     "Eskandari",
+     "Nokandeh",
+     "Vidale"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Linear Elamite",
+    "Shahdad",
+    "radiocarbon",
+    "decipherment",
+    "readings",
+    "earliest datable"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  }
+ ]
+}

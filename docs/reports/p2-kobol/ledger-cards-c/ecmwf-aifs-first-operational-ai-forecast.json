@@ -1,0 +1,41 @@
+{
+ "slug": "ecmwf-aifs-first-operational-ai-forecast",
+ "title": "ECMWF runs its own AI weather model as a daily operational forecast",
+ "first_published": "2025-02-25",
+ "items": [
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=AIFS+ECMWF",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=AIFS+ECMWF",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AIFS ECMWF | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AIFS",
+    "ECMWF",
+    "AI weather forecasting",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

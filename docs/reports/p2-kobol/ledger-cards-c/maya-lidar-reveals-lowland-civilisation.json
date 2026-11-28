@@ -1,0 +1,122 @@
+{
+ "slug": "maya-lidar-reveals-lowland-civilisation",
+ "title": "Laser mapping reveals 60,000 hidden Maya structures in northern Guatemala",
+ "first_published": "2018-09",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-020-2343-4",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-020-2343-4?error=cookies_not_supported&code=54a6a540-c88f-4a55-86f9-52dbb13b9c9e",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Monumental architecture at Aguada Fénix and the rise of Maya civilization",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-11-26"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-04-30"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-06-03"
+    }
+   ],
+   "date_hint": "2020-06-03",
+   "date_ok": false,
+   "people_found": [
+    "Inomata, Takeshi",
+    "Triadan, Daniela",
+    "Vázquez López, Verónica A.",
+    "Fernandez-Diaz, Juan Carlos",
+    "Omori, Takayuki",
+    "Méndez Bauer, María Belén",
+    "García Hernández, Melina",
+    "Beach, Timothy",
+    "Cagnato, Clarissa",
+    "Aoyama, Kazuo",
+    "Nasu, Hiroo"
+   ],
+   "who_hint": "Takeshi Inomata, Daniela Triadan and colleagues",
+   "doi": "10.1038/s41586-020-2343-4",
+   "crossref": {
+    "doi": "10.1038/s41586-020-2343-4",
+    "resolves": true,
+    "title": "Monumental architecture at Aguada Fénix and the rise of Maya civilization",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-6-3",
+    "authors_first3": [
+     "Inomata",
+     "Triadan",
+     "Vázquez López"
+    ],
+    "author_count": 11,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Archaeologists have traditionally thought that the development of Maya civilization was gradual, assuming that small villages began to emerge during the Middle Preclassic period (1000–350&nbsp;bc; dates are calibrated throughout) along with the use of ceramics and the adoption of sedentism1. Recent ",
+   "terms": [
+    "Canuto",
+    "Guatemala",
+    "lidar",
+    "airborne",
+    "Maya"
+   ],
+   "passages": [
+    "Archaeological application of airborne LiDAR with object-based vegetation classification and visualization techniques at the lowland Maya site of Ceibal, Guatemala.",
+    "Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala.",
+    "Airborne LiDAR, archaeology, and the ancient Maya landscape at Caracol, Belize.",
+    "Archaeological application of airborne LiDAR to examine social changes in the Ceibal region of the Maya lowlands.",
+    "Here we describe an airborne lidar survey and excavations of the previously unknown site of Aguada Fénix (Tabasco, Mexico) with an artificial plateau, which measures 1,400 m in length and 10 to 15 m in height and has 9 causeways radiating out from it.",
+    "Early ceremonial constructions at Ceibal, Guatemala, and the origins of lowland Maya civilization.",
+    "Now you see it … now you don’t: understanding airborne mapping LiDAR collection and data product generation for archaeological research in Mesoamerica.",
+    "Adapting LiDAR data for regional variation in the tropics: a case study from the Northern Maya lowlands.",
+    "Artificial plateau construction during the Preclassic period at the Maya site of Ceibal, Guatemala.",
+    "Development of sedentary communities in the Maya lowlands: coexisting mobile groups and public ceremonies at Ceibal, Guatemala."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

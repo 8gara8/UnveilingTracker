@@ -1,0 +1,125 @@
+{
+ "slug": "new-horizons-pluto-flyby-results",
+ "title": "New Horizons gives the first close look at Pluto and its moons",
+ "first_published": "2015-07-14",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=Pluto+New+Horizons",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=Pluto+New+Horizons",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Pluto New Horizons | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Pluto",
+    "New Horizons",
+    "expert reaction",
+    "flyby"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://arxiv.org/abs/1510.07704",
+   "search": false,
+   "final_url": "https://arxiv.org/abs/1510.07704",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The Pluto system: Initial results from its exploration by New Horizons",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2015-10-26"
+    },
+    {
+     "source": "citation_date",
+     "date": "2015-10-26"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-10-16"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Stern, S. A.",
+    "Bagenal, F.",
+    "Ennico, K.",
+    "Gladstone, G. R.",
+    "Grundy, W. M.",
+    "McKinnon, W. B.",
+    "Moore, J. M.",
+    "Olkin, C. B.",
+    "Spencer, J. R.",
+    "Weaver, H. A.",
+    "Young, L. A.",
+    "Andert, T."
+   ],
+   "who_hint": null,
+   "doi": "10.1126/science.aad1815",
+   "crossref": {
+    "doi": "10.1126/science.aad1815",
+    "resolves": true,
+    "title": "The Pluto system: Initial results from its exploration by New Horizons",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2015-10-16",
+    "authors_first3": [
+     "Stern",
+     "Bagenal",
+     "Ennico"
+    ],
+    "author_count": 151,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1510.07704: The Pluto system: Initial results from its exploration by New Horizons",
+   "terms": [
+    "Journal reference",
+    "Science 350",
+    "aad1815",
+    "Pluto"
+   ],
+   "passages": [
+    "The Pluto system was recently explored by NASA's New Horizons spacecraft, making closest approach on 14 July 2015.",
+    "(51 additional authors not shown) View a PDF of the paper titled The Pluto system: Initial results from its exploration by New Horizons, by S.",
+    "Pluto's diverse surface geology and long-term activity raise fundamental questions about how small planets remain active many billions of years after formation.",
+    "Pluto's surface displays diverse landforms, terrain ages, albedos, colors, and composition gradients.",
+    "Pluto's atmosphere is highly extended, with trace hydrocarbons, a global haze layer, and a surface pressure near 10 microbars.",
+    "Pluto's large moon Charon displays tectonics and evidence for a heterogeneous crustal composition, its north pole displays puzzling dark terrain."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

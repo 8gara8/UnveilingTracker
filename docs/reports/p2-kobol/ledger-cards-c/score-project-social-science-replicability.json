@@ -1,0 +1,215 @@
+{
+ "slug": "score-project-social-science-replicability",
+ "title": "Large project retests social-science claims and about half replicate",
+ "first_published": "2026-04",
+ "items": [
+  {
+   "role": "reaction",
+   "i": 1,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-026-00805-4",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/d41586-026-00805-4?error=cookies_not_supported&code=83c7022f-4dc4-426f-a8e6-6d8bc859f89d",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Huge meta-research project puts claims in social-science papers to the test",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "dc.date",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-26"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-04-01"
+    }
+   ],
+   "date_hint": "2026-04-01",
+   "date_ok": true,
+   "people_found": [
+    "Sánchez-Tójar, Alfredo",
+    "Wicherts, Jelte M.",
+    "Willer, Robb"
+   ],
+   "who_hint": "Alfredo Sánchez-Tójar; Jelte M. Wicherts; Robb Willer",
+   "doi": "10.1038/d41586-026-00805-4",
+   "crossref": {
+    "doi": "10.1038/d41586-026-00805-4",
+    "resolves": true,
+    "title": "Huge meta-research project puts claims in social-science papers to the test",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-4-1",
+    "authors_first3": [
+     "Sánchez-Tójar",
+     "Wicherts",
+     "Willer"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News & Views Forum"
+   },
+   "meta_description": "Three experts discuss lessons learnt from a large-scale dissection of the reproducibility, analytical robustness and replicability of published results.",
+   "terms": [
+    "SCORE",
+    "replicab",
+    "reproducib",
+    "social-science",
+    "Center for Open Science",
+    "Forum"
+   ],
+   "passages": [
+    "NEWS & VIEWS FORUM 01 April 2026 Huge meta-research project puts claims in social-science papers to the test Three experts discuss lessons learnt from a large-scale dissection of the reproducibility, analytical robustness and replicability of published results."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=expert+reaction+SCORE",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=expert+reaction+SCORE",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction SCORE | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "expert reaction",
+    "SCORE",
+    "replicability of the social and behavioural sciences",
+    "Center for Open Science"
+   ],
+   "passages": [
+    "Comments from our friends at SMC Spain: … read more June 14, 2026 expert reaction to speculation of a ban on social media for under-16s Scientists comment on speculation of a social media ban for under-16s.",
+    "Prof … read more June 17, 2026 expert reaction to presentation of two new medical AI models for patient management (MIRA and AMIE) Scientists comment on two medical AI models, published in Nature, for patient management.",
+    "Dr Mangesh … read more May 4, 2026 expert reaction to study on airborne microplastics and nanoplastics and global warming A study published in Nature Climate Change looks at global warming contributions from airborne microplastics.",
+    "Prof Ashwin … read more July 8, 2026 expert reaction to review of obesity drugs and quality of life / heart health A review published in The BMJ looks at obesity drugs and quality of life and heart health."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [
+    {
+     "slug": "score-project-social-science-replicability",
+     "role": "source",
+     "i": "7-via-1",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+SCORE",
+     "link_text": "expert reaction to early social media use associated with lower standardised test scores in Italian schoolchildren",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-early-social-media-use-associated-with-lower-standardised-test-scores-in-italian-schoolchildren/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-early-social-media-use-associated-with-lower-standardised-test-scores-in-italian-schoolchildren/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to early social media use associated with lower standardised test scores in Italian schoolchildren | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "Although the design makes it difficult to eliminate all unmeasured differences between groups, it highlights that earlier social media adoption is followed by lower scores in two of the three subjects: Italian and mathematics.",
+      "The standardised scores are obtained through linking to a database, while the social media use is through a retrospective question.",
+      "The study found that children who created social media accounts in 6th or 7th grade (around ages 11–12) experienced significant drops in math and language scores compared to peers who waited until 9th grade (age 14).",
+      "Additionally, the study excluded high school dropouts and vocational students, groups with higher digital media use and lower test scores, meaning the findings likely understate overall harm.",
+      "As an educator, however, I argue that standardised tests in their very design are a flawed way to measure ‘success’, and perhaps what sits behind the data of poorer scores is, as the authors mention, the lack of parental supervision.",
+      "Findings that indicate lower standardised scores are eye-catching and meaningful, but should not automatically be translated into a general loss of intelligence or learning."
+     ],
+     "verdict": "usable"
+    },
+    {
+     "slug": "score-project-social-science-replicability",
+     "role": "source",
+     "i": "7-via-2",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+SCORE",
+     "link_text": "expert reaction to study assessing early evidence of association between Australia’s Social Media Minimum Age Act and adolescents’ social media use",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-study-assessing-early-evidence-of-association-between-australias-social-media-minimum-age-act-and-adolescents-social-media-use/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-study-assessing-early-evidence-of-association-between-australias-social-media-minimum-age-act-and-adolescents-social-media-use/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to study assessing early evidence of association between Australia’s Social Media Minimum Age Act and adolescents’ social media use | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "Nevertheless, it provides useful early evidence that implementation challenges, particularly around age verification and circumvention, may limit the immediate impact of age-based restrictions and underscores the need for longer-term, larger-scale evaluations."
+     ],
+     "verdict": "usable"
+    },
+    {
+     "slug": "score-project-social-science-replicability",
+     "role": "source",
+     "i": "7-via-3",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+SCORE",
+     "link_text": "expert reaction to speculation of a ban on social media for under-16s",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-uk-government-announcing-a-ban-on-social-media-for-under-16s/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-uk-government-announcing-a-ban-on-social-media-for-under-16s/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to speculation of a ban on social media for under-16s | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [],
+     "verdict": "usable"
+    }
+   ],
+   "verdict": "usable"
+  }
+ ]
+}

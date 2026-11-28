@@ -1,0 +1,501 @@
+{
+ "slug": "complete-human-genome-sequence-t2t",
+ "title": "First complete, gap-free sequence of a human genome published",
+ "first_published": "2021-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "statement",
+   "url": "https://genome.ucsc.edu/goldenPath/newsarch.html",
+   "search": false,
+   "final_url": "https://genome.ucsc.edu/goldenPath/newsarch.html",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "UCSC Genome Browser: News Archives",
+   "title_match": "partial",
+   "dates_found": [],
+   "date_hint": "2026-10-23",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "UCSC Genome Browser, The Regents of the University of California",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "T2T-CHM13",
+    "hs1",
+    "assembly",
+    "track",
+    "human"
+   ],
+   "passages": [
+    "23, 2026 Mobile Element Insertions track collection for human (hg38, hg19 and hs1) We are happy to announce a new Mobile Element Insertions container track on GRCh38/hg38, GRCh37/hg19 and T2T-CHM13/hs1.",
+    "16, 2026 Long-read Structural Variants tracks for human (hg38 and hs1) We are excited to announce a new Long-read Structural Variants container track on the human assemblies GRCh38/hg38 and T2T-CHM13/hs1.",
+    "21, 2023 Highly Reproducible genomic regions for sequencing for human We are happy to announce the release of the Highly Reproducible genomic regions for sequencing for the human (GRCh38/hg38) genome assembly, which is part of the Problematic Regions supertrack.",
+    "May 6, 2020 Problematic Regions for NGS or Sanger sequencing or very variable regions We are happy to announce a new data track which describes Problematic Regions for NGS or Sanger sequencing or very variable regions in the human assembly (hg19/GRCh37).",
+    "23, 2026 Non-canonical ORFs track collection on hg38 We are pleased to announce a new Non-canonical ORFs track collection on the human genome assembly (GRCh38/hg38), bringing together several public databases of open reading frames (ORFs) that fall outside annotated protein-coding genes.",
+    "2, 2026 New Massively Parallel Reporter Assay (MPRA) tracks on hg38 We are pleased to announce a new MPRAs container track on the human genome assembly (GRCh38/hg38), gathering results from massively parallel reporter assays (MPRAs).",
+    "4, 2024 GIAB Problematic Regions tracks for human (hg38 and hs1) We are pleased to announce the release of the Genome in a Bottle (GIAB) Problematic Regions tracks for the hg38 and hs1 human assemblies.",
+    "24, 2024 Nuclear mitochondrial DNA segments (NuMTs) for hg38 We are happy to announce the release of a new track, NuMTs Sequence, for human assembly (GRCh38/hg38).",
+    "25, 2024 New AbSplice Prediction Scores track for hg19 We are excited to announce the release of the AbSplice scores track that was previously only on GRCh38/hg38 and is now also available on the human GRCh37/hg19 genome assembly.",
+    "Alignment and Conservation tracks The Chain/Net track shows regions of the human genome that are alignable between the HPRC genomes as well as hg38 and T2T-CHM13."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "statement",
+   "url": "https://genome.ucsc.edu/cgi-bin/hgGateway?db=hs1",
+   "search": false,
+   "final_url": "https://genome.ucsc.edu/cgi-bin/hgGateway?db=hs1",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "UCSC Genome Browser, The Regents of the University of California",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "hs1",
+    "T2T-CHM13",
+    "assembly",
+    "Genomes"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-023-05896-x",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-023-05896-x?error=cookies_not_supported&code=7823daa9-579e-44f4-855b-bfe3bd0ef788",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A draft human pangenome reference",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-05-10"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-05-10"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-05-10"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-05-10"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-05-10"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-07-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-02-28"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-05-10"
+    }
+   ],
+   "date_hint": "2023-05-10",
+   "date_ok": false,
+   "people_found": [
+    "Liao, Wen-Wei",
+    "Asri, Mobin",
+    "Ebler, Jana",
+    "Doerr, Daniel",
+    "Haukness, Marina",
+    "Hickey, Glenn",
+    "Lu, Shuangjia",
+    "Lucas, Julian K.",
+    "Monlong, Jean",
+    "Abel, Haley J.",
+    "Buonaiuto, Silvia",
+    "Chang, Xian H."
+   ],
+   "who_hint": "Human Pangenome Reference Consortium (Liao et al.)",
+   "doi": "10.1038/s41586-023-05896-x",
+   "crossref": {
+    "doi": "10.1038/s41586-023-05896-x",
+    "resolves": true,
+    "title": "A draft human pangenome reference",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-5-10",
+    "authors_first3": [
+     "Liao",
+     "Asri",
+     "Ebler"
+    ],
+    "author_count": 119,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1101/2022.07.09.499321"
+     ],
+     "has-review": [
+      "10.3410/f.742641394.793598748",
+      "10.3410/f.742641394.793599764"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Here the Human Pangenome Reference Consortium presents a first draft of the human pangenome reference. The pangenome contains 47 phased, diploid assemblies from a cohort of genetically diverse individuals1. These assemblies cover more than 99% of the expected sequence in each genome and are more tha",
+   "terms": [
+    "T2T-CHM13",
+    "Telomere-to-Telomere",
+    "pangenome",
+    "GRCh38",
+    "reference"
+   ],
+   "passages": [
+    "We included GRCh38 and T2T-CHM13 references within the pangenomes, and three samples (HG002, HG005 and NA19240) were held out to permit their use in benchmarking (hence 90 haplotypes total).",
+    "To find such regions, we lifted over the CHM13 HSat1, HSat2 and HSat3 annotation to each assembly by aligning the assembly contigs to the reference T2T-CHM13 (v.1.1) and GRCh38 (chromosome Y) and projecting the HSat coordinates back to the assembly (using python script project_blocks.py).",
+    "3d).We quantified the amount of euchromatic autosomal non-reference (GRCh38) sequence that each of the 44 diploid genomes incrementally contributes to the pangenome (Fig.",
+    "To construct a pangenome graph, one chosen reference assembly, GRCh38 in this case, was used as a starting graph, and the mapping and SV addition steps were repeated for each additional assembly, greedily.",
+    "Of these SV alleles that were non-reference (neither GRCh38 nor T2T-CHM13), 17,720 were observed in biallelic contexts and 396,089 at multiallelic loci with more than 1 non-reference allele, including extreme cases in which all 88 haplotypes showed distinct alleles (Supplementary Fig.",
+    "Sometimes each of the 88 non-reference (neither GRCh38 nor T2T-CHM13) haplotypes contained in the graph covered a different path through such a bubble (Supplementary Fig.",
+    "10 Additional applications supported by the pangenome reference.a, Performance of read alignment in VNTR regions using the MC graph versus GRCh38.",
+    "In brief, Minigraph builds a pangenome by starting from a reference assembly, here GRCh38, and iteratively and progressively adds in additional assemblies, recording only SVs ≥ 50 bases.",
+    "A newer, simpler version of the pipeline that no longer requires satellite masking can be found at GitHub (https://github.com/ComparativeGenomicsToolkit/cactus/blob/5fed950471f04e9892bb90531e8f63be911857e1/doc/pangenome.md#hprc-graph).Paths from the reference, GRCh38, are acyclic in the MC graph.",
+    "We applied it to build a pangenome graph from all genome assemblies and references (both GRCh38 and CHM13)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009914755.1/",
+   "search": false,
+   "final_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009914755.1/",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Checking your browser - reCAPTCHA",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "T2T-CHM13v2.0",
+    "RefSeq",
+    "Telomere-to-Telomere",
+    "GCF_009914755",
+    "reference genome"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=expert+reaction+complete+human+genome",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=expert+reaction+complete+human+genome",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction complete human genome | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "expert reaction",
+    "complete human genome",
+    "T2T",
+    "telomere-to-telomere",
+    "gap"
+   ],
+   "passages": [
+    "Prof Katya Rubia, Professor of Cognitive Neuroscience, … read more August 6, 2026 expert reaction to generative design of bacteriophages with genome language models A study published in Science looks at generative design of bacteriophages using genome language models.",
+    "Dr Simon Clarke, Associate Professor in … read more June 25, 2026 expert reaction to base editing revealing role of master gene (NANOG) in embryo development A study published in Nature looks at base editing and the role of a key gene in embryo development.",
+    "Prof Jonathan … read more August 6, 2025 expert reaction to unpublished preprint on the DecodeME genome-wide association study of ME/CFS Scientists comment on an unpublished preprint on the DecodeME genome-wide association study of myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS).",
+    "Dr David … read more June 26, 2025 expert reaction to a Wellcome announcement on a new Synthetic Human Genome research project (SynHG) Experts comment on a new research project that aims to synthesise human genomes announced by Wellcome.",
+    "Dr Helen … read more June 4, 2026 expert reaction to the Oversight Committee report into data security at UK Biobank Scientists comment on UK Biobank’s Oversight Committee report into data security.",
+    "Dr … read more August 14, 2024 expert reaction to the Oropouche virus in South America and some imported cases in Europe from travellers to Cuba or Brazil Scientists comment on cases of the Oropouche virus in South America and Europe.",
+    "Dr Philip Veal, Travel Health Consultant … read more August 8, 2024 expert reaction to NICE final draft guidance on exagamglogene autotemcel (Casgevy) for severe beta-thalassaemia Scientists react to NICE final draft guidance on Casgevy for the treatment of beta-thalassaemia."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [
+    {
+     "slug": "complete-human-genome-sequence-t2t",
+     "role": "source",
+     "i": "6-via-1",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+complete+human+genome",
+     "link_text": "expert reaction to first complete sequence of the hantavirus from the current cluster from MV Hondius (from the Swiss patient with confirmed Andes strain) uploaded to the Virological.org platform by t",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-first-complete-sequence-of-the-hantavirus-from-the-current-cluster-from-mv-hondius-from-the-swiss-patient-with-confirmed-andes-strain-uploaded-to-the-virological-org-platform-by-t/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-first-complete-sequence-of-the-hantavirus-from-the-current-cluster-from-mv-hondius-from-the-swiss-patient-with-confirmed-andes-strain-uploaded-to-the-virological-org-platform-by-t/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to first complete sequence of the hantavirus from the current cluster from MV Hondius (from the Swiss patient with confirmed Andes strain) uploaded to the Virological.org platform by the Swiss National Reference Center for Emerging Viral Infections, Geneva University Hospitals and the Institute of Medical Virology, University of Zurich | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [],
+     "verdict": "usable"
+    },
+    {
+     "slug": "complete-human-genome-sequence-t2t",
+     "role": "source",
+     "i": "6-via-2",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+complete+human+genome",
+     "link_text": "expert reaction to unpublished preprint on the DecodeME genome-wide association study of ME/CFS",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-unpublished-preprint-on-the-decodeme-genome-wide-association-study-of-me-cfs/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-unpublished-preprint-on-the-decodeme-genome-wide-association-study-of-me-cfs/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to unpublished preprint on the DecodeME genome-wide association study of ME/CFS | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [],
+     "verdict": "usable"
+    },
+    {
+     "slug": "complete-human-genome-sequence-t2t",
+     "role": "source",
+     "i": "6-via-3",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+complete+human+genome",
+     "link_text": "expert reaction to a Wellcome announcement on a new Synthetic Human Genome research project (SynHG)",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-a-wellcome-announcement-on-a-new-synthetic-human-genome-research-project-synhg/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-a-wellcome-announcement-on-a-new-synthetic-human-genome-research-project-synhg/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to a Wellcome announcement on a new Synthetic Human Genome research project (SynHG) | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [],
+     "verdict": "usable"
+    }
+   ],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://doi.org/10.3410/f.741879536.793594127",
+   "search": false,
+   "final_url": "https://facultyopinions.com/article/741879536#eval793594127",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "You don’t have access to this part of the site - Faculty Opinions",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-07-11"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.3410/f.741879536.793594127",
+   "crossref": {
+    "doi": "10.3410/f.741879536.793594127",
+    "resolves": true,
+    "title": "Faculty Opinions recommendation of The complete sequence of a human genome.",
+    "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+    "publisher": "H1 Connect",
+    "type": "dataset",
+    "issued": "2022-7-11",
+    "authors_first3": [
+     "Villard"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-review-of": [
+      "10.1126/science.abj6987"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Faculty Opinions",
+    "recommended",
+    "complete",
+    "human genome",
+    "telomere"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 8,
+   "kind": "paper",
+   "url": "https://www.biorxiv.org/content/10.1101/2021.05.26.445798v1",
+   "search": false,
+   "final_url": "https://www.biorxiv.org/content/10.1101/2021.05.26.445798v1",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The complete sequence of a human genome",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-01-01"
+    },
+    {
+     "source": "citation_date",
+     "date": "2021-05-27"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2021-05-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-05-27"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Sergey Nurk",
+    "Sergey Koren",
+    "Arang Rhie",
+    "Mikko Rautiainen",
+    "Andrey V. Bzikadze",
+    "Alla Mikheenko",
+    "Mitchell R. Vollger",
+    "Nicolas Altemose",
+    "Lev Uralsky",
+    "Ariel Gershman",
+    "Sergey Aganezov",
+    "Savannah J. Hoyt"
+   ],
+   "who_hint": null,
+   "doi": "10.1101/2021.05.26.445798",
+   "crossref": {
+    "doi": "10.1101/2021.05.26.445798",
+    "resolves": true,
+    "title": "The complete sequence of a human genome",
+    "container": null,
+    "publisher": "openRxiv",
+    "type": "posted-content",
+    "issued": "2021-5-27",
+    "authors_first3": [
+     "Nurk",
+     "Koren",
+     "Rhie"
+    ],
+    "author_count": 99,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-preprint-of": [
+      "10.1126/science.abj6987"
+     ]
+    }
+   },
+   "type_found": "preprint",
+   "meta_description": "bioRxiv - the preprint server for biology, operated by openRxiv, a nonprofit organization dedicated to advancing scientific communication",
+   "terms": [
+    "T2T-CHM13",
+    "complete",
+    "hydatidiform",
+    "posted",
+    "gap"
+   ],
+   "passages": [
+    "The new T2T-CHM13 reference includes gapless assemblies for all 22 autosomes plus Chromosome X, corrects numerous errors, and introduces nearly 200 million bp of novel sequence containing 2,226 paralogous gene copies, 115 of which are predicted to be protein coding.",
+    "Addressing this remaining 8% of the genome, the Telomere-to-Telomere (T2T) Consortium has finished the first truly complete 3.055 billion base pair (bp) sequence of a human genome, representing the largest improvement to the human reference genome since its initial release.",
+    "You are going to email the following The complete sequence of a human genome Message Subject (Your Name) has forwarded a page to you from bioRxiv Message Body (Your Name) thought you would like to see this page from the bioRxiv website.",
+    "WT has licensed two patents to Oxford Nanopore Technologies (US 8748091 and 8394584).Footnotes https://github.com/marbl/CHM13 https://github.com/marbl/CHM13-issues http://genome.ucsc.edu/cgi-bin/hgTracks?genome=t2t-chm13-v1.0&hubUrl=http://t2t.gi.ucsc.edu/chm13/hub/hub.txt https://resgen.io/paper-data/T2T-Nurk-et-al-2021/views/t2t-identity https://www.ncbi.nlm.nih.gov/bioproject/559484 Copyright The copyright holder for this preprint is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity.",
+    "Share The complete sequence of a human genome Sergey Nurk, Sergey Koren, Arang Rhie, Mikko Rautiainen, Andrey V."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

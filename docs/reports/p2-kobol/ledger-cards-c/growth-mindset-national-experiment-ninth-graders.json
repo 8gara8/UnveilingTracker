@@ -1,0 +1,229 @@
+{
+ "slug": "growth-mindset-national-experiment-ninth-graders",
+ "title": "National experiment finds a short growth-mindset lesson helps some students",
+ "first_published": "2019-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-019-1466-y",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-019-1466-y?error=cookies_not_supported&code=1819492c-d815-4c6c-ba51-ddb7575c4a1e",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A national experiment reveals where a growth mindset improves achievement",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-08-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2019-08-07"
+    },
+    {
+     "source": "dc.date",
+     "date": "2019-08-07"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2019-08-07"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2019-08-07"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-08-07"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-05-11"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-07-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-08-07"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Yeager, David S.",
+    "Hanselman, Paul",
+    "Walton, Gregory M.",
+    "Murray, Jared S.",
+    "Crosnoe, Robert",
+    "Muller, Chandra",
+    "Tipton, Elizabeth",
+    "Schneider, Barbara",
+    "Hulleman, Chris S.",
+    "Hinojosa, Cintia P.",
+    "Paunesku, David",
+    "Romero, Carissa"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-019-1466-y",
+   "crossref": {
+    "doi": "10.1038/s41586-019-1466-y",
+    "resolves": true,
+    "title": "A national experiment reveals where a growth mindset improves achievement",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-8-7",
+    "authors_first3": [
+     "Yeager",
+     "Hanselman",
+     "Walton"
+    ],
+    "author_count": 25,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "A global priority for the behavioural sciences is to develop cost-effective, scalable interventions that could improve the academic outcomes of adolescents at a population level, but no such interventions have so far been evaluated in a population-generalizable sample. Here we show that a short (les",
+   "terms": [
+    "News & Views",
+    "News and Views",
+    "Related",
+    "Comments",
+    "Editorial",
+    "Cited by",
+    "growth mindset"
+   ],
+   "passages": [
+    "Notably, the study identified school contexts that sustained the effects of the growth mindset intervention: the intervention changed grades when peer norms aligned with the messages of the intervention.",
+    "Nonetheless, previous randomized evaluations, including a pre-registered replication, found that online growth mindset interventions improved grades for the targeted group of students in secondary education who previously showed lower achievement13,16,18.",
+    "For example, a growth mindset can motivate students to take on more rigorous learning experiences and to persist when encountering difficulties.",
+    "Subsequent growth mindset interventions were briefer and self-administered online, although lower effect sizes were, of course, expected.",
+    "Mathematics and science are relevant because a popular belief in the United States links mathematics and science learning to ‘raw’ or ‘innate’ abilities37—a view that the growth mindset intervention seeks to correct.",
+    "But we also expected that other schools (the highest-achieving schools) might have such ample resources to prevent failure such that a growth mindset intervention would not add much.The heterogeneity analyses found support for the latter expectation, but not the former.",
+    "New growth mindset interventions that go beyond the module and population tested here will need to be subjected to rigorous development and validation processes, as the current programme was13.Finally, this study offers lessons for the science of adolescent behaviour change.",
+    "It therefore featured stories from both older students and admired adults about a growth mindset, and interactive sections in which students reflected on their own learning in school and how a growth mindset could help a struggling ninth-grade student next year.",
+    "Although we cannot isolate the effect of the growth mindset message from a message about effort alone, it is unlikely that the mere mention of effort to high school students would be sufficient to increase grades and challenge seeking.",
+    "None of the authors has a financial relationship with any entity that sells growth mindset products or services."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=growth+mindset+expert+reaction",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=growth+mindset+expert+reaction",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "growth mindset expert reaction | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "growth mindset",
+    "expert reaction",
+    "Yeager",
+    "Walton",
+    "Nature",
+    "school",
+    "mindset"
+   ],
+   "passages": [
+    "Prof Katya Rubia, Professor of Cognitive Neuroscience, … read more March 19, 2024 expert reaction to State of the Climate 2023 Scientists react to the State of Climate Report, published by the WMO."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://doi.org/10.3886/ICPSR37353.v1",
+   "search": false,
+   "final_url": "https://www.icpsr.umich.edu/web/ICPSR/studies/37353/versions/V1",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.3886/icpsr37353.v1",
+   "crossref": {
+    "doi": "10.3886/icpsr37353.v1",
+    "resolves": false,
+    "status": 404
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "National Study of Learning Mindsets",
+    "ICPSR",
+    "University of Michigan",
+    "data",
+    "analysis",
+    "reanalysis"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.30632/spwla-2023-0003",
+      "title": "Integrated Petrophysical Studies for Subsurface Carbon Sequestration",
+      "container": "SPWLA 64th Annual Logging Symposium Transactions",
+      "date": "2023-6-10",
+      "score": 32.899136
+     },
+     {
+      "doi": "10.33599/sj.v61no6.03",
+      "title": "Development and Validation of a Material Response Model for Ablative Materials Undergoing  Ground Testing",
+      "container": "SAMPE Journal",
+      "date": "2025-11-1",
+      "score": 31.983728
+     },
+     {
+      "doi": "10.30632/spwla-2025-0129",
+      "title": "Investigation of Wettability of Organic-Rich Mudrocks via Fourier-Transform Infrared \nSpectroscopy",
+      "container": "SPWLA 66th Annual Symposium Transactions",
+      "date": "2025-5-17",
+      "score": 31.712296
+     }
+    ],
+    "arxiv": []
+   },
+   "title_search": null,
+   "extras": [],
+   "verdict": "unresolved"
+  }
+ ]
+}

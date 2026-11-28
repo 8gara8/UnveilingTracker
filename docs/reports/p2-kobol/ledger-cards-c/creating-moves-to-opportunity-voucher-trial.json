@@ -1,0 +1,123 @@
+{
+ "slug": "creating-moves-to-opportunity-voucher-trial",
+ "title": "Housing voucher counselling moves families to high-opportunity neighbourhoods",
+ "first_published": "2019-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://doi.org/10.3386/w26164",
+   "search": false,
+   "final_url": "https://www.nber.org/system/files/working_papers/w26164/w26164.pdf",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2019-07-31"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.3386/w26164",
+   "crossref": {
+    "doi": "10.3386/w26164",
+    "resolves": true,
+    "title": "Creating Moves to Opportunity: Experimental Evidence on Barriers to Neighborhood Choice",
+    "container": null,
+    "publisher": "National Bureau of Economic Research",
+    "type": "report",
+    "issued": "2019-8",
+    "authors_first3": [
+     "Bergman",
+     "Chetty",
+     "DeLuca"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Creating Moves to Opportunity",
+    "53 percent",
+    "15 percent",
+    "high-opportunity",
+    "randomized",
+    "Seattle",
+    "King County"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://doi.org/10.1257/aer.20200407",
+   "search": false,
+   "final_url": "https://pubs.aeaweb.org/doi/10.1257/aer.20200407",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2024-05-01"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.1257/aer.20200407",
+   "crossref": {
+    "doi": "10.1257/aer.20200407",
+    "resolves": true,
+    "title": "Creating Moves to Opportunity: Experimental Evidence on Barriers to Neighborhood Choice",
+    "container": "American Economic Review",
+    "publisher": "American Economic Association",
+    "type": "journal-article",
+    "issued": "2024-5-1",
+    "authors_first3": [
+     "Bergman",
+     "Chetty",
+     "DeLuca"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Creating Moves to Opportunity",
+    "American Economic Review",
+    "randomized",
+    "voucher",
+    "neighborhood"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  }
+ ]
+}

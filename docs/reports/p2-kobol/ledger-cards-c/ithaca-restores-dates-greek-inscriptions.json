@@ -1,0 +1,41 @@
+{
+ "slug": "ithaca-restores-dates-greek-inscriptions",
+ "title": "Ithaca neural network restores, places and dates damaged Greek inscriptions",
+ "first_published": "2022-03",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://api.openalex.org/works/doi:10.1038/s41586-022-04448-z",
+   "search": false,
+   "final_url": "https://api.openalex.org/works/doi:10.1038/s41586-022-04448-z",
+   "status": 200,
+   "readable": false,
+   "reason": "unreadable",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Ithaca",
+    "cited_by_api_url",
+    "epigraph",
+    "inscriptions"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  }
+ ]
+}

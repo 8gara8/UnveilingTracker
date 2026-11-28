@@ -1,0 +1,140 @@
+{
+ "slug": "eht-m87-black-hole-shadow",
+ "title": "First image of a black hole's shadow, in galaxy M87",
+ "first_published": "2019-04-10",
+ "items": [
+  {
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-019-01155-0",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/d41586-019-01155-0?error=cookies_not_supported&code=18f62a2b-6398-41cb-896c-e14fe8582bce",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Black hole pictured for first time — in spectacular detail",
+   "title_match": false,
+   "dates_found": [
+    {
+     "source": "dc.date",
+     "date": "2019-04-10"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2019-04-10"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2019-04-10"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-04-10"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-21"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-04-10"
+    }
+   ],
+   "date_hint": "",
+   "date_ok": true,
+   "people_found": [
+    "Castelvecchi, Davide"
+   ],
+   "who_hint": "",
+   "doi": "10.1038/d41586-019-01155-0",
+   "crossref": {
+    "doi": "10.1038/d41586-019-01155-0",
+    "resolves": true,
+    "title": "Black hole pictured for first time — in spectacular detail",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-4-10",
+    "authors_first3": [
+     "Castelvecchi"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News"
+   },
+   "meta_description": "T﻿he Event Horizon Telescope’s global network of radio dishes has produced the first-ever﻿ direct image of a black hole and its event horizon.",
+   "terms": [
+    "Event Horizon Telescope",
+    "black hole",
+    "says",
+    "said",
+    "astrophysicist",
+    "University",
+    "not involved"
+   ],
+   "passages": [
+    "NEWS 10 April 2019 Black hole pictured for first time — in spectacular detail T he Event Horizon Telescope’s global network of radio dishes has produced the first-ever direct image of a black hole and its event horizon.",
+    "By stringing together a global network of radio telescopes, they have for the first time produced a picture of an event horizon — a black hole’s perilous edge — against a backdrop of swirling light.",
+    "Credit: EHT Collaboration Astronomers have finally glimpsed the blackness of a black hole.",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,...",
+    "Shanghai, Beijing or London – hybrid working model Springer Nature Ltd Global Leading Talent Recruitment at College of Bio-X, Huazhong Agricultural University Join HZAU's global faculty team to advance research with competitive benefits.",
+    "Beijing (CN) University of Chinese Academy of Sciences (UCAS) Faculty Positions in Westlake University Founded in 2018, Westlake University is a new type of non-profit research-oriented university in Hangzhou, China, supported by public a...",
+    "Wuhan, Hubei (CN) Huazhong Agricultural University (HZAU) Research Careers in Quantitative Synthetic Biology Build life to understand it — and use that understanding to create new biological technologies."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "mismatch"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/expert-reaction-to-first-image-of-a-black-hole/",
+   "search": false,
+   "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-first-image-of-a-black-hole/",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Page not found | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "black hole",
+    "Event Horizon Telescope",
+    "said",
+    "Professor",
+    "Dr",
+    "University",
+    "Institute",
+    "Observatory",
+    "declared interests"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "dead"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "slug": "insight-seismometer-maps-interior-of-mars",
+ "title": "InSight's marsquake recordings give the first measured look inside Mars",
+ "first_published": "2021-07-22",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10161042/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10161042/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "First observations of core-transiting seismic phases on Mars",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-04-23"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-04-24"
+    }
+   ],
+   "date_hint": "2023-04-24",
+   "date_ok": false,
+   "people_found": [
+    "Jessica C E Irving",
+    "Vedran Lekić",
+    "Cecilia Durán",
+    "Mélanie Drilleau",
+    "Doyeon Kim",
+    "Attilio Rivoldini",
+    "Amir Khan",
+    "Henri Samuel",
+    "Daniele Antonangeli",
+    "William Bruce Banerdt",
+    "Caroline Beghein",
+    "Ebru Bozdağ"
+   ],
+   "who_hint": "Jessica C. E. Irving (University of Bristol), Vedran Lekic (University of Maryland), Cecilia Duran (ETH Zurich) and co-authors, Proceedings of the National Academy of Sciences",
+   "doi": "10.1073/pnas.2217090120",
+   "crossref": {
+    "doi": "10.1073/pnas.2217090120",
+    "resolves": true,
+    "title": "First observations of core-transiting seismic phases on Mars",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2023-4-24",
+    "authors_first3": [
+     "Irving",
+     "Lekić",
+     "Durán"
+    ],
+    "author_count": 34,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Mars has a liquid iron alloy core at its center. Using seismic data gathered by the InSight mission, we have made the first observations of seismic waves traveling through Mars’ core. We use the travel times of core-transiting seismic waves, ...",
+   "terms": [
+    "core",
+    "Mars",
+    "SKS",
+    "seismic waves",
+    "core radius"
+   ],
+   "passages": [
+    "Though the observation of seismic waves reflected from Mars’ CMB has helped constrain the core radius, and geophysical and cosmochemical inversions have sought to infer its average density and composition e.g., ref.",
+    "Using seismic data gathered by the InSight mission, we have made the first observations of seismic waves traveling through Mars’ core.",
+    "Keywords: Mars, core evolution, planetary structureAbstract We present the first observations of seismic waves propagating through the core of Mars.",
+    "The travel times of these phases, relative to travel times of mantle-sensitive signals, are used to produce models of the seismic properties throughout Mars and represent the first interior models that are informed by core-transiting seismic waves.",
+    "We observe core-transiting seismic phase SKS from two farside seismic events detected on Mars and measure the travel times of SKS relative to mantle traversing body waves.",
+    "Initial seismic observations using core-reflected seismic waves (ScS) reported a core radius of 1, 830 ± 40 km (11), at the upper bound of prelanding estimates e.g., refs.",
+    "The PP-SS time of S1000a is within two seconds of the prediction made using InSight_KKS21_GP, suggesting that the discrepancy between our observed and predicted SKS times may be in part due to the lack of previous seismic constraints on the elastic properties of Mars’ core.",
+    "The dotted lines show the SKS path in the mantle, and the solid lines depict the part of the SKS path in Mars’ core. [Surface topography model from ref.",
+    "(C) Average density and core radius of Mars.",
+    "These observations, made using seismic data collected by the InSight geophysical mission, have allowed us to construct the first seismically constrained models for the elastic properties of Mars’ core."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

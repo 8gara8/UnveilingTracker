@@ -1,0 +1,153 @@
+{
+ "slug": "vesuvius-challenge-reads-herculaneum-scroll",
+ "title": "Machine-learning ink detection lets contestants read sealed Herculaneum scrolls",
+ "first_published": "2023-10",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "checker",
+   "url": "https://scrollprize.org/firstletters",
+   "search": false,
+   "final_url": "https://scrollprize.org/firstletters",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "First word discovered in unopened Herculaneum scroll by 21yo computer science student",
+   "title_match": false,
+   "dates_found": [
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-10-12"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [],
+   "who_hint": "Vesuvius Challenge",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Vesuvius Challenge \\$700,000 Grand Prize “now definitely achievable”",
+   "terms": [
+    "first letters",
+    "purple",
+    "Farritor",
+    "Nader",
+    "independently",
+    "papyrologists"
+   ],
+   "passages": [
+    "Luke Farritor’s First Letters Prize submission.Luke holding the campfire scroll at EduceLab.",
+    "Shortly after that, another contestant, Youssef Nader, independently discovered the same word in the same area, with even clearer results — winning the second place prize of $10,000.",
+    "That is until Luke Farritor, a contestant of the Vesuvius Challenge, became the first person in two millennia to see an entire word from within an unopened scroll this August.",
+    "For that, we are thrilled to award Luke a $40,000 First Letters Prize, which required contestants to find at least 10 letters in a 4 cm2 area in a scroll.",
+    "Luke then made a submission to our First Letters Prize, which required contestants to find at least 10 letters in a 4 cm2 area.",
+    "Luke Farritor, a college student and SpaceX summer intern working at Starbase, had heard about Vesuvius Challenge from Dwarkesh Patel’s podcast interview with Nat.",
+    "When professor Seales showed this image to our team of papyrologists, scholars specializing in works on papyrus, they gasped: they could immediately read the word “porphyras,” despite the letters being faint.",
+    "Luke Farritor’s model​ After this discovery, several contestants looked for more crackle, but it seemed quite rare.",
+    "Several weeks later, Youssef made his own submission to the First Letters prize.",
+    "Youssef’s discovery​ Meanwhile, another contestant, Youssef Nader, an Egyptian biorobotics grad student in Berlin, pursued a different approach."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "statement",
+   "url": "https://scrollprize.org/press",
+   "search": false,
+   "final_url": "https://scrollprize.org/press",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Vesuvius Challenge",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Vesuvius Challenge",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Press and media inquiries for Vesuvius Challenge, the effort to read the Herculaneum scrolls with X-ray CT scanning and machine learning.",
+   "terms": [
+    "Nature",
+    "Science",
+    "papyrologist",
+    "Herculaneum",
+    "scroll",
+    "expert"
+   ],
+   "passages": [
+    "Press Press & media, use of imagesChristy ChapmanMedia & Communications ManagerTechnology & AIPaul HendersonTechnical LeadPapyrology, archaeology & historyFederica NicolardiPapyrology Lead About Vesuvius Challenge​ Vesuvius Challenge is an open science research organization reading the carbonized Herculaneum scrolls.",
+    "2023Vesuvius Challenge launched$2,199,250awarded in prizes so far45scrolls & fragments scanned, data open to all2026first Herculaneum scroll read end to end Images & videos​ Below is a representative selection of images and videos.",
+    "1667 became the first Herculaneum scroll read end to end.",
+    "Buried by the eruption of Mount Vesuvius in 79 AD, the scrolls are too fragile to open and unroll; we read them instead with high-resolution X-ray CT scans and AI, virtually unwrapping each sheet and recovering its ink.",
+    "In 2023, the Grand Prize was awarded for the first passages ever read from inside a sealed scroll; in 2026, PHerc."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2102.05095",
+   "search": false,
+   "final_url": "https://arxiv.org/abs/2102.05095",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Is Space-Time Attention All You Need for Video Understanding?",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2021-06-09"
+    },
+    {
+     "source": "citation_date",
+     "date": "2021-02-09"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Bertasius, Gedas",
+    "Wang, Heng",
+    "Torresani, Lorenzo"
+   ],
+   "who_hint": "TimeSformer authors",
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2102.05095: Is Space-Time Attention All You Need for Video Understanding?",
+   "terms": [
+    "TimeSformer",
+    "space-time attention",
+    "video"
+   ],
+   "passages": [
+    "Our method, named \"TimeSformer,\" adapts the standard Transformer architecture to video by enabling spatiotemporal feature learning directly from a sequence of frame-level patches.",
+    "Finally, compared to 3D convolutional networks, our model is faster to train, it can achieve dramatically higher test efficiency (at a small drop in accuracy), and it can also be applied to much longer video clips (over one minute long).",
+    "We present a convolution-free approach to video classification built exclusively on self-attention over space and time.",
+    "Our experimental study compares different self-attention schemes and suggests that \"divided attention,\" where temporal attention and spatial attention are separately applied within each block, leads to the best video classification accuracy among the design choices considered.",
+    "Despite the radically new design, TimeSformer achieves state-of-the-art results on several action recognition benchmarks, including the best reported accuracy on Kinetics-400 and Kinetics-600."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

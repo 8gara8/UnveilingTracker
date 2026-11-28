@@ -1,0 +1,185 @@
+{
+ "slug": "nazca-geoglyphs-ai-finds-303",
+ "title": "Deep learning helps find 303 new Nazca geoglyph figures",
+ "first_published": "2024-09",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11459208/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11459208/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AI-accelerated Nazca survey nearly doubles the number of known figurative geoglyphs and sheds light on their purpose",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-09-22"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-09-23"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Masato Sakai",
+    "Akihisa Sakurai",
+    "Siyuan Lu",
+    "Jorge Olano",
+    "Conrad M Albrecht",
+    "Hendrik F Hamann",
+    "Marcus Freitag"
+   ],
+   "who_hint": null,
+   "doi": "10.1073/pnas.2407652121",
+   "crossref": {
+    "doi": "10.1073/pnas.2407652121",
+    "resolves": true,
+    "title": "AI-accelerated Nazca survey nearly doubles the number of known figurative geoglyphs and sheds light on their purpose",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2024-9-23",
+    "authors_first3": [
+     "Sakai",
+     "Sakurai",
+     "Lu"
+    ],
+    "author_count": 7,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "This paper demonstrates how AI accelerates discoveries in archaeology, even in a region as well known as the United Nations Educational, Scientific and Cultural Organization (UNESCO) World Heritage site of Nazca. Our vastly improved account of ...",
+   "terms": [
+    "IBM",
+    "Yamagata",
+    "deep learning",
+    "model",
+    "Ministry of Culture",
+    "Author contributions",
+    "ground truthing",
+    "Competing interests",
+    "relief-type",
+    "line-type",
+    "303",
+    "UNESCO",
+    "Significance"
+   ],
+   "passages": [
+    "This AI model focuses on relief-type geoglyphs that are small and difficult to identify since the distribution of the large line-type figurative geoglyphs is known from previous (manual) aerial studies that do not necessarily require inspection of high-resolution images.",
+    "Here, we report the deployment of an AI system to the entire Nazca region, a UNESCO World Heritage site, leading to the discovery of 303 new figurative geoglyphs within only 6 mo of field survey, nearly doubling the number of known figurative geoglyphs.",
+    "The AI-assisted method is much more scalable, as evidenced by the number of new geoglyphs it has identified: It has assisted in detecting 303 new figurative relief-type geoglyphs, almost doubling the amount of known relief-type geoglyphs (Fig.",
+    "Open in a new tab Field survey confirms 303 new relief-type figurative Nazca geoglyphs.",
+    "Open in a new tab Fifteen of a total of 303 newly discovered relief-type figurative geoglyphs from the AI-assisted survey.",
+    "Inset: Location of the Nazca study area within present-day Peru.The field survey of the promising geoglyph candidates from September 2022 until February 2023 was conducted on foot for ground truthing under the permission of the Peruvian Ministry of Culture.",
+    "Data created by us on the geoglyphs are available upon request to Masato Sakai: sakai@human.kj.yamagata-u.ac.jp, if permission is granted by the Peruvian Ministry of Culture and other organizations.",
+    "PMC Copyright notice PMCID: PMC11459208 PMID: 39312651 Significance This paper demonstrates how AI accelerates discoveries in archaeology, even in a region as well known as the United Nations Educational, Scientific and Cultural Organization (UNESCO) World Heritage site of Nazca.",
+    "Our two most important AI strategies were to utilize an AI model (35) pretrained on natural photographs (36) and only fine-tune it on the relief-type geoglyphs.",
+    "Map of 303 newly confirmed and 380 previously known (black) figurative relief-type geoglyphs."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=Nazca+geoglyphs",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=Nazca+geoglyphs",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Nazca geoglyphs | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Nazca",
+    "geoglyphs",
+    "expert reaction",
+    "AI-accelerated Nazca survey",
+    "Sakai",
+    "archaeologist"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.gob.pe/cultura",
+   "search": false,
+   "final_url": "https://www.gob.pe/cultura",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Ministerio de Cultura - Cultura",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-26"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-26"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Trabajamos por un país libre de discriminación y de racismo, orgulloso de su identidad cultural.",
+   "terms": [
+    "Nazca",
+    "geoglifos",
+    "inteligencia artificial",
+    "Yamagata",
+    "registro",
+    "Ministerio de Cultura"
+   ],
+   "passages": [
+    "Leer másIr al servicioVisitar los museos virtuales del Ministerio de CulturaPuedes hacer un recorrido virtual de los museos que administra el Ministerio de Cultura a nivel..."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

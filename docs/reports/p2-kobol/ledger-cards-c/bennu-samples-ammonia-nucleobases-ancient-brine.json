@@ -1,0 +1,683 @@
+{
+ "slug": "bennu-samples-ammonia-nucleobases-ancient-brine",
+ "title": "Bennu samples hold ammonia, amino acids, all five nucleobases and brine salts",
+ "first_published": "2025-01-29",
+ "items": [
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s42004-026-01966-z",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s42004-026-01966-z?error=cookies_not_supported&code=391c0730-0d17-4c1b-9c45-fa61ce62844d",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Distribution of extraterrestrial nucleobases, other N-heterocycles, and their precursors in a sample from asteroid Bennu",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-04-02"
+    },
+    {
+     "source": "dc.date",
+     "date": "2026-04-02"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-04-02"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-04-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-11-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-02-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-04-02"
+    }
+   ],
+   "date_hint": "2026-04-02",
+   "date_ok": false,
+   "people_found": [
+    "Oba, Yasuhiro",
+    "Koga, Toshiki",
+    "Takano, Yoshinori",
+    "Naraoka, Hiroshi",
+    "Hirakawa, Yuta",
+    "Sunami, Sako",
+    "Furukawa, Yoshihiro",
+    "Yamazaki, Tomoya",
+    "Tomaru, Takuto",
+    "Dworkin, Jason P.",
+    "Glavin, Daniel P.",
+    "Connolly, Harold C."
+   ],
+   "who_hint": "Yasuhiro Oba, Toshiki Koga, Yoshinori Takano, Hiroshi Naraoka, Yuta Hirakawa, Sako Sunami, Yoshihiro Furukawa and others; NASA-side co-authors Jason P. Dworkin, Daniel P. Glavin, Harold C. Connolly Jr and Dante S. Lauretta (the page's author list is cut short, so the full list was not seen)",
+   "doi": "10.1038/s42004-026-01966-z",
+   "crossref": {
+    "doi": "10.1038/s42004-026-01966-z",
+    "resolves": true,
+    "title": "Distribution of extraterrestrial nucleobases, other N-heterocycles, and their precursors in a sample from asteroid Bennu",
+    "container": "Communications Chemistry",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-4-2",
+    "authors_first3": [
+     "Oba",
+     "Koga",
+     "Takano"
+    ],
+    "author_count": 13,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The recent discovery of all five canonical nucleobases in samples from Bennu provides compelling evidence that some of life’s ingredients were synthesized abiotically in the parent body of this asteroid and/or its precedent components. However, due to the sample availability and the limited method f",
+   "terms": [
+    "Bennu",
+    "nucleobases",
+    "OREX-800107-108",
+    "Glavin",
+    "ammonia",
+    "urea"
+   ],
+   "passages": [
+    "5: Distribution of nucleobases in Bennu samples OREX-800107-108 (this study) and OREX-800044-101.Full size imageConcentrations with standard errors of canonical nucleobases detected in the 2% and 20% HCl extracts from OREX-800107-108 and those in the 20% HCl extract from OREX-800044-1019.",
+    "2: Structures of representative pyrimidine and purine nucleobases.Full size imageMolecular structures of pyrimidine and purine nucleobases detected in Bennu sample OREX-800107-108.",
+    "4: Detection of other nucleobases in the 20% HCl extract.Full size imageExtracted ion chromatograms (EICs) at m/z of (from top to bottom) 97.0396, 126.0662, 137.0458, 151.0727, and 153.0407, in the 20% HCl extract from Bennu sample OREX-800107-108.",
+    "5, the concentrations of each canonical nucleobase in the 2% and 20% HCl extracts are compared with those reported by Glavin & Dworkin et al.9, who extracted nucleobases from Bennu sample OREX-800044-101 with 20% HCl only.",
+    "For example, the total concentration of canonical nucleobases in Bennu sample OREX-800107-108 (1097 ± 51 pmol g−1) is close to that in Ryugu sample C0370 (1247 ± 32 pmol g−1).",
+    "For example, Glavin & Dworkin et al.9 reported that Bennu samples contain abundant ammonia (NH3; 13.6 μmol g–1), concluding that the parent body of Bennu likely accreted ammonia-rich ices that were from the outer Solar System.",
+    "6: Detection of N-heterocycles other than nucleobases in the 20% HCl extract.Full size imageExtracted ion chromatograms (EICs) at m/z of (from top to bottom) 69.0447, 113.0346, 127.0502, 124.0396, and 138.0550, in the 20% HCl extract from Bennu sample OREX-800107-108.",
+    "Hence, the difference in solubility of nucleobases may not be the main reason for the higher concentration of purine that we observed in the 20% HCl extract of Bennu sample OREX-800107-108.",
+    "3 and 4).Results and DiscussionNucleobases in Bennu sample OREX-800107-108To determine which nitrogen-bearing bases this Bennu sample contains, we analysed both mild (2%) and strong (20%) HCl extracts using high-resolution mass spectrometry.Detection of pyrimidine and purine bases in 2% HCl extractSupplementary Fig.",
+    "Distribution of extraterrestrial nucleobases, other N-heterocycles, and their precursors in a sample from asteroid Bennu."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "statement",
+   "url": "https://w3.jamstec.go.jp/j/about/press_release/20260403/",
+   "search": false,
+   "final_url": "https://w3.jamstec.go.jp/j/about/press_release/20260403/",
+   "status": null,
+   "readable": false,
+   "reason": "ERR_TLS_CERT_ALTNAME_INVALID",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2026-04",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "JAMSTEC (Japan Agency for Marine-Earth Science and Technology), reporting its team's Bennu analysis",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "ベヌー",
+    "核酸塩基",
+    "尿素"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "statement",
+   "url": "https://www.tohoku.ac.jp/japanese/2026/04/press20260403-01-Bennu.html",
+   "search": false,
+   "final_url": "https://www.tohoku.ac.jp/japanese/2026/04/press20260403-01-Bennu.html",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "小惑星ベヌー試料から核酸塩基と高濃度の尿素を検出 ～小惑星環境での化学プロセスの絞り込みに成功～",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2026-04",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Tohoku University, reporting the Oba et al. result",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "【本学研究者情報】 〇理学研究科地学専攻　教授　古川善博研究室ウェブサイト 【発表のポイント】 小惑星ベヌーから持ち帰られたサンプルから核酸塩基など窒素を含む多種の有機分子を検出。 多くの有機分子は低...",
+   "terms": [
+    "ベヌー",
+    "核酸塩基",
+    "尿素"
+   ],
+   "passages": [
+    "1828年にヴェーラーによって人間の手で初めて無機化合物から合成された有機化合物といわれており、生体の代謝産物としても知られる。 ＊3 ヌクレオシド ... 核酸塩基と糖が結合した化合物で、これにリン酸が結合すると、DNAやRNAを構成するヌクレオチドになる。これまでに地球外物質から検出された例はない。 【論文情報】 論文名 Distribution of extraterrestrial nucleobases, other N-heterocycles, and their precursors in a sample from asteroid Bennu（小惑星ベヌーサンプルに含まれる核酸塩基、その他窒素複素環化合物、及びそれらの前駆体の分布）著者名 大場康弘1、古賀俊貴2、高野淑識2,3、奈良岡浩4（研究当時）、平川祐太2、角南沙己5、古川善博5、山﨑智也1、都丸琢斗1、Jason P."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-025-00084-5",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/d41586-025-00084-5?error=cookies_not_supported&code=fdc4f481-2b95-47b0-9a12-e0ae38aa2f11",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Asteroid Bennu contains salts from ancient brine",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-12-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-20"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-01-29"
+    }
+   ],
+   "date_hint": "2025-01-29",
+   "date_ok": true,
+   "people_found": [
+    "Sekine, Yasuhito"
+   ],
+   "who_hint": "Yasuhito Sekine",
+   "doi": "10.1038/d41586-025-00084-5",
+   "crossref": {
+    "doi": "10.1038/d41586-025-00084-5",
+    "resolves": true,
+    "title": "Asteroid Bennu contains salts from ancient brine",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-1-29",
+    "authors_first3": [
+     "Sekine"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "Evidence that water evaporated out of the building blocks of planets.",
+   "terms": [
+    "Bennu",
+    "salts",
+    "McCoy",
+    "brine"
+   ],
+   "passages": [
+    "Writing in Nature, McCoy et al.1 report that various fragile salts are indeed present in the samples returned from Bennu.",
+    "NEWS AND VIEWS 29 January 2025 Asteroid Bennu contains salts from ancient brine A space mission to an asteroid has returned extremely delicate salts not previously observed in extraterrestrial materials.",
+    "An analysis of these salts helps to establish the history of water in the early Solar System."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-025-00267-0",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/d41586-025-00267-0?error=cookies_not_supported&code=c9ab8452-65ac-4a40-b0a8-d5236a63d017",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Asteroid Bennu contains building blocks of life",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "dc.date",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-21"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-01-29"
+    }
+   ],
+   "date_hint": "2025-01",
+   "date_ok": true,
+   "people_found": [
+    "Petrić Howe, Nick",
+    "Thompson, Benjamin"
+   ],
+   "who_hint": "not read",
+   "doi": "10.1038/d41586-025-00267-0",
+   "crossref": {
+    "doi": "10.1038/d41586-025-00267-0",
+    "resolves": true,
+    "title": "Asteroid Bennu contains building blocks of life",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-1-29",
+    "authors_first3": [
+     "Petrić Howe",
+     "Thompson"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "Nature Podcast"
+   },
+   "meta_description": "Hear the latest science news from the Nature Podcast | 29 January 2025",
+   "terms": [
+    "Bennu",
+    "building blocks",
+    "amino acids",
+    "nucleobases"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 2,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-025-00264-3",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/d41586-025-00264-3?error=cookies_not_supported&code=9c4fda3f-e1b9-45ad-89ca-3086e74aa475",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Asteroid fragments upend theory of how life on Earth bloomed",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "dc.date",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-21"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-01-29"
+    }
+   ],
+   "date_hint": "2025-01",
+   "date_ok": true,
+   "people_found": [
+    "Witze, Alexandra"
+   ],
+   "who_hint": "not read",
+   "doi": "10.1038/d41586-025-00264-3",
+   "crossref": {
+    "doi": "10.1038/d41586-025-00264-3",
+    "resolves": true,
+    "title": "Asteroid fragments upend theory of how life on Earth bloomed",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-1-29",
+    "authors_first3": [
+     "Witze"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News"
+   },
+   "meta_description": "Samples from Bennu contain the chemical building blocks of life — but with a twist.",
+   "terms": [
+    "Bennu",
+    "asteroid",
+    "life"
+   ],
+   "passages": [
+    "NEWS 29 January 2025 Asteroid fragments upend theory of how life on Earth bloomed Samples from Bennu contain the chemical building blocks of life — but with a twist.",
+    "Credit: Robert Markowitz Fragments of the asteroid Bennu, carefully collected and ferried to Earth by a robotic spacecraft, contain the building blocks for life, NASA announced today.",
+    "Wuhan, Hubei (CN) Huazhong Agricultural University (HZAU) Research Careers in Quantitative Synthetic Biology Build life to understand it — and use that understanding to create new biological technologies."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41550-026-02791-z",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41550-026-02791-z?error=cookies_not_supported&code=e0b6aca0-d403-450e-9ce8-83e1fcd6e8d4",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A complete set of canonical nucleobases in the carbonaceous asteroid (162173) Ryugu",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2026-03-16"
+    },
+    {
+     "source": "dc.date",
+     "date": "2026-03-16"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-03-16"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-03-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-03-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-07-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-01-20"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-03-16"
+    }
+   ],
+   "date_hint": "2026",
+   "date_ok": false,
+   "people_found": [
+    "Koga, Toshiki",
+    "Oba, Yasuhiro",
+    "Takano, Yoshinori",
+    "Naraoka, Hiroshi",
+    "Ogawa, Nanako O.",
+    "Sasaki, Kazunori",
+    "Sato, Hajime",
+    "Yoshimura, Toshihiro",
+    "Ohkouchi, Naohiko"
+   ],
+   "who_hint": "not read",
+   "doi": "10.1038/s41550-026-02791-z",
+   "crossref": {
+    "doi": "10.1038/s41550-026-02791-z",
+    "resolves": true,
+    "title": "A complete set of canonical nucleobases in the carbonaceous asteroid (162173) Ryugu",
+    "container": "Nature Astronomy",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-3-16",
+    "authors_first3": [
+     "Koga",
+     "Oba",
+     "Takano"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.21203/rs.3.rs-7071403/v1"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Organic molecules delivered from extraterrestrial materials may have played a key role in supplying building blocks for life on Earth. Here we report all five canonical nucleobases—purines (adenine and guanine) and pyrimidines (cytosine, thymine and uracil)—in samples returned from the C-type astero",
+   "terms": [
+    "Ryugu",
+    "nucleobases",
+    "Bennu"
+   ],
+   "passages": [
+    "Here we report all five canonical nucleobases—purines (adenine and guanine) and pyrimidines (cytosine, thymine and uracil)—in samples returned from the C-type asteroid (162173) Ryugu by JAXA’s Hayabusa2 mission and compare the results with data from similar extraterrestrial material.",
+    "A complete set of canonical nucleobases in the carbonaceous asteroid (162173) Ryugu.",
+    "Collectively, these results provide robust evidence for the presence of all five canonical nucleobases—adenine, guanine, cytosine, thymine and uracil—in the Ryugu samples.Fig.",
+    "1), supports the indigenous origin of all five canonical nucleobases observed in the Ryugu samples and the Orgueil meteorite.",
+    "Given that Bennu experienced more alkaline and ammonia-rich aqueous alteration than Ryugu22,27, analysing both purines and pyrimidines in Ryugu samples is crucial for understanding how nucleobase distributions reflect the chemical history and formation processes in different primitive parent bodies.",
+    "This difference may reflect the N-rich composition of Bennu, as indicated by the diverse molecular distribution of its soluble organic matter—including amino acids, amines, carboxylic acids and N-heterocycles27—in contrast to the sulfur-rich chemistry observed in the Ryugu samples17,18.",
+    "Samples from Ryugu, Bennu and Orgueil, which have a similar mineralogy and elemental composition, show purine-to-pyrimidine ratios negatively correlating with ammonia.",
+    "In this study, we report a comprehensive analysis of nucleobases in two Ryugu aggregate samples (A0480 and C0370; Supplementary Fig.",
+    "In contrast to the high Pu/Py ratio in Murchison, the lower Pu/Py ratios in the Ryugu, Bennu and Orgueil samples indicate alternative synthetic pathways, with only a minor role for HCN polymerization.",
+    "A strong correlation (R2 = 0.89) between Pu/Py ratios and ammonia concentrations22,27 in the Ryugu, Bennu and Orgueil samples (Fig."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41561-025-01838-6",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41561-025-01838-6?error=cookies_not_supported&code=f3f16898-6466-42a6-ac93-f79bb3bf7f18",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Bio-essential sugars in samples from asteroid Bennu",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-12-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-12-02"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-12-02"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-12-02"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-12-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-12-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-03-06"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-09-30"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-12-02"
+    }
+   ],
+   "date_hint": "2025",
+   "date_ok": false,
+   "people_found": [
+    "Furukawa, Yoshihiro",
+    "Sunami, Sako",
+    "Takano, Yoshinori",
+    "Koga, Toshiki",
+    "Hirakawa, Yuta",
+    "Oba, Yasuhiro",
+    "Naraoka, Hiroshi",
+    "Saigusa, Daisuke",
+    "Yoshikawa, Takaaki",
+    "Tanaka, Satoru",
+    "Glavin, Daniel P.",
+    "Dworkin, Jason P."
+   ],
+   "who_hint": "not read",
+   "doi": "10.1038/s41561-025-01838-6",
+   "crossref": {
+    "doi": "10.1038/s41561-025-01838-6",
+    "resolves": true,
+    "title": "Bio-essential sugars in samples from asteroid Bennu",
+    "container": "Nature Geoscience",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-12-2",
+    "authors_first3": [
+     "Furukawa",
+     "Sunami",
+     "Takano"
+    ],
+    "author_count": 14,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Deliveries of organic molecules from space, such as those found in carbonaceous meteorites, have long been hypothesized as a source of the inventory of the first life on Earth. This hypothesis is strengthened by detections of two of life’s fundamental building blocks—nucleobases and protein-building",
+   "terms": [
+    "Bennu",
+    "sugars",
+    "ribose"
+   ],
+   "passages": [
+    "Here we analyse an extract from a sample of asteroid (101955) Bennu collected by the OSIRIS-REx spacecraft and identify several bio-essential sugars, including ribose (RNA sugar) and glucose (metabolism substrate).",
+    "1 and 2), confirming that the Bennu sample was not contaminated during analytical processing.The abundances of the biologically important sugars in the Bennu sample (glucose, arabinose, ribose and xylose) might nevertheless suggest the possibility of contamination.",
+    "Thus, the relatively high abundances of these sugars in the Bennu sample are reasonable.Ribose, though, is not a chemically stable sugar.",
+    "We therefore propose that the detected Bennu sugars were formed by asteroidal processes acting on interstellar materials, rather than having been formed in interstellar environments and surviving the reactive asteroidal processes.We did not find the DNA sugar, 2-deoxyribose, in the Bennu sample we analysed.",
+    "The 2-deoxyribose has more than two orders of magnitude higher chemical reactivity than sugars detected in the Bennu sample19, yet this molecule has lower sensitivity to thermal decomposition, by a factor of 2.6, than ribose18.",
+    "Given that Bennu contains formaldehyde and originates from an ancient parent asteroid that underwent long-term alteration by aqueous fluids, we postulate that the detected sugars formed in the parent asteroid from brines containing formaldehyde.",
+    "A possible reason for this could be the relatively abundant ammonia in Bennu17: ammonia can react with aldehydes, including sugars, yielding a Schiff base, which could be converted into other molecules such as amino acids, amines and nitrogen heterocycles41,42,43,44,45.",
+    "Bio-essential sugars in samples from asteroid Bennu.",
+    "The acid extraction was conducted to avoid potential sugar formation and degradation because these reactions are limited in low pH18,19,20.The Bennu extract shows several identical GC-MS/MS peaks to the investigated sugars in all the characteristic fragment masses of the derivatized sugars (Figs.",
+    "3: Abundances of sugars in Bennu sample OREX-800107-108 and meteorites.Full size imagea, Identified sugars. b, Relative abundances of pentoses in Bennu and formose-type reaction products."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

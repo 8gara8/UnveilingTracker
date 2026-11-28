@@ -1,0 +1,311 @@
+{
+ "slug": "ai-chatbot-chats-shift-voter-preferences",
+ "title": "Short chats with AI chatbots shift voters' political preferences",
+ "first_published": "2025-12-04",
+ "items": [
+  {
+   "role": "source",
+   "i": 8,
+   "kind": "paper",
+   "url": "https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/framework-to-assess-the-persuasion-risks-large-language-model-chatbots-pose-to-democratic-societies/AB0627A88FEBF023094B8A373F64ECA2",
+   "search": false,
+   "final_url": "https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/framework-to-assess-the-persuasion-risks-large-language-model-chatbots-pose-to-democratic-societies/AB0627A88FEBF023094B8A373F64ECA2",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A Framework to Assess the Persuasion Risks Large Language Model Chatbots Pose to Democratic Societies",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-06-04"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-06-04"
+    }
+   ],
+   "date_hint": "2026-06-04",
+   "date_ok": false,
+   "people_found": [
+    "Zhongren Chen",
+    "Joshua Kalla",
+    "Quan Le",
+    "Shinpei Nakamura-Sakai",
+    "Jasjeet Sekhon",
+    "Ruixiao Wang"
+   ],
+   "who_hint": "Zhongren Chen, Joshua Kalla, Quan Le, Shinpei Nakamura-Sakai, Jasjeet Sekhon, Ruixiao Wang (Yale University; one author at Amazon.com Inc.)",
+   "doi": "10.1017/xps.2026.10032",
+   "crossref": {
+    "doi": "10.1017/xps.2026.10032",
+    "resolves": true,
+    "title": "A Framework to Assess the Persuasion Risks Large Language Model Chatbots Pose to Democratic Societies",
+    "container": "Journal of Experimental Political Science",
+    "publisher": "Cambridge University Press (CUP)",
+    "type": "journal-article",
+    "issued": "2026-6-4",
+    "authors_first3": [
+     "Chen",
+     "Kalla",
+     "Le"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "A Framework to Assess the Persuasion Risks Large Language Model Chatbots Pose to Democratic Societies",
+   "terms": [
+    "chatbots",
+    "persuasive",
+    "survey experiments",
+    "10,417",
+    "campaign ads",
+    "Hackenburg",
+    "conversations"
+   ],
+   "passages": [
+    "Using two survey experiments (N = 10,417) and real-world simulations, we compare the cost-effectiveness of LLM chatbots against traditional campaign tactics, taking into account both the “receive” and “accept” steps in the persuasion process.",
+    "First, many existing studies from both academic and industry researchers evaluate LLM persuasiveness using single-message interactions rather than extended conversations with chatbots.",
+    "Conclusion Our research introduces a new framework for assessing the persuasive risks that LLM chatbots pose to democratic societies.",
+    "In this paper, we propose a framework to assess the persuasive risks that LLM chatbots may pose.",
+    "Taken together, these findings suggest that AI chatbots can be as persuasive as human persuaders, both in the short-term and up to five weeks later.",
+    "For example, prior work has compared LLM-generated persuasive messages to those written by humans but limited their evaluation to single messages (Bai et al., Reference Bai, Voelkel, Muldowney, Johannes and Willer2025; Hackenburg et al., Reference Hackenburg, Tappin, Röttger, Hale, Bright and Margetts2025).",
+    "This may underestimate LLMs’ persuasiveness, as research often finds that extended conversations are particularly persuasive (Broockman and Kalla, Reference Broockman and Kalla2016; Green and Gerber, Reference Green and Gerber2019; Kalla and Broockman, Reference Kalla and Broockman2020).",
+    "Second, we benchmark the persuasiveness of these chatbots against current campaign practices using actual campaign advertisements, providing a meaningful comparison to existing persuasion approaches.",
+    "By conducting two survey experiments and a real-world simulation exercise, we evaluated both steps of the persuasion process: exposure to a persuasive message and acceptance conditional on exposure.",
+    "This was motivated by their widespread adoption and prior research finding large persuasive impacts from conversations (Broockman and Kalla, Reference Broockman and Kalla2016; Green and Gerber, Reference Green and Gerber2019; Kalla and Broockman, Reference Kalla and Broockman2020, Reference Kalla and Broockman2023)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 9,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41562-025-02194-6",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41562-025-02194-6?error=cookies_not_supported&code=569590d9-e99b-4b92-accf-5bf42439b501",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "On the conversational persuasiveness of GPT-4",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-07-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-05-19"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-05-19"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-05-19"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-05-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-05-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-05-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-03-28"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-05-19"
+    }
+   ],
+   "date_hint": "2025-05-19",
+   "date_ok": false,
+   "people_found": [
+    "Salvi, Francesco",
+    "Horta Ribeiro, Manoel",
+    "Gallotti, Riccardo",
+    "West, Robert"
+   ],
+   "who_hint": "Salvi, Horta Ribeiro, Gallotti and one more author (4 authors; EPFL team per the dossier's Crossref record; page not read by me)",
+   "doi": "10.1038/s41562-025-02194-6",
+   "crossref": {
+    "doi": "10.1038/s41562-025-02194-6",
+    "resolves": true,
+    "title": "On the conversational persuasiveness of GPT-4",
+    "container": "Nature Human Behaviour",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-5-19",
+    "authors_first3": [
+     "Salvi",
+     "Horta Ribeiro",
+     "Gallotti"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41562-026-02588-0",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {
+     "has-preprint": [
+      "10.21203/rs.3.rs-4429707/v1"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Early work has found that large language models (LLMs) can generate persuasive content. However, evidence on whether they can also personalize arguments to individual attributes remains limited, despite being crucial for assessing misuse. This preregistered study examines AI-driven persuasion in a c",
+   "terms": [
+    "persuasive",
+    "GPT-4",
+    "debate",
+    "personalization",
+    "Correction",
+    "Author Correction"
+   ],
+   "passages": [
+    "In debate pairs where AI and humans were not equally persuasive, GPT-4 with personalization was more persuasive 64.4% of the time (81.2% relative increase in odds of higher post-debate agreement; 95% confidence interval [+26.0%, +160.7%], P < 0.01; N = 900).",
+    "Human–AI (personalized) debates show the strongest positive effect, meaning that GPT-4 with access to personal information had higher persuasive power than humans.",
+    "Nevertheless, these findings provide evidence that GPT-4-based microtargeting strongly outperforms human performance, with GPT-4 leveraging personal information more effectively (see Supplementary Section 5 for examples of complete debates showcasing effective use of personalization).Fig.",
+    "This suggests caution in attributing the observed advantage exclusively to personalization, as opposed to the general persuasive capabilities of GPT-4.",
+    "There is, however, still limited knowledge about the persuasive power of LLMs in direct conversations with human counterparts and how AI persuasiveness, with or without personalization, compares with human persuasiveness (see Supplementary Section 1 for an additional literature review).",
+    "In addition, to prevent participants from attempting a Turing test, we informed them that their goal was not to spot whether their opponent was a human or an AI but rather to be as persuasive as possible during the debate.",
+    "Analyses of underlying social dimensions and usage of persuasive strategies (Supplementary Section 10) confirm that GPT-4 heavily relied on logical reasoning and factual knowledge.",
+    "More intuitively, this means that 64.4% of the time, personalized GPT-4 opponents were more persuasive than human opponents, given that they were not equally persuasive (see Supplementary Section 3 for a detailed explanation).",
+    "Participants were randomly assigned to 1 of 12 conditions in a 2 × 2 × 3 design: (1) human or GPT-4 debate opponent; (2) opponent with or without access to sociodemographic participant data; (3) debate topic of low, medium or high opinion strength.",
+    "By comparing participants’ agreement with the debate proposition before versus after the debate, we can measure shifts in opinion and, consequently, compare the persuasive effect of different treatments."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 10,
+   "kind": "paper",
+   "url": "https://research.vu.nl/en/publications/ai-chatbots-can-persuade-voters-to-change-their-minds/",
+   "search": false,
+   "final_url": "https://research.vu.nl/en/publications/ai-chatbots-can-persuade-voters-to-change-their-minds/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AI chatbots can persuade voters to change their minds",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-12-11"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-12-04"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Chiara Vargiu",
+    "Alessandro Nai"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/d41586-025-03733-x",
+   "crossref": {
+    "doi": "10.1038/d41586-025-03733-x",
+    "resolves": true,
+    "title": "AI chatbots can persuade voters to change their minds",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-12-4",
+    "authors_first3": [
+     "Vargiu",
+     "Nai"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Vargiu",
+    "Nai",
+    "Vrije Universiteit Amsterdam",
+    "University of Amsterdam",
+    "News and Views",
+    "abstract"
+   ],
+   "passages": [
+    "AI chatbots can persuade voters to change their minds Chiara Vargiu, Alessandro Nai Research output: Contribution to Journal › Comment / Letter to the editor › Academic Overview Fingerprint Abstract Conversations with AI can sway people’s political views.",
+    "Nature, 648(8093), 287-288. https://doi.org/10.1038/d41586-025-03733-x Vargiu, Chiara ; Nai, Alessandro. / AI chatbots can persuade voters to change their minds.",
+    "287-288. https://doi.org/10.1038/d41586-025-03733-x AI chatbots can persuade voters to change their minds. / Vargiu, Chiara; Nai, Alessandro.",
+    "287-288. @article{88a0967e81174c0b82d5f3c074edae64, title = \"AI chatbots can persuade voters to change their minds\", abstract = \"Conversations with AI can sway people{\\textquoteright}s political views."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 11,
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.aea3884",
+   "search": false,
+   "final_url": "https://www.science.org/doi/10.1126/science.aea3884",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Perspective",
+    "levers of political persuasion",
+    "accuracy",
+    "information",
+    "Hackenburg"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  }
+ ]
+}

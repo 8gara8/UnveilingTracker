@@ -1,0 +1,223 @@
+{
+ "slug": "idx-dr-first-autonomous-ai-diagnostic",
+ "title": "FDA permits marketing of first autonomous AI diagnostic, for diabetic retinopathy",
+ "first_published": "2018-04-11",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "checker",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-permits-marketing-artificial-intelligence-based-device-detect-certain-diabetes-related-eye-problems",
+   "search": false,
+   "final_url": "https://www.fda.gov/news-events/press-announcements/fda-permits-marketing-artificial-intelligence-based-device-detect-certain-diabetes-related-eye-problems",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Page Not Found | FDA",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2018-04",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "US Food and Drug Administration",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "IDx-DR",
+    "first",
+    "artificial intelligence",
+    "diabetic retinopathy",
+    "more than mild",
+    "without the need for a clinician",
+    "De Novo"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "dead"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "checker",
+   "url": "https://www.fda.gov/NewsEvents/Newsroom/PressAnnouncements/ucm604357.htm",
+   "search": false,
+   "final_url": "https://www.fda.gov/news-events/press-announcements/fda-permits-marketing-artificial-intelligence-based-device-detect-certain-diabetes-related-eye",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Page Not Found | FDA",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2018-04",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "US Food and Drug Administration",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "IDx-DR",
+    "artificial intelligence",
+    "diabetic retinopathy",
+    "De Novo"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "dead"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "checker",
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?ID=DEN180001",
+   "search": false,
+   "final_url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?ID=DEN180001",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Device Classification Under Section 513(f)(2)(De Novo)",
+   "title_match": false,
+   "dates_found": [],
+   "date_hint": "2018-04",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "US Food and Drug Administration",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "DEN180001",
+    "IDx-DR",
+    "diabetic retinopathy",
+    "Decision Date",
+    "granted"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41746-018-0040-6",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41746-018-0040-6?error=cookies_not_supported&code=78f07503-cdd3-4d81-873d-63513bc39362",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Pivotal trial of an autonomous AI-based diagnostic system for detection of diabetic retinopathy in primary care offices",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2018-08-28"
+    },
+    {
+     "source": "dc.date",
+     "date": "2018-08-28"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2018-08-28"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2018-08-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-08-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-05-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-07-06"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-08-28"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Abràmoff, Michael D.",
+    "Lavin, Philip T.",
+    "Birch, Michele",
+    "Shah, Nilay",
+    "Folk, James C."
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41746-018-0040-6",
+   "crossref": {
+    "doi": "10.1038/s41746-018-0040-6",
+    "resolves": true,
+    "title": "Pivotal trial of an autonomous AI-based diagnostic system for detection of diabetic retinopathy in primary care offices",
+    "container": "npj Digital Medicine",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-8-28",
+    "authors_first3": [
+     "Abràmoff",
+     "Lavin",
+     "Birch"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Artificial Intelligence (AI) has long promised to increase healthcare affordability, quality and accessibility but FDA, until recently, had never authorized an autonomous AI diagnostic system. This pivotal trial of an AI system to detect diabetic retinopathy (DR) in people with diabetes enrolled 900",
+   "terms": [
+    "NCT",
+    "ClinicalTrials.gov",
+    "registered",
+    "De Novo",
+    "FDA",
+    "IDx-DR",
+    "autonomous",
+    "no clinician",
+    "900",
+    "primary care"
+   ],
+   "passages": [
+    "The study was registered before study start at ClinicalTrials.gov under NCT02963441.Author informationAuthors and AffiliationsDepartment of Ophthalmology and Visual Sciences, University of Iowa, Iowa City, IA, 52242, USAMichael D.",
+    "FDA permits marketing of artificial intelligence-based device to detect certain diabetes-related eye problems. https://www.fda.gov/NewsEvents/Newsroom/PressAnnouncements/ucm604357.htm April 12, 2018 (Washington, DC, 2018).Niemeijer, M., Abràmoff, M.",
+    "The AI system exceeded all pre-specified superiority endpoints at sensitivity of 87.2% (95% CI, 81.8–91.2%) (>85%), specificity of 90.7% (95% CI, 88.3–92.7%) (>82.5%), and imageability rate of 96.1% (95% CI, 94.6–97.3%), demonstrating AI’s ability to bring specialty-level diagnostics to primary care settings.",
+    "Food and Drug Administration (FDA) on the endpoints, statistical testing, and study design (see below).",
+    "Web-based screening for diabetic retinopathy in a primary care population: the EyeCheck project.",
+    "Ten study sites were all in primary care offices, and the AI systems were operated by existing staff at those sites, using standardized training and operator materials to facilitate use of the system.",
+    "FPRC staff, primary care site personnel, Sponsor personnel, and the statistical team were masked at all times to the AI system outputs.",
+    "The FPRC imaging on the other hand was conducted by FPRC certified expert photographers.ResultsStudy populationA total of 900 participants were enrolled at 10 sites, of which 892 participants completed all procedures.",
+    "Primary care providers may not feel comfortable evaluating the retina of a person with diabetes themselves.",
+    "Levels of categorization in visual recognition studied using functional magnetic resonance imaging."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,166 @@
+{
+ "slug": "magic-angle-graphene-superconductivity",
+ "title": "Twisted bilayer graphene turns superconducting at a magic angle",
+ "first_published": "2018-03-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "checker",
+   "url": "https://wolffund.org.il/category/field/physics/",
+   "search": false,
+   "final_url": "https://wolffund.org.il/category/field/physics/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "ארכיון Physics",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Wolf Foundation",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Jarillo-Herrero",
+    "MacDonald",
+    "Bistritzer",
+    "2020",
+    "Physics"
+   ],
+   "passages": [
+    "Jun Ye Wolf Prize Laureate in Physics 2026 Jun Ye Affiliation at the time of the award: National Institute of Standards & Technology (NIST), University of Colorado, USA Award citation: “For transformative, widely applicable advances in the control of ultracold atomic systems”.",
+    "Bloch transformed ultracold atoms into a powerful platform for simulating and investigating complex quantum systems, helping to establish quantum simulation as a major field of modern physics.",
+    "Ye has led the development of the world’s most accurate and stable optical atomic clocks, enabling measurements of time and frequency at extraordinary levels of precision and opening new possibilities for testing fundamental physics.",
+    "Together, their achievements exemplify a defining transition in modern physics: from observing the quantum world to controlling, measuring, and harnessing it for scientific discovery and emerging technologies.",
+    "A gifted high-school physics teacher changed his direction, encouraging him to enter a national physics competition—an experience that awakened his fascination with experimental physics.",
+    "His research has opened new possibilities for tests of fundamental physics, including the most sensitive search for the electron’s electric dipole moment, relativistic geodesy, and searches for variations in fundamental constants."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-019-1695-0",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-019-1695-0?error=cookies_not_supported&code=b835f1a7-b6f7-42c3-891e-b4acd7179784",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Superconductors, orbital magnets and correlated states in magic-angle bilayer graphene",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "dc.date",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-03-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-08-12"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-10-30"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Lu, Xiaobo",
+    "Stepanov, Petr",
+    "Yang, Wei",
+    "Xie, Ming",
+    "Aamir, Mohammed Ali",
+    "Das, Ipsita",
+    "Urgell, Carles",
+    "Watanabe, Kenji",
+    "Taniguchi, Takashi",
+    "Zhang, Guangyu",
+    "Bachtold, Adrian",
+    "MacDonald, Allan H."
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-019-1695-0",
+   "crossref": {
+    "doi": "10.1038/s41586-019-1695-0",
+    "resolves": true,
+    "title": "Superconductors, orbital magnets and correlated states in magic-angle bilayer graphene",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-10-30",
+    "authors_first3": [
+     "Lu",
+     "Stepanov",
+     "Yang"
+    ],
+    "author_count": 13,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Superconductivity can occur under conditions approaching broken-symmetry parent states1. In bilayer graphene, the twisting of one layer with respect to the other at ‘magic’ twist angles of around 1 degree leads to the emergence of ultra-flat&nbsp;moiré superlattice minibands. Such bands are a rich a",
+   "terms": [
+    "ICFO",
+    "Barcelona",
+    "Efetov",
+    "superconducting",
+    "twisted bilayer graphene",
+    "Institute of Photonic Sciences"
+   ],
+   "passages": [
+    "Here we report the fabrication of magic-angle twisted bilayer graphene devices with highly uniform twist angles.",
+    "This study provides a more detailed view of the phenomenology of magic-angle twisted bilayer graphene, adding to our evolving understanding of its emergent properties.",
+    "Possible correlated insulating states in magic-angle twisted bilayer graphene under strongly competing interactions.",
+    "Phonon-induced giant linear-in-T resistivity in magic angle twisted bilayer graphene: ordinary strangeness and exotic superconductivity.",
+    "Electronic properties and devices Superconducting properties and materials Topological insulators Superconductivity in Graphene-Based Materials Data availability The data that support the findings of this study are available from the corresponding author upon reasonable request.",
+    "Origin of magic angles in twisted bilayer graphene.",
+    "On the nature of the correlated insulator states in twisted bilayer graphene.",
+    "All magic angles in twisted bilayer graphene are topological.",
+    "Twisted bilayer graphene aligned with hexagonal boron nitride: anomalous Hall effect and a lattice model.",
+    "4 Measuring the homogeneity of the twist angle.a–d, Atomic force microscopy images of a set of twisted bilayer graphene samples."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

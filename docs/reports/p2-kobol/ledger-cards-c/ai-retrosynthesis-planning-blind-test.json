@@ -1,0 +1,534 @@
+{
+ "slug": "ai-retrosynthesis-planning-blind-test",
+ "title": "A neural-network program plans chemical syntheses that chemists rate as equal",
+ "first_published": "2018-03-28",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://link.springer.com/article/10.1186/s13321-020-00472-1",
+   "search": false,
+   "final_url": "https://link.springer.com/article/10.1186/s13321-020-00472-1?error=cookies_not_supported&code=4ff39e0d-825e-4774-963a-3d4ef6c4389e",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AiZynthFinder: a fast, robust and flexible open-source software for retrosynthetic planning",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-11-17"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-11-17"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-11-17"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-11-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-11-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-07-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-10-24"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-11-17"
+    }
+   ],
+   "date_hint": "2020",
+   "date_ok": false,
+   "people_found": [
+    "Genheden, Samuel",
+    "Thakkar, Amol",
+    "Chadimová, Veronika",
+    "Reymond, Jean-Louis",
+    "Engkvist, Ola",
+    "Bjerrum, Esben"
+   ],
+   "who_hint": "AiZynthFinder authors (an AstraZeneca-led team, a different team from Munster; author list and affiliations not read on the page)",
+   "doi": "10.1186/s13321-020-00472-1",
+   "crossref": {
+    "doi": "10.1186/s13321-020-00472-1",
+    "resolves": true,
+    "title": "AiZynthFinder: a fast, robust and flexible open-source software for retrosynthetic planning",
+    "container": "Journal of Cheminformatics",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-11-17",
+    "authors_first3": [
+     "Genheden",
+     "Thakkar",
+     "Chadimová"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "references": [
+      ""
+     ],
+     "has-preprint": [
+      "10.26434/chemrxiv.12465371.v1"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "We present the open-source AiZynthFinder software that can be readily used in retrosynthetic planning. The algorithm is based on a Monte Carlo tree search",
+   "terms": [
+    "AiZynthFinder",
+    "Monte Carlo tree search",
+    "Segler",
+    "retrosynthetic",
+    "neural network"
+   ],
+   "passages": [
+    "Segler et al. showed that it was possible to train a neural network to prioritize templates, and subsequently use this as a policy to guide a Monte Carlo tree search algorithm that suggests synthetic pathways for a given compound [7, 8].",
+    "AiZynthFinder: a fast, robust and flexible open-source software for retrosynthetic planning.",
+    "The software is based on a Monte Carlo tree search [29], where each node in the tree corresponds to a set of molecules that can or cannot be broken down further.",
+    "Currently, it contains a solid foundation, i.e., the Monte Carlo tree search algorithm that has shown promising results in finding routes for a range of compounds.",
+    "The algorithm is based on a Monte Carlo tree search that recursively breaks down a molecule to purchasable precursors.",
+    "The tree search is guided by an artificial neural network policy that suggests possible precursors by utilizing a library of known reaction templates.",
+    "Millman, Pasadena, CA USA. pp 11–15Browne CB, Powley E, Whitehouse D et al (2012) A survey of Monte Carlo tree search methods.",
+    "The main interface to the algorithm is in the aizynthfinder.py module, which brings classes from the mcts sub-package together to perform the tree search.",
+    "1Full size imageThe AiZynthFinder package. a The python package structure, outlining top-level modules and sub-packages. b The main classes involved in the tree search and the relationships.",
+    "A Reaction class encapsulates a chemical reaction on TreeMolecule objects and is used to apply the reaction templates to create new precursors.The Policy class encapsulates a recommendation engine based on a trained neural network."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11112899/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11112899/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AiZynthFinder 4.0: developments based on learnings from 3 years of industrial application",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-05-22"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-05-23"
+    }
+   ],
+   "date_hint": "2024",
+   "date_ok": false,
+   "people_found": [
+    "Lakshidaa Saigiridharan",
+    "Alan Kai Hassen",
+    "Helen Lai",
+    "Paula Torren-Peraire",
+    "Ola Engkvist",
+    "Samuel Genheden"
+   ],
+   "who_hint": "Saigiridharan et al. (the AiZynthFinder team; affiliations not read on the page)",
+   "doi": "10.1186/s13321-024-00860-x",
+   "crossref": {
+    "doi": "10.1186/s13321-024-00860-x",
+    "resolves": true,
+    "title": "AiZynthFinder 4.0: developments based on learnings from 3 years of industrial application",
+    "container": "Journal of Cheminformatics",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-5-23",
+    "authors_first3": [
+     "Saigiridharan",
+     "Hassen",
+     "Lai"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "We present an updated overview of the AiZynthFinder package for retrosynthesis planning. Since the first version was released in 2020, we have added a substantial number of new features based on user feedback. Feature enhancements include policies ...",
+   "terms": [
+    "AiZynthFinder",
+    "industrial application",
+    "Monte Carlo tree search",
+    "Segler",
+    "retrosynthetic"
+   ],
+   "passages": [
+    "Retrosynthetic planning with experience-guided Monte Carlo tree search.",
+    "AiZynthFinder: a fast, robust and flexible open-source software for retrosynthetic planning.",
+    "The default search algorithm used is the Monte Carlo tree search (MCTS) [39] that together with a neural network-based policy is used to predict routes [40].",
+    "The initial exploration into neural network guided template-based methods were pioneered by Segler and Waller [7].",
+    "The default filter policy, as proposed by Segler et al. [7], utilizes a trained neural network model that classifies reactions as being feasible or infeasible.",
+    "The AiZynthFinder class contains the main tree search loop, using functionalities from the chem and search sub-packages to build synthesis routes.",
+    "A survey of monte carlo tree search methods.",
+    "Apart from offering speed-ups, moving to use ONNX as the ML back-end for the template-based models allows us to be model-agnostic, applying template-based models trained by other groups in AiZynthFinder.",
+    "These search algorithms are based on AND/OR-trees compared to the super-node representation used in MCTS [54].Interfaces: AiZynthFinder and AiZynthExpander, GUI and CLI The aizynthfinder.py module serves as the primary interface to the retrosynthesis process, containing core functionalities encapsulated within the AiZynthFinder and AiZynthExpander classes.",
+    "For the ChEMBL and GDB target sets, we used a combination of stocks that we created for the first release of AiZynthFinder from the ZINC database, and the E-Molecules building blocks, a popular choice in multi-step retrosynthesis publications [40, 50]."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10257190/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10257190/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Retrosynthetic planning with experience-guided Monte Carlo tree search",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-06-09"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-06-10"
+    }
+   ],
+   "date_hint": "",
+   "date_ok": false,
+   "people_found": [
+    "Siqi Hong",
+    "Hankz Hankui Zhuo",
+    "Kebing Jin",
+    "Guang Shao",
+    "Zhanwen Zhou"
+   ],
+   "who_hint": "Authors not read (a team other than Munster)",
+   "doi": "10.1038/s42004-023-00911-8",
+   "crossref": {
+    "doi": "10.1038/s42004-023-00911-8",
+    "resolves": true,
+    "title": "Retrosynthetic planning with experience-guided Monte Carlo tree search",
+    "container": "Communications Chemistry",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-6-10",
+    "authors_first3": [
+     "Hong",
+     "Zhuo",
+     "Jin"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.21203/rs.3.rs-1400871/v1"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "In retrosynthetic planning, the huge number of possible routes to synthesize a complex molecule using simple building blocks leads to a combinatorial explosion of possibilities. Even experienced chemists often have difficulty to select the most ...",
+   "terms": [
+    "Monte Carlo tree search",
+    "Segler",
+    "retrosynthetic planning",
+    "neural network",
+    "benchmark"
+   ],
+   "passages": [
+    "Here, the authors report an experience-guided Monte Carlo tree search that efficiently generates retrosynthetic routes.Introduction Chemical synthetic analysis, i.e., retrosynthesis, aims at designing a pathway to synthesize the target molecule using a set of available building blocks1.",
+    "For example, 3N-MCTS4 combined Monte Carlo Tree Search (MCTS) with three networks to perform chemical synthesis planning, using Rollout to estimate the score function of a searching state.",
+    "Based on the above-mentioned two observations, we propose a MCTS-based search approach, namely EG-MCTS, standing for Experience-Guided Monte Carlo Tree Search, to generate routes for synthesizing target molecules.",
+    "Overview of experience-guided Monte Carlo tree search approach (EG-MCTS) and the procedure of the key part, EG-MCTS planning.",
+    "Here we propose an experience-guided Monte Carlo tree search (EG-MCTS) to deal with this problem.",
+    "Planning chemical syntheses with deep neural networks and symbolic AI.",
+    "Retro*: learning retrosynthetic planning with neural guided a* search.",
+    "Subject terms: Computational chemistry, Biosynthesis, Synthetic chemistry methodology, Cheminformatics, Method development In retrosynthetic planning, huge numbers of chemical reactions lead to a combinatorial explosion of possibilities from which selecting the most promising transformations is difficult.",
+    "Chen et al.7 proposed an approach, called Retro*, to do A* search of reactions with the guidance of previously trained neural network which predicts the synthetic cost of the molecule.",
+    "Based on this observation, we conjecture that leveraging all potential templates from the template library to help construct synthetic routes could be helpful for guiding retrosynthetic planning when doing the MCTS search."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "kind": "reaction",
+   "url": "https://doi.org/10.3410/f.732909768.793565016",
+   "search": false,
+   "final_url": "https://facultyopinions.com/prime/732909768#eval793565016",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "You don’t have access to this part of the site - Faculty Opinions",
+   "title_match": false,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2019-09-16"
+    }
+   ],
+   "date_hint": "",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "Reviewer not read",
+   "doi": "10.3410/f.732909768.793565016",
+   "crossref": {
+    "doi": "10.3410/f.732909768.793565016",
+    "resolves": true,
+    "title": "Faculty Opinions recommendation of Planning chemical syntheses with deep neural networks and symbolic AI.",
+    "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+    "publisher": "H1 Connect",
+    "type": "dataset",
+    "issued": "2019-9-16",
+    "authors_first3": [
+     "Walters"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-review-of": [
+      "10.1038/nature25978"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Segler",
+    "retrosynthesis",
+    "Faculty Opinions",
+    "neural networks"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "mismatch"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/d41586-018-03977-w",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/d41586-018-03977-w?error=cookies_not_supported&code=44a7983d-e466-44cb-8955-630133de7618",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Need to make a molecule? Ask this AI for instructions",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "dc.date",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-03-28"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Else, Holly"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/d41586-018-03977-w",
+   "crossref": {
+    "doi": "10.1038/d41586-018-03977-w",
+    "resolves": true,
+    "title": "Need to make a molecule? Ask this AI for instructions",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-3-28",
+    "authors_first3": [
+     "Else"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News"
+   },
+   "meta_description": "Artificial-intelligence tool that has digested nearly every reaction ever performed could transform chemistry.",
+   "terms": [
+    "retrosynthesis",
+    "Segler",
+    "neural network",
+    "Nature"
+   ],
+   "passages": [
+    "Shanghai, Beijing or London – hybrid working model Springer Nature Ltd Global Leading Talent Recruitment at College of Bio-X, Huazhong Agricultural University Join HZAU's global faculty team to advance research with competitive benefits."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 8,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41570-019-0124-0",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41570-019-0124-0?error=cookies_not_supported&code=28d60258-7a20-4aa5-8f1f-6adea978237a",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Synthetic organic chemistry driven by artificial intelligence",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2019-08-21"
+    },
+    {
+     "source": "dc.date",
+     "date": "2019-08-21"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2019-08-21"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2019-08-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-08-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-07-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-08-21"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-08-21"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "de Almeida, A. Filipa",
+    "Moreira, Rui",
+    "Rodrigues, Tiago"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41570-019-0124-0",
+   "crossref": {
+    "doi": "10.1038/s41570-019-0124-0",
+    "resolves": true,
+    "title": "Synthetic organic chemistry driven by artificial intelligence",
+    "container": "Nature Reviews Chemistry",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-8-21",
+    "authors_first3": [
+     "de Almeida",
+     "Moreira",
+     "Rodrigues"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "ReviewPaper"
+   },
+   "meta_description": "Synthetic organic chemistry underpins several areas of chemistry, including drug discovery, chemical biology, materials science and engineering. However, the execution of complex chemical syntheses in itself requires expert knowledge, usually acquired over many years of study and hands-on laboratory",
+   "terms": [
+    "Segler",
+    "retrosynthesis",
+    "Monte Carlo",
+    "double-blind"
+   ],
+   "passages": [
+    "A survey of Monte Carlo tree search methods.",
+    "Neural-symbolic machine learning for retrosynthesis and reaction prediction.",
+    "2: Similarity search for in silico retrosynthesis analysis.Fig.",
+    "Computer-assisted retrosynthesis based on molecular similarity."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

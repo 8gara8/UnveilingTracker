@@ -1,0 +1,233 @@
+{
+ "slug": "base-editing-changes-single-dna-letters",
+ "title": "Base editing changes single DNA letters without cutting both strands",
+ "first_published": "2016-04-20",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/nbt.3816",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/nbt.3816?error=cookies_not_supported&code=4f159fd7-bc5e-4dda-9931-2ea93d26a73f",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Highly efficient RNA-guided base editing in mouse embryos",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2017-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2017-02-27"
+    },
+    {
+     "source": "dc.date",
+     "date": "2017-02-27"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2017-02-27"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2017-02-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-02-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-12-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-02-08"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-02-27"
+    }
+   ],
+   "date_hint": "2017-02-27",
+   "date_ok": false,
+   "people_found": [
+    "Kim, Kyoungmi",
+    "Ryu, Seuk-Min",
+    "Kim, Sang-Tae",
+    "Baek, Gayoung",
+    "Kim, Daesik",
+    "Lim, Kayeong",
+    "Chung, Eugene",
+    "Kim, Sunghyun",
+    "Kim, Jin-Soo"
+   ],
+   "who_hint": "Jin-Soo Kim and colleagues, Center for Genome Engineering, Institute for Basic Science, and Department of Chemistry, Seoul National University (Nature Biotechnology)",
+   "doi": "10.1038/nbt.3816",
+   "crossref": {
+    "doi": "10.1038/nbt.3816",
+    "resolves": true,
+    "title": "Highly efficient RNA-guided base editing in mouse embryos",
+    "container": "Nature Biotechnology",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2017-2-27",
+    "authors_first3": [
+     "Kim",
+     "Ryu",
+     "Kim"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.727363082.793529464"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Mice with targeted point mutations are generated efficiently using Cas9–cytidine deaminase fusions. Base editors (BEs) composed of a cytidine deaminase fused to CRISPR–Cas9 convert cytidine to uridine, leading to single-base-pair substitutions in eukaryotic cells. We delivered BE mRNA or ribonucleop",
+   "terms": [
+    "Highly efficient RNA-guided base editing in mouse embryos",
+    "Jin-Soo Kim",
+    "base editors",
+    "cytidine deaminase",
+    "mouse embryos"
+   ],
+   "passages": [
+    "Highly efficient RNA-guided base editing in mouse embryos.",
+    "Integrated supplementary informationSupplementary Figure 1 Targeted mutagenesis in mouse embryos by microinjection of deaminse-nCas9 mRNA and sgRNAs.(a) and (b) Alignments of mutant sequences from blastocysts that developed after microinjection of BE3-encoding mRNA and sgRNA into zygotes.",
+    "The column on the right indicates frequencies of mutant alleles.Supplementary Figure 4 Targeted mutagenesis in mouse embryos by electroporation of rAPOBEC1-nCas9 (D10A)-UGI RNPs.(a) and (b) Alignments of mutant sequences from blastocysts that developed after electroporation of the BE3 RNP into zygotes.",
+    "All authors discussed the results and commented on the manuscript.Publisher's note: Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.Corresponding authorCorrespondence to Jin-Soo Kim.Ethics declarations Competing interests J.-S.K. is a founder of and shareholder in ToolGen."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12713542/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12713542/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Patient-Specific In Vivo Gene Editing to Treat a Rare Genetic Disease",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-05-14"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-06-12"
+    }
+   ],
+   "date_hint": "2025-05",
+   "date_ok": false,
+   "people_found": [
+    "Kiran Musunuru",
+    "Sarah A Grandinette",
+    "Xiao Wang",
+    "Taylor R Hudson",
+    "Kevin Briseno",
+    "Anne Marie Berry",
+    "Julia L Hacker",
+    "Alvin Hsu",
+    "Rachel A Silverstein",
+    "Logan T Hille",
+    "Aysel N Ogul",
+    "Nancy A Robinson-Garvin"
+   ],
+   "who_hint": "Kiran Musunuru, Rebecca Ahrens-Nicklas and colleagues, Children's Hospital of Philadelphia and Penn Medicine (New England Journal of Medicine)",
+   "doi": "10.1056/nejmoa2504747",
+   "crossref": {
+    "doi": "10.1056/nejmoa2504747",
+    "resolves": true,
+    "title": "Patient-Specific In Vivo Gene Editing to Treat a Rare Genetic Disease",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2025-6-12",
+    "authors_first3": [
+     "Musunuru",
+     "Grandinette",
+     "Wang"
+    ],
+    "author_count": 45,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Base editors can correct disease-causing genetic variants. We developed a customized base-editing therapy, starting immediately after a neonate was diagnosed with severe carbamoyl phosphate synthetase 1 deficiency, a disease with an estimated 50% ...",
+   "terms": [
+    "Patient-Specific In Vivo Gene Editing to Treat a Rare Genetic Disease",
+    "base-editing therapy",
+    "Base editors can correct disease-causing genetic variants",
+    "carbamoyl phosphate synthetase 1 deficiency"
+   ],
+   "passages": [
+    "We developed a customized base-editing therapy, starting immediately after a neonate was diagnosed with severe carbamoyl phosphate synthetase 1 deficiency, a disease with an estimated 50% mortality in early infancy.",
+    "PMC Copyright notice PMCID: PMC12713542 NIHMSID: NIHMS2124718 PMID: 40373211 The publisher's version of this article is available at N Engl J Med SUMMARY Base editors can correct disease-causing genetic variants.",
+    "Late-onset carbamoyl phosphate synthetase 1 deficiency in an adult cured by liver transplantation.",
+    "Unfavorable clinical outcomes in patients with carbamoyl phosphate synthetase 1 deficiency.",
+    "Efficacy and safety of an investigational single-course CRISPR base-editing therapy targeting PCSK9 in nonhuman primate and mouse models."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "statement",
+   "url": "https://breakthroughprize.org/Laureates/L3978",
+   "search": false,
+   "final_url": "https://breakthroughprize.org/Laureates/L3978",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "David R. Liu – 2025 Breakthrough Prize in Life Sciences",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2025-04",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Breakthrough Prize Foundation",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "David R. Liu",
+    "2025 Breakthrough Prize in Life Sciences",
+    "base editing"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  }
+ ]
+}

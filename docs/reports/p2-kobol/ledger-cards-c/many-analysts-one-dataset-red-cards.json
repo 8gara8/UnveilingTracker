@@ -1,0 +1,300 @@
+{
+ "slug": "many-analysts-one-dataset-red-cards",
+ "title": "29 teams analyse one dataset and reach different answers",
+ "first_published": "2018-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "preprint",
+   "url": "https://osf.io/preprints/psyarxiv/qkwst",
+   "search": false,
+   "final_url": "https://osf.io/preprints/psyarxiv/qkwst",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "OSF",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Raphael Silberzahn, Eric L. Uhlmann and colleagues (65 authors in the Crossref record of the published paper)",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "29 teams",
+    "61 analysts",
+    "odds ratio",
+    "red card",
+    "skin tone",
+    "referees",
+    "soccer"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9636921/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9636921/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Observing many researchers using the same data and hypothesis reveals a hidden universe of uncertainty",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-10-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-10-28"
+    }
+   ],
+   "date_hint": "2022-10-27",
+   "date_ok": false,
+   "people_found": [
+    "Nate Breznau",
+    "Eike Mark Rinke",
+    "Alexander Wuttke",
+    "Hung H V Nguyen",
+    "Muna Adem",
+    "Jule Adriaans",
+    "Amalia Alvarez-Benjumea",
+    "Henrik K Andersen",
+    "Daniel Auer",
+    "Flavio Azevedo",
+    "Oke Bahnsen",
+    "Dave Balzer"
+   ],
+   "who_hint": "Nate Breznau, Eike Mark Rinke, Alexander Wuttke and colleagues (73 teams, 166 authors in the Crossref record)",
+   "doi": "10.1073/pnas.2203150119",
+   "crossref": {
+    "doi": "10.1073/pnas.2203150119",
+    "resolves": true,
+    "title": "Observing many researchers using the same data and hypothesis reveals a hidden universe of uncertainty",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2022-10-28",
+    "authors_first3": [
+     "Breznau",
+     "Rinke",
+     "Wuttke"
+    ],
+    "author_count": 166,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1073/pnas.2410677121",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {
+     "has-preprint": [
+      "10.31222/osf.io/cd5j9",
+      "10.31222/osf.io/cd5j9_v1"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Will different researchers converge on similar findings when analyzing the same data? Seventy-three independent research teams used identical cross-country survey data to test a prominent social science hypothesis: that more immigration will reduce ...",
+   "terms": [
+    "73 teams",
+    "same data",
+    "same hypothesis",
+    "Silberzahn",
+    "many analysts",
+    "crowdsourced",
+    "analytic choices"
+   ],
+   "passages": [
+    "However, only recently scientists began to assess whether researcher variability affects scientific outcomes in reality, sometimes employing “many analysts” approaches where many researchers or teams independently test the same hypothesis with the same data.",
+    "Open in a new tab Broad variation in the findings from 73 teams testing the same hypothesis with the same data.",
+    "Even highly skilled scientists motivated to come to accurate results varied tremendously in what they found when provided with the same data and hypothesis to test.",
+    "We coordinated 161 researchers in 73 research teams and observed their research decisions as they used the same data to independently test the same prominent social science hypothesis: that greater immigration reduces support for social policies among the public.",
+    "The first such study showed that when 29 researchers tested if soccer referees were biased toward darker-skin players using the same data, they reported 29 unique model specifications, with empirical results ranging from modestly negative to strongly positive (14).",
+    "This was followed by a request that the teams develop their own ideal models for testing the same hypothesis using potentially all of the provided data, but that they submit their analysis plan prior to running the models.",
+    "Significance Will different researchers converge on similar findings when analyzing the same data?",
+    "1 visualizes the substantial variation of numerical results reported by 71 researcher teams that analyzed the same data.",
+    "These procedures should generate interresearcher reliability, offering consumers of scientific findings assurance that they are not arbitrary flukes and that other researchers would generate similar findings given the same data.",
+    "Keywords: metascience, many analysts, researcher degrees of freedom, analytical flexibility, immigration and policy preferencesAbstract This study explores how researchers’ analytical choices affect the reliability of scientific findings."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://doi.org/10.1111/ecin.12992",
+   "search": false,
+   "final_url": "https://onlinelibrary.wiley.com/doi/10.1111/ecin.12992",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-03-22"
+    }
+   ],
+   "date_hint": "2021-03",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "Nick Huntington-Klein and colleagues (full author list not seen; Crossref match in the dossier shows the title, container Economic Inquiry and date 2021-3-22)",
+   "doi": "10.1111/ecin.12992",
+   "crossref": {
+    "doi": "10.1111/ecin.12992",
+    "resolves": true,
+    "title": "The influence of hidden researcher decisions in applied microeconomics",
+    "container": "Economic Inquiry",
+    "publisher": "Wiley",
+    "type": "journal-article",
+    "issued": "2021-3-22",
+    "authors_first3": [
+     "Huntington‐Klein",
+     "Arenas",
+     "Beam"
+    ],
+    "author_count": 12,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "hidden researcher decisions",
+    "applied microeconomics",
+    "Silberzahn",
+    "many analysts",
+    "researcher degrees of freedom",
+    "teams"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/526189a",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/526189a?error=cookies_not_supported&code=900b0118-07ae-41c1-94de-47c3bc83453b",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Crowdsourced research: Many hands make tight work",
+   "title_match": false,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2015-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2015-10-07"
+    },
+    {
+     "source": "dc.date",
+     "date": "2015-10-07"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2015-10-07"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2015-10-07"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-10-07"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-10-07"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-10-08"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-10-07"
+    }
+   ],
+   "date_hint": "2015-10",
+   "date_ok": false,
+   "people_found": [
+    "Silberzahn, Raphael",
+    "Uhlmann, Eric L."
+   ],
+   "who_hint": "Raphael Silberzahn and Eric L. Uhlmann",
+   "doi": "10.1038/526189a",
+   "crossref": {
+    "doi": "10.1038/526189a",
+    "resolves": true,
+    "title": "Crowdsourced research: Many hands make tight work",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2015-10-7",
+    "authors_first3": [
+     "Silberzahn",
+     "Uhlmann"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "BriefCommunication"
+   },
+   "meta_description": "Crowdsourcing research can balance discussions, validate findings and better inform policy, say Raphael Silberzahn and Eric L. Uhlmann.",
+   "terms": [
+    "Many Analysts",
+    "29 teams",
+    "soccer",
+    "red card",
+    "crowdsourced"
+   ],
+   "passages": [
+    "Comment Published: 07 October 2015 Crowdsourced research: Many hands make tight work Raphael Silberzahn1 & Eric L.",
+    "Crowdsourced research: Many hands make tight work."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "mismatch"
+  }
+ ]
+}

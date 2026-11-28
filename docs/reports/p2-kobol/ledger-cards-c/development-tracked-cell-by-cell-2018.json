@@ -1,0 +1,177 @@
+{
+ "slug": "development-tracked-cell-by-cell-2018",
+ "title": "Single-cell sequencing tracks development cell by cell in zebrafish, frog and flatworm",
+ "first_published": "2018-04-26",
+ "items": [
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://doi.org/10.3410/f.733108042.793545382",
+   "search": false,
+   "final_url": "https://facultyopinions.com/prime/733108042#eval793545382",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "You don’t have access to this part of the site - Faculty Opinions",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2018-04-30"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.3410/f.733108042.793545382",
+   "crossref": {
+    "doi": "10.3410/f.733108042.793545382",
+    "resolves": true,
+    "title": "Faculty Opinions recommendation of Single-cell mapping of gene expression landscapes and lineage in the zebrafish embryo.",
+    "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+    "publisher": "H1 Connect",
+    "type": "dataset",
+    "issued": "2018-4-30",
+    "authors_first3": [
+     "Müller"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-review-of": [
+      "10.1126/science.aar4362"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "recommended",
+    "Faculty Opinions",
+    "evaluation",
+    "zebrafish",
+    "single-cell",
+    "affiliation"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/nature26159",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/nature26159?error=cookies_not_supported&code=481bdc22-3851-40e1-a32c-017ec0d19e9a",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The logic of single-cell projections from visual cortex",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "dc.date",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-06-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-01-31"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-03-28"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Han, Yunyun",
+    "Kebschull, Justus M.",
+    "Campbell, Robert A. A.",
+    "Cowan, Devon",
+    "Imhof, Fabia",
+    "Zador, Anthony M.",
+    "Mrsic-Flogel, Thomas D."
+   ],
+   "who_hint": null,
+   "doi": "10.1038/nature26159",
+   "crossref": {
+    "doi": "10.1038/nature26159",
+    "resolves": true,
+    "title": "The logic of single-cell projections from visual cortex",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-3-28",
+    "authors_first3": [
+     "Han",
+     "Kebschull",
+     "Campbell"
+    ],
+    "author_count": 7,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.732909340.793545082"
+     ],
+     "has-preprint": [
+      "10.1101/148031"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Neocortical areas communicate through extensive axonal projections, but the logic of information transfer remains poorly understood, because the projections of individual neurons have not been systematically characterized. It is not known whether individual neurons send projections only to single co",
+   "terms": [
+    "zebrafish",
+    "single-cell",
+    "lineage",
+    "cell types",
+    "whole organism"
+   ],
+   "passages": [
+    "Article Published: 28 March 2018 The logic of single-cell projections from visual cortex Yunyun Han1,2,3 na1, Justus M.",
+    "The logic of single-cell projections from visual cortex."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "slug": "mobile-robot-chemist-photocatalyst-search",
+ "title": "A mobile robot chemist found a more active photocatalyst on its own",
+ "first_published": "2020-07-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-020-2442-2",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-020-2442-2?error=cookies_not_supported&code=1a5a93f0-8fff-409f-9670-3981ca30d5c2",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A mobile robotic chemist",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-06-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-07-08"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-07-08"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-07-08"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-07-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-07-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-11-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-03-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-07-08"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Burger, Benjamin",
+    "Maffettone, Phillip M.",
+    "Gusev, Vladimir V.",
+    "Aitchison, Catherine M.",
+    "Bai, Yang",
+    "Wang, Xiaoyan",
+    "Li, Xiaobo",
+    "Alston, Ben M.",
+    "Li, Buyi",
+    "Clowes, Rob",
+    "Rankin, Nicola",
+    "Harris, Brandon"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-020-2442-2",
+   "crossref": {
+    "doi": "10.1038/s41586-020-2442-2",
+    "resolves": true,
+    "title": "A mobile robotic chemist",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-7-8",
+    "authors_first3": [
+     "Burger",
+     "Maffettone",
+     "Gusev"
+    ],
+    "author_count": 14,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Technologies such as batteries, biomaterials and heterogeneous catalysts have functions that are defined by mixtures of molecular and mesoscale components. As yet, this multi-length-scale complexity cannot be fully captured by atomistic simulations, and the design of such materials from first princi",
+   "terms": [
+    "News & Views",
+    "News and Views",
+    "Associated Content",
+    "Related",
+    "photocatalyst",
+    "hydrogen evolution",
+    "times more active",
+    "Bayesian",
+    "8 days",
+    "688"
+   ],
+   "passages": [
+    "The robot operated autonomously over eight days, performing 688 experiments within a ten-variable experimental space, driven by a batched Bayesian search algorithm16,17,18.",
+    "This autonomous search identified photocatalyst mixtures that were six times more active than the initial formulations, selecting beneficial components and deselecting negative ones.",
+    "Accelerated discovery of organic polymer photocatalysts for hydrogen evolution from water through the integration of experiment and theory.",
+    "Understanding structure-activity relationships in linear polymer photocatalysts for hydrogen evolution.",
+    "Here we use a mobile robot to search for improved photocatalysts for hydrogen production from water15.",
+    "4 Hydrogen evolution rates for candidate bioderived sacrificial hole scavengers.Results of a robotic screen for sacrificial hole scavengers using the mobile robot workflow.",
+    "Sulfone-containing covalent organic frameworks for photocatalytic hydrogen evolution from water.",
+    "4: Selection and deselection of photocatalyst formulation components.Fig.",
+    "Recent developments in heterogeneous photocatalysts for solar-driven overall water splitting.",
+    "Taking the human out of the loop: a review of Bayesian optimization."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=mobile+robot+robotic+chemist",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=mobile+robot+robotic+chemist",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "mobile robot robotic chemist | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "mobile robot",
+    "robotic chemist",
+    "robot chemist",
+    "expert reaction",
+    "Liverpool"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

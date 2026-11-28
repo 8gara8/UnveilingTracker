@@ -1,0 +1,59 @@
+{
+ "slug": "macroscopic-drumheads-entangled-2021",
+ "title": "Two teams entangle pairs of vibrating drumheads",
+ "first_published": "2020-04-12",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.nist.gov/news-events/news",
+   "search": false,
+   "final_url": "https://www.nist.gov/news-events/news",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "News | NIST",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2019-05-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-18"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-02"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "drumheads",
+    "entangle",
+    "Teufel",
+    "Aalto",
+    "Science"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

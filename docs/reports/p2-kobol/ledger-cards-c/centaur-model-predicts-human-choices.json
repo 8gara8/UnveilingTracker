@@ -1,0 +1,291 @@
+{
+ "slug": "centaur-model-predicts-human-choices",
+ "title": "A fine-tuned language model predicts human choices across psychology experiments",
+ "first_published": "2024-10",
+ "items": [
+  {
+   "role": "reaction",
+   "i": 2,
+   "kind": "reaction",
+   "url": "https://doi.org/10.1016/j.neuron.2026.09.012",
+   "search": false,
+   "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0896627326007221",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Redirecting",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2026-10-01"
+    }
+   ],
+   "date_hint": "2026-10",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "not read (authors unknown)",
+   "doi": "10.1016/j.neuron.2026.09.012",
+   "crossref": {
+    "doi": "10.1016/j.neuron.2026.09.012",
+    "resolves": true,
+    "title": "Toward an automated science of the mind",
+    "container": "Neuron",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2026-10",
+    "authors_first3": [
+     "Jagadish",
+     "Rmus",
+     "Witte"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Centaur",
+    "Psych-101",
+    "Binz",
+    "foundation model",
+    "human cognition"
+   ],
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "arxiv",
+     "url": "https://arxiv.org/abs/2603.20988",
+     "final_url": "https://arxiv.org/abs/2603.20988",
+     "status": 200,
+     "readable": true,
+     "title_found": "Toward an automated science of the mind",
+     "title_match": true,
+     "date": "2026-03-22",
+     "passages": [
+      "Jagadish, Milena Rmus, Kristin Witte, Marvin Mathony, Marcel Binz, Eric Schulz View a PDF of the paper titled Toward an automated science of the mind, by Akshay K."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "preprint",
+   "url": "https://doi.org/10.31234/osf.io/v9w37_v3",
+   "search": false,
+   "final_url": "https://osf.io/v9w37_v3",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "OSF",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2025-07-07"
+    }
+   ],
+   "date_hint": "2025-07",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "Bowers and colleagues (the drafter's recall, not checked)",
+   "doi": "10.31234/osf.io/v9w37_v3",
+   "crossref": {
+    "doi": "10.31234/osf.io/v9w37_v3",
+    "resolves": true,
+    "title": "Centaur: A model without a theory",
+    "container": null,
+    "publisher": "Center for Open Science",
+    "type": "posted-content",
+    "issued": "2025-7-7",
+    "authors_first3": [
+     "Bowers",
+     "Puebla",
+     "Thorat"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-version-of": [
+      "10.31234/osf.io/v9w37_v2",
+      "10.31234/osf.io/v9w37_v1"
+     ],
+     "has-version": [
+      "10.31234/osf.io/v9w37_v4"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Centaur",
+    "Bowers",
+    "model without a theory",
+    "Bristol"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-025-09215-4",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-025-09215-4?error=cookies_not_supported&code=5363aa63-a224-4da0-871f-e62300ce79c3",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A foundation model to predict and capture human cognition",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-07-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-10-26"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-05-29"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-07-02"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Binz, Marcel",
+    "Akata, Elif",
+    "Bethge, Matthias",
+    "Brändle, Franziska",
+    "Callaway, Fred",
+    "Coda-Forno, Julian",
+    "Dayan, Peter",
+    "Demircan, Can",
+    "Eckstein, Maria K.",
+    "Éltető, Noémi",
+    "Griffiths, Thomas L.",
+    "Haridi, Susanne"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-025-09215-4",
+   "crossref": {
+    "doi": "10.1038/s41586-025-09215-4",
+    "resolves": true,
+    "title": "A foundation model to predict and capture human cognition",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-7-2",
+    "authors_first3": [
+     "Binz",
+     "Akata",
+     "Bethge"
+    ],
+    "author_count": 40,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Establishing a unified theory of cognition has been an important goal in psychology1,2. A first step towards such a theory is to create a computational model that can predict human behaviour in a wide range of settings. Here we introduce Centaur, a computational model that can predict and simulate h",
+   "terms": [
+    "News & Views",
+    "Associated Content",
+    "Related",
+    "Centaur"
+   ],
+   "passages": [
+    "First, we show that Centaur predicts behaviour of held-out participants (those who are not part of the training data) better than existing cognitive models in almost every single experiment.",
+    "We used one-sided t-tests whenever we tested whether Centaur outperformed a competing model in predicting human behaviour, because our hypotheses were directional and based on the prior expectation that Centaur would perform better.",
+    "2 Negative log-likelihoods of Centaur and alternative Llama variants on Psych-101.To rule out the hypothesis that finetuning on any data aligns a model with human behavior, we compared Centaur to various Llama variants finetuned for other purposes (i.e. non-cognitive tasks).",
+    "Centaur not only captures the behaviour of held-out participants better than existing cognitive models, but it also generalizes to previously unseen cover stories, structural task modifications and entirely new domains.",
+    "Finally, we show that Centaur’s internal representations become more human aligned, even though it was never explicitly trained to capture human neural activity.Taken together, our results demonstrate that it is possible to discover computational models that capture human behaviour across a wide range of domains.",
+    "We may ask whether Centaur can also generate human-like behaviour when simulated in an open-loop fashion (that is, when feeding its own responses back into the model).",
+    "We found that Centaur’s representations consistently outperformed Llama’s representations in predicting human neural activity (all pairwise one-sided t-tests, P ≤ 0.001), indicating that fine-tuning a model on large-scale behavioural data aligned its internal representations to human neural activity.",
+    "Here we introduce Centaur, a computational model that can predict and simulate human behaviour in any experiment expressible in natural language.",
+    "We derived Centaur by fine-tuning a state-of-the-art language model on a large-scale dataset called Psych-101.",
+    "In this paper, we take up this challenge and introduce Centaur—a foundation model of human cognition10."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=expert+reaction+Centaur",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=expert+reaction+Centaur",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction Centaur | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "expert reaction",
+    "Centaur",
+    "human cognition",
+    "AI model predicts human behaviour"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

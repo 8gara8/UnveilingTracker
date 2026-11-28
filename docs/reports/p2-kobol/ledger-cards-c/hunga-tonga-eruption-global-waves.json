@@ -1,0 +1,107 @@
+{
+ "slug": "hunga-tonga-eruption-global-waves",
+ "title": "Hunga Tonga's 2022 eruption sent pressure waves around the world several times",
+ "first_published": "2022-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=Tonga+Hunga",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=Tonga+Hunga",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Tonga Hunga | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Tonga",
+    "Hunga",
+    "eruption",
+    "expert reaction",
+    "pressure wave",
+    "Lamb wave",
+    "atmospheric waves"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://doi.org/10.1029/2022GL098827",
+   "search": false,
+   "final_url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022GL098827",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-05-24"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.1029/2022gl098827",
+   "crossref": {
+    "doi": "10.1029/2022gl098827",
+    "resolves": true,
+    "title": "The 15 January 2022 Hunga Tonga Eruption History as Inferred From Ionospheric Observations",
+    "container": "Geophysical Research Letters",
+    "publisher": "American Geophysical Union (AGU)",
+    "type": "journal-article",
+    "issued": "2022-5-24",
+    "authors_first3": [
+     "Astafyeva",
+     "Maletckii",
+     "Mikesell"
+    ],
+    "author_count": 8,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1002/essoar.10511226.1"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Hunga",
+    "Lamb wave",
+    "ionospheric",
+    "global",
+    "eruption",
+    "propagated",
+    "around the globe"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  }
+ ]
+}

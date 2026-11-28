@@ -1,0 +1,492 @@
+{
+ "slug": "alphafold-database-open-protein-structures",
+ "title": "AlphaFold Database opens predicted structures for over 200 million proteins",
+ "first_published": "2021-07-22",
+ "items": [
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "statement",
+   "url": "https://www.nobelprize.org/prizes/chemistry/2024/popular-information/",
+   "search": false,
+   "final_url": "https://www.nobelprize.org/prizes/chemistry/2024/popular-information/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Nobel Prize in Chemistry 2024",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "2024-10",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "The Royal Swedish Academy of Sciences (Nobel Committee for Chemistry), hosted by Nobel Prize Outreach",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The Nobel Prize in Chemistry 2024 was divided, one half awarded to David Baker \"for computational protein design\", the other half jointly to Demis Hassabis and John Jumper \"for protein structure prediction\"",
+   "terms": [
+    "AlphaFold2",
+    "two million people",
+    "190 countries",
+    "200 million",
+    "gold mine for researchers"
+   ],
+   "passages": [
+    "By October 2024, AlphaFold2 had been used by more than two million people from 190 countries.",
+    "Then they predicted the structure of virtually all the 200 million proteins that researchers have so far discovered when mapping Earth’s organisms.",
+    "Proteins developed using Baker’s program Rosetta. ©Terezia Kovalova/The Royal Swedish Academy of Sciences Work that once took years now takes just a few minutes When Demis Hassabis and John Jumper had confirmed that AlphaFold2 really worked, they calcu­lated the structure of all human proteins.",
+    "This has allowed them to predict the structure of almost all 200 million known proteins.",
+    "Google DeepMind has also made the code for AlphaFold2 publicly available, and anyone can access it.",
+    "Protein structures determined using AlphaFold2. ©Terezia Kovalova/The Royal Swedish Academy of Sciences Dizzying development for the benefit of humankind Proteins’ amazing versatility as chemical tools is reflected in the vast diversity of life.",
+    "How does AlphaFold2 work? © Johan Jarnestad/The Royal Swedish Academy of Sciences Hassabis and his team continued developing AlphaFold – but, however hard they tried, the algo­rithm never quite went all the way.",
+    "Astounding results with a reformed AI model The new version – AlphaFold2 – was coloured by Jumper’s knowledge of proteins.",
+    "The team trained AlphaFold2 on the vast information in the databases of all known protein struc­tures and amino acid sequences (Figure 2) and the new AI architecture started delivering good results in time for the fourteenth CASP competition.",
+    "Figure 5 shows a few of the many examples of how AlphaFold2 helps researchers."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://www.sciencemediacentre.org/expert-reaction-to-the-2024-nobel-prize-in-chemistry-being-awarded-to-david-baker-for-computational-protein-design-and-demis-hassabis-and-john-m-jumper-for-protein-structure-prediction/",
+   "search": false,
+   "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-the-2024-nobel-prize-in-chemistry-being-awarded-to-david-baker-for-computational-protein-design-and-demis-hassabis-and-john-m-jumper-for-protein-structure-prediction/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction to the 2024 Nobel Prize in Chemistry being awarded to David Baker for computational protein design and Demis Hassabis and John M. Jumper for protein structure prediction | Science Media Centre",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "2024-10-09",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Dr Martyn Winn, Computational Biology Theme Leader, STFC Scientific Computing (also on the page: Prof Rivka Isaacson, King's College London)",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaFold",
+    "predicted structures",
+    "Winn",
+    "Isaacson",
+    "researchers"
+   ],
+   "passages": [
+    "Dr Tom Burnley: None Dr Martyn Winn: None Prof Rivka Isaacson: None Prof Ewan Birney “is the Deputy Director General of the European Molecular Biology Laboratory (EMBL) and the Director of EMBL’s European Bioinformatics Institute (EMBL-EBI), which hosts the AlphaFold Protein Structure Database.",
+    "Dr Martyn Winn, Computational Biology Theme Leader, STFC Scientific Computing, said: “AlphaFold has had an incredible effect on research activities in the biomedical sciences over the last few years.",
+    "AlphaFold allows anyone to predict the shapes and interactions of proteins from just knowing the order of their beads, which allows researchers to study how they are linked to health and disease, and what kind of drugs might work with them.",
+    "We are now in a new era of structural biology in which, with the ready availability of predicted structures, scientists can ask more sophisticated questions about how these structures function and adapt in living organisms.”",
+    "EMBL-EBI collaborated with Google DeepMind to develop and disseminate the AlphaFold Protein Structure Database, making AlphaFold’s predictions freely and openly accessible to the scientific community.”",
+    "Tools such as AlphaFold help us understand protein structure, helping us decode how life works; being able to design proteins to our own needs shows how deep our understanding has reached.",
+    "It was these solved structures, which the experimental world deposits for public use, that were used to train AlphaFold.",
+    "“I was lucky to be a beta tester for AlphaFold3, a new version which allows us to look at much bigger proteins and a wide variety of molecules with which they can bind, including DNA and metals, than the previous versions of the software did.",
+    "Breaking through the barrier of winning a Nobel outside academia is rare, but this may be the first case in history of the award going to an entrepreneur whose Nobel work was done in the company they founded.",
+    "Prof Charlotte Deane “Was a reviewer on AlphaFold and knows all three laureates personally.”"
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "kind": "reaction",
+   "url": "https://www.sciencemediacentre.org/expert-reaction-to-metas-language-model-for-predicting-protein-structure/",
+   "search": false,
+   "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-metas-language-model-for-predicting-protein-structure/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction to Meta’s language model for predicting protein structure | Science Media Centre",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "2023-03-16",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Prof Alfonso Valencia, ICREA professor and Director of Life Sciences at the Barcelona Supercomputing Center (BSC)",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Meta",
+    "Google",
+    "DeepMind",
+    "openly available",
+    "software and results",
+    "Valencia"
+   ],
+   "passages": [
+    "It is easy to think that this is a challenge between companies—Meta and Google/DeepMind.",
+    "It is interesting that both have made their software and results openly available, something that is fairly unusual for these companies.",
+    "Comment provided by our colleagues at SMC Spain: Prof Alfonso Valencia, ICREA professor and director of Life Sciences at the Barcelona National Supercomputing Centre (BSC), said: “Alexander Rives and colleagues present the results of the application of Large Language Models to predict protein structure."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 2,
+   "kind": "reaction",
+   "url": "https://www.sciencemediacentre.org/expert-reaction-to-nobel-prize-in-chemistry-for-computational-protein-design-and-for-protein-structure-prediction/",
+   "search": false,
+   "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-nobel-prize-in-chemistry-for-computational-protein-design-and-for-protein-structure-prediction/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction to Nobel Prize in Chemistry for computational protein design, and for protein structure prediction | Science Media Centre",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Experts named on the page (not read)",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaFold",
+    "predicted structures",
+    "database",
+    "researchers",
+    "protein structure prediction"
+   ],
+   "passages": [
+    "Dr Meilan Huang, Senior Lecturer at the School of Chemistry and Chemical Engineering, Queen’s University Belfast, said: “It’s really exciting news David Baker’s Rosetta and Google Deepmind’s Alphafold has brought a new era for protein structure predictions which many areas would benefit from."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 3,
+   "kind": "reaction",
+   "url": "https://www.sciencemediacentre.org/expert-reaction-to-the-latest-version-of-deepminds-alphafold/",
+   "search": false,
+   "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-the-latest-version-of-deepminds-alphafold/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction to the latest version of DeepMind’s AlphaFold | Science Media Centre",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Experts named on the page (not read)",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaFold",
+    "database",
+    "predicted structures",
+    "200 million",
+    "researchers"
+   ],
+   "passages": [
+    "Dr Nicole Wheeler, Birmingham Fellow, Institute of Microbiology and Infection, University of Birmingham, said: “Since the release of AlphaFold in 2020, protein structure prediction has underpinned a wide range of advances in the biological sciences and biotechnology.",
+    "“The fact that the training data has been enriched by AlphaFold-Multimer predictions demonstrates the potential for new generations of AI to be built on training data generated by the current generation of AI.",
+    "“It’s impressive to see the more generalised modelling approach taken by AlphaFold 3 outperform a diverse range of specialised applications built on AlphaFold 2.",
+    "“Unlike general trends toward adding more parameters at each new iteration of a model to achieve higher performance, AlphaFold 3 actually reduces the number of steps and computational complexity of their model."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371%2Fjournal.pcbi.1009818",
+   "search": false,
+   "final_url": "https://journals.plos.org/ploscompbiol/article?id=10.1371%2Fjournal.pcbi.1009818",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The structural coverage of the human proteome before and after AlphaFold",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2022-01-23"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-01-24"
+    }
+   ],
+   "date_hint": "2022-03",
+   "date_ok": false,
+   "people_found": [
+    "Eduard Porta-Pardo",
+    "Victoria Ruiz-Serra",
+    "Samuel Valentini",
+    "Alfonso Valencia"
+   ],
+   "who_hint": "From memory, not read: Porta-Pardo, Ruiz-Serra, Valentini and Valencia, Barcelona Supercomputing Center (check the page)",
+   "doi": "10.1371/journal.pcbi.1009818",
+   "crossref": {
+    "doi": "10.1371/journal.pcbi.1009818",
+    "resolves": true,
+    "title": "The structural coverage of the human proteome before and after AlphaFold",
+    "container": "PLOS Computational Biology",
+    "publisher": "Public Library of Science (PLoS)",
+    "type": "journal-article",
+    "issued": "2022-1-24",
+    "authors_first3": [
+     "Porta-Pardo",
+     "Ruiz-Serra",
+     "Valentini"
+    ],
+    "author_count": 4,
+    "update_to": [
+     {
+      "doi": "10.1371/journal.pcbi.1009818",
+      "type": "new_version",
+      "source": "publisher"
+     }
+    ],
+    "updated_by": [
+     {
+      "doi": "10.1371/journal.pcbi.1009818",
+      "type": "new_version",
+      "source": "publisher"
+     }
+    ],
+    "relation": {
+     "has-preprint": [
+      "10.1101/2021.08.03.454980"
+     ],
+     "has-part": [
+      "https://doi.org/10.1371/journal.pcbi.1009818.g001",
+      "https://doi.org/10.1371/journal.pcbi.1009818.g002",
+      "https://doi.org/10.1371/journal.pcbi.1009818.g003"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "meta",
+    "value": "Research Article"
+   },
+   "meta_description": "Author summary Protein structures are key to understand many biological phenomena at the molecular scale: from the effects of genetic variation to how different proteins interact with each other to create molecular pathways that, together, have a biological function. Obtaining experimental structure",
+   "terms": [
+    "AlphaFold",
+    "structural coverage",
+    "human proteome",
+    "AlphaFold Protein Structure Database",
+    "predicted structures"
+   ],
+   "passages": [
+    "In this manuscript we provide an overview of the structural coverage of the human proteome before AlphaFold models were released and how much we have gained thanks to these models.",
+    "Citation: Porta-Pardo E, Ruiz-Serra V, Valentini S, Valencia A (2022) The structural coverage of the human proteome before and after AlphaFold.",
+    "Results The structural coverage of the human proteome before AlphaFold Over the last 25 years, the protein structure field has made significant advances.",
+    "The structural coverage of the human proteome after AlphaFold We next analyzed the structural predictions of AlphaFold for the human proteome [21].",
+    "Finally, we show how the contribution of AlphaFold models to the structural coverage of non-human organisms, including important pathogenic bacteria, is significantly larger than that of the human proteome.",
+    "In all four cases, AlphaFold provides more structural coverage than for the human proteome (Fig 4B).",
+    "Moreover, in conjunction with the EMBL-EBI, the team behind AlphaFold has recently released a database of predicted protein structures for the whole human proteome [21].",
+    "The integration of our previous structural knowledge through experimental structures, template-based homology modeling, PFAM domains, IDRs together with AlphaFold predictions, shows that the current overall coverage of the human proteome at the residue levels is excellent (Fig 1G).",
+    "Structural coverage (y-axis) of the proteome of the four different organisms before (left) and after (right) including the AlphaFold models. https://doi.org/10.1371/journal.pcbi.1009818.s002(TIFF) Acknowledgments The authors would like to thank the DeepMind team for sharing their models of human proteins.",
+    "Our results show that AlphaFold predictions have significantly increased our coverage for the entire human proteome, particularly in proteins integral to membrane, enzymes involved in lipid metabolism and olfactory receptors."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "statement",
+   "url": "https://www.aaas.org/news/sciences-2021-breakthrough-ai-powered-protein-prediction",
+   "search": false,
+   "final_url": "https://www.aaas.org/news/sciences-2021-breakthrough-ai-powered-protein-prediction",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Science’s 2021 Breakthrough: AI-powered Protein Prediction | American Association for the Advancement of Science (AAAS)",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "2021-12",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "American Association for the Advancement of Science",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The journal's Breakthrough of the Year allows scientists to predict thousands of accurate protein structures at a fraction of the time and cost of previous methods.",
+   "terms": [
+    "AlphaFold",
+    "Breakthrough of the Year",
+    "protein structures",
+    "predict accurate protein structures"
+   ],
+   "passages": [
+    "AlphaFold, developed by the Google sister company DeepMind, trained itself on databases of solved protein structures and showed protein structure prediction at accuracies comparable to current experimental techniques.",
+    "This year, scientists have shown that artificial intelligence (AI)-driven software can achieve this long-standing goal and predict accurate protein structures by the thousands and at a fraction of the time and cost involved with previous methods.",
+    "To honor this feat, Science has named AI-powered protein prediction as its 2021 Breakthrough of the Year.",
+    "While attempts to develop computer-aided models capable of solving the \"protein-folding problem\" have been ongoing for decades, accurate protein prediction has eluded researchers until two seminal papers, published nearly simultaneously in Nature and Science in July, presented AlphaFold2 and RoseTTA-fold, respectively.",
+    "In the time since, both AI approaches have revealed thousands of new protein structures, including those for nearly half of those found in the human body.",
+    "Each AI-driven software program demonstrates the ability to predict a wide variety of complex protein structures quickly and accurately based solely on the amino acids they contain.",
+    "RoseTTA fold — developed by a team led by David Baker, a University of Washington computational biochemist, performed similarly to AlphaFold, but using only a fraction of the computational processing power and time."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 8,
+   "kind": "paper",
+   "url": "https://www.nobelprize.org/prizes/chemistry/2024/press-release/",
+   "search": false,
+   "final_url": "https://www.nobelprize.org/prizes/chemistry/2024/press-release/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Nobel Prize in Chemistry 2024",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The Nobel Prize in Chemistry 2024 was divided, one half awarded to David Baker \"for computational protein design\", the other half jointly to Demis Hassabis and John Jumper \"for protein structure prediction\"",
+   "terms": [
+    "AlphaFold2",
+    "two million",
+    "million people",
+    "190 countries",
+    "used by",
+    "Jumper",
+    "Hassabis"
+   ],
+   "passages": [
+    "Since their breakthrough, AlphaFold2 has been used by more than two million people from 190 countries.",
+    "In 2020, Demis Hassabis and John Jumper presented an AI model called AlphaFold2.",
+    "Demis Hassabis and John Jumper have developed an AI model to solve a 50-year-old problem: predicting proteins’ complex structures."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 9,
+   "kind": "paper",
+   "url": "https://www.biorxiv.org/content/10.1101/2022.11.21.517405v1",
+   "search": false,
+   "final_url": "https://www.biorxiv.org/content/10.1101/2022.11.21.517405v1",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AlphaFold predictions: great hypotheses but no match for experiment",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-01-01"
+    },
+    {
+     "source": "citation_date",
+     "date": "2022-11-22"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2022-11-22"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-11-22"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Thomas C. Terwilliger",
+    "Dorothee Liebschner",
+    "Tristan I. Croll",
+    "Christopher J. Williams",
+    "Airlie J. McCoy",
+    "Billy K. Poon",
+    "Pavel V. Afonine",
+    "Robert D. Oeffner",
+    "Jane S. Richardson",
+    "Randy J. Read",
+    "Paul D. Adams"
+   ],
+   "who_hint": null,
+   "doi": "10.1101/2022.11.21.517405",
+   "crossref": {
+    "doi": "10.1101/2022.11.21.517405",
+    "resolves": true,
+    "title": "AlphaFold predictions are valuable hypotheses, and accelerate but do not replace experimental structure determination",
+    "container": null,
+    "publisher": "openRxiv",
+    "type": "posted-content",
+    "issued": "2022-11-22",
+    "authors_first3": [
+     "Terwilliger",
+     "Liebschner",
+     "Croll"
+    ],
+    "author_count": 11,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-preprint-of": [
+      "10.1038/s41592-023-02087-4"
+     ]
+    }
+   },
+   "type_found": "preprint",
+   "meta_description": "bioRxiv - the preprint server for biology, operated by openRxiv, a nonprofit organization dedicated to advancing scientific communication",
+   "terms": [
+    "AlphaFold",
+    "predictions",
+    "hypotheses",
+    "experimental",
+    "map",
+    "match"
+   ],
+   "passages": [
+    "Some AlphaFold predictions match experimental maps closely, but most differ on a global scale through distortion and domain orientation and on a local scale in backbone and side-chain conformation.",
+    "You are going to email the following AlphaFold predictions: great hypotheses but no match for experiment Message Subject (Your Name) has forwarded a page to you from bioRxiv Message Body (Your Name) thought you would like to see this page from the bioRxiv website.",
+    "Share AlphaFold predictions: great hypotheses but no match for experiment Thomas C.",
+    "Here we assess the accuracy of AlphaFold predictions by comparing them to density maps obtained from automated redeterminations of recent crystal structures and to the corresponding deposited models.",
+    "Such differences occur even in parts of AlphaFold models that were predicted with high confidence."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

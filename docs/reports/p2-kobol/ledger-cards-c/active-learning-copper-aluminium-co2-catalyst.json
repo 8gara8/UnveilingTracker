@@ -1,0 +1,129 @@
+{
+ "slug": "active-learning-copper-aluminium-co2-catalyst",
+ "title": "Active machine learning finds a copper-aluminium catalyst for CO2 to ethylene",
+ "first_published": "2020-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-020-2242-8",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-020-2242-8?error=cookies_not_supported&code=20804069-bd84-4a46-ac42-16b92831fd35",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Accelerated discovery of CO2 electrocatalysts using active machine learning",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-05-13"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-05-13"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-05-13"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-05-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-05-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-04-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-03-13"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-05-13"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Zhong, Miao",
+    "Tran, Kevin",
+    "Min, Yimeng",
+    "Wang, Chuanhao",
+    "Wang, Ziyun",
+    "Dinh, Cao-Thang",
+    "De Luna, Phil",
+    "Yu, Zongqian",
+    "Rasouli, Armin Sedighian",
+    "Brodersen, Peter",
+    "Sun, Song",
+    "Voznyy, Oleksandr"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-020-2242-8",
+   "crossref": {
+    "doi": "10.1038/s41586-020-2242-8",
+    "resolves": true,
+    "title": "Accelerated discovery of CO2 electrocatalysts using active machine learning",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-5-13",
+    "authors_first3": [
+     "Zhong",
+     "Tran",
+     "Min"
+    ],
+    "author_count": 22,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The rapid increase in global energy demand and the need to replace carbon dioxide (CO2)-emitting fossil fuels with renewable sources have driven interest in chemical storage of intermittent solar and wind energy1,2. Particularly attractive is the electrochemical reduction of CO2 to chemical feedstoc",
+   "terms": [
+    "Faradaic efficiency",
+    "current density",
+    "ethylene",
+    "Cu-Al",
+    "candidate",
+    "density functional theory",
+    "active learning",
+    "News & Views",
+    "Cited by",
+    "Related articles",
+    "Peer review"
+   ],
+   "passages": [
+    "Here we describe Cu-Al electrocatalysts, identified using density functional theory calculations in combination with active machine learning, that efficiently reduce CO2 to ethylene with the highest Faradaic efficiency reported so far.",
+    "However, the energy efficiency and productivity (current density) achieved so far still fall below the values required to produce ethylene at cost-competitive prices.",
+    "Sustained high-selectivity CO2 electroreduction to ethylene via hydroxide-mediated catalysis at an abrupt reaction interface.",
+    "Active learning across intermetallics to guide discovery of electrocatalysts for CO2 reduction and H2 evolution.",
+    "Selective electrochemical reduction of CO2 to ethylene at a three-phase interface on copper(I) halide-confined Cu-mesh electrodes in acidic solutions of potassium halides.",
+    "Copper has been the predominant electrocatalyst for this reaction when aiming for more valuable multi-carbon products9,10,11,12,13,14,15,16, and process improvements have been particularly notable when targeting ethylene.",
+    "We perform computational studies that suggest that the Cu-Al alloys provide multiple sites and surface orientations with near-optimal CO binding for both efficient and selective CO2 reduction17.",
+    "2: Schematic and characterization of de-alloyed Cu-Al catalyst.Fig.",
+    "3: CO2 electroreduction performance on de-alloyed Cu-Al, porous Cu and deposited Cu catalysts on C-GDL substrates in 1 M KOH electrolytes.Fig.",
+    "4: CO2 electroreduction performance on de-alloyed Cu-Al catalysts on PTFE substrates in alkaline electrolytes at different pH values."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,245 @@
+{
+ "slug": "imo-2025-gold-level-ai",
+ "title": "Gemini Deep Think reaches gold-medal level at the 2025 IMO",
+ "first_published": "2025-07-21",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=International+Mathematical+Olympiad+IMO",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=International+Mathematical+Olympiad+IMO",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "International Mathematical Olympiad IMO | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "International Mathematical Olympiad",
+    "IMO",
+    "Gemini",
+    "Deep Think",
+    "gold medal",
+    "expert reaction",
+    "AI mathematical"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://terrytao.wordpress.com/?s=IMO+International+Mathematical+Olympiad",
+   "search": true,
+   "final_url": "https://terrytao.wordpress.com/?s=IMO+International+Mathematical+Olympiad",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Search Results for “IMO International Mathematical Olympiad” – What's new",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "IMO",
+    "International Mathematical Olympiad",
+    "Gemini",
+    "Deep Think",
+    "gold",
+    "AI",
+    "2025"
+   ],
+   "passages": [
+    "This year, the IMO is being held in the Netherlands, with the problems being released on July 18 and 19, and I am planning to once again select a question (most likely the […] Future mini-polymath project: 2010 IMO Q6?",
+    "Let […] AI, Mathematics, Education, and a public goods problem 29 October, 2026 in guest blog, opinion | 12 comments Tags: AI, Gireeja Ranade [This is a guest post by Gireeja Ranade.",
+    "This blog post was initially written in a different file format and converted using AI. — T.] The day after the Navier-Stokes result was announced, a student came to my office hours.",
+    "Problem 6 of the 2009 IMO, which was given out last Wednesday, reads as follows: Problem 6.",
+    "See the about page for details and for other commenting policy.",
+    "They said, “Can we please talk about the Navier-Stokes result and what it means?"
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.nature.com/search?q=International+Mathematical+Olympiad+gold-medal&article_type=news-and-views&order=relevance",
+   "search": true,
+   "final_url": "https://www.nature.com/search?q=International+Mathematical+Olympiad+gold-medal&article_type=news-and-views&order=relevance&error=cookies_not_supported&code=13cef99a-6089-4d58-bfb2-fbaffd72e6e0",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "International Mathematical Olympiad gold-medal | Nature Search Results",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2025-11-12"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "International Mathematical Olympiad",
+    "gold-medal",
+    "Gemini",
+    "Deep Think",
+    "mathematicians",
+    "AI"
+   ],
+   "passages": [
+    "An AI model that is trained to use these tools might accelerate mathematical discovery.",
+    "To obtain the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in Internet Explorer)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [
+    {
+     "slug": "imo-2025-gold-level-ai",
+     "role": "source",
+     "i": "3-via-1",
+     "via": "https://www.nature.com/search?q=International+Mathematical+Olympiad+gold-medal&article_type=news-and-views&order=relevance",
+     "link_text": "Mathematicians put AI model AlphaProof to the test",
+     "url": "https://www.nature.com/articles/d41586-025-03585-5",
+     "final_url": "https://www.nature.com/articles/d41586-025-03585-5?error=cookies_not_supported&code=2196b7d3-4c81-4328-8aa4-0fdc18e19151",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "Mathematicians put AI model AlphaProof to the test",
+     "dates_found": [
+      {
+       "source": "citation_publication_date",
+       "date": "2026-02-28"
+      },
+      {
+       "source": "citation_online_date",
+       "date": "2025-11-12"
+      },
+      {
+       "source": "dc.date",
+       "date": "2025-11-12"
+      },
+      {
+       "source": "prism.publicationDate",
+       "date": "2025-11-12"
+      },
+      {
+       "source": "ld+json datePublished",
+       "date": "2025-11-12"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2025-11-12"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2026-11-27"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2026-11-25"
+      }
+     ],
+     "people_found": [
+      "Ringer, Talia"
+     ],
+     "citation_doi": "10.1038/d41586-025-03585-5",
+     "type_meta": "News And Views",
+     "meta_description": "Mathematicians use computational tools to prove theorems. An AI model that is trained to use these tools might accelerate mathematical discovery.",
+     "passages": [
+      "NEWS AND VIEWS 12 November 2025 Mathematicians put AI model AlphaProof to the test Mathematicians use computational tools to prove theorems.",
+      "Nature Index 25 NOV 26 From sketch to publication-ready flowchart: how AI tools can bridge the gap Career Column 25 NOV 26 Has AI just cracked Internet encryption?",
+      "An AI model that is trained to use these tools might accelerate mathematical discovery.",
+      "Now, writing in Nature, Hubert et al.1 report the details of the core technology behind that achievement: a tool called AlphaProof, which is designed to prove mathematical statements.",
+      "Shanghai, Beijing or London – hybrid working model Springer Nature Ltd Global Leading Talent Recruitment at College of Bio-X, Huazhong Agricultural University Join HZAU's global faculty team to advance research with competitive benefits.",
+      "By Talia Ringer ORCID: http://orcid.org/0000-0003-1854-33210 Talia Ringer Talia Ringer is in the Siebel School of Computing and Data Science, University of Illinois at Urbana–Champaign, Urbana, Illinois, 61801, USA.",
+      "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,..."
+     ],
+     "verdict": "usable"
+    }
+   ],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://openai.com/news/",
+   "search": false,
+   "final_url": "https://openai.com/news/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "OpenAI News",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-23"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Stay up to speed on the rapid advancement of AI technology and the benefits it offers to humanity.",
+   "terms": [
+    "International Mathematical Olympiad",
+    "IMO",
+    "gold medal",
+    "35",
+    "42",
+    "experimental"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

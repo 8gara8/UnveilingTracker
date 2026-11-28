@@ -1,0 +1,105 @@
+{
+ "slug": "antarctic-ozone-layer-healing-emerges",
+ "title": "The Antarctic ozone hole starts to shrink after the ban on CFCs",
+ "first_published": "2016-06-30",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://doi.org/10.1002/2017GL074830",
+   "search": false,
+   "final_url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2017GL074830",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2018-01-04"
+    }
+   ],
+   "date_hint": "2018",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "Strahan and Douglass (NASA Goddard, per the writer's note; not checked)",
+   "doi": "10.1002/2017gl074830",
+   "crossref": {
+    "doi": "10.1002/2017gl074830",
+    "resolves": true,
+    "title": "Decline in Antarctic Ozone Depletion and Lower Stratospheric Chlorine Determined From Aura Microwave Limb Sounder Observations",
+    "container": "Geophysical Research Letters",
+    "publisher": "American Geophysical Union (AGU)",
+    "type": "journal-article",
+    "issued": "2018-1-4",
+    "authors_first3": [
+     "Strahan",
+     "Douglass"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Strahan",
+    "Douglass",
+    "Aura Microwave Limb Sounder",
+    "Antarctic",
+    "chlorine",
+    "ozone depletion",
+    "decline"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "statement",
+   "url": "https://csl.noaa.gov/assessments/ozone/2018/",
+   "search": false,
+   "final_url": "https://csl.noaa.gov/assessments/ozone/2018/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Scientific Assessment of Ozone Depletion: 2018",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "2018",
+   "date_ok": null,
+   "people_found": [
+    "NOAA Chemical Sciences Laboratory (CSL)"
+   ],
+   "who_hint": "WMO, UNEP, NOAA, NASA and the European Commission assessment panel, hosted by NOAA (not checked)",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "NOAA Chemical Sciences Laboratory (CSL): Advancing scientific understanding of the chemical and physical processes that affect Earth's atmospheric chemistry and composition.",
+   "terms": [
+    "2018",
+    "Scientific Assessment of Ozone Depletion",
+    "Antarctic ozone hole",
+    "recovery",
+    "Executive Summary",
+    "WMO"
+   ],
+   "passages": [
+    "The Scientific Assessment of Ozone Depletion: 2018 contains the 2018 core assessment report , with the Executive Summary and Twenty Questions and Answers About the Ozone Layer update booklets."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

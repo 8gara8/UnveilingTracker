@@ -1,0 +1,125 @@
+{
+ "slug": "old-kingdom-egyptian-genome-nuwayrat",
+ "title": "First whole genome from ancient Egypt, from a 4,800-year-old man",
+ "first_published": "2025-07-02",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-025-08793-7",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-025-08793-7?error=cookies_not_supported&code=3382e1b0-33b5-4b66-8460-e15d4e0da89f",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Ancient DNA from the Green Sahara reveals ancestral North African lineage",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-04-02"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-04-02"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-04-02"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-04-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-04-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-01-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-02-14"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-04-02"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Salem, Nada",
+    "van de Loosdrecht, Marieke S.",
+    "Sümer, Arev Pelin",
+    "Vai, Stefania",
+    "Hübner, Alexander",
+    "Peter, Benjamin",
+    "Bianco, Raffaela A.",
+    "Lari, Martina",
+    "Modi, Alessandra",
+    "Al-Faloos, Mohamed Faraj Mohamed",
+    "Turjman, Mustafa",
+    "Bouzouggar, Abdeljalil"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-025-08793-7",
+   "crossref": {
+    "doi": "10.1038/s41586-025-08793-7",
+    "resolves": true,
+    "title": "Ancient DNA from the Green Sahara reveals ancestral North African lineage",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-4-2",
+    "authors_first3": [
+     "Salem",
+     "van de Loosdrecht",
+     "Sümer"
+    ],
+    "author_count": 20,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Although it is one of the most arid regions today, the Sahara Desert was a green savannah during the African Humid Period (AHP) between 14,500 and 5,000 years before present, with water bodies promoting human occupation and the spread of pastoralism in the middle Holocene epoch1. DNA rarely preserve",
+   "terms": [
+    "Nuwayrat",
+    "Egypt",
+    "Old Kingdom",
+    "Levant",
+    "Mesopotamia",
+    "North African ancestry",
+    "Taforalt"
+   ],
+   "passages": [
+    "However, owing to incomplete lineage sorting and mtDNA representing a single lineage, the exact timing of the underlying population splits remains uncertain.Previous work modelled the Taforalt group’s ancestry as a two-way admixture of approximately 63.5% Natufian (ancient Levantine foragers) and 36.5% sub-Saharan African ancestries2.",
+    "Our updated model suggests that the Taforalt ancestry is composed of a 60% contribution from a Natufian-like Levantine population, with the remaining 40% derived from a Takarkori-like ancestral North African population (Extended Data Fig.",
+    "3 Outgroup-f3(Chimp; X1, X2) statistics, where X represents relevant ancient populations from Africa and the Near East.Within the shared drift of Takarkori group, the highest genetic drift is exhibited with Taforalt-related groups, OUB and IAM.",
+    "In contrast to Taforalt individuals, who have half the Neanderthal admixture of non-Africans, Takarkori shows ten times less Neanderthal ancestry than Levantine farmers, yet significantly more than contemporary sub-Saharan genomes.",
+    "Moreover, Takarkori and Taforalt groups were treated as admixed populations, guided by previous knowledge from admixfrog results.The DATES method49 v.753 was applied to the Takarkori group to detect Levantine admixture.",
+    "4 Outgroup-f3(Chimp; X1, X2) statistics, where X represents relevant modern populations from Africa and the Near East.The Taforalt and later Epipaleolithic and Neolithic groups from Morocco are included for comparison due to their highest genetic drift with Takarkori.",
+    "While a previous study2 could not precisely ascribe the ‘sub-Saharan’ component in the Taforalt genome, we now identify this ancestry as a deep North African lineage, with higher proportions found in the Saharan Takarkori individuals.",
+    "Both Takarkori individuals are closely related to ancestry first documented in 15,000-year-old foragers from Taforalt Cave, Morocco2, associated with the Iberomaurusian lithic industry and predating the AHP.",
+    "Their origins and whether the arrival of pastoralism into the Green Sahara was linked to the movement of peoples from the Levant or rather cultural diffusion remain a matter of debate10,14.Fig.",
+    "Our findings show that these individuals predominantly carry a previously unknown ancestral North African lineage that lacks the Neanderthal admixture typically found outside Africa and appears to have remained largely isolated, with the notable exception of small traces of Levantine admixture."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

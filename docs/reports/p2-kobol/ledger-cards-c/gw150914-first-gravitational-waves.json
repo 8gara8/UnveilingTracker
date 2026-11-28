@@ -1,0 +1,286 @@
+{
+ "slug": "gw150914-first-gravitational-waves",
+ "title": "LIGO detects gravitational waves from two merging black holes",
+ "first_published": "2016-02-11",
+ "items": [
+  {
+   "role": "reaction",
+   "i": 1,
+   "kind": "reaction",
+   "url": "https://www.sciencemediacentre.org/expert-reaction-to-announcement-on-gravitational-waves/",
+   "search": false,
+   "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-announcement-on-gravitational-waves/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction to announcement on gravitational waves | Science Media Centre",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "2016-02-11",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Prof. Alex Halliday FRS",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "gravitational",
+    "LIGO",
+    "Halliday",
+    "Royal Society"
+   ],
+   "passages": [
+    "Alex Halliday FRS, Vice President and Physical Secretary of the Royal Society, said: “100 years ago Albert Einstein, a foreign member of the Royal Society, predicted the existence of gravitational waves.",
+    "However, its detection is the result of decades of international, scientific and technical collaboration, culminating in the matchless gravitational wave sensitivity of the Advanced LIGO detectors in the USA.",
+    "Not only has LIGO directly detected gravitational waves from a merging black hole binary for the first time, but ESA successfully launched the LISA Pathfinder satellite in December, which will pave the way for a space-based gravitational wave detector within the next two decades.",
+    "Dr Giles Hammond who led the installation of the fused silica suspensions for aLIGO at the University of Glasgow, said: “The detection of gravitational waves is a truly international project, requiring coordination and collaboration of over 700 researchers.",
+    "They are the most sensitive gravitational wave detectors ever built, and they have now for the first time done what they were built to do: there was a ‘disturbance in the gravitational force’, and the LIGO detectors have felt it!",
+    "Ed Daw is a Reader in Physics at the University of Sheffield, and has been researching gravitational waves with LIGO since 1998.",
+    "“I have been collaborating with the LIGO/Virgo consortium, in particular to look for signatures of any gravitational wave events they detect in visible light.",
+    "Dr Tony Padilla, Royal Society University Research Fellow in the School of Physics & Astronomy, University of Nottingham, said: “Every year I tell my Gravity class about the three classics successes of General Relativity: the perihelion precession of Mercury, light bending and gravitational redshift.",
+    "The UK gravitational wave community has been responsible for designing, installing and characterising the monolithic suspensions in aLIGO.",
+    "Dr David Clements, Astrophysicist at Imperial College London, said: “Firstly this is great news for physics – direct detection of gravitational waves is like discovering the Higgs boson – there’s been plentiful evidence for them in the past, but we weren’t able to detect them."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 2,
+   "kind": "reaction",
+   "url": "https://www.sciencemediacentre.org/expert-reaction-to-announcement-that-the-nobel-prize-in-physics-2017-has-been-awarded-to-three-scientists-for-their-work-on-gravitational-waves/",
+   "search": false,
+   "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-announcement-that-the-nobel-prize-in-physics-2017-has-been-awarded-to-three-scientists-for-their-work-on-gravitational-waves/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction to announcement that the Nobel Prize in Physics 2017 has been awarded to three scientists for their work on gravitational waves | Science Media Centre",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "2017-10-03",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "gravitational waves",
+    "Nobel",
+    "LIGO",
+    "Prof",
+    "Dr"
+   ],
+   "passages": [
+    "Prof Lord Martin Rees, Astronomer Royal & Fellow of Trinity College, University of Cambridge, said: “The Nobel committee has apportioned credit appropriately among three leaders of the LIGO project – outstanding individuals whose contributions were distinctive and complementary.",
+    "“But of course LIGO’s success was owed to literally hundreds of dedicated scientists and engineers.",
+    "Thorne, for decades acknowledged as an outstanding theorist, mentor, and intellectual leader, has been an inspiring ‘promoter’ of LIGO for three decades.",
+    "Weiss deserves prime credit for devising (along with the late Ron Drever) the amazingly precise laser techniques."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://arxiv.org/abs/1902.10331",
+   "search": false,
+   "final_url": "https://arxiv.org/abs/1902.10331",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A Highly Spinning and Aligned Binary Black Hole Merger in the Advanced LIGO First Observing Run",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2019-03-19"
+    },
+    {
+     "source": "citation_date",
+     "date": "2019-02-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-07-17"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Zackay, Barak",
+    "Venumadhav, Tejaswi",
+    "Dai, Liang",
+    "Roulet, Javier",
+    "Zaldarriaga, Matias"
+   ],
+   "who_hint": null,
+   "doi": "10.1103/physrevd.100.023007",
+   "crossref": {
+    "doi": "10.1103/physrevd.100.023007",
+    "resolves": true,
+    "title": "Highly spinning and aligned binary black hole merger in the Advanced LIGO first observing run",
+    "container": "Physical Review D",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2019-7-17",
+    "authors_first3": [
+     "Zackay",
+     "Venumadhav",
+     "Dai"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1902.10331: A Highly Spinning and Aligned Binary Black Hole Merger in the Advanced LIGO First Observing Run",
+   "terms": [
+    "GW150914",
+    "first observing run",
+    "binary black hole",
+    "independent"
+   ],
+   "passages": [
+    "We report a new binary black hole merger in the publicly available LIGO First Observing Run (O1) data release.",
+    "The high aligned spin of the merger supports the hypothesis that merging binary black holes can be created by binary stellar evolution.",
+    "The event has an inverse false alarm rate of one per six years in the detector-frame chirp-mass range $\\mathcal{M}^{\\rm det} \\in [20,40]M_\\odot$ in a new independent analysis pipeline that we developed."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=gravitational+waves+expert+reaction",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=gravitational+waves+expert+reaction",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "gravitational waves expert reaction | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "gravitational waves",
+    "expert reaction",
+    "LIGO",
+    "Prof",
+    "Dr"
+   ],
+   "passages": [
+    "Predicted by Einstein’s theory of general relativity, the waves are a product of the big bang and provide strong evidence for ‘cosmic inflation’. read more October 9, 2012 expert reaction to announcement of Nobel prize in physics being awarded to Serge Haroche and David J."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [
+    {
+     "slug": "gw150914-first-gravitational-waves",
+     "role": "source",
+     "i": "4-via-1",
+     "via": "https://www.sciencemediacentre.org/?s=gravitational+waves+expert+reaction",
+     "link_text": "expert reaction to announcement that the Nobel Prize in Physics 2017 has been awarded to three scientists for their work on gravitational waves",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-announcement-that-the-nobel-prize-in-physics-2017-has-been-awarded-to-three-scientists-for-their-work-on-gravitational-waves/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-announcement-that-the-nobel-prize-in-physics-2017-has-been-awarded-to-three-scientists-for-their-work-on-gravitational-waves/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to announcement that the Nobel Prize in Physics 2017 has been awarded to three scientists for their work on gravitational waves | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "“But of course LIGO’s success was owed to literally hundreds of dedicated scientists and engineers.",
+      "Prof Lord Martin Rees, Astronomer Royal & Fellow of Trinity College, University of Cambridge, said: “The Nobel committee has apportioned credit appropriately among three leaders of the LIGO project – outstanding individuals whose contributions were distinctive and complementary.",
+      "Thorne, for decades acknowledged as an outstanding theorist, mentor, and intellectual leader, has been an inspiring ‘promoter’ of LIGO for three decades.",
+      "Weiss deserves prime credit for devising (along with the late Ron Drever) the amazingly precise laser techniques."
+     ],
+     "verdict": "usable"
+    },
+    {
+     "slug": "gw150914-first-gravitational-waves",
+     "role": "source",
+     "i": "4-via-2",
+     "via": "https://www.sciencemediacentre.org/?s=gravitational+waves+expert+reaction",
+     "link_text": "expert reaction to announcement on gravitational waves",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-announcement-on-gravitational-waves/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-announcement-on-gravitational-waves/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to announcement on gravitational waves | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "Dr Giles Hammond who led the installation of the fused silica suspensions for aLIGO at the University of Glasgow, said: “The detection of gravitational waves is a truly international project, requiring coordination and collaboration of over 700 researchers.",
+      "Not only has LIGO directly detected gravitational waves from a merging black hole binary for the first time, but ESA successfully launched the LISA Pathfinder satellite in December, which will pave the way for a space-based gravitational wave detector within the next two decades.",
+      "Now, on the one-hundredth anniversary of Einstein’s presentation of the general theory of relativity, we have the wonderful surprise of the first direct detection of gravitational waves.",
+      "Dr Stephen Fairhurst, from Cardiff University’s School of Physics and Astronomy, said: “We have spent the last decade developing searches to detect the tell-tale signal of merging black holes emerging from the LIGO and Virgo data.",
+      "Dr David Clements, Astrophysicist at Imperial College London, said: “Firstly this is great news for physics – direct detection of gravitational waves is like discovering the Higgs boson – there’s been plentiful evidence for them in the past, but we weren’t able to detect them.",
+      "Professor Andreas Freise, from the University of Birmingham’s School of Physics and Astronomy, said: “It is amazing to think that we have been able to measure the echoes from the birth of a new black hole that happened more than a billion years ago.",
+      "Dr Nicholas Lockerbie, Reader in Physics at the University of Strathclyde, said: “The direct detection of gravitational waves marks the dawn of a new era in astronomy.",
+      "Ed Daw is a Reader in Physics at the University of Sheffield, and has been researching gravitational waves with LIGO since 1998.",
+      "A fantastic way to celebrate the hundredth anniversary of the prediction of the existence of gravitational waves!",
+      "Dr Stuart Reid, from the Institute of Thin Films, Sensors and Imaging at the University of the West of Scotland, said: “The significance of this discovery by Advanced LIGO is simply staggering."
+     ],
+     "verdict": "usable"
+    },
+    {
+     "slug": "gw150914-first-gravitational-waves",
+     "role": "source",
+     "i": "4-via-3",
+     "via": "https://www.sciencemediacentre.org/?s=gravitational+waves+expert+reaction",
+     "link_text": "expert reaction to new experimental evidence of gravitational waves",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-detection-of-gravitational-waves/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-detection-of-gravitational-waves/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to new experimental evidence of gravitational waves | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "Dr Ed Daw from the University of Sheffield’s Department of Physics and Astronomy said: “Gravitational waves emitted at the time of the big bang can tell us how the Universe came to exist.",
+      "One target for the experiment is spotting the effect on the CMB of gravitational waves that would bear the signature of inflation – a long-postulated sudden expansion of the Universe that happened a ten-million-billion-billion-billionth of a second after its beginning.",
+      "“Gravitational waves are a new frontier in astrophysics and cosmology.",
+      "Professor John Womersley, Chief Executive of the Science and Technology Facilities Council (STFC) which funds UK research into cosmology, said: “Modern cosmology is based on three underlying assumptions – inflation, dark matter and dark energy.",
+      "Dr Chris Lintott, Astrophysicist at the University of Oxford, said: “We know the announcement is from the team behind the BICEP experiment, which studies the cosmic microwave background (CMB) from the excellent observing site at the South Pole."
+     ],
+     "verdict": "usable"
+    }
+   ],
+   "verdict": "usable"
+  }
+ ]
+}

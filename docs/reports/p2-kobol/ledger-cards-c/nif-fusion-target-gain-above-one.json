@@ -1,0 +1,402 @@
+{
+ "slug": "nif-fusion-target-gain-above-one",
+ "title": "NIF fusion shot yields more energy than the laser delivered",
+ "first_published": "2022-12-13",
+ "items": [
+  {
+   "role": "reaction",
+   "i": 1,
+   "kind": "reaction",
+   "url": "https://www.sciencemediacentre.org/expert-reaction-to-fusion-announcement-from-the-lawrence-livermore-national-laboratory/",
+   "search": false,
+   "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-fusion-announcement-from-the-lawrence-livermore-national-laboratory/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction to reports of advance in nuclear fusion from the Lawrence Livermore National Laboratory | Science Media Centre",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "2022-12-12",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Prof Robin Grimes FRS FREng, Professor of Materials Physics",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Grimes",
+    "Imperial College London",
+    "Lawrence Livermore National Laboratory",
+    "fusion",
+    "net energy gain",
+    "commercial fusion",
+    "none to declare"
+   ],
+   "passages": [
+    "Prof Robin Grimes FRS FREng, professor of materials physics, Imperial College London, said: “This is a key step on a possible pathway to commercial fusion.",
+    "Quotes from the Spanish SMC: https://sciencemediacentre.es/en/reactions-new-nuclear-fusion-milestone-us-which-could-be-first-net-gain-energy Declared interests Prof Grimes: “none to declare.”",
+    "Prof Wark is the UK academic member of the National Ignition Facility Peer Review Panel that gives advice on the fusion program at Lawrence Livermore National Laboratory.",
+    "Dr Mark Wenman, Reader in Nuclear Materials at Imperial College London, said: “So far despite 70 years of research no one has got more energy out of a fusion reaction than they have needed to put in.",
+    "Secondly, the Lawrence Livermore National Laboratory could in principle produce this sort of result about once a day – a fusion power plant would need to do it ten times per second.",
+    "The scientists at the Lawrence Livermore National Laboratory have achieved the long-sought milestone of proving for the first time breakeven thermonuclear fusion in the laboratory.",
+    "Prof Jeremy Chittenden, Professor of Plasma Physics at Imperial College London, said: “Everyone working on fusion has been trying to demonstrate for over 70 years that it’s possible to generate more energy from fusion than you put in.",
+    "Dr Brian Applebe, a Research Associate in the Department of Physics at Imperial College London, said: “Demonstrating energy gain in a fusion experiment would be a highly significant scientific and technological achievement.",
+    "This recent achievement shows that inertial confinement fusion can achieve net energy gain, which demonstrates the technical feasibility of fusion power and validates this approach to providing clean energy.”",
+    "“This is a great scientific result, but we are still a way off commercial fusion."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "statement",
+   "url": "https://www.energy.gov/articles/doe-national-laboratory-makes-history-achieving-fusion-ignition",
+   "search": false,
+   "final_url": "https://www.energy.gov/articles/doe-national-laboratory-makes-history-achieving-fusion-ignition",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "DOE National Laboratory Makes History by Achieving Fusion Ignition",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2022-12-12"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-12-12"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-18"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-12-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-12-12"
+    }
+   ],
+   "date_hint": "2022-12-12",
+   "date_ok": true,
+   "people_found": [],
+   "who_hint": "US Department of Energy",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The U.S. Department of Energy (DOE) and DOE’s National Nuclear Security Administration (NNSA) today announced the achievement of fusion ignition at Lawrence Livermore National Laboratory (LLNL)—a major scientific breakthrough decades in the making.",
+   "terms": [
+    "fusion ignition",
+    "2.05 megajoules",
+    "3.15 MJ",
+    "fusion energy output",
+    "National Ignition Facility",
+    "net energy gain"
+   ],
+   "passages": [
+    "LLNL’s experiment surpassed the fusion threshold by delivering 2.05 megajoules (MJ) of energy to the target, resulting in 3.15 MJ of fusion energy output, demonstrating for the first time a most fundamental science basis for inertial fusion energy (IFE).",
+    "“This is a landmark achievement for the researchers and staff at the National Ignition Facility who have dedicated their careers to seeing fusion ignition become a reality, and this milestone will undoubtedly spark even more discovery,” said U.S.",
+    "Department of Energy (DOE) and DOE’s National Nuclear Security Administration (NNSA) today announced the achievement of fusion ignition at Lawrence Livermore National Laboratory (LLNL)—a major scientific breakthrough decades in the making.",
+    "On December 5, a team at LLNL’s National Ignition Facility (NIF) conducted the first controlled fusion experiment in history to reach this milestone, also known as scientific energy breakeven, meaning it produced more energy from fusion than the laser energy used to drive it.",
+    "“Monday, December 5, 2022, was a historic day in science thanks to the incredible people at Livermore Lab and the National Ignition Facility.",
+    "“After more than a decade of scientific and technical innovation, I congratulate the team at Lawrence Livermore National Laboratory and the National Ignition Facility for their historic accomplishment,” said U.S.",
+    "“The pursuit of fusion ignition in the laboratory is one of the most significant scientific challenges ever tackled by humanity, and achieving it is a triumph of science, engineering, and most of all, people,” LLNL Director Dr.",
+    "“I am thrilled that NIF—the United States’ most cutting-edge nuclear research facility—has achieved fusion ignition, potentially providing for a new clean and sustainable energy source in the future.",
+    "“I would like to thank the members of Congress who have supported the National Ignition Facility because their belief in the promise of visionary science has been critical for our mission.",
+    "We can celebrate another performance record by the National Ignition Facility."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "statement",
+   "url": "https://www.gov.uk/government/news/congratulations-to-llnl",
+   "search": false,
+   "final_url": "https://www.gov.uk/government/news/congratulations-to-llnl",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "[Withdrawn] Congratulations to LLNL",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-12-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-27"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [],
+   "who_hint": "UK government (publishing department not read)",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "UKAEA statement about National Ignition Facility results at Lawrence Livermore National Laboratory.",
+   "terms": [
+    "LLNL",
+    "Lawrence Livermore",
+    "fusion",
+    "ignition",
+    "congratulations",
+    "National Ignition Facility"
+   ],
+   "passages": [
+    "NIF Fusion Energy Congratulations to the team at the National Ignition Facility at Lawrence Livermore National Laboratory for achieving ignition.",
+    "News story Congratulations to LLNL UKAEA statement about National Ignition Facility results at Lawrence Livermore National Laboratory.",
+    "It sits alongside rapidly increasing commercial interest and provides a real sense that fusion can make a contribution to the world’s future low-carbon energy supply.",
+    "It is a valuable advance on the challenging path to the delivery of useable fusion energy that will further stimulate an already exciting and important field.”",
+    "These are landmark results and add momentum in the field of fusion."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 2,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-022-04440-7",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/d41586-022-04440-7?error=cookies_not_supported&code=6aed0bed-bc84-443e-a58e-7e76f115c916",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Nuclear-fusion lab achieves ‘ignition’: what does it mean?",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "dc.date",
+     "date": "2022-12-13"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2022-12-13"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-12-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-12-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-11"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-11"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-12-13"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Tollefson, Jeff",
+    "Gibney, Elizabeth"
+   ],
+   "who_hint": "Nature news team (outside scientists quoted inside; not read)",
+   "doi": "10.1038/d41586-022-04440-7",
+   "crossref": {
+    "doi": "10.1038/d41586-022-04440-7",
+    "resolves": true,
+    "title": "Nuclear-fusion lab achieves ‘ignition’: what does it mean?",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2022-12-13",
+    "authors_first3": [
+     "Tollefson",
+     "Gibney"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News Explainer"
+   },
+   "meta_description": "Researchers at the US National Ignition Facility created a reaction that made more energy than they put in.",
+   "terms": [
+    "ignition",
+    "National Ignition Facility",
+    "fusion",
+    "net energy",
+    "Lawrence Livermore"
+   ],
+   "passages": [
+    "Credit: Jason Laurea/Lawrence Livermore National Laboratory Scientists at the world’s largest nuclear-fusion facility have for the first time achieved the phenomenon known as ignition — creating a nuclear reaction that generates more energy than it consumes.",
+    "News of the breakthrough at the US National Ignition Facility (NIF), made on 5 December and announced today by US President Joe Biden’s administration, has excited the global fusion-research community.",
+    "NEWS EXPLAINER 13 December 2022 Nuclear-fusion lab achieves ‘ignition’: what does it mean?",
+    "Researchers at the US National Ignition Facility created a reaction that made more energy than they put in.",
+    "That research aims to harness nuclear fusion — the phenomenon that powers the Sun — to provide a source of near-limitless clean energy on Earth."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=expert+reaction+fusion",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=expert+reaction+fusion",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction fusion | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "expert reaction",
+    "fusion",
+    "National Ignition Facility",
+    "ignition",
+    "net energy gain",
+    "Lawrence Livermore",
+    "breakeven"
+   ],
+   "passages": [
+    "Dr Sheona Scales, … read more November 26, 2025 STEP Fusion: what are the prospects for fusion energy by 2040?",
+    "Dr … read more January 20, 2026 expert reaction to types of physical activity and mortality Two cohort studies published in BMJ Medicine looks at types of physical activity and mortality.",
+    "Prof Chris Vogel, Associate Professor in the … read more October 20, 2025 expert reaction to Amazon internet services outage Scientists comment on an Amazon internet services outage affecting many websites and apps.",
+    "Dr Mohammad Talaei, Lecturer in … read more February 4, 2026 expert reaction to testing menstrual blood for HPV A study published in The BMJ looks at testing menstrual blood for human papillomavirus (HPV) during cervical cancer screening.",
+    "Marta del … read more February 2, 2026 expert reaction to modelling study on HPV vaccination status in women and cervical cancer screening A modelling study published in Annals of Internal Medicine looks at HPV vaccination status in women and cervical cancer screening."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [
+    {
+     "slug": "nif-fusion-target-gain-above-one",
+     "role": "source",
+     "i": "4-via-1",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+fusion",
+     "link_text": "expert reaction to systematic review and meta-analysis on ketamine infusions for rapid reduction of suicidal and depressive symptoms in treating major depressive episodes (MDEs)",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-systematic-review-and-meta-analysis-on-ketamine-infusions-for-rapid-reduction-of-suicidal-and-depressive-symptoms-in-treating-major-depressive-episodes-mdes/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-systematic-review-and-meta-analysis-on-ketamine-infusions-for-rapid-reduction-of-suicidal-and-depressive-symptoms-in-treating-major-depressive-episodes-mdes/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to systematic review and meta-analysis on ketamine infusions for rapid reduction of suicidal and depressive symptoms in treating major depressive episodes (MDEs) | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "The effect was already apparent four hours after the infusion and persisted at 24 hours, three days, one week, and even one month.",
+      "Comments from our friends at SMC Spain: Dr Gerard Anmella, a psychiatrist and researcher at the Unit for Depressive and Bipolar Disorders at Hospital Clínic in Barcelona, says: “This meta-analysis evaluates treatment with intravenous ketamine infusions in people with a major depressive episode.",
+      "“Some people improved with a single administration, but most relapsed and required repeated infusions.",
+      "“Intravenous ketamine produces a rapid and intense improvement in depressive symptoms and, particularly importantly, in suicidal ideation, as early as the first few hours after the infusion.",
+      "The effect on response rates wanes beyond the first week, does not translate into higher remission rates, most people relapse and require repeated infusions, and we do not know what happens in the medium and long term.",
+      "In this case, the data reasonably support the conclusions: intravenous ketamine infusions showed a rapid and significant reduction in both depressive symptoms and suicidal ideation, with effects detectable in as little as four hours and, in some cases, lasting up to a month.",
+      "The main novelty of this meta-analysis is that it updates and reinforces that evidence by incorporating more recent trials, including studies with repeated infusions, and offers a more comprehensive synthesis of both efficacy and safety."
+     ],
+     "verdict": "usable"
+    },
+    {
+     "slug": "nif-fusion-target-gain-above-one",
+     "role": "source",
+     "i": "4-via-2",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+fusion",
+     "link_text": "STEP Fusion: what are the prospects for fusion energy by 2040?",
+     "url": "https://www.sciencemediacentre.org/step-fusion-what-are-the-prospects-for-fusion-energy-by-2040/",
+     "final_url": "https://www.sciencemediacentre.org/step-fusion-what-are-the-prospects-for-fusion-energy-by-2040/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "STEP Fusion: what are the prospects for fusion energy by 2040? | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "Is fusion really a route to nuclear energy without generating any nuclear waste – or will it just make a different kind of radioactive waste?",
+      "STEP (Spherical Tokamak for Energy Production) Fusion is the UK’s flagship programme to deliver a prototype fusion energy plant by 2040.",
+      "The STEP Programme is a public-private programme to develop, scale and deliver a UK-led fusion energy industry.",
+      "Those running STEP Fusion emphasise that it’s not just about energy, it’s about innovation, skills, and regional growth, creating a fusion supercluster centred around West Burton in Nottinghamshire and driving investment in advanced manufacturing, materials science, and high-tech engineering.",
+      "Tweet November 26, 2025 STEP Fusion: what are the prospects for fusion energy by 2040?",
+      "The aim is to demonstrate that fusion can deliver clean, safe, and abundant energy and do so in a way that is economically viable and scalable.",
+      "Unlike traditional nuclear power, fusion works by combining light atomic nuclei replicating the process that powers the sun.",
+      "The programme uses a spherical tokamak, a compact and efficient magnetic confinement system, to contain and control the ultra-hot plasma needed for fusion reactions."
+     ],
+     "verdict": "usable"
+    }
+   ],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://physicsworld.com/a/national-ignition-facility-achieves-fusion-ignition/",
+   "search": false,
+   "final_url": "https://physicsworld.com/a/national-ignition-facility-achieves-fusion-ignition/",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Page not found – Physics World",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Breakthrough of the Year",
+    "ignition",
+    "National Ignition Facility",
+    "2022",
+    "Physics World"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "dead"
+  }
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "slug": "computer-planned-natural-product-syntheses",
+ "title": "Software plans the synthesis of complex natural products, and chemists make them",
+ "first_published": "2020-10",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-020-2855-y",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-020-2855-y?error=cookies_not_supported&code=882014ec-e044-47a4-ac51-b762a7e00e3a",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Computational planning of the synthesis of complex natural products",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-10-13"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-10-13"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-10-13"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-10-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-10-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-07-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-10-06"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-10-13"
+    }
+   ],
+   "date_hint": "2020-10-13",
+   "date_ok": true,
+   "people_found": [
+    "Mikulak-Klucznik, Barbara",
+    "Gołębiowska, Patrycja",
+    "Bayly, Alison A.",
+    "Popik, Oskar",
+    "Klucznik, Tomasz",
+    "Szymkuć, Sara",
+    "Gajewska, Ewa P.",
+    "Dittwald, Piotr",
+    "Staszewska-Krajewska, Olga",
+    "Beker, Wiktor",
+    "Badowski, Tomasz",
+    "Scheidt, Karl A."
+   ],
+   "who_hint": "Mikulak-Klucznik, Gołębiowska, Bayly and colleagues (Institute of Organic Chemistry, Polish Academy of Sciences; Ulsan National Institute of Science and Technology; Allchemy)",
+   "doi": "10.1038/s41586-020-2855-y",
+   "crossref": {
+    "doi": "10.1038/s41586-020-2855-y",
+    "resolves": true,
+    "title": "Computational planning of the synthesis of complex natural products",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-10-13",
+    "authors_first3": [
+     "Mikulak-Klucznik",
+     "Gołębiowska",
+     "Bayly"
+    ],
+    "author_count": 16,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Training algorithms to computationally plan multistep organic syntheses has been a challenge for more than 50 years1–7. However, the field has progressed greatly since the development of early programs such as LHASA1,7, for which reaction choices at each step were made by human operators. Multiple s",
+   "terms": [
+    "causal relationships",
+    "strategize",
+    "synthesis planning",
+    "natural products"
+   ],
+   "passages": [
+    "Here we demonstrate that such computational synthesis planning is possible, provided that the program’s knowledge of organic chemistry and data-based artificial intelligence routines are augmented with causal relationships17,18, allowing it to ‘strategize’ over multiple synthetic steps.",
+    "Article Published: 13 October 2020 Computational planning of the synthesis of complex natural products Barbara Mikulak-Klucznik ORCID: orcid.org/0000-0001-5263-07311, Patrycja Gołębiowska1, Alison A.",
+    "Computational planning of the synthesis of complex natural products.",
+    "Furthermore, no algorithm has yet been able to design plausible routes to complex natural products, for which much more far-sighted, multistep planning is necessary15,16 and closely related literature precedents cannot be relied on.",
+    "We also successfully validated three computer-designed syntheses of natural products in the laboratory.",
+    "4 Chematica’s synthetic plan for scabrolide A.Scabrolide A is a polycyclic furanobutenolide-derived norcembranoid diterpenoid that belongs to a family of marine natural products isolated from Sinularia soft corals63,64.",
+    "1: Automatic synthesis planning over large networks of possible reactions.Fig.",
+    "The psychobiological basis of heuristic synthesis planning - man, machine and the Chiron approach.",
+    "In the bottom route, when the program was allowed to strategize, it found a more elegant route that relies on two bypasses (two sets of red reaction arrows) and one FGI (pair of violet reaction arrows)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41570-019-0124-0",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41570-019-0124-0?error=cookies_not_supported&code=28d60258-7a20-4aa5-8f1f-6adea978237a",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Synthetic organic chemistry driven by artificial intelligence",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2019-08-21"
+    },
+    {
+     "source": "dc.date",
+     "date": "2019-08-21"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2019-08-21"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2019-08-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-08-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-07-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-08-21"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-08-21"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "de Almeida, A. Filipa",
+    "Moreira, Rui",
+    "Rodrigues, Tiago"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41570-019-0124-0",
+   "crossref": {
+    "doi": "10.1038/s41570-019-0124-0",
+    "resolves": true,
+    "title": "Synthetic organic chemistry driven by artificial intelligence",
+    "container": "Nature Reviews Chemistry",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-8-21",
+    "authors_first3": [
+     "de Almeida",
+     "Moreira",
+     "Rodrigues"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "ReviewPaper"
+   },
+   "meta_description": "Synthetic organic chemistry underpins several areas of chemistry, including drug discovery, chemical biology, materials science and engineering. However, the execution of complex chemical syntheses in itself requires expert knowledge, usually acquired over many years of study and hands-on laboratory",
+   "terms": [
+    "Chematica",
+    "Grzybowski",
+    "retrosynthesis",
+    "natural product",
+    "synthesis planning"
+   ],
+   "passages": [
+    "Machine learning in computer-aided synthesis planning.",
+    "From complex natural products to simple synthetic mimetics by computational de novo design.",
+    "Natural product total synthesis: as exciting as ever and here to stay.",
+    "Chematica: A story of computer code that started to think like a chemist.",
+    "Neural-symbolic machine learning for retrosynthesis and reaction prediction.",
+    "2: Similarity search for in silico retrosynthesis analysis.Fig.",
+    "Computer-assisted retrosynthesis based on molecular similarity."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

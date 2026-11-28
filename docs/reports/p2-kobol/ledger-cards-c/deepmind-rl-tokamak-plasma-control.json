@@ -1,0 +1,237 @@
+{
+ "slug": "deepmind-rl-tokamak-plasma-control",
+ "title": "Reinforcement learning controls plasma in a tokamak fusion device",
+ "first_published": "2022-02-16",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-021-04301-9",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-021-04301-9?error=cookies_not_supported&code=be2f1303-c682-49a9-8a5d-c96423a7251b",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Magnetic control of tokamak plasmas through deep reinforcement learning",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-01-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2022-02-16"
+    },
+    {
+     "source": "dc.date",
+     "date": "2022-02-16"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2022-02-16"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-02-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-02-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-07-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-12-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-02-16"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Degrave, Jonas",
+    "Felici, Federico",
+    "Buchli, Jonas",
+    "Neunert, Michael",
+    "Tracey, Brendan",
+    "Carpanese, Francesco",
+    "Ewalds, Timo",
+    "Hafner, Roland",
+    "Abdolmaleki, Abbas",
+    "de las Casas, Diego",
+    "Donner, Craig",
+    "Fritz, Leslie"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-021-04301-9",
+   "crossref": {
+    "doi": "10.1038/s41586-021-04301-9",
+    "resolves": true,
+    "title": "Magnetic control of tokamak plasmas through deep reinforcement learning",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2022-2-16",
+    "authors_first3": [
+     "Degrave",
+     "Felici",
+     "Buchli"
+    ],
+    "author_count": 31,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Nuclear fusion using magnetic confinement, in particular in the tokamak configuration, is a promising path towards sustainable energy. A core challenge is to shape and maintain a high-temperature plasma within the tokamak vessel. This requires high-dimensional, high-frequency, closed-loop control us",
+   "terms": [
+    "News & Views",
+    "News and Views",
+    "Associated Content",
+    "Research Highlight",
+    "Reviewer",
+    "peer review",
+    "Cited by",
+    "Swiss Plasma Center",
+    "Google DeepMind"
+   ],
+   "passages": [
+    "Peer review Peer review information Nature thanks Takuma Wakatsuki and the other, anonymous, reviewers for their contribution to the peer review of this work.",
+    "1, is a research tokamak at the Swiss Plasma Center, with a major radius of 0.88 m and vessel height and width of 1.50 m and 0.512 m, respectively.",
+    "FGE and LIUQE are available subject to license agreement from the Swiss Plasma Center at EPFL (Antoine Merle antoine.merle@epfl.ch, Federico Felici federico.felici@epfl.ch)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://www.researchsquare.com/article/rs-3163842/v1",
+   "search": false,
+   "final_url": "https://www.researchsquare.com/article/rs-3163842/v1",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Avoiding tokamak tearing instability with artificial intelligence",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-07-20"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-07-20"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Egemen Kolemen",
+    "Jaemin Seo",
+    "Rory Conlin",
+    "Andrew Rothstein",
+    "SangKyeun Kim",
+    "Joseph Abbate",
+    "Keith Erickson",
+    "Josiah Wai",
+    "Ricardo Shousha",
+    "Azarakhsh Jalalvand"
+   ],
+   "who_hint": null,
+   "doi": "10.21203/rs.3.rs-3163842/v1",
+   "crossref": {
+    "doi": "10.21203/rs.3.rs-3163842/v1",
+    "resolves": true,
+    "title": "Avoiding tokamak tearing instability with artificial intelligence",
+    "container": null,
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "posted-content",
+    "issued": "2023-7-20",
+    "authors_first3": [
+     "Kolemen",
+     "Seo",
+     "Conlin"
+    ],
+    "author_count": 10,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-preprint-of": [
+      "10.1038/s41586-024-07024-9"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": "For stable and efficient fusion energy production using a tokamak reactor, maintaining high-pressure hydrogenic plasma without plasma disruption is essential. Therefore, it is necessary to actively control the tokamak based on the observed plasma state, to maneuver high-pressure plasma while avoi...",
+   "terms": [
+    "Degrave",
+    "TCV",
+    "reinforcement learning",
+    "DIII-D",
+    "Kolemen",
+    "Seo"
+   ],
+   "passages": [
+    "In this work, we demonstrate AI control based on reinforcement learning to lower the possibility of disruptive tearing instabilities in DIII-D, the largest magnetic fusion facility in the US.",
+    "This presents an obstacle avoidance problem for which artificial intelligence (AI) based on reinforcement learning has recently shown remarkable performance.",
+    "Physical sciences/Energy science and technology/Nuclear energy/Nuclear fusion and fissionPhysical sciences/Physics/Plasma physics/Magnetically confined plasmasPhysical sciences/Engineering/Mechanical engineeringPhysical sciences/Mathematics and computing/Computational sciencePhysical sciences/Physics/Information theory and computationFusion reactorTokamakArtificial intelligenceReinforcement learningAvoidance controlPlasma stabilizationFull TextAdditional DeclarationsThere is NO Competing Interest."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=DeepMind+tokamak",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=DeepMind+tokamak",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "DeepMind tokamak | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "DeepMind",
+    "tokamak",
+    "plasma",
+    "fusion",
+    "EPFL",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

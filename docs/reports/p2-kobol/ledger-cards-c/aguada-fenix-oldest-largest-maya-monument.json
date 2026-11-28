@@ -1,0 +1,288 @@
+{
+ "slug": "aguada-fenix-oldest-largest-maya-monument",
+ "title": "Aguada Fenix: the oldest and largest known Maya monument",
+ "first_published": "2020-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://www.cambridge.org/core/journals/latin-american-antiquity/article/exclusivity-in-early-maya-monumentality-querying-egalitarianism-at-uci-yucatan/38D90A28304ADE492A7773FE60C7CA08",
+   "search": false,
+   "final_url": "https://www.cambridge.org/core/journals/latin-american-antiquity/article/exclusivity-in-early-maya-monumentality-querying-egalitarianism-at-uci-yucatan/38D90A28304ADE492A7773FE60C7CA08",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Exclusivity in Early Maya Monumentality: Querying Egalitarianism at Ucí, Yucatán",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-12-03"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-12-01"
+    }
+   ],
+   "date_hint": "2025-12-03",
+   "date_ok": false,
+   "people_found": [
+    "Scott R. Hutson",
+    "Mario Zimmermann",
+    "Iliana Ancona Aragón"
+   ],
+   "who_hint": "Scott R. Hutson (University of Kentucky), Mario Zimmermann (Boise State University), Iliana Ancona Aragon (Centro INAH Yucatan); Latin American Antiquity 36(4), Cambridge University Press",
+   "doi": "10.1017/laq.2025.10110",
+   "crossref": {
+    "doi": "10.1017/laq.2025.10110",
+    "resolves": true,
+    "title": "Exclusivity in Early Maya Monumentality: Querying Egalitarianism at Ucí, Yucatán",
+    "container": "Latin American Antiquity",
+    "publisher": "Cambridge University Press (CUP)",
+    "type": "journal-article",
+    "issued": "2025-12",
+    "authors_first3": [
+     "Hutson",
+     "Zimmermann",
+     "Ancona Aragón"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Exclusivity in Early Maya Monumentality: Querying Egalitarianism at Ucí, Yucatán - Volume 36 Issue 4",
+   "terms": [
+    "Aguada Fénix",
+    "first monumental construction in the Maya area",
+    "1000 and 800 BC",
+    "Inomata"
+   ],
+   "passages": [
+    "The first monumental construction in the Maya area—the gargantuan plateau at Aguada Fénix, dating between 1000 and 800 BC—was built in multiples stages without coercion from powerful elites (Inomata et al.",
+    "While it takes leadership to organize complex construction projects, leaders during platform building at Aguada Fénix, Ceibal, Yaxuna, and Komchen probably lacked the power to order people around in other contexts.",
+    "At Ceibal, the first public buildings became what Inomata and colleagues (Reference Inomata, MacLellan and Burham2015:525) call monumental during the Real 2 phase (850–800 BC).",
+    "A remarkable feature of the first public buildings at Aguada Fénix, Ceibal, and Yaxuna is that they were built without clear evidence of a fully sedentary population.",
+    "As has been suggested for Early Middle Preclassic Aguada Fénix, Ceibal, Komchen, and Yaxuna, not all the people contributing labor to 14sub5 were necessarily fully sedentary.",
+    "Reference Inomata, Triadan, Vázquez López, Fernandez-Diaz, Omori, Belén Méndez Bauer and García Hernández2020).",
+    "Inomata and coauthors interpret the plateau as an inclusive space for the gathering of communities that were not fully sedentary and did not exhibit marked social inequality.",
+    "Inomata and coauthors (Reference Inomata, MacLellan and Burham2015) suggest Sulul could be either a communal space or a residence.",
+    "If it were a residence, the axe caches may imply the existence of “emergent elite” (Inomata et al.",
+    "Yet in the context of monumentalization, Inomata and coauthors (Reference Inomata, MacLellan and Burham2015:528) deemphasize the notion of elites and aggrandizers and suggest that “large constructions can be achieved through communal consensus and mutual obligations among participants in the absence of institutionalized, managerial elites.”"
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.cambridge.org/core/journals/antiquity/article/monumentality-as-traditional-ecological-knowledge-in-the-northern-maya-lowlands/AA6A8929668238225DA4F1A247AB2FF7",
+   "search": false,
+   "final_url": "https://www.cambridge.org/core/journals/antiquity/article/monumentality-as-traditional-ecological-knowledge-in-the-northern-maya-lowlands/AA6A8929668238225DA4F1A247AB2FF7",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Monumentality as traditional ecological knowledge in the northern Maya lowlands",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-02-20"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-02-20"
+    }
+   ],
+   "date_hint": "2023-02-20",
+   "date_ok": false,
+   "people_found": [
+    "Chelsea Fisher"
+   ],
+   "who_hint": "Chelsea Fisher (Washington and Lee University); Antiquity 97(392), Cambridge University Press",
+   "doi": "10.15184/aqy.2023.20",
+   "crossref": {
+    "doi": "10.15184/aqy.2023.20",
+    "resolves": true,
+    "title": "Monumentality as traditional ecological knowledge in the northern Maya lowlands",
+    "container": "Antiquity",
+    "publisher": "Antiquity Publications",
+    "type": "journal-article",
+    "issued": "2023-2-20",
+    "authors_first3": [
+     "Fisher"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Monumentality as traditional ecological knowledge in the northern Maya lowlands - Volume 97 Issue 392",
+   "terms": [
+    "Aguada Fénix",
+    "Tabasco",
+    "artificial plateau",
+    "Inomata"
+   ],
+   "passages": [
+    "As a single example, at Aguada Fénix in Tabasco, researchers have documented a massive artificial plateau—the oldest known Maya monumental construction.",
+    "Discussion: connecting monumentality and TEK The transition from mobile foraging to sedentary farming in the Maya area has been described in terms of degrees (Inomata et al.",
+    "While superficially this Late to Terminal Formative use of stone resembles the situation at Tzacauil and Yaxuná, the earlier Middle Formative tradition of clay-and-earth construction at Aguada Fénix suggests an entirely different history of ecological encounter among communities and land.",
+    "Monumental architecture at Aguada Fénix and the rise of Maya civilization.",
+    "Middle Formative fills in the plateau used clay and earth, and Late to Terminal Formative fills transitioned to soil mixed with stones (Inomata et al.",
+    "Reference Inomata2020), with regions, communities and even individual households adjusting for generations their practices along a spectrum of sedentism and mobility."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-020-01570-8",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/d41586-020-01570-8?error=cookies_not_supported&code=e567581c-f5a9-4035-9bce-14aaead9eeff",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Large-scale early Maya sites in Mexico revealed by lidar mapping technology",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-18"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-06-03"
+    }
+   ],
+   "date_hint": "2020-06-03",
+   "date_ok": true,
+   "people_found": [
+    "McAnany, Patricia A."
+   ],
+   "who_hint": "Patricia A. McAnany; Nature News & Views, Nature 582, 490-492",
+   "doi": "10.1038/d41586-020-01570-8",
+   "crossref": {
+    "doi": "10.1038/d41586-020-01570-8",
+    "resolves": true,
+    "title": "Large-scale early Maya sites in Mexico revealed by lidar mapping technology",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-6-3",
+    "authors_first3": [
+     "McAnany"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "Monumental structures that aid naked-eye astronomy.",
+   "terms": [
+    "Inomata",
+    "Tabasco",
+    "lidar",
+    "Maya"
+   ],
+   "passages": [
+    "Writing in Nature, Inomata et al.2 provide a prime example of this in their study of the region of Tabasco in Mexico that borders the Usumacinta River.",
+    "NEWS AND VIEWS 03 June 2020 Large-scale early Maya sites in Mexico revealed by lidar mapping technology Archaeology is transforming our view of how ancient Maya societies developed.",
+    "Lidar is changing archaeological study of the ancient Maya in Mexico and Central America.",
+    "Use of lidar technology has now led to the discovery that large, monumental structures that aid naked-eye astronomy were built unexpectedly early.",
+    "A more-recent transformative innovation is the airborne application of a remote-sensing technique called light detection and ranging (lidar) to create a model (also known as a digital-elevation model) of the bare-surface terrain that is hidden by trees in forested areas1."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=Aguada+Fenix+Maya",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=Aguada+Fenix+Maya",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Aguada Fenix Maya | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Aguada Fenix",
+    "Maya",
+    "lidar",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "slug": "mms-speech-models-1100-languages",
+ "title": "Meta's MMS speech models cover over 1,100 languages using Bible recordings",
+ "first_published": "2023-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=Meta+1%2C100+languages",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=Meta+1%2C100+languages",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Meta 1,100 languages | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Meta",
+    "1,100 languages",
+    "speech recognition",
+    "multilingual speech",
+    "expert reaction",
+    "low-resource languages"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

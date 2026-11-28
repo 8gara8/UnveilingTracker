@@ -1,0 +1,123 @@
+{
+ "slug": "logical-qubits-atom-array-processor",
+ "title": "A neutral-atom processor runs error-corrected logical qubits, up to 48",
+ "first_published": "2023-12-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-023-06927-3",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-023-06927-3?error=cookies_not_supported&code=23c4e184-dd4f-4d2f-bdd3-42eacffd828b",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Logical quantum processor based on reconfigurable atom arrays",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-01-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-12-06"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-12-06"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-12-06"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-12-06"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-12-06"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-10-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-12-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-12-06"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Bluvstein, Dolev",
+    "Evered, Simon J.",
+    "Geim, Alexandra A.",
+    "Li, Sophie H.",
+    "Zhou, Hengyun",
+    "Manovitz, Tom",
+    "Ebadi, Sepehr",
+    "Cain, Madelyn",
+    "Kalinowski, Marcin",
+    "Hangleiter, Dominik",
+    "Bonilla Ataides, J. Pablo",
+    "Maskara, Nishad"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-023-06927-3",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06927-3",
+    "resolves": true,
+    "title": "Logical quantum processor based on reconfigurable atom arrays",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-12-6",
+    "authors_first3": [
+     "Bluvstein",
+     "Evered",
+     "Geim"
+    ],
+    "author_count": 21,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Suppressing errors is the central challenge for useful quantum computing1, requiring quantum error correction (QEC)2–6 for large-scale processing. However, the overhead in the realization of error-corrected ‘logical’ qubits, in which information is encoded across many physical qubits for redundancy2",
+   "terms": [
+    "News & Views",
+    "Associated content",
+    "Related",
+    "Cited by",
+    "d41586-"
+   ],
+   "passages": [
+    "If the weight of hypergraph correction (inversely related to the log of the probability that a given error mechanism would have occurred leading to the observed syndrome outcome) is below the cut-off threshold weight, then the measurement is accepted; otherwise, it is rejected.",
+    "For a given logical circuit, our correlated decoding procedure generates a decoding hypergraph, which we then solve using most likely error methods, which is done here for both surface-code and colour-code experiments, and can generically be applied to any stabilizer codes and Clifford circuits79.",
+    "5f, we plot estimates of physical-qubit fidelity and not the XEB, but we expect the XEB and fidelity to be closely related, as discussed previously.We note several observations made in comparing physical and logical implementations of these complex circuits.",
+    "Each edge or hyperedge corresponds to a physical error mechanism that affects the stabilizers it connects, with an edge weight related to the probability of that error.",
+    "We explore this correlated decoding in more detail, including its consequences on error-corrected circuits and the asymptotic runtimes of different decoders (M.C. et al., manuscript in preparation).",
+    "As such, we perform the sliding-scale error detection using the correlated decoding technique and set the confidence threshold as a threshold weight of the overall correction weight on the decoding hypergraph.",
+    "However, when decoded jointly with correlated decoding, these errors can be effectively decoded, as they will appear on the stabilizers of both logical qubits.",
+    "3c shows that the resulting GHZ state fidelity obtained using the fault-tolerant algorithm is 72(2)% (again using correlated decoding), demonstrating genuine multipartite entanglement.",
+    "We note that this is closely related to other recent developments in decoding entire circuits, or so-called space-time decoding76,77,78,79.",
+    "Our correlated decoding technique is thus essential to our observation of improved Bell performance with code distance.Finally, we elaborate on our evaluation of Bell-pair error."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

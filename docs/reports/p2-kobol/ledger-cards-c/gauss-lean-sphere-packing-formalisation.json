@@ -1,0 +1,128 @@
+{
+ "slug": "gauss-lean-sphere-packing-formalisation",
+ "title": "AI completes Lean formalisation of sphere packing in dimensions 8 and 24",
+ "first_published": "2026-03",
+ "items": [
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=sphere+packing+Gauss",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=sphere+packing+Gauss",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "sphere packing Gauss | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "sphere packing",
+    "Gauss",
+    "Math Inc",
+    "Viazovska",
+    "formalisation",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://terrytao.wordpress.com/?s=sphere+packing+Gauss",
+   "search": true,
+   "final_url": "https://terrytao.wordpress.com/?s=sphere+packing+Gauss",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Search Results for “sphere packing Gauss” – What's new",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "sphere packing",
+    "Gauss",
+    "Math Inc",
+    "Viazovska",
+    "autoformalization",
+    "Lean"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://www.nature.com/search?q=sphere+packing+Gauss&article_type=news-and-views&order=relevance",
+   "search": true,
+   "final_url": "https://www.nature.com/search?q=sphere+packing+Gauss&article_type=news-and-views&order=relevance&error=cookies_not_supported&code=e521762d-15e8-4441-bc03-ef643ca4942d",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "sphere packing Gauss | Nature Search Results",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "1992-01-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2008-05-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "1992-01-09"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "sphere packing",
+    "Gauss",
+    "Math Inc",
+    "Viazovska",
+    "Lean",
+    "mathematicians"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

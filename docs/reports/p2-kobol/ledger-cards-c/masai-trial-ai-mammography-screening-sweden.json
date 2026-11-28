@@ -1,0 +1,101 @@
+{
+ "slug": "masai-trial-ai-mammography-screening-sweden",
+ "title": "AI-supported mammography screening matches double reading with less workload",
+ "first_published": "2023-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://clinicaltrials.gov/api/v2/studies/NCT04838756",
+   "search": false,
+   "final_url": "https://clinicaltrials.gov/api/v2/studies/NCT04838756",
+   "status": 200,
+   "readable": false,
+   "reason": "unreadable",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Lund University",
+    "ScreenPoint",
+    "Transpara",
+    "enrollment",
+    "briefSummary",
+    "primaryOutcome",
+    "interval cancer"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://doi.org/10.1016/S0140-6736(25)02464-X",
+   "search": false,
+   "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S014067362502464X",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Redirecting",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2025-12-31"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.1016/s0140-6736(25)02464-x",
+   "crossref": {
+    "doi": "10.1016/s0140-6736(25)02464-x",
+    "resolves": true,
+    "title": "Interval cancer, sensitivity, and specificity comparing AI-supported mammography screening with standard double reading without AI in the MASAI study: a randomised, controlled, non-inferiority, single-blinded, population-based, screening-accuracy trial",
+    "container": "The Lancet",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2026-1",
+    "authors_first3": [
+     "Gommers",
+     "Hernström",
+     "Josefsson"
+    ],
+    "author_count": 12,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "interval cancer",
+    "MASAI",
+    "AI-supported screening",
+    "standard double reading",
+    "non-inferiority"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "slug": "alphaqubit-neural-quantum-decoder",
+ "title": "A neural network decodes quantum errors better than hand-built decoders",
+ "first_published": "2024-11-20",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=AlphaQubit+expert+reaction",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=AlphaQubit+expert+reaction",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AlphaQubit expert reaction | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaQubit",
+    "expert reaction",
+    "quantum error correction",
+    "neural network decoder"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://arxiv.org/abs/2310.05900",
+   "search": false,
+   "final_url": "https://arxiv.org/abs/2310.05900",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Learning to Decode the Surface Code with a Recurrent, Transformer-Based Neural Network",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-10-09"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-10-09"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-11-20"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Bausch, Johannes",
+    "Senior, Andrew W",
+    "Heras, Francisco J H",
+    "Edlich, Thomas",
+    "Davies, Alex",
+    "Newman, Michael",
+    "Jones, Cody",
+    "Satzinger, Kevin",
+    "Niu, Murphy Yuezhen",
+    "Blackwell, Sam",
+    "Holland, George",
+    "Kafri, Dvir"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-024-08148-8",
+   "crossref": {
+    "doi": "10.1038/s41586-024-08148-8",
+    "resolves": true,
+    "title": "Learning high-accuracy error decoding for quantum processors",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-11-20",
+    "authors_first3": [
+     "Bausch",
+     "Senior",
+     "Heras"
+    ],
+    "author_count": 18,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2310.05900: Learning to Decode the Surface Code with a Recurrent, Transformer-Based Neural Network",
+   "terms": [
+    "Learning to decode the surface code",
+    "recurrent",
+    "transformer-based neural network",
+    "Submitted",
+    "v1"
+   ],
+   "passages": [
+    "Towards this goal, we present a recurrent, transformer-based neural network which learns to decode the surface code, the leading quantum error-correction code."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11602728/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11602728/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Learning high-accuracy error decoding for quantum processors",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-11-19"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-11-20"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Johannes Bausch",
+    "Andrew W Senior",
+    "Francisco J H Heras",
+    "Thomas Edlich",
+    "Alex Davies",
+    "Michael Newman",
+    "Cody Jones",
+    "Kevin Satzinger",
+    "Murphy Yuezhen Niu",
+    "Sam Blackwell",
+    "George Holland",
+    "Dvir Kafri"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-024-08148-8",
+   "crossref": {
+    "doi": "10.1038/s41586-024-08148-8",
+    "resolves": true,
+    "title": "Learning high-accuracy error decoding for quantum processors",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-11-20",
+    "authors_first3": [
+     "Bausch",
+     "Senior",
+     "Heras"
+    ],
+    "author_count": 18,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Building a large-scale quantum computer requires effective strategies to correct errors that inevitably arise in physical quantum systems1. Quantum error-correction codes2 present a way to reach this goal by encoding logical information redundantly ...",
+   "terms": [
+    "AlphaQubit",
+    "Sycamore",
+    "distance-5",
+    "logical error",
+    "per round",
+    "Received",
+    "Accepted",
+    "real time"
+   ],
+   "passages": [
+    "Logical error per round on the 3 × 3 and 5 × 5 Sycamore experiment.",
+    "Our decoder outperforms other state-of-the-art decoders on real-world data from Google’s Sycamore quantum processor for distance-3 and distance-5 surface codes4.",
+    "First, on experimental data from a Sycamore quantum processor on distance-3 and distance-5 surface codes4, when pretraining on synthetic data modelling device noise and then finetuning on experimental samples, we observe significantly better error suppression than state-of-the-art correlated matching and tensor-network decoders4,26,27,31,45.",
+    "We first apply AlphaQubit to Google’s Sycamore memory experiment42, which comprises both X-basis and Z-basis memory experiments on surface codes with distance 3 and distance 5.",
+    "4, via the geometric average Λ¯3/11=(ϵ3/ϵ11)1/4, for a logical error per round ϵ3 at code distance 3, and ϵ11 at distance 11, respectively.Furthermore, decoders need to achieve a throughput of 1 μs per round for superconducting qubits4,31 and 1 ms for trapped-ion devices20.",
+    "Decoder performance is quantified by the logical error per round (LER), the fraction of experiments in which the decoder fails for each additional error-correction round4 (‘Logical error per round’ in Methods and Fig.",
+    "Individual fits of logical error per round for 3 × 3 and 5 × 5 memory experiments.",
+    "2b)—decodes the Sycamore surface code experiments more accurately than any previous decoder (machine learning or otherwise).",
+    "More recently, two studies have tested the performance of machine-learning decoders using the Sycamore surface code experiment.",
+    "4a, inset) using a richer noise model than those considered in previous machine-learning decoder work—including leakage, cross-talk and soft readouts with an amplitude damping component—AlphaQubit scales to code distance 11 and generalizes to 100,000 error-correction rounds while maintaining accuracy beyond correlated MWPM (MWPM-Corr)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://deepmind.google/discover/blog/",
+   "search": false,
+   "final_url": "https://deepmind.google/blog/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "News",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2026-10-31"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-10-31"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-10-31"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Discover our latest AI breakthroughs, projects, and updates.",
+   "terms": [
+    "AlphaQubit",
+    "quantum error",
+    "decoder",
+    "Sycamore"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

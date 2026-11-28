@@ -1,0 +1,157 @@
+{
+ "slug": "six-microcredit-trials-find-modest-effects",
+ "title": "Six trials in six countries find microcredit gains modest",
+ "first_published": "2015-01",
+ "items": [
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://doi.org/10.1257/app.20130535",
+   "search": false,
+   "final_url": "https://pubs.aeaweb.org/doi/10.1257/app.20130535",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2015-01-01"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.1257/app.20130535",
+   "crossref": {
+    "doi": "10.1257/app.20130535",
+    "resolves": true,
+    "title": "Estimating the Impact of Microcredit on Those Who Take It Up: Evidence from a Randomized Experiment in Morocco",
+    "container": "American Economic Journal: Applied Economics",
+    "publisher": "American Economic Association",
+    "type": "journal-article",
+    "issued": "2015-1-1",
+    "authors_first3": [
+     "Crépon",
+     "Devoto",
+     "Duflo"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Morocco",
+    "microcredit",
+    "no gain in income or consumption",
+    "American Economic Journal: Applied Economics",
+    "January 2015"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://doi.org/10.1257/app.20130537",
+   "search": false,
+   "final_url": "https://pubs.aeaweb.org/doi/10.1257/app.20130537",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2015-01-01"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.1257/app.20130537",
+   "crossref": {
+    "doi": "10.1257/app.20130537",
+    "resolves": true,
+    "title": "Microcredit Impacts: Evidence from a Randomized Microcredit Program Placement Experiment by Compartamos Banco",
+    "container": "American Economic Journal: Applied Economics",
+    "publisher": "American Economic Association",
+    "type": "journal-article",
+    "issued": "2015-1-1",
+    "authors_first3": [
+     "Angelucci",
+     "Karlan",
+     "Zinman"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Compartamos",
+    "Mexico",
+    "microcredit",
+    "some good and little harm",
+    "American Economic Journal: Applied Economics"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://www.aeaweb.org/journals/app/issues",
+   "search": false,
+   "final_url": "https://www.aeaweb.org/journals/app/issues",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "American Economic Association: American Economic Journal: Applied Economics Issues",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Six Randomized Evaluations of Microcredit: Introduction and Further Steps",
+    "January 2015",
+    "Bosnia",
+    "Ethiopia",
+    "Mongolia",
+    "India"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

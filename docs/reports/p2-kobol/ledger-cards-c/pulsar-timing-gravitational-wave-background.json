@@ -1,0 +1,180 @@
+{
+ "slug": "pulsar-timing-gravitational-wave-background",
+ "title": "Four pulsar timing teams report a background of gravitational waves",
+ "first_published": "2023-06-28",
+ "items": [
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://academic.oup.com/mnras/article/536/2/1489/7912548",
+   "search": false,
+   "final_url": "https://academic.oup.com/mnras/article/536/2/1489/7912548",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2025-01",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "MeerKAT Pulsar Timing Array (first author Matthew T. Miles)",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "MeerKAT",
+    "Hellings-Downs",
+    "gravitational wave",
+    "pulsar timing"
+   ],
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "arxiv",
+     "url": "https://arxiv.org/abs/2412.01153",
+     "final_url": "https://arxiv.org/abs/2412.01153",
+     "status": 200,
+     "readable": true,
+     "title_found": "The MeerKAT Pulsar Timing Array: The first search for gravitational waves with the MeerKAT radio telescope",
+     "title_match": true,
+     "date": "2024-12-02",
+     "passages": [
+      "Moreschi, Golam Shaifullah, Mohsen Shamohammadi, Andrea Possenti, Vivek Venkatraman Krishnan View a PDF of the paper titled The MeerKAT Pulsar Timing Array: The first search for gravitational waves with the MeerKAT radio telescope, by Matthew T.",
+      "Pulsar Timing Arrays search for nanohertz-frequency gravitational waves by regularly observing ensembles of millisecond pulsars over many years to look for correlated timing residuals.",
+      "In this paper we present the results of background searches with the MeerKAT Pulsar Timing Array.",
+      "This appears to be related to the fact that many of the highest precision MeerKAT Pulsar Timing Array pulsars are in close proximity and dominate the detection statistics.",
+      "These data will be valuable as the International Pulsar Timing Array project explores the significance of gravitational wave detections and their dependence on the assumed noise models.",
+      "Recently the first evidence for a stochastic gravitational wave background has been presented by the major Arrays, with varying levels of significance ($\\sim$2-4$\\sigma$).",
+      "Detection of a gravitational wave background requires careful modelling of noise processes to ensure that any correlations represent a fit to the underlying background and not other misspecified processes.",
+      "Under different assumptions about noise processes we can produce either what appear to be compelling Hellings-Downs correlations of high significance (3-3.4$\\sigma$) with a spectrum close to that which is predicted, or surprisingly, under slightly different assumptions, ones that are insignificant."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2412.01153",
+   "search": false,
+   "final_url": "https://arxiv.org/abs/2412.01153",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The MeerKAT Pulsar Timing Array: The first search for gravitational waves with the MeerKAT radio telescope",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2024-12-02"
+    },
+    {
+     "source": "citation_date",
+     "date": "2024-12-02"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-12-03"
+    }
+   ],
+   "date_hint": "2024-12-02",
+   "date_ok": false,
+   "people_found": [
+    "Miles, Matthew T.",
+    "Shannon, Ryan M.",
+    "Reardon, Daniel J.",
+    "Bailes, Matthew",
+    "Champion, David J.",
+    "Geyer, Marisa",
+    "Gitika, Pratyasha",
+    "Grunthal, Kathrin",
+    "Keith, Michael J.",
+    "Kramer, Michael",
+    "Kulkarni, Atharva D.",
+    "Nathan, Rowina S."
+   ],
+   "who_hint": "MeerKAT Pulsar Timing Array (first author Matthew T. Miles)",
+   "doi": "10.1093/mnras/stae2571",
+   "crossref": {
+    "doi": "10.1093/mnras/stae2571",
+    "resolves": true,
+    "title": "The MeerKAT Pulsar Timing Array: the first search for gravitational waves with the MeerKAT radio telescope",
+    "container": "Monthly Notices of the Royal Astronomical Society",
+    "publisher": "Oxford University Press (OUP)",
+    "type": "journal-article",
+    "issued": "2024-12-3",
+    "authors_first3": [
+     "Miles",
+     "Shannon",
+     "Reardon"
+    ],
+    "author_count": 25,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2412.01153: The MeerKAT Pulsar Timing Array: The first search for gravitational waves with the MeerKAT radio telescope",
+   "terms": [
+    "MeerKAT",
+    "Hellings-Downs",
+    "significance",
+    "insignificant"
+   ],
+   "passages": [
+    "Under different assumptions about noise processes we can produce either what appear to be compelling Hellings-Downs correlations of high significance (3-3.4$\\sigma$) with a spectrum close to that which is predicted, or surprisingly, under slightly different assumptions, ones that are insignificant.",
+    "Moreschi, Golam Shaifullah, Mohsen Shamohammadi, Andrea Possenti, Vivek Venkatraman Krishnan View a PDF of the paper titled The MeerKAT Pulsar Timing Array: The first search for gravitational waves with the MeerKAT radio telescope, by Matthew T.",
+    "Recently the first evidence for a stochastic gravitational wave background has been presented by the major Arrays, with varying levels of significance ($\\sim$2-4$\\sigma$).",
+    "In this paper we present the results of background searches with the MeerKAT Pulsar Timing Array.",
+    "This appears to be related to the fact that many of the highest precision MeerKAT Pulsar Timing Array pulsars are in close proximity and dominate the detection statistics.",
+    "These data will be valuable as the International Pulsar Timing Array project explores the significance of gravitational wave detections and their dependence on the assumed noise models."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 8,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=pulsar+timing+gravitational+wave+background",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=pulsar+timing+gravitational+wave+background",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "pulsar timing gravitational wave background | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "pulsar timing",
+    "gravitational wave background",
+    "expert reaction",
+    "NANOGrav"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

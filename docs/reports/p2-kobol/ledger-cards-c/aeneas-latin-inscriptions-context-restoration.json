@@ -1,0 +1,336 @@
+{
+ "slug": "aeneas-latin-inscriptions-context-restoration",
+ "title": "Aeneas network finds parallels, restores and dates Latin inscriptions",
+ "first_published": "2025-07",
+ "items": [
+  {
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-025-02132-6",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/d41586-025-02132-6?error=cookies_not_supported&code=ee8d54ce-80d6-403a-a611-31e575ffd810",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AI for Latin inscriptions supplies missing text and predicts date and location",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-08-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-07-23"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-07-23"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-07-23"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-07-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-07-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-07-23"
+    }
+   ],
+   "date_hint": "2025-07-23",
+   "date_ok": true,
+   "people_found": [
+    "Tupman, Charlotte"
+   ],
+   "who_hint": "Charlotte Tupman",
+   "doi": "10.1038/d41586-025-02132-6",
+   "crossref": {
+    "doi": "10.1038/d41586-025-02132-6",
+    "resolves": true,
+    "title": "AI for Latin inscriptions supplies missing text and predicts date and location",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-7-23",
+    "authors_first3": [
+     "Tupman"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "An artificial-intelligence tool helps historians to interpret Latin inscriptions by assigning a date and location and suggesting text for missing parts.",
+   "terms": [
+    "Aeneas",
+    "Latin inscriptions",
+    "historians",
+    "Assael et al.",
+    "Tupman"
+   ],
+   "passages": [
+    "Writing in Nature, Assael et al.1 offer historians an artificial intelligence (AI) tool named Aeneas, which can help with the work of predicting, dating, locating and contextualizing Latin inscriptions dating from between the seventh century bc and the eighth century ad.",
+    "NEWS AND VIEWS 23 July 2025 AI for Latin inscriptions supplies missing text and predicts date and location An artificial-intelligence tool helps historians to interpret Latin inscriptions by assigning a date and location and suggesting text for missing parts.",
+    "By Charlotte Tupman ORCID: http://orcid.org/0000-0002-4008-024X0 Charlotte Tupman Charlotte Tupman is in the Department of Classics, Ancient History, Religion and Theology, University of Exeter, Exeter EX4 4QH, UK."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2608.28170",
+   "search": false,
+   "final_url": "https://arxiv.org/abs/2608.28170",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Text Restoration of Ancient Documents with Language Models",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-08-28"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-08-28"
+    }
+   ],
+   "date_hint": "2026-08-28",
+   "date_ok": false,
+   "people_found": [
+    "Zhang, Shibingfeng",
+    "Caraffa, Edoardo",
+    "Zuffrano, Annafelicia",
+    "Modesti, Maddalena",
+    "Colavizza, Giovanni"
+   ],
+   "who_hint": "Shibingfeng Zhang, Edoardo Caraffa, Annafelicia Zuffrano, Maddalena Modesti, Giovanni Colavizza",
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2608.28170: Text Restoration of Ancient Documents with Language Models",
+   "terms": [
+    "Aeneas",
+    "baseline",
+    "length-known",
+    "lacuna",
+    "notarial documents",
+    "Bologna"
+   ],
+   "passages": [
+    "Purpose - This study investigates the feasibility of restoring missing text caused by physical lacunae in damaged ancient manuscripts using language models.",
+    "Originality - This is the first study and to analyze model performance on formulaic and non-formulaic content and the impact of lacuna length awareness in manuscript restoration.",
+    "We also propose several decoding strategies that further enhance performance and address the discrepancy between lacuna boundaries and the models' tokenization schemes."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://deepmind.google/discover/blog/aeneas-transforms-how-historians-connect-the-past/",
+   "search": false,
+   "final_url": "https://deepmind.google/blog/aeneas-transforms-how-historians-connect-the-past/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Aeneas transforms how historians connect the past",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2025-07-23"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-07-23"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "The Aeneas team"
+   ],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Introducing the first model for contextualizing ancient inscriptions, designed to help historians better interpret, attribute and restore fragmentary texts.",
+   "terms": [
+    "Aeneas",
+    "historians",
+    "Oxford",
+    "Warwick",
+    "free",
+    "open source",
+    "epigraphers",
+    "used by"
+   ],
+   "passages": [
+    "By turning each text into a kind of historical fingerprint, Aeneas identifies deep connections that can help historians situate inscriptions within their broader historical context.Processing multimodal input: Aeneas is the first model to determine a text's geographical provenance using multimodal inputs.",
+    "Historians consistently highlighted Aeneas’ value in accelerating their work and expanding the range of most relevant parallel inscriptions.Aeneas’ parallels completely changed my perception of the inscription.",
+    "This makes it a more versatile tool for historians dealing with heavily damaged material.State-of-the-art performance: Aeneas sets a new state-of-the-art benchmark in restoring damaged texts and predicting when and where they were written.Animation of a restored bronze military diploma from Sardinia 113/14 C.E.",
+    "Tasks were first performed independently, then with Aeneas’ parallels information, or parallels and predictions together.Aeneas helped the historians in our study identify new parallels and increased their confidence when tackling complex epigraphic tasks.",
+    "Anonymised historian from our study Sharing the tools, shaping the futureAeneas is designed to integrate within historians' existing research workflows.",
+    "(CIL XVI, 60).How Aeneas worksAeneas is a multimodal generative neural network that takes an inscription’s text and image as input.",
+    "It analyzes both text and visual information, like images of an inscription.Restoring gaps of unknown length: For the first time, Aeneas can restore gaps in texts where the missing length is unknown.",
+    "It reasons across thousands of Latin inscriptions, retrieving textual and contextual parallels in seconds that allow historians to interpret and build upon the model’s findings.",
+    "Rather than predicting a single fixed date, Aeneas produced a detailed distribution of possible dates, showing two distinct peaks, with one smaller peak around 10-1 BCE and a larger, more confident peak between 10-20 CE.",
+    "From political graffiti, love poems and epitaphs to business transactions, birthday invitations and magical spells, inscriptions offer modern historians rich insights into the diversity of everyday life across the Roman world.Often, these texts are fragmentary, weathered or deliberately defaced."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://github.com/google-deepmind/predictingthepast",
+   "search": false,
+   "final_url": "https://github.com/google-deepmind/predictingthepast",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "GitHub - google-deepmind/predictingthepast",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Contribute to google-deepmind/predictingthepast development by creating an account on GitHub.",
+   "terms": [
+    "Aeneas",
+    "Latin",
+    "README",
+    "license",
+    "weights",
+    "inscriptions"
+   ],
+   "passages": [
+    "Aeneas retrieves textual and contextual parallels, leverages visual inputs, handles arbitrary-length text restoration, and advances the state-of-the-art in key tasks.",
+    "Given the image and textual transcription of an inscription (with damaged sections of unknown-length marked with the \"#\" character), Aeneas uses a transformer-based decoder, the \"torso\", to process the text.",
+    "We introduce Aeneas, the first generative neural network for contextualising ancient texts.",
+    "To evaluate its impact, we conduct the largest Historian-AI study to date, with historians considering Aeneas’ retrieved parallels useful research starting points in 90% of cases, improving their confidence in key tasks by 44%.",
+    "Aeneas Interactive Interface Google Colab for using Aeneas for your research Aeneas Inference Offline Advanced users who want to perform inference using the trained model may want to do so manually using the predictingthepast library directly.",
+    "Historians capture these insights by identifying parallels - inscriptions with shared phrasing, function, or cultural setting - to enable the contextualisation of texts within broader historical frameworks, and perform key tasks such as restoration and geographical or chronological attribution.",
+    "Restoration and geographical attribution tasks yielded superior results when historians were paired with Aeneas, outperforming both humans and AI alone.",
+    "We demonstrate Aeneas’ contribution to historical workflows through analysis of key traits in the Res Gestae Divi Augusti, the most renowned Roman inscription, showing how integrating Science and Humanities can create transformative tools to assist historians and advance our understanding of the past.",
+    "The torso's intermediate representations are merged into a unified, historically-enriched embedding to retrieve similar inscriptions from the LED, ranked by relevance.",
+    "License & Disclaimer Copyright 2025 Google LLC All software is licensed under the Apache License, Version 2.0 (Apache 2.0); you may not use this file except in compliance with the Apache 2.0 license."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=expert+reaction+Aeneas",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=expert+reaction+Aeneas",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction Aeneas | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "expert reaction",
+    "Aeneas",
+    "Latin inscriptions",
+    "ancient texts",
+    "AI"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://www.nature.com/search?q=News+%26+Views+Aeneas&article_type=news-and-views&order=relevance",
+   "search": true,
+   "final_url": "https://www.nature.com/search?q=News+%26+Views+Aeneas&article_type=news-and-views&order=relevance&error=cookies_not_supported&code=e651497b-732b-4b0b-bde8-4149fe852bda",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "News & Views Aeneas | Nature Search Results",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "News & Views",
+    "Aeneas",
+    "ancient inscriptions",
+    "d41586-"
+   ],
+   "passages": [
+    "News & Views (0) Subject Check one or more subjects to show results from those subjects only."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

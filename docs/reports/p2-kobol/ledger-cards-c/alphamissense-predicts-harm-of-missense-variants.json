@@ -1,0 +1,585 @@
+{
+ "slug": "alphamissense-predicts-harm-of-missense-variants",
+ "title": "AlphaMissense rates 71 million possible protein-changing DNA variants",
+ "first_published": "2023-09-19",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://link.springer.com/article/10.1186/s13059-025-03575-w",
+   "search": false,
+   "final_url": "https://link.springer.com/article/10.1186/s13059-025-03575-w?error=cookies_not_supported&code=ebbbb337-2ae6-4daa-8bf8-884427f01757",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Variant effect predictor correlation with functional assays is reflective of clinical classification performance",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-04-22"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-04-22"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-04-22"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-04-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-04-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-05-12"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-04-11"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-04-22"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Livesey, Benjamin J.",
+    "Marsh, Joseph A."
+   ],
+   "who_hint": null,
+   "doi": "10.1186/s13059-025-03575-w",
+   "crossref": {
+    "doi": "10.1186/s13059-025-03575-w",
+    "resolves": true,
+    "title": "Variant effect predictor correlation with functional assays is reflective of clinical classification performance",
+    "container": "Genome Biology",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-4-22",
+    "authors_first3": [
+     "Livesey",
+     "Marsh"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1101/2024.05.12.593741"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Understanding the relationship between protein sequence and function is crucial for accurate classification of missense variants. Variant effect predictors",
+   "terms": [
+    "AlphaMissense"
+   ],
+   "passages": [
+    "Likewise, AlphaMissense is primarily an unsupervised method, but undergoes training with human allele frequencies as “weak labels” [25], which could potentially provide an advantage for classification of benign variants.",
+    "However, the hybrid language models—AlphaMissense, CPT-1, and popEVE—all rank higher.VARITY_R ranked 9th overall and was the top-ranking clinical-trained predictor that was also included in our previous study.",
+    "Our use of mostly rare variants as the putatively benign dataset should minimize any advantage to AlphaMissense from its population tuning.",
+    "Accurate proteome-wide missense variant effect prediction with AlphaMissense.",
+    "The population-free predictors achieve top correlations with 20 of the 36 DMS datasets, while population-tuned methods come top on a further 9 datasets (a trend driven almost exclusively by AlphaMissense).",
+    "While VEP performance is protein dependent to some extent, specific VEPs clearly have a higher level of consistency against DMS data, specifically AlphaMissense and CPT-1.",
+    "Both AlphaMissense and popEVE in particular are very close to the population-free trend.",
+    "AlphaMissense was not trained for pathogenicity, but even with its exposure to allele frequency information, it is also fairly similar to the population-free methods.",
+    "This is a small group, comprising only six of the VEPs tested here, including AlphaMissense.",
+    "CPT-1 ranked significantly higher than every method in the bootstrap except AlphaMissense (p = 0.169) (Additional file 2: Table S4)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://journals.plos.org/plosone/article/file?id=10.1371%2Fjournal.pone.0297560&type=printable",
+   "search": false,
+   "final_url": "https://journals.plos.org/plosone/article/file?id=10.1371%2Fjournal.pone.0297560&type=printable",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaMissense",
+    "benchmark"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41597-024-03327-8",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41597-024-03327-8?error=cookies_not_supported&code=41a71fa0-8822-49d6-a70f-1b33f7cb71a6",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Analysis of AlphaMissense data in different protein groups and structural context",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2024-05-14"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-05-14"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-05-14"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-05-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-05-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-12-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-04-29"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-05-14"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Tordai, Hedvig",
+    "Torres, Odalys",
+    "Csepi, Máté",
+    "Padányi, Rita",
+    "Lukács, Gergely L.",
+    "Hegedűs, Tamás"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41597-024-03327-8",
+   "crossref": {
+    "doi": "10.1038/s41597-024-03327-8",
+    "resolves": true,
+    "title": "Analysis of AlphaMissense data in different protein groups and structural context",
+    "container": "Scientific Data",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-5-14",
+    "authors_first3": [
+     "Tordai",
+     "Torres",
+     "Csepi"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "references": [
+      "https://github.com/Belval/AlphaMissenseCheck",
+      "https://github.com/vjcitn/BiocAlphaMissense",
+      "https://mtmorgan.github.io/AlphaMissenseR/"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Single amino acid substitutions can profoundly affect protein folding, dynamics, and function. The ability to discern between benign and pathogenic substitutions is pivotal for therapeutic interventions and research directions. Given the limitations in experimental examination of these variants, Alp",
+   "terms": [
+    "AlphaMissense"
+   ],
+   "passages": [
+    "Analysis of AlphaMissense data in different protein groups and structural context.",
+    "Since heterogenous performance on different types of proteins can be expected, we assessed the efficacy of AlphaMissense across several protein groups (e.g. soluble, transmembrane, and mitochondrial proteins) and regions (e.g. intramembrane, membrane interacting, and high confidence AlphaFold segments) using ClinVar data for validation.",
+    "Addressing these voids, we assessed AlphaMissense performance on different datasets using ClinVar data.ResultsPerformance of AlphaMissense across diverse protein groups in relation to ClinVar dataThe performance of AlphaMissense may exhibit variability across different protein types, necessitating careful scrutiny when analyzing target proteins.",
+    "We also determined the frequency of likely benign and pathogenic mutations in ClinVar relative to protein length (Table 1).Table 1 AlphaMissense performance on proteins sets, benchmarked with ClinVar.Full size tableOur initial analysis centered on mitochondrial proteins of bacterial origin.",
+    "The latter score for this set became 0.573.Variability in AlphaMissense predictions across different groups of proteinsThe observed differences in True Positive Rate (TPR) and F1 scores implied that the distribution of benign and pathogenic mutations is not uniform across protein groups.",
+    "We evaluated AlphaMissense’s efficiency across a range of protein groups, choosing single nucleotide variants from ClinVar as our benchmark.",
+    "For instance, when juxtaposing AlphaMissense’s predictions against ClinVar data for the CFTR/ABCC7 protein, benign mutations were infrequent, whereas pathogenic mutations predominated.",
+    "Individual structure files can be accessed manually or programmatically as https://alphamissense.hegelab.org/pdb/AF-{UNIPROT_ACC}-F1-AM_v4.pdb.Data for comparing AlphaMissense performance on different groups of proteins presented in Table 1 were collected as follows.",
+    "For our analysis, we juxtaposed all benign and pathogenic missense mutations rated with at least one star in ClinVar against AlphaMissense predictions for proteins in our datasets.",
+    "Interestingly, CH1 was found to be devoid of CFTR2 mutations, but in vitro experiments in this region revealed that the R170G mutation, which has a likely-benign AlphaMissense label, impairs the domain-domain assembly and would be pathogenic if harbored by an individual28.Fig."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://link.springer.com/article/10.1186/s13059-024-03314-7",
+   "search": false,
+   "final_url": "https://link.springer.com/article/10.1186/s13059-024-03314-7?error=cookies_not_supported&code=24f1e15e-bcdd-4dad-8cc0-26e790fa6a34",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Benchmarking computational variant effect predictors by their ability to infer human traits",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-07-01"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-07-01"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-07-01"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-07-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-07-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-10-10"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-06-17"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-07-01"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Tabet, Daniel R.",
+    "Kuang, Da",
+    "Lancaster, Megan C.",
+    "Li, Roujia",
+    "Liu, Karen",
+    "Weile, Jochen",
+    "Coté, Atina G.",
+    "Wu, Yingzhou",
+    "Hegele, Robert A.",
+    "Roden, Dan M.",
+    "Roth, Frederick P."
+   ],
+   "who_hint": null,
+   "doi": "10.1186/s13059-024-03314-7",
+   "crossref": {
+    "doi": "10.1186/s13059-024-03314-7",
+    "resolves": true,
+    "title": "Benchmarking computational variant effect predictors by their ability to infer human traits",
+    "container": "Genome Biology",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-7-1",
+    "authors_first3": [
+     "Tabet",
+     "Kuang",
+     "Lancaster"
+    ],
+    "author_count": 11,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1101/2021.09.20.459182"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Computational variant effect predictors offer a scalable and increasingly reliable means of interpreting human genetic variation, but concerns of circulari",
+   "terms": [
+    "AlphaMissense"
+   ],
+   "passages": [
+    "We applied this method to benchmark 24 computational variant effect predictors based on their ability to infer human traits in the UK Biobank and All of Us cohorts, finding AlphaMissense to be the top performer in each.",
+    "The overall ranking of computational variant effect predictors in the UK Biobank and All of Us cohorts showed significant positive correlation (Kendall’s Tau = 0.75; p-value = 1 × 10–8), with AlphaMissense being the top performer in both rankings.",
+    "Accurate proteome-wide missense variant effect prediction with AlphaMissense.",
+    "Although AlphaMissense and REVEL were tied (i.e., both were best or tied for best in 110/116 gene-trait combinations), AlphaMissense was statistically better than 19 of the 23 other predictors, whereas REVEL only statistically outperformed 16 out of the 23 other predictors.",
+    "For both gene-trait combinations, AlphaMissense was the top-performing predictor; however, it was statistically indistinguishable (FDR ≥ 10%) from ESM-1v, VARITY, and MPC in inferring atorvastatin use, and indistinguishable from VARITY in inferring LDL-C.Fig.",
+    "Thus, we again deem AlphaMissense to be the top-performing predictor.",
+    "That AlphaMissense was the top-performing predictor in both cohorts and that overall predictor rankings were similar will facilitate predictor choice in applications involving diverse populations."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 8,
+   "kind": "paper",
+   "url": "https://link.springer.com/article/10.1007/s00439-025-02732-2",
+   "search": false,
+   "final_url": "https://link.springer.com/article/10.1007/s00439-025-02732-2?error=cookies_not_supported&code=631561c0-0e33-4053-8078-4230ea3cb672",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Critical assessment of missense variant effect predictors on disease-relevant variant data",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-02-28"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-03-21"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-03-21"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-03-21"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-03-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-03-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-06-06"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-02-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-02-28"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Rastogi, Ruchir",
+    "Chung, Ryan",
+    "Li, Sindy",
+    "Li, Chang",
+    "Lee, Kyoungyeul",
+    "Woo, Junwoo",
+    "Kim, Dong-Wook",
+    "Keum, Changwon",
+    "Babbi, Giulia",
+    "Martelli, Pier Luigi",
+    "Savojardo, Castrense",
+    "Casadio, Rita"
+   ],
+   "who_hint": null,
+   "doi": "10.1007/s00439-025-02732-2",
+   "crossref": {
+    "doi": "10.1007/s00439-025-02732-2",
+    "resolves": true,
+    "title": "Critical assessment of missense variant effect predictors on disease-relevant variant data",
+    "container": "Human Genetics",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-3",
+    "authors_first3": [
+     "Rastogi",
+     "Chung",
+     "Li"
+    ],
+    "author_count": 36,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1101/2024.06.06.597828"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Regular, systematic, and independent assessments of computational tools that are used to predict the pathogenicity of missense variants are necessary to ev",
+   "terms": [
+    "AlphaMissense"
+   ],
+   "passages": [
+    "However, predictors that do not train on labeled pathogenic or disease-causing variants (including but not limited to AlphaMissense, PrimateAI-3D, CADD, Eigen, EVE, ESM-1b, phyloP, and VESPAl) do not show a degradation in performance.",
+    "2023) scores for variants in canonical isoforms and non-canonical isoforms on September 19, 2023 from https://console.cloud.google.com/storage/browser/dm_alphamissense.",
+    "In general, there are multiple predictors with AUROCs within a few percentage points of one another—including AlphaMissense, MutPred2, 3Cnet, PrimateAI-3D, and VEST4—indicating that a number of approaches all have strong performance.",
+    "2019), and (4) variants in the AlphaMissense validation set (used for early stopping).",
+    "If a variant mapped to multiple proteins, the most pathogenic score was chosen.AlphaMissense.",
+    "Among the 5 recently developed methods (AlphaMissense (Cheng et al.",
+    "The individual predictor with the highest AUROC on the full evaluation dataset (AlphaMissense) also reaches an AUROC of 0.88."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 9,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41525-025-00480-w",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41525-025-00480-w?error=cookies_not_supported&code=e5a1b03d-cf45-48ee-8b33-2e1b586facb8",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Discordance between a deep learning model and clinical-grade variant pathogenicity classification in a rare disease cohort",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2025-02-28"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-02-28"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-02-28"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-02-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-02-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-06-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-02-14"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-02-28"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Kong, Sek Won",
+    "Lee, In-Hee",
+    "Collen, Lauren V.",
+    "Field, Michael",
+    "Manrai, Arjun K.",
+    "Snapper, Scott B.",
+    "Mandl, Kenneth D."
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41525-025-00480-w",
+   "crossref": {
+    "doi": "10.1038/s41525-025-00480-w",
+    "resolves": true,
+    "title": "Discordance between a deep learning model and clinical-grade variant pathogenicity classification in a rare disease cohort",
+    "container": "npj Genomic Medicine",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-2-28",
+    "authors_first3": [
+     "Kong",
+     "Lee",
+     "Collen"
+    ],
+    "author_count": 7,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1101/2024.05.22.24307756"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Genetic testing is essential for diagnosing and managing clinical conditions, particularly rare Mendelian diseases. Although efforts to identify rare phenotype-associated variants have focused on protein-truncating variants, interpreting missense variants remains challenging. Deep learning algorithm",
+   "terms": [
+    "AlphaMissense",
+    "discordance"
+   ],
+   "passages": [
+    "Discordance between a deep learning model and clinical-grade variant pathogenicity classification in a rare disease cohort. npj Genom.",
+    "Here, we aim to evaluate the performance and utility of the recently published deep learning model AlphaMissense (AM)5, specifically focusing on its ability to identify pathogenic and likely pathogenic missense variants of clinical significance in well-phenotyped individuals within a rare disease cohort14,15.",
+    "Our investigation of AlphaMissense (AM)5, a deep learning tool for predicting the potential functional impact of missense variants and assessing gene essentiality, reveals limitations in identifying pathogenic missense variants over 45 rare diseases, including very early onset inflammatory bowel disease.",
+    "In summary, we found that there was significant discordance between pathogenicity predictions derived from a novel deep-learning model and those provided by ClinVar, particularly for variants located in IDRs and for intrinsically disordered proteins (IDPs).",
+    "Finally, for pathogenicity prediction by AlphaMissense, the threshold to classify variants as likely pathogenic was adjusted using the computational framework for missense variant pathogenicity classification proposed by ClinGen Working Group30.",
+    "1: Evaluation of AlphaMissense compared to expert-curated genotype–phenotype association databases within a rare disease cohort.Full size imagea Gene coverage comparison across missense variant effect prediction methods (VEPs).",
+    "Composition of patients according to the combination of these variants found in each individual (right panel). b Distribution of AlphaMissense pathogenicity scores for ClinVar variants and other missense variants in candidate genes.",
+    "Vertical lines indicate the thresholds for likely benign (0.34) and likely pathogenic (0.564) classifications by AlphaMissense. c–f Each panel corresponds to a different prediction method: c AlphaMissense, d REVEL, e ESM1b, and f BayesDel.",
+    "Compilation of pathogenicity scores by AlphaMissense, ESM1b, REVEL, and BayesDel was performed using R programming language (v4.1.3).",
+    "Accurate proteome-wide missense variant effect prediction with AlphaMissense."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

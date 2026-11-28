@@ -1,0 +1,109 @@
+{
+ "slug": "sensitivity-conjecture-proved-huang",
+ "title": "Sensitivity conjecture proved with a short matrix argument",
+ "first_published": "2019-07-01",
+ "items": [
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://doi.org/10.1090/bull/1697",
+   "search": false,
+   "final_url": "https://pubs.ams.org/journals/bull/2020-57-04/S0273-0979-2020-01697-6",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Bulletin of the American Mathematical Society",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2020-03-27"
+    }
+   ],
+   "date_hint": "2020-03-27",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "Rohan Karthikeyan, Siddharth Sinha and Vallabh Patil",
+   "doi": "10.1090/bull/1697",
+   "crossref": {
+    "doi": "10.1090/bull/1697",
+    "resolves": true,
+    "title": "On the resolution of the sensitivity conjecture",
+    "container": "Bulletin of the American Mathematical Society",
+    "publisher": "American Mathematical Society (AMS)",
+    "type": "journal-article",
+    "issued": "2020-3-27",
+    "authors_first3": [
+     "Karthikeyan",
+     "Sinha",
+     "Patil"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Huang",
+    "Sensitivity Conjecture",
+    "succinct proof",
+    "Bulletin of the American Mathematical Society",
+    "survey"
+   ],
+   "passages": [
+    "MR 1313531, DOI 10.1007/BF01263419 Hao Huang, Induced subgraphs of hypercubes and a proof of the sensitivity conjecture, Ann. of Math.",
+    "After more than thirty years of attacks on this conjecture, Hao Huang (2019) gave a very succinct proof of the conjecture.",
+    "57 (2020), 679-684DOI: https://doi.org/10.1090/bull/1688Published electronically: December 16, 2019PDF View Volume VIEW VOLUME On the resolution of the sensitivity conjecture HTML articles powered by AMS MathViewer by Rohan Karthikeyan, Siddharth Sinha and Vallabh PatilBull.",
+    "57 (2020), 595-614DOI: https://doi.org/10.1090/bull/1668Published electronically: April 19, 2019HTMLPDFOn the resolution of the sensitivity conjectureRohan Karthikeyan, Siddharth Sinha and Vallabh PatilBull.",
+    "In this survey, we explore the ideas that inspired the proof of this conjecture by an exposition of four papers that had the most impact on the conjecture.",
+    "ISSN 1088-9485 (online) ISSN 0273-0979 (print) The 2024 MCQ for Bulletin of the American Mathematical Society is 0.84.",
+    "MR 822194, DOI 10.1137/0215006 Harry Buhrman and Ronald de Wolf, Complexity measures and decision tree complexity: a survey, Theoret.",
+    "The digitization of the back issues of the Bulletin of the American Mathematical Society (1891-1991) was made possible with the generous support of the Gordon and Betty Moore Foundation through a grant to the Mathematical Sciences Research Institute.",
+    "Publishing cycle: The Bulletin of the American Mathematical Society is published quarterly with articles electronically published individually to the AMS website before appearing in an issue."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "checker",
+   "url": "https://github.com/leanprover-community/mathlib4/blob/master/Archive/Sensitivity.lean",
+   "search": false,
+   "final_url": "https://github.com/leanprover-community/mathlib4/blob/master/Archive/Sensitivity.lean",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "mathlib4/Archive/Sensitivity.lean at master · leanprover-community/mathlib4",
+   "title_match": "partial",
+   "dates_found": [],
+   "date_hint": "",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Reid Barton, Johan Commelin, Jesse Michael Han, Chris Hughes, Robert Y. Lewis, and Patrick Massot",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The math library of Lean 4. Contribute to leanprover-community/mathlib4 development by creating an account on GitHub.",
+   "terms": [
+    "Huang's sensitivity theorem",
+    "Hao Huang",
+    "formalization",
+    "hypercube",
+    "colored neighbors"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

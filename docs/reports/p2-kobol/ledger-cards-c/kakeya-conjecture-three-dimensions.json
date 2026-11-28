@@ -1,0 +1,39 @@
+{
+ "slug": "kakeya-conjecture-three-dimensions",
+ "title": "Kakeya sets in three dimensions have full dimension",
+ "first_published": "2025-02-24",
+ "items": [
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "checker",
+   "url": "https://www.mathunion.org/fileadmin/documents/2026-07/Hong_Wang_Citations.pdf",
+   "search": false,
+   "final_url": "https://www.mathunion.org/fileadmin/documents/2026-07/Hong_Wang_Citations.pdf",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2026-07",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "International Mathematical Union",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Hong Wang",
+    "Kakeya"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "slug": "sulawesi-oldest-narrative-cave-art-51200",
+ "title": "Oldest known story-telling cave art found in Sulawesi, 51,200 years old",
+ "first_published": "2024-07-03",
+ "items": [
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/d41586-024-03248-x",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/d41586-024-03248-x?error=cookies_not_supported&code=790563cc-ecd0-4e43-94c1-e584db486b65",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "World’s oldest known artwork in Indonesian cave dated using lasers",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "dc.date",
+     "date": "2024-10-09"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-10-09"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-10-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-10-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-18"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-10-09"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.1038/d41586-024-03248-x",
+   "crossref": {
+    "doi": "10.1038/d41586-024-03248-x",
+    "resolves": true,
+    "title": "World’s oldest known artwork in Indonesian cave dated using lasers",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-10-9",
+    "authors_first3": [],
+    "author_count": 0,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "Research Briefings"
+   },
+   "meta_description": "A cave painting on a southeast Asian island is estimated to be at least 51,200 years old.",
+   "terms": [
+    "Sulawesi",
+    "narrative",
+    "said",
+    "not involved",
+    "independent",
+    "Leang Karampuang"
+   ],
+   "passages": [
+    "RESEARCH BRIEFINGS 09 October 2024 World’s oldest known artwork in Indonesian cave dated using lasers Laser-induced imaging of radioactive elements was used to work out the age of an ancient cave painting on the Indonesian island of Sulawesi.",
+    "Narrative cave art in Indonesia by 51,200 years ago.",
+    "The results reveal that the narrative scene is 51,200 years old, making it the earliest known example of representational art."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=Sulawesi+cave+art",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=Sulawesi+cave+art",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Sulawesi cave art | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Sulawesi",
+    "cave art",
+    "oldest known",
+    "narrative art",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,147 @@
+{
+ "slug": "lenacapavir-twice-yearly-hiv-prevention-injection",
+ "title": "Twice-yearly lenacapavir shots prevent HIV in a large trial of women",
+ "first_published": "2024-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "checker",
+   "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/yeytuo",
+   "search": false,
+   "final_url": "https://www.ema.europa.eu/en/medicines/human/EPAR/yeytuo",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Yeytuo | European Medicines Agency (EMA)",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2025-07-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-09-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-09-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-09-03"
+    }
+   ],
+   "date_hint": "2025-08-25",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "European Medicines Agency",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Yeytuo is a medicine used for preventing sexually transmitted HIV-1 infection (pre-exposure prophylaxis or PrEP) in adults and adolescents weighing at least 35 kg who are at increased risk of becoming infected. It should be used in combination with safer sex practices, such as using condoms. Yeytuo ",
+   "terms": [
+    "Yeytuo",
+    "pre-exposure prophylaxis",
+    "marketing authorisation",
+    "25 August 2025",
+    "HIV-1",
+    "Gilead Sciences Ireland"
+   ],
+   "passages": [
+    "Other information about Yeytuo Yeytuo received a marketing authorisation valid throughout the EU on 25 August 2025.",
+    "The active substance in Yeytuo, lenacapavir, attaches to proteins that make up the shell around the HIV-1 virus genetic material (the capsid).",
+    "No new HIV infections occurred in the group of 2,134 (0%) people who received Yeytuo, compared with 16 new infections in the group of 1,068 (1.5%) people given Truvada.",
+    "Two new HIV infections occurred in the group of 2,179 (0.1%) people who received Yeytuo, compared with 9 in the group of 1,086 (0.8%) people given Truvada.",
+    "The European Medicines Agency therefore decided that Yeytuo’s benefits are greater than its risks and it can be authorised for use in the EU.",
+    "Yeytuo can only be obtained with a prescription and should be prescribed by a healthcare professional who has experience in the management of HIV prevention.",
+    "Yeytuo injections are given at the start of treatment (day 1), and every 6 months thereafter.",
+    "The twice-yearly Yeytuo injection may help people keep to their PrEP routine, compared with other PrEP options that require daily dosing.",
+    "Yeytuo contains the active substance lenacapavir.",
+    "The most common side effects with Yeytuo injections (which may affect more than 1 in 10 people) are reactions at the site of injection including nodules (small lumps), pain, swelling, induration (hardening), erythema (redness) and pruritus (itching) at the injection site."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2407001",
+   "search": false,
+   "final_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2407001",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "lenacapavir",
+    "PURPOSE 1",
+    "no infections",
+    "incidence of HIV",
+    "Uganda",
+    "South Africa",
+    "background incidence",
+    "F/TAF",
+    "Gilead Sciences"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220018",
+   "search": false,
+   "final_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220018",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Drugs@FDA: FDA-Approved Drugs",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Yeztugo",
+    "lenacapavir",
+    "NDA 220018",
+    "approval",
+    "pre-exposure prophylaxis",
+    "June 2025",
+    "Gilead Sciences"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

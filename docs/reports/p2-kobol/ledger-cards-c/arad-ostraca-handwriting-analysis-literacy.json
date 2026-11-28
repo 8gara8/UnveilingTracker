@@ -1,0 +1,102 @@
+{
+ "slug": "arad-ostraca-handwriting-analysis-literacy",
+ "title": "Handwriting analysis finds many writers in Judah's Arad letters, about 600 BCE",
+ "first_published": "2016-04",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855551/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855551/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Algorithmic handwriting analysis of Judah’s military correspondence sheds light on composition of biblical texts",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2016-04-10"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2016-04-11"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Shira Faigenbaum-Golovin",
+    "Arie Shaus",
+    "Barak Sober",
+    "David Levin",
+    "Nadav Na’aman",
+    "Benjamin Sass",
+    "Eli Turkel",
+    "Eli Piasetzky",
+    "Israel Finkelstein"
+   ],
+   "who_hint": null,
+   "doi": "10.1073/pnas.1522200113",
+   "crossref": {
+    "doi": "10.1073/pnas.1522200113",
+    "resolves": true,
+    "title": "Algorithmic handwriting analysis of Judah’s military correspondence sheds light on composition of biblical texts",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2016-4-11",
+    "authors_first3": [
+     "Faigenbaum-Golovin",
+     "Shaus",
+     "Sober"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Scholars debate whether the first major phase of compilation of biblical texts took place before or after the destruction of Jerusalem in 586 BCE. Proliferation of literacy is considered a precondition for the creation of such texts. Ancient ...",
+   "terms": [
+    "machine learning",
+    "classifier",
+    "algorithm",
+    "statistical",
+    "hypothesis",
+    "at least",
+    "six",
+    "writers",
+    "authors",
+    "composition",
+    "literacy",
+    "ca. 600 BCE",
+    "16 ink inscriptions",
+    "caution",
+    "limitation"
+   ],
+   "passages": [
+    "By using novel image processing and machine learning algorithms we deduce the presence of at least six authors in this corpus.",
+    "Keywords: biblical exegesis, literacy level, Arad ostraca, document analysis, machine learningAbstract The relationship between the expansion of literacy in Judah and composition of biblical texts has attracted scholarly attention for over a century.",
+    "As specified in the main text, additional (contextual) considerations can raise this number up to at least six distinct writers.",
+    "Our algorithmic analysis, complemented by the textual information, reveals a minimum of six authors within the examined inscriptions.",
+    "For example, the examination of ostraca 7, 18, 24, and 40 reveals that their authors are pairwise distinct; in fact, six such “quadruplets” can be identified in Table 1, rendering the existence of at least four authors as highly likely; see Supporting Information for details.",
+    "The existence of no less than six such combinations indicates the high probability that the corpus indeed contains at least four different authors.",
+    "Upon obtaining a suitable P value (the significance level of the test, denoted as P), we reject the hypothesis of a single author and accept the competing proposition of two different authors; otherwise, we remain undecided (see Description of the Algorithm, Hypothesis Testing).",
+    "The inquiry is based on new methods for image processing and document analysis, as well as machine learning algorithms.",
+    "Consequently, we developed new methods for image processing and document analysis, as well as machine learning algorithms.",
+    "Identifying the number of “hands” (i.e., authors) involved in this corpus can shed light on the dissemination of writing, and consequently on the spread of literacy in Judah."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

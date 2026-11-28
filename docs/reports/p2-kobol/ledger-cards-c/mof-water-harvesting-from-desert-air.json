@@ -1,0 +1,210 @@
+{
+ "slug": "mof-water-harvesting-from-desert-air",
+ "title": "A metal-organic framework pulls drinking water from dry desert air",
+ "first_published": "2017-04",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "statement",
+   "url": "https://www.nobelprize.org/prizes/chemistry/2025/press-release/",
+   "search": false,
+   "final_url": "https://www.nobelprize.org/prizes/chemistry/2025/press-release/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Nobel Prize in Chemistry 2025",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "2025-10-08",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "The Royal Swedish Academy of Sciences (Nobel Prize in Chemistry 2025, awarded to Susumu Kitagawa, Richard Robson and Omar Yaghi)",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The Nobel Prize in Chemistry 2025 was awarded jointly to Susumu Kitagawa, Richard Robson and Omar M. Yaghi \"for the development of metal–organic frameworks\"",
+   "terms": [
+    "metal–organic frameworks",
+    "harvest water from desert air",
+    "Yaghi",
+    "Nobel Prize in Chemistry 2025"
+   ],
+   "passages": [
+    "These constructions, metal–organic frameworks, can be used to harvest water from desert air, capture carbon dioxide, store toxic gases or catalyse chemical reactions.",
+    "YaghiUniversity of California, Berkeley, USA “for the development of metal–organic frameworks” Their molecular architecture contains rooms for chemistry The Nobel Prize laureates in chemistry 2025 have created molecular constructions with large spaces through which gases and other chemicals can flow.",
+    "Susumu Kitagawa, Richard Robson and Omar Yaghi are awarded the Nobel Prize in Chemistry 2025.",
+    "“Metal–organic frameworks have enormous potential, bringing previously unforeseen opportunities for custom-made materials with new functions,” says Heiner Linke, Chair of the Nobel Committee for Chemistry.",
+    "However, Susumu Kitagawa and Omar Yaghi provided this building method with a firm foundation; between 1992 and 2003 they made, separately, a series of revolutionary discoveries.",
+    "These porous materials are called metal–organic frameworks (MOF).",
+    "Yaghi created a very stable MOF and showed that it can be modified using rational design, giving it new and desirable properties."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5993474/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5993474/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Practical water production from desert air",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-06-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-05-31"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Farhad Fathieh",
+    "Markus J Kalmutzki",
+    "Eugene A Kapustin",
+    "Peter J Waller",
+    "Jingjing Yang",
+    "Omar M Yaghi"
+   ],
+   "who_hint": null,
+   "doi": "10.1126/sciadv.aat3198",
+   "crossref": {
+    "doi": "10.1126/sciadv.aat3198",
+    "resolves": true,
+    "title": "Practical water production from desert air",
+    "container": "Science Advances",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2018-6",
+    "authors_first3": [
+     "Fathieh",
+     "Kalmutzki",
+     "Kapustin"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Next-generation MOF device and material for water production from desert air.",
+   "terms": [
+    "Arizona",
+    "Tempe",
+    "field",
+    "prototype",
+    "liters",
+    "per day",
+    "relative humidity",
+    "solar",
+    "sunlight",
+    "MOF-801",
+    "desert"
+   ],
+   "passages": [
+    "Relative humidity and temperature profiles for 0.600 kg of MOF-801/G under low flux artificial solar irradiance and controlled saturation conditions. fig.",
+    "Relative humidity and temperature profiles for 1.65 kg of MOF-801/G under desert conditions. fig.",
+    "Relative humidity and temperature profiles for 0.825 kg of MOF-801/G under desert conditions. fig.",
+    "Relative humidity and temperature profiles for 1.65 kg of MOF-801/G under low flux artificial solar irradiance. fig.",
+    "Relative humidity and temperature profiles for 0.825 kg of MOF-801/G under low flux artificial solar irradiance. fig.",
+    "Relative humidity and temperature profiles for 0.412 kg of MOF-801/G under low flux artificial solar irradiance. fig.",
+    "Relative humidity and temperature profiles for 1.65 kg of MOF-801/G under high flux artificial solar irradiance. fig.",
+    "Relative humidity and temperature profiles for 0.825 kg of MOF-801/G under high flux artificial solar irradiance. fig.",
+    "Relative humidity and temperature profiles for 0.412 kg of MOF-801/G under high flux artificial solar irradiance. fig.",
+    "We report a laboratory-to-desert experiment where a prototype using up to 1.2 kg of metal-organic framework (MOF)–801 was tested in the laboratory and later in the desert of Arizona, USA."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.nobelprize.org/prizes/chemistry/2025/advanced-information/",
+   "search": false,
+   "final_url": "https://www.nobelprize.org/prizes/chemistry/2025/advanced-information/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Nobel Prize in Chemistry 2025",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The Nobel Prize in Chemistry 2025 was awarded jointly to Susumu Kitagawa, Richard Robson and Omar M. Yaghi \"for the development of metal–organic frameworks\"",
+   "terms": [
+    "water",
+    "desert",
+    "air",
+    "harvest",
+    "Yaghi",
+    "MOF-801",
+    "humidity"
+   ],
+   "passages": [
+    "Yaghi Prize announcement Press release Popular information Advanced information Award ceremony speech Award ceremony video Podcast Scientific background Scientific background to the Nobel Prize in Chemistry 2025: Metal–organic frameworks (pdf) To cite this section MLA style: Advanced information."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=metal-organic+framework+water+from+air",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=metal-organic+framework+water+from+air",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "metal-organic framework water from air | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "metal-organic framework",
+    "water from air",
+    "desert air",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

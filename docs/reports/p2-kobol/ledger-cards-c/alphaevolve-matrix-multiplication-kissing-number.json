@@ -1,0 +1,375 @@
+{
+ "slug": "alphaevolve-matrix-multiplication-kissing-number",
+ "title": "AlphaEvolve finds 48-multiplication scheme for 4x4 complex matrices",
+ "first_published": "2025-05-14",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "statement",
+   "url": "https://cris.huji.ac.il/en/publications/complex-to-rational-fast-matrix-multiplication/",
+   "search": false,
+   "final_url": "https://cris.huji.ac.il/en/publications/complex-to-rational-fast-matrix-multiplication/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Complex to Rational Fast Matrix Multiplication",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-07-12"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2026-08-03"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-07-12"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Yoav Moran",
+    "Oded Schwartz",
+    "Shuncheng Yuan"
+   ],
+   "who_hint": "Hebrew University of Jerusalem (research portal record; authors not read)",
+   "doi": "10.1145/3815436.3815461",
+   "crossref": {
+    "doi": "10.1145/3815436.3815461",
+    "resolves": true,
+    "title": "Complex to Rational Fast Matrix Multiplication",
+    "container": "Proceedings of the 2026 International Symposium on Symbolic and Algebraic Computation",
+    "publisher": "ACM",
+    "type": "proceedings-article",
+    "issued": "2026-7-12",
+    "authors_first3": [
+     "Moran",
+     "Schwartz",
+     "Yuan"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Complex to Rational",
+    "matrix multiplication",
+    "rational",
+    "AlphaEvolve"
+   ],
+   "passages": [
+    "KeywordsBilinear AlgorithmsDe Groote ActionsFast Matrix MultiplicationRing Reduction Access to Document 10.1145/3815436.3815461 Other files and links Link to publication in Scopus Fingerprint Dive into the research topics of 'Complex to Rational Fast Matrix Multiplication'.",
+    "Association for Computing Machinery. https://doi.org/10.1145/3815436.3815461 Moran, Yoav ; Schwartz, Oded ; Yuan, Shuncheng. / Complex to Rational Fast Matrix Multiplication.",
+    "297-304 (Proceedings of the International Symposium on Symbolic and Algebraic Computation, ISSAC). @inproceedings{017ad762df31440d97f92d485bd511db, title = \"Complex to Rational Fast Matrix Multiplication\", abstract = \"Fast subcubic time matrix multiplication algorithms are asymptotically faster than the classical algorithm, but they are often slower in practice.",
+    "297-304, International Symposium on Symbolic and Algebraic Computation, ISSAC 2026, Oldenburg, Germany, 13/07/26. https://doi.org/10.1145/3815436.3815461 Complex to Rational Fast Matrix Multiplication. / Moran, Yoav; Schwartz, Oded; Yuan, Shuncheng.",
+    "This paper focuses on transforming complex-coefficient matrix multiplication algorithms into equivalent real or rational-coefficient ones.",
+    "We present a method that, under some empirically mild condition, for complex-coefficient matrix multiplication algorithms, either proves that no equivalent rational algorithm exists or constructs a family of equivalent rational forms.",
+    "This method recovers the results of Dumas, Pernet, and Sedoglavic (2025) and generalizes to other settings, including irrational to rational coefficients and rational to integer coefficients."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2603.18699v1",
+   "search": false,
+   "final_url": "https://arxiv.org/abs/2603.18699v1",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A more accurate rational non-commutative algorithm for multiplying 4x4 matrices using 48 multiplications",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-03-19"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-03-19"
+    }
+   ],
+   "date_hint": "2026-03",
+   "date_ok": false,
+   "people_found": [
+    "Dumas, Jean-Guillaume",
+    "Pernet, Clément",
+    "Sedoglavic, Alexandre"
+   ],
+   "who_hint": "authors not read",
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2603.18699v1: A more accurate rational non-commutative algorithm for multiplying 4x4 matrices using 48 multiplications",
+   "terms": [
+    "Journal reference",
+    "DOI",
+    "AlphaEvolve",
+    "48 multiplications"
+   ],
+   "passages": [
+    "We propose a more accurate variant of an algorithm for multiplying 4x4 matrices using 48 multiplications over any ring containing an inverse of 2."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2602.13171",
+   "search": false,
+   "final_url": "https://arxiv.org/abs/2602.13171",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Complex to Rational Fast Matrix Multiplication",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-02-13"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-02-13"
+    }
+   ],
+   "date_hint": "2026-02",
+   "date_ok": false,
+   "people_found": [
+    "Moran, Yoav",
+    "Schwartz, Oded",
+    "Yuan, Shuncheng"
+   ],
+   "who_hint": "authors not read (the Hebrew University portal record carries the same title)",
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2602.13171: Complex to Rational Fast Matrix Multiplication",
+   "terms": [
+    "Journal reference",
+    "DOI",
+    "AlphaEvolve",
+    "rational"
+   ],
+   "passages": [
+    "This paper focuses on transforming complex-coefficient matrix multiplication schemes into equivalent real- or rational-coefficient ones.",
+    "Using this framework, we show that no rational scheme is equivalent to Smirnov's $\\langle4,4,9,104\\rangle$ $\\mathbb{Q}[\\sqrt{161}]$ algorithm (2022) and that no real scheme is equivalent to the $\\langle4,4,4,48\\rangle$ complex algorithm of Kaporin (2024).",
+    "We present a systematic method that, given a complex-coefficient scheme, either constructs a family of equivalent rational algorithms or proves that no equivalent rational scheme exists.",
+    "This method recovers the previously known ad hoc results of Dumas, Pernet, and Sedoglavic (2025) and extends them to more general settings, including algorithms involving rational coefficients and square roots, with $i=\\sqrt{-1}$ as a special case."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2609.12027",
+   "search": false,
+   "final_url": "https://arxiv.org/abs/2609.12027",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Fast matrix multiplication via recursive $\\langle$ 4x4x4:48 $\\rangle$ algorithms into practice",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-10-02"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-09-10"
+    }
+   ],
+   "date_hint": "2026-09",
+   "date_ok": false,
+   "people_found": [
+    "Dumas, Jean-Guillaume",
+    "Pernet, Clément",
+    "Sedoglavic, Alexandre",
+    "Stapleton, Joshua",
+    "Tichavský, Petr"
+   ],
+   "who_hint": "authors not read",
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2609.12027: Fast matrix multiplication via recursive $\\langle$ 4x4x4:48 $\\rangle$ algorithms into practice",
+   "terms": [
+    "Journal reference",
+    "DOI",
+    "4x4x4:48",
+    "AlphaEvolve"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 8,
+   "kind": "statement",
+   "url": "https://cs.nyu.edu/~davise/papers/AlphaEvolveNotes.pdf",
+   "search": false,
+   "final_url": "https://cs.nyu.edu/~davise/papers/AlphaEvolveNotes.pdf",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Ernest Davis, Department of Computer Science, New York University",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaEvolve",
+    "matrix multiplication",
+    "48",
+    "kissing"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 9,
+   "kind": "paper",
+   "url": "https://pubs.ams.org/journals/bull/2026-63-02/S0273-0979-2025-01879-0",
+   "search": false,
+   "final_url": "https://pubs.ams.org/journals/bull/2026-63-02/S0273-0979-2025-01879-0",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Bulletin of the American Mathematical Society",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "2026",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "American Mathematical Society (authors not read)",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaEvolve",
+    "matrix multiplication",
+    "48",
+    "complex"
+   ],
+   "passages": [
+    "ISSN 1088-9485 (online) ISSN 0273-0979 (print) The 2024 MCQ for Bulletin of the American Mathematical Society is 0.84.",
+    "DeepMind, Alphaevolve: A gemini-powered coding agent for designing advanced algorithms, 2025, https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/.",
+    "Kohli, Discovering faster matrix multiplication algorithms with reinforcement learning, Nature 610 (2022), no.",
+    "MR 2639816, DOI 10.1007/s00454-009-9148-4 Yang-Hui He, The Calabi-Yau landscape—from geometry, to physics, to machine learning, Lecture Notes in Mathematics, vol.",
+    "Zhou, et al., Chain-of-thought prompting elicits reasoning in large language models, Advances in neural information processing systems 35 (2022), 24824–24837."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 10,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=AlphaEvolve+expert+reaction",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=AlphaEvolve+expert+reaction",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AlphaEvolve expert reaction | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaEvolve",
+    "expert reaction",
+    "matrix multiplication",
+    "kissing number"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 11,
+   "kind": "paper",
+   "url": "https://www.nature.com/search?q=AlphaEvolve+matrix+multiplication&article_type=news-and-views&order=relevance",
+   "search": true,
+   "final_url": "https://www.nature.com/search?q=AlphaEvolve+matrix+multiplication&article_type=news-and-views&order=relevance&error=cookies_not_supported&code=ed45e932-8b7b-4876-9b33-0463829b4c85",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AlphaEvolve matrix multiplication | Nature Search Results",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaEvolve",
+    "matrix multiplication",
+    "mathematicians",
+    "said"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

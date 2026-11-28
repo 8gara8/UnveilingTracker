@@ -1,0 +1,216 @@
+{
+ "slug": "climate-sensitivity-range-narrowed-multiple-evidence",
+ "title": "A 25-author assessment narrows how much warming doubled carbon dioxide brings",
+ "first_published": "2020-07-22",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://doi.org/10.1017/9781009157896.009",
+   "search": false,
+   "final_url": "https://www.cambridge.org/core/books/climate-change-2021-the-physical-science-basis/earths-energy-budget-climate-feedbacks-and-climate-sensitivity/AE57C97E588FF3060C7C7E47DD4F3C6E",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The Earth’s Energy Budget, Climate Feedbacks and Climate Sensitivity",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-06-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-05-31"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-07-06"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Intergovernmental Panel on Climate Change (IPCC)"
+   ],
+   "who_hint": "IPCC Working Group I, AR6 Chapter 7 author team (a different team from the Sherwood et al. assessment team); published by Cambridge University Press",
+   "doi": "10.1017/9781009157896.009",
+   "crossref": {
+    "doi": "10.1017/9781009157896.009",
+    "resolves": true,
+    "title": "The Earth’s Energy Budget, Climate Feedbacks and Climate Sensitivity",
+    "container": "Climate Change 2021 – The Physical Science Basis",
+    "publisher": "Cambridge University Press",
+    "type": "book-chapter",
+    "issued": "2023-7-6",
+    "authors_first3": [],
+    "author_count": 0,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-part-of": [
+      "https://doi.org/10.1017/9781009157896"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": "Climate Change 2021 – The Physical Science Basis - July 2023",
+   "terms": [
+    "equilibrium climate sensitivity",
+    "best estimate",
+    "likely range",
+    "Sherwood",
+    "2.5°C to 4°C",
+    "Cambridge University Press"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/summary-for-policymakers/",
+   "search": false,
+   "final_url": "https://www.ipcc.ch/report/ar6/wg1/chapter/summary-for-policymakers/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "IPCC AR6 Working Group 1: Summary for Policymakers",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": ".",
+   "terms": [
+    "equilibrium climate sensitivity",
+    "best estimate",
+    "likely range",
+    "2.5°C to 4°C",
+    "high confidence",
+    "1.5°C to 4.5°C",
+    "AR5"
+   ],
+   "passages": [
+    "The AR6 assessed best estimate is 3°C with a likely range of 2.5°C to 4°C (high confidence), compared to 1.5°C to 4.5°C in AR5, which did not provide a best estimate.",
+    "Based on multiple lines of evidence, 21 The very likely range of equilibrium climate sensitivity is between 2°C (high confidence) and 5°C (medium confidence).",
+    "10 Links to chapters2.3, Cross-Chapter Box 2.3 Figure SPM.1A.1.3 The likely range of total human-caused global surface temperature increase from 1850–1900 to 2010–201911is 0.8°C to 1.3°C, with a best estimate of 1.07°C.",
+    "The CMIP6 historical simulations assessed in this Report have an ensemble mean global surface temperature change within 0.2°C of the observations over most of the historical period, and observed warming is within the very likely range of the CMIP6 ensemble.",
+    "These changes were obtained by combining Coupled Model Intercomparison Project Phase 6 (CMIP6) model simulations with observational constraints based on past simulated warming, as well as an updated assessment of equilibrium climate sensitivity (see Box SPM.1).",
+    "These and other improvements have also increased the estimate of global surface temperature change by approximately 0.1°C, but this increase does not represent additional physical warming since AR5.11The period distinction with A.1.2 arises because the attribution studies consider this slightly earlier period.",
+    "Since 2011 (measurements reported in AR5), concentrations have continued to increase in the atmosphere, reaching annual averages of 410 parts per million (ppm) for carbon dioxide (CO2), 1866 parts per billion (ppb) for methane (CH4), and 332 ppb for nitrous oxide (N2O) in 2019.",
+    "Whiskers show the very likely range.Panel (b) Evidence from attribution studies, which synthesize information from climate models and observations.",
+    "Marine heatwaves have approximately doubled in frequency since the 1980s (high confidence), and human influence has very likely contributed to most of them since at least 2006.",
+    "Links to chapters9.4, 9.5, 9.6, Cross-Chapter Box 9.1A.4.4 The equilibrium climate sensitivity is an important quantity used to estimate how the climate responds to radiative forcing."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524012/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524012/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An Assessment of Earth's Climate Sensitivity Using Multiple Lines of Evidence",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-09-24"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-09-25"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "S C Sherwood",
+    "M J Webb",
+    "J D Annan",
+    "K C Armour",
+    "P M Forster",
+    "J C Hargreaves",
+    "G Hegerl",
+    "S A Klein",
+    "K D Marvel",
+    "E J Rohling",
+    "M Watanabe",
+    "T Andrews"
+   ],
+   "who_hint": null,
+   "doi": "10.1029/2019rg000678",
+   "crossref": {
+    "doi": "10.1029/2019rg000678",
+    "resolves": true,
+    "title": "An Assessment of Earth's Climate Sensitivity Using Multiple Lines of Evidence",
+    "container": "Reviews of Geophysics",
+    "publisher": "American Geophysical Union (AGU)",
+    "type": "journal-article",
+    "issued": "2020-9-25",
+    "authors_first3": [
+     "Sherwood",
+     "Webb",
+     "Annan"
+    ],
+    "author_count": 25,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "review-article"
+   },
+   "meta_description": "We assess evidence relevant to Earth's equilibrium climate sensitivity per doubling of atmospheric CO2, characterized by an effective sensitivity S. This evidence includes feedback process understanding, the historical climate record, and the ...",
+   "terms": [
+    "2.6",
+    "3.9",
+    "66%",
+    "likely",
+    "best estimate",
+    "Key Points",
+    "Abstract",
+    "25 authors",
+    "World Climate Research Programme",
+    "Reviews of Geophysics"
+   ],
+   "passages": [
+    "The 66% (17–83%) range for S, given all lines of evidence included, is 2.6–3.9 K with a median of 3.1 K.",
+    "Excluding the process evidence from the Baseline calculation increases the 66% posterior range for S from 2.6–3.9 to 2.4–4.1 K and the 5–95% range from 2.3–4.7 to 2.0–5.2 K.",
+    "This range in our Baseline case is 2.6–3.9 K, a span less than half that of AR5's likely range, and is bounded by 2.3 and 4.5 K in all plausible alternative calculations considered.",
+    "The 66% range is 2.6–3.9 K for our Baseline calculation and remains within 2.3–4.5 K under the robustness tests; corresponding 5–95% ranges are 2.3–4.7 K, bounded by 2.0–5.7 K (although such high‐confidence ranges should be regarded more cautiously).",
+    "The Baseline PDF is shown in black, and its 66% range (2.6–3.9 K) in gray.",
+    "This shifts the 66% range from 2.6–3.9 to 2.7–4.0 K and the 5–95% range from 2.3–4.7 to 2.4–4.8 K.",
+    "Summary Our Baseline calculation gives a 66% (17–83%) range for S of 2.6–3.9 K (gray line, Figure 24) and a 5–95% range of 2.3–4.7 K.",
+    "For our Baseline case the 5–95% (2.2–4.9 K) and 66% (2.6–4.1 K) ranges of ECS (Table 11) are slightly wider and stretched higher than those for S (2.3–4.7 and 2.6–3.9 K, respectively).",
+    "The most recent report by the Intergovernmental Panel on Climate Change (IPCC) (2013) asserted the same now‐familiar range but more precisely dubbed it a >66% (“likely”) credible interval, implying an up to one in three chances of being outside that range.",
+    "IPCC AR5 concluded that climate sensitivity is likely (≥66% probability) in the range 1.5–4.5 K."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,485 @@
+{
+ "slug": "semaglutide-obesity-step-1-trial-wegovy",
+ "title": "Weekly semaglutide lowers body weight by about 15 percent in trial",
+ "first_published": "2021-02-10",
+ "items": [
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "checker",
+   "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/wegovy",
+   "search": false,
+   "final_url": "https://www.ema.europa.eu/en/medicines/human/EPAR/wegovy",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Wegovy | European Medicines Agency (EMA)",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2021-11-11"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-03-10"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-08-26"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-03-10"
+    }
+   ],
+   "date_hint": "2022-01-06",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "European Medicines Agency",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Wegovy is used together with diet and physical activity to help people lose weight and keep their weight under control. It is used in adults who have: a BMI of 30 kg/m² or greater (obesity) or a BMI of at least 27 kg/m² but less than 30 kg/m² (overweight) who have weight-related health problems (suc",
+   "terms": [
+    "Wegovy",
+    "semaglutide",
+    "marketing authorisation",
+    "weight",
+    "68 weeks",
+    "1,961"
+   ],
+   "passages": [
+    "In the first study, involving 1,961 people, people treated with Wegovy were able to lose on average 15% of their weight after 68 weeks compared with a 2% loss of weight in people who had placebo (a dummy treatment).",
+    "In the second study, involving 611 people, those treated with Wegovy lost on average 16% of their body weight after 68 weeks compared with a 6% loss of weight in people who had placebo.",
+    "After 68 weeks, those treated with Wegovy were able on average to lose 10% of their weight compared with a 3% weight loss in people who had placebo.",
+    "In a study involving 307 adults who had obesity, or who were overweight and had at least one weight-related health problem, people taking Wegovy tablets for 64 weeks lost on average around 14% of their weight, compared with around 2% for those who received placebo.",
+    "Other information about Wegovy Wegovy received a marketing authorisation valid throughout the EU on 6 January 2022.",
+    "The study found that after 68 weeks, BMI dropped by an average of 16% in those treated with Wegovy compared with an average increase of less than 1% in those who received placebo.",
+    "After 48 more weeks, those who continued on Wegovy lost a further 8% of their weight while those on placebo regained 7% of theirs, indicating that people need to continue taking Wegovy in order not to regain weight.",
+    "Around 73% of those who received Wegovy lost at least 5% of their weight compared with around 18% of those who received placebo.",
+    "In addition, around 76% of people taking Wegovy tablets lost at least 5% of their weight, compared with around 31% of those who received placebo.",
+    "Around 85% of people in the Wegovy group lost at least 5% of their weight compared with 48% of people in the placebo group."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "checker",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-reduce-risk-serious-heart-problems-specifically-adults-obesity-or",
+   "search": false,
+   "final_url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-reduce-risk-serious-heart-problems-specifically-adults-obesity-or",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "FDA Approves First Treatment to Reduce Risk of Serious Heart Problems Specifically in Adults with Obesity or Overweight",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2024-03-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-03-08"
+    }
+   ],
+   "date_hint": "2024-03-08",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "US Food and Drug Administration",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The FDA approved a new use for a drug to reduce the risk of cardiovascular disease, heart attack and stroke in adults with cardiovascular disease and either obesity or overweight.",
+   "terms": [
+    "Wegovy",
+    "semaglutide",
+    "approved",
+    "excess weight",
+    "obesity",
+    "overweight"
+   ],
+   "passages": [
+    "Wegovy is also approved to reduce excess weight and maintain weight reduction long term in certain adults with obesity or overweight and certain children with obesity, for use in addition to a reduced calorie diet and increased physical activity.",
+    "Food and Drug Administration approved a new indication for use for Wegovy (semaglutide) injection to reduce the risk of cardiovascular death, heart attack and stroke in adults with cardiovascular disease and either obesity or overweight.",
+    "Obesity and overweight are serious health issues that increase the risk for premature death and a variety of health problems, including heart attack and stroke.",
+    "Obesity or overweight affect approximately 70% of American adults.",
+    "Wegovy contains semaglutide, a glucagon-like peptide-1 (GLP-1) receptor agonist.",
+    "Therefore, Wegovy should not be used in combination with other semaglutide-containing products or other GLP-1 receptor agonists.",
+    "Wegovy should not be used in patients with a history of a severe allergic reaction to semaglutide or to any of the other ingredients.",
+    "Wegovy significantly reduced the risk of major adverse cardiovascular events (cardiovascular death, heart attack and stroke), which occurred in 6.5% of participants who received Wegovy compared to 8% of participants who received placebo.",
+    "Wegovy also contains warnings for inflammation of the pancreas (pancreatitis), gallbladder problems (including gallstones), low blood sugar, acute kidney injury, hypersensitivity reactions, diabetic retinopathy (damage to the eye's retina), increased heart rate and suicidal behavior or thinking.",
+    "Wegovy’s efficacy and safety for this new indication were studied in a multi-national, multi-center, placebo-controlled double-blind trial that randomly assigned over 17,600 participants to receive either Wegovy or placebo."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "statement",
+   "url": "https://healthmedia.blog.gov.uk/2023/09/04/accessing-wegovy-for-weight-loss-everything-you-need-to-know/",
+   "search": false,
+   "final_url": "https://healthmedia.blog.gov.uk/2023/09/04/accessing-wegovy-for-weight-loss-everything-you-need-to-know/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Accessing Wegovy for weight loss: Everything you need to know – Department of Health and Social Care Media Centre",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2023-09-04"
+    }
+   ],
+   "date_hint": "2023-09-04",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "Department of Health and Social Care (UK), Media Centre blog",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Semaglutide (Wegovy) launched in the UK on 4 September and is available on the NHS as an option for weight management in line with NICE guidance, alongside a reduced-calorie diet and increased physical activity. Patients are eligible for treatment within",
+   "terms": [
+    "Wegovy",
+    "semaglutide",
+    "NHS",
+    "weight",
+    "NICE",
+    "15%"
+   ],
+   "passages": [
+    "Clinical trials indicate that when used alongside diet, physical activity, and behavioural support, Wegovy users can achieve up to a 15% reduction in body weight after one year.",
+    "Wegovy is the brand name for semaglutide, which is licensed and approved for managing overweight and obesity.",
+    "To get Wegovy on the NHS, eligible adults would need a referral to an NHS specialist weight management service.",
+    "Semaglutide (Wegovy) for weight loss has only just launched in the UK and there are no known supply issues.",
+    "It is manufactured by Novo Nordisk and is recommended by the National Institute for Health and Care Excellence (NICE) for managing overweight and obesity in some patients on the NHS.",
+    "NICE’s final guidance will support the NHS in identifying the most effective digital technologies where digital weight management services are considered appropriate for meeting local need.",
+    "NICE determine the eligibility criteria for routine use of Wegovy on the NHS to ensure value for money for the NHS.",
+    "NHS England is legally required to make Wegovy available to NHS patients in line with NICE’s recommendations within 3 months of its commercial availability.",
+    "Wegovy is for those dealing with obesity and weight-related problems, not for people who just want to lose some weight.",
+    "Whether you get Wegovy from the NHS or privately, the prescribers need to follow professional guidelines and consider national advice."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://www.sciencemediacentre.org/expert-reaction-to-study-looking-at-drug-for-treating-obesity-semaglutide/",
+   "search": false,
+   "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-study-looking-at-drug-for-treating-obesity-semaglutide/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction to study looking at drug for treating obesity, semaglutide | Science Media Centre",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "2021-02-10",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Science Media Centre expert reactions to Wilding et al., NEJM, 10 Feb 2021 (nine named experts, none a trial author)",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "semaglutide",
+    "obesity",
+    "weight loss",
+    "New England Journal of Medicine",
+    "NCT03548935"
+   ],
+   "passages": [
+    "“This is the start of a new era for obesity drug development with the future direction being to achieve levels of weight loss comparable to semaglutide, while having fewer side effects.”",
+    "Semaglutide is indeed likely to be a game changer in the fight against obesity.”",
+    "Individuals need to be supported to change their behaviour in relation to diet and physical activity, in order to lose weight.” ‘Once-Weekly Semaglutide in Adults with Overweight or Obesity’ by John P.H.",
+    "However, as with many promises of amazing weight loss, we need to be clear that in this study the weekly injection of semaglutide did not lead to weight loss on its own, people changed their lifestyles as well.",
+    "This international trial enrolled nearly 2,000 participants and found a significantly higher weight loss in the semaglutide group.",
+    "Conclusions “In people who are obese, once weekly semaglutide produces highly significant weight loss with major benefits on risk factors for diabetes and heart disease.",
+    "The amount of weight loss achieved is greater than that seen with any licensed anti-obesity drug.",
+    "This was listed as a secondary outcome of interest in trial registration (https://clinicaltrials.gov/ct2/show/NCT03548935) as this is important, as the type of drug semaglutide is, a GLP analogue have been linked to thyroid and similar cancers in studies of similar drugs.",
+    "“People predisposed to obesity find it difficult to achieve and maintain significant weight loss as their biological drives to eat tend to be stronger than those whose tendency is to remain lean.",
+    "“The results presented in this paper suggest that semaglutide is very effective as a weight loss agent and that, while it does have side effects, these are predictable, reversible and not sufficiently serious to raise significant alarm."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "kind": "reaction",
+   "url": "https://www.sciencemediacentre.org/expert-reaction-to-nice-guidance-semaglutide-for-managing-overweight-and-obesity/",
+   "search": false,
+   "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-nice-guidance-semaglutide-for-managing-overweight-and-obesity/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction to NICE guidance: ‘Semaglutide for managing overweight and obesity’ | Science Media Centre",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "2023-03-08",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Science Media Centre expert reactions to NICE technology appraisal guidance of 7 March 2023",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "semaglutide",
+    "NICE",
+    "weight",
+    "STEP 1",
+    "overweight and obesity"
+   ],
+   "passages": [
+    "NICE Technology appraisal guidance, ‘Semaglutide for managing overweight and obesity’ was published by the National Institute for Health and Care Excellence at 00:01 UK time on Wednesday 7 March 2023.",
+    "A more useful way of communicating the efficacy of semaglutide, is that in the STEP 1 trial more than half of participants lost more than 15% of their weight, and one in three lost more than 20%.",
+    "“The licensing of semaglutide comes after a number of robust clinical trials demonstrating that it is effective at lowering body weight by an average of 15% in an obese population.",
+    "Dr Simon Cork, Senior Lecturer in Physiology, Anglia Ruskin University, said: “The news that semaglutide will be available on prescription for the treatment of obesity will be welcome news to the millions of people who struggle to lose weight and maintain that lower body weight.",
+    "This reduction in body weight was achieved through a once weekly injection of semaglutide in conjunction with increased exercise and reduced calorie intake, for which participants in the trial received weekly counselling sessions.",
+    "A follow up to the initial clinical trial, where participants were monitored after stopping semaglutide showed that all participants regained almost all of the weight they had lost over the course of the following year.",
+    "It is important to remember that living with a higher body weight or obesity is not a lifestyle choice, and people wanting to improve their health should be supported to do that, which may include losing weight, which semaglutide can help with.",
+    "In common with other diseases, such as hypertension and diabetes, withdrawal of a drug that is working means the benefits are likely to be lost (as has been shown in several trials by partial weight regain after semaglutide withdrawal).",
+    "It is also clear that semaglutide is not intended to be a lifestyle weight loss product in the UK, it is to be used for the purpose of improving health.",
+    "As all individuals initially being offered semaglutide via the NHS will be supported by specialist weight management services this should including support from a specialist dietitian."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 8,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41366-026-02189-x",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41366-026-02189-x?error=cookies_not_supported&code=8a984b78-b8ec-4c53-8f53-4522da517930",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Effects of subcutaneous semaglutide on weight loss and inflammatory markers in adults with overweight or obesity without diabetes: a systematic review and meta-analysis",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-08-29"
+    },
+    {
+     "source": "dc.date",
+     "date": "2026-08-29"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-08-29"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-08-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-08-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-03-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-07-15"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-08-29"
+    }
+   ],
+   "date_hint": "",
+   "date_ok": false,
+   "people_found": [
+    "Milluzzo, Agostino",
+    "Oteri, Vittorio",
+    "Manuella, Lucia",
+    "Pulvirenti, Alfredo",
+    "Frittitta, Lucia"
+   ],
+   "who_hint": "Authors not read (International Journal of Obesity, Springer Nature; a pooled analysis by a team other than the STEP 1 investigators)",
+   "doi": "10.1038/s41366-026-02189-x",
+   "crossref": {
+    "doi": "10.1038/s41366-026-02189-x",
+    "resolves": true,
+    "title": "Effects of subcutaneous semaglutide on weight loss and inflammatory markers in adults with overweight or obesity without diabetes: a systematic review and meta-analysis",
+    "container": "International Journal of Obesity",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-8-29",
+    "authors_first3": [
+     "Milluzzo",
+     "Oteri",
+     "Manuella"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "ReviewPaper"
+   },
+   "meta_description": "Obesity is a chronic, relapsing disease associated with multiple serious comorbidities. Semaglutide has emerged as an effective pharmacological option for obesity management, owing to its substantial effects on weight loss, cardiometabolic risk factors, and patient-reported outcomes. This systematic",
+   "terms": [
+    "semaglutide",
+    "meta-analysis",
+    "randomized",
+    "weight",
+    "Wilding"
+   ],
+   "passages": [
+    "Effects of subcutaneous semaglutide on weight loss and inflammatory markers in adults with overweight or obesity without diabetes: a systematic review and meta-analysis.",
+    "Effect of weekly subcutaneous semaglutide vs daily liraglutide on body weight in adults with overweight or obesity without diabetes: the STEP 8 randomized clinical trial.",
+    "Effect of continued weekly subcutaneous semaglutide vs placebo on weight loss maintenance in adults with overweight or obesity: the STEP 4 randomized clinical trial.",
+    "Efficacy and safety of semaglutide 2.4 mg for weight loss in overweight or obese adults without diabetes: An updated systematic review and meta-analysis including the 2-year STEP 5 trial.",
+    "We performed a systematic review and meta-analysis to provide an update and comprehensive overview of the efficacy and safety of subcutaneous semaglutide for weight loss in individuals with overweight or obesity without diabetes.",
+    "Effect of subcutaneous semaglutide vs placebo as an adjunct to intensive behavioral therapy on body weight in adults with overweight or obesity: the STEP 3 randomized clinical trial.",
+    "Efficacy and safety of semaglutide for weight loss in obesity without diabetes: a systematic review and meta-analysis.",
+    "Efficacy of GLP-1 receptor agonists on weight loss, BMI, and waist circumference for patients with obesity or overweight: a systematic review, meta-analysis, and meta-regression of 47 randomized controlled trials.",
+    "However, for the semaglutide versus placebo comparison included in the present meta-analysis, the placebo-controlled component was double-blind, which may have reduced the risk of bias.Results of the meta-analysisThe percentage change in body weight from baseline is shown in Fig.",
+    "The greater weight loss observed in the trial evaluating semaglutide 7.2 mg suggests the possibility of dose-related differences in efficacy, although this finding requires confirmation in further randomized trials."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 9,
+   "kind": "paper",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-new-drug-treatment-chronic-weight-management-first-2014",
+   "search": false,
+   "final_url": "https://www.fda.gov/news-events/press-announcements/fda-approves-new-drug-treatment-chronic-weight-management-first-2014",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Page Not Found | FDA",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Wegovy",
+    "semaglutide",
+    "approved",
+    "chronic weight management",
+    "Novo Nordisk",
+    "obesity",
+    "overweight"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "dead"
+  },
+  {
+   "role": "source",
+   "i": 10,
+   "kind": "paper",
+   "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215256",
+   "search": false,
+   "final_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215256",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Drugs@FDA: FDA-Approved Drugs",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "WEGOVY",
+    "SEMAGLUTIDE",
+    "NDA 215256",
+    "Approval",
+    "Jun 4, 2021",
+    "Original Approvals"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 11,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/expert-reaction-to-semaglutide-in-obesity-trial/",
+   "search": false,
+   "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-semaglutide-in-obesity-trial/",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Page not found | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "semaglutide",
+    "STEP 1",
+    "obesity",
+    "weight loss",
+    "New England Journal of Medicine",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "dead"
+  }
+ ]
+}

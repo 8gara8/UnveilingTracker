@@ -1,0 +1,181 @@
+{
+ "slug": "rosettafold-three-track-protein-structure-prediction",
+ "title": "RoseTTAFold predicts protein structures and complexes with a three-track network",
+ "first_published": "2021-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://doi.org/10.3410/f.740477162.793587949",
+   "search": false,
+   "final_url": "https://facultyopinions.com/prime/740477162#eval793587949",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "You don’t have access to this part of the site - Faculty Opinions",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-08-15"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.3410/f.740477162.793587949",
+   "crossref": {
+    "doi": "10.3410/f.740477162.793587949",
+    "resolves": true,
+    "title": "Faculty Opinions recommendation of Accurate prediction of protein structures and interactions using a three-track neural network.",
+    "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+    "publisher": "H1 Connect",
+    "type": "dataset",
+    "issued": "2021-8-15",
+    "authors_first3": [
+     "Bujnicki"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-review-of": [
+      "10.1126/science.abj8754"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "RoseTTAFold",
+    "Faculty Opinions",
+    "evaluator",
+    "University"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://doi.org/10.3410/f.740477162.793587584",
+   "search": false,
+   "final_url": "https://facultyopinions.com/prime/740477162#eval793587584",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "You don’t have access to this part of the site - Faculty Opinions",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-08-02"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.3410/f.740477162.793587584",
+   "crossref": {
+    "doi": "10.3410/f.740477162.793587584",
+    "resolves": true,
+    "title": "Faculty Opinions recommendation of Accurate prediction of protein structures and interactions using a three-track neural network.",
+    "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+    "publisher": "H1 Connect",
+    "type": "dataset",
+    "issued": "2021-8-2",
+    "authors_first3": [
+     "Makhatadze"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-review-of": [
+      "10.1126/science.abj8754"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "RoseTTAFold",
+    "Faculty Opinions",
+    "evaluator",
+    "University"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://doi.org/10.3410/f.740477162.793587452",
+   "search": false,
+   "final_url": "https://facultyopinions.com/prime/740477162#eval793587452",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "You don’t have access to this part of the site - Faculty Opinions",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-07-28"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.3410/f.740477162.793587452",
+   "crossref": {
+    "doi": "10.3410/f.740477162.793587452",
+    "resolves": true,
+    "title": "Faculty Opinions recommendation of Accurate prediction of protein structures and interactions using a three-track neural network.",
+    "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+    "publisher": "H1 Connect",
+    "type": "dataset",
+    "issued": "2021-7-28",
+    "authors_first3": [
+     "Seeber"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-review-of": [
+      "10.1126/science.abj8754"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "RoseTTAFold",
+    "Faculty Opinions",
+    "evaluator",
+    "University"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  }
+ ]
+}

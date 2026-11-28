@@ -1,0 +1,486 @@
+{
+ "slug": "alphaproof-imo-2024-silver-level",
+ "title": "AlphaProof and AlphaGeometry 2 reach IMO silver-medal level",
+ "first_published": "2024-07-25",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "statement",
+   "url": "https://www.mathunion.org/imu-news/archive/2025/imu-news-129-january-2025",
+   "search": false,
+   "final_url": "https://www.mathunion.org/imu-news/archive/2025/imu-news-129-january-2025",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "IMU News 129: January 2025 – Advances in Computer Proof Assistants & Mathematics",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "2025-01",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "International Mathematical Union (editorial by Kevin Buzzard)",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Explore the latest IMU News on computer proof assistants, formalization in math, ICM 2026, and Ingrid Daubechies' National Medal of Science award.",
+   "terms": [
+    "AlphaProof",
+    "silver medal",
+    "2024 IMO",
+    "Lean"
+   ],
+   "passages": [
+    "Google DeepMind's AlphaProof system is a language model trained to write Lean code; it autonomously performed at silver medal standard on the 2024 IMO, and things are moving very fast in this domain.",
+    "Nowadays the work of many Fields Medallists have been formalized, mostly in the Lean theorem prover; examples include the Clausen—Scholze theory of liquid modules and the Gowers—Green—Manners—Tao proof of the polynomial Freiman—Ruzsa conjecture."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.ams.org/journals/bull/2026-63-02/S0273-0979-2025-01879-0/viewer/",
+   "search": false,
+   "final_url": "https://www.ams.org/journals/bull/2026-63-02/S0273-0979-2025-01879-0/viewer/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Embracing AI and formalization: Experimenting with tomorrow’s mathematical tools",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2025-12-19"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Embracing AI and formalization: Experimenting with tomorrow’s mathematical tools. By Jarod Alper",
+   "terms": [
+    "AlphaProof",
+    "AlphaGeometry",
+    "International Mathematical Olympiad",
+    "silver"
+   ],
+   "passages": [
+    "In mathematics, these technologies have been applied to solve olympiad-style problems at the level of an International Mathematical Olympiad (IMO) Silver Medal Reference 33 and will no doubt surpass us soon.",
+    "On the other hand, Deepmind’s 2024 Silver Medal performance uses a specialized algorithm AlphaGeometry2 to solve geometry problems, and for other problems, they appear⁠Footnote5 to use a combination of the above strategies together with a reinforced learning algorithm styled after AlphaZero Reference 77.",
+    "The potential of autoformalization has already been evidenced by Numina’s winning performance Reference 62 in the AI Mathematical Olympiad (AIMO) progress prize Reference 17 and Deepmind’s performance on the 2024 IMO deserving of a Silver Medal.",
+    "The search space for proof generation, however, is vastly larger than for most games raising major theoretical and engineering challenges, some of which have presumably been solved by AlphaProof, Numina, DeepSeek, and the various other teams specializing in autoformalization."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.ams.org/journals/notices/202502/noti3114/noti3114.html",
+   "search": false,
+   "final_url": "https://www.ams.org/journals/notices/202502/noti3114/noti3114.html",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AMS :: Notices of the American Mathematical Society",
+   "title_match": "partial",
+   "dates_found": [],
+   "date_hint": "2025-02",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaProof",
+    "AlphaGeometry",
+    "IMO",
+    "silver"
+   ],
+   "passages": [
+    "Note that DeepMind’s AlphaProof, which was deemed to have performed at the level of a silver medalist at the most recent International Mathematical Olympiad,⁠Footnote14 was trained to find formal proofs in Lean.",
+    "It is exciting to think about what a synergetic combination of machine learning, symbolic methods, and user interaction will bring to mathematics in the years ahead.14https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/✖ You can find online documentation and tutorials for all the proof assistants we have just mentioned.",
+    "Soc.}, volume={55}, date={2008}, number={11}, pages={1395--1406}, issn={0002-9920}, review={\\MR {2463992}}, } [Mas21] Patrick Massot, Why formalize mathematics (2021)., Show rawAMSref \\bib{massot2021formalize}{article}{ author={Massot, Patrick}, title={Why formalize mathematics}, date={2021}, url={https://www.imo.universite-paris-saclay.fr/~patrick.massot/files/exposition/why_formalize.pdf}, } [Wie08] Freek Wiedijk, Formal proof—getting started, Notices Amer."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/",
+   "search": false,
+   "final_url": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "What mathematicians should know about the Lean Theorem Prover: questions of reliability and AI",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2026-10-09"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-10-09"
+    }
+   ],
+   "date_hint": "2026-10-09",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "Terence Tao",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "[This is a guest post by Thomas Hales. This blog post was initially written in a different file format and converted using AI. — T.] Mathematicians have been weighing in on what they value ab…",
+   "terms": [
+    "AlphaProof",
+    "Lean",
+    "IMO"
+   ],
+   "passages": [
+    "Dan Selsam has contributed to Lean from its early days and was one of the creators of the IMO grand challenge aimed at achieving IMO-level problem solving verified in Lean.",
+    "PolymathAnonymous on Even more posts, opinion piece…Xianghao Tang on Lean Grimoireecstatic6d274314ad on Even more posts, opinion piece…jmdpark on G.R.H.",
+    "Among mathematicians, the Lean theorem prover is the most popular, and this post will focus on Lean.",
+    "Lean proofs should never be believed until they have been checked by the kernel.",
+    "For instance, for Navier-Stokes, a human should check that the statement in Lean corresponds with Fefferman’s statement of the Millennium Prize Problem, and specifically that concepts such as the field of real numbers, partial derivatives, and measure are correctly defined in Lean.",
+    "Develop other Lean kernels, and cross-check formal proofs.",
+    "My overall assessment is that our theoretical understanding of Lean’s type theory is not what we would like it to be and that the mathematical community as a whole is giving short shrift to very important type-theoretic questions related to Lean.",
+    "I think if someone writes a paper, they maybe cannot say “here’s a proof that X is true, and an ai generated lean formalization showing my approach is correct!!”",
+    "Reply 9 October, 2026 at 1:15 pm Anonymous So we know two things: It seems when AI transfers NL to lean verification it makes misrakes… Godel’s Incompleteness states not all bugs are findable by a simple algorithm.",
+    "Same will happen with AI (LEAN) generated proofs."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "kind": "reaction",
+   "url": "https://terrytao.wordpress.com/2025/11/05/mathematical-exploration-and-discovery-at-scale/",
+   "search": false,
+   "final_url": "https://terrytao.wordpress.com/2025/11/05/mathematical-exploration-and-discovery-at-scale/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Mathematical exploration and discovery at scale",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2025-11-06"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-11-06"
+    }
+   ],
+   "date_hint": "2025-11-05",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "Terence Tao",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Bogdan Georgiev, Javier Gómez-Serrano, Adam Zsolt Wagner, and I have uploaded to the arXiv our paper “Mathematical exploration and discovery at scale”. This is a longer report on…",
+   "terms": [
+    "AlphaProof",
+    "AlphaGeometry",
+    "IMO"
+   ],
+   "passages": [
+    "However, an IMO problem and the prime number theorem are not “equivalent” in their difficulty."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 2,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-025-03585-5",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/d41586-025-03585-5?error=cookies_not_supported&code=2196b7d3-4c81-4328-8aa4-0fdc18e19151",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Mathematicians put AI model AlphaProof to the test",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-02-28"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-11-12"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-11-12"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-11-12"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-11-12"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-11-12"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-11-12"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Ringer, Talia"
+   ],
+   "who_hint": "Nature (news report; the outside mathematicians it quotes are not read)",
+   "doi": "10.1038/d41586-025-03585-5",
+   "crossref": {
+    "doi": "10.1038/d41586-025-03585-5",
+    "resolves": true,
+    "title": "Mathematicians put AI model AlphaProof to the test",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-11-12",
+    "authors_first3": [
+     "Ringer"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "Mathematicians use computational tools to prove theorems. An AI model that is trained to use these tools might accelerate mathematical discovery.",
+   "terms": [
+    "AlphaProof",
+    "mathematician",
+    "IMO",
+    "Lean"
+   ],
+   "passages": [
+    "NEWS AND VIEWS 12 November 2025 Mathematicians put AI model AlphaProof to the test Mathematicians use computational tools to prove theorems.",
+    "It was the first time such a system had performed at a medal-worthy level in solving IMO challenges.",
+    "Now, writing in Nature, Hubert et al.1 report the details of the core technology behind that achievement: a tool called AlphaProof, which is designed to prove mathematical statements."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=AlphaProof+AlphaGeometry",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=AlphaProof+AlphaGeometry",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AlphaProof AlphaGeometry | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaProof",
+    "AlphaGeometry",
+    "International Mathematical Olympiad",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://www.nature.com/search?q=AlphaProof+silver&article_type=news-and-views&order=relevance",
+   "search": true,
+   "final_url": "https://www.nature.com/search?q=AlphaProof+silver&article_type=news-and-views&order=relevance&error=cookies_not_supported&code=f07d2b2e-cef8-4f04-a780-b7e3f376b297",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AlphaProof silver | Nature Search Results",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2025-11-12"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaProof",
+    "silver",
+    "Olympiad",
+    "News & Views"
+   ],
+   "passages": [
+    "News & Views (1) Subject Check one or more subjects to show results from those subjects only."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [
+    {
+     "slug": "alphaproof-imo-2024-silver-level",
+     "role": "source",
+     "i": "6-via-1",
+     "via": "https://www.nature.com/search?q=AlphaProof+silver&article_type=news-and-views&order=relevance",
+     "link_text": "Mathematicians put AI model AlphaProof to the test",
+     "url": "https://www.nature.com/articles/d41586-025-03585-5",
+     "final_url": "https://www.nature.com/articles/d41586-025-03585-5?error=cookies_not_supported&code=2196b7d3-4c81-4328-8aa4-0fdc18e19151",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "Mathematicians put AI model AlphaProof to the test",
+     "dates_found": [
+      {
+       "source": "citation_publication_date",
+       "date": "2026-02-28"
+      },
+      {
+       "source": "citation_online_date",
+       "date": "2025-11-12"
+      },
+      {
+       "source": "dc.date",
+       "date": "2025-11-12"
+      },
+      {
+       "source": "prism.publicationDate",
+       "date": "2025-11-12"
+      },
+      {
+       "source": "ld+json datePublished",
+       "date": "2025-11-12"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2025-11-12"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2026-11-27"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2026-11-25"
+      }
+     ],
+     "people_found": [
+      "Ringer, Talia"
+     ],
+     "citation_doi": "10.1038/d41586-025-03585-5",
+     "type_meta": "News And Views",
+     "meta_description": "Mathematicians use computational tools to prove theorems. An AI model that is trained to use these tools might accelerate mathematical discovery.",
+     "passages": [
+      "NEWS AND VIEWS 12 November 2025 Mathematicians put AI model AlphaProof to the test Mathematicians use computational tools to prove theorems.",
+      "Now, writing in Nature, Hubert et al.1 report the details of the core technology behind that achievement: a tool called AlphaProof, which is designed to prove mathematical statements."
+     ],
+     "verdict": "usable"
+    }
+   ],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://terrytao.wordpress.com/?s=AlphaProof+AlphaGeometry",
+   "search": true,
+   "final_url": "https://terrytao.wordpress.com/?s=AlphaProof+AlphaGeometry",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Search Results for “AlphaProof AlphaGeometry” – What's new",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaProof",
+    "AlphaGeometry",
+    "IMO",
+    "Lean"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  }
+ ]
+}

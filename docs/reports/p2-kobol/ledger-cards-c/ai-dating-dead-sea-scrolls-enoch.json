@@ -1,0 +1,43 @@
+{
+ "slug": "ai-dating-dead-sea-scrolls-enoch",
+ "title": "AI handwriting model dates Dead Sea Scrolls, some older than expected",
+ "first_published": "2025-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=Dead+Sea+Scrolls+Enoch",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=Dead+Sea+Scrolls+Enoch",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Dead Sea Scrolls Enoch | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Dead Sea Scrolls",
+    "Enoch",
+    "radiocarbon",
+    "handwriting",
+    "palaeography",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

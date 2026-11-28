@@ -1,0 +1,179 @@
+{
+ "slug": "willow-error-correction-below-threshold",
+ "title": "Google's Willow chip lowers quantum errors as the code grows",
+ "first_published": "2024-08-24",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=Willow+Google+Quantum+AI",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=Willow+Google+Quantum+AI",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Willow Google Quantum AI | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Willow",
+    "Google Quantum AI",
+    "quantum error correction",
+    "below threshold",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-026-10559-8",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-026-10559-8?error=cookies_not_supported&code=404e4049-08b6-4e0a-8014-65f6c7362f41",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Author Correction: Quantum error correction below the surface code threshold",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2026-04-28"
+    },
+    {
+     "source": "dc.date",
+     "date": "2026-04-28"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-04-28"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-04-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-28"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-04-28"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.1038/s41586-026-10559-8",
+   "crossref": {
+    "doi": "10.1038/s41586-026-10559-8",
+    "resolves": true,
+    "title": "Author Correction: Quantum error correction below the surface code threshold",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-4-28",
+    "authors_first3": [
+     "Google Quantum AI and Collaborators",
+     "Acharya",
+     "Abanin"
+    ],
+    "author_count": 256,
+    "update_to": [
+     {
+      "doi": "10.1038/s41586-024-08449-y",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "Erratum"
+   },
+   "meta_description": null,
+   "terms": [
+    "Correction",
+    "Publisher Correction",
+    "Author Correction",
+    "original article",
+    "s41586-024-08449-y"
+   ],
+   "passages": [
+    "Author Correction: Quantum error correction below the surface code threshold.",
+    "Computer science Quantum information Quantum Error Correction in Quantum Computing Systems Author informationAuthor notesNathan LacroixPresent address: Department of Physics, ETH Zurich, Zurich, SwitzerlandAuthors and AffiliationsGoogle Research, Mountain View, CA, USARajeev Acharya, Dmitry A."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://physicsworld.com/a/physics-world-announces-its-2024-breakthrough-of-the-year/",
+   "search": false,
+   "final_url": "https://physicsworld.com/a/physics-world-announces-its-2024-breakthrough-of-the-year/",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Page not found – Physics World",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Breakthrough of the Year",
+    "Willow",
+    "Google Quantum AI",
+    "Harvard",
+    "logical qubit",
+    "error correction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "dead"
+  }
+ ]
+}

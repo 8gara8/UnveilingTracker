@@ -1,0 +1,384 @@
+{
+ "slug": "personalised-base-editing-therapy-infant-kj",
+ "title": "First custom base-editing therapy treats an infant with a rare metabolic disease",
+ "first_published": "2025-05-15",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12713542/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12713542/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Patient-Specific In Vivo Gene Editing to Treat a Rare Genetic Disease",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-05-14"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-06-12"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Kiran Musunuru",
+    "Sarah A Grandinette",
+    "Xiao Wang",
+    "Taylor R Hudson",
+    "Kevin Briseno",
+    "Anne Marie Berry",
+    "Julia L Hacker",
+    "Alvin Hsu",
+    "Rachel A Silverstein",
+    "Logan T Hille",
+    "Aysel N Ogul",
+    "Nancy A Robinson-Garvin"
+   ],
+   "who_hint": null,
+   "doi": "10.1056/nejmoa2504747",
+   "crossref": {
+    "doi": "10.1056/nejmoa2504747",
+    "resolves": true,
+    "title": "Patient-Specific In Vivo Gene Editing to Treat a Rare Genetic Disease",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2025-6-12",
+    "authors_first3": [
+     "Musunuru",
+     "Grandinette",
+     "Wang"
+    ],
+    "author_count": 45,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Base editors can correct disease-causing genetic variants. We developed a customized base-editing therapy, starting immediately after a neonate was diagnosed with severe carbamoyl phosphate synthetase 1 deficiency, a disease with an estimated 50% ...",
+   "terms": [
+    "Food and Drug Administration",
+    "FDA",
+    "investigational new drug",
+    "single-patient",
+    "expanded access",
+    "infusion",
+    "dose",
+    "discharged",
+    "follow-up",
+    "ammonia",
+    "protein intake",
+    "lipid nanoparticle",
+    "Reporting Summary"
+   ],
+   "passages": [
+    "S1, Table S2) “abengcemeran”, and the therapy “k-abe” for short.Preclinical Studies Following initial regulatory review by the FDA, we manufactured a toxicology batch of k-abe and undertook a limited safety study in cynomolgus monkeys to characterize single-dose toxicity of the lipid nanoparticle therapy.",
+    "S19).Treatment of the Patient A single-patient expanded-access IND application was submitted to the FDA when the patient was 6 months of age and approved 1 week later.",
+    "Panel E and panel F show pre-treatment and post-treatment plasma ammonia levels and urine orotic acid levels, respectively.Given the incomplete biochemical correction, and according to the clinical protocol, the patient received a second dose of k-abe, 0.3 mg/kg, 22 days after the first dose.",
+    "Food and Drug Administration (FDA) authorization to obtain concurrence by the IRB chairperson who approved the study.",
+    "He had the expected infantile “honeymoon” period14 from days of life 50–100, after which his biochemical status worsened, necessitating further reduction of protein intake and uptitration of glycerol phenylbutyrate to manage elevated ammonia and glutamine levels.",
+    "On day of life 208, the patient received an intravenous infusion of k-abe, comprising a total RNA dose of 0.1 mg/kg.",
+    "Blood ammonia levels before the first dose (median 23 μmol/L, interquartile range 14–48 μmol/L), between the first and second doses (9 μmol/L, 9–19 μmol/L), and after the second dose (13 μmol/L, 9–28 μmol/L) support a treatment-related difference (Fig.",
+    "The patient was able to increase protein intake and tolerate a halving of dose of nitrogen scavenger, despite the “stress tests” presented by consecutive viral infections.",
+    "After regulatory approval, he received two infusions of the therapy, at approximately seven and eight months of age.",
+    "This study in cynomolgus monkeys, completed 5 months after the patient’s birth, supported 0.1 mg/kg as a potentially safe initial clinical dose for the patient."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=expert+reaction+base+editing",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=expert+reaction+base+editing",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction base editing | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "expert reaction",
+    "base editing",
+    "CPS1",
+    "personalised",
+    "personalized",
+    "infant",
+    "baby",
+    "Children's Hospital of Philadelphia",
+    "Musunuru",
+    "Ahrens-Nicklas"
+   ],
+   "passages": [
+    "Dr Rubina … read more July 18, 2025 expert reaction to Perspective article on genome editing for conservation A Perspective article published in Nature Reviews Diversity looks at genome engineering for biodiversity conservation and restoration.",
+    "Dr Brian Ferguson, Associate Professor … read more August 8, 2024 expert reaction to NICE final draft guidance on exagamglogene autotemcel (Casgevy) for severe beta-thalassaemia Scientists react to NICE final draft guidance on Casgevy for the treatment of beta-thalassaemia."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [
+    {
+     "slug": "personalised-base-editing-therapy-infant-kj",
+     "role": "source",
+     "i": "2-via-1",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+base+editing",
+     "link_text": "expert reaction to study on new CRISPR gene therapy for children with a rare metabolic disease",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-study-on-new-crispr-gene-therapy-for-children-with-a-rare-metabolic-disease/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-study-on-new-crispr-gene-therapy-for-children-with-a-rare-metabolic-disease/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to study on new CRISPR gene therapy for children with a rare metabolic disease | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "“In the case of CPS1, the therapy consists in substituting a nucleotide for the correct one, so this is a highly precise corrective change."
+     ],
+     "verdict": "usable"
+    },
+    {
+     "slug": "personalised-base-editing-therapy-infant-kj",
+     "role": "source",
+     "i": "2-via-2",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+base+editing",
+     "link_text": "expert reaction to base editing revealing role of master gene (NANOG) in embryo development",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-base-editing-revealing-role-of-master-gene-nanog-in-embryo-development/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-base-editing-revealing-role-of-master-gene-nanog-in-embryo-development/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to base editing revealing role of master gene (NANOG) in embryo development | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "Dr Norah Fogarty, UKRI Future Leader Fellow and Lecturer, Centre for Gene Therapy & Regenerative Medicine, King’s College London (KCL), said: “This is a well-designed and thorough investigation into the use of base editing as a research tool in human embryos.",
+      "But it does show that base editing may be a less disruptive way to study gene function in embryos than older CRISPR approaches that create double-strand DNA breaks.",
+      "“This study uses adenine base editing to alter NANOG, a gene long known from stem cell and animal studies to be central to pluripotency.",
+      "“In the near-term, this study elegantly demonstrates that base editing is a tool for human embryo research, allowing us to specifically investigate the role of genes involved in development.",
+      "“The work also shows the potential of base editing as a research tool, but it does not demonstrate that embryo editing is safe for clinical use.",
+      "Kathy Niakan and her team draw on their long-standing expertise in human embryonic stem cells and mouse embryology to robustly “quality control” the base editing machinery and assess its specificity and ability to knock out NANOG’s function.",
+      "There have been a few studies already looking at the use of base editing in human embryos.",
+      "“The authors are clear that more research is needed before base editing could be used in a clinical setting."
+     ],
+     "verdict": "usable"
+    },
+    {
+     "slug": "personalised-base-editing-therapy-infant-kj",
+     "role": "source",
+     "i": "2-via-3",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+base+editing",
+     "link_text": "expert reaction to MHRA authorising gene therapy that aims to cure sickle-cell disease",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-mhra-authorising-gene-therapy-that-aims-to-cure-sickle-cell-disease/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-mhra-authorising-gene-therapy-that-aims-to-cure-sickle-cell-disease/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to MHRA authorising gene therapy that aims to cure sickle-cell disease | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [],
+     "verdict": "usable"
+    }
+   ],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.nature.com/search?q=d41586+base+editing&article_type=news-and-views&order=relevance",
+   "search": true,
+   "final_url": "https://www.nature.com/search?q=d41586+base+editing&article_type=news-and-views&order=relevance&error=cookies_not_supported&code=9563b86a-8c45-48d8-acad-1ae854ee7f10",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "d41586 base editing | Nature Search Results",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2026-09-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-07-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-02-18"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "d41586",
+    "base editing",
+    "CPS1",
+    "personalized gene editing",
+    "baby",
+    "infant",
+    "KJ",
+    "Musunuru",
+    "Ahrens-Nicklas"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [
+    {
+     "slug": "personalised-base-editing-therapy-infant-kj",
+     "role": "source",
+     "i": "3-via-1",
+     "via": "https://www.nature.com/search?q=d41586+base+editing&article_type=news-and-views&order=relevance",
+     "link_text": "A baby benefits from personalized gene editing in the clinic",
+     "url": "https://www.nature.com/articles/d41586-025-02590-y",
+     "final_url": "https://www.nature.com/articles/d41586-025-02590-y?error=cookies_not_supported&code=3c62049f-e2c3-4f3c-9139-4d5603fb1e1c",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "A baby benefits from personalized gene editing in the clinic",
+     "dates_found": [
+      {
+       "source": "citation_publication_date",
+       "date": "2025-07-31"
+      },
+      {
+       "source": "citation_online_date",
+       "date": "2025-08-19"
+      },
+      {
+       "source": "dc.date",
+       "date": "2025-08-19"
+      },
+      {
+       "source": "prism.publicationDate",
+       "date": "2025-08-19"
+      },
+      {
+       "source": "ld+json datePublished",
+       "date": "2025-08-19"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2025-08-19"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2026-11-25"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2026-11-25"
+      }
+     ],
+     "people_found": [
+      "Sepp-Lorenzino, Laura"
+     ],
+     "citation_doi": "10.1038/d41586-025-02590-y",
+     "type_meta": "News And Views",
+     "meta_description": "An infant with an inherited life-threatening metabolic condition has responded to a tailored therapy that uses the gene-editing tool CRISPR to correct a specific mutation.",
+     "passages": [
+      "NEWS AND VIEWS 19 August 2025 A baby benefits from personalized gene editing in the clinic An infant with an inherited life-threatening metabolic condition has responded to a tailored therapy that uses the gene-editing tool CRISPR to correct a specific mutation.",
+      "The bespoke therapy, in which the treatment was delivered through lipid nanoparticles, was developed in record time, as reported by Musunuru et al.1 in The New England Journal of Medicine."
+     ],
+     "verdict": "usable"
+    },
+    {
+     "slug": "personalised-base-editing-therapy-infant-kj",
+     "role": "source",
+     "i": "3-via-2",
+     "via": "https://www.nature.com/search?q=d41586+base+editing&article_type=news-and-views&order=relevance",
+     "link_text": "Gene editing treats a mouse model of a neurodevelopmental disorder",
+     "url": "https://www.nature.com/articles/d41586-026-00291-8",
+     "final_url": "https://www.nature.com/articles/d41586-026-00291-8?error=cookies_not_supported&code=e0d17887-111e-4479-abe4-a40c97e7581e",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "Gene editing treats a mouse model of a neurodevelopmental disorder",
+     "dates_found": [
+      {
+       "source": "citation_publication_date",
+       "date": "2026-02-28"
+      },
+      {
+       "source": "citation_online_date",
+       "date": "2026-02-18"
+      },
+      {
+       "source": "dc.date",
+       "date": "2026-02-18"
+      },
+      {
+       "source": "prism.publicationDate",
+       "date": "2026-02-18"
+      },
+      {
+       "source": "ld+json datePublished",
+       "date": "2026-02-18"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2026-02-18"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2026-11-25"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2026-11-25"
+      }
+     ],
+     "people_found": [
+      "Bender, Kevin J."
+     ],
+     "citation_doi": "10.1038/d41586-026-00291-8",
+     "type_meta": "News And Views",
+     "meta_description": "An approach that specifically targets a single nucleotide corrected behavioural abnormalities in an animal model of Snijders Blok–Campeau syndrome.",
+     "passages": [],
+     "verdict": "usable"
+    }
+   ],
+   "verdict": "usable"
+  }
+ ]
+}

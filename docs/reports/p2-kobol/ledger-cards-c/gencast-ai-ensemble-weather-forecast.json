@@ -1,0 +1,147 @@
+{
+ "slug": "gencast-ai-ensemble-weather-forecast",
+ "title": "GenCast, an AI model, makes 15-day probabilistic forecasts in minutes",
+ "first_published": "2023-12",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=GenCast+probabilistic+weather",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=GenCast+probabilistic+weather",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "GenCast probabilistic weather | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "GenCast",
+    "probabilistic weather",
+    "ensemble",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://arxiv.org/abs/2412.15832",
+   "search": false,
+   "final_url": "https://arxiv.org/abs/2412.15832",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AIFS-CRPS: Ensemble forecasting using a model trained with a loss function based on the Continuous Ranked Probability Score",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2024-12-20"
+    },
+    {
+     "source": "citation_date",
+     "date": "2024-12-20"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Lang, Simon",
+    "Alexe, Mihai",
+    "Clare, Mariana C. A.",
+    "Roberts, Christopher",
+    "Adewoyin, Rilwan",
+    "Bouallègue, Zied Ben",
+    "Chantry, Matthew",
+    "Dramsch, Jesper",
+    "Dueben, Peter D.",
+    "Hahner, Sara",
+    "Maciel, Pedro",
+    "Prieto-Nemesio, Ana"
+   ],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2412.15832: AIFS-CRPS: Ensemble forecasting using a model trained with a loss function based on the Continuous Ranked Probability Score",
+   "terms": [
+    "GenCast",
+    "ENS",
+    "CRPS",
+    "ensemble",
+    "outperforms"
+   ],
+   "passages": [
+    "For subseasonal forecasts, AIFS-CRPS outperforms the IFS ensemble before calibration and is competitive with the IFS ensemble when forecasts are evaluated as anomalies to remove the influence of model biases.",
+    "For medium-range forecasts AIFS-CRPS outperforms the physics-based Integrated Forecasting System (IFS) ensemble for the majority of variables and lead times.",
+    "For the loss, the almost fair CRPS is introduced because it approximately removes the bias in the score due to finite ensemble size yet avoids a degeneracy of the fair CRPS.",
+    "Over the last three decades, ensemble forecasts have become an integral part of forecasting the weather.",
+    "This paper presents a novel approach to obtain a weather forecast model for ensemble forecasting with machine-learning.",
+    "Its loss function is based on a proper score, the Continuous Ranked Probability Score (CRPS)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ai-forecasts-become-operational",
+   "search": false,
+   "final_url": "https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ai-forecasts-become-operational",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "ECMWF’s AI forecasts become operational",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2025-02-25"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "ECMWF has taken the Artificial Intelligence Forecasting System (AIFS) into operations today, 25 February 2025, to run side by side with its traditional physics-based Integrated Forecasting System (IFS) to advance numerical weather prediction.",
+   "terms": [
+    "GenCast",
+    "DeepMind",
+    "Google",
+    "ensemble"
+   ],
+   "passages": [
+    "The next steps will be making ensemble forecasts available and introducing experimental data-driven sub-seasonal (extended-range) forecasting.",
+    "This is known as ensemble modelling, a technique developed and implemented by ECMWF more than thirty years ago."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

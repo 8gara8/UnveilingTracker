@@ -1,0 +1,232 @@
+{
+ "slug": "minoans-mycenaeans-ancient-dna-aegean-farmers",
+ "title": "Ancient DNA links Minoans and Mycenaeans to early Aegean farmers",
+ "first_published": "2017-08-02",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41559-022-01952-3",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41559-022-01952-3?error=cookies_not_supported&code=e421697e-fc7c-4d6c-ae37-9e849b32260d",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Ancient DNA reveals admixture history and endogamy in the prehistoric Aegean",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-01-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-01-16"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-01-16"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-01-16"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-01-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-01-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-05-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-11-11"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-01-16"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Skourtanioti, Eirini",
+    "Ringbauer, Harald",
+    "Gnecchi Ruscone, Guido Alberto",
+    "Bianco, Raffaela Angelina",
+    "Burri, Marta",
+    "Freund, Cäcilia",
+    "Furtwängler, Anja",
+    "Gomes Martins, Nuno Filipe",
+    "Knolle, Florian",
+    "Neumann, Gunnar U.",
+    "Tiliakou, Anthi",
+    "Agelarakis, Anagnostis"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41559-022-01952-3",
+   "crossref": {
+    "doi": "10.1038/s41559-022-01952-3",
+    "resolves": true,
+    "title": "Ancient DNA reveals admixture history and endogamy in the prehistoric Aegean",
+    "container": "Nature Ecology &amp; Evolution",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-1-16",
+    "authors_first3": [
+     "Skourtanioti",
+     "Ringbauer",
+     "Gnecchi Ruscone"
+    ],
+    "author_count": 41,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The Neolithic and Bronze Ages were highly transformative periods for the genetic history of Europe but for the Aegean—a region fundamental to Europe’s prehistory—the biological dimensions of cultural transitions have been elucidated only to a limited extent so far. We have analysed newly generated g",
+   "terms": [
+    "Krause",
+    "Stockhammer",
+    "Lazaridis",
+    "Minoan",
+    "Mycenaean",
+    "steppe",
+    "Caucasus",
+    "consistent with",
+    "corroborat",
+    "Author information"
+   ],
+   "passages": [
+    "Others reported the presence of this ‘eastern’ (Iran/Caucasus-associated) genetic component in both Bronze Age (BA) Cretan (Minoan) and southern Greek mainland (Mycenaean) populations26.",
+    "Following an horizon of destructions targeting palatial centres and elite symbols in Crete (Late Minoan IB)57, material culture, funerary architecture and burial practices are believed to express innovations with features traditionally ascribed to the Mycenaean culture.",
+    "“Mycenaean” political domination of Knossos following the Late Minoan IB destructions on Crete: negative evidence from strontium isotope ratio analysis (87Sr/86Sr).",
+    "Subsequent studies generated nuclear aDNA data and showed a common gene pool for the Aegean Neolithic populations, indicating that the southern Greek mainland differed from the northern in its higher genetic affinity to early Holocene populations from the Iran/Caucasus24,25.",
+    "Most of the data come from Crete (66 of 102 individuals), in a time transect that covers early phases of the Neolithic (Aposelemis; late seventh to early sixth millennia bc) and the BA (Hagios Charalambos—Early-Middle Minoan; Chania, Aposelemis and Krousonas—Late Minoan).",
+    "After around two millennia, the EBA and MBA individuals show a substantial change in their PC coordinates, shifted along PC2 towards Early Holocene Iran/Caucasus and the descending Chalcolithic and BA Anatolians/ BA Caucasians.",
+    "Notably, Iran/Caucasus-related genetic influx was inferred in published individuals from the later Neolithic phases on the mainland (I2318, I709 and I3920; Peloponnese, around the fifth millenium bc)—but not earlier—as well as most of the EBA individuals from Euboea, Aegina and Koufonisia.",
+    "For the Aegean, we also estimated a significantly lower WES-ancestry proportion on the X chromosomes of the male individuals compared to most of the autosomes, which is consistent with male-biased admixture (Extended Data Fig.",
+    "Summarizing, the current evidence is most consistent with the scenario of the Aposelemis early farmers descending from a small-sized population.DiscussionOur large-scale archaeogenomic approach provides new evidence regarding the role of human mobility in Aegean prehistory.",
+    "Ancient genomes reveal structural shifts after the arrival of Steppe-related ancestry in the Italian Peninsula."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://doi.org/10.1016/j.cell.2021.06.049",
+   "search": false,
+   "final_url": "https://doi.org/10.1016/j.cell.2021.06.049",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Error: DOI Not Found",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.1016/j.cell.2021.06.049",
+   "crossref": {
+    "doi": "10.1016/j.cell.2021.06.049",
+    "resolves": false,
+    "status": 404
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Minoan",
+    "Mycenaean",
+    "Aegean",
+    "Crete",
+    "steppe",
+    "Caucasus",
+    "Lazaridis",
+    "consistent",
+    "Palatial"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.1093/ww/9780199540884.013.u21025",
+      "title": "Hubel, Prof. David Hunter, (27 Feb. 1926–22 Sept. 2013), Research Professor of Neurobiology, Harvard Medical School, since 2000",
+      "container": "Who Was Who",
+      "date": "2007-12-1",
+      "score": 30.04733
+     },
+     {
+      "doi": "10.1017/9781009267038.009",
+      "title": "Harvard Medical School",
+      "container": "From Loss to Memory",
+      "date": "2023-7-6",
+      "score": 27.907663
+     },
+     {
+      "doi": "10.31256/hsmr2023.1",
+      "title": "SLAM-based Surgical Guidance For Breast Reconstruction Surgery",
+      "container": "Proceedings of The 15th Hamlyn Symposium on Medical Robotics 2023",
+      "date": "2023-6-26",
+      "score": 27.082527
+     }
+    ],
+    "arxiv": []
+   },
+   "title_search": null,
+   "extras": [],
+   "verdict": "unresolved"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=Minoan+Mycenaean",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=Minoan+Mycenaean",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Minoan Mycenaean | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Minoan",
+    "Mycenaean",
+    "Aegean",
+    "ancient DNA",
+    "Crete",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

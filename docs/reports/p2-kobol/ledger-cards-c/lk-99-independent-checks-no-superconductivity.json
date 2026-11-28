@@ -1,0 +1,214 @@
+{
+ "slug": "lk-99-independent-checks-no-superconductivity",
+ "title": "Independent labs find LK-99 is not a room-temperature superconductor",
+ "first_published": "2023-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://pubs.acs.org/doi/10.1021/acs.jpcc.3c05684",
+   "search": false,
+   "final_url": "https://pubs.acs.org/doi/10.1021/acs.jpcc.3c05684",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2023-09-08",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Prashant K. Jain, University of Illinois Urbana-Champaign (J. Phys. Chem. C, American Chemical Society)",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "copper(I) sulfide",
+    "superionic",
+    "104",
+    "LK-99",
+    "resistivity",
+    "heat capacity",
+    "purported superconductivity"
+   ],
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "arxiv",
+     "url": "https://arxiv.org/abs/2308.05222",
+     "final_url": "https://arxiv.org/abs/2308.05222",
+     "status": 200,
+     "readable": true,
+     "title_found": "Superionic phase transition of copper(I) sulfide and its implication for purported superconductivity of LK-99",
+     "title_match": true,
+     "date": "2023-08-09",
+     "passages": [
+      "Jain View a PDF of the paper titled Superionic phase transition of copper(I) sulfide and its implication for purported superconductivity of LK-99, by Prashant K.",
+      "As a result of this phase transition, copper(I) sulfide exhibits sharp transitions in electrical resistivity and heat capacity, which are expected to coincide with the temperature-induced transitions reported for LK-99.",
+      "Copper(I) sulfide has a known phase transition at 104 degrees C from an ordered low-temperature phase to a high-temperature superionic phase.",
+      "This implies that LK-99 must be synthesized without any copper(I) sulfide to allow unambiguous validation of the superconducting properties of LK-99.",
+      "However, the polycrystalline material synthesized has a significant fraction of copper(I) sulfide.",
+      "Lee, Kim, and coworkers have recently claimed room-temperature and ambient-pressure superconductivity in a copper-doped lead apatite material named LK-99."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 8,
+   "kind": "paper",
+   "url": "https://doi.org/10.1016/j.matt.2023.11.001",
+   "search": false,
+   "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S2590238523005647",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Redirecting",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-12-01"
+    }
+   ],
+   "date_hint": "2023-12",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "Zhu, Wu, Li and Luo (author list of the arXiv abstract 2308.04353; Crossref counts 4 authors; first names and affiliations not read) (Matter, Cell Press; Crossref publisher Elsevier BV)",
+   "doi": "10.1016/j.matt.2023.11.001",
+   "crossref": {
+    "doi": "10.1016/j.matt.2023.11.001",
+    "resolves": true,
+    "title": "First-order transition in LK-99 containing Cu2S",
+    "container": "Matter",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2023-12",
+    "authors_first3": [
+     "Zhu",
+     "Wu",
+     "Li"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Cu2S",
+    "LK-99",
+    "first-order transition",
+    "zero resistivity",
+    "zero resistance"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 9,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/d41586-023-02585-7",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/d41586-023-02585-7?error=cookies_not_supported&code=a44b52ec-3953-4651-a5b2-f4468aebdafc",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "LK-99 isn’t a superconductor — how science sleuths solved the mystery",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "dc.date",
+     "date": "2023-08-16"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-08-16"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-08-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-08-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-08-16"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Garisto, Dan"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/d41586-023-02585-7",
+   "crossref": {
+    "doi": "10.1038/d41586-023-02585-7",
+    "resolves": true,
+    "title": "LK-99 isn’t a superconductor — how science sleuths solved the mystery",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-8-16",
+    "authors_first3": [
+     "Garisto"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News"
+   },
+   "meta_description": "Efforts to replicate the material have pieced together the puzzle of why it displayed superconducting-like behaviours.",
+   "terms": [
+    "LK-99",
+    "copper sulfide",
+    "Cu2S",
+    "superconductor",
+    "said",
+    "University",
+    "Institute",
+    "not involved"
+   ],
+   "passages": [
+    "NEWS 16 August 2023 LK-99 isn’t a superconductor — how science sleuths solved the mystery Efforts to replicate the material have pieced together the puzzle of why it displayed superconducting-like behaviours.",
+    "Beijing (CN) University of Chinese Academy of Sciences (UCAS) Faculty Positions in Westlake University Founded in 2018, Westlake University is a new type of non-profit research-oriented university in Hangzhou, China, supported by public a...",
+    "Shanghai, Beijing or London – hybrid working model Springer Nature Ltd Global Leading Talent Recruitment at College of Bio-X, Huazhong Agricultural University Join HZAU's global faculty team to advance research with competitive benefits.",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,...",
+    "Wuhan, Hubei (CN) Huazhong Agricultural University (HZAU) Research Careers in Quantitative Synthetic Biology Build life to understand it — and use that understanding to create new biological technologies.",
+    "Scientific detective work has unearthed evidence that the material is not a superconductor, and clarified its actual properties."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

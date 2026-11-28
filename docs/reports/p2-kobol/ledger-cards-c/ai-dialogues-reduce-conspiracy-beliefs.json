@@ -1,0 +1,659 @@
+{
+ "slug": "ai-dialogues-reduce-conspiracy-beliefs",
+ "title": "Chats with an AI chatbot weaken belief in conspiracy theories",
+ "first_published": "2024-09",
+ "items": [
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41598-026-66242-5",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41598-026-66242-5?error=cookies_not_supported&code=0d635bb5-6c8b-4470-9dd3-ddb454e03b6c",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Chatbots reduce health-related conspiracy beliefs not because of but despite being perceived as AI",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-08-17"
+    },
+    {
+     "source": "dc.date",
+     "date": "2026-08-17"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-08-17"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-08-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-08-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-08-06"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-08-17"
+    }
+   ],
+   "date_hint": "2026-08-17",
+   "date_ok": false,
+   "people_found": [
+    "Ballot, Paul",
+    "van de Sande, Yana",
+    "Schraffenberger, Hanna",
+    "Schmid, Philipp"
+   ],
+   "who_hint": "Paul Ballot, Yana van de Sande, Hanna Schraffenberger, Philipp Schmid",
+   "doi": "10.1038/s41598-026-66242-5",
+   "crossref": {
+    "doi": "10.1038/s41598-026-66242-5",
+    "resolves": true,
+    "title": "Chatbots reduce health-related conspiracy beliefs not because of but despite being perceived as AI",
+    "container": "Scientific Reports",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-8-17",
+    "authors_first3": [
+     "Ballot",
+     "van de Sande",
+     "Schraffenberger"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Beliefs in conspiracy theories and their resistance to correction pose critical challenges to public health. A potential countermeasure to this is the use of Large Language Model (LLM) driven debates about conspiracy theories. Yet while this approach yields promising results for general conspiracies",
+   "terms": [
+    "Costello",
+    "conspiracy",
+    "chatbot",
+    "large language model",
+    "COVID-19",
+    "participants"
+   ],
+   "passages": [
+    "As Costello et al. rely on a randomly recruited general population sample and allow for any self-selected conspiracy to be discussed11, it seems unlikely that their participants debated deeply self-relevant conspiracy beliefs with the chatbot.",
+    "To test these assumptions, we invited participants to debate a COVID-19-related conspiracy with a chatbot labelled as either human or AI.",
+    "In an online experiment, 554 participants were randomly assigned to either a control condition or to debate an individual COVID-19 conspiracy theory with an AI-labelled LLM or a human-labelled LLM.",
+    "However, results of the original model are in line with our findings (see Supplementary Table S18).Primary outcome variableBefore and after interaction with the chatbot, participants were asked to rate their confidence in the target conspiracy theory on a 101-point scale.",
+    "After debating common conspiracies with an LLM-driven chatbot, Costello et al. found U.S. study participants to report substantially reduced confidence in these theories11.",
+    "Chatbots reduce health-related conspiracy beliefs not because of but despite being perceived as AI.",
+    "Dialogues with large language models reduce conspiracy beliefs even when the AI is perceived as human.",
+    "This study investigates whether LLM-driven debates can reduce health-related conspiracy theories in the context of COVID-19.",
+    "Thereby we further contribute to research on chatbot-driven interventions in three ways: First, by testing the impact of LLM debates on personally relevant health-related conspiracy beliefs.",
+    "Moreover, compared to conventional debunking effects in health communication (d = 0.40, 95% CI [0.25, 0.55];43, chatbot induced reduction in conspiracy beliefs can be considered substantial."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 8,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41598-026-66242-5_reference.pdf",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41598-026-66242-5_reference.pdf?error=cookies_not_supported&code=12cb1ca1-b912-49f9-a2a1-db8e2ff7965a",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2026-08",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Paul Ballot, Yana van de Sande, Hanna Schraffenberger, Philipp Schmid",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Costello et al.",
+    "reduced confidence",
+    "conspiracy",
+    "Radboud"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 9,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41598-026-42790-8",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41598-026-42790-8?error=cookies_not_supported&code=9c966703-ec61-4f78-bb08-625e7b72c490",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Evaluating generative AI’s potential to dispel misinformation about wind farms",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-03-13"
+    },
+    {
+     "source": "dc.date",
+     "date": "2026-03-13"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-03-13"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-03-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-03-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-12-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-02-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-03-13"
+    }
+   ],
+   "date_hint": "2026-03-13",
+   "date_ok": false,
+   "people_found": [
+    "Pearson, Samuel",
+    "Hornsey, Matthew J.",
+    "Bretter, Christian",
+    "MacInnes, Sarah",
+    "Nylund, Jarren L.",
+    "Rekker, Saphira",
+    "Smith, Aimee E.",
+    "Wade, Belinda"
+   ],
+   "who_hint": "Samuel Pearson, Matthew J. Hornsey, Christian Bretter, Sarah MacInnes, Jarren L. Nylund, Saphira Rekker, Aimee E. Smith, Belinda Wade",
+   "doi": "10.1038/s41598-026-42790-8",
+   "crossref": {
+    "doi": "10.1038/s41598-026-42790-8",
+    "resolves": true,
+    "title": "Evaluating generative AI’s potential to dispel misinformation about wind farms",
+    "container": "Scientific Reports",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-3-13",
+    "authors_first3": [
+     "Pearson",
+     "Hornsey",
+     "Bretter"
+    ],
+    "author_count": 8,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Public misinformation about wind farms threatens the global transition to net-zero and a more environmentally sustainable future. This study examines whether conversations with Generative AI (GenAI) can effectively address misinformation and improve attitudes and beliefs about wind farms. In two pre",
+   "terms": [
+    "Costello",
+    "dialogue",
+    "ChatGPT",
+    "wind farm",
+    "pre-registered",
+    "misinformation"
+   ],
+   "passages": [
+    "In two pre-registered experiments (collective N = 2405), participants with anti-wind farm beliefs engaged in three-round dialogues with ChatGPT, a widely used GenAI tool.",
+    "On one hand, GenAI tools such as ChatGPT have unique capabilities that make them particularly well-suited for addressing misinformation and conspiracy theories about wind farms.",
+    "Third, using ChatGPT enabled direct comparison with Costello et al.‘s30 findings, allowing us to address two questions: (1) whether the large and durable effects of AI conversations would generalise to wind farm beliefs, and (2) whether ChatGPT would remain effective without explicit persuasion instructions.",
+    "Evaluating generative AI’s potential to dispel misinformation about wind farms.",
+    "This study examines whether conversations with Generative AI (GenAI) can effectively address misinformation and improve attitudes and beliefs about wind farms.",
+    "However, as the scale and speed of wind-energy developments has ramped up in recent years, it has become apparent that negative sentiment about wind farms has expanded beyond legitimate, local concerns to incorporate misinformation and conspiracy theories circulated among the general public.",
+    "In Study 1, participants who interacted with the AI about wind farms displayed reduced agreement with misinformation immediately following the conversation (p< 0.001, 95% CI [0.11, 0.24], d = 0.44).",
+    "Furthermore, following GenAI conversations, participants displayed reduced agreement with misinformation about wind farms, increased policy support, and reduced confidence in their anti-wind farm views.",
+    "Interestingly, there is only weak evidence that people who believe misinformation about wind farms are poorly educated or lack objective scientific knowledge9.",
+    "For example, political conservatives were more likely to agree with statements about wind farms grounded in misinformation while people with pro-ecological worldviews were less likely to agree with them9."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 10,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41598-026-42790-8_reference.pdf",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41598-026-42790-8_reference.pdf?error=cookies_not_supported&code=90a0a75c-c6fe-4ea7-9225-220e0a6511b3",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2026-03",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Samuel Pearson, Matthew J. Hornsey and colleagues",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Costello and colleagues",
+    "wind farm",
+    "dialogue",
+    "University of Queensland"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "reaction",
+   "i": 2,
+   "kind": "reaction",
+   "url": "https://doi.org/10.1126/science.ads0433",
+   "search": false,
+   "final_url": "https://www.science.org/doi/10.1126/science.ads0433",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2024-09-13"
+    }
+   ],
+   "date_hint": "2024-09-13",
+   "date_ok": true,
+   "people_found": [],
+   "who_hint": "Bence Bago; Jean-Francois Bonnefon",
+   "doi": "10.1126/science.ads0433",
+   "crossref": {
+    "doi": "10.1126/science.ads0433",
+    "resolves": true,
+    "title": "Generative AI as a tool for truth",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2024-9-13",
+    "authors_first3": [
+     "Bago",
+     "Bonnefon"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Costello",
+    "conspiracy",
+    "chatbot",
+    "Perspective",
+    "Bago",
+    "Bonnefon"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 11,
+   "kind": "notice",
+   "url": "https://www.science.org/doi/10.1126/science.aej2383",
+   "search": false,
+   "final_url": "https://www.science.org/doi/10.1126/science.aej2383",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2026-06-11",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Science (AAAS), editors",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "expression of concern",
+    "Durably reducing conspiracy beliefs through dialogues with AI",
+    "Costello",
+    "dataset",
+    "screening"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 12,
+   "kind": "notice",
+   "url": "https://www.science.org/doi/10.1126/science.aem1178",
+   "search": false,
+   "final_url": "https://www.science.org/doi/10.1126/science.aem1178",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2026-10-22",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Science (AAAS), editors",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Erratum",
+    "Durably reducing conspiracy beliefs through dialogues with AI",
+    "Costello"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 13,
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.aej2383",
+   "search": false,
+   "final_url": "https://www.science.org/doi/10.1126/science.aej2383",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2026-06-11"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.1126/science.aej2383",
+   "crossref": {
+    "doi": "10.1126/science.aej2383",
+    "resolves": true,
+    "title": "RESCINDED: Editorial Expression of Concern",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2026-6-11",
+    "authors_first3": [
+     "Thorp"
+    ],
+    "author_count": 1,
+    "update_to": [
+     {
+      "doi": "10.1126/science.adq1814",
+      "type": "expression_of_concern",
+      "source": "retraction-watch"
+     }
+    ],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "expression of concern",
+    "Durably reducing conspiracy beliefs through dialogues with AI",
+    "Costello",
+    "Pennycook",
+    "Rand"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 14,
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.aem1178",
+   "search": false,
+   "final_url": "https://www.science.org/doi/10.1126/science.aem1178",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2026-10-22"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.1126/science.aem1178",
+   "crossref": {
+    "doi": "10.1126/science.aem1178",
+    "resolves": true,
+    "title": "Erratum for the Research Article “Durably reducing conspiracy beliefs through dialogues with AI”",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2026-10-22",
+    "authors_first3": [],
+    "author_count": 0,
+    "update_to": [
+     {
+      "doi": "10.1126/science.adq1814",
+      "type": "correction",
+      "source": "retraction-watch"
+     },
+     {
+      "doi": "10.1126/science.adq1814",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "correction",
+    "Durably reducing conspiracy beliefs through dialogues with AI",
+    "erratum",
+    "figure",
+    "table"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 15,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=expert+reaction+chatbots",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=expert+reaction+chatbots",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction chatbots | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "expert reaction",
+    "chatbots",
+    "conspiracy beliefs",
+    "Costello",
+    "dialogues with AI"
+   ],
+   "passages": [
+    "Prof … read more August 8, 2025 expert reaction to OpenAI’s announcement of ChatGPT-5 Scientists comment on OpenAI’s announcement on the launch of ChatGPT-5.",
+    "Prof Martyn … read more March 15, 2023 expert reaction to OpenAI announcing GPT-4 OpenAI has revealed ChatGPT successor, GPT-4."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [
+    {
+     "slug": "ai-dialogues-reduce-conspiracy-beliefs",
+     "role": "source",
+     "i": "15-via-1",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+chatbots",
+     "link_text": "expert reaction to study comparing physician and AI chatbot responses to patient questions",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-study-comparing-physician-and-ai-chatbot-responses-to-patient-questions/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-study-comparing-physician-and-ai-chatbot-responses-to-patient-questions/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to study comparing physician and AI chatbot responses to patient questions | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "Chatbots could also serve as educational tools to help professionals identify opportunities for responding more empathetically to their patients. ” Prof James Davenport, Hebron and Medlock Professor of Information Technology, University of Bath, said: “The questions were posted on Reddit, as were the physicians’ answers.",
+      "Large Language Model (LLM) chatbots tend to produce quite verbose responses so it is not surprising that they are longer than the physicians’ responses, who will typically under time pressure to respond quickly."
+     ],
+     "verdict": "usable"
+    }
+   ],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 16,
+   "kind": "paper",
+   "url": "https://arxiv.org/abs/2601.05050",
+   "search": false,
+   "final_url": "https://arxiv.org/abs/2601.05050",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Large language models can effectively convince people to believe conspiracies",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-07-15"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-01-08"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Costello, Thomas H.",
+    "Pelrine, Kellin",
+    "Kowal, Matthew",
+    "Timm, Jasper",
+    "Arechar, Antonio A.",
+    "Godbout, Jean-François",
+    "Gleave, Adam",
+    "Rand, David",
+    "Pennycook, Gordon"
+   ],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2601.05050: Large language models can effectively convince people to believe conspiracies",
+   "terms": [
+    "Large language models can effectively convince people to believe conspiracies",
+    "conspiracy",
+    "GPT",
+    "Costello",
+    "authors"
+   ],
+   "passages": [
+    "Here, we investigate this question across four experiments in which participants (N = 3996 Americans) discussed a conspiracy theory they were uncertain about with an LLM we instructed to either argue against (\"debunking\") or for (\"bunking\") that conspiracy.",
+    "Arechar, Jean-François Godbout, Adam Gleave, David Rand, Gordon Pennycook View a PDF of the paper titled Large language models can effectively convince people to believe conspiracies, by Thomas H.",
+    "Furthermore, simply prompting the model to only provide accurate information dramatically reduced bunking effectiveness, and one powerful frontier model (GPT 5.2) almost entirely refused to promote conspiracies, suggesting that it is possible for the right guardrails to favor accurate beliefs."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

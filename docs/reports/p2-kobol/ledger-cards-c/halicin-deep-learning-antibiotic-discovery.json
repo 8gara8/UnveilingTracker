@@ -1,0 +1,175 @@
+{
+ "slug": "halicin-deep-learning-antibiotic-discovery",
+ "title": "Deep learning finds halicin, a new kind of antibiotic",
+ "first_published": "2020-02-20",
+ "items": [
+  {
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://doi.org/10.3410/f.737402248.793571615",
+   "search": false,
+   "final_url": "https://facultyopinions.com/prime/737402248#eval793571615",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "You don’t have access to this part of the site - Faculty Opinions",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2020-02-25"
+    }
+   ],
+   "date_hint": "",
+   "date_ok": true,
+   "people_found": [],
+   "who_hint": "",
+   "doi": "10.3410/f.737402248.793571615",
+   "crossref": {
+    "doi": "10.3410/f.737402248.793571615",
+    "resolves": true,
+    "title": "Faculty Opinions recommendation of A deep learning approach to antibiotic discovery.",
+    "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+    "publisher": "H1 Connect",
+    "type": "dataset",
+    "issued": "2020-2-25",
+    "authors_first3": [
+     "Che"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-review-of": [
+      "10.1016/j.cell.2020.01.021"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "halicin",
+    "antibiotic"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "kind": "reaction",
+   "url": "https://doi.org/10.3410/f.737402248.793571477",
+   "search": false,
+   "final_url": "https://facultyopinions.com/prime/737402248#eval793571477",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "You don’t have access to this part of the site - Faculty Opinions",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2020-02-21"
+    }
+   ],
+   "date_hint": "",
+   "date_ok": true,
+   "people_found": [],
+   "who_hint": "",
+   "doi": "10.3410/f.737402248.793571477",
+   "crossref": {
+    "doi": "10.3410/f.737402248.793571477",
+    "resolves": true,
+    "title": "Faculty Opinions recommendation of A deep learning approach to antibiotic discovery.",
+    "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+    "publisher": "H1 Connect",
+    "type": "dataset",
+    "issued": "2020-2-21",
+    "authors_first3": [
+     "Whitfield"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-review-of": [
+      "10.1016/j.cell.2020.01.021"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "halicin",
+    "antibiotic"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "reaction",
+   "i": 2,
+   "kind": "reaction",
+   "url": "https://doi.org/10.3410/f.737402248.793576936",
+   "search": false,
+   "final_url": "https://facultyopinions.com/prime/737402248#eval793576936",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "You don’t have access to this part of the site - Faculty Opinions",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2020-07-24"
+    }
+   ],
+   "date_hint": "",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "",
+   "doi": "10.3410/f.737402248.793576936",
+   "crossref": {
+    "doi": "10.3410/f.737402248.793576936",
+    "resolves": true,
+    "title": "Faculty Opinions recommendation of A deep learning approach to antibiotic discovery.",
+    "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+    "publisher": "H1 Connect",
+    "type": "dataset",
+    "issued": "2020-7-24",
+    "authors_first3": [
+     "Swinney"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-review-of": [
+      "10.1016/j.cell.2020.01.021"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "halicin",
+    "antibiotic"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  }
+ ]
+}

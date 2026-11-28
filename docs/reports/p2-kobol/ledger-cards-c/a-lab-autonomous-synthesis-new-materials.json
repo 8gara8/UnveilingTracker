@@ -1,0 +1,380 @@
+{
+ "slug": "a-lab-autonomous-synthesis-new-materials",
+ "title": "An AI-guided robot lab reports making 41 new inorganic materials",
+ "first_published": "2023-11-29",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-023-06734-w",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-023-06734-w?error=cookies_not_supported&code=ea945735-d2d1-4dc3-82a3-c9f5b46c4de8",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An autonomous laboratory for the accelerated synthesis of inorganic materials",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-05-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-10-10"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-11-29"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Szymanski, Nathan J.",
+    "Rendy, Bernardus",
+    "Fei, Yuxing",
+    "Kumar, Rishi E.",
+    "He, Tanjin",
+    "Milsted, David",
+    "McDermott, Matthew J.",
+    "Gallant, Max",
+    "Cubuk, Ekin Dogus",
+    "Merchant, Amil",
+    "Kim, Haegyeom",
+    "Jain, Anubhav"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-023-06734-w",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06734-w",
+    "resolves": true,
+    "title": "An autonomous laboratory for the accelerated synthesis of inorganic materials",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-11-29",
+    "authors_first3": [
+     "Szymanski",
+     "Rendy",
+     "Fei"
+    ],
+    "author_count": 16,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41586-025-09992-y",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "To close the gap between the rates of computational screening and experimental realization of novel materials1,2, we introduce the A-Lab, an autonomous laboratory for the solid-state synthesis of inorganic powders. This platform uses computations, historical data from the literature, machine learnin",
+   "terms": [
+    "News & Views",
+    "Associated content",
+    "Related",
+    "Cited by",
+    "Comments",
+    "Publisher Correction",
+    "Author Correction",
+    "Received",
+    "Accepted",
+    "41",
+    "58"
+   ],
+   "passages": [
+    "Change history19 January 2026A Correction to this paper has been published: https://doi.org/10.1038/s41586-025-09992-yReferencesJain, A., Shin, Y. & Persson, K.",
+    "Yamaguchi 7 December 2023, 13:58 The assertion that the inorganic compounds presented by the authors as novel are, in fact, not genuinely novel appears to be well-founded.",
+    "A similar lanthanide-related electronic-structure problem may also be responsible for the failure to synthesize BaGdCrFeO6.",
+    "Notably, there are previous experimental reports of the same or closely related compositions for many targets (Supplementary Table 3).",
+    "Kumar3 na1, Tanjin He ORCID: orcid.org/0000-0001-8834-87031,2, David Milsted ORCID: orcid.org/0000-0003-0415-910X2, Matthew J.",
+    "McDermott1,2, Max Gallant1,2, Ekin Dogus Cubuk ORCID: orcid.org/0000-0003-0524-28374, Amil Merchant ORCID: orcid.org/0000-0001-5262-65994, Haegyeom Kim ORCID: orcid.org/0000-0002-5962-82442, Anubhav Jain ORCID: orcid.org/0000-0001-5893-99673, Christopher J.",
+    "These often require milling to ensure good reactivity between precursors, which can have a wide range of physical properties related to differences in their density, flow behaviour, particle size, hardness and compressibility."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-025-09992-y",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-025-09992-y?error=cookies_not_supported&code=098cbdbb-5908-4fea-93bc-d56933769705",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Author Correction: An autonomous laboratory for the accelerated synthesis of inorganic materials",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-01-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2026-01-19"
+    },
+    {
+     "source": "dc.date",
+     "date": "2026-01-19"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-01-19"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-01-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-01-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-01-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-01-19"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-01-19"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Szymanski, Nathan J.",
+    "Rendy, Bernardus",
+    "Fei, Yuxing",
+    "Kumar, Rishi E.",
+    "He, Tanjin",
+    "Milsted, David",
+    "McDermott, Matthew J.",
+    "Gallant, Max",
+    "Cubuk, Ekin Dogus",
+    "Merchant, Amil",
+    "Kim, Haegyeom",
+    "Jain, Anubhav"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-025-09992-y",
+   "crossref": {
+    "doi": "10.1038/s41586-025-09992-y",
+    "resolves": true,
+    "title": "Author Correction: An autonomous laboratory for the accelerated synthesis of inorganic materials",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-1-19",
+    "authors_first3": [
+     "Szymanski",
+     "Rendy",
+     "Fei"
+    ],
+    "author_count": 16,
+    "update_to": [
+     {
+      "doi": "10.1038/s41586-023-06734-w",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "Erratum"
+   },
+   "meta_description": null,
+   "terms": [
+    "Correction",
+    "A-Lab",
+    "36",
+    "57",
+    "41",
+    "58",
+    "synthesized",
+    "compounds",
+    "original"
+   ],
+   "passages": [
+    "Author Correction: An autonomous laboratory for the accelerated synthesis of inorganic materials.",
+    "The total number of compounds successfully made by the platform has now been updated to exclude four target materials whose presence is inconclusive from XRD alone.",
+    "We acknowledge that the original claims of material novelty were subject to misinterpretation—their intention was to indicate that the materials were new to the prediction platform, not necessarily new to science.",
+    "Kumar3 na1, Tanjin He ORCID: orcid.org/0000-0001-8834-87031,2, David Milsted ORCID: orcid.org/0000-0003-0415-910X2, Matthew J.",
+    "McDermott1,2, Max Gallant1,2, Ekin Dogus Cubuk ORCID: orcid.org/0000-0003-0524-28374, Amil Merchant ORCID: orcid.org/0000-0001-5262-65994, Haegyeom Kim ORCID: orcid.org/0000-0002-5962-82442, Anubhav Jain ORCID: orcid.org/0000-0001-5893-99673, Christopher J."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://journals.aps.org/prxenergy/abstract/10.1103/PRXEnergy.3.011002",
+   "search": false,
+   "final_url": "https://journals.aps.org/prxenergy/abstract/10.1103/PRXEnergy.3.011002",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Challenges in High-Throughput Inorganic Materials Prediction and Autonomous Synthesis",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2024-03-07"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2024-03-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-03-07"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Josh Leeman",
+    "Yuhan Liu",
+    "Joseph Stiles",
+    "Scott B. Lee",
+    "Prajna Bhatt",
+    "Leslie M. Schoop",
+    "Robert G. Palgrave"
+   ],
+   "who_hint": null,
+   "doi": "10.1103/prxenergy.3.011002",
+   "crossref": {
+    "doi": "10.1103/prxenergy.3.011002",
+    "resolves": true,
+    "title": "Challenges in High-Throughput Inorganic Materials Prediction and Autonomous Synthesis",
+    "container": "PRX Energy",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2024-3-7",
+    "authors_first3": [
+     "Leeman",
+     "Liu",
+     "Stiles"
+    ],
+    "author_count": 7,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.26434/chemrxiv-2024-5p9j4"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": "Fully autonomous discovery of new materials could rapidly accelerate the development of better batteries, solar cells, high-power electronics, and more. This Perspective highlights current limitations in the autonomous identification of truly new materials and identifies bottlenecks where attention ",
+   "terms": [
+    "A-Lab",
+    "novel",
+    "known compounds",
+    "Leeman",
+    "Palgrave",
+    "Schoop",
+    "Princeton",
+    "University College London",
+    "X-ray diffraction",
+    "synthesized"
+   ],
+   "passages": [
+    "Merchant, et al., An autonomous laboratory for the accelerated synthesis of novel materials, Nature 624, 86 (2023).",
+    "Substantial errors in the automated analysis of powder X-ray diffraction data are identified and point toward insufficient evidence for the discovery of new materials.",
+    "It is your responsibility to obtain the proper permission from the rights holder directly for these figures.Export citationExport citationChoose format for download:BibTeXEndNote (RIS)Download CitationPerspectiveOpen AccessChallenges in High-Throughput Inorganic Materials Prediction and Autonomous SynthesisJosh Leeman1, Yuhan Liu2, Joseph Stiles1,3, Scott B.",
+    "We conclude that there are two important points of improvement that require future work from the community, as follows. (i) Automated Rietveld analysis of powder x-ray diffraction data is not yet reliable.",
+    "We highlight important issues in materials discovery, computational chemistry, and autonomous interpretation of x-ray diffraction.",
+    "Goodenough, Electrochemical performance of large-grained NaCrO2 cathode materials for Na-ion batteries synthesized by decomposition of Na2Cr2O7⋅2H2O, Chem.",
+    "Abdolrahim, Automated classification of big x-ray diffraction data using deep learning models, npj Comput.",
+    "Amara, Structural study by X-ray diffraction and Mössbauer spectroscopy of a new synthetic iron phosphate: K4MgFe3(PO4)5, J."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=A-Lab+autonomous+laboratory",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=A-Lab+autonomous+laboratory",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A-Lab autonomous laboratory | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "A-Lab",
+    "autonomous laboratory",
+    "Berkeley",
+    "expert reaction",
+    "novel materials",
+    "self-driving laboratory"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

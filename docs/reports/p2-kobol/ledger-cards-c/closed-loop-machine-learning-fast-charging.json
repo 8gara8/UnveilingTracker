@@ -1,0 +1,128 @@
+{
+ "slug": "closed-loop-machine-learning-fast-charging",
+ "title": "Closed-loop machine learning picks better fast-charging plans for batteries",
+ "first_published": "2020-02",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-020-1994-5",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-020-1994-5?error=cookies_not_supported&code=30748ca9-4989-4b1a-9f15-64073bf750a0",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Closed-loop optimization of fast-charging protocols for batteries with machine learning",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-01-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-02-19"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-02-19"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-02-19"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-02-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-02-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-08-06"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-12-19"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-02-19"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Attia, Peter M.",
+    "Grover, Aditya",
+    "Jin, Norman",
+    "Severson, Kristen A.",
+    "Markov, Todor M.",
+    "Liao, Yang-Hung",
+    "Chen, Michael H.",
+    "Cheong, Bryan",
+    "Perkins, Nicholas",
+    "Yang, Zi",
+    "Herring, Patrick K.",
+    "Aykol, Muratahan"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-020-1994-5",
+   "crossref": {
+    "doi": "10.1038/s41586-020-1994-5",
+    "resolves": true,
+    "title": "Closed-loop optimization of fast-charging protocols for batteries with machine learning",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-2-19",
+    "authors_first3": [
+     "Attia",
+     "Grover",
+     "Jin"
+    ],
+    "author_count": 16,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Simultaneously optimizing many design parameters in time-consuming experiments causes bottlenecks in a broad range of scientific and engineering disciplines1,2. One such example is process and control optimization for lithium-ion batteries during materials selection, cell manufacturing and operation",
+   "terms": [
+    "News & Views",
+    "Associated content",
+    "Related",
+    "Cited by",
+    "Comments",
+    "224",
+    "protocols",
+    "cycle life",
+    "Received",
+    "Accepted"
+   ],
+   "passages": [
+    "Using this methodology, we rapidly identify high-cycle-life charging protocols among 224 candidates in 16 days (compared with over 500 days using exhaustive search without early prediction), and subsequently validate the accuracy and efficiency of our optimization approach.",
+    "Here we develop and demonstrate a machine learning methodology to efficiently optimize a parameter space specifying the current and voltage profiles of six-step, ten-minute fast-charging protocols for maximizing battery cycle life, which can alleviate range anxiety for electric-vehicle users8,9.",
+    "Charging protocols for lithium-ion batteries and their impact on cycle life—an experimental study with different 18650 high-power cells.",
+    "The standard deviation quantifies the uncertainty in the cycle life estimates and is generally low for protocols estimated to have high mean cycle life, since these protocols are probed more frequently.",
+    "Article Published: 19 February 2020 Closed-loop optimization of fast-charging protocols for batteries with machine learning Peter M.",
+    "Closed-loop optimization of fast-charging protocols for batteries with machine learning.",
+    "7 Validation ablation analysis.We perform pairwise comparisons of the cycle lives of the nine validation protocols, as estimated from three sources: closed-loop estimates after four rounds, early predictions from the validation experiment and final cycle lives from the validation experiment.",
+    "Bayesian optimization offers the largest advantage when the number of channels is low relative to the number of protocols.Extended Data Fig.",
+    "Data-driven prediction of battery cycle life before capacity degradation.",
+    "Chueh.Ethics declarations Competing interests S.E., W.C.C., A.G., T.M.M., N.P. and P.M.A. have filed a patent application related to this work: US Patent Application No."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

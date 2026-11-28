@@ -1,0 +1,79 @@
+{
+ "slug": "unit-distance-conjecture-disproved",
+ "title": "AI model disproves Erdős's unit distance conjecture",
+ "first_published": "2026-05-20",
+ "items": [
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "checker",
+   "url": "https://www.erdosproblems.com/90",
+   "search": false,
+   "final_url": "https://www.erdosproblems.com/90",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "90 | Erdős Problems",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Erdős Problems",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "unit distance",
+    "disproved",
+    "solved",
+    "OpenAI",
+    "Open"
+   ],
+   "passages": [
+    "Part of the difficulty of this problem is explained by a result of Valtr (see [Sz16]), who constructed a metric on $\\mathbb{R}^2$ and a set of $n$ points with $\\gg n^{4/3}$ unit distance pairs (with respect to this metric)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://terrytao.wordpress.com/?s=unit+distance+Erd%C5%91s",
+   "search": true,
+   "final_url": "https://terrytao.wordpress.com/?s=unit+distance+Erd%C5%91s",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Search Results for “unit distance Erdős” – What's new",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "unit distance",
+    "Erdős",
+    "OpenAI",
+    "Gowers",
+    "Sawin"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,338 @@
+{
+ "slug": "fruit-fly-brain-wiring-map-flywire",
+ "title": "Complete wiring map of an adult fruit fly brain, neuron by neuron",
+ "first_published": "2023-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.biorxiv.org/content/10.1101/2023.06.27.546656",
+   "search": false,
+   "final_url": "https://www.biorxiv.org/content/10.1101/2023.06.27.546656v2",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Neuronal wiring diagram of an adult brain",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-01-01"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-07-11"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2023-07-11"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-06-30"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Sven Dorkenwald",
+    "Arie Matsliah",
+    "Amy R Sterling",
+    "Philipp Schlegel",
+    "Szi-chieh Yu",
+    "Claire E. McKellar",
+    "Albert Lin",
+    "Marta Costa",
+    "Katharina Eichler",
+    "Yijie Yin",
+    "Will Silversmith",
+    "Casey Schneider-Mizell"
+   ],
+   "who_hint": null,
+   "doi": "10.1101/2023.06.27.546656",
+   "crossref": {
+    "doi": "10.1101/2023.06.27.546656",
+    "resolves": true,
+    "title": "Neuronal wiring diagram of an adult brain",
+    "container": null,
+    "publisher": "openRxiv",
+    "type": "posted-content",
+    "issued": "2023-6-30",
+    "authors_first3": [
+     "Dorkenwald",
+     "Matsliah",
+     "Sterling"
+    ],
+    "author_count": 47,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-preprint-of": [
+      "10.1038/s41586-024-07558-y"
+     ]
+    }
+   },
+   "type_found": "preprint",
+   "meta_description": "bioRxiv - the preprint server for biology, operated by openRxiv, a nonprofit organization dedicated to advancing scientific communication",
+   "terms": [
+    "139,255",
+    "neurons",
+    "proofread",
+    "automated segmentation",
+    "machine learning",
+    "flood-filling",
+    "June 2023"
+   ],
+   "passages": [
+    "Here, we present the first neuronal wiring diagram of a whole adult brain, containing 5×107 chemical synapses between ∼130,000 neurons reconstructed from a female Drosophila melanogaster.",
+    "We demonstrate the tracing of synaptic pathways and the analysis of information flow from inputs (sensory and ascending neurons) to outputs (motor, endocrine, and descending neurons), across both hemispheres, and between the central brain and the optic lobes."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-024-07558-y",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-024-07558-y?error=cookies_not_supported&code=a3a0f738-6d32-4517-ae77-8985e375319b",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Neuronal wiring diagram of an adult brain",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-07-11"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-05-10"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-10-02"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Dorkenwald, Sven",
+    "Matsliah, Arie",
+    "Sterling, Amy R.",
+    "Schlegel, Philipp",
+    "Yu, Szi-chieh",
+    "McKellar, Claire E.",
+    "Lin, Albert",
+    "Costa, Marta",
+    "Eichler, Katharina",
+    "Yin, Yijie",
+    "Silversmith, Will",
+    "Schneider-Mizell, Casey"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-024-07558-y",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07558-y",
+    "resolves": true,
+    "title": "Neuronal wiring diagram of an adult brain",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-10-2",
+    "authors_first3": [
+     "Dorkenwald",
+     "Matsliah",
+     "Sterling"
+    ],
+    "author_count": 294,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1101/2023.06.27.546656"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Connections between neurons can be mapped by acquiring and analysing electron microscopic brain images. In recent years, this approach has been applied to chunks of brains to reconstruct local connectivity maps that are highly informative1–6, but nevertheless inadequate for understanding brain funct",
+   "terms": [
+    "News & Views",
+    "Research Briefing",
+    "Related",
+    "artificial intelligence",
+    "machine learning",
+    "convolutional",
+    "flood-filling",
+    "Acknowledgements"
+   ],
+   "passages": [
+    "The hemibrain images were automatically segmented using flood-filling convolutional nets109, whereas FlyWire used the older, less computationally expensive approach of boundary-detecting convolutional nets110,111.",
+    "Wiring diagrams of other fly brain regions have been mapped and related to visual2, auditory25 and olfactory23,26 functions.",
+    "Convolutional networks can learn to generate affinity graphs for image segmentation.",
+    "The resulting wiring diagrams of neural circuits have provided crucial insights into how the brain generates social21,22, memory-related23 or navigation24 behaviours.",
+    "Coloured dots indicate measurements of the neurons in c. h, The number of synapses per neuron varies between neurons by more than one order of magnitude and the number of incoming and outgoing synapses is linearly correlated (R = 0.81).",
+    "High-precision automated reconstruction of neurons with flood-filling networks.",
+    "Supervised learning of image restoration with convolutional networks.",
+    "Presynapse and postsynapse counts are similarly correlated per neuron (R = 0.81; Fig.",
+    "The total number of synapses established by a neuron was much better correlated with its in and out degrees (R = 0.93 and R = 0.94, respectively) than its average connection strength (R = 0.25 and R = 0.3, respectively; Extended Data Fig.",
+    "After filtering, we were left with ~130 million synapses.Eckstein et al.10 created a machine learning model to predict neurotransmitter identities for all synapses from Buhmann et al. based on the electron microscopy imagery alone."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-024-07686-5",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-024-07686-5?error=cookies_not_supported&code=f12c3407-29db-4e35-94de-f83bb979039b",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Whole-brain annotation and multi-connectome cell typing of Drosophila",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-07-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-06-06"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-10-02"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Schlegel, Philipp",
+    "Yin, Yijie",
+    "Bates, Alexander S.",
+    "Dorkenwald, Sven",
+    "Eichler, Katharina",
+    "Brooks, Paul",
+    "Han, Daniel S.",
+    "Gkantia, Marina",
+    "dos Santos, Marcia",
+    "Munnelly, Eva J.",
+    "Badalamente, Griffin",
+    "Serratosa Capdevila, Laia"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-024-07686-5",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07686-5",
+    "resolves": true,
+    "title": "Whole-brain annotation and multi-connectome cell typing of Drosophila",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-10-2",
+    "authors_first3": [
+     "Schlegel",
+     "Yin",
+     "Bates"
+    ],
+    "author_count": 307,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The fruit fly Drosophila melanogaster has emerged as a key model organism in neuroscience, in large part due to the concentration of collaboratively generated molecular, genetic and digital resources available for it. Here we complement the approximately 140,000 neuron FlyWire whole-brain connectome",
+   "terms": [
+    "hemibrain",
+    "Janelia",
+    "FlyEM",
+    "independent",
+    "other groups",
+    "used the connectome"
+   ],
+   "passages": [
+    "3: Across-brain stereotypy.Full size imagea, Schematic of the pipeline for matching neurons between FlyWire and the Janelia hemibrain connectomes.",
+    "In contrast to the Janelia hemibrain dataset, the synapse predictions used in FlyWire do not have a concept of a unitary presynaptic site associated with a T-bar46.",
+    "To account for the truncation of neurons in the hemibrain volume, we removed points that fell outside the hemibrain bounding box.For the hemibrain, we downloaded skeletons for all neurons from neuPrint (https://neuprint.janelia.org) using neuprint-python and navis (Table 1).",
+    "For example, a FlyWire neuron with a confirmed hemibrain cell type will receive a FBbt ID that maps to that exact cell type, while a DN that has been given a new cell type might only map to the coarser term ‘adult descending neuron’.",
+    "As this defines a de facto standard cell typing for large parts of the fly brain, our initial work plan was simply to reidentify hemibrain cell types in FlyWire, providing a critical resource for the fly neuroscience community.",
+    "The remaining 229 types are cell types known from other literature, for example, columnar cell types of the optic lobes.Hemibrain cell type matchingWe first used NBLAST38 to match FlyWire neurons to hemibrain cell types (see ‘Morphological comparisons’ section).",
+    "Clusters that we could not confidently match against a previously described cell type were assigned a provisional (CBXXXX) type.This effort was carried out independently of other FlyWire optic lobe intrinsic neuron typing, including ref.",
+    "To perform this validation, we first used non-rigid three-dimensional (3D) registration to map meshes and skeletons of all hemibrain neurons into FlyWire space, enabling direct co-visualization of both datasets and a range of automated analyses.",
+    "3d).We next attempted to map hemibrain cell types onto FlyWire neurons.",
+    "3; it is consistent with the notion that further effort could still identify some unmatched hemibrain types, but that the majority will probably require retyping.All of the preceding efforts have focused on cell typing neurons contained within both FlyWire and the hemibrain."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

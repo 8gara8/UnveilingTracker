@@ -1,0 +1,105 @@
+{
+ "slug": "steppe-ancestry-reshapes-europe-ancient-dna",
+ "title": "Ancient DNA shows steppe herders reshaped Europe's ancestry about 4,500 years ago",
+ "first_published": "2015-02",
+ "items": [
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://doi.org/10.1016/j.cub.2017.06.022",
+   "search": false,
+   "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0960982217307248",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Redirecting",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2017-06-30"
+    }
+   ],
+   "date_hint": "2017-07",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "Saag, Varul, Scheib and colleagues (14 authors in the Crossref record; University of Tartu and the Estonian Biocentre are expected but not read)",
+   "doi": "10.1016/j.cub.2017.06.022",
+   "crossref": {
+    "doi": "10.1016/j.cub.2017.06.022",
+    "resolves": true,
+    "title": "Extensive Farming in Estonia Started through a Sex-Biased Migration from the Steppe",
+    "container": "Current Biology",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2017-7",
+    "authors_first3": [
+     "Saag",
+     "Varul",
+     "Scheib"
+    ],
+    "author_count": 14,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1101/112714"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "steppe",
+    "Corded Ware",
+    "Estonia",
+    "ancestry",
+    "migration",
+    "Yamnaya"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=steppe+ancient+DNA",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=steppe+ancient+DNA",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "steppe ancient DNA | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "steppe",
+    "ancient DNA",
+    "Yamnaya",
+    "Bronze Age",
+    "Indo-European",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

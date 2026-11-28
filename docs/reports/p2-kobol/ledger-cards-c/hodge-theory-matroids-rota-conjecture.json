@@ -1,0 +1,51 @@
+{
+ "slug": "hodge-theory-matroids-rota-conjecture",
+ "title": "Hodge theory proves the Heron-Rota-Welsh conjecture for matroids",
+ "first_published": "2015-11",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "statement",
+   "url": "https://www.mathunion.org/imu-news/archive/2022/imu-news-113c-special-issue-imu-awards-2022",
+   "search": false,
+   "final_url": "https://www.mathunion.org/imu-news/archive/2022/imu-news-113c-special-issue-imu-awards-2022",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "IMU News 113c: Special Issue - IMU Awards 2022",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": "2022",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "International Mathematical Union (IMU), IMU News",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Discover the winners of the IMU Awards 2022 including Fields Medalists and special prize recipients honored in Helsinki.",
+   "terms": [
+    "Huh",
+    "June Huh",
+    "Heron",
+    "Rota",
+    "Welsh",
+    "matroids",
+    "Hodge theory",
+    "Fields Medal",
+    "2022"
+   ],
+   "passages": [
+    "The International Mathematical Union (IMU) is proud to announce the recipients of the IMU Awards 2022 as follows.",
+    "The IMU Awards 2022 were bestowed on the recipients at the IMU Award Ceremony in Helsinki, Finland, on 5 July.",
+    "The Chern Medal Award 2022 is awarded to Photo credit: Lance Murphey Barry Mazur (Harvard University, US) “for his profound discoveries in topology, arithmetic geometry and number theory, and his leadership and generosity in forming the next generation of mathematicians.”",
+    "The Gauss Prize 2022 is awarded to Photo credit: Lance Murphey Elliott Lieb (Princeton University, US) “for deep mathematical contributions of exceptional breadth which have shaped the fields of quantum mechanics, statistical mechanics, computational chemistry and quantum information theory.”"
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

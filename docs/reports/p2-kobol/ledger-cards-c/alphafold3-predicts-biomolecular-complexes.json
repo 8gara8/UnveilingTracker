@@ -1,0 +1,917 @@
+{
+ "slug": "alphafold3-predicts-biomolecular-complexes",
+ "title": "AlphaFold 3 predicts how proteins, DNA, RNA and drugs fit together",
+ "first_published": "2024-05-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12750038/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12750038/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Assessment of Pharmaceutical Protein–Ligand Pose and Affinity Predictions in CASP16",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-10-03"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-10-04"
+    }
+   ],
+   "date_hint": "2025",
+   "date_ok": false,
+   "people_found": [
+    "Michael K Gilson",
+    "Jerome Eberhardt",
+    "Peter Škrinjar",
+    "Janani Durairaj",
+    "Xavier Robin",
+    "Andriy Kryshtafovych"
+   ],
+   "who_hint": "Michael K. Gilson et al. (CASP16 protein-ligand assessors); journal Proteins: Structure, Function, and Bioinformatics, published by Wiley",
+   "doi": "10.1002/prot.70061",
+   "crossref": {
+    "doi": "10.1002/prot.70061",
+    "resolves": true,
+    "title": "Assessment of Pharmaceutical Protein–Ligand Pose and Affinity Predictions in\n                    <scp>CASP16</scp>",
+    "container": "Proteins: Structure, Function, and Bioinformatics",
+    "publisher": "Wiley",
+    "type": "journal-article",
+    "issued": "2025-10-4",
+    "authors_first3": [
+     "Gilson",
+     "Eberhardt",
+     "Škrinjar"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "The protein–ligand component of the 16th Critical Assessment of Structure Prediction (CASP16) challenged participants to predict both binding poses and affinities of small molecules to protein targets, with a focus on drug‐like compounds from ...",
+   "terms": [
+    "AlphaFold 3",
+    "AlphaFold3",
+    "LDDT-PLI",
+    "baseline",
+    "CASP16",
+    "outscoring",
+    "pose"
+   ],
+   "passages": [
+    "Note that AlphaFold 3 and Boltz‐1 were not publicly available in a form suitable for protein–ligand pose predictions during the actual challenge, so these methods could not be used by CASP16 participants.",
+    "Comparison With Baseline Pose Predictors We used three all‐atom, co‐folding, deep learning methods—AF3, Boltz‐1, and RosettaFold All‐Atom (RFAA)—as well as the physics‐based AD Vina docking method [26] to generate a single pose prediction for each of the CASP16 protein–ligand targets except L5001.",
+    "Of these, AlphaFold 3 did particularly well, with a mean LDDT‐PLI of 0.8, thus outscoring the best CASP16 predictor.",
+    "K., Eberhardt J., Škrinjar P., Durairaj J., Robin X., and Kryshtafovych A., “Assessment of Pharmaceutical Protein–Ligand Pose and Affinity Predictions in CASP16 ,” Proteins: Structure, Function, and Bioinformatics 94, no.",
+    "Conclusions The CASP16 protein–ligand challenge summarized here represents the first assessment of pose and affinity predictions for drug‐like compounds within the CASP framework.",
+    "PMC Copyright notice PMCID: PMC12750038 PMID: 41045049 ABSTRACT The protein–ligand component of the 16th Critical Assessment of Structure Prediction (CASP16) challenged participants to predict both binding poses and affinities of small molecules to protein targets, with a focus on drug‐like compounds from pharmaceutical discovery projects.",
+    "Submissions Thirty research labs participated in the CASP16 protein–ligand challenge, with 34 CASP pose‐prediction groups for the pharmaceutical ligands and 19 for the incidental ligands.",
+    "We also assessed several easily automated baseline pose‐prediction and affinity‐prediction methods.",
+    "Each column is one group and is labeled as group ID, method name, and number of predictions submitted.It is also of interest to compare the overall accuracy of the CASP16 pose predictions with that observed in the prior D3R challenges.",
+    "Perhaps the most striking result is that AlphaFold 3 did very well at pose predictions."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12750027/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12750027/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AlphaFold3 at CASP16",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-08-24"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-08-25"
+    }
+   ],
+   "date_hint": "2025",
+   "date_ok": false,
+   "people_found": [
+    "Arne Elofsson"
+   ],
+   "who_hint": "Arne Elofsson and colleagues; journal Proteins: Structure, Function, and Bioinformatics, published by Wiley",
+   "doi": "10.1002/prot.70044",
+   "crossref": {
+    "doi": "10.1002/prot.70044",
+    "resolves": true,
+    "title": "<scp>AlphaFold3</scp>\n                    at\n                    <scp>CASP16</scp>",
+    "container": "Proteins: Structure, Function, and Bioinformatics",
+    "publisher": "Wiley",
+    "type": "journal-article",
+    "issued": "2025-8-25",
+    "authors_first3": [
+     "Elofsson"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.1002/PROT.70044/v2/decision1",
+      "10.1002/PROT.70044/v2/review1",
+      "10.1002/PROT.70044/v1/review2"
+     ],
+     "has-preprint": [
+      "10.22541/au.174478898.85160660/v1"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "The CASP16 experiment provided the first opportunity to benchmark AlphaFold3. In contrast to AlphaFold2, AlphaFold3 can predict the structure of non‐protein molecules. According to the benchmark presented by the developers, it is expected to perform ...",
+   "terms": [
+    "AlphaFold3",
+    "AF3-server",
+    "CASP16",
+    "AlphaFold2",
+    "protein complexes",
+    "comparable",
+    "state-of-the-art"
+   ],
+   "passages": [
+    "Compared to AlphaFold2‐based methods, we found that AlphaFold3 performs slightly better for protein complexes.",
+    "Methods We used the AlphaFold3 server for all predictions in CASP16, as installing it locally was impossible at that time.",
+    "PMC Copyright notice PMCID: PMC12750027 PMID: 40851426 ABSTRACT The CASP16 experiment provided the first opportunity to benchmark AlphaFold3.",
+    "In contrast to AlphaFold2, AlphaFold3 can predict the structure of non‐protein molecules.",
+    "Results In this paper, we analyze the performance of the AlphaFold3 server in CASP16.",
+    "Availability AlphaFold3 was only available as a web server for non‐commercial entities during CASP16.",
+    "Data Availability Statement The data that support the findings of this study are openly available in Models generated by AlphaFold3 used for CASP16 predictions at https://doi.org/10.1101/2025.04.10.648174, reference number 10.1101/2025.04.10.648174.",
+    "However, MassiveFold produces models similar in quality to AF3‐server (Figure 3D,H), indicating that increased sampling enables AlphaFold2 to achieve performance comparable to AF3‐server.",
+    "Now it is available in source code from https://github.com/google‐deepmind/alphafold3 under the “Attribution‐NonCommercial‐ShareAlike 4.0 International” license.",
+    "In addition to predicting the structure of individual proteins, contact prediction methods can be used to predict the structure of protein complexes [12]."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12661943/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12661943/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A comprehensive benchmarking of the AlphaFold3 for predicting biomacromolecules and their interactions",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-11-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-11-01"
+    }
+   ],
+   "date_hint": "2025",
+   "date_ok": false,
+   "people_found": [
+    "Chunxiang Peng",
+    "Wentao Ni",
+    "Quancheng Liu",
+    "Gang Hu",
+    "Wei Zheng"
+   ],
+   "who_hint": "Chunxiang Peng et al.; journal Briefings in Bioinformatics, published by Oxford University Press",
+   "doi": "10.1093/bib/bbaf616",
+   "crossref": {
+    "doi": "10.1093/bib/bbaf616",
+    "resolves": true,
+    "title": "A comprehensive benchmarking of the AlphaFold3 for predicting biomacromolecules and their interactions",
+    "container": "Briefings in Bioinformatics",
+    "publisher": "Oxford University Press (OUP)",
+    "type": "journal-article",
+    "issued": "2025-11-1",
+    "authors_first3": [
+     "Peng",
+     "Ni",
+     "Liu"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "review-article"
+   },
+   "meta_description": "Deep learning has significantly enhanced protein structure prediction, and AlphaFold2 marked a particular milestone among these methods for predicting protein monomer and complex structures. The AlphaFold3 represents a pivotal further advancement in ...",
+   "terms": [
+    "AlphaFold3",
+    "third-party",
+    "benchmark",
+    "protein-nucleic acid",
+    "RoseTTAFoldNA",
+    "antigen-antibody",
+    "AlphaFold-Multimer"
+   ],
+   "passages": [
+    "In this work, we benchmark AlphaFold3’s performance across nine datasets, protein monomers, orphan proteins, alternative conformations, protein multimers, peptide-protein complexes, antigen-antibody complexes, RNA, RNA multimers, and protein-nucleic acid complexes, compared to AlphaFold2, AlphaFold-Multimer, and RoseTTAFoldNA, RhoFold+, NuFold and trRosettaRNA.",
+    "To evaluate potential improvements, we constructed a curated benchmark dataset of 102 antigen-antibody complexes (see Dataset for Benchmark-VI) and compared the performance of AlphaFold3 with AlphaFold-Multimer.",
+    "In summary, the benchmark analysis demonstrates that AlphaFold3 exhibits clear improvements over AlphaFold-Multimer in the modeling of antigen-antibody complexes, particularly at the interface level.",
+    "On benchmark-VI (antigen-antibody complexes), the average runtimes of AlphaFold3 and AlphaFold-Multimer were ~47 and ~382 min, respectively (Fig.",
+    "This is consistent with our benchmark results on antigen-antibody complexes, where AlphaFold3 produced correct interfaces for only ~30% of the targets and AlphaFold-Multimer succeeded on merely ~10%.",
+    "Finally, on benchmark-IX (protein-nucleic acid complexes), AlphaFold3 and RoseTTAFoldNA required ~23 and ~996 min, respectively (Fig.",
+    "In this work, we evaluated the performance of AlphaFold3 server and standalone package against AlphaFold2 and AlphaFold-Multimer on datasets of protein monomers (general monomers and orphan proteins), complexes (general protein multimers, peptide-protein complexes, antigen-antibody complexes) and alternative conformations.",
+    "Open in a new tab Comparison of the performance of AlphaFold3, RoseTTAFoldNA, NuFold, RhoFold+, and trRosettaRNA in RNA structure prediction (Benchmark-VII).",
+    "(C) Distributions of TM-scores for constituent protein, RNA, and DNA chains extracted from protein-nucleic acid complexes predicted by AlphaFold3 and RoseTTAFoldNA.",
+    "In this work, we evaluated and analysed the performance of AlphaFold3 across five different types of benchmark sets including protein monomers, protein complexes, RNA monomers, RNA multimers, and protein-nucleic acid complexes, and compared it to current state-of-the-art methods."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13047693/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13047693/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Discovery of Covalent Ligands with AlphaFold3",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-03-19"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-03-20"
+    }
+   ],
+   "date_hint": "2026",
+   "date_ok": false,
+   "people_found": [
+    "Yoav Shamir",
+    "Ronen Gabizon",
+    "Adi Rogel",
+    "David Yin-wei Lin",
+    "Amy H Andreotti",
+    "Nir London"
+   ],
+   "who_hint": "Yoav Shamir et al.; Journal of the American Chemical Society, published by the American Chemical Society (open copy in PMC)",
+   "doi": "10.1021/jacs.5c22222",
+   "crossref": {
+    "doi": "10.1021/jacs.5c22222",
+    "resolves": true,
+    "title": "Discovery of Covalent Ligands with AlphaFold3",
+    "container": "Journal of the American Chemical Society",
+    "publisher": "American Chemical Society (ACS)",
+    "type": "journal-article",
+    "issued": "2026-3-20",
+    "authors_first3": [
+     "Shamir",
+     "Gabizon",
+     "Rogel"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-part": [
+      "https://doi.org/10.1021/jacs.5c22222.s001",
+      "https://doi.org/10.1021/jacs.5c22222.s002",
+      "https://doi.org/10.1021/jacs.5c22222.s003"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Covalent inhibitors are a prominent modality for research and therapeutic tools. However, a scarcity of computational methods for their discovery slows progress in this field. AI models such as AlphaFold3 (AF3) have shown accuracy in ligand pose ...",
+   "terms": [
+    "AlphaFold3",
+    "AF3",
+    "covalent",
+    "BTK",
+    "kinase",
+    "virtual screening",
+    "co-crystallography",
+    "prospective"
+   ],
+   "passages": [
+    "In a prospective virtual screening campaign against the model kinase BTK, we discovered a chemically distinct, novel, covalent small molecule that displays potent inhibition in vitro and in cells while maintaining marked kinome and proteomic selectivity.",
+    "Overlay representations of AF3 predictions (blue) and X-ray crystallography experimental results (gray) for YS1 (A) and YS2 (B) covalently attached to Cys481 of WT-BTK kinase domain.",
+    "BTK has multiple FDA-approved covalent inhibitors targeting Cys481 at the ATP binding pocket. − We constructed a diverse virtual library of ∼906K acrylamide-bearing compounds and used AF3 to predict their covalent complexes with Cys481 of BTK (see Supplementary Methods; Data set S4).",
+    "Despite the growing prominence of covalent drug discovery, prospective covalent virtual screening remains underdeveloped.",
+    "AI models such as AlphaFold3 (AF3) have shown accuracy in ligand pose prediction, but their applicability for virtual screening campaigns was not assessed.",
+    "We show that AF3 cofolding predictions and an associated predicted confidence metric ranks true covalent binders with near-optimal classification over property-matched decoys, significantly outperforming state-of-the-art covalent docking tools for a set of protein kinases.",
+    "To probe the enrichment performance of AF3 in the covalent domain, we constructed COValid, a first-of-its-kind benchmark set for the enrichment analysis of covalent virtual screening.",
+    "To our knowledge AF3 performance in the context of covalent virtual screening (or in fact for virtual screening in general) has not been reported.",
+    "Three of the off-targets: JAK3, BMX, and TEC (85.1%, 95.3%, and 45.6% mean inhibition, respectively) are members of the TK kinase group, along with BTK, and all contain a Cys residue at an analogous position, making them susceptible to off-target covalent binding.",
+    "Second, AF3 demonstrated strong noncovalent enrichment across dozens of nonkinase targets, albeit not as high, on average, as the noncovalent enrichment for kinases (Figure D)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://www.sciencemediacentre.org/expert-reaction-to-the-latest-version-of-deepminds-alphafold/",
+   "search": false,
+   "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-the-latest-version-of-deepminds-alphafold/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction to the latest version of DeepMind’s AlphaFold | Science Media Centre",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Science Media Centre expert reactions; named experts not read",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaFold",
+    "AlphaFold 3",
+    "DeepMind",
+    "Professor",
+    "Dr",
+    "University",
+    "drug",
+    "code"
+   ],
+   "passages": [
+    "Dr Nicole Wheeler, Birmingham Fellow, Institute of Microbiology and Infection, University of Birmingham, said: “Since the release of AlphaFold in 2020, protein structure prediction has underpinned a wide range of advances in the biological sciences and biotechnology.",
+    "“It’s impressive to see the more generalised modelling approach taken by AlphaFold 3 outperform a diverse range of specialised applications built on AlphaFold 2.",
+    "“Unlike general trends toward adding more parameters at each new iteration of a model to achieve higher performance, AlphaFold 3 actually reduces the number of steps and computational complexity of their model.",
+    "“The fact that the training data has been enriched by AlphaFold-Multimer predictions demonstrates the potential for new generations of AI to be built on training data generated by the current generation of AI."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-024-01383-z",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/d41586-024-01383-z?error=cookies_not_supported&code=a39919a7-a7d9-4ef0-859c-a3e4c1e35a01",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Major AlphaFold upgrade offers boost for drug discovery",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "dc.date",
+     "date": "2024-05-08"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-05-08"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-05-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-05-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-05-08"
+    }
+   ],
+   "date_hint": "2024",
+   "date_ok": true,
+   "people_found": [
+    "Callaway, Ewen"
+   ],
+   "who_hint": "Nature news report on the 8 May 2024 release; quoted scientists not read",
+   "doi": "10.1038/d41586-024-01383-z",
+   "crossref": {
+    "doi": "10.1038/d41586-024-01383-z",
+    "resolves": true,
+    "title": "Major AlphaFold upgrade offers boost for drug discovery",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-5-8",
+    "authors_first3": [
+     "Callaway"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News"
+   },
+   "meta_description": "Latest version of the AI models how proteins interact with other molecules — but DeepMind restricts access to the tool.",
+   "terms": [
+    "AlphaFold 3",
+    "AlphaFold3",
+    "drug discovery",
+    "said",
+    "told Nature",
+    "University",
+    "ligands"
+   ],
+   "passages": [
+    "NEWS 08 May 2024 Major AlphaFold upgrade offers boost for drug discovery Latest version of the AI models how proteins interact with other molecules — but DeepMind restricts access to the tool.",
+    "Beijing (CN) University of Chinese Academy of Sciences (UCAS) Faculty Positions in Westlake University Founded in 2018, Westlake University is a new type of non-profit research-oriented university in Hangzhou, China, supported by public a...",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,...",
+    "Shanghai, Beijing or London – hybrid working model Springer Nature Ltd Global Leading Talent Recruitment at College of Bio-X, Huazhong Agricultural University Join HZAU's global faculty team to advance research with competitive benefits.",
+    "Wuhan, Hubei (CN) Huazhong Agricultural University (HZAU) Research Careers in Quantitative Synthetic Biology Build life to understand it — and use that understanding to create new biological technologies."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 2,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-024-01555-x",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/d41586-024-01555-x?error=cookies_not_supported&code=dfdd6d2a-23d6-4532-8179-3fdcfeba592d",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Who will make AlphaFold3 open source? Scientists race to crack AI model",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "dc.date",
+     "date": "2024-05-23"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-05-23"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-05-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-05-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-18"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-17"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-05-23"
+    }
+   ],
+   "date_hint": "2024",
+   "date_ok": true,
+   "people_found": [
+    "Callaway, Ewen"
+   ],
+   "who_hint": "Nature news report on the push to rebuild AlphaFold 3 in the open; quoted scientists not read",
+   "doi": "10.1038/d41586-024-01555-x",
+   "crossref": {
+    "doi": "10.1038/d41586-024-01555-x",
+    "resolves": true,
+    "title": "Who will make AlphaFold3 open source? Scientists race to crack AI model",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-5-23",
+    "authors_first3": [
+     "Callaway"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News"
+   },
+   "meta_description": "Researchers are aiming to create fully accessible versions of the latest iteration of DeepMind’s blockbuster protein-structure model.",
+   "terms": [
+    "AlphaFold3",
+    "open source",
+    "code",
+    "said",
+    "University",
+    "reproduce"
+   ],
+   "passages": [
+    "NEWS 23 May 2024 Who will make AlphaFold3 open source?",
+    "Unlike a previous version2, there was no computer code describing the advance to accompany the paper.",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,...",
+    "Shanghai, Beijing or London – hybrid working model Springer Nature Ltd Global Leading Talent Recruitment at College of Bio-X, Huazhong Agricultural University Join HZAU's global faculty team to advance research with competitive benefits.",
+    "Beijing (CN) University of Chinese Academy of Sciences (UCAS) Faculty Positions in Westlake University Founded in 2018, Westlake University is a new type of non-profit research-oriented university in Hangzhou, China, supported by public a...",
+    "Wuhan, Hubei (CN) Huazhong Agricultural University (HZAU) Research Careers in Quantitative Synthetic Biology Build life to understand it — and use that understanding to create new biological technologies."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13661253",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13661253/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Evaluating generalization in protein–ligand cofolding methods",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-05-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-04-30"
+    }
+   ],
+   "date_hint": "2026",
+   "date_ok": false,
+   "people_found": [
+    "Peter Škrinjar",
+    "Jérôme Eberhardt",
+    "Gabriel Studer",
+    "Gerardo Tauriello",
+    "Torsten Schwede",
+    "Janani Durairaj"
+   ],
+   "who_hint": "Peter Skrinjar et al.; Nature Structural & Molecular Biology (Springer Nature, so the same publisher as the original: a caveat page, not a confirmation)",
+   "doi": "10.1038/s41594-026-01797-5",
+   "crossref": {
+    "doi": "10.1038/s41594-026-01797-5",
+    "resolves": true,
+    "title": "Evaluating generalization in protein–ligand cofolding methods",
+    "container": "Nature Structural &amp; Molecular Biology",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-5",
+    "authors_first3": [
+     "Škrinjar",
+     "Eberhardt",
+     "Studer"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.21203/rs.3.rs-7311192/v1"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Deep learning has driven major breakthroughs in protein structure prediction; however, one of the next critical steps forward is accurately predicting how proteins interact with small-molecule ligands, to enable real-world applications such as drug ...",
+   "terms": [
+    "cofolding",
+    "AlphaFold3",
+    "memorize",
+    "training",
+    "Runs N' Poses",
+    "ligand poses",
+    "de novo"
+   ],
+   "passages": [
+    "We demonstrate that current cofolding approaches largely memorize ligand poses from their training data, hindering their use for de novo drug design.",
+    "To address this, we present a comprehensive benchmark of four leading all-atom cofolding deep learning methods with highly similar architectures and training paradigms (AlphaFold323, Chai-124, Protenix27 and Boltz-125) on 2,600 high-resolution PLI systems released after their training cutoff (30 September 2021).",
+    "We explore the impact of training data similarity on prediction accuracy, revealing a critical limitation: current cofolding methods struggle to generalize beyond ligand poses seen in their training data.",
+    "Deep learning methods such as AlphaFold221 have revolutionized protein structure prediction, inspiring the development of all-atom cofolding methods like RoseTTAFold All-Atom22, AlphaFold323, Chai-124, Boltz-125, Boltz-226, Protenix27 and NeuralPLexer328.",
+    "Although all four methods exhibit comparable correlations of accuracy with their training set similarity, AlphaFold3 demonstrates a slight performance advantage over the others, despite all methods sharing similar architectures and training paradigms.",
+    "Open in a new tab a–h, Predicted models from AlphaFold3 (middle) compared to the ground truth experimental structure (left) and the closest training system by SuCOS–pocket similarity (right).",
+    "Prediction accuracy versus training set similarity for AlphaFold3 versus docking and template baselines.",
+    "Here we see again the dependence on similarity to the training set, but also that in higher bins the performance of just using AlphaFold3 is not reached.",
+    "Recent cofolding methods aim to address this challenge, but evaluating their performance has been inconclusive because of the lack of relevant benchmarking datasets.",
+    "However, for cofolding methods, it is essential to assess the accuracy of both the ligand and the protein structure."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 8,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=expert+reaction+AlphaFold+3",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=expert+reaction+AlphaFold+3",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction AlphaFold 3 | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "expert reaction",
+    "AlphaFold 3",
+    "AlphaFold3",
+    "DeepMind",
+    "Professor",
+    "Dr",
+    "University"
+   ],
+   "passages": [
+    "Prof Charlotte … read more May 8, 2024 expert reaction to the latest version of DeepMind’s AlphaFold A study published in Nature looks at the new version of AlphaFold for protein structure predictions.",
+    "Professor Kristian Helin, … read more October 9, 2024 expert reaction to the 2024 Nobel Prize in Chemistry being awarded to David Baker for computational protein design and Demis Hassabis and John M."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [
+    {
+     "slug": "alphafold3-predicts-biomolecular-complexes",
+     "role": "source",
+     "i": "8-via-1",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+AlphaFold+3",
+     "link_text": "expert reaction to the latest version of DeepMind’s AlphaFold",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-the-latest-version-of-deepminds-alphafold/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-the-latest-version-of-deepminds-alphafold/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to the latest version of DeepMind’s AlphaFold | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "Dr Nicole Wheeler, Birmingham Fellow, Institute of Microbiology and Infection, University of Birmingham, said: “Since the release of AlphaFold in 2020, protein structure prediction has underpinned a wide range of advances in the biological sciences and biotechnology.",
+      "“It’s impressive to see the more generalised modelling approach taken by AlphaFold 3 outperform a diverse range of specialised applications built on AlphaFold 2.",
+      "“Unlike general trends toward adding more parameters at each new iteration of a model to achieve higher performance, AlphaFold 3 actually reduces the number of steps and computational complexity of their model."
+     ],
+     "verdict": "usable"
+    },
+    {
+     "slug": "alphafold3-predicts-biomolecular-complexes",
+     "role": "source",
+     "i": "8-via-2",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+AlphaFold+3",
+     "link_text": "expert reaction to paper on Google DeepMind’s AlphaGenome",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-paper-on-google-deepminds-alphagenome/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-paper-on-google-deepminds-alphagenome/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "expert reaction to paper on Google DeepMind’s AlphaGenome | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "Dr Fergal Martin: Fergal is involved in collaborative research with Google DeepMind.",
+      "Dr Robert Goldstone, Head of Genomics at the Francis Crick Institute, said: “DeepMind’s AlphaGenome represents a major milestone in the field of genomic AI.",
+      "“As we have come to expect from Google Deepmind, AlphaGenome is a great piece of engineering that brings together ideas developed by many different scientists into a model that sets the standards.",
+      "EMBL-EBI has ongoing research collaborations with Google DeepMind, including work related to AlphaFold.",
+      "Prof Ben Lehner: has some research funding from Google DeepMind / a small collaboration with them.",
+      "Prof Aldo Faisal: I have no financial conflicts of interest with respect Google or Deepmind (unless pension funds type links).",
+      "Professor Kristian Helin, CEO of The Institute of Cancer Research, London, said: “AlphaGenome represents a major advance in computational genomics, matching or exceeding the performance of current state-of-the-art models for predicting functional elements directly from DNA sequence.",
+      "There is a DeepMind lab at the Francis Crick Institute, but Robert has not worked on AlphaGenome.",
+      "Dr Xianghua LI, Lecturer in Medical and Molecular Genetics, King’s College London, said: “The press release gives an accurate summary of the research.",
+      "Professor Ben Lehner, Head of Generative and Synthetic Genomics, Wellcome Sanger Institute, Cambridge, said: “AlphaGenome is a great example of how AI is accelerating biological discovery and the development of therapeutics."
+     ],
+     "verdict": "usable"
+    },
+    {
+     "slug": "alphafold3-predicts-biomolecular-complexes",
+     "role": "source",
+     "i": "8-via-3",
+     "via": "https://www.sciencemediacentre.org/?s=expert+reaction+AlphaFold+3",
+     "link_text": "pharmaceutical drugs",
+     "url": "https://www.sciencemediacentre.org/tag/pharmaceutical-drugs/",
+     "final_url": "https://www.sciencemediacentre.org/tag/pharmaceutical-drugs/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "pharmaceutical drugs | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "Dr Jeffrey … read more September 11, 2025 expert reaction to pharmaceutical company Merck (MSD) pulling out of its £1bn London research centre Scientists comment on Merck (known as MSD in Europe) withdrawing from its planned £1bn London research centre.",
+      "Richard Torbett, … read more July 15, 2025 expert reaction to scoping review of over-the-counter herbal products and dietary supplements used for depression A review published in Frontiers in Pharmacology looks at over-the-counter herbal products and dietary supplements used for depression."
+     ],
+     "verdict": "usable"
+    }
+   ],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 9,
+   "kind": "paper",
+   "url": "https://www.biorxiv.org/content/10.1101/2025.02.03.636309v1",
+   "search": false,
+   "final_url": "https://www.biorxiv.org/content/10.1101/2025.02.03.636309v1",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Have protein-ligand co-folding methods moved beyond memorisation?",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-01-01"
+    },
+    {
+     "source": "citation_date",
+     "date": "2025-02-07"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2025-02-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-02-07"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Peter Škrinjar",
+    "Jérôme Eberhardt",
+    "Janani Durairaj",
+    "Torsten Schwede"
+   ],
+   "who_hint": null,
+   "doi": "10.1101/2025.02.03.636309",
+   "crossref": {
+    "doi": "10.1101/2025.02.03.636309",
+    "resolves": true,
+    "title": "Have protein-ligand cofolding methods moved beyond memorisation?",
+    "container": null,
+    "publisher": "openRxiv",
+    "type": "posted-content",
+    "issued": "2025-2-7",
+    "authors_first3": [
+     "Škrinjar",
+     "Eberhardt",
+     "Tauriello"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "bioRxiv - the preprint server for biology, operated by openRxiv, a nonprofit organization dedicated to advancing scientific communication",
+   "terms": [
+    "AlphaFold3",
+    "AlphaFold 3",
+    "co-folding",
+    "memorisation",
+    "memorization",
+    "ligand",
+    "training set",
+    "binding site"
+   ],
+   "passages": [
+    "You are going to email the following Have protein-ligand co-folding methods moved beyond memorisation?",
+    "Share Have protein-ligand co-folding methods moved beyond memorisation?",
+    "We demonstrate that current co-folding approaches largely memorise ligand poses from their training data, hindering their use for de novo drug design.",
+    "Here we present a comprehensive evaluation of four leading all-atom cofolding deep learning methods using our newly introduced benchmark dataset Runs N’ Poses, which comprises 2,600 high-resolution protein-ligand systems released after the training cutoff used by these methods.",
+    "Recent deep learning all-atom methods have been built to address this challenge, but evaluating their performance on the prediction of protein-ligand complexes has been inconclusive due to the lack of relevant benchmarking datasets.",
+    "This limitation is especially pronounced for ligands that have only been seen binding in one pocket, whereas more promiscuous ligands such as cofactors show moderately improved performance."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 10,
+   "kind": "paper",
+   "url": "https://predictioncenter.org/casp16/",
+   "search": false,
+   "final_url": "https://predictioncenter.org/casp16/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Home - CASP16",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaFold3",
+    "AF3",
+    "AlphaFold 3",
+    "ligand",
+    "baseline",
+    "assessment",
+    "groups"
+   ],
+   "passages": [
+    "16th Community Wide Experiment on theCritical Assessment of Techniques for Protein Structure Prediction Menu CASP16 CASP provides an independent mechanism for the assessment of methods of protein structure modeling.",
+    "In the latest CASP round, CASP16 in 2024, nearly 100 research groups from around the world submitted more than 80,000 models on 100+ modeling entities yielding 300 targets in five prediction categories.",
+    "Every two years, participants are invited to submit models for a set of macromolecules and macromolecular complexes (proteins, RNA, ligands) for which the experimental structures are not yet public.",
+    "November 2024 - Invitations to groups with the most accurate models and the most interesting methods to give talks at the CASP16 conference.",
+    "Goals Categories Timetable Registration Targets Format Assessment Results Conference Organizers Background and goals The goals of CASP are to provide rigorous assessment of computational methods for modeling macromolecular structures and complexes so as to advance the state of the art.",
+    "Protein - organic ligand complexes The last round of CASP included this category for the first time.",
+    "In addition to ligands integral to protein targets, we expect to have several target sets related to drug design.",
+    "For the protein-organic ligand category, sets of drug design-related complexes are most appropriate, but other complexes are also welcome.",
+    "Assessment criteria will be based on those previously developed in CASP, but assessors may add new metrics they consider appropriate.",
+    "Independent assessors in each of the prediction categories bring independent insight into their assessment."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

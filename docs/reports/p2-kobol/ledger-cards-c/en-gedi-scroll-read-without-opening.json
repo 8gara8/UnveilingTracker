@@ -1,0 +1,210 @@
+{
+ "slug": "en-gedi-scroll-read-without-opening",
+ "title": "Virtual unwrapping reads a burned 1,700-year-old Hebrew scroll unopened",
+ "first_published": "2016-09",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "statement",
+   "url": "https://scrollprize.org/firstscroll",
+   "search": false,
+   "final_url": "https://scrollprize.org/firstscroll",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An entire Herculaneum scroll has been read for the first time",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-06-25"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "Vesuvius Challenge",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "PHerc. 1667, sealed since the eruption of Vesuvius in 79 AD, has been virtually unwrapped and read from beginning to end — the first Herculaneum scroll recovered in full, without ever being opened.",
+   "terms": [
+    "En-Gedi",
+    "virtual unwrapping",
+    "Seales",
+    "Herculaneum"
+   ],
+   "passages": [
+    "The virtual unwrapping of the Herculaneum scrolls was pioneered at EduceLab by its principal investigator, Professor Brent Seales.",
+    "June 25th, 2026 Read the preprint: Complete virtual unwrapping and reading of a rolled Herculaneum papyrus (PDF) and on arXiv.",
+    "In 2023 Seales opened his lab's imaging and software technology to the Vesuvius Challenge — a public, donation-funded effort he co-founded with Nat Friedman and Daniel Gross to read the scrolls in the open — and from there a global community took up the problem.",
+    "It is the first time the preserved text of a rolled Herculaneum scroll has been read continuously, end to end, rather than in isolated words or patches.",
+    "For almost 2,000 years, the carbonized library of Herculaneum has kept a cruel bargain: its scrolls survived the eruption of Mount Vesuvius, but only by becoming too fragile to open.",
+    "It is the first Herculaneum papyrus to be digitally unrolled and read in full, end to end, and made available for sustained scholarly study.",
+    "How it was done​ The scans were acquired with high-resolution phase-contrast X-ray microtomography on the BM18 beamline at the European Synchrotron Radiation Facility (ESRF) in Grenoble — an instrument able to resolve the wafer-thin, densely packed layers of a Herculaneum roll.",
+    "The work was carried out in collaboration with the National Library of Naples “Vittorio Emanuele III”, which safeguards the Herculaneum papyri."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "statement",
+   "url": "https://scrollprize.org/press",
+   "search": false,
+   "final_url": "https://scrollprize.org/press",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Vesuvius Challenge",
+   "title_match": true,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Vesuvius Challenge",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Press and media inquiries for Vesuvius Challenge, the effort to read the Herculaneum scrolls with X-ray CT scanning and machine learning.",
+   "terms": [
+    "En-Gedi",
+    "virtual unwrapping",
+    "Seales"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5031465/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5031465/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "From damage to discovery via virtual unwrapping: Reading the scroll from En-Gedi",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2016-09-20"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2016-09-02"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "William Brent Seales",
+    "Clifford Seth Parker",
+    "Michael Segal",
+    "Emanuel Tov",
+    "Pnina Shor",
+    "Yosef Porath"
+   ],
+   "who_hint": null,
+   "doi": "10.1126/sciadv.1601247",
+   "crossref": {
+    "doi": "10.1126/sciadv.1601247",
+    "resolves": true,
+    "title": "From damage to discovery via virtual unwrapping: Reading the scroll from En-Gedi",
+    "container": "Science Advances",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2016-9-2",
+    "authors_first3": [
+     "Seales",
+     "Parker",
+     "Segal"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Computational virtual unwrapping of the En-Gedi scroll reveals it to be the earliest Pentateuchal book ever found in a Holy Ark. Keywords: Micro-CT, virtual unwrapping, segmentation, digital restoration, visualization, digital flattening",
+   "terms": [
+    "Leviticus",
+    "Masoretic",
+    "Dead Sea Scrolls",
+    "synagogue",
+    "Holy Ark",
+    "radiocarbon",
+    "third or fourth century",
+    "Herculaneum",
+    "other scrolls"
+   ],
+   "passages": [
+    "Excavations uncovered the synagogue’s Holy Ark, inside of which were multiple charred lumps of what appeared to be animal skin (parchment) scroll fragments (1, 2).",
+    "Radiocarbon results date the scroll to the third or fourth century CE (table S1).",
+    "PMC Copyright notice PMCID: PMC5031465 PMID: 27679821 Computational virtual unwrapping of the En-Gedi scroll reveals it to be the earliest Pentateuchal book ever found in a Holy Ark.",
+    "The systematic digital analysis of the extremely fragile En-Gedi scroll (the oldest Pentateuchal scroll in Hebrew outside of the Dead Sea Scrolls) reveals the writing hidden on its untouchable, disintegrating sheets.",
+    "By virtually unwrapping the scroll, we have revealed it to be the earliest copy of a Pentateuchal book ever found in a Holy Ark.",
+    "As may be expected from our knowledge of the development of the Hebrew text, the En-Gedi Hebrew text is not vocalized, there are no indications of verses, and the script resembles other documents from the late Dead Sea Scrolls.",
+    "Hence, the En-Gedi scroll provides an important extension to the evidence of the Dead Sea Scrolls and offers a glimpse into the earliest stages of almost 800 years of near silence in the history of the biblical text.",
+    "In addition, the En-Gedi scan revealed columns similar in length to those evidenced among the Dead Sea Scrolls.DISCUSSION Besides illuminating the history of the biblical text, our work on the scroll advances the development of textual imaging.",
+    "Open in a new tab Image courtesy of the Leon Levy Dead Sea Scrolls Digital Library, IAA.",
+    "The text deciphered thus far is completely identical with the consonantal framework of the medieval text of the Hebrew Bible, traditionally named the Masoretic Text, and which is the text presented in most printed editions of the Hebrew Bible."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.nature.com/search?q=En-Gedi+News+%26+Views&article_type=news-and-views&order=relevance",
+   "search": true,
+   "final_url": "https://www.nature.com/search?q=En-Gedi+News+%26+Views&article_type=news-and-views&order=relevance&error=cookies_not_supported&code=4716abd4-2b8c-44b3-9865-b1f03be9302e",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "En-Gedi News & Views | Nature Search Results",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "En-Gedi",
+    "News & Views",
+    "virtual unwrapping",
+    "Hebrew scroll"
+   ],
+   "passages": [
+    "News & Views (0) Subject Check one or more subjects to show results from those subjects only."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

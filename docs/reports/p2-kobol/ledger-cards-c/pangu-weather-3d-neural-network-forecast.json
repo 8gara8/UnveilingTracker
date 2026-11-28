@@ -1,0 +1,107 @@
+{
+ "slug": "pangu-weather-3d-neural-network-forecast",
+ "title": "Pangu-Weather, an AI model, forecasts global weather far faster than physics models",
+ "first_published": "2022-11",
+ "items": [
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://doi.org/10.1175/bams-d-23-0162.1",
+   "search": false,
+   "final_url": "https://journals.ametsoc.org/view/journals/bams/105/6/BAMS-D-23-0162.1.xml",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "ERROR: The request could not be satisfied",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2024-05-31"
+    }
+   ],
+   "date_hint": "2024-06",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "Ben Bouallegue, Clare, Magnusson and 14 other authors (the ECMWF team); Bulletin of the American Meteorological Society, publisher American Meteorological Society",
+   "doi": "10.1175/bams-d-23-0162.1",
+   "crossref": {
+    "doi": "10.1175/bams-d-23-0162.1",
+    "resolves": true,
+    "title": "The Rise of Data-Driven Weather Forecasting: A First Statistical Assessment of Machine Learning–Based Weather Forecasts in an Operational-Like Context",
+    "container": "Bulletin of the American Meteorological Society",
+    "publisher": "American Meteorological Society",
+    "type": "journal-article",
+    "issued": "2024-6",
+    "authors_first3": [
+     "Ben Bouallègue",
+     "Clare",
+     "Magnusson"
+    ],
+    "author_count": 17,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Pangu-Weather",
+    "Ben Bouallegue",
+    "ECMWF",
+    "European Centre for Medium-Range Weather Forecasts",
+    "IFS",
+    "FourCastNet",
+    "GraphCast",
+    "comparable skill",
+    "extreme events",
+    "smoothness",
+    "bias drift",
+    "Bulletin of the American Meteorological Society"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=Pangu-Weather+Huawei",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=Pangu-Weather+Huawei",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Pangu-Weather Huawei | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Pangu-Weather",
+    "Huawei",
+    "AI weather forecasting",
+    "weather forecast",
+    "expert reaction",
+    "Nature"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

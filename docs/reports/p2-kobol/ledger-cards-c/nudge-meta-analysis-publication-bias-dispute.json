@@ -1,0 +1,353 @@
+{
+ "slug": "nudge-meta-analysis-publication-bias-dispute",
+ "title": "A nudge meta-analysis is challenged: the effect may vanish after bias correction",
+ "first_published": "2022-01",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9351501/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9351501/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "No evidence for nudging after adjusting for publication bias",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-07-18"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-07-19"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Maximilian Maier",
+    "František Bartoš",
+    "T D Stanley",
+    "David R Shanks",
+    "Adam J L Harris",
+    "Eric-Jan Wagenmakers"
+   ],
+   "who_hint": null,
+   "doi": "10.1073/pnas.2200300119",
+   "crossref": {
+    "doi": "10.1073/pnas.2200300119",
+    "resolves": true,
+    "title": "No evidence for nudging after adjusting for publication bias",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2022-7-19",
+    "authors_first3": [
+     "Maier",
+     "Bartoš",
+     "Stanley"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "letter"
+   },
+   "meta_description": null,
+   "terms": [
+    "University College London",
+    "University of Amsterdam",
+    "Department",
+    "Experimental Psychology",
+    "Psychological Methods",
+    "Deakin",
+    "Maier",
+    "Bartos",
+    "Stanley",
+    "Shanks",
+    "Harris",
+    "Wagenmakers",
+    "Author affiliations",
+    "Letter"
+   ],
+   "passages": [
+    "Maier et al., Code and data for analyses in “No evidence for nudging after adjusting for publication bias.”",
+    "PMC Copyright notice PMCID: PMC9351501 PMID: 35858389 See \"Reply to Maier et al., Szaszi et al., and Bakdash and Marusich: The present and future of choice architecture research\", e2202928119."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9351519/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9351519/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "No reason to expect large and consistent effects of nudge interventions",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-07-18"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-07-19"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Barnabas Szaszi",
+    "Anthony Higney",
+    "Aaron Charlton",
+    "Andrew Gelman",
+    "Ignazio Ziano",
+    "Balazs Aczel",
+    "Daniel G Goldstein",
+    "David S Yeager",
+    "Elizabeth Tipton"
+   ],
+   "who_hint": null,
+   "doi": "10.1073/pnas.2200732119",
+   "crossref": {
+    "doi": "10.1073/pnas.2200732119",
+    "resolves": true,
+    "title": "No reason to expect large and consistent effects of nudge interventions",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2022-7-19",
+    "authors_first3": [
+     "Szaszi",
+     "Higney",
+     "Charlton"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "letter"
+   },
+   "meta_description": null,
+   "terms": [
+    "ELTE",
+    "Eotvos Lorand University",
+    "Columbia University",
+    "Northwestern",
+    "University of Texas at Austin",
+    "Department",
+    "Szaszi",
+    "Higney",
+    "Charlton",
+    "Gelman",
+    "Tipton",
+    "Yeager",
+    "Goldstein",
+    "Aczel",
+    "Ziano",
+    "Author affiliations",
+    "Letter"
+   ],
+   "passages": [
+    "PMC Copyright notice PMCID: PMC9351519 PMID: 35858388 See \"Reply to Maier et al., Szaszi et al., and Bakdash and Marusich: The present and future of choice architecture research\", e2202928119.",
+    "Higney, No reason to expect large and consistent effects of nudge interventions."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8740589/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8740589/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-12-29"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-12-30"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Stephanie Mertens",
+    "Mario Herberz",
+    "Ulf J J Hahnel",
+    "Tobias Brosch"
+   ],
+   "who_hint": null,
+   "doi": "10.1073/pnas.2107346118",
+   "crossref": {
+    "doi": "10.1073/pnas.2107346118",
+    "resolves": true,
+    "title": "The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2021-12-30",
+    "authors_first3": [
+     "Mertens",
+     "Herberz",
+     "Hahnel"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1073/pnas.2204059119",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Changing individuals’ behavior is key to tackling some of today’s most pressing societal challenges such as the COVID-19 pandemic or climate change. Choice architecture interventions aim to nudge people toward personally and socially desirable ...",
+   "terms": [
+    "University of Geneva",
+    "Geneva",
+    "Department of Psychology",
+    "Mertens",
+    "Herberz",
+    "Hahnel",
+    "Brosch",
+    "d = 0.43",
+    "small to medium effect size",
+    "publication bias",
+    "Research Article",
+    "Edited by"
+   ],
+   "passages": [
+    "See \"No evidence for nudging after adjusting for publication bias\", e2200300119.",
+    "Together, these results point to a publication bias in the literature that may favor the reporting of successful as opposed to unsuccessful implementations of choice architecture interventions in studies with small sample sizes.",
+    "Assuming a moderate one-tailed publication bias in the literature attenuated the overall effect size of choice architecture interventions by 26.79% from Cohen’s d = 0.42, 95% CI [0.37, 0.46], and τ2=0.20 (SE=0.02) to d=0.31 and τ2=0.23.",
+    "Assuming a severe one-tailed publication bias attenuated the overall effect size even further to d=0.03 and τ2=0.34; however, this assumption was only partially supported by the funnel plot.",
+    "In the absence of publication bias, observations should scatter symmetrically around the pooled effect size indicated by the gray vertical line and within the boundaries of the 95% confidence intervals shaded in white.",
+    "The asymmetric distribution shown here indicates a one-tailed publication bias in the literature that favors the reporting of successful implementations of choice architecture interventions in studies with small sample sizes.Moderator Analyses.",
+    "In addition, we identified a moderate publication bias toward the reporting of effect sizes that support a positive effect of choice architecture interventions on behavior.",
+    "Our results show that choice architecture interventions overall promote behavior change with a small to medium effect size of Cohen’s d = 0.45 (95% CI [0.39, 0.52]).",
+    "Our analysis further reveals a moderate publication bias toward positive results in the literature.",
+    "Sensitivity analyses imposing a priori weight functions on a simplified random effects model suggested that this one-tailed publication bias could have potentially affected the estimate of our meta-analytic model (43)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://doi.org/10.1073/pnas.2204059119",
+   "search": false,
+   "final_url": "https://pnas.org/doi/full/10.1073/pnas.2204059119",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-05-04"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.1073/pnas.2204059119",
+   "crossref": {
+    "doi": "10.1073/pnas.2204059119",
+    "resolves": true,
+    "title": "Correction for Mertens et al., The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2022-5-4",
+    "authors_first3": [],
+    "author_count": 0,
+    "update_to": [
+     {
+      "doi": "10.1073/pnas.2107346118",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Correction",
+    "Mertens",
+    "choice architecture",
+    "effectiveness of nudging"
+   ],
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9171817/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9171817/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Correction for Mertens et al., The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains",
+     "title_match": true,
+     "date": "2022-05-03",
+     "passages": [
+      "Psychological and Cognitive Sciences Correction for “The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains,” by Stephanie Mertens, Mario Herberz, Ulf J.",
+      "PMC Copyright notice PMCID: PMC9171817 PMID: 35507882 This corrects the article \"The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains\", e2107346118.",
+      "Additional leave-one-out analyses at the individual effect size level and the publication level found the effect of choice architecture interventions to be robust to the exclusion of any one effect size and publication, with d ranging from 0.43 to 0.46 and all P < 0.001.",
+      "Additional leave-one-out analyses at the individual effect size level and the publication level found the effect of choice architecture interventions to be robust to the exclusion of any one effect size and publication, with d ranging from 0.42 to 0.44 and all P < 0.001.",
+      "On page 4, right column, third paragraph, line 4, “This analysis found that intervention category indeed moderated the effect of choice architecture interventions on behavior (F(3, 337) = 9.79, P < 0.001).",
+      "With an average intervention effect of d = 0.25 (95% CI [0.12, 0.37]), this domain was less receptive to choice architecture interventions than the other behavioral domains we investigated.",
+      "With an average intervention effect of d = 0.24 (95% CI [0.14, 0.35]), this domain was less receptive to choice architecture interventions than the other behavioral domains we investigated.",
+      "The correction of these errors has required edits in the Abstract, Results, Discussion, and Materials and Methods sections of the article.”",
+      "The total heterogeneity was estimated to be τ2 = 0.16, indicating considerable variability in the effect size of choice architecture interventions.”",
+      "Open in a new tab Forest plot of effect sizes across categories of choice architecture intervention techniques (see Table 1 for more detailed description of techniques)."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

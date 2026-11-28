@@ -1,0 +1,124 @@
+{
+ "slug": "chatgpt-beats-crowd-workers-text-labels",
+ "title": "ChatGPT labels text for social science better than crowd workers",
+ "first_published": "2023-03",
+ "items": [
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://journals.sagepub.com/doi/10.1177/20531680241236239",
+   "search": false,
+   "final_url": "https://journals.sagepub.com/doi/10.1177/20531680241236239",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Heseltine and Clemm von Hohenberg (Research & Politics, SAGE)",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "GPT-4",
+    "human coders",
+    "expert",
+    "Gilardi",
+    "cost-efficient",
+    "tweets",
+    "annotat"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://doi.org/10.1073/pnas.2305016120",
+   "search": false,
+   "final_url": "https://pnas.org/doi/10.1073/pnas.2305016120",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-07-18"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.1073/pnas.2305016120",
+   "crossref": {
+    "doi": "10.1073/pnas.2305016120",
+    "resolves": true,
+    "title": "ChatGPT outperforms crowd workers for text-annotation tasks",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2023-7-18",
+    "authors_first3": [
+     "Gilardi",
+     "Alizadeh",
+     "Kubli"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Commentary",
+    "Comment on",
+    "Cited by",
+    "Correction",
+    "Expression of Concern"
+   ],
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10372638/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10372638/",
+     "status": 200,
+     "readable": true,
+     "title_found": "ChatGPT outperforms crowd workers for text-annotation tasks",
+     "title_match": true,
+     "date": "2023-07-17",
+     "passages": []
+    },
+    {
+     "kind": "arxiv",
+     "url": "https://arxiv.org/abs/2303.15056",
+     "final_url": "https://arxiv.org/abs/2303.15056",
+     "status": 200,
+     "readable": true,
+     "title_found": "ChatGPT Outperforms Crowd-Workers for Text-Annotation Tasks",
+     "title_match": true,
+     "date": "2023-03-27",
+     "passages": []
+    }
+   ],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

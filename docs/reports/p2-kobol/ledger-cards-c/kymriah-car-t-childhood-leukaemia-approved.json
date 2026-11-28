@@ -1,0 +1,316 @@
+{
+ "slug": "kymriah-car-t-childhood-leukaemia-approved",
+ "title": "First CAR-T cell therapy approved for children with relapsed leukaemia",
+ "first_published": "2017-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "checker",
+   "url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/kymriah-tisagenlecleucel",
+   "search": false,
+   "final_url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/kymriah?webview_progress_bar=1&show_loading=0&push_animated=1&theme=light",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "KYMRIAH (tisagenlecleucel)",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2025-07-02"
+    }
+   ],
+   "date_hint": "2017-08-30",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "US Food and Drug Administration",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "KYMRIAH is a CD19-directed genetically modified autologous T cell immunotherapy indicated for the treatment of patients up to 25 years of age with B-cell precursor acute lymphoblastic leukemia (ALL) that is refractory or in second or later relapse",
+   "terms": [
+    "KYMRIAH",
+    "Patients up to 25 years of age with B-cell precursor acute lymphoblastic leukemia (ALL)",
+    "refractory or in second or later relapse",
+    "August 30, 2017 Approval Letter",
+    "Novartis Pharmaceuticals Corporation"
+   ],
+   "passages": [
+    "Product Information Package Insert and Medication Guide - KYMRIAHDemographic Subgroup Information - tisagenlecleucel [KYMRIAH]Refer to Section 1.1 of the clinical reviewer memo for information about participation in the clinical trials and any analysis of demographic subgroup outcomes that is notable."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "checker",
+   "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/kymriah",
+   "search": false,
+   "final_url": "https://www.ema.europa.eu/en/medicines/human/EPAR/kymriah",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Kymriah | European Medicines Agency (EMA)",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2018-08-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-09-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-05-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-09-19"
+    }
+   ],
+   "date_hint": "2018-08-23",
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "European Medicines Agency",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Kymriah is a medicine for treating the following types of blood cancer: B-cell acute lymphoblastic leukaemia (ALL), in children and young adults up to 25 years of age whose cancer did not respond to previous treatment, has come back two or more times, or has come back after a transplant of stem cell",
+   "terms": [
+    "Kymriah",
+    "marketing authorisation valid throughout the EU",
+    "23 August 2018",
+    "up to and including 25 years of age",
+    "B cell acute lymphoblastic leukaemia",
+    "Novartis Europharm Limited"
+   ],
+   "passages": [
+    "Other information about Kymriah Kymriah received a marketing authorisation valid throughout the EU on 23 August 2018.",
+    "The European Medicines Agency therefore decided that Kymriah’s benefits are greater than its risks and it can be authorised for use in the EU.",
+    "Kymriah contains the patient’s own T cells (a type of white blood cell) that have been modified genetically in the laboratory so that they make a protein called chimeric antigen receptor (CAR).",
+    "B-cell ALL The main study of Kymriah in B-cell ALL involved 92 children and young adults (3–25 years of age) whose cancer had come back after previous treatment or did not respond to treatment.",
+    "Kymriah contains the active substance tisagenlecleucel (consisting of genetically modified white blood cells).",
+    "Kymriah is prepared using the patient’s own white blood cells which are extracted from the blood and genetically modified in the laboratory.",
+    "B-cell ALL patients have poor outcomes and improvements with Kymriah were better than with other medicines for this condition.",
+    "Kymriah is a type of advanced therapy medicine called a ‘gene therapy product’.",
+    "The blood cancers that Kymriah is used to treat are rare, and Kymriah was designated an ‘orphan medicine’ (a medicine used in rare diseases) for B-cell ALL on 29 April 2014, DLBCL on 14 October 2016 and FL on 19 July 2021.",
+    "Before having Kymriah, the patient should have a short course of chemotherapy to clear away their white blood cells and just before the infusion, the patient is given paracetamol and an antihistamine medicine to reduce the risk of reactions to the infusion."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "checker",
+   "url": "https://www.fda.gov/media/106989/download?attachment",
+   "search": false,
+   "final_url": "https://www.fda.gov/media/106989/download?attachment",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2017-08-30",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "US Food and Drug Administration",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "KYMRIAH",
+    "tisagenlecleucel",
+    "August 30, 2017",
+    "approved"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "checker",
+   "url": "https://www.fda.gov/media/107962/download?attachment",
+   "search": false,
+   "final_url": "https://www.fda.gov/media/107962/download?attachment",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2017-08-30",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "US Food and Drug Administration",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "KYMRIAH",
+    "tisagenlecleucel",
+    "remission",
+    "relapsed or refractory",
+    "B-cell precursor acute lymphoblastic leukemia"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5996391/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5996391/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Tisagenlecleucel in Children and Young Adults with B-Cell Lymphoblastic Leukemia",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-01-31"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-01-31"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "SL Maude",
+    "TW Laetsch",
+    "J Buechner",
+    "S Rives",
+    "M Boyer",
+    "H Bittencourt",
+    "P Bader",
+    "MR Verneris",
+    "HE Stefanski",
+    "GD Myers",
+    "M Qayed",
+    "B De Moerloose"
+   ],
+   "who_hint": null,
+   "doi": "10.1056/nejmoa1709866",
+   "crossref": {
+    "doi": "10.1056/nejmoa1709866",
+    "resolves": true,
+    "title": "Tisagenlecleucel in Children and Young Adults with B-Cell Lymphoblastic Leukemia",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2018-2",
+    "authors_first3": [
+     "Maude",
+     "Laetsch",
+     "Buechner"
+    ],
+    "author_count": 35,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.732586746.793581842",
+      "10.3410/f.732586746.793562627"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "In a single-center phase 1–2a study, the anti-CD19 chimeric antigen receptor (CAR) T-cell therapy tisagenlecleucel produced high rates of complete remission and was associated with serious but mainly reversible toxic effects in children and young ...",
+   "terms": [
+    "overall remission rate",
+    "remission",
+    "ClinicalTrials.gov",
+    "NCT02435849",
+    "Results",
+    "Conclusions",
+    "75 patients",
+    "61 patients",
+    "3 months",
+    "81%"
+   ],
+   "passages": [
+    "The primary end point was the overall remission rate (the rate of complete remission or complete remission with incomplete hematologic recovery) within 3 months.RESULTS For this planned analysis, 75 patients received an infusion of tisagenlecleucel and could be evaluated for efficacy.",
+    "The overall remission rate within 3 months was 81%, with all patients who had a response to treatment found to be negative for minimal residual disease, as assessed by means of flow cytometry.",
+    "Here we report the results of a planned analysis of data from the study, including analyses of the efficacy, safety, and cellular kinetics of tisagenlecleucel in 75 patients with at least 3 months of follow-up.",
+    "The rate of minimal residual disease–negative overall remission of 81% and the 6-month overall survival rate of 90% found in this study of tisagenlecleucel compare favorably with the rates achieved with Food and Drug Administration–approved agents for relapsed B-cell ALL.",
+    "Medical editorial assistance was provided by editors whose work was financially supported by Novartis.END POINTS The primary end point was an overall remission rate higher than 20% (the null hypothesis).",
+    "In an intention-to-treat analysis of the full enrolled population (92 patients), which included patients who discontinued participation in the study before tisagenlecleucel infusion, the overall remission rate was 66% (95% CI, 56 to 76) (Table S3 in the Supplementary Appendix).",
+    "Open in a new tab Panel A shows the duration of remission, defined as the time to relapse after the onset of remission, in the 61 patients who had a best overall response of either complete remission or complete remission with incomplete hematologic recovery.",
+    "In subgroup analyses that included patients with or without previous transplantation, with high-risk genomic lesions, or with Down’s syndrome, the overall remission rate ranged from 79% to 83% (Fig.",
+    "Among the 61 patients with complete remission with or without complete hematologic recovery, the median response duration was not reached (Fig.",
+    "In conclusion, tisagenlecleucel produced high remission rates and durable remissions without additional therapy in high-risk pediatric and young adult patients with relapsed or refractory B-cell ALL."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://clinicaltrials.gov/study/NCT02435849",
+   "search": false,
+   "final_url": "https://clinicaltrials.gov/study/NCT02435849",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "ClinicalTrials.gov",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "tisagenlecleucel",
+    "CTL019",
+    "B-cell acute lymphoblastic leukemia",
+    "Overall remission rate",
+    "Results",
+    "Novartis"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  }
+ ]
+}

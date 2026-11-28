@@ -1,0 +1,222 @@
+{
+ "slug": "covid-ai-models-unfit-for-use",
+ "title": "Two reviews find COVID-19 prediction and AI models unfit for clinical use",
+ "first_published": "2020-04",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7222643/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7222643/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Prediction models for diagnosis and prognosis of covid-19: systematic review and critical appraisal",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-04-06"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-04-07"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Laure Wynants",
+    "Ben Van Calster",
+    "Gary S Collins",
+    "Richard D Riley",
+    "Georg Heinze",
+    "Ewoud Schuit",
+    "Marc M J Bonten",
+    "Johanna A A Damen",
+    "Thomas P A Debray",
+    "Maarten De Vos",
+    "Paula Dhiman",
+    "Maria C Haller"
+   ],
+   "who_hint": null,
+   "doi": "10.1136/bmj.m1328",
+   "crossref": {
+    "doi": "10.1136/bmj.m1328",
+    "resolves": true,
+    "title": "Prediction models for diagnosis and prognosis of covid-19: systematic review and critical appraisal",
+    "container": "BMJ",
+    "publisher": "BMJ",
+    "type": "journal-article",
+    "issued": "2020-4-7",
+    "authors_first3": [
+     "Wynants",
+     "Van Calster",
+     "Collins"
+    ],
+    "author_count": 57,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.737693696.793573809"
+     ],
+     "has-preprint": [
+      "10.1101/2020.03.24.20041020"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "To review and critically appraise published and preprint reports of prediction models for diagnosing coronavirus disease 2019 (covid-19) in patients with suspected infection, for prognosis of patients with covid-19, and for detecting people in the ...",
+   "terms": [
+    "high risk of bias",
+    "Conclusions",
+    "Results",
+    "deep learning",
+    "machine learning",
+    "clinical use",
+    "recommend",
+    "models were",
+    "studies describing"
+   ],
+   "passages": [
+    "However, because all models were at high risk of bias, we do not recommend their routine use before they are properly externally validated.",
+    "Rapid AI development cycle for the coronavirus (covid-19) pandemic: initial results for automated detection & patient monitoring using deep learning CT image analysis. arXiv e-prints [Preprint] 2020. https://ui.adsabs.harvard.edu/abs/2020arXiv200305037G 26.Chen J, Wu L, Zhang J, et al.",
+    "Rapid and accurate identification of COVID-19 infection through machine learning based on clinical available blood test results. medRxiv [Preprint] 2020.",
+    "This is a well known problem when building prediction models and increases the risk of overfitting the model.70 A high risk of bias implies that the performance of these models in new samples will probably be worse than that reported by the researchers.",
+    "All models were rated at high or unclear risk of bias, mostly because of non-representative selection of control patients, exclusion of patients who had not experienced the event of interest by the end of the study, high risk of model overfitting, and vague reporting.",
+    "This review indicates that proposed models are poorly reported, at high risk of bias, and their reported performance is probably optimistic.",
+    "However, these models are all at high risk of bias, mainly because of non-representative selection of control patients, exclusion of patients who had not experienced the event of interest by the end of the study, and model overfitting.",
+    "Prediction of criticality in patients with severe Covid-19 infection using three clinical features: a machine learning-based prognostic model with clinical data in Wuhan. medRxiv [Preprint] 2020.",
+    "Six of the 51 studies had a high risk of bias for the predictor domain, which indicates that predictors were not available at the models’ intended time of use, not clearly defined, or influenced by the outcome measurement.",
+    "All models reported good to excellent predictive performance, but all were appraised to have high risk of bias owing to a combination of poor reporting and poor methodological conduct for participant selection, predictor description, and statistical methods used."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s42256-021-00307-0",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s42256-021-00307-0?error=cookies_not_supported&code=217429fa-664d-4854-9b39-a85d894616e7",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Common pitfalls and recommendations for using machine learning to detect and prognosticate for COVID-19 using chest radiographs and CT scans",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-02-28"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2021-03-15"
+    },
+    {
+     "source": "dc.date",
+     "date": "2021-03-15"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2021-03-15"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2021-03-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-03-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-08-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-01-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-03-15"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Roberts, Michael",
+    "Driggs, Derek",
+    "Thorpe, Matthew",
+    "Gilbey, Julian",
+    "Yeung, Michael",
+    "Ursprung, Stephan",
+    "Aviles-Rivero, Angelica I.",
+    "Etmann, Christian",
+    "McCague, Cathal",
+    "Beer, Lucian",
+    "Weir-McCall, Jonathan R.",
+    "Teng, Zhongzhao"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s42256-021-00307-0",
+   "crossref": {
+    "doi": "10.1038/s42256-021-00307-0",
+    "resolves": true,
+    "title": "Common pitfalls and recommendations for using machine learning to detect and prognosticate for COVID-19 using chest radiographs and CT scans",
+    "container": "Nature Machine Intelligence",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2021-3-15",
+    "authors_first3": [
+     "Roberts",
+     "Driggs",
+     "Thorpe"
+    ],
+    "author_count": 54,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Machine learning methods offer great promise for fast and accurate detection and prognostication of coronavirus disease 2019 (COVID-19) from standard-of-care chest radiographs (CXR) and chest computed tomography (CT) images. Many articles have been published in 2020 describing new machine learning-b",
+   "terms": [
+    "none of the models",
+    "clinical use",
+    "methodological flaws",
+    "underlying biases",
+    "screened",
+    "Conclusions",
+    "Quality assessment",
+    "high risk of bias"
+   ],
+   "passages": [
+    "Our review finds that none of the models identified are of potential clinical use due to methodological flaws and/or underlying biases.",
+    "We also focus our review on the systematic methodological flaws in the current machine learning literature for COVID-19 diagnosis and prognosis models using imaging data.",
+    "A model that was trained using fewer than 500 COVID-19 positive images was deemed to have a high risk of bias in answer to this and more than 2,000 COVID-19 positive images qualified as low risk.",
+    "The papers that passed the quality assessment stage were split among three teams of two reviewers to complete the PROBAST review.",
+    "One paper with a high risk of bias32 claimed external validation on the dataset from ref.",
+    "QUADAS-2: a revised tool for the quality assessment of diagnostic accuracy studies.",
+    "Rudd, Evis Sala & Carola-Bibiane SchönliebContributionsM.R., D.D., M.T., J.G., M.Y., A.I.A.-R., C.E., C.M., S.U. and L.B. contributed to the literature search, screening and quality assessment."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

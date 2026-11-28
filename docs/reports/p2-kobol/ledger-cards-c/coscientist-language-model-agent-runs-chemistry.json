@@ -1,0 +1,151 @@
+{
+ "slug": "coscientist-language-model-agent-runs-chemistry",
+ "title": "A language-model agent planned and ran chemistry experiments on its own",
+ "first_published": "2023-12-20",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-023-06792-0",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-023-06792-0?error=cookies_not_supported&code=0bd56597-c1c7-41e2-aac1-b7598bc0a5b1",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Autonomous chemical research with large language models",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-12-20"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-12-20"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-12-20"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-12-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-12-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-04-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-10-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-12-20"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Boiko, Daniil A.",
+    "MacKnight, Robert",
+    "Kline, Ben",
+    "Gomes, Gabe"
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-023-06792-0",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06792-0",
+    "resolves": true,
+    "title": "Autonomous chemical research with large language models",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-12-20",
+    "authors_first3": [
+     "Boiko",
+     "MacKnight",
+     "Kline"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Transformer-based large language models are making significant strides in various fields, such as natural language processing1–5, biology6,7, chemistry8–10 and computer programming11,12. Here, we show the development and capabilities of Coscientist, an artificial intelligence system driven by GPT-4 ",
+   "terms": [
+    "News & Views",
+    "Associated content",
+    "Related articles",
+    "Editorial",
+    "Coscientist",
+    "Peer review"
+   ],
+   "passages": [
+    "Preprint at https://chemrxiv.org/engage/chemrxiv/article-details/64f6560579853bbd781bcef6 (2023).Download referencesAcknowledgementsWe thank the following Carnegie Mellon University Chemistry groups for their assistance with providing the chemicals needed for the Coscientist’s experiments: Sydlik, Garcia Borsch, Matyjaszewski and Ly.",
+    "Here, we show the development and capabilities of Coscientist, an artificial intelligence system driven by GPT-4 that autonomously designs, plans and performs complex experiments by incorporating large language models empowered by tools such as internet and documentation search, code execution and experimental automation.",
+    "B.K. analysed the behaviours of the Docs searcher module to enable Coscientist to produce experiment code in Emerald Cloud Lab’s Symbolic Lab Language.",
+    "This is also available in Supplementary Information.Controlling laboratory hardwareAccess to documentation enables us to provide sufficient information for Coscientist to conduct experiments in the physical world.",
+    "At this point, any reaction proposed by Coscientist would be within these datasets and accessible as a lookup table.Fig.",
+    "How can we understand the decisions made by autonomous agents?In this work, we present a multi-LLMs-based intelligent agent (hereafter simply called Coscientist) capable of autonomous design, planning and performance of complex scientific experiments.",
+    "For each reaction, Coscientist was tasked with generating reactions for compounds from a simplified molecular-input line-entry system (SMILES) database.",
+    "D.A.B. assisted and oversaw Coscientist’s chemistry experiments.",
+    "Peer review Peer review information Nature thanks Sebastian Farquhar, Tiago Rodrigues and the other, anonymous, reviewer(s) for their contribution to the peer review of this work.",
+    "Coscientist showcases its potential for accelerating research across six diverse tasks, including the successful reaction optimization of palladium-catalysed cross-couplings, while exhibiting advanced capabilities for (semi-)autonomous experimental design and execution."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=Coscientist+Boiko",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=Coscientist+Boiko",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Coscientist Boiko | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Coscientist",
+    "Boiko",
+    "Gomes",
+    "autonomous chemical research",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

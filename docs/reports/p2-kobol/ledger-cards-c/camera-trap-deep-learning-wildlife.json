@@ -1,0 +1,329 @@
+{
+ "slug": "camera-trap-deep-learning-wildlife",
+ "title": "Deep learning identifies and counts wild animals in camera-trap photos",
+ "first_published": "2017-03",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://link.springer.com/article/10.1007/s10021-022-00789-y",
+   "search": false,
+   "final_url": "https://link.springer.com/article/10.1007/s10021-022-00789-y?error=cookies_not_supported&code=c3890b9c-268f-478c-a0ce-6472450ffc62",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An Outlook for Deep Learning in Ecosystem Science",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2022-10-17"
+    },
+    {
+     "source": "dc.date",
+     "date": "2022-10-17"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2022-10-17"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-10-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-10-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-06-26"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-09-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-10-17"
+    }
+   ],
+   "date_hint": "2022-10-17",
+   "date_ok": false,
+   "people_found": [
+    "Perry, George L. W.",
+    "Seidl, Rupert",
+    "Bellvé, André M.",
+    "Rammer, Werner"
+   ],
+   "who_hint": "George L. W. Perry, Rupert Seidl, Andre M. Bellve, Werner Rammer and co-authors (Rammer: Technical University of Munich; the page text gave no other affiliations and the author list was cut with an ellipsis)",
+   "doi": "10.1007/s10021-022-00789-y",
+   "crossref": {
+    "doi": "10.1007/s10021-022-00789-y",
+    "resolves": true,
+    "title": "An Outlook for Deep Learning in Ecosystem Science",
+    "container": "Ecosystems",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2022-10-17",
+    "authors_first3": [
+     "Perry",
+     "Seidl",
+     "Bellvé"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "ReviewPaper"
+   },
+   "meta_description": "Rapid advances in hardware and software, accompanied by public- and private-sector investment, have led to a new generation of data-driven computational to",
+   "terms": [
+    "Norouzzadeh",
+    "Serengeti",
+    "camera",
+    "volunteers",
+    "wildlife"
+   ],
+   "passages": [
+    "In a pioneering study, Norouzzadeh and others (2018) demonstrated the ability of DL methods to identify wildlife species in motion-activated wildlife camera imagery.",
+    "Norouzzadeh and others (2018) tested the ability of their models of wildlife imagery when trained on smaller datasets simulating wildlife cameras and the generic ImageNet database, which is not wildlife-specific.",
+    "Snapshot Serengeti, high-frequency annotated camera trap images of 40 mammalian species in an African savanna.",
+    "DL-informed image processing has been used in many ecological contexts, including (i) identifying wildlife species in camera trap data, (ii) the extraction of multidimensional whole-organism phenotypic information (‘phenomics’), (iii) mapping disturbance events (for example, fire and floods), and (iv) tracking organism movement.",
+    "They trained nine DL architectures (for comparison) to detect and identify species in the Serengeti Snapshot database, which contains 3.2 million images (Swanson and others 2015).",
+    "Automatically identifying, counting, and describing wild animals in camera-trap images with deep learning.",
+    "For example, their model accurately identified the 75% of images not containing an organism, which considerably reduces the number of images requiring manual assessment.Figure 4Full size imageSchematic overview of the two-stage workflow used by Norouzzadeh and others (2018).",
+    "A deep active learning system for species identification and counting in camera trap images.",
+    "The model (Figure 4) approached or exceeded the accuracy of human volunteers, with potentially enormous (up to 99%) timesaving.",
+    "In an iterative process an expert user is occasionally asked to label such informative unclassified samples during model training (Norouzzadeh and others 2021), thus selectively extending the data set."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://link.springer.com/article/10.1007/s42977-023-00200-4",
+   "search": false,
+   "final_url": "https://link.springer.com/article/10.1007/s42977-023-00200-4?error=cookies_not_supported&code=39fb442b-8e0b-4838-b363-06a752947203",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Deep learning in terrestrial conservation biology",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-01-16"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-01-16"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-01-16"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-01-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-01-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-03-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-12-18"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-12-01"
+    }
+   ],
+   "date_hint": "2024-01-16",
+   "date_ok": false,
+   "people_found": [
+    "Barta, Zoltán"
+   ],
+   "who_hint": "Zoltan Barta, HUN-REN-DE Behavioural Ecology Research Group, University of Debrecen, Hungary (sole author listed in the page metadata)",
+   "doi": "10.1007/s42977-023-00200-4",
+   "crossref": {
+    "doi": "10.1007/s42977-023-00200-4",
+    "resolves": true,
+    "title": "Deep learning in terrestrial conservation biology",
+    "container": "Biologia Futura",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-12",
+    "authors_first3": [
+     "Barta"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "ReviewPaper"
+   },
+   "meta_description": "Biodiversity is being lost at an unprecedented rate on Earth. As a first step to more effectively combat this process we need efficient methods to monitor",
+   "terms": [
+    "Norouzzadeh",
+    "camera trap",
+    "CNN",
+    "accuracy",
+    "human"
+   ],
+   "passages": [
+    "Current CNN technology is able to achieve more than 90% of human accuracy of species identification in camera trap images if many labelled images (images with animals already identified by humans) are available for training (Norouzzadeh et al.",
+    "This pretrained CNN is not able to determine the species identity, but it still can save a lot of time and human effort by identifying and eliminating empty images—about 70% of camera trap pictures are usually empty (Beery, Morris, and Yang 2019).",
+    "A CNN counted elephants in heterogeneous landscapes with an accuracy comparable to humans’ (Duporge et al.",
+    "Currently, these pre-processing steps are mainly being done by humans; armies of well trained and enthusiastic students, researchers and citizen scientists spend long hours to classify camera trap images, recognise calls, extract features from satellite images or interpret tweets.",
+    "An especially promising one is active learning for processing camera trap data (Norouzzadeh et al.",
+    "(2021) developed a CNN based algorithm which was able to learn from short time series formed from freely available databases and satellite imageries to predict possible locations of deforestation a year ahead with rather high accuracy.",
+    "Amongst the tools is a pretrained CNN—also called MegaDetector—capable to recognise objects of interest like animals, humans and vehicles against a wide variety of different backgrounds (i.e. in pictures taken at different locations/environments).",
+    "(2021) obtained the same accuracy as Norouzzadeh et al.",
+    "CNNs were applied early to these data (Norouzzadeh et al.",
+    "As a result of high accuracy of species identification offered by deep learning algorithms citizen science occurrence data become comparable to experts’ data (e.g."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41467-022-27980-y",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41467-022-27980-y?error=cookies_not_supported&code=c5c9592e-7ba6-43fb-86a4-513b79c71fcf",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Perspectives in machine learning for wildlife conservation",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2022-02-09"
+    },
+    {
+     "source": "dc.date",
+     "date": "2022-02-09"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2022-02-09"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-02-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-02-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-05-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-12-08"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-02-09"
+    }
+   ],
+   "date_hint": "",
+   "date_ok": false,
+   "people_found": [
+    "Tuia, Devis",
+    "Kellenberger, Benjamin",
+    "Beery, Sara",
+    "Costelloe, Blair R.",
+    "Zuffi, Silvia",
+    "Risse, Benjamin",
+    "Mathis, Alexander",
+    "Mathis, Mackenzie W.",
+    "van Langevelde, Frank",
+    "Burghardt, Tilo",
+    "Kays, Roland",
+    "Klinck, Holger"
+   ],
+   "who_hint": "Devis Tuia and co-authors (the author list was not read; a search result gave year 2022 and journal Nature Communications; check at snapshot that none of Norouzzadeh, Clune, Kosmala, Swanson, Palmer or Packer is an author)",
+   "doi": "10.1038/s41467-022-27980-y",
+   "crossref": {
+    "doi": "10.1038/s41467-022-27980-y",
+    "resolves": true,
+    "title": "Perspectives in machine learning for wildlife conservation",
+    "container": "Nature Communications",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2022-2-9",
+    "authors_first3": [
+     "Tuia",
+     "Kellenberger",
+     "Beery"
+    ],
+    "author_count": 18,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "ReviewPaper"
+   },
+   "meta_description": "Inexpensive and accessible sensors are accelerating data acquisition in animal ecology. These technologies hold great potential for large-scale ecological understanding, but are limited by current processing approaches which inefficiently distill data into relevant information. We argue that animal ",
+   "terms": [
+    "Norouzzadeh",
+    "camera trap",
+    "deep learning",
+    "species"
+   ],
+   "passages": [
+    "Models trained this way can then be used to bring image recognition tasks to larger scale and complexity, from filtering out images without animals in camera trap sequences to identifying species or even individuals.",
+    "Snapshot Serengeti, high-frequency annotated camera trap images of 40 mammalian species in an African savanna.",
+    "Camera traps are inexpensive, easy to install, and provide high-resolution image sequences of the animals that trigger them, sufficient to specify the species, sex, age, health, behavior, and predator-prey interactions.",
+    "As for camera trap images, species- or region-specific characteristics (e.g., regional dialects63) affect algorithm performance.",
+    "Automated identification of animal species in camera trap images.",
+    "They can be mobile or static, and can be deployed to collect information on individuals or species of interest (e.g., bio-loggers, drones), monitor activity in a particular location (e.g., camera traps and acoustic sensors), or document changes in habitats or landscapes over time (satellites, drones).",
+    "A representative one is Context R-CNN52 for animal detection and species classification, which leverages the prior knowledge that backgrounds in camera trap imagery exhibit little variation over time and that camera traps acquire data with low sampling frequency and occasional dropouts.",
+    "Besides pure acceleration, use of ML also massively reduces analysis costs, with reduction factors estimated between 2 and 1042.Table 1 Resources for machine and deep learning-based wildlife conservation.Full size tableFig.",
+    "Machine learning algorithms to infer trait-matching and predict species interactions in ecological networks.",
+    "Automatically identifying, counting, and describing wild animals in camera-trap images with deep learning."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

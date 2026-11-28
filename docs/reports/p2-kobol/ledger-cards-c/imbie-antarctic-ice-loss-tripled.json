@@ -1,0 +1,420 @@
+{
+ "slug": "imbie-antarctic-ice-loss-tripled",
+ "title": "Antarctica's ice loss has tripled since 2012, a joint satellite assessment finds",
+ "first_published": "2018-06-13",
+ "items": [
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://doi.org/10.5194/tc-15-233-2021",
+   "search": false,
+   "final_url": "https://tc.copernicus.org/articles/15/233/2021/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Review article: Earth's ice imbalance",
+   "title_match": false,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-01-25"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2021-01-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-01-25"
+    }
+   ],
+   "date_hint": "2021",
+   "date_ok": false,
+   "people_found": [
+    "Slater, Thomas",
+    "Lawrence, Isobel R.",
+    "Otosaka, Inès N.",
+    "Shepherd, Andrew",
+    "Gourmelen, Noel",
+    "Jakob, Livia",
+    "Tepes, Paul",
+    "Gilbert, Lin",
+    "Nienow, Peter"
+   ],
+   "who_hint": null,
+   "doi": "10.5194/tc-15-233-2021",
+   "crossref": {
+    "doi": "10.5194/tc-15-233-2021",
+    "resolves": true,
+    "title": "Review article: Earth's ice imbalance",
+    "container": "The Cryosphere",
+    "publisher": "Copernicus GmbH",
+    "type": "journal-article",
+    "issued": "2021-1-25",
+    "authors_first3": [
+     "Slater",
+     "Lawrence",
+     "Otosaka"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.5194/tc-2020-232",
+      "10.5194/tc-2020-232"
+     ],
+     "has-review": [
+      "10.5194/tc-2020-232-SC1",
+      "10.5194/tc-2020-232-AC2",
+      "10.5194/tc-2020-232-RC1"
+     ],
+     "is-part-of": [
+      "10.5281/zenodo.1492141",
+      "10.1594/PANGAEA.893612",
+      "10.1594/PANGAEA.903618"
+     ],
+     "has-part": [
+      "https://doi.org/10.5194/tc-15-233-2021-corrigendum"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": "Abstract. We combine satellite observations and numerical models to\nshow that Earth lost 28 trillion tonnes of ice between 1994 and 2017. Arctic\nsea ice (7.6 trillion tonnes), Antarctic ice shelves (6.5 trillion tonnes),\nmountain glaciers (6.1 trillion tonnes), the Greenland ice sheet (3.8\ntrillion ",
+   "terms": [
+    "Antarctic",
+    "ice sheet",
+    "mass balance",
+    "IMBIE",
+    "2012",
+    "acceleration",
+    "Shepherd"
+   ],
+   "passages": [
+    "For the Antarctic (24 datasets) (The IMBIE Team, 2018) and Greenland (26 datasets) (The IMBIE Team, 2020) ice sheets, independently derived estimates of mass change from the three satellite geodetic techniques were combined into a single estimate of ice sheet mass balance.",
+    "The IMBIE Team: Mass balance of the Antarctic Ice Sheet from 1992 to 2017, Nature, 558, 219–222, https://doi.org/10.1038/s41586-018-0179-y, 2018 (data available at: http://imbie.org/data-downloads/).",
+    "Mass change data for the Antarctic and Greenland ice sheets are provided by the ice sheet mass balance intercomparison exercise (IMBIE) and are available at http://imbie.org/data-downloads/ (last access: April 2020), The IMBIE Team, 2018, 2020).",
+    "Changes in Antarctic (1992–2017) and Greenland ice sheet (1992–2018) thickness were estimated using repeat satellite altimetry following the methods of Shepherd et al.",
+    "The IMBIE Team: Mass balance of the Greenland Ice Sheet from 1992 to 2018, Nature, 579, 233–239, https://doi.org/10.1038/s41586-019-1855-2, 2020 (data available at: http://imbie.org/data-downloads/).",
+    "R.: Modelling the climate and surface mass balance of polar ice sheets using RACMO2 – Part 2: Antarctica (1979–2016), The Cryosphere, 12, 1479–1498, https://doi.org/10.5194/tc-12-1479-2018, 2018.",
+    "J., and Morlighem, M.: Four decades of Antarctic Ice Sheet mass balance from 1979–2017, P.",
+    "Altogether, ice losses from Antarctica and Greenland have caused global sea levels to rise by 17.8 ± 1.8 mm between 1992 and 2017 (The IMBIE Team, 2018, 2020).Figure 3Change in Antarctic ice shelf barrier position (left) and thickness (right) over time.",
+    "We use estimates of ice sheet mass balance and their uncertainty derived from an ensemble of satellite altimetry, satellite gravimetry and input–output datasets which span the period 1992–2018.",
+    "1) show the Antarctic ice sheet lost 2603 ± 563 Gt of ice between 1992 and 2017, and the Greenland ice sheet lost 3902 ± 342 Gt of ice between 1992 and 2018."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "mismatch"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://doi.org/10.5194/tc-19-1153-2025",
+   "search": false,
+   "final_url": "https://tc.copernicus.org/articles/19/1153/2025/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Age–depth distribution in western Dronning Maud Land, East Antarctica, and Antarctic-wide comparisons of internal reflection horizons",
+   "title_match": false,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-03-13"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-03-13"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-03-13"
+    }
+   ],
+   "date_hint": "2025",
+   "date_ok": false,
+   "people_found": [
+    "Franke, Steven",
+    "Steinhage, Daniel",
+    "Helm, Veit",
+    "Zuhr, Alexandra M.",
+    "Bodart, Julien A.",
+    "Eisen, Olaf",
+    "Bons, Paul"
+   ],
+   "who_hint": null,
+   "doi": "10.5194/tc-19-1153-2025",
+   "crossref": {
+    "doi": "10.5194/tc-19-1153-2025",
+    "resolves": true,
+    "title": "Age–depth distribution in western Dronning Maud Land, East Antarctica, and Antarctic-wide comparisons of internal reflection horizons",
+    "container": "The Cryosphere",
+    "publisher": "Copernicus GmbH",
+    "type": "journal-article",
+    "issued": "2025-3-13",
+    "authors_first3": [
+     "Franke",
+     "Steinhage",
+     "Helm"
+    ],
+    "author_count": 7,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.5194/egusphere-2024-2349",
+      "10.5194/egusphere-2024-2349"
+     ],
+     "has-review": [
+      "10.5194/egusphere-2024-2349-RC1",
+      "10.5194/egusphere-2024-2349-AC1",
+      "10.5194/egusphere-2024-2349-RC2"
+     ],
+     "is-part-of": [
+      "10.1594/PANGAEA.973266",
+      "10.1594/PANGAEA.961019",
+      "10.7280/D10D4Z"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": "Abstract. Radio-echo sounding provides the opportunity to study the internal architecture of ice sheets through imaging stratified englacial reflections, known as internal reflection horizons (IRHs). They represent consistent time horizons formed at the former ice-sheet surface and buried over time,",
+   "terms": [
+    "Antarctic",
+    "ice sheet",
+    "mass balance",
+    "IMBIE",
+    "Rignot",
+    "acceleration"
+   ],
+   "passages": [
+    "J. v., and Morlighem, M.: Four decades of Antarctic Ice Sheet mass balance from 1979–2017, P.",
+    "The IMBIE drainage system boundaries (Rignot et al., 2019) can be obtained from http://imbie.org/imbie-3/drainage-basins/ (last access: 17 January 2025).",
+    "The fine black lines delineate the IMBIE drainage basins (Rignot et al., 2019).",
+    "8) invites further opportunities to make use of the available historical record of yet unused radar data across Antarctica to accelerate the retrieval of a continent-wide age–depth model of the ice sheet, as envisaged by AntArchitecture (Bingham et al., 2024).",
+    "Lett., 46, 9710–9718, https://doi.org/10.1029/2019gl083826, 2019a. a, b, c, dMouginot, J., Rignot, E., Scheuchl, B.: Phase-Based Antarctica Ice Velocity Map, Dryad [data set], https://doi.org/10.7280/D10D4Z, 2019b. aMuldoon, G., Blankenship, D.",
+    "A., Ross, N., and Napoleoni, F.: Extensive palaeo-surfaces beneath the Evans–Rutford region of the West Antarctic Ice Sheet control modern and past ice flow, The Cryosphere, 18, 2277–2296, https://doi.org/10.5194/tc-18-2277-2024, 2024. aCavitte, M.",
+    "Glaciol., 39, 245–248, https://doi.org/10.3189/s0022143000015902, 1993. aMoqadam, H. and Eisen, O.: Review article: Feature tracing in radio-echo sounding products of terrestrial ice sheets and planetary bodies, EGUsphere [preprint], https://doi.org/10.5194/egusphere-2024-1674, 2024. aMorlighem, M.: MEaSUREs BedMachine Antarctica.",
+    "Geosci., 13, 132–137, https://doi.org/10.1038/s41561-019-0510-8, 2020. a, b, c, d, e, f, g, hMouginot, J., Rignot, E., and Scheuchl, B.: Continent‐Wide, Interferometric SAR Phase, Mapping of Antarctic Ice Velocity, Geophys.",
+    "A.: Dated radar-stratigraphy between Dome A and South Pole, East Antarctica: old ice potential and ice sheet history, J.",
+    "Geophys., 47, 183–189, https://doi.org/10.1016/s0926-9851(01)00063-5, 2001. a, b, c, d, eSteinhage, D., Kipfstuhl, S., Nixdorf, U., and Miller, H.: Internal structure of the ice sheet between Kohnen station and Dome Fuji, Antarctica, revealed by airborne radio-echo sounding, Ann."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "mismatch"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6347714/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6347714/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Four decades of Antarctic Ice Sheet mass balance from 1979–2017",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-01-13"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-01-14"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Eric Rignot",
+    "Jérémie Mouginot",
+    "Bernd Scheuchl",
+    "Michiel van den Broeke",
+    "Melchior J van Wessem",
+    "Mathieu Morlighem"
+   ],
+   "who_hint": null,
+   "doi": "10.1073/pnas.1812883116",
+   "crossref": {
+    "doi": "10.1073/pnas.1812883116",
+    "resolves": true,
+    "title": "Four decades of Antarctic Ice Sheet mass balance from 1979–2017",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2019-1-14",
+    "authors_first3": [
+     "Rignot",
+     "Mouginot",
+     "Scheuchl"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-part": [
+      "10.5194/tc-19-1153-2025"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "We evaluate the state of the mass balance of the Antarctic Ice Sheet over the last four decades using a comprehensive, precise satellite record and output products from a regional atmospheric climate model to document its impact on sea-level rise. ...",
+   "terms": [
+    "IMBIE",
+    "Shepherd",
+    "agree",
+    "2012",
+    "consistent",
+    "acceleration",
+    "Rignot",
+    "Mouginot",
+    "Scheuchl"
+   ],
+   "passages": [
+    "The mass loss tripled after the 1990s, averaged 24 Gt/y in 1979–2017, with an acceleration of 16 Gt/y per decade.West Antarctica.",
+    "During the entire period, the mass loss concentrated in areas closest to warm, salty, subsurface, circumpolar deep water (CDW), that is, consistent with enhanced polar westerlies pushing CDW toward Antarctica to melt its floating ice shelves, destabilize the glaciers, and raise sea level.",
+    "We derive the ice sheet mass balance for 1979–2017, the acceleration in ice mass loss on a decadal time scale (Fig.",
+    "The loss from Pine Island has stabilized since 2012 but remains the largest loss (58 Gt/y) in Antarctica and elsewhere (37 Gt/y for Thwaites and 32 Gt/y for Kohler/Smith).",
+    "Regional acceleration in ice mass loss from Greenland and Antarctica using GRACE time-variable gravity data.",
+    "Acceleration of the contribution of the Greenland and Antarctic ice sheets to sea level rise.",
+    "(E) Change in grounding line ice discharge, D, for 1979–2017 for the 18 major subregions in billions of tons per year with percentage change in speed color-coded from red (acceleration) to blue (deceleration) and circle radius proportional to change.",
+    "This change in mass loss reflects an acceleration of 94 Gt/y per decade in 1979–2017, increasing from 48 Gt/y per decade in 1979–2001 to 134 Gt/y per decade in 2001–2017, or 280%.",
+    "Most of the 1979–2017 acceleration is from West Antarctica (48 Gt/y per decade), followed by East Antarctica (29 Gt/y per decade) and the Antarctic Peninsula (16 Gt/y per decade) (Fig.",
+    "Over the entire period 1979–2017, we perform a quadratic regression to obtain a mean mass loss and an acceleration in mass loss per decade."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=Antarctic+IMBIE",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=Antarctic+IMBIE",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Antarctic IMBIE | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Antarctic",
+    "IMBIE",
+    "ice sheet",
+    "mass balance",
+    "Shepherd",
+    "sea level",
+    "expert reaction"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [
+    {
+     "slug": "imbie-antarctic-ice-loss-tripled",
+     "role": "source",
+     "i": "5-via-1",
+     "via": "https://www.sciencemediacentre.org/?s=Antarctic+IMBIE",
+     "link_text": "Antarctica’s contribution to sea level rise from 1992 to 2017",
+     "url": "https://www.sciencemediacentre.org/antarcticas-contribution-to-sea-level-rise-from-1992-to-2017/",
+     "final_url": "https://www.sciencemediacentre.org/antarcticas-contribution-to-sea-level-rise-from-1992-to-2017/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "Antarctica’s contribution to sea level rise from 1992 to 2017 | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "The Ice Sheet Mass Balance Inter-comparison Exercise (IMBIE) is produced by a group of 84 scientists from 44 international organisations, supported by the European Space Agency (ESA) and the US National Aeronautics and Space Administration (NASA).",
+      "The researchers have found that there has been a threefold increase in ice losses from Antarctica since 2012, and the continent is causing sea levels to rise faster today than at any time in the past 25 years.",
+      "A new climate assessment to be published in Nature combines multiple satellite surveys of Antarctica to create the most complete picture of ice loss to date.",
+      "Speakers: Prof Andrew Shepherd, Director of the Centre for Polar Observation and Modelling at the University of Leeds Dr Pippa Whitehouse, NERC Independent Research Fellow at Durham University Prof Michiel van den Broeke, Professor of Polar Meteorology at Utrecht University, Netherlands Dr Erik R."
+     ],
+     "verdict": "usable"
+    },
+    {
+     "slug": "imbie-antarctic-ice-loss-tripled",
+     "role": "source",
+     "i": "5-via-2",
+     "via": "https://www.sciencemediacentre.org/?s=Antarctic+IMBIE",
+     "link_text": "Expert reaction to research on Antarctic ice loss and sea level rise",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-research-on-antarctic-ice-loss-and-sea-level-rise/",
+     "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-research-on-antarctic-ice-loss-and-sea-level-rise/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "Expert reaction to research on Antarctic ice loss and sea level rise | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "“This paper suggests it is stretching its limbs.” * ‘Mass balance of the Antarctic Ice Sheet from 1992 to 2017’ by the IMBIE team published in Nature on Wednesday 13 June 2018.",
+      "Dr Andy Smith, glaciologist at the British Antarctic Survey, said: “This is a comprehensive study that brings an up-to-date assessment of how much the Antarctic Ice Sheet is changing and how much it’s contributing to sea level rise.",
+      "Prof Chris Rapley, Professor of Climate Science at UCL, said: “The paper provides a valuable synthesis of the current state of knowledge of the mass balance of the Antarctic ice sheet.",
+      "Dr Kate Hendry, Reader in Geochemistry at the University of Bristol, said: “The IMBIE team compilation allows us to assign the most robust and up to date number for ice loss from Antarctica.",
+      "Whilst there’s still considerable uncertainty about East Antarctic mass balance, it’s increasingly clear that ice loss from West Antarctica has accelerated in the last two decades.",
+      "“Data are provided for the ice sheet overall, and for three regions: the Antarctic Peninsula, West Antarctica and East Antarctica over the period 1992 to 2017.",
+      "“So whilst Antarctic ice loss currently makes a relatively modest contribution to the observed 33cm/C rate of of global mean sea level rise – compared with thermal expansion and the loss of ice from Greenland and mountain glaciers – this may change in the future.",
+      "“The result that is most interesting is how West Antarctic continues to lose more and more ice, adding increasingly to sea level.",
+      "We’re understanding more and more about how glaciers and ice sheets impact marine algae that feed the rich ecosystems along the West Antarctic Peninsula.",
+      "Loss of ice from West Antarctica, in particular, has continued to increase, as has that from the Antarctic Peninsula."
+     ],
+     "verdict": "usable"
+    },
+    {
+     "slug": "imbie-antarctic-ice-loss-tripled",
+     "role": "source",
+     "i": "5-via-3",
+     "via": "https://www.sciencemediacentre.org/?s=Antarctic+IMBIE",
+     "link_text": "satellite measurement of ice loss in Greenland and the Antarctic",
+     "url": "https://www.sciencemediacentre.org/satellite-measurement-of-ice-loss-in-greenland-and-the-antarctic/",
+     "final_url": "https://www.sciencemediacentre.org/satellite-measurement-of-ice-loss-in-greenland-and-the-antarctic/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "satellite measurement of ice loss in Greenland and the Antarctic | Science Media Centre",
+     "dates_found": [],
+     "people_found": [],
+     "citation_doi": null,
+     "type_meta": null,
+     "meta_description": null,
+     "passages": [
+      "A new study published in Science combines multiple satellite data to estimate the mass balance of Earth’s polar ice sheets and its effect on sea level.",
+      "The Ice Sheet Mass Balance Inter-comparison Exercise (IMBIE) is a collaboration between 47 researchers from 26 laboratories, and was supported by the European Space Agency (ESA) and the National Aeronautics and Space Administration (NASA)."
+     ],
+     "verdict": "usable"
+    }
+   ],
+   "verdict": "usable"
+  }
+ ]
+}

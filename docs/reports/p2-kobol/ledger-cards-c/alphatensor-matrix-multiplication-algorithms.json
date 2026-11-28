@@ -1,0 +1,361 @@
+{
+ "slug": "alphatensor-matrix-multiplication-algorithms",
+ "title": "AlphaTensor finds faster matrix multiplication schemes for some sizes",
+ "first_published": "2022-10-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "statement",
+   "url": "https://www.dcs.warwick.ac.uk/~u2270030/wact/slides/WACT2023_moosbauer.pdf",
+   "search": false,
+   "final_url": "https://www.dcs.warwick.ac.uk/~u2270030/wact/slides/WACT2023_moosbauer.pdf",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2023",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Jakob Moosbauer and Manuel Kauers",
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaTensor",
+    "47",
+    "(4,4,4) mod 2",
+    "best known algorithm",
+    "flip graph"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9534758",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9534758/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Discovering faster matrix multiplication algorithms with reinforcement learning",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-10-04"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-10-05"
+    }
+   ],
+   "date_hint": "2022-10-05",
+   "date_ok": true,
+   "people_found": [
+    "Alhussein Fawzi",
+    "Matej Balog",
+    "Aja Huang",
+    "Thomas Hubert",
+    "Bernardino Romera-Paredes",
+    "Mohammadamin Barekatain",
+    "Alexander Novikov",
+    "Francisco J R Ruiz",
+    "Julian Schrittwieser",
+    "Grzegorz Swirszcz",
+    "David Silver",
+    "Demis Hassabis"
+   ],
+   "who_hint": "Google DeepMind",
+   "doi": "10.1038/s41586-022-05172-4",
+   "crossref": {
+    "doi": "10.1038/s41586-022-05172-4",
+    "resolves": true,
+    "title": "Discovering faster matrix multiplication algorithms with reinforcement learning",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2022-10-5",
+    "authors_first3": [
+     "Fawzi",
+     "Balog",
+     "Huang"
+    ],
+    "author_count": 13,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.742353014.793595962"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Improving the efficiency of algorithms for fundamental computations can have a widespread impact, as it can affect the overall speed of a large amount of computations. Matrix multiplication is one such primitive task, occurring in many systems—from ...",
+   "terms": [
+    "47 multiplications",
+    "Strassen",
+    "AlphaTensor",
+    "Z2"
+   ],
+   "passages": [
+    "In particular, AlphaTensor finds an algorithm for multiplying 4 × 4 matrices using 47 multiplications in Z2, thereby outperforming Strassen’s two-level algorithm2, which involves 72 = 49 multiplications.",
+    "We use AlphaTensor to find matrix multiplication algorithms over different arithmetics—namely, modular arithmetic (that is, multiplying matrices in the quotient ring Z2), and standard arithmetic (that is, multiplying matrices in R).",
+    "AlphaTensor re-discovers the best algorithms known for multiplying matrices (for example, Strassen’s2 and Laderman’s15 algorithms).",
+    "Algorithm for multiplying 4 × 4 matrices in modular arithmetic (Z2) with 47 multiplications.",
+    "Particularly relevant is the case of 4 × 4 matrices in a finite field, where AlphaTensor’s algorithm improves on Strassen’s two-level algorithm for the first time, to our knowledge, since its discovery 50 years ago2.",
+    "AlphaTensor discovers algorithms that outperform the Strassen-square algorithm, which is a fast algorithm for large square matrices31,32.",
+    "Through different use-cases, we highlight AlphaTensor’s flexibility and wide applicability: AlphaTensor discovers efficient algorithms for structured matrix multiplication improving over known results, and finds efficient matrix multiplication algorithms tailored to specific hardware, by optimizing for actual runtime.",
+    "Moreover, AlphaTensor discovers efficient algorithms for multiplying matrices in standard arithmetic; for example, AlphaTensor finds a rank-76 decomposition of T4,5,5, improving over the previous state-of-the-art complexity of 80 multiplications.",
+    "Open in a new tab This outperforms the previously best known algorithm, which involves 80 multiplications.AlphaTensor generates a large database of matrix multiplication algorithms—up to thousands of algorithms for each size.",
+    "Our agent goes beyond this limit, discovering decompositions matching or surpassing state-of-the-art for large tensors such as T5.Analysing the symmetries of matrix multiplication algorithms From a mathematical standpoint, the diverse algorithms discovered by AlphaTensor show that the space is richer than previously known."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://arxiv.org/abs/2210.04045",
+   "search": false,
+   "final_url": "https://arxiv.org/abs/2210.04045",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The FBHHRBNRSSSHK-Algorithm for Multiplication in $\\mathbb{Z}_2^{5\\times5}$ is still not the end of the story",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2022-10-13"
+    },
+    {
+     "source": "citation_date",
+     "date": "2022-10-08"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Kauers, Manuel",
+    "Moosbauer, Jakob"
+   ],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2210.04045: The FBHHRBNRSSSHK-Algorithm for Multiplication in $\\mathbb{Z}_2^{5\\times5}$ is still not the end of the story",
+   "terms": [
+    "AlphaTensor",
+    "Nature",
+    "96 multiplications",
+    "95",
+    "5x5",
+    "Journal reference"
+   ],
+   "passages": [
+    "In response to a recent Nature article which announced an algorithm for multiplying $5\\times5$-matrices over $\\mathbb{Z}_2$ with only 96 multiplications, two fewer than the previous record, we present an algorithm that does the job with only 95 multiplications."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "paper",
+   "url": "https://arxiv.org/abs/2506.13242",
+   "search": false,
+   "final_url": "https://arxiv.org/abs/2506.13242",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A non-commutative algorithm for multiplying 4x4 matrices using 48 non-complex multiplications",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-07-27"
+    },
+    {
+     "source": "citation_date",
+     "date": "2025-06-16"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [
+    "Dumas, Jean-Guillaume",
+    "Pernet, Clément",
+    "Sedoglavic, Alexandre"
+   ],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2506.13242: A non-commutative algorithm for multiplying 4x4 matrices using 48 non-complex multiplications",
+   "terms": [
+    "AlphaTensor",
+    "47",
+    "characteristic 2",
+    "Journal reference",
+    "DOI",
+    "Published in"
+   ],
+   "passages": [
+    "Specifically, the number of scalar multiplications required to multiply two 4x4 matrices was reduced in \\cite{Fawzi:2022aa} from 49 (using two recursion levels of Strassen's algorithm) to 47 in characteristic 2, and more recently to 48 in \\cite{alphaevolve} over the complex numbers.",
+    "We propose an algorithm requiring 48 multiplications that uses only rational coefficients, thereby removing the requirement for complex-number arithmetic, and making this algorithm valid over any ring except those of characteristic 2."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://www.nature.com/search?q=AlphaTensor+matrix+multiplication&article_type=news-and-views&order=relevance",
+   "search": true,
+   "final_url": "https://www.nature.com/search?q=AlphaTensor+matrix+multiplication&article_type=news-and-views&order=relevance&error=cookies_not_supported&code=5bc02885-e361-40d9-924a-1d0d4a939db8",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AlphaTensor matrix multiplication | Nature Search Results",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2022-10-05"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaTensor",
+    "matrix multiplication",
+    "News & Views",
+    "Discovering faster matrix multiplication algorithms with reinforcement learning"
+   ],
+   "passages": [
+    "News & Views (1) Subject Check one or more subjects to show results from those subjects only.",
+    "The technique advances understanding of this fundamental operation and opens up the potential to accelerate ubiquitous computations that involve matrix multiplications."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [
+    {
+     "slug": "alphatensor-matrix-multiplication-algorithms",
+     "role": "source",
+     "i": "7-via-1",
+     "via": "https://www.nature.com/search?q=AlphaTensor+matrix+multiplication&article_type=news-and-views&order=relevance",
+     "link_text": "Artificial intelligence finds faster algorithms for multiplying matrices",
+     "url": "https://www.nature.com/articles/d41586-022-03023-w",
+     "final_url": "https://www.nature.com/articles/d41586-022-03023-w?error=cookies_not_supported&code=cab987cb-8c84-466b-836f-e884e6df52b1",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "Artificial intelligence finds faster algorithms for multiplying matrices",
+     "dates_found": [
+      {
+       "source": "dc.date",
+       "date": "2022-10-05"
+      },
+      {
+       "source": "prism.publicationDate",
+       "date": "2022-10-05"
+      },
+      {
+       "source": "ld+json datePublished",
+       "date": "2022-10-05"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2022-10-05"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2026-11-27"
+      },
+      {
+       "source": "time[datetime]",
+       "date": "2026-11-25"
+      }
+     ],
+     "people_found": [],
+     "citation_doi": "10.1038/d41586-022-03023-w",
+     "type_meta": "Research Briefings",
+     "meta_description": "Reinforcement-learning technique identifies more efficient ways to perform a fundamental computing operation.",
+     "passages": [
+      "Discovering faster matrix multiplication algorithms with reinforcement learning.",
+      "RESEARCH BRIEFINGS 05 October 2022 Artificial intelligence finds faster algorithms for multiplying matrices An artificial-intelligence approach known as AlphaTensor found exact matrix-multiplication algorithms that are more efficient than those previously known for many matrix sizes.",
+      "The technique advances understanding of this fundamental operation and opens up the potential to accelerate ubiquitous computations that involve matrix multiplications."
+     ],
+     "verdict": "usable"
+    }
+   ],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 8,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=AlphaTensor+expert+reaction",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=AlphaTensor+expert+reaction",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AlphaTensor expert reaction | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "AlphaTensor",
+    "expert reaction",
+    "matrix multiplication",
+    "DeepMind"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

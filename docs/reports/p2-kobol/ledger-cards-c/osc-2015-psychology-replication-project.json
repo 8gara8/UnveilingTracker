@@ -1,0 +1,233 @@
+{
+ "slug": "osc-2015-psychology-replication-project",
+ "title": "Replication of 100 psychology studies finds weaker effects than the originals",
+ "first_published": "2015-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4968573/",
+   "search": false,
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4968573/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "What should we expect when we replicate? A statistical view of replicability in psychological science",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2016-06-30"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2016-06-30"
+    }
+   ],
+   "date_hint": "2016-06-30",
+   "date_ok": false,
+   "people_found": [
+    "Prasad Patil",
+    "Roger D Peng",
+    "Jeffrey T Leek"
+   ],
+   "who_hint": "Prasad Patil, Roger D. Peng, Jeffrey T. Leek",
+   "doi": "10.1177/1745691616646366",
+   "crossref": {
+    "doi": "10.1177/1745691616646366",
+    "resolves": true,
+    "title": "What Should Researchers Expect When They Replicate Studies? A Statistical View of Replicability in Psychological Science",
+    "container": "Perspectives on Psychological Science",
+    "publisher": "SAGE Publications",
+    "type": "journal-article",
+    "issued": "2016-7",
+    "authors_first3": [
+     "Patil",
+     "Peng",
+     "Leek"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "A recent study of the replicability of key psychological findings is a major contribution toward understanding the human side of the scientific process. Despite the careful and nuanced analysis reported in the paper, mass, social, and scientific ...",
+   "terms": [
+    "Open Science Collaboration",
+    "Reproducibility Project",
+    "replication",
+    "prediction intervals",
+    "36%",
+    "P-value",
+    "replicability"
+   ],
+   "passages": [
+    "In this sense, our analysis complements the finding of the Open Science Collaboration while simultaneously providing some additional perspective on the expectation of replicability.Conclusion We need a new definition for replication that acknowledges variation in both the original study and in the replication study.",
+    "This is the intuition behind the recent tour-de-force replication of 100 psychological studies by the Open Science Collaboration, Reproducibility Project: Psychology (Collaboration et al., 2015).",
+    "The percentage of P-values less than 0.05 ranged from 73% to 91% (1st to 3rd quartile; high: 100%; low: 6%) with a high degree of variability (Figure S1).Prediction Intervals Sampling variation alone may contribute to “un-replicated” results if you define replication by a P-value cutoff.",
+    "Here we present a view of replication based on prediction intervals - a statistical technique for predicting the range of effects we would expect in a replication study.",
+    "The widely publicized 36% figure refers only to the percentage of study pairs that reported a statistically significant (P < 0.05) result in both the original and replication studies.",
+    "Second, when the results of original studies are very imprecise they create wide prediction intervals - and a broad range of consistent replication effects.",
+    "Some of the effects that changed signs upon replication still fell within the 95% prediction intervals calculated based on the original effects.",
+    "All other negative replication effects did not fall into the 95% prediction intervals, and hence were considered “did not replicate”.",
+    "Our work shows that studies with small sample sizes - like many in the Reproducibility Project: Psychology - will produce wide prediction intervals.",
+    "Even if you performed 10,000 perfect studies and 10,000 perfect replications of those studies, you would expect the number of times both P-values are less than 0.05 to vary."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/26315443/",
+   "search": false,
+   "final_url": "https://pubmed.ncbi.nlm.nih.gov/26315443/",
+   "status": 203,
+   "readable": false,
+   "reason": "203 cookie wall",
+   "title_found": "pubmed.ncbi.nlm.nih.gov",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": "2015-08",
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": "Open Science Collaboration",
+   "doi": null,
+   "crossref": null,
+   "type_found": {
+    "source": "esummary pubtype",
+    "value": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   },
+   "meta_description": null,
+   "terms": [
+    "Reproducibility Project",
+    "Open Science Collaboration",
+    "100",
+    "replications",
+    "effect sizes",
+    "statistically significant",
+    "Psychology"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "kind": "preprint",
+   "url": "https://doi.org/10.31219/osf.io/447b3",
+   "search": false,
+   "final_url": "https://osf.io/447b3_v1",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "OSF",
+   "title_match": false,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2016-10-05"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": "Open Science Collaboration (not confirmed: nothing on this page was read)",
+   "doi": "10.31219/osf.io/447b3",
+   "crossref": {
+    "doi": "10.31219/osf.io/447b3",
+    "resolves": true,
+    "title": "Estimating the Reproducibility of Psychological Science",
+    "container": null,
+    "publisher": "Center for Open Science",
+    "type": "posted-content",
+    "issued": "2016-10-5",
+    "authors_first3": [
+     "Nosek",
+     "Cohoon",
+     "Kidwell"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-preprint-of": [
+      "10.1126/science.aac4716"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Reproducibility Project",
+    "100",
+    "97",
+    "36",
+    "effect size",
+    "replicat",
+    "significant"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "mismatch"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "kind": "paper",
+   "url": "https://www.sciencemediacentre.org/?s=expert+reaction+reproducibility",
+   "search": true,
+   "final_url": "https://www.sciencemediacentre.org/?s=expert+reaction+reproducibility",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "expert reaction reproducibility | Search Results | Science Media Centre",
+   "title_match": null,
+   "dates_found": [],
+   "date_hint": null,
+   "date_ok": null,
+   "people_found": [],
+   "who_hint": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "expert reaction",
+    "reproducibility",
+    "psychology",
+    "Open Science Collaboration",
+    "replicat",
+    "University"
+   ],
+   "passages": [
+    "Prof Alfonso … read more August 25, 2022 expert reaction to a paper describing the generation of synthetic stem cell-derived mouse embryos A paper published in Nature look at the cultivation of synthetic mouse embryo-like structures from stem cells.",
+    "Professor Ewan … read more March 26, 2025 expert reaction to study on first genetically modified pig-to-human liver transplantation A study published in Nature looks at a genetically modified pig-to-human liver xenotransplantation."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}

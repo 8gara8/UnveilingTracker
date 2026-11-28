@@ -1,0 +1,239 @@
+{
+ "slug": "fast-petase-machine-learning-plastic-enzyme",
+ "title": "Machine learning helps engineer an enzyme that breaks down PET plastic",
+ "first_published": "2022-04-27",
+ "items": [
+  {
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://doi.org/10.3410/f.742067859.793593935",
+   "search": false,
+   "final_url": "https://facultyopinions.com/prime/742067859#eval793593935",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "You don’t have access to this part of the site - Faculty Opinions",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-06-30"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.3410/f.742067859.793593935",
+   "crossref": {
+    "doi": "10.3410/f.742067859.793593935",
+    "resolves": true,
+    "title": "Faculty Opinions recommendation of Machine learning-aided engineering of hydrolases for PET depolymerization.",
+    "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+    "publisher": "H1 Connect",
+    "type": "dataset",
+    "issued": "2022-6-30",
+    "authors_first3": [
+     "Oakley"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-review-of": [
+      "10.1038/s41586-022-04599-z"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Lu",
+    "PET",
+    "hydrolase",
+    "Faculty Opinions",
+    "reviewed by"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://doi.org/10.3410/f.742067859.793593764",
+   "search": false,
+   "final_url": "https://facultyopinions.com/prime/742067859#eval793593764",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "You don’t have access to this part of the site - Faculty Opinions",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-06-22"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": false,
+   "people_found": [],
+   "who_hint": null,
+   "doi": "10.3410/f.742067859.793593764",
+   "crossref": {
+    "doi": "10.3410/f.742067859.793593764",
+    "resolves": true,
+    "title": "Faculty Opinions recommendation of Machine learning-aided engineering of hydrolases for PET depolymerization.",
+    "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+    "publisher": "H1 Connect",
+    "type": "dataset",
+    "issued": "2022-6-22",
+    "authors_first3": [
+     "Wall"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-review-of": [
+      "10.1038/s41586-022-04599-z"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "terms": [
+    "Lu",
+    "PET",
+    "hydrolase",
+    "Faculty Opinions",
+    "reviewed by"
+   ],
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-022-04599-z",
+   "search": false,
+   "final_url": "https://www.nature.com/articles/s41586-022-04599-z?error=cookies_not_supported&code=a1dc2e24-dfb7-4655-b070-d2b71a1c64d0",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Machine learning-aided engineering of hydrolases for PET depolymerization",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2022-04-27"
+    },
+    {
+     "source": "dc.date",
+     "date": "2022-04-27"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2022-04-27"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-04-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-04-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-10-10"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-02-28"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-04-27"
+    }
+   ],
+   "date_hint": null,
+   "date_ok": true,
+   "people_found": [
+    "Lu, Hongyuan",
+    "Diaz, Daniel J.",
+    "Czarnecki, Natalie J.",
+    "Zhu, Congzhi",
+    "Kim, Wantae",
+    "Shroff, Raghav",
+    "Acosta, Daniel J.",
+    "Alexander, Bradley R.",
+    "Cole, Hannah O.",
+    "Zhang, Yan",
+    "Lynd, Nathaniel A.",
+    "Ellington, Andrew D."
+   ],
+   "who_hint": null,
+   "doi": "10.1038/s41586-022-04599-z",
+   "crossref": {
+    "doi": "10.1038/s41586-022-04599-z",
+    "resolves": true,
+    "title": "Machine learning-aided engineering of hydrolases for PET depolymerization",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2022-4-27",
+    "authors_first3": [
+     "Lu",
+     "Diaz",
+     "Czarnecki"
+    ],
+    "author_count": 13,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.742067859.793593935",
+      "10.3410/f.742067859.793593764"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Plastic waste poses an ecological challenge1–3 and enzymatic degradation offers one, potentially green and scalable, route for polyesters waste recycling4. Poly(ethylene terephthalate) (PET) accounts for 12% of global solid waste5, and a circular carbon economy for PET is theoretically attainable th",
+   "terms": [
+    "News & Views",
+    "Related",
+    "Cited by",
+    "reaction",
+    "commentary"
+   ],
+   "passages": [
+    "First, although higher reaction temperatures do promote the hydrolytic activity of the thermophilic LCC and ICCM against the amorphous parts of the bottle (base center and finish), the highly crystalline body part still cannot be efficiently depolymerized by any tested enzymes and temperatures.",
+    "Application of PET hydrolases, however, has been hampered by their lack of robustness to pH and temperature ranges, slow reaction rates and inability to directly use untreated postconsumer plastics11.",
+    "Current state and perspectives related to the polyethylene terephthalate hydrolases available for biorecycling."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "title_search": null,
+   "extras": [],
+   "verdict": "usable"
+  }
+ ]
+}
