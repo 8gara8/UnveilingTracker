@@ -1,6 +1,6 @@
 // The offline guard (SPEC §8.1 "No test touches the network"): tests/setup/offline.ts, loaded by
 // vitest.config.ts before every test file, lets fetch reach only localhost and git only file:// remotes.
-// Cyber's tests/no-network.test.ts at the fork commit, adapted: the fetchFeed() case returns in P2 with
+// Cyber's tests/no-network.test.ts at the fork commit, adapted: the fetchFeed() cases come back in P2 with
 // lib/feeds/http.ts (docs/PROVENANCE.md).
 import { spawnSync } from "node:child_process";
 import fs from "node:fs";
@@ -9,6 +9,7 @@ import type { AddressInfo } from "node:net";
 import os from "node:os";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
+import { fetchFeed } from "@/lib/feeds/http";
 import { offlineGuard } from "./setup/offline";
 
 /** Runs `probe`, then takes the URLs it got blocked on out of the guard, so this file's afterAll stays green. */
@@ -30,6 +31,38 @@ describe("tests/setup/offline.ts", () => {
     const blocked = await blockedBy(() => fetch("https://example.org/ut-sample/probe").catch((e: unknown) => { error = e; }));
     expect(String(error)).toMatch(/A test tried the network: example\.org/);
     expect(blocked).toEqual(["https://example.org/ut-sample/probe"]);
+  });
+
+  it("turns a blocked fetchFeed() into an error result instead of an exception, and the guard still records its URL", async () => {
+    const url = "https://example.com/ut-sample/feed.xml";
+    let result: Awaited<ReturnType<typeof fetchFeed>> | null = null;
+    const blocked = await blockedBy(async () => {
+      result = await fetchFeed(url, { retryDelayMs: 0, timeoutMs: 2_000 });
+    });
+    expect(result).toMatchObject({ ok: false, body: null, error: "network", attempts: 1 });
+    expect(blocked).toEqual([url]);
+  });
+
+  it("answers fetchFeed() from UT_FIXTURE_FEEDS before fetch is ever called", async () => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "ut-fixture-feeds-"));
+    const url = "https://example.com/ut-sample/saved.xml";
+    const saved = process.env.UT_FIXTURE_FEEDS;
+    try {
+      fs.writeFileSync(path.join(dir, "saved.xml"), "<rss/>");
+      fs.writeFileSync(path.join(dir, "index.json"), JSON.stringify({ [url]: { file: "saved.xml", content_type: "application/xml" } }));
+      process.env.UT_FIXTURE_FEEDS = dir;
+      let result: Awaited<ReturnType<typeof fetchFeed>> | null = null;
+      const blocked = await blockedBy(async () => {
+        result = await fetchFeed(url);
+      });
+      expect(result).toMatchObject({ ok: true, status: 200, contentType: "application/xml", attempts: 1 });
+      expect(String((result as unknown as { body: Buffer }).body)).toBe("<rss/>");
+      expect(blocked).toEqual([]);
+    } finally {
+      if (saved === undefined) delete process.env.UT_FIXTURE_FEEDS;
+      else process.env.UT_FIXTURE_FEEDS = saved;
+      fs.rmSync(dir, { recursive: true, force: true });
+    }
   });
 
   it("lets fetch reach a server on 127.0.0.1", async () => {

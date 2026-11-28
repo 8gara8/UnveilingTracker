@@ -19,3 +19,5 @@ export * from "./registry";
 export * from "./pack";
 export * from "./context";
 export * from "./config";
+export * from "./reference";
+export * from "./seed";
