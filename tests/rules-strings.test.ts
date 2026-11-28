@@ -180,11 +180,12 @@ function storedExpected(type: StoredType, made: Made<any>, index = 0): Expected[
 const beingAll = (w: { findings: Finding[]; terms: Term[]; corrections: Correction[]; reports: Report[] }): BeingPublished => ({
   brief: true,
   findings: new Set(w.findings.map((f) => f.id)),
+  parts: new Map(),
   terms: new Set(w.terms.map((t) => t.id)),
   corrections: new Set(w.corrections.map((c) => c.id)),
   reports: new Set(w.reports.map((r) => r.id)),
 });
-const NOBODY: BeingPublished = { brief: false, findings: new Set(), terms: new Set(), corrections: new Set(), reports: new Set() };
+const NOBODY: BeingPublished = { brief: false, findings: new Set(), parts: new Map(), terms: new Set(), corrections: new Set(), reports: new Set() };
 
 const made = {
   brief: briefM.value, findings: [findingM.value], terms: [termM.value], corrections: [correctionM.value], reports: [reportM.value],
@@ -529,7 +530,7 @@ describe("the facts an entry carries", () => {
   it("says, for a stored edition, which records are being published, which date to file a string on and what it is about", () => {
     const world = storedWorld();
     const being: BeingPublished = {
-      brief: true, findings: new Set(["bio-2026-0001", "math-2026-0002"]), terms: new Set(["protein-folding"]),
+      brief: true, findings: new Set(["bio-2026-0001", "math-2026-0002"]), parts: new Map(), terms: new Set(["protein-folding"]),
       corrections: new Set(["C-0002"]), reports: new Set(),
     };
     const inv = publishedInventory({ ...world, being });
@@ -571,6 +572,49 @@ describe("the facts an entry carries", () => {
     expect(inv.entries.every((e) => !e.removed && e.zh === null)).toBe(true);
   });
 
+  it("says, for each string of a stored finding, whether it is being published: all of a finding first briefed on D, none of one D left alone, and in a returning one only the new entries (F-55)", () => {
+    const world = storedWorld();
+    const PHYS = "phys-2026-0003";
+    const file = (id: string): string => `findings/${id}.json`;
+    const inventory = (being: BeingPublished) => publishedInventory({ ...world, being });
+    const flags = (inv: Inventory, id: string): Map<string, boolean> =>
+      new Map(inv.entries.filter((e) => e.record.type === "finding" && e.record.id === id).map((e) => [e.path.slice(file(id).length + 2), e.publishing]));
+
+    // new entries: the rung entry [1], the note [0] and the second source [1]
+    const parts = { rung_history: new Set([1]), since_then: new Set([0]), sources: new Set([1]) };
+    const returning = flags(inventory({ ...NOBODY, findings: new Set([PHYS]), parts: new Map([[PHYS, parts]]) }), PHYS);
+    const newOnes = [
+      "rung_history[1].rung", "rung_history[1].date", "rung_history[1].recorded", "rung_history[1].source_id", "rung_history[1].by", "rung_history[1].note.en", "rung_history[1].note.zh",
+      "since_then[0].date", "since_then[0].text.en", "since_then[0].text.zh", "since_then[0].source_ids[0]",
+      "sources[1].id", "sources[1].kind", "sources[1].title", "sources[1].publisher", "sources[1].url", "sources[1].published_at", "sources[1].seen_as", "sources[1].added",
+    ];
+    for (const path of newOnes) expect(returning.get(path), path).toBe(true);
+    const frozen = [
+      "id", "field", "subfield", "kind", "title.en", "title.zh", "depth", "go_deeper[0]", "significance", "rung", "explainer.found.en", "explainer.how_sure.zh", "ai.role", "ai.systems[0].name",
+      "ai.evidence[0].quote", "reactions[0].quote", "reactions[0].who", "artefacts.doi[0]", "who[0].name", "terms[0]", "related[0]", "first_published", "first_brief", "briefs[0]", "updated",
+      "rung_history[0].rung", "rung_history[0].date", "rung_history[0].recorded", "rung_history[0].source_id", "sources[0].id", "sources[0].url", "sources[0].title", "sources[0].doi", "sources[0].added",
+    ];
+    for (const path of frozen) expect(returning.get(path), path).toBe(false);
+    // and no other string of the finding is being published
+    expect([...returning].filter(([, v]) => v).map(([k]) => k).sort()).toEqual([...newOnes].sort());
+
+    const whole = flags(inventory({ ...NOBODY, findings: new Set([PHYS]) }), PHYS);
+    expect(whole.size).toBe(returning.size);
+    expect([...whole.values()].every(Boolean)).toBe(true);
+    const none = flags(inventory(NOBODY), PHYS);
+    expect(none.size).toBe(returning.size);
+    expect([...none.values()].some(Boolean)).toBe(false);
+    // the list the entry sits in decides, never its position alone: a returning finding's new second entry is no new second source
+    const other = flags(inventory({ ...NOBODY, findings: new Set([PHYS]), parts: new Map([[PHYS, { rung_history: new Set([1]), since_then: new Set<number>(), sources: new Set<number>() }]]) }), PHYS);
+    expect([...other].filter(([, v]) => v).map(([k]) => k).every((k) => k.startsWith("rung_history[1]"))).toBe(true);
+    expect(other.get("sources[1].url")).toBe(false);
+    expect(other.get("since_then[0].text.en")).toBe(false);
+    // the brief, the terms and the corrections keep their own record-level answer
+    const record = inventory({ ...NOBODY, brief: true, findings: new Set([PHYS]), parts: new Map([[PHYS, parts]]) });
+    expect(record.entries.filter((e) => e.record.type === "brief").every((e) => e.publishing)).toBe(true);
+    expect(record.entries.filter((e) => e.record.type === "term" || e.record.type === "correction").some((e) => e.publishing)).toBe(false);
+  });
+
   it("says, for a Chinese draft, which context key, English string, cap and group each string has", () => {
     const { draft, context } = zhWorld();
     const inv = zhInventory(draft, context);
@@ -608,35 +652,127 @@ describe("the facts an entry carries", () => {
 
 // ── Removed text ─────────────────────────────────────────────────────────────────────────────────
 
+const isL10nValue = (v: unknown): boolean => typeof v === "object" && v !== null && Object.keys(v).join(",") === "en,zh";
+
+/** Writes REMOVED_TEXT at a correction's dotted path, as a stored `removed` correction leaves it: an `L10n` in both languages, a plain string in English. */
+function writeRemoved(record: object, path: string): void {
+  const segments = path.split(".");
+  const last = segments.pop()!;
+  let at = record as Record<string, any>;
+  for (const key of segments) at = at[key];
+  at[last] = isL10nValue(at[last]) ? { ...REMOVED_TEXT } : REMOVED_TEXT.en;
+}
+
+/** Copies of the made records with REMOVED_TEXT written at the given paths (a term's `definition` in both languages): what the records hold once the corrections naming those paths are published. */
+function removedIn(paths: { finding?: readonly string[]; brief?: readonly string[]; term?: readonly string[] }): { findings: Finding[]; brief: Brief; terms: Term[] } {
+  const finding = structuredClone(made.findings[0]!);
+  const brief = structuredClone(made.brief);
+  const term = structuredClone(made.terms[0]!);
+  for (const path of paths.finding ?? []) writeRemoved(finding, path);
+  for (const path of paths.brief ?? []) writeRemoved(brief, path);
+  for (const path of paths.term ?? []) {
+    term.en.definition = REMOVED_TEXT.en;
+    if (term.zh !== null) term.zh.definition = REMOVED_TEXT.zh;
+  }
+  return { findings: [finding], brief, terms: [term] };
+}
+
 describe("removed text", () => {
   const removal = (over: Partial<Correction>): Correction => ({
     ...correctionM.value, id: "C-0001", date: D, finding_id: null, edition_date: null, term_id: null, type: "removed", ...over,
   });
+  const F = made.findings[0]!.id;
+  const B = made.brief.date;
+  const T = made.terms[0]!.id;
+  const only = (finding: Finding): { findings: Finding[]; briefs: Brief[]; terms: Term[] } => ({ findings: [finding], briefs: [], terms: [] });
 
-  it("lists, by record, the strings the stored removed corrections rewrote", () => {
+  it("lists, by record, the strings the stored removed corrections rewrote and the record holds as REMOVED_TEXT", () => {
+    const rec = removedIn({
+      finding: ["explainer.how_sure", "title", "explainer.found", "explainer.matters", "explainer.background", "explainer.could_lead"],
+      brief: ["lead.0.text"], term: ["definition"],
+    });
+    const second: Finding = { ...structuredClone(rec.findings[0]!), id: "math-2026-0002" };
+    writeRemoved(second, "sources.0.url");
     const found = removedPaths([
-      removal({ finding_id: "bio-2026-0001", path: "explainer.how_sure" }),
-      removal({ finding_id: "bio-2026-0001", path: "title" }),
-      removal({ finding_id: "math-2026-0002", path: "sources.0.url" }),
-      removal({ edition_date: D, path: "lead.0.text" }),
-      removal({ term_id: "protein-folding", path: "definition" }),
-      removal({ finding_id: "bio-2026-0001", type: "update", path: "explainer.found" }),
-      removal({ finding_id: "bio-2026-0001", type: "correction", path: "explainer.matters" }),
-      removal({ finding_id: "bio-2026-0001", type: "clarification", path: "explainer.background" }),
+      removal({ finding_id: F, path: "explainer.how_sure" }),
+      removal({ finding_id: F, path: "title" }),
+      removal({ finding_id: second.id, path: "sources.0.url" }),
+      removal({ edition_date: B, path: "lead.0.text" }),
+      removal({ term_id: T, path: "definition" }),
+      removal({ finding_id: F, type: "update", path: "explainer.found" }),
+      removal({ finding_id: F, type: "correction", path: "explainer.matters" }),
+      removal({ finding_id: F, type: "clarification", path: "explainer.background" }),
       removal({ path: "explainer.could_lead" }),
-    ]);
-    expect([...found.keys()].sort(byCodeUnit)).toEqual([`brief:${D}`, "finding:bio-2026-0001", "finding:math-2026-0002", "term:protein-folding"]);
-    expect([...found.get("finding:bio-2026-0001")!].sort(byCodeUnit)).toEqual(["explainer.how_sure", "title"]);
+    ], { findings: [rec.findings[0]!, second], briefs: [rec.brief], terms: rec.terms });
+    expect([...found.keys()].sort(byCodeUnit)).toEqual([`brief:${B}`, `finding:${F}`, "finding:math-2026-0002", `term:${T}`].sort(byCodeUnit));
+    expect([...found.get(`finding:${F}`)!].sort(byCodeUnit)).toEqual(["explainer.how_sure", "title"]);
     expect([...found.get("finding:math-2026-0002")!]).toEqual(["sources.0.url"]);
-    expect([...found.get(`brief:${D}`)!]).toEqual(["lead.0.text"]);
-    expect([...found.get("term:protein-folding")!]).toEqual(["definition"]);
-    expect(removedPaths([]).size).toBe(0);
+    expect([...found.get(`brief:${B}`)!]).toEqual(["lead.0.text"]);
+    expect([...found.get(`term:${T}`)!]).toEqual(["definition"]);
+    expect(removedPaths([], { findings: rec.findings, briefs: [rec.brief], terms: rec.terms }).size).toBe(0);
+  });
+
+  it("lists a path only where the record holds REMOVED_TEXT: other text there is judged as any other string, whatever the correction says", () => {
+    const named = [removal({ finding_id: F, path: "explainer.how_sure" })];
+    const holding = (value: unknown): number => {
+      const finding = structuredClone(made.findings[0]!);
+      (finding.explainer as Record<string, unknown>).how_sure = value;
+      return removedPaths(named, only(finding)).size;
+    };
+    expect(holding({ ...REMOVED_TEXT })).toBe(1);
+    // other text, and a half-removed L10n in either language or with no Chinese
+    expect(removedPaths(named, only(made.findings[0]!)).size).toBe(0);
+    expect(holding({ en: "A sequence of steps.", zh: REMOVED_TEXT.zh })).toBe(0);
+    expect(holding({ en: REMOVED_TEXT.en, zh: "別的文字。" })).toBe(0);
+    expect(holding({ en: REMOVED_TEXT.en, zh: null })).toBe(0);
+    expect(holding({ ...REMOVED_TEXT, extra: "x" })).toBe(0);
+    expect(holding(null)).toBe(0);
+    expect(holding(REMOVED_TEXT.en)).toBe(1);
+    expect(holding(REMOVED_TEXT.zh)).toBe(0);
+    expect(holding("Other text.")).toBe(0);
+  });
+
+  it("lists a plain string that is REMOVED_TEXT's English, a path with no value and a record that is not given never", () => {
+    const rec = removedIn({ finding: ["sources.0.url"] });
+    const at = (path: string, records = { findings: rec.findings, briefs: [rec.brief], terms: rec.terms }): number =>
+      removedPaths([removal({ finding_id: F, path })], records).size;
+    expect(at("sources.0.url")).toBe(1);
+    expect(at("sources.1.url")).toBe(0);
+    expect(at("sources.9.url")).toBe(0);
+    expect(at("sources.00.url")).toBe(0);
+    expect(at("no.such.path")).toBe(0);
+    expect(at("sources.0.url.x")).toBe(0);
+    expect(at("sources.0.url", { findings: [], briefs: [rec.brief], terms: rec.terms })).toBe(0);
+    const noFigure = structuredClone(rec.findings[0]!);
+    noFigure.figure = null;
+    expect(at("figure.credit", { findings: [noFigure], briefs: [], terms: [] })).toBe(0);
+    expect(removedPaths([removal({ edition_date: B, path: "lead.0.text" })], { findings: rec.findings, briefs: [], terms: [] }).size).toBe(0);
+    expect(removedPaths([removal({ edition_date: "2026-11-01", path: "lead.0.text" })], { findings: [], briefs: [removedIn({ brief: ["lead.0.text"] }).brief], terms: [] }).size).toBe(0);
+    expect(removedPaths([removal({ term_id: "no-such-term", path: "definition" })], { findings: [], briefs: [], terms: removedIn({ term: ["definition"] }).terms }).size).toBe(0);
+  });
+
+  it("takes a term's definition as removed when its English is REMOVED_TEXT and its Chinese is too, or the term has none", () => {
+    const named = [removal({ term_id: T, path: "definition" })];
+    const listed = (en: string, zh: string | null | "absent"): number => {
+      const term = structuredClone(made.terms[0]!);
+      term.en.definition = en;
+      if (zh === "absent") term.zh = null;
+      else term.zh!.definition = zh as string;
+      return removedPaths(named, { findings: [], briefs: [], terms: [term] }).size;
+    };
+    expect(listed(REMOVED_TEXT.en, REMOVED_TEXT.zh)).toBe(1);
+    expect(listed(REMOVED_TEXT.en, "absent")).toBe(1);
+    expect(listed(REMOVED_TEXT.en, "別的文字。")).toBe(0);
+    expect(listed("Other text.", REMOVED_TEXT.zh)).toBe(0);
+    expect(listed("Other text.", "absent")).toBe(0);
+    expect(listed(REMOVED_TEXT.en, REMOVED_TEXT.en)).toBe(0);
   });
 
   function withRemoval(record: CorrectionRecord, generic: string): { inv: Inventory; target: RecordType; id: string; path: string } {
     const path = generic.replaceAll("*", "0");
     const key = record === "finding" ? { finding_id: made.findings[0]!.id } : record === "edition" ? { edition_date: made.brief.date } : { term_id: made.terms[0]!.id };
-    const inv = publishedInventory({ ...made, corrections: [removal({ ...key, path })], being: beingAll(made) });
+    const rec = removedIn({ [record === "edition" ? "brief" : record]: [path] });
+    const inv = publishedInventory({ ...made, ...rec, corrections: [removal({ ...key, path })], being: beingAll(made) });
     const target: RecordType = record === "finding" ? "finding" : record === "edition" ? "brief" : "term";
     const id = record === "finding" ? made.findings[0]!.id : record === "edition" ? made.brief.date : made.terms[0]!.id;
     return { inv, target, id, path };
@@ -657,7 +793,25 @@ describe("removed text", () => {
     expect(sides.size).toBe(marked.length > 1 ? 2 : 1);
   });
 
-  it("is keyed on the stored correction alone", () => {
+  it("marks nothing where the correction is filed and the record still holds other text: that text stays in every selector", () => {
+    const record = (generic: string, record: CorrectionRecord): Inventory => {
+      const path = generic.replaceAll("*", "0");
+      const key = record === "finding" ? { finding_id: made.findings[0]!.id } : record === "edition" ? { edition_date: made.brief.date } : { term_id: made.terms[0]!.id };
+      return publishedInventory({ ...made, corrections: [removal({ ...key, path })], being: beingAll(made) });
+    };
+    for (const [kind, generic] of ALL_PATHS) {
+      const inv = record(generic, kind);
+      expect(inv.entries.some((e) => e.removed), `${kind} ${generic}`).toBe(false);
+    }
+    // the sentence stays in the selectors that read it
+    const inv = record("explainer.how_sure", "finding");
+    expect(modelProse(inv).some((e) => e.path === `findings/${F}.json: explainer.how_sure.en`)).toBe(true);
+    expect(everyString(inv).some((e) => e.path === `findings/${F}.json: explainer.how_sure.zh`)).toBe(true);
+    expect(dualUseStrings(inv).some((e) => e.path === `findings/${F}.json: explainer.how_sure.zh`)).toBe(true);
+    expect(removedProse(inv)).toEqual([]);
+  });
+
+  it("is keyed on the stored correction and the record's text together", () => {
     const world = storedWorld();
     world.findings[0]!.explainer.how_sure = { en: REMOVED_TEXT.en, zh: REMOVED_TEXT.zh };
     // the same text with no correction is judged like any other text
@@ -674,10 +828,19 @@ describe("removed text", () => {
     // the brief of another date is not marked either
     const other = removal({ edition_date: "2026-11-01", path: "lead.0.text" });
     expect(publishedInventory({ ...world, corrections: [other], being: NOBODY }).entries.some((e) => e.removed)).toBe(false);
+    // the correction with other text in the record marks nothing: the text is judged
+    const kept = storedWorld();
+    kept.findings[0]!.explainer.how_sure = { en: "Other text.", zh: REMOVED_TEXT.zh };
+    const none = publishedInventory({ ...kept, corrections: [real], being: NOBODY });
+    expect(none.entries.some((e) => e.removed)).toBe(false);
+    expect(modelProse(none).map((e) => e.text)).toContain("Other text.");
   });
 
   it("keeps a removed string out of every selector but removedProse, which returns the model prose among them", () => {
     const world = storedWorld();
+    world.findings[0]!.explainer.how_sure = { ...REMOVED_TEXT };
+    world.findings[0]!.ai.evidence[0]!.quote = REMOVED_TEXT.en;
+    world.brief!.lead[0]!.text = { ...REMOVED_TEXT };
     const corrections = [
       removal({ finding_id: "bio-2026-0001", path: "explainer.how_sure" }),
       removal({ finding_id: "bio-2026-0001", path: "ai.evidence.0.quote", id: "C-0002" }),
@@ -721,7 +884,12 @@ const CENSUS: Inventory = (() => {
     ...SIDE_CASES.map((c, i) => stored(i, c)),
     ...removals.map((c, i) => stored(SIDE_CASES.length + i, c, { type: "removed" })),
   ];
-  const published = publishedInventory({ ...made, corrections, being: beingAll({ ...made, corrections }) });
+  // the records hold REMOVED_TEXT at the removed paths, as publishing leaves them
+  const rewritten = removedIn({
+    finding: removals.filter((c) => c.target === "finding").map((c) => c.path), brief: removals.filter((c) => c.target === "brief").map((c) => c.path),
+    term: removals.filter((c) => c.target === "term").map((c) => c.path),
+  });
+  const published = publishedInventory({ ...made, ...rewritten, corrections, being: beingAll({ ...made, corrections }) });
   const { draft, context } = zhWorld();
   return merge(draftInventory(draftA.value), draftInventory(draftB.value), published, zhInventory(draft, context));
 })();
@@ -753,8 +921,8 @@ const MEMBERS: Record<string, { select: (inv: Inventory) => StringEntry[]; membe
   dualUseStrings: { select: dualUseStrings, members: { kinds: READABLE, langs: BOTH, sides: ANY } },
   // SECRET_LIKE, CANARY: every string there is
   everyString: { select: everyString, members: { kinds: KINDS, langs: BOTH, sides: ANY } },
-  // BLOCKED_HOST: English, no values
-  blockedHostStrings: { select: blockedHostStrings, members: { kinds: READABLE, langs: ["en"], sides: ANY } },
+  // BLOCKED_HOST: every string of either draft but the values, a Chinese address too
+  blockedHostStrings: { select: blockedHostStrings, members: { kinds: READABLE, langs: BOTH, sides: ANY } },
   urlStrings: { select: urlStrings, members: { kinds: ["url"], langs: BOTH, sides: ANY } },
   // TERM_DEFINED and READING_LEVEL: the explainer parts, with the Lead, the deep dive and the big picture for the second
   explainerStrings: { select: explainerStrings, members: { kinds: ["prose"], langs: ["en"], sides: [null], fields: EXPLAINER_FIELDS } },
@@ -823,6 +991,29 @@ describe("the selectors", () => {
     holds(readingStrings, [IN.found, IN.lead], [IN.title, IN.update, IN.idea, IN.also, IN.reason]);
     holds(definitionStrings, [IN.definition], [IN.found, IN.term]);
     holds(urlStrings, [IN.url], [IN.doi, IN.source]);
+  });
+
+  it("holds a correction's source_url, in a draft and in a stored record, as an address of its own that is being published as its record is", () => {
+    const url = "https://example.org/ut-sample-correction-page";
+    const draft = structuredClone(weekdayDraft());
+    draft.corrections[1]!.source_url = url;
+    const drafted = draftInventory(draft);
+    const mine = (inv: Inventory): StringEntry[] => urlStrings(inv).filter((e) => e.urlKind === "correction_source");
+    expect(mine(drafted).map((e) => [e.path, e.text, e.kind, e.lang, e.publishing])).toEqual([["corrections[1].source_url", url, "url", "en", true]]);
+    expect(blockedHostStrings(drafted)).toEqual(expect.arrayContaining(mine(drafted)));
+
+    const world = structuredClone(storedWorld());
+    world.corrections[0]!.source_url = url;
+    world.corrections[1]!.source_url = `${url}-2`;
+    const being: BeingPublished = { ...NOBODY, corrections: new Set([world.corrections[1]!.id]) };
+    const stored = publishedInventory({ ...world, being });
+    expect(mine(stored).map((e) => [e.path, e.text, e.publishing])).toEqual([
+      ["corrections.json: corrections[0].source_url", url, false],
+      ["corrections.json: corrections[1].source_url", `${url}-2`, true],
+    ]);
+    expect(blockedHostStrings(stored)).toEqual(expect.arrayContaining(mine(stored)));
+    // a null source_url is no string at all
+    expect(mine(publishedInventory({ ...storedWorld(), being }))).toEqual([]);
   });
 
   it("holds each explainer part of each finding, and the Chinese selectors each language's strings", () => {

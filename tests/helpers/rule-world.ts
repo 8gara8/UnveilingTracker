@@ -6,14 +6,15 @@
 //
 // The Tuesday 2026-11-24 edition: a story (`new-1`, biology, Major, AI role, Checked) and two items (`new-2`, a finding with no AI
 // role, and the stored `math-2026-0002`, returning with a new Checked entry), a rung change on `phys-2026-0003`, an idea, an
-// Also noted line, and corrections that refile `math-2026-0002` (Landmark) and `phys-2026-0003` (field and subfield). The stored
+// Also noted line, and corrections that refile `math-2026-0002` (Major, as the story is, so no item outranks it) and `phys-2026-0003` (field and
+// subfield). Every id the draft names is one that the contexts list, and every subfield one that config/fields.json lists. The stored
 // edition holds the same findings as records.
 //
 // New for this project; Cyber's tests built their drafts inline in each test file.
 
 import { loadConfig, type LoadedConfig } from "../../lib/config";
 import { addDays } from "../../lib/dates";
-import { FIELDS } from "../../lib/vocab";
+import { FIELDS, REMOVED_TEXT } from "../../lib/vocab";
 import { Brief } from "../../lib/schema/brief";
 import { AgentContext } from "../../lib/schema/context";
 import { DraftBrief } from "../../lib/schema/draft";
@@ -27,6 +28,8 @@ import { normalizeUrl } from "../../lib/urls";
 export const D = "2026-11-24";
 export const MONDAY = "2026-11-23";
 export const SUNDAY = "2026-11-22";
+/** The finding the Monday's week lists as a setback: its entry there is a setback too. */
+const SETBACK = "chem-2026-0004";
 
 export type Json = Record<string, any>;
 
@@ -97,14 +100,14 @@ const newFinding = (ref: string, over: Json = {}): Json => ({
   figure: null,
   who: [{ name: "Example Lab", ror: null }],
   terms: [{ new: true, term: "protein folding", definition: "How a chain of amino acids curls into a shape." }, { new: false, id: "enzyme" }],
-  related: ["bio-2026-0002"],
+  related: ["math-2026-0002"],
   first_published: "2026-11-20",
   ...over,
 });
 
 const noRoleFinding = (ref: string): Json => {
   const f = newFinding(ref, {
-    field: "earth", subfield: "soils", kind: "check", title: "A sample soil check", significance: "notable",
+    field: "earth", subfield: "ecology", kind: "check", title: "A sample soil check", significance: "notable",
     ai: { role: "none", confidence: null, systems: [], evidence: [] },
     go_deeper: ["s1"], rung_history: [{ rung: "checked", date: "2026-11-19", source_id: "s1", note: "Posted by Example Journal." }],
     sources: [draftSource(1, { url: "https://example.org/paper/7", doi: null })], reactions: [], artefacts: artefacts(), terms: [],
@@ -137,8 +140,8 @@ export function weekdayDraft(): DraftBrief {
     deep_dive: null,
     review: null,
     corrections: [
-      { finding_id: "math-2026-0002", edition_date: null, term_id: null, type: "correction", path: "significance", after: "landmark",
-        reason: "The result is a Landmark.", source_url: null, report_id: "R-0002" },
+      { finding_id: "math-2026-0002", edition_date: null, term_id: null, type: "correction", path: "significance", after: "major",
+        reason: "The result is Major.", source_url: null, report_id: "R-0002" },
       { finding_id: "phys-2026-0003", edition_date: null, term_id: null, type: "correction", path: "field", after: "chemistry",
         reason: "The field was wrong.", source_url: null, report_id: null },
       { finding_id: "phys-2026-0003", edition_date: null, term_id: null, type: "correction", path: "subfield", after: "catalysis",
@@ -150,6 +153,18 @@ export function weekdayDraft(): DraftBrief {
     ],
     sources: [briefSource(1), briefSource(2), briefSource(3)],
   });
+}
+
+/**
+ * The Tuesday draft with its significance correction raised to Landmark, which `math-2026-0002` is then on D: its returning update,
+ * its rung note and its corrected text are a Landmark's. The story is Major, so a draft filed so fails STORY_PICK: a test that runs the
+ * structure rules starts from `weekdayDraft()`.
+ */
+export function landmarkDraft(): DraftBrief {
+  const draft = structuredClone(weekdayDraft()) as Json;
+  draft.corrections[0].after = "landmark";
+  draft.corrections[0].reason = "The result is a Landmark.";
+  return DraftBrief.parse(draft);
 }
 
 // ── The context ──────────────────────────────────────────────────────────────────────────────────
@@ -224,7 +239,7 @@ const contextBase = (): Json => ({
     field_cap: 2,
     fields: [
       { id: "biology", subfields: [{ id: "proteins", name: "Proteins" }, { id: "genomics", name: "Genomics" }] },
-      { id: "earth", subfields: [{ id: "soils", name: "Soils" }] },
+      { id: "earth", subfields: [{ id: "ecology", name: "Ecology" }] },
       { id: "chemistry", subfields: [{ id: "catalysis", name: "Catalysis" }] },
     ],
     source_kinds: [{ id: "paper", label: "Paper", means: "a peer-reviewed paper" }],
@@ -240,7 +255,8 @@ export function weekdayContext(): AgentContext {
 /** A Monday's context with `n` findings in its week (a week of fewer than 3 is a short one). */
 export function mondayContext(n = 3): AgentContext {
   const findings = ["math-2026-0002", "phys-2026-0003", "chem-2026-0004", "bio-2026-0001"].slice(0, n).map((id) => ({
-    id, title: `A made-up result of ${id}`, field: "mathematics", kind: "result", significance: "notable", rung: "checked",
+    id, title: `A made-up result of ${id}`, field: "mathematics", kind: id === SETBACK ? "setback" : "result", significance: id === SETBACK ? "major" : "notable",
+    rung: "checked",
   }));
   return AgentContext.parse({
     ...contextBase(),
@@ -249,7 +265,7 @@ export function mondayContext(n = 3): AgentContext {
     week: {
       findings,
       rung_changes: [{ finding_id: "phys-2026-0003", from: "preprint", to: "disputed", date: "2026-11-20", by: "agent" }],
-      setbacks: ["chem-2026-0004"],
+      setbacks: [SETBACK],
       field_counts: FIELDS.map((field) => ({ field, reported: 1, counted: 1 })),
     },
   });
@@ -353,7 +369,7 @@ export function storedFinding(id = "bio-2026-0001", over: Json = {}): Finding {
     schema_version: 1,
     id,
     field,
-    subfield: field === "mathematics" ? "proofs" : field === "physics" ? "optics" : field === "chemistry" ? "catalysis" : "proteins",
+    subfield: field === "mathematics" ? "formal-proof" : field === "physics" ? "atoms-optics" : field === "chemistry" ? "catalysis" : "proteins",
     kind: "result",
     title: lz("A sample protein result", "範例蛋白質成果"),
     depth: "story",
@@ -418,6 +434,35 @@ export function storedCorrections(): Correction[] {
   ];
 }
 
+/**
+ * Writes REMOVED_TEXT where each stored `removed` correction of a world names, in the record it names, as publishing leaves it (SPEC §4.12
+ * "Removed text"): an `L10n` in both languages, a plain string in English, a term's `definition` in both languages (its Chinese too while
+ * the term has any). A rule skips a string only where the record holds the marker, so a test that files a `removed` correction calls this
+ * over the same world. A correction that names no record of the world, or a path the record has no value at, is left alone. Mutates `world`.
+ */
+export function holdRemoved(world: { brief?: Brief | null; findings: Finding[]; terms: Term[]; corrections: readonly Correction[] }): void {
+  for (const c of world.corrections) {
+    if (c.type !== "removed") continue;
+    if (c.term_id !== null) {
+      const term = world.terms.find((t) => t.id === c.term_id);
+      if (term === undefined || c.path !== "definition") continue;
+      term.en.definition = REMOVED_TEXT.en;
+      if (term.zh !== null) term.zh.definition = REMOVED_TEXT.zh;
+      continue;
+    }
+    const record: unknown = c.finding_id !== null ? world.findings.find((f) => f.id === c.finding_id)
+      : world.brief != null && world.brief.date === c.edition_date ? world.brief : undefined;
+    if (record === undefined) continue;
+    const segments = c.path.split(".");
+    const last = segments.pop()!;
+    let at: any = record;
+    for (const key of segments) at = at === null || typeof at !== "object" ? undefined : at[key];
+    if (at === null || typeof at !== "object" || !(last in at) || at[last] === null) continue;
+    const value = at[last];
+    at[last] = typeof value === "object" && Object.keys(value).join(",") === "en,zh" ? { ...REMOVED_TEXT } : REMOVED_TEXT.en;
+  }
+}
+
 export function storedReports(): Report[] {
   return [Report.parse({
     id: "R-0001", received: "2026-11-23T10:00:00+08:00", issue_number: 12, finding_id: "bio-2026-0001", kind: "fact", evidence_url: null,
@@ -463,7 +508,9 @@ export function storedBrief(): Brief {
 /** The stored records of the Tuesday: three findings (a biology story, a new maths item, a returning physics item), the glossary term, the corrections and the report. */
 export function storedWorld(): { brief: Brief; findings: Finding[]; terms: Term[]; corrections: Correction[]; reports: Report[]; config: LoadedConfig } {
   const math = storedFinding("math-2026-0002", { depth: "item", title: l("A made-up proof"), first_brief: D, briefs: [D], terms: [] });
-  const phys = storedFinding("phys-2026-0003", { depth: "item", first_brief: "2026-11-10", briefs: ["2026-11-10", D] });
+  // Last changed the day before D, so the Tuesday adds no text to it: a stored finding that is not being published (a finding whose
+  // `updated` is D and that holds an entry dated D is, F-17; a test of a returning finding sets `updated: D`).
+  const phys = storedFinding("phys-2026-0003", { depth: "item", first_brief: "2026-11-10", briefs: ["2026-11-10", D], updated: "2026-11-23" });
   return {
     brief: storedBrief(),
     findings: [storedFinding("bio-2026-0001"), math, phys],

@@ -8,6 +8,7 @@
 //   Source containers     sourceContainers(), citations(), resolveSource(), extendPath()
 //   Evidence and the pack lacksInput(), evidenceOf(), seenText(), inEvidence(), packDatesOf()
 //   Strings               stringsOf(), stringsAbout(), onlyPublishing(), pageProseOf(), isLandmarkText()
+//   Messages              shown()
 //
 // Cyber's lib/rules/shared.ts at the fork commit 3ced1fb, adapted: `isBrief()`, `editionKind()`, `seenText()`, `inEvidence()`
 // and `packDatesOf()` (which was in Cyber's lib/validate.ts) are Cyber's, reading this project's inputs; Cyber's field walkers,
@@ -92,7 +93,11 @@ export function draftRungEntries(views: Views, key: string): RungView[] {
   return entries;
 }
 
-/** The findings whose records are being judged against `config/`: a new finding of a draft, or a stored finding being published. */
+/**
+ * The findings judged whole against `config/`: a new finding of a draft, or a stored finding first briefed on the date being published.
+ * A returning finding that the date gave text is not one: only its new entries are being published (`RungView.publishing`,
+ * `SourceView.publishing`, and each string of the inventory), and its title, explainer and figure stay archived records.
+ */
 export const publishingFindings = (views: Views): FindingView[] => views.findings.filter((f) => f.publishing && f.basis !== "context");
 
 // ── Source containers ────────────────────────────────────────────────────────────────────────────
@@ -107,8 +112,6 @@ export interface SourceContainer {
   readonly sources: readonly SourceView[] | null;
   /** Where the list sits, for an issue path: `new_findings[0].sources`, `sources`, `findings/<id>.json: sources`. */
   readonly where: string;
-  /** True in draft mode and for the record being published: the tests that read `config/` run on it alone (SPEC §4.12 "Stored records"). */
-  readonly publishing: boolean;
 }
 
 /**
@@ -118,10 +121,8 @@ export interface SourceContainer {
 export function sourceContainers(views: Views): SourceContainer[] {
   const own = views.findings
     .filter((f) => f.basis !== "context")
-    .map((f): SourceContainer => ({ scope: "finding", prefix: "s", owner: f, sources: f.sources, where: f.where("sources"), publishing: f.publishing }));
-  return [...own, {
-    scope: "brief", prefix: "b", owner: null, sources: views.brief.sources, where: views.brief.where("sources"), publishing: views.brief.publishing,
-  }];
+    .map((f): SourceContainer => ({ scope: "finding", prefix: "s", owner: f, sources: f.sources, where: f.where("sources") }));
+  return [...own, { scope: "brief", prefix: "b", owner: null, sources: views.brief.sources, where: views.brief.where("sources") }];
 }
 
 /** `base` with a path appended: `extendPath("returning[0]", "source_ids", 1)` is `returning[0].source_ids[1]`; with no segments, `base`. */
@@ -287,4 +288,26 @@ export function isLandmarkText(views: Views, entry: StringEntry): boolean {
   if (finding === null) return false;
   const facts = entry.filedOn === null ? finding.published : finding.filedOn(entry.filedOn);
   return facts.significance === "landmark";
+}
+
+// ── Messages ─────────────────────────────────────────────────────────────────────────────────────
+
+/** The most characters of a value that a message prints (an address, a host, an artefact, a licence quote, a number as written): the schema puts no limit on any of them. */
+const SHOWN_MAX = 120;
+
+/**
+ * `text` as a message prints it: whole up to `max` characters, else its first `max - 3` characters and "...". The count is of
+ * code points, not UTF-16 units, so a character outside the Basic Multilingual Plane is one character and is never cut in two: with
+ * a `max` of 120, a text of 61 to 120 such characters is printed whole, and one of 121 or more is cut to 117 and "...".
+ */
+export function shownTo(text: string, max: number): string {
+  // Only the head is read: its 2 * max + 1 UTF-16 units hold more than max characters whenever the text does (each character is at
+  // most two units), so a value of 5 MB costs a message no more than a short one (the draft is untrusted, and a message quotes what it holds).
+  const characters = Array.from(text.slice(0, 2 * max + 1));
+  return characters.length <= max ? text : `${characters.slice(0, max - 3).join("")}...`;
+}
+
+/** `text` as a message prints a value that the schema does not limit: `shownTo()` the first SHOWN_MAX characters. */
+export function shown(text: string): string {
+  return shownTo(text, SHOWN_MAX);
 }

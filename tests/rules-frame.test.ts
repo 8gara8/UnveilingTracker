@@ -10,6 +10,7 @@ import path from "node:path";
 import { describe, expect, it, vi } from "vitest";
 import { draftFilings } from "@/lib/items";
 import { ID_PATTERNS } from "@/lib/schema/common";
+import type { Finding } from "@/lib/schema/finding";
 import { Correction, type Evidence } from "@/lib/schema/misc";
 import { normalizeUrl } from "@/lib/urls";
 import {
@@ -41,7 +42,7 @@ import * as structureModule from "@/lib/rules/structure";
 import * as wordsModule from "@/lib/rules/words";
 import * as zhModule from "@/lib/rules/zh";
 import {
-  D, deepFreeze, draftInputs, l, mondayContext, pack, storedWorld, sundayContext, weekdayContext, weekdayDraft,
+  D, deepFreeze, draftInputs, l, landmarkDraft, mondayContext, pack, storedWorld, sundayContext, weekdayContext, weekdayDraft,
 } from "./helpers/rule-world";
 
 const ALL_MODES: readonly RuleMode[] = ["draft", "published", "zh"];
@@ -49,6 +50,13 @@ const ALL_MODES: readonly RuleMode[] = ["draft", "published", "zh"];
 const draftInput = (over: Partial<DraftInputs> = {}, draft = weekdayDraft()): DraftInput => buildDraftInput(draft, { ...draftInputs(), ...over });
 const publishedInput = (publishing: string | null = D, world = storedWorld()): PublishedInput =>
   buildPublishedInput(world.brief, world, { config: world.config, publishing });
+
+/**
+ * The stored world with `phys-2026-0003`, first briefed on 2026-11-10 and last changed the day before D in the world itself, changed on
+ * D instead: it holds a rung entry, a note and sources of D, so it returns with new text and is being published on D (F-17).
+ */
+const returningPhys = (world: ReturnType<typeof storedWorld>): ReturnType<typeof storedWorld> =>
+  ({ ...world, findings: world.findings.map((f) => (f.id === "phys-2026-0003" ? { ...f, updated: D } : f)) });
 
 /** A Chinese-mode input for the engine's tests: it reads only the mode, the date and the evidence of the Chinese side. */
 const zhInput = (evidence: Evidence | null): RuleInput =>
@@ -239,9 +247,12 @@ describe("the findings a run shows", () => {
     expect(draftRungEntries(publishedInput().views, "bio-2026-0001")).toEqual([]);
   });
 
-  it("lists the findings being judged against config/: new ones in a draft, stored ones being published in published mode", () => {
+  it("lists the findings judged whole against config/: new ones in a draft, stored ones first briefed on the date being published in published mode", () => {
     expect(publishingFindings(views).map((f) => f.key)).toEqual(["new-1", "new-2"]);
     expect(publishingFindings(publishedInput(D).views).map((f) => f.key)).toEqual(["bio-2026-0001", "math-2026-0002"]);
+    // phys-2026-0003, first briefed on 2026-11-10, returns on D with a note, a source and a rung entry of D: only that text is being published (F-55), so it is no
+    // finding judged whole (its subfield, title, explainer and figure are archived records)
+    expect(publishingFindings(publishedInput(D, returningPhys(storedWorld())).views).map((f) => f.key)).toEqual(["bio-2026-0001", "math-2026-0002"]);
     expect(publishingFindings(publishedInput(null).views)).toEqual([]);
     expect(publishingFindings(publishedInput("2026-11-10").views).map((f) => f.key)).toEqual(["phys-2026-0003"]);
   });
@@ -419,6 +430,14 @@ describe("the strings of a finding and of the brief about it", () => {
     expect(mine.every((e) => e.publishing)).toBe(true);
     expect(mine.some((e) => e.finding === "bio-2026-0001")).toBe(true);
     expect(mine.some((e) => e.finding === "phys-2026-0003")).toBe(false);
+    // the same finding changed on D, with text of D, keeps the entries of that text alone (F-17, F-55): its rung entry recorded on D and its two sources added on D
+    const returning = onlyPublishing(publishedInput(D, returningPhys(storedWorld())).inventory.entries).filter((e) => e.finding === "phys-2026-0003").map((e) => e.path);
+    expect(returning.length).toBeGreaterThan(0);
+    expect(returning.every((p) => /^findings\/phys-2026-0003\.json: (rung_history\[1\]|sources\[[01]\])/.test(p))).toBe(true);
+    expect(returning).toEqual(expect.arrayContaining([
+      "findings/phys-2026-0003.json: rung_history[1].note.en", "findings/phys-2026-0003.json: rung_history[1].note.zh",
+      "findings/phys-2026-0003.json: sources[0].url", "findings/phys-2026-0003.json: sources[1].title",
+    ]));
     expect(onlyPublishing(publishedInput(null).inventory.entries)).toEqual([]);
     expect(onlyPublishing(input.inventory.entries)).toEqual(input.inventory.entries);
     expect(onlyPublishing([])).toEqual([]);
@@ -435,10 +454,13 @@ describe("the strings of a finding and of the brief about it", () => {
   it("asks whether a string is a Landmark's text on the date it is filed on", () => {
     const entry = (i: RuleInput, p: string) => i.inventory.entries.find((e) => e.path === p)!;
     // the draft refiles math-2026-0002 as a Landmark, dated D: its returning update is a Landmark's text
-    expect(isLandmarkText(input.views, entry(input, "returning[0].update"))).toBe(true);
-    expect(isLandmarkText(input.views, entry(input, "new_findings[0].explainer.found"))).toBe(false);
-    expect(isLandmarkText(input.views, entry(input, "lead[0].text"))).toBe(false);
-    expect(isLandmarkText(input.views, entry(input, "ideas[0].text"))).toBe(false);
+    const landmark = draftInput({}, landmarkDraft());
+    expect(isLandmarkText(landmark.views, entry(landmark, "returning[0].update"))).toBe(true);
+    expect(isLandmarkText(landmark.views, entry(landmark, "new_findings[0].explainer.found"))).toBe(false);
+    expect(isLandmarkText(landmark.views, entry(landmark, "lead[0].text"))).toBe(false);
+    expect(isLandmarkText(landmark.views, entry(landmark, "ideas[0].text"))).toBe(false);
+    // the frame's own draft files it as Major, so the same update is no Landmark's
+    expect(isLandmarkText(input.views, entry(input, "returning[0].update"))).toBe(false);
 
     // a stored Landmark that a correction dated D lowers: its own text is as first published, a returning update is filed on D
     const world = storedWorld();
@@ -458,8 +480,8 @@ describe("the strings of a finding and of the brief about it", () => {
     expect(isLandmarkText(stored.views, at(`briefs/${D}.json: lead[0].text.en`))).toBe(false);
     expect(isLandmarkText(stored.views, at("findings/phys-2026-0003.json: explainer.found.en"))).toBe(false);
     // a string about a finding no view has is no one's
-    const orphan = { ...entry(input, "returning[0].update"), about: "nope-2026-0001" };
-    expect(isLandmarkText(input.views, orphan)).toBe(false);
+    const orphan = { ...entry(landmark, "returning[0].update"), about: "nope-2026-0001" };
+    expect(isLandmarkText(landmark.views, orphan)).toBe(false);
   });
 });
 
@@ -477,7 +499,7 @@ describe("buildDraftInput()", () => {
     expect(input.format).toBe("daily");
     expect(input.config).toBe(inputs.config);
     expect(input.filing.map((f) => [f.id, f.date, f.finding_id, f.type, f.path, f.after])).toEqual([
-      ["C-0001", D, "math-2026-0002", "correction", "significance", { en: "landmark" }],
+      ["C-0001", D, "math-2026-0002", "correction", "significance", { en: "major" }],
       ["C-0002", D, "phys-2026-0003", "correction", "field", { en: "chemistry" }],
       ["C-0003", D, "phys-2026-0003", "correction", "subfield", { en: "catalysis" }],
     ]);
@@ -488,7 +510,7 @@ describe("buildDraftInput()", () => {
     expect(input.draft.metrics).toBe(inputs.metrics);
     expect(input.draft.pack).toBe(inputs.pack);
     // views and inventory are built from them
-    expect(input.views.find("math-2026-0002")!.latest.significance).toBe("landmark");
+    expect(input.views.find("math-2026-0002")!.latest.significance).toBe("major");
     expect(input.views.find("math-2026-0002")!.published.significance).toBe("notable");
     expect(input.views.find("phys-2026-0003")!.latest).toMatchObject({ field: "chemistry", subfield: "catalysis" });
     expect(input.inventory.unclassified).toEqual([]);
@@ -530,7 +552,7 @@ describe("buildDraftInput()", () => {
 describe("beingPublishedOf() and buildPublishedInput()", () => {
   const world = storedWorld();
 
-  it("names the records of the date being published: the brief, the findings first briefed, the terms, the corrections and the reports of that date", () => {
+  it("names the records of the date being published: the brief, the findings first briefed or given text, the terms, the corrections and the reports of that date", () => {
     const being = beingPublishedOf(world.brief, world, D);
     expect(being.brief).toBe(true);
     expect([...being.findings].sort()).toEqual(["bio-2026-0001", "math-2026-0002"]);
@@ -551,6 +573,145 @@ describe("beingPublishedOf() and buildPublishedInput()", () => {
     expect([other.reports.size, other.terms.size]).toEqual([0, 0]);
   });
 
+  describe("a returning finding (F-17)", () => {
+    const PHYS = "phys-2026-0003";
+    const EARLIER = "2026-11-20";
+    const phys = world.findings.find((f) => f.id === PHYS)!;
+    /** The finding as stored, with `updated` as given and one kind of entry dated D (or none): the other entries are all dated before D. */
+    const dated = (kind: "rung" | "note" | "source" | null, updated: string = D, others: string = EARLIER): Finding => ({
+      ...phys,
+      updated,
+      rung_history: phys.rung_history.map((r, i) => ({ ...r, recorded: kind === "rung" && i === 1 ? D : others })),
+      since_then: phys.since_then.map((s) => ({ ...s, date: kind === "note" ? D : others })),
+      sources: phys.sources.map((s, i) => ({ ...s, added: kind === "source" && i === 0 ? D : others })),
+    });
+    const beingOf = (finding: Finding, publishing: string | null = D): string[] =>
+      [...beingPublishedOf(world.brief, { ...world, findings: [finding] }, publishing).findings];
+
+    it("counts a finding whose `updated` is D and that holds a rung entry, a note or a source of D, each alone", () => {
+      // the world's phys-2026-0003 holds entries of D (a rung entry and its sources) but was last changed the day before
+      expect(beingOf(phys)).toEqual([]);
+      expect(beingOf({ ...phys, updated: D })).toEqual([PHYS]);
+      expect(beingOf(dated("rung"))).toEqual([PHYS]);
+      expect(beingOf(dated("note"))).toEqual([PHYS]);
+      expect(beingOf(dated("source"))).toEqual([PHYS]);
+    });
+
+    it("leaves a finding that D changed without adding text: its `updated` is D, and nothing in it is dated D", () => {
+      // a `removed` correction's rewrite (§4.10) and the Chinese backlog's fill (§4.6) move `updated` and add no entry
+      expect(beingOf(dated(null))).toEqual([]);
+    });
+
+    it("leaves a finding whose `updated` is not D, whatever its entries say, and a date other than D", () => {
+      expect(beingOf(dated("rung", EARLIER))).toEqual([]);
+      expect(beingOf(dated("note", EARLIER))).toEqual([]);
+      expect(beingOf(dated("source", EARLIER))).toEqual([]);
+      expect(beingOf({ ...phys, updated: D }, "2026-11-25")).toEqual([]);
+      expect(beingOf({ ...phys, updated: D }, null)).toEqual([]);
+      // `updated` and the entries are on D, but D is not the date being published
+      expect(beingOf({ ...phys, updated: "2026-11-25" }, "2026-11-25")).toEqual([]);
+    });
+
+    it("reads the dates as equal to D, not as D or later: a finding changed after D, or whose entries all come after D, is not being published on D", () => {
+      const LATER = "2026-11-25";
+      // the finding returned on D and again the day after: `updated` is the later edition, so D's publish does not judge it
+      for (const kind of ["rung", "note", "source"] as const) expect(beingOf(dated(kind, LATER)), kind).toEqual([]);
+      // `updated` is D, but no entry is dated D: every one is dated after it
+      expect(beingOf(dated(null, D, LATER))).toEqual([]);
+      for (const kind of ["rung", "note", "source"] as const) expect(beingOf(dated(kind, D, LATER)), kind).toEqual([PHYS]);
+    });
+
+    it("still counts a finding first briefed on D, whatever its `updated` and entries say", () => {
+      expect(beingOf({ ...dated(null, EARLIER), first_brief: D, briefs: [D] })).toEqual([PHYS]);
+      // ... and whatever the result's own first public date is, D included: a paper out on the morning of its first brief is judged whole
+      expect(beingOf({ ...dated(null, EARLIER), first_brief: D, briefs: [D], first_published: D })).toEqual([PHYS]);
+    });
+
+    describe("what D gave it (F-55)", () => {
+      const partsOf = (finding: Finding, publishing: string | null = D) => {
+        const parts = beingPublishedOf(world.brief, { ...world, findings: [finding] }, publishing).parts;
+        const p = parts.get(PHYS);
+        return { size: parts.size, parts: p === undefined ? null : { rung_history: [...p.rung_history], since_then: [...p.since_then], sources: [...p.sources] } };
+      };
+
+      it("lists the indices of the entries D added, each kind alone: the rung entry recorded on D, the note dated D, the source added on D", () => {
+        expect(partsOf(dated("rung"))).toEqual({ size: 1, parts: { rung_history: [1], since_then: [], sources: [] } });
+        expect(partsOf(dated("note"))).toEqual({ size: 1, parts: { rung_history: [], since_then: [0], sources: [] } });
+        expect(partsOf(dated("source"))).toEqual({ size: 1, parts: { rung_history: [], since_then: [], sources: [0] } });
+        // the world's own entries: the second rung entry and both sources are D's, its one note is older
+        expect(partsOf({ ...phys, updated: D })).toEqual({ size: 1, parts: { rung_history: [1], since_then: [], sources: [0, 1] } });
+      });
+
+      it("lists the entries of several kinds together, and of every index a kind holds", () => {
+        const all: Finding = {
+          ...phys, updated: D,
+          rung_history: phys.rung_history.map((r) => ({ ...r, recorded: D })),
+          since_then: [...phys.since_then, ...phys.since_then, ...phys.since_then].map((s, i) => ({ ...s, date: i === 1 ? EARLIER : D })),
+          sources: phys.sources.map((s) => ({ ...s, added: D })),
+        };
+        expect(partsOf(all)).toEqual({ size: 1, parts: { rung_history: [0, 1], since_then: [0, 2], sources: [0, 1] } });
+      });
+
+      it("gives a finding first briefed on D no parts, so it is judged whole, and a finding D left alone none", () => {
+        const first: Finding = { ...dated("rung"), first_brief: D, briefs: [D] };
+        expect(partsOf(first)).toEqual({ size: 0, parts: null });
+        expect(beingOf(first)).toEqual([PHYS]);
+        expect(partsOf(dated(null))).toEqual({ size: 0, parts: null });
+        expect(partsOf(dated("rung", EARLIER))).toEqual({ size: 0, parts: null });
+        expect(partsOf(dated("rung"), null)).toEqual({ size: 0, parts: null });
+        expect(partsOf(dated("rung"), "2026-11-25")).toEqual({ size: 0, parts: null });
+        expect(beingPublishedOf(world.brief, world, null).parts.size).toBe(0);
+      });
+
+      it("never judges a finding with no first brief whole: a seeded Ledger record is judged in the entries D gave it alone, and not at all when D left it alone", () => {
+        const seed = (finding: Finding): Finding => ({ ...finding, first_brief: null, briefs: [], history: true });
+        // the Ledger's own text was judged when it was seeded; D's rung entry is all that is new (SPEC §8.13, §8.9's retraction notice)
+        expect(partsOf(seed(dated("rung")))).toEqual({ size: 1, parts: { rung_history: [1], since_then: [], sources: [] } });
+        expect(beingOf(seed(dated("rung")))).toEqual([PHYS]);
+        expect(partsOf(seed({ ...phys, updated: D }))).toEqual({ size: 1, parts: { rung_history: [1], since_then: [], sources: [0, 1] } });
+        expect(beingOf(seed(dated(null)))).toEqual([]);
+        expect(beingOf(seed(dated("rung", EARLIER)))).toEqual([]);
+        expect(beingOf(seed(dated("rung")), null)).toEqual([]);
+      });
+
+      it("never judges a Ledger seed whole on its first brief either: a seed first briefed on D is judged in the entries D gave it alone (F-75)", () => {
+        const briefed = (finding: Finding): Finding => ({ ...finding, history: true, first_brief: D, briefs: [D] });
+        // the seed's own text was judged when it was seeded (SPEC §8.13), so D's entries are all that is new
+        expect(partsOf(briefed(dated("rung")))).toEqual({ size: 1, parts: { rung_history: [1], since_then: [], sources: [] } });
+        expect(beingOf(briefed(dated("rung")))).toEqual([PHYS]);
+        expect(partsOf(briefed(dated("note")))).toEqual({ size: 1, parts: { rung_history: [], since_then: [0], sources: [] } });
+        expect(partsOf(briefed({ ...phys, updated: D }))).toEqual({ size: 1, parts: { rung_history: [1], since_then: [], sources: [0, 1] } });
+        // nothing D added, or D not the date of its change: not being published at all, where a finding that is no seed is judged whole
+        expect(beingOf(briefed(dated(null)))).toEqual([]);
+        expect(beingOf({ ...dated(null), first_brief: D, briefs: [D] })).toEqual([PHYS]);
+        expect(beingOf(briefed(dated("rung", EARLIER)))).toEqual([]);
+        expect(beingOf(briefed(dated("rung")), null)).toEqual([]);
+        expect(beingOf(briefed(dated("rung")), "2026-11-25")).toEqual([]);
+      });
+
+      it("names only the findings of `findings` in `parts`", () => {
+        const being = beingPublishedOf(world.brief, returningPhys(world), D);
+        expect([...being.findings].sort()).toEqual(["bio-2026-0001", "math-2026-0002", "phys-2026-0003"]);
+        expect([...being.parts.keys()]).toEqual([PHYS]);
+      });
+    });
+
+    it("judges the new rung note of a returning finding as a record being published: DUAL_USE stays an error there, and is a warning once the finding was last changed before D", () => {
+      const sequence = ["ACGT", "ACGT", "ACGT", "ACGT", "ACGT"].join("");
+      const withNote = (f: Finding): Finding => ({ ...f, rung_history: f.rung_history.map((r, i) => (i === 1 ? { ...r, note: { en: sequence, zh: r.note!.zh } } : r)) });
+      const run = (f: Finding, publishing: string | null = D) => {
+        const content = { ...world, findings: world.findings.map((x) => (x.id === PHYS ? withNote(f) : x)) };
+        return runRules(buildPublishedInput(world.brief, content, { config: world.config, publishing }), RULES).filter((i) => i.code === "DUAL_USE");
+      };
+      const at = `findings/${PHYS}.json: rung_history[1].note.en`;
+      expect(run({ ...phys, updated: D }).map((i) => [i.severity, i.path])).toEqual([["error", at]]);
+      expect(run(dated("rung")).map((i) => [i.severity, i.path])).toEqual([["error", at]]);
+      expect(run(dated(null)).map((i) => [i.severity, i.path])).toEqual([["warning", at]]);
+      expect(run(phys).map((i) => [i.severity, i.path])).toEqual([["warning", at]]);
+      expect(run({ ...phys, updated: D }, null).map((i) => [i.severity, i.path])).toEqual([["warning", at]]);
+    });
+  });
+
   it("builds the input of a stored brief: its date, the corrections as filed, the views and the inventory", () => {
     const input = buildPublishedInput(world.brief, world, { config: world.config, publishing: D, fileDate: D });
     expect(input.mode).toBe("published");
@@ -568,6 +729,17 @@ describe("beingPublishedOf() and buildPublishedInput()", () => {
     expect(input.views.find("phys-2026-0003")!.publishing).toBe(false);
     expect(input.inventory.entries.find((e) => e.path === `briefs/${D}.json: lead[0].text.en`)!.publishing).toBe(true);
     expect(input.inventory.entries.find((e) => e.path === "findings/phys-2026-0003.json: explainer.found.en")!.publishing).toBe(false);
+    // a finding changed on D with text of D is being published (F-17), but only that text is: its views and its entries say so (F-55)
+    const returning = buildPublishedInput(world.brief, returningPhys(world), { config: world.config, publishing: D });
+    expect([...returning.published.being.findings].sort()).toEqual(["bio-2026-0001", "math-2026-0002", "phys-2026-0003"]);
+    const phys = returning.views.find("phys-2026-0003")!;
+    expect(phys.publishing).toBe(false);
+    expect(phys.rung_history!.map((r) => r.publishing)).toEqual([false, true]);
+    expect(phys.sources!.map((s) => s.publishing)).toEqual([true, true]);
+    const flag = (path: string) => returning.inventory.entries.find((e) => e.path === path)!.publishing;
+    expect(flag("findings/phys-2026-0003.json: explainer.found.en")).toBe(false);
+    expect(flag("findings/phys-2026-0003.json: rung_history[1].note.en")).toBe(true);
+    expect(flag("findings/bio-2026-0001.json: explainer.found.en")).toBe(true);
   });
 
   it("judges nothing as being published without a date, and reads the edition and format of the brief", () => {
@@ -675,7 +847,35 @@ describe("runRules(): which rules run", () => {
     const missing = runRules(zhInput(null), [rule]);
     expect(check).not.toHaveBeenCalled();
     expect(missing.map((i) => i.path)).toEqual(["(evidence)"]);
-    expect(missing[0]!.message).toBe(`No evidence for ${D}, so 1 check did not run: A.`);
+    expect(missing[0]!.message).toBe(`No Chinese evidence for ${D}, so 1 check did not run: A.`);
+  });
+
+  it("names the evidence file of the run's own mode: logs/D.evidence.json for a draft, logs/D.zh-evidence.json for the Chinese pass (F-21)", () => {
+    const needs = stub("A", () => [], { needs: ["evidence"] });
+    const uses = stub("B", () => [], { uses: ["evidence"] });
+    const english = runRules(draftInput({ evidence: null }), [needs, uses])[0]!;
+    expect([english.code, english.severity, english.path]).toEqual(["INPUT_MISSING", "warning", "(evidence)"]);
+    expect(english.message).toBe(`No evidence for ${D}, so 1 check did not run: A, and 1 check ran without it: B.`);
+    expect(english.hint).toBe("Give the run's evidence (logs/D.evidence.json: the URLs it saw and the pages it fetched) and validate again.");
+    const chinese = runRules(zhInput(null), [needs, uses])[0]!;
+    expect([chinese.code, chinese.severity, chinese.path]).toEqual(["INPUT_MISSING", "warning", "(evidence)"]);
+    expect(chinese.message).toBe(`No Chinese evidence for ${D}, so 1 check did not run: A, and 1 check ran without it: B.`);
+    expect(chinese.hint).toBe("Give the Chinese pass's evidence (logs/D.zh-evidence.json: the 樂詞網 pages it fetched) and validate again.");
+    // each hint names its own file and never the other's
+    expect(english.hint).not.toContain("zh-evidence");
+    expect(chinese.hint).not.toContain("logs/D.evidence.json");
+  });
+
+  it("keeps the English labels of the metrics and the pack in a draft run, which is the only mode that can lack them", () => {
+    const issues = runRules(draftInput({ metrics: null, pack: null }), [stub("A", () => [], { needs: ["metrics", "pack"] })]);
+    expect(issues.map((i) => [i.path, i.message])).toEqual([
+      ["(metrics)", `No metrics file for ${D}, so 1 check did not run: A.`],
+      ["(pack)", `No source pack for ${D}, so 1 check did not run: A.`],
+    ]);
+    expect(issues.map((i) => i.hint)).toEqual([
+      "Give the metrics for the date (content/metrics/D.json, else the staged copy) and validate again.",
+      "Give the pack for the date (packs/D.json) and validate again.",
+    ]);
   });
 });
 
@@ -744,7 +944,7 @@ describe("lacksInput() and runRules(): a rule that only uses an input", () => {
     const rule = stub("A", () => [], { uses: ["evidence", "metrics"] });
     expect(runRules(zhInput(draftInputs().evidence), [rule])).toEqual([]);
     const issues = runRules(zhInput(null), [rule]);
-    expect(issues.map((i) => i.message)).toEqual([`No evidence for ${D}, so 1 check ran without it: A.`]);
+    expect(issues.map((i) => i.message)).toEqual([`No Chinese evidence for ${D}, so 1 check ran without it: A.`]);
   });
 
   it("does not skip a rule built without the list, and still reads a `needs` it has", () => {
@@ -826,12 +1026,65 @@ describe("runRules(): safety codes on records that are not being published", () 
     expect(Object.entries(PATHS).map(([key, p]) => [key, severityAt(input, p)])).toEqual([
       ["brief", "error"], ["bio", "error"], ["phys", "warning"], ["termBeing", "error"], ["correctionOld", "warning"], ["correctionNew", "error"], ["report", "error"],
     ]);
+    // phys-2026-0003, first briefed earlier, is changed on D with text of D (F-17), but its explainer stays an archived record (F-55, next test)
+    expect(severityAt(publishedInput(D, returningPhys(storedWorld())), PATHS.phys)).toBe("warning");
     const idle = publishedInput(null);
     for (const p of Object.values(PATHS)) expect(severityAt(idle, p), p).toBe("warning");
     const elsewhere = publishedInput("2026-11-10");
     expect(severityAt(elsewhere, PATHS.phys)).toBe("error");
     expect(severityAt(elsewhere, PATHS.bio)).toBe("warning");
     expect(severityAt(elsewhere, PATHS.brief)).toBe("warning");
+  });
+
+  it("keeps an error on the new text of a returning finding and turns the rest of that finding into a warning (F-55)", () => {
+    const input = publishedInput(D, returningPhys(storedWorld()));
+    const at = (rest: string, id = "phys-2026-0003"): string => severityAt(input, `findings/${id}.json: ${rest}`);
+    // the rung entry recorded on D and the two sources added on D, whatever their language or field
+    for (const rest of ["rung_history[1].note.en", "rung_history[1].note.zh", "rung_history[1].source_id", "sources[0].url", "sources[1].title", "sources[1].publisher"]) {
+      expect(at(rest), rest).toBe("error");
+    }
+    // the rest: the frozen title, explainer, figure, evidence, the older entry and the note dated before D, and the lists themselves
+    for (const rest of ["title.en", "explainer.found.en", "explainer.how_sure.zh", "figure.alt.en", "ai.evidence[0].quote", "reactions[0].quote", "since_then[0].text.en",
+      "rung_history[0].note.en", "rung_history[10].note.en", "sources", "rung_history", "sources[10].url", "go_deeper[0]", "subfield"]) {
+      expect(at(rest), rest).toBe("warning");
+    }
+    // a finding first briefed on D is judged whole, as before
+    for (const rest of ["title.en", "explainer.found.en", "rung_history[0].note.en", "sources[0].url", "since_then[0].text.en"]) expect(at(rest, "bio-2026-0001"), rest).toBe("error");
+    // an older finding D left alone is judged on none of it
+    for (const rest of ["title.en", "rung_history[1].note.en", "sources[0].url"]) expect(severityAt(publishedInput(D), `findings/phys-2026-0003.json: ${rest}`), rest).toBe("warning");
+  });
+
+  it("reads the indices of a returning finding's new entries as numbers, not as the start of another", () => {
+    const world = storedWorld();
+    const f = world.findings.find((x) => x.id === "phys-2026-0003")!;
+    // twelve sources, only the twelfth added on D: sources[1] and sources[11] begin alike, and sources[11] alone is new
+    const many = Array.from({ length: 12 }, (_, i) => ({ ...f.sources[0]!, id: `s${i + 1}`, url: `https://example.org/paper/${i + 1}`, added: i === 11 ? D : "2026-11-20" }));
+    const content = { ...world, findings: world.findings.map((x) => (x.id === f.id ? { ...f, updated: D, rung_history: f.rung_history.map((r) => ({ ...r, recorded: "2026-11-20" })), since_then: [], sources: many } : x)) };
+    const input = publishedInput(D, content);
+    const at = (rest: string): string => severityAt(input, `findings/phys-2026-0003.json: ${rest}`);
+    expect([at("sources[11].url"), at("sources[1].url"), at("sources[0].url"), at("sources[111].url")]).toEqual(["error", "warning", "warning", "warning"]);
+  });
+
+  it("treats a finding with no first brief like any returning finding: its entries of D are being published, its seeded text is an archived record (F-55)", () => {
+    const world = storedWorld();
+    const seeded = { ...world, findings: world.findings.map((f) => (f.id === "phys-2026-0003" ? { ...f, first_brief: null, briefs: [], history: true, updated: D } : f)) };
+    const input = publishedInput(D, seeded);
+    const at = (rest: string): string => severityAt(input, `findings/phys-2026-0003.json: ${rest}`);
+    expect([at("rung_history[1].note.en"), at("sources[0].url"), at("sources[1].title")]).toEqual(["error", "error", "error"]);
+    expect([at("title.en"), at("explainer.found.en"), at("rung_history[0].note.en"), at("since_then[0].text.en"), at("subfield")]).toEqual(["warning", "warning", "warning", "warning", "warning"]);
+  });
+
+  it("judges a Ledger seed first briefed on D like a returning finding: its entries of D are errors and its seeded text a warning, where a finding that is no seed is whole (F-75)", () => {
+    const world = storedWorld();
+    const briefed = (history: boolean) => ({
+      ...world, findings: world.findings.map((f) => (f.id === "phys-2026-0003" ? { ...f, first_brief: D, briefs: [D], history, updated: D } : f)),
+    });
+    const at = (history: boolean, rest: string): string => severityAt(publishedInput(D, briefed(history)), `findings/phys-2026-0003.json: ${rest}`);
+    const added = ["rung_history[1].note.en", "sources[0].url", "sources[1].title"];
+    const seeded = ["title.en", "explainer.found.en", "rung_history[0].note.en", "since_then[0].text.en", "subfield"];
+    expect(added.map((rest) => at(true, rest))).toEqual(["error", "error", "error"]);
+    expect(seeded.map((rest) => at(true, rest))).toEqual(["warning", "warning", "warning", "warning", "warning"]);
+    expect([...added, ...seeded].map((rest) => at(false, rest))).toEqual(Array.from({ length: 8 }, () => "error"));
   });
 
   it("demotes each code of ARCHIVE_WARNING_CODES and no other, and says why when the issue gave no hint", () => {
@@ -1019,13 +1272,17 @@ describe("the table of codes", () => {
     expect(withMode("published").filter((c) => !c.startsWith("ZH_"))).toHaveLength(RULE_CODE_TABLE.filter((r) => !r.code.startsWith("ZH_") && r.group !== "seed" && !draftOnly.includes(r.code)).length);
     // the Chinese codes that read no input also run on a stored record, but not the two that need the pass's own evidence and keys
     expect(withMode("published").filter((c) => c.startsWith("ZH_"))).toEqual(["ZH_TRADITIONAL", "ZH_AVOID", "ZH_TERMS", "ZH_ENGLISH_ONCE", "ZH_CHARS", "ZH_NO_DASH", "ZH_HYPE"]);
-    // a Chinese draft is judged for the safety codes and the schema, and by every ZH code that is not stored-only
+    // a Chinese draft is judged for the schema, its own date and time, the four safety codes, and by every ZH code that is not stored-only
     expect(withMode("zh")).toEqual([
-      "SCHEMA", "DUAL_USE", "SECRET_LIKE", "CANARY", "ZH_KEYS", "ZH_PARITY", "ZH_TRADITIONAL", "ZH_AVOID", "ZH_TERMS", "ZH_RUNG_LABEL", "ZH_ENGLISH_ONCE",
+      "SCHEMA", "DATE_MISMATCH", "DUAL_USE", "SECRET_LIKE", "CANARY", "BLOCKED_HOST", "ZH_KEYS", "ZH_PARITY", "ZH_TRADITIONAL", "ZH_AVOID", "ZH_TERMS", "ZH_RUNG_LABEL", "ZH_ENGLISH_ONCE",
       "ZH_CHARS", "ZH_OFFICIAL", "ZH_NO_DASH", "ZH_HYPE",
     ]);
-    // only the codes the spec names are checked on a stored record's safety lists
-    expect(RULE_CODE_TABLE.filter((r) => r.group === "safety").map((r) => r.scopes)).toEqual([["draft", "published", "zh"], ["draft", "published", "zh"], ["draft", "published", "zh"], ["draft", "published"]]);
+    // every safety code reads a Chinese string as it reads an English one, BLOCKED_HOST included
+    expect(RULE_CODE_TABLE.filter((r) => r.group === "safety").map((r) => r.scopes)).toEqual([
+      ["draft", "published", "zh"], ["draft", "published", "zh"], ["draft", "published", "zh"], ["draft", "published", "zh"],
+    ]);
+    // DATE_MISMATCH is the one structure code that a Chinese draft is judged for
+    expect(RULE_CODE_TABLE.filter((r) => r.group === "structure" && (r.scopes as readonly string[]).includes("zh")).map((r) => r.code)).toEqual(["DATE_MISMATCH"]);
   });
 
   it("gives each code one group, as assigned, with SCHEMA the engine's and SEED_SOURCES the seeder's", () => {
@@ -1045,12 +1302,14 @@ describe("the table of codes", () => {
       expect(info.tests.length, info.code).toBeGreaterThan(0);
       expect(info.severity === "S" ? info.tests : ["x"]).toEqual(info.severity === "S" ? ["S"] : ["x"]);
     }
-    // soft gates have an S fixture: the three the spec names
-    expect(RULE_CODE_TABLE.filter((r) => r.tests.includes("S")).map((r) => r.code)).toEqual(["WORDS", "READING_LEVEL", "REPORT_UPHELD"]);
+    // the S files are READING_LEVEL's and REPORT_UPHELD's: WORDS has a soft gate too, but no weekday draft within its budgets reaches
+    // the page total's target, so its soft gate is proved by T cases (and by lowered budgets), and its row lists F and T
+    expect(RULE_CODE_TABLE.filter((r) => r.tests.includes("S")).map((r) => r.code)).toEqual(["READING_LEVEL", "REPORT_UPHELD"]);
+    expect(codeInfo("WORDS")!.tests).toEqual(["F", "T"]);
     expect(RULE_CODE_TABLE.filter((r) => r.severity !== "H").map((r) => r.code)).toEqual(["READING_LEVEL", "REPORT_UPHELD"]);
     // the Chinese fixtures: the ZH codes, and the codes a Chinese draft is judged for besides
     expect(RULE_CODE_TABLE.filter((r) => r.tests.includes("Z")).map((r) => r.code)).toEqual([
-      "SCHEMA", "DUAL_USE", "SECRET_LIKE", "CANARY", ...GROUP_CODES.zh,
+      "SCHEMA", "DATE_MISMATCH", "DUAL_USE", "SECRET_LIKE", "CANARY", "BLOCKED_HOST", ...GROUP_CODES.zh,
     ]);
     // the stored-record codes and the seeder's are T cases
     for (const code of [...GROUP_CODES.published, "SEED_SOURCES"]) expect(codeInfo(code)!.tests, code).toEqual(["T"]);

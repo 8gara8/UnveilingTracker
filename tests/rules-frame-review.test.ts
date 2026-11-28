@@ -24,7 +24,7 @@ import type { Inventory, StringEntry } from "@/lib/rules/strings";
 import { defineRule, type DraftInput, type PublishedInput, type Rule, type RuleInput, type StoredRecords } from "@/lib/rules/types";
 import { validateDraft } from "@/lib/validate";
 import {
-  D, MONDAY, clone, deepFreeze, draftInputs, l, lz, mondayContext, storedCorrections, storedFinding, storedTerm, storedWorld, sundayContext,
+  D, MONDAY, clone, deepFreeze, draftInputs, holdRemoved, l, landmarkDraft, lz, mondayContext, storedCorrections, storedFinding, storedTerm, storedWorld, sundayContext,
   weekdayDraft,
 } from "./helpers/rule-world";
 
@@ -275,22 +275,37 @@ describe("which records are being published", () => {
     expect(input.views.findings.every((f) => f.publishing)).toBe(true);
     const containers = shared.sourceContainers(input.views);
     expect(containers.length).toBeGreaterThan(1);
-    expect(containers.every((c) => c.publishing)).toBe(true);
+    const sources = containers.flatMap((c) => c.sources ?? []);
+    expect(sources.length).toBeGreaterThan(1);
+    expect(sources.every((s) => s.publishing)).toBe(true);
+    // the entries a draft writes are being published too, whatever finding they are written on
+    const rungs = input.views.findings.flatMap((f) => f.rung_history ?? []).concat(input.views.brief.returning.flatMap((r) => (r.rung === null ? [] : [r.rung])));
+    expect(rungs.length).toBeGreaterThan(1);
+    expect(rungs.every((r) => r.publishing)).toBe(true);
   });
 
-  it("follows the date being published in a stored run: the brief, then each finding by its first brief", () => {
+  it("follows the date being published in a stored run: the brief, then each finding by its first brief or the text it was given", () => {
     const tuesday = publishedInputOf(storedWorld(), D);
     expect(tuesday.views.brief.publishing).toBe(true);
-    expect(shared.sourceContainers(tuesday.views).map((c) => [c.scope, c.owner?.key ?? null, c.publishing])).toEqual([
-      ["finding", "bio-2026-0001", true], ["finding", "math-2026-0002", true], ["finding", "phys-2026-0003", false], ["brief", null, true],
-    ]);
+    // each source says whether it is being published: the sources of each container, as a list of flags
+    const flags = (input: PublishedInput): [string, boolean[]][] =>
+      shared.sourceContainers(input.views).map((c) => [c.owner?.key ?? "brief", (c.sources ?? []).map((s) => s.publishing)]);
+    // phys-2026-0003 was first briefed on another date and last changed the day before D
+    expect(flags(tuesday)).toEqual([["bio-2026-0001", [true, true]], ["math-2026-0002", [true, true]], ["phys-2026-0003", [false, false]], ["brief", [true, true]]]);
+    // changed on D, with a note, a source and a rung entry of D, the same finding returns with new text (F-17), and its sources and rung entry of D are the
+    // text being published, not the finding (F-55): the finding itself is no finding judged whole
+    const world = storedWorld();
+    const returning = publishedInputOf({ ...world, findings: world.findings.map((f) => (f.id === "phys-2026-0003" ? { ...f, updated: D } : f)) });
+    expect(flags(returning)).toEqual([["bio-2026-0001", [true, true]], ["math-2026-0002", [true, true]], ["phys-2026-0003", [true, true]], ["brief", [true, true]]]);
+    expect(returning.views.find("phys-2026-0003")!.publishing).toBe(false);
+    expect(returning.views.find("phys-2026-0003")!.rung_history!.map((r) => r.publishing)).toEqual([false, true]);
     const earlier = publishedInputOf(storedWorld(), "2026-11-10");
     expect(earlier.views.brief.publishing).toBe(false);
-    expect(shared.sourceContainers(earlier.views).map((c) => c.publishing)).toEqual([false, false, true, false]);
+    expect(flags(earlier).map(([, f]) => f)).toEqual([[false, false], [false, false], [true, true], [false, false]]);
     const none = publishedInputOf(storedWorld(), null);
     expect(none.views.brief.publishing).toBe(false);
-    expect(shared.sourceContainers(none.views).every((c) => !c.publishing)).toBe(true);
-    expect(none.views.findings.every((f) => !f.publishing)).toBe(true);
+    expect(flags(none).every(([, f]) => f.every((x) => !x))).toBe(true);
+    expect(none.views.findings.every((f) => !f.publishing && f.rung_history!.every((r) => !r.publishing))).toBe(true);
   });
 
   it("is false of the brief when no brief is judged", () => {
@@ -302,11 +317,16 @@ describe("which records are being published", () => {
     expect(input.views.findings.filter((f) => f.publishing).map((f) => f.key)).toEqual(["bio-2026-0001", "math-2026-0002"]);
   });
 
-  it("keeps the engine's own answer for the brief and the views in step", () => {
+  it("keeps the engine's own answer for the brief and the views in step: a finding view is judged whole when its finding is, and a returning one is not", () => {
+    const world = storedWorld();
+    const returning = { ...world, findings: world.findings.map((f) => (f.id === "phys-2026-0003" ? { ...f, updated: D } : f)) };
     for (const publishing of [D, null, "2026-11-10"]) {
-      const input = publishedInputOf(storedWorld(), publishing);
-      expect(input.views.brief.publishing, String(publishing)).toBe(input.published.publishing);
-      for (const f of input.views.findings) expect(f.publishing, `${publishing} ${f.key}`).toBe(input.published.being.findings.has(f.key));
+      for (const kind of [world, returning]) {
+        const input = publishedInputOf(kind, publishing);
+        expect(input.views.brief.publishing, String(publishing)).toBe(input.published.publishing);
+        const { findings, parts } = input.published.being;
+        for (const f of input.views.findings) expect(f.publishing, `${publishing} ${f.key}`).toBe(findings.has(f.key) && !parts.has(f.key));
+      }
     }
   });
 });
@@ -317,11 +337,38 @@ describe("the places a stored removed correction rewrote", () => {
       ...storedCorrections()[0]!, id: "C-0003", date: D, finding_id: null, edition_date: null, term_id: null, type: "removed",
       before: l("The earlier text."), after: lz(REMOVED_TEXT.en, REMOVED_TEXT.zh), ...over,
     });
+  /** The stored world with the corrections filed and, as publishing leaves it, REMOVED_TEXT written at the paths the removed ones name. */
   const worldWith = (...extra: Correction[]): World => {
     const world = storedWorld();
-    return { ...world, corrections: [...world.corrections, ...extra] };
+    const filed = { ...world, corrections: [...world.corrections, ...extra] };
+    holdRemoved(filed);
+    return filed;
   };
   const inputWith = (...extra: Correction[]): PublishedInput => publishedInputOf(worldWith(...extra), D);
+
+  /** A world in which the removable path holds a text to rewrite: the stored world has none at a null or at a part a Tuesday lacks, so those get one first. */
+  const seeded = (target: "finding" | "brief", path: string, ...more: Correction[]): World => {
+    const world = storedWorld();
+    const finding = world.findings[0]!;
+    const brief = world.brief as any;
+    if (target === "finding" && path === "rung_history.0.note") finding.rung_history[0]!.note = lz("A made-up note.", "範例註記。");
+    if (target === "finding" && path.startsWith("figure.")) {
+      finding.figure = { source_id: "s1", image_url: "https://example.org/figure.png", licence: "CC-BY-4.0", licence_quote: "Licensed under CC BY.", credit: "Figure 1, made up", alt: lz("A made-up figure.", "範例圖。") };
+    }
+    if (target === "brief" && path === "story.update") brief.story.update = lz("A made-up update.", "範例更新。");
+    if (target === "brief" && path === "items.0.update") brief.items[0].update = lz("A made-up update.", "範例更新。");
+    if (target === "brief" && path === "deep_dive.text") brief.deep_dive = { finding_id: finding.id, text: lz("A made-up deep dive.", "範例深入報導。"), source_ids: [], why_today: "rotation" };
+    if (target === "brief" && path.startsWith("review.")) {
+      brief.review = {
+        big_picture: lz("A made-up picture.", "範例全貌。"), remarkable: { finding_id: finding.id, note: lz("A made-up note.", "範例註記。") },
+        strongest_against: { text: lz("A made-up counter.", "範例反證。"), finding_ids: [], source_ids: [] }, field_counts: [], fell: [], setbacks: [],
+      };
+    }
+    if (target === "brief" && path === "status_note") brief.status_note = "A made-up note.";
+    world.corrections.push(...more);
+    holdRemoved(world);
+    return world;
+  };
 
   const FINDING_PATHS = REMOVABLE_PATHS.finding.map((generic) => generic.replaceAll("*", "0"));
   const EDITION_PATHS = REMOVABLE_PATHS.edition.map((generic) => generic.replaceAll("*", "0"));
@@ -334,7 +381,7 @@ describe("the places a stored removed correction rewrote", () => {
   });
 
   it.each(FINDING_PATHS)("names the place a removed correction of a finding rewrote, alone: %s", (path) => {
-    const input = inputWith(removal({ finding_id: "bio-2026-0001", path }));
+    const input = publishedInputOf(seeded("finding", path, removal({ finding_id: "bio-2026-0001", path })), D);
     expect([...input.views.find("bio-2026-0001")!.removed]).toEqual([path]);
     expect(input.views.find("math-2026-0002")!.removed.size).toBe(0);
     expect(input.views.brief.removed.size).toBe(0);
@@ -346,7 +393,7 @@ describe("the places a stored removed correction rewrote", () => {
   });
 
   it.each(EDITION_PATHS)("names the place a removed correction of the brief rewrote, alone: %s", (path) => {
-    const input = inputWith(removal({ edition_date: D, path }));
+    const input = publishedInputOf(seeded("brief", path, removal({ edition_date: D, path })), D);
     expect([...input.views.brief.removed]).toEqual([path]);
     expect(input.views.findings.every((f) => f.removed.size === 0)).toBe(true);
     for (const e of input.inventory.entries.filter((x) => x.removed)) {
@@ -377,6 +424,39 @@ describe("the places a stored removed correction rewrote", () => {
     );
     expect(input.views.findings.every((f) => f.removed.size === 0)).toBe(true);
     expect(input.views.brief.removed.size).toBe(0);
+  });
+
+  it("names no place where the record holds other text or none: a removal counts only where the record holds REMOVED_TEXT", () => {
+    const named = (path: string, edit: (w: World) => void = () => undefined): PublishedInput => {
+      const world = storedWorld();
+      world.corrections.push(removal({ finding_id: "bio-2026-0001", path }));
+      edit(world);
+      return publishedInputOf(world, D);
+    };
+    const none = (input: PublishedInput): void => {
+      expect(input.views.find("bio-2026-0001")!.removed.size).toBe(0);
+      expect(input.inventory.entries.filter((e) => e.removed)).toEqual([]);
+    };
+    // other text, a text removed in one language only or with no Chinese, a plain string that is the Chinese marker
+    none(named("explainer.how_sure"));
+    none(named("explainer.how_sure", (w) => { w.findings[0]!.explainer.how_sure = { en: REMOVED_TEXT.en, zh: "別的文字。" }; }));
+    none(named("explainer.how_sure", (w) => { w.findings[0]!.explainer.how_sure = { en: "Other text.", zh: REMOVED_TEXT.zh }; }));
+    none(named("explainer.how_sure", (w) => { w.findings[0]!.explainer.how_sure = { en: REMOVED_TEXT.en, zh: null }; }));
+    none(named("sources.0.url", (w) => { w.findings[0]!.sources[0]!.url = REMOVED_TEXT.zh; }));
+    // no text: a null part and a path the record has no value at
+    none(named("figure.credit"));
+    none(named("sources.9.url"));
+    none(named("rung_history.0.note"));
+    // and the marker beside the same correction is named
+    const held = named("explainer.how_sure", (w) => { w.findings[0]!.explainer.how_sure = { ...REMOVED_TEXT }; });
+    expect([...held.views.find("bio-2026-0001")!.removed]).toEqual(["explainer.how_sure"]);
+    // a term that is removed in English only is not flagged on the findings that use it
+    const half = storedWorld();
+    half.corrections.push(removal({ term_id: "protein-folding", path: "definition" }));
+    half.terms[0]!.en.definition = REMOVED_TEXT.en;
+    const input = publishedInputOf(half, D);
+    expect(input.views.findings.flatMap((f) => f.terms ?? []).every((t) => !t.removed)).toBe(true);
+    expect(input.inventory.entries.filter((e) => e.removed)).toEqual([]);
   });
 
   it("flags a term's rewritten definition on each finding that uses the term, and on no other use", () => {
@@ -435,7 +515,7 @@ describe("the finding as every correction files it", () => {
   it("is a new finding's own values, and what the stored and draft corrections file for a stored one", () => {
     const input = draftInputOf();
     expect(input.views.find("new-1")!.current).toEqual(input.views.find("new-1")!.published);
-    expect(input.views.find("math-2026-0002")!.current.significance).toBe("landmark");
+    expect(input.views.find("math-2026-0002")!.current.significance).toBe("major");
     expect(input.views.find("phys-2026-0003")!.current).toEqual(input.views.find("phys-2026-0003")!.latest);
   });
 });
@@ -480,7 +560,7 @@ describe("the stored records a draft run may be given", () => {
   });
 
   it("files a stored finding by its own record, the stored corrections and the draft's, by date and then id", () => {
-    const input = draftInputOf(weekdayDraft(), { stored: given() });
+    const input = draftInputOf(landmarkDraft(), { stored: given() });
     const math = input.views.find("math-2026-0002")!;
     // the record says major, a stored correction of 2026-11-10 says major, the draft's own, dated D, says landmark
     expect(math.published.significance).toBe("major");

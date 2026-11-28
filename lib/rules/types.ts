@@ -25,7 +25,7 @@ import type { DraftZh, ZhContext } from "../schema/draft-zh";
 import type { Finding } from "../schema/finding";
 import type { Term } from "../schema/glossary";
 import type { MetricsFile } from "../schema/metrics";
-import type { Correction, Evidence, Report } from "../schema/misc";
+import type { ArchiveIndex, Correction, Evidence, Report } from "../schema/misc";
 import type { Pack } from "../schema/pack";
 import type { Format } from "../vocab";
 import type { Inventory } from "./strings";
@@ -110,13 +110,19 @@ export type RuleNeed = "evidence" | "metrics" | "pack";
  * AI role, kind, reactions, `who` or sources). Several rows judge a stored finding by what only its record holds: NON_AI_LANDMARK_ONLY,
  * SETBACK_MAJOR and AI_CONFIDENCE its role and kind as published, LANDMARK_BASIS its reactions and `who`, RUNG_EVIDENCE and
  * RUNG_ORDER its rung history and sources. The validating stage (SPEC §8.2 stage 7, scripts/validate.ts) reads the stored
- * findings the draft names and every stored correction from `content/` and passes them as `DraftInputs.stored`; a finding it
- * gives is then a full view (`basis` stays `context`, `detail` is `full`), and the stored corrections file every finding as
- * `filedAs()` reads them. Without it a finding the context shows in part has a null fact wherever the context is silent, and a
- * rule skips what it cannot know.
+ * findings and every stored correction from `content/` and passes them as `DraftInputs.stored`: the English form every finding
+ * that a brief carried in the 90 days up to D, and each older finding that the context lists or the draft names; the Chinese form
+ * the findings its English draft names and the backlog findings its context lists. A finding it gives is then a full view (`basis`
+ * stays `context`, `detail` is `full`), and the stored corrections file every finding as `filedAs()` reads them. Without it a
+ * finding the context shows in part has a null fact wherever the context is silent, and a rule skips what it cannot know.
  */
 export interface StoredRecords {
-  /** The stored findings the draft names or the context lists; a finding the run does not give stays as the context shows it. */
+  /**
+   * The stored findings the run was given: for the English form, every finding that a brief carried in the 90 days up to D and
+   * each older one that the context lists or the draft names, though the draft names some of them nowhere and the context lists
+   * some of them not (DUPLICATE compares those too); for the Chinese form, the findings its English draft names and the backlog
+   * findings its context lists. A finding the run does not give stays as the context shows it.
+   */
   readonly findings: readonly Finding[];
   /** Every stored correction (`content/corrections.json`), oldest first. */
   readonly corrections: readonly Correction[];
@@ -136,19 +142,67 @@ export interface DraftSide {
   metrics: MetricsFile | null;
   /** `packs/D.json`; null skips the rules that `need` it. */
   pack: Pack | null;
+  /**
+   * The stored records the run was given (`DraftInputs.stored`), as given; null when it was given none. A rule that must read
+   * every stored record, not only the ones the views hold, reads them here (DUPLICATE, TERM_DEFINED); with null it skips that part.
+   */
+  stored: StoredRecords | null;
+}
+
+/**
+ * The text that edition D gave a returning stored finding (SPEC §4.12 "Stored records"), as the indices of its entries: the
+ * `rung_history` entries recorded on D, the `since_then` notes dated D and the `sources` added on D (§8.7, §5.8).
+ */
+export interface NewParts {
+  readonly rung_history: ReadonlySet<number>;
+  readonly since_then: ReadonlySet<number>;
+  readonly sources: ReadonlySet<number>;
 }
 
 /**
  * Which records of a published-mode run are being published (SPEC §4.12 "Stored records"): the brief `validateAll()` names
- * as `publishing`, the findings it adds (first briefed on its date), the terms it adds, the corrections dated on its date
- * and the reports decided on it. Only those are judged against `config/`, and only on those do the safety codes stay errors.
+ * as `publishing`, the findings it adds (first briefed on its date, or given text by it), the terms it adds, the corrections dated
+ * on its date and the reports decided on it. Only those are judged against `config/`, and only on those do the safety codes stay
+ * errors. A finding first briefed on the date is judged whole; a returning finding that the date gave text is judged only on that
+ * text (`parts`), the rest of it staying an archived record.
  */
 export interface BeingPublished {
   readonly brief: boolean;
+  /** The findings first briefed on the date, and the returning findings the date gave text: those of `parts`. */
   readonly findings: ReadonlySet<string>;
+  /** By finding id, for each finding of `findings` that was not first briefed on the date: the text the date gave it. */
+  readonly parts: ReadonlyMap<string, NewParts>;
   readonly terms: ReadonlySet<string>;
   readonly corrections: ReadonlySet<string>;
   readonly reports: ReadonlySet<string>;
+}
+
+/** One path the content reader found under the content folder (`validateAll()`, lib/validate-stored.ts): what FILE_LAYOUT and XREF know of a file. */
+export interface StoredFile {
+  /** Relative to the content folder, "/"-separated: `briefs/2026-11-24.json`. */
+  readonly path: string;
+  /** False for a link, a device or any other path that is not a regular file, and for a folder the reader could not list. */
+  readonly regular: boolean;
+  /** True when the file was read and its record passed its schema; false for an unreadable file, bad JSON, a schema failure or a path of no layout. */
+  readonly parsed: boolean;
+  /** For a finding file that parsed: the `id` it holds (FILE_LAYOUT: the file is named by it); else null. */
+  readonly id: string | null;
+}
+
+/**
+ * What a run over a whole content folder knows besides the records it is given (SPEC §4.12 XREF, LANG_PARITY, FILE_LAYOUT).
+ * `validateAll()` sets it on its one run over every stored record; a run for one brief (`validatePublished()`) has none, and
+ * the rules then judge what they were given alone.
+ */
+export interface PublishedFolder {
+  /** Every path under the folder, in code-unit order: files, and each link or folder the reader could not read as a file. */
+  readonly files: readonly StoredFile[];
+  /** Every stored brief that parsed, oldest first. */
+  readonly briefs: readonly Brief[];
+  /** `archive-index.json` when it parsed, else null. */
+  readonly archive: ArchiveIndex | null;
+  /** The glossary terms hidden for their own name (SPEC §8.9): LANG_PARITY asks no Chinese of them. */
+  readonly hiddenTerms: ReadonlySet<string>;
 }
 
 /** The published-mode side: a stored brief and the stored records the run reads. */
@@ -166,6 +220,8 @@ export interface PublishedSide {
   /** True when the brief is the one being published. */
   publishing: boolean;
   being: BeingPublished;
+  /** Set by `validateAll()` on its run over every stored record; absent for one brief. */
+  folder?: PublishedFolder;
 }
 
 /** The Chinese-draft side: the pass's draft and context, and the English draft they translate. */

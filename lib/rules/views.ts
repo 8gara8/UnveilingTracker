@@ -28,7 +28,7 @@ import type { Finding } from "../schema/finding";
 import type { Term } from "../schema/glossary";
 import type { Correction } from "../schema/misc";
 import { compareFindingIds } from "../ids";
-import { files, removedPaths, type PublishedStrings } from "./strings";
+import { files, judgedOf, judgesPart, removedPaths, type Judged, type PublishedStrings } from "./strings";
 import { formatPath, type StoredRecords } from "./types";
 
 // ── Facts ────────────────────────────────────────────────────────────────────────────────────────
@@ -77,6 +77,11 @@ export interface SourceView {
   readonly seen_as: SeenAs | null;
   /** The edition that added the source; null in a draft. */
   readonly added: IsoDate | null;
+  /**
+   * True in draft mode, for a brief's source when the brief is being published, and for a stored finding's source when the finding was
+   * first briefed on the date being published or the date added the source (SPEC §4.12 "Stored records"): the tests that read `config/` run on it.
+   */
+  readonly publishing: boolean;
   readonly where: string;
 }
 
@@ -89,6 +94,8 @@ export interface RungView {
   readonly source_id: string;
   readonly by: RungBy | null;
   readonly note: L10n | null;
+  /** True in draft mode, and in a stored finding for an entry the date being published recorded or of a finding first briefed on it: `checkers.json` is read for it. */
+  readonly publishing: boolean;
   readonly where: string;
 }
 
@@ -163,10 +170,13 @@ export interface ExplainerView {
 
 // ── A finding ────────────────────────────────────────────────────────────────────────────────────
 
-/** Why the edition names a finding; one finding may have several. */
+/**
+ * Why the edition names a finding; one finding may have several. `backlog` is the Chinese pass's: a stored finding whose own
+ * strings the pass translates (a `backlog.<id>.*` key of its context or draft), named by the run's caller (`ViewSourceDraft.backlog`).
+ */
 export type FindingRole =
   | "story" | "item" | "returning" | "rung_change" | "deep_dive" | "remarkable" | "against" | "lead" | "correction"
-  | "recent" | "week" | "ledger" | "report";
+  | "recent" | "week" | "ledger" | "report" | "backlog";
 
 export interface FindingView {
   /** The finding's id, or `new-N` for a new finding of a draft. */
@@ -185,7 +195,11 @@ export interface FindingView {
   readonly roles: readonly FindingRole[];
   /** First published in this edition: a new finding of a draft, or a stored finding whose first brief is D. */
   readonly isNew: boolean;
-  /** True in draft mode and for a record being published (SPEC §4.12 "Stored records"). */
+  /**
+   * True in draft mode and for a finding first briefed on the date being published, which is judged whole (SPEC §4.12 "Stored records").
+   * A returning finding that the date gave text is false: only its new entries are being published, which `RungView.publishing` and
+   * `SourceView.publishing` say, and the inventory's strings each.
+   */
   readonly publishing: boolean;
   /** The file of a stored record (`findings/<id>.json`); null in draft mode. */
   readonly file: string | null;
@@ -416,7 +430,11 @@ function whereOf(file: string | null, base: readonly (string | number)[], sides:
   };
 }
 
-/** A term id read as words (`virtual-unwrapping` as "virtual unwrapping"): all a draft knows of an existing term. */
+/**
+ * A term id read as words (`virtual-unwrapping` as "virtual unwrapping"): all a view knows of an existing term when the run was
+ * given no glossary entry for it. A name that is not its id (an accent, an apostrophe) is read from the glossary instead, so a
+ * term that the explainer names correctly is never reported as missing.
+ */
 const nameOfId = (id: string): string => id.replace(/-/g, " ");
 
 /** A date after every correction: `filedOn()` of it counts them all (`FindingView.current`). */
@@ -431,11 +449,11 @@ interface Common {
 
 function sourceViews(
   sources: readonly { id: string; kind: SourceKind; title: string; publisher: string; url: string; doi: string | null; published_at: string | null; seen_as?: SeenAs; added?: IsoDate }[],
-  where: Where,
+  where: Where, publishing: (index: number) => boolean,
 ): SourceView[] {
   return sources.map((s, index) => ({
     id: s.id, index, kind: s.kind, title: s.title, publisher: s.publisher, url: s.url, doi: s.doi, published_at: s.published_at,
-    seen_as: s.seen_as ?? null, added: s.added ?? null, where: where(`sources.${index}`),
+    seen_as: s.seen_as ?? null, added: s.added ?? null, publishing: publishing(index), where: where(`sources.${index}`),
   }));
 }
 
@@ -455,8 +473,13 @@ function factsOf(f: { field: FieldId; subfield: string | null; kind: FindingKind
   return { field: f.field, subfield: f.subfield, kind: f.kind, significance: f.significance, role: f.ai?.role ?? null, confidence: f.ai?.confidence ?? null };
 }
 
-/** A new finding of the draft. */
-function newFindingView(f: DraftFinding, index: number, common: Common, date: IsoDate, depth: "story" | "item" | null): FindingView {
+/**
+ * A new finding of the draft. `names` is the stored glossary by term id (`DraftInputs.stored.terms`; empty without it): an
+ * existing term of the finding takes its English name from there when the glossary has it, else its id read as words.
+ */
+function newFindingView(
+  f: DraftFinding, index: number, common: Common, date: IsoDate, depth: "story" | "item" | null, names: ReadonlyMap<string, Term>,
+): FindingView {
   const where = whereOf(null, ["new_findings", index], false);
   const published = factsOf(f);
   return {
@@ -468,9 +491,10 @@ function newFindingView(f: DraftFinding, index: number, common: Common, date: Is
     },
     go_deeper: f.go_deeper, ai: aiView(f.ai, where), rung: f.rung_history[f.rung_history.length - 1]?.rung ?? null,
     rung_history: f.rung_history.map((r, i) => ({
-      index: i, rung: r.rung, date: r.date, recorded: date, source_id: r.source_id, by: "agent", note: r.note === null ? null : text(r.note), where: where(`rung_history.${i}`),
+      index: i, rung: r.rung, date: r.date, recorded: date, source_id: r.source_id, by: "agent", note: r.note === null ? null : text(r.note), publishing: true,
+      where: where(`rung_history.${i}`),
     })),
-    since_then: [], sources: sourceViews(f.sources, where),
+    since_then: [], sources: sourceViews(f.sources, where, () => true),
     reactions: f.reactions.map((r, i) => ({ index: i, source_id: r.source_id, who: r.who, affiliation: r.affiliation, quote: r.quote, where: where(`reactions.${i}`) })),
     artefacts: f.artefacts,
     figure: f.figure === null ? null : {
@@ -480,7 +504,7 @@ function newFindingView(f: DraftFinding, index: number, common: Common, date: Is
     who: f.who.map((w, i) => ({ index: i, name: w.name, ror: w.ror })),
     terms: f.terms.map((t, i) => t.new
       ? { index: i, id: null, name: t.term, definition: text(t.definition), removed: false, isNew: true, where: where(`terms.${i}`) }
-      : { index: i, id: t.id, name: nameOfId(t.id), definition: null, removed: false, isNew: false, where: where(`terms.${i}`) }),
+      : { index: i, id: t.id, name: names.get(t.id)?.en.term ?? nameOfId(t.id), definition: null, removed: false, isNew: false, where: where(`terms.${i}`) }),
     related: f.related, first_published: f.first_published, first_brief: null, briefs: null, history: false, updated: null,
   };
 }
@@ -493,7 +517,7 @@ function newFindingView(f: DraftFinding, index: number, common: Common, date: Is
  * context lists it, and its issue paths are `findings["<id>"]...`, since no file is judged.
  */
 function recordView(
-  f: Finding, common: Common, date: IsoDate, publishing: boolean, filing: readonly FilingCorrection[], names: ReadonlyMap<string, Term>,
+  f: Finding, common: Common, date: IsoDate, judged: Judged, filing: readonly FilingCorrection[], names: ReadonlyMap<string, Term>,
   removedBy: ReadonlyMap<string, ReadonlySet<string>>, context: { known: boolean } | null,
 ): FindingView {
   const file = context === null ? files.finding(f.id) : null;
@@ -504,13 +528,14 @@ function recordView(
   return {
     key: f.id, id: f.id, ref: null, origin: "stored", known: context?.known ?? true, basis: context === null ? "record" : "context", detail: "full",
     roles: common.roles, isNew: context === null && f.first_brief === date,
-    publishing, file, where, published, filedOn, latest: filedOn(date), current: filedOn(END_OF_TIME), removed, title: f.title, depth: f.depth,
+    publishing: judged === "whole", file, where, published, filedOn, latest: filedOn(date), current: filedOn(END_OF_TIME), removed, title: f.title, depth: f.depth,
     explainer: f.explainer, go_deeper: f.go_deeper, ai: aiView(f.ai, where), rung: f.rung,
     rung_history: f.rung_history.map((r, i) => ({
-      index: i, rung: r.rung, date: r.date, recorded: r.recorded, source_id: r.source_id, by: r.by, note: r.note, where: where(`rung_history.${i}`),
+      index: i, rung: r.rung, date: r.date, recorded: r.recorded, source_id: r.source_id, by: r.by, note: r.note, publishing: judgesPart(judged, "rung_history", i),
+      where: where(`rung_history.${i}`),
     })),
     since_then: f.since_then.map((s, i) => ({ index: i, date: s.date, text: s.text, source_ids: s.source_ids, where: where(`since_then.${i}`) })),
-    sources: sourceViews(f.sources, where),
+    sources: sourceViews(f.sources, where, (i) => judgesPart(judged, "sources", i)),
     reactions: f.reactions.map((r, i) => ({ index: i, source_id: r.source_id, who: r.who, affiliation: r.affiliation, quote: r.quote, where: where(`reactions.${i}`) })),
     artefacts: f.artefacts,
     figure: f.figure === null ? null : {
@@ -532,11 +557,21 @@ interface ContextParts {
   stored?: StoredFinding | LedgerCandidate;
 }
 
-/** Every finding id the context lists, whatever the list (SPEC §4.12 REF_UNKNOWN: "a finding id in the context"). */
+/**
+ * Every finding id the context lists, whatever the list (SPEC §4.12 REF_UNKNOWN: "a finding id in the context"): the recent
+ * findings, the week's findings, setbacks and rung changes, the Sunday candidates, the reports, the rung proposals, the
+ * standing stories, the flagged records, and the stored finding a pack candidate matches (`stored_finding`, §4.14). A week's
+ * setback or fall and a candidate's `stored_finding` may name a finding older than 30 days that no other list holds, yet a
+ * draft has to name it: in a returning entry for the finding a candidate matches by its trial number (DUPLICATE), and in a
+ * `strongest_against` that lists a finding that fell this week (WEEK_AGAINST).
+ */
 export function contextFindingIds(context: AgentContext): Set<string> {
   const ids = new Set<string>();
   for (const f of context.recent_findings) ids.add(f.id);
   for (const f of context.week?.findings ?? []) ids.add(f.id);
+  for (const id of context.week?.setbacks ?? []) ids.add(id);
+  for (const r of context.week?.rung_changes ?? []) ids.add(r.finding_id);
+  for (const c of context.candidates) if (c.stored_finding !== null) ids.add(c.stored_finding);
   for (const f of context.ledger_for_sunday) ids.add(f.id);
   for (const r of context.reports) ids.add(r.finding_id);
   for (const p of context.rung_proposals) ids.add(p.finding_id);
@@ -574,10 +609,11 @@ function contextView(id: string, parts: ContextParts, known: boolean, common: Co
     },
     go_deeper: null, ai: s === undefined ? null : aiView(s.ai, where), rung: last ?? parts.week?.rung ?? parts.recent?.rung ?? null,
     rung_history: s === undefined ? null : s.rung_history.map((r, i) => ({
-      index: i, rung: r.rung, date: r.date, recorded: r.recorded, source_id: r.source_id, by: r.by, note: r.note === null ? null : text(r.note), where: where(`rung_history.${i}`),
+      index: i, rung: r.rung, date: r.date, recorded: r.recorded, source_id: r.source_id, by: r.by, note: r.note === null ? null : text(r.note), publishing: true,
+      where: where(`rung_history.${i}`),
     })),
     since_then: s === undefined ? null : s.since_then.map((x, i) => ({ index: i, date: x.date, text: text(x.text), source_ids: x.source_ids, where: where(`since_then.${i}`) })),
-    sources: s === undefined ? null : sourceViews(s.sources, where),
+    sources: s === undefined ? null : sourceViews(s.sources, where, () => true),
     reactions: null, artefacts: parts.recent?.artefacts ?? null, figure: null, who: null, terms: null, related: null,
     first_published: s?.first_published ?? null, first_brief: null, briefs: null, history: null, updated: null,
   };
@@ -590,12 +626,20 @@ export interface ViewSourceDraft {
   /** D: the context's date, which the draft's own `date` must equal (DATE_MISMATCH); every finding is filed on it. */
   date: IsoDate;
   draft: DraftBrief;
-  /** The context; null for a run that has none (the Chinese pass's rules read the English draft alone), which leaves stored findings unresolved. */
+  /** The context; null for a run that has none (the Chinese pass's rules read the English draft alone), which leaves a stored finding to `stored` and `backlog`. */
   context: AgentContext | null;
   /** The corrections in force: the draft's own, dated D, after the stored ones when the run was given them. */
   filing: readonly FilingCorrection[];
   /** The stored records the run was given (`DraftInputs.stored`); a finding among them is a full view, not the context's part of one. */
   stored?: StoredRecords | null;
+  /**
+   * Stored findings the run reads besides those the draft and the context name: the Chinese pass's backlog, whose `backlog.<id>.*`
+   * keys name a finding the English draft may not. Each gets the role `backlog` and a view: a full one when `stored` holds its record,
+   * else a partial one that knows no fact (the rules skip what they cannot know). `listed` says that the run's own context lists
+   * it, for `FindingView.known`, which a run with no `context` cannot tell by itself. Absent for an English run, whose views stay as
+   * they are.
+   */
+  backlog?: readonly { id: string; listed: boolean }[];
 }
 
 export interface ViewSourcePublished extends PublishedStrings {
@@ -608,7 +652,7 @@ export interface ViewSourcePublished extends PublishedStrings {
 export type ViewSource = ViewSourceDraft | ViewSourcePublished;
 
 const ROLE_ORDER: readonly FindingRole[] = [
-  "story", "item", "returning", "rung_change", "deep_dive", "remarkable", "against", "lead", "correction", "recent", "week", "ledger", "report",
+  "story", "item", "returning", "rung_change", "deep_dive", "remarkable", "against", "lead", "correction", "recent", "week", "ledger", "report", "backlog",
 ];
 
 /** Collects which findings the edition names and why, in the order it names them. */
@@ -633,14 +677,14 @@ class Roster {
 }
 
 function rungView(r: { rung: Rung; date: IsoDate; source_id: string; note: string | null }, index: number, date: IsoDate, where: string): RungView {
-  return { index, rung: r.rung, date: r.date, recorded: date, source_id: r.source_id, by: "agent", note: r.note === null ? null : text(r.note), where };
+  return { index, rung: r.rung, date: r.date, recorded: date, source_id: r.source_id, by: "agent", note: r.note === null ? null : text(r.note), publishing: true, where };
 }
 
 function buildDraftViews(src: ViewSourceDraft): Views {
   const { draft, context, filing, date } = src;
   const storedById = new Map((src.stored?.findings ?? []).map((f) => [f.id, f]));
   const termById = new Map((src.stored?.terms ?? []).map((t) => [t.id, t]));
-  const removedBy = removedPaths(src.stored?.corrections ?? []);
+  const removedBy = removedPaths(src.stored?.corrections ?? [], { findings: src.stored?.findings ?? [], briefs: [], terms: src.stored?.terms ?? [] });
   const root = whereOf(null, [], false);
   const roster = new Roster();
 
@@ -669,19 +713,21 @@ function buildDraftViews(src: ViewSourceDraft): Views {
     for (const f of context.ledger_for_sunday) { part(f.id).stored = f; roster.add(f.id, "ledger"); }
     for (const r of context.reports) { part(r.finding_id).stored = r.finding; roster.add(r.finding_id, "report"); }
   }
+  for (const b of src.backlog ?? []) roster.add(b.id, "backlog");
 
   const findings: FindingView[] = [];
   draft.new_findings.forEach((f, i) => {
     const depth = draft.story === f.ref ? "story" : draft.items.includes(f.ref) ? "item" : null;
-    findings.push(newFindingView(f, i, roster.common(f.ref), date, depth));
+    findings.push(newFindingView(f, i, roster.common(f.ref), date, depth, termById));
   });
   const listed = context === null ? new Set<string>() : contextFindingIds(context);
+  for (const b of src.backlog ?? []) if (b.listed) listed.add(b.id);
   for (const key of roster.keys()) {
     if (newRefs.has(key) || ID_PATTERNS.newRef.test(key)) continue;
     const record = storedById.get(key);
     findings.push(record === undefined
       ? contextView(key, parts.get(key) ?? {}, listed.has(key), roster.common(key), filing, date)
-      : recordView(record, roster.common(key), date, true, filing, termById, removedBy, { known: listed.has(key) }));
+      : recordView(record, roster.common(key), date, "whole", filing, termById, removedBy, { known: listed.has(key) }));
   }
   const byKey = new Map(findings.map((f) => [f.key, f]));
   const find = (key: string): FindingView | null => byKey.get(key) ?? null;
@@ -690,7 +736,10 @@ function buildDraftViews(src: ViewSourceDraft): Views {
     index: i, finding_id: r.finding_id, update: text(r.update), source_ids: r.source_ids,
     rung: r.rung === null ? null : rungView(r.rung, 0, date, root(`returning.${i}.rung`)), where: root(`returning.${i}`),
   }));
-  const returningOf = (key: string): ReturningView | null => returning.find((r) => r.finding_id === key) ?? null;
+  // Indexed once, the first entry of a finding first: a draft that names thousands of findings is read in linear time.
+  const returningBy = new Map<string, ReturningView>();
+  for (const r of returning) if (!returningBy.has(r.finding_id)) returningBy.set(r.finding_id, r);
+  const returningOf = (key: string): ReturningView | null => returningBy.get(key) ?? null;
   const item = (key: string, slot: "story" | "item", index: number | null): ItemView => {
     const r = returningOf(key);
     return {
@@ -732,7 +781,7 @@ function buildDraftViews(src: ViewSourceDraft): Views {
     report_decisions: draft.report_decisions.map((r, i) => ({
       index: i, report_id: r.report_id, outcome: r.outcome, reason: text(r.reason), correction: r.correction, where: root(`report_decisions.${i}`),
     })),
-    sources: sourceViews(draft.sources, root),
+    sources: sourceViews(draft.sources, root, () => true),
   };
 
   const corrections: CorrectionView[] = draft.corrections.map((c, i) => ({
@@ -762,14 +811,14 @@ function buildPublishedViews(src: ViewSourcePublished): Views {
     for (const c of brief.corrections) roster.add(c.finding_id, "correction");
   }
   const termById = new Map(src.terms.map((t) => [t.id, t]));
-  const removed = removedPaths(src.corrections);
+  const removed = removedPaths(src.corrections, { findings: src.findings, briefs: brief === null ? [] : [brief], terms: src.terms });
   const removedOf = (key: string): ReadonlySet<string> => new Set(removed.get(key) ?? []);
   const named = new Map(src.findings.map((f) => [f.id, f]));
   const ordered = [
     ...roster.keys().flatMap((k) => (named.has(k) ? [named.get(k)!] : [])),
     ...src.findings.filter((f) => !roster.keys().includes(f.id)).sort((a, b) => compareFindingIds(a.id, b.id)),
   ];
-  const findings = ordered.map((f) => recordView(f, roster.common(f.id), date, being.findings.has(f.id), filing, termById, removed, null));
+  const findings = ordered.map((f) => recordView(f, roster.common(f.id), date, judgedOf(being, f.id), filing, termById, removed, null));
   const byKey = new Map(findings.map((f) => [f.key, f]));
   const find = (key: string): FindingView | null => byKey.get(key) ?? null;
 
@@ -803,7 +852,7 @@ function buildPublishedViews(src: ViewSourcePublished): Views {
       index: i, id: c.id, finding_id: c.finding_id, edition_date: c.edition_date, term_id: c.term_id, type: c.type, reason: c.reason, where: root(`corrections.${i}`),
     })),
     report_decisions: [],
-    sources: sourceViews(brief.sources, root),
+    sources: sourceViews(brief.sources, root, () => being.brief),
   };
 
   const corrections: CorrectionView[] = src.corrections.map((c: Correction, i) => ({

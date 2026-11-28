@@ -25,9 +25,9 @@ import type { Correction, Evidence, Report } from "../schema/misc";
 import type { Pack } from "../schema/pack";
 import { RULES } from "./index";
 import { editionKindOf, lacksInput } from "./shared";
-import { draftInventory, publishedInventory } from "./strings";
+import { NEW_PARTS, draftInventory, judgedOf, publishedInventory } from "./strings";
 import {
-  error, plural, warning, type BeingPublished, type DraftInput, type PublishedInput, type Rule, type RuleInput, type RuleNeed,
+  error, plural, warning, type BeingPublished, type DraftInput, type NewParts, type PublishedInput, type Rule, type RuleInput, type RuleNeed,
   type StoredRecords, type ValidationIssue,
 } from "./types";
 import { buildViews } from "./views";
@@ -87,7 +87,7 @@ export function buildDraftInput(draft: DraftBrief, inputs: DraftInputs): DraftIn
     filing,
     views: buildViews({ mode: "draft", date, draft, context, filing, stored }),
     inventory: draftInventory(draft),
-    draft: { brief: draft, context, evidence: inputs.evidence ?? null, metrics: inputs.metrics ?? null, pack: inputs.pack ?? null },
+    draft: { brief: draft, context, evidence: inputs.evidence ?? null, metrics: inputs.metrics ?? null, pack: inputs.pack ?? null, stored },
   };
 }
 
@@ -106,9 +106,10 @@ export interface PublishedOptions {
   /** The date in a `YYYY-MM-DD.json` file name, when a file is validated. */
   fileDate?: string | null;
   /**
-   * The date being published (`validateAll()`'s `publishing`): the brief of that date, the findings first briefed on it, the
-   * terms first used on it, the corrections dated on it and the reports decided on it are being published and are judged
-   * against `config/` (SPEC §4.12 "Stored records"). Absent or null: none is.
+   * The date being published (`validateAll()`'s `publishing`): the brief of that date, the findings first briefed on it (whole) or
+   * given text by it (that text alone, `beingPublishedOf()`; a Ledger seed is one of these from its first brief), the terms first
+   * used on it, the corrections dated on it and the reports decided on it are being published and are judged against `config/`
+   * (SPEC §4.12 "Stored records"). Absent or null: none is.
    */
   publishing?: IsoDate | null;
   /** D for a run with no brief: the date a stored record is filed on. Ignored when there is a brief, whose own date is D. */
@@ -117,14 +118,49 @@ export interface PublishedOptions {
   rules?: readonly Rule[];
 }
 
-/** Which stored records the run judges against `config/` (SPEC §4.12 "Stored records"), given the date being published. */
+/**
+ * The text edition `date` gave a stored finding: the `rung_history` entries it recorded, the `since_then` notes dated on it and the
+ * sources it added (what a `returning` entry and an agent's rung change write, SPEC §8.7, and what a script change writes, §5.8).
+ */
+function newPartsOf(finding: Finding, date: IsoDate): NewParts {
+  const indices = <T>(list: readonly T[], isNew: (item: T) => boolean): Set<number> => new Set(list.flatMap((item, i) => (isNew(item) ? [i] : [])));
+  return {
+    rung_history: indices(finding.rung_history, (entry) => entry.recorded === date),
+    since_then: indices(finding.since_then, (note) => note.date === date),
+    sources: indices(finding.sources, (source) => source.added === date),
+  };
+}
+
+/**
+ * Which stored records the run judges against `config/` (SPEC §4.12 "Stored records"), given the date being published. A finding
+ * first briefed on that date is judged whole, a Ledger seed (`history`, §8.13) excepted: its title, explainer and figure were written
+ * and judged when it was seeded and only a `removed` correction can rewrite them, so from its first brief on a seed is a returning
+ * finding. A returning finding is being published when its `updated` is that date and the edition gave it text (`newPartsOf()`), and
+ * then only that text is: the entries the edition recorded, dated or added, which are judged like a new finding's, while the rest of
+ * the finding stays an archived record (`parts`). `updated` also moves when a `removed` correction rewrites a finding (§4.10) or the
+ * Chinese backlog fills it (§4.6); neither adds text, so a finding changed only that way is no record being published.
+ */
 export function beingPublishedOf(brief: Brief | null, content: PublishedContent, publishing: IsoDate | null): BeingPublished {
+  const findings = new Set<string>();
+  const parts = new Map<string, NewParts>();
   if (publishing === null) {
-    return { brief: false, findings: new Set(), terms: new Set(), corrections: new Set(), reports: new Set() };
+    return { brief: false, findings, parts, terms: new Set(), corrections: new Set(), reports: new Set() };
+  }
+  for (const f of content.findings) {
+    if (f.first_brief === publishing && !f.history) {
+      findings.add(f.id);
+      continue;
+    }
+    if (f.updated !== publishing) continue;
+    const added = newPartsOf(f, publishing);
+    if (NEW_PARTS.every((part) => added[part].size === 0)) continue;
+    findings.add(f.id);
+    parts.set(f.id, added);
   }
   return {
     brief: brief !== null && brief.date === publishing,
-    findings: new Set(content.findings.filter((f) => f.first_brief === publishing).map((f) => f.id)),
+    findings,
+    parts,
     terms: new Set(content.terms.filter((t) => t.first_date === publishing).map((t) => t.id)),
     corrections: new Set(content.corrections.filter((c) => c.date === publishing).map((c) => c.id)),
     reports: new Set(content.reports.filter((r) => r.resolved_on === publishing).map((r) => r.id)),
@@ -159,10 +195,21 @@ export function buildPublishedInput(brief: Brief | null, content: PublishedConte
 
 // ── Running the rules ────────────────────────────────────────────────────────────────────────────
 
-const NEED_LABEL: Readonly<Record<RuleNeed, { name: string; path: string; hint: string }>> = {
+/** What an INPUT_MISSING warning calls a missing input, the path it reports it at, and what its hint asks the caller to give. */
+interface NeedLabel { name: string; path: string; hint: string }
+
+const NEED_LABEL: Readonly<Record<RuleNeed, NeedLabel>> = {
   evidence: { name: "evidence", path: "(evidence)", hint: "Give the run's evidence (logs/D.evidence.json: the URLs it saw and the pages it fetched) and validate again." },
   metrics: { name: "metrics file", path: "(metrics)", hint: "Give the metrics for the date (content/metrics/D.json, else the staged copy) and validate again." },
   pack: { name: "source pack", path: "(pack)", hint: "Give the pack for the date (packs/D.json) and validate again." },
+};
+/**
+ * The Chinese run's label. Its evidence is a file of its own, `logs/D.zh-evidence.json` (SPEC §8.2 stage 8), not the English run's, and
+ * it is the one input a Chinese run can lack (`lacksInput()`), so this label stands for every missing input of a `zh` input.
+ */
+const ZH_EVIDENCE_LABEL: NeedLabel = {
+  name: "Chinese evidence", path: "(evidence)",
+  hint: "Give the Chinese pass's evidence (logs/D.zh-evidence.json: the 樂詞網 pages it fetched) and validate again.",
 };
 const NEEDS: readonly RuleNeed[] = ["evidence", "metrics", "pack"];
 
@@ -185,7 +232,15 @@ function isPublishingPath(input: PublishedInput, path: string): boolean {
   };
   if (/^briefs\/[^/]+\.json$/.test(file!)) return being.brief;
   const finding = /^findings\/([^/]+)\.json$/.exec(file!);
-  if (finding !== null) return being.findings.has(finding[1]!);
+  if (finding !== null) {
+    // A returning finding is being published only where the edition gave it text: an entry of `rung_history`, `since_then` or `sources`.
+    const judged = judgedOf(being, finding[1]!);
+    if (typeof judged === "string") return judged === "whole";
+    return NEW_PARTS.some((part) => {
+      const at = index(part);
+      return at !== null && judged[part].has(at);
+    });
+  }
   const records: Readonly<Record<string, { key: string; ids: readonly { id: string }[]; set: ReadonlySet<string> }>> = {
     "glossary.json": { key: "terms", ids: terms, set: being.terms },
     "corrections.json": { key: "corrections", ids: corrections, set: being.corrections },
@@ -248,7 +303,7 @@ export function runRules(input: RuleInput, rules: readonly Rule[] = RULES): Vali
     const none = [...new Set(skipped.get(need) ?? [])];
     const some = [...new Set(partial.get(need) ?? [])].filter((code) => !none.includes(code));
     if (none.length === 0 && some.length === 0) continue;
-    const label = NEED_LABEL[need];
+    const label = input.mode === "zh" ? ZH_EVIDENCE_LABEL : NEED_LABEL[need];
     out.push(warning("INPUT_MISSING", label.path, missingMessage(input.date, label.name, none, some), label.hint));
   }
   return sortIssues(out);

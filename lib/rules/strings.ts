@@ -26,7 +26,8 @@ import type { DraftZh, ZhContext, ZhGroup, ZhStringKind } from "../schema/draft-
 import type { Finding } from "../schema/finding";
 import type { Term } from "../schema/glossary";
 import type { Correction, Report } from "../schema/misc";
-import type { BeingPublished } from "./types";
+import { REMOVED_TEXT } from "../vocab";
+import type { BeingPublished, NewParts } from "./types";
 import { formatPath } from "./types";
 
 // ── What an entry says ───────────────────────────────────────────────────────────────────────────
@@ -109,7 +110,10 @@ export interface StringEntry {
   readonly removed: boolean;
   /** True on the English entry of an `L10n` whose `zh` is null, which has no Chinese entry (LANG_PARITY's null `zh`); false on every other entry. */
   readonly zhNull: boolean;
-  /** True in draft and zh modes, and in published mode for the records being published. */
+  /**
+   * True in draft and zh modes, and in published mode for the records being published: a finding first briefed on the date
+   * whole, a returning finding only in the entries the date gave it (`judgedOf()`).
+   */
   readonly publishing: boolean;
   /** The date to file `about` (else `finding`) on to ask whether the text is a Landmark's; null: as first published (§4.10, HYPE_WORDS). */
   readonly filedOn: IsoDate | null;
@@ -326,7 +330,8 @@ function leavesOf(value: unknown, skip: ReadonlySet<string> | null = null): Leaf
 interface Ctx {
   record: RecordRef;
   table: Table;
-  publishing: boolean;
+  /** Whether the record's strings are being published: all or none, or decided by each string's place in the record (a returning finding's). */
+  publishing: boolean | ((segments: readonly (string | number)[]) => boolean);
   finding: string | null;
   /** The issue path of a leaf, from its segments (the language is added for an `L10n` side). */
   where: (segments: readonly (string | number)[]) => string;
@@ -357,7 +362,8 @@ function emit(ctx: Ctx, value: unknown, entries: StringEntry[], unclassified: st
       path, at, text: leaf.text, lang: spec.lang ?? leaf.lang, kind: spec.kind, field,
       nameKind: spec.name ?? null, urlKind: spec.url ?? null, pathField: side?.pathField ?? null,
       record: ctx.record, finding: ctx.finding, about: ctx.about(leaf.segments), correction: side?.side ?? null,
-      removed: ctx.removedAt?.has(at) ?? false, zhNull: leaf.zhNull, publishing: ctx.publishing, filedOn: ctx.filedOn(leaf.segments), zh: null,
+      removed: ctx.removedAt?.has(at) ?? false, zhNull: leaf.zhNull, publishing: typeof ctx.publishing === "boolean" ? ctx.publishing : ctx.publishing(leaf.segments),
+      filedOn: ctx.filedOn(leaf.segments), zh: null,
     });
   }
 }
@@ -429,21 +435,112 @@ export function draftInventory(draft: DraftBrief): Inventory {
 
 // ── The inventory of stored records ──────────────────────────────────────────────────────────────
 
+// ── Removed text ─────────────────────────────────────────────────────────────────────────────────
+// One definition of a removed string, for the inventory, the views, the rules that skip a removed string and XREF (SPEC §4.12 "Removed
+// text"): a string counts as removed only where a stored `removed` correction names its path AND the record's text there IS
+// REMOVED_TEXT. Text at a removed path that is anything else is judged by every rule as usual, and XREF reports the mismatch.
+
 /**
- * The strings that stored `removed` corrections rewrote, by record (`finding:<id>`, `brief:<date>`, `term:<id>`): the
- * `at` of each (SPEC §4.12 "Removed text"). Keyed on the correction alone, so `REMOVED_TEXT` written anywhere else is not a hit.
+ * The value at a correction's dotted path (`explainer.how_sure`, `sources.1.url`; indices from 0), or `undefined` when the record has
+ * none.
  */
-export function removedPaths(corrections: readonly Pick<Correction, "finding_id" | "edition_date" | "term_id" | "type" | "path">[]): ReadonlyMap<string, ReadonlySet<string>> {
+function valueAt(record: unknown, path: string): { readonly value: unknown } | undefined {
+  let cur: unknown = record;
+  for (const key of path.split(".")) {
+    if (Array.isArray(cur)) {
+      if (!INDEX.test(key) || Number(key) >= cur.length) return undefined;
+      cur = cur[Number(key)];
+    } else if (typeof cur === "object" && cur !== null && Object.hasOwn(cur, key)) {
+      cur = (cur as Record<string, unknown>)[key];
+    } else {
+      return undefined;
+    }
+  }
+  return { value: cur };
+}
+
+/** REMOVED_TEXT as a record holds it: an `L10n` that is it in both languages, or a plain string that is its English. */
+export function isRemovedText(value: unknown): boolean {
+  if (typeof value === "string") return value === REMOVED_TEXT.en;
+  return isL10n(value) && value.en === REMOVED_TEXT.en && value.zh === REMOVED_TEXT.zh;
+}
+
+/**
+ * What a `removed` correction left of its path in the record it names: "missing" (no value there, a null included), "other" (other
+ * text, a half-removed `L10n` included), or null (REMOVED_TEXT). A term's `definition` is its English and, while the term has any
+ * Chinese, its Chinese (a term whose `zh` is null has none to rewrite).
+ */
+export function removalProblem(record: Finding | Brief | Term, path: string): "missing" | "other" | null {
+  if ("en" in record && "first_finding" in record && path === "definition") {
+    const zh = record.zh === null ? null : record.zh.definition;
+    const holds = record.en.definition === REMOVED_TEXT.en && (zh === null || zh === REMOVED_TEXT.zh);
+    return holds ? null : "other";
+  }
+  const found = valueAt(record, path);
+  if (found === undefined || found.value === null) return "missing";
+  return isRemovedText(found.value) ? null : "other";
+}
+
+/** The stored records a `removed` correction can name, to read what each holds at the path (a record that is not given is not read). */
+export interface RemovalRecords {
+  readonly findings: readonly Finding[];
+  readonly briefs: readonly Brief[];
+  readonly terms: readonly Term[];
+}
+
+/**
+ * The strings that stored `removed` corrections rewrote, by record (`finding:<id>`, `brief:<date>`, `term:<id>`): the `at` of each
+ * correction whose path holds REMOVED_TEXT in the record it names (`removalProblem()` is null). A path that holds other text, or no
+ * text, and a record that `records` does not hold, give no entry: that text is judged as any other, and XREF reports the correction
+ * (SPEC §4.12 "Removed text"). Keyed on the correction and the record's text together, so `REMOVED_TEXT` written anywhere else is not a hit.
+ */
+export function removedPaths(
+  corrections: readonly Pick<Correction, "finding_id" | "edition_date" | "term_id" | "type" | "path">[], records: RemovalRecords,
+): ReadonlyMap<string, ReadonlySet<string>> {
+  const findingBy = new Map(records.findings.map((f) => [f.id, f]));
+  const briefBy = new Map(records.briefs.map((b) => [b.date, b]));
+  const termBy = new Map(records.terms.map((t) => [t.id, t]));
   const out = new Map<string, Set<string>>();
   for (const c of corrections) {
     if (c.type !== "removed") continue;
-    const key = c.finding_id !== null ? `finding:${c.finding_id}` : c.edition_date !== null ? `brief:${c.edition_date}` : c.term_id !== null ? `term:${c.term_id}` : null;
-    if (key === null) continue;
+    const [key, record] = c.finding_id !== null ? [`finding:${c.finding_id}`, findingBy.get(c.finding_id)] as const
+      : c.edition_date !== null ? [`brief:${c.edition_date}`, briefBy.get(c.edition_date)] as const
+      : c.term_id !== null ? [`term:${c.term_id}`, termBy.get(c.term_id)] as const : [null, undefined] as const;
+    if (key === null || record === undefined || removalProblem(record, c.path) !== null) continue;
     const set = out.get(key) ?? new Set<string>();
     set.add(c.path);
     out.set(key, set);
   }
   return out;
+}
+
+// ── What a run judges of a stored finding ────────────────────────────────────────────────────────
+
+/** The three lists of a stored finding that an edition adds entries to (SPEC §4.4, §8.7). */
+export const NEW_PARTS = ["rung_history", "since_then", "sources"] as const satisfies readonly (keyof NewParts)[];
+
+/**
+ * How much of a stored finding the run judges as being published (SPEC §4.12 "Stored records"): `whole`, for a finding first briefed on
+ * the date being published; `none`, for any other finding that the date left alone; and for a returning finding the date gave text,
+ * only that text (its `NewParts`), while its title, explainer, figure and every older entry and source stay archived records.
+ */
+export type Judged = "whole" | "none" | NewParts;
+
+export function judgedOf(being: BeingPublished, id: string): Judged {
+  if (!being.findings.has(id)) return "none";
+  return being.parts.get(id) ?? "whole";
+}
+
+/** Whether entry `index` of `part`, one of a finding's lists, is judged as being published. */
+export const judgesPart = (judged: Judged, part: keyof NewParts, index: number): boolean =>
+  typeof judged === "string" ? judged === "whole" : judged[part].has(index);
+
+/** Whether the string at `segments` of a stored finding's record is judged as being published: any string of a whole finding, and in a returning one only those inside a new entry. */
+function judgesSegments(judged: Judged, segments: readonly (string | number)[]): boolean {
+  if (typeof judged === "string") return judged === "whole";
+  const [part, index] = segments;
+  const name = NEW_PARTS.find((n) => n === part);
+  return name !== undefined && typeof index === "number" && judged[name].has(index);
 }
 
 export interface PublishedStrings {
@@ -470,7 +567,7 @@ const inFile = (file: string, segments: readonly (string | number)[]): string =>
 export function publishedInventory(input: PublishedStrings): Inventory {
   const entries: StringEntry[] = [];
   const unclassified: string[] = [];
-  const removed = removedPaths(input.corrections);
+  const removed = removedPaths(input.corrections, { findings: input.findings, briefs: input.brief === null ? [] : [input.brief], terms: input.terms });
 
   const brief = input.brief;
   if (brief !== null) {
@@ -490,8 +587,9 @@ export function publishedInventory(input: PublishedStrings): Inventory {
   }
 
   for (const f of input.findings) {
+    const judged = judgedOf(input.being, f.id);
     emit({
-      record: { type: "finding", id: f.id }, table: FINDING_TABLE, publishing: input.being.findings.has(f.id), finding: f.id,
+      record: { type: "finding", id: f.id }, table: FINDING_TABLE, publishing: (segments) => judgesSegments(judged, segments), finding: f.id,
       where: (segments) => inFile(files.finding(f.id), segments),
       // A finding's text is as first published; a rung note is dated by its `recorded`, a returning update by its own date.
       filedOn: (segments) => {
@@ -663,12 +761,13 @@ export const dualUseStrings = (inv: Inventory): StringEntry[] => live(inv).filte
 export const everyString = (inv: Inventory): StringEntry[] => live(inv);
 
 /**
- * BLOCKED_HOST: every English string of a draft or a stored record, the Chinese side of an `L10n` aside; the entry's
- * `urlKind` and `kind` tell the rule which test it gets (a source's `url`, a figure's `image_url`, a correction's
- * `source_url` and a Lean artefact by entry type; every other string by the URLs and bare hosts it holds).
+ * BLOCKED_HOST: every string of a draft, a stored record or the Chinese draft, in both languages (the Chinese side of an `L10n`, the
+ * Chinese draft's strings and a term's `official_url` included: ZH_PARITY, which keeps a URL out of a Chinese string, does not read
+ * an `official_url` and misses an address written against a Han character); the entry's `urlKind` and `kind` tell the rule which
+ * test it gets (a source's `url`, a figure's `image_url`, a correction's `source_url` and a Lean artefact by entry type; every other
+ * string by the URLs and bare hosts it holds).
  */
-export const blockedHostStrings = (inv: Inventory): StringEntry[] =>
-  live(inv).filter((e) => e.lang === "en" && e.kind !== "value");
+export const blockedHostStrings = (inv: Inventory): StringEntry[] => live(inv).filter((e) => e.kind !== "value");
 
 /** Every address (a source's `url`, a figure's `image_url`, a correction's `source_url`, a report's `evidence_url`, a Lean artefact, a term's `official_url`). */
 export const urlStrings = (inv: Inventory): StringEntry[] => live(inv).filter((e) => e.kind === "url");
@@ -686,7 +785,12 @@ export const readingStrings = (inv: Inventory): StringEntry[] =>
 export const definitionStrings = (inv: Inventory): StringEntry[] =>
   live(inv).filter((e) => e.kind === "prose" && e.lang === "en" && e.field === "definition");
 
-/** QUOTE_VERBATIM: the quotes of a finding (evidence, reactions, `licence_quote`), never a correction's text at a quote path. */
+/**
+ * The quote strings of a finding or a stored record (evidence, reactions, `licence_quote`), never a correction's text at a quote path:
+ * the inventory's statement of the set §4.12's QUOTE_VERBATIM row names, which tests/rules-strings.test.ts holds to that row. The rule
+ * itself walks each finding view's quotes (`quotesOf()`, grounding.ts), since it needs the source each quote cites, and reads a
+ * correction's text at a quote path through `rewritesAt()`; no rule reads this selector.
+ */
 export const quoteStrings = (inv: Inventory): StringEntry[] => live(inv).filter((e) => e.kind === "quote" && e.correction === null);
 
 /**

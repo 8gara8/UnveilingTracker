@@ -4,9 +4,13 @@
 import { describe, expect, it } from "vitest";
 import { draftFilings, filedAs, type FilingCorrection } from "@/lib/items";
 import { buildDraftInput, buildPublishedInput, beingPublishedOf } from "@/lib/rules/run";
+import type { StoredRecords } from "@/lib/rules/types";
+import { Term } from "@/lib/schema/glossary";
+import { Correction } from "@/lib/schema/misc";
+import { REMOVED_BEFORE, REMOVED_TEXT } from "@/lib/vocab";
 import { buildViews, contextFindingIds, filedFacts, type Facts, type FindingView, type Views } from "@/lib/rules/views";
 import {
-  D, MONDAY, deepFreeze, mondayContext, storedFinding, storedWorld, sundayContext, weekdayContext, weekdayDraft,
+  D, MONDAY, deepFreeze, holdRemoved, l, mondayContext, storedFinding, storedWorld, sundayContext, weekdayContext, weekdayDraft,
 } from "./helpers/rule-world";
 
 const NONE: Facts = { field: null, subfield: null, kind: null, significance: null, role: null, confidence: null };
@@ -171,8 +175,8 @@ describe("the views of a draft", () => {
   it("files a stored finding with the draft's own corrections, dated D", () => {
     const math = views.find("math-2026-0002")!;
     expect(math.published.significance).toBe("notable");
-    expect(math.latest.significance).toBe("landmark");
-    expect(math.filedOn(D).significance).toBe("landmark");
+    expect(math.latest.significance).toBe("major");
+    expect(math.filedOn(D).significance).toBe("major");
     expect(math.filedOn(MONDAY).significance).toBe("notable");
     const phys = views.find("phys-2026-0003")!;
     expect(phys.latest).toEqual({ ...phys.published, field: "chemistry", subfield: "catalysis" });
@@ -234,6 +238,29 @@ describe("the views of a draft", () => {
     expect(draftViews(draft, context).find("hum-2026-0005")!.known).toBe(true);
   });
 
+  it("counts the stored finding a pack candidate matches, and the week's setbacks and rung changes, even when no other list names them", () => {
+    // a finding older than 30 days is in no list of recent findings, yet the candidate, the week and a returning entry name it
+    const context: any = structuredClone(mondayContext());
+    context.recent_findings = [];
+    context.week.findings = [{ ...structuredClone(mondayContext().week!.findings[0]!), id: "soc-2025-0004" }];
+    context.week.setbacks = ["chem-2025-0001"];
+    context.week.rung_changes = [{ finding_id: "phys-2025-0002", from: "preprint", to: "retracted", date: "2026-11-20", by: "agent" }];
+    context.candidates = [{ id: "cand-01", stored_finding: "bio-2025-0003" }, { id: "cand-02", stored_finding: null }];
+    context.reports = [];
+    context.rung_proposals = [];
+    context.standing_stories = [];
+    context.corrections.flagged = [];
+    expect([...contextFindingIds(context)].sort()).toEqual(["bio-2025-0003", "chem-2025-0001", "phys-2025-0002", "soc-2025-0004"]);
+    const draft: any = weekdayDraft();
+    draft.returning[0].finding_id = "bio-2025-0003";
+    const views = draftViews(draft, context);
+    expect(views.find("bio-2025-0003")).toMatchObject({ known: true, basis: "context" });
+    expect(views.find("math-2026-0002")!.known).toBe(false);
+    // a candidate that matches no finding names none
+    context.candidates = [{ id: "cand-02", stored_finding: null }];
+    expect([...contextFindingIds(context)].sort()).toEqual(["chem-2025-0001", "phys-2025-0002", "soc-2025-0004"]);
+  });
+
   it("builds the brief-level text: Lead, story and items with their updates, rung changes, ideas, Also noted, corrections, decisions, sources", () => {
     const b = views.brief;
     expect(b.file).toBeNull();
@@ -268,7 +295,7 @@ describe("the views of a draft", () => {
   it("lists the draft's own corrections as dated D, with the path and after", () => {
     expect(views.corrections).toHaveLength(3);
     expect(views.corrections[0]).toMatchObject({ index: 0, id: null, date: D, finding_id: "math-2026-0002", path: "significance", draft: true, publishing: true, before: null, trigger: null, report_id: "R-0002", where: "corrections[0]" });
-    expect(views.corrections[0]!.after).toEqual({ en: "landmark", zh: null });
+    expect(views.corrections[0]!.after).toEqual({ en: "major", zh: null });
   });
 
   it("builds a Monday's review and a Sunday's deep dive", () => {
@@ -431,6 +458,76 @@ describe("the views of a stored brief", () => {
   });
 });
 
+describe("which rung entries and sources are being published (F-55)", () => {
+  const rungs = (f: FindingView): boolean[] => (f.rung_history ?? []).map((r) => r.publishing);
+  const sources = (f: FindingView): boolean[] => (f.sources ?? []).map((x) => x.publishing);
+
+  /** The stored world with phys-2026-0003 changed on D, its first source added the day before and its first rung entry recorded then. */
+  const returningWorld = () => {
+    const world = storedWorld();
+    const phys = world.findings.find((f) => f.id === "phys-2026-0003")!;
+    phys.updated = D;
+    phys.rung_history[0]!.recorded = "2026-11-20";
+    phys.sources[0]!.added = "2026-11-20";
+    return world;
+  };
+
+  it("holds every entry and source of a draft, a new finding's, one a draft names through the context and the brief's, as being published", () => {
+    const views = draftViews();
+    for (const f of views.findings) {
+      expect(f.publishing, f.key).toBe(true);
+      expect([...rungs(f), ...sources(f)].every(Boolean), f.key).toBe(true);
+    }
+    expect(views.findings.filter((f) => f.origin === "new").map((f) => rungs(f).length).every((n) => n > 0)).toBe(true);
+    expect(views.brief.sources.length).toBeGreaterThan(0);
+    expect(views.brief.sources.every((x) => x.publishing)).toBe(true);
+    expect(views.brief.returning.every((r) => r.rung === null || r.rung.publishing)).toBe(true);
+    expect(views.brief.rung_changes.every((c) => c.rung!.publishing)).toBe(true);
+    const sunday = weekdayDraft();
+    sunday.deep_dive = { finding_id: "bio-2024-0007", text: "A made-up deep dive.", source_ids: ["b1"], why_today: "anniversary" };
+    const candidate = draftViews(sunday, sundayContext()).find("bio-2024-0007")!;
+    expect(candidate.basis).toBe("context");
+    expect(rungs(candidate).length + sources(candidate).length).toBeGreaterThan(0);
+    expect([...rungs(candidate), ...sources(candidate)].every(Boolean)).toBe(true);
+  });
+
+  it("holds every entry and source of a finding first briefed on D as being published, and none of one that D left alone", () => {
+    const views = publishedViews();
+    expect(rungs(views.find("bio-2026-0001")!)).toEqual([true, true]);
+    expect(sources(views.find("bio-2026-0001")!)).toEqual([true, true]);
+    expect(sources(views.find("math-2026-0002")!)).toEqual([true, true]);
+    // phys-2026-0003 was last changed the day before D
+    expect(rungs(views.find("phys-2026-0003")!)).toEqual([false, false]);
+    expect(sources(views.find("phys-2026-0003")!)).toEqual([false, false]);
+    const idle = publishedViews(storedWorld(), null);
+    for (const f of idle.findings) expect([...rungs(f), ...sources(f)].some(Boolean), f.key).toBe(false);
+  });
+
+  it("holds only the entries and sources D gave a returning finding as being published, and the finding itself as not", () => {
+    const views = publishedViews(returningWorld());
+    const phys = views.find("phys-2026-0003")!;
+    expect(phys.publishing).toBe(false);
+    expect(rungs(phys)).toEqual([false, true]);
+    expect(sources(phys)).toEqual([false, true]);
+    // the entries of the finding first briefed on D are still all of them
+    expect(rungs(views.find("bio-2026-0001")!)).toEqual([true, true]);
+    // a note, alone, makes the finding a returning one with no entry or source being published
+    const world = returningWorld();
+    const f = world.findings.find((x) => x.id === "phys-2026-0003")!;
+    f.rung_history[1]!.recorded = "2026-11-20";
+    f.sources[1]!.added = "2026-11-20";
+    f.since_then[0]!.date = D;
+    const noted = publishedViews(world).find("phys-2026-0003")!;
+    expect([rungs(noted), sources(noted)]).toEqual([[false, false], [false, false]]);
+  });
+
+  it("holds a stored brief's sources as being published only when the brief is", () => {
+    expect(publishedViews().brief.sources.map((x) => x.publishing)).toEqual([true, true]);
+    expect(publishedViews(storedWorld(), null).brief.sources.map((x) => x.publishing)).toEqual([false, false]);
+    expect(publishedViews(storedWorld(), "2026-11-10").brief.sources.map((x) => x.publishing)).toEqual([false, false]);
+  });
+});
+
 describe("one normal form for a draft and a stored brief", () => {
   it("gives every finding view the same keys, whatever it is built from", () => {
     const d = draftViews();
@@ -505,6 +602,165 @@ describe("one normal form for a draft and a stored brief", () => {
       expect(entries.length).toBeGreaterThan(15);
       for (const e of entries) expect(input.views.brief.where(e.at, sideOf(e)), e.path).toBe(e.path);
     }
+  });
+});
+
+describe("an existing term of a draft's new finding is named by the glossary's own name (F-48)", () => {
+  const glossaryTerm = (id: string, name: string): Term => Term.parse({
+    id, en: { term: name, definition: "A made-up definition." }, zh: { term: "範例術語", definition: "範例定義。", official: null, official_url: null },
+    fields: ["biology"], first_finding: "bio-2026-0001", first_date: D,
+  });
+  const ACCENT = "Schr\u00f6dinger equation";
+  const GLOSSARY = [glossaryTerm("schrodinger-equation", ACCENT), glossaryTerm("newtons-laws", "Newton's laws"), glossaryTerm("enzyme", "Enzyme, the made-up kind")];
+  const drafted = (stored: StoredRecords | null) => {
+    const draft = weekdayDraft();
+    draft.new_findings[0]!.terms = [
+      { new: true, term: "protein folding", definition: "How a chain of amino acids curls into a shape." },
+      { new: false, id: "schrodinger-equation" }, { new: false, id: "newtons-laws" }, { new: false, id: "enzyme" }, { new: false, id: "virtual-unwrapping" },
+    ];
+    return buildViews({ mode: "draft", date: D, draft, context: weekdayContext(), filing: [], stored }).find("new-1")!.terms!;
+  };
+  const given = (terms: Term[]): StoredRecords => ({ findings: [], corrections: [], terms });
+
+  it("takes the name from the stored glossary, accents and apostrophes kept, and the id read as words for a term the glossary lacks", () => {
+    expect(drafted(given(GLOSSARY)).map((t) => [t.id, t.name, t.isNew, t.definition])).toEqual([
+      [null, "protein folding", true, { en: "How a chain of amino acids curls into a shape.", zh: null }],
+      ["schrodinger-equation", ACCENT, false, null],
+      ["newtons-laws", "Newton's laws", false, null],
+      ["enzyme", "Enzyme, the made-up kind", false, null],
+      ["virtual-unwrapping", "virtual unwrapping", false, null],
+    ]);
+  });
+
+  it("reads each id as words, byte for byte as before, when the run holds no glossary or one that lacks the term", () => {
+    const words = [[null, "protein folding"], ["schrodinger-equation", "schrodinger equation"], ["newtons-laws", "newtons laws"], ["enzyme", "enzyme"], ["virtual-unwrapping", "virtual unwrapping"]];
+    expect(drafted(null).map((t) => [t.id, t.name])).toEqual(words);
+    expect(drafted(given([])).map((t) => [t.id, t.name])).toEqual(words);
+    expect(drafted(given([GLOSSARY[2]!])).map((t) => [t.id, t.name])).toEqual([...words.slice(0, 3), ["enzyme", "Enzyme, the made-up kind"], words[4]]);
+  });
+
+  it("reads every hyphen of an id as a space, not the first alone", () => {
+    const draft = weekdayDraft();
+    draft.new_findings[0]!.terms = [{ new: false, id: "double-slit-experiment" }, { new: false, id: "a-b-c-d" }];
+    const terms = buildViews({ mode: "draft", date: D, draft, context: weekdayContext(), filing: [], stored: null }).find("new-1")!.terms!;
+    expect(terms.map((t) => t.name)).toEqual(["double slit experiment", "a b c d"]);
+  });
+
+  it("gives each term its own name when the glossary holds several, whatever their order", () => {
+    expect(drafted(given([...GLOSSARY].reverse())).map((t) => t.name)).toEqual(drafted(given(GLOSSARY)).map((t) => t.name));
+  });
+
+  it("leaves a stored finding's terms to its own record, and a stored brief's views as they were", () => {
+    const world = storedWorld();
+    expect(publishedViews(world).find("bio-2026-0001")!.terms!.map((t) => t.name)).toEqual(["protein folding"]);
+  });
+});
+
+describe("the views of a draft take a stored string as removed where a stored removed correction names it and its record holds REMOVED_TEXT (F-43)", () => {
+  const removal = (id: string, target: { finding?: string; term?: string }, path: string): Correction => Correction.parse({
+    id, date: "2026-11-23", finding_id: target.finding ?? null, edition_date: null, term_id: target.term ?? null, type: "removed", path,
+    before: structuredClone(REMOVED_BEFORE), after: structuredClone(REMOVED_TEXT), reason: l("A safety check flagged the text."), source_url: null,
+    trigger: "recheck", report_id: null,
+  });
+  /** The stored records a run is given, with a finding's string and a term's definition removed by corrections, the records holding the marker or not. */
+  const view = (hold: boolean) => {
+    const world = storedWorld();
+    world.findings.find((f) => f.id === "math-2026-0002")!.terms = ["protein-folding"];
+    world.corrections.push(removal("C-0003", { finding: "math-2026-0002" }, "explainer.how_sure"), removal("C-0004", { term: "protein-folding" }, "definition"));
+    if (hold) holdRemoved(world);
+    const stored: StoredRecords = { findings: world.findings, corrections: world.corrections, terms: world.terms };
+    return buildViews({ mode: "draft", date: D, draft: weekdayDraft(), context: weekdayContext(), filing: [], stored }).find("math-2026-0002")!;
+  };
+
+  it("lists the removed path of the stored finding and its term's removed definition", () => {
+    const found = view(true);
+    expect([...found.removed]).toEqual(["explainer.how_sure"]);
+    expect(found.terms!.map((t) => t.removed)).toEqual([true]);
+  });
+
+  it("lists nothing where the records hold other text, whatever the corrections say", () => {
+    const found = view(false);
+    expect([...found.removed]).toEqual([]);
+    expect(found.terms!.map((t) => t.removed)).toEqual([false]);
+  });
+});
+
+describe("the views of a large draft are built in linear time (F-57)", () => {
+  const N = 10_000;
+  // Long ids that differ at their ends: a search of the returning list for each item compares them in full
+  const PREFIX = "x".repeat(150);
+  const ids = Array.from({ length: N }, (_, i) => `${PREFIX}-${String(i).padStart(6, "0")}`);
+  const large = (): any => {
+    const draft: any = weekdayDraft();
+    draft.items = ids;
+    draft.returning = ids.map((id) => ({ finding_id: id, update: `A made-up update for ${id.slice(-6)}.`, source_ids: [], rung: null }));
+    return draft;
+  };
+
+  it("builds the views of 10,000 items with 10,000 returning entries in well under a second, each item with its own entry", () => {
+    const draft = large();
+    const start = performance.now();
+    const views = buildViews({ mode: "draft", date: D, draft, context: null, filing: [] });
+    const took = performance.now() - start;
+    expect(views.brief.items).toHaveLength(N);
+    expect(views.brief.returning).toHaveLength(N);
+    for (const i of [0, 1, 4_999, 5_000, N - 2, N - 1]) {
+      const item = views.brief.items[i]!;
+      expect(item.returning, String(i)).toBe(views.brief.returning[i]);
+      expect(item.returning!.finding_id).toBe(ids[i]);
+      expect(item.update).toEqual(views.brief.returning[i]!.update);
+    }
+    expect(views.brief.items.every((item, i) => item.returning === views.brief.returning[i] && item.update === views.brief.returning[i]!.update)).toBe(true);
+    expect(took).toBeLessThan(600);
+  });
+
+  it("gives an item the first returning entry of its finding when the draft has two, and none when it has none", () => {
+    const draft = weekdayDraft();
+    draft.items = ["math-2026-0002", "phys-2026-0003", "chem-2026-0004"];
+    draft.returning = [
+      { finding_id: "phys-2026-0003", update: "The first update.", source_ids: [], rung: null },
+      { finding_id: "math-2026-0002", update: "The only update.", source_ids: [], rung: null },
+      { finding_id: "phys-2026-0003", update: "The second update.", source_ids: [], rung: null },
+    ];
+    const views = buildViews({ mode: "draft", date: D, draft, context: weekdayContext(), filing: [] });
+    const [math, phys, chem] = views.brief.items;
+    expect([math!.returning?.index, phys!.returning?.index, chem!.returning]).toEqual([1, 0, null]);
+    expect([math!.update, phys!.update, chem!.update]).toEqual([views.brief.returning[1]!.update, views.brief.returning[0]!.update, null]);
+    expect(views.brief.returning.map((r) => r.index)).toEqual([0, 1, 2]);
+  });
+});
+
+describe("the views of a stored brief take a string as removed where a stored removed correction names it and its record holds REMOVED_TEXT (F-43)", () => {
+  const removal = (id: string, target: { finding?: string; edition?: string; term?: string }, path: string): Correction => Correction.parse({
+    id, date: D, finding_id: target.finding ?? null, edition_date: target.edition ?? null, term_id: target.term ?? null, type: "removed", path,
+    before: structuredClone(REMOVED_BEFORE), after: structuredClone(REMOVED_TEXT), reason: l("A safety check flagged the text."), source_url: null,
+    trigger: "recheck", report_id: null,
+  });
+  /** The stored world with three removals filed (a finding's string, the brief's string, a term's definition), the records holding the marker or not. */
+  const views = (hold: boolean): Views => {
+    const world = storedWorld();
+    world.corrections.push(
+      removal("C-0003", { finding: "bio-2026-0001" }, "explainer.how_sure"), removal("C-0004", { edition: D }, "lead.0.text"),
+      removal("C-0005", { term: "protein-folding" }, "definition"),
+    );
+    if (hold) holdRemoved(world);
+    return buildViews({ mode: "published", date: world.brief.date, filing: world.corrections, being: beingPublishedOf(world.brief, world, D), ...world });
+  };
+
+  it("lists each removed path of a finding, of the brief and of a term's definition", () => {
+    const v = views(true);
+    expect([...v.find("bio-2026-0001")!.removed]).toEqual(["explainer.how_sure"]);
+    expect([...v.brief.removed]).toEqual(["lead.0.text"]);
+    expect(v.find("bio-2026-0001")!.terms!.map((t) => t.removed)).toEqual([true]);
+    expect([...v.find("math-2026-0002")!.removed]).toEqual([]);
+    expect([...v.find("phys-2026-0003")!.removed]).toEqual([]);
+  });
+
+  it("lists nothing where the records hold other text, whatever the corrections say", () => {
+    const v = views(false);
+    for (const f of v.findings) expect([...f.removed], f.key).toEqual([]);
+    expect([...v.brief.removed]).toEqual([]);
+    expect(v.find("bio-2026-0001")!.terms!.map((t) => t.removed)).toEqual([false]);
   });
 });
 

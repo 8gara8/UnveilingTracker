@@ -85,7 +85,7 @@ const ZP: readonly RuleScope[] = ["zh", "published"];
  */
 export const RULE_CODE_TABLE: readonly RuleCodeInfo[] = [
   row("SCHEMA", "H", DPZ, ["F", "Z"], "engine"),
-  row("DATE_MISMATCH", "H", DP, ["F"], "structure"),
+  row("DATE_MISMATCH", "H", DPZ, ["F", "Z"], "structure"),
   row("REF_UNKNOWN", "H", ["draft"], ["F"], "structure"),
   row("FORMAT_SECTIONS", "H", DP, ["F", "T"], "structure"),
   row("WEEK_AGAINST", "H", DP, ["T"], "structure"),
@@ -114,7 +114,9 @@ export const RULE_CODE_TABLE: readonly RuleCodeInfo[] = [
   row("WHO_SAYS", "H", DP, ["F"], "ladder-ai"),
   row("POSSIBILITY", "H", DP, ["F"], "ladder-ai"),
   row("FIGURE_LICENCE", "H", DP, ["F"], "sources"),
-  row("WORDS", "H", DP, ["F", "S", "T"], "words"),
+  // WORDS keeps its soft gate (a warning over `words_target`, an error over `words_max`) but has no S file: a weekday draft within
+  // its budgets never reaches the target, so T cases prove the gate on the Sunday and Monday pages and with lowered budgets.
+  row("WORDS", "H", DP, ["F", "T"], "words"),
   row("SENTENCE_LENGTH", "H", DP, ["F"], "words"),
   row("HYPE_WORDS", "H", DP, ["F"], "words"),
   row("TERM_DEFINED", "H", DP, ["F"], "words"),
@@ -123,7 +125,7 @@ export const RULE_CODE_TABLE: readonly RuleCodeInfo[] = [
   row("DUAL_USE", "H", DPZ, ["F", "T", "Z"], "safety"),
   row("SECRET_LIKE", "H", DPZ, ["F", "Z"], "safety"),
   row("CANARY", "H", DPZ, ["F", "Z"], "safety"),
-  row("BLOCKED_HOST", "H", DP, ["F"], "safety"),
+  row("BLOCKED_HOST", "H", DPZ, ["F", "Z"], "safety"),
   row("REPORT_DECISION", "H", ["draft"], ["F"], "history"),
   row("REPORT_UPHELD", "S", ["draft"], ["S"], "history"),
   row("ZH_KEYS", "H", ["zh"], ["Z"], "zh"),
