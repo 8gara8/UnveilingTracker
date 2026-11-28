@@ -1,0 +1,595 @@
+{
+  "checked": "2026-11-28, about 12:30 to 12:45 Taipei (04:30 to 04:45 UTC), keyless, from Kobol",
+  "why": "Nature Geoscience and Nature Climate Change fail the in_pace test, which leaves the earth field with no in_pace journal whose fields is earth alone (SPEC 5.1).",
+  "rule": "Pool: journals (OpenAlex source type journal) with at least 60% of their listed OpenAlex topics in fields 19 or 23 (Earth and Planetary Sciences, Environmental Science), found by GET /sources?filter=topics.field.id:19|23,type:journal&sort=cited_by_count:desc (first 1,000). Eligible: passes the SPEC 4.11 in_pace test, has an abstract on at least 50% of its 2015 to 2019 articles, and averages at least 20 articles with abstracts a year in 2015 to 2019. Ranked by OpenAlex cited_by_count (the citation share is its count over the eligible total); take the top 3.",
+  "picks": [
+    {
+      "openalex_source": "S207178839",
+      "name": "Journal of Geophysical Research Atmospheres",
+      "issn": "0148-0227"
+    },
+    {
+      "openalex_source": "S13479253",
+      "name": "Environmental Science & Technology",
+      "issn": "0013-936X"
+    },
+    {
+      "openalex_source": "S36624081",
+      "name": "Geophysical Research Letters",
+      "issn": "0094-8276"
+    }
+  ],
+  "candidates": [
+    {
+      "key": "jgr-atmospheres",
+      "openalex_source": "S207178839",
+      "name": "Journal of Geophysical Research Atmospheres",
+      "issn_l": "0148-0227",
+      "issn": [
+        "0148-0227",
+        "2156-2202",
+        "2169-897X",
+        "2169-8996"
+      ],
+      "host": "American Geophysical Union",
+      "cited_by_count": 7076748,
+      "two_yr_mean_citedness": 4.44,
+      "topic_share_in_field": 0.886,
+      "top_subfields": [
+        "Space and Planetary Science",
+        "Global and Planetary Change",
+        "Atmospheric Science",
+        "Astronomy and Astrophysics",
+        "Oceanography"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 743,
+          "2016": 838,
+          "2017": 1032,
+          "2018": 807,
+          "2019": 798,
+          "2020": 775,
+          "2021": 846,
+          "2022": 735,
+          "2023": 759,
+          "2024": 831,
+          "2025": 980
+        },
+        "with_abstract": {
+          "2015": 735,
+          "2016": 833,
+          "2017": 768,
+          "2018": 790,
+          "2019": 791,
+          "2020": 691,
+          "2021": 835,
+          "2022": 735,
+          "2023": 759,
+          "2024": 831,
+          "2025": 979
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.9286,
+      "mean_with_abstract_2015_2019": 783.4,
+      "eligible_under_rule": true,
+      "rank_among_eligible": 1,
+      "citation_share_among_eligible": 0.371
+    },
+    {
+      "key": "es-and-t",
+      "openalex_source": "S13479253",
+      "name": "Environmental Science & Technology",
+      "issn_l": "0013-936X",
+      "issn": [
+        "0013-936X",
+        "1520-5851"
+      ],
+      "host": "American Chemical Society",
+      "cited_by_count": 4747565,
+      "two_yr_mean_citedness": 12.85,
+      "topic_share_in_field": 0.981,
+      "top_subfields": [
+        "Health, Toxicology and Mutagenesis",
+        "Atmospheric Science",
+        "Water Science and Technology",
+        "Pollution",
+        "Environmental Engineering",
+        "Environmental Chemistry"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 1609,
+          "2016": 1454,
+          "2017": 1480,
+          "2018": 1557,
+          "2019": 1468,
+          "2020": 1473,
+          "2021": 1509,
+          "2022": 1505,
+          "2023": 1853,
+          "2024": 1893,
+          "2025": 2271
+        },
+        "with_abstract": {
+          "2015": 1590,
+          "2016": 1440,
+          "2017": 1467,
+          "2018": 1541,
+          "2019": 1456,
+          "2020": 1468,
+          "2021": 1502,
+          "2022": 1504,
+          "2023": 1850,
+          "2024": 1891,
+          "2025": 2264
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.9902,
+      "mean_with_abstract_2015_2019": 1498.8,
+      "eligible_under_rule": true,
+      "rank_among_eligible": 2,
+      "citation_share_among_eligible": 0.249
+    },
+    {
+      "key": "total-environment",
+      "openalex_source": "S86852077",
+      "name": "The Science of The Total Environment",
+      "issn_l": "0048-9697",
+      "issn": [
+        "0048-9697",
+        "1879-1026"
+      ],
+      "host": "Elsevier BV",
+      "cited_by_count": 4624727,
+      "two_yr_mean_citedness": 9.85,
+      "topic_share_in_field": 0.94,
+      "top_subfields": [
+        "Health, Toxicology and Mutagenesis",
+        "Pollution",
+        "Soil Science",
+        "Atmospheric Science",
+        "Environmental Chemistry"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 1643,
+          "2016": 2593,
+          "2017": 3335,
+          "2018": 4827,
+          "2019": 5589,
+          "2020": 7053,
+          "2021": 6938,
+          "2022": 7089,
+          "2023": 7187,
+          "2024": 7465,
+          "2025": 2545
+        },
+        "with_abstract": {
+          "2015": 63,
+          "2016": 150,
+          "2017": 163,
+          "2018": 258,
+          "2019": 402,
+          "2020": 670,
+          "2021": 1007,
+          "2022": 1262,
+          "2023": 1506,
+          "2024": 1869,
+          "2025": 1053
+        }
+      },
+      "in_pace_test": false,
+      "in_pace_fails": [
+        "2015: 63 with abstracts < half the 2015-2019 mean 207.2"
+      ],
+      "abstract_share_2015_2019": 0.0576,
+      "mean_with_abstract_2015_2019": 207.2,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "grl",
+      "openalex_source": "S36624081",
+      "name": "Geophysical Research Letters",
+      "issn_l": "0094-8276",
+      "issn": [
+        "0094-8276",
+        "1944-8007"
+      ],
+      "host": "American Geophysical Union",
+      "cited_by_count": 2985080,
+      "two_yr_mean_citedness": 5.8,
+      "topic_share_in_field": 0.926,
+      "top_subfields": [
+        "Space and Planetary Science",
+        "Global and Planetary Change",
+        "Atmospheric Science",
+        "Oceanography",
+        "Geophysics",
+        "Astronomy and Astrophysics"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 1349,
+          "2016": 1481,
+          "2017": 1421,
+          "2018": 1493,
+          "2019": 1585,
+          "2020": 1646,
+          "2021": 1872,
+          "2022": 1759,
+          "2023": 1555,
+          "2024": 1750,
+          "2025": 2017
+        },
+        "with_abstract": {
+          "2015": 1348,
+          "2016": 1480,
+          "2017": 1413,
+          "2018": 1486,
+          "2019": 1585,
+          "2020": 1613,
+          "2021": 1862,
+          "2022": 1759,
+          "2023": 1555,
+          "2024": 1750,
+          "2025": 2015
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.9977,
+      "mean_with_abstract_2015_2019": 1462.4,
+      "eligible_under_rule": true,
+      "rank_among_eligible": 3,
+      "citation_share_among_eligible": 0.156
+    },
+    {
+      "key": "water-research",
+      "openalex_source": "S52566953",
+      "name": "Water Research",
+      "issn_l": "0043-1354",
+      "issn": [
+        "0043-1354",
+        "1879-2448"
+      ],
+      "host": "Elsevier BV",
+      "cited_by_count": 2598214,
+      "two_yr_mean_citedness": 14.16,
+      "topic_share_in_field": 0.959,
+      "top_subfields": [
+        "Pollution",
+        "Waste Management and Disposal",
+        "Health, Toxicology and Mutagenesis",
+        "Water Science and Technology",
+        "Environmental Chemistry",
+        "Renewable Energy, Sustainability and the Environment"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 623,
+          "2016": 813,
+          "2017": 810,
+          "2018": 812,
+          "2019": 968,
+          "2020": 1043,
+          "2021": 939,
+          "2022": 1216,
+          "2023": 1250,
+          "2024": 1648,
+          "2025": 1882
+        },
+        "with_abstract": {
+          "2015": 16,
+          "2016": 33,
+          "2017": 46,
+          "2018": 62,
+          "2019": 89,
+          "2020": 112,
+          "2021": 146,
+          "2022": 196,
+          "2023": 201,
+          "2024": 326,
+          "2025": 331
+        }
+      },
+      "in_pace_test": false,
+      "in_pace_fails": [
+        "2015: 16 with abstracts < half the 2015-2019 mean 49.2",
+        "2015: abstract share 2.6% < half the 2015-2019 share 6.1%"
+      ],
+      "abstract_share_2015_2019": 0.0611,
+      "mean_with_abstract_2015_2019": 49.2,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "geochimica",
+      "openalex_source": "S7538555",
+      "name": "Geochimica et Cosmochimica Acta",
+      "issn_l": "0016-7037",
+      "issn": [
+        "0016-7037",
+        "1872-9533"
+      ],
+      "host": "Elsevier BV",
+      "cited_by_count": 2129138,
+      "two_yr_mean_citedness": 5.42,
+      "topic_share_in_field": 0.928,
+      "top_subfields": [
+        "Geochemistry and Petrology",
+        "Space and Planetary Science",
+        "Paleontology",
+        "Geophysics",
+        "Atmospheric Science",
+        "Oceanography"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 449,
+          "2016": 501,
+          "2017": 489,
+          "2018": 454,
+          "2019": 500,
+          "2020": 418,
+          "2021": 448,
+          "2022": 398,
+          "2023": 354,
+          "2024": 384,
+          "2025": 471
+        },
+        "with_abstract": {
+          "2015": 29,
+          "2016": 32,
+          "2017": 40,
+          "2018": 51,
+          "2019": 44,
+          "2020": 59,
+          "2021": 90,
+          "2022": 81,
+          "2023": 107,
+          "2024": 161,
+          "2025": 185
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.0819,
+      "mean_with_abstract_2015_2019": 39.2,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "epsl",
+      "openalex_source": "S119230507",
+      "name": "Earth and Planetary Science Letters",
+      "issn_l": "0012-821X",
+      "issn": [
+        "0012-821X",
+        "1385-013X"
+      ],
+      "host": "Elsevier BV",
+      "cited_by_count": 1803381,
+      "two_yr_mean_citedness": 5.16,
+      "topic_share_in_field": 0.993,
+      "top_subfields": [
+        "Geochemistry and Petrology",
+        "Geology",
+        "Space and Planetary Science",
+        "Paleontology",
+        "Geophysics",
+        "Atmospheric Science"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 612,
+          "2016": 595,
+          "2017": 579,
+          "2018": 551,
+          "2019": 540,
+          "2020": 486,
+          "2021": 425,
+          "2022": 415,
+          "2023": 387,
+          "2024": 420,
+          "2025": 404
+        },
+        "with_abstract": {
+          "2015": 59,
+          "2016": 71,
+          "2017": 74,
+          "2018": 70,
+          "2019": 77,
+          "2020": 88,
+          "2021": 98,
+          "2022": 119,
+          "2023": 153,
+          "2024": 176,
+          "2025": 208
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.122,
+      "mean_with_abstract_2015_2019": 70.2,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "water-resources-research",
+      "openalex_source": "S204847658",
+      "name": "Water Resources Research",
+      "issn_l": "0043-1397",
+      "issn": [
+        "0043-1397",
+        "1944-7973"
+      ],
+      "host": "Wiley",
+      "cited_by_count": 1749474,
+      "two_yr_mean_citedness": 7.27,
+      "topic_share_in_field": 0.812,
+      "top_subfields": [
+        "Environmental Engineering",
+        "Water Science and Technology",
+        "Civil and Structural Engineering",
+        "Geochemistry and Petrology",
+        "Earth-Surface Processes",
+        "Global and Planetary Change"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 555,
+          "2016": 552,
+          "2017": 617,
+          "2018": 567,
+          "2019": 602,
+          "2020": 653,
+          "2021": 721,
+          "2022": 635,
+          "2023": 588,
+          "2024": 606,
+          "2025": 692
+        },
+        "with_abstract": {
+          "2015": 554,
+          "2016": 551,
+          "2017": 616,
+          "2018": 567,
+          "2019": 602,
+          "2020": 643,
+          "2021": 714,
+          "2022": 635,
+          "2023": 588,
+          "2024": 606,
+          "2025": 683
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.999,
+      "mean_with_abstract_2015_2019": 578,
+      "eligible_under_rule": true,
+      "rank_among_eligible": 4,
+      "citation_share_among_eligible": 0.092
+    },
+    {
+      "key": "journal-of-climate",
+      "openalex_source": "S80591372",
+      "name": "Journal of Climate",
+      "issn_l": "0894-8755",
+      "issn": [
+        "0894-8755",
+        "1520-0442"
+      ],
+      "host": "American Meteorological Society",
+      "cited_by_count": 1282575,
+      "two_yr_mean_citedness": 4.63,
+      "topic_share_in_field": 0.993,
+      "top_subfields": [
+        "Global and Planetary Change",
+        "Atmospheric Science",
+        "Oceanography"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 546,
+          "2016": 565,
+          "2017": 607,
+          "2018": 509,
+          "2019": 531,
+          "2020": 596,
+          "2021": 513,
+          "2022": 475,
+          "2023": 457,
+          "2024": 343,
+          "2025": 459
+        },
+        "with_abstract": {
+          "2015": 544,
+          "2016": 564,
+          "2017": 607,
+          "2018": 508,
+          "2019": 531,
+          "2020": 594,
+          "2021": 513,
+          "2022": 475,
+          "2023": 457,
+          "2024": 342,
+          "2025": 440
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.9985,
+      "mean_with_abstract_2015_2019": 550.8,
+      "eligible_under_rule": true,
+      "rank_among_eligible": 5,
+      "citation_share_among_eligible": 0.067
+    },
+    {
+      "key": "acp",
+      "openalex_source": "S162708223",
+      "name": "Atmospheric chemistry and physics",
+      "issn_l": "1680-7316",
+      "issn": [
+        "1680-7316",
+        "1680-7324"
+      ],
+      "host": "Copernicus Publications",
+      "cited_by_count": 1240015,
+      "two_yr_mean_citedness": 8.09,
+      "topic_share_in_field": 0.955,
+      "top_subfields": [
+        "Atmospheric Science",
+        "Global and Planetary Change",
+        "Fluid Flow and Transfer Processes",
+        "Health, Toxicology and Mutagenesis",
+        "Space and Planetary Science"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 762,
+          "2016": 887,
+          "2017": 822,
+          "2018": 964,
+          "2019": 826,
+          "2020": 827,
+          "2021": 915,
+          "2022": 790,
+          "2023": 721,
+          "2024": 705,
+          "2025": 912
+        },
+        "with_abstract": {
+          "2015": 759,
+          "2016": 887,
+          "2017": 822,
+          "2018": 964,
+          "2019": 824,
+          "2020": 827,
+          "2021": 915,
+          "2022": 790,
+          "2023": 721,
+          "2024": 705,
+          "2025": 891
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.9988,
+      "mean_with_abstract_2015_2019": 851.2,
+      "eligible_under_rule": true,
+      "rank_among_eligible": 6,
+      "citation_share_among_eligible": 0.065
+    }
+  ]
+}

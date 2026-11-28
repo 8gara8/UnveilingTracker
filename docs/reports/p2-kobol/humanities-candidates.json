@@ -1,0 +1,966 @@
+{
+  "checked": "2026-11-28, about 12:30 to 12:45 Taipei (04:30 to 04:45 UTC), keyless, from Kobol",
+  "rule": "Pool: journals (OpenAlex source type journal) with at least 60% of their listed OpenAlex topics in field 12 (Arts and Humanities), found by GET /sources?filter=topics.field.id:12,type:journal&sort=cited_by_count:desc (first 1,000) and by grouping 2015 to 2019 humanities articles with abstracts by journal in the subfields the tracker covers. Eligible: passes the SPEC 4.11 in_pace test, has an abstract on at least 50% of its 2015 to 2019 articles, and averages at least 20 articles with abstracts a year in 2015 to 2019. Ranked by OpenAlex cited_by_count (the citation share is its count over the eligible total); take the top 5, at most 2 from one OpenAlex subfield.",
+  "picks": [
+    {
+      "openalex_source": "S176347361",
+      "name": "Language",
+      "issn": "0097-8507",
+      "citation_share_among_eligible": 0.509
+    },
+    {
+      "openalex_source": "S173880072",
+      "name": "Antiquity",
+      "issn": "0003-598X",
+      "citation_share_among_eligible": 0.191
+    },
+    {
+      "openalex_source": "S4210173305",
+      "name": "The Classical Quarterly",
+      "issn": "0009-8388",
+      "citation_share_among_eligible": 0.155
+    },
+    {
+      "openalex_source": "S55827047",
+      "name": "Journal of Biblical Literature",
+      "issn": "0021-9231",
+      "citation_share_among_eligible": 0.096
+    },
+    {
+      "openalex_source": "S52609742",
+      "name": "HTS Teologiese Studies / Theological Studies",
+      "issn": "0259-9422",
+      "citation_share_among_eligible": 0.049
+    }
+  ],
+  "candidates": [
+    {
+      "key": "language",
+      "openalex_source": "S176347361",
+      "name": "Language",
+      "issn_l": "0097-8507",
+      "issn": [
+        "0097-8507",
+        "1535-0665"
+      ],
+      "host": "Linguistic Society of America",
+      "cited_by_count": 427192,
+      "two_yr_mean_citedness": 1.46,
+      "topic_share_in_field": 0.701,
+      "top_subfields": [
+        "Language and Linguistics",
+        "Experimental and Cognitive Psychology",
+        "Linguistics and Language",
+        "Developmental and Educational Psychology"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 55,
+          "2016": 71,
+          "2017": 67,
+          "2018": 59,
+          "2019": 68,
+          "2020": 73,
+          "2021": 77,
+          "2022": 65,
+          "2023": 50,
+          "2024": 55,
+          "2025": 41
+        },
+        "with_abstract": {
+          "2015": 41,
+          "2016": 46,
+          "2017": 49,
+          "2018": 41,
+          "2019": 53,
+          "2020": 47,
+          "2021": 50,
+          "2022": 40,
+          "2023": 35,
+          "2024": 38,
+          "2025": 26
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.7188,
+      "mean_with_abstract_2015_2019": 46,
+      "eligible_under_rule": true,
+      "rank_among_eligible": 1,
+      "citation_share_among_eligible": 0.509
+    },
+    {
+      "key": "american-historical-review",
+      "openalex_source": "S197437610",
+      "name": "The American Historical Review",
+      "issn_l": "0002-8762",
+      "issn": [
+        "0002-8762",
+        "1937-5239"
+      ],
+      "host": "Oxford University Press",
+      "cited_by_count": 399490,
+      "two_yr_mean_citedness": 0.11,
+      "topic_share_in_field": 0.563,
+      "top_subfields": [
+        "History",
+        "Political Science and International Relations",
+        "Economics and Econometrics",
+        "Sociology and Political Science"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 353,
+          "2016": 327,
+          "2017": 280,
+          "2018": 321,
+          "2019": 349,
+          "2020": 398,
+          "2021": 168,
+          "2022": 194,
+          "2023": 196,
+          "2024": 262,
+          "2025": 267
+        },
+        "with_abstract": {
+          "2015": 234,
+          "2016": 299,
+          "2017": 266,
+          "2018": 313,
+          "2019": 299,
+          "2020": 262,
+          "2021": 138,
+          "2022": 162,
+          "2023": 42,
+          "2024": 48,
+          "2025": 34
+        }
+      },
+      "in_pace_test": false,
+      "in_pace_fails": [
+        "2021: 138 with abstracts < half the 2015-2019 mean 282.2",
+        "2023: 42 with abstracts < half the 2015-2019 mean 282.2",
+        "2023: abstract share 21.4% < half the 2015-2019 share 86.6%",
+        "2024: 48 with abstracts < half the 2015-2019 mean 282.2",
+        "2024: abstract share 18.3% < half the 2015-2019 share 86.6%",
+        "2025: 34 with abstracts < half the 2015-2019 mean 282.2",
+        "2025: abstract share 12.7% < half the 2015-2019 share 86.6%"
+      ],
+      "abstract_share_2015_2019": 0.8656,
+      "mean_with_abstract_2015_2019": 282.2,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "journal-of-philosophy",
+      "openalex_source": "S41650241",
+      "name": "The Journal of Philosophy",
+      "issn_l": "0022-362X",
+      "issn": [
+        "0022-362X",
+        "1939-8549"
+      ],
+      "host": "Philosophy Documentation Center",
+      "cited_by_count": 293022,
+      "two_yr_mean_citedness": 1.89,
+      "topic_share_in_field": 0.923,
+      "top_subfields": [
+        "Philosophy",
+        "History and Philosophy of Science"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 44,
+          "2016": 40,
+          "2017": 43,
+          "2018": 40,
+          "2019": 42,
+          "2020": 35,
+          "2021": 35,
+          "2022": 34,
+          "2023": 30,
+          "2024": 37,
+          "2025": 30
+        },
+        "with_abstract": {
+          "2015": 21,
+          "2016": 17,
+          "2017": 18,
+          "2018": 17,
+          "2019": 24,
+          "2020": 25,
+          "2021": 30,
+          "2022": 27,
+          "2023": 26,
+          "2024": 29,
+          "2025": 28
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.4641,
+      "mean_with_abstract_2015_2019": 19.4,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "synthese",
+      "openalex_source": "S255146",
+      "name": "Synthese",
+      "issn_l": "0039-7857",
+      "issn": [
+        "0039-7857",
+        "1573-0964"
+      ],
+      "host": "Springer Science+Business Media",
+      "cited_by_count": 263738,
+      "two_yr_mean_citedness": 2.95,
+      "topic_share_in_field": 0.784,
+      "top_subfields": [
+        "Philosophy",
+        "History and Philosophy of Science",
+        "Artificial Intelligence",
+        "Sociology and Political Science",
+        "Language and Linguistics",
+        "Cognitive Neuroscience"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 357,
+          "2016": 311,
+          "2017": 373,
+          "2018": 407,
+          "2019": 446,
+          "2020": 414,
+          "2021": 470,
+          "2022": 510,
+          "2023": 408,
+          "2024": 377,
+          "2025": 528
+        },
+        "with_abstract": {
+          "2015": 24,
+          "2016": 63,
+          "2017": 80,
+          "2018": 99,
+          "2019": 98,
+          "2020": 147,
+          "2021": 216,
+          "2022": 261,
+          "2023": 247,
+          "2024": 238,
+          "2025": 338
+        }
+      },
+      "in_pace_test": false,
+      "in_pace_fails": [
+        "2015: 24 with abstracts < half the 2015-2019 mean 72.8",
+        "2015: abstract share 6.7% < half the 2015-2019 share 19.2%"
+      ],
+      "abstract_share_2015_2019": 0.1922,
+      "mean_with_abstract_2015_2019": 72.8,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "philosophical-review",
+      "openalex_source": "S35579339",
+      "name": "The Philosophical Review",
+      "issn_l": "0031-8108",
+      "issn": [
+        "0031-8108",
+        "1558-1470"
+      ],
+      "host": "Duke University Press",
+      "cited_by_count": 243170,
+      "two_yr_mean_citedness": 1.53,
+      "topic_share_in_field": 0.927,
+      "top_subfields": [
+        "Philosophy",
+        "History and Philosophy of Science"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 39,
+          "2016": 31,
+          "2017": 35,
+          "2018": 47,
+          "2019": 42,
+          "2020": 37,
+          "2021": 49,
+          "2022": 42,
+          "2023": 42,
+          "2024": 34,
+          "2025": 44
+        },
+        "with_abstract": {
+          "2015": 38,
+          "2016": 27,
+          "2017": 33,
+          "2018": 43,
+          "2019": 39,
+          "2020": 37,
+          "2021": 47,
+          "2022": 32,
+          "2023": 42,
+          "2024": 17,
+          "2025": 13
+        }
+      },
+      "in_pace_test": false,
+      "in_pace_fails": [
+        "2024: 17 with abstracts < half the 2015-2019 mean 36.0",
+        "2025: 13 with abstracts < half the 2015-2019 mean 36.0",
+        "2025: abstract share 29.5% < half the 2015-2019 share 92.8%"
+      ],
+      "abstract_share_2015_2019": 0.9278,
+      "mean_with_abstract_2015_2019": 36,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "philosophical-studies",
+      "openalex_source": "S147022693",
+      "name": "Philosophical Studies",
+      "issn_l": "0031-8116",
+      "issn": [
+        "0031-8116",
+        "1573-0883"
+      ],
+      "host": "Springer Science+Business Media",
+      "cited_by_count": 202400,
+      "two_yr_mean_citedness": 2.84,
+      "topic_share_in_field": 0.849,
+      "top_subfields": [
+        "Philosophy",
+        "History and Philosophy of Science",
+        "Artificial Intelligence",
+        "Language and Linguistics",
+        "Sociology and Political Science",
+        "Political Science and International Relations"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 180,
+          "2016": 223,
+          "2017": 165,
+          "2018": 177,
+          "2019": 168,
+          "2020": 150,
+          "2021": 149,
+          "2022": 118,
+          "2023": 165,
+          "2024": 174,
+          "2025": 171
+        },
+        "with_abstract": {
+          "2015": 4,
+          "2016": 24,
+          "2017": 38,
+          "2018": 34,
+          "2019": 41,
+          "2020": 45,
+          "2021": 63,
+          "2022": 50,
+          "2023": 81,
+          "2024": 106,
+          "2025": 104
+        }
+      },
+      "in_pace_test": false,
+      "in_pace_fails": [
+        "2015: 4 with abstracts < half the 2015-2019 mean 28.2",
+        "2015: abstract share 2.2% < half the 2015-2019 share 15.4%"
+      ],
+      "abstract_share_2015_2019": 0.1544,
+      "mean_with_abstract_2015_2019": 28.2,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "mind",
+      "openalex_source": "S37480348",
+      "name": "Mind",
+      "issn_l": "0026-4423",
+      "issn": [
+        "0026-4423",
+        "1460-2113"
+      ],
+      "host": "Oxford University Press",
+      "cited_by_count": 183108,
+      "two_yr_mean_citedness": 2.3,
+      "topic_share_in_field": 0.88,
+      "top_subfields": [
+        "Philosophy",
+        "History and Philosophy of Science",
+        "Artificial Intelligence",
+        "General Psychology"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 54,
+          "2016": 77,
+          "2017": 65,
+          "2018": 44,
+          "2019": 47,
+          "2020": 40,
+          "2021": 58,
+          "2022": 22,
+          "2023": 55,
+          "2024": 44,
+          "2025": 42
+        },
+        "with_abstract": {
+          "2015": 43,
+          "2016": 67,
+          "2017": 57,
+          "2018": 40,
+          "2019": 46,
+          "2020": 39,
+          "2021": 56,
+          "2022": 21,
+          "2023": 42,
+          "2024": 32,
+          "2025": 30
+        }
+      },
+      "in_pace_test": false,
+      "in_pace_fails": [
+        "2022: 21 with abstracts < half the 2015-2019 mean 50.6"
+      ],
+      "abstract_share_2015_2019": 0.8815,
+      "mean_with_abstract_2015_2019": 50.6,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "critical-inquiry",
+      "openalex_source": "S121755651",
+      "name": "Critical Inquiry",
+      "issn_l": "0093-1896",
+      "issn": [
+        "0093-1896",
+        "1539-7858"
+      ],
+      "host": "University of Chicago Press",
+      "cited_by_count": 168849,
+      "two_yr_mean_citedness": 0.68,
+      "topic_share_in_field": 0.877,
+      "top_subfields": [
+        "Literature and Literary Theory",
+        "Visual Arts and Performing Arts",
+        "Sociology and Political Science",
+        "Philosophy"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 33,
+          "2016": 44,
+          "2017": 36,
+          "2018": 38,
+          "2019": 35,
+          "2020": 71,
+          "2021": 32,
+          "2022": 30,
+          "2023": 33,
+          "2024": 44,
+          "2025": 19
+        },
+        "with_abstract": {
+          "2015": 2,
+          "2016": 22,
+          "2017": 4,
+          "2018": 6,
+          "2019": 5,
+          "2020": 64,
+          "2021": 29,
+          "2022": 28,
+          "2023": 29,
+          "2024": 31,
+          "2025": 18
+        }
+      },
+      "in_pace_test": false,
+      "in_pace_fails": [
+        "2015: 2 with abstracts < half the 2015-2019 mean 7.8",
+        "2015: abstract share 6.1% < half the 2015-2019 share 21.0%"
+      ],
+      "abstract_share_2015_2019": 0.2097,
+      "mean_with_abstract_2015_2019": 7.8,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "antiquity",
+      "openalex_source": "S173880072",
+      "name": "Antiquity",
+      "issn_l": "0003-598X",
+      "issn": [
+        "0003-598X",
+        "1745-1469",
+        "1745-1477",
+        "1745-1485",
+        "1745-1493",
+        "1745-1523",
+        "1745-1531",
+        "1745-1744"
+      ],
+      "host": "Cambridge University Press",
+      "cited_by_count": 160587,
+      "two_yr_mean_citedness": 2.04,
+      "topic_share_in_field": 0.738,
+      "top_subfields": [
+        "Archeology (arts and humanities)",
+        "Archeology",
+        "Classics",
+        "Anthropology",
+        "History"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 119,
+          "2016": 137,
+          "2017": 172,
+          "2018": 167,
+          "2019": 164,
+          "2020": 147,
+          "2021": 149,
+          "2022": 116,
+          "2023": 140,
+          "2024": 164,
+          "2025": 172
+        },
+        "with_abstract": {
+          "2015": 99,
+          "2016": 114,
+          "2017": 155,
+          "2018": 149,
+          "2019": 134,
+          "2020": 127,
+          "2021": 128,
+          "2022": 103,
+          "2023": 131,
+          "2024": 154,
+          "2025": 156
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.8577,
+      "mean_with_abstract_2015_2019": 130.2,
+      "eligible_under_rule": true,
+      "rank_among_eligible": 2,
+      "citation_share_among_eligible": 0.191
+    },
+    {
+      "key": "classical-quarterly",
+      "openalex_source": "S4210173305",
+      "name": "The Classical Quarterly",
+      "issn_l": "0009-8388",
+      "issn": [
+        "0009-8388",
+        "1471-6844"
+      ],
+      "host": "Cambridge University Press",
+      "cited_by_count": 129947,
+      "two_yr_mean_citedness": 0.4,
+      "topic_share_in_field": 0.998,
+      "top_subfields": [
+        "Classics",
+        "Language and Linguistics",
+        "Philosophy",
+        "Archeology (arts and humanities)",
+        "Religious studies",
+        "History",
+        "Literature and Literary Theory"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 92,
+          "2016": 83,
+          "2017": 73,
+          "2018": 76,
+          "2019": 94,
+          "2020": 93,
+          "2021": 82,
+          "2022": 87,
+          "2023": 103,
+          "2024": 88,
+          "2025": 103
+        },
+        "with_abstract": {
+          "2015": 88,
+          "2016": 80,
+          "2017": 67,
+          "2018": 72,
+          "2019": 90,
+          "2020": 90,
+          "2021": 78,
+          "2022": 83,
+          "2023": 100,
+          "2024": 84,
+          "2025": 99
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.9498,
+      "mean_with_abstract_2015_2019": 79.4,
+      "eligible_under_rule": true,
+      "rank_among_eligible": 3,
+      "citation_share_among_eligible": 0.155
+    },
+    {
+      "key": "past-and-present",
+      "openalex_source": "S42922845",
+      "name": "Past & Present",
+      "issn_l": "0031-2746",
+      "issn": [
+        "0031-2746",
+        "1477-464X"
+      ],
+      "host": "Oxford University Press",
+      "cited_by_count": 124141,
+      "two_yr_mean_citedness": 1.8,
+      "topic_share_in_field": 0.707,
+      "top_subfields": [
+        "Economics and Econometrics",
+        "History",
+        "Sociology and Political Science",
+        "Philosophy",
+        "Political Science and International Relations"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 47,
+          "2016": 52,
+          "2017": 58,
+          "2018": 47,
+          "2019": 56,
+          "2020": 54,
+          "2021": 46,
+          "2022": 48,
+          "2023": 21,
+          "2024": 62,
+          "2025": 34
+        },
+        "with_abstract": {
+          "2015": 39,
+          "2016": 50,
+          "2017": 47,
+          "2018": 45,
+          "2019": 53,
+          "2020": 54,
+          "2021": 42,
+          "2022": 46,
+          "2023": 20,
+          "2024": 59,
+          "2025": 34
+        }
+      },
+      "in_pace_test": false,
+      "in_pace_fails": [
+        "2023: 20 with abstracts < half the 2015-2019 mean 46.8"
+      ],
+      "abstract_share_2015_2019": 0.9,
+      "mean_with_abstract_2015_2019": 46.8,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "journal-of-roman-studies",
+      "openalex_source": "S84742693",
+      "name": "The Journal of Roman Studies",
+      "issn_l": "0075-4358",
+      "issn": [
+        "0075-4358",
+        "1753-528X"
+      ],
+      "host": "Cambridge University Press",
+      "cited_by_count": 112194,
+      "two_yr_mean_citedness": 0.16,
+      "topic_share_in_field": 0.992,
+      "top_subfields": [
+        "Classics",
+        "Archeology (arts and humanities)",
+        "Language and Linguistics",
+        "Philosophy",
+        "History",
+        "Religious studies"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 14,
+          "2016": 15,
+          "2017": 14,
+          "2018": 11,
+          "2019": 17,
+          "2020": 12,
+          "2021": 11,
+          "2022": 10,
+          "2023": 9,
+          "2024": 10,
+          "2025": 12
+        },
+        "with_abstract": {
+          "2015": 11,
+          "2016": 11,
+          "2017": 11,
+          "2018": 8,
+          "2019": 13,
+          "2020": 10,
+          "2021": 9,
+          "2022": 8,
+          "2023": 6,
+          "2024": 7,
+          "2025": 10
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.7606,
+      "mean_with_abstract_2015_2019": 10.8,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "religions",
+      "openalex_source": "S4210184657",
+      "name": "Religions",
+      "issn_l": "2077-1444",
+      "issn": [
+        "2077-1444"
+      ],
+      "host": "Multidisciplinary Digital Publishing Institute",
+      "cited_by_count": 90308,
+      "two_yr_mean_citedness": 1.91,
+      "topic_share_in_field": 0.728,
+      "top_subfields": [
+        "Philosophy",
+        "Sociology and Political Science",
+        "Religious studies",
+        "History",
+        "Health"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 92,
+          "2016": 145,
+          "2017": 273,
+          "2018": 424,
+          "2019": 655,
+          "2020": 673,
+          "2021": 1102,
+          "2022": 1233,
+          "2023": 1511,
+          "2024": 1507,
+          "2025": 1562
+        },
+        "with_abstract": {
+          "2015": 92,
+          "2016": 145,
+          "2017": 273,
+          "2018": 423,
+          "2019": 654,
+          "2020": 673,
+          "2021": 1102,
+          "2022": 1233,
+          "2023": 1511,
+          "2024": 1507,
+          "2025": 1562
+        }
+      },
+      "in_pace_test": false,
+      "in_pace_fails": [
+        "2015: 92 with abstracts < half the 2015-2019 mean 317.4",
+        "2016: 145 with abstracts < half the 2015-2019 mean 317.4"
+      ],
+      "abstract_share_2015_2019": 0.9987,
+      "mean_with_abstract_2015_2019": 317.4,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "journal-of-biblical-literature",
+      "openalex_source": "S55827047",
+      "name": "Journal of Biblical Literature",
+      "issn_l": "0021-9231",
+      "issn": [
+        "0021-9231",
+        "1934-3876"
+      ],
+      "host": "Society of Biblical Literature",
+      "cited_by_count": 80688,
+      "two_yr_mean_citedness": 0.97,
+      "topic_share_in_field": 0.996,
+      "top_subfields": [
+        "Religious studies",
+        "Language and Linguistics",
+        "Archeology (arts and humanities)",
+        "Philosophy",
+        "Classics",
+        "History"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 57,
+          "2016": 56,
+          "2017": 65,
+          "2018": 59,
+          "2019": 52,
+          "2020": 52,
+          "2021": 44,
+          "2022": 40,
+          "2023": 37,
+          "2024": 38,
+          "2025": 38
+        },
+        "with_abstract": {
+          "2015": 52,
+          "2016": 51,
+          "2017": 53,
+          "2018": 55,
+          "2019": 48,
+          "2020": 39,
+          "2021": 38,
+          "2022": 40,
+          "2023": 36,
+          "2024": 37,
+          "2025": 37
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.8962,
+      "mean_with_abstract_2015_2019": 51.8,
+      "eligible_under_rule": true,
+      "rank_among_eligible": 4,
+      "citation_share_among_eligible": 0.096
+    },
+    {
+      "key": "journal-american-oriental-society",
+      "openalex_source": "S146822473",
+      "name": "Journal of the American Oriental Society",
+      "issn_l": "0003-0279",
+      "issn": [
+        "0003-0279",
+        "2169-2289"
+      ],
+      "host": "American Oriental Society",
+      "cited_by_count": 76890,
+      "two_yr_mean_citedness": 0.26,
+      "topic_share_in_field": 0.938,
+      "top_subfields": [
+        "Religious studies",
+        "Language and Linguistics",
+        "Archeology (arts and humanities)",
+        "History",
+        "Political Science and International Relations"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 1,
+          "2016": 1,
+          "2017": 1,
+          "2018": 3,
+          "2019": 1,
+          "2020": 0,
+          "2021": 337,
+          "2022": 41,
+          "2023": 37,
+          "2024": 37,
+          "2025": 39
+        },
+        "with_abstract": {
+          "2015": 1,
+          "2016": 1,
+          "2017": 0,
+          "2018": 0,
+          "2019": 1,
+          "2020": 0,
+          "2021": 336,
+          "2022": 41,
+          "2023": 37,
+          "2024": 37,
+          "2025": 39
+        }
+      },
+      "in_pace_test": false,
+      "in_pace_fails": [
+        "2017: no article with an abstract",
+        "2018: no article with an abstract",
+        "2020: no article with an abstract"
+      ],
+      "abstract_share_2015_2019": 0.4286,
+      "mean_with_abstract_2015_2019": 0.6,
+      "eligible_under_rule": false,
+      "rank_among_eligible": null,
+      "citation_share_among_eligible": null
+    },
+    {
+      "key": "hts-theological-studies",
+      "openalex_source": "S52609742",
+      "name": "HTS Teologiese Studies / Theological Studies",
+      "issn_l": "0259-9422",
+      "issn": [
+        "0259-9422",
+        "2072-8050"
+      ],
+      "host": "AOSIS",
+      "cited_by_count": 41555,
+      "two_yr_mean_citedness": 4.12,
+      "topic_share_in_field": 0.908,
+      "top_subfields": [
+        "Religious studies",
+        "Philosophy",
+        "History",
+        "Sociology and Political Science"
+      ],
+      "yearly": {
+        "articles": {
+          "2015": 222,
+          "2016": 275,
+          "2017": 272,
+          "2018": 202,
+          "2019": 272,
+          "2020": 268,
+          "2021": 366,
+          "2022": 305,
+          "2023": 263,
+          "2024": 202,
+          "2025": 161
+        },
+        "with_abstract": {
+          "2015": 222,
+          "2016": 271,
+          "2017": 263,
+          "2018": 202,
+          "2019": 272,
+          "2020": 265,
+          "2021": 358,
+          "2022": 293,
+          "2023": 257,
+          "2024": 199,
+          "2025": 157
+        }
+      },
+      "in_pace_test": true,
+      "in_pace_fails": [],
+      "abstract_share_2015_2019": 0.9895,
+      "mean_with_abstract_2015_2019": 246,
+      "eligible_under_rule": true,
+      "rank_among_eligible": 5,
+      "citation_share_among_eligible": 0.049
+    }
+  ]
+}

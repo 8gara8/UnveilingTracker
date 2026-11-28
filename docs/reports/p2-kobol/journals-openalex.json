@@ -1,0 +1,1628 @@
+{
+  "checked": "2026-11-28, about 12:30 to 12:45 Taipei (04:30 to 04:45 UTC), keyless, from Kobol",
+  "test": "SPEC 4.11 in_pace: with-abstract articles in every year 2015 to 2025; each year at least half the 2015 to 2019 yearly mean of with-abstract articles; each year an abstract share at least half the 2015 to 2019 share",
+  "requests": "GET /sources/issn:<issn> (free); GET /sources/<seed id> where not a placeholder (free); two GET /works?filter=primary_location.source.id:<id>,type:article,publication_year:2015-2025[,has_abstract:true]&group_by=publication_year (1 credit each)",
+  "journals": [
+    {
+      "id": "nature",
+      "expected": {
+        "id": "nature",
+        "name": "Nature",
+        "openalex_source": "S137773608",
+        "issn": "0028-0836",
+        "fields": [
+          "mathematics",
+          "physics",
+          "chemistry",
+          "biology",
+          "earth",
+          "social",
+          "humanities"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S137773608",
+        "display_name": "Nature",
+        "issn_l": "0028-0836",
+        "issn": [
+          "0028-0836",
+          "1476-4687"
+        ],
+        "type": "journal",
+        "host": "Nature Portfolio"
+      },
+      "match": {
+        "placeholder": false,
+        "seed_id_matches": true,
+        "seed_id_record_name": "Nature",
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 2566,
+          "2016": 2548,
+          "2017": 2431,
+          "2018": 2834,
+          "2019": 2909,
+          "2020": 2803,
+          "2021": 2912,
+          "2022": 3148,
+          "2023": 3281,
+          "2024": 3356,
+          "2025": 3414
+        },
+        "with_abstract": {
+          "2015": 113,
+          "2016": 70,
+          "2017": 68,
+          "2018": 99,
+          "2019": 84,
+          "2020": 124,
+          "2021": 285,
+          "2022": 608,
+          "2023": 819,
+          "2024": 890,
+          "2025": 1009
+        }
+      },
+      "proposed_in_pace": true,
+      "why": "passes: 2015 to 2019 mean 86.8 with abstracts a year, abstract share 3.3%",
+      "mean_with_abstract_2015_2019": 86.8,
+      "abstract_share_2015_2019": 0.0327,
+      "years_under_50pct_abstracts": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "id": "science",
+      "expected": {
+        "id": "science",
+        "name": "Science",
+        "openalex_source": "S3880285",
+        "issn": "0036-8075",
+        "fields": [
+          "mathematics",
+          "physics",
+          "chemistry",
+          "biology",
+          "earth",
+          "social",
+          "humanities"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S3880285",
+        "display_name": "Science",
+        "issn_l": "0036-8075",
+        "issn": [
+          "0036-8075",
+          "0193-4511",
+          "1095-9203"
+        ],
+        "type": "journal",
+        "host": "American Association for the Advancement of Science"
+      },
+      "match": {
+        "placeholder": false,
+        "seed_id_matches": true,
+        "seed_id_record_name": "Science",
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 4148,
+          "2016": 3442,
+          "2017": 3127,
+          "2018": 3545,
+          "2019": 3437,
+          "2020": 3378,
+          "2021": 2519,
+          "2022": 1414,
+          "2023": 1399,
+          "2024": 1489,
+          "2025": 1499
+        },
+        "with_abstract": {
+          "2015": 2247,
+          "2016": 2130,
+          "2017": 1790,
+          "2018": 2231,
+          "2019": 2187,
+          "2020": 2233,
+          "2021": 1856,
+          "2022": 1247,
+          "2023": 1214,
+          "2024": 1324,
+          "2025": 1347
+        }
+      },
+      "proposed_in_pace": true,
+      "why": "passes: 2015 to 2019 mean 2117 with abstracts a year, abstract share 59.8%",
+      "mean_with_abstract_2015_2019": 2117,
+      "abstract_share_2015_2019": 0.5981,
+      "years_under_50pct_abstracts": []
+    },
+    {
+      "id": "cell",
+      "expected": {
+        "id": "cell",
+        "name": "Cell",
+        "openalex_source": "S110447773",
+        "issn": "0092-8674",
+        "fields": [
+          "biology"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S110447773",
+        "display_name": "Cell",
+        "issn_l": "0092-8674",
+        "issn": [
+          "0092-8674",
+          "1097-4172"
+        ],
+        "type": "journal",
+        "host": "Cell Press"
+      },
+      "match": {
+        "placeholder": false,
+        "seed_id_matches": true,
+        "seed_id_record_name": "Cell",
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 644,
+          "2016": 773,
+          "2017": 580,
+          "2018": 613,
+          "2019": 539,
+          "2020": 569,
+          "2021": 458,
+          "2022": 396,
+          "2023": 409,
+          "2024": 523,
+          "2025": 475
+        },
+        "with_abstract": {
+          "2015": 42,
+          "2016": 67,
+          "2017": 59,
+          "2018": 80,
+          "2019": 81,
+          "2020": 88,
+          "2021": 98,
+          "2022": 118,
+          "2023": 166,
+          "2024": 241,
+          "2025": 242
+        }
+      },
+      "proposed_in_pace": true,
+      "why": "passes: 2015 to 2019 mean 65.8 with abstracts a year, abstract share 10.4%",
+      "mean_with_abstract_2015_2019": 65.8,
+      "abstract_share_2015_2019": 0.1045,
+      "years_under_50pct_abstracts": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ]
+    },
+    {
+      "id": "pnas",
+      "expected": {
+        "id": "pnas",
+        "name": "Proceedings of the National Academy of Sciences",
+        "openalex_source": "S125754415",
+        "issn": "0027-8424",
+        "fields": [
+          "mathematics",
+          "physics",
+          "chemistry",
+          "biology",
+          "earth",
+          "social",
+          "humanities"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S125754415",
+        "display_name": "Proceedings of the National Academy of Sciences",
+        "issn_l": "0027-8424",
+        "issn": [
+          "0027-8424",
+          "1091-6490"
+        ],
+        "type": "journal",
+        "host": "National Academy of Sciences"
+      },
+      "match": {
+        "placeholder": false,
+        "seed_id_matches": true,
+        "seed_id_record_name": "Proceedings of the National Academy of Sciences",
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 3655,
+          "2016": 3514,
+          "2017": 3705,
+          "2018": 3732,
+          "2019": 3677,
+          "2020": 3958,
+          "2021": 3798,
+          "2022": 3663,
+          "2023": 3382,
+          "2024": 3607,
+          "2025": 3847
+        },
+        "with_abstract": {
+          "2015": 3597,
+          "2016": 3446,
+          "2017": 3635,
+          "2018": 3627,
+          "2019": 3635,
+          "2020": 3907,
+          "2021": 3768,
+          "2022": 3635,
+          "2023": 3368,
+          "2024": 3493,
+          "2025": 3716
+        }
+      },
+      "proposed_in_pace": true,
+      "why": "passes: 2015 to 2019 mean 3588 with abstracts a year, abstract share 98.1%",
+      "mean_with_abstract_2015_2019": 3588,
+      "abstract_share_2015_2019": 0.9812,
+      "years_under_50pct_abstracts": []
+    },
+    {
+      "id": "prl",
+      "expected": {
+        "id": "prl",
+        "name": "Physical Review Letters",
+        "openalex_source": "S24807848",
+        "issn": "0031-9007",
+        "fields": [
+          "physics"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S24807848",
+        "display_name": "Physical Review Letters",
+        "issn_l": "0031-9007",
+        "issn": [
+          "0031-9007",
+          "1079-7114",
+          "1092-0145"
+        ],
+        "type": "journal",
+        "host": "American Physical Society"
+      },
+      "match": {
+        "placeholder": false,
+        "seed_id_matches": true,
+        "seed_id_record_name": "Physical Review Letters",
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 2569,
+          "2016": 2396,
+          "2017": 2546,
+          "2018": 2847,
+          "2019": 2691,
+          "2020": 2796,
+          "2021": 2418,
+          "2022": 2098,
+          "2023": 2149,
+          "2024": 2480,
+          "2025": 3007
+        },
+        "with_abstract": {
+          "2015": 2549,
+          "2016": 2371,
+          "2017": 2512,
+          "2018": 2804,
+          "2019": 2663,
+          "2020": 2765,
+          "2021": 2406,
+          "2022": 2093,
+          "2023": 2149,
+          "2024": 2478,
+          "2025": 2976
+        }
+      },
+      "proposed_in_pace": true,
+      "why": "passes: 2015 to 2019 mean 2579.8 with abstracts a year, abstract share 98.9%",
+      "mean_with_abstract_2015_2019": 2579.8,
+      "abstract_share_2015_2019": 0.9885,
+      "years_under_50pct_abstracts": []
+    },
+    {
+      "id": "annals-of-mathematics",
+      "expected": {
+        "id": "annals-of-mathematics",
+        "name": "Annals of Mathematics",
+        "openalex_source": "S9999999901",
+        "issn": "0003-486X",
+        "fields": [
+          "mathematics"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S45918994",
+        "display_name": "Annals of Mathematics",
+        "issn_l": "0003-486X",
+        "issn": [
+          "0003-486X",
+          "1939-8980"
+        ],
+        "type": "journal",
+        "host": "Princeton University"
+      },
+      "match": {
+        "placeholder": true,
+        "seed_id_matches": false,
+        "seed_id_record_name": null,
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 43,
+          "2016": 50,
+          "2017": 38,
+          "2018": 28,
+          "2019": 40,
+          "2020": 33,
+          "2021": 34,
+          "2022": 33,
+          "2023": 31,
+          "2024": 32,
+          "2025": 29
+        },
+        "with_abstract": {
+          "2015": 42,
+          "2016": 49,
+          "2017": 38,
+          "2018": 27,
+          "2019": 39,
+          "2020": 33,
+          "2021": 34,
+          "2022": 33,
+          "2023": 31,
+          "2024": 32,
+          "2025": 29
+        }
+      },
+      "proposed_in_pace": true,
+      "why": "passes: 2015 to 2019 mean 39 with abstracts a year, abstract share 98.0%",
+      "mean_with_abstract_2015_2019": 39,
+      "abstract_share_2015_2019": 0.9799,
+      "years_under_50pct_abstracts": []
+    },
+    {
+      "id": "nature-physics",
+      "expected": {
+        "id": "nature-physics",
+        "name": "Nature Physics",
+        "openalex_source": "S9999999902",
+        "issn": "1745-2473",
+        "fields": [
+          "physics"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S156274416",
+        "display_name": "Nature Physics",
+        "issn_l": "1745-2473",
+        "issn": [
+          "1745-2473",
+          "1745-2481"
+        ],
+        "type": "journal",
+        "host": "Nature Portfolio"
+      },
+      "match": {
+        "placeholder": true,
+        "seed_id_matches": false,
+        "seed_id_record_name": null,
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 354,
+          "2016": 348,
+          "2017": 310,
+          "2018": 275,
+          "2019": 266,
+          "2020": 260,
+          "2021": 218,
+          "2022": 227,
+          "2023": 269,
+          "2024": 277,
+          "2025": 277
+        },
+        "with_abstract": {
+          "2015": 3,
+          "2016": 1,
+          "2017": 7,
+          "2018": 7,
+          "2019": 12,
+          "2020": 10,
+          "2021": 20,
+          "2022": 64,
+          "2023": 72,
+          "2024": 86,
+          "2025": 92
+        }
+      },
+      "proposed_in_pace": false,
+      "why": "2015: abstract share 0.8% < half the 2015-2019 share 1.9%; 2016: 1 with abstracts < half the 2015-2019 mean 6.0; 2016: abstract share 0.3% < half the 2015-2019 share 1.9%",
+      "mean_with_abstract_2015_2019": 6,
+      "abstract_share_2015_2019": 0.0193,
+      "years_under_50pct_abstracts": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "id": "nature-chemistry",
+      "expected": {
+        "id": "nature-chemistry",
+        "name": "Nature Chemistry",
+        "openalex_source": "S9999999903",
+        "issn": "1755-4330",
+        "fields": [
+          "chemistry"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S202193212",
+        "display_name": "Nature Chemistry",
+        "issn_l": "1755-4330",
+        "issn": [
+          "1755-4330",
+          "1755-4349"
+        ],
+        "type": "journal",
+        "host": "Nature Portfolio"
+      },
+      "match": {
+        "placeholder": true,
+        "seed_id_matches": false,
+        "seed_id_record_name": null,
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 237,
+          "2016": 250,
+          "2017": 190,
+          "2018": 169,
+          "2019": 131,
+          "2020": 145,
+          "2021": 153,
+          "2022": 184,
+          "2023": 210,
+          "2024": 215,
+          "2025": 248
+        },
+        "with_abstract": {
+          "2015": 1,
+          "2016": 1,
+          "2017": 1,
+          "2018": 1,
+          "2019": 1,
+          "2020": 7,
+          "2021": 20,
+          "2022": 62,
+          "2023": 66,
+          "2024": 80,
+          "2025": 86
+        }
+      },
+      "proposed_in_pace": true,
+      "why": "passes: 2015 to 2019 mean 1 with abstracts a year, abstract share 0.5%",
+      "mean_with_abstract_2015_2019": 1,
+      "abstract_share_2015_2019": 0.0051,
+      "years_under_50pct_abstracts": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "id": "nature-materials",
+      "expected": {
+        "id": "nature-materials",
+        "name": "Nature Materials",
+        "openalex_source": "S9999999904",
+        "issn": "1476-1122",
+        "fields": [
+          "chemistry"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S103895331",
+        "display_name": "Nature Materials",
+        "issn_l": "1476-1122",
+        "issn": [
+          "1476-1122",
+          "1476-4660"
+        ],
+        "type": "journal",
+        "host": "Nature Portfolio"
+      },
+      "match": {
+        "placeholder": true,
+        "seed_id_matches": false,
+        "seed_id_record_name": null,
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 313,
+          "2016": 269,
+          "2017": 197,
+          "2018": 162,
+          "2019": 181,
+          "2020": 168,
+          "2021": 172,
+          "2022": 162,
+          "2023": 179,
+          "2024": 198,
+          "2025": 234
+        },
+        "with_abstract": {
+          "2015": 1,
+          "2016": 2,
+          "2017": 0,
+          "2018": 2,
+          "2019": 1,
+          "2020": 2,
+          "2021": 19,
+          "2022": 40,
+          "2023": 43,
+          "2024": 54,
+          "2025": 67
+        }
+      },
+      "proposed_in_pace": false,
+      "why": "2017: no article with an abstract",
+      "mean_with_abstract_2015_2019": 1.2,
+      "abstract_share_2015_2019": 0.0053,
+      "years_under_50pct_abstracts": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "id": "jacs",
+      "expected": {
+        "id": "jacs",
+        "name": "Journal of the American Chemical Society",
+        "openalex_source": "S9999999905",
+        "issn": "0002-7863",
+        "fields": [
+          "chemistry"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S111155417",
+        "display_name": "Journal of the American Chemical Society",
+        "issn_l": "0002-7863",
+        "issn": [
+          "0002-7863",
+          "1520-5126",
+          "1943-2984"
+        ],
+        "type": "journal",
+        "host": "American Chemical Society"
+      },
+      "match": {
+        "placeholder": true,
+        "seed_id_matches": false,
+        "seed_id_record_name": null,
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 2411,
+          "2016": 2459,
+          "2017": 2684,
+          "2018": 2532,
+          "2019": 2545,
+          "2020": 2433,
+          "2021": 2389,
+          "2022": 2521,
+          "2023": 2925,
+          "2024": 3580,
+          "2025": 4630
+        },
+        "with_abstract": {
+          "2015": 2357,
+          "2016": 2407,
+          "2017": 2637,
+          "2018": 2479,
+          "2019": 2497,
+          "2020": 2386,
+          "2021": 2337,
+          "2022": 2470,
+          "2023": 2887,
+          "2024": 3563,
+          "2025": 4624
+        }
+      },
+      "proposed_in_pace": true,
+      "why": "passes: 2015 to 2019 mean 2475.4 with abstracts a year, abstract share 98.0%",
+      "mean_with_abstract_2015_2019": 2475.4,
+      "abstract_share_2015_2019": 0.9799,
+      "years_under_50pct_abstracts": []
+    },
+    {
+      "id": "nature-medicine",
+      "expected": {
+        "id": "nature-medicine",
+        "name": "Nature Medicine",
+        "openalex_source": "S203256638",
+        "issn": "1078-8956",
+        "fields": [
+          "biology"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S203256638",
+        "display_name": "Nature Medicine",
+        "issn_l": "1078-8956",
+        "issn": [
+          "1078-8956",
+          "1546-170X",
+          "1744-7933"
+        ],
+        "type": "journal",
+        "host": "Nature Portfolio"
+      },
+      "match": {
+        "placeholder": false,
+        "seed_id_matches": true,
+        "seed_id_record_name": "Nature Medicine",
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 195,
+          "2016": 202,
+          "2017": 167,
+          "2018": 251,
+          "2019": 247,
+          "2020": 355,
+          "2021": 370,
+          "2022": 425,
+          "2023": 472,
+          "2024": 524,
+          "2025": 553
+        },
+        "with_abstract": {
+          "2015": 0,
+          "2016": 1,
+          "2017": 1,
+          "2018": 7,
+          "2019": 9,
+          "2020": 25,
+          "2021": 67,
+          "2022": 161,
+          "2023": 185,
+          "2024": 213,
+          "2025": 234
+        }
+      },
+      "proposed_in_pace": false,
+      "why": "2015: no article with an abstract; 2016: 1 with abstracts < half the 2015-2019 mean 3.6; 2016: abstract share 0.5% < half the 2015-2019 share 1.7%; 2017: 1 with abstracts < half the 2015-2019 mean 3.6; 2017: abstract share 0.6% < half the 2015-2019 share 1.7%",
+      "mean_with_abstract_2015_2019": 3.6,
+      "abstract_share_2015_2019": 0.0169,
+      "years_under_50pct_abstracts": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "id": "nejm",
+      "expected": {
+        "id": "nejm",
+        "name": "The New England Journal of Medicine",
+        "openalex_source": "S62468778",
+        "issn": "0028-4793",
+        "fields": [
+          "biology"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S62468778",
+        "display_name": "New England Journal of Medicine",
+        "issn_l": "0028-4793",
+        "issn": [
+          "0028-4793",
+          "0096-6762",
+          "1533-4406",
+          "2163-2928",
+          "2163-2952",
+          "2331-4710"
+        ],
+        "type": "journal",
+        "host": "Massachusetts Medical Society"
+      },
+      "match": {
+        "placeholder": false,
+        "seed_id_matches": true,
+        "seed_id_record_name": "New England Journal of Medicine",
+        "name_exact": false,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 754,
+          "2016": 742,
+          "2017": 698,
+          "2018": 744,
+          "2019": 694,
+          "2020": 860,
+          "2021": 727,
+          "2022": 701,
+          "2023": 683,
+          "2024": 683,
+          "2025": 639
+        },
+        "with_abstract": {
+          "2015": 666,
+          "2016": 692,
+          "2017": 663,
+          "2018": 700,
+          "2019": 666,
+          "2020": 834,
+          "2021": 686,
+          "2022": 595,
+          "2023": 573,
+          "2024": 617,
+          "2025": 608
+        }
+      },
+      "proposed_in_pace": true,
+      "why": "passes: 2015 to 2019 mean 677.4 with abstracts a year, abstract share 93.3%",
+      "mean_with_abstract_2015_2019": 677.4,
+      "abstract_share_2015_2019": 0.9325,
+      "years_under_50pct_abstracts": []
+    },
+    {
+      "id": "lancet",
+      "expected": {
+        "id": "lancet",
+        "name": "The Lancet",
+        "openalex_source": "S49861241",
+        "issn": "0140-6736",
+        "fields": [
+          "biology"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S49861241",
+        "display_name": "The Lancet",
+        "issn_l": "0099-5355",
+        "issn": [
+          "0099-5355",
+          "0140-6736",
+          "1474-547X"
+        ],
+        "type": "journal",
+        "host": "Elsevier BV"
+      },
+      "match": {
+        "placeholder": false,
+        "seed_id_matches": true,
+        "seed_id_record_name": "The Lancet",
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": false,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 1575,
+          "2016": 1567,
+          "2017": 1529,
+          "2018": 1346,
+          "2019": 1398,
+          "2020": 1091,
+          "2021": 1209,
+          "2022": 1082,
+          "2023": 1154,
+          "2024": 1234,
+          "2025": 1214
+        },
+        "with_abstract": {
+          "2015": 66,
+          "2016": 87,
+          "2017": 132,
+          "2018": 119,
+          "2019": 140,
+          "2020": 111,
+          "2021": 78,
+          "2022": 84,
+          "2023": 49,
+          "2024": 67,
+          "2025": 64
+        }
+      },
+      "proposed_in_pace": false,
+      "why": "2023: 49 with abstracts < half the 2015-2019 mean 108.8",
+      "mean_with_abstract_2015_2019": 108.8,
+      "abstract_share_2015_2019": 0.0734,
+      "years_under_50pct_abstracts": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "id": "nature-biotechnology",
+      "expected": {
+        "id": "nature-biotechnology",
+        "name": "Nature Biotechnology",
+        "openalex_source": "S9999999906",
+        "issn": "1087-0156",
+        "fields": [
+          "biology"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S106963461",
+        "display_name": "Nature Biotechnology",
+        "issn_l": "0733-222X",
+        "issn": [
+          "0733-222X",
+          "1087-0156",
+          "1546-1696",
+          "2331-3684"
+        ],
+        "type": "journal",
+        "host": "Nature Portfolio"
+      },
+      "match": {
+        "placeholder": true,
+        "seed_id_matches": false,
+        "seed_id_record_name": null,
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": false,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 260,
+          "2016": 275,
+          "2017": 228,
+          "2018": 229,
+          "2019": 205,
+          "2020": 221,
+          "2021": 216,
+          "2022": 262,
+          "2023": 312,
+          "2024": 299,
+          "2025": 278
+        },
+        "with_abstract": {
+          "2015": 8,
+          "2016": 8,
+          "2017": 8,
+          "2018": 12,
+          "2019": 11,
+          "2020": 19,
+          "2021": 24,
+          "2022": 66,
+          "2023": 97,
+          "2024": 77,
+          "2025": 67
+        }
+      },
+      "proposed_in_pace": true,
+      "why": "passes: 2015 to 2019 mean 9.4 with abstracts a year, abstract share 3.9%",
+      "mean_with_abstract_2015_2019": 9.4,
+      "abstract_share_2015_2019": 0.0393,
+      "years_under_50pct_abstracts": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "id": "nature-geoscience",
+      "expected": {
+        "id": "nature-geoscience",
+        "name": "Nature Geoscience",
+        "openalex_source": "S9999999907",
+        "issn": "1752-0894",
+        "fields": [
+          "earth"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S48977010",
+        "display_name": "Nature Geoscience",
+        "issn_l": "1752-0894",
+        "issn": [
+          "1752-0894",
+          "1752-0908"
+        ],
+        "type": "journal",
+        "host": "Nature Portfolio"
+      },
+      "match": {
+        "placeholder": true,
+        "seed_id_matches": false,
+        "seed_id_record_name": null,
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 254,
+          "2016": 209,
+          "2017": 198,
+          "2018": 150,
+          "2019": 165,
+          "2020": 122,
+          "2021": 157,
+          "2022": 174,
+          "2023": 199,
+          "2024": 208,
+          "2025": 221
+        },
+        "with_abstract": {
+          "2015": 0,
+          "2016": 3,
+          "2017": 2,
+          "2018": 1,
+          "2019": 1,
+          "2020": 5,
+          "2021": 17,
+          "2022": 55,
+          "2023": 78,
+          "2024": 86,
+          "2025": 87
+        }
+      },
+      "proposed_in_pace": false,
+      "why": "2015: no article with an abstract",
+      "mean_with_abstract_2015_2019": 1.4,
+      "abstract_share_2015_2019": 0.0072,
+      "years_under_50pct_abstracts": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "id": "nature-climate-change",
+      "expected": {
+        "id": "nature-climate-change",
+        "name": "Nature Climate Change",
+        "openalex_source": "S9999999908",
+        "issn": "1758-678X",
+        "fields": [
+          "earth"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S183584863",
+        "display_name": "Nature Climate Change",
+        "issn_l": "1758-678X",
+        "issn": [
+          "1758-678X",
+          "1758-6798"
+        ],
+        "type": "journal",
+        "host": "Nature Portfolio"
+      },
+      "match": {
+        "placeholder": true,
+        "seed_id_matches": false,
+        "seed_id_record_name": null,
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 350,
+          "2016": 240,
+          "2017": 249,
+          "2018": 251,
+          "2019": 217,
+          "2020": 222,
+          "2021": 209,
+          "2022": 244,
+          "2023": 265,
+          "2024": 254,
+          "2025": 255
+        },
+        "with_abstract": {
+          "2015": 1,
+          "2016": 3,
+          "2017": 3,
+          "2018": 6,
+          "2019": 2,
+          "2020": 6,
+          "2021": 23,
+          "2022": 58,
+          "2023": 72,
+          "2024": 69,
+          "2025": 68
+        }
+      },
+      "proposed_in_pace": false,
+      "why": "2015: 1 with abstracts < half the 2015-2019 mean 3.0; 2015: abstract share 0.3% < half the 2015-2019 share 1.1%",
+      "mean_with_abstract_2015_2019": 3,
+      "abstract_share_2015_2019": 0.0115,
+      "years_under_50pct_abstracts": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "id": "aer",
+      "expected": {
+        "id": "aer",
+        "name": "American Economic Review",
+        "openalex_source": "S23254222",
+        "issn": "0002-8282",
+        "fields": [
+          "social"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S23254222",
+        "display_name": "American Economic Review",
+        "issn_l": "0002-8282",
+        "issn": [
+          "0002-8282",
+          "1944-7981"
+        ],
+        "type": "journal",
+        "host": "American Economic Association"
+      },
+      "match": {
+        "placeholder": false,
+        "seed_id_matches": true,
+        "seed_id_record_name": "American Economic Review",
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 266,
+          "2016": 280,
+          "2017": 264,
+          "2018": 109,
+          "2019": 142,
+          "2020": 137,
+          "2021": 116,
+          "2022": 111,
+          "2023": 86,
+          "2024": 102,
+          "2025": 110
+        },
+        "with_abstract": {
+          "2015": 250,
+          "2016": 260,
+          "2017": 245,
+          "2018": 108,
+          "2019": 141,
+          "2020": 136,
+          "2021": 114,
+          "2022": 109,
+          "2023": 85,
+          "2024": 101,
+          "2025": 108
+        }
+      },
+      "proposed_in_pace": false,
+      "why": "2023: 85 with abstracts < half the 2015-2019 mean 200.8",
+      "mean_with_abstract_2015_2019": 200.8,
+      "abstract_share_2015_2019": 0.9463,
+      "years_under_50pct_abstracts": []
+    },
+    {
+      "id": "apsr",
+      "expected": {
+        "id": "apsr",
+        "name": "American Political Science Review",
+        "openalex_source": "S176007004",
+        "issn": "0003-0554",
+        "fields": [
+          "social"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S176007004",
+        "display_name": "American Political Science Review",
+        "issn_l": "0003-0554",
+        "issn": [
+          "0003-0554",
+          "1537-5943"
+        ],
+        "type": "journal",
+        "host": "Cambridge University Press"
+      },
+      "match": {
+        "placeholder": false,
+        "seed_id_matches": true,
+        "seed_id_record_name": "American Political Science Review",
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 54,
+          "2016": 68,
+          "2017": 82,
+          "2018": 84,
+          "2019": 79,
+          "2020": 104,
+          "2021": 142,
+          "2022": 126,
+          "2023": 139,
+          "2024": 128,
+          "2025": 87
+        },
+        "with_abstract": {
+          "2015": 49,
+          "2016": 59,
+          "2017": 78,
+          "2018": 76,
+          "2019": 70,
+          "2020": 100,
+          "2021": 134,
+          "2022": 120,
+          "2023": 134,
+          "2024": 122,
+          "2025": 79
+        }
+      },
+      "proposed_in_pace": true,
+      "why": "passes: 2015 to 2019 mean 66.4 with abstracts a year, abstract share 90.5%",
+      "mean_with_abstract_2015_2019": 66.4,
+      "abstract_share_2015_2019": 0.9046,
+      "years_under_50pct_abstracts": []
+    },
+    {
+      "id": "nature-human-behaviour",
+      "expected": {
+        "id": "nature-human-behaviour",
+        "name": "Nature Human Behaviour",
+        "openalex_source": "S9999999909",
+        "issn": "2397-3374",
+        "fields": [
+          "social"
+        ],
+        "in_pace": false
+      },
+      "found": {
+        "openalex_source": "S2764866340",
+        "display_name": "Nature Human Behaviour",
+        "issn_l": "2397-3374",
+        "issn": [
+          "2397-3374"
+        ],
+        "type": "journal",
+        "host": "Nature Portfolio"
+      },
+      "match": {
+        "placeholder": true,
+        "seed_id_matches": false,
+        "seed_id_record_name": null,
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 0,
+          "2016": 10,
+          "2017": 210,
+          "2018": 161,
+          "2019": 219,
+          "2020": 156,
+          "2021": 154,
+          "2022": 189,
+          "2023": 226,
+          "2024": 223,
+          "2025": 223
+        },
+        "with_abstract": {
+          "2015": 0,
+          "2016": 0,
+          "2017": 1,
+          "2018": 0,
+          "2019": 4,
+          "2020": 10,
+          "2021": 29,
+          "2022": 42,
+          "2023": 64,
+          "2024": 68,
+          "2025": 69
+        }
+      },
+      "proposed_in_pace": false,
+      "why": "2015: no article with an abstract; 2016: no article with an abstract; 2018: no article with an abstract",
+      "mean_with_abstract_2015_2019": 1,
+      "abstract_share_2015_2019": 0.0083,
+      "years_under_50pct_abstracts": [
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ]
+    },
+    {
+      "id": "inventiones",
+      "expected": {
+        "id": "inventiones",
+        "name": "Inventiones Mathematicae",
+        "openalex_source": "S9999999910",
+        "issn": "0020-9910",
+        "fields": [
+          "mathematics"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S98347115",
+        "display_name": "Inventiones mathematicae",
+        "issn_l": "0020-9910",
+        "issn": [
+          "0020-9910",
+          "1432-1297"
+        ],
+        "type": "journal",
+        "host": "Springer Science+Business Media"
+      },
+      "match": {
+        "placeholder": true,
+        "seed_id_matches": false,
+        "seed_id_record_name": null,
+        "name_exact": false,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 72,
+          "2016": 72,
+          "2017": 58,
+          "2018": 61,
+          "2019": 86,
+          "2020": 72,
+          "2021": 60,
+          "2022": 82,
+          "2023": 58,
+          "2024": 67,
+          "2025": 85
+        },
+        "with_abstract": {
+          "2015": 6,
+          "2016": 4,
+          "2017": 7,
+          "2018": 10,
+          "2019": 17,
+          "2020": 21,
+          "2021": 21,
+          "2022": 30,
+          "2023": 27,
+          "2024": 30,
+          "2025": 49
+        }
+      },
+      "proposed_in_pace": false,
+      "why": "2016: 4 with abstracts < half the 2015-2019 mean 8.8; 2016: abstract share 5.6% < half the 2015-2019 share 12.6%",
+      "mean_with_abstract_2015_2019": 8.8,
+      "abstract_share_2015_2019": 0.1261,
+      "years_under_50pct_abstracts": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ]
+    },
+    {
+      "id": "jams",
+      "expected": {
+        "id": "jams",
+        "name": "Journal of the American Mathematical Society",
+        "openalex_source": "S9999999911",
+        "issn": "0894-0347",
+        "fields": [
+          "mathematics"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S130224168",
+        "display_name": "Journal of the American Mathematical Society",
+        "issn_l": "0894-0347",
+        "issn": [
+          "0894-0347",
+          "1088-6834"
+        ],
+        "type": "journal",
+        "host": "American Mathematical Society"
+      },
+      "match": {
+        "placeholder": true,
+        "seed_id_matches": false,
+        "seed_id_record_name": null,
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 30,
+          "2016": 23,
+          "2017": 21,
+          "2018": 17,
+          "2019": 22,
+          "2020": 23,
+          "2021": 35,
+          "2022": 15,
+          "2023": 24,
+          "2024": 14,
+          "2025": 18
+        },
+        "with_abstract": {
+          "2015": 30,
+          "2016": 23,
+          "2017": 20,
+          "2018": 17,
+          "2019": 22,
+          "2020": 22,
+          "2021": 35,
+          "2022": 15,
+          "2023": 24,
+          "2024": 14,
+          "2025": 18
+        }
+      },
+      "proposed_in_pace": true,
+      "why": "passes: 2015 to 2019 mean 22.4 with abstracts a year, abstract share 99.1%",
+      "mean_with_abstract_2015_2019": 22.4,
+      "abstract_share_2015_2019": 0.9912,
+      "years_under_50pct_abstracts": []
+    },
+    {
+      "id": "acta-mathematica",
+      "expected": {
+        "id": "acta-mathematica",
+        "name": "Acta Mathematica",
+        "openalex_source": "S9999999912",
+        "issn": "0001-5962",
+        "fields": [
+          "mathematics"
+        ],
+        "in_pace": true
+      },
+      "found": {
+        "openalex_source": "S113542759",
+        "display_name": "Acta Mathematica",
+        "issn_l": "0001-5962",
+        "issn": [
+          "0001-5962",
+          "1871-2509"
+        ],
+        "type": "journal",
+        "host": "Mittag-Leffler Institute"
+      },
+      "match": {
+        "placeholder": true,
+        "seed_id_matches": false,
+        "seed_id_record_name": null,
+        "name_exact": true,
+        "issn_listed": true,
+        "issn_is_issn_l": true,
+        "same_journal": true
+      },
+      "yearly": {
+        "articles": {
+          "2015": 14,
+          "2016": 11,
+          "2017": 12,
+          "2018": 12,
+          "2019": 9,
+          "2020": 11,
+          "2021": 9,
+          "2022": 9,
+          "2023": 9,
+          "2024": 9,
+          "2025": 6
+        },
+        "with_abstract": {
+          "2015": 14,
+          "2016": 11,
+          "2017": 12,
+          "2018": 12,
+          "2019": 8,
+          "2020": 11,
+          "2021": 9,
+          "2022": 9,
+          "2023": 9,
+          "2024": 8,
+          "2025": 5
+        }
+      },
+      "proposed_in_pace": false,
+      "why": "2025: 5 with abstracts < half the 2015-2019 mean 11.4",
+      "mean_with_abstract_2015_2019": 11.4,
+      "abstract_share_2015_2019": 0.9828,
+      "years_under_50pct_abstracts": []
+    }
+  ]
+}

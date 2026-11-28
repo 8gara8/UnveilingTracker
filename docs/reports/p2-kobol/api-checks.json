@@ -1,0 +1,403 @@
+{
+  "checked": "2026-11-28, about 12:30 to 12:45 Taipei (04:30 to 04:45 UTC), keyless, from Kobol",
+  "search": {
+    "terms_param": "%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22",
+    "url_bytes_estimate": 759,
+    "tests": [
+      {
+        "label": "all 20 phrases OR",
+        "status": 200,
+        "count": 63291,
+        "oql": "get articles from 2019 with (stemmed \"AlphaFold\" OR stemmed \"Bayesian optimization\" OR stemmed \"active learning\" OR stemmed \"artificial intelligence\" OR stemmed \"autonomous laboratory\" OR stemmed \"convolutional neural\" OR stemmed \"deep learning\" OR stemmed \"diffusion model\" OR stemmed \"foundation model\" OR stemmed \"generative model\" OR stemmed \"graph neural network\" OR stemmed \"language model\" OR stemmed \"large language model\" OR stemmed \"machine learning\" OR stemmed \"neural network\" OR stemmed \"random forest\" OR stemmed \"reinforcement learning\" OR stemmed \"self-driving laboratory\" OR stemmed \"support vector machine\" OR stemmed \"transformer model\") in the title or abstract where it has an abstract",
+        "credits": "10"
+      },
+      {
+        "label": "\"neural network\" quoted",
+        "status": 200,
+        "count": 26987,
+        "oql": "get articles from 2019 with (stemmed \"neural network\") in the title or abstract where it has an abstract",
+        "credits": "10"
+      },
+      {
+        "label": "neural network unquoted",
+        "status": 200,
+        "count": 28559,
+        "oql": "get articles from 2019 with (neural network) in the title or abstract where it has an abstract",
+        "credits": "10"
+      },
+      {
+        "label": "\"network neural\" quoted, reversed",
+        "status": 200,
+        "count": 31,
+        "oql": "get articles from 2019 with (stemmed \"network neural\") in the title or abstract where it has an abstract",
+        "credits": "10"
+      },
+      {
+        "label": "\"self-driving laboratory\" quoted",
+        "status": 200,
+        "count": 0,
+        "oql": "get articles from 2019 with (stemmed \"self-driving laboratory\") in the title or abstract where it has an abstract",
+        "credits": "10"
+      },
+      {
+        "label": "\"self driving laboratory\" quoted",
+        "status": 200,
+        "count": 0,
+        "oql": "get articles from 2019 with (stemmed \"self driving laboratory\") in the title or abstract where it has an abstract",
+        "credits": "10"
+      },
+      {
+        "label": "\"neural network\" NOT \"deep learning\"",
+        "status": 200,
+        "count": 21978,
+        "oql": "get articles from 2019 with (stemmed \"neural network\" NOT stemmed \"deep learning\") in the title or abstract where it has an abstract",
+        "credits": "10"
+      },
+      {
+        "label": "\"neural network\" AND \"deep learning\"",
+        "status": 200,
+        "count": 5009,
+        "oql": "get articles from 2019 with (stemmed \"deep learning\" AND stemmed \"neural network\") in the title or abstract where it has an abstract",
+        "credits": "10"
+      }
+    ]
+  },
+  "sample_and_more": {
+    "total_2019": {
+      "filter": "publication_year:2019,type:article,has_abstract:true",
+      "status": 200,
+      "count": 3749447,
+      "oql": "get articles from 2019 where it has an abstract",
+      "credits": "1"
+    },
+    "hyphen_deep_learning": {
+      "filter": "publication_year:2019,type:article,has_abstract:true,title_and_abstract.search:%22deep-learning%22",
+      "status": 200,
+      "count": 10254,
+      "oql": "get articles from 2019 with (stemmed \"deep-learning\") in the title or abstract where it has an abstract",
+      "credits": "10"
+    },
+    "deep_learning": {
+      "filter": "publication_year:2019,type:article,has_abstract:true,title_and_abstract.search:%22deep%20learning%22",
+      "status": 200,
+      "count": 10254,
+      "oql": "get articles from 2019 with (stemmed \"deep learning\") in the title or abstract where it has an abstract",
+      "credits": "10"
+    },
+    "self_driving_hyphen_2015_2025": {
+      "filter": "publication_year:2015-2025,type:article,has_abstract:true,title_and_abstract.search:%22self-driving%20laboratory%22",
+      "status": 200,
+      "count": 104,
+      "oql": "get articles from 2015–2025 with (stemmed \"self-driving laboratory\") in the title or abstract where it has an abstract",
+      "credits": "10"
+    },
+    "self_driving_space_2015_2025": {
+      "filter": "publication_year:2015-2025,type:article,has_abstract:true,title_and_abstract.search:%22self%20driving%20laboratory%22",
+      "status": 200,
+      "count": 104,
+      "oql": "get articles from 2015–2025 with (stemmed \"self driving laboratory\") in the title or abstract where it has an abstract",
+      "credits": "10"
+    },
+    "sample_a": {
+      "url": "https://api.openalex.org/works?filter=publication_year:2019,type:article,has_abstract:true,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&sample=25&seed=42&per_page=25&select=id",
+      "status": 200,
+      "count": 25,
+      "ids": [
+        "W2920313974",
+        "W4245445277",
+        "W2913977338",
+        "W7234676601",
+        "W2952785241",
+        "W2968580962",
+        "W2968057653",
+        "W3214305737",
+        "W3090009022",
+        "W2980154117",
+        "W2936721683",
+        "W2916328840",
+        "W2980508613",
+        "W2990932876",
+        "W2970426127",
+        "W2995301670",
+        "W2944479754",
+        "W4289026307",
+        "W2887057293",
+        "W4238724372",
+        "W2998255991",
+        "W2912591385",
+        "W2971037431",
+        "W2917315677",
+        "W2941229089"
+      ]
+    },
+    "sample_b": {
+      "url": "https://api.openalex.org/works?filter=publication_year:2019,type:article,has_abstract:true,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&sample=25&seed=42&per_page=25&select=id",
+      "status": 200,
+      "count": 25,
+      "ids": [
+        "W2920313974",
+        "W4245445277",
+        "W2913977338",
+        "W7234676601",
+        "W2952785241",
+        "W2968580962",
+        "W2968057653",
+        "W3214305737",
+        "W3090009022",
+        "W2980154117",
+        "W2936721683",
+        "W2916328840",
+        "W2980508613",
+        "W2990932876",
+        "W2970426127",
+        "W2995301670",
+        "W2944479754",
+        "W4289026307",
+        "W2887057293",
+        "W4238724372",
+        "W2998255991",
+        "W2912591385",
+        "W2971037431",
+        "W2917315677",
+        "W2941229089"
+      ]
+    },
+    "sample_c": {
+      "url": "https://api.openalex.org/works?filter=publication_year:2019,type:article,has_abstract:true,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&sample=25&seed=43&per_page=25&select=id",
+      "status": 200,
+      "count": 25,
+      "ids": [
+        "W2922510530",
+        "W2996385620",
+        "W2922561803",
+        "W2981907542",
+        "W2955805055",
+        "W3200882567",
+        "W2932461100",
+        "W3171918544",
+        "W2934545132",
+        "W2990747794",
+        "W2948220188",
+        "W3042597342",
+        "W3045148399",
+        "W2969676317",
+        "W2926946761",
+        "W2988681722",
+        "W3027981315",
+        "W2944417983",
+        "W2982814561",
+        "W2945767470",
+        "W2914076193",
+        "W2908978047",
+        "W2923622518",
+        "W2941013735",
+        "W2956423933"
+      ]
+    },
+    "sample_same_seed_identical": true,
+    "sample_overlap_42_43": 0,
+    "sample_10001": {
+      "status": 400,
+      "credits": "0",
+      "body": "{\"error\":\"Invalid query parameters error.\",\"message\":\"Sample size must be less than or equal to 10,000.\"}"
+    },
+    "sample_10000": {
+      "status": 200,
+      "count": 10000,
+      "credits": "1"
+    },
+    "per_dash_page": {
+      "status": 200,
+      "per_page_reported": 7,
+      "results": 7
+    }
+  },
+  "limits": {
+    "source_ids_available": 382,
+    "or100": {
+      "values": 100,
+      "status": 200,
+      "count": 240854,
+      "credits": "1"
+    },
+    "or101": {
+      "values": 101,
+      "status": 400,
+      "credits": "0",
+      "body": "{\"error\":\"Invalid query parameters error.\",\"message\":\"Maximum number of values exceeded for primary_location.source.id. Decrease values to 100 or below, or consider downloading the full dataset at https://developers.openalex.org/download/snapshot-format\"}"
+    },
+    "doi_source_sample": {
+      "got": 100,
+      "form_example": "https://doi.org/10.1038/s41586-021-03819-2"
+    },
+    "doi_bare_lower": {
+      "label": "bare lower case",
+      "status": 200,
+      "url_bytes": 2779,
+      "meta_count": 100,
+      "returned": 100,
+      "credits": "1",
+      "doi_form_returned": "https://doi.org/10.1038/s41586-021-03819-2",
+      "with_field_id": 100,
+      "field_id_form": "https://openalex.org/fields/13",
+      "all_asked_found": true
+    },
+    "doi_url": {
+      "label": "https://doi.org/ prefix",
+      "status": 200,
+      "url_bytes": 4379,
+      "meta_count": 100,
+      "returned": 100,
+      "credits": "1",
+      "doi_form_returned": "https://doi.org/10.1038/s41586-021-03819-2",
+      "with_field_id": 100,
+      "field_id_form": "https://openalex.org/fields/13",
+      "all_asked_found": true
+    },
+    "doi_bare_mixed_case": {
+      "label": "bare, original case",
+      "status": 200,
+      "url_bytes": 2779,
+      "meta_count": 100,
+      "returned": 100,
+      "credits": "1",
+      "doi_form_returned": "https://doi.org/10.1038/s41586-021-03819-2",
+      "with_field_id": 100,
+      "field_id_form": "https://openalex.org/fields/13",
+      "all_asked_found": true
+    }
+  },
+  "week": {
+    "week": {
+      "monday": "2026-09-07",
+      "sunday": "2026-09-13"
+    },
+    "journals_used": [
+      "S137773608",
+      "S3880285",
+      "S110447773",
+      "S125754415",
+      "S24807848",
+      "S45918994",
+      "S202193212",
+      "S111155417",
+      "S62468778",
+      "S106963461",
+      "S176007004",
+      "S130224168",
+      "S36624081",
+      "S207178839",
+      "S13479253",
+      "S176347361",
+      "S173880072",
+      "S4210173305",
+      "S55827047",
+      "S52609742"
+    ],
+    "kinds": {
+      "leading_total": {
+        "ungrouped_count": 466,
+        "group_sum": 464,
+        "diff": 2,
+        "diff_pct": 0.429,
+        "within_1pct": true,
+        "groups_count": 21,
+        "excluded_count": 41,
+        "unmapped_count": 0,
+        "unmapped_keys": [],
+        "counted_after_drop": 423,
+        "by_field": {
+          "physics": 79,
+          "earth": 125,
+          "biology": 117,
+          "chemistry": 79,
+          "humanities": 9,
+          "social": 11,
+          "mathematics": 3
+        }
+      },
+      "leading_ai": {
+        "ungrouped_count": 27,
+        "group_sum": 27,
+        "diff": 0,
+        "diff_pct": 0,
+        "within_1pct": true,
+        "groups_count": 12,
+        "excluded_count": 4,
+        "unmapped_count": 0,
+        "unmapped_keys": [],
+        "counted_after_drop": 23,
+        "by_field": {
+          "earth": 9,
+          "biology": 7,
+          "chemistry": 5,
+          "mathematics": 1,
+          "physics": 1
+        }
+      },
+      "all_total": {
+        "ungrouped_count": 87209,
+        "group_sum": 87076,
+        "diff": 133,
+        "diff_pct": 0.153,
+        "within_1pct": true,
+        "groups_count": 26,
+        "excluded_count": 12495,
+        "unmapped_count": 0,
+        "unmapped_keys": [],
+        "counted_after_drop": 74581,
+        "by_field": {
+          "social": 27649,
+          "biology": 27644,
+          "humanities": 4829,
+          "earth": 4660,
+          "physics": 3180,
+          "chemistry": 5002,
+          "mathematics": 1617
+        }
+      },
+      "all_ai": {
+        "ungrouped_count": 6519,
+        "group_sum": 6518,
+        "diff": 1,
+        "diff_pct": 0.015,
+        "within_1pct": true,
+        "groups_count": 26,
+        "excluded_count": 2320,
+        "unmapped_count": 0,
+        "unmapped_keys": [],
+        "counted_after_drop": 4198,
+        "by_field": {
+          "social": 1712,
+          "biology": 1498,
+          "earth": 384,
+          "physics": 177,
+          "humanities": 158,
+          "chemistry": 219,
+          "mathematics": 50
+        }
+      }
+    },
+    "all_total_include_unknown_status": 200,
+    "all_total_by_week": {
+      "2026-11-16": 87950,
+      "2026-11-09": 91340,
+      "2026-11-02": 81260,
+      "2026-10-26": 151710,
+      "2026-10-19": 87001,
+      "2026-10-12": 90268,
+      "2026-10-05": 89828,
+      "2026-09-28": 190964,
+      "2026-09-21": 92464,
+      "2026-09-14": 91808,
+      "2026-09-07": 87209,
+      "2026-08-31": 161832
+    },
+    "all_total_unknown_group": [
+      {
+        "key": "https://openalex.org/fields/unknown",
+        "count": 133
+      }
+    ]
+  }
+}

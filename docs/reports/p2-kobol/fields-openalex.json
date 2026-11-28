@@ -1,0 +1,167 @@
+{
+  "checked": "2026-11-28, about 12:30 to 12:45 Taipei (04:30 to 04:45 UTC), keyless, from Kobol",
+  "request": "GET /fields?per_page=100 (1 credit)",
+  "openalex_count": 26,
+  "all_ids_11_to_36_once": true,
+  "missing_in_openalex": [],
+  "extra_in_openalex": [],
+  "renamed": [],
+  "fields": [
+    {
+      "id": 11,
+      "openalex_name": "Agricultural and Biological Sciences",
+      "openalex_domain": "Life Sciences",
+      "config": "biology"
+    },
+    {
+      "id": 12,
+      "openalex_name": "Arts and Humanities",
+      "openalex_domain": "Social Sciences",
+      "config": "humanities"
+    },
+    {
+      "id": 13,
+      "openalex_name": "Biochemistry, Genetics and Molecular Biology",
+      "openalex_domain": "Life Sciences",
+      "config": "biology"
+    },
+    {
+      "id": 14,
+      "openalex_name": "Business, Management and Accounting",
+      "openalex_domain": "Social Sciences",
+      "config": "social"
+    },
+    {
+      "id": 15,
+      "openalex_name": "Chemical Engineering",
+      "openalex_domain": "Physical Sciences",
+      "config": "chemistry"
+    },
+    {
+      "id": 16,
+      "openalex_name": "Chemistry",
+      "openalex_domain": "Physical Sciences",
+      "config": "chemistry"
+    },
+    {
+      "id": 17,
+      "openalex_name": "Computer Science",
+      "openalex_domain": "Physical Sciences",
+      "config": "excluded"
+    },
+    {
+      "id": 18,
+      "openalex_name": "Decision Sciences",
+      "openalex_domain": "Social Sciences",
+      "config": "social"
+    },
+    {
+      "id": 19,
+      "openalex_name": "Earth and Planetary Sciences",
+      "openalex_domain": "Physical Sciences",
+      "config": "earth"
+    },
+    {
+      "id": 20,
+      "openalex_name": "Economics, Econometrics and Finance",
+      "openalex_domain": "Social Sciences",
+      "config": "social"
+    },
+    {
+      "id": 21,
+      "openalex_name": "Energy",
+      "openalex_domain": "Physical Sciences",
+      "config": "excluded"
+    },
+    {
+      "id": 22,
+      "openalex_name": "Engineering",
+      "openalex_domain": "Physical Sciences",
+      "config": "excluded"
+    },
+    {
+      "id": 23,
+      "openalex_name": "Environmental Science",
+      "openalex_domain": "Physical Sciences",
+      "config": "earth"
+    },
+    {
+      "id": 24,
+      "openalex_name": "Immunology and Microbiology",
+      "openalex_domain": "Life Sciences",
+      "config": "biology"
+    },
+    {
+      "id": 25,
+      "openalex_name": "Materials Science",
+      "openalex_domain": "Physical Sciences",
+      "config": "chemistry"
+    },
+    {
+      "id": 26,
+      "openalex_name": "Mathematics",
+      "openalex_domain": "Physical Sciences",
+      "config": "mathematics"
+    },
+    {
+      "id": 27,
+      "openalex_name": "Medicine",
+      "openalex_domain": "Health Sciences",
+      "config": "biology"
+    },
+    {
+      "id": 28,
+      "openalex_name": "Neuroscience",
+      "openalex_domain": "Life Sciences",
+      "config": "biology"
+    },
+    {
+      "id": 29,
+      "openalex_name": "Nursing",
+      "openalex_domain": "Health Sciences",
+      "config": "biology"
+    },
+    {
+      "id": 30,
+      "openalex_name": "Pharmacology, Toxicology and Pharmaceutics",
+      "openalex_domain": "Life Sciences",
+      "config": "biology"
+    },
+    {
+      "id": 31,
+      "openalex_name": "Physics and Astronomy",
+      "openalex_domain": "Physical Sciences",
+      "config": "physics"
+    },
+    {
+      "id": 32,
+      "openalex_name": "Psychology",
+      "openalex_domain": "Social Sciences",
+      "config": "social"
+    },
+    {
+      "id": 33,
+      "openalex_name": "Social Sciences",
+      "openalex_domain": "Social Sciences",
+      "config": "social"
+    },
+    {
+      "id": 34,
+      "openalex_name": "Veterinary",
+      "openalex_domain": "Health Sciences",
+      "config": "biology"
+    },
+    {
+      "id": 35,
+      "openalex_name": "Dentistry",
+      "openalex_domain": "Health Sciences",
+      "config": "biology"
+    },
+    {
+      "id": 36,
+      "openalex_name": "Health Professions",
+      "openalex_domain": "Health Sciences",
+      "config": "biology"
+    }
+  ]
+}

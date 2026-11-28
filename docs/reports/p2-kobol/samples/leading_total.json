@@ -1,0 +1,99 @@
+{
+  "request": "leading_total",
+  "week": {
+    "from": "2026-09-07",
+    "to": "2026-09-13"
+  },
+  "url_filter_shape": "journals with in_pace true as proposed in K1a",
+  "meta": {
+    "count": 466,
+    "groups_count": 21
+  },
+  "group_by": [
+    {
+      "key": 31,
+      "count": 79
+    },
+    {
+      "key": 23,
+      "count": 74
+    },
+    {
+      "key": 13,
+      "count": 53
+    },
+    {
+      "key": 19,
+      "count": 51
+    },
+    {
+      "key": 16,
+      "count": 38
+    },
+    {
+      "key": 25,
+      "count": 32
+    },
+    {
+      "key": 27,
+      "count": 29
+    },
+    {
+      "key": 22,
+      "count": 26
+    },
+    {
+      "key": 28,
+      "count": 15
+    },
+    {
+      "key": 21,
+      "count": 12
+    },
+    {
+      "key": 11,
+      "count": 10
+    },
+    {
+      "key": 12,
+      "count": 9
+    },
+    {
+      "key": 15,
+      "count": 9
+    },
+    {
+      "key": 33,
+      "count": 9
+    },
+    {
+      "key": 24,
+      "count": 8
+    },
+    {
+      "key": 17,
+      "count": 3
+    },
+    {
+      "key": 26,
+      "count": 3
+    },
+    {
+      "key": 20,
+      "count": 1
+    },
+    {
+      "key": 30,
+      "count": 1
+    },
+    {
+      "key": 32,
+      "count": 1
+    },
+    {
+      "key": 36,
+      "count": 1
+    }
+  ],
+  "ungrouped_meta_count": 466
+}

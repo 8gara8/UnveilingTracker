@@ -1,0 +1,119 @@
+{
+  "request": "all_ai",
+  "week": {
+    "from": "2026-09-07",
+    "to": "2026-09-13"
+  },
+  "url_filter_shape": "all journals",
+  "meta": {
+    "count": 6519,
+    "groups_count": 26
+  },
+  "group_by": [
+    {
+      "key": 17,
+      "count": 1460
+    },
+    {
+      "key": 33,
+      "count": 951
+    },
+    {
+      "key": 27,
+      "count": 822
+    },
+    {
+      "key": 22,
+      "count": 800
+    },
+    {
+      "key": 14,
+      "count": 372
+    },
+    {
+      "key": 23,
+      "count": 289
+    },
+    {
+      "key": 11,
+      "count": 203
+    },
+    {
+      "key": 31,
+      "count": 177
+    },
+    {
+      "key": 18,
+      "count": 170
+    },
+    {
+      "key": 12,
+      "count": 158
+    },
+    {
+      "key": 13,
+      "count": 150
+    },
+    {
+      "key": 25,
+      "count": 134
+    },
+    {
+      "key": 20,
+      "count": 123
+    },
+    {
+      "key": 36,
+      "count": 122
+    },
+    {
+      "key": 32,
+      "count": 96
+    },
+    {
+      "key": 19,
+      "count": 95
+    },
+    {
+      "key": 30,
+      "count": 78
+    },
+    {
+      "key": 28,
+      "count": 69
+    },
+    {
+      "key": 16,
+      "count": 61
+    },
+    {
+      "key": 21,
+      "count": 60
+    },
+    {
+      "key": 26,
+      "count": 50
+    },
+    {
+      "key": 35,
+      "count": 32
+    },
+    {
+      "key": 15,
+      "count": 24
+    },
+    {
+      "key": 24,
+      "count": 11
+    },
+    {
+      "key": 29,
+      "count": 9
+    },
+    {
+      "key": 34,
+      "count": 2
+    }
+  ],
+  "ungrouped_meta_count": 6519
+}
