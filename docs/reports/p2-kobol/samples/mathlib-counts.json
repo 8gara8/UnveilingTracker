@@ -1,0 +1,11 @@
+{
+  "page": "https://mathlib.org/mathlib_stats.html",
+  "selector": "table.table-borderless (first): second row, cells Definitions, Theorems, Contributors",
+  "values": {
+    "definitions": 142346,
+    "theorems": 297154,
+    "contributors": 772
+  },
+  "date_source": "https://leanprover-community.github.io/mathlib_stats/gitstats4.js",
+  "gen_date_utc": "2026-11-28 02:07:31"
+}

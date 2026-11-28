@@ -1,0 +1,549 @@
+{
+  "checked": "2026-11-28, about 14:00 to 14:30 Taipei, Kobol, plain GET with the snapshot headers",
+  "statement_suffixes": {
+    "add": [
+      ".edu.tw",
+      ".edu.cn",
+      ".edu.hk",
+      ".edu.sg",
+      ".edu.au"
+    ],
+    "add_why": "Taiwan's universities sit under .edu.tw (www.ntu.edu.tw and www.nthu.edu.tw answered 200), which no listed form covers; .edu.cn, .edu.hk, .edu.sg and .edu.au are the academic forms of China, Hong Kong, Singapore and Australia, which the news names often. Universities in Germany, Canada, the Netherlands, France and the Nordic countries use plain country domains (e.g. uni-heidelberg.de, utoronto.ca), which no suffix can cover; they need host entries one by one, or their releases are cited through eurekalert.org/news-releases/.",
+    "checked_hosts": {
+      "wycliffe": {
+        "url": "https://www.wycliffe.net/",
+        "status": 200,
+        "final_url": "https://wycliffe.net/",
+        "readable": true
+      },
+      "ubs": {
+        "url": "https://www.unitedbiblesocieties.org/",
+        "status": 200,
+        "final_url": "https://unitedbiblesocieties.org/",
+        "readable": true
+      },
+      "sil": {
+        "url": "https://www.sil.org/",
+        "status": 200,
+        "final_url": "https://global.sil.org/",
+        "readable": true
+      },
+      "vatican": {
+        "url": "https://www.vatican.va/content/vatican/en.html",
+        "status": 200,
+        "final_url": "https://www.vatican.va/content/vatican/en.html",
+        "readable": true
+      },
+      "vatican-ai": {
+        "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html",
+        "status": 200,
+        "final_url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html",
+        "readable": true
+      },
+      "mpg": {
+        "url": "https://www.mpg.de/en",
+        "status": 200,
+        "final_url": "https://www.mpg.de/en",
+        "readable": true
+      },
+      "cnrs": {
+        "url": "https://www.cnrs.fr/en",
+        "status": 200,
+        "final_url": "https://www.cnrs.fr/en",
+        "readable": true
+      },
+      "riken": {
+        "url": "https://www.riken.jp/en/",
+        "status": 200,
+        "final_url": "https://www.riken.jp/en/",
+        "readable": true
+      },
+      "sinica": {
+        "url": "https://www.sinica.edu.tw/en",
+        "status": 200,
+        "final_url": "https://www.sinica.edu.tw/en",
+        "readable": true
+      },
+      "cern": {
+        "url": "https://home.cern/",
+        "status": 200,
+        "final_url": "https://home.cern/",
+        "readable": true
+      },
+      "embl": {
+        "url": "https://www.embl.org/",
+        "status": 200,
+        "final_url": "https://www.embl.org/",
+        "readable": true
+      },
+      "ethz": {
+        "url": "https://ethz.ch/en.html",
+        "status": 200,
+        "final_url": "https://ethz.ch/en.html",
+        "readable": true
+      },
+      "nas": {
+        "url": "https://www.nationalacademies.org/",
+        "status": 200,
+        "final_url": "https://www.nationalacademies.org/",
+        "readable": true
+      },
+      "royalsociety": {
+        "url": "https://royalsociety.org/",
+        "status": 200,
+        "final_url": "https://royalsociety.org/",
+        "readable": true
+      }
+    },
+    "notes": {
+      "sil.org": "redirects to global.sil.org, a subdomain, so the host form still covers it",
+      "wycliffe.net": "www.wycliffe.net redirects to wycliffe.net",
+      "vatican.va": "Antiqua et nova (2025, the Dicastery for the Doctrine of the Faith on AI) is at /roman_curia/congregations/cfaith/documents/...: 200 and readable"
+    },
+    "newsrooms": {
+      "group.springernature.com/gp/group/media/press-releases": {
+        "url": "https://group.springernature.com/gp/group/media/press-releases",
+        "status": 200,
+        "final_url": "https://group.springernature.com/gp/group/media/press-releases",
+        "readable": true
+      },
+      "elsevier.com/about/press-releases": {
+        "url": "https://www.elsevier.com/about/press-releases",
+        "status": 200,
+        "final_url": "https://www.elsevier.com/about/press-releases",
+        "readable": true
+      },
+      "cell.com/newsroom": {
+        "url": "https://www.cell.com/newsroom",
+        "status": 403,
+        "final_url": "https://www.cell.com/callback?red_uri=%2Fnewsroom&code=N3hxCYOqzSqMmKxVIkKyxs0I71JiiaGNqHc5UhoX&state=20525776646",
+        "readable": false,
+        "note": "Cloudflare challenge (403); cannot be snapshotted"
+      },
+      "aaas.org/news": {
+        "url": "https://www.aaas.org/news",
+        "status": 200,
+        "final_url": "https://www.aaas.org/news",
+        "readable": true
+      },
+      "elifesciences.org/for-the-press": {
+        "url": "https://elifesciences.org/for-the-press",
+        "status": 200,
+        "final_url": "https://elifesciences.org/for-the-press",
+        "readable": true
+      },
+      "newsroom.wiley.com": {
+        "url": "https://newsroom.wiley.com/",
+        "status": 200,
+        "final_url": "https://newsroom.wiley.com/newsroom-home/default.aspx",
+        "readable": true,
+        "note": "redirects to /newsroom-home/default.aspx"
+      }
+    }
+  },
+  "reaction_sources": {
+    "smc": {
+      "change": {
+        "paths": [
+          [
+            "/expert-reaction-"
+          ],
+          [
+            "/expert-reaction-",
+            "/experts-react-"
+          ]
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.sciencemediacentre.org/expert-reaction-to-natsal-4-as-published-in-the-lancet/",
+          "status": 200,
+          "final_url": "https://www.sciencemediacentre.org/expert-reaction-to-natsal-4-as-published-in-the-lancet/",
+          "readable": true
+        },
+        "https://www.sciencemediacentre.org/experts-react-to-paper-showing-impact-of-an-engineered-approach-to-a-major-cause-of-age-related-infertility/ (in the SMC feed, K1c)"
+      ]
+    },
+    "new": [
+      {
+        "id": "aussmc-scimex",
+        "name": "Australian Science Media Centre (Scimex) expert reactions",
+        "hosts": [
+          "www.scimex.org",
+          "scimex.org"
+        ],
+        "paths": [
+          "/newsfeed/expert-reaction-"
+        ],
+        "evidence": "https://www.scimex.org/newsfeed/expert-reaction-cop31-climate-talks-fail-to-reach-agreement"
+      },
+      {
+        "id": "smc-nz",
+        "name": "New Zealand Science Media Centre expert reactions",
+        "hosts": [
+          "www.sciencemediacentre.co.nz",
+          "sciencemediacentre.co.nz"
+        ],
+        "paths": [
+          "/20"
+        ],
+        "evidence": "https://www.sciencemediacentre.co.nz/2026/11/23/cop31-climate-talks-collapse-expert-reaction/",
+        "note": "posts are under /YYYY/MM/DD/<slug>/; the reactions end in -expert-reaction/, which a prefix cannot select, so /20 admits every dated post (briefings too)"
+      },
+      {
+        "id": "smc-de",
+        "name": "Science Media Center Germany",
+        "hosts": [
+          "www.sciencemediacenter.de",
+          "sciencemediacenter.de"
+        ],
+        "paths": [
+          "/angebote/"
+        ],
+        "evidence": "https://www.sciencemediacenter.de/angebote/neue-hormontherapie-verhindert-mehr-brustkrebs-rueckfaelle-26291",
+        "note": "German; statements by named scientists; /angebote/themen/ are topic lists"
+      },
+      {
+        "id": "smc-es",
+        "name": "Science Media Centre España",
+        "hosts": [
+          "sciencemediacentre.es",
+          "www.sciencemediacentre.es"
+        ],
+        "paths": [
+          "/"
+        ],
+        "evidence": "https://sciencemediacentre.es/un-estudio-con-ratones-ayuda-contrarrestar-el-deterioro-de-los-ovulos-relacionado-con-la-edad",
+        "note": "Spanish; reactions are slugs at the root, listed at /reacciones, so the path cannot be narrowed"
+      },
+      {
+        "id": "smc-taiwan",
+        "name": "台灣科技媒體中心 (Taiwan Science Media Center)",
+        "hosts": [
+          "smctw.tw",
+          "www.smctw.tw"
+        ],
+        "paths": [
+          "/"
+        ],
+        "evidence": "https://smctw.tw/20444/ (「COP31會後」專家意見)",
+        "note": "Traditional Chinese; expert opinions (專家意見) are numbered posts at the root, so the path cannot be narrowed; useful for the Chinese pass"
+      }
+    ],
+    "not_added": {
+      "sciencemediacentre.ca": "the home page served almost no text to a plain GET"
+    },
+    "terence-tao": {
+      "change": {},
+      "evidence": {
+        "url": "https://terrytao.wordpress.com/",
+        "status": 200,
+        "final_url": "https://terrytao.wordpress.com/",
+        "readable": true
+      },
+      "note": "terrytao.wordpress.com is his own blog (\"What's new\"); if press_hosts lists wordpress.com, this host-and-path entry is what lets it through, so keep paths [\"/\"] or narrow to [\"/20\"] (posts are /YYYY/MM/DD/slug/)"
+    }
+  },
+  "labs": {
+    "google-deepmind": {
+      "evidence": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+      "status": 200
+    },
+    "openai": {
+      "evidence": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "status": 200
+    },
+    "anthropic": {
+      "evidence": "https://www.anthropic.com/research/early-progress-drug-development",
+      "status": 200
+    },
+    "meta-fair": {
+      "evidence": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+      "status": 200
+    },
+    "microsoft-research-ai-for-science": {
+      "evidence": "https://www.microsoft.com/en-us/research/blog/breaking-bonds-breaking-ground-advancing-the-accuracy-of-computational-chemistry-with-deep-learning/",
+      "status": 200
+    },
+    "futurehouse": {
+      "evidence": "https://www.futurehouse.org/research/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system",
+      "status": 200
+    },
+    "periodic-labs": {
+      "evidence": "https://periodic.com/news/building-labs-that-learn",
+      "status": 200
+    },
+    "isomorphic-labs": {
+      "evidence": "https://www.isomorphiclabs.com/articles/isomorphic-labs-enters-into-a-research-collaboration-with-msd",
+      "status": 200
+    },
+    "lila-sciences": {
+      "evidence": "https://www.lila.ai/news/seeing-molecules-from-any-direction",
+      "status": 200
+    },
+    "sakana-ai": {
+      "evidence": "https://sakana.ai/marlin/",
+      "status": 200
+    },
+    "arc-institute": {
+      "evidence": "https://arcinstitute.org/news/virtual-cell-challenge-2026-wrap-up",
+      "status": 200
+    },
+    "allen-institute-for-ai": {
+      "evidence": "https://allenai.org/blog/where-scientists-draw-the-line-on-ai-agents",
+      "status": 200
+    }
+  },
+  "labs_changes": {
+    "meta-fair": {
+      "paths": [
+        [
+          "/blog/",
+          "/research/"
+        ],
+        [
+          "/blog/",
+          "/research/publications/"
+        ]
+      ],
+      "note": "ai.meta.com/research/ is a product page today; papers are under /research/publications/; the blog is shared by all of Meta AI, not FAIR alone"
+    },
+    "microsoft-research-ai-for-science": {
+      "paths": [
+        [
+          "/en-us/research/"
+        ],
+        [
+          "/en-us/research/lab/microsoft-research-ai-for-science/",
+          "/en-us/research/blog/",
+          "/en-us/research/publication/"
+        ]
+      ],
+      "note": "the lab has its own path; its posts appear on the shared Research blog, so /en-us/research/blog/ stays (all of Microsoft Research, not only the lab); /en-us/research/ alone admits every Microsoft Research page"
+    },
+    "periodic-labs": {
+      "paths": [
+        [
+          "/"
+        ],
+        [
+          "/news/",
+          "/"
+        ]
+      ],
+      "note": "posts at periodic.com/news/<slug>"
+    },
+    "isomorphic-labs": {
+      "paths": [
+        [
+          "/"
+        ],
+        [
+          "/articles/",
+          "/news"
+        ]
+      ],
+      "note": "posts at /articles/<slug>; /news is the list"
+    },
+    "lila-sciences": {
+      "note": "lila.ai redirects to www.lila.ai; posts at /news/<slug>"
+    },
+    "sakana-ai": {
+      "note": "posts at sakana.ai/<slug>/ (e.g. /marlin/), so the path stays /"
+    },
+    "anthropic": {
+      "note": "research posts at www.anthropic.com/research/<slug>, news at /news/<slug>"
+    }
+  },
+  "checkers": {
+    "nobel-prize": {
+      "record": "https://www.nobelprize.org/prizes/chemistry/2024/summary/",
+      "status": 200,
+      "path": "/prizes/"
+    },
+    "breakthrough-prize": {
+      "record": "https://breakthroughprize.org/Laureates/1",
+      "status": 200,
+      "path": "/Laureates/"
+    },
+    "fields-medal": {
+      "record": "https://www.mathunion.org/imu-awards/fields-medal",
+      "status": 200,
+      "path": "/imu-awards/"
+    },
+    "abel-prize": {
+      "record": "https://abelprize.no/abel-prize-laureates/2025",
+      "status": "listed on the laureates index; /abel-prize-laureates without a year is 404",
+      "path": "/abel-prize-laureates/"
+    },
+    "wolf-prize": {
+      "record": "https://wolffund.org.il/the-wolf-prize/",
+      "status": 200
+    },
+    "kavli-prize": {
+      "record": "https://www.kavliprize.org/laureates",
+      "status": 200,
+      "note": "/prizes is 404; laureates at /laureates"
+    },
+    "lasker-awards": {
+      "record": "https://laskerfoundation.org/winners/",
+      "status": 200,
+      "path": "/winners/"
+    },
+    "casp": {
+      "record": "https://predictioncenter.org/casp16/",
+      "status": 200,
+      "note": "CASP14's page is up too (the marker)"
+    },
+    "fda": {
+      "record": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207924",
+      "status": 200,
+      "path": "www.accessdata.fda.gov /scripts/cder/daf/ (Drugs@FDA) and /drugsatfda_docs/ (letters and labels)"
+    },
+    "ema": {
+      "record": "https://www.ema.europa.eu/en/medicines/human/EPAR/olumiant",
+      "status": 200,
+      "path": "/en/medicines/human/EPAR/"
+    },
+    "taiwan-fda": {
+      "record": "https://www.fda.gov.tw/TC/index.aspx",
+      "status": 200,
+      "note": "www.fda.gov.tw and mcp.fda.gov.tw (the package-insert platform) both answer 200; no approval record was sampled"
+    },
+    "pmda": {
+      "record": "https://www.pmda.go.jp/english/",
+      "status": 200,
+      "note": "no approval record sampled"
+    },
+    "erdosproblems": {
+      "note": "erdosproblems.com answers 200, but the site no longer shows problem statuses (its blog:9 post); the data lives in github.com/teorth/erdosproblems, which the lean-mathlib-repo entry does not cover: add github.com /teorth/erdosproblems to this checker"
+    },
+    "lean-mathlib-docs": {
+      "change": {
+        "hosts": [
+          [
+            "leanprover-community.github.io"
+          ],
+          [
+            "leanprover-community.github.io",
+            "mathlib.org"
+          ]
+        ],
+        "paths": [
+          [
+            "/mathlib4_docs/",
+            "/mathlib_stats.html"
+          ],
+          [
+            "/mathlib4_docs/",
+            "/mathlib_stats.html"
+          ]
+        ]
+      },
+      "note": "the statistics page moved to mathlib.org/mathlib_stats.html"
+    },
+    "vesuvius-challenge": {
+      "record": "https://scrollprize.org/grandprize",
+      "status": 200
+    }
+  },
+  "markers": {
+    "2020-11-30 AlphaFold 2 at CASP14": {
+      "url": "https://predictioncenter.org/casp14/",
+      "status": 200,
+      "says_it": "partly: it is CASP14's home page (title \"Home - CASP14\"); it does not itself say AlphaFold 2 won. A page that does: https://predictioncenter.org/casp14/doc/presentations (the meeting's talks) or the Nature news is press. Keep it as the event's own page."
+    },
+    "2022-11-30 ChatGPT released": {
+      "url": "https://openai.com/index/chatgpt/",
+      "status": 200,
+      "says_it": "yes: \"Introducing ChatGPT\" (OpenAI's own post)"
+    },
+    "2024-02-05 Vesuvius Challenge grand prize": {
+      "url": "https://scrollprize.org/grandprize",
+      "status": 200,
+      "says_it": "yes: \"Vesuvius Challenge 2023 Grand Prize awarded: we can read the...\" "
+    },
+    "2024-10-09 Nobel Prize in Chemistry": {
+      "url": "https://www.nobelprize.org/prizes/chemistry/2024/press-release/",
+      "status": 200,
+      "says_it": "yes: \"Press release: The Nobel Prize in Chemistry 2024\""
+    }
+  },
+  "counters_source_urls": {
+    "erdos": {
+      "url": "https://www.erdosproblems.com/",
+      "status": 200,
+      "final_url": "https://www.erdosproblems.com/",
+      "readable": true
+    },
+    "ctgov": {
+      "url": "https://clinicaltrials.gov/",
+      "status": 200,
+      "final_url": "https://clinicaltrials.gov/",
+      "readable": false
+    },
+    "rcsb": {
+      "url": "https://www.rcsb.org/",
+      "status": 200,
+      "final_url": "https://www.rcsb.org/",
+      "readable": true
+    },
+    "rw": {
+      "url": "https://gitlab.com/crossref/retraction-watch-data",
+      "status": 200,
+      "final_url": "https://gitlab.com/crossref/retraction-watch-data",
+      "readable": false
+    },
+    "wycliffe-stats": {
+      "url": "https://www.wycliffe.net/resources/statistics/",
+      "status": 200,
+      "final_url": "https://wycliffe.net/global-scripture-access/",
+      "readable": true
+    },
+    "findings": {
+      "url": "https://github.com/8gara8/UnveilingTracker/tree/main/content/findings",
+      "status": 404,
+      "final_url": "https://github.com/8gara8/UnveilingTracker/tree/main/content/findings",
+      "readable": false
+    }
+  },
+  "eutils_types": {
+    "esummary_pubmed": {
+      "request": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id=<pmid>",
+      "field": "result.<pmid>.pubtype (an array), also result.<pmid>.articleids[] where idtype \"pmc\" gives the PMC id",
+      "seen": {
+        "research": [
+          "Journal Article"
+        ],
+        "review": [
+          "Journal Article",
+          "Review"
+        ],
+        "editorial": [
+          "Editorial"
+        ],
+        "news": [
+          "News"
+        ],
+        "comment": [
+          "Journal Article",
+          "Comment"
+        ]
+      }
+    },
+    "efetch_pmc": {
+      "request": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=<pmc number without PMC>",
+      "field": "the article-type attribute of the root <article> element (JATS)",
+      "seen": [
+        "research-article",
+        "review-article",
+        "editorial",
+        "news",
+        "article-commentary"
+      ],
+      "note": "one request can take several ids; the answer is JATS XML with full text, so cap the body or ask for one id at a time"
+    },
+    "refused_pubtypes_check": "PubMed: News, Editorial, Comment are the exact pubtype strings (Newspaper Article and Interview exist in PubMed's list too); PMC: news, editorial, article-commentary are the exact article-type values; interview is a JATS value as well",
+    "sample": "samples/eutils-types.json"
+  }
+}

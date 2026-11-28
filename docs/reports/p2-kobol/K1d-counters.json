@@ -1,0 +1,221 @@
+{
+  "checked": "2026-11-28, about 13:35 to 14:30 Taipei (05:35 to 06:30 UTC), Kobol, GET only, the run user agent, one request a second per host (NCBI three)",
+  "counters": [
+    {
+      "id": "erdos_ai",
+      "kind": "manual",
+      "value": 69,
+      "as_of": "2026-06-30",
+      "source": "The AI contributions wiki of the erdosproblems database (Thomas Bloom and Terence Tao): problems with a full resolution in its primary-contribution sections, frozen on 2026-06-30",
+      "source_url": "https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems",
+      "why": "no machine-readable AI-credit field exists: data/problems.yaml has no AI field, erdosproblems.com stopped showing statuses, and the wiki is \"no longer updated\" as of 2026-06-30; so api is not possible and the value cannot grow. 69 = distinct problems marked 🟢 (full resolution) in sections 1(a) AI standalone (19 rows), 1(c) AI building on literature (19) and 1(d) AI collaborating with humans (37); 1(b) AI alongside literature has none marked full. The wiki warns it is not a benchmark."
+    },
+    {
+      "id": "mathlib_theorems",
+      "kind": "api",
+      "source": "mathlib's statistics page: the Theorems cell of its counts table",
+      "source_url": "https://mathlib.org/mathlib_stats.html",
+      "reading": {
+        "selector": "table.table-borderless tr:nth-child(2) td:nth-child(2)",
+        "today": 297154,
+        "as_of": "the page is regenerated daily; gen_date 2026-11-28 02:07:31 UTC is in https://leanprover-community.github.io/mathlib_stats/gitstats4.js (2.5 MB), so use the fetch date unless that script is read"
+      }
+    },
+    {
+      "id": "ai_drugs",
+      "kind": "api",
+      "source": "The tracker's list of AI-found drugs (config/ai-drugs.json) and the ClinicalTrials.gov API v2 record of each trial",
+      "source_url": "https://clinicaltrials.gov/",
+      "reading": {
+        "fields_confirmed": [
+          "protocolSection.statusModule.overallStatus",
+          "protocolSection.designModule.phases"
+        ],
+        "with_proposed_entries": {
+          "value": 5,
+          "breakdown": {
+            "1": 1,
+            "2": 2,
+            "3": 1,
+            "approved": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "pdb_structures",
+      "kind": "api",
+      "source": "RCSB search API, released entries by deposit date, and RCSB's holdings file of unreleased entries (withdrawn ones left out)",
+      "source_url": "https://www.rcsb.org/",
+      "reading": {
+        "released_by_deposit": {
+          "2025": 17052,
+          "2026": 4632
+        },
+        "unreleased_without_WDRN": {
+          "2025": 2290,
+          "2026": 16086
+        },
+        "value_2026_to_11_28": 20718,
+        "breakdown": {
+          "2025": 19342,
+          "2026": 20718
+        },
+        "wwpdb_2025": 20975,
+        "note": "with withdrawn entries added the 2025 figure is 20986, within 11 of wwPDB's 20,975, which includes withdrawn entries; the spec leaves WDRN out"
+      },
+      "new_feed": {
+        "id": "rcsb-unreleased",
+        "url": "https://files.rcsb.org/pub/pdb/holdings/unreleased_entries.json.gz",
+        "kind": "file",
+        "parser": "json (gzip)",
+        "budget": 1,
+        "size": "1.16 MB gzip, 16.1 MB unzipped: over fetchFeed()'s 5 MB cap once unzipped"
+      }
+    },
+    {
+      "id": "ai_retractions",
+      "kind": "api",
+      "source": "The Retraction Watch data file that Crossref publishes: retractions whose Reason includes \"Computer-Aided Content or Computer-Generated Content\"",
+      "source_url": "https://gitlab.com/crossref/retraction-watch-data",
+      "reading": {
+        "reason": "Computer-Aided Content or Computer-Generated Content",
+        "by_year": {
+          "2023": 5622,
+          "2024": 1454,
+          "2025": 1276,
+          "2026": 280
+        },
+        "file": "68.4 MB; read only when the ETag changes (If-None-Match gives 304), or when the newest commit changes (GitLab commits API); a range request works but the file is not sorted by date",
+        "citation": "Retraction Watch Database (Center for Scientific Integrity), made openly available by Crossref; the README asks no fixed citation line"
+      }
+    },
+    {
+      "id": "full_bibles",
+      "kind": "manual",
+      "value": null,
+      "as_of": null,
+      "source": "Wycliffe Global Alliance annual Global Scripture Access statistics (infographics on its statistics pages), entered by pull request as figures",
+      "source_url": "https://wycliffe.net/global-scripture-access/",
+      "figures": [
+        {
+          "as_of": "2022-09-01",
+          "total": 724,
+          "source_url": "https://wycliffe.net/global-scripture-access/2022-global-scripture-access/",
+          "evidence": "infographic \"Full Bible: 724\", dated \"September 2022\" (https://wycliffe.net/wp-content/uploads/2025/10/2022_Infographic_Small_EN-1024x553.jpg)"
+        },
+        {
+          "as_of": "2023-09-01",
+          "total": 736,
+          "source_url": "https://wycliffe.net/global-scripture-access/2023-global-scripture-access/",
+          "evidence": "infographic \"Full Bible: 736\", dated \"September 2023\" (https://wycliffe.net/wp-content/uploads/2025/10/2023_Infographic_small_EN-4-scaled-1-1024x553.jpg)"
+        },
+        {
+          "as_of": "2024-09-01",
+          "total": 756,
+          "source_url": "https://wycliffe.net/global-scripture-access/",
+          "evidence": "infographic \"Full Bible: 756\", dated \"September 2024\", on the main statistics page (https://wycliffe.net/wp-content/uploads/2025/10/2024_infographic_small_EN.png); its own 2024 page is 404"
+        },
+        {
+          "as_of": "2025-08-01",
+          "total": 776,
+          "source_url": "https://wycliffe.net/global-scripture-access/",
+          "evidence": "infographic \"Full Bible: 776\", dated \"August 2025\"; the page text says \"As of 1 August, 2025\" (https://wycliffe.net/wp-content/uploads/2025/08/2025-WGA-statistics-small-Infographic-English-1024x553.jpg)"
+        }
+      ],
+      "computed": {
+        "value": 20,
+        "breakdown": {
+          "total": 776
+        }
+      },
+      "note": "the figures are in images, not text; only the 2025 date has a day (\"As of 1 August, 2025\"); the others give a month, written here as the 1st. The old source_url https://www.wycliffe.net/resources/statistics/ redirects to https://wycliffe.net/global-scripture-access/"
+    },
+    {
+      "id": "ancient_texts_ai",
+      "kind": "ledger",
+      "source_url": "https://github.com/8gara8/UnveilingTracker/tree/main/content/findings",
+      "note": "nothing to fetch; the URL answers 404 today because content/findings does not exist on main until P2 merges"
+    }
+  ],
+  "ai_drugs": [
+    {
+      "id": "rentosertib",
+      "name": "Rentosertib (ISM001-055, INS018_055)",
+      "developer": "Insilico Medicine",
+      "ai_basis": "rentosertib (formerly ISM001-055), a first-in-class AI-generated small-molecule inhibitor of TNIK",
+      "source_url": "https://www.nature.com/articles/s41591-025-03743-2",
+      "trials": [
+        "NCT05154240",
+        "NCT05938920",
+        "NCT05975983",
+        "NCT07687459"
+      ],
+      "approved": null,
+      "stage_today": 3
+    },
+    {
+      "id": "ism5411",
+      "name": "ISM5411",
+      "developer": "Insilico Medicine",
+      "ai_basis": "a potentially first-in-class PHD 1/2 inhibitor for the treatment of inflammatory bowel disease (IBD) designed by its generative AI platform",
+      "source_url": "https://www.eurekalert.org/news-releases/1010336",
+      "trials": [
+        "NCT06012578",
+        "NCT07265570"
+      ],
+      "approved": null,
+      "stage_today": 2
+    },
+    {
+      "id": "ism6331",
+      "name": "ISM6331",
+      "developer": "Insilico Medicine",
+      "ai_basis": "ISM6331, a potential best-in-class pan-TEAD inhibitor, as a preclinical candidate compound (PCC) generated by Chemistry42, its proprietary generative chemistry-driven molecule design engine",
+      "source_url": "https://www.eurekalert.org/news-releases/991924",
+      "trials": [
+        "NCT06566079"
+      ],
+      "approved": null,
+      "stage_today": 1
+    },
+    {
+      "id": "rec-4881",
+      "name": "REC-4881",
+      "developer": "Recursion",
+      "ai_basis": "MEK1/2 inhibition to target FAP was identified using phenotypic insights by the Recursion OS.",
+      "source_url": "https://www.recursion.com/pipeline",
+      "trials": [
+        "NCT05552755",
+        "NCT06005974"
+      ],
+      "approved": null,
+      "stage_today": 2,
+      "note": "the quote says the Recursion OS (its AI-driven platform) identified the target use; the page calls it \"our AI-native product engine\" elsewhere"
+    },
+    {
+      "id": "baricitinib-covid-19",
+      "name": "Baricitinib for COVID-19",
+      "developer": "BenevolentAI (the finding); Eli Lilly (the drug)",
+      "ai_basis": "we used BenevolentAI to search for approved drugs that could help, focusing on those that might block the viral infection process. We identified baricitinib",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7137985/",
+      "trials": [
+        "NCT04401579"
+      ],
+      "approved": {
+        "regulator": "fda",
+        "date": "2022-05-10",
+        "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207924"
+      },
+      "stage_today": "approved",
+      "note": "a repurposing: AI found a new use of an approved drug. Drugs@FDA lists SUPPL-6, Efficacy-New Indication, approved 05/10/2022 (the COVID-19 indication). SPEC 4.11 asks for the drug's earliest approval, which is baricitinib's 2018 approval for rheumatoid arthritis, not an AI finding; whether a repurposed drug belongs, and which approval it carries, is JL's call"
+    }
+  ],
+  "left_out": {
+    "ISM3412, ISM8207 and other Insilico candidates": "no drug-specific quote found on a readable page (Insilico's pipeline page is client-rendered)",
+    "IAM1363 (Iambic)": "the pipeline page gives no AI statement about IAM1363 itself",
+    "REC-617 (GTAEXS617), REC-994, EXS-21546": "Recursion's investor news answers 403; no drug-specific AI quote on a readable page",
+    "VRG50635 (Verge), BEN-8744 (BenevolentAI)": "their pipeline pages answer 404",
+    "zasocitinib (TAK-279)": "its design was physics-based computation (Nimbus, Schrödinger), not shown here as AI"
+  }
+}

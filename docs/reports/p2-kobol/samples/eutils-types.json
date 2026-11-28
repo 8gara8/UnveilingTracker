@@ -1,0 +1,75 @@
+{
+  "requests": {
+    "esearch": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=1&term=<type>[pt] AND pubmed pmc[sb] AND 2024[dp]",
+    "esummary": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id=<pmid,...>",
+    "efetch": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=<pmc number,...>"
+  },
+  "esummary_shape": {
+    "result_keys": [
+      "uids",
+      "<pmid>"
+    ],
+    "record_keys_used": [
+      "pubtype",
+      "articleids[].idtype",
+      "articleids[].value"
+    ]
+  },
+  "by_kind": {
+    "research": {
+      "pmid": "43067767",
+      "pubtype": [
+        "Journal Article"
+      ],
+      "pmcid": "PMC13785735",
+      "pmc_article_type": "research-article"
+    },
+    "review": {
+      "pmid": "42756063",
+      "pubtype": [
+        "Journal Article",
+        "Review"
+      ],
+      "pmcid": "PMC13582133",
+      "pmc_article_type": "review-article"
+    },
+    "editorial": {
+      "pmid": "41970506",
+      "pubtype": [
+        "Editorial"
+      ],
+      "pmcid": "PMC13061594",
+      "pmc_article_type": "editorial"
+    },
+    "news": {
+      "pmid": "40919086",
+      "pubtype": [
+        "News"
+      ],
+      "pmcid": "PMC12409866",
+      "pmc_article_type": "news"
+    },
+    "comment": {
+      "pmid": "40964612",
+      "pubtype": [
+        "Journal Article",
+        "Comment"
+      ],
+      "pmcid": "PMC12409956",
+      "pmc_article_type": "article-commentary"
+    }
+  },
+  "efetch": {
+    "status": 200,
+    "content_type": "text/xml; charset=UTF-8",
+    "articles": 5,
+    "article_type_attribute_values": [
+      "research-article",
+      "article-commentary",
+      "review-article",
+      "editorial",
+      "news"
+    ],
+    "note": "the five <article article-type=...> root elements of the five PMC records, in the answer order: research-article, article-commentary, review-article, editorial, news; the PMC number is in <article-id pub-id-type=\"pmcid\"> (or \"pmc\")"
+  }
+}

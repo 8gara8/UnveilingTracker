@@ -1,0 +1,66 @@
+{
+  "search_api": {
+    "request": "GET https://search.rcsb.org/rcsbsearch/v2/query?json=<{\"query\":{\"type\":\"terminal\",\"service\":\"text\",\"parameters\":{\"attribute\":\"rcsb_accession_info.deposit_date\",\"operator\":\"range\",\"value\":{\"from\":\"2025-01-01\",\"to\":\"2025-12-31\",\"include_lower\":true,\"include_upper\":true}}},\"return_type\":\"entry\",\"request_options\":{\"return_counts\":true}}>",
+    "answer_shape": {
+      "query_id": "uuid",
+      "result_type": "entry",
+      "total_count": "number"
+    },
+    "released_deposited_2025": 17052,
+    "released_deposited_2026_to_11_28": 4632,
+    "released_in_2025_by_initial_release_date": 17599
+  },
+  "unreleased_file": {
+    "url": "https://files.rcsb.org/pub/pdb/holdings/unreleased_entries.json.gz",
+    "bytes_gzip": 1157051,
+    "bytes_json": 16121503,
+    "entries": 36382,
+    "shape": "{ \"<pdb id>\": { status_code, deposit_date (ISO 8601 with +00:00), author_prerelease_sequence_status, deposit_date_coordinates, ... } }",
+    "status_codes": {
+      "AUTH": 3723,
+      "HPUB": 11972,
+      "HOLD": 1476,
+      "REPL": 162,
+      "WDRN": 17898,
+      "WAIT": 164,
+      "PROC": 894,
+      "AUCO": 27,
+      "POLC": 63,
+      "REFI": 3
+    },
+    "deposited_2025": {
+      "HPUB": 1627,
+      "HOLD": 336,
+      "WDRN": 1644,
+      "AUTH": 270,
+      "PROC": 16,
+      "REPL": 17,
+      "WAIT": 22,
+      "REFI": 2
+    },
+    "deposited_2026": {
+      "HPUB": 10338,
+      "HOLD": 1140,
+      "AUTH": 3442,
+      "REPL": 143,
+      "WDRN": 290,
+      "WAIT": 120,
+      "PROC": 875,
+      "AUCO": 27,
+      "REFI": 1
+    },
+    "withdrawn": "status_code \"WDRN\", in the same file"
+  },
+  "totals": {
+    "2025_released_plus_unreleased_without_WDRN": 19342,
+    "2025_with_WDRN": 20986,
+    "2026_to_11_28_without_WDRN": 20718,
+    "wwpdb_deposits_2025": 20975,
+    "wwpdb_deposits_2026_to_11_17": 20605,
+    "wwpdb_source": "https://www.wwpdb.org/stats/deposition (Last Updated: 17 November 2026; includes theoretical models and entries later withdrawn or obsoleted)"
+  },
+  "other_routes": {
+    "https://data.rcsb.org/rest/v1/holdings/unreleased": "400 Bad Request (needs ids)",
+    "https://www.rcsb.org/pages/unreleased": "200 HTML page (client-rendered), no CSV in the plain answer"
+  }
+}

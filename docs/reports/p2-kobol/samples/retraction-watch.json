@@ -1,0 +1,33 @@
+{
+  "url": "https://gitlab.com/crossref/retraction-watch-data/-/raw/main/retraction_watch.csv",
+  "bytes": 68441942,
+  "rows": 74173,
+  "header": "Record ID,Title,Subject,Institution,Journal,Publisher,Country,Author,URLS,ArticleType,RetractionDate,RetractionDOI,RetractionPubMedID,OriginalPaperDate,OriginalPaperDOI,OriginalPaperPubMedID,RetractionNature,Reason,Paywalled,Notes,",
+  "retraction_nature_values": {
+    "Retraction": 68706,
+    "Expression of concern": 3741,
+    "Correction": 1562,
+    "Reinstatement": 164
+  },
+  "reason_separator": "; (each reason followed by \";\", e.g. \"Concerns/Issues about Data;Investigation by Journal/Publisher;\")",
+  "computer_generated_reason": "Computer-Aided Content or Computer-Generated Content",
+  "rows_with_that_reason_any_nature": 9567,
+  "retractions_with_that_reason_by_retraction_year": {
+    "2020": 39,
+    "2021": 481,
+    "2022": 384,
+    "2023": 5622,
+    "2024": 1454,
+    "2025": 1276,
+    "2026": 280,
+    "2027": 1
+  },
+  "date_format": "M/D/YYYY 0:00 (RetractionDate, OriginalPaperDate)",
+  "doi_form": "bare DOI as registered, e.g. 10.1063/5.0352611; blank, \"unavailable\" or \"Unavailable\" when none",
+  "change_check": {
+    "range_get": "Range: bytes=0-511 answered 206 with content-range bytes 0-511/68441942",
+    "etag": "ETag present; a GET with If-None-Match and that ETag answered 304",
+    "last_modified": "not sent",
+    "commits_api": "https://gitlab.com/api/v4/projects/crossref%2Fretraction-watch-data/repository/commits?per_page=1 gives the newest commit, titled \"Retraction Watch data for YYYY-MM-DD\", one each working day"
+  }
+}

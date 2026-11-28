@@ -1,0 +1,72 @@
+{
+  "request": "https://clinicaltrials.gov/api/v2/studies?filter.ids=<NCT ids>&pageSize=<n>&fields=NCTId,OverallStatus,Phase",
+  "fields": [
+    "protocolSection.identificationModule.nctId",
+    "protocolSection.statusModule.overallStatus",
+    "protocolSection.designModule.phases"
+  ],
+  "trials": {
+    "NCT05154240": [
+      "COMPLETED",
+      [
+        "PHASE1"
+      ]
+    ],
+    "NCT05938920": [
+      "COMPLETED",
+      [
+        "PHASE2"
+      ]
+    ],
+    "NCT05975983": [
+      "RECRUITING",
+      [
+        "PHASE2"
+      ]
+    ],
+    "NCT07687459": [
+      "RECRUITING",
+      [
+        "PHASE3"
+      ]
+    ],
+    "NCT06012578": [
+      "COMPLETED",
+      [
+        "PHASE1"
+      ]
+    ],
+    "NCT07265570": [
+      "RECRUITING",
+      [
+        "PHASE2"
+      ]
+    ],
+    "NCT06566079": [
+      "RECRUITING",
+      [
+        "PHASE1",
+        "PHASE2"
+      ]
+    ],
+    "NCT05552755": [
+      "RECRUITING",
+      [
+        "PHASE1",
+        "PHASE2"
+      ]
+    ],
+    "NCT06005974": [
+      "TERMINATED",
+      [
+        "PHASE2"
+      ]
+    ],
+    "NCT04401579": [
+      "COMPLETED",
+      [
+        "PHASE3"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "source": "https://raw.githubusercontent.com/teorth/erdosproblems/main/data/statistics_history.csv",
+  "header": [
+    "commit",
+    "date",
+    "total_problems",
+    "lean_formalized",
+    "oeis_linked",
+    "total_solved",
+    "proved",
+    "disproved",
+    "solved",
+    "lean_solved",
+    "open"
+  ],
+  "newest_row": {
+    "date": "2026-11-24 14:42:43 +0000",
+    "total_problems": 1221,
+    "lean_formalized": 1024,
+    "oeis_linked": 388,
+    "total_solved": 591,
+    "proved": 339,
+    "disproved": 144,
+    "solved": 108,
+    "lean_solved": 323,
+    "open": 630
+  },
+  "problems_yaml_fields": [
+    "number",
+    "prize",
+    "informal_status",
+    "formal_status",
+    "status",
+    "formalized",
+    "oeis",
+    "forum",
+    "tags",
+    "comments"
+  ],
+  "ai_field_in_yaml": false,
+  "ai_wiki": {
+    "source": "https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems",
+    "raw": "https://raw.githubusercontent.com/wiki/teorth/erdosproblems/AI-contributions-to-Erd%C5%91s-problems.md",
+    "frozen_as_of": "2026-06-30",
+    "as_of": "2026-06-30",
+    "sections": {
+      "1(a). AI standalone": {
+        "rows": 61,
+        "full": 19
+      },
+      "1(b). AI alongside literature": {
+        "rows": 25,
+        "full": 0
+      },
+      "1(c). AI building on literature": {
+        "rows": 38,
+        "full": 19
+      },
+      "1(d). AI collaborating with humans": {
+        "rows": 132,
+        "full": 37
+      }
+    },
+    "distinct_full_primary": 69
+  }
+}
