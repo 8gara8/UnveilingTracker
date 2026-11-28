@@ -1,0 +1,605 @@
+{
+ "https://www.nature.com/articles/d41586-025-02132-6": {
+  "slugs": [
+   "aeneas-latin-inscriptions-context-restoration"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-025-02132-6?error=cookies_not_supported&code=343e31eb-32a7-4ab8-b0b4-bf928fd2d599",
+  "article_type": "News And Views",
+  "title": "AI for Latin inscriptions supplies missing text and predicts date and location",
+  "standfirst": "An artificial-intelligence tool helps historians to interpret Latin inscriptions by assigning a date and location and suggesting text for missing parts.",
+  "byline": [
+   "Tupman, Charlotte"
+  ],
+  "affiliation_lines": [
+   "Charlotte Tupman is in the Department of Classics, Ancient History, Religion and Theology, University of Exeter, Exeter EX4 4QH, UK."
+  ],
+  "date": "2025/09",
+  "text_chars": 1141,
+  "cut_off": true,
+  "passages": [
+   "Inscriptions are among the most important sources for understanding the ancient world, helping researchers to learn about multiple aspects of the lives, experiences and concerns of the people who lived in past societies.",
+   "Interpreting these texts and the objects on which they were inscribed is a major task, with scholars often having to contend with items that are damaged or have been removed from their original location."
+  ],
+  "links": [
+   {
+    "url": "https://www.nature.com/articles/s41586-025-09292-5",
+    "text": "Writing in Nature"
+   }
+  ]
+ },
+ "https://www.nature.com/articles/d41586-020-01570-8": {
+  "slugs": [
+   "aguada-fenix-oldest-largest-maya-monument",
+   "maya-lidar-reveals-lowland-civilisation"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-020-01570-8?error=cookies_not_supported&code=745ac834-301b-4f4e-884a-8598e9a3d7da",
+  "article_type": "News And Views",
+  "title": "Large-scale early Maya sites in Mexico revealed by lidar mapping technology",
+  "standfirst": "Archaeology is transforming our view of how ancient Maya societies developed. Use of lidar technology has now led to the discovery that large, monumental structures that aid naked-eye astronomy were built unexpectedly early.",
+  "byline": [
+   "McAnany, Patricia A."
+  ],
+  "affiliation_lines": [
+   "McAnany Patricia A. McAnany is in the Department of Anthropology, University of North Carolina, Chapel Hill, North Carolina 27599, USA."
+  ],
+  "date": "2020/06",
+  "text_chars": 1348,
+  "cut_off": true,
+  "passages": [
+   "In archaeology, there are few watershed moments, when a technological breakthrough changes everything.",
+   "But the invention of radiocarbon dating in the 1940s brought one such revolution, by providing a consistent, worldwide system for placing archaeological material in chronological order.",
+   "A more-recent transformative innovation is the airborne application of a remote-sensing technique called light detection and ranging (lidar) to create a model (also known as a digital-elevation model) of the bare-surface terrain that is hidden by trees in forested areas1."
+  ],
+  "links": [
+   {
+    "url": "https://www.nature.com/articles/s41586-020-2343-4",
+    "text": "Writing in Nature"
+   }
+  ]
+ },
+ "https://www.nature.com/articles/d41586-025-03733-x": {
+  "slugs": [
+   "ai-chatbot-chats-shift-voter-preferences"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-025-03733-x?error=cookies_not_supported&code=03bc4e6f-600c-4476-9341-eb8c780d04a5",
+  "article_type": "News And Views",
+  "title": "AI chatbots can persuade voters to change their minds",
+  "standfirst": "Conversations with AI can sway people’s political views. Concerningly, a chatbot’s facts are not always accurate, especially when it supports right-wing positions.",
+  "byline": [
+   "Vargiu, Chiara",
+   "Nai, Alessandro"
+  ],
+  "affiliation_lines": [
+   "Chiara Vargiu is in the Amsterdam School of Communication Research (ASCoR), University of Amsterdam, 1018 WV Amsterdam, the Netherlands.",
+   "Alessandro Nai is in the Amsterdam School of Communication Research (ASCoR), University of Amsterdam, 1018 WV Amsterdam, the Netherlands."
+  ],
+  "date": "2025/12",
+  "text_chars": 1417,
+  "cut_off": true,
+  "passages": [
+   "The world is getting used to ‘talking’ to machines.",
+   "Technology that just months ago seemed improbable or marginal has erupted quickly into the everyday lives of millions, perhaps billions, of people.",
+   "Against this backdrop, the urgent question is: can the same conversational skills that make AI into helpful assistants also turn them into powerful political actors?"
+  ],
+  "links": [
+   {
+    "url": "https://www.nature.com/articles/d41586-025-03222-1",
+    "text": "‘talking’ to machines"
+   },
+   {
+    "url": "https://www.nature.com/articles/s41586-025-09771-9",
+    "text": "Nature"
+   }
+  ]
+ },
+ "https://www.nature.com/articles/d41586-025-03585-5": {
+  "slugs": [
+   "alphaproof-imo-2024-silver-level"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-025-03585-5?error=cookies_not_supported&code=d4311405-9057-4e7b-9038-78ffac542660",
+  "article_type": "News And Views",
+  "title": "Mathematicians put AI model AlphaProof to the test",
+  "standfirst": "Mathematicians use computational tools to prove theorems. An AI model that is trained to use these tools might accelerate mathematical discovery.",
+  "byline": [
+   "Ringer, Talia"
+  ],
+  "affiliation_lines": [
+   "Talia Ringer is in the Siebel School of Computing and Data Science, University of Illinois at Urbana–Champaign, Urbana, Illinois, 61801, USA."
+  ],
+  "date": "2026/03",
+  "text_chars": 999,
+  "cut_off": true,
+  "passages": [
+   "Last year, Google DeepMind made headlines for building an artificial-intelligence system that achieved a silver-medal standard on the problems from that year’s International Mathematics Olympiad (IMO), a prestigious competition for young mathematicians held annually.",
+   "It was the first time such a system had performed at a medal-worthy level in solving IMO challenges.",
+   "Now, writing in Nature, Hubert et al.1 report the details of the core technology behind that achievement: a tool called AlphaProof, which is designed to prove mathematical statements."
+  ],
+  "links": []
+ },
+ "https://www.nature.com/articles/d41586-024-03557-1": {
+  "slugs": [
+   "alphaqubit-neural-quantum-decoder"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-024-03557-1?error=cookies_not_supported&code=eb31771d-d148-49a7-b110-ddcb4c7f0a5e",
+  "article_type": "News And Views",
+  "title": "Quantum computing: physics–AI collaboration quashes quantum errors",
+  "standfirst": "A neural network has learnt to correct the errors that arise during quantum computation, outperforming algorithms that were designed by humans. The strategy sets out a promising path towards practical quantum computers.",
+  "byline": [
+   "Haider, Nadia"
+  ],
+  "affiliation_lines": [
+   "Nadia Haider is in the Quantum Computing Division of QuTech and the Department of Microelectronics, Delft University of Technology, 2628 CD Delft, the Netherlands."
+  ],
+  "date": "2024/11",
+  "text_chars": 1115,
+  "cut_off": true,
+  "passages": [
+   "Quantum computing is often touted as having the potential to solve problems that are beyond the capabilities of classical computers — from simulating molecules for drug development to optimizing complex logistics.",
+   "Yet, a major obstacle stands in the way: quantum processors are prone to errors caused by disturbances from their environment and other sources.",
+   "Overcoming this challenge is crucial to building a practical quantum computer."
+  ],
+  "links": [
+   {
+    "url": "https://www.nature.com/articles/s41586-024-08148-8",
+    "text": "Writing in Nature"
+   }
+  ]
+ },
+ "https://www.nature.com/articles/d41586-025-00084-5": {
+  "slugs": [
+   "bennu-samples-ammonia-nucleobases-ancient-brine"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-025-00084-5?error=cookies_not_supported&code=40f13313-01af-4197-af19-9e76183b719b",
+  "article_type": "News And Views",
+  "title": "Asteroid Bennu contains salts from ancient brine",
+  "standfirst": "A space mission to an asteroid has returned extremely delicate salts not previously observed in extraterrestrial materials. An analysis of these salts helps to establish the history of water in the early Solar System.",
+  "byline": [
+   "Sekine, Yasuhito"
+  ],
+  "affiliation_lines": [],
+  "date": "2025/01",
+  "text_chars": 1160,
+  "cut_off": true,
+  "passages": [
+   "In 2023, NASA’s OSIRIS-REx spacecraft brought materials from the surface of the asteroid Bennu safely back to Earth.",
+   "The returned samples were then curated carefully, to prevent the decomposition of any delicate materials that would otherwise degrade in Earth’s atmosphere.",
+   "Writing in Nature, McCoy et al.1 report that various fragile salts are indeed present in the samples returned from Bennu."
+  ],
+  "links": [
+   {
+    "url": "https://www.nature.com/articles/s41586-024-08495-6",
+    "text": "Writing in Nature"
+   }
+  ]
+ },
+ "https://www.nature.com/articles/d41586-025-02353-9": {
+  "slugs": [
+   "centaur-model-predicts-human-choices"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-025-02353-9?error=cookies_not_supported&code=6da28352-f07d-4bd6-9588-2ac8b1f5a4fd",
+  "article_type": "News And Views",
+  "title": "Could machine learning help to build a unified theory of cognition?",
+  "standfirst": "Two distinct computational approaches provide opportunities for bringing together different theories of cognition.",
+  "byline": [
+   "Baggio, Giosuè"
+  ],
+  "affiliation_lines": [
+   "Baggio is in the Language Acquisition and Language Processing Lab, Norwegian University of Science and Technology (NTNU), Trondheim NO-7491, Norway."
+  ],
+  "date": "2025/08",
+  "text_chars": 1486,
+  "cut_off": true,
+  "passages": [
+   "Cognitive scientists aim to understand minds as computational systems.",
+   "Although numerous theories of human and animal cognition exist, they are often confined to particular aspects of cognition (domains) and ‘levels’ of analysis.",
+   "For example, there are theories of natural language at the abstract, algebraic level; theories of learning at the level of algorithms; and theories of brain plasticity at the level of neurobiology.",
+   "Integrating cognitive theories ‘horizontally’ across domains1 and ‘vertically’ across levels2 remains a major challenge.",
+   "This challenge echoes wider scientific debates about whether descriptions of a system’s behaviour at one level can be traced back to descriptions of the system’s components at lower levels, and about the unification of diverse theories."
+  ],
+  "links": [
+   {
+    "url": "https://www.nature.com/articles/s41586-025-09215-4",
+    "text": "Binz et al."
+   },
+   {
+    "url": "https://www.nature.com/articles/s41586-025-09142-4",
+    "text": "Ji-An et al."
+   }
+  ]
+ },
+ "https://www.nature.com/articles/d41586-023-03790-0": {
+  "slugs": [
+   "coscientist-language-model-agent-runs-chemistry"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-023-03790-0?error=cookies_not_supported&code=99dbaf9c-cfbb-4282-9ef1-1d83afe55736",
+  "article_type": "News And Views",
+  "title": "Large language models direct automated chemistry laboratory",
+  "standfirst": "Automation of chemistry research has focused on developing robots to execute jobs. Artificial-intelligence technology has now been used not only to control robots, but also to plan their tasks on the basis of simple human prompts.",
+  "byline": [
+   "Dias, Ana Laura",
+   "Rodrigues, Tiago"
+  ],
+  "affiliation_lines": [
+   "Dias Ana Laura Dias is at the Research Institute for Medicines (iMed), Faculty of Pharmacy, University of Lisbon, 1649–003 Lisbon, Portugal.",
+   "Tiago Rodrigues is at the Research Institute for Medicines (iMed), Faculty of Pharmacy, University of Lisbon, 1649–003 Lisbon, Portugal."
+  ],
+  "date": "2023/12",
+  "text_chars": 1236,
+  "cut_off": true,
+  "passages": [
+   "Chemistry research is grounded on iterative cycles in which experiments are designed, executed and then refined to achieve a particular goal.",
+   "The experience and intuition of researchers has a crucial role in working out the initial design, and in the subsequent optimization process — something that could not previously have been replicated in autonomous systems that carry out chemistry research.",
+   "Writing in Nature, Boiko et al.1 report an artificial intelligence (AI) agent named Coscientist that can plan and orchestrate multiple tasks in the chemistry-research cycle without detailed human input, bringing the vision of self-driving laboratories a step closer to reality."
+  ],
+  "links": [
+   {
+    "url": "https://www.nature.com/articles/s41586-023-06792-0",
+    "text": "Writing in Nature"
+   }
+  ]
+ },
+ "https://www.nature.com/articles/d41586-023-01020-1": {
+  "slugs": [
+   "dart-asteroid-orbit-changed",
+   "dart-asteroid-orbit-changed",
+   "dart-asteroid-orbit-changed"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-023-01020-1?error=cookies_not_supported&code=9ce5908c-976c-4fe9-b8d4-ab668c7d3932",
+  "article_type": "News And Views",
+  "title": "DART’s data verify its smashing success at deflecting asteroid moon Dimorphos",
+  "standfirst": "A strategy for deflecting asteroids on a path towards Earth has passed its first test. The results confirm predictions about how asteroids respond to impact — and offer useful insights.",
+  "byline": [
+   "Adam, Coralie D."
+  ],
+  "affiliation_lines": [
+   "Adam Coralie D. Adam is at KinetX Aerospace, Tempe, Arizona 85284, USA."
+  ],
+  "date": "2023/04",
+  "text_chars": 1482,
+  "cut_off": true,
+  "passages": [
+   "On 26 September 2022, a spacecraft the size of a refrigerator collided with the moon of an asteroid.",
+   "The Double Asteroid Redirection Test (DART) was the first planetary-defence experiment designed to test the viability of re-routing an asteroid through kinetic impact.",
+   "Viewers worldwide were captivated by images transmitted by the DART spacecraft as it approached the asteroid moon known as Dimorphos.",
+   "The authors’ findings advance our understanding of asteroid-impact geophysics and planetary defence."
+  ],
+  "links": []
+ },
+ "https://www.nature.com/articles/d41586-022-01075-6": {
+  "slugs": [
+   "fast-petase-machine-learning-plastic-enzyme"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-022-01075-6?error=cookies_not_supported&code=04d07d19-2b8b-42fa-a974-343644bb2165",
+  "article_type": "News And Views",
+  "title": "Tailor-made enzymes poised to propel plastic recycling into a new era",
+  "standfirst": "Waste streams of the plastic poly(ethylene terephthalate) that can be recycled into material suitable for food packaging are limited, creating a shortfall of feedstocks. An enzyme has been discovered that widens the feedstock options.",
+  "byline": [
+   "Thoden van Velzen, Eggo U.",
+   "Santomasi, Giusy"
+  ],
+  "affiliation_lines": [
+   "Velzen Eggo U. Thoden van Velzen is at Wageningen Food & Biobased Research,Wageningen University & Research, 6708 WG Wageningen, the Netherlands.",
+   "Giusy Santomasi is at Wageningen Food & Biobased Research,Wageningen University & Research, 6708 WG Wageningen, the Netherlands."
+  ],
+  "date": "2022/04",
+  "text_chars": 1598,
+  "cut_off": true,
+  "passages": [
+   "Plastics are exceptionally useful materials for packaging and all kinds of consumer items, but poorly managed plastic waste contributes to land and ocean pollution.",
+   "This problem can, in principle, be prevented by recycling (Fig.",
+   "However, many plastic products were not designed for mechanical recycling, which involves melting and reprocessing, and therefore produces lower-quality material than the original plastic."
+  ],
+  "links": []
+ },
+ "https://www.nature.com/articles/d41586-024-03029-6": {
+  "slugs": [
+   "fruit-fly-brain-wiring-map-flywire",
+   "fruit-fly-brain-wiring-map-flywire"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-024-03029-6?error=cookies_not_supported&code=eca96d67-d7fb-4a57-a769-2ba407ef84c6",
+  "article_type": "News And Views",
+  "title": "A complete wiring diagram of the fruit-fly brain",
+  "standfirst": "Neuroscientists have reconstructed the first complete wiring map of the fruit-fly brain, including 140,000 neurons and more than 50 million connections. This resource has already begun to revolutionize the field.",
+  "byline": [
+   "Devineni, Anita V. "
+  ],
+  "affiliation_lines": [
+   "Devineni Anita V. Devineni is in the Department of Biology, Emory University, Atlanta, Georgia 30322, USA."
+  ],
+  "date": "2024/10",
+  "text_chars": 1521,
+  "cut_off": true,
+  "passages": [
+   "Everything that we do, think or feel arises from the pattern of activity in our brains, which in turn is determined by how our brain cells are connected.",
+   "Many neuroscientists think that the key to understanding brain function is to map out all of the brain’s neurons and connections — creating a ‘connectome’ or ‘wiring diagram’.",
+   "This is an unfathomably complex task for the human brain, which contains more than 80 billion neurons and 100 trillion connections.",
+   "Writing in Nature, Dorkenwald et al.1 and Schlegel et al.2 describe the first complete connectome of the adult Drosophila brain — a landmark achievement that represents the largest connectome obtained so far."
+  ],
+  "links": [
+   {
+    "url": "https://www.nature.com/articles/s41586-024-07558-y",
+    "text": "Dorkenwald et al."
+   },
+   {
+    "url": "https://www.nature.com/articles/s41586-024-07686-5",
+    "text": "Schlegel et al."
+   }
+  ]
+ },
+ "https://www.nature.com/articles/d41586-022-01855-0": {
+  "slugs": [
+   "hunga-tonga-eruption-global-waves"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-022-01855-0?error=cookies_not_supported&code=b514eef2-561c-492e-946a-36648cb07df2",
+  "article_type": "News And Views",
+  "title": "Atmospheric waves reinforced tsunami after Tongan eruption",
+  "standfirst": "The global tsunami and atmospheric waves that followed the eruption of the Tongan volcano Hunga Tonga–Hunga Ha’apai were observed around the world. Analysing the data could reshape our understanding of such events.",
+  "byline": [
+   "Lane, Emily M."
+  ],
+  "affiliation_lines": [
+   "Lane Emily M. Lane is at the National Institute of Water and Atmospheric Research, Taihoro Nukurangi, Christchurch 8440, New Zealand."
+  ],
+  "date": "2022/09",
+  "text_chars": 1262,
+  "cut_off": true,
+  "passages": [
+   "The eruption triggered the first global volcanic tsunami since the Indonesian volcano Krakatau created deadly waves in 1883 — making Hunga Tonga the first eruption of its kind in the modern satellite era.",
+   "Writing in Nature, Wright et al.1, Lynett et al.2 and Omira et al.3 have seized this opportunity to study the remarkable wave phenomena that the eruption caused, using a range of space- and Earth-based observational techniques."
+  ],
+  "links": [
+   {
+    "url": "https://www.nature.com/articles/s41586-022-05012-5",
+    "text": "Wright et al."
+   },
+   {
+    "url": "https://www.nature.com/articles/s41586-022-05170-6",
+    "text": "Lynett et al."
+   },
+   {
+    "url": "https://www.nature.com/articles/s41586-022-04926-4",
+    "text": "Omira et al."
+   }
+  ]
+ },
+ "https://www.nature.com/articles/d41586-022-00641-2": {
+  "slugs": [
+   "ithaca-restores-dates-greek-inscriptions"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-022-00641-2?error=cookies_not_supported&code=428c7dd1-1a05-46af-9a6b-c074dbfb1856",
+  "article_type": "News And Views",
+  "title": "AI minds the gap and fills in missing Greek inscriptions",
+  "standfirst": "The use of artificial intelligence (AI) is transforming many areas of research. A new AI tool helps to fill in missing text and estimate the timeframe and geographical origin of ancient inscriptions.",
+  "byline": [
+   "Roueché, Charlotte"
+  ],
+  "affiliation_lines": [
+   "Charlotte Roueché is in the Department of Classics, King’s College London, London WC2R 2LS, UK."
+  ],
+  "date": "2022/03",
+  "text_chars": 1048,
+  "cut_off": true,
+  "passages": [
+   "The possibility that artificial intelligence (AI) will automate tasks and thus destroy certain jobs is advancing steadily into more and more areas of life; the waves are now lapping even on the quiet shores of ancient-world studies.",
+   "But this advance should not be interpreted as a threat to centuries of tradition — rather as a complement to them."
+  ],
+  "links": [
+   {
+    "url": "https://www.nature.com/articles/s41586-022-04448-z",
+    "text": "a paper in Nature"
+   }
+  ]
+ },
+ "https://www.nature.com/articles/d41586-023-02858-1": {
+  "slugs": [
+   "kalambo-falls-earliest-wooden-structure-476000"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-023-02858-1?error=cookies_not_supported&code=9f69f0a4-b2eb-4686-9e8a-ada409ce93f3",
+  "article_type": "News And Views",
+  "title": "Hominins built with wood 476,000 years ago",
+  "standfirst": "Understanding the timeline of technological developments sheds light on early societies. A remarkable finding in Africa of a structure made from shaped wood provides clues about our hominin relatives.",
+  "byline": [
+   "Milks, Annemieke"
+  ],
+  "affiliation_lines": [
+   "Annemieke Milks is in the Department of Archaeology, University of Reading, Reading RG6 6AB, UK."
+  ],
+  "date": "2023/10",
+  "text_chars": 983,
+  "cut_off": true,
+  "passages": [
+   "The archaeological record is biased against the preservation of organic materials.",
+   "For no period is this more true than for the Pleistocene epoch, spanning roughly 2.6 million to 11,600 ago.",
+   "This period provides only isolated examples of early evidence of hominin ancestors using wood or other plant materials."
+  ],
+  "links": [
+   {
+    "url": "https://www.nature.com/articles/s41586-023-06557-9",
+    "text": "Writing in Nature"
+   }
+  ]
+ },
+ "https://www.nature.com/articles/d41586-024-00075-y": {
+  "slugs": [
+   "logical-qubits-atom-array-processor"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-024-00075-y?error=cookies_not_supported&code=e4bfbde6-675a-4f95-b44a-be2afe1720e7",
+  "article_type": "News And Views",
+  "title": "Mobile atoms enable efficient computation with logical qubits",
+  "standfirst": "Small groups of mobile neutral atoms have been manipulated with extraordinary control to form ‘logical’ quantum bits. These qubits can perform quantum computations more reliably than can individual atoms.",
+  "byline": [
+   "Terhal, Barbara M."
+  ],
+  "affiliation_lines": [
+   "Terhal Barbara M. Terhal is in the Delft Institute of Applied Mathematics, Delft University of Technology, 2628 CD Delft, the Netherlands."
+  ],
+  "date": "2024/02",
+  "text_chars": 858,
+  "cut_off": true,
+  "passages": [
+   "Over the past 20 years, scientists have been developing ways of using neutral atoms for quantum computing1."
+  ],
+  "links": [
+   {
+    "url": "https://www.nature.com/articles/s41586-023-06927-3",
+    "text": "Writing in Nature"
+   }
+  ]
+ },
+ "https://www.nature.com/articles/d41586-024-00964-2": {
+  "slugs": [
+   "nllb-200-translates-200-languages"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-024-00964-2?error=cookies_not_supported&code=6dbf2de8-8b56-4143-8c7a-9fdcbbfc38c8",
+  "article_type": "News And Views",
+  "title": "Meta’s AI translation model embraces overlooked languages",
+  "standfirst": "More than 7,000 languages are in use throughout the world, but popular translation tools cannot deal with most of them. A translation model that was tested on under-represented languages takes a key step towards a solution.",
+  "byline": [
+   "Adelani, David I."
+  ],
+  "affiliation_lines": [],
+  "date": "2024/06",
+  "text_chars": 1143,
+  "cut_off": true,
+  "passages": [
+   "Machine-translation models use artificial intelligence (AI) to translate one human language into another — a worthy feat, given the potential for enhanced communication to break down the barriers posed by differences in language and culture.",
+   "Yet most of these models can interpret only a small fraction of the world’s languages, in part because training them requires online data that don’t exist for many languages.",
+   "The US technology company Meta has designed a project called No Language Left Behind (NLLB) to change that."
+  ],
+  "links": [
+   {
+    "url": "https://www.nature.com/articles/s41586-024-07335-x",
+    "text": "Writing in Nature"
+   }
+  ]
+ },
+ "https://www.nature.com/articles/d41586-025-00755-3": {
+  "slugs": [
+   "old-kingdom-egyptian-genome-nuwayrat"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-025-00755-3?error=cookies_not_supported&code=a5b2dd2e-20a9-4fa7-94d9-f5079c14eef3",
+  "article_type": "News And Views",
+  "title": "Rare ancient DNA from Sahara opens a window on the region’s verdant past",
+  "standfirst": "Sequencing of 7,000-year-old human genomes from when the Sahara Desert was green suggest that pastoralism spread through cultural exchange, not large-scale migration.",
+  "byline": [
+   "Prendergast, Mary"
+  ],
+  "affiliation_lines": [
+   "Mary Prendergast is in the Department of Anthropology, Rice University, Houston, Texas 77005, USA."
+  ],
+  "date": "2025/05",
+  "text_chars": 1046,
+  "cut_off": true,
+  "passages": [
+   "Gazing at an image of the vast, yellow-brown Sahara Desert today, it is hard to imagine its lush and fertile past.",
+   "But between 11,000 and 5,000 years ago, during the peak of the African Humid Period, the northern third of Africa was dotted with lakes — one larger than modern Germany.",
+   "These, along with its rivers and savannahs, were teeming with wildlife1."
+  ],
+  "links": []
+ },
+ "https://www.nature.com/articles/d41586-023-02084-9": {
+  "slugs": [
+   "pangu-weather-3d-neural-network-forecast"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-023-02084-9?error=cookies_not_supported&code=4e6e1e8b-264a-47d4-b6af-0d2a62726031",
+  "article_type": "News And Views",
+  "title": "The outlook for AI weather prediction",
+  "standfirst": "Two models demonstrate the enormous potential that artificial intelligence holds for weather prediction. But the risks involved demand that meteorologists learn to design, evaluate and interpret such systems.",
+  "byline": [
+   "Ebert-Uphoff, Imme",
+   "Hilburn, Kyle"
+  ],
+  "affiliation_lines": [
+   "Imme Ebert-Uphoff is at the Cooperative Institute for Research in the Atmosphere, Colorado State University, Fort Collins, Colorado 80521, USA.",
+   "Kyle Hilburn is at the Cooperative Institute for Research in the Atmosphere, Colorado State University, Fort Collins, Colorado 80521, USA."
+  ],
+  "date": "2023/07",
+  "text_chars": 1256,
+  "cut_off": true,
+  "passages": [
+   "Daily news headlines document the use and misuse of generative artificial intelligence (AI) — a type of AI model that can produce realistic content, such as text and videos.",
+   "Public enthusiasm for these models has been tempered with trepidation, and the broader discussion about this technology is mirrored by a similar one among atmospheric scientists, some of whom have started to incorporate generative AI into their weather-forecasting models.",
+   "Writing in Nature, two groups report such models: Bi et al.1 present a model for forecasting weather up to seven days in the future, and Zhang et al.2 describe one for predicting precipitation up to three hours ahead of time.",
+   "Both studies are impressive, and together they provide a timely opportunity to examine the benefits and risks of these new developments."
+  ],
+  "links": [
+   {
+    "url": "https://www.nature.com/articles/s41586-023-06185-3",
+    "text": "model for forecasting weather up to seven days"
+   },
+   {
+    "url": "https://www.nature.com/articles/s41586-023-06184-4",
+    "text": "predicting precipitation up to three hours ahead of time"
+   }
+  ]
+ },
+ "https://www.nature.com/articles/d41586-020-01393-7": {
+  "slugs": [
+   "phone-data-targets-cash-aid-togo"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-020-01393-7?error=cookies_not_supported&code=6b779d6a-ad93-4135-90fd-1a2de0068bd6",
+  "article_type": "World View",
+  "title": "Machine learning can help get COVID-19 aid to those who need it most",
+  "standfirst": "With pandemic stakes so immediate and consequential, coordinate to share lessons and minimize risks.",
+  "byline": [
+   "Blumenstock, Joshua"
+  ],
+  "affiliation_lines": [
+   "Joshua Blumenstock is an assistant professor, director of the Data-intensive Development Lab, and faculty co-director of the Center for Effective Global Action at the University of California, Berkeley."
+  ],
+  "date": "2020-05-14",
+  "text_chars": 514,
+  "cut_off": true,
+  "passages": [
+   "Last week, I had an unexpected encounter on Zoom.",
+   "The callers were senior government officials from the Togolese Republic, in West Africa."
+  ],
+  "links": []
+ },
+ "https://www.nature.com/articles/d41586-026-00805-4": {
+  "slugs": [
+   "score-project-social-science-replicability",
+   "score-project-social-science-replicability",
+   "score-project-social-science-replicability"
+  ],
+  "status": 200,
+  "final_url": "https://www.nature.com/articles/d41586-026-00805-4?error=cookies_not_supported&code=72dc4c7a-282f-4c73-8dbd-8720a9513430",
+  "article_type": "News & Views Forum",
+  "title": "Huge meta-research project puts claims in social-science papers to the test",
+  "standfirst": "Three experts discuss lessons learnt from a large-scale dissection of the reproducibility, analytical robustness and replicability of published results.",
+  "byline": [
+   "Sánchez-Tójar, Alfredo",
+   "Wicherts, Jelte M.",
+   "Willer, Robb"
+  ],
+  "affiliation_lines": [
+   "Alfredo Sánchez-Tójar is in the Meta-research Team at the Center for Neuroscience and Cell Biology, and the Center for Innovative Biomedicine and Biotechnology, University of Coimbra, Coimbra 3004-504, Portugal.",
+   "Wicherts Jelte M. Wicherts is in the Department of Methodology and Statistics, Tilburg School of Social and Behavioral Sciences, Tilburg University, 5000 LE Tilburg, the Netherlands.",
+   "Robb Willer is in the Politics and Social Change Lab, the AI for Public Benefit Lab and the Department of Sociology, Stanford University, Stanford, California 94305, USA."
+  ],
+  "date": "2026/04",
+  "text_chars": 464,
+  "cut_off": true,
+  "passages": [],
+  "links": []
+ }
+}
