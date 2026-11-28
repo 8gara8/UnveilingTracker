@@ -197,7 +197,7 @@ export const ContextPublisher = z.strictObject({
 export const ContextConfig = z.strictObject({
   hype_words: z.array(Text).describe("English words that may not appear (HYPE_WORDS)"),
   jargon: z.array(Text).describe("Technical words that must be defined where a finding uses them (TERM_DEFINED)"),
-  field_cap: Count.describe("The most findings of one field in story and items (FIELD_CAP)"),
+  field_cap: Count.describe("An informational copy of FIELD_CAP, the most findings of one field in story and items; the rule reads its own constant, not this value"),
   fields: z.array(ContextField),
   source_kinds: z.array(ContextSourceKind),
   allowlist: z.array(ContextPublisher).describe("A summary of the primary-source allowlist: where a source of each kind may be"),

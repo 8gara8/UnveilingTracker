@@ -18,6 +18,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { parse as parseYaml } from "yaml";
 import type { z } from "zod";
+import { pressHostFor } from "./primary";
 import {
   AiDrugsFile, AiTermsFile, CheckersFile, CountersFile, DualUseFile, FieldsFile, HypeWordsFile, JargonFile, JournalsFile, LabsFile,
   MarkersFile, RunFile, SourceTiersFile, StandingStoriesFile, statementForm, TermsZhFile, type JournalEntry, type Subfield,
@@ -511,27 +512,28 @@ function blockedIssues(c: ConfigFiles): ConfigIssue[] {
 
 function conflictIssues(c: ConfigFiles): ConfigIssue[] {
   const out: ConfigIssue[] = [];
-  const t = c.sourceTiers;
-  const press = new Set(t.press_hosts);
-  // A reaction source, a lab or a checker that names a host wins over the press list (§4.11).
-  const winners = [...t.reaction_sources, ...c.labs.labs, ...c.checkers.checkers].flatMap((e) => e.hosts);
-  const onPress = (host: string): string | null => (winners.some((w) => hostMatches(host, w)) ? null : hostListed(host, press));
+  const press = new Set(c.sourceTiers.press_hosts);
+  // The press host a URL sits under, or null. A reaction source, a lab or a checker that lists the URL's host and path wins over the
+  // press list (§4.11), and only for the paths it lists: `pressHostFor()` is the test `isPrimary()` runs (lib/primary.ts).
+  const onPress = (url: string): string | null => {
+    const host = hostOf(url);
+    return host === null || pressHostFor(url, c) === null ? null : hostListed(host, press);
+  };
 
   const reported = new Set<string>();
   for (const n of namedHosts(c)) {
-    // a suffix entry names no host; a lab's or checker's own host is a winner, so it is never one that conflicts
+    // a suffix entry names no host; a lab's or checker's own host and paths are a winner, so they are never one that conflicts
     if (n.host === null) continue;
-    const p = onPress(n.host);
+    const p = onPress(n.url);
     const place = at(n.key, n.where);
     if (p === null || reported.has(place)) continue;
     reported.add(place);
     const what = n.where.startsWith("figure_hosts") ? "a figure host" : "an allowed host";
     out.push(issue("CONFIG_CONFLICT", place, `${n.host} is ${what} and sits under the press host ${p}, so no URL on it can be primary.`,
-      "Remove one of the two, or name the host in reaction_sources, labs.json or checkers.json, which win over the press list (§4.11)."));
+      "Remove one of the two, or name the host and its paths in reaction_sources, labs.json or checkers.json, which win over the press list for the paths they name (§4.11)."));
   }
   for (const n of sourceUrls(c)) {
-    const host = hostOf(n.url);
-    const p = host === null ? null : onPress(host);
+    const p = onPress(n.url);
     if (p !== null) {
       out.push(issue("CONFIG_CONFLICT", at(n.key, n.where), `${n.url} is on the press host ${p}; a source is a primary record, never press (§4.11).`,
         "Cite the record's own page."));

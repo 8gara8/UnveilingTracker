@@ -20,6 +20,7 @@ import {
 import type { ConfigCode, ConfigFiles, ConfigIndex, ConfigIssue, ConfigKey, LoadedConfig } from "@/lib/config";
 import { byCodeUnit } from "@/lib/ids";
 import { jsonText, sha256Hex } from "@/lib/json";
+import { isPrimary, pressHostFor, primaryTest } from "@/lib/primary";
 import {
   AiDrugsFile, AiTermsFile, CheckersFile, ClockTime, COUNTER_IDS, CountersFile, DualUseFile, FieldsFile, HostName, HypeWordsFile, JargonFile,
   JournalsFile, LabsFile, MarkersFile, OPENALEX_FIELD_MAX, OPENALEX_FIELD_MIN, PathPrefix, Publisher, ReactionSource, RegistryEntry, Resolver,
@@ -31,7 +32,7 @@ import { SourcesFile } from "@/lib/schema/registry";
 import { blockedEntry } from "@/lib/urls";
 import { BLOCKED_HOSTS, COUNTED_RUNGS, FIELDS } from "@/lib/vocab";
 import type { FieldId } from "@/lib/vocab";
-import { wordRe } from "@/lib/text";
+import { wordRe, wordsIn } from "@/lib/text";
 import { expectIssue, expectMutationFails, expectOnlyIssue, expectValid, issuesOf } from "./helpers/zod-issues";
 
 const root = path.join(__dirname, "..");
@@ -583,11 +584,49 @@ describe("config/jargon.json, hype-words.json and dual-use.json", () => {
     for (const f of FIELDS) expect(words.some((w) => w.fields.includes(f)), f).toBe(true);
   });
 
-  it("holds the hype words of section 4.11 exactly, with the Landmark-only word last of each list", () => {
+  // The plurals, spellings and derived forms that follow the nine seed words in `en`, as a writer is likely to type them (F-38).
+  const HYPE_FORMS = [
+    "revolutionise", "revolutionises", "revolutionised", "revolutionising", "revolutionize", "revolutionizes", "revolutionized", "revolutionizing",
+    "gamechanging", "game-changer", "game-changers", "gamechanger", "gamechangers", "ground-breaking", "paradigm shifts", "paradigm-shifting",
+    "unprecedentedly", "stunningly", "mindblowing", "breakthroughs",
+  ];
+
+  it("holds the hype words of section 4.11 exactly, with the Landmark-only word last of the seed in each list, and in `en` their forms after the seed", () => {
     const h = SEED.hypeWords;
-    expect(h.en).toEqual(["revolutionary", "game-changing", "groundbreaking", "paradigm shift", "unprecedented", "stunning", "mind-blowing", "changes everything", "breakthrough"]);
+    expect(h.en.slice(0, 9)).toEqual(["revolutionary", "game-changing", "groundbreaking", "paradigm shift", "unprecedented", "stunning", "mind-blowing", "changes everything", "breakthrough"]);
+    expect(h.en.slice(9)).toEqual(HYPE_FORMS);
     expect(h.zh).toEqual(["革命性", "顛覆性", "劃時代", "前所未有", "史無前例", "驚人", "震撼", "神奇", "典範轉移", "改變一切", "突破"]);
     for (const out of ["miracle", "magic", "holy grail", "奇蹟", "聖杯"]) expect([...h.en, ...h.zh], out).not.toContain(out);
+  });
+
+  it("lists the forms of the hype words that HYPE_WORDS would miss as they stand (it matches whole words in the form listed), each caught on its own", () => {
+    const seed = SEED.hypeWords.en.slice(0, 9);
+    for (const form of HYPE_FORMS) {
+      // Each is a new form: none is caught by the seed words alone, and a whole word beside it does not hide it.
+      expect(wordsIn(`It was a ${form} for us.`, seed), `${form} is not caught by the seed`).toEqual([]);
+      expect(wordsIn(`It was a ${form} for us.`, SEED.hypeWords.en), form).toEqual([form]);
+      expect(wordsIn(`It was a ${form.toUpperCase()}, then ${form[0]!.toUpperCase()}${form.slice(1)}.`, SEED.hypeWords.en), `${form} in capitals`).toEqual([form]);
+      expect(wordsIn(`It was a x${form} or ${form}x for us.`, SEED.hypeWords.en), `${form} inside a longer word`).toEqual([]);
+    }
+    // A hyphen and a space read alike, so the hyphenated entries also catch the spaced form.
+    for (const spaced of ["game changer", "game changers", "ground breaking", "paradigm shifting", "mind blowing", "Game-Changers"]) {
+      expect(wordsIn(`It was a ${spaced} for us.`, SEED.hypeWords.en).length, spaced).toBeGreaterThan(0);
+    }
+  });
+
+  it("adds no form that is also a legitimate technical word: none is a jargon word, a fixed term, a dual-use form or a field or subfield name, and the legitimate neighbours stay unlisted", () => {
+    const fold = (w: string): string => w.toLowerCase().replace(/[\s-]+/g, " ");
+    const used = new Set<string>([
+      ...SEED.jargon.words.map((w) => fold(w.en)),
+      ...SEED.termsZh.fixed.map((t) => fold(t.en)),
+      ...[...SEED.dualUse.agents, ...SEED.dualUse.procedures, ...SEED.dualUse.units].flatMap((e) => e.en.map(fold)),
+      ...SEED.fields.fields.flatMap((f) => [fold(f.id), ...f.subfields.map((x) => fold(x.en))]),
+    ]);
+    for (const form of HYPE_FORMS) expect(used.has(fold(form)), form).toBe(false);
+    // Words that name a subject, kept off the list on purpose: a revolution is an event of history, and to break through is an action.
+    for (const keep of ["revolution", "revolutions", "revolutionaries", "break through", "game", "shift", "paradigm", "stunned", "ground"]) {
+      expect(wordsIn(`the ${keep} of it`, SEED.hypeWords.en), keep).toEqual([]);
+    }
   });
 
   it("masks the names of section 4.11: the Breakthrough Prize in Chinese, the others kept in English", () => {
@@ -1307,6 +1346,20 @@ describe("SourceTiersFile", () => {
       expectMutationFails(SourceTiersFile, tiers(), (t) => { t.statement_suffixes = [bad]; }, "statement_suffixes.0");
     }
     expectMutationFails(SourceTiersFile, tiers(), (t) => { t.statement_suffixes = [".edu", ".edu"]; }, "statement_suffixes.1", "already used at index 0");
+  });
+
+  it("says what a statement entry may be: a suffix and a host in lower case, a path from / on with no space, ? or #, and not that the whole entry is lower case, for a path may hold capitals", () => {
+    const message = "Expected a suffix (.edu), a host (mpg.de) or a host with a path prefix (cell.com/newsroom): a suffix and a host are lower case, and a path starts with / and has no space, ? or #";
+    for (const bad of [".EDU", "Cell.com/newsroom", "cell.com/new sroom", "cell.com/newsroom?x", "cell.com/newsroom#top"]) {
+      const t = tiers();
+      t.statement_suffixes = [bad];
+      expect(issuesOf(SourceTiersFile, t).find((i) => i.path === "statement_suffixes.0")?.message, bad).toBe(message);
+    }
+    for (const ok of ["cell.com/NewsRoom", "cell.com/News-Room/2026", "eurekalert.org/News-Releases/"]) {
+      const t = tiers();
+      t.statement_suffixes = [ok];
+      expectValid(SourceTiersFile, t);
+    }
   });
 
   it("takes press hosts and figure hosts as bare hosts, each once", () => {
@@ -2197,7 +2250,7 @@ describe("the cross-file checks of validateConfig()", () => {
       const host = conflict((c) => { c.sourceTiers.publishers[0]!.hosts.push("blog.quantamagazine.org"); return ""; }).found;
       expect(host.map((i) => [i.message, i.hint])).toEqual([[
         "blog.quantamagazine.org is an allowed host and sits under the press host quantamagazine.org, so no URL on it can be primary.",
-        "Remove one of the two, or name the host in reaction_sources, labs.json or checkers.json, which win over the press list (§4.11).",
+        "Remove one of the two, or name the host and its paths in reaction_sources, labs.json or checkers.json, which win over the press list for the paths they name (§4.11).",
       ]]);
       const figure = conflict((c) => { c.sourceTiers.figure_hosts.push("phys.org"); return ""; }).found;
       expect(figure.map((i) => i.message)).toEqual(["phys.org is a figure host and sits under the press host phys.org, so no URL on it can be primary."]);
@@ -2223,10 +2276,10 @@ describe("the cross-file checks of validateConfig()", () => {
       expect(crossFile((c) => { c.sourceTiers.reaction_sources[0]!.hosts.push("sciencedaily.com"); })).toEqual([]);
       expect(crossFile((c) => { c.labs.labs[0]!.hosts.push("phys.org"); })).toEqual([]);
       expect(crossFile((c) => { c.checkers.checkers[0]!.hosts.push("quantamagazine.org"); })).toEqual([]);
-      // each kind of winner frees the press host another list names, and not without it
+      // each kind of winner frees the press host another list names, and not without it (a winner frees the paths it lists: here every path)
       const freed = (winner: (c: ConfigFiles) => void) => crossFile((c) => { c.sourceTiers.publishers[0]!.hosts.push("quantamagazine.org"); winner(c); });
       expect(crossFile((c) => { c.sourceTiers.publishers[0]!.hosts.push("quantamagazine.org"); }).map((i) => i.code)).toEqual(["CONFIG_CONFLICT"]);
-      expect(freed((c) => { c.sourceTiers.reaction_sources[0]!.hosts.push("quantamagazine.org"); })).toEqual([]);
+      expect(freed((c) => { const r = c.sourceTiers.reaction_sources[0]!; r.hosts.push("quantamagazine.org"); r.paths = ["/"]; })).toEqual([]);
       expect(freed((c) => { c.labs.labs[0]!.hosts.push("quantamagazine.org"); })).toEqual([]);
       expect(freed((c) => { c.checkers.checkers[0]!.hosts.push("quantamagazine.org"); })).toEqual([]);
       expect(crossFile((c) => { c.markers.markers[0]!.source_url = "https://quantamagazine.org/x"; c.labs.labs[0]!.hosts.push("quantamagazine.org"); })).toEqual([]);
@@ -2238,6 +2291,145 @@ describe("the cross-file checks of validateConfig()", () => {
       // a winner's host does not free its parent
       const parent = crossFile((c) => { c.sourceTiers.publishers[0]!.hosts.push("wordpress.com"); }).filter((i) => i.code === "CONFIG_CONFLICT");
       expect(parent).toHaveLength(1);
+    });
+
+    describe("a winner frees only the hosts and paths it lists, as isPrimary() reads them (F-49)", () => {
+      // A lab that names medium.com (on the press list) under /lab-notes only: its own entry wins, and so does a source under that path.
+      const labOnPath = (c: ConfigFiles): void => { const l = c.labs.labs[0]!; l.hosts = ["medium.com"]; l.paths = ["/lab-notes"]; };
+      const sourceAt = (url: string, winner: (c: ConfigFiles) => void = labOnPath): ConfigIssue[] =>
+        crossFile((c) => { winner(c); c.markers.markers[0]!.source_url = url; }).filter((i) => i.code === "CONFIG_CONFLICT");
+
+      it("passes a source under the winner's path and finds one on the same host outside it, which isPrimary() refuses too", () => {
+        expect(sourceAt("https://medium.com/lab-notes/post")).toEqual([]);
+        expect(sourceAt("https://medium.com/LAB-NOTES/post")).toEqual([]);
+        expect(sourceAt("https://www.medium.com/lab-notes")).toEqual([]);
+        const outside = sourceAt("https://medium.com/other/post");
+        expect(outside.map((i) => [i.path, i.message])).toEqual([[here("markers", "markers[0].source_url"), "https://medium.com/other/post is on the press host medium.com; a source is a primary record, never press (§4.11)."]]);
+        expect(sourceAt("https://medium.com/lab-note")).toHaveLength(1);
+        expect(sourceAt("https://medium.com/")).toHaveLength(1);
+        // the URL test agrees: the same URLs, tried against the same files
+        const c = parsedSeed();
+        labOnPath(c);
+        expect(isPrimary("https://medium.com/lab-notes/post", "lab_post", c)).toBe(true);
+        expect(primaryTest("https://medium.com/other/post", c)).toMatchObject({ kinds: [], refusal: "press_host", by: "medium.com" });
+      });
+
+      it("finds a source under the host of a winner that lists no path of it, in the three files that name sources", () => {
+        const counters = crossFile((c) => { labOnPath(c); c.counters.counters[3]!.source_url = "https://medium.com/other"; }).filter((i) => i.code === "CONFIG_CONFLICT");
+        expect(counters.map((i) => i.path)).toEqual([here("counters", "counters[3].source_url")]);
+        const drug = crossFile((c) => {
+          labOnPath(c);
+          c.aiDrugs = AiDrugsFile.parse({
+            schema_version: 1, version: 1,
+            drugs: [{ id: "sample-drug", name: "Sample drug", developer: "Sample Pharma", ai_basis: "The developer says an AI system proposed the molecule.", source_url: "https://medium.com/lab-notes/drug", trials: [], approved: { regulator: "fda", date: "2026-01-15", source_url: "https://medium.com/elsewhere/approval" } }],
+          });
+        }).filter((i) => i.code === "CONFIG_CONFLICT");
+        expect(drug.map((i) => i.path)).toEqual([here("aiDrugs", "drugs[0].approved.source_url")]);
+      });
+
+      it("finds an allowed host that a winner names only for some paths: the host's other paths cannot be primary", () => {
+        const publisher = (path: string) => crossFile((c) => {
+          labOnPath(c);
+          const p = c.sourceTiers.publishers[0]!;
+          p.hosts.push("medium.com");
+          p.paths = [path];
+        }).filter((i) => i.code === "CONFIG_CONFLICT");
+        expect(publisher("/lab-notes/articles")).toEqual([]);
+        const outside = publisher("/other");
+        expect(outside.map((i) => [i.path, i.message])).toEqual([[here("sourceTiers", `publishers[0].hosts[${parsedSeed().sourceTiers.publishers[0]!.hosts.length}]`), "medium.com is an allowed host and sits under the press host medium.com, so no URL on it can be primary."]]);
+        const figure = crossFile((c) => { labOnPath(c); c.sourceTiers.figure_hosts.push("medium.com"); }).filter((i) => i.code === "CONFIG_CONFLICT");
+        expect(figure.map((i) => i.message)).toEqual(["medium.com is a figure host and sits under the press host medium.com, so no URL on it can be primary."]);
+      });
+
+      it("reads a winner's path as isPrimary() does: lower case, escapes decoded, a plain prefix, and `/` for any path", () => {
+        const withPath = (path: string) => (c: ConfigFiles): void => { const l = c.labs.labs[0]!; l.hosts = ["medium.com"]; l.paths = [path]; };
+        expect(sourceAt("https://medium.com/Lab%2Dnotes/x", labOnPath)).toEqual([]);
+        expect(sourceAt("https://medium.com//lab-notes/x", labOnPath)).toEqual([]);
+        expect(sourceAt("https://medium.com/lab-notes-2026/x", labOnPath)).toEqual([]);
+        expect(sourceAt("https://medium.com/anything/at/all", withPath("/"))).toEqual([]);
+        expect(sourceAt("https://medium.com/lab-notes/x", withPath("/Lab-Notes"))).toEqual([]);
+        expect(sourceAt("https://medium.com/lab%20notes/x", withPath("/lab-notes"))).toHaveLength(1);
+      });
+
+      it("leaves a host that is not on the press list to no conflict, and finds a source that names a port or a user name on one, which no winner frees (isPrimary() refuses the shape)", () => {
+        expect(sourceAt("https://example.org/x")).toEqual([]);
+        expect(sourceAt("https://example.org:8443/x")).toEqual([]);
+        for (const url of ["https://medium.com:8443/other", "https://medium.com:8443/lab-notes/x", "https://user@medium.com/other", "https://user@medium.com/lab-notes/x"]) {
+          expect(sourceAt(url).map((i) => i.path), url).toEqual([here("markers", "markers[0].source_url")]);
+        }
+        const c = parsedSeed();
+        labOnPath(c);
+        expect(primaryTest("https://medium.com:8443/lab-notes/x", c)).toMatchObject({ kinds: [], refusal: "port" });
+      });
+
+      it("keeps a blocked host that is also on the press list a conflict as well as a blocked entry", () => {
+        const both = crossFile((c) => { c.sourceTiers.press_hosts.push("bit.ly"); c.sourceTiers.figure_hosts.push("bit.ly"); });
+        expect(both.map((i) => i.code).sort(byCodeUnit)).toEqual(["CONFIG_BLOCKED", "CONFIG_CONFLICT"]);
+      });
+    });
+
+    it("names the most specific press entry that a host or a source sits under, whichever of two nested entries the list gives first", () => {
+      const nested = (c: ConfigFiles): void => { c.sourceTiers.press_hosts.push("press-sample.org", "blog.press-sample.org"); };
+      const host = crossFile((c) => { nested(c); c.sourceTiers.publishers[0]!.hosts.push("x.blog.press-sample.org"); }).filter((i) => i.code === "CONFIG_CONFLICT");
+      expect(host.map((i) => i.message)).toEqual(["x.blog.press-sample.org is an allowed host and sits under the press host blog.press-sample.org, so no URL on it can be primary."]);
+      const source = crossFile((c) => { nested(c); c.markers.markers[0]!.source_url = "https://x.blog.press-sample.org/a"; }).filter((i) => i.code === "CONFIG_CONFLICT");
+      expect(source.map((i) => i.message)).toEqual(["https://x.blog.press-sample.org/a is on the press host blog.press-sample.org; a source is a primary record, never press (§4.11)."]);
+    });
+
+    describe("pressHostFor(), the test the config check and isPrimary() share", () => {
+      const cfg = (): ConfigFiles => parsedSeed();
+      it("names the first press entry the host is or sits under, for an https address with no user name and no port but 443", () => {
+        const c = cfg();
+        expect(pressHostFor("https://phys.org/news/x", c)).toBe("phys.org");
+        expect(pressHostFor("https://www.phys.org/news/x", c)).toBe("phys.org");
+        expect(pressHostFor("https://PHYS.ORG./news/x", c)).toBe("phys.org");
+        expect(pressHostFor("https://phys.org:443/news/x", c)).toBe("phys.org");
+        expect(pressHostFor("https://asia.nikkei.com/x", c)).toBe("nikkei.com");
+        expect(pressHostFor("https://notphys.org/x", c)).toBeNull();
+        expect(pressHostFor("https://nature.com/articles/x", c)).toBeNull();
+        expect(pressHostFor("not a url", c)).toBeNull();
+        expect(pressHostFor("", c)).toBeNull();
+      });
+
+      it("keeps the press host of an address that is not https, has a user name or names a port: no entry lists such an address, so none wins", () => {
+        const c = cfg();
+        for (const bad of ["http://phys.org/x", "https://user@phys.org/x", "https://user:pw@www.phys.org/x", "https://phys.org:8443/x", "ftp://phys.org/x"]) expect(pressHostFor(bad, c), bad).toBe("phys.org");
+        expect(pressHostFor("https://notphys.org:8443/x", c)).toBeNull();
+        expect(pressHostFor("http://nature.com/x", c)).toBeNull();
+        // a winner that lists the host and the path frees an https address there, and not one of those shapes: isPrimary() refuses the shape anyway
+        c.labs.labs[0]!.hosts = ["techxplore.com"];
+        c.labs.labs[0]!.paths = ["/x"];
+        expect(pressHostFor("https://techxplore.com/x/1", c)).toBeNull();
+        expect(pressHostFor("https://techxplore.com:8443/x/1", c)).toBe("techxplore.com");
+        expect(pressHostFor("https://u@techxplore.com/x/1", c)).toBe("techxplore.com");
+        expect(primaryTest("https://techxplore.com:8443/x/1", c)).toMatchObject({ kinds: [], refusal: "port" });
+      });
+
+      it("lets a reaction source, a lab and a checker that list the host and the path win, and only there", () => {
+        const c = cfg();
+        c.sourceTiers.reaction_sources[0]!.hosts = ["phys.org"];
+        c.sourceTiers.reaction_sources[0]!.paths = ["/news/a"];
+        expect(pressHostFor("https://phys.org/news/a1", c)).toBeNull();
+        expect(pressHostFor("https://phys.org/news/b1", c)).toBe("phys.org");
+        c.labs.labs[0]!.hosts = ["techxplore.com"];
+        c.labs.labs[0]!.paths = ["/x"];
+        expect(pressHostFor("https://techxplore.com/x/1", c)).toBeNull();
+        expect(pressHostFor("https://techxplore.com/y", c)).toBe("techxplore.com");
+        c.checkers.checkers[0]!.hosts = ["space.com"];
+        c.checkers.checkers[0]!.paths = ["/"];
+        expect(pressHostFor("https://space.com/anything", c)).toBeNull();
+        expect(pressHostFor("https://www.space.com/anything", c)).toBeNull();
+      });
+
+      it("is what primaryTest() refuses a URL for, after the shape and BLOCKED_HOSTS tests", () => {
+        const c = cfg();
+        for (const url of ["https://phys.org/news/x", "https://www.sciencedaily.com/a", "https://nature.com/articles/x", "https://terrytao.wordpress.com/2026/x", "https://scrollprize.substack.com/p/x", "https://other.substack.com/p/x"]) {
+          const refused = primaryTest(url, c).refusal === "press_host";
+          expect(pressHostFor(url, c) !== null, url).toBe(refused);
+        }
+        expect(primaryTest("https://other.substack.com/p/x", c)).toMatchObject({ refusal: "press_host", by: "substack.com" });
+        expect(pressHostFor("https://scrollprize.substack.com/p/x", c)).toBeNull();
+      });
     });
 
     it("sees the two live exceptions rest on their names: take the name away and the host conflicts", () => {

@@ -358,7 +358,7 @@
                       "type": "string",
                       "minLength": 1,
                       "maxLength": 60,
-                      "description": "The English term, at most 60 characters; its id is its kebab-case form"
+                      "description": "The English term, at most 60 characters, with at least one letter a to z or digit; its id is its kebab-case form, which no glossary term and no other new term of the draft may have"
                     },
                     "definition": {
                       "type": "string",

@@ -85,8 +85,10 @@ describe("files the spec shows", () => {
       if (name === "check") continue;
       expect(cmd, name).toBe(block[name]);
     }
-    // `check` grows by phase (§8.1); Foundation's is typecheck and test.
-    expect(pkg.scripts.check).toBe("npm run typecheck && npm test");
+    // `check` grows by phase (§8.1); P1's is Foundation's typecheck and test, then the schema, fixture and content checks.
+    expect(pkg.scripts.check).toBe(
+      "npm run typecheck && npm test && npm run schema:check && npm run fixtures:check && npm run validate:sample && npm run validate:all",
+    );
     expect(block.check.startsWith(pkg.scripts.check)).toBe(true);
     const lock = JSON.parse(read("package-lock.json"));
     expect([lock.name, lock.packages[""].name]).toEqual(["unveilingtracker", "unveilingtracker"]);

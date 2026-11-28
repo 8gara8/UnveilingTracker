@@ -322,6 +322,169 @@ describe("splitSentences", () => {
       expect(sentences.join("").replace(/\s+/g, ""), text).toBe(text.replace(/\s+/g, ""));
     }
   });
+
+  // F-56: the splitter judges each stop by the characters around it and by a running tally of the quoted spans, where it once
+  // searched the text before the stop (and every quoted span) for each stop, so a text of many stops took time with the square of
+  // their number. `referenceSplit` is that earlier reader, kept whole as the oracle: the two must give the same sentences on every text.
+  describe("a text of many stops", () => {
+    const STOPS = /[.!?]+|[。？！]+/gu;
+    const REF_CLOSERS = "\"'”’)]}»」』）】";
+    const REF_BRACKETS = "([{（【";
+    const REF_QUOTES = "\"'“‘„«‹「『";
+    const REF_CLOSING: Readonly<Record<string, string>> = { "“": "”", "「": "」", "『": "』", "«": "»" };
+    const REF_ABBREVIATIONS = [...new Set(ABBREVIATIONS.flatMap((a) => (/^\p{Ll}/u.test(a) ? [a, a.charAt(0).toUpperCase() + a.slice(1)] : [a])))];
+
+    function referenceSplit(text: string): string[] {
+      const spans: [number, number][] = [];
+      const open: { mark: string; at: number }[] = [];
+      for (let i = 0; i < text.length; i += 1) {
+        const mark = text.charAt(i);
+        const top = open[open.length - 1];
+        if (mark === '"') {
+          if (top?.mark === '"') {
+            spans.push([top.at, i]);
+            open.pop();
+          } else open.push({ mark, at: i });
+        } else if (REF_CLOSING[mark] !== undefined) open.push({ mark, at: i });
+        else if (top && REF_CLOSING[top.mark] === mark) {
+          spans.push([top.at, i]);
+          open.pop();
+        }
+      }
+      const startsNext = (end: number): boolean => {
+        if (end >= text.length || !/\s/u.test(text.charAt(end))) return false;
+        let j = end;
+        while (j < text.length && /\s/u.test(text.charAt(j))) j += 1;
+        while (j < text.length && REF_BRACKETS.includes(text.charAt(j))) j += 1;
+        if (j >= text.length) return false;
+        const next = String.fromCodePoint(text.codePointAt(j)!);
+        return REF_QUOTES.includes(next) || /^[\p{Lu}\p{Nd}]$/u.test(next);
+      };
+      const endsWithAbbreviation = (through: string): boolean => REF_ABBREVIATIONS.some((form) => through.endsWith(form) && !/[\p{L}\p{N}.]/u.test(through.charAt(through.length - form.length - 1)));
+      const isListMarker = (sentenceStart: number, stop: number): boolean => {
+        const digits = /(?<![\p{L}\p{N}.])\d{1,2}$/u.exec(text.slice(0, stop));
+        if (!digits) return false;
+        const lineStart = text.lastIndexOf("\n", digits.index - 1) + 1;
+        return text.slice(Math.max(sentenceStart, lineStart), digits.index).trim() === "";
+      };
+      const isInitialInChain = (stop: number): boolean => {
+        if (!/(?<![\p{L}\p{N}.])\p{Lu}$/u.test(text.slice(0, stop))) return false;
+        return /(?<![\p{L}\p{N}.])\p{Lu}\.\s+$/u.test(text.slice(0, stop - 1)) || /^\s+\p{Lu}\.(?=\s|$)/u.test(text.slice(stop + 1));
+      };
+      const out: string[] = [];
+      const push = (from: number, to: number): void => {
+        const sentence = text.slice(from, to).trim();
+        if (sentence) out.push(sentence);
+      };
+      let start = 0;
+      for (const m of text.matchAll(STOPS)) {
+        const stop = m.index;
+        const chinese = !/^[.!?]/u.test(m[0]);
+        let end = stop + m[0].length;
+        while (end < text.length && REF_CLOSERS.includes(text.charAt(end))) end += 1;
+        if (!chinese && !startsNext(end)) continue;
+        if (spans.some(([o, c]) => o < stop && end <= c)) continue;
+        if (m[0] === "." && (endsWithAbbreviation(text.slice(0, stop + 1)) || isListMarker(start, stop) || isInitialInChain(stop))) continue;
+        push(start, end);
+        start = end;
+      }
+      push(start, text.length);
+      return out;
+    }
+
+    const ASTRAL_CAPITAL = String.fromCodePoint(0x1d400);
+    const ASTRAL_SMALL = String.fromCodePoint(0x1d41a);
+    // The first code point beyond the BMP (a letter), an astral digit and an astral capital: the edges of what the lookbehinds read whole.
+    const LINEAR_B = String.fromCodePoint(0x10000);
+    const ASTRAL_DIGIT = String.fromCodePoint(0x1d7ce);
+    const DESERET_CAPITAL = String.fromCodePoint(0x10400);
+    const LAST_IN_BMP = String.fromCharCode(0xffff);
+    const LONE_HIGH = String.fromCharCode(0xd835);
+    const LONE_LOW = String.fromCharCode(0xdc00);
+    const NBSP = String.fromCharCode(0xa0);
+    const LINE_SEPARATOR = String.fromCharCode(0x2028);
+    const BOM = String.fromCharCode(0xfeff);
+    const IDEOGRAPHIC_STOP = String.fromCharCode(0x3002);
+    const FULL_QUESTION = String.fromCharCode(0xff1f);
+    const FULL_BANG = String.fromCharCode(0xff01);
+    const ALPHA = String.fromCharCode(0x391);
+    const ACUTE_CAPITAL = String.fromCharCode(0xc9);
+
+    /** mulberry32: a seeded generator, so the corpus is the same on every run. */
+    const seeded = (seed: number): (() => number) => {
+      let a = seed;
+      return () => {
+        a = (a + 0x6d2b79f5) | 0;
+        let t = Math.imul(a ^ (a >>> 15), 1 | a);
+        t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+      };
+    };
+    const corpus = (tokens: readonly string[], seed: number, count: number, maxTokens: number): string[] => {
+      const next = seeded(seed);
+      return Array.from({ length: count }, () => {
+        let text = "";
+        for (let i = 1 + Math.floor(next() * maxTokens); i > 0; i -= 1) text += tokens[Math.floor(next() * tokens.length)]!;
+        return text;
+      });
+    };
+
+    const ENGLISH = [
+      "A", "a", "J", "R", "B", "mRNA", "pH", "U.S.", "U.K.", "et al.", "No.", "Fig.", "cf.", "Cf.", "approx.", "e.g.", "Dr.", ". ", ".", ". ", "! ", "? ", "...", "!!", "?!",
+      '"', '"', "“", "”", "「", "」", "«", "»", "(", ")", "[", "]", "1", "12", "123", "2.5", "5", " ", "  ", " ", "\n", "\t", NBSP, IDEOGRAPHIC_STOP, FULL_QUESTION, FULL_BANG, "x",
+      "Plan", "It", "the", "doi.org/10.1/x", ASTRAL_CAPITAL, ASTRAL_SMALL, LONE_HIGH, LONE_LOW, ACUTE_CAPITAL, ALPHA, "'", "’", "„", ELLIPSIS, LINE_SEPARATOR, BOM,
+      "1.", "2.", "J.", "R.", "A.", "Z.", ALPHA + ".",
+    ];
+    const NUMBERS = ["1", "2", "12", "123", ". ", ".", " ", "\n", "\n ", "A", "a", "x", "5.", "10.", "\t", NBSP, "e.g.", ALPHA, ASTRAL_CAPITAL, "(", '"', "1.\n"];
+    const INITIALS = ["J", "R", "A", "B", "a", ". ", ".", " ", "  ", "\n", ACUTE_CAPITAL, ALPHA, ASTRAL_CAPITAL, String.fromCodePoint(0x1d401), "Dr.", "U.S.", "(", ")", "“", "”", "x", "1"];
+    const QUOTES = ['"', "“", "”", "「", "」", "『", "』", "«", "»", "A", "a", ". ", ". ", ".", "! ", "? ", " ", "'", IDEOGRAPHIC_STOP, "x", "1", "(", ")"];
+    const CLOSERS = ["A", ". ", ".", ")", "]", "}", "»", "」", "』", "）", "】", "’", "”", "'", '"', " ", "(", "[", "B", "1", "\n"];
+
+    it("gives the sentences of the earlier reader on seeded random texts of many kinds", () => {
+      for (const [name, tokens, seed] of [["mixed", ENGLISH, 12345], ["numbers", NUMBERS, 1], ["initials", INITIALS, 2], ["quotes", QUOTES, 3], ["closers", CLOSERS, 4]] as const) {
+        for (const text of corpus(tokens, seed, 12000, 36)) expect(splitSentences(text), `${name}: ${JSON.stringify(text)}`).toEqual(referenceSplit(text));
+      }
+    });
+
+    it("gives the sentences of the earlier reader on the edge cases the choices above rest on, astral letters and lone surrogates included", () => {
+      const texts = [
+        `${ASTRAL_CAPITAL}et al. Then it fell.`, `${ASTRAL_SMALL}approx. Then x.`, `${LONE_LOW}Fig. Then x.`, `${LONE_HIGH}No. Then x.`,
+        `x${ASTRAL_CAPITAL}12. Then`, `${ASTRAL_CAPITAL}1. Then`, `${ASTRAL_CAPITAL}. ${ASTRAL_CAPITAL}. Then`, `${ASTRAL_CAPITAL}. Then`, `Plan ${ASTRAL_CAPITAL}. Then`,
+        "a12. Then it fell. 12. Item", "x 123. Then it fell.", "1. Item\n2. Item\n12. Last", "Intro. 1. Item. 22. Item.", "Text 7. Then", "(7). Then", "7.\n8. Then",
+        "J. R. R. Tolkien wrote it. Then he left.", "Plan B. The team", "J. Robert Oppenheimer", "R. Then", "A. B. C.", "A.  B.", "A.\nB.", `Z.${NBSP}Y. Then`,
+        `${LAST_IN_BMP}A. B. Then`, `${LAST_IN_BMP}${DESERET_CAPITAL}. B. Then`, `${LINEAR_B}A. B. Then`, `${LINEAR_B}J. R. Then`, `${ASTRAL_DIGIT}A. B. Then`, `${ASTRAL_SMALL}A. B. Then`, `x${DESERET_CAPITAL}. J. Then`, `${DESERET_CAPITAL}. ${DESERET_CAPITAL}. Then`,
+        `${LINEAR_B}${ASTRAL_DIGIT}12. Then`, `${LINEAR_B} 7. Then`, `${LONE_LOW}${LONE_LOW}A. B. Then`, `${LONE_HIGH}${LONE_HIGH}A. B. Then`, `${LONE_HIGH}A. B. Then`, `${LONE_LOW}A. B. Then`,
+        `${ALPHA}. ${ALPHA}. Then`, `${ACUTE_CAPITAL}. J. Then`, "x. J. Then", "J.R. Then", "J. r. Then", "J.. R. Then",
+        'He said "Go." Then he left.', 'He said "Go. Then." Then left.', "“Go. Now.” Then", "「好。是的。」然後", "«Go. Now.» Then", '"unclosed. Then it ended. Then',
+        'a "b. C. d" e. F. "g. H." I.', "(One. Two.) Three.", "It held. (The team checked.) Fine.", "Wait... Then", `Wait${ELLIPSIS} Then`, "Really?! Yes. Wow!!! Okay.",
+        "我們發現了。它很重要。完成了嗎？是的！", "AI 找到答案。Then it ended.", "版本 2.5 已發布。完成。",
+        "e.g. Cf. Then", "cf. Then", "Cf. Then", "et al.Then", " et al. Then", "xet al. Then", "..et al. Then", "U.S. Then", "the U.S. Then", "oU.S. Then", "5U.S. Then",
+        "", " ", ".", ". ", "A.", "1.", "12.", " 12. A", "\n12. A", ". 12. A", `${LINE_SEPARATOR}12. A`, `${BOM}12. A`, "x\n 12. A",
+      ];
+      for (const text of texts) expect(splitSentences(text), JSON.stringify(text)).toEqual(referenceSplit(text));
+    });
+
+    /** Texts of about 100,000 characters in the shapes that made the earlier reader slow: each stop followed by a capital, an initial, a list marker, a quote or a closer. */
+    const BIG: [string, string][] = [
+      ["bare stops", ". ".repeat(50000)], ["a capital before each stop", "A. ".repeat(33334)], ["list markers", "1. ".repeat(33334)], ["abbreviations", "U.S. ".repeat(20000)],
+      ["short sentences", "It ran. ".repeat(12500)], ["a chain of initials", "J. R. ".repeat(16667)], ["a quoted sentence each", '"a." B '.repeat(14286)],
+      ["opening quotes never closed", '"a. B. '.repeat(14286)], ["one long quotation", `"${"Go. ".repeat(25000)}"`], ["runs of stops", "A!!! ".repeat(20000)],
+      ["closers after each stop", "A.))) ".repeat(16667)], ["long white space after each stop", `A.${" ".repeat(98)}`.repeat(1000)],
+    ];
+
+    it.each(BIG)("reads a text of 100,000 characters with %s in well under a second", (_name, text) => {
+      expect(text.length).toBeGreaterThanOrEqual(99000);
+      const before = performance.now();
+      const sentences = splitSentences(text);
+      expect(performance.now() - before).toBeLessThan(1000);
+      expect(sentences.every((x) => x !== "" && x === x.trim())).toBe(true);
+      expect(sentences.join("").replace(/\s+/g, "")).toBe(text.replace(/\s+/g, ""));
+    });
+
+    it.each(BIG)("gives the earlier reader's sentences on a text of the same shape, %s, cut to 400 characters", (_name, text) => {
+      for (const cut of [text.slice(0, 400), text.slice(137, 537), text.slice(-400)]) expect(splitSentences(cut)).toEqual(referenceSplit(cut));
+    });
+  });
 });
 
 // ── Numbers ──────────────────────────────────────────────────────────────────────────────────────

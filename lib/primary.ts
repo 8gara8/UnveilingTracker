@@ -34,7 +34,7 @@
 import type { ConfigFiles } from "./config";
 import { statementForm, type Checker, type Publisher, type Resolver } from "./schema/config";
 import type { Evidence } from "./schema/misc";
-import { blockedEntry, hostMatches, matchPath, normalizeUrl } from "./urls";
+import { blockedEntry, hostMatches, hostOf, matchPath, normalizeUrl } from "./urls";
 import { COUNTED_RUNGS, SOURCE_KINDS, type CountedRung, type SourceKind } from "./vocab";
 
 /** The three parsed files the allowlist reads: a `LoadedConfig`, or any object that holds them. */
@@ -171,6 +171,26 @@ function kindsOf(a: Address, config: PrimaryConfig): SourceKind[] {
 }
 
 /**
+ * The first `press_hosts` entry the host of `url` is or sits under, unless a `reaction_sources`, `labs.json` or `checkers.json`
+ * entry lists its host and its path, which wins (§4.11); null for no such entry and for a URL that does not parse. An address that
+ * is not https, has a user name or names a port is no entry's: no entry wins for it, so its host's place on the press list stands
+ * (`primaryTest()` refuses such an address for its shape before it asks, and the config check, which reads such a URL from a
+ * file the schema lets through, would otherwise let a press host pass). `primaryTest()` refuses a URL for this entry after its
+ * BLOCKED_HOSTS test, and the config check (CONFIG_CONFLICT, lib/config.ts) asks it of every host and source the files name, so
+ * both judge by host and path.
+ */
+export function pressHostFor(url: string, config: PrimaryConfig): string | null {
+  const a = addressOf(url);
+  const t = config.sourceTiers;
+  if (typeof a === "string") {
+    const host = hostOf(url);
+    return host === null ? null : t.press_hosts.find((h) => hostMatches(host, h)) ?? null;
+  }
+  const wins = [...t.reaction_sources, ...config.labs.labs, ...config.checkers.checkers].some((e) => names(a, e));
+  return wins ? null : t.press_hosts.find((h) => hostMatches(a.host, h)) ?? null;
+}
+
+/**
  * The URL test of §4.11 for every kind at once: the kinds `url` passes for, or why it passes for none. `isPrimary()` and
  * `primaryKindsFor()` read the kinds; `primaryProblem()` and `candidateRefusal()` read the reason.
  */
@@ -181,10 +201,8 @@ export function primaryTest(url: string, config: PrimaryConfig): PrimaryTest {
   if (blocked !== null) return refused("blocked_host", blocked.pattern);
 
   const t = config.sourceTiers;
-  // a reaction source, a lab or a checker that lists the host and the path wins over the press list (§4.11)
-  const wins = [...t.reaction_sources, ...config.labs.labs, ...config.checkers.checkers].some((e) => names(a, e));
-  const press = t.press_hosts.find((h) => hostMatches(a.host, h));
-  if (press !== undefined && !wins) return refused("press_host", press);
+  const press = pressHostFor(url, config);
+  if (press !== null) return refused("press_host", press);
   const path = deniedPath(a, t.publishers);
   if (path !== null) return refused("denied_path", path);
   const doi = deniedDoiPrefix(a, t.deny_doi_prefixes);

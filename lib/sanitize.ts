@@ -6,9 +6,10 @@
 // so items about prompt injection survive, wrapped and marked. Pure.
 // Cyber's lib/sanitize.ts at the fork commit 3ced1fb, adapted: INJECTION_PATTERNS lives here, as P1's list for
 // this project (Cyber kept it in lib/vocab.ts); INVISIBLE is written as controls plus the Unicode
-// Default_Ignorable_Code_Point property, a superset of Cyber's hand-made list that also holds the Arabic letter
-// mark, the Hangul and Khmer fillers and the other format controls, so no raw invisible character stands in
-// this file. The eight steps, the cut and the wrapper are unchanged.
+// Default_Ignorable_Code_Point property and general category Cf, a superset of Cyber's hand-made list that also
+// holds the Arabic letter mark, the Hangul and Khmer fillers, the other format controls, the Braille blank and
+// the object replacement character, so no raw invisible character stands in this file. The eight steps, the cut
+// and the wrapper are unchanged.
 
 import { load } from "cheerio";
 
@@ -20,9 +21,13 @@ export const SANITIZE_MAX = 1000;
  * the soft hyphen and the Arabic letter mark; the Mongolian vowel separator and its variation selectors; the
  * zero-width and directional marks; bidi embeddings, overrides and isolates; invisible operators and the
  * deprecated format controls; the byte order mark; the Hangul and Khmer fillers; variation selectors; and the
- * tag characters. One `u`-flag expression, without `g` so `.test()` is stateless; sanitize() uses a global copy.
+ * tag characters. Also every other format character (general category Cf: the Arabic number signs, the Syriac
+ * abbreviation mark, the interlinear annotation marks, the Egyptian hieroglyph format controls and the like),
+ * the Braille blank (U+2800) and the object replacement character (U+FFFC), none of which a reader sees as a
+ * character. Private-use code points are kept: they show as boxes, which a reader does see. One `u`-flag
+ * expression, without `g` so `.test()` is stateless; sanitize() uses a global copy.
  */
-export const INVISIBLE = /[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x9F\p{Default_Ignorable_Code_Point}]/u;
+export const INVISIBLE = /[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x9F\p{Default_Ignorable_Code_Point}\p{Cf}\u2800\uFFFC]/u;
 const INVISIBLE_G = new RegExp(INVISIBLE.source, "gu");
 
 const SOURCE_ID_RE = /^[a-z0-9][a-z0-9-]*$/;

@@ -3,7 +3,7 @@
 // since a sort of a comparator that is not an order has no defined result. New: Cyber's tests reach its id
 // comparators only through its feed and rank tests, and this project's comparators are its own.
 import { describe, expect, it } from "vitest";
-import { byCodeUnit, compareFindingIds, compareSourceIds } from "@/lib/ids";
+import { byCodeUnit, compareFindingIds, compareSourceIds, termIdOf } from "@/lib/ids";
 
 type Compare = (a: string, b: string) => number;
 
@@ -140,5 +140,25 @@ describe("compareSourceIds (SPEC §4.3: s1 to sN in a finding, b1 to bN in a bri
     const sample = new Set<string>(["", "s0", "s01", "new-1", "s1a", "b", "S2"]);
     while (sample.size < 40) sample.add(`${random() < 0.5 ? "s" : "b"}${Math.floor(random() * 120) + 1}`);
     expectOrder(compareSourceIds, [...sample]);
+  });
+});
+
+describe("termIdOf (SPEC §4.3: a new term's id is its English term in kebab case)", () => {
+  it("lower-cases, drops accents and makes each run of other characters one hyphen, with none at either end", () => {
+    expect(termIdOf("Protein folding")).toBe("protein-folding");
+    expect(termIdOf("  Cas9 -- gene   editing! ")).toBe("cas9-gene-editing");
+    expect(termIdOf("Schrödinger equation")).toBe("schrodinger-equation");
+    expect(termIdOf("COVID-19")).toBe("covid-19");
+  });
+
+  it("gives an empty id to a term with no letter or digit of a to z, which TERM_DEFINED refuses", () => {
+    expect(termIdOf("光")).toBe("");
+    expect(termIdOf("---")).toBe("");
+    expect(termIdOf("")).toBe("");
+  });
+
+  it("gives one id to terms that differ only in case, accents or punctuation", () => {
+    expect(termIdOf("Dark-matter")).toBe(termIdOf("dark matter"));
+    expect(termIdOf("Café")).toBe(termIdOf("cafe"));
   });
 });

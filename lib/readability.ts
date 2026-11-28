@@ -80,7 +80,9 @@ function syllablesOfLetters(word: string): number {
  */
 export function countSyllables(word: string): number {
   let total = 0;
-  for (const piece of word.split(/[^\p{L}'’]+/u)) {
+  // The runs of letters and apostrophes, read one by one: a split on the run of other characters between them overflows
+  // the stack on a few million combining marks.
+  for (const [piece] of word.matchAll(/[\p{L}'’]+/gu)) {
     const acronym = /^(\p{Lu}{2,})(?:['’]?s)?$/u.exec(piece);
     const contraction = NT_RE.exec(piece);
     if (acronym) total += latinLetters(acronym[1]!).length;
@@ -109,14 +111,22 @@ export interface ReadingStats {
 }
 
 /**
+ * A token from its first letter or digit to its last: what is left when the characters before the first and after the
+ * last are taken away. It is read from the first one forward, and not by stripping the end with `[^\p{L}\p{N}]+$`, which
+ * tries every start of a long run of marks (a token of 100,000 marks before one letter took seconds). The token has a
+ * letter or a digit (WORDISH_RE), so it always matches.
+ */
+const CORE_RE = /[\p{L}\p{N}](?:.*[\p{L}\p{N}])?/su;
+
+/**
  * Which words count in the sentence's syllable average: not a word with a digit, not a capitalised word that is not
  * the sentence's first (a name or an acronym; the pronoun I and its contractions are not names), and not a word
- * that overlaps one of the finding's own terms (`ranges`, the term matches in the sentence).
+ * that overlaps one of the finding's own terms (`inTerm`: the word's place overlaps a term match in the sentence).
  */
-function inAverage(core: string, first: boolean, from: number, to: number, ranges: readonly (readonly [number, number])[]): boolean {
+function inAverage(core: string, first: boolean, inTerm: boolean): boolean {
   if (/\p{N}/u.test(core)) return false;
   if (!first && /^\p{Lu}/u.test(core) && !/^I(?:['’]\p{Ll}+)?$/u.test(core)) return false;
-  return !ranges.some(([a, b]) => a < to && from < b);
+  return !inTerm;
 }
 
 /**
@@ -131,14 +141,21 @@ export function readingStats(text: string, opts: { terms?: readonly string[] } =
   let syllableWords = 0;
   let syllables = 0;
   for (const sentence of splitSentences(blankUrls(text))) {
-    const ranges = termRes.flatMap((re) => [...sentence.matchAll(re)].map((m) => [m.index, m.index + m[0].length] as const));
+    // The matches of the finding's terms in the sentence, by where they start. The words come in order, so the first match that ends after
+    // a word starts is the one that starts earliest of those that can overlap it: the word overlaps a match when that one starts before it ends.
+    // One step forward for each match and word, and not a look at every match for each word.
+    const stretches = termRes.flatMap((re) => [...sentence.matchAll(re)].map((m) => [m.index, m.index + m[0].length] as const))
+      .sort((a, b) => a[0] - b[0]);
+    let next = 0;
     let first = true;
     for (const token of sentence.matchAll(/\S+/gu)) {
       if (!WORDISH_RE.test(token[0])) continue;
       if (first) sentences += 1;
-      const core = token[0].replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, "");
+      const core = CORE_RE.exec(token[0])![0];
       const count = countSyllables(token[0]);
-      if (count > 0 && inAverage(core, first, token.index, token.index + token[0].length, ranges)) {
+      const to = token.index + token[0].length;
+      while (next < stretches.length && stretches[next]![1] <= token.index) next += 1;
+      if (count > 0 && inAverage(core, first, next < stretches.length && stretches[next]![0] < to)) {
         syllableWords += 1;
         syllables += count;
       }

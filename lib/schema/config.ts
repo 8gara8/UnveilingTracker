@@ -121,7 +121,7 @@ function statementFits(entry: string): boolean {
 }
 
 const StatementEntry = z.string().refine(statementFits, {
-  error: "Expected a suffix (.edu), a host (mpg.de) or a host with a path prefix (cell.com/newsroom), all lower case",
+  error: "Expected a suffix (.edu), a host (mpg.de) or a host with a path prefix (cell.com/newsroom): a suffix and a host are lower case, and a path starts with / and has no space, ? or #",
 });
 
 // ── run.json ─────────────────────────────────────────────────────────────────────────────────────

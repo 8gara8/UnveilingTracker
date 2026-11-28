@@ -159,33 +159,91 @@ function startsNextSentence(text: string, end: number): boolean {
   return QUOTE_OPENERS.includes(next) || /^[\p{Lu}\p{Nd}]$/u.test(next);
 }
 
-function endsWithAbbreviation(through: string): boolean {
+/** True for a character that a name, a number or a dot continues: the lookbehind of the abbreviation, list-marker and initial tests. */
+const CONTINUES_RE = /^[\p{L}\p{N}.]$/u;
+const UPPER_RE = /^\p{Lu}$/u;
+const SPACE_RE = /\s/u;
+
+/**
+ * The code point that ends right before `end` in `text` (a surrogate pair whole, a lone surrogate as it is), with where it starts; the
+ * empty string, starting at -1, at the start of the text. A pair starts two units back exactly when the code point read there is
+ * beyond the BMP (`codePointAt()` is undefined before the text).
+ */
+function codePointBefore(text: string, end: number): { char: string; at: number } {
+  const at = (text.codePointAt(end - 2) ?? 0) >= 0x10000 ? end - 2 : end - 1;
+  return { char: at < 0 ? "" : text.slice(at, end), at };
+}
+
+/** True when the code point that ends right before `end` is not a letter, a digit or a dot (or there is none): what a lookbehind `(?<![\p{L}\p{N}.])` asks. */
+function standsAlone(text: string, end: number): boolean {
+  return !CONTINUES_RE.test(codePointBefore(text, end).char);
+}
+
+/** The text up to and including the stop at `stop` ends with an ABBREVIATIONS entry (as written, or capitalised), after a character that is not a letter, digit or dot (one UTF-16 unit is read, so half of an astral letter is none). */
+function endsWithAbbreviation(text: string, stop: number): boolean {
   return ABBREVIATION_FORMS.some((form) => {
-    if (!through.endsWith(form)) return false;
-    return !/[\p{L}\p{N}.]/u.test(through.charAt(through.length - form.length - 1));
+    const from = stop + 1 - form.length;
+    return from >= 0 && text.startsWith(form, from) && !CONTINUES_RE.test(text.charAt(from - 1));
   });
 }
 
-/** The one or two digits right before the stop open the text, a line or the sentence: "1. Item". */
+/** Where the one or two digits right before the stop at `stop` start (the longer run first), or null when no digit stands there. */
+function trailingDigitsAt(text: string, stop: number): number | null {
+  for (const at of [stop - 2, stop - 1]) {
+    if (at >= 0 && /^[0-9]{1,2}$/.test(text.slice(at, stop))) return at;
+  }
+  return null;
+}
+
+/**
+ * The one or two digits right before the stop open the text, a line or the sentence (which starts at `sentenceStart`): "1. Item".
+ * Nothing but white space may come before them on their line or in their sentence, so no letter, digit or dot stands before them.
+ */
 function isListMarker(text: string, sentenceStart: number, stop: number): boolean {
-  const digits = /(?<![\p{L}\p{N}.])\d{1,2}$/u.exec(text.slice(0, stop));
-  if (!digits) return false;
-  const lineStart = text.lastIndexOf("\n", digits.index - 1) + 1;
-  return text.slice(Math.max(sentenceStart, lineStart), digits.index).trim() === "";
+  const at = trailingDigitsAt(text, stop);
+  if (at === null) return false;
+  // Blank from the start of the sentence or of the line (the last line break before the digits) to the digits.
+  for (let k = at - 1; k >= sentenceStart; k -= 1) {
+    const char = text.charAt(k);
+    if (char === "\n") return true;
+    if (!SPACE_RE.test(char)) return false;
+  }
+  return true;
 }
 
 /** The capital right before the stop is a lone initial next to another one: "J. R. R." */
 function isInitialInChain(text: string, stop: number): boolean {
-  if (!/(?<![\p{L}\p{N}.])\p{Lu}$/u.test(text.slice(0, stop))) return false;
-  return /(?<![\p{L}\p{N}.])\p{Lu}\.\s+$/u.test(text.slice(0, stop - 1)) || /^\s+\p{Lu}\.(?=\s|$)/u.test(text.slice(stop + 1));
+  const capital = codePointBefore(text, stop);
+  if (!UPPER_RE.test(capital.char) || !standsAlone(text, capital.at)) return false;
+  // Another initial before it: "X.", whitespace, then this capital (the text up to the capital ends with "X." and whitespace).
+  let k = stop - 1;
+  while (SPACE_RE.test(text.charAt(k - 1))) k -= 1;
+  if (text.charAt(k - 1) === ".") {
+    const before = codePointBefore(text, k - 1);
+    if (UPPER_RE.test(before.char) && standsAlone(text, before.at)) return true;
+  }
+  // Or another initial after it: the stop, whitespace, "X." and then whitespace or the end.
+  let j = stop + 1;
+  while (SPACE_RE.test(text.charAt(j))) j += 1;
+  const code = text.codePointAt(j);
+  if (code === undefined) return false;
+  const next = String.fromCodePoint(code);
+  const after = j + next.length;
+  return UPPER_RE.test(next) && text.charAt(after) === "." && (after + 1 >= text.length || SPACE_RE.test(text.charAt(after + 1)));
 }
 
 /**
  * The sentences of `text` (SPEC §4.1), trimmed, in order, none empty. Prose without a stop is one sentence and
- * an empty or blank text has none. The rules and the decided edge cases are in the comment above.
+ * an empty or blank text has none. The rules and the decided edge cases are in the comment above. Each stop is judged by
+ * the few characters around it and by one running tally of the quoted spans, so the work grows with the length of the
+ * text, not with its number of stops (a 100,000-character run of stops takes milliseconds).
  */
 export function splitSentences(text: string): string[] {
-  const spans = quotedSpans(text);
+  // A stop at `stop` whose closers end at `end` is inside a span that opened before it and closes at or after `end`: the
+  // furthest close among the spans opened before the stop says so. The stops come in order, so the spans are taken in order.
+  const spans = quotedSpans(text).sort((a, b) => a[0] - b[0]);
+  let taken = 0;
+  let furthest = -1;
   const out: string[] = [];
   const push = (from: number, to: number): void => {
     const sentence = text.slice(from, to).trim();
@@ -198,8 +256,12 @@ export function splitSentences(text: string): string[] {
     let end = stop + m[0].length;
     while (end < text.length && CLOSERS.includes(text.charAt(end))) end += 1;
     if (!chinese && !startsNextSentence(text, end)) continue;
-    if (spans.some(([open, close]) => open < stop && end <= close)) continue;
-    if (m[0] === "." && (endsWithAbbreviation(text.slice(0, stop + 1)) || isListMarker(text, start, stop) || isInitialInChain(text, stop))) continue;
+    while (taken < spans.length && spans[taken]![0] < stop) {
+      furthest = Math.max(furthest, spans[taken]![1]);
+      taken += 1;
+    }
+    if (end <= furthest) continue;
+    if (m[0] === "." && (endsWithAbbreviation(text, stop) || isListMarker(text, start, stop) || isInitialInChain(text, stop))) continue;
     push(start, end);
     start = end;
   }
@@ -371,7 +433,8 @@ export function numbersIn(text: string, opts: { words?: boolean } = {}): NumberT
     const value = Number(`${digits}${decimals ? `.${frac}` : ""}`) * multiplier;
     const step = 10 ** -decimals * multiplier;
     const all = digits + frac;
-    const trailingZeros = all.length - all.replace(/0+$/, "").length;
+    let trailingZeros = 0;
+    while (all.charCodeAt(all.length - 1 - trailingZeros) === 0x30) trailingZeros += 1; // `/0+$/` tries every start of a long run of zeros
     const approxStep = all.replace(/0/g, "") === "" ? step : step * 10 ** trailingZeros;
     out.push({
       raw: raw.trim(),

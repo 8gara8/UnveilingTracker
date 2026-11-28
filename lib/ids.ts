@@ -13,6 +13,14 @@ const FINDING_ID_RE = /^(math|phys|chem|bio|earth|soc|hum)-(\d{4})-(\d{4})$/;
 /** `s3` in a finding, `b12` in a brief (§4.3): a letter and a number without a leading zero. */
 const SOURCE_ID_RE = /^([sb])([1-9][0-9]*)$/;
 
+/**
+ * The id a new glossary term is stored under: its English term in kebab case (§4.3). Lower case, accents dropped, and every
+ * run of characters that are no letter or digit one hyphen, with none at either end. TERM_DEFINED reads it, and so do
+ * publish and the Chinese stage, so that one function says what a term's id is.
+ */
+export const termIdOf = (term: string): string =>
+  term.normalize("NFKD").replace(/\p{M}+/gu, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+
 /** Plain UTF-16 code-unit order, the same on every platform and locale. Never localeCompare. */
 export const byCodeUnit = (a: string, b: string): number => (a < b ? -1 : a > b ? 1 : 0);
 

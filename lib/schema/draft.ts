@@ -70,7 +70,7 @@ export const DraftFindingRung = DraftRung.extend({
 
 export const DraftTermNew = z.strictObject({
   new: z.literal(true),
-  term: z.string().min(1).max(TERM_ID_MAX).describe(`The English term, at most ${TERM_ID_MAX} characters; its id is its kebab-case form`),
+  term: z.string().min(1).max(TERM_ID_MAX).describe(`The English term, at most ${TERM_ID_MAX} characters, with at least one letter a to z or digit; its id is its kebab-case form, which no glossary term and no other new term of the draft may have`),
   definition: words("At most 40 words, plain, using no other undefined jargon"),
 });
 

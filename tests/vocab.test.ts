@@ -343,7 +343,7 @@ describe("SOURCE_KINDS", () => {
 
   it("explain each kind in the spec's own words where it gives them, and in its style where it does not", () => {
     const glosses = [...specCell("SOURCE_KINDS").matchAll(/`([a-z_]+)` ([^·]+?) · ([^(·`]+?) \(([^)]+)\)/g)];
-    expect(glosses.map((m) => m[1])).toEqual(["paper", "proof", "registry", "statement", "lab_post", "checker", "reaction", "notice"]);
+    expect(glosses.map((m) => m[1])).toEqual(["paper", "preprint", "proof", "dataset", "registry", "statement", "lab_post", "checker", "reaction", "notice"]);
     for (const m of glosses) {
       expect(SOURCE_KIND_INFO[m[1] as SourceKind].means, m[1]).toBe(m[4]!.replace(/, §[\d.]+$/, ""));
     }

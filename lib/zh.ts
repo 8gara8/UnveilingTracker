@@ -6,7 +6,7 @@
 // What is here, by rule:
 // - ZH_CHARS: `countZhChars()`.
 // - ZH_PARITY: `parityNumbers()`, `parityGaps()` (English numbers against Chinese ones), `urlsIn()`, `latinWordsMissing()` and
-//   `parityProblems()`, which runs all four.
+//   `parityProblems()`, which runs all four; `wordsOutsideLinks()` leaves out of the Latin words those that a link spells.
 // - ZH_TRADITIONAL: `traditionalHits()`. ZH_AVOID: `avoidHits()`. ZH_NO_DASH: `dashHits()`. ZH_HYPE: `hypeHits()`.
 // - ZH_TERMS: `fixedOccurrences()`, `fixedApplies()`, `fixedEntriesFor()` (the context's `fixed` list: `fields` and `except` only)
 //   and `fixedMissing()` (which also skips a name the Chinese keeps in English, found by `nameRuns()`).
@@ -24,12 +24,22 @@
 // - parityGaps(): a set comparison, so a number repeated in one language needs no repeat in the other. An English month name
 //   frees its number, "May" as a sentence's first word only before a day or a year; an English number word from one to ten frees
 //   its digit, and "three percent" also frees 3%, since STYLE-ZH.md §5 has a percentage written with %.
-// - latinWordsMissing(): case does not matter, bracketed English terms (full-width brackets) are skipped, and a Latin word is a
-//   run of Latin letters and digits that holds a letter.
+// - latinWordsMissing(): case does not matter, a full-width bracket that holds a glossary term's English (one of the names it is
+//   given) is skipped and any other bracketed run is read like the text around it, and a Latin word is a run of Latin letters and
+//   digits that holds a letter.
 // - nameRuns(): the capitalised-run rule of §4.11 with the decided change (a run starts at its first capitalised word that is not a
 //   sentence-initial article and ends at "and"); of, the, for, de and von join, and only spaces stand between a run's words.
 // - englishOnceProblems(): the English term follows the first use at once in full-width brackets (case and inner spaces ignored);
-//   a later use or the title is refused it in either bracket width.
+//   a later use or the title is refused it in either bracket width. Terms that share one Chinese (dataset and data set) are one
+//   group: the first use of that Chinese needs the English of any of them, and the group is reported once, not term by term.
+// - Linear time (F-70): the Chinese pass is a model run that a hostile page may steer, so a string of 5 MB must cost the checks of ZH_PARITY
+//   what its length costs and never throw: no rescan of the text before a hit (the 百分之 before a number and the opening of a sentence are
+//   found by looking back over the characters just before, which are never read twice), no pattern whose scheme or run has no limit
+//   (`urlsIn()` reads a scheme of at most 32 characters, as the address check of the safety rules does), no comparison of each result with
+//   each other one, and no regular expression that loops over a whole run of millions of characters (the engine's stack overflows there:
+//   `latinWordsMissing()` reads a long run in pieces of 4,096 and joins them). Each of these has a test with a 5 MB string. The review of
+//   F-70 found the same cost in ZH_AVOID: `avoidHits()` copied the text for each hit it masked, so it masks the hits of one term together.
+//   A scheme that is longer than 32 characters is read from its last 32, so it is found only when a letter stands among them.
 // New for this project; Cyber has no Chinese pass.
 
 import type { ConfigIndex } from "./config";
@@ -90,15 +100,17 @@ export interface ParityNumber {
   index: number;
 }
 
-/** A number is each run of digits, thousands separators (a comma and exactly three digits) dropped, then an optional decimal part. */
-const NUMBER_RE = /(?:\d{1,3}(?:,\d{3})+(?!\d)|\d+)(?:\.\d+)?/g;
+/** A number is each run of digits, thousands separators (a comma and exactly three digits) dropped, then an optional decimal part: the whole part is group 1, the decimal digits group 2. */
+const NUMBER_RE = /((?:\d{1,3}(?:,\d{3})+(?!\d)|\d+))(?:\.(\d+))?/g;
 const SPACES = " \\u00A0\\u2009\\u202F";
 /** After a number: a thousand, million or billion (a space or a hyphen between), or 萬 or 億 (nothing or a space between). */
 const MULTIPLIER_RE = new RegExp(`^(?:[${SPACES}-](thousand|million|billion)(?!\\p{L})|[${SPACES}]?(萬|億))`, "iu");
 /** After a number: %, "per cent" or "percent" (a word boundary, so "percentage" is not one). */
 const PERCENT_RE = new RegExp(`^(?:[${SPACES}]*%|[${SPACES}-]per[ \\u00A0]?cent(?!\\p{L}))`, "iu");
+/** One of the white-space characters that may stand between a number and its 百分之, a multiplier or a percent sign. */
+const SPACE_RE = new RegExp(`^[${SPACES}]$`, "u");
 /** Before a number: 百分之. */
-const PERCENT_PREFIX_RE = new RegExp(`百分之[${SPACES}]*$`, "u");
+const PERCENT_PREFIX = "百分之";
 /** The decimal places a multiplier moves the point: thousand 3, million 6, billion 9, 萬 4, 億 8. 千 is not read. */
 const SHIFT: Readonly<Record<string, number>> = { thousand: 3, million: 6, billion: 9, "萬": 4, "億": 8 };
 
@@ -110,8 +122,21 @@ function foldWidth(text: string): string {
     .replaceAll("％", "%");
 }
 
+/**
+ * How many characters of 百分之, and the white space after it, end at `at` in `s`: the length of the match of `百分之[SPACES]*$` on the
+ * text before `at`, or 0. Read backward from `at`, so that a text with a million numbers is not read a million times over.
+ */
+function percentPrefixLength(s: string, at: number): number {
+  let from = at;
+  while (from > 0 && SPACE_RE.test(s[from - 1]!)) from -= 1;
+  const start = from - PERCENT_PREFIX.length;
+  return start >= 0 && s.startsWith(PERCENT_PREFIX, start) ? at - start : 0;
+}
+
 /** `int.frac` times ten to the `shift`, as a plain decimal with no leading zero and no trailing zero after the point. */
 function decimalValue(int: string, frac: string, shift: number): string {
+  // A whole number with no multiplier and no leading zero is its own value: the case a text of millions of numbers repeats.
+  if (shift === 0 && frac === "" && !int.startsWith("0")) return int;
   const point = int.length + shift;
   const digits = (int + frac).padEnd(point, "0");
   const whole = digits.slice(0, point).replace(/^0+/, "") || "0";
@@ -120,17 +145,14 @@ function decimalValue(int: string, frac: string, shift: number): string {
 }
 
 /**
- * The numbers of a text, read the same way in either language (§4.12 ZH_PARITY): each run of digits, glued to letters or not
- * (12th, COVID-19), years and dates included, with thousands separators dropped and decimals kept; full-width digits and ％ read
- * as ASCII ones. A thousand, million or billion after it (a space or a hyphen between), or a 萬 or 億 after it, multiplies it
- * (70 萬 is 700000; 千 is not read, as it starts units such as 千瓦); a %, "per cent" or "percent" after it, or a 百分之 before
- * it, makes it a percentage. Chinese numerals (一, 三, 兩, 百) are not read. In order of appearance, repeats included.
+ * Calls `visit` with each number of a text, as `parityNumbers()` reads them, in order of appearance, repeats included. No list is
+ * kept: a text of millions of numbers read into a list costs the engine six times what reading it through does.
  */
-export function parityNumbers(text: string): ParityNumber[] {
+function eachNumber(text: string, visit: (found: ParityNumber) => void): void {
   const s = foldWidth(text);
-  const out: ParityNumber[] = [];
   for (const m of s.matchAll(NUMBER_RE)) {
-    const [int = "", frac = ""] = m[0].replaceAll(",", "").split(".");
+    const int = m[1]!.replaceAll(",", "");
+    const frac = m[2] ?? "";
     const rest = s.slice(m.index + m[0].length);
     let shift = 0;
     let percent = false;
@@ -145,15 +167,29 @@ export function parityNumbers(text: string): ParityNumber[] {
       length += pct[0].length;
     }
     let start = m.index;
-    const prefix = PERCENT_PREFIX_RE.exec(s.slice(0, start));
-    if (prefix) {
+    const prefix = percentPrefixLength(s, start);
+    if (prefix > 0) {
       percent = true;
-      start -= prefix[0].length;
-      length += prefix[0].length;
+      start -= prefix;
+      length += prefix;
     }
     const value = decimalValue(int, frac, shift);
-    out.push({ value, percent, key: percent ? `${value}%` : value, text: text.slice(start, start + length), index: start });
+    visit({ value, percent, key: percent ? `${value}%` : value, text: text.slice(start, start + length), index: start });
   }
+}
+
+/**
+ * The numbers of a text, read the same way in either language (§4.12 ZH_PARITY): each run of digits, glued to letters or not
+ * (12th, COVID-19), years and dates included, with thousands separators dropped and decimals kept; full-width digits and ％ read
+ * as ASCII ones. A thousand, million or billion after it (a space or a hyphen between), or a 萬 or 億 after it, multiplies it
+ * (70 萬 is 700000; 千 is not read, as it starts units such as 千瓦); a %, "per cent" or "percent" after it, or a 百分之 before
+ * it, makes it a percentage. Chinese numerals (一, 三, 兩, 百) are not read. In order of appearance, repeats included.
+ */
+export function parityNumbers(text: string): ParityNumber[] {
+  const out: ParityNumber[] = [];
+  eachNumber(text, (n) => {
+    out.push(n);
+  });
   return out;
 }
 
@@ -162,15 +198,25 @@ const MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "Ju
 /** The full names, then the three-letter forms that monthShort() writes ("Sep" for September), as whole words. */
 const MONTH_RE = new RegExp(`(?<!\\p{L})(${[...MONTH_NAMES, ...MONTH_NAMES.map((_, i) => monthShort(i + 1))].join("|")})(?!\\p{L})`, "gu");
 const OPENERS = "\"'“‘„«‹「『([{（【";
-const OPENING_TAIL_RE = new RegExp(`[\\s${escapeRegExp(OPENERS)}]*$`, "u");
-const STOP_THEN_CLOSERS_RE = /[.!?。？！][)\]}"'”’»」』）】]*$/u;
+const OPENING_RE = new RegExp(`^[\\s${escapeRegExp(OPENERS)}]$`, "u");
+const STOPS = ".!?。？！";
+const CLOSERS = ")]}\"'”’»」』）】";
 
-/** Whether the word at `index` is a sentence's first: the text opens with it, or a line break or a stop (. ! ? 。 ？ ！) and then only quotes and brackets come before it. */
+/**
+ * Whether the word at `index` is a sentence's first: the text opens with it, or a line break or a stop (. ! ? 。 ？ ！) and then only
+ * quotes and brackets come before it. Read backward from the word, over the white space and opening marks just before it, then over
+ * the closing marks: each character is read once for the word that follows it, so a text with a million words is read once, not a million times.
+ */
 function startsSentence(text: string, index: number): boolean {
-  const before = text.slice(0, index);
-  const skipped = OPENING_TAIL_RE.exec(before)![0];
-  const rest = before.slice(0, before.length - skipped.length);
-  return rest === "" || skipped.includes("\n") || STOP_THEN_CLOSERS_RE.test(rest);
+  let at = index;
+  let lineBreak = false;
+  while (at > 0 && OPENING_RE.test(text[at - 1]!)) {
+    at -= 1;
+    if (text[at] === "\n") lineBreak = true;
+  }
+  if (at === 0 || lineBreak) return true;
+  while (at > 0 && CLOSERS.includes(text[at - 1]!)) at -= 1;
+  return at > 0 && STOPS.includes(text[at - 1]!);
 }
 
 /**
@@ -214,7 +260,15 @@ export interface ParityGaps {
   extra: ParityNumber[];
 }
 
-const distinct = (numbers: readonly ParityNumber[]): ParityNumber[] => numbers.filter((n, i) => numbers.findIndex((o) => o.key === n.key) === i);
+/** Each number once, the first of its key, in order. One pass with a set: comparing each number with every earlier one would cost the square of their count. */
+function distinct(numbers: readonly ParityNumber[]): ParityNumber[] {
+  const seen = new Set<string>();
+  return numbers.filter((n) => {
+    if (seen.has(n.key)) return false;
+    seen.add(n.key);
+    return true;
+  });
+}
 
 /**
  * ZH_PARITY's numbers (§4.12): every English number appears in the Chinese with the same value (a percentage as a percentage), and
@@ -224,16 +278,25 @@ const distinct = (numbers: readonly ParityNumber[]): ParityNumber[] => numbers.f
 export function parityGaps(en: Strings, zh: Strings): ParityGaps {
   const english = joinText(en);
   const inEnglish = parityNumbers(english);
-  const inChinese = parityNumbers(joinText(zh));
-  const have = new Set(inChinese.map((n) => n.key));
   const known = new Set([...inEnglish.map((n) => n.key), ...englishMonthNumbers(english).map(String), ...englishNumberWordKeys(english)]);
-  return { missing: distinct(inEnglish.filter((n) => !have.has(n.key))), extra: distinct(inChinese.filter((n) => !known.has(n.key))) };
+  // The Chinese is read once and never kept (it is the draft's, which may be millions of numbers): its first number of each key is an
+  // extra when the English does not know the key.
+  const have = new Set<string>();
+  const extra: ParityNumber[] = [];
+  eachNumber(joinText(zh), (n) => {
+    if (have.has(n.key)) return;
+    have.add(n.key);
+    if (!known.has(n.key)) extra.push(n);
+  });
+  return { missing: distinct(inEnglish.filter((n) => !have.has(n.key))), extra };
 }
 
 // ── Links and Latin words (ZH_PARITY) ────────────────────────────────────────────────────────────
 
+/** The longest scheme `urlsIn()` reads before `://`: an RFC 3986 scheme has no limit, but a pattern that scans without one is quadratic in a long run of letters (32 is the limit of the safety rules' address reader). */
+const SCHEME_MAX = 32;
 const URL_RES: readonly RegExp[] = [
-  /[A-Za-z][A-Za-z0-9+.-]*:\/\/\S+/g,
+  new RegExp(`[A-Za-z][A-Za-z0-9+.-]{0,${SCHEME_MAX - 1}}:\\/\\/\\S+`, "g"),
   /(?<![\p{L}\p{N}.@])www\.\S+/giu,
   /(?<![\p{L}\p{N}.@-])(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z]{2,}(?![\p{Script=Latin}\p{N}-])(?:[/?#]\S*)?/giu,
 ];
@@ -258,19 +321,37 @@ export function urlsIn(text: string): string[] {
 }
 
 const BRACKETED_RE = /（[^（）]*）/gu;
-const LATIN_WORD_RE = /[\p{Script=Latin}\p{Nd}]+/gu;
+/** The most characters of a run that one match of the word pattern reads: a pattern that loops over millions of characters at once overruns the engine's stack. */
+const WORD_PIECE = 4096;
+const LATIN_WORD_RE = new RegExp(`[\\p{Script=Latin}\\p{Nd}]{1,${WORD_PIECE}}`, "gu");
 const HAS_LATIN_LETTER = /\p{Script=Latin}/u;
 
-const latinWordsOf = (text: string): string[] => (text.match(LATIN_WORD_RE) ?? []).filter((w) => HAS_LATIN_LETTER.test(w));
+/** The runs of Latin letters and digits of a text that hold a letter, as written, in order. A run longer than WORD_PIECE comes in pieces that touch, which are joined. */
+function latinWordsOf(text: string): string[] {
+  const runs: string[] = [];
+  let end = -1;
+  for (const m of text.matchAll(LATIN_WORD_RE)) {
+    if (m.index === end) runs[runs.length - 1] += m[0];
+    else runs.push(m[0]);
+    end = m.index + m[0].length;
+  }
+  return runs.filter((w) => HAS_LATIN_LETTER.test(w));
+}
+
+/** A term's English as a bracket may hold it: case and runs of white space do not matter (the same test as `bracketMatcher()`). */
+const termKey = (text: string): string => text.trim().split(/\s+/u).join(" ").toLowerCase();
 
 /**
- * The Latin words of the Chinese that the English lacks (ZH_PARITY: "no Latin word that the English lacks, except bracketed English
- * terms"), as written, each once, in order of appearance. A Latin word is a run of Latin letters and digits that holds a letter
- * (AlphaFold, CO2, Cas9), so COVID-19 is the word COVID; case does not matter; whatever stands in full-width brackets is skipped.
+ * The Latin words of the Chinese that the English lacks (ZH_PARITY: no Latin word that the English lacks, except the English name of
+ * a glossary term in full-width brackets), as written, each once, in order of appearance. A Latin word is a run of Latin letters and
+ * digits that holds a letter (AlphaFold, CO2, Cas9), so COVID-19 is the word COVID; case does not matter. A run in full-width
+ * brackets is skipped only when it is one of `terms` (the English names of the glossary terms that apply: the whole run, case and
+ * runs of white space ignored); any other bracketed run is read as the text around it is, so its Latin words must be in the English.
  */
-export function latinWordsMissing(en: Strings, zh: Strings): string[] {
+export function latinWordsMissing(en: Strings, zh: Strings, terms: readonly string[] = []): string[] {
   const english = new Set(latinWordsOf(joinText(en)).map((w) => w.toLowerCase()));
-  const outside = joinText(zh).replace(BRACKETED_RE, " ");
+  const names = new Set(terms.map(termKey));
+  const outside = joinText(zh).replace(BRACKETED_RE, (run) => (names.has(termKey(run.slice(1, -1))) ? " " : run));
   return [...new Set(latinWordsOf(outside).filter((w) => !english.has(w.toLowerCase())))];
 }
 
@@ -282,9 +363,22 @@ export interface ParityProblems extends ParityGaps {
   latin: string[];
 }
 
-/** All of ZH_PARITY (§4.12) for one Chinese text and its English: the numbers both ways, the URLs and the Latin words. */
-export function parityProblems(en: Strings, zh: Strings): ParityProblems {
-  return { ...parityGaps(en, zh), urls: urlsIn(joinText(zh)), latin: latinWordsMissing(en, zh) };
+/**
+ * The Latin words of `words` that no link of `urls` spells (the letters of a link are no Latin words of their own: the link is the
+ * problem), as written, in order. A word is spelled by a link when it is one of the words of a link, case aside. The words of every
+ * link are read once into a set, so a text of tens of thousands of links and words costs their length, not their product.
+ */
+export function wordsOutsideLinks(words: readonly string[], urls: readonly string[]): string[] {
+  const spelled = new Set(latinWordsOf(urls.join("\n")).map((w) => w.toLowerCase()));
+  return words.filter((w) => !spelled.has(w.toLowerCase()));
+}
+
+/**
+ * All of ZH_PARITY (§4.12) for one Chinese text and its English: the numbers both ways, the URLs and the Latin words. `terms` are the
+ * English names of the glossary terms whose English may stand in full-width brackets (`latinWordsMissing()`).
+ */
+export function parityProblems(en: Strings, zh: Strings, terms: readonly string[] = []): ParityProblems {
+  return { ...parityGaps(en, zh), urls: urlsIn(joinText(zh)), latin: latinWordsMissing(en, zh, terms) };
 }
 
 // ── Taiwan usage: characters, avoided terms, dashes and hype ─────────────────────────────────────
@@ -323,15 +417,27 @@ export interface AvoidHit {
  * ZH_AVOID (§4.11, §4.12): every `avoid` term left in a text once every `fixed` translation and every `allow_in` string is masked
  * (Chinese has no spaces, so a term can sit inside a Taiwan word, as one sits inside 演算法). The longest term goes first and its hits are
  * masked, so a term inside a longer one is not reported twice. In order of position; `taiwan` is the form to write instead.
+ * A term's hits are found first and masked together, once, by one pass over the text: masking each hit as it was found copied the whole
+ * text for each of them, so a text of a million hits cost the square of that (a hostile draft, F-70). A hit is searched for only after
+ * the hit before it, so masking it at once or at the end of the term gives the same text for the terms that follow.
  */
 export function avoidHits(text: string, terms: { avoid: readonly AvoidTerm[]; fixed: readonly FixedTerm[] }): AvoidHit[] {
   let masked = maskPhrases(text, [...terms.fixed.map((f) => f.zh), ...terms.avoid.flatMap((a) => a.allow_in)]);
   const out: AvoidHit[] = [];
   for (const a of [...terms.avoid].sort((x, y) => y.term.length - x.term.length)) {
-    for (let at = masked.indexOf(a.term); at !== -1; at = masked.indexOf(a.term, at + a.term.length)) {
-      out.push({ term: a.term, taiwan: a.taiwan, index: at });
-      masked = masked.slice(0, at) + " ".repeat(a.term.length) + masked.slice(at + a.term.length);
+    const at: number[] = [];
+    for (let i = masked.indexOf(a.term); i !== -1; i = masked.indexOf(a.term, i + a.term.length)) at.push(i);
+    if (at.length === 0) continue;
+    const blank = " ".repeat(a.term.length);
+    const pieces: string[] = [];
+    let from = 0;
+    for (const i of at) {
+      out.push({ term: a.term, taiwan: a.taiwan, index: i });
+      pieces.push(masked.slice(from, i), blank);
+      from = i + a.term.length;
     }
+    pieces.push(masked.slice(from));
+    masked = pieces.join("");
   }
   return out.sort((x, y) => x.index - y.index);
 }
@@ -546,52 +652,74 @@ export interface OnceInput {
 
 const bracketBody = (en: string): string => en.trim().split(/\s+/).map(escapeRegExp).join("\\s+");
 
-/** The length of the English term in brackets that starts at `at`, or 0: full-width brackets only, or either width with `anyWidth`; case and inner spaces do not matter. */
-function bracketLength(text: string, at: number, en: string, anyWidth: boolean): number {
+/** The test for the English term in brackets at a position: full-width brackets only, or either width with `anyWidth`; case and inner spaces do not matter. Sticky, so it reads only where `lastIndex` stands. */
+function bracketMatcher(en: string, anyWidth: boolean): RegExp {
   const open = anyWidth ? "[\\uFF08(]" : "\\uFF08";
   const close = anyWidth ? "[\\uFF09)]" : "\\uFF09";
-  const re = new RegExp(`${open}\\s*${bracketBody(en)}\\s*${close}`, "iuy");
-  re.lastIndex = at;
-  return re.exec(text)?.[0].length ?? 0;
+  return new RegExp(`${open}\\s*${bracketBody(en)}\\s*${close}`, "iuy");
+}
+
+/** The length of the English term in brackets that `matcher` finds starting at `at`, or 0. */
+function bracketLength(text: string, at: number, matcher: RegExp): number {
+  matcher.lastIndex = at;
+  return matcher.exec(text)?.[0].length ?? 0;
 }
 
 /**
  * ZH_ENGLISH_ONCE (§4.12) for one finding whose explainer has Chinese: each of its terms appears in the Chinese explainer; the first
  * use there, in part order, is followed at once by the English term in full-width brackets (none is needed when the term's Chinese
  * is its English, such as CRISPR) and no later use is (in either bracket width); the title never carries a term's bracketed English.
- * A use is the term's `zh` in the text, longest term first, so 蛋白質 inside 蛋白質摺疊 counts only for 蛋白質摺疊; a term whose `zh`
- * another term of the same length already took reports no use. The problems come term by term in the order of `terms`, then by use.
+ * A use is the term's `zh` in the text, longest term first, so 蛋白質 inside 蛋白質摺疊 counts only for 蛋白質摺疊.
+ * Terms with the same `zh` (config pairs such as dataset and data set) cannot each have their own bracket at one first use, so they
+ * are one group: the group is met when its first use is followed by the English of any one of its terms, is unmet (reported once,
+ * for its first term in `terms`) when the first use has no such bracket, or when none of its use is there, and is refused a later
+ * use that carries the English of any of them (reported for the term whose English it is). The title is judged for each term,
+ * since each bracketed English in it is a separate thing to remove. A term whose `zh` is empty has no use and is its own group.
+ * The problems come term by term in the order of `terms` (a group where its first term stands), then by use.
  */
 export function englishOnceProblems(input: OnceInput): OnceProblem[] {
   const text = input.parts.join("\n");
   const starts = input.parts.map((_, i) => input.parts.slice(0, i).reduce((n, p) => n + p.length + 1, 0));
   const partAt = (at: number): number => starts.filter((s) => s <= at).length - 1;
+  const groups = new Map<string, OnceTerm[]>();
+  for (const term of input.terms) if (term.zh !== "") groups.set(term.zh, [...(groups.get(term.zh) ?? []), term]);
   const taken = new Array<boolean>(text.length).fill(false);
-  const uses = new Map<OnceTerm, number[]>();
-  // A stable sort: of two terms of the same length, the earlier one in `terms` takes the uses.
-  const longestFirst = input.terms.filter((term) => term.zh !== "").sort((a, b) => b.zh.length - a.zh.length);
-  for (const term of longestFirst) {
+  const uses = new Map<string, number[]>();
+  // A stable sort: of two Chinese renderings of the same length, the one met first in `terms` takes the uses.
+  for (const zh of [...groups.keys()].sort((a, b) => b.length - a.length)) {
     const found: number[] = [];
-    for (let at = text.indexOf(term.zh); at !== -1; at = text.indexOf(term.zh, at + 1)) {
-      if (taken.slice(at, at + term.zh.length).some(Boolean)) continue;
+    for (let at = text.indexOf(zh); at !== -1; at = text.indexOf(zh, at + 1)) {
+      if (taken.slice(at, at + zh.length).some(Boolean)) continue;
       found.push(at);
-      taken.fill(true, at, at + term.zh.length);
+      taken.fill(true, at, at + zh.length);
     }
-    uses.set(term, found);
+    uses.set(zh, found);
   }
   const out: OnceProblem[] = [];
+  const judged = new Set<string>();
   for (const term of input.terms) {
-    const found = uses.get(term) ?? [];
-    if (found.length === 0) {
-      if (!input.partRemoved) out.push({ kind: "unused", term });
-    } else {
-      const chineseIsEnglish = term.zh.trim().toLowerCase() === term.en.trim().toLowerCase();
-      const [first, ...later] = found as [number, ...number[]];
-      if (!chineseIsEnglish && !input.partRemoved && bracketLength(text, first + term.zh.length, term.en, false) === 0) {
-        out.push({ kind: "first_unbracketed", term, part: partAt(first) });
-      }
-      for (const at of later) {
-        if (bracketLength(text, at + term.zh.length, term.en, true) > 0) out.push({ kind: "later_bracketed", term, part: partAt(at) });
+    const firstOfGroup = term.zh === "" || !judged.has(term.zh);
+    judged.add(term.zh);
+    if (firstOfGroup) {
+      const found = uses.get(term.zh) ?? [];
+      if (found.length === 0) {
+        if (!input.partRemoved) out.push({ kind: "unused", term });
+      } else {
+        const group = groups.get(term.zh)!;
+        const chineseIsEnglish = group.some((t) => t.zh.trim().toLowerCase() === t.en.trim().toLowerCase());
+        const [first, ...later] = found as [number, ...number[]];
+        if (!chineseIsEnglish && !input.partRemoved && !group.some((t) => bracketLength(text, first + term.zh.length, bracketMatcher(t.en, false)) > 0)) {
+          out.push({ kind: "first_unbracketed", term, part: partAt(first) });
+        }
+        // Each member's matcher is made once, and a use is read only where an opening bracket follows it, so a long text with many
+        // uses costs its length times the group's size at worst.
+        const repeats = later.length === 0 ? [] : group.map((t) => ({ t, matcher: bracketMatcher(t.en, true) }));
+        for (const at of later) {
+          const next = text[at + term.zh.length];
+          if (next !== "\uFF08" && next !== "(") continue;
+          const repeated = repeats.find((r) => bracketLength(text, at + term.zh.length, r.matcher) > 0);
+          if (repeated !== undefined) out.push({ kind: "later_bracketed", term: repeated.t, part: partAt(at) });
+        }
       }
     }
     const bracketed = new RegExp(`[\\uFF08(]\\s*${bracketBody(term.en)}\\s*[\\uFF09)]`, "iu");

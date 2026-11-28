@@ -13,8 +13,15 @@ import { FIELD_INFO, FIELDS } from "@/lib/vocab";
 import {
   avoidHits, countZhChars, dashHits, englishMonthNumbers, englishNumberWordKeys, englishOnceProblems, fixedApplies,
   fixedEntriesFor, fixedMissing, fixedOccurrences, hypeHits, LANDMARK_ONLY_ZH, nameRuns, parityGaps, parityNumbers,
-  parityProblems, traditionalHits, urlsIn, latinWordsMissing, type OnceTerm,
+  parityProblems, traditionalHits, urlsIn, latinWordsMissing, wordsOutsideLinks, type OnceTerm,
 } from "@/lib/zh";
+import { ZH_ENGLISH, zhText } from "../fixtures/src/world-zh";
+import { zhDraft } from "../fixtures/src/zh-drafts";
+import { zhContext } from "../fixtures/src/zh-inputs";
+import { EDITION_NAMES } from "../fixtures/src/world";
+import {
+  oldAvoidHits, oldEnglishMonthNumbers, oldLatinWordsMissing, oldNameRuns, oldParityNumbers, oldParityProblems, oldUrlsIn, oldWordsOutsideLinks,
+} from "./helpers/zh-reference";
 
 const ROOT = path.resolve(__dirname, "..");
 const CONFIG: LoadedConfig = loadConfig(path.join(ROOT, "config"));
@@ -324,10 +331,62 @@ describe("latinWordsMissing", () => {
     expect(latinWordsMissing("", "CO2")).toEqual(["CO2"]);
   });
 
-  it("skips English in full-width brackets, not in half-width ones", () => {
-    expect(latinWordsMissing("folds", "蛋白質摺疊（protein folding）")).toEqual([]);
-    expect(latinWordsMissing("folds", "蛋白質摺疊(protein folding)")).toEqual(["protein", "folding"]);
-    expect(latinWordsMissing("folds", "蛋白質（protein）與摺疊（folding）")).toEqual([]);
+  describe("a bracketed run", () => {
+    const TERMS = ["protein folding", "peer review", "CRISPR"];
+
+    it("is skipped when it is the English name of a term it is given, in full-width brackets only", () => {
+      expect(latinWordsMissing("folds", "蛋白質摺疊（protein folding）", TERMS)).toEqual([]);
+      expect(latinWordsMissing("folds", "蛋白質摺疊(protein folding)", TERMS)).toEqual(["protein", "folding"]);
+      expect(latinWordsMissing("folds", "同儕審查（peer review）與 CRISPR", TERMS)).toEqual(["CRISPR"]);
+      expect(latinWordsMissing("folds", "蛋白質（protein folding）與審查（peer review）", TERMS)).toEqual([]);
+    });
+
+    it("matches a term whatever its case and spacing, as ZH_ENGLISH_ONCE does: spaces inside the brackets, a run of spaces, a no-break or ideographic space", () => {
+      for (const run of ["Protein Folding", "PROTEIN FOLDING", " protein folding ", "protein   folding", `protein${String.fromCharCode(0xa0)}folding`, `protein${String.fromCharCode(0x3000)}folding`, "protein\nfolding"]) {
+        expect(latinWordsMissing("folds", `蛋白質摺疊（${run}）`, TERMS), JSON.stringify(run)).toEqual([]);
+      }
+      expect(latinWordsMissing("folds", "基因編輯（crispr）", TERMS)).toEqual([]);
+    });
+
+    it("is read like the text around it when it is no term: its Latin words must be in the English, and only the missing ones are named", () => {
+      expect(latinWordsMissing("folds", "它會摺疊（quantum computing）。", TERMS)).toEqual(["quantum", "computing"]);
+      expect(latinWordsMissing("It is a quantum leap", "它會摺疊（quantum computing）。", TERMS)).toEqual(["computing"]);
+      expect(latinWordsMissing("Quantum computing is new", "它會摺疊（quantum computing）。", TERMS)).toEqual([]);
+      expect(latinWordsMissing("A Foo bar", "（Foo bar）", [])).toEqual([]);
+      // Each bracket is judged on its own, and the same invented word is named once.
+      expect(latinWordsMissing("folds", "（protein folding）（quantum）與（quantum）", TERMS)).toEqual(["quantum"]);
+    });
+
+    it("is no term when it holds more or less than the whole name: a part of a term, a term with a word added, two terms, a joined name", () => {
+      expect(latinWordsMissing("folds", "（protein）", TERMS)).toEqual(["protein"]);
+      expect(latinWordsMissing("folds", "（folding）", TERMS)).toEqual(["folding"]);
+      expect(latinWordsMissing("folds", "（protein folding in cells）", TERMS)).toEqual(["protein", "folding", "in", "cells"]);
+      expect(latinWordsMissing("folds", "（protein folding, peer review）", TERMS)).toEqual(["protein", "folding", "peer", "review"]);
+      expect(latinWordsMissing("folds", "（proteinfolding）", TERMS)).toEqual(["proteinfolding"]);
+      expect(latinWordsMissing("folds", "（protein-folding）", TERMS)).toEqual(["protein", "folding"]);
+    });
+
+    it("is read like the text around it when no term is given, and when the terms are other terms", () => {
+      expect(latinWordsMissing("folds", "蛋白質摺疊（protein folding）")).toEqual(["protein", "folding"]);
+      expect(latinWordsMissing("folds", "蛋白質摺疊（protein folding）", [])).toEqual(["protein", "folding"]);
+      expect(latinWordsMissing("folds", "蛋白質摺疊（protein folding）", ["peer review"])).toEqual(["protein", "folding"]);
+      expect(latinWordsMissing("folds", "蛋白質（protein）與摺疊（folding）", ["protein folding"])).toEqual(["protein", "folding"]);
+    });
+
+    it("leaves the words on either side of a skipped bracket apart, so they are read as two words and not one", () => {
+      expect(latinWordsMissing("foo bar", "foo（protein folding）bar", TERMS)).toEqual([]);
+      expect(latinWordsMissing("foo bar", "foo（quantum）bar", TERMS)).toEqual(["quantum"]);
+    });
+
+    it("frees only the bracket: the same words outside brackets are Latin words the English lacks", () => {
+      expect(latinWordsMissing("folds", "蛋白質摺疊 protein folding（protein folding）", TERMS)).toEqual(["protein", "folding"]);
+      expect(latinWordsMissing("folds", "蛋白質摺疊（protein folding）protein", TERMS)).toEqual(["protein"]);
+    });
+
+    it("reads an array of English strings as one unit, so a term's words in any of them free nothing more than a bracket does", () => {
+      expect(latinWordsMissing(["peer review", "folds"], ["同儕審查（peer review）", "摺疊（protein folding）"], ["protein folding"])).toEqual([]);
+      expect(latinWordsMissing(["a tool", "folds"], ["工具（peer review）", "摺疊（protein folding）"], ["protein folding"])).toEqual(["peer", "review"]);
+    });
   });
 
   it("reads an array as one unit on each side", () => {
@@ -348,6 +407,13 @@ describe("parityProblems", () => {
     expect(parityProblems(["AlphaFold 3", "Released in May 2024 by 2 labs"], ["AlphaFold 3", "2024 年 5 月由 2 個實驗室發布"])).toEqual({
       missing: [], extra: [], urls: [], latin: [],
     });
+  });
+
+  it("passes the terms on to the Latin words: a bracket that is one of them is free, any other bracketed Latin word is named", () => {
+    expect(parityProblems("3 cells", "3 個細胞（cell biology）", ["cell biology"]).latin).toEqual([]);
+    expect(parityProblems("3 cells", "3 個細胞（cell biology）", ["cell"]).latin).toEqual(["cell", "biology"]);
+    expect(parityProblems("3 cells", "3 個細胞（cell biology）").latin).toEqual(["cell", "biology"]);
+    expect(parityProblems("3 cells", "3 個細胞（cell biology）", ["cell biology"])).toEqual({ missing: [], extra: [], urls: [], latin: [] });
   });
 });
 
@@ -697,6 +763,9 @@ describe("englishOnceProblems", () => {
   it("needs no brackets when the term's Chinese is its English, such as CRISPR", () => {
     expect(englishOnceProblems({ parts: ["CRISPR 工具", "CRISPR 再用"], title: "CRISPR", terms: [CRISPR] })).toEqual([]);
     expect(englishOnceProblems({ parts: ["crispr 工具"], title: "", terms: [{ en: "CRISPR", zh: "crispr" }] })).toEqual([]);
+    // white space around either side is not part of the word: " crispr " (the Chinese as the context gives it) is the English
+    expect(englishOnceProblems({ parts: ["用 crispr 工具"], title: "", terms: [{ en: "CRISPR", zh: " crispr " }] })).toEqual([]);
+    expect(englishOnceProblems({ parts: ["用 crispr 工具"], title: "", terms: [{ en: " CRISPR ", zh: " crispr " }] })).toEqual([]);
   });
 
   it("fails a first use without the full-width bracketed English, naming its part", () => {
@@ -761,16 +830,35 @@ describe("englishOnceProblems", () => {
     })).toEqual([]);
   });
 
-  it("gives a use to the first of two terms with the same Chinese; the other reports none", () => {
-    const other: OnceTerm = { en: "folding of proteins", zh: "蛋白質摺疊" };
-    expect(englishOnceProblems({ parts: ["蛋白質摺疊（protein folding）"], title: "", terms: [FOLDING, other] })).toEqual([
-      { kind: "unused", term: other },
+  it("counts no use that overlaps one a longer term already took, whichever the terms' order", () => {
+    const first: OnceTerm = { en: "a", zh: "蛋白質摺" };
+    const second: OnceTerm = { en: "b", zh: "摺疊酶" };
+    expect(englishOnceProblems({ parts: ["蛋白質摺疊酶"], title: "", terms: [first, second] })).toEqual([
+      { kind: "first_unbracketed", term: first, part: 0 }, { kind: "unused", term: second },
+    ]);
+    const third: OnceTerm = { en: "c", zh: "質摺疊" };
+    expect(englishOnceProblems({ parts: ["蛋白質摺疊酶"], title: "", terms: [third, second, first] })).toEqual([
+      { kind: "unused", term: third }, { kind: "unused", term: second }, { kind: "first_unbracketed", term: first, part: 0 },
     ]);
   });
 
-  it("reports a term whose Chinese is empty as unused", () => {
+  it("finds the next use of a Chinese that overlaps itself one character on, even when the one before it overlapped a longer term's", () => {
+    const longer: OnceTerm = { en: "l", zh: "白白摺" };
+    const doubled: OnceTerm = { en: "d", zh: "摺摺" };
+    // 摺摺 stands at 2 (its first character is the longer term's) and at 3 (free): the second is the use.
+    expect(englishOnceProblems({ parts: ["白白摺摺摺"], title: "", terms: [longer, doubled] })).toEqual([
+      { kind: "first_unbracketed", term: longer, part: 0 }, { kind: "first_unbracketed", term: doubled, part: 0 },
+    ]);
+    // Alone, the first 摺摺 is the use and the one that overlaps it is none: one use, so no later bracket is read.
+    expect(englishOnceProblems({ parts: ["摺摺摺（d）"], title: "", terms: [doubled] })).toEqual([{ kind: "first_unbracketed", term: doubled, part: 0 }]);
+  });
+
+  it("reports a term whose Chinese is empty as unused, each such term for itself", () => {
+    const other: OnceTerm = { en: "y", zh: "" };
     const empty: OnceTerm = { en: "x", zh: "" };
-    expect(englishOnceProblems({ parts: ["文字"], title: "", terms: [empty] })).toEqual([{ kind: "unused", term: empty }]);
+    expect(englishOnceProblems({ parts: ["文字"], title: "", terms: [empty, other] })).toEqual([
+      { kind: "unused", term: empty }, { kind: "unused", term: other },
+    ]);
   });
 
   it("names the part of each use, however many parts come before it", () => {
@@ -780,11 +868,699 @@ describe("englishOnceProblems", () => {
     ]);
   });
 
+  describe("terms that share one Chinese (the config's pairs such as dataset and data set) are one group", () => {
+    const DATASET: OnceTerm = { en: "dataset", zh: "資料集" };
+    const DATA_SET: OnceTerm = { en: "data set", zh: "資料集" };
+    const CORPUS: OnceTerm = { en: "corpus", zh: "資料集" };
+    const once = (parts: string[], terms: OnceTerm[], title = "", partRemoved = false) => englishOnceProblems({ parts, title, terms, partRemoved });
+
+    it("is met by the English of any one of them after the first use, whichever the terms' order", () => {
+      for (const terms of [[DATASET, DATA_SET], [DATA_SET, DATASET], [DATASET, DATA_SET, CORPUS]]) {
+        expect(once(["資料集（dataset）很大"], terms)).toEqual([]);
+        expect(once(["資料集（data set）很大"], terms)).toEqual([]);
+        expect(once(["前言", "資料集（ Data  Set ）很大", "資料集再次出現"], terms)).toEqual([]);
+      }
+    });
+
+    it("fails once, for the group's first term, when the first use has no English after it, whichever the terms' order", () => {
+      expect(once(["前言", "資料集很大"], [DATASET, DATA_SET])).toEqual([{ kind: "first_unbracketed", term: DATASET, part: 1 }]);
+      expect(once(["前言", "資料集很大"], [DATA_SET, DATASET])).toEqual([{ kind: "first_unbracketed", term: DATA_SET, part: 1 }]);
+      expect(once(["資料集很大"], [DATASET, DATA_SET, CORPUS])).toEqual([{ kind: "first_unbracketed", term: DATASET, part: 0 }]);
+    });
+
+    it("fails once when the first use is followed by the English of a term that is not in the group, or by half-width brackets", () => {
+      expect(once(["資料集（corpus）很大"], [DATASET, DATA_SET])).toEqual([{ kind: "first_unbracketed", term: DATASET, part: 0 }]);
+      expect(once(["資料集（dataset set）很大"], [DATASET, DATA_SET])).toEqual([{ kind: "first_unbracketed", term: DATASET, part: 0 }]);
+      expect(once(["資料集(dataset)很大"], [DATASET, DATA_SET])).toEqual([{ kind: "first_unbracketed", term: DATASET, part: 0 }]);
+      // a bracket of one width on one side and the other on the other is no full-width bracket either
+      expect(once(["資料集(dataset）很大"], [DATASET, DATA_SET])).toEqual([{ kind: "first_unbracketed", term: DATASET, part: 0 }]);
+      expect(once(["資料集（dataset)很大"], [DATASET, DATA_SET])).toEqual([{ kind: "first_unbracketed", term: DATASET, part: 0 }]);
+      expect(once(["資料集 （dataset）很大"], [DATASET, DATA_SET])).toEqual([{ kind: "first_unbracketed", term: DATASET, part: 0 }]);
+    });
+
+    it("judges only the first use for that: a later use with the English of one of them is a different problem, and a bare later use none", () => {
+      expect(once(["資料集（dataset）", "資料集再次出現"], [DATASET, DATA_SET])).toEqual([]);
+      expect(once(["資料集很大", "資料集（dataset）"], [DATASET, DATA_SET])).toEqual([
+        { kind: "first_unbracketed", term: DATASET, part: 0 }, { kind: "later_bracketed", term: DATASET, part: 1 },
+      ]);
+    });
+
+    it("fails once, for its first term, when the Chinese explainer never uses it, unless a part was removed", () => {
+      expect(once(["沒有"], [DATASET, DATA_SET])).toEqual([{ kind: "unused", term: DATASET }]);
+      expect(once(["沒有"], [DATA_SET, DATASET, CORPUS])).toEqual([{ kind: "unused", term: DATA_SET }]);
+      expect(once(["沒有"], [DATASET, DATA_SET], "", true)).toEqual([]);
+    });
+
+    it("refuses a later use that carries the English of any of them, in either width, for the term whose English it is", () => {
+      expect(once(["資料集（dataset）", "又是資料集（data set）"], [DATASET, DATA_SET])).toEqual([{ kind: "later_bracketed", term: DATA_SET, part: 1 }]);
+      expect(once(["資料集（data set）與資料集(dataset)與資料集（corpus）"], [DATASET, DATA_SET])).toEqual([{ kind: "later_bracketed", term: DATASET, part: 0 }]);
+      expect(once(["資料集（dataset）與資料集（dataset）與資料集(data set)"], [DATASET, DATA_SET, CORPUS])).toEqual([
+        { kind: "later_bracketed", term: DATASET, part: 0 }, { kind: "later_bracketed", term: DATA_SET, part: 0 },
+      ]);
+    });
+
+    it("needs no brackets when the shared Chinese is the English of any one of them, such as CRISPR", () => {
+      const CRISPR_SYSTEM: OnceTerm = { en: "CRISPR system", zh: "CRISPR" };
+      expect(once(["CRISPR 工具"], [CRISPR_SYSTEM, CRISPR])).toEqual([]);
+      expect(once(["CRISPR 工具"], [CRISPR, CRISPR_SYSTEM])).toEqual([]);
+      expect(once(["CRISPR 工具", "CRISPR（CRISPR system）"], [CRISPR, CRISPR_SYSTEM])).toEqual([{ kind: "later_bracketed", term: CRISPR_SYSTEM, part: 1 }]);
+      expect(once(["CRISPR 工具"], [CRISPR_SYSTEM])).toEqual([{ kind: "first_unbracketed", term: CRISPR_SYSTEM, part: 0 }]);
+    });
+
+    it("judges the title for each of them: each bracketed English in it is its own problem", () => {
+      expect(once(["資料集（dataset）"], [DATASET, DATA_SET], "資料集（dataset）與（data set）")).toEqual([
+        { kind: "title_bracketed", term: DATASET }, { kind: "title_bracketed", term: DATA_SET },
+      ]);
+      expect(once(["資料集（dataset）"], [DATASET, DATA_SET], "資料集（Data Set）")).toEqual([{ kind: "title_bracketed", term: DATA_SET }]);
+    });
+
+    it("keeps the order of terms: a group's problems stand where its first term does, and the title problem of each term after its own", () => {
+      const PROTEIN_T: OnceTerm = { en: "protein", zh: "蛋白質" };
+      expect(once(["蛋白質與資料集"], [DATASET, PROTEIN_T, DATA_SET], "資料集（data set）")).toEqual([
+        { kind: "first_unbracketed", term: DATASET, part: 0 },
+        { kind: "first_unbracketed", term: PROTEIN_T, part: 0 },
+        { kind: "title_bracketed", term: DATA_SET },
+      ]);
+    });
+
+    it("counts the uses of a group once, longest Chinese first, next to a group of a longer or shorter Chinese", () => {
+      const SET_OF_DATA: OnceTerm = { en: "dataset collection", zh: "資料集合" };
+      // 資料集合 holds no 資料集 and 資料集 holds no 資料集合: each is its own group; the longer of two that nest takes its use whole.
+      expect(once(["資料集合（dataset collection）與資料集（dataset）"], [DATASET, DATA_SET, SET_OF_DATA])).toEqual([]);
+      const DATA_WORD: OnceTerm = { en: "data", zh: "資料" };
+      expect(once(["資料集（dataset）"], [DATA_WORD, DATASET, DATA_SET])).toEqual([{ kind: "unused", term: DATA_WORD }]);
+      expect(once(["資料集（data set）與資料（data）"], [DATA_WORD, DATASET, DATA_SET])).toEqual([]);
+    });
+
+    it("holds a group of any size: the English of the third term meets it, and a later use that carries it is refused", () => {
+      expect(once(["資料集（corpus）很大"], [DATASET, DATA_SET, CORPUS])).toEqual([]);
+      expect(once(["資料集（dataset）", "資料集（corpus）"], [DATASET, DATA_SET, CORPUS])).toEqual([{ kind: "later_bracketed", term: CORPUS, part: 1 }]);
+      expect(once(["資料集（dataset）", "資料集（corpus）"], [DATASET, DATA_SET])).toEqual([]);
+    });
+
+    it("reports one term listed twice once", () => {
+      expect(once(["資料集很大"], [DATASET, DATASET])).toEqual([{ kind: "first_unbracketed", term: DATASET, part: 0 }]);
+    });
+
+    it("refuses a later bracket only where it follows the Chinese at once: a space or another character between them is no repeat", () => {
+      expect(once(["資料集（dataset）", "資料集 （data set）與資料集，（dataset）與資料集(Data  Set)"], [DATASET, DATA_SET])).toEqual([
+        { kind: "later_bracketed", term: DATA_SET, part: 1 },
+      ]);
+      expect(once(["資料集（dataset）", "資料集（ dataset ）"], [DATASET, DATA_SET])).toEqual([{ kind: "later_bracketed", term: DATASET, part: 1 }]);
+      // a later use is refused the English in any mixture of the two widths
+      expect(once(["資料集（dataset）", "資料集(dataset）與資料集（data set)"], [DATASET, DATA_SET])).toEqual([
+        { kind: "later_bracketed", term: DATASET, part: 1 }, { kind: "later_bracketed", term: DATA_SET, part: 1 },
+      ]);
+    });
+
+    it("stays linear in a long text with many uses and a large group: 100,000 characters and 30 terms of one Chinese in well under a second", () => {
+      const members: OnceTerm[] = Array.from({ length: 30 }, (_, i) => ({ en: `term ${i}`, zh: "資" }));
+      const started = performance.now();
+      // Every use is followed by a bracket that holds none of their English; none of them is a repeat.
+      expect(once(["資（x）".repeat(25_000)], members)).toEqual([{ kind: "first_unbracketed", term: members[0]!, part: 0 }]);
+      // Every use is followed by the English of the 17th term (a space inside it is read as any white space): each is a repeat of that one.
+      const repeats = once(["資（term 16）".repeat(10_000)], members);
+      expect(repeats).toHaveLength(9_999);
+      expect(repeats.every((p) => p.kind === "later_bracketed" && p.term === members[16] && p.part === 0)).toBe(true);
+      // Every use is followed by an opening bracket and no more.
+      expect(once(["資（".repeat(50_000)], members)).toEqual([{ kind: "first_unbracketed", term: members[0]!, part: 0 }]);
+      expect(performance.now() - started).toBeLessThan(2000);
+    });
+
+    it("does not group a term with another that has the same English but another Chinese, nor two terms whose Chinese differs in case", () => {
+      const OTHER: OnceTerm = { en: "dataset", zh: "數據集" };
+      expect(once(["資料集（dataset）與數據集"], [DATASET, OTHER])).toEqual([{ kind: "first_unbracketed", term: OTHER, part: 0 }]);
+      const lower: OnceTerm = { en: "x", zh: "abc" };
+      const upper: OnceTerm = { en: "y", zh: "ABC" };
+      expect(once(["abc ABC"], [lower, upper])).toEqual([
+        { kind: "first_unbracketed", term: lower, part: 0 }, { kind: "first_unbracketed", term: upper, part: 0 },
+      ]);
+    });
+  });
+
   it("gives the problems term by term in the order of terms", () => {
     expect(englishOnceProblems({ parts: ["蛋白質很重要", "蛋白質摺疊也是"], title: "", terms: [FOLDING, PROTEIN] })).toEqual([
       { kind: "first_unbracketed", term: FOLDING, part: 1 },
       { kind: "first_unbracketed", term: PROTEIN, part: 0 },
     ]);
+  });
+});
+
+// ── Linear time (F-70) ───────────────────────────────────────────────────────────────────────────
+// The Chinese pass is a model run that a hostile page may steer, so a string of megabytes must cost the ZH_PARITY checks what its length
+// costs, never throw, and give the result it gave before on every text a reader could write (tests/helpers/zh-reference.ts holds the
+// earlier functions; they are quadratic on these shapes and one overflows the engine's stack at 5 MB).
+
+/** Runs `run` and fails when it takes `limitMs` or more. The limits are many times what the new code needs, and far below the earlier code. */
+function within<T>(limitMs: number, run: () => T): T {
+  const before = performance.now();
+  const result = run();
+  expect(performance.now() - before).toBeLessThan(limitMs);
+  return result;
+}
+
+const SHORT_EN = "A short sentence.";
+const BRACKET_TERMS = ["protein folding", "cell biology"];
+
+/** The shapes of a hostile string, each made to a length: the ones that made the earlier functions quadratic, or overflow the stack, or allocate without end. */
+const HOSTILE: [string, (n: number) => string][] = [
+  ["a Latin run", (n) => `範例 ${"a".repeat(n)}。`],
+  ["letters joined by hyphens", (n) => `範例 ${"a-".repeat(n / 2)}`],
+  ["letters joined by dots", (n) => `範例 ${"a.".repeat(n / 2)}`],
+  ["a long Latin word in brackets", (n) => `範例（${"a".repeat(n)}）`],
+  ["a run of digits", (n) => `範例 ${"9".repeat(n)}。`],
+  ["one link", (n) => `範例 https://example.org/${"k".repeat(n)}。`],
+  ["Chinese text", (n) => "範".repeat(n)],
+  ["opening brackets", (n) => "（".repeat(n)],
+  ["closing brackets", (n) => "）".repeat(n)],
+  ["bracketed words", (n) => "（a）".repeat(n / 3)],
+  ["many equal numbers", (n) => "1 ".repeat(n / 2)],
+  ["many different numbers", (n) => Array.from({ length: n / 7 }, (_, i) => String(1_000_000 + i)).join(" ")],
+  ["numbers after 百分之", (n) => "百分之 5 ".repeat(n / 6)],
+  ["thousands separators", (n) => `1${",000".repeat(n / 4)}`],
+  ["decimals", (n) => "1.5 ".repeat(n / 4)],
+  ["many equal links", (n) => "https://a.example/x ".repeat(n / 20)],
+  ["many different links", (n) => Array.from({ length: n / 24 }, (_, i) => `https://a.example/${100_000 + i}`).join(" ")],
+  ["many hosts with no scheme", (n) => "a.example.org ".repeat(n / 14)],
+  ["many www hosts", (n) => "www.a.example ".repeat(n / 14)],
+  ["many month names", (n) => "May 1 ".repeat(n / 6)],
+  ["white space before a word", (n) => `${" ".repeat(n)}x${" ".repeat(10)}May`],
+  ["capitals", (n) => "The A An ".repeat(n / 9)],
+];
+
+describe("linear time (F-70): ZH_PARITY's checks on a hostile string", () => {
+  it.each(HOSTILE)("gives the result it gave before on %s of 3,000 characters, whichever language holds it", (_name, make) => {
+    const text = make(3000);
+    for (const terms of [[], BRACKET_TERMS]) {
+      expect(parityProblems(SHORT_EN, text, terms)).toEqual(oldParityProblems(SHORT_EN, text, terms));
+      expect(parityProblems(text, "範例", terms)).toEqual(oldParityProblems(text, "範例", terms));
+      expect(parityProblems([text, SHORT_EN], [SHORT_EN, text], terms)).toEqual(oldParityProblems([text, SHORT_EN], [SHORT_EN, text], terms));
+    }
+    expect(nameRuns(text)).toEqual(oldNameRuns(text));
+    expect(englishMonthNumbers(text)).toEqual(oldEnglishMonthNumbers(text));
+  });
+
+  it.each(HOSTILE)("reads %s of 300,000 characters in well under a second, whichever language holds it", (_name, make) => {
+    const text = make(300_000);
+    within(1000, () => parityProblems(SHORT_EN, text, BRACKET_TERMS));
+    within(1000, () => parityProblems(text, "範例", BRACKET_TERMS));
+    within(1000, () => nameRuns(text));
+    within(1000, () => englishMonthNumbers(text));
+  });
+
+  it("reads a Latin run of 300,000 characters as no link and one Latin word", () => {
+    const run = "a".repeat(300_000);
+    const zh = `範例 ${run}。`;
+    expect(within(1000, () => urlsIn(zh))).toEqual([]);
+    expect(within(1000, () => latinWordsMissing(SHORT_EN, zh))).toEqual([run]);
+    expect(within(1000, () => parityProblems(SHORT_EN, zh))).toEqual({ missing: [], extra: [], urls: [], latin: [run] });
+  });
+
+  it("reads a run of 5 MB of digits as one extra number and no Latin word, and does not throw", () => {
+    const digits = "9".repeat(5_000_000);
+    const p = within(6000, () => parityProblems(SHORT_EN, `範例 ${digits}。`));
+    expect(p.missing).toEqual([]);
+    expect(p.urls).toEqual([]);
+    expect(p.latin).toEqual([]);
+    expect(p.extra).toHaveLength(1);
+    expect(p.extra[0]!.key).toBe(digits);
+    expect(p.extra[0]!.index).toBe(3);
+  });
+
+  it("reads one link of 5 MB as the link and the words it spells, and does not throw", () => {
+    const tail = "k".repeat(5_000_000);
+    const link = `https://example.org/${tail}`;
+    const p = within(6000, () => parityProblems(SHORT_EN, `範例 ${link}。`));
+    expect(p.urls).toEqual([`${link}。`]);
+    expect(p.latin).toEqual(["https", "example", "org", tail]);
+    expect(p.missing).toEqual([]);
+    expect(p.extra).toEqual([]);
+  });
+
+  it("reads 5 MB of Chinese text and of brackets, and does not throw", () => {
+    const zh = within(6000, () => parityProblems(SHORT_EN, "範".repeat(5_000_000)));
+    expect(zh).toEqual({ missing: [], extra: [], urls: [], latin: [] });
+    expect(within(6000, () => parityProblems(SHORT_EN, "（".repeat(5_000_000)))).toEqual({ missing: [], extra: [], urls: [], latin: [] });
+    expect(within(6000, () => parityProblems(SHORT_EN, "）".repeat(5_000_000)))).toEqual({ missing: [], extra: [], urls: [], latin: [] });
+  });
+
+  it("finds each of 200,000 different links once, in order", () => {
+    const links = Array.from({ length: 200_000 }, (_, i) => `https://a.example/${i}`);
+    const found = within(6000, () => urlsIn(links.join(" ")));
+    expect(found).toHaveLength(200_000);
+    expect(found[0]).toBe(links[0]);
+    expect(found[199_999]).toBe(links[199_999]);
+  });
+
+  it("finds each of 100,000 numbers of the English that the Chinese lacks, and each of 100,000 extra ones of the Chinese, once", () => {
+    const numbers = Array.from({ length: 100_000 }, (_, i) => String(1_000_000 + i));
+    const gaps = within(6000, () => parityGaps(numbers.join(" "), "範例"));
+    expect(gaps.missing.map((n) => n.key)).toEqual(numbers);
+    expect(gaps.extra).toEqual([]);
+    const back = within(6000, () => parityGaps("範例", numbers.join(" ")));
+    expect(back.extra.map((n) => n.key)).toEqual(numbers);
+    expect(back.missing).toEqual([]);
+  });
+
+  it("reads 100,000 numbers after 百分之 as 100,000 percentages, each with its 百分之 and the white space after it", () => {
+    const found = within(2000, () => parityNumbers("百分之 5 ".repeat(100_000)));
+    expect(found).toHaveLength(100_000);
+    expect(found[0]).toEqual({ value: "5", percent: true, key: "5%", text: "百分之 5", index: 0 });
+    expect(found[99_999]).toEqual({ value: "5", percent: true, key: "5%", text: "百分之 5", index: 599_994 });
+  });
+
+  it("finds the sentence starts of 100,000 capitalised words, and a long run of white space before a word, in well under a second", () => {
+    expect(within(1000, () => englishMonthNumbers("May. ".repeat(100_000)))).toEqual([]);
+    expect(within(1000, () => englishMonthNumbers("May 1 ".repeat(100_000)))).toEqual([5]);
+    expect(within(1000, () => englishMonthNumbers(`${" ".repeat(200_000)}x${" ".repeat(10)}May`))).toEqual([5]);
+    expect(within(1000, () => nameRuns(`${" ".repeat(200_000)}x ${" ".repeat(10)}The Big Name`)).map((r) => r.text)).toEqual(["The Big Name"]);
+  });
+});
+
+describe("linear time (F-70): the same results as before", () => {
+  /** The Chinese fixture texts as (English, Chinese) pairs: every edition's strings and terms, the table of sample translations and the invalid drafts. */
+  function fixturePairs(): [string, string][] {
+    const pairs: [string, string][] = [];
+    for (const name of EDITION_NAMES) {
+      const context = zhContext(name);
+      const draft = zhDraft(name);
+      for (const s of context.strings) pairs.push([s.en, draft.strings[s.key]!]);
+      for (const t of context.terms) {
+        const zh = draft.terms[t.id];
+        if (zh !== undefined) pairs.push([`${t.en}\n${t.definition}`, `${zh.zh}\n${zh.definition}`]);
+      }
+    }
+    for (const en of ZH_ENGLISH) pairs.push([en, zhText(en)]);
+    const dir = path.join(ROOT, "fixtures/drafts-zh");
+    const english = new Map(EDITION_NAMES.flatMap((name) => zhContext(name).strings.map((s): [string, string] => [`${name}/${s.key}`, s.en])));
+    for (const file of fs.readdirSync(dir).filter((f) => /^invalid--.*\.zh\.json$/.test(f))) {
+      const draft = JSON.parse(fs.readFileSync(path.join(dir, file), "utf8")) as { strings?: Record<string, string>; terms?: Record<string, { zh: string; definition: string }> };
+      for (const [key, zh] of Object.entries(draft.strings ?? {})) {
+        pairs.push(["", zh]);
+        for (const name of EDITION_NAMES) if (english.has(`${name}/${key}`)) pairs.push([english.get(`${name}/${key}`)!, zh]);
+      }
+      for (const t of Object.values(draft.terms ?? {})) pairs.push(["", `${t.zh}\n${t.definition}`]);
+    }
+    return pairs;
+  }
+
+  /** What every function the change touched gives on one pair, new and earlier side by side. */
+  function bothWays(en: string, zh: string, terms: readonly string[]): { now: unknown; before: unknown } {
+    return {
+      now: [parityProblems(en, zh, terms), parityNumbers(zh), parityNumbers(en), englishMonthNumbers(en), englishMonthNumbers(zh), urlsIn(zh), latinWordsMissing(en, zh, terms), nameRuns(en), nameRuns(zh)],
+      before: [oldParityProblems(en, zh, terms), oldParityNumbers(zh), oldParityNumbers(en), oldEnglishMonthNumbers(en), oldEnglishMonthNumbers(zh), oldUrlsIn(zh), oldLatinWordsMissing(en, zh, terms), oldNameRuns(en), oldNameRuns(zh)],
+    };
+  }
+
+  it("gives the earlier result on every Chinese fixture text, with and without bracketed terms", () => {
+    const pairs = fixturePairs();
+    const names = [...new Set(EDITION_NAMES.flatMap((name) => zhContext(name).terms.map((t) => t.en)))];
+    expect(names.length).toBeGreaterThan(1);
+    expect(pairs.length).toBeGreaterThan(300);
+    expect(pairs.some(([, zh]) => /（[A-Za-z ]+）/.test(zh))).toBe(true);
+    for (const [en, zh] of pairs) {
+      for (const terms of [[], names]) {
+        const { now, before } = bothWays(en, zh, terms);
+        expect(now, `${en} | ${zh}`).toEqual(before);
+      }
+    }
+  });
+
+  /** A deterministic generator (mulberry32), so that the corpus is the same on every run. */
+  function random(seed: number): () => number {
+    let a = seed;
+    return () => {
+      a = (a + 0x6d2b79f5) | 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  const FRAGMENTS: readonly string[] = [
+    // Chinese
+    "範例", "蛋白質摺疊", "百分之", "萬", "億", "月", "日", "年", "名學生", "個", "第", "、", "。", "，", "（", "）", "（）", "（（", "））",
+    // Latin words, names, months, number words, articles and percent words
+    "AlphaFold", "Cas9", "CO2", "COVID-19", "cell", "Foo", "x", "protein folding", "cell biology", "（protein folding）", "（ cell  biology ）", "（CRISPR）", "（quantum computing）",
+    "May", "May 5", "May 2024", "Jan", "Sep", "January", "December", "three", "ten", "percent", "per cent", "thousand", "million", "billion", "The", "A", "An",
+    "Stanford University", "Protein Data Bank", "Journal of the AMS", "of", "and", "the", "for", "de", "von",
+    // numbers
+    "3", "12", "2024", "3.5", "1,000", "2,500,000", "1,2345", "007", "0", "0.50", "1.0", "１２３", "３．５", "１，０００", "％", "%", "70", "250", "5millionth",
+    // links and hosts
+    "https://example.org/a", "http://a.example", "ftp://files.example.org", "www.example.org", "nature.com", "doi.org/10.1/x", "example.co", "a@example.org",
+    "x.ab2", "Node.js", "3.5.1", "https://x.y/z?q=1#f", "mailto:foo@example.org", "e.g",
+    // marks that close, open or end a sentence
+    ".", "!", "?", "…", ",", ";", ":", "-", EN, ")", "]", "}", "\"", "'", "(", "[", "{", chr(0x201c), chr(0x201d), chr(0x2018), chr(0x2019), "»", "«", "」", "『", "』", "「",
+    "）", "】", "【", "！", "？", "。",
+    // white space of every kind that \s or the number reader knows
+    " ", "  ", "\n", "\t", "\r", chr(0xa0), chr(0x2009), chr(0x202f), chr(0x3000), chr(0x2002), chr(0xfeff), chr(0x2028),
+  ];
+
+  /** A scheme of 33 or more characters, which `urlsIn()` reads from its last 32 (the one difference, pinned by its own test): the corpus leaves such a text out. */
+  const LONG_SCHEME = /[A-Za-z0-9+.-]{33}:\/\//;
+
+  function corpus(count: number): [string, string][] {
+    const next = random(20260127);
+    const pick = (): string => FRAGMENTS[Math.floor(next() * FRAGMENTS.length)]!;
+    const text = (): string => {
+      let out = "";
+      for (let n = 3 + Math.floor(next() * 22); n > 0; n -= 1) out += next() < 0.5 ? pick() : `${pick()} `;
+      return out;
+    };
+    const pairs: [string, string][] = [];
+    while (pairs.length < count) {
+      const en = text();
+      const zh = next() < 0.3 ? `${en}${text()}` : text();
+      if (!LONG_SCHEME.test(zh)) pairs.push([en, zh]);
+    }
+    return pairs;
+  }
+
+  it("gives the earlier result on a corpus of 2,000 mixed strings (Chinese, Latin, digits, links, brackets, marks and white space of every kind)", () => {
+    const pairs = corpus(2000);
+    expect(new Set(pairs.map(([en, zh]) => en + zh)).size).toBeGreaterThan(1990);
+    let withLinks = 0;
+    let withGaps = 0;
+    let withWords = 0;
+    for (const [en, zh] of pairs) {
+      const { now, before } = bothWays(en, zh, BRACKET_TERMS);
+      expect(now, `${JSON.stringify(en)} | ${JSON.stringify(zh)}`).toEqual(before);
+      const p = parityProblems(en, zh, BRACKET_TERMS);
+      if (p.urls.length > 0) withLinks += 1;
+      if (p.missing.length + p.extra.length > 0) withGaps += 1;
+      if (p.latin.length > 0) withWords += 1;
+    }
+    // The corpus reaches every kind of problem, so that the comparison above says something.
+    expect(withLinks).toBeGreaterThan(300);
+    expect(withGaps).toBeGreaterThan(1000);
+    expect(withWords).toBeGreaterThan(300);
+  });
+
+  it("leaves out of the Latin words the words a link spells as before on every fixture text, and on the corpus except a word that is only part of a link's word", () => {
+    for (const [en, zh] of fixturePairs()) {
+      const p = parityProblems(en, zh, BRACKET_TERMS);
+      expect(wordsOutsideLinks(p.latin, p.urls), `${en} | ${zh}`).toEqual(oldWordsOutsideLinks(p.latin, p.urls));
+    }
+    let partOfALinkWord = 0;
+    for (const [en, zh] of corpus(2000)) {
+      const p = parityProblems(en, zh, BRACKET_TERMS);
+      const now = wordsOutsideLinks(p.latin, p.urls);
+      const was = oldWordsOutsideLinks(p.latin, p.urls);
+      // What is now kept and was left out is a word that is a part of a link's word, never a whole one.
+      const linkWords = new Set(p.urls.flatMap((u) => u.toLowerCase().match(/[\p{Script=Latin}\p{Nd}]+/gu) ?? []));
+      expect(now.filter((w) => !was.includes(w)).every((w) => !linkWords.has(w.toLowerCase()) && [...linkWords].some((l) => l.includes(w.toLowerCase()))), `${en} | ${zh}`).toBe(true);
+      expect(was.every((w) => now.includes(w)), `${en} | ${zh}`).toBe(true);
+      partOfALinkWord += now.length - was.length;
+    }
+    expect(partOfALinkWord).toBeGreaterThan(0);
+  });
+
+  it("gives the earlier month and name for every string that puts a sentence mark, a closing mark, an opening mark or white space before May, The and A", () => {
+    const before = ["", "x", "x.", "x!", "x?", "x。", "x？", "x！", "x,", "x;", "x:", "x)", "x]", "x}", "x\"", "x'", "x”", "x’", "x»", "x」", "x』", "x）", "x】", "x.)", "x.)]", "x.”", "x!」", "x?）", "x…"];
+    const joins = ["", " ", "  ", "\n", " \n ", "(", " (", "\"", " \"", "“", " “", "「", " 「", "[", "{", "（", "【", "‘", "'", "«", "‹", "„", "『", chr(0xa0), chr(0x3000), chr(0xfeff), chr(0x2028), "x"];
+    let skipped = 0;
+    let counted = 0;
+    for (const stem of before) {
+      for (const join of joins) {
+        for (const word of ["May", "May 5", "The Big Name", "A New Method", "An Old Rule"]) {
+          const text = `${stem}${join}${word}`;
+          expect(englishMonthNumbers(text), JSON.stringify(text)).toEqual(oldEnglishMonthNumbers(text));
+          expect(nameRuns(text), JSON.stringify(text)).toEqual(oldNameRuns(text));
+          if (word === "May" && englishMonthNumbers(text).length === 0) skipped += 1;
+          if (word === "May" && englishMonthNumbers(text).length > 0) counted += 1;
+        }
+      }
+    }
+    // Both outcomes occur, so that no mutation of the reader can keep the same results on this table.
+    expect(skipped).toBeGreaterThan(100);
+    expect(counted).toBeGreaterThan(100);
+  });
+});
+
+describe("startsSentence, read through May and the articles", () => {
+  const may = (before: string): number[] => englishMonthNumbers(`${before}May it last.`);
+
+  it("reads May after a stop, then any closing marks and white space, as a sentence's first word", () => {
+    for (const stop of [".", "!", "?", chr(0x3002), chr(0xff1f), chr(0xff01)]) {
+      expect(may(`It ended${stop} `), `after ${stop}`).toEqual([]);
+      for (const closer of [")", "]", "}", "\"", "'", chr(0x201d), chr(0x2019), chr(0xbb), chr(0x300d), chr(0x300f), chr(0xff09), chr(0x3011)]) {
+        expect(may(`It ended${stop}${closer} `), `after ${stop} and ${closer}`).toEqual([]);
+      }
+    }
+  });
+
+  it("reads May after anything else as the month", () => {
+    for (const mark of [",", ";", ":", "-", "a", "1", ")", "]", "…", "\"", chr(0x201d)]) expect(may(`It ended${mark} `), `after ${mark}`).toEqual([5]);
+    expect(may("It ended.x ")).toEqual([5]);
+    expect(may("It ended. x ")).toEqual([5]);
+  });
+
+  it("reads May at the start of the text, after opening marks, and after a line break, as a sentence's first word", () => {
+    expect(may("")).toEqual([]);
+    expect(may(" ")).toEqual([]);
+    for (const opener of ["\"", "'", chr(0x201c), chr(0x2018), chr(0x201e), chr(0xab), chr(0x2039), chr(0x300c), chr(0x300e), "(", "[", "{", chr(0xff08), chr(0x3010)]) {
+      expect(may(opener), opener).toEqual([]);
+      expect(may(` ${opener} `), opener).toEqual([]);
+    }
+    expect(may("First line\n")).toEqual([]);
+    expect(may("First line\r\n")).toEqual([]);
+    expect(may("First line\n  ")).toEqual([]);
+    expect(may(`First line.${chr(0xa0)}`)).toEqual([]);
+    expect(may(`First line${chr(0x3000)}`)).toEqual([5]);
+    expect(may("First line ")).toEqual([5]);
+  });
+
+  it("reads a stop or a stop and its closing marks right before the word, with no white space between, as a sentence's first word too", () => {
+    expect(may("It ended.")).toEqual([]);
+    expect(may("It ended.)")).toEqual([]);
+    expect(may("It ended).")).toEqual([]);
+    expect(may("It ended.)]")).toEqual([]);
+  });
+});
+
+describe("linear time (F-70): the pieces and limits the new code reads by", () => {
+  describe("latinWordsMissing reads a long run in pieces and joins them", () => {
+    it("gives a run of any length as one word, as written, whether or not it is cut at a multiple of 4,096", () => {
+      for (const n of [1, 4095, 4096, 4097, 8191, 8192, 8193, 12_289]) {
+        const word = "a".repeat(n);
+        expect(latinWordsMissing("", `範例 ${word} 範例`), String(n)).toEqual([word]);
+      }
+    });
+
+    it("finds the one letter of a run of digits in any piece of it, and none in a run of digits alone", () => {
+      const digits = "9".repeat(5000);
+      expect(latinWordsMissing("", `範例 ${digits}a 範例`)).toEqual([`${digits}a`]);
+      expect(latinWordsMissing("", `範例 a${digits} 範例`)).toEqual([`a${digits}`]);
+      expect(latinWordsMissing("", `範例 ${"9".repeat(4096)}a${"9".repeat(4096)} 範例`)).toEqual([`${"9".repeat(4096)}a${"9".repeat(4096)}`]);
+      expect(latinWordsMissing("", `範例 ${digits} 範例`)).toEqual([]);
+      expect(latinWordsMissing("", `範例 ${"9".repeat(9000)} 範例`)).toEqual([]);
+    });
+
+    it("never cuts a character outside the Basic Multilingual Plane in two where it falls on a boundary", () => {
+      const mathematicalZero = String.fromCodePoint(0x1d7ce);
+      for (const before of [4094, 4095, 4096]) {
+        const word = `${"a".repeat(before)}${mathematicalZero}${"b".repeat(5)}`;
+        expect(latinWordsMissing("", `範例 ${word} 範例`), String(before)).toEqual([word]);
+      }
+    });
+
+    it("keeps two long runs, a long run and the same one again, and a run that another character cuts, as the words they are", () => {
+      const a = "a".repeat(5000);
+      const b = "b".repeat(5000);
+      expect(latinWordsMissing("", `${a} 範例 ${b}`)).toEqual([a, b]);
+      expect(latinWordsMissing("", `${a} 範例 ${a}`)).toEqual([a]);
+      expect(latinWordsMissing("", `${"a".repeat(4096)}。${"b".repeat(3)}`)).toEqual(["a".repeat(4096), "bbb"]);
+      expect(latinWordsMissing(a, `${a} 範例 ${b}`)).toEqual([b]);
+    });
+  });
+
+  describe("urlsIn reads a scheme of at most 32 characters", () => {
+    const scheme = (n: number): string => "s".repeat(n);
+
+    it("reads a scheme of 1 to 32 characters whole", () => {
+      for (const n of [1, 2, 31, 32]) expect(urlsIn(`見 ${scheme(n)}://a.example/b 頁`), String(n)).toEqual([`${scheme(n)}://a.example/b`]);
+    });
+
+    it("reads a longer scheme from its last 32 characters, so that the address is found and ends where it did", () => {
+      for (const n of [33, 40, 5000]) expect(urlsIn(`見 ${scheme(n)}://a.example/b 頁`), String(n)).toEqual([`${scheme(32)}://a.example/b`]);
+      expect(urlsIn(`見 ${scheme(40)}+.-9://a.example/b 頁`)).toEqual([`${scheme(28)}+.-9://a.example/b`]);
+    });
+
+    it("finds a scheme longer than 32 characters only when a letter stands among its last 32, as the safety rules' reader does", () => {
+      // The decision (F-70): no pattern scans an unbounded scheme, so a scheme whose last 32 characters hold no letter has no start.
+      expect(urlsIn(`見 a${"1".repeat(31)}://x 頁`)).toEqual([`a${"1".repeat(31)}://x`]);
+      expect(urlsIn(`見 a${"1".repeat(32)}://x 頁`)).toEqual([]);
+      expect(urlsIn(`見 a${"-".repeat(40)}://x 頁`)).toEqual([]);
+      expect(urlsIn(`見 a${"1".repeat(40)}b${"1".repeat(31)}://x 頁`)).toEqual([`b${"1".repeat(31)}://x`]);
+    });
+
+    it("reads the scheme's characters as RFC 3986 does, and a scheme starts with a letter", () => {
+      expect(urlsIn("見 a+b.c-d9://a.example 頁")).toEqual(["a+b.c-d9://a.example"]);
+      expect(urlsIn("見 9a://a.example 頁")).toEqual(["a://a.example"]);
+      expect(urlsIn("見 a:/b 頁")).toEqual([]);
+    });
+  });
+
+  describe("wordsOutsideLinks leaves out the words that a link spells", () => {
+    it("drops each word that is one of the words of a link, whatever its case, and keeps the others in order", () => {
+      expect(wordsOutsideLinks(["https", "Foo", "example", "ORG", "bar"], ["https://example.org/a"])).toEqual(["Foo", "bar"]);
+      expect(wordsOutsideLinks(["Foo", "foo"], ["HTTPS://FOO.example"])).toEqual([]);
+      expect(wordsOutsideLinks(["b2", "a1"], ["www.a1.example/b2"])).toEqual([]);
+    });
+
+    it("reads the words of every link, and a word of any one of them is spelled", () => {
+      expect(wordsOutsideLinks(["one", "two", "three"], ["https://a.example/one", "https://b.example/two"])).toEqual(["three"]);
+    });
+
+    it("keeps a word that is only part of a link's word, and a word made of two links' ends, which no link spells", () => {
+      expect(wordsOutsideLinks(["exam", "ample", "amp"], ["https://example.org"])).toEqual(["exam", "ample", "amp"]);
+      expect(wordsOutsideLinks(["ab"], ["https://a.example", "https://b.example"])).toEqual(["ab"]);
+      expect(wordsOutsideLinks(["ab"], ["https://xa.example", "https://bx.example"])).toEqual(["ab"]);
+    });
+
+    it("keeps every word when there is no link, and gives none when there is no word", () => {
+      expect(wordsOutsideLinks(["Foo", "bar"], [])).toEqual(["Foo", "bar"]);
+      expect(wordsOutsideLinks([], ["https://example.org"])).toEqual([]);
+    });
+
+    it("reads 50,000 links and 50,000 other words in well under a second", () => {
+      const links = Array.from({ length: 50_000 }, (_, i) => `https://a.example/p${i}`);
+      const words = Array.from({ length: 50_000 }, (_, i) => `q${i}`);
+      const kept = within(1000, () => wordsOutsideLinks([...words, "example", "p7", "P49999"], links));
+      expect(kept).toEqual(words);
+    });
+  });
+
+  describe("parityNumbers reads a 百分之 and the white space after it by looking back from the number", () => {
+    const SPACE_CHARS = [" ", chr(0xa0), chr(0x2009), chr(0x202f)];
+
+    it("makes a percentage of a number that follows 百分之 and any of the four spaces the number reader knows, and keeps them in its text", () => {
+      for (const space of SPACE_CHARS) {
+        for (const gap of [space, space + space, ""]) {
+          const found = parityNumbers(`是百分之${gap}5。`);
+          expect(found, JSON.stringify(gap)).toEqual([{ value: "5", percent: true, key: "5%", text: `百分之${gap}5`, index: 1 }]);
+        }
+      }
+    });
+
+    it("reads a 百分之 at the very start of the text, and one after another number, as a prefix", () => {
+      expect(parityNumbers("百分之5")).toEqual([{ value: "5", percent: true, key: "5%", text: "百分之5", index: 0 }]);
+      expect(parityNumbers("百分之 5 百分之 6")).toEqual([
+        { value: "5", percent: true, key: "5%", text: "百分之 5", index: 0 },
+        { value: "6", percent: true, key: "6%", text: "百分之 6", index: 6 },
+      ]);
+    });
+
+    it("reads a number that no 百分之 directly precedes as a plain one, whatever stands before it", () => {
+      for (const before of ["", " ", "  ", "之", "分之", "百分之 之", "百分 ", "百之 ", "百分之x", "百分之，", "百分之。 ", "分之 ", "百分之\n", `百分之${chr(0x3000)}`, `百分之${chr(0x2002)}`, "百分之\t", "百分", "百分之百分之 百分 "]) {
+        expect(parityNumbers(`${before}5`).map((n) => n.percent), JSON.stringify(before)).toEqual([false]);
+      }
+    });
+
+    it("counts a space between the number and its % or percent as the number's own, and 百分之 before as one more percent mark, not two", () => {
+      expect(parityNumbers("百分之 5%")[0]).toMatchObject({ percent: true, key: "5%", text: "百分之 5%", index: 0 });
+    });
+  });
+
+  describe("parityNumbers gives a whole number its own digits and any other number its exact value", () => {
+    it("drops leading zeros, and gives 0 for zeros alone", () => {
+      expect(keys("0 00 000")).toEqual(["0", "0", "0"]);
+      expect(keys("007 0010 01")).toEqual(["7", "10", "1"]);
+      expect(keys("7 10 100 90 9")).toEqual(["7", "10", "100", "90", "9"]);
+    });
+
+    it("keeps a decimal and a multiplied number exact", () => {
+      expect(keys("00.5 0.50 1.50 10.0 0.0")).toEqual(["0.5", "0.5", "1.5", "10", "0"]);
+      expect(keys("2 million 0 thousand 05 萬 1,000,000")).toEqual(["2000000", "0", "50000", "1000000"]);
+    });
+  });
+
+  describe("parityGaps reads the Chinese once and names the first of each number", () => {
+    it("lists an extra number once, at its first place, in order, and a number the English knows never", () => {
+      const gaps = parityGaps("2 cells", "5 個、5 隻、2 個、7 個、5 隻、7 個");
+      expect(gaps.extra.map((n) => [n.key, n.index])).toEqual([["5", 0], ["7", 12]]);
+      expect(gaps.missing).toEqual([]);
+    });
+
+    it("lists a missing number once, at its first place in the English, in order", () => {
+      const gaps = parityGaps("3 and 3 and 4 and 2 and 3", "2");
+      expect(gaps.missing.map((n) => [n.key, n.index])).toEqual([["3", 0], ["4", 12]]);
+      expect(gaps.extra).toEqual([]);
+    });
+
+    it("tells a percentage from the same number apart, in both lists", () => {
+      const gaps = parityGaps("5 and 6%", "6 and 5%");
+      expect(gaps.missing.map((n) => n.key)).toEqual(["5", "6%"]);
+      expect(gaps.extra.map((n) => n.key)).toEqual(["6", "5%"]);
+    });
+  });
+});
+
+describe("linear time (F-70): avoidHits masks the hits of a term once, after finding them all", () => {
+  const entry = (term: string, taiwan: string, allow_in: string[] = []): AvoidTerm => ({ term, taiwan, allow_in });
+  const fixed = (zh: string): FixedTerm => ({ en: "x", zh, fields: [], except: [] });
+  /** Terms that overlap, touch, repeat and sit inside one another, with an allowed string and a fixed translation. */
+  const TANGLED = {
+    avoid: [entry("甲乙丙", "子"), entry("乙丙", "丑"), entry("甲甲", "寅"), entry("乙", "卯"), entry("丙丁甲甲", "辰"), entry("甲乙", "巳", ["丁甲乙"])],
+    fixed: [fixed("戊乙"), fixed("丙乙丁")],
+  };
+
+  /** A deterministic generator (mulberry32). */
+  function seeded(seed: number): () => number {
+    let a = seed;
+    return () => {
+      a = (a + 0x6d2b79f5) | 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  it("gives what it gave on every avoid term, allowed string and fixed translation of the config, alone, doubled and between others", () => {
+    const pieces = [...TERMS.avoid.map((a) => a.term), ...TERMS.avoid.flatMap((a) => a.allow_in), ...FIXED.map((f) => f.zh)];
+    expect(pieces.length).toBeGreaterThan(60);
+    for (const piece of pieces) {
+      for (const text of [piece, `${piece}${piece}`, `我們用${piece}做`, `${piece}和${piece}`, ` ${piece} `]) {
+        expect(avoidHits(text, TERMS), text).toEqual(oldAvoidHits(text, TERMS));
+      }
+    }
+  });
+
+  it("gives what it gave on 3,000 texts of tangled terms, and on 2,000 texts made of the config's terms, allowed strings and fixed translations", () => {
+    const next = seeded(20261127);
+    const letters = ["甲", "乙", "丙", "丁", "戊", " ", "x"];
+    let hits = 0;
+    for (let i = 0; i < 3000; i += 1) {
+      const text = Array.from({ length: Math.floor(next() * 16) }, () => letters[Math.floor(next() * letters.length)]!).join("");
+      const now = avoidHits(text, TANGLED);
+      expect(now, JSON.stringify(text)).toEqual(oldAvoidHits(text, TANGLED));
+      hits += now.length;
+    }
+    expect(hits).toBeGreaterThan(3000);
+    const pieces = [...TERMS.avoid.map((a) => a.term), ...TERMS.avoid.flatMap((a) => a.allow_in), ...FIXED.map((f) => f.zh), "我們", "用", " ", "的", "。"];
+    let configHits = 0;
+    for (let i = 0; i < 2000; i += 1) {
+      const text = Array.from({ length: 1 + Math.floor(next() * 12) }, () => pieces[Math.floor(next() * pieces.length)]!).join("");
+      const now = avoidHits(text, TERMS);
+      expect(now, text).toEqual(oldAvoidHits(text, TERMS));
+      configHits += now.length;
+    }
+    expect(configHits).toBeGreaterThan(1000);
+  });
+
+  it("names a term inside a longer one once, the longer one, and never a hit that an earlier hit's blank has made", () => {
+    expect(avoidHits("甲乙丙", TANGLED)).toEqual([{ term: "甲乙丙", taiwan: "子", index: 0 }]);
+    expect(avoidHits("甲甲甲", TANGLED)).toEqual([{ term: "甲甲", taiwan: "寅", index: 0 }]);
+    expect(avoidHits("甲乙丙甲乙丙", TANGLED).map((h) => h.index)).toEqual([0, 3]);
+    expect(avoidHits("乙 乙乙", TANGLED).map((h) => [h.term, h.index])).toEqual([["乙", 0], ["乙", 2], ["乙", 3]]);
+  });
+
+  it("reads 64,000 hits of one avoid term (256,000 characters) in well under a second, where copying the text for each hit took over ten", () => {
+    const term = TERMS.avoid[0]!.term;
+    const count = Math.ceil(256_000 / term.length);
+    const hits = within(1000, () => avoidHits(term.repeat(count), TERMS));
+    expect(hits).toHaveLength(count);
+    expect(hits[count - 1]).toEqual({ term, taiwan: TERMS.avoid[0]!.taiwan, index: (count - 1) * term.length });
   });
 });
 

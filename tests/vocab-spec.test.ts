@@ -98,7 +98,7 @@ describe("SPEC §4.2's table and lib/vocab", () => {
 
   it("glosses each source kind as the table does, where the table gives one", () => {
     const spec = entries(cell("SOURCE_KINDS"));
-    expect(spec.filter((e) => e.gloss !== null).map((e) => e.id)).toEqual(["paper", "proof", "registry", "statement", "lab_post", "checker", "reaction", "notice"]);
+    expect(spec.filter((e) => e.gloss !== null).map((e) => e.id)).toEqual(["paper", "preprint", "proof", "dataset", "registry", "statement", "lab_post", "checker", "reaction", "notice"]);
     for (const e of spec) {
       const means = vocab.SOURCE_KIND_INFO[e.id as vocab.SourceKind].means;
       // the table's reference to §4.11 after "checker" is a pointer, not part of the gloss

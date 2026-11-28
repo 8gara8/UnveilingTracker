@@ -920,6 +920,11 @@ describe("The config a context copies", () => {
     expect(Object.keys(ContextConfig.shape)).toEqual(["hype_words", "jargon", "field_cap", "fields", "source_kinds", "allowlist"]);
   });
 
+  it("describes field_cap as an informational copy that the rule does not read (F-64)", () => {
+    const text = ContextConfig.shape.field_cap.description;
+    expect(text).toBe("An informational copy of FIELD_CAP, the most findings of one field in story and items; the rule reads its own constant, not this value");
+  });
+
   it("needs every key of the config, with no null, and refuses any other", () => {
     for (const key of Object.keys(contextConfig())) {
       expectMutationFails(ContextConfig, contextConfig(), (c) => delete c[key], key);
