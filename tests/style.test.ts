@@ -7,8 +7,12 @@
 // examples are measured with the same helpers the rules will use. Each file, field, script and code a guide puts in backticks is one
 // the spec, the code or the config has (every code mention pinned, section by section); each numbered list counts up from 1; each
 // example keeps its own figures wherever it is told again; and each Chinese Wrong line whose fault is a form becomes its Right line
-// by mending that form alone. Every helper below has a planted self-test, so a reader that stopped finding what it looks for fails
-// here first.
+// by mending that form alone. Six rules the guides state in a sentence are also run through the code that judges them: the uses of an
+// existing finding (REF_UNKNOWN, STYLE §6), the half word of a Chinese, Japanese or Korean character in a quote (quoteWords(), §7),
+// the invisible characters turned back at the door (invisibleIssues(), §8), the rounding a figure needs no word for (numberMatches(),
+// §10), the budget and the source_url of a correction (WORDS, PRIMARY_ONLY and SOURCE_SEEN through validateDraft(), §12) and the
+// ordinal kept in Chinese numerals (zhParityGaps(), STYLE-ZH §5). Every helper below has a planted self-test, so a reader that
+// stopped finding what it looks for fails here first.
 //
 // What this file leaves out:
 // - Model identifiers and model flags are tests/no-cyber-strings.test.ts's, which scans routine/ and tests/ alike.
@@ -29,6 +33,7 @@ import { zhDayMonth } from "@/lib/format";
 import { HTML_LANG } from "@/lib/i18n";
 import { PACE_MISSING, paceSentence, shareOf } from "@/lib/metrics/pace";
 import { readingGrade } from "@/lib/readability";
+import { quoteWords } from "@/lib/rules/grounding";
 import { BriefSourceId, FindingSourceId, Who } from "@/lib/schema/common";
 import { DraftCorrectionBase, correctionProblems } from "@/lib/schema/draft";
 import { DraftZhTerm, ZhContext, ZhString } from "@/lib/schema/draft-zh";
@@ -37,12 +42,17 @@ import type { PaceCell, PaceSet, VsBaseline, VsYearAgo } from "@/lib/schema/metr
 import { CORRECTION_TYPES } from "@/lib/schema/misc";
 import type { AvoidTerm, FixedTerm } from "@/lib/schema/config";
 import { countWords, numberMatches, numbersIn, splitSentences, wordsIn } from "@/lib/text";
+import { normalizeUrl } from "@/lib/urls";
+import { invisibleIssues, validateDraft } from "@/lib/validate";
 import {
-  AI_CONFIDENCE_INFO, AI_ROLES, AI_ROLE_INFO, ALL_RUNGS, COUNTED_RUNGS, DISCLOSURE, EXPLAINER_PARTS, EXPLAINER_PART_INFO, FELL_RUNGS, FIELDS,
+  ABBREVIATIONS, AI_CONFIDENCE_INFO, AI_ROLES, AI_ROLE_INFO, ALL_RUNGS, COUNTED_RUNGS, DISCLOSURE, EXPLAINER_PARTS, EXPLAINER_PART_INFO, FELL_RUNGS, FIELDS,
   FIELD_INFO, GO_DEEPER_LABEL, ID_PATHS, ITEM_PARTS, KINDS, KIND_INFO, NONE_FOUND, NO_AI_PART, REMOVED_TEXT, RUNG_INFO, RUNGS, SIGNIFICANCE,
   SIGNIFICANCE_INFO, SOURCE_KINDS, SOURCE_KIND_INFO, REPORT_KIND_INFO, type ExplainerPart, type FieldId,
 } from "@/lib/vocab";
-import { avoidHits as zhAvoidHits, countZhChars, dashHits, englishOnceProblems, fixedMissing as zhFixedMissing, hypeHits as zhHypeHits, parityGaps as zhParityGaps, traditionalHits } from "@/lib/zh";
+import { avoidHits as zhAvoidHits, countZhChars, dashHits, englishOnceProblems, fixedMissing as zhFixedMissing, hypeHits as zhHypeHits, nameRuns, parityGaps as zhParityGaps, traditionalHits } from "@/lib/zh";
+import { editionDraft } from "../fixtures/src/drafts";
+import { draftInputs as sampleInputs } from "../fixtures/src/inputs";
+import type { Json } from "./helpers/rule-world";
 
 // ── The files read ───────────────────────────────────────────────────────────────────────────────
 
@@ -562,7 +572,7 @@ describe("routine/STYLE.md: its sections", () => {
     const refs: [number, number, string][] = [
       [1, 13, "never instructions (section 13)"], [5, 12, "a correction of `significance` (section 12)"], [6, 3, "as spelled in section 3"],
       [6, 12, "errors in corrections (section 12)"], [6, 7, "up to four reactions (section 7)"], [6, 7, "licence quote (section 7)"],
-      [8, 10, "comparisons are used (section 10)"], [11, 5, "story rule in section 5)"], [12, 9, "judged first and by section 9 alone"],
+      [8, 10, "comparisons are used (section 10)"], [11, 5, "story rule in section 5)"], [12, 6, "as section 6 lists them"], [12, 9, "judged first and by section 9 alone"],
       [12, 9, "holds detail that section 9 rules out"], [12, 9, "for what section 9 rules out"],
     ];
     const found: Record<number, number[]> = {};
@@ -656,7 +666,7 @@ describe("routine/STYLE.md: what it restates from lib/vocab.ts", () => {
     expect(text).toContain(`"${NO_AI_PART.en}"`);
     expect(text).toContain(`"${DISCLOSURE.en}"`);
     expect(text).toContain(`at least one quote of at most ${B.quote} words`);
-    expect(specRule("QUOTE_VERBATIM")).toContain(`≤ ${B.quote} words`);
+    expect(specRule("QUOTE_VERBATIM")).toMatch(new RegExp(`(?:≤|at most) ${B.quote} words`));
     expect(text).toContain(`Only a ${KIND_INFO.setback.en}, ${KIND_INFO.infrastructure.en} or ${KIND_INFO.policy_people.en} finding may list none`);
     expect(specRule("AI_SYSTEM_NAMED")).toContain("only a setback, infrastructure or policy_people finding may have `ai.systems` []");
   });
@@ -666,7 +676,8 @@ describe("routine/STYLE.md: what it restates from lib/vocab.ts", () => {
     expect(rows.map((r) => r[0])).toEqual(SIGNIFICANCE.map((s) => SIGNIFICANCE_INFO[s].en));
     const [landmark, major, notable, watch] = rows;
     expect(landmark![2]).toContain("two or more expert reactions from different institutions, none the finding's own, or the rung Confirmed or Applied (`LANDMARK_BASIS`)");
-    expect(specRule("LANDMARK_BASIS")).toContain("2 or more reactions from different affiliations, none in its `who`, or a rung of confirmed or applied");
+    expect(specRule("LANDMARK_BASIS")).toContain("2 or more reactions from different affiliations, none in its `who`");
+    expect(specRule("LANDMARK_BASIS")).toContain("or a rung of confirmed or applied");
     expect(landmark![2]).toContain("The only level allowed with No AI role (`NON_AI_LANDMARK_ONLY`)");
     expect(major![2]).toBe("The lowest level a setback may have (`SETBACK_MAJOR`)");
     expect(notable![2]).toBe("The highest a Claimed or Preprint finding may have (`CLAIMED_CAP`)");
@@ -768,6 +779,50 @@ describe("routine/STYLE.md: what it restates from lib/vocab.ts", () => {
     expect(Object.keys((Who as unknown as { shape: object }).shape)).toEqual(["name", "ror"]);
   });
 
+  it("§6's Structure bullet says how a draft uses an existing finding, as REF_UNKNOWN judges it: shown once, one returning entry, a rung change only for a finding not shown", () => {
+    expect(flatBody(EN, 6)).toContain(
+      "A finding the story or items show appears there once. An existing one has one entry in `returning`, and each entry in `returning` is for a finding they show. A rung change on a shown finding goes in that entry's `rung`; `rung_changes` is for findings they do not show (`REF_UNKNOWN`).",
+    );
+    // The sample weekday draft shows one existing finding, in its items with one returning entry, and holds one rung change for a finding it does not show.
+    const sample = editionDraft("weekday");
+    expect(sample.returning).toHaveLength(1);
+    expect(sample.rung_changes).toHaveLength(1);
+    const SHOWN = sample.returning[0]!.finding_id;
+    const NOT_SHOWN = sample.rung_changes[0]!.finding_id;
+    const AT = sample.items.indexOf(SHOWN);
+    expect(AT).toBeGreaterThanOrEqual(0);
+    expect(sample.story).not.toBe(SHOWN);
+    expect([sample.story, ...sample.items]).not.toContain(NOT_SHOWN);
+    const refUnknown = (change: (d: Json) => void): string[] => {
+      const d = structuredClone(sample) as Json;
+      change(d);
+      return validateDraft(d, sampleInputs("weekday")).issues.filter((i) => i.code === "REF_UNKNOWN").map((i) => i.path);
+    };
+    expect(refUnknown(() => undefined)).toEqual([]);
+    // The bullet's first sentence: a ref is `new-N` or a finding id in the context, so an invented one is refused, in the items and in the story.
+    expect(refUnknown((d) => { d.items.push("new-9"); })).toEqual([`items[${sample.items.length}]`]);
+    expect(refUnknown((d) => { d.items.push("math-2099-0001"); })).toEqual([`items[${sample.items.length}]`]);
+    expect(refUnknown((d) => { d.items.push(d.story); d.story = "math-2099-0001"; })).toEqual(["story"]);
+    // "appears there once"
+    expect(refUnknown((d) => { d.items.push(SHOWN); })).toEqual([`items[${sample.items.length}]`]);
+    // "has one entry in `returning`": none, or two
+    expect(refUnknown((d) => { d.returning = []; })).toEqual([`items[${AT}]`]);
+    expect(refUnknown((d) => { d.returning.push(d.returning[0]); })).toEqual(["returning[1].finding_id"]);
+    // "each entry in `returning` is for a finding they show"
+    expect(refUnknown((d) => { d.returning.push({ ...d.returning[0], finding_id: NOT_SHOWN }); })).toEqual(["returning[1].finding_id"]);
+    // "a rung change on a shown finding goes in that entry's `rung`": there it passes, as a rung change it fails
+    expect(refUnknown((d) => { d.returning[0].rung = d.rung_changes[0].rung; })).toEqual([]);
+    expect(refUnknown((d) => { d.rung_changes.push({ finding_id: SHOWN, rung: d.rung_changes[0].rung }); })).toEqual(["rung_changes[1].finding_id"]);
+    // Shown twice, it is still a shown finding: the second place and the rung change are two faults, each at its own place.
+    expect(refUnknown((d) => { d.items.push(SHOWN); d.rung_changes.push({ finding_id: SHOWN, rung: d.rung_changes[0].rung }); }).sort())
+      .toEqual([`items[${sample.items.length}]`, "rung_changes[1].finding_id"].sort());
+    // "the story or items": the same holds for the story. The existing finding takes the story's place and the story takes its item's.
+    const asStory = (d: Json): void => { d.items[AT] = d.story; d.story = SHOWN; };
+    expect(refUnknown(asStory)).toEqual([]);
+    expect(refUnknown((d) => { asStory(d); d.returning = []; })).toEqual(["story"]);
+    expect(refUnknown((d) => { asStory(d); d.rung_changes.push({ finding_id: SHOWN, rung: d.rung_changes[0].rung }); })).toEqual(["rung_changes[1].finding_id"]);
+  });
+
   it("§7 numbers the sources as the schemas read them (s1, b1), and §6 lists the kinds a Go deeper may hold as GO_DEEPER does", () => {
     const sources = flatBody(EN, 7);
     expect(sources).toContain("A finding numbers its sources s1, s2 and so on. Brief-level text numbers its own b1, b2 and so on.");
@@ -785,6 +840,36 @@ describe("routine/STYLE.md: what it restates from lib/vocab.ts", () => {
     expect(listed![2]).toBe(label("notice"));
     expect(specRule("GO_DEEPER")).toContain("of kinds paper, preprint, proof, dataset, registry, checker, statement or lab_post (a setback's may also be notices)");
     expect(new Set<string>(allowed)).toEqual(new Set(["paper", "preprint", "proof", "dataset", "registry", "checker", "statement", "lab_post"]));
+  });
+
+  it("§7 counts a Chinese, Japanese or Korean character of a quote as half a word, as QUOTE_VERBATIM's counter does, so such a quote is at most 50 characters", () => {
+    expect(flatBody(EN, 7)).toContain(
+      `Quotes are verbatim,** at most ${B.quote} words, from a cited source's own text (\`QUOTE_VERBATIM\`). Nothing is reworded inside quotation marks, and no words are given to a person unless the source shows them. A Chinese, Japanese or Korean character counts as half a word, so a quote in those scripts is at most ${2 * B.quote} characters.`,
+    );
+    for (const character of ["字", "あ", "ア", "한"]) {
+      expect(quoteWords(character.repeat(2 * B.quote)), `${2 * B.quote} characters of ${character}`).toBe(B.quote);
+      expect(quoteWords(character.repeat(2 * B.quote + 1)), `${2 * B.quote + 1} characters of ${character}`).toBe(B.quote + 1);
+    }
+    expect(quoteWords("a ".repeat(B.quote))).toBe(B.quote);
+    expect(quoteWords("a ".repeat(B.quote + 1))).toBe(B.quote + 1);
+    // Half a word each, beside whole Latin words: two words and 46 characters make 25, and 47 make 26.
+    expect(quoteWords(`ab cd ${"字".repeat(2 * (B.quote - 2))}`)).toBe(B.quote);
+    expect(quoteWords(`ab cd ${"字".repeat(2 * (B.quote - 2) + 1)}`)).toBe(B.quote + 1);
+    // And the cap through the engine: a quote the cited page holds, of 50 characters, passes, and of 51 is one QUOTE_VERBATIM issue at the quote.
+    const first = (editionDraft("weekday") as Json).new_findings[0];
+    const url: string = first.sources.find((source: Json) => source.id === first.ai.evidence[0].source_id).url;
+    const quoted = (quote: string): string[] => {
+      const d = structuredClone(editionDraft("weekday")) as Json;
+      const inputs = sampleInputs("weekday");
+      d.new_findings[0].ai.evidence[0].quote = quote;
+      const texts = (inputs.evidence as unknown as { texts: Record<string, string> }).texts;
+      texts[normalizeUrl(url)] = `${texts[normalizeUrl(url)] ?? ""} ${quote}`;
+      return validateDraft(d, inputs).issues.map((i) => `${i.code} ${i.path}`);
+    };
+    for (const character of ["字", "あ", "한"]) {
+      expect(quoted(character.repeat(2 * B.quote)), `${2 * B.quote} characters of ${character}`).toEqual([]);
+      expect(quoted(character.repeat(2 * B.quote + 1)), `${2 * B.quote + 1} characters of ${character}`).toEqual(["QUOTE_VERBATIM new_findings[0].ai.evidence[0].quote"]);
+    }
   });
 
   it("§7 has one row for each kind of source, in order, with the gloss the vocabulary gives it", () => {
@@ -822,11 +907,24 @@ describe("routine/STYLE.md: what it restates from lib/vocab.ts", () => {
     expect(seed).toBeDefined();
     // "a, b, c, "d e" and f": no word of the list holds a comma or " and ", so the quotes go and the commas and the last "and" split it.
     const words = seed!.replace(/"/g, "").split(/, | and /);
-    expect(words).toHaveLength(HYPE.en.length);
-    expect([...words].sort()).toEqual([...HYPE.en].sort());
+    // The file holds the nine seed words first, in the order the guide lists them, then their plurals, spellings and derived forms.
+    expect(words).toHaveLength(9);
+    expect(HYPE.en.slice(0, words.length)).toEqual(words);
     expect(HYPE.en.some((w) => w.includes(",") || w.includes(" and "))).toBe(false);
     expect(HYPE.en).toContain("breakthrough");
     const text = flatBody(EN, 8);
+    const forms = /The list also holds their plurals and common spellings, such as (.+?), and the check reads a word as the list writes it\./.exec(text)?.[1];
+    expect(forms, "the sentence on the forms the list holds").toBeDefined();
+    const examples = forms!.split(/, | and /);
+    expect(examples).toEqual(["breakthroughs", "paradigm shifts", "game-changer", "ground-breaking", "revolutionize"]);
+    for (const form of examples) {
+      expect(HYPE.en.indexOf(form), `${form} is on the list after the seed`).toBeGreaterThanOrEqual(words.length);
+      expect(wordsIn(`It was a ${form} for us.`, HYPE.en), form).toEqual([form]);
+    }
+    const unlisted = /Avoid every other word that sells instead of tells, such as (.+?)\./.exec(text)?.[1]?.split(" or ");
+    expect(unlisted).toEqual(["jaw-dropping", "earth-shattering"]);
+    for (const word of unlisted!) expect(wordsIn(`It was ${word} for us.`, HYPE.en), word).toEqual([]);
+    expect(text).toContain("Write the word in the singular: the plural, breakthroughs, is a hype word even in a Landmark's text.");
     expect(text).toContain("**Breakthrough** is allowed only in the text of a Landmark finding");
     expect(text).toContain("It is never in the Lead or the big picture, and never in a finding below Landmark (`HYPE_WORDS`)");
     for (const kind of ["its title", "explainer", "figure alt text", "rung notes", "returning updates", "corrections", "deep dive", "remarkable note"]) expect(text, kind).toContain(kind);
@@ -849,6 +947,52 @@ describe("routine/STYLE.md: what it restates from lib/vocab.ts", () => {
   it("§8 has no em dash rule that differs from NO_EM_DASH's", () => {
     expect(flatBody(EN, 8)).toContain("**No em dash,** and no en dash except between digits, in our own words (`NO_EM_DASH`)");
     expect(specRule("NO_EM_DASH")).toContain("No U+2014, and no U+2013 except between digits");
+  });
+
+  it("§8 tells the writer what the sentence counter does with an abbreviation and with a lower-case start, as splitSentences() does it", () => {
+    const text = flatBody(EN, 8);
+    expect(text).toContain("**Never end a sentence with an abbreviation** such as U.S., U.K., et al., No., Fig. or approx., and never start one with a lower-case name such as mRNA or pH.");
+    expect(text).toContain("The sentence counter reads the next sentence as part of the same one.");
+    for (const abbreviation of ["U.S.", "U.K.", "et al.", "No.", "Fig.", "approx."]) {
+      expect(ABBREVIATIONS as readonly string[], abbreviation).toContain(abbreviation);
+      expect(splitSentences(`The team met in the ${abbreviation} Then it left.`), `${abbreviation} runs on`).toHaveLength(1);
+    }
+    for (const name of ["mRNA", "pH"]) expect(splitSentences(`It rose. ${name} levels fell.`), name).toHaveLength(1);
+    const wrong = "It happened in the U.S. Teams then checked it.";
+    const right = "Teams in the U.S. and Japan did it.";
+    expect(text).toContain(`Reword: "${right}", not "${wrong}"`);
+    expect(splitSentences(wrong)).toEqual([wrong]);
+    expect(splitSentences(right)).toEqual([right]);
+    expect(specRule("SENTENCE_LENGTH")).toContain("at most 24");
+    expect(SPEC).toContain("`ABBREVIATIONS` in `lib/vocab.ts`");
+  });
+
+  it("§8 refuses the invisible characters it names, as the door of the validator does, and a tab or a line break is none; the draft goes back with SCHEMA alone", () => {
+    expect(flatBody(EN, 8)).toContain(
+      "**Plain text only.** No Markdown and no HTML in any string. No web address either, since links go in sources (`BLOCKED_HOST`). No invisible characters: a zero-width space or joiner, a soft hyphen, a byte order mark, a direction mark or any other format character, a Braille blank, or a control code other than a tab, a line feed or a carriage return. The draft is turned back with an error that names the string, before any other rule is read (`SCHEMA`).",
+    );
+    // Each kind the sentence names: a zero-width space, joiner and non-joiner, a soft hyphen, a byte order mark, a direction mark and override,
+    // other format characters (a variation selector, a tag character), a Braille blank, and the controls (null, one, vertical tab, form feed, delete, a C1 one).
+    // Every control but the tab, the line feed and the carriage return, from U+0000 to U+001F and from U+007F to U+009F, and U+0600, a format character that is not invisible by default.
+    const CONTROLS = [...Array(0x20).keys(), ...Array.from({ length: 0x21 }, (_, i) => 0x7f + i)].filter((code) => ![0x09, 0x0a, 0x0d].includes(code));
+    expect(CONTROLS).toHaveLength(0x20 - 3 + 0x21);
+    const REFUSED = [0x200b, 0x200d, 0x200c, 0x00ad, 0xfeff, 0x200e, 0x202e, 0xfe0f, 0xe0001, 0x0600, 0x2800, ...CONTROLS];
+    for (const code of REFUSED) {
+      const label = `U+${code.toString(16).toUpperCase().padStart(4, "0")}`;
+      const found = invisibleIssues({ text: `a${String.fromCodePoint(code)}b` }).listed;
+      expect(found.map((i) => [i.code, i.path]), label).toEqual([["SCHEMA", "text"]]);
+      expect(found[0]!.message, label).toContain(label);
+    }
+    // What stays: a tab, a line feed, a carriage return, a space and the characters beside the controls' two ranges.
+    for (const code of [0x09, 0x0a, 0x0d, 0x20, 0xa0]) expect(invisibleIssues({ text: `a${String.fromCodePoint(code)}b` }).listed, `U+${code.toString(16)}`).toEqual([]);
+    // The door: one string with a zero-width space beside a string over its word budget gives the one SCHEMA issue, at the string, and no other rule runs.
+    const draft = structuredClone(editionDraft("weekday")) as Json;
+    draft.lead[0].text = `A${String.fromCharCode(0x200b)}B`;
+    draft.new_findings[0].title = Array(B.title + 5).fill("word").join(" ");
+    const result = validateDraft(draft, sampleInputs("weekday"));
+    expect(result.issues.map((i) => [i.code, i.path])).toEqual([["SCHEMA", "lead[0].text"]]);
+    expect(result.issues[0]!.message).toContain("U+200B");
+    expect(validateDraft({ ...draft, lead: editionDraft("weekday").lead }, sampleInputs("weekday")).issues.map((i) => i.code)).toContain("WORDS");
   });
 
   it("§9 and §11 hold the sequence length and the steps of DUAL_USE", () => {
@@ -877,6 +1021,49 @@ describe("routine/STYLE.md: what it restates from lib/vocab.ts", () => {
     expect(numbersIn("5%")[0]!.value).toBe(numbersIn("5 per cent")[0]!.value);
     expect(numbersIn("1,500")[0]!.value).toBe(numbersIn("1500")[0]!.value);
     expect(text).toContain('Copy a number as the source writes it ("1,500" or "1500", "5%" or "5 per cent")');
+  });
+
+  it("§10's rule on units is how numbersIn() reads a figure: spaced from its unit it is a number, glued to it it is not", () => {
+    const text = flatBody(EN, 10);
+    expect(text).toContain('**Units.** Write a space between a number and its unit: "10 m", "5 mg", "3 x". A figure glued to its unit ("10m", "5mg") is not read as a number, so it is never checked against the source.');
+    for (const [spaced, glued, value] of [["10 m", "10m", 10], ["5 mg", "5mg", 5], ["3 x", "3x", 3]] as const) {
+      expect(numbersIn(`about ${spaced} of it`).map((n) => n.value), spaced).toEqual([value]);
+      expect(numbersIn(`about ${glued} of it`), glued).toEqual([]);
+    }
+  });
+
+  it("§10's exception to rounding is how numberMatches() reads a figure: fewer decimal places or a unit word need no word, and the direction of a word is not read", () => {
+    expect(flatBody(EN, 10)).toContain(
+      'A figure written to fewer decimal places than its source, or with a unit word, needs no word before it. A source\'s 36.8% may be "37%" and its 11.6 million "12 million", never "11.7 million". The check does not read which way a word rounds, so choose it yourself: "more than" or "over" when the source\'s number is larger than the one you write, "nearly" or "almost" when it is smaller.',
+    );
+    const matches = (written: string, source: number): boolean => numberMatches(numbersIn(written)[0]!, source);
+    // With no word: the figure at its own decimal places, or in its unit word, is the source's rounded there.
+    expect(matches("37%", 36.8)).toBe(true);
+    expect(numbersIn("37%")[0]!.percent).toBe(true);
+    expect(matches("12 million", 11_600_000)).toBe(true);
+    expect(matches("11.7 million", 11_600_000)).toBe(false);
+    expect(matches("37%", 37.6)).toBe(false);
+    // Fewer decimal places than the source's: 5.2 for a page's 5.17, never 5.3.
+    expect(matches("5.2", 5.17)).toBe(true);
+    expect(matches("5.3", 5.17)).toBe(false);
+    // Every unit word moves the step to the unit's.
+    for (const [written, wrong, source] of [
+      ["12 thousand", "11.7 thousand", 11_600], ["12 million", "11.7 million", 11_600_000], ["12 billion", "11.7 billion", 11_600_000_000],
+      ["12 trillion", "11.7 trillion", 11_600_000_000_000], ["12 bn", "11.7 bn", 11_600_000_000],
+    ] as const) {
+      expect(matches(written, source), written).toBe(true);
+      expect(matches(wrong, source), wrong).toBe(false);
+    }
+    // A whole number written in full still takes a word.
+    expect(matches("1,400", 1393)).toBe(false);
+    expect(matches("about 1,400", 1393)).toBe(true);
+    // The direction is not read: a word that points the wrong way passes, and so does the word the guide advises.
+    expect(matches("more than 1,400", 1393)).toBe(true);
+    expect(matches("nearly 1,400", 1404)).toBe(true);
+    for (const word of ["more than", "over"]) expect(matches(`${word} 1,300`, 1320), word).toBe(true);
+    for (const word of ["nearly", "almost"]) expect(matches(`${word} 1,400`, 1393), word).toBe(true);
+    // What the word still does not excuse: a figure that is not the source's nearest at the digit written.
+    expect(matches("more than 1,300", 1393)).toBe(false);
   });
 
   it("§10's example of a computed number is one: its right words use the paper's two figures, and 67% is the change between them and in neither", () => {
@@ -936,6 +1123,45 @@ describe("routine/STYLE.md: what it restates from lib/vocab.ts", () => {
     expect(flatBody(EN, 12)).toContain("A `removed` correction never names a field, a subfield or an id (`SCHEMA`).");
   });
 
+  it("§12 holds a correction's after to the budget of the string it corrects, and its source_url to a primary page seen in this run, as WORDS, PRIMARY_ONLY and SOURCE_SEEN do", () => {
+    const text = flatBody(EN, 12);
+    expect(text).toContain(
+      `Its \`after\` has the word budget of the string at its path, as section 6 lists them: a title ${B.title} words, a rung note ${B.rungNote}, a returning update ${B.update}. An explainer part has the cap it had when the finding was first published: as the story, its cap there; as an item, ${B.itemOptional} for background and could_lead and none for the other four (\`WORDS\`).`,
+    );
+    expect(text).toContain(
+      "Where a primary source shows the correction is right, it adds that source's `source_url`, a page seen in this run and never an invented one (`PRIMARY_ONLY`, `SOURCE_SEEN`). With no such page, `source_url` is null.",
+    );
+    // The rows the sentence names are the table's own: the title, the rung note and the returning update.
+    const rows = new Map(tableRows(body(EN, 6), "| String | Budget in words |").map(([name, budget]) => [name!, budget!]));
+    expect([rows.get("Title"), rows.get("Rung note"), rows.get("Returning update")]).toEqual([`${B.title} at most`, `${B.rungNote} at most`, `${B.update} at most`]);
+    expect(Object.values(B.parts).slice(4)).toEqual([35, 35]);
+    expect(B.itemOptional).toBeGreaterThan(Math.max(...Object.values(B.parts).slice(4)));
+    // A draft's correction through the engine: the budgets of the strings it names, and the pages its source_url may be.
+    const sample = editionDraft("weekday");
+    const NEXT = sample.corrections.length;
+    const run = (add: Json, only = false): string[] => {
+      const d = structuredClone(sample) as Json;
+      if (only) d.corrections = [];
+      d.corrections.push({ finding_id: "math-2026-0140", edition_date: null, term_id: null, type: "correction", path: "title", after: "Ok", reason: "The text was wrong.", source_url: null, report_id: null, ...add });
+      return validateDraft(d, sampleInputs("weekday")).issues.map((i) => `${i.code} ${i.path}`);
+    };
+    // n words in sentences of ten at most, so that no other rule has a say.
+    const plain = (n: number): string => Array.from({ length: n }, (_, i) => `${i % 10 === 0 ? "Ok" : "ok"}${i % 10 === 9 || i === n - 1 ? "." : ""}`).join(" ");
+    for (const [path, max] of [["title", B.title], ["rung_history.0.note", B.rungNote], ["since_then.0.text", B.update]] as const) {
+      expect(run({ path, after: plain(max) }), `${path} at ${max} words`).toEqual([]);
+      expect(run({ path, after: plain(max + 1) }), `${path} at ${max + 1} words`).toEqual([`WORDS corrections[${NEXT}].after`]);
+    }
+    // The first correction of a draft is read too, the only one or the first of several.
+    // (Without the draft's own corrections the report it upholds loses its correction, which is REPORT_UPHELD's and no concern here.)
+    expect(run({ path: "title", after: plain(B.title + 1) }, true).filter((issue) => issue.startsWith("WORDS "))).toEqual(["WORDS corrections[0].after"]);
+    const seen = sample.corrections[0]!.source_url;
+    expect(seen).not.toBeNull();
+    expect(run({ source_url: seen }), "a primary page the run saw").toEqual([]);
+    expect(run({ source_url: null }), "no page").toEqual([]);
+    expect(run({ source_url: "https://www.nature.com/articles/nature-ut-sample-9999" }), "a primary host's page the run did not see").toContain(`SOURCE_SEEN corrections[${NEXT}].source_url`);
+    expect(run({ source_url: "https://www.example-press.test/story" }), "a page no list names").toContain(`PRIMARY_ONLY corrections[${NEXT}].source_url`);
+  });
+
   it("§13 names the wrapper and the injection flag the pack uses", () => {
     const text = flatBody(EN, 13);
     expect(text).toContain('`<untrusted source="...">...</untrusted>`');
@@ -948,8 +1174,11 @@ describe("routine/STYLE.md: what it restates from lib/vocab.ts", () => {
     expect(specBudget("Page total")).toContain(`target ${thousands(TARGET)} (S)`);
     const text = collapse(preamble(EN));
     expect(text).toContain("A hard rule that fails rejects the draft.");
-    expect(text).toContain(`A soft gate sends it back once for repair: \`READING_LEVEL\` above grade ${RUN.budgets.reading_grade_soft}, \`WORDS\` over the page target and \`REPORT_UPHELD\`.`);
+    expect(text).toContain(`A soft gate goes into the repair prompt and never blocks publishing: \`READING_LEVEL\` above grade ${RUN.budgets.reading_grade_soft} and \`WORDS\` over the page target send the draft back for repair, and \`REPORT_UPHELD\` asks for a missing correction but starts no repair round by itself.`);
+    expect(text).not.toContain("sends it back once");
     expect(specRule("REPORT_UPHELD")).toContain("the warning starts no repair round by itself");
+    expect(SPEC_RULES.get("READING_LEVEL")!.flag).toMatch(/^S above/);
+    expect(collapse(SPEC)).toContain("soft gates (S) go to the repair prompt and are recorded but never block publish");
   });
 });
 
@@ -1008,6 +1237,7 @@ describe("routine/STYLE-ZH.md: its sections", () => {
       [3, "a Japanese name in Taiwan's characters", "A Japanese name takes Taiwan's characters"],
       [4, "full-width punctuation 「，。：；？！（）", "Full-width marks in Chinese text: 「，。：；？！（）"],
       [4, "no dashes of any kind", "No dash of any kind"],
+      [4, "no invisible characters (§4.1; the draft is turned back as SCHEMA before any other rule is read)", "No invisible characters (zero-width spaces and joiners, a soft hyphen"],
       [4, "ranges take 至, or an en dash between digits", "A range takes 至 (2015 至 2019 年)"],
       [5, "years as given, never 民國 113 年", "never 民國 113 年"],
       [5, "under 10,000 in full, 2,000, never 2 千", "2,000, never 2 千"],
@@ -1016,10 +1246,12 @@ describe("routine/STYLE-ZH.md: its sections", () => {
       [5, "months as digits (2024 年 2 月)", "Months as digits: February 2024 is 2024 年 2 月"],
       [5, "(三名學生, 其中一個)", "三名學生 for \"three students\", 其中一個 for \"one of\""],
       [5, "from one to ten only, may become digits (3 名學生)", "From one to ten only, it may become a digit (3 名學生)"],
+      [5, "an ordinal written as a word always staying in Chinese numerals (第三, never 第 3)", "An ordinal written as a word always stays in Chinese numerals, even from one to ten (third is 第三, never 第 3)"],
       [7, "the English term in full-width brackets at each term's first use", "followed at once by the English term in full-width brackets"],
       [7, "never in a title", "A title never has any"],
       [7, "(such as CRISPR)", "A term whose `zh` is its English (CRISPR) has none at all"],
       [7, "every term of the finding used there", "Every term of the finding appears"],
+      [7, "terms that share one Chinese (dataset and data set) taking one bracket at the first use of it, with either English term", "Terms of a finding that have the same `zh` (dataset and data set are both 資料集) are one group"],
       [7, "the official term from 樂詞網 recorded, the everyday term used", "`official`: the term that 樂詞網 gives for the English term"],
       [8, "never translated afresh", "Never translate one afresh"],
       [9, "突破 only for an English \"breakthrough\"", "突破 only translates an English \"breakthrough\""],
@@ -1182,6 +1414,44 @@ describe("routine/STYLE-ZH.md: what it restates from lib/vocab.ts and config/", 
     expect(exceptOf("scroll")).toContain("Dead Sea Scroll");
   });
 
+  it("§2's table names every except phrase of every fixed entry, each with a Taiwan form that is not the entry's own", () => {
+    const rows = tableRows(body(ZH, 2), "| English | Write | When |");
+    // The table's own phrases, each beside the form written for it (a cell's two lists run side by side), in any case: "Dead Sea Scrolls" for the entry "Dead Sea Scroll".
+    const written = new Map<string, string>();
+    for (const [english, write] of rows) {
+      const phrases = english!.split(", ");
+      const forms = write!.split(", ");
+      if (phrases.length === forms.length) phrases.forEach((phrase, i) => written.set(phrase.toLowerCase(), forms[i]!));
+    }
+    const phrasesOf = TERMS.fixed.flatMap((e) => e.except.map((phrase) => ({ entry: e, phrase })));
+    expect(phrasesOf.length).toBeGreaterThanOrEqual(13);
+    for (const { entry, phrase } of phrasesOf) {
+      const form = written.get(phrase.toLowerCase()) ?? written.get(`${phrase.toLowerCase()}s`);
+      expect(form, `the table gives "${phrase}" (an except phrase of "${entry.en}") a form`).toBeDefined();
+      expect(form, `"${phrase}" is not written as "${entry.en}" is`).not.toBe(entry.zh);
+      const own = TERMS.fixed.find((e) => e.en.toLowerCase() === phrase.toLowerCase());
+      if (own) expect(form, `"${phrase}" is a fixed entry of its own`).toBe(own.zh);
+    }
+    expect(written.get("to model")).toBe("建立模型");
+    expect(written.get("battery of")).toBe("一系列");
+    expect(written.get("test battery")).toBe("成套測驗");
+    expect(written.get("proof of principle")).toBe("原理驗證");
+  });
+
+  it("§6 reads a name as a run of capitalised words the way nameRuns() does: of, the, for, de and von join, and, a number and a sentence's first article do not", () => {
+    const text = flatBody(ZH, 6);
+    expect(text).toContain("Of, the, for, de and von may join its words (Journal of the AMS). \"And\", any other word, a number or a mark ends a run, and a sentence's first The, A or An does not start one.");
+    expect(text).not.toContain("(of, the, and, for, de and von may join them)");
+    expect(nameRuns("Journal of the AMS published it").map((r) => r.text)).toEqual(["Journal of the AMS"]);
+    expect(nameRuns("Max Planck Institute for Physics").map((r) => r.text)).toEqual(["Max Planck Institute for Physics"]);
+    expect(nameRuns("Ludwig von Beethoven wrote it").map((r) => r.text)).toEqual(["Ludwig von Beethoven"]);
+    expect(nameRuns("Stanford University and the Protein Data Bank").map((r) => r.text)).toEqual(["Stanford University", "Protein Data Bank"]);
+    expect(nameRuns("The Protein Data Bank hosts the files").map((r) => r.text)).toEqual(["Protein Data Bank"]);
+    expect(nameRuns("Protein Data Bank 2 Files").map((r) => r.text)).toEqual(["Protein Data Bank"]);
+    expect(nameRuns("Protein, Data Bank").map((r) => r.text)).toEqual(["Data Bank"]);
+    expect(text).toContain('Where the English joins two names with "and" (Stanford University and the Protein Data Bank), they are two names: keep both or translate both.');
+  });
+
   it("§3 names the simplified and Japanese characters as the lists do, with their sizes", () => {
     const text = flatBody(ZH, 3);
     const simplified = /every character on `simplified_only` \((.+?) and some ([\d,]+) more\)/.exec(text)!;
@@ -1264,6 +1534,19 @@ describe("routine/STYLE-ZH.md: what it restates from lib/vocab.ts and config/", 
         expect(gaps, `${english.text} -> ${right.text}`).toEqual({ missing: [], extra: [] });
       }
     }
+  });
+
+  it("§5 keeps an ordinal written as a word in Chinese numerals, as ZH_PARITY reads it: 第三 passes, 第 3 is a number the English lacks, and 3rd keeps its digit", () => {
+    expect(flatBody(ZH, 5)).toContain(
+      "An ordinal written as a word always stays in Chinese numerals, even from one to ten (third is 第三, never 第 3), for the same reason. Written 3rd, it keeps its digit (第 3).",
+    );
+    expect(zhParityGaps("The third team won.", "第三隊獲勝。")).toEqual({ missing: [], extra: [] });
+    expect(zhParityGaps("The third team won.", "第 3 隊獲勝。").extra.map((n) => n.key)).toEqual(["3"]);
+    expect(zhParityGaps("The 3rd team won.", "第 3 隊獲勝。")).toEqual({ missing: [], extra: [] });
+    expect(zhParityGaps("The 3rd team won.", "第三隊獲勝。").missing.map((n) => n.key)).toEqual(["3"]);
+    // The allowance the ordinal does not share: a cardinal from one to ten may be a digit.
+    expect(zhParityGaps("Three teams won.", "3 支隊伍獲勝。")).toEqual({ missing: [], extra: [] });
+    expect(foreignChars("第三隊獲勝")).toEqual([]);
   });
 
   it("§11 gives each cap as ceil(the English cap x zh_factor), the caps the spec lists for ZH_CHARS, and the count the way it says", () => {
@@ -2274,14 +2557,14 @@ const EN_CODES: Record<number, string[]> = {
   3: ["RUNG_EVIDENCE", "RUNG_ORDER", "CLAIMED_CAP", "ARTEFACT_FORMAT", "RUNG_EVIDENCE", "GO_DEEPER"],
   4: ["AI_SYSTEM_NAMED", "QUOTE_VERBATIM", "AI_CONFIDENCE", "AI_CONFIDENCE", "WHO_SAYS", "AI_CONFIDENCE", "LANDMARK_BASIS"],
   5: ["LANDMARK_BASIS", "NON_AI_LANDMARK_ONLY", "SETBACK_MAJOR", "CLAIMED_CAP", "FIELD_CAP", "STORY_PICK", "FORMAT_SECTIONS", "FORMAT_SECTIONS", "CLAIMED_CAP", "LANDMARK_BASIS"],
-  6: ["WORDS", "WHO_SAYS", "POSSIBILITY", "GO_DEEPER", "COUNTS", "COUNTS", "SCHEMA", "DATE_MISMATCH", "REF_UNKNOWN", "SOURCE_IDS", "WHO_SAYS"],
+  6: ["WORDS", "WHO_SAYS", "POSSIBILITY", "GO_DEEPER", "COUNTS", "COUNTS", "SCHEMA", "DATE_MISMATCH", "REF_UNKNOWN", "REF_UNKNOWN", "SOURCE_IDS", "WHO_SAYS"],
   7: ["PRIMARY_ONLY", "SOURCE_SEEN", "SOURCE_URL", "BLOCKED_HOST", "SOURCE_IDS", "QUOTE_VERBATIM", "COUNTS", "FIGURE_LICENCE"],
-  8: ["SENTENCE_LENGTH", "TERM_DEFINED", "HYPE_WORDS", "HYPE_WORDS", "READING_LEVEL", "NO_EM_DASH", "BLOCKED_HOST"],
+  8: ["SENTENCE_LENGTH", "TERM_DEFINED", "HYPE_WORDS", "HYPE_WORDS", "READING_LEVEL", "NO_EM_DASH", "BLOCKED_HOST", "SCHEMA"],
   9: ["DUAL_USE", "DUAL_USE", "DUAL_USE"],
   10: ["NUMBER_SOURCED"],
   11: ["WORDS", "DUAL_USE", "HYPE_WORDS", "FORMAT_SECTIONS", "WEEK_AGAINST", "FORMAT_SECTIONS", "WORDS", "DUAL_USE", "FORMAT_SECTIONS"],
   12: [
-    "XREF", "SCHEMA", "CLAIMED_CAP", "LANDMARK_BASIS", "RUNG_ORDER", "SCHEMA", "SUBFIELD_UNKNOWN", "SCHEMA", "DUAL_USE", "BLOCKED_HOST", "REPORT_DECISION", "REPORT_UPHELD",
+    "XREF", "SCHEMA", "WORDS", "PRIMARY_ONLY", "SOURCE_SEEN", "CLAIMED_CAP", "LANDMARK_BASIS", "RUNG_ORDER", "SCHEMA", "SUBFIELD_UNKNOWN", "SCHEMA", "DUAL_USE", "BLOCKED_HOST", "REPORT_DECISION", "REPORT_UPHELD",
     "LANDMARK_BASIS", "SCHEMA", "LANDMARK_BASIS",
   ],
   13: ["SECRET_LIKE", "CANARY"],

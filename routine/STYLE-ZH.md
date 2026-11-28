@@ -72,8 +72,10 @@ phrase of `fixed` has a form of its own. Pick by what the English means.
 | manuscript | 抄本 / 手稿 / 稿件 | an ancient copy / an author's own draft / a paper sent to a journal |
 | plasma | 電漿 / 血漿 | in physics, chemistry and earth / in biology |
 | blood plasma, plasma cell | 血漿, 漿細胞 | the entry for plasma does not apply |
-| model organism, business model, role model | 模式生物, 商業模式, 榜樣 | the entry for model does not apply |
+| model organism, business model, role model, to model | 模式生物, 商業模式, 榜樣, 建立模型 | the entry for model does not apply |
+| battery of, test battery | 一系列, 成套測驗 | the entry for battery does not apply |
 | proof of concept, raw material, supplementary material | 概念驗證, 原料, 補充資料 | |
+| proof of principle | 原理驗證 | the entry for proof does not apply |
 | Dead Sea Scrolls | 死海古卷 | |
 
 **Places.** Write 台灣, 中國 and 香港 as the English names them. Never 台灣地區, 中國台灣, 台灣省, or 內地 for
@@ -137,6 +139,8 @@ never 沖縄 (縄 is on the list).
   2024 年 2 月, 8.4% 的論文). No space beside a full-width mark, and none before the bracket of an English term.
 - Plain text only: no emoji, no Markdown or HTML marks, and no straight double quote, which would break the
   JSON (quote with 「」). Keep a string's paragraph breaks as the English has them.
+- No invisible characters (zero-width spaces and joiners, a soft hyphen, a byte order mark, a Braille blank,
+  control codes): the draft is turned back at the door, as the English one is.
 
 - English: The team said it was the first time.
 - Wrong: `研究團隊說,這是第一次.` (half-width marks; style only)
@@ -161,7 +165,9 @@ never 沖縄 (縄 is on the list).
    A number that is not round (12,345) stays as written.
 4. A number written as a word keeps to Chinese numerals: 三名學生 for "three students", 其中一個 for "one of".
    From one to ten only, it may become a digit (3 名學生). Above ten it stays in Chinese numerals (twelve is
-   十二, a hundred is 一百), because a digit would be a number that the English lacks.
+   十二, a hundred is 一百), because a digit would be a number that the English lacks. An ordinal written as a
+   word always stays in Chinese numerals, even from one to ten (third is 第三, never 第 3), for the same reason.
+   Written 3rd, it keeps its digit (第 3).
 5. Names keep their digits (AlphaFold 3, COVID-19, 3D). Add no number of your own: no digits for a list, a
    count or a part. Keep the currency the English names: $ is 美元, NT$ is 新台幣.
 
@@ -190,11 +196,12 @@ never 沖縄 (縄 is on the list).
   of each.
 - AI systems, companies and products stay in English (AlphaFold 3, Google DeepMind). A person's name stays in
   English unless it has an established Taiwan form (愛因斯坦, 牛頓, 達爾文, 圖靈, 居禮). A name needs no bracket.
-- A run of two or more capitalised English words (of, the, and, for, de and von may join them), such as
-  Protein Data Bank, is a name. A name kept in English must match letter for letter, and then `ZH_TERMS`
-  skips a fixed term inside it. A name that you translate must carry the Taiwan form of any fixed term inside
-  it (蛋白質資料庫). When in doubt, translate the name whole. Where the English joins two names with "and",
-  keep both or translate both.
+- A run of two or more capitalised English words, such as Protein Data Bank, is a name. Of, the, for, de and von
+  may join its words (Journal of the AMS). "And", any other word, a number or a mark ends a run, and a sentence's
+  first The, A or An does not start one. A name kept in English must match letter for letter, and then `ZH_TERMS`
+  skips a fixed term inside it. A name that you translate must carry the Taiwan form of any fixed term inside it
+  (蛋白質資料庫). When in doubt, translate the name whole. Where the English joins two names with "and" (Stanford
+  University and the Protein Data Bank), they are two names: keep both or translate both.
 - A Japanese name takes Taiwan's characters (§3). A prize or committee on `hype_names` takes the form of §9.
 - The site's own names: the Pace is 進度 and the Verification Ladder is 查證階梯.
 
@@ -228,6 +235,8 @@ In a finding's explainer (`new.<ref>.explainer.<part>` and `backlog.<id>.explain
   No later use has brackets. A term whose `zh` is its English (CRISPR) has none at all. A title never has any.
 - The longest term wins: if protein and protein folding are both terms, 蛋白質摺疊 is a use of protein folding
   only, and a bare 蛋白質 is a use of protein.
+- Terms of a finding that have the same `zh` (dataset and data set are both 資料集) are one group: write the English
+  bracket once, at the first use of that Chinese, with the English of either term; no later use has one.
 - Elsewhere (the Lead, ideas, returning updates, the deep dive, the review) write the Chinese term alone.
 
 - Glossary term: virtual unwrapping is 虛擬展開.

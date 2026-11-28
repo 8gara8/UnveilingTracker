@@ -3,11 +3,12 @@
 These rules bind every English draft. They match `lib/vocab.ts` and the validator in `lib/rules/`. If this file
 and `vocab.ts` differ, `vocab.ts` wins, and this file is fixed in the same pull request. A code in backticks,
 such as `WORDS`, names the validator rule that checks the rule before it. A hard rule that fails rejects the
-draft. A soft gate sends it back once for repair: `READING_LEVEL` above grade 12, `WORDS` over the page target
-and `REPORT_UPHELD`. Sections 2, 3, 4, 7 and 9 are also shown to readers on the Methodology page, so they are
-written for both. The context is the file that the run gives the writer, with the date, the limits, the recent
-findings and the word lists. Section numbers and titles are fixed. Every example is invented and marked as one:
-it names no real person, lab or paper, and it shows a style, never a fact.
+draft. A soft gate goes into the repair prompt and never blocks publishing: `READING_LEVEL` above grade 12 and
+`WORDS` over the page target send the draft back for repair, and `REPORT_UPHELD` asks for a missing correction
+but starts no repair round by itself. Sections 2, 3, 4, 7 and 9 are also shown to readers on the Methodology
+page, so they are written for both. The context is the file that the run gives the writer, with the date, the
+limits, the recent findings and the word lists. Section numbers and titles are fixed. Every example is invented
+and marked as one: it names no real person, lab or paper, and it shows a style, never a fact.
 
 ## 1. The reader and the purpose
 
@@ -261,7 +262,10 @@ The other budgets, counted by `countWords()` and checked by `WORDS`:
 - **Structure.** The draft is one JSON file that follows the schema (`SCHEMA`). Its `date` is the context's and
   its `generated_at` is a real time between the window's end and the deadline (`DATE_MISMATCH`). Each ref is
   `new-N` or a finding id in the context, and each `new-N` is used once, in the story or the items
-  (`REF_UNKNOWN`). Source ids run in order with no gaps (`SOURCE_IDS`).
+  (`REF_UNKNOWN`). A finding the story or items show appears there once. An existing one has one entry in
+  `returning`, and each entry in `returning` is for a finding they show. A rung change on a shown finding goes
+  in that entry's `rung`; `rung_changes` is for findings they do not show (`REF_UNKNOWN`). Source ids run in
+  order with no gaps (`SOURCE_IDS`).
 
 **Example (invented): a story of the day at the right length,** about 250 words, with every part inside its
 budget.
@@ -327,7 +331,8 @@ is cited. The kinds:
   b2 and so on. Each list runs in order with no gaps (`SOURCE_IDS`). A source gives its title as published, its
   publisher and the record's own date, never a date made up.
 - **Quotes are verbatim,** at most 25 words, from a cited source's own text (`QUOTE_VERBATIM`). Nothing is
-  reworded inside quotation marks, and no words are given to a person unless the source shows them.
+  reworded inside quotation marks, and no words are given to a person unless the source shows them. A Chinese,
+  Japanese or Korean character counts as half a word, so a quote in those scripts is at most 50 characters.
 - **Reactions** are a named scientist's own published words about someone else's work, with name, affiliation, a
   verbatim quote and the page that holds it. A finding has at most four (`COUNTS`), and an author of the finding
   is not a reaction.
@@ -340,6 +345,9 @@ Write so that a curious reader, not a specialist, follows on one reading.
 
 - **Short sentences.** Every sentence has at most 24 words (`SENTENCE_LENGTH`). Aim for 12 to 18. A semicolon or
   a colon does not end a sentence, and a quotation is never split, so a long quote makes a long sentence.
+- **Never end a sentence with an abbreviation** such as U.S., U.K., et al., No., Fig. or approx., and never start
+  one with a lower-case name such as mRNA or pH. The sentence counter reads the next sentence as part of the same
+  one. Reword: "Teams in the U.S. and Japan did it.", not "It happened in the U.S. Teams then checked it."
 - **Define a term at first use,** or list it for the Glossary (`TERM_DEFINED`). Prefer the plain word. If the
   term is needed, say what it means in a clause where it first appears. List it in the finding's `terms` as a
   new term or as an existing glossary id. A new term has a definition of at most 40 words that uses no other
@@ -347,14 +355,17 @@ Write so that a curious reader, not a specialist, follows on one reading.
   listed, and every listed term must appear in the explainer.
 - **No hype.** Never use the context's hype words, whose seed is revolutionary, game-changing, groundbreaking,
   paradigm shift, unprecedented, stunning, mind-blowing, "changes everything" and breakthrough (`HYPE_WORDS`).
-  Avoid their relatives too, such as revolutionise or game changer. Say what happened and let the reader judge:
-  write "The mixture sped up the splitting of water almost as well as platinum does", not "This revolutionary
-  result is a game-changing breakthrough."
+  The list also holds their plurals and common spellings, such as breakthroughs, paradigm shifts, game-changer,
+  ground-breaking and revolutionize, and the check reads a word as the list writes it. Avoid every other word
+  that sells instead of tells, such as jaw-dropping or earth-shattering. Say what happened and let the reader
+  judge: write "The mixture sped up the splitting of water almost as well as platinum does", not "This
+  revolutionary result is a game-changing breakthrough."
 - **Breakthrough** is allowed only in the text of a Landmark finding: its title, explainer, figure alt text and
   rung notes. Its returning updates and its corrections may use the word too, and so may a deep dive or a
   remarkable note on it. It is never in the Lead or the big picture, and never in a finding below Landmark
   (`HYPE_WORDS`). Where a technical term holds it, such as breakthrough infection, reword the term. Proper names
-  that hold it, such as the Breakthrough Prize, keep their own words, as do quotes and source titles.
+  that hold it, such as the Breakthrough Prize, keep their own words, as do quotes and source titles. Write the
+  word in the singular: the plural, breakthroughs, is a hype word even in a Landmark's text.
 - **Miracle, magic and holy grail** are never praise. They may name a subject: miracle accounts, magic numbers,
   the Holy Grail. No validator checks this one, and it binds all the same.
 - **Numbers carry a unit and a comparison** that a reader can feel: "200 mixtures in six weeks", "almost as well
@@ -366,7 +377,10 @@ Write so that a curious reader, not a specialist, follows on one reading.
 - **No em dash,** and no en dash except between digits, in our own words (`NO_EM_DASH`). Use a comma, a colon, a
   full stop or "to". Quotes and source titles keep their own dashes.
 - **Plain text only.** No Markdown and no HTML in any string. No web address either, since links go in sources
-  (`BLOCKED_HOST`).
+  (`BLOCKED_HOST`). No invisible characters: a zero-width space or joiner, a soft hyphen, a byte order mark, a
+  direction mark or any other format character, a Braille blank, or a control code other than a tab, a line feed
+  or a carriage return. The draft is turned back with an error that names the string, before any other rule is
+  read (`SCHEMA`).
 - **House habits.** British spelling, the same in every string (organisation, randomised, labelled). Times are
   Taipei time, with UTC labelled when given. No day counts.
 
@@ -404,9 +418,10 @@ described by its significance only, or left out.
 - **No sequences.** No run of 20 or more nucleotide or amino-acid letters, in any case or layout (`DUAL_USE`).
 - **No numbered steps** in a biology or chemistry finding, in a deep dive on one, or in the big picture
   (`DUAL_USE`).
-- **No dangerous pairings.** No sentence may hold a hazardous agent word from the context's list together with a
-  word that marks a method. Nor may it hold such an agent word together with a quantity and its unit
-  (`DUAL_USE`).
+- **No dangerous pairings.** No sentence may hold a hazardous agent word (the name of a pathogen, toxin or chemical
+  weapon) together with a word that marks a method. Nor may it hold such an agent word together with a quantity
+  and its unit (`DUAL_USE`). The check reads its own list of agent words, `dual-use.json` in `config/`. The
+  context does not carry that list, so judge a word by what it names, not by whether a list holds it.
 - **Quotes and titles count.** The checks read quotes, source titles and glossary definitions too. If a source's
   own words hold such detail, it is not quoted, and its significance is described instead.
 - **Passing the check is not permission.** The check is a backstop. If the point of a finding is the dangerous
@@ -433,8 +448,14 @@ the chat edition's data lines. The writer never computes one.
   hours and 300 hours supports "kept working for 500 hours, and platinum for 300", never "lasted 67% longer".
 - **Rounding.** Round only after a word that says so: about, around, nearly, almost, roughly, more than or over.
   Round only to the last non-zero digit written. A source's 1,393 may become "about 1,400", never "about 1,500".
+  A figure written to fewer decimal places than its source, or with a unit word, needs no word before it. A
+  source's 36.8% may be "37%" and its 11.6 million "12 million", never "11.7 million". The check does not read
+  which way a word rounds, so choose it yourself: "more than" or "over" when the source's number is larger than
+  the one you write, "nearly" or "almost" when it is smaller.
 - **Small numbers.** A number written as a word from one to ten needs no source. Larger numbers are written in
   digits.
+- **Units.** Write a space between a number and its unit: "10 m", "5 mg", "3 x". A figure glued to its unit
+  ("10m", "5mg") is not read as a number, so it is never checked against the source.
 - **The Pace sentence is never rewritten.** The script prints it, in both languages, as it composes it. Do not
   restate, soften or sharpen it, and do not describe a trend it does not state.
 - **No tallies.** No "the fifth AI result this month", no day counts and no "so far this year". The counts on
@@ -476,8 +497,12 @@ Mondays and Sundays carry at most two findings, the story included, besides the 
 The tracker corrects its record in the open and never edits it silently. Published text stays as it was, and a
 dated banner shows what it now says, why, and the source that shows it. A correction names one record that
 exists: a finding, an edition or a glossary term (`XREF`). It gives a `path` such as `explainer.how_sure` and
-the new text as `after`, at most 300 characters. It also gives a reason of at most 40 words (`SCHEMA`). Where a
-primary source shows the correction is right, it adds that source's `source_url`.
+the new text as `after`, at most 300 characters. It also gives a reason of at most 40 words (`SCHEMA`). Its
+`after` has the word budget of the string at its path, as section 6 lists them: a title 12 words, a rung note
+25, a returning update 60. An explainer part has the cap it had when the finding was first published: as the
+story, its cap there; as an item, 40 for background and could_lead and none for the other four (`WORDS`).
+Where a primary source shows the correction is right, it adds that source's `source_url`, a page seen in this
+run and never an invented one (`PRIMARY_ONLY`, `SOURCE_SEEN`). With no such page, `source_url` is null.
 
 **Four types:**
 
