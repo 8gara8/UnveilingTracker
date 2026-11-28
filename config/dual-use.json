@@ -1,0 +1,849 @@
+{
+  "schema_version": 1,
+  "version": 1,
+  "agents": [
+    {
+      "en": [
+        "anthrax",
+        "Bacillus anthracis"
+      ],
+      "zh": [
+        "炭疽"
+      ]
+    },
+    {
+      "en": [
+        "plague",
+        "Yersinia pestis"
+      ],
+      "zh": [
+        "鼠疫"
+      ]
+    },
+    {
+      "en": [
+        "tularaemia",
+        "tularemia",
+        "Francisella tularensis"
+      ],
+      "zh": [
+        "兔熱病"
+      ]
+    },
+    {
+      "en": [
+        "botulinum toxin",
+        "botulinum neurotoxin",
+        "Clostridium botulinum"
+      ],
+      "zh": [
+        "肉毒桿菌",
+        "肉毒毒素"
+      ]
+    },
+    {
+      "en": [
+        "ricin"
+      ],
+      "zh": [
+        "蓖麻毒素"
+      ]
+    },
+    {
+      "en": [
+        "abrin"
+      ],
+      "zh": []
+    },
+    {
+      "en": [
+        "saxitoxin"
+      ],
+      "zh": []
+    },
+    {
+      "en": [
+        "smallpox",
+        "variola virus",
+        "variola"
+      ],
+      "zh": [
+        "天花病毒"
+      ]
+    },
+    {
+      "en": [
+        "horsepox"
+      ],
+      "zh": [
+        "馬痘"
+      ]
+    },
+    {
+      "en": [
+        "Ebola",
+        "Ebolavirus"
+      ],
+      "zh": [
+        "伊波拉"
+      ]
+    },
+    {
+      "en": [
+        "Marburg virus",
+        "Marburgvirus"
+      ],
+      "zh": [
+        "馬堡病毒",
+        "馬爾堡病毒"
+      ]
+    },
+    {
+      "en": [
+        "Lassa virus",
+        "Lassa fever"
+      ],
+      "zh": [
+        "拉薩熱"
+      ]
+    },
+    {
+      "en": [
+        "Nipah virus"
+      ],
+      "zh": [
+        "立百病毒"
+      ]
+    },
+    {
+      "en": [
+        "Hendra virus"
+      ],
+      "zh": [
+        "亨德拉病毒"
+      ]
+    },
+    {
+      "en": [
+        "Rift Valley fever"
+      ],
+      "zh": [
+        "裂谷熱"
+      ]
+    },
+    {
+      "en": [
+        "Crimean-Congo haemorrhagic fever",
+        "Crimean-Congo hemorrhagic fever"
+      ],
+      "zh": [
+        "剛果出血熱"
+      ]
+    },
+    {
+      "en": [
+        "Venezuelan equine encephalitis"
+      ],
+      "zh": [
+        "委內瑞拉馬腦炎",
+        "委內瑞拉型馬腦炎"
+      ]
+    },
+    {
+      "en": [
+        "Q fever",
+        "Coxiella burnetii"
+      ],
+      "zh": [
+        "Q熱"
+      ]
+    },
+    {
+      "en": [
+        "brucellosis",
+        "Brucella"
+      ],
+      "zh": [
+        "布氏桿菌",
+        "布魯氏菌",
+        "布魯氏桿菌"
+      ]
+    },
+    {
+      "en": [
+        "glanders",
+        "melioidosis",
+        "Burkholderia mallei",
+        "Burkholderia pseudomallei"
+      ],
+      "zh": [
+        "鼻疽"
+      ]
+    },
+    {
+      "en": [
+        "H5N1",
+        "H7N9"
+      ],
+      "zh": [
+        "H5N1",
+        "H7N9"
+      ]
+    },
+    {
+      "en": [
+        "sarin"
+      ],
+      "zh": [
+        "沙林"
+      ]
+    },
+    {
+      "en": [
+        "soman"
+      ],
+      "zh": [
+        "梭曼"
+      ]
+    },
+    {
+      "en": [
+        "tabun"
+      ],
+      "zh": [
+        "塔崩"
+      ]
+    },
+    {
+      "en": [
+        "VX"
+      ],
+      "zh": [
+        "VX"
+      ]
+    },
+    {
+      "en": [
+        "Novichok"
+      ],
+      "zh": [
+        "諾維喬克"
+      ]
+    },
+    {
+      "en": [
+        "nerve agent",
+        "nerve gas"
+      ],
+      "zh": [
+        "神經毒劑",
+        "神經性毒劑",
+        "神經毒氣"
+      ]
+    },
+    {
+      "en": [
+        "sulfur mustard",
+        "sulphur mustard",
+        "mustard gas"
+      ],
+      "zh": [
+        "芥子氣"
+      ]
+    },
+    {
+      "en": [
+        "lewisite"
+      ],
+      "zh": []
+    },
+    {
+      "en": [
+        "phosgene"
+      ],
+      "zh": [
+        "碳醯氯"
+      ]
+    },
+    {
+      "en": [
+        "chemical weapon",
+        "chemical warfare agent",
+        "chemical warfare"
+      ],
+      "zh": [
+        "化學武器",
+        "化學戰劑",
+        "化學戰"
+      ]
+    },
+    {
+      "en": [
+        "bioweapon",
+        "biological weapon",
+        "biological warfare",
+        "bioterrorism"
+      ],
+      "zh": [
+        "生物武器",
+        "生物戰",
+        "生物恐怖"
+      ]
+    }
+  ],
+  "procedures": [
+    {
+      "en": [
+        "synthesis route",
+        "synthetic route",
+        "route of synthesis",
+        "synthesis pathway",
+        "synthetic pathway"
+      ],
+      "zh": [
+        "合成路徑",
+        "合成途徑",
+        "合成路線"
+      ]
+    },
+    {
+      "en": [
+        "synthesis",
+        "synthesise",
+        "synthesised",
+        "synthesises",
+        "synthesising",
+        "synthesize",
+        "synthesized",
+        "synthesizes",
+        "synthesizing"
+      ],
+      "zh": [
+        "合成",
+        "製備"
+      ]
+    },
+    {
+      "en": [
+        "production method",
+        "production process",
+        "manufacturing method",
+        "manufacturing process",
+        "mass production",
+        "large-scale production",
+        "scale up",
+        "scaled up",
+        "scales up",
+        "scaling up"
+      ],
+      "zh": [
+        "生產方法",
+        "生產流程",
+        "製造方法",
+        "製造流程",
+        "大量生產",
+        "量產",
+        "放大生產"
+      ]
+    },
+    {
+      "en": [
+        "culture conditions",
+        "growth conditions",
+        "growth medium",
+        "culture medium",
+        "culturing",
+        "serial passage",
+        "passaging"
+      ],
+      "zh": [
+        "培養條件",
+        "生長條件",
+        "培養基",
+        "培養液",
+        "培養",
+        "連續傳代",
+        "傳代"
+      ]
+    },
+    {
+      "en": [
+        "purification",
+        "purify",
+        "purifies",
+        "purified",
+        "purifying",
+        "high purity",
+        "extraction"
+      ],
+      "zh": [
+        "純化",
+        "提純",
+        "萃取",
+        "高純度"
+      ]
+    },
+    {
+      "en": [
+        "precursor",
+        "precursors",
+        "precursor chemical",
+        "precursor chemicals",
+        "chemical precursor",
+        "chemical precursors"
+      ],
+      "zh": [
+        "前驅物",
+        "前驅體"
+      ]
+    },
+    {
+      "en": [
+        "reaction conditions"
+      ],
+      "zh": [
+        "反應條件"
+      ]
+    },
+    {
+      "en": [
+        "stabiliser",
+        "stabilisers",
+        "stabilizer",
+        "stabilizers"
+      ],
+      "zh": [
+        "穩定劑"
+      ]
+    },
+    {
+      "en": [
+        "transmissibility enhancement",
+        "enhanced transmissibility",
+        "enhance transmissibility",
+        "enhancing transmissibility",
+        "enhances transmissibility",
+        "increased transmissibility",
+        "increase transmissibility",
+        "increasing transmissibility",
+        "increases transmissibility",
+        "airborne transmissibility"
+      ],
+      "zh": [
+        "增強傳播力",
+        "提高傳播力",
+        "增強傳染力",
+        "提高傳染力"
+      ]
+    },
+    {
+      "en": [
+        "virulence enhancement",
+        "enhanced virulence",
+        "enhance virulence",
+        "enhancing virulence",
+        "enhances virulence",
+        "increased virulence",
+        "increase virulence",
+        "increasing virulence",
+        "increases virulence"
+      ],
+      "zh": [
+        "增強毒力",
+        "提高毒力",
+        "增強致病力",
+        "提高致病力"
+      ]
+    },
+    {
+      "en": [
+        "gain of function"
+      ],
+      "zh": [
+        "功能增益",
+        "增益功能"
+      ]
+    },
+    {
+      "en": [
+        "host range"
+      ],
+      "zh": [
+        "宿主範圍"
+      ]
+    },
+    {
+      "en": [
+        "immune evasion",
+        "immune escape",
+        "evade immunity",
+        "evade detection"
+      ],
+      "zh": [
+        "免疫逃脫",
+        "免疫逃避",
+        "逃避免疫",
+        "躲避偵測",
+        "逃避偵測"
+      ]
+    },
+    {
+      "en": [
+        "reverse genetics"
+      ],
+      "zh": [
+        "逆向遺傳學",
+        "反向遺傳學"
+      ]
+    },
+    {
+      "en": [
+        "aerosolisation",
+        "aerosolization",
+        "aerosolise",
+        "aerosolised",
+        "aerosolises",
+        "aerosolising",
+        "aerosolize",
+        "aerosolized",
+        "aerosolizes",
+        "aerosolizing"
+      ],
+      "zh": [
+        "氣膠化",
+        "氣溶膠化",
+        "氣霧化"
+      ]
+    },
+    {
+      "en": [
+        "weaponisation",
+        "weaponization",
+        "weaponise",
+        "weaponised",
+        "weaponises",
+        "weaponising",
+        "weaponize",
+        "weaponized",
+        "weaponizes",
+        "weaponizing"
+      ],
+      "zh": [
+        "武器化"
+      ]
+    },
+    {
+      "en": [
+        "respirable"
+      ],
+      "zh": [
+        "可吸入"
+      ]
+    },
+    {
+      "en": [
+        "lethal dose",
+        "median lethal dose",
+        "LD50",
+        "infectious dose",
+        "ID50"
+      ],
+      "zh": [
+        "致死劑量",
+        "半數致死劑量",
+        "感染劑量",
+        "LD50",
+        "ID50"
+      ]
+    },
+    {
+      "en": [
+        "step-by-step",
+        "recipe",
+        "instructions for"
+      ],
+      "zh": [
+        "配方",
+        "操作步驟",
+        "詳細步驟"
+      ]
+    },
+    {
+      "en": [
+        "how to make",
+        "how to produce",
+        "how to synthesise",
+        "how to synthesize",
+        "how to grow",
+        "how to culture",
+        "how to obtain",
+        "how to acquire",
+        "how to build",
+        "how to enhance",
+        "how to weaponise",
+        "how to weaponize"
+      ],
+      "zh": [
+        "如何製造",
+        "如何製作",
+        "如何合成",
+        "如何培養",
+        "如何取得",
+        "如何增強"
+      ]
+    }
+  ],
+  "units": [
+    {
+      "en": [
+        "mg",
+        "milligram",
+        "milligrams"
+      ],
+      "zh": [
+        "毫克",
+        "mg"
+      ]
+    },
+    {
+      "en": [
+        "µg",
+        "μg",
+        "ug",
+        "microgram",
+        "micrograms"
+      ],
+      "zh": [
+        "微克",
+        "µg",
+        "μg"
+      ]
+    },
+    {
+      "en": [
+        "ng",
+        "nanogram",
+        "nanograms"
+      ],
+      "zh": [
+        "奈克",
+        "ng"
+      ]
+    },
+    {
+      "en": [
+        "g",
+        "gram",
+        "grams",
+        "gramme",
+        "grammes"
+      ],
+      "zh": [
+        "公克",
+        "克",
+        "g"
+      ]
+    },
+    {
+      "en": [
+        "kg",
+        "kilogram",
+        "kilograms",
+        "kilogramme",
+        "kilogrammes"
+      ],
+      "zh": [
+        "公斤",
+        "kg"
+      ]
+    },
+    {
+      "en": [
+        "mL",
+        "millilitre",
+        "millilitres",
+        "milliliter",
+        "milliliters"
+      ],
+      "zh": [
+        "毫升",
+        "mL"
+      ]
+    },
+    {
+      "en": [
+        "µL",
+        "μL",
+        "uL",
+        "microlitre",
+        "microlitres",
+        "microliter",
+        "microliters"
+      ],
+      "zh": [
+        "微升",
+        "µL",
+        "μL"
+      ]
+    },
+    {
+      "en": [
+        "L",
+        "litre",
+        "litres",
+        "liter",
+        "liters"
+      ],
+      "zh": [
+        "公升",
+        "L"
+      ]
+    },
+    {
+      "en": [
+        "mol",
+        "mole",
+        "moles"
+      ],
+      "zh": [
+        "莫耳",
+        "mol"
+      ]
+    },
+    {
+      "en": [
+        "mmol",
+        "millimole",
+        "millimoles"
+      ],
+      "zh": [
+        "毫莫耳",
+        "mmol"
+      ]
+    },
+    {
+      "en": [
+        "µmol",
+        "μmol",
+        "micromole",
+        "micromoles"
+      ],
+      "zh": [
+        "微莫耳",
+        "µmol",
+        "μmol"
+      ]
+    },
+    {
+      "en": [
+        "millimolar"
+      ],
+      "zh": [
+        "毫莫耳濃度"
+      ]
+    },
+    {
+      "en": [
+        "micromolar"
+      ],
+      "zh": [
+        "微莫耳濃度"
+      ]
+    },
+    {
+      "en": [
+        "nanomolar"
+      ],
+      "zh": [
+        "奈莫耳濃度"
+      ]
+    },
+    {
+      "en": [
+        "ppm",
+        "ppb",
+        "parts per million",
+        "parts per billion"
+      ],
+      "zh": [
+        "ppm",
+        "ppb"
+      ]
+    },
+    {
+      "en": [
+        "°C",
+        "℃",
+        "degrees Celsius",
+        "degree Celsius",
+        "degrees centigrade"
+      ],
+      "zh": [
+        "°C",
+        "℃",
+        "攝氏度",
+        "度"
+      ]
+    },
+    {
+      "en": [
+        "°F",
+        "℉",
+        "degrees Fahrenheit",
+        "degree Fahrenheit"
+      ],
+      "zh": [
+        "°F",
+        "℉",
+        "華氏度"
+      ]
+    },
+    {
+      "en": [
+        "µm",
+        "μm",
+        "micrometre",
+        "micrometres",
+        "micrometer",
+        "micrometers",
+        "micron",
+        "microns"
+      ],
+      "zh": [
+        "微米",
+        "µm",
+        "μm"
+      ]
+    },
+    {
+      "en": [
+        "CFU",
+        "colony-forming unit",
+        "colony-forming units"
+      ],
+      "zh": [
+        "CFU",
+        "菌落形成單位"
+      ]
+    },
+    {
+      "en": [
+        "PFU",
+        "plaque-forming unit",
+        "plaque-forming units"
+      ],
+      "zh": [
+        "PFU",
+        "斑塊形成單位"
+      ]
+    },
+    {
+      "en": [
+        "TCID50"
+      ],
+      "zh": [
+        "TCID50"
+      ]
+    }
+  ]
+}

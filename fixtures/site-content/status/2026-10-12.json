@@ -1,0 +1,399 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-12",
+  "runs": [
+    {
+      "run_id": "20261012-031502",
+      "trigger": "schedule",
+      "attempt": 1,
+      "started_at": "2026-10-12T03:15:02+08:00",
+      "finished_at": "2026-10-12T04:01:23+08:00",
+      "outcome": "published_full",
+      "edition": "full",
+      "error_code": null,
+      "code_commit": "0123456789abcdef0123456789abcdef01234567",
+      "pace_status": "ok",
+      "data_only_published_at": "2026-10-12T03:19:50+08:00",
+      "full_published_at": "2026-10-12T03:56:53+08:00",
+      "late": false,
+      "stages": [
+        {
+          "id": "preflight",
+          "status": "ok",
+          "started_at": "2026-10-12T03:15:02+08:00",
+          "ended_at": "2026-10-12T03:15:25+08:00",
+          "note": null
+        },
+        {
+          "id": "collect",
+          "status": "ok",
+          "started_at": "2026-10-12T03:15:25+08:00",
+          "ended_at": "2026-10-12T03:16:40+08:00",
+          "note": null
+        },
+        {
+          "id": "metrics",
+          "status": "ok",
+          "started_at": "2026-10-12T03:16:40+08:00",
+          "ended_at": "2026-10-12T03:17:40+08:00",
+          "note": null
+        },
+        {
+          "id": "recheck",
+          "status": "ok",
+          "started_at": "2026-10-12T03:17:40+08:00",
+          "ended_at": "2026-10-12T03:19:05+08:00",
+          "note": null
+        },
+        {
+          "id": "data_only",
+          "status": "ok",
+          "started_at": "2026-10-12T03:19:05+08:00",
+          "ended_at": "2026-10-12T03:19:50+08:00",
+          "note": null
+        },
+        {
+          "id": "draft",
+          "status": "ok",
+          "started_at": "2026-10-12T03:19:50+08:00",
+          "ended_at": "2026-10-12T03:44:56+08:00",
+          "note": null
+        },
+        {
+          "id": "validate",
+          "status": "ok",
+          "started_at": "2026-10-12T03:44:56+08:00",
+          "ended_at": "2026-10-12T03:46:52+08:00",
+          "note": null
+        },
+        {
+          "id": "zh",
+          "status": "ok",
+          "started_at": "2026-10-12T03:46:52+08:00",
+          "ended_at": "2026-10-12T03:56:17+08:00",
+          "note": null
+        },
+        {
+          "id": "publish",
+          "status": "ok",
+          "started_at": "2026-10-12T03:56:17+08:00",
+          "ended_at": "2026-10-12T03:56:53+08:00",
+          "note": null
+        },
+        {
+          "id": "deploy",
+          "status": "ok",
+          "started_at": "2026-10-12T03:56:53+08:00",
+          "ended_at": "2026-10-12T03:58:53+08:00",
+          "note": null
+        },
+        {
+          "id": "links",
+          "status": "ok",
+          "started_at": "2026-10-12T03:58:53+08:00",
+          "ended_at": "2026-10-12T04:01:13+08:00",
+          "note": null
+        }
+      ],
+      "feeds": [
+        {
+          "id": "arxiv-math",
+          "status": "ok",
+          "newest": "2026-10-11T20:00:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 1,
+          "note": null
+        },
+        {
+          "id": "arxiv-physics",
+          "status": "ok",
+          "newest": "2026-10-11T21:07:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 6,
+          "note": null
+        },
+        {
+          "id": "arxiv-astro-ph",
+          "status": "ok",
+          "newest": "2026-10-11T22:14:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 11,
+          "note": null
+        },
+        {
+          "id": "arxiv-cond-mat",
+          "status": "ok",
+          "newest": "2026-10-11T23:21:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 2,
+          "note": null
+        },
+        {
+          "id": "arxiv-quant-ph",
+          "status": "ok",
+          "newest": "2026-10-11T20:28:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 7,
+          "note": null
+        },
+        {
+          "id": "arxiv-q-bio",
+          "status": "ok",
+          "newest": "2026-10-11T21:35:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 12,
+          "note": null
+        },
+        {
+          "id": "arxiv-physics-chem-ph",
+          "status": "ok",
+          "newest": "2026-10-11T22:42:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 3,
+          "note": null
+        },
+        {
+          "id": "arxiv-stat-ml",
+          "status": "ok",
+          "newest": "2026-10-11T23:49:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 8,
+          "note": null
+        },
+        {
+          "id": "biorxiv",
+          "status": "ok",
+          "newest": "2026-10-11T20:56:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 13,
+          "note": null
+        },
+        {
+          "id": "medrxiv",
+          "status": "ok",
+          "newest": "2026-10-11T21:03:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 4,
+          "note": null
+        },
+        {
+          "id": "pubmed",
+          "status": "ok",
+          "newest": "2026-10-11T22:10:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 9,
+          "note": null
+        },
+        {
+          "id": "crossref-journals",
+          "status": "ok",
+          "newest": "2026-10-11T23:17:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 14,
+          "note": null
+        },
+        {
+          "id": "journal-nature",
+          "status": "ok",
+          "newest": "2026-10-11T20:24:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 5,
+          "note": null
+        },
+        {
+          "id": "journal-science",
+          "status": "ok",
+          "newest": "2026-10-11T21:31:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 10,
+          "note": null
+        },
+        {
+          "id": "journal-pnas",
+          "status": "ok",
+          "newest": "2026-10-11T22:38:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 1,
+          "note": null
+        },
+        {
+          "id": "eurekalert",
+          "status": "ok",
+          "newest": "2026-10-11T23:45:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 6,
+          "note": null
+        },
+        {
+          "id": "lab-deepmind",
+          "status": "ok",
+          "newest": "2026-10-11T20:52:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 11,
+          "note": null
+        },
+        {
+          "id": "smc-reactions",
+          "status": "ok",
+          "newest": "2026-10-11T21:59:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 2,
+          "note": null
+        },
+        {
+          "id": "openalex",
+          "status": "ok",
+          "newest": "2026-10-11T22:06:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 7,
+          "note": null
+        },
+        {
+          "id": "crossref-updates",
+          "status": "ok",
+          "newest": "2026-10-11T23:13:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 12,
+          "note": null
+        },
+        {
+          "id": "retraction-watch",
+          "status": "ok",
+          "newest": "2026-10-11T20:20:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 3,
+          "note": null
+        },
+        {
+          "id": "ctgov",
+          "status": "ok",
+          "newest": "2026-10-11T21:27:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 8,
+          "note": null
+        },
+        {
+          "id": "rcsb",
+          "status": "ok",
+          "newest": "2026-10-11T22:34:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 13,
+          "note": null
+        },
+        {
+          "id": "mathlib-stats",
+          "status": "ok",
+          "newest": "2026-10-11T23:41:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 4,
+          "note": null
+        },
+        {
+          "id": "erdos",
+          "status": "ok",
+          "newest": "2026-10-11T20:48:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 9,
+          "note": null
+        },
+        {
+          "id": "scrollprize",
+          "status": "ok",
+          "newest": "2026-10-11T21:55:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 14,
+          "note": null
+        },
+        {
+          "id": "naer-terms",
+          "status": "ok",
+          "newest": "2026-10-11T22:02:00+08:00",
+          "checked_at": "2026-10-12T03:15:40+08:00",
+          "stale_since": null,
+          "records": 5,
+          "note": null
+        }
+      ],
+      "budgets": {
+        "agent_seconds": 1500,
+        "zh_agent_seconds": 540,
+        "web_fetches": 22,
+        "web_searches": 6,
+        "repair_rounds": 0,
+        "tokens_in": null,
+        "tokens_out": null,
+        "usage": null,
+        "safety_stops": 0
+      },
+      "candidates": {
+        "ranked": 40,
+        "kept": 16,
+        "deep_read": 8
+      },
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "codes": []
+      },
+      "soft_gates": {
+        "checked": 3,
+        "dropped": 0,
+        "by_code": {}
+      },
+      "zh": {
+        "attempted": true,
+        "repair_rounds": 0,
+        "strings": 17,
+        "backlog": 0,
+        "outcome": "ok"
+      },
+      "deploy": {
+        "triggered": true,
+        "ready_at": "2026-10-12T03:58:53+08:00",
+        "shows_date": "2026-10-12",
+        "shows_edition": "full"
+      },
+      "recheck": {
+        "findings_checked": 4,
+        "rung_changes": 0,
+        "proposals": 0,
+        "reports_new": 0,
+        "reports_decided": 0,
+        "flagged": []
+      },
+      "links": {
+        "checked_at": "2026-10-12T04:01:13+08:00",
+        "checked": 4,
+        "ok": 4,
+        "unknown": 0,
+        "broken": []
+      }
+    }
+  ]
+}

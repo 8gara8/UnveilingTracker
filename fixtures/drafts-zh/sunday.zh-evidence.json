@@ -1,0 +1,20 @@
+{
+  "urls": [
+    "https://terms.naer.edu.tw/detail/ut-sample-0101/",
+    "https://terms.naer.edu.tw/detail/ut-sample-0102/"
+  ],
+  "fetched": [
+    "https://terms.naer.edu.tw/detail/ut-sample-0101/",
+    "https://terms.naer.edu.tw/detail/ut-sample-0102/"
+  ],
+  "texts": {
+    "https://terms.naer.edu.tw/detail/ut-sample-0101": "SAMPLE page, invented for tests and never fetched.\n樂詞網詞彙頁（範例）：抗微生物抗藥性\n英文詞彙：antimicrobial resistance",
+    "https://terms.naer.edu.tw/detail/ut-sample-0102": "SAMPLE page, invented for tests and never fetched.\n樂詞網詞彙頁（範例）：數值天氣預報\n英文詞彙：numerical weather prediction"
+  },
+  "seen_as": {
+    "https://terms.naer.edu.tw/detail/ut-sample-0101": "fetched",
+    "https://terms.naer.edu.tw/detail/ut-sample-0102": "fetched"
+  },
+  "types": {},
+  "resolved": {}
+}

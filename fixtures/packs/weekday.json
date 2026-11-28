@@ -1,0 +1,639 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "window": {
+    "start": "2026-10-13T03:15:00+08:00",
+    "end": "2026-10-14T03:15:00+08:00"
+  },
+  "generated_at": "2026-10-14T03:16:20+08:00",
+  "arxiv_announcement": "2026-10-13T08:00:00+08:00",
+  "degraded": false,
+  "feeds": [
+    {
+      "id": "arxiv-math",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-13T08:00:00+08:00",
+      "items_total": 5,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "2ff586431592ffa3354512c426da7cd9a595f2064bf54f1fe53b747d93e791e8"
+    },
+    {
+      "id": "arxiv-physics",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-13T08:00:00+08:00",
+      "items_total": 9,
+      "items_kept": 2,
+      "error": null,
+      "sha256": "a385fe178ff3ed955001705e4c3a25eba4c8ddb66150d3a199c8654d852f1999"
+    },
+    {
+      "id": "arxiv-astro-ph",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-12",
+      "items_total": 10,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "6ebab0965d34f74ffc4247734fc9ddd60d4cc1406ad7c3cd7f943250a2633c53"
+    },
+    {
+      "id": "arxiv-cond-mat",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-12",
+      "items_total": 6,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "e327b223a25e5290c0f240182525398d10a5190c7df3fdeffd02667bb981110c"
+    },
+    {
+      "id": "arxiv-quant-ph",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-13T08:00:00+08:00",
+      "items_total": 10,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "5df79f80c83f2386758b569b0d68d8067b13b0c3ce4bb1332fe441b78c000d3d"
+    },
+    {
+      "id": "arxiv-q-bio",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-12",
+      "items_total": 5,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "8b6a39184bd91aadbf86424cda5cdb14071ec8a6d5cd0c1a039a9affaf7a95d8"
+    },
+    {
+      "id": "arxiv-physics-chem-ph",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-12",
+      "items_total": 8,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "11f11295717f29d85818e00a0aab33a133d737ac607f83addc8add14452f7af8"
+    },
+    {
+      "id": "arxiv-stat-ml",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-12",
+      "items_total": 4,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "2a93ad8f528020816a4b3e74b1ec0b2da08956c90785a8c8012ef7d8b92266e5"
+    },
+    {
+      "id": "biorxiv",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-12",
+      "items_total": 7,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "3ac294159b618d9edcca98e2c219723c41d6aa91e089231524f99994eaf9c6ff"
+    },
+    {
+      "id": "medrxiv",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-13",
+      "items_total": 11,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "33d2e5f3d477e7f41a8d91bcdbacc7b02e81bb1458628eea7969457f0cb2155d"
+    },
+    {
+      "id": "pubmed",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-12",
+      "items_total": 6,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "5709bc47d1e075dd7d4533ccf6ce15099a96aaf28e94c73468ffc368f797e2fb"
+    },
+    {
+      "id": "crossref-journals",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-13T15:00:00+08:00",
+      "items_total": 11,
+      "items_kept": 2,
+      "error": null,
+      "sha256": "95131662e8b30edab22daa2b585bebfb94e90363c1cb42634329a2af3fedb51b"
+    },
+    {
+      "id": "journal-nature",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-13T23:00:00+08:00",
+      "items_total": 6,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "7c76f3fd4ea79a78ca9b2ed8c4522e832db546b1d190e549dc191a3b49ba66b0"
+    },
+    {
+      "id": "journal-science",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-14T02:00:00+08:00",
+      "items_total": 9,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "04e7d3d070db14d0d4ef07c3cf5f9459c9c0a66edae8cac3a62a85075c8c123b"
+    },
+    {
+      "id": "journal-pnas",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-13T05:00:00+08:00",
+      "items_total": 5,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "0fa4afcc339fd4862c349ce1e89b3b9d796ef33df8df32d8fa0da12a0c867768"
+    },
+    {
+      "id": "eurekalert",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-13T20:00:00+08:00",
+      "items_total": 9,
+      "items_kept": 2,
+      "error": null,
+      "sha256": "9c170f2b2766c9805a8d70cb73b0ca64e4b784040d5cbfc1334bbe56aea24d1b"
+    },
+    {
+      "id": "lab-deepmind",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-12",
+      "items_total": 10,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "7481930646ebcba072f7267a0e3e8c90a171c918234da4b3c61e36d3663fead7"
+    },
+    {
+      "id": "smc-reactions",
+      "kind": "page",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-13T22:30:00+08:00",
+      "items_total": 7,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "def2a3d02958442569160c76bcfbba1bc4ee8c99829b411f95a3453831e90665"
+    },
+    {
+      "id": "crossref-updates",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-13T16:05:00+08:00",
+      "items_total": 11,
+      "items_kept": 2,
+      "error": null,
+      "sha256": "6fae2497657b4780b4ba5c057146bd468350a40887c7e40342360174d504fa1b"
+    },
+    {
+      "id": "ctgov",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-12",
+      "items_total": 5,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "2911fbda8d12a259f27cb956c38e86253a73e907e7f7e41863b73055f2a22877"
+    },
+    {
+      "id": "rcsb",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-13",
+      "items_total": 9,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "e689a26ea9ce567cd65ba8d22490710dc6bde32e0ac819b825ddbb80688a4ddd"
+    },
+    {
+      "id": "scrollprize",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-12",
+      "items_total": 4,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "951339a481b9a10bc5a02b76cd56ecfa7ac9159ea6fa3191fbcb88e58e212cfc"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "cand-01",
+      "source_id": "journal-nature",
+      "title": "SAMPLE: Reading a sealed Herculaneum scroll with machine learning",
+      "abstract": "SAMPLE page, invented for tests and never fetched. Hundreds of papyrus scrolls from the library at Herculaneum were charred by the eruption of Mount Vesuvius in AD 79 and cannot be unrolled. We scanned one sealed scroll with X-rays and flattened its layers in software. We trained a machine-learning model to detect ink. The model was trained on small patches where ink had been found by hand. We read about 1,800 Greek letters in six columns of text. Scholars in two countries, outside our group, checked the readings. The text is a prose work on friendship. Open access. This article is licensed under a Creative Commons Attribution 4.0 International License. DOI 10.1038/nature-ut-sample-0001.",
+      "url": "https://www.nature.com/articles/nature-ut-sample-0001",
+      "doi": "10.1038/nature-ut-sample-0001",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T23:00:00+08:00",
+      "journal": "Nature",
+      "fields": [
+        "humanities"
+      ],
+      "ai_terms_matched": [
+        "machine learning"
+      ],
+      "journal_leading": true,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 10,
+      "deep_read": true
+    },
+    {
+      "id": "cand-02",
+      "source_id": "journal-science",
+      "title": "SAMPLE: Ocean heat mapped with a deep learning model",
+      "abstract": "SAMPLE page, invented for tests and never fetched. A deep learning model filled gaps in ocean temperature records. It was tested on records held back from training.",
+      "url": "https://www.science.org/doi/10.1126/ut-sample.0031",
+      "doi": "10.1126/ut-sample.0031",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-14T02:00:00+08:00",
+      "journal": "Science",
+      "fields": [
+        "earth"
+      ],
+      "ai_terms_matched": [
+        "deep learning"
+      ],
+      "journal_leading": true,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 8,
+      "deep_read": true
+    },
+    {
+      "id": "cand-03",
+      "source_id": "journal-pnas",
+      "title": "SAMPLE: A measured structure tests an AI prediction of a protein complex",
+      "abstract": "SAMPLE page, invented for tests and never fetched. Coldwater Institute structure lab (SAMPLE). We measured the structure of the complex by cryo-electron microscopy. The measured structure matches the model prediction in every chain. The two agree to within 2 angstroms. The prediction was posted by Halden Research before our measurement. Deposited as pdb_00009zz1. Halden Research made the prediction with a deep learning model.",
+      "url": "https://www.pnas.org/doi/10.1073/ut-sample.0003",
+      "doi": "10.1073/ut-sample.0003",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T05:00:00+08:00",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "fields": [
+        "biology"
+      ],
+      "ai_terms_matched": [
+        "deep learning"
+      ],
+      "journal_leading": true,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 6,
+      "deep_read": true
+    },
+    {
+      "id": "cand-04",
+      "source_id": "arxiv-physics",
+      "title": "SAMPLE: A neural network that flags faint particle tracks in a detector",
+      "abstract": "SAMPLE page, invented for tests and never fetched. We trained a neural network on simulated detector data. It flags faint tracks that the standard method misses.",
+      "url": "https://arxiv.org/abs/2610.99004",
+      "doi": null,
+      "arxiv": "2610.99004",
+      "trial": [],
+      "published_at": "2026-10-13T08:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "physics"
+      ],
+      "ai_terms_matched": [
+        "neural network"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 5,
+      "deep_read": true
+    },
+    {
+      "id": "cand-05",
+      "source_id": "arxiv-quant-ph",
+      "title": "SAMPLE: Tuning quantum dots with machine learning",
+      "abstract": "SAMPLE page, invented for tests and never fetched. A machine learning method tuned the voltages of a quantum dot array. It took less time than tuning by hand.",
+      "url": "https://arxiv.org/abs/2610.99005",
+      "doi": null,
+      "arxiv": "2610.99005",
+      "trial": [],
+      "published_at": "2026-10-13T08:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "physics"
+      ],
+      "ai_terms_matched": [
+        "machine learning"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 5,
+      "deep_read": true
+    },
+    {
+      "id": "cand-06",
+      "source_id": "crossref-journals",
+      "title": "SAMPLE: What households spend on food in hard years",
+      "abstract": "SAMPLE page, invented for tests and never fetched. We studied household spending in 12 regions. A random forest sorted households by how their spending changed.",
+      "url": "https://www.cambridge.org/core/journals/ut-sample-household-economics-review/article/ut-sample-0034",
+      "doi": "10.1017/ut-sample-0034",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T15:00:00+08:00",
+      "journal": "Eastvale Household Economics Review",
+      "fields": [
+        "social"
+      ],
+      "ai_terms_matched": [
+        "random forest"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 4,
+      "deep_read": true
+    },
+    {
+      "id": "cand-07",
+      "source_id": "crossref-journals",
+      "title": "SAMPLE: An independent repeat of a robot-found metal mixture",
+      "abstract": "SAMPLE page, invented for tests and never fetched. Ravenhurst University (SAMPLE). We repeated the work of the Eastvale team with our own robot and our own metals. We find that the same mixture splits water almost as well as platinum does. Our robot chose each mixture with Bayesian optimization.",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/ut-sample-0007",
+      "doi": "10.1002/ut-sample-0007",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T12:00:00+08:00",
+      "journal": "Applied Catalysis Letters",
+      "fields": [
+        "chemistry"
+      ],
+      "ai_terms_matched": [
+        "Bayesian optimization"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 4,
+      "deep_read": true
+    },
+    {
+      "id": "cand-08",
+      "source_id": "eurekalert",
+      "title": "SAMPLE: Eastvale team reads a sealed scroll without opening it",
+      "abstract": "SAMPLE page, invented for tests and never fetched. Eastvale University said its imaging group read about 1,800 Greek letters inside a sealed papyrus scroll from Herculaneum. The team trained a model called the Ink Reader to find ink that the human eye cannot see. Hundreds of scrolls from the same library are still sealed. The text is a prose work on friendship. The Ink Reader is a machine learning model.",
+      "url": "https://www.eurekalert.org/news-releases/ut-sample-0003",
+      "doi": null,
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T20:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "humanities"
+      ],
+      "ai_terms_matched": [
+        "machine learning"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 3,
+      "deep_read": true
+    },
+    {
+      "id": "cand-09",
+      "source_id": "arxiv-math",
+      "title": "SAMPLE: A proof of an open problem on sums of sets of whole numbers",
+      "abstract": "SAMPLE page, invented for tests and never fetched. Authors: Marlow Labs (SAMPLE). We prove an open problem about sums of sets of whole numbers. The proof was found by the Marlow Prover with no human step in the argument. A Lean proof file is posted with this paper. This version has not been peer reviewed. arXiv:2610.99001. The Marlow Prover is built on a large language model.",
+      "url": "https://arxiv.org/abs/2610.99001",
+      "doi": null,
+      "arxiv": "2610.99001",
+      "trial": [],
+      "published_at": "2026-10-13T08:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "mathematics"
+      ],
+      "ai_terms_matched": [
+        "large language model",
+        "language model"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 3,
+      "deep_read": true
+    },
+    {
+      "id": "cand-10",
+      "source_id": "arxiv-physics",
+      "title": "SAMPLE: A model that predicts monsoon rainfall weeks ahead",
+      "abstract": "SAMPLE page, invented for tests and never fetched. We describe a model that predicts monsoon rainfall weeks ahead. This version has not been peer reviewed. arXiv:2610.99002. The model is a neural network trained on past rainfall.",
+      "url": "https://arxiv.org/abs/2610.99002",
+      "doi": null,
+      "arxiv": "2610.99002",
+      "trial": [],
+      "published_at": "2026-10-13T08:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "physics"
+      ],
+      "ai_terms_matched": [
+        "neural network"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 3,
+      "deep_read": true
+    },
+    {
+      "id": "cand-11",
+      "source_id": "eurekalert",
+      "title": "SAMPLE: Telescope team schedules its nights with software",
+      "abstract": "SAMPLE page, invented for tests and never fetched. The observatory says it now plans each night with Bayesian optimization. More of each night goes to observing.",
+      "url": "https://www.eurekalert.org/news-releases/ut-sample-0035",
+      "doi": null,
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T05:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "physics"
+      ],
+      "ai_terms_matched": [
+        "Bayesian optimization"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 3,
+      "deep_read": false
+    },
+    {
+      "id": "cand-12",
+      "source_id": "medrxiv",
+      "title": "SAMPLE: Protocol for a first safety trial of an AI-proposed antibiotic",
+      "abstract": "SAMPLE page, invented for tests and never fetched. This protocol describes trial NCT09999001. The compound was ranked by a deep learning model. The trial tests safety in healthy volunteers.",
+      "url": "https://www.medrxiv.org/content/10.1101/2026.10.12.990021v1",
+      "doi": "10.1101/2026.10.12.990021",
+      "arxiv": null,
+      "trial": [
+        "NCT09999001"
+      ],
+      "published_at": "2026-10-13",
+      "journal": null,
+      "fields": [
+        "biology"
+      ],
+      "ai_terms_matched": [
+        "deep learning"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": "bio-2026-0143",
+      "flags": [],
+      "score": 3,
+      "deep_read": true
+    },
+    {
+      "id": "cand-13",
+      "source_id": "smc-reactions",
+      "title": "SAMPLE: Expert reaction to a sealed scroll read without unrolling",
+      "abstract": "SAMPLE page, invented for tests and never fetched. Jonas Example (SAMPLE), Coldwater Institute, said: The readings are careful and the Greek is sound. The model found ink traces that no human reader could see, and the readings that followed are sound. People checked every letter. The ink model was built with machine learning, and people did the reading.",
+      "url": "https://www.sciencemediacentre.org/expert-reaction-to-ut-sample-sealed-scroll-text/",
+      "doi": null,
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T22:30:00+08:00",
+      "journal": null,
+      "fields": [
+        "humanities"
+      ],
+      "ai_terms_matched": [
+        "machine learning"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 1,
+      "deep_read": true
+    },
+    {
+      "id": "cand-14",
+      "source_id": "crossref-updates",
+      "title": "SAMPLE: Retraction Note: Wear tests of a new steel",
+      "abstract": "SAMPLE page, invented for tests and never fetched. Retraction Note. The publisher has retracted this article because its text and images were produced with an undisclosed AI tool.",
+      "url": "https://link.springer.com/article/10.1007/ut-sample-0006",
+      "doi": "10.1007/ut-sample-0006",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T16:05:00+08:00",
+      "journal": null,
+      "fields": [
+        "chemistry"
+      ],
+      "ai_terms_matched": [],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 0,
+      "deep_read": true
+    },
+    {
+      "id": "cand-15",
+      "source_id": "crossref-updates",
+      "title": "SAMPLE: Retraction Note: A study of alloy coatings",
+      "abstract": "SAMPLE page, invented for tests and never fetched. Retraction Note. The publisher has retracted this article because its text and images were produced with an undisclosed AI tool.",
+      "url": "https://link.springer.com/article/10.1007/ut-sample-0005",
+      "doi": "10.1007/ut-sample-0005",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T16:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "chemistry"
+      ],
+      "ai_terms_matched": [],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 0,
+      "deep_read": true
+    },
+    {
+      "id": "cand-16",
+      "source_id": "rcsb",
+      "title": "SAMPLE: Structure entry pdb_00009zz1",
+      "abstract": "SAMPLE page, invented for tests and never fetched. Entry pdb_00009zz1, released 2026-10-13. Method: cryo-electron microscopy. Deposited by the Coldwater Institute structure lab (SAMPLE). The images and data on this page are released under the CC0 1.0 Universal license.",
+      "url": "https://www.rcsb.org/structure/pdb_00009zz1",
+      "doi": null,
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13",
+      "journal": null,
+      "fields": [
+        "biology"
+      ],
+      "ai_terms_matched": [],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 0,
+      "deep_read": true
+    }
+  ],
+  "injection_flags": 0
+}

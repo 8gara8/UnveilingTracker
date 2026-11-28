@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Unveiling Tracker DraftZh",
+  "description": "The Chinese pass's one output file, drafts/YYYY-MM-DD.zh.json (SPEC.md §4.6). Generated from lib/schema/draft-zh.ts by `npm run schema:gen`; do not edit by hand. This file shows structure only: every key of an object is required and no other key is allowed, except in the maps strings and terms, whose keys come from the context file. The validator enforces the rest: that strings has exactly the context's keys and terms exactly its terms with no Chinese yet, each string's character cap, that you add no number, name or link the English lacks, Taiwan usage and the other rules the descriptions state, together with checks no JSON Schema keyword can state, such as a real calendar date. A draft that satisfies this file can still fail validation.",
+  "type": "object",
+  "properties": {
+    "schema_version": {"type":"number","const":1},
+    "date": {"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$","description":"The edition date from the context"},
+    "generated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,9})?)?(?:Z|[+-]\\d{2}:\\d{2})$",
+      "description": "When you finished: before the context's deadline"
+    },
+    "strings": {
+      "type": "object",
+      "propertyNames": {"type":"string","minLength":1},
+      "additionalProperties": {"type":"string","minLength":1},
+      "description": "Exactly the context's keys, each with its Chinese string"
+    },
+    "terms": {
+      "type": "object",
+      "propertyNames": {"type":"string","maxLength":60,"pattern":"^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "zh": {"type":"string","minLength":1,"description":"The Chinese term, in everyday Taiwan usage"},
+          "definition": {
+            "type": "string",
+            "minLength": 1,
+            "description": "The Chinese definition, within the context term's cap_chars"
+          },
+          "official": {
+            "anyOf": [{"type":"string","minLength":1},{"type":"null"}],
+            "description": "The term as 樂詞網 (terms.naer.edu.tw) shows it, only when its page shows it; else null"
+          },
+          "official_url": {
+            "anyOf": [{"type":"string","minLength":1},{"type":"null"}],
+            "description": "The 樂詞網 page you fetched that shows it; a non-null official comes with one"
+          }
+        },
+        "required": ["zh","definition","official","official_url"],
+        "additionalProperties": false
+      },
+      "description": "Exactly the context's terms whose zh is null, by term id"
+    }
+  },
+  "required": ["schema_version","date","generated_at","strings","terms"],
+  "additionalProperties": false
+}

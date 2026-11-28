@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-17",
+  "edition": "full",
+  "format": "daily",
+  "languages": {
+    "en": true,
+    "zh": true
+  },
+  "published_at": "2026-10-17T03:51:21+08:00",
+  "late": false,
+  "pace": {
+    "sentence": {
+      "en": "The Pace: 6.6% of papers in leading journals named AI methods in the 13 weeks to 16 Aug. That is up from 1.1% in 2015 to 2019, and up from 4.8% a year earlier. Clearly above the pre-AI level in 5 of 7 fields. Too few cases to judge in 1.",
+      "zh": "進度：截至 8 月 16 日的 13 週內，主要期刊有 6.6% 的論文提到 AI 方法，高於 2015 至 2019 年的 1.1%，也高於一年前的 4.8%。7 個領域中有 5 個明顯高於 AI 出現之前。有 1 個領域的案例太少，無法判斷。"
+    },
+    "status": "ok",
+    "metrics_file": "metrics/2026-10-17.json"
+  },
+  "lead": [
+    {
+      "text": {
+        "en": "No finding cleared our bar today, and two preprints are listed under Also noted.",
+        "zh": "今天沒有發現達到我們的門檻，另有兩篇預印本列在「另外值得一提」。"
+      },
+      "finding_ids": []
+    }
+  ],
+  "story": null,
+  "items": [],
+  "rung_changes": [],
+  "ideas": [],
+  "also": [
+    {
+      "title": {
+        "en": "SAMPLE: A preprint on checking a proof with Claude, step by step",
+        "zh": "SAMPLE：以 Claude 逐步檢查證明的預印本"
+      },
+      "field": "mathematics",
+      "source_id": "b1"
+    },
+    {
+      "title": {
+        "en": "SAMPLE: A preprint on reading worn clay tablets with a vision model",
+        "zh": "SAMPLE：以視覺模型讀取磨損泥板的預印本"
+      },
+      "field": "humanities",
+      "source_id": "b2"
+    }
+  ],
+  "deep_dive": null,
+  "review": null,
+  "corrections": [],
+  "reports": [],
+  "sources": [
+    {
+      "id": "b1",
+      "kind": "preprint",
+      "title": "SAMPLE: Checking a proof with Claude, step by step",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/2610.99004",
+      "doi": null,
+      "published_at": "2026-10-16T08:00:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-17"
+    },
+    {
+      "id": "b2",
+      "kind": "preprint",
+      "title": "SAMPLE: Reading worn clay tablets with a vision model",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/2610.99005",
+      "doi": null,
+      "published_at": "2026-10-16T09:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-17"
+    }
+  ],
+  "disclosure": [
+    "also.0"
+  ],
+  "status_note": null,
+  "computed": {
+    "word_count": 38,
+    "zh_chars": 57,
+    "finding_count": 0,
+    "source_count": 2
+  },
+  "provenance": {
+    "run_id": "20261017-031517",
+    "code_commit": "0123456789abcdef0123456789abcdef01234567",
+    "data_cutoff": "2026-10-11"
+  }
+}

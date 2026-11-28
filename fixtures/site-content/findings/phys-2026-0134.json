@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "id": "phys-2026-0134",
+  "field": "physics",
+  "subfield": "condensed-matter",
+  "kind": "result",
+  "title": {
+    "en": "SAMPLE: A robot lab reports a magnetic material that keeps its strength",
+    "zh": "SAMPLE：機器人實驗室報告保有磁力的磁性材料"
+  },
+  "depth": "item",
+  "explainer": {
+    "found": {
+      "en": "A robot lab run by an AI planner reported a new magnetic material that keeps its strength up to 400 degrees.",
+      "zh": "一間由 AI 規劃系統運作的機器人實驗室，報告了一種新的磁性材料，溫度高達 400 度時仍保有磁力。"
+    },
+    "matters": {
+      "en": "Strong magnets that work in the heat could help motors and generators, so a new material with that property would be useful.",
+      "zh": "能在高溫下運作的強力磁鐵，可能有助於馬達和發電機，所以具有這種特性的新材料會很有用。"
+    },
+    "ai_helped": {
+      "en": "Hartwell Materials Lab built the Cobalt Planner, which chose each sample to make next. Robots made and tested the samples.",
+      "zh": "Hartwell Materials Lab 開發了 Cobalt Planner，由它挑選下一個要製作的樣本。機器人製作並測試這些樣本。"
+    },
+    "how_sure": {
+      "en": "Checked. Sample Physics Letters published the paper after peer review. Hartwell Materials Lab, the maker of the planner, wrote the paper.",
+      "zh": "已查核。Sample Physics Letters 在同儕審查後發表了這篇論文。規劃系統的開發者 Hartwell Materials Lab 撰寫了這篇論文。"
+    },
+    "background": {
+      "en": "A magnet loses strength as it gets hot, and each material has its own limit.",
+      "zh": "磁鐵變熱時磁力會減弱，每種材料都有各自的極限。"
+    },
+    "could_lead": {
+      "en": "If other labs repeat the result, the material could be tried in real machines.",
+      "zh": "如果其他實驗室重現這項結果，這種材料可能會在實際的機器上試用。"
+    }
+  },
+  "go_deeper": [
+    "s1"
+  ],
+  "ai": {
+    "role": "ai_ran",
+    "confidence": "claimed",
+    "systems": [
+      {
+        "name": "Cobalt Planner",
+        "maker": "Hartwell Materials Lab"
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "s1",
+        "quote": "The Cobalt Planner, built by Hartwell Materials Lab, chose each sample to make next",
+        "from_claimant": true
+      }
+    ]
+  },
+  "significance": "major",
+  "rung": "retracted",
+  "rung_history": [
+    {
+      "rung": "checked",
+      "date": "2026-09-21",
+      "recorded": "2026-10-09",
+      "source_id": "s1",
+      "by": "seed",
+      "note": null
+    },
+    {
+      "rung": "retracted",
+      "date": "2026-10-08",
+      "recorded": "2026-10-15",
+      "source_id": "s2",
+      "by": "script",
+      "note": {
+        "en": "Retracted by Sample Physics Letters on 8 Oct 2026.",
+        "zh": "Sample Physics Letters 於 2026 年 10 月 8 日撤稿。"
+      }
+    }
+  ],
+  "since_then": [],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "paper",
+      "title": "SAMPLE: A robot lab reports a new magnetic material",
+      "publisher": "Sample Physics Letters",
+      "url": "https://link.springer.com/article/10.1007/ut-sample-0016",
+      "doi": "10.1007/ut-sample-0016",
+      "published_at": "2026-09-21T23:00:00+08:00",
+      "seen_as": "seed",
+      "added": "2026-10-09"
+    },
+    {
+      "id": "s2",
+      "kind": "notice",
+      "title": "SAMPLE: Retraction: A robot lab reports a new magnetic material",
+      "publisher": "Sample Physics Letters",
+      "url": "https://doi.org/10.1007/ut-sample-0017",
+      "doi": "10.1007/ut-sample-0017",
+      "published_at": "2026-10-08",
+      "seen_as": "fetched",
+      "added": "2026-10-15"
+    }
+  ],
+  "reactions": [],
+  "artefacts": {
+    "doi": [
+      "10.1007/ut-sample-0016"
+    ],
+    "arxiv": [],
+    "lean": [],
+    "trial": [],
+    "pdb": []
+  },
+  "figure": null,
+  "who": [
+    {
+      "name": "Hartwell Materials Lab (SAMPLE)",
+      "ror": null
+    }
+  ],
+  "terms": [],
+  "related": [],
+  "first_published": "2026-09-21",
+  "first_brief": null,
+  "briefs": [],
+  "history": true,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-15"
+}

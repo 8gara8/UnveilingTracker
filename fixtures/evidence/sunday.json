@@ -1,0 +1,68 @@
+{
+  "urls": [
+    "https://www.nature.com/articles/s41586-026-ut-sample-0041",
+    "https://onlinelibrary.wiley.com/doi/10.1002/ut-sample-0045",
+    "https://link.springer.com/article/10.1007/ut-sample-0043",
+    "https://pubmed.ncbi.nlm.nih.gov/99990041/",
+    "https://www.biorxiv.org/content/10.1101/2026.10.16.990042v1",
+    "https://www.eurekalert.org/news-releases/ut-sample-0044",
+    "https://www.sciencemediacentre.org/expert-reaction-to-ut-sample-glacier-retreat-maps/",
+    "https://www.cell.com/cell/abstract/ut-sample-0014",
+    "https://clinicaltrials.gov/study/NCT09999001",
+    "https://www.coldwater-sample.edu/news/ut-sample-new-antibiotic",
+    "https://www.cell.com/cell-reports-medicine/fulltext/ut-sample-0015",
+    "https://www.quillon-sample.edu/news/ut-sample-bible-translation-draft",
+    "https://huggingface.co/datasets/ut-sample/quillon-bible-draft"
+  ],
+  "fetched": [
+    "https://www.cell.com/cell/abstract/ut-sample-0014",
+    "https://clinicaltrials.gov/study/NCT09999001",
+    "https://www.coldwater-sample.edu/news/ut-sample-new-antibiotic",
+    "https://www.cell.com/cell-reports-medicine/fulltext/ut-sample-0015"
+  ],
+  "texts": {
+    "https://nature.com/articles/s41586-026-ut-sample-0041": "SAMPLE: Glacier retreat mapped with a deep learning model\nSAMPLE page, invented for tests and never fetched. A deep learning model mapped the edges of mountain glaciers in satellite images. People checked the maps against field surveys.",
+    "https://onlinelibrary.wiley.com/doi/10.1002/ut-sample-0045": "SAMPLE: Tougher plastics found by Bayesian optimization\nSAMPLE page, invented for tests and never fetched. Bayesian optimization chose which polymer blends to make next. The team made and tested 60 blends.",
+    "https://link.springer.com/article/10.1007/ut-sample-0043": "SAMPLE: Reading court rulings with a large language model\nSAMPLE page, invented for tests and never fetched. A large language model sorted court rulings by their outcome. Lawyers checked a sample of its sorting.",
+    "https://pubmed.ncbi.nlm.nih.gov/99990041": "SAMPLE: Machine learning to spot sepsis early in hospital wards\nSAMPLE page, invented for tests and never fetched. A machine learning score read routine ward records. It flagged sepsis earlier than the usual checks in one hospital.",
+    "https://biorxiv.org/content/10.1101/2026.10.16.990042v1": "SAMPLE: A neural network that tracks dividing cells\nSAMPLE page, invented for tests and never fetched. A neural network followed dividing cells in microscope films. It agreed with hand counts on most films.",
+    "https://eurekalert.org/news-releases/ut-sample-0044": "SAMPLE: Museum releases photographs of worn inscriptions\nSAMPLE page, invented for tests and never fetched. The museum says a convolutional neural network helped sharpen the photographs. Scholars read the inscriptions themselves.",
+    "https://sciencemediacentre.org/expert-reaction-to-ut-sample-glacier-retreat-maps": "SAMPLE: Expert reaction to glacier maps drawn by a model\nSAMPLE page, invented for tests and never fetched. Ana Example (SAMPLE), Ravenhurst University, said: The deep learning maps agree well with the field surveys.",
+    "https://cell.com/cell/abstract/ut-sample-0014": "SAMPLE: An AI model proposes a new antibiotic that clears resistant infections in mice\nSAMPLE page, invented for tests and never fetched. Halden Research (SAMPLE) with the Coldwater Institute (SAMPLE). Our model, Halden Design, ranked about 12 million molecules for their chance of killing drug-resistant bacteria. We made and tested 40 of the top molecules. Three of the 40 stopped the growth of drug-resistant bacteria in dishes. The best of these cleared a drug-resistant skin infection in 8 of 10 mice. Antimicrobial resistance is when germs stop responding to the drugs that used to kill them. A first safety trial in people is registered as NCT09999001. No other lab has repeated the tests. DOI 10.1016/ut-sample-0014. Halden Design is a deep learning model.",
+    "https://clinicaltrials.gov/study/NCT09999001": "SAMPLE: First safety trial of a new antibiotic\nSAMPLE page, invented for tests and never fetched. Study NCT09999001. A first safety trial of a new antibiotic proposed by an AI model. The trial plans to enrol 24 healthy volunteers. The first dose was given in September 2026. Sponsor: Coldwater Institute (SAMPLE).",
+    "https://coldwater-sample.edu/news/ut-sample-new-antibiotic": "SAMPLE: Coldwater team tests an AI-proposed antibiotic\nSAMPLE page, invented for tests and never fetched. The Coldwater Institute said its lab tested compounds proposed by Halden Research's AI model, Halden Design. The Coldwater team ran the tests in mice and runs the first safety trial in people.",
+    "https://cell.com/cell-reports-medicine/fulltext/ut-sample-0015": "SAMPLE: A second lab repeats tests of an AI-proposed antibiotic in mice\nSAMPLE page, invented for tests and never fetched. Kestrel College (SAMPLE). We repeated the mouse tests with our own mice and our own samples of the compound. The compound was one of 40 that the AI model Halden Design had ranked at the top. The compound cleared the infection in 7 of 10 mice. The infection stayed in the other 3. We have no tie to Halden Research. DOI 10.1016/ut-sample-0015.",
+    "https://quillon-sample.edu/news/ut-sample-bible-translation-draft": "SAMPLE: Quillon lab says its AI drafted a Bible translation\nSAMPLE page, invented for tests and never fetched. Quillon University said its language lab used an AI model, the Quill Translator, to draft a Bible translation in a language with 60,000 speakers. Native speakers will review each verse before the translation is shared. The lab has not published a paper. Many languages still have no full Bible.",
+    "https://huggingface.co/datasets/ut-sample/quillon-bible-draft": "SAMPLE: Draft verses released for review\nSAMPLE page, invented for tests and never fetched. Dataset card. 1,200 draft verses, marked as unreviewed. Released by Quillon University (SAMPLE) for native speakers to check."
+  },
+  "seen_as": {
+    "https://nature.com/articles/s41586-026-ut-sample-0041": "pack",
+    "https://onlinelibrary.wiley.com/doi/10.1002/ut-sample-0045": "pack",
+    "https://link.springer.com/article/10.1007/ut-sample-0043": "pack",
+    "https://pubmed.ncbi.nlm.nih.gov/99990041": "pack",
+    "https://biorxiv.org/content/10.1101/2026.10.16.990042v1": "pack",
+    "https://eurekalert.org/news-releases/ut-sample-0044": "pack",
+    "https://sciencemediacentre.org/expert-reaction-to-ut-sample-glacier-retreat-maps": "pack",
+    "https://cell.com/cell/abstract/ut-sample-0014": "fetched",
+    "https://clinicaltrials.gov/study/NCT09999001": "fetched",
+    "https://coldwater-sample.edu/news/ut-sample-new-antibiotic": "fetched",
+    "https://cell.com/cell-reports-medicine/fulltext/ut-sample-0015": "fetched",
+    "https://quillon-sample.edu/news/ut-sample-bible-translation-draft": "search",
+    "https://huggingface.co/datasets/ut-sample/quillon-bible-draft": "search"
+  },
+  "types": {
+    "https://nature.com/articles/s41586-026-ut-sample-0041": [
+      "Article"
+    ],
+    "https://pubmed.ncbi.nlm.nih.gov/99990041": [
+      "Journal Article"
+    ],
+    "https://cell.com/cell/abstract/ut-sample-0014": [
+      "Research Article"
+    ],
+    "https://cell.com/cell-reports-medicine/fulltext/ut-sample-0015": [
+      "Research Article"
+    ]
+  },
+  "resolved": {}
+}

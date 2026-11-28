@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "checkers": [
+    {
+      "id": "erdosproblems",
+      "name": "Erdős Problems",
+      "hosts": [
+        "www.erdosproblems.com",
+        "erdosproblems.com"
+      ],
+      "paths": [
+        "/"
+      ],
+      "rungs": [
+        "checked"
+      ]
+    },
+    {
+      "id": "lean-mathlib-repo",
+      "name": "Lean mathlib repository",
+      "hosts": [
+        "github.com"
+      ],
+      "paths": [
+        "/leanprover-community/mathlib4"
+      ],
+      "rungs": [
+        "checked"
+      ]
+    },
+    {
+      "id": "lean-mathlib-docs",
+      "name": "Lean mathlib documentation",
+      "hosts": [
+        "leanprover-community.github.io"
+      ],
+      "paths": [
+        "/mathlib4_docs/",
+        "/mathlib_stats.html"
+      ],
+      "rungs": [
+        "checked"
+      ]
+    },
+    {
+      "id": "nobel-prize",
+      "name": "Nobel Prize",
+      "hosts": [
+        "www.nobelprize.org",
+        "nobelprize.org"
+      ],
+      "paths": [
+        "/"
+      ],
+      "rungs": [
+        "checked"
+      ]
+    },
+    {
+      "id": "breakthrough-prize",
+      "name": "Breakthrough Prize",
+      "hosts": [
+        "breakthroughprize.org",
+        "www.breakthroughprize.org"
+      ],
+      "paths": [
+        "/"
+      ],
+      "rungs": [
+        "checked"
+      ]
+    },
+    {
+      "id": "fields-medal",
+      "name": "Fields Medal (International Mathematical Union)",
+      "hosts": [
+        "www.mathunion.org",
+        "mathunion.org"
+      ],
+      "paths": [
+        "/"
+      ],
+      "rungs": [
+        "checked"
+      ]
+    },
+    {
+      "id": "abel-prize",
+      "name": "Abel Prize",
+      "hosts": [
+        "abelprize.no",
+        "www.abelprize.no"
+      ],
+      "paths": [
+        "/"
+      ],
+      "rungs": [
+        "checked"
+      ]
+    },
+    {
+      "id": "wolf-prize",
+      "name": "Wolf Prize",
+      "hosts": [
+        "wolffund.org.il",
+        "www.wolffund.org.il"
+      ],
+      "paths": [
+        "/"
+      ],
+      "rungs": [
+        "checked"
+      ]
+    },
+    {
+      "id": "kavli-prize",
+      "name": "Kavli Prize",
+      "hosts": [
+        "www.kavliprize.org",
+        "kavliprize.org"
+      ],
+      "paths": [
+        "/"
+      ],
+      "rungs": [
+        "checked"
+      ]
+    },
+    {
+      "id": "lasker-awards",
+      "name": "Lasker Awards",
+      "hosts": [
+        "laskerfoundation.org",
+        "www.laskerfoundation.org"
+      ],
+      "paths": [
+        "/"
+      ],
+      "rungs": [
+        "checked"
+      ]
+    },
+    {
+      "id": "vesuvius-challenge",
+      "name": "Vesuvius Challenge",
+      "hosts": [
+        "scrollprize.org",
+        "www.scrollprize.org",
+        "scrollprize.substack.com"
+      ],
+      "paths": [
+        "/"
+      ],
+      "rungs": [
+        "checked"
+      ]
+    },
+    {
+      "id": "casp",
+      "name": "CASP Protein Structure Prediction Center",
+      "hosts": [
+        "predictioncenter.org",
+        "www.predictioncenter.org"
+      ],
+      "paths": [
+        "/"
+      ],
+      "rungs": [
+        "checked"
+      ]
+    },
+    {
+      "id": "fda",
+      "name": "US Food and Drug Administration",
+      "hosts": [
+        "www.fda.gov",
+        "fda.gov",
+        "www.accessdata.fda.gov",
+        "accessdata.fda.gov"
+      ],
+      "paths": [
+        "/"
+      ],
+      "rungs": [
+        "applied"
+      ]
+    },
+    {
+      "id": "ema",
+      "name": "European Medicines Agency",
+      "hosts": [
+        "www.ema.europa.eu",
+        "ema.europa.eu"
+      ],
+      "paths": [
+        "/"
+      ],
+      "rungs": [
+        "applied"
+      ]
+    },
+    {
+      "id": "taiwan-fda",
+      "name": "Taiwan Food and Drug Administration",
+      "hosts": [
+        "www.fda.gov.tw",
+        "fda.gov.tw",
+        "mcp.fda.gov.tw"
+      ],
+      "paths": [
+        "/"
+      ],
+      "rungs": [
+        "applied"
+      ]
+    },
+    {
+      "id": "pmda",
+      "name": "Pharmaceuticals and Medical Devices Agency (Japan)",
+      "hosts": [
+        "www.pmda.go.jp",
+        "pmda.go.jp"
+      ],
+      "paths": [
+        "/"
+      ],
+      "rungs": [
+        "applied"
+      ]
+    },
+    {
+      "id": "clinicaltrials-gov-results",
+      "name": "ClinicalTrials.gov results",
+      "hosts": [
+        "clinicaltrials.gov",
+        "www.clinicaltrials.gov"
+      ],
+      "paths": [
+        "/study/"
+      ],
+      "rungs": [
+        "confirmed"
+      ]
+    }
+  ]
+}

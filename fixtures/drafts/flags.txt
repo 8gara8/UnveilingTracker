@@ -1,0 +1,1 @@
+--context fixtures/context/weekday.json --evidence fixtures/evidence/weekday.json --metrics fixtures/metrics/weekday.json --pack fixtures/packs/weekday.json

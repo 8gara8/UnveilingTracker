@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "hum-2026-0152",
+  "field": "humanities",
+  "subfield": "scripture-translation",
+  "kind": "capability",
+  "title": {
+    "en": "SAMPLE: A university says AI drafted a Bible translation",
+    "zh": "SAMPLE：大學表示 AI 擬出了聖經翻譯的初稿"
+  },
+  "depth": "item",
+  "explainer": {
+    "found": {
+      "en": "Quillon University says its language lab used an AI model to draft a Bible translation in a language with 60,000 speakers.",
+      "zh": "Quillon University 表示，它的語言實驗室用 AI 模型起草了一部聖經翻譯，譯成一種有 6 萬人使用的語言。"
+    },
+    "matters": {
+      "en": "Many languages still have no full Bible. A draft that native speakers review could reach readers sooner.",
+      "zh": "許多語言仍然沒有完整的聖經。由母語人士審閱的草稿，可能更早送到讀者手中。"
+    },
+    "ai_helped": {
+      "en": "Quillon University built the Quill Translator, which wrote the draft. Native speakers will review each verse before the translation is shared.",
+      "zh": "Quillon University 開發了 Quill Translator，由它寫出草稿。在翻譯分享出去之前，母語人士會審閱每一節經文。"
+    },
+    "how_sure": {
+      "en": "Claimed. Quillon University says so in its own statement, and the lab has not published a paper. The university built the system.",
+      "zh": "宣稱。Quillon University 在自己的聲明中這麼表示，這間實驗室還沒有發表論文。這套系統是這所大學開發的。"
+    },
+    "background": {
+      "en": "Translators have long worked by hand, one verse at a time.",
+      "zh": "譯者長期以來都是靠人工，一次翻一節經文。"
+    },
+    "could_lead": {
+      "en": "If reviewers find the drafts sound, the method could help smaller language groups.",
+      "zh": "如果審閱者認為這些草稿可靠，這個方法可能幫助較小的語言群體。"
+    }
+  },
+  "go_deeper": [
+    "s1",
+    "s2"
+  ],
+  "ai": {
+    "role": "ai_tool",
+    "confidence": "claimed",
+    "systems": [
+      {
+        "name": "Quill Translator",
+        "maker": "Quillon University"
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "s1",
+        "quote": "used an AI model, the Quill Translator, to draft a Bible translation",
+        "from_claimant": true
+      }
+    ]
+  },
+  "significance": "notable",
+  "rung": "claimed",
+  "rung_history": [
+    {
+      "rung": "claimed",
+      "date": "2026-10-17",
+      "recorded": "2026-10-18",
+      "source_id": "s1",
+      "by": "agent",
+      "note": null
+    }
+  ],
+  "since_then": [],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "statement",
+      "title": "SAMPLE: Quillon lab says its AI drafted a Bible translation",
+      "publisher": "Quillon University",
+      "url": "https://www.quillon-sample.edu/news/ut-sample-bible-translation-draft",
+      "doi": null,
+      "published_at": "2026-10-17T15:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "kind": "dataset",
+      "title": "SAMPLE: Draft verses released for review",
+      "publisher": "Hugging Face",
+      "url": "https://huggingface.co/datasets/ut-sample/quillon-bible-draft",
+      "doi": null,
+      "published_at": "2026-10-17T15:30:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-18"
+    }
+  ],
+  "reactions": [],
+  "artefacts": {
+    "doi": [],
+    "arxiv": [],
+    "lean": [],
+    "trial": [],
+    "pdb": []
+  },
+  "figure": null,
+  "who": [
+    {
+      "name": "Quillon University language lab (SAMPLE)",
+      "ror": null
+    }
+  ],
+  "terms": [],
+  "related": [],
+  "first_published": "2026-10-17",
+  "first_brief": "2026-10-18",
+  "briefs": [
+    "2026-10-18"
+  ],
+  "history": false,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-18"
+}

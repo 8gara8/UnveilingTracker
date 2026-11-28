@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "version": 1,
+  "counters": [
+    {
+      "id": "erdos_ai",
+      "label": {
+        "en": "Erdős problems solved with AI credit",
+        "zh": "歸功於 AI 的 Erdős 問題"
+      },
+      "unit": {
+        "en": "problems",
+        "zh": "個問題"
+      },
+      "kind": "api",
+      "source": "erdosproblems.com's public data, or its GitHub data repository",
+      "value": null,
+      "as_of": null,
+      "source_url": "https://www.erdosproblems.com/",
+      "figures": []
+    },
+    {
+      "id": "mathlib_theorems",
+      "label": {
+        "en": "Theorems formalised in Lean's mathlib",
+        "zh": "Lean mathlib 已形式化的定理"
+      },
+      "unit": {
+        "en": "theorems",
+        "zh": "個定理"
+      },
+      "kind": "api",
+      "source": "Lean mathlib's statistics page",
+      "value": null,
+      "as_of": null,
+      "source_url": "https://leanprover-community.github.io/mathlib_stats.html",
+      "figures": []
+    },
+    {
+      "id": "ai_drugs",
+      "label": {
+        "en": "AI-found drugs, by the highest stage reached",
+        "zh": "AI 發現的藥物，依最高進展階段"
+      },
+      "unit": {
+        "en": "drugs",
+        "zh": "種藥物"
+      },
+      "kind": "api",
+      "source": "The tracker's list of AI-found drugs (config/ai-drugs.json) and the ClinicalTrials.gov API v2 record of each trial",
+      "value": null,
+      "as_of": null,
+      "source_url": "https://clinicaltrials.gov/",
+      "figures": []
+    },
+    {
+      "id": "pdb_structures",
+      "label": {
+        "en": "Structures deposited in the Protein Data Bank, released or not",
+        "zh": "存入 Protein Data Bank 的結構（含尚未公開者）"
+      },
+      "unit": {
+        "en": "structures",
+        "zh": "個結構"
+      },
+      "kind": "api",
+      "source": "RCSB search API, by deposit date, and RCSB's record of unreleased entries",
+      "value": null,
+      "as_of": null,
+      "source_url": "https://www.rcsb.org/",
+      "figures": []
+    },
+    {
+      "id": "ai_retractions",
+      "label": {
+        "en": "Retractions citing computer-generated content",
+        "zh": "撤稿原因含電腦生成內容的論文"
+      },
+      "unit": {
+        "en": "retractions",
+        "zh": "篇論文"
+      },
+      "kind": "api",
+      "source": "The Retraction Watch data file, through Crossref",
+      "value": null,
+      "as_of": null,
+      "source_url": "https://gitlab.com/crossref/retraction-watch-data",
+      "figures": []
+    },
+    {
+      "id": "full_bibles",
+      "label": {
+        "en": "Languages that gained a full Bible",
+        "zh": "新增全本聖經的語言"
+      },
+      "unit": {
+        "en": "languages",
+        "zh": "種語言"
+      },
+      "kind": "manual",
+      "source": "Wycliffe Global Alliance annual statistics, entered by pull request as figures",
+      "value": null,
+      "as_of": null,
+      "source_url": "https://www.wycliffe.net/resources/statistics/",
+      "figures": []
+    },
+    {
+      "id": "ancient_texts_ai",
+      "label": {
+        "en": "Ancient-text findings with an AI role",
+        "zh": "有 AI 角色的古代文獻發現"
+      },
+      "unit": {
+        "en": "findings",
+        "zh": "項發現"
+      },
+      "kind": "ledger",
+      "source": "The tracker's own findings: humanities, ancient texts, with an AI role and a counted rung",
+      "value": null,
+      "as_of": null,
+      "source_url": "https://github.com/8gara8/UnveilingTracker/tree/main/content/findings",
+      "figures": []
+    }
+  ]
+}

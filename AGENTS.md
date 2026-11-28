@@ -3,7 +3,7 @@
 > Internal AI working notes in a public repo: keep secrets, tokens, personal data and Kobol's security
 > details out. Never publish this file on the site.
 
-Last reviewed 2026-11-23 · Folder: /Users/kobol/Projects/UnveilingTracker (Kobol) · Repo
+Last reviewed 2026-11-28 · Folder: /Users/kobol/Projects/UnveilingTracker (Kobol) · Repo
 8gara8/UnveilingTracker · Claude project: Geo Tracker
 
 ## 1. Who and what
@@ -45,7 +45,8 @@ secondary: one Pace line a day, and charts on Mondays (SPEC §1).
   15:07 Taipei (07:07 UTC) after three rounds of decision cards (`docs/DESIGN.md`, frozen from the Claude
   Doc https://claude.ai/artifact/Tx43w33Ygf52wVXpSprt1B). SPEC v1.0 was written the same afternoon. JL
   tapped "Start Foundation" at 20:31 Taipei (12:31 UTC).
-- **Foundation on `p0-setup`, PR #1 (open):** the repo was created on Kobol with `gh` in a Remote Control
+- **Foundation on `p0-setup`, PR #1, merged by JL on 2026-11-23 at 13:05 Taipei (05:05 UTC; `main` at
+  `84bbf90`):** the repo was created on Kobol with `gh` in a Remote Control
   session, its bootstrap commit `507b843` on `main` (README and `.gitignore`); CyberTracker is cloned
   read-only at `/Users/kobol/.unveiling/cyber-base` at the fork commit `3ced1fb`; the agents' CLI 2.1.316
   is in `/Users/kobol/.unveiling/cli` with its config dir. The Foundation code (the kept helpers and
@@ -63,8 +64,46 @@ secondary: one Pace line a day, and charts on Mondays (SPEC §1).
   fixed in `0cd31f7`, with a spec follow-up from that fix's own review: `syncMain()` now reads each
   local commit's paths and the rebase's result, and P3's push loop is to check its rebase the same way
   (row 101); Appendix C keeps only what the build relies on (row 102; the username in the paths stays,
-  as code defaults, and is JL's call). The final commit's checks ran in the cloud container and in CI;
-  Kobol runs them again when it is next reachable.
+  as code defaults, and is JL's call). Codex round 2 found nothing. Kobol ran the Foundation checks again
+  on the final commit and they passed. JL chose to keep the `/Users/kobol` username in those code defaults
+  (2026-11-23, 13:04 Taipei). Vercel builds the `main` branch as production.
+- **P1 on `p1-contract`, PR #2 (open for review):** the data contract, the seed configs, the validator in
+  both languages, the content loader, the chat edition, the sample content and the two style guides, built
+  in the cloud container from 2026-11-23. The build paused on 2026-11-23 at 23:22 Taipei (15:22 UTC) at
+  JL's request, to wait for the account usage reset, and resumed on 2026-11-27 at 21:57 Taipei (13:57 UTC).
+  - **What is in it:** the config loader and the seed configs in `config/` (every value to check online
+    in P2 is listed in `docs/reports/2026-11-23-p1-seed-verify.md`); the schemas of every record, the
+    draft, the Chinese draft and the run's context (`lib/schema/`, with `routine/schema/draft-brief.schema.json`
+    from `npm run schema:gen`); `lib/primary.ts`, which decides what counts as a primary source; the
+    Chinese checks (`lib/zh.ts`); the page text of both languages; the validator, which holds 57
+    rule codes in `lib/rules/`, run on a draft, on the records a run is publishing and on every stored
+    record; the Chinese validator; `scripts/validate.ts`; the content loader; the chat edition
+    (`lib/chat.ts`); the sample content in `fixtures/site-content/` (15 findings and the briefs of
+    2026-10-12 to 2026-10-18, marked as a sample everywhere); and `routine/STYLE.md` and
+    `routine/STYLE-ZH.md` with the tests that pin them to the spec.
+  - **Rules and fixtures:** 57 rule codes (55 hard, 1 soft and 1 hard-or-soft); 40 English
+    `invalid--` fixtures (one for each code that has one), 2 soft ones and 17 Chinese ones; 368
+    English and 99 Chinese named cases in `tests/validate.test.ts`; 4 valid English and 4 valid
+    Chinese drafts; 151 files written by `npm run fixtures:gen`. `npm run check` runs 84 test
+    files and 10,459 tests, then `schema:check`, `fixtures:check`, `validate:sample` and `validate:all`.
+  - **Chat edition as rendered (SPEC §8.8):** the sample Monday (2026-10-12) in 21 lines, the sample
+    Tuesday (English only, 2026-10-13) in 20 and the sample Sunday (2026-10-18) in 19 lines of 657 words;
+    the Monday limit is 32 lines. The sample explainers read at grade 4.4 to 7.0 (the soft limit is 12 and
+    the hard limit 14).
+  - **How it was checked:** every rule group and engine had an author and an independent reviewer; seven
+    reviews of the spec against the code and against itself found the mismatches that SPEC §0.4 rows 103
+    to 296 record, each with the reason.
+  - **Kobol milestone (2026-11-28, about 08:20 Taipei, 00:20 UTC), on `9ff1b77` in the worktree
+    `/Users/kobol/Projects/UnveilingTracker-worktrees/p1-contract`:** `npm ci` and `npm run check` passed
+    (84 test files, 10,457 tests passed and 2 skipped, the two that need `/dev/full`, which macOS lacks);
+    each of the 40 English and 17 Chinese `invalid--` fixtures failed with exactly its own code, the 2 soft
+    ones passed with exactly their own warning, the valid Chinese draft passed, both `validate:all` runs
+    gave 0 errors, the sample Monday printed in 21 lines, and `fixtures/src/tools/simplified.ts --fetch
+    --check config/terms-zh.json` exited 0 with the file byte-identical. The sample's Pace line says
+    "13 weeks to 9 Aug" and its footer "Pace data to 4 Oct" on purpose: the newest 8 weeks are provisional
+    (SPEC §5.3), so the line stops 8 weeks before the data does. Codex reviews the PR next.
+  - **Reversible defaults JL may overrule** are listed in the PR description (SPEC §0.4 gives the reason
+    for each).
 - **Decisions by JL (do not reopen; design v0.4):**
   - A daily brief, a Monday week in review and a Sunday deep dive from the Ledger. Morning only,
     everything ready before 08:00 Taipei. No alerts of any kind. No day count.
@@ -95,8 +134,8 @@ secondary: one Pace line a day, and charts on Mondays (SPEC §1).
 
 | Phase | Branch | PR | State |
 |---|---|---|---|
-| Foundation: repo, fork, spec, scaffolding | `p0-setup` | #1 | Open |
-| P1 Data contract, seed configs, validator, chat edition, sample content | `p1-contract` | | Not started |
+| Foundation: repo, fork, spec, scaffolding | `p0-setup` | #1 | Merged 2026-11-23, 13:05 Taipei (05:05 UTC) |
+| P1 Data contract, seed configs, validator, chat edition, sample content | `p1-contract` | #2 | Open for review |
 | P2 Feeds, the Pace from 2015, counters, the Landmark Ledger | `p2-feeds-ledger` | | Not started |
 | P3 Morning pipeline, the Chinese pass, reader reports, dry runs on Kobol | `p3-pipeline` | | Not started |
 | P4 Site in both languages | `p4-site` | | Not started |
@@ -124,16 +163,25 @@ secondary: one Pace line a day, and charts on Mondays (SPEC §1).
 
 - `SPEC.md`: the build spec, and the start-here file for any build work. `docs/DESIGN.md`: the settled
   design v0.4, frozen. `docs/PROVENANCE.md`: what came from CyberTracker and what each phase still copies.
-- `config/`: `run.json` (site, schedule, budgets, paths) and `sources.yaml` (drafted; P2 finalises it);
-  P1 adds the other configs (SPEC §4.11).
+- `config/`: `run.json` (site, schedule, budgets, paths), `sources.yaml` (drafted; P2 finalises it) and the
+  other configs of SPEC §4.11 (fields, journals, glossary seeds, primary-source hosts, Chinese usage lists,
+  hype words); P2 checks the seed values listed in `docs/reports/2026-11-23-p1-seed-verify.md`.
 - `content/`: published data (briefs, findings, metrics, status, glossary, corrections, reports, the
   archive index). Only `scripts/publish.ts` pushes here directly (rule 3).
-- `lib/`: dates and JSON now; from P1 the vocabularies, schemas, rules, validator, metrics, collectors,
-  the Chinese checks and the chat renderer. `app/`, `components/`: the static site in two languages (P4).
+- `lib/`: dates and JSON, and from P1 the vocabularies (`vocab.ts`), the schemas (`schema/`), the rules
+  (`rules/`, one file for each group of codes), the validators (`validate.ts`, `validate-zh.ts`,
+  `validate-stored.ts`), the primary-source check (`primary.ts`), the Chinese checks (`zh.ts`), the text and
+  reading helpers (`text.ts`, `readability.ts`), the page text (`page-text.ts`), the content loader
+  (`content.ts`) and the chat renderer (`chat.ts`); metrics, collectors and the rest come in P2 and P3.
+  `app/`, `components/`: the static site in two languages (P4).
 - `routine/` (P1, P3): `TASK.md` (the scheduled task's prompt), the two passes' prompts and repairs, the
   two style files and the two sandbox settings files.
-- `scripts/`: the run's helpers in `scripts/lib/` now; from P1 to P4 the morning pipeline and the checks.
-- `fixtures/`, `tests/`: generated fixtures (from P1) and Vitest tests.
+- `scripts/`: the run's helpers in `scripts/lib/`; `validate.ts`, `chat.ts` and `gen-json-schema.ts` from
+  P1; the morning pipeline and the other checks come in P2 to P4.
+- `fixtures/`, `tests/`: `fixtures/src/` builds every fixture (`npm run fixtures:gen`; never edit a
+  generated file by hand), `fixtures/site-content/` is the sample site (marked as a sample), and
+  `fixtures/empty-content/` is an empty content folder for runs that must see no stored record. Vitest
+  tests are in `tests/`, with their helpers in `tests/helpers/`.
 - `cache/`, `packs/`, `drafts/`, `logs/`, `needs-review/`: local runtime folders, gitignored.
 
 ## 5. Rules
@@ -180,9 +228,14 @@ secondary: one Pace line a day, and charts on Mondays (SPEC §1).
 
 | Job | How |
 |---|---|
-| Checks before a push | `npm run check` (exactly what CI runs; Foundation: `typecheck` and `test`) |
+| Checks before a push | `npm run check` (exactly what CI runs: `typecheck`, `test`, `schema:check`, `fixtures:check`, `validate:sample` and `validate:all`) |
 | Install | `/opt/homebrew/bin/npm ci` on Kobol; `npm ci` elsewhere |
 | One test file | `npx vitest run tests/<file>.test.ts` |
+| Validate a draft | `npm run validate -- drafts/D.json` (English; the flags are in SPEC §8.6); `-- drafts/D.zh.json --zh drafts/D.json` for the Chinese draft; exit 0 valid, 1 invalid, 2 usage or an unreadable input. In fixture runs set `UT_CONTENT_DIR=fixtures/empty-content` (from P1) |
+| Validate stored content | `npm run validate:all` checks `content/` (a root `README.md` is ignored); `npm run validate:sample` checks the sample in `fixtures/site-content/` (from P1) |
+| Chat edition for a date | `npm run chat -- --date D [--reply]` prints D's chat edition from the content folder alone (`UT_CONTENT_DIR`, else `paths.content_dir` of `config/run.json`); `--reply` prints the scheduled task's reply; exit 0 printed, 1 no status file or brief or an unloadable folder, 2 usage. For the sample: `UT_CONTENT_DIR=fixtures/site-content` (SPEC §8.8; from P1) |
+| Rebuild fixtures | `npm run fixtures:gen` writes every fixture from `fixtures/src/` and validates them; `npm run fixtures:check` compares without writing (from P1) |
+| Draft JSON Schema | `npm run schema:gen` writes `routine/schema/draft-brief.schema.json`; `npm run schema:check` compares it (from P1) |
 
 Each phase adds its rows here as its scripts land (SPEC §8.1).
 

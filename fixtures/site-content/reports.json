@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "reports": [
+    {
+      "id": "R-0001",
+      "received": "2026-10-12T19:42:00+08:00",
+      "issue_number": 3,
+      "finding_id": "earth-2026-0141",
+      "kind": "fact",
+      "evidence_url": "https://www.meridian-weather-sample.gov/ut-sample/larch-forecast-guidance",
+      "status": "upheld",
+      "decided_by": "jl",
+      "resolved_on": "2026-10-13",
+      "reason": null,
+      "correction_id": "C-0002"
+    },
+    {
+      "id": "R-0002",
+      "received": "2026-10-13T21:10:00+08:00",
+      "issue_number": 4,
+      "finding_id": "math-2026-0140",
+      "kind": "fact",
+      "evidence_url": "https://www.cambridge.org/core/journals/ut-sample-journal-of-tiling-theory/article/ut-sample-0013",
+      "status": "upheld",
+      "decided_by": "claude",
+      "resolved_on": "2026-10-14",
+      "reason": {
+        "en": "The paper proves the result for the plane only. The first text did not say so, so we wrote a clarification.",
+        "zh": "這篇論文只針對平面證明了這項結果。最初的文字沒有這樣說，所以我們寫了一則澄清說明。"
+      },
+      "correction_id": "C-0001"
+    }
+  ]
+}

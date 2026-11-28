@@ -1,0 +1,430 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-18",
+  "window": {
+    "start": "2026-10-17T03:15:00+08:00",
+    "end": "2026-10-18T03:15:00+08:00"
+  },
+  "generated_at": "2026-10-18T03:16:20+08:00",
+  "arxiv_announcement": null,
+  "degraded": false,
+  "feeds": [
+    {
+      "id": "arxiv-math",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 4,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "1692c1e7549b787042ae0b54d0704a72b6b3401b6c9f5a70d6069bb06eb97451"
+    },
+    {
+      "id": "arxiv-physics",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 7,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "7e9971ecab98a998b2ff7ba98c0dcd3e8122c5cce38f4162f31eff99cb8fa5d0"
+    },
+    {
+      "id": "arxiv-astro-ph",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 10,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "4b3eb29b05e8d612f311589b1fa45263bd9a7c78fe1551da0d398970537f4754"
+    },
+    {
+      "id": "arxiv-cond-mat",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 6,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "74021f9fda64f5512f75934fb56097852224726691d477eec234816c94752f92"
+    },
+    {
+      "id": "arxiv-quant-ph",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 9,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "c1c3e6491baa92b6bbec13e4870ff9f7ff69f472b6aea5b0ee6f6b6429e2d4ee"
+    },
+    {
+      "id": "arxiv-q-bio",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 5,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "ac2234995e5a2d9cec29f9a8dd038bcb4d4a1f54b6a8528716911b9c0b260f3b"
+    },
+    {
+      "id": "arxiv-physics-chem-ph",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 8,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "ec41575f13f006273baf877a7942e61342e87582b363d270f43e1b984622f0d6"
+    },
+    {
+      "id": "arxiv-stat-ml",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 4,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "6ed34eaf5fbbb6aa852389ea396022f1ea6aab53d5d09bbe6bfe80cd6318bc20"
+    },
+    {
+      "id": "biorxiv",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-17T09:00:00+08:00",
+      "items_total": 8,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "52facf9e934f77c8ad575b8d24a92a6d59922a2ee62f6c944e60e30a0b327b4d"
+    },
+    {
+      "id": "medrxiv",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 10,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "60c959cabcfca486e66d04966256ea2278916b261e053283bd3a84ae4aa07d9b"
+    },
+    {
+      "id": "pubmed",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-17",
+      "items_total": 7,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "7355139fafe19ab099a7a567ed7ca54d9b0cb89ac485915178753db41131e8e4"
+    },
+    {
+      "id": "crossref-journals",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-17T12:00:00+08:00",
+      "items_total": 11,
+      "items_kept": 2,
+      "error": null,
+      "sha256": "2aaacb8731a92db7fc175af87b430390910c34a387bb14fe6cbc0be1190062ed"
+    },
+    {
+      "id": "journal-nature",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-17T23:00:00+08:00",
+      "items_total": 6,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "daae08aa09b99a6fd85b27d1e36f49d8b348c68284d5003e106cf7de46b2c359"
+    },
+    {
+      "id": "journal-science",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 8,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "997d2e5bec5ee89369fbbe4ef4fbefcbb46287181f3adca000b06c76b4897ecd"
+    },
+    {
+      "id": "journal-pnas",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 4,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "98ca8af40a68cb461c90c6ab20e5d0e93bbd62dd36496758e2dd8500384c1230"
+    },
+    {
+      "id": "eurekalert",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-17T06:00:00+08:00",
+      "items_total": 8,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "6d406b26cc5ab15ead35cece2eb43af2297c4ac36c2f31b0a5ec2bdd2aefd2ad"
+    },
+    {
+      "id": "lab-deepmind",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 10,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "3df0e6ac7ce671e493e3b6b4bf5c7e6e277ef1f60131f02f48934c03336d55c7"
+    },
+    {
+      "id": "smc-reactions",
+      "kind": "page",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-17T22:00:00+08:00",
+      "items_total": 7,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "c24e6862688f018011682768ed96a2f7630eebb4f055b939a7ba6b39a448d86a"
+    },
+    {
+      "id": "crossref-updates",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 9,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "70aa7bf3c3e436f350a9b0a7f20e4b3557a5ad99e61e0571195c04a80c076855"
+    },
+    {
+      "id": "ctgov",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 5,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "0f874dd0b90f89a7015e43920bc789d1ce5ec12a23aca0aa2a1e56a1d6b7fdae"
+    },
+    {
+      "id": "rcsb",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 8,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "b17097a6681e3a43c7f3e4762d2094ca6842d7ff91093e5a7396a5f6ff15718a"
+    },
+    {
+      "id": "scrollprize",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-16",
+      "items_total": 4,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "36cccb4b254983f4b83d84d603dc97ea7007c05d7b857c4db31a4040de306b62"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "cand-01",
+      "source_id": "journal-nature",
+      "title": "SAMPLE: Glacier retreat mapped with a deep learning model",
+      "abstract": "SAMPLE page, invented for tests and never fetched. A deep learning model mapped the edges of mountain glaciers in satellite images. People checked the maps against field surveys.",
+      "url": "https://www.nature.com/articles/s41586-026-ut-sample-0041",
+      "doi": "10.1038/s41586-026-ut-sample-0041",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-17T23:00:00+08:00",
+      "journal": "Nature",
+      "fields": [
+        "earth"
+      ],
+      "ai_terms_matched": [
+        "deep learning"
+      ],
+      "journal_leading": true,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 10,
+      "deep_read": true
+    },
+    {
+      "id": "cand-02",
+      "source_id": "crossref-journals",
+      "title": "SAMPLE: Tougher plastics found by Bayesian optimization",
+      "abstract": "SAMPLE page, invented for tests and never fetched. Bayesian optimization chose which polymer blends to make next. The team made and tested 60 blends.",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/ut-sample-0045",
+      "doi": "10.1002/ut-sample-0045",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-17T12:00:00+08:00",
+      "journal": "Eastvale Polymer Letters",
+      "fields": [
+        "chemistry"
+      ],
+      "ai_terms_matched": [
+        "Bayesian optimization"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 6,
+      "deep_read": true
+    },
+    {
+      "id": "cand-03",
+      "source_id": "crossref-journals",
+      "title": "SAMPLE: Reading court rulings with a large language model",
+      "abstract": "SAMPLE page, invented for tests and never fetched. A large language model sorted court rulings by their outcome. Lawyers checked a sample of its sorting.",
+      "url": "https://link.springer.com/article/10.1007/ut-sample-0043",
+      "doi": "10.1007/ut-sample-0043",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-17T10:00:00+08:00",
+      "journal": "Eastvale Law and Society Review",
+      "fields": [
+        "social"
+      ],
+      "ai_terms_matched": [
+        "large language model",
+        "language model"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 6,
+      "deep_read": true
+    },
+    {
+      "id": "cand-04",
+      "source_id": "pubmed",
+      "title": "SAMPLE: Machine learning to spot sepsis early in hospital wards",
+      "abstract": "SAMPLE page, invented for tests and never fetched. A machine learning score read routine ward records. It flagged sepsis earlier than the usual checks in one hospital.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/99990041/",
+      "doi": "10.5555/ut-sample-0042",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-17",
+      "journal": "Eastvale Journal of Critical Care",
+      "fields": [
+        "biology"
+      ],
+      "ai_terms_matched": [
+        "machine learning"
+      ],
+      "journal_leading": false,
+      "types": [
+        "Journal Article"
+      ],
+      "stored_finding": null,
+      "flags": [],
+      "score": 6,
+      "deep_read": true
+    },
+    {
+      "id": "cand-05",
+      "source_id": "biorxiv",
+      "title": "SAMPLE: A neural network that tracks dividing cells",
+      "abstract": "SAMPLE page, invented for tests and never fetched. A neural network followed dividing cells in microscope films. It agreed with hand counts on most films.",
+      "url": "https://www.biorxiv.org/content/10.1101/2026.10.16.990042v1",
+      "doi": "10.1101/2026.10.16.990042",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-17T09:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "biology"
+      ],
+      "ai_terms_matched": [
+        "neural network"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 5,
+      "deep_read": true
+    },
+    {
+      "id": "cand-06",
+      "source_id": "eurekalert",
+      "title": "SAMPLE: Museum releases photographs of worn inscriptions",
+      "abstract": "SAMPLE page, invented for tests and never fetched. The museum says a convolutional neural network helped sharpen the photographs. Scholars read the inscriptions themselves.",
+      "url": "https://www.eurekalert.org/news-releases/ut-sample-0044",
+      "doi": null,
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-17T06:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "humanities"
+      ],
+      "ai_terms_matched": [
+        "neural network",
+        "convolutional neural"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 3,
+      "deep_read": true
+    },
+    {
+      "id": "cand-07",
+      "source_id": "smc-reactions",
+      "title": "SAMPLE: Expert reaction to glacier maps drawn by a model",
+      "abstract": "SAMPLE page, invented for tests and never fetched. Ana Example (SAMPLE), Ravenhurst University, said: The deep learning maps agree well with the field surveys.",
+      "url": "https://www.sciencemediacentre.org/expert-reaction-to-ut-sample-glacier-retreat-maps/",
+      "doi": null,
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-17T22:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "earth"
+      ],
+      "ai_terms_matched": [
+        "deep learning"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 1,
+      "deep_read": true
+    }
+  ],
+  "injection_flags": 0
+}

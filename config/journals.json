@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "version": 1,
+  "journals": [
+    {
+      "id": "nature",
+      "name": "Nature",
+      "openalex_source": "S137773608",
+      "issn": "0028-0836",
+      "fields": [
+        "mathematics",
+        "physics",
+        "chemistry",
+        "biology",
+        "earth",
+        "social",
+        "humanities"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "openalex_source": "S3880285",
+      "issn": "0036-8075",
+      "fields": [
+        "mathematics",
+        "physics",
+        "chemistry",
+        "biology",
+        "earth",
+        "social",
+        "humanities"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "cell",
+      "name": "Cell",
+      "openalex_source": "S110447773",
+      "issn": "0092-8674",
+      "fields": [
+        "biology"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "pnas",
+      "name": "Proceedings of the National Academy of Sciences",
+      "openalex_source": "S125754415",
+      "issn": "0027-8424",
+      "fields": [
+        "mathematics",
+        "physics",
+        "chemistry",
+        "biology",
+        "earth",
+        "social",
+        "humanities"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "prl",
+      "name": "Physical Review Letters",
+      "openalex_source": "S24807848",
+      "issn": "0031-9007",
+      "fields": [
+        "physics"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "annals-of-mathematics",
+      "name": "Annals of Mathematics",
+      "openalex_source": "S9999999901",
+      "issn": "0003-486X",
+      "fields": [
+        "mathematics"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "nature-physics",
+      "name": "Nature Physics",
+      "openalex_source": "S9999999902",
+      "issn": "1745-2473",
+      "fields": [
+        "physics"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "nature-chemistry",
+      "name": "Nature Chemistry",
+      "openalex_source": "S9999999903",
+      "issn": "1755-4330",
+      "fields": [
+        "chemistry"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "nature-materials",
+      "name": "Nature Materials",
+      "openalex_source": "S9999999904",
+      "issn": "1476-1122",
+      "fields": [
+        "chemistry"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "jacs",
+      "name": "Journal of the American Chemical Society",
+      "openalex_source": "S9999999905",
+      "issn": "0002-7863",
+      "fields": [
+        "chemistry"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "nature-medicine",
+      "name": "Nature Medicine",
+      "openalex_source": "S203256638",
+      "issn": "1078-8956",
+      "fields": [
+        "biology"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "nejm",
+      "name": "The New England Journal of Medicine",
+      "openalex_source": "S62468778",
+      "issn": "0028-4793",
+      "fields": [
+        "biology"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "lancet",
+      "name": "The Lancet",
+      "openalex_source": "S49861241",
+      "issn": "0140-6736",
+      "fields": [
+        "biology"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "nature-biotechnology",
+      "name": "Nature Biotechnology",
+      "openalex_source": "S9999999906",
+      "issn": "1087-0156",
+      "fields": [
+        "biology"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "nature-geoscience",
+      "name": "Nature Geoscience",
+      "openalex_source": "S9999999907",
+      "issn": "1752-0894",
+      "fields": [
+        "earth"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "nature-climate-change",
+      "name": "Nature Climate Change",
+      "openalex_source": "S9999999908",
+      "issn": "1758-678X",
+      "fields": [
+        "earth"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "aer",
+      "name": "American Economic Review",
+      "openalex_source": "S23254222",
+      "issn": "0002-8282",
+      "fields": [
+        "social"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "apsr",
+      "name": "American Political Science Review",
+      "openalex_source": "S176007004",
+      "issn": "0003-0554",
+      "fields": [
+        "social"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "nature-human-behaviour",
+      "name": "Nature Human Behaviour",
+      "openalex_source": "S9999999909",
+      "issn": "2397-3374",
+      "fields": [
+        "social"
+      ],
+      "in_pace": false
+    },
+    {
+      "id": "inventiones",
+      "name": "Inventiones Mathematicae",
+      "openalex_source": "S9999999910",
+      "issn": "0020-9910",
+      "fields": [
+        "mathematics"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "jams",
+      "name": "Journal of the American Mathematical Society",
+      "openalex_source": "S9999999911",
+      "issn": "0894-0347",
+      "fields": [
+        "mathematics"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "acta-mathematica",
+      "name": "Acta Mathematica",
+      "openalex_source": "S9999999912",
+      "issn": "0001-5962",
+      "fields": [
+        "mathematics"
+      ],
+      "in_pace": true
+    }
+  ]
+}

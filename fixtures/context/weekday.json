@@ -1,0 +1,2394 @@
+{
+  "date": "2026-10-14",
+  "format": "daily",
+  "window": {
+    "start": "2026-10-13T03:15:00+08:00",
+    "end": "2026-10-14T03:15:00+08:00"
+  },
+  "deadline": "2026-10-14T03:49:00+08:00",
+  "budgets": {
+    "web_fetches": 40,
+    "findings_max": 5,
+    "typical_findings": [
+      3,
+      5
+    ],
+    "deep_read_max": 15,
+    "words_target": 1000,
+    "words_max": 1300,
+    "reading_grade_soft": 12,
+    "reading_grade_max": 14
+  },
+  "candidates": [
+    {
+      "id": "cand-01",
+      "source_id": "journal-nature",
+      "title": "<untrusted source=\"journal-nature\">SAMPLE: Reading a sealed Herculaneum scroll with machine learning</untrusted>",
+      "abstract": "<untrusted source=\"journal-nature\">SAMPLE page, invented for tests and never fetched. Hundreds of papyrus scrolls from the library at Herculaneum were charred by the eruption of Mount Vesuvius in AD 79 and cannot be unrolled. We scanned one sealed scroll with X-rays and flattened its layers in software. We trained a machine-learning model to detect ink. The model was trained on small patches where ink had been found by hand. We read about 1,800 Greek letters in six columns of text. Scholars in two countries, outside our group, checked the readings. The text is a prose work on friendship. Open access. This article is licensed under a Creative Commons Attribution 4.0 International License. DOI 10.1038/nature-ut-sample-0001.</untrusted>",
+      "url": "https://www.nature.com/articles/nature-ut-sample-0001",
+      "doi": "10.1038/nature-ut-sample-0001",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T23:00:00+08:00",
+      "journal": "Nature",
+      "fields": [
+        "humanities"
+      ],
+      "ai_terms_matched": [
+        "machine learning"
+      ],
+      "journal_leading": true,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 10,
+      "deep_read": true
+    },
+    {
+      "id": "cand-02",
+      "source_id": "journal-science",
+      "title": "<untrusted source=\"journal-science\">SAMPLE: Ocean heat mapped with a deep learning model</untrusted>",
+      "abstract": "<untrusted source=\"journal-science\">SAMPLE page, invented for tests and never fetched. A deep learning model filled gaps in ocean temperature records. It was tested on records held back from training.</untrusted>",
+      "url": "https://www.science.org/doi/10.1126/ut-sample.0031",
+      "doi": "10.1126/ut-sample.0031",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-14T02:00:00+08:00",
+      "journal": "Science",
+      "fields": [
+        "earth"
+      ],
+      "ai_terms_matched": [
+        "deep learning"
+      ],
+      "journal_leading": true,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 8,
+      "deep_read": true
+    },
+    {
+      "id": "cand-03",
+      "source_id": "journal-pnas",
+      "title": "<untrusted source=\"journal-pnas\">SAMPLE: A measured structure tests an AI prediction of a protein complex</untrusted>",
+      "abstract": "<untrusted source=\"journal-pnas\">SAMPLE page, invented for tests and never fetched. Coldwater Institute structure lab (SAMPLE). We measured the structure of the complex by cryo-electron microscopy. The measured structure matches the model prediction in every chain. The two agree to within 2 angstroms. The prediction was posted by Halden Research before our measurement. Deposited as pdb_00009zz1. Halden Research made the prediction with a deep learning model.</untrusted>",
+      "url": "https://www.pnas.org/doi/10.1073/ut-sample.0003",
+      "doi": "10.1073/ut-sample.0003",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T05:00:00+08:00",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "fields": [
+        "biology"
+      ],
+      "ai_terms_matched": [
+        "deep learning"
+      ],
+      "journal_leading": true,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 6,
+      "deep_read": true
+    },
+    {
+      "id": "cand-04",
+      "source_id": "arxiv-physics",
+      "title": "<untrusted source=\"arxiv-physics\">SAMPLE: A neural network that flags faint particle tracks in a detector</untrusted>",
+      "abstract": "<untrusted source=\"arxiv-physics\">SAMPLE page, invented for tests and never fetched. We trained a neural network on simulated detector data. It flags faint tracks that the standard method misses.</untrusted>",
+      "url": "https://arxiv.org/abs/2610.99004",
+      "doi": null,
+      "arxiv": "2610.99004",
+      "trial": [],
+      "published_at": "2026-10-13T08:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "physics"
+      ],
+      "ai_terms_matched": [
+        "neural network"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 5,
+      "deep_read": true
+    },
+    {
+      "id": "cand-05",
+      "source_id": "arxiv-quant-ph",
+      "title": "<untrusted source=\"arxiv-quant-ph\">SAMPLE: Tuning quantum dots with machine learning</untrusted>",
+      "abstract": "<untrusted source=\"arxiv-quant-ph\">SAMPLE page, invented for tests and never fetched. A machine learning method tuned the voltages of a quantum dot array. It took less time than tuning by hand.</untrusted>",
+      "url": "https://arxiv.org/abs/2610.99005",
+      "doi": null,
+      "arxiv": "2610.99005",
+      "trial": [],
+      "published_at": "2026-10-13T08:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "physics"
+      ],
+      "ai_terms_matched": [
+        "machine learning"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 5,
+      "deep_read": true
+    },
+    {
+      "id": "cand-06",
+      "source_id": "crossref-journals",
+      "title": "<untrusted source=\"crossref-journals\">SAMPLE: What households spend on food in hard years</untrusted>",
+      "abstract": "<untrusted source=\"crossref-journals\">SAMPLE page, invented for tests and never fetched. We studied household spending in 12 regions. A random forest sorted households by how their spending changed.</untrusted>",
+      "url": "https://www.cambridge.org/core/journals/ut-sample-household-economics-review/article/ut-sample-0034",
+      "doi": "10.1017/ut-sample-0034",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T15:00:00+08:00",
+      "journal": "Eastvale Household Economics Review",
+      "fields": [
+        "social"
+      ],
+      "ai_terms_matched": [
+        "random forest"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 4,
+      "deep_read": true
+    },
+    {
+      "id": "cand-07",
+      "source_id": "crossref-journals",
+      "title": "<untrusted source=\"crossref-journals\">SAMPLE: An independent repeat of a robot-found metal mixture</untrusted>",
+      "abstract": "<untrusted source=\"crossref-journals\">SAMPLE page, invented for tests and never fetched. Ravenhurst University (SAMPLE). We repeated the work of the Eastvale team with our own robot and our own metals. We find that the same mixture splits water almost as well as platinum does. Our robot chose each mixture with Bayesian optimization.</untrusted>",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/ut-sample-0007",
+      "doi": "10.1002/ut-sample-0007",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T12:00:00+08:00",
+      "journal": "Applied Catalysis Letters",
+      "fields": [
+        "chemistry"
+      ],
+      "ai_terms_matched": [
+        "Bayesian optimization"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 4,
+      "deep_read": true
+    },
+    {
+      "id": "cand-08",
+      "source_id": "eurekalert",
+      "title": "<untrusted source=\"eurekalert\">SAMPLE: Eastvale team reads a sealed scroll without opening it</untrusted>",
+      "abstract": "<untrusted source=\"eurekalert\">SAMPLE page, invented for tests and never fetched. Eastvale University said its imaging group read about 1,800 Greek letters inside a sealed papyrus scroll from Herculaneum. The team trained a model called the Ink Reader to find ink that the human eye cannot see. Hundreds of scrolls from the same library are still sealed. The text is a prose work on friendship. The Ink Reader is a machine learning model.</untrusted>",
+      "url": "https://www.eurekalert.org/news-releases/ut-sample-0003",
+      "doi": null,
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T20:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "humanities"
+      ],
+      "ai_terms_matched": [
+        "machine learning"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 3,
+      "deep_read": true
+    },
+    {
+      "id": "cand-09",
+      "source_id": "arxiv-math",
+      "title": "<untrusted source=\"arxiv-math\">SAMPLE: A proof of an open problem on sums of sets of whole numbers</untrusted>",
+      "abstract": "<untrusted source=\"arxiv-math\">SAMPLE page, invented for tests and never fetched. Authors: Marlow Labs (SAMPLE). We prove an open problem about sums of sets of whole numbers. The proof was found by the Marlow Prover with no human step in the argument. A Lean proof file is posted with this paper. This version has not been peer reviewed. arXiv:2610.99001. The Marlow Prover is built on a large language model.</untrusted>",
+      "url": "https://arxiv.org/abs/2610.99001",
+      "doi": null,
+      "arxiv": "2610.99001",
+      "trial": [],
+      "published_at": "2026-10-13T08:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "mathematics"
+      ],
+      "ai_terms_matched": [
+        "large language model",
+        "language model"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 3,
+      "deep_read": true
+    },
+    {
+      "id": "cand-10",
+      "source_id": "arxiv-physics",
+      "title": "<untrusted source=\"arxiv-physics\">SAMPLE: A model that predicts monsoon rainfall weeks ahead</untrusted>",
+      "abstract": "<untrusted source=\"arxiv-physics\">SAMPLE page, invented for tests and never fetched. We describe a model that predicts monsoon rainfall weeks ahead. This version has not been peer reviewed. arXiv:2610.99002. The model is a neural network trained on past rainfall.</untrusted>",
+      "url": "https://arxiv.org/abs/2610.99002",
+      "doi": null,
+      "arxiv": "2610.99002",
+      "trial": [],
+      "published_at": "2026-10-13T08:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "physics"
+      ],
+      "ai_terms_matched": [
+        "neural network"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 3,
+      "deep_read": true
+    },
+    {
+      "id": "cand-11",
+      "source_id": "eurekalert",
+      "title": "<untrusted source=\"eurekalert\">SAMPLE: Telescope team schedules its nights with software</untrusted>",
+      "abstract": "<untrusted source=\"eurekalert\">SAMPLE page, invented for tests and never fetched. The observatory says it now plans each night with Bayesian optimization. More of each night goes to observing.</untrusted>",
+      "url": "https://www.eurekalert.org/news-releases/ut-sample-0035",
+      "doi": null,
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T05:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "physics"
+      ],
+      "ai_terms_matched": [
+        "Bayesian optimization"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 3,
+      "deep_read": false
+    },
+    {
+      "id": "cand-12",
+      "source_id": "medrxiv",
+      "title": "<untrusted source=\"medrxiv\">SAMPLE: Protocol for a first safety trial of an AI-proposed antibiotic</untrusted>",
+      "abstract": "<untrusted source=\"medrxiv\">SAMPLE page, invented for tests and never fetched. This protocol describes trial NCT09999001. The compound was ranked by a deep learning model. The trial tests safety in healthy volunteers.</untrusted>",
+      "url": "https://www.medrxiv.org/content/10.1101/2026.10.12.990021v1",
+      "doi": "10.1101/2026.10.12.990021",
+      "arxiv": null,
+      "trial": [
+        "NCT09999001"
+      ],
+      "published_at": "2026-10-13",
+      "journal": null,
+      "fields": [
+        "biology"
+      ],
+      "ai_terms_matched": [
+        "deep learning"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": "bio-2026-0143",
+      "flags": [],
+      "score": 3,
+      "deep_read": true
+    },
+    {
+      "id": "cand-13",
+      "source_id": "smc-reactions",
+      "title": "<untrusted source=\"smc-reactions\">SAMPLE: Expert reaction to a sealed scroll read without unrolling</untrusted>",
+      "abstract": "<untrusted source=\"smc-reactions\">SAMPLE page, invented for tests and never fetched. Jonas Example (SAMPLE), Coldwater Institute, said: The readings are careful and the Greek is sound. The model found ink traces that no human reader could see, and the readings that followed are sound. People checked every letter. The ink model was built with machine learning, and people did the reading.</untrusted>",
+      "url": "https://www.sciencemediacentre.org/expert-reaction-to-ut-sample-sealed-scroll-text/",
+      "doi": null,
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T22:30:00+08:00",
+      "journal": null,
+      "fields": [
+        "humanities"
+      ],
+      "ai_terms_matched": [
+        "machine learning"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 1,
+      "deep_read": true
+    },
+    {
+      "id": "cand-14",
+      "source_id": "crossref-updates",
+      "title": "<untrusted source=\"crossref-updates\">SAMPLE: Retraction Note: Wear tests of a new steel</untrusted>",
+      "abstract": "<untrusted source=\"crossref-updates\">SAMPLE page, invented for tests and never fetched. Retraction Note. The publisher has retracted this article because its text and images were produced with an undisclosed AI tool.</untrusted>",
+      "url": "https://link.springer.com/article/10.1007/ut-sample-0006",
+      "doi": "10.1007/ut-sample-0006",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T16:05:00+08:00",
+      "journal": null,
+      "fields": [
+        "chemistry"
+      ],
+      "ai_terms_matched": [],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 0,
+      "deep_read": true
+    },
+    {
+      "id": "cand-15",
+      "source_id": "crossref-updates",
+      "title": "<untrusted source=\"crossref-updates\">SAMPLE: Retraction Note: A study of alloy coatings</untrusted>",
+      "abstract": "<untrusted source=\"crossref-updates\">SAMPLE page, invented for tests and never fetched. Retraction Note. The publisher has retracted this article because its text and images were produced with an undisclosed AI tool.</untrusted>",
+      "url": "https://link.springer.com/article/10.1007/ut-sample-0005",
+      "doi": "10.1007/ut-sample-0005",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13T16:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "chemistry"
+      ],
+      "ai_terms_matched": [],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 0,
+      "deep_read": true
+    },
+    {
+      "id": "cand-16",
+      "source_id": "rcsb",
+      "title": "<untrusted source=\"rcsb\">SAMPLE: Structure entry pdb_00009zz1</untrusted>",
+      "abstract": "<untrusted source=\"rcsb\">SAMPLE page, invented for tests and never fetched. Entry pdb_00009zz1, released 2026-10-13. Method: cryo-electron microscopy. Deposited by the Coldwater Institute structure lab (SAMPLE). The images and data on this page are released under the CC0 1.0 Universal license.</untrusted>",
+      "url": "https://www.rcsb.org/structure/pdb_00009zz1",
+      "doi": null,
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-13",
+      "journal": null,
+      "fields": [
+        "biology"
+      ],
+      "ai_terms_matched": [],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 0,
+      "deep_read": true
+    }
+  ],
+  "pace": {
+    "sentence": "The Pace: 6.6% of papers in leading journals named AI methods in the 13 weeks to 16 Aug. That is up from 1.1% in 2015 to 2019, and up from 4.8% a year earlier. Clearly above the pre-AI level in 5 of 7 fields. Too few cases to judge in 1.",
+    "quotable": {
+      "pace.leading.pooled.window": "6.6%",
+      "pace.leading.pooled.baseline": "1.1%",
+      "pace.leading.pooled.year_ago": "4.8%",
+      "pace.leading.by_field.mathematics.window": "4.3%",
+      "pace.leading.by_field.mathematics.baseline": "0.6%",
+      "pace.leading.by_field.mathematics.year_ago": "3.1%",
+      "pace.leading.by_field.physics.window": "6.4%",
+      "pace.leading.by_field.physics.baseline": "0.9%",
+      "pace.leading.by_field.physics.year_ago": "4.6%",
+      "pace.leading.by_field.chemistry.window": "7.5%",
+      "pace.leading.by_field.chemistry.baseline": "1.0%",
+      "pace.leading.by_field.chemistry.year_ago": "5.3%",
+      "pace.leading.by_field.biology.window": "8.2%",
+      "pace.leading.by_field.biology.baseline": "1.2%",
+      "pace.leading.by_field.biology.year_ago": "5.9%",
+      "pace.leading.by_field.earth.window": "6.9%",
+      "pace.leading.by_field.earth.baseline": "0.8%",
+      "pace.leading.by_field.earth.year_ago": "4.9%",
+      "pace.leading.by_field.social.window": "2.3%",
+      "pace.leading.by_field.social.baseline": "1.9%",
+      "pace.leading.by_field.social.year_ago": "2.2%",
+      "pace.leading.by_field.humanities.window": "3.3%",
+      "pace.leading.by_field.humanities.baseline": "0.5%",
+      "pace.leading.by_field.humanities.year_ago": "2.7%",
+      "pace.all.pooled.window": "2.9%",
+      "pace.all.pooled.baseline": "0.5%",
+      "pace.all.pooled.year_ago": "2.1%",
+      "pace.all.by_field.mathematics.window": "1.5%",
+      "pace.all.by_field.mathematics.baseline": "0.2%",
+      "pace.all.by_field.mathematics.year_ago": "1.1%",
+      "pace.all.by_field.physics.window": "3.0%",
+      "pace.all.by_field.physics.baseline": "0.4%",
+      "pace.all.by_field.physics.year_ago": "2.2%",
+      "pace.all.by_field.chemistry.window": "3.5%",
+      "pace.all.by_field.chemistry.baseline": "0.5%",
+      "pace.all.by_field.chemistry.year_ago": "2.5%",
+      "pace.all.by_field.biology.window": "3.8%",
+      "pace.all.by_field.biology.baseline": "0.5%",
+      "pace.all.by_field.biology.year_ago": "2.8%",
+      "pace.all.by_field.earth.window": "2.7%",
+      "pace.all.by_field.earth.baseline": "0.3%",
+      "pace.all.by_field.earth.year_ago": "1.9%",
+      "pace.all.by_field.social.window": "0.9%",
+      "pace.all.by_field.social.baseline": "0.7%",
+      "pace.all.by_field.social.year_ago": "0.9%",
+      "pace.all.by_field.humanities.window": "1.3%",
+      "pace.all.by_field.humanities.baseline": "0.1%",
+      "pace.all.by_field.humanities.year_ago": "0.9%",
+      "landmarks.this_year": "0 of 1"
+    }
+  },
+  "recent_findings": [
+    {
+      "id": "math-2026-0131",
+      "title": "SAMPLE: An AI checker flags a gap in a published proof",
+      "field": "mathematics",
+      "rung": "disputed",
+      "significance": "notable",
+      "artefacts": {
+        "doi": [],
+        "arxiv": [
+          "2609.99003"
+        ],
+        "lean": [],
+        "trial": [],
+        "pdb": []
+      }
+    },
+    {
+      "id": "phys-2026-0134",
+      "title": "SAMPLE: A robot lab reports a magnetic material that keeps its strength",
+      "field": "physics",
+      "rung": "retracted",
+      "significance": "major",
+      "artefacts": {
+        "doi": [
+          "10.1007/ut-sample-0016"
+        ],
+        "arxiv": [],
+        "lean": [],
+        "trial": [],
+        "pdb": []
+      }
+    },
+    {
+      "id": "math-2026-0140",
+      "title": "SAMPLE: Tiles that fill a surface only without repeating",
+      "field": "mathematics",
+      "rung": "checked",
+      "significance": "landmark",
+      "artefacts": {
+        "doi": [
+          "10.1017/ut-sample-0013"
+        ],
+        "arxiv": [],
+        "lean": [],
+        "trial": [],
+        "pdb": []
+      }
+    },
+    {
+      "id": "earth-2026-0141",
+      "title": "SAMPLE: An AI model forecasts the weather ten days ahead",
+      "field": "earth",
+      "rung": "applied",
+      "significance": "major",
+      "artefacts": {
+        "doi": [
+          "10.1126/ut-sample.0012"
+        ],
+        "arxiv": [],
+        "lean": [],
+        "trial": [],
+        "pdb": []
+      }
+    },
+    {
+      "id": "chem-2026-0142",
+      "title": "SAMPLE: A robotic lab finds a cheap metal mixture that splits water",
+      "field": "chemistry",
+      "rung": "checked",
+      "significance": "notable",
+      "artefacts": {
+        "doi": [
+          "10.1007/ut-sample-0008"
+        ],
+        "arxiv": [],
+        "lean": [],
+        "trial": [],
+        "pdb": []
+      }
+    },
+    {
+      "id": "bio-2026-0143",
+      "title": "SAMPLE: An AI model proposes a new antibiotic that works in mice",
+      "field": "biology",
+      "rung": "checked",
+      "significance": "major",
+      "artefacts": {
+        "doi": [
+          "10.1016/ut-sample-0014"
+        ],
+        "arxiv": [],
+        "lean": [],
+        "trial": [
+          "NCT09999001"
+        ],
+        "pdb": []
+      }
+    },
+    {
+      "id": "soc-2026-0144",
+      "title": "SAMPLE: Reviewers shared unpublished papers with an AI chatbot",
+      "field": "social",
+      "rung": "checked",
+      "significance": "major",
+      "artefacts": {
+        "doi": [],
+        "arxiv": [],
+        "lean": [],
+        "trial": [],
+        "pdb": []
+      }
+    },
+    {
+      "id": "soc-2026-0145",
+      "title": "SAMPLE: A research council plans to ask applicants about AI use",
+      "field": "social",
+      "rung": "claimed",
+      "significance": "notable",
+      "artefacts": {
+        "doi": [],
+        "arxiv": [],
+        "lean": [],
+        "trial": [],
+        "pdb": []
+      }
+    },
+    {
+      "id": "soc-2026-0146",
+      "title": "SAMPLE: An open dataset of 40,000 AI-run survey interviews",
+      "field": "social",
+      "rung": "preprint",
+      "significance": "watch",
+      "artefacts": {
+        "doi": [
+          "10.5281/zenodo.99900002"
+        ],
+        "arxiv": [],
+        "lean": [],
+        "trial": [],
+        "pdb": []
+      }
+    },
+    {
+      "id": "phys-2026-0147",
+      "title": "SAMPLE: An AI controller steadies a fusion test machine",
+      "field": "physics",
+      "rung": "checked",
+      "significance": "notable",
+      "artefacts": {
+        "doi": [
+          "10.1007/ut-sample-0020"
+        ],
+        "arxiv": [],
+        "lean": [],
+        "trial": [],
+        "pdb": []
+      }
+    }
+  ],
+  "ledger_for_sunday": [],
+  "week": null,
+  "rung_proposals": [
+    {
+      "finding_id": "bio-2026-0143",
+      "kind": "trial_change",
+      "to": null,
+      "date": "2026-10-13",
+      "url": "https://clinicaltrials.gov/study/NCT09999001",
+      "note": "A change to this finding's trial was found on ClinicalTrials.gov. A rung change needs a paper or a statement. The script left the rung to you."
+    }
+  ],
+  "corrections": {
+    "flagged": []
+  },
+  "reports": [
+    {
+      "id": "R-0001",
+      "status": "upheld",
+      "finding_id": "earth-2026-0141",
+      "kind": "fact",
+      "evidence_url": "https://meridian-weather-sample.gov/ut-sample/larch-forecast-guidance",
+      "finding": {
+        "id": "earth-2026-0141",
+        "title": "SAMPLE: An AI model forecasts the weather ten days ahead",
+        "field": "earth",
+        "kind": "result",
+        "significance": "major",
+        "explainer": {
+          "found": "Larch Weather Systems built an AI model, Larch Forecast, that predicts the weather up to ten days ahead. In tests on two years of past weather, its ten-day forecasts had about 12 per cent fewer errors. The comparison was with numerical weather prediction, the standard method.",
+          "matters": "Forecasts guide farmers, airlines and emergency plans. Fewer errors ten days out gives people more time to prepare for storms and heat. A small gain in accuracy reaches many people at once. Weather agencies pay close attention to any method that beats the standard one.",
+          "ai_helped": "Larch Weather Systems built Larch Forecast. The model learns from past weather records, so it finds patterns in them instead of solving the equations of the air. The company also helped write the paper. The tests in the paper are the company's own.",
+          "how_sure": "Applied. The Meridian Weather Service says it now relies on the model for its daily forecasts. Science published the paper after peer review, and Larch Weather Systems, the maker, helped write it. The tests used past weather only, so live forecasts may differ.",
+          "background": "For many years, weather agencies have forecast by solving physical equations on large computers. Tests on past weather show how a new model would have done on days that are already known.",
+          "could_lead": "If the gain holds in other seasons and other places, forecasters could trust longer forecasts and warn people earlier. Outside teams may test the model next, on live forecasts and in other regions."
+        },
+        "ai": {
+          "role": "ai_solved",
+          "confidence": "confirmed",
+          "systems": [
+            {
+              "name": "Larch Forecast",
+              "maker": "Larch Weather Systems"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "Larch Forecast is an AI model that predicts weather up to ten days ahead",
+              "from_claimant": true
+            },
+            {
+              "source_id": "s2",
+              "quote": "runs Larch Forecast alongside its own system",
+              "from_claimant": false
+            }
+          ]
+        },
+        "rung_history": [
+          {
+            "rung": "checked",
+            "date": "2026-10-05",
+            "recorded": "2026-10-06",
+            "source_id": "s1",
+            "by": "agent",
+            "note": null
+          },
+          {
+            "rung": "applied",
+            "date": "2026-10-06",
+            "recorded": "2026-10-06",
+            "source_id": "s2",
+            "by": "agent",
+            "note": null
+          }
+        ],
+        "since_then": [],
+        "sources": [
+          {
+            "id": "s1",
+            "kind": "paper",
+            "title": "SAMPLE: An AI model that forecasts the weather ten days ahead",
+            "publisher": "Science",
+            "url": "https://www.science.org/doi/10.1126/ut-sample.0012",
+            "doi": "10.1126/ut-sample.0012",
+            "published_at": "2026-10-05T23:00:00+08:00",
+            "seen_as": "pack",
+            "added": "2026-10-06"
+          },
+          {
+            "id": "s2",
+            "kind": "statement",
+            "title": "SAMPLE: Meridian Weather Service adds an AI model to its forecasts",
+            "publisher": "Meridian Weather Service",
+            "url": "https://www.meridian-weather-sample.gov/ut-sample/larch-forecast-guidance",
+            "doi": null,
+            "published_at": "2026-10-06T08:00:00+08:00",
+            "seen_as": "search",
+            "added": "2026-10-06"
+          }
+        ],
+        "first_published": "2026-10-05"
+      }
+    },
+    {
+      "id": "R-0002",
+      "status": "open",
+      "finding_id": "math-2026-0140",
+      "kind": "fact",
+      "evidence_url": "https://cambridge.org/core/journals/ut-sample-journal-of-tiling-theory/article/ut-sample-0013",
+      "finding": {
+        "id": "math-2026-0140",
+        "title": "SAMPLE: Tiles that fill a surface only without repeating",
+        "field": "mathematics",
+        "kind": "result",
+        "significance": "landmark",
+        "explainer": {
+          "found": "Two mathematicians at Eastvale University proved that tiles of one kind can fill a flat surface only in patterns that never repeat. Mathematicians had left this question open since 1968. The proof runs to 38 pages and needs no computer search. Other mathematicians can follow every step of it by hand, without special tools.",
+          "matters": "Tilings appear in computer science and in the study of materials. A proof that some tiles can never form a repeating pattern tells designers what such patterns can and cannot do. It settles a question that had stood since 1968, and it gives researchers a new method to use.",
+          "ai_helped": null,
+          "how_sure": "Checked. The Journal of Tiling Theory published the paper after peer review. Two mathematicians who were not on the paper, at Kestrel College and Northgate University, say they read the proof and found no gap. Their words are quoted on this page. The result stands on the journal's review and their reading, not on any claim by the authors.",
+          "background": "A tiling covers a surface with copies of shapes and leaves no gaps. A floor of square tiles repeats the same pattern again and again. This proof is about tiles that can never do that.",
+          "could_lead": "The method could help with the three-dimensional case, which is still open. It might also help scientists who study materials with patterns that never repeat, and designers who need such patterns in their work."
+        },
+        "ai": {
+          "role": "none",
+          "confidence": null,
+          "systems": [],
+          "evidence": []
+        },
+        "rung_history": [
+          {
+            "rung": "checked",
+            "date": "2026-10-02",
+            "recorded": "2026-10-05",
+            "source_id": "s1",
+            "by": "agent",
+            "note": null
+          }
+        ],
+        "since_then": [],
+        "sources": [
+          {
+            "id": "s1",
+            "kind": "paper",
+            "title": "SAMPLE: Tiles that fill the plane only without repeating",
+            "publisher": "Journal of Tiling Theory",
+            "url": "https://www.cambridge.org/core/journals/ut-sample-journal-of-tiling-theory/article/ut-sample-0013",
+            "doi": "10.1017/ut-sample-0013",
+            "published_at": "2026-10-02T18:00:00+08:00",
+            "seen_as": "search",
+            "added": "2026-10-05"
+          },
+          {
+            "id": "s2",
+            "kind": "reaction",
+            "title": "SAMPLE: Expert reaction to a proof about tilings",
+            "publisher": "Science Media Centre",
+            "url": "https://www.sciencemediacentre.org/expert-reaction-to-ut-sample-tiling-proof/",
+            "doi": null,
+            "published_at": "2026-10-03T10:00:00+08:00",
+            "seen_as": "search",
+            "added": "2026-10-05"
+          }
+        ],
+        "first_published": "2026-10-02"
+      }
+    }
+  ],
+  "standing_stories": [],
+  "pack": {
+    "md": "packs/2026-10-14.md",
+    "json": "packs/2026-10-14.json",
+    "degraded": false,
+    "failed_feeds": []
+  },
+  "config": {
+    "hype_words": [
+      "revolutionary",
+      "game-changing",
+      "groundbreaking",
+      "paradigm shift",
+      "unprecedented",
+      "stunning",
+      "mind-blowing",
+      "changes everything",
+      "breakthrough",
+      "revolutionise",
+      "revolutionises",
+      "revolutionised",
+      "revolutionising",
+      "revolutionize",
+      "revolutionizes",
+      "revolutionized",
+      "revolutionizing",
+      "gamechanging",
+      "game-changer",
+      "game-changers",
+      "gamechanger",
+      "gamechangers",
+      "ground-breaking",
+      "paradigm shifts",
+      "paradigm-shifting",
+      "unprecedentedly",
+      "stunningly",
+      "mindblowing",
+      "breakthroughs"
+    ],
+    "jargon": [
+      "algebraic geometry",
+      "algebraic topology",
+      "aperiodic tiling",
+      "asymptotic",
+      "Bayesian",
+      "cap set",
+      "category theory",
+      "combinatorics",
+      "computational complexity",
+      "conjecture",
+      "continuum hypothesis",
+      "curvature",
+      "differential geometry",
+      "Diophantine equation",
+      "eigenvalue",
+      "eigenvector",
+      "elliptic curve",
+      "entropy",
+      "formal verification",
+      "formalisation",
+      "Fourier transform",
+      "functional analysis",
+      "Galois group",
+      "geodesic",
+      "gradient descent",
+      "harmonic analysis",
+      "Hilbert space",
+      "homology",
+      "homotopy",
+      "kissing number",
+      "knot invariant",
+      "lattice",
+      "lemma",
+      "Lie algebra",
+      "Lie group",
+      "manifold",
+      "Markov chain",
+      "measure theory",
+      "modal logic",
+      "modular form",
+      "Monte Carlo method",
+      "NP-hard",
+      "partial differential equation",
+      "polynomial time",
+      "proof assistant",
+      "Ramsey number",
+      "regression",
+      "Ricci flow",
+      "SAT solver",
+      "singularity",
+      "sphere packing",
+      "stochastic process",
+      "tensor",
+      "topology",
+      "aerosol",
+      "band gap",
+      "Bose-Einstein condensate",
+      "boson",
+      "Cooper pair",
+      "cosmic microwave background",
+      "critical temperature",
+      "cryogenic",
+      "crystal structure",
+      "decoherence",
+      "density functional theory",
+      "entanglement",
+      "exciton",
+      "fermion",
+      "free-electron laser",
+      "gravitational wave",
+      "hadron",
+      "Hamiltonian",
+      "Higgs boson",
+      "inertial confinement",
+      "isotope",
+      "Josephson junction",
+      "lithography",
+      "logical qubit",
+      "magnetic confinement",
+      "metamaterial",
+      "molecular dynamics",
+      "nanoparticle",
+      "neutrino",
+      "neutron star",
+      "phase transition",
+      "phonon",
+      "photonic crystal",
+      "plasma",
+      "polymer",
+      "pulsar",
+      "quantum annealing",
+      "quantum dot",
+      "quantum error correction",
+      "quantum field theory",
+      "quantum gravity",
+      "quark",
+      "qubit",
+      "redshift",
+      "renormalisation",
+      "spectroscopy",
+      "spintronics",
+      "standard model",
+      "superconductivity",
+      "superconductor",
+      "superfluid",
+      "superposition",
+      "symmetry breaking",
+      "tokamak",
+      "topological insulator",
+      "twisted bilayer graphene",
+      "wavefunction",
+      "activation energy",
+      "adsorption",
+      "anode",
+      "bioinformatics",
+      "carbon nanotube",
+      "catalysis",
+      "catalyst",
+      "cathode",
+      "chirality",
+      "chromatography",
+      "cryo-electron microscopy",
+      "crystallography",
+      "electrocatalyst",
+      "electrochemistry",
+      "electrode",
+      "electrolysis",
+      "electrolyte",
+      "enantiomer",
+      "enzyme",
+      "force field",
+      "functional group",
+      "heterogeneous catalyst",
+      "high-entropy alloy",
+      "high-throughput screening",
+      "ligand",
+      "mass spectrometry",
+      "medicinal chemistry",
+      "metal-organic framework",
+      "monomer",
+      "nanomaterial",
+      "natural product",
+      "nuclear magnetic resonance",
+      "organic synthesis",
+      "perovskite",
+      "phase diagram",
+      "polymerisation",
+      "protein design",
+      "reaction mechanism",
+      "reagent",
+      "retrosynthesis",
+      "self-assembly",
+      "self-driving laboratory",
+      "sequencing",
+      "solid-state electrolyte",
+      "transition state",
+      "water splitting",
+      "X-ray crystallography",
+      "allele",
+      "amyloid",
+      "ancient DNA",
+      "antibody",
+      "antigen",
+      "antimicrobial resistance",
+      "bacteriophage",
+      "base editing",
+      "binding site",
+      "biomarker",
+      "brain-computer interface",
+      "checkpoint inhibitor",
+      "connectome",
+      "CRISPR",
+      "cytokine",
+      "environmental DNA",
+      "epigenetic",
+      "functional MRI",
+      "gene expression",
+      "gene therapy",
+      "genome",
+      "genome-wide association study",
+      "genotype",
+      "guide RNA",
+      "hazard ratio",
+      "heritability",
+      "hominin",
+      "immunotherapy",
+      "in silico",
+      "in vitro",
+      "in vivo",
+      "induced pluripotent stem cell",
+      "keystone species",
+      "kinase",
+      "mammography",
+      "messenger RNA",
+      "meta-analysis",
+      "metastasis",
+      "microbiome",
+      "mitochondrion",
+      "model organism",
+      "monoclonal antibody",
+      "nanobody",
+      "ontology",
+      "optogenetics",
+      "organoid",
+      "pharmacokinetics",
+      "phase 1 trial",
+      "phase 2 trial",
+      "phase 3 trial",
+      "phenology",
+      "phenotype",
+      "phylogenetics",
+      "plasmid",
+      "protein folding",
+      "proteome",
+      "randomised controlled trial",
+      "retinopathy",
+      "ribosome",
+      "single-cell sequencing",
+      "species distribution model",
+      "synthetic biology",
+      "systematic review",
+      "T cell",
+      "theory of mind",
+      "transcriptome",
+      "viral vector",
+      "working memory",
+      "zoonotic",
+      "albedo",
+      "atmospheric river",
+      "carbon cycle",
+      "carbon sequestration",
+      "carbon sink",
+      "climate sensitivity",
+      "data assimilation",
+      "dendrochronology",
+      "downscaling",
+      "ensemble forecast",
+      "general circulation model",
+      "geochemistry",
+      "geochronology",
+      "Holocene",
+      "hydrology",
+      "hyperspectral imaging",
+      "ice core",
+      "ice sheet",
+      "ice shelf",
+      "isotope dating",
+      "lidar",
+      "multispectral imaging",
+      "numerical weather prediction",
+      "ocean acidification",
+      "overturning circulation",
+      "palaeoclimate",
+      "palaeontology",
+      "parameterisation",
+      "permafrost",
+      "plate tectonics",
+      "Pleistocene",
+      "radiative forcing",
+      "radiocarbon dating",
+      "radiometric dating",
+      "reanalysis",
+      "remote sensing",
+      "sediment core",
+      "seismic wave",
+      "seismology",
+      "Southern Oscillation",
+      "stable isotope",
+      "stratigraphy",
+      "subduction zone",
+      "synthetic aperture radar",
+      "teleconnection",
+      "behavioural economics",
+      "causal inference",
+      "cliodynamics",
+      "cognitive bias",
+      "confidence interval",
+      "construct validity",
+      "content analysis",
+      "counterfactual",
+      "cross-sectional study",
+      "demography",
+      "difference-in-differences",
+      "econometrics",
+      "effect size",
+      "ethnography",
+      "factor analysis",
+      "field experiment",
+      "game theory",
+      "Gini coefficient",
+      "instrumental variable",
+      "longitudinal study",
+      "mechanism design",
+      "Nash equilibrium",
+      "natural experiment",
+      "network analysis",
+      "optical character recognition",
+      "p-hacking",
+      "p-value",
+      "panel data",
+      "preregistration",
+      "price elasticity",
+      "prosopography",
+      "psychometrics",
+      "publication bias",
+      "regression discontinuity",
+      "replication crisis",
+      "sampling bias",
+      "selection bias",
+      "sentiment analysis",
+      "statistical power",
+      "statistical significance",
+      "stylometry",
+      "survey experiment",
+      "synthetic control",
+      "topic model",
+      "treatment effect",
+      "word embedding",
+      "apocrypha",
+      "authorship attribution",
+      "canon law",
+      "Christology",
+      "codex",
+      "codicology",
+      "cognate",
+      "corpus linguistics",
+      "critical edition",
+      "cuneiform",
+      "decipherment",
+      "distant reading",
+      "epigraphy",
+      "epistemology",
+      "eschatology",
+      "exegesis",
+      "form criticism",
+      "Gnosticism",
+      "ground-penetrating radar",
+      "hadith",
+      "handwritten text recognition",
+      "hermeneutics",
+      "historical-critical method",
+      "Linear B",
+      "linguistic typology",
+      "Masoretic text",
+      "midrash",
+      "Mishnah",
+      "morphology",
+      "natural theology",
+      "ostracon",
+      "palaeography",
+      "palimpsest",
+      "papyrology",
+      "papyrus",
+      "patristic",
+      "Peshitta",
+      "philology",
+      "phonology",
+      "photogrammetry",
+      "proto-language",
+      "pseudepigrapha",
+      "recension",
+      "redaction criticism",
+      "Septuagint",
+      "soteriology",
+      "source criticism",
+      "stele",
+      "synoptic gospels",
+      "systematic theology",
+      "Targum",
+      "textual criticism",
+      "theodicy",
+      "variant reading",
+      "Vulgate",
+      "X-ray fluorescence",
+      "active learning",
+      "attention mechanism",
+      "Bayesian optimisation",
+      "chain of thought",
+      "convolutional neural network",
+      "diffusion model",
+      "embedding",
+      "emulator",
+      "fine-tuning",
+      "foundation model",
+      "generative model",
+      "graph neural network",
+      "high-performance computing",
+      "knowledge graph",
+      "latent space",
+      "neural operator",
+      "overfitting",
+      "physics-informed neural network",
+      "reinforcement learning",
+      "retrieval-augmented generation",
+      "self-supervised learning",
+      "supervised learning",
+      "surrogate model",
+      "symbolic regression",
+      "transformer",
+      "unsupervised learning"
+    ],
+    "field_cap": 2,
+    "fields": [
+      {
+        "id": "mathematics",
+        "subfields": [
+          {
+            "id": "number-theory",
+            "name": "Number theory"
+          },
+          {
+            "id": "combinatorics",
+            "name": "Combinatorics"
+          },
+          {
+            "id": "geometry-topology",
+            "name": "Geometry and topology"
+          },
+          {
+            "id": "algebra",
+            "name": "Algebra"
+          },
+          {
+            "id": "analysis-probability",
+            "name": "Analysis and probability"
+          },
+          {
+            "id": "formal-proof",
+            "name": "Formal proof"
+          }
+        ]
+      },
+      {
+        "id": "physics",
+        "subfields": [
+          {
+            "id": "particles-nuclei",
+            "name": "Particles and nuclei"
+          },
+          {
+            "id": "astronomy",
+            "name": "Astronomy and cosmology"
+          },
+          {
+            "id": "condensed-matter",
+            "name": "Condensed matter"
+          },
+          {
+            "id": "quantum",
+            "name": "Quantum physics and computing"
+          },
+          {
+            "id": "plasma-fusion",
+            "name": "Plasma and fusion"
+          },
+          {
+            "id": "atoms-optics",
+            "name": "Atomic and optical physics"
+          }
+        ]
+      },
+      {
+        "id": "chemistry",
+        "subfields": [
+          {
+            "id": "materials",
+            "name": "Materials"
+          },
+          {
+            "id": "catalysis",
+            "name": "Catalysis"
+          },
+          {
+            "id": "energy-materials",
+            "name": "Batteries and energy materials"
+          },
+          {
+            "id": "synthesis",
+            "name": "Synthesis and new molecules"
+          },
+          {
+            "id": "automated-labs",
+            "name": "Automated labs"
+          }
+        ]
+      },
+      {
+        "id": "biology",
+        "subfields": [
+          {
+            "id": "proteins",
+            "name": "Proteins and structure"
+          },
+          {
+            "id": "drugs",
+            "name": "Drugs and trials"
+          },
+          {
+            "id": "genomics",
+            "name": "Genes and genomes"
+          },
+          {
+            "id": "cells",
+            "name": "Cells and molecular biology"
+          },
+          {
+            "id": "neuroscience",
+            "name": "Neuroscience"
+          },
+          {
+            "id": "diagnosis",
+            "name": "Diagnosis and imaging"
+          },
+          {
+            "id": "infection-immunity",
+            "name": "Infection and immunity"
+          }
+        ]
+      },
+      {
+        "id": "earth",
+        "subfields": [
+          {
+            "id": "weather",
+            "name": "Weather forecasting"
+          },
+          {
+            "id": "climate",
+            "name": "Climate"
+          },
+          {
+            "id": "geology",
+            "name": "Geology and earthquakes"
+          },
+          {
+            "id": "ecology",
+            "name": "Ecology and biodiversity"
+          },
+          {
+            "id": "oceans-polar",
+            "name": "Oceans and polar regions"
+          },
+          {
+            "id": "planetary",
+            "name": "Planetary science"
+          }
+        ]
+      },
+      {
+        "id": "social",
+        "subfields": [
+          {
+            "id": "replication",
+            "name": "Replication and methods"
+          },
+          {
+            "id": "economics",
+            "name": "Economics"
+          },
+          {
+            "id": "psychology",
+            "name": "Psychology and behaviour"
+          },
+          {
+            "id": "politics-society",
+            "name": "Politics and society"
+          },
+          {
+            "id": "history-at-scale",
+            "name": "History at scale"
+          },
+          {
+            "id": "surveys-experiments",
+            "name": "Surveys and experiments"
+          }
+        ]
+      },
+      {
+        "id": "humanities",
+        "subfields": [
+          {
+            "id": "ancient-texts",
+            "name": "Ancient texts"
+          },
+          {
+            "id": "scripture-translation",
+            "name": "Scripture translation"
+          },
+          {
+            "id": "theology",
+            "name": "Theology and religious studies"
+          },
+          {
+            "id": "archaeology",
+            "name": "Archaeology and heritage"
+          },
+          {
+            "id": "languages",
+            "name": "Languages and linguistics"
+          },
+          {
+            "id": "literature-arts",
+            "name": "Literature and the arts"
+          },
+          {
+            "id": "philosophy",
+            "name": "Philosophy"
+          }
+        ]
+      }
+    ],
+    "source_kinds": [
+      {
+        "id": "paper",
+        "label": "Paper",
+        "means": "peer-reviewed article or proceedings"
+      },
+      {
+        "id": "preprint",
+        "label": "Preprint",
+        "means": "a paper posted publicly before peer review"
+      },
+      {
+        "id": "proof",
+        "label": "Proof",
+        "means": "a machine-checked proof file"
+      },
+      {
+        "id": "dataset",
+        "label": "Dataset",
+        "means": "a published set of data"
+      },
+      {
+        "id": "registry",
+        "label": "Registry entry",
+        "means": "a trial or structure record"
+      },
+      {
+        "id": "statement",
+        "label": "Statement",
+        "means": "an institution's or a prize committee's own release"
+      },
+      {
+        "id": "lab_post",
+        "label": "Lab post",
+        "means": "a lab's own post about its own work"
+      },
+      {
+        "id": "checker",
+        "label": "Checker's record",
+        "means": "a recognised checker's record"
+      },
+      {
+        "id": "reaction",
+        "label": "Reaction",
+        "means": "a named scientist's own published reaction"
+      },
+      {
+        "id": "notice",
+        "label": "Notice",
+        "means": "a retraction, correction or expression of concern"
+      }
+    ],
+    "allowlist": [
+      {
+        "id": "nature",
+        "name": "Nature Portfolio",
+        "hosts": [
+          "www.nature.com",
+          "nature.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice",
+          "reaction"
+        ]
+      },
+      {
+        "id": "science",
+        "name": "Science (AAAS)",
+        "hosts": [
+          "www.science.org",
+          "science.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice",
+          "reaction"
+        ]
+      },
+      {
+        "id": "cell-press",
+        "name": "Cell Press",
+        "hosts": [
+          "www.cell.com",
+          "cell.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice",
+          "reaction"
+        ]
+      },
+      {
+        "id": "pnas",
+        "name": "Proceedings of the National Academy of Sciences",
+        "hosts": [
+          "www.pnas.org",
+          "pnas.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice",
+          "reaction"
+        ]
+      },
+      {
+        "id": "aps",
+        "name": "American Physical Society journals",
+        "hosts": [
+          "journals.aps.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "annals-of-mathematics",
+        "name": "Annals of Mathematics",
+        "hosts": [
+          "annals.math.princeton.edu"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "springer",
+        "name": "Springer",
+        "hosts": [
+          "link.springer.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "sciencedirect",
+        "name": "Elsevier ScienceDirect",
+        "hosts": [
+          "www.sciencedirect.com",
+          "sciencedirect.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "wiley",
+        "name": "Wiley Online Library",
+        "hosts": [
+          "onlinelibrary.wiley.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "ams",
+        "name": "American Mathematical Society",
+        "hosts": [
+          "www.ams.org",
+          "ams.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "plos",
+        "name": "PLOS",
+        "hosts": [
+          "journals.plos.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "elife",
+        "name": "eLife",
+        "hosts": [
+          "elifesciences.org",
+          "www.elifesciences.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "nejm",
+        "name": "The New England Journal of Medicine",
+        "hosts": [
+          "www.nejm.org",
+          "nejm.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "lancet",
+        "name": "The Lancet",
+        "hosts": [
+          "www.thelancet.com",
+          "thelancet.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "acs",
+        "name": "American Chemical Society journals",
+        "hosts": [
+          "pubs.acs.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "aea",
+        "name": "American Economic Association journals",
+        "hosts": [
+          "www.aeaweb.org",
+          "aeaweb.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "project-euclid",
+        "name": "Project Euclid",
+        "hosts": [
+          "projecteuclid.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "cambridge-core",
+        "name": "Cambridge Core",
+        "hosts": [
+          "www.cambridge.org",
+          "cambridge.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "oxford-academic",
+        "name": "Oxford Academic",
+        "hosts": [
+          "academic.oup.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "taylor-francis",
+        "name": "Taylor & Francis Online",
+        "hosts": [
+          "www.tandfonline.com",
+          "tandfonline.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "de-gruyter",
+        "name": "De Gruyter",
+        "hosts": [
+          "www.degruyter.com",
+          "degruyter.com",
+          "www.degruyterbrill.com",
+          "degruyterbrill.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "brill",
+        "name": "Brill",
+        "hosts": [
+          "brill.com",
+          "www.brill.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "sage",
+        "name": "SAGE Journals",
+        "hosts": [
+          "journals.sagepub.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "project-muse",
+        "name": "Project MUSE",
+        "hosts": [
+          "muse.jhu.edu"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "jstor",
+        "name": "JSTOR",
+        "hosts": [
+          "www.jstor.org",
+          "jstor.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "arxiv",
+        "name": "arXiv",
+        "hosts": [
+          "arxiv.org",
+          "www.arxiv.org"
+        ],
+        "kinds": [
+          "preprint"
+        ]
+      },
+      {
+        "id": "biorxiv",
+        "name": "bioRxiv",
+        "hosts": [
+          "www.biorxiv.org",
+          "biorxiv.org"
+        ],
+        "kinds": [
+          "preprint"
+        ]
+      },
+      {
+        "id": "medrxiv",
+        "name": "medRxiv",
+        "hosts": [
+          "www.medrxiv.org",
+          "medrxiv.org"
+        ],
+        "kinds": [
+          "preprint"
+        ]
+      },
+      {
+        "id": "ssrn",
+        "name": "SSRN",
+        "hosts": [
+          "papers.ssrn.com",
+          "ssrn.com",
+          "www.ssrn.com"
+        ],
+        "kinds": [
+          "preprint"
+        ]
+      },
+      {
+        "id": "osf-preprints",
+        "name": "OSF Preprints",
+        "hosts": [
+          "osf.io"
+        ],
+        "kinds": [
+          "preprint"
+        ]
+      },
+      {
+        "id": "chemrxiv",
+        "name": "ChemRxiv",
+        "hosts": [
+          "chemrxiv.org",
+          "www.chemrxiv.org"
+        ],
+        "kinds": [
+          "preprint"
+        ]
+      },
+      {
+        "id": "doi",
+        "name": "DOI resolver",
+        "hosts": [
+          "doi.org",
+          "dx.doi.org"
+        ],
+        "kinds": [
+          "paper",
+          "preprint",
+          "dataset",
+          "registry",
+          "notice",
+          "reaction"
+        ]
+      },
+      {
+        "id": "pubmed",
+        "name": "PubMed",
+        "hosts": [
+          "pubmed.ncbi.nlm.nih.gov"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "pmc",
+        "name": "PubMed Central",
+        "hosts": [
+          "pmc.ncbi.nlm.nih.gov"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "pmc-legacy",
+        "name": "PubMed Central (older address)",
+        "hosts": [
+          "www.ncbi.nlm.nih.gov",
+          "ncbi.nlm.nih.gov"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "clinicaltrials-gov",
+        "name": "ClinicalTrials.gov",
+        "hosts": [
+          "clinicaltrials.gov",
+          "www.clinicaltrials.gov"
+        ],
+        "kinds": [
+          "registry"
+        ]
+      },
+      {
+        "id": "rcsb",
+        "name": "RCSB Protein Data Bank",
+        "hosts": [
+          "www.rcsb.org",
+          "rcsb.org"
+        ],
+        "kinds": [
+          "registry"
+        ]
+      },
+      {
+        "id": "ebi",
+        "name": "EMBL-EBI",
+        "hosts": [
+          "www.ebi.ac.uk",
+          "ebi.ac.uk",
+          "alphafold.ebi.ac.uk"
+        ],
+        "kinds": [
+          "registry",
+          "dataset"
+        ]
+      },
+      {
+        "id": "zenodo",
+        "name": "Zenodo",
+        "hosts": [
+          "zenodo.org",
+          "www.zenodo.org"
+        ],
+        "kinds": [
+          "dataset"
+        ]
+      },
+      {
+        "id": "github",
+        "name": "GitHub",
+        "hosts": [
+          "github.com"
+        ],
+        "kinds": [
+          "dataset",
+          "proof"
+        ]
+      },
+      {
+        "id": "huggingface",
+        "name": "Hugging Face",
+        "hosts": [
+          "huggingface.co"
+        ],
+        "kinds": [
+          "dataset"
+        ]
+      },
+      {
+        "id": "lean-mathlib-docs",
+        "name": "Lean mathlib documentation",
+        "hosts": [
+          "leanprover-community.github.io"
+        ],
+        "kinds": [
+          "proof"
+        ]
+      },
+      {
+        "id": "smc",
+        "name": "Science Media Centre expert reactions",
+        "hosts": [
+          "www.sciencemediacentre.org",
+          "sciencemediacentre.org"
+        ],
+        "kinds": [
+          "reaction"
+        ]
+      },
+      {
+        "id": "terence-tao",
+        "name": "Terence Tao's blog",
+        "hosts": [
+          "terrytao.wordpress.com"
+        ],
+        "kinds": [
+          "reaction"
+        ]
+      },
+      {
+        "id": "google-deepmind",
+        "name": "Google DeepMind",
+        "hosts": [
+          "deepmind.google",
+          "deepmind.com"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "openai",
+        "name": "OpenAI",
+        "hosts": [
+          "openai.com",
+          "www.openai.com"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "anthropic",
+        "name": "Anthropic",
+        "hosts": [
+          "www.anthropic.com",
+          "anthropic.com",
+          "claude.com"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "meta-fair",
+        "name": "Meta FAIR",
+        "hosts": [
+          "ai.meta.com"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "microsoft-research-ai-for-science",
+        "name": "Microsoft Research AI for Science",
+        "hosts": [
+          "www.microsoft.com",
+          "microsoft.com"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "futurehouse",
+        "name": "FutureHouse",
+        "hosts": [
+          "www.futurehouse.org",
+          "futurehouse.org"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "periodic-labs",
+        "name": "Periodic Labs",
+        "hosts": [
+          "periodic.com",
+          "www.periodic.com"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "isomorphic-labs",
+        "name": "Isomorphic Labs",
+        "hosts": [
+          "www.isomorphiclabs.com",
+          "isomorphiclabs.com"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "lila-sciences",
+        "name": "Lila Sciences",
+        "hosts": [
+          "lila.ai",
+          "www.lila.ai"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "sakana-ai",
+        "name": "Sakana AI",
+        "hosts": [
+          "sakana.ai"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "arc-institute",
+        "name": "Arc Institute",
+        "hosts": [
+          "arcinstitute.org",
+          "www.arcinstitute.org"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "allen-institute-for-ai",
+        "name": "Allen Institute for AI",
+        "hosts": [
+          "allenai.org",
+          "www.allenai.org"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "erdosproblems",
+        "name": "Erdős Problems",
+        "hosts": [
+          "www.erdosproblems.com",
+          "erdosproblems.com"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "lean-mathlib-repo",
+        "name": "Lean mathlib repository",
+        "hosts": [
+          "github.com"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "lean-mathlib-docs",
+        "name": "Lean mathlib documentation",
+        "hosts": [
+          "leanprover-community.github.io"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "nobel-prize",
+        "name": "Nobel Prize",
+        "hosts": [
+          "www.nobelprize.org",
+          "nobelprize.org"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "breakthrough-prize",
+        "name": "Breakthrough Prize",
+        "hosts": [
+          "breakthroughprize.org",
+          "www.breakthroughprize.org"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "fields-medal",
+        "name": "Fields Medal (International Mathematical Union)",
+        "hosts": [
+          "www.mathunion.org",
+          "mathunion.org"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "abel-prize",
+        "name": "Abel Prize",
+        "hosts": [
+          "abelprize.no",
+          "www.abelprize.no"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "wolf-prize",
+        "name": "Wolf Prize",
+        "hosts": [
+          "wolffund.org.il",
+          "www.wolffund.org.il"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "kavli-prize",
+        "name": "Kavli Prize",
+        "hosts": [
+          "www.kavliprize.org",
+          "kavliprize.org"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "lasker-awards",
+        "name": "Lasker Awards",
+        "hosts": [
+          "laskerfoundation.org",
+          "www.laskerfoundation.org"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "vesuvius-challenge",
+        "name": "Vesuvius Challenge",
+        "hosts": [
+          "scrollprize.org",
+          "www.scrollprize.org",
+          "scrollprize.substack.com"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "casp",
+        "name": "CASP Protein Structure Prediction Center",
+        "hosts": [
+          "predictioncenter.org",
+          "www.predictioncenter.org"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "fda",
+        "name": "US Food and Drug Administration",
+        "hosts": [
+          "www.fda.gov",
+          "fda.gov",
+          "www.accessdata.fda.gov",
+          "accessdata.fda.gov"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "ema",
+        "name": "European Medicines Agency",
+        "hosts": [
+          "www.ema.europa.eu",
+          "ema.europa.eu"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "taiwan-fda",
+        "name": "Taiwan Food and Drug Administration",
+        "hosts": [
+          "www.fda.gov.tw",
+          "fda.gov.tw",
+          "mcp.fda.gov.tw"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "pmda",
+        "name": "Pharmaceuticals and Medical Devices Agency (Japan)",
+        "hosts": [
+          "www.pmda.go.jp",
+          "pmda.go.jp"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "clinicaltrials-gov-results",
+        "name": "ClinicalTrials.gov results",
+        "hosts": [
+          "clinicaltrials.gov",
+          "www.clinicaltrials.gov"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "institutions",
+        "name": "Universities, government bodies, institutes and publishers' press offices",
+        "hosts": [
+          ".edu",
+          ".gov",
+          ".int",
+          ".europa.eu",
+          ".ac.uk",
+          ".ac.jp",
+          ".ac.kr",
+          ".ac.il",
+          ".ac.nz",
+          ".ac.za",
+          ".ac.in",
+          ".ac.cn",
+          ".ac.at",
+          ".ac.th",
+          ".ac.id",
+          ".gov.uk",
+          ".gov.au",
+          ".gov.tw",
+          ".gov.sg",
+          ".gov.hk",
+          ".gov.in",
+          ".gov.za",
+          ".gov.br",
+          ".gov.cn",
+          ".gov.il",
+          ".gov.ie",
+          ".go.jp",
+          ".go.kr",
+          ".gouv.fr",
+          ".gc.ca",
+          ".govt.nz",
+          "mpg.de",
+          "cnrs.fr",
+          "riken.jp",
+          "sinica.edu.tw",
+          "cern.ch",
+          "home.cern",
+          "embl.org",
+          "ethz.ch",
+          "nationalacademies.org",
+          "royalsociety.org",
+          "wycliffe.net",
+          "unitedbiblesocieties.org",
+          "sil.org",
+          "vatican.va",
+          "nobelprize.org",
+          "breakthroughprize.org",
+          "mathunion.org",
+          "abelprize.no",
+          "wolffund.org.il",
+          "kavliprize.org",
+          "laskerfoundation.org",
+          "scrollprize.org",
+          "scrollprize.substack.com",
+          "newsroom.wiley.com",
+          "group.springernature.com/gp/group/media/press-releases",
+          "elsevier.com/about/press-releases",
+          "cell.com/newsroom",
+          "aaas.org/news",
+          "elifesciences.org/for-the-press",
+          "eurekalert.org/news-releases/"
+        ],
+        "kinds": [
+          "statement"
+        ]
+      }
+    ]
+  }
+}

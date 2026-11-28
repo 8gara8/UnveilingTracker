@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "id": "math-2026-0131",
+  "field": "mathematics",
+  "subfield": "number-theory",
+  "kind": "check",
+  "title": {
+    "en": "SAMPLE: An AI checker flags a gap in a published proof",
+    "zh": "SAMPLE：AI 查核工具指出已發表的證明有缺漏"
+  },
+  "depth": "item",
+  "explainer": {
+    "found": {
+      "en": "Marlow Labs says its AI checker, Gapfinder, read a published proof in number theory and flagged a gap in one step.",
+      "zh": "Marlow Labs 表示，它的 AI 查核工具 Gapfinder 讀了一份已發表的數論證明，指出其中一個步驟有缺漏。"
+    },
+    "matters": {
+      "en": "Mathematicians rely on checks like this to trust long proofs, so a flagged gap needs a careful answer.",
+      "zh": "數學家靠這類查核來信任很長的證明，所以被指出的缺漏需要審慎回應。"
+    },
+    "ai_helped": {
+      "en": "Marlow Labs built Gapfinder, which found the gap with no human help.",
+      "zh": "Marlow Labs 開發了 Gapfinder，它在沒有人類協助下找出這個缺漏。"
+    },
+    "how_sure": {
+      "en": "Preprint. arXiv hosts the paper, which has not been peer reviewed. Marlow Labs, the maker of the checker, is the source of the claim.",
+      "zh": "預印本。論文放在 arXiv 上，尚未經過同儕審查。查核工具的開發者 Marlow Labs 是這項說法的來源。"
+    },
+    "background": {
+      "en": "A published proof is one that a journal has accepted.",
+      "zh": "已發表的證明，是指期刊已經接受的證明。"
+    },
+    "could_lead": {
+      "en": "If the gap is real, the authors could repair the step or withdraw the proof.",
+      "zh": "如果缺漏屬實，作者可能修補這個步驟，或撤回這份證明。"
+    }
+  },
+  "go_deeper": [
+    "s1"
+  ],
+  "ai": {
+    "role": "ai_checked",
+    "confidence": "claimed",
+    "systems": [
+      {
+        "name": "Gapfinder",
+        "maker": "Marlow Labs"
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "s1",
+        "quote": "The checker found the gap with no human help",
+        "from_claimant": true
+      }
+    ]
+  },
+  "significance": "notable",
+  "rung": "disputed",
+  "rung_history": [
+    {
+      "rung": "preprint",
+      "date": "2026-09-14",
+      "recorded": "2026-10-09",
+      "source_id": "s1",
+      "by": "seed",
+      "note": null
+    },
+    {
+      "rung": "disputed",
+      "date": "2026-09-29",
+      "recorded": "2026-10-09",
+      "source_id": "s2",
+      "by": "seed",
+      "note": {
+        "en": "Kestrel College says the authors reject the claim and say the flagged step is correct.",
+        "zh": "Kestrel College 表示，作者否定這項說法，並稱被指出的步驟是正確的。"
+      }
+    }
+  ],
+  "since_then": [],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "preprint",
+      "title": "SAMPLE: Gapfinder checks a published proof and flags a gap",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/2609.99003",
+      "doi": null,
+      "published_at": "2026-09-14T08:00:00+08:00",
+      "seen_as": "seed",
+      "added": "2026-10-09"
+    },
+    {
+      "id": "s2",
+      "kind": "statement",
+      "title": "SAMPLE: Authors reply to an AI checker's claim of a gap",
+      "publisher": "Kestrel College",
+      "url": "https://math.kestrel-sample.edu/news/ut-sample-reply-to-checker",
+      "doi": null,
+      "published_at": "2026-09-29T11:00:00+08:00",
+      "seen_as": "seed",
+      "added": "2026-10-09"
+    }
+  ],
+  "reactions": [],
+  "artefacts": {
+    "doi": [],
+    "arxiv": [
+      "2609.99003"
+    ],
+    "lean": [],
+    "trial": [],
+    "pdb": []
+  },
+  "figure": null,
+  "who": [
+    {
+      "name": "Marlow Labs (SAMPLE)",
+      "ror": null
+    }
+  ],
+  "terms": [],
+  "related": [],
+  "first_published": "2026-09-14",
+  "first_brief": null,
+  "briefs": [],
+  "history": true,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-09"
+}

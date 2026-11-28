@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "id": "bio-2026-0143",
+  "field": "biology",
+  "subfield": "drugs",
+  "kind": "result",
+  "title": {
+    "en": "SAMPLE: An AI model proposes a new antibiotic that works in mice",
+    "zh": "SAMPLE：AI 模型提出對小鼠有效的新抗生素"
+  },
+  "depth": "story",
+  "explainer": {
+    "found": {
+      "en": "An AI model proposed a new antibiotic that cleared a drug-resistant skin infection in 8 of 10 mice. The model, Halden Design, ranked about 12 million molecules. The team made and tested 40 of the top ones. Three of the 40 stopped the growth of drug-resistant bacteria in dishes.",
+      "zh": "AI 模型提出了一種新抗生素，在 10 隻小鼠中的 8 隻清除了抗藥性皮膚感染。這個模型 Halden Design 為大約 1,200 萬個分子排出名次。團隊製作並測試了名次最前面的 40 個。這 40 個當中有 3 個，在培養皿中阻止了抗藥性細菌生長。"
+    },
+    "matters": {
+      "en": "Antimicrobial resistance makes some infections hard to treat, and doctors need new antibiotics. A first safety trial of the compound in people is registered as NCT09999001. The trial plans to enrol 24 healthy volunteers. It tests safety, not cure.",
+      "zh": "抗微生物抗藥性（antimicrobial resistance）讓某些感染難以治療，醫師需要新的抗生素。這個化合物的第一項人體安全性試驗，登記編號為 NCT09999001。這項試驗預計招募 24 名健康志願者。它測試的是安全性，不是治癒。"
+    },
+    "ai_helped": {
+      "en": "Halden Research built Halden Design, which ranks molecules by their chance of killing drug-resistant bacteria. The model proposed which molecules to make. People made them and ran every test. The Coldwater Institute ran the mouse tests and runs the safety trial.",
+      "zh": "Halden Research 開發了 Halden Design，它會依分子殺死抗藥性細菌的機率來排名。這個模型提出要製作哪些分子。人類製作了這些分子，並執行每一項測試。Coldwater Institute 執行了小鼠實驗，並負責進行安全性試驗。"
+    },
+    "how_sure": {
+      "en": "Checked. Cell published the paper after peer review. Halden Research, which built the model, helped write the paper, and no other lab has repeated the tests. The Coldwater Institute says it ran the mouse tests and runs the first safety trial.",
+      "zh": "已查核。Cell 在同儕審查後發表了這篇論文。開發這個模型的 Halden Research 也參與撰寫論文，而且還沒有其他實驗室重複過這些實驗。Coldwater Institute 表示，小鼠實驗由它執行，第一項安全性試驗也由它負責。"
+    },
+    "background": {
+      "en": "Drug makers once found antibiotics by testing natural samples one by one. Computers can now rank a huge list of molecules before anyone makes one. That lets labs test only the best candidates.",
+      "zh": "藥廠過去靠逐一測試天然樣本來尋找抗生素。現在電腦能在有人製作之前，替一大串分子排出名次。這讓實驗室只需測試最好的候選對象。"
+    },
+    "could_lead": {
+      "en": "If later trials go well, the compound could become a treatment for drug-resistant infections. It might also show that AI can find other new antibiotics. First, other labs must repeat the tests.",
+      "zh": "如果後續試驗順利，這個化合物可能成為抗藥性感染的治療方法。它也可能顯示 AI 能找到其他新抗生素。首先，其他實驗室必須重複這些實驗。"
+    }
+  },
+  "go_deeper": [
+    "s1",
+    "s2"
+  ],
+  "ai": {
+    "role": "ai_proposed",
+    "confidence": "claimed",
+    "systems": [
+      {
+        "name": "Halden Design",
+        "maker": "Halden Research"
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "s1",
+        "quote": "Our model, Halden Design, ranked about 12 million molecules for their chance of killing drug-resistant bacteria",
+        "from_claimant": true
+      }
+    ]
+  },
+  "significance": "major",
+  "rung": "confirmed",
+  "rung_history": [
+    {
+      "rung": "checked",
+      "date": "2026-10-07",
+      "recorded": "2026-10-09",
+      "source_id": "s1",
+      "by": "seed",
+      "note": null
+    },
+    {
+      "rung": "confirmed",
+      "date": "2026-10-15",
+      "recorded": "2026-10-16",
+      "source_id": "s4",
+      "by": "agent",
+      "note": {
+        "en": "A second lab with no tie to the first repeated the mouse tests.",
+        "zh": "第二間與第一間沒有關聯的實驗室重複了小鼠實驗。"
+      }
+    }
+  ],
+  "since_then": [],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "paper",
+      "title": "SAMPLE: An AI model proposes a new antibiotic that clears resistant infections in mice",
+      "publisher": "Cell",
+      "url": "https://www.cell.com/cell/abstract/ut-sample-0014",
+      "doi": "10.1016/ut-sample-0014",
+      "published_at": "2026-10-07T22:00:00+08:00",
+      "seen_as": "seed",
+      "added": "2026-10-09"
+    },
+    {
+      "id": "s2",
+      "kind": "registry",
+      "title": "SAMPLE: First safety trial of a new antibiotic",
+      "publisher": "ClinicalTrials.gov",
+      "url": "https://clinicaltrials.gov/study/NCT09999001",
+      "doi": null,
+      "published_at": "2026-10-07",
+      "seen_as": "seed",
+      "added": "2026-10-09"
+    },
+    {
+      "id": "s3",
+      "kind": "statement",
+      "title": "SAMPLE: Coldwater team tests an AI-proposed antibiotic",
+      "publisher": "Coldwater Institute",
+      "url": "https://www.coldwater-sample.edu/news/ut-sample-new-antibiotic",
+      "doi": null,
+      "published_at": "2026-10-07T21:00:00+08:00",
+      "seen_as": "seed",
+      "added": "2026-10-09"
+    },
+    {
+      "id": "s4",
+      "kind": "paper",
+      "title": "SAMPLE: A second lab repeats tests of an AI-proposed antibiotic in mice",
+      "publisher": "Cell Reports Medicine",
+      "url": "https://www.cell.com/cell-reports-medicine/fulltext/ut-sample-0015",
+      "doi": "10.1016/ut-sample-0015",
+      "published_at": "2026-10-15T22:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-16"
+    }
+  ],
+  "reactions": [],
+  "artefacts": {
+    "doi": [
+      "10.1016/ut-sample-0014"
+    ],
+    "arxiv": [],
+    "lean": [],
+    "trial": [
+      "NCT09999001"
+    ],
+    "pdb": []
+  },
+  "figure": null,
+  "who": [
+    {
+      "name": "Halden Research (SAMPLE)",
+      "ror": null
+    },
+    {
+      "name": "Coldwater Institute (SAMPLE)",
+      "ror": null
+    }
+  ],
+  "terms": [
+    "antimicrobial-resistance"
+  ],
+  "related": [],
+  "first_published": "2026-10-07",
+  "first_brief": "2026-10-18",
+  "briefs": [
+    "2026-10-18"
+  ],
+  "history": true,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-18"
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "id": "earth-2026-0141",
+  "field": "earth",
+  "subfield": "weather",
+  "kind": "result",
+  "title": {
+    "en": "SAMPLE: An AI model forecasts the weather ten days ahead",
+    "zh": "SAMPLE：AI 模型預報未來十天的天氣"
+  },
+  "depth": "story",
+  "explainer": {
+    "found": {
+      "en": "Larch Weather Systems built an AI model, Larch Forecast, that predicts the weather up to ten days ahead. In tests on two years of past weather, its ten-day forecasts had about 12 per cent fewer errors. The comparison was with numerical weather prediction, the standard method.",
+      "zh": "Larch Weather Systems 開發了 AI 模型 Larch Forecast，能預測未來最多十天的天氣。在兩年過往天氣的測試中，它的十天預報錯誤約少了 12%。比較的對象是標準方法：數值天氣預報（numerical weather prediction）。"
+    },
+    "matters": {
+      "en": "Forecasts guide farmers, airlines and emergency plans. Fewer errors ten days out gives people more time to prepare for storms and heat. A small gain in accuracy reaches many people at once. Weather agencies pay close attention to any method that beats the standard one.",
+      "zh": "農民、航空公司和緊急應變計畫，都以預報為依據。提前十天的預報錯誤變少，能讓人們有更多時間為風暴和高溫做準備。準確度小幅提升，也會同時影響許多人。氣象機構會密切留意任何勝過標準方法的做法。"
+    },
+    "ai_helped": {
+      "en": "Larch Weather Systems built Larch Forecast. The model learns from past weather records, so it finds patterns in them instead of solving the equations of the air. The company also helped write the paper. The tests in the paper are the company's own.",
+      "zh": "Larch Weather Systems 開發了 Larch Forecast。這個模型從過去的天氣紀錄中學習，所以它是在這些紀錄中找出規律，而不是求解大氣的方程式。這家公司也參與撰寫論文。論文中的測試是這家公司自己做的。"
+    },
+    "how_sure": {
+      "en": "Applied. The Meridian Weather Service says it now relies on the model for its daily forecasts. Science published the paper after peer review, and Larch Weather Systems, the maker, helped write it. The tests used past weather only, so live forecasts may differ.",
+      "zh": "已應用。Meridian Weather Service 表示，它現在的每日預報依靠這個模型。Science 在同儕審查後發表了這篇論文，開發者 Larch Weather Systems 也參與撰寫。測試只用了過去的天氣，所以實際預報可能不同。"
+    },
+    "background": {
+      "en": "For many years, weather agencies have forecast by solving physical equations on large computers. Tests on past weather show how a new model would have done on days that are already known.",
+      "zh": "多年來，氣象機構都是用大型電腦求解物理方程式來做預報。用過去天氣做測試，能看出新模型在已知的日子裡會有什麼表現。"
+    },
+    "could_lead": {
+      "en": "If the gain holds in other seasons and other places, forecasters could trust longer forecasts and warn people earlier. Outside teams may test the model next, on live forecasts and in other regions.",
+      "zh": "如果這個改善在其他季節和地方也成立，預報員可能信任更長期的預報，並更早發出警示。接下來，外部團隊可能用即時預報和其他地區測試這個模型。"
+    }
+  },
+  "go_deeper": [
+    "s1",
+    "s2"
+  ],
+  "ai": {
+    "role": "ai_solved",
+    "confidence": "confirmed",
+    "systems": [
+      {
+        "name": "Larch Forecast",
+        "maker": "Larch Weather Systems"
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "s1",
+        "quote": "Larch Forecast is an AI model that predicts weather up to ten days ahead",
+        "from_claimant": true
+      },
+      {
+        "source_id": "s2",
+        "quote": "runs Larch Forecast alongside its own system",
+        "from_claimant": false
+      }
+    ]
+  },
+  "significance": "major",
+  "rung": "applied",
+  "rung_history": [
+    {
+      "rung": "checked",
+      "date": "2026-10-05",
+      "recorded": "2026-10-12",
+      "source_id": "s1",
+      "by": "agent",
+      "note": null
+    },
+    {
+      "rung": "applied",
+      "date": "2026-10-06",
+      "recorded": "2026-10-12",
+      "source_id": "s2",
+      "by": "agent",
+      "note": null
+    }
+  ],
+  "since_then": [],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "paper",
+      "title": "SAMPLE: An AI model that forecasts the weather ten days ahead",
+      "publisher": "Science",
+      "url": "https://www.science.org/doi/10.1126/ut-sample.0012",
+      "doi": "10.1126/ut-sample.0012",
+      "published_at": "2026-10-05T23:00:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-12"
+    },
+    {
+      "id": "s2",
+      "kind": "statement",
+      "title": "SAMPLE: Meridian Weather Service adds an AI model to its forecasts",
+      "publisher": "Meridian Weather Service",
+      "url": "https://www.meridian-weather-sample.gov/ut-sample/larch-forecast-guidance",
+      "doi": null,
+      "published_at": "2026-10-06T08:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-12"
+    }
+  ],
+  "reactions": [],
+  "artefacts": {
+    "doi": [
+      "10.1126/ut-sample.0012"
+    ],
+    "arxiv": [],
+    "lean": [],
+    "trial": [],
+    "pdb": []
+  },
+  "figure": null,
+  "who": [
+    {
+      "name": "Larch Weather Systems (SAMPLE)",
+      "ror": null
+    }
+  ],
+  "terms": [
+    "numerical-weather-prediction"
+  ],
+  "related": [],
+  "first_published": "2026-10-05",
+  "first_brief": "2026-10-12",
+  "briefs": [
+    "2026-10-12"
+  ],
+  "history": false,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-12"
+}

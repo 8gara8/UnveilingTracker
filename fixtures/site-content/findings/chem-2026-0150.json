@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "chem-2026-0150",
+  "field": "chemistry",
+  "subfield": "materials",
+  "kind": "setback",
+  "title": {
+    "en": "SAMPLE: Example Press retracts 84 papers with undisclosed AI text",
+    "zh": "SAMPLE：Example Press 撤稿 84 篇含未揭露 AI 文字的論文"
+  },
+  "depth": "item",
+  "explainer": {
+    "found": {
+      "en": "Example Press retracted 84 papers in nine journals. The text and images in these papers came from an AI tool that the authors did not disclose.",
+      "zh": "Example Press 撤稿了九本期刊中的 84 篇論文。這些論文裡的文字和圖片，來自一個作者沒有揭露的 AI 工具。"
+    },
+    "matters": {
+      "en": "Other researchers may have cited these papers, so the harm can spread beyond the journals.",
+      "zh": "其他研究者可能引用了這些論文，所以傷害可能擴散到期刊之外。"
+    },
+    "ai_helped": {
+      "en": "An AI tool made the text and images. The publisher's notices do not name the tool.",
+      "zh": "文字和圖片是由 AI 工具製作的。出版商的通知沒有說出這個工具的名稱。"
+    },
+    "how_sure": {
+      "en": "Checked. Example Press, the publisher of the papers, says so in its own statement and in two retraction notices.",
+      "zh": "已查核。這些論文的出版商 Example Press，在自己的聲明和兩份撤稿通知中這麼表示。"
+    },
+    "background": {
+      "en": "A retraction notice tells readers that a paper should no longer be relied on.",
+      "zh": "撤稿通知是在告訴讀者，不應該再採信這篇論文。"
+    },
+    "could_lead": {
+      "en": "Publishers could check for undisclosed AI text before they accept a paper.",
+      "zh": "出版商可能在接受論文之前，先檢查有沒有未揭露的 AI 文字。"
+    }
+  },
+  "go_deeper": [
+    "s1",
+    "s2"
+  ],
+  "ai": {
+    "role": "ai_tool",
+    "confidence": "confirmed",
+    "systems": [],
+    "evidence": [
+      {
+        "source_id": "s1",
+        "quote": "produced with an AI tool that the authors did not disclose",
+        "from_claimant": false
+      }
+    ]
+  },
+  "significance": "major",
+  "rung": "checked",
+  "rung_history": [
+    {
+      "rung": "checked",
+      "date": "2026-10-13",
+      "recorded": "2026-10-14",
+      "source_id": "s1",
+      "by": "agent",
+      "note": null
+    }
+  ],
+  "since_then": [],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "statement",
+      "title": "SAMPLE: Example Press retracts papers with AI-made text and images",
+      "publisher": "Example Press",
+      "url": "https://www.eurekalert.org/news-releases/ut-sample-ai-retractions",
+      "doi": null,
+      "published_at": "2026-10-13T17:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "kind": "notice",
+      "title": "SAMPLE: Retraction Note: A study of alloy coatings",
+      "publisher": "Example Press",
+      "url": "https://link.springer.com/article/10.1007/ut-sample-0005",
+      "doi": "10.1007/ut-sample-0005",
+      "published_at": "2026-10-13T16:00:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "kind": "notice",
+      "title": "SAMPLE: Retraction Note: Wear tests of a new steel",
+      "publisher": "Example Press",
+      "url": "https://link.springer.com/article/10.1007/ut-sample-0006",
+      "doi": "10.1007/ut-sample-0006",
+      "published_at": "2026-10-13T16:05:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-14"
+    }
+  ],
+  "reactions": [],
+  "artefacts": {
+    "doi": [],
+    "arxiv": [],
+    "lean": [],
+    "trial": [],
+    "pdb": []
+  },
+  "figure": null,
+  "who": [
+    {
+      "name": "Example Press (SAMPLE statement)",
+      "ror": null
+    }
+  ],
+  "terms": [],
+  "related": [
+    "soc-2026-0144"
+  ],
+  "first_published": "2026-10-13",
+  "first_brief": "2026-10-14",
+  "briefs": [
+    "2026-10-14"
+  ],
+  "history": false,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-14"
+}

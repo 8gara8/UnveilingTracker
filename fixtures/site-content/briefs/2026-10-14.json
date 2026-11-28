@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "edition": "full",
+  "format": "daily",
+  "languages": {
+    "en": true,
+    "zh": true
+  },
+  "published_at": "2026-10-14T03:53:25+08:00",
+  "late": false,
+  "pace": {
+    "sentence": {
+      "en": "The Pace: 6.6% of papers in leading journals named AI methods in the 13 weeks to 16 Aug. That is up from 1.1% in 2015 to 2019, and up from 4.8% a year earlier. Clearly above the pre-AI level in 5 of 7 fields. Too few cases to judge in 1.",
+      "zh": "進度：截至 8 月 16 日的 13 週內，主要期刊有 6.6% 的論文提到 AI 方法，高於 2015 至 2019 年的 1.1%，也高於一年前的 4.8%。7 個領域中有 5 個明顯高於 AI 出現之前。有 1 個領域的案例太少，無法判斷。"
+    },
+    "status": "ok",
+    "metrics_file": "metrics/2026-10-14.json"
+  },
+  "lead": [
+    {
+      "text": {
+        "en": "Scholars read the writing inside a sealed ancient scroll without opening it.",
+        "zh": "學者不必打開，就讀出了一卷密封的古代卷軸裡的文字。"
+      },
+      "finding_ids": [
+        "hum-2026-0148"
+      ]
+    },
+    {
+      "text": {
+        "en": "A lab measured a protein that an AI model had predicted, and the shape matched.",
+        "zh": "一間實驗室測量了 AI 模型先前預測的蛋白質，形狀相符。"
+      },
+      "finding_ids": [
+        "bio-2026-0149"
+      ]
+    },
+    {
+      "text": {
+        "en": "A publisher pulled many papers with undisclosed AI text, and a research council made its AI rule final.",
+        "zh": "一家出版商撤下許多含有未揭露 AI 文字的論文，一個研究委員會也讓它的 AI 規定定案。"
+      },
+      "finding_ids": [
+        "chem-2026-0150",
+        "soc-2026-0145"
+      ]
+    }
+  ],
+  "story": {
+    "finding_id": "hum-2026-0148",
+    "new": true,
+    "update": null
+  },
+  "items": [
+    {
+      "finding_id": "bio-2026-0149",
+      "new": true,
+      "update": null
+    },
+    {
+      "finding_id": "chem-2026-0150",
+      "new": true,
+      "update": null
+    },
+    {
+      "finding_id": "math-2026-0151",
+      "new": true,
+      "update": null
+    },
+    {
+      "finding_id": "soc-2026-0145",
+      "new": false,
+      "update": {
+        "en": "The council published its final rule. From 1 January, applicants must say if AI tools helped write any part of a proposal. The final rule covers every part of a proposal, not only the summary.",
+        "zh": "委員會公布了最終規定。從 1 月 1 日起，申請人必須說明 AI 工具是否協助撰寫了申請書的任何部分。最終規定涵蓋申請書的每個部分，不只是摘要。"
+      }
+    }
+  ],
+  "rung_changes": [
+    {
+      "finding_id": "chem-2026-0142",
+      "from": "checked",
+      "to": "confirmed",
+      "date": "2026-10-13",
+      "by": "agent"
+    }
+  ],
+  "ideas": [
+    {
+      "text": {
+        "en": "Oren Nominal (SAMPLE) argues that journals should let AI check every submitted proof before human review begins.",
+        "zh": "Oren Nominal（SAMPLE）主張，期刊應該在人工審查開始前，讓 AI 檢查每一份投稿的證明。"
+      },
+      "who": "Oren Nominal (SAMPLE)",
+      "source_id": "b3"
+    },
+    {
+      "text": {
+        "en": "Sana Provisional (SAMPLE) argues that reviewers should be told plainly what they may share with AI tools.",
+        "zh": "Sana Provisional（SAMPLE）主張，應該明確告訴審稿人，他們可以和 AI 工具分享什麼。"
+      },
+      "who": "Sana Provisional (SAMPLE)",
+      "source_id": "b4"
+    }
+  ],
+  "also": [
+    {
+      "title": {
+        "en": "SAMPLE: A model predicts monsoon rainfall weeks ahead",
+        "zh": "SAMPLE：模型提前數週預測季風降雨"
+      },
+      "field": "earth",
+      "source_id": "b5"
+    },
+    {
+      "title": {
+        "en": "SAMPLE: A public dataset of ancient inscriptions read with machine help",
+        "zh": "SAMPLE：機器協助解讀古代銘文的公開資料集"
+      },
+      "field": "humanities",
+      "source_id": "b6"
+    }
+  ],
+  "deep_dive": null,
+  "review": null,
+  "corrections": [
+    {
+      "id": "C-0001",
+      "finding_id": "math-2026-0140",
+      "edition_date": null,
+      "term_id": null,
+      "type": "clarification",
+      "reason": {
+        "en": "The paper proves the result for the flat plane only. The first text did not say so, and a reader reported it.",
+        "zh": "這篇論文只針對平面證明了這項結果。最初的文字沒有這樣說，一位讀者回報了這件事。"
+      }
+    },
+    {
+      "id": "C-0002",
+      "finding_id": "earth-2026-0141",
+      "edition_date": null,
+      "term_id": null,
+      "type": "correction",
+      "reason": {
+        "en": "The weather service's statement says the model runs alongside its own system and has not replaced it. The first text said the service relies on the model.",
+        "zh": "氣象機構的聲明表示，這個模型與它自己的系統並行運作，並沒有取代原有的系統。最初的文字說，這個機構依靠這個模型。"
+      }
+    }
+  ],
+  "reports": [
+    {
+      "id": "R-0002",
+      "finding_id": "math-2026-0140",
+      "status": "upheld"
+    }
+  ],
+  "sources": [
+    {
+      "id": "b1",
+      "kind": "statement",
+      "title": "SAMPLE: Final rule on AI use in grant proposals",
+      "publisher": "Aldgate Research Council",
+      "url": "https://www.aldgate-council-sample.gov/ut-sample/ai-disclosure-final-rule",
+      "doi": null,
+      "published_at": "2026-10-13T10:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-14"
+    },
+    {
+      "id": "b2",
+      "kind": "paper",
+      "title": "SAMPLE: An independent repeat of a robot-found metal mixture",
+      "publisher": "Applied Catalysis Letters",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/ut-sample-0007",
+      "doi": "10.1002/ut-sample-0007",
+      "published_at": "2026-10-13T12:00:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-14"
+    },
+    {
+      "id": "b3",
+      "kind": "reaction",
+      "title": "SAMPLE: Expert reaction to AI proof checking",
+      "publisher": "Science Media Centre",
+      "url": "https://www.sciencemediacentre.org/expert-reaction-to-ut-sample-ai-proof-checking/",
+      "doi": null,
+      "published_at": "2026-10-12T10:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-14"
+    },
+    {
+      "id": "b4",
+      "kind": "reaction",
+      "title": "SAMPLE: Expert reaction to reviewers and AI tools",
+      "publisher": "Science Media Centre",
+      "url": "https://www.sciencemediacentre.org/expert-reaction-to-ut-sample-reviewers-and-ai-tools/",
+      "doi": null,
+      "published_at": "2026-10-12T14:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-14"
+    },
+    {
+      "id": "b5",
+      "kind": "preprint",
+      "title": "SAMPLE: A model that predicts monsoon rainfall weeks ahead",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/2610.99002",
+      "doi": null,
+      "published_at": "2026-10-13T08:00:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-14"
+    },
+    {
+      "id": "b6",
+      "kind": "dataset",
+      "title": "SAMPLE: Inscriptions read with machine help, a public dataset",
+      "publisher": "Zenodo",
+      "url": "https://zenodo.org/records/99900003",
+      "doi": "10.5281/zenodo.99900003",
+      "published_at": "2026-10-13T12:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-14"
+    }
+  ],
+  "disclosure": [],
+  "status_note": null,
+  "computed": {
+    "word_count": 631,
+    "zh_chars": 1076,
+    "finding_count": 5,
+    "source_count": 19
+  },
+  "provenance": {
+    "run_id": "20261014-031508",
+    "code_commit": "0123456789abcdef0123456789abcdef01234567",
+    "data_cutoff": "2026-10-11"
+  }
+}

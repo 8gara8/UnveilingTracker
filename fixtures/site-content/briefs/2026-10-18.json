@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-18",
+  "edition": "full",
+  "format": "sunday_deep_dive",
+  "languages": {
+    "en": true,
+    "zh": true
+  },
+  "published_at": "2026-10-18T03:55:26+08:00",
+  "late": false,
+  "pace": {
+    "sentence": {
+      "en": "The Pace: 6.6% of papers in leading journals named AI methods in the 13 weeks to 16 Aug. That is up from 1.1% in 2015 to 2019, and up from 4.8% a year earlier. Clearly above the pre-AI level in 5 of 7 fields. Too few cases to judge in 1.",
+      "zh": "進度：截至 8 月 16 日的 13 週內，主要期刊有 6.6% 的論文提到 AI 方法，高於 2015 至 2019 年的 1.1%，也高於一年前的 4.8%。7 個領域中有 5 個明顯高於 AI 出現之前。有 1 個領域的案例太少，無法判斷。"
+    },
+    "status": "ok",
+    "metrics_file": "metrics/2026-10-18.json"
+  },
+  "lead": [
+    {
+      "text": {
+        "en": "A university says its AI drafted a Bible translation for a small language group.",
+        "zh": "一所大學表示，它的 AI 為一個小型語言群體起草了聖經翻譯。"
+      },
+      "finding_ids": [
+        "hum-2026-0152"
+      ]
+    },
+    {
+      "text": {
+        "en": "Today's deep dive follows an AI-proposed antibiotic from the first ranking to a second lab's tests.",
+        "zh": "今天的深度報導，追蹤一種由 AI 提出的抗生素，從最初的排名，到第二間實驗室的測試。"
+      },
+      "finding_ids": [
+        "bio-2026-0143"
+      ]
+    }
+  ],
+  "story": null,
+  "items": [
+    {
+      "finding_id": "hum-2026-0152",
+      "new": true,
+      "update": null
+    }
+  ],
+  "rung_changes": [],
+  "ideas": [],
+  "also": [],
+  "deep_dive": {
+    "finding_id": "bio-2026-0143",
+    "text": {
+      "en": "Some germs have stopped responding to the drugs that used to kill them. This is called antimicrobial resistance. It makes some infections hard to treat, and doctors need new antibiotics.\n\nFinding a new antibiotic has always been slow. A lab can make and test only a few molecules, and the list of molecules that might work is huge. That is where the AI model came in.\n\nHalden Research built an AI model called Halden Design. Its paper says the model ranked about 12 million molecules for their chance of killing drug-resistant bacteria. The ranking gave the lab a short list to work from. A ranking is a guess, and it only becomes a finding when someone makes the molecule and tests it.\n\nPeople took over from there. They made 40 of the top molecules and tested them. Three of the 40 stopped the growth of drug-resistant bacteria in dishes. The best of these cleared a drug-resistant skin infection in 8 of 10 mice.\n\nThe Coldwater Institute says its team ran the tests in mice. It also runs a first safety trial in people. The trial plans to enrol 24 healthy volunteers. It tests safety, not cure, so it cannot yet tell us whether the compound treats an infection.\n\nSo who did what? The AI model proposed which molecules to make. People made them, ran every test and judged the results.\n\nHow sure are we? At first the record was one paper. Cell published it after peer review, so we marked it Checked. But Halden Research, which built the model, helped write the paper, and no other lab had repeated the tests. Our ladder has five steps, and a claim moves up only when the record earns it.\n\nThat changed this week. A second lab, at Kestrel College, repeated the mouse tests with its own mice and its own samples of the compound. Cell Reports Medicine published its paper. The compound cleared the infection in 7 of 10 mice, close to the 8 of 10 that the first team reported. The lab says it has no tie to Halden Research.\n\nA matching result from a lab with no tie to the first team is what moves a claim up our ladder. The record now stands at Confirmed. It is still a result in mice.\n\nFor this tracker, the order of events matters. The AI model made its proposals first, and people tested them afterwards. That order is what lets us say the AI helped, and it is what a second lab could check.\n\nMuch is still open. Mice are not people, so a compound that works in mice may not work in a person. The safety trial has only begun. If it goes well, later trials could test whether the compound treats infections. It might also show that AI can find other new antibiotics, but that would take more cases. Other labs could test those cases, and their results would tell us how far the method reaches.",
+      "zh": "有些病菌已經不再對過去能殺死它們的藥物有反應。這稱為抗微生物抗藥性。它讓某些感染難以治療，醫師需要新的抗生素。\n\n尋找新抗生素向來很慢。一間實驗室只能製作和測試少數幾個分子，而可能有效的分子清單卻非常龐大。這就是 AI 模型派上用場的地方。\n\nHalden Research 開發了一個名為 Halden Design 的 AI 模型。它的論文說，這個模型依據殺死抗藥性細菌的機率，為大約 1,200 萬個分子排出名次。這個排名給了實驗室一份可以著手的短名單。排名只是猜測，要有人製作這個分子並測試它，才會成為發現。\n\n接下來由人類接手。他們製作了名次最前面的 40 個分子，並測試它們。這 40 個當中有 3 個，在培養皿中阻止了抗藥性細菌生長。其中最好的一個，在 10 隻小鼠中的 8 隻清除了抗藥性皮膚感染。\n\nColdwater Institute 表示，它的團隊執行了小鼠實驗。它也在進行第一項人體安全性試驗。這項試驗預計招募 24 名健康志願者。它測試的是安全性，不是治癒，所以還不能告訴我們這個化合物是否能治療感染。\n\n那麼，誰做了什麼？AI 模型提出要製作哪些分子。人類製作這些分子、執行每一項測試，並判斷結果。\n\n我們有多確定？起初，紀錄只有一篇論文。Cell 在同儕審查後發表了它，所以我們把它標為已查核。但開發這個模型的 Halden Research 也參與撰寫論文，而且沒有其他實驗室重複過這些實驗。我們的查證階梯有五階，只有當紀錄足以支持時，主張才會往上移。\n\n這一點在本週有了變化。Kestrel College 的第二間實驗室，用自己的小鼠和自己的化合物樣本，重複了小鼠實驗。Cell Reports Medicine 發表了它的論文。這個化合物在 10 隻小鼠中的 7 隻清除了感染，接近第一個團隊報告的 10 隻中的 8 隻。這間實驗室表示，它和 Halden Research 沒有關聯。\n\n一間與第一個團隊沒有關聯的實驗室，得到相符的結果，正是讓主張沿著我們的查證階梯往上移的原因。這筆紀錄現在處於已證實的階段。這仍然是小鼠身上的結果。\n\n對這個追蹤站來說，事情發生的順序很重要。AI 模型先提出建議，人類隨後才測試。這個順序讓我們能說 AI 有幫上忙，也是第二間實驗室能檢查的地方。\n\n還有很多問題沒有答案。小鼠不是人，所以在小鼠身上有效的化合物，在人身上不一定有效。安全性試驗才剛開始。如果順利，後續試驗可能測試這個化合物是否能治療感染。它也可能顯示 AI 能找到其他新抗生素，但這需要更多案例。其他實驗室可能測試那些案例，它們的結果會告訴我們這個方法能走多遠。"
+    },
+    "source_ids": [
+      "b1",
+      "b2",
+      "b3",
+      "b4"
+    ],
+    "why_today": "news"
+  },
+  "review": null,
+  "corrections": [],
+  "reports": [],
+  "sources": [
+    {
+      "id": "b1",
+      "kind": "paper",
+      "title": "SAMPLE: An AI model proposes a new antibiotic that clears resistant infections in mice",
+      "publisher": "Cell",
+      "url": "https://www.cell.com/cell/abstract/ut-sample-0014",
+      "doi": "10.1016/ut-sample-0014",
+      "published_at": "2026-10-07T22:00:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-18"
+    },
+    {
+      "id": "b2",
+      "kind": "registry",
+      "title": "SAMPLE: First safety trial of a new antibiotic",
+      "publisher": "ClinicalTrials.gov",
+      "url": "https://clinicaltrials.gov/study/NCT09999001",
+      "doi": null,
+      "published_at": "2026-10-07",
+      "seen_as": "search",
+      "added": "2026-10-18"
+    },
+    {
+      "id": "b3",
+      "kind": "statement",
+      "title": "SAMPLE: Coldwater team tests an AI-proposed antibiotic",
+      "publisher": "Coldwater Institute",
+      "url": "https://www.coldwater-sample.edu/news/ut-sample-new-antibiotic",
+      "doi": null,
+      "published_at": "2026-10-07T21:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-18"
+    },
+    {
+      "id": "b4",
+      "kind": "paper",
+      "title": "SAMPLE: A second lab repeats tests of an AI-proposed antibiotic in mice",
+      "publisher": "Cell Reports Medicine",
+      "url": "https://www.cell.com/cell-reports-medicine/fulltext/ut-sample-0015",
+      "doi": "10.1016/ut-sample-0015",
+      "published_at": "2026-10-15T22:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-18"
+    }
+  ],
+  "disclosure": [],
+  "status_note": null,
+  "computed": {
+    "word_count": 616,
+    "zh_chars": 1066,
+    "finding_count": 1,
+    "source_count": 6
+  },
+  "provenance": {
+    "run_id": "20261018-031520",
+    "code_commit": "0123456789abcdef0123456789abcdef01234567",
+    "data_cutoff": "2026-10-11"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "markers": [
+    {
+      "date": "2020-11-30",
+      "label": {
+        "en": "AlphaFold 2 at CASP14",
+        "zh": "AlphaFold 2 在 CASP14 的成果"
+      },
+      "source_url": "https://predictioncenter.org/casp14/"
+    },
+    {
+      "date": "2022-11-30",
+      "label": {
+        "en": "ChatGPT released",
+        "zh": "ChatGPT 發布"
+      },
+      "source_url": "https://openai.com/index/chatgpt/"
+    },
+    {
+      "date": "2024-02-05",
+      "label": {
+        "en": "Vesuvius Challenge grand prize",
+        "zh": "維蘇威挑戰賽大獎"
+      },
+      "source_url": "https://scrollprize.org/grandprize"
+    },
+    {
+      "date": "2024-10-09",
+      "label": {
+        "en": "Nobel Prize in Chemistry for protein design and structure prediction",
+        "zh": "諾貝爾化學獎：蛋白質設計與結構預測"
+      },
+      "source_url": "https://www.nobelprize.org/prizes/chemistry/2024/press-release/"
+    }
+  ]
+}

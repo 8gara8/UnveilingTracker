@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-12",
+  "window": {
+    "start": "2026-10-11T03:15:00+08:00",
+    "end": "2026-10-12T03:15:00+08:00"
+  },
+  "generated_at": "2026-10-12T03:16:20+08:00",
+  "arxiv_announcement": null,
+  "degraded": false,
+  "feeds": [
+    {
+      "id": "arxiv-math",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 4,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "eb17229050bbe7fda89bbf100c09226ba564a0ea9c02e271775dc01f50e4bad3"
+    },
+    {
+      "id": "arxiv-physics",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 7,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "815fee8e5ccc803ef92c433cf4bce8aa6a1133a736b80c21a864f1494ca92601"
+    },
+    {
+      "id": "arxiv-astro-ph",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 10,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "b65e6360efb5013412b7961cc361d0f7e46fcd237ce9e4e7dc9690277d4d0171"
+    },
+    {
+      "id": "arxiv-cond-mat",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 6,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "a9cd67a1578f20a625f8c3c79fd7dea13c50898a17a9bfb5f0d84279542bb23f"
+    },
+    {
+      "id": "arxiv-quant-ph",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 9,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "a5e520728ffbdb29dad3ce8f131c6ac13d5f485a9d81e209c475d65df958ab4d"
+    },
+    {
+      "id": "arxiv-q-bio",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 5,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "2ecb306b928862ace5c38c97d6e30845335018b7dee321796ae971d969489ac9"
+    },
+    {
+      "id": "arxiv-physics-chem-ph",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 8,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "21a2cd912d19f87cbcded1bad2de462321c287e92aebc3b67c49ff93c7ff20af"
+    },
+    {
+      "id": "arxiv-stat-ml",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 4,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "f3cb19c85fe1fd92908dc83a3a8d5e9ccfc4c2b882262be826c84d52b7d32470"
+    },
+    {
+      "id": "biorxiv",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 7,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "b804fd49982d3272bb83565b5edce4699c8096bb601e55a1ed0229bbf49a1a6f"
+    },
+    {
+      "id": "medrxiv",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 10,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "dd8f92067c57ae89dc815a1c79201bad3b3c6d079e85d56c0d9e53784d542db7"
+    },
+    {
+      "id": "pubmed",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 6,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "3403a793b6394a49828f17e95a76f0e2b274db88bc0322c5a090ed44529be380"
+    },
+    {
+      "id": "crossref-journals",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-11T18:00:00+08:00",
+      "items_total": 12,
+      "items_kept": 3,
+      "error": null,
+      "sha256": "aa7f6b085b0466477c2f851649dded8b9153bd9e2dd3fec1b7782ddf1e7d63c0"
+    },
+    {
+      "id": "journal-nature",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 5,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "0121388014262538f5f73749a74460949b0f47b078fbe77045acfb6ca28a6571"
+    },
+    {
+      "id": "journal-science",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-11T22:00:00+08:00",
+      "items_total": 9,
+      "items_kept": 1,
+      "error": null,
+      "sha256": "1f0277e6ab55103f12d16452f6e3bdf293a658b48569017ba502e50c460ccd06"
+    },
+    {
+      "id": "journal-pnas",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 4,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "ee603569ed36606c18eeefc3887da233374f856770ed2ca9876b5a6de7f9bd7a"
+    },
+    {
+      "id": "eurekalert",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 7,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "a5c7797837260bd8b09d00117b0278e75618c60f0cd0383c030317bbe4e16c0b"
+    },
+    {
+      "id": "lab-deepmind",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 10,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "6c7566891f65d086584b460fdccfb21e46d6bf0340e376564f7864d02fabdbb2"
+    },
+    {
+      "id": "smc-reactions",
+      "kind": "page",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 6,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "67efbd97b0660bf90a5ee6c9e5004b635aec1fb9c3c826be7488ac9539df9337"
+    },
+    {
+      "id": "crossref-updates",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 9,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "5c0b683416568bfb6f45a604d0c3f7286a89de1789183903c1add971ef552afe"
+    },
+    {
+      "id": "ctgov",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 5,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "816fd1e401e96867d8a40b78119d235fb3e758c578508d76e88a26de0d55b030"
+    },
+    {
+      "id": "rcsb",
+      "kind": "api",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 8,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "73526c3cf85b16fa55e055f605cdf9c14caa51919936310d29ac989e92ace754"
+    },
+    {
+      "id": "scrollprize",
+      "kind": "rss",
+      "ok": true,
+      "stale": false,
+      "newest": "2026-10-10",
+      "items_total": 4,
+      "items_kept": 0,
+      "error": null,
+      "sha256": "9dcca644dc355d8da9fe6c4a7dc702bb08b6587625d2e020ee45cfaf9fef4bda"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "cand-01",
+      "source_id": "journal-science",
+      "title": "SAMPLE: Small earthquakes found with machine learning",
+      "abstract": "SAMPLE page, invented for tests and never fetched. A machine learning method found small earthquakes in old seismic records. Seismologists checked a sample by hand.",
+      "url": "https://www.science.org/doi/10.1126/ut-sample.0051",
+      "doi": "10.1126/ut-sample.0051",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-11T22:00:00+08:00",
+      "journal": "Science",
+      "fields": [
+        "earth"
+      ],
+      "ai_terms_matched": [
+        "machine learning"
+      ],
+      "journal_leading": true,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 8,
+      "deep_read": true
+    },
+    {
+      "id": "cand-02",
+      "source_id": "crossref-journals",
+      "title": "SAMPLE: An autonomous laboratory makes brighter dyes",
+      "abstract": "SAMPLE page, invented for tests and never fetched. An autonomous laboratory planned and ran its own dye experiments. Chemists checked the best dyes.",
+      "url": "https://pubs.acs.org/doi/10.1021/ut-sample-0052",
+      "doi": "10.1021/ut-sample-0052",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-11T09:00:00+08:00",
+      "journal": "Eastvale Dye Chemistry",
+      "fields": [
+        "chemistry"
+      ],
+      "ai_terms_matched": [
+        "autonomous laboratory"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 6,
+      "deep_read": true
+    },
+    {
+      "id": "cand-03",
+      "source_id": "crossref-journals",
+      "title": "SAMPLE: A random forest reads answers to an open survey question",
+      "abstract": "SAMPLE page, invented for tests and never fetched. A random forest sorted answers to an open survey question. Two coders checked its sorting.",
+      "url": "https://www.tandfonline.com/doi/10.1080/ut-sample-0053",
+      "doi": "10.1080/ut-sample-0053",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-11T08:00:00+08:00",
+      "journal": "Eastvale Survey Methods",
+      "fields": [
+        "social"
+      ],
+      "ai_terms_matched": [
+        "random forest"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 6,
+      "deep_read": true
+    },
+    {
+      "id": "cand-04",
+      "source_id": "crossref-journals",
+      "title": "SAMPLE: An AI controller holds a plasma steady in a test machine",
+      "abstract": "SAMPLE page, invented for tests and never fetched. Fernhill Fusion Group (SAMPLE). An AI controller, the Fernhill Controller, held a plasma steady in a test machine for 90 seconds, three times longer than the standard controller. The controller, built by Fernhill Fusion Group, adjusted the magnets 1,000 times a second. It learned from practice runs. Other groups have not yet repeated the run. The Fernhill Controller was trained by reinforcement learning.",
+      "url": "https://link.springer.com/article/10.1007/ut-sample-0020",
+      "doi": "10.1007/ut-sample-0020",
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-10-11T18:00:00+08:00",
+      "journal": "Fusion Science Reports",
+      "fields": [
+        "physics"
+      ],
+      "ai_terms_matched": [
+        "reinforcement learning"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [],
+      "score": 4,
+      "deep_read": true
+    }
+  ],
+  "injection_flags": 0
+}

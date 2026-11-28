@@ -1,0 +1,761 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-13",
+  "computed_at": "2026-10-13T03:17:30+08:00",
+  "data_cutoff": "2026-10-11",
+  "versions": {
+    "ai_terms": 1,
+    "journals": 1,
+    "fields": 1,
+    "counters": 1
+  },
+  "status": "ok",
+  "pace": {
+    "window": {
+      "from": "2026-05-18",
+      "to": "2026-08-16"
+    },
+    "provisional_from": "2026-08-17",
+    "baseline": {
+      "from": "2015-01-05",
+      "to": "2019-12-29"
+    },
+    "year_ago": {
+      "from": "2025-05-19",
+      "to": "2025-08-17"
+    },
+    "leading": {
+      "pooled": {
+        "window": {
+          "k": 1076,
+          "n": 16232,
+          "share": 0.0663,
+          "ci80": [
+            0.0638,
+            0.0688
+          ]
+        },
+        "baseline": {
+          "k": 3601,
+          "n": 324640,
+          "share": 0.0111,
+          "ci80": [
+            0.0109,
+            0.0113
+          ]
+        },
+        "year_ago": {
+          "k": 780,
+          "n": 16232,
+          "share": 0.0481,
+          "ci80": [
+            0.0459,
+            0.0503
+          ]
+        },
+        "vs_baseline": "higher",
+        "vs_year_ago": "up"
+      },
+      "by_field": {
+        "mathematics": {
+          "window": {
+            "k": 36,
+            "n": 832,
+            "share": 0.0433,
+            "ci80": [
+              0.0351,
+              0.0532
+            ]
+          },
+          "baseline": {
+            "k": 100,
+            "n": 16640,
+            "share": 0.006,
+            "ci80": [
+              0.0053,
+              0.0068
+            ]
+          },
+          "year_ago": {
+            "k": 26,
+            "n": 832,
+            "share": 0.0313,
+            "ci80": [
+              0.0244,
+              0.04
+            ]
+          },
+          "vs_baseline": "higher",
+          "vs_year_ago": "too_few"
+        },
+        "physics": {
+          "window": {
+            "k": 217,
+            "n": 3382,
+            "share": 0.0642,
+            "ci80": [
+              0.059,
+              0.0698
+            ]
+          },
+          "baseline": {
+            "k": 609,
+            "n": 67640,
+            "share": 0.009,
+            "ci80": [
+              0.0085,
+              0.0095
+            ]
+          },
+          "year_ago": {
+            "k": 155,
+            "n": 3382,
+            "share": 0.0458,
+            "ci80": [
+              0.0414,
+              0.0507
+            ]
+          },
+          "vs_baseline": "higher",
+          "vs_year_ago": "up"
+        },
+        "chemistry": {
+          "window": {
+            "k": 215,
+            "n": 2861,
+            "share": 0.0751,
+            "ci80": [
+              0.0691,
+              0.0817
+            ]
+          },
+          "baseline": {
+            "k": 572,
+            "n": 57220,
+            "share": 0.01,
+            "ci80": [
+              0.0095,
+              0.0105
+            ]
+          },
+          "year_ago": {
+            "k": 153,
+            "n": 2861,
+            "share": 0.0535,
+            "ci80": [
+              0.0483,
+              0.0591
+            ]
+          },
+          "vs_baseline": "higher",
+          "vs_year_ago": "up"
+        },
+        "biology": {
+          "window": {
+            "k": 450,
+            "n": 5461,
+            "share": 0.0824,
+            "ci80": [
+              0.0778,
+              0.0873
+            ]
+          },
+          "baseline": {
+            "k": 1311,
+            "n": 109220,
+            "share": 0.012,
+            "ci80": [
+              0.0116,
+              0.0124
+            ]
+          },
+          "year_ago": {
+            "k": 323,
+            "n": 5461,
+            "share": 0.0591,
+            "ci80": [
+              0.0552,
+              0.0634
+            ]
+          },
+          "vs_baseline": "higher",
+          "vs_year_ago": "up"
+        },
+        "earth": {
+          "window": {
+            "k": 108,
+            "n": 1563,
+            "share": 0.0691,
+            "ci80": [
+              0.0613,
+              0.0778
+            ]
+          },
+          "baseline": {
+            "k": 250,
+            "n": 31260,
+            "share": 0.008,
+            "ci80": [
+              0.0074,
+              0.0087
+            ]
+          },
+          "year_ago": {
+            "k": 76,
+            "n": 1563,
+            "share": 0.0486,
+            "ci80": [
+              0.0421,
+              0.0561
+            ]
+          },
+          "vs_baseline": "higher",
+          "vs_year_ago": "up"
+        },
+        "social": {
+          "window": {
+            "k": 44,
+            "n": 1951,
+            "share": 0.0226,
+            "ci80": [
+              0.0186,
+              0.0273
+            ]
+          },
+          "baseline": {
+            "k": 741,
+            "n": 39020,
+            "share": 0.019,
+            "ci80": [
+              0.0181,
+              0.0199
+            ]
+          },
+          "year_ago": {
+            "k": 42,
+            "n": 1951,
+            "share": 0.0215,
+            "ci80": [
+              0.0177,
+              0.0262
+            ]
+          },
+          "vs_baseline": "no_clear_change",
+          "vs_year_ago": "level"
+        },
+        "humanities": {
+          "window": {
+            "k": 6,
+            "n": 182,
+            "share": 0.033,
+            "ci80": [
+              0.0197,
+              0.0545
+            ]
+          },
+          "baseline": {
+            "k": 18,
+            "n": 3640,
+            "share": 0.0049,
+            "ci80": [
+              0.0037,
+              0.0067
+            ]
+          },
+          "year_ago": {
+            "k": 5,
+            "n": 182,
+            "share": 0.0275,
+            "ci80": [
+              0.0157,
+              0.0477
+            ]
+          },
+          "vs_baseline": "too_few",
+          "vs_year_ago": "too_few"
+        }
+      }
+    },
+    "all": {
+      "pooled": {
+        "window": {
+          "k": 10311,
+          "n": 351011,
+          "share": 0.0294,
+          "ci80": [
+            0.029,
+            0.0297
+          ]
+        },
+        "baseline": {
+          "k": 32905,
+          "n": 7020220,
+          "share": 0.0047,
+          "ci80": [
+            0.0047,
+            0.0047
+          ]
+        },
+        "year_ago": {
+          "k": 7452,
+          "n": 351011,
+          "share": 0.0212,
+          "ci80": [
+            0.0209,
+            0.0215
+          ]
+        },
+        "vs_baseline": "higher",
+        "vs_year_ago": "up"
+      },
+      "by_field": {
+        "mathematics": {
+          "window": {
+            "k": 171,
+            "n": 11701,
+            "share": 0.0146,
+            "ci80": [
+              0.0133,
+              0.0161
+            ]
+          },
+          "baseline": {
+            "k": 585,
+            "n": 234020,
+            "share": 0.0025,
+            "ci80": [
+              0.0024,
+              0.0026
+            ]
+          },
+          "year_ago": {
+            "k": 125,
+            "n": 11701,
+            "share": 0.0107,
+            "ci80": [
+              0.0095,
+              0.012
+            ]
+          },
+          "vs_baseline": "higher",
+          "vs_year_ago": "up"
+        },
+        "physics": {
+          "window": {
+            "k": 2035,
+            "n": 67600,
+            "share": 0.0301,
+            "ci80": [
+              0.0293,
+              0.031
+            ]
+          },
+          "baseline": {
+            "k": 5409,
+            "n": 1352000,
+            "share": 0.004,
+            "ci80": [
+              0.0039,
+              0.0041
+            ]
+          },
+          "year_ago": {
+            "k": 1458,
+            "n": 67600,
+            "share": 0.0216,
+            "ci80": [
+              0.0209,
+              0.0223
+            ]
+          },
+          "vs_baseline": "higher",
+          "vs_year_ago": "up"
+        },
+        "chemistry": {
+          "window": {
+            "k": 1626,
+            "n": 46800,
+            "share": 0.0347,
+            "ci80": [
+              0.0337,
+              0.0358
+            ]
+          },
+          "baseline": {
+            "k": 4213,
+            "n": 936000,
+            "share": 0.0045,
+            "ci80": [
+              0.0044,
+              0.0046
+            ]
+          },
+          "year_ago": {
+            "k": 1159,
+            "n": 46800,
+            "share": 0.0248,
+            "ci80": [
+              0.0239,
+              0.0257
+            ]
+          },
+          "vs_baseline": "higher",
+          "vs_year_ago": "up"
+        },
+        "biology": {
+          "window": {
+            "k": 4901,
+            "n": 127403,
+            "share": 0.0385,
+            "ci80": [
+              0.0378,
+              0.0392
+            ]
+          },
+          "baseline": {
+            "k": 14012,
+            "n": 2548060,
+            "share": 0.0055,
+            "ci80": [
+              0.0054,
+              0.0056
+            ]
+          },
+          "year_ago": {
+            "k": 3508,
+            "n": 127403,
+            "share": 0.0275,
+            "ci80": [
+              0.027,
+              0.0281
+            ]
+          },
+          "vs_baseline": "higher",
+          "vs_year_ago": "up"
+        },
+        "earth": {
+          "window": {
+            "k": 924,
+            "n": 33803,
+            "share": 0.0273,
+            "ci80": [
+              0.0262,
+              0.0285
+            ]
+          },
+          "baseline": {
+            "k": 2028,
+            "n": 676060,
+            "share": 0.003,
+            "ci80": [
+              0.0029,
+              0.0031
+            ]
+          },
+          "year_ago": {
+            "k": 650,
+            "n": 33803,
+            "share": 0.0192,
+            "ci80": [
+              0.0183,
+              0.0202
+            ]
+          },
+          "vs_baseline": "higher",
+          "vs_year_ago": "up"
+        },
+        "social": {
+          "window": {
+            "k": 406,
+            "n": 44203,
+            "share": 0.0092,
+            "ci80": [
+              0.0086,
+              0.0098
+            ]
+          },
+          "baseline": {
+            "k": 6189,
+            "n": 884060,
+            "share": 0.007,
+            "ci80": [
+              0.0069,
+              0.0071
+            ]
+          },
+          "year_ago": {
+            "k": 376,
+            "n": 44203,
+            "share": 0.0085,
+            "ci80": [
+              0.008,
+              0.0091
+            ]
+          },
+          "vs_baseline": "higher",
+          "vs_year_ago": "level"
+        },
+        "humanities": {
+          "window": {
+            "k": 248,
+            "n": 19501,
+            "share": 0.0127,
+            "ci80": [
+              0.0117,
+              0.0138
+            ]
+          },
+          "baseline": {
+            "k": 469,
+            "n": 390020,
+            "share": 0.0012,
+            "ci80": [
+              0.0011,
+              0.0013
+            ]
+          },
+          "year_ago": {
+            "k": 176,
+            "n": 19501,
+            "share": 0.009,
+            "ci80": [
+              0.0082,
+              0.0099
+            ]
+          },
+          "vs_baseline": "higher",
+          "vs_year_ago": "up"
+        }
+      }
+    },
+    "sentence": {
+      "en": "The Pace: 6.6% of papers in leading journals named AI methods in the 13 weeks to 16 Aug. That is up from 1.1% in 2015 to 2019, and up from 4.8% a year earlier. Clearly above the pre-AI level in 5 of 7 fields. Too few cases to judge in 1.",
+      "zh": "進度：截至 8 月 16 日的 13 週內，主要期刊有 6.6% 的論文提到 AI 方法，高於 2015 至 2019 年的 1.1%，也高於一年前的 4.8%。7 個領域中有 5 個明顯高於 AI 出現之前。有 1 個領域的案例太少，無法判斷。"
+    },
+    "quotable": {
+      "pace.leading.pooled.window": "6.6%",
+      "pace.leading.pooled.baseline": "1.1%",
+      "pace.leading.pooled.year_ago": "4.8%",
+      "pace.leading.by_field.mathematics.window": "4.3%",
+      "pace.leading.by_field.mathematics.baseline": "0.6%",
+      "pace.leading.by_field.mathematics.year_ago": "3.1%",
+      "pace.leading.by_field.physics.window": "6.4%",
+      "pace.leading.by_field.physics.baseline": "0.9%",
+      "pace.leading.by_field.physics.year_ago": "4.6%",
+      "pace.leading.by_field.chemistry.window": "7.5%",
+      "pace.leading.by_field.chemistry.baseline": "1.0%",
+      "pace.leading.by_field.chemistry.year_ago": "5.3%",
+      "pace.leading.by_field.biology.window": "8.2%",
+      "pace.leading.by_field.biology.baseline": "1.2%",
+      "pace.leading.by_field.biology.year_ago": "5.9%",
+      "pace.leading.by_field.earth.window": "6.9%",
+      "pace.leading.by_field.earth.baseline": "0.8%",
+      "pace.leading.by_field.earth.year_ago": "4.9%",
+      "pace.leading.by_field.social.window": "2.3%",
+      "pace.leading.by_field.social.baseline": "1.9%",
+      "pace.leading.by_field.social.year_ago": "2.2%",
+      "pace.leading.by_field.humanities.window": "3.3%",
+      "pace.leading.by_field.humanities.baseline": "0.5%",
+      "pace.leading.by_field.humanities.year_ago": "2.7%",
+      "pace.all.pooled.window": "2.9%",
+      "pace.all.pooled.baseline": "0.5%",
+      "pace.all.pooled.year_ago": "2.1%",
+      "pace.all.by_field.mathematics.window": "1.5%",
+      "pace.all.by_field.mathematics.baseline": "0.2%",
+      "pace.all.by_field.mathematics.year_ago": "1.1%",
+      "pace.all.by_field.physics.window": "3.0%",
+      "pace.all.by_field.physics.baseline": "0.4%",
+      "pace.all.by_field.physics.year_ago": "2.2%",
+      "pace.all.by_field.chemistry.window": "3.5%",
+      "pace.all.by_field.chemistry.baseline": "0.5%",
+      "pace.all.by_field.chemistry.year_ago": "2.5%",
+      "pace.all.by_field.biology.window": "3.8%",
+      "pace.all.by_field.biology.baseline": "0.5%",
+      "pace.all.by_field.biology.year_ago": "2.8%",
+      "pace.all.by_field.earth.window": "2.7%",
+      "pace.all.by_field.earth.baseline": "0.3%",
+      "pace.all.by_field.earth.year_ago": "1.9%",
+      "pace.all.by_field.social.window": "0.9%",
+      "pace.all.by_field.social.baseline": "0.7%",
+      "pace.all.by_field.social.year_ago": "0.9%",
+      "pace.all.by_field.humanities.window": "1.3%",
+      "pace.all.by_field.humanities.baseline": "0.1%",
+      "pace.all.by_field.humanities.year_ago": "0.9%"
+    }
+  },
+  "landmarks": {
+    "by_year": [
+      {
+        "year": 2015,
+        "ai": 0,
+        "all": 0
+      },
+      {
+        "year": 2016,
+        "ai": 0,
+        "all": 0
+      },
+      {
+        "year": 2017,
+        "ai": 0,
+        "all": 0
+      },
+      {
+        "year": 2018,
+        "ai": 0,
+        "all": 0
+      },
+      {
+        "year": 2019,
+        "ai": 0,
+        "all": 0
+      },
+      {
+        "year": 2020,
+        "ai": 0,
+        "all": 0
+      },
+      {
+        "year": 2021,
+        "ai": 0,
+        "all": 0
+      },
+      {
+        "year": 2022,
+        "ai": 0,
+        "all": 0
+      },
+      {
+        "year": 2023,
+        "ai": 0,
+        "all": 0
+      },
+      {
+        "year": 2024,
+        "ai": 0,
+        "all": 0
+      },
+      {
+        "year": 2025,
+        "ai": 0,
+        "all": 0
+      },
+      {
+        "year": 2026,
+        "ai": 0,
+        "all": 0
+      }
+    ],
+    "baseline": {
+      "ai": 0,
+      "all": 0
+    }
+  },
+  "hold": {
+    "cases": 0,
+    "held": 0,
+    "fell": 0,
+    "open": 0,
+    "too_few": true
+  },
+  "counters": [
+    {
+      "id": "erdos_ai",
+      "kind": "api",
+      "value": 53,
+      "as_of": "2026-10-12",
+      "breakdown": [],
+      "source_url": "https://www.erdosproblems.com/",
+      "status": "ok"
+    },
+    {
+      "id": "mathlib_theorems",
+      "kind": "api",
+      "value": 109200,
+      "as_of": "2026-10-12",
+      "breakdown": [],
+      "source_url": "https://leanprover-community.github.io/mathlib_stats.html",
+      "status": "ok"
+    },
+    {
+      "id": "ai_drugs",
+      "kind": "api",
+      "value": 23,
+      "as_of": "2026-10-12",
+      "breakdown": [
+        {
+          "key": "1",
+          "value": 14
+        },
+        {
+          "key": "2",
+          "value": 7
+        },
+        {
+          "key": "3",
+          "value": 2
+        },
+        {
+          "key": "approved",
+          "value": 0
+        }
+      ],
+      "source_url": "https://clinicaltrials.gov/",
+      "status": "ok"
+    },
+    {
+      "id": "pdb_structures",
+      "kind": "api",
+      "value": 13200,
+      "as_of": "2026-10-12",
+      "breakdown": [
+        {
+          "key": "2025",
+          "value": 17400
+        },
+        {
+          "key": "2026",
+          "value": 13200
+        }
+      ],
+      "source_url": "https://www.rcsb.org/",
+      "status": "ok"
+    },
+    {
+      "id": "ai_retractions",
+      "kind": "api",
+      "value": 780,
+      "as_of": "2026-10-12",
+      "breakdown": [
+        {
+          "key": "2025",
+          "value": 610
+        },
+        {
+          "key": "2026",
+          "value": 780
+        }
+      ],
+      "source_url": "https://gitlab.com/crossref/retraction-watch-data",
+      "status": "ok"
+    },
+    {
+      "id": "full_bibles",
+      "kind": "manual",
+      "value": null,
+      "as_of": null,
+      "breakdown": [],
+      "source_url": "https://www.wycliffe.net/resources/statistics/",
+      "status": "missing"
+    },
+    {
+      "id": "ancient_texts_ai",
+      "kind": "ledger",
+      "value": 0,
+      "as_of": "2026-10-12",
+      "breakdown": [],
+      "source_url": "https://github.com/8gara8/UnveilingTracker/tree/main/content/findings",
+      "status": "ok"
+    }
+  ]
+}

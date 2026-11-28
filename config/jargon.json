@@ -1,0 +1,2424 @@
+{
+  "schema_version": 1,
+  "version": 1,
+  "words": [
+    {
+      "en": "algebraic geometry",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "algebraic topology",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "aperiodic tiling",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "asymptotic",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "Bayesian",
+      "fields": [
+        "mathematics",
+        "social"
+      ]
+    },
+    {
+      "en": "cap set",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "category theory",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "combinatorics",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "computational complexity",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "conjecture",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "continuum hypothesis",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "curvature",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "differential geometry",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "Diophantine equation",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "eigenvalue",
+      "fields": [
+        "mathematics",
+        "physics"
+      ]
+    },
+    {
+      "en": "eigenvector",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "elliptic curve",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "entropy",
+      "fields": [
+        "mathematics",
+        "physics",
+        "chemistry"
+      ]
+    },
+    {
+      "en": "formal verification",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "formalisation",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "Fourier transform",
+      "fields": [
+        "mathematics",
+        "physics"
+      ]
+    },
+    {
+      "en": "functional analysis",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "Galois group",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "geodesic",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "gradient descent",
+      "fields": [
+        "mathematics",
+        "physics"
+      ]
+    },
+    {
+      "en": "harmonic analysis",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "Hilbert space",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "homology",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "homotopy",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "kissing number",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "knot invariant",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "lattice",
+      "fields": [
+        "mathematics",
+        "physics",
+        "chemistry"
+      ]
+    },
+    {
+      "en": "lemma",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "Lie algebra",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "Lie group",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "manifold",
+      "fields": [
+        "mathematics",
+        "physics"
+      ]
+    },
+    {
+      "en": "Markov chain",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "measure theory",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "modal logic",
+      "fields": [
+        "mathematics",
+        "humanities"
+      ]
+    },
+    {
+      "en": "modular form",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "Monte Carlo method",
+      "fields": [
+        "mathematics",
+        "physics",
+        "chemistry"
+      ]
+    },
+    {
+      "en": "NP-hard",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "partial differential equation",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "polynomial time",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "proof assistant",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "Ramsey number",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "regression",
+      "fields": [
+        "mathematics",
+        "social"
+      ]
+    },
+    {
+      "en": "Ricci flow",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "SAT solver",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "singularity",
+      "fields": [
+        "mathematics",
+        "physics"
+      ]
+    },
+    {
+      "en": "sphere packing",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "stochastic process",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "tensor",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "topology",
+      "fields": [
+        "mathematics"
+      ]
+    },
+    {
+      "en": "aerosol",
+      "fields": [
+        "physics",
+        "chemistry",
+        "earth"
+      ]
+    },
+    {
+      "en": "band gap",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "Bose-Einstein condensate",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "boson",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "Cooper pair",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "cosmic microwave background",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "critical temperature",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "cryogenic",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "crystal structure",
+      "fields": [
+        "physics",
+        "chemistry",
+        "biology"
+      ]
+    },
+    {
+      "en": "decoherence",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "density functional theory",
+      "fields": [
+        "physics",
+        "chemistry"
+      ]
+    },
+    {
+      "en": "entanglement",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "exciton",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "fermion",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "free-electron laser",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "gravitational wave",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "hadron",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "Hamiltonian",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "Higgs boson",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "inertial confinement",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "isotope",
+      "fields": [
+        "physics",
+        "chemistry",
+        "earth"
+      ]
+    },
+    {
+      "en": "Josephson junction",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "lithography",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "logical qubit",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "magnetic confinement",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "metamaterial",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "molecular dynamics",
+      "fields": [
+        "physics",
+        "chemistry",
+        "biology"
+      ]
+    },
+    {
+      "en": "nanoparticle",
+      "fields": [
+        "physics",
+        "chemistry",
+        "biology"
+      ]
+    },
+    {
+      "en": "neutrino",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "neutron star",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "phase transition",
+      "fields": [
+        "physics",
+        "chemistry"
+      ]
+    },
+    {
+      "en": "phonon",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "photonic crystal",
+      "fields": [
+        "physics",
+        "chemistry"
+      ]
+    },
+    {
+      "en": "plasma",
+      "fields": [
+        "physics",
+        "chemistry",
+        "biology",
+        "earth"
+      ]
+    },
+    {
+      "en": "polymer",
+      "fields": [
+        "physics",
+        "chemistry",
+        "biology"
+      ]
+    },
+    {
+      "en": "pulsar",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "quantum annealing",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "quantum dot",
+      "fields": [
+        "physics",
+        "chemistry"
+      ]
+    },
+    {
+      "en": "quantum error correction",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "quantum field theory",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "quantum gravity",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "quark",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "qubit",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "redshift",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "renormalisation",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "spectroscopy",
+      "fields": [
+        "physics",
+        "chemistry"
+      ]
+    },
+    {
+      "en": "spintronics",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "standard model",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "superconductivity",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "superconductor",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "superfluid",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "superposition",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "symmetry breaking",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "tokamak",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "topological insulator",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "twisted bilayer graphene",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "wavefunction",
+      "fields": [
+        "physics"
+      ]
+    },
+    {
+      "en": "activation energy",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "adsorption",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "anode",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "bioinformatics",
+      "fields": [
+        "chemistry",
+        "biology"
+      ]
+    },
+    {
+      "en": "carbon nanotube",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "catalysis",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "catalyst",
+      "fields": [
+        "chemistry",
+        "biology"
+      ]
+    },
+    {
+      "en": "cathode",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "chirality",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "chromatography",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "cryo-electron microscopy",
+      "fields": [
+        "chemistry",
+        "biology"
+      ]
+    },
+    {
+      "en": "crystallography",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "electrocatalyst",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "electrochemistry",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "electrode",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "electrolysis",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "electrolyte",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "enantiomer",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "enzyme",
+      "fields": [
+        "chemistry",
+        "biology"
+      ]
+    },
+    {
+      "en": "force field",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "functional group",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "heterogeneous catalyst",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "high-entropy alloy",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "high-throughput screening",
+      "fields": [
+        "chemistry",
+        "biology"
+      ]
+    },
+    {
+      "en": "ligand",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "mass spectrometry",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "medicinal chemistry",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "metal-organic framework",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "monomer",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "nanomaterial",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "natural product",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "nuclear magnetic resonance",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "organic synthesis",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "perovskite",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "phase diagram",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "polymerisation",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "protein design",
+      "fields": [
+        "chemistry",
+        "biology"
+      ]
+    },
+    {
+      "en": "reaction mechanism",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "reagent",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "retrosynthesis",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "self-assembly",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "self-driving laboratory",
+      "fields": [
+        "chemistry",
+        "biology"
+      ]
+    },
+    {
+      "en": "sequencing",
+      "fields": [
+        "chemistry",
+        "biology"
+      ]
+    },
+    {
+      "en": "solid-state electrolyte",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "transition state",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "water splitting",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "X-ray crystallography",
+      "fields": [
+        "chemistry"
+      ]
+    },
+    {
+      "en": "allele",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "amyloid",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "ancient DNA",
+      "fields": [
+        "biology",
+        "humanities"
+      ]
+    },
+    {
+      "en": "antibody",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "antigen",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "antimicrobial resistance",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "bacteriophage",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "base editing",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "binding site",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "biomarker",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "brain-computer interface",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "checkpoint inhibitor",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "connectome",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "CRISPR",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "cytokine",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "environmental DNA",
+      "fields": [
+        "biology",
+        "earth"
+      ]
+    },
+    {
+      "en": "epigenetic",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "functional MRI",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "gene expression",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "gene therapy",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "genome",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "genome-wide association study",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "genotype",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "guide RNA",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "hazard ratio",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "heritability",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "hominin",
+      "fields": [
+        "biology",
+        "humanities"
+      ]
+    },
+    {
+      "en": "immunotherapy",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "in silico",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "in vitro",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "in vivo",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "induced pluripotent stem cell",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "keystone species",
+      "fields": [
+        "biology",
+        "earth"
+      ]
+    },
+    {
+      "en": "kinase",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "mammography",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "messenger RNA",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "meta-analysis",
+      "fields": [
+        "biology",
+        "social"
+      ]
+    },
+    {
+      "en": "metastasis",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "microbiome",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "mitochondrion",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "model organism",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "monoclonal antibody",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "nanobody",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "ontology",
+      "fields": [
+        "biology",
+        "humanities"
+      ]
+    },
+    {
+      "en": "optogenetics",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "organoid",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "pharmacokinetics",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "phase 1 trial",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "phase 2 trial",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "phase 3 trial",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "phenology",
+      "fields": [
+        "biology",
+        "earth"
+      ]
+    },
+    {
+      "en": "phenotype",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "phylogenetics",
+      "fields": [
+        "biology",
+        "humanities"
+      ]
+    },
+    {
+      "en": "plasmid",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "protein folding",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "proteome",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "randomised controlled trial",
+      "fields": [
+        "biology",
+        "social"
+      ]
+    },
+    {
+      "en": "retinopathy",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "ribosome",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "single-cell sequencing",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "species distribution model",
+      "fields": [
+        "biology",
+        "earth"
+      ]
+    },
+    {
+      "en": "synthetic biology",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "systematic review",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "T cell",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "theory of mind",
+      "fields": [
+        "biology",
+        "social",
+        "humanities"
+      ]
+    },
+    {
+      "en": "transcriptome",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "viral vector",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "working memory",
+      "fields": [
+        "biology",
+        "social"
+      ]
+    },
+    {
+      "en": "zoonotic",
+      "fields": [
+        "biology"
+      ]
+    },
+    {
+      "en": "albedo",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "atmospheric river",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "carbon cycle",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "carbon sequestration",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "carbon sink",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "climate sensitivity",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "data assimilation",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "dendrochronology",
+      "fields": [
+        "earth",
+        "humanities"
+      ]
+    },
+    {
+      "en": "downscaling",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "ensemble forecast",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "general circulation model",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "geochemistry",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "geochronology",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "Holocene",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "hydrology",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "hyperspectral imaging",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "ice core",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "ice sheet",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "ice shelf",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "isotope dating",
+      "fields": [
+        "earth",
+        "humanities"
+      ]
+    },
+    {
+      "en": "lidar",
+      "fields": [
+        "earth",
+        "humanities"
+      ]
+    },
+    {
+      "en": "multispectral imaging",
+      "fields": [
+        "earth",
+        "humanities"
+      ]
+    },
+    {
+      "en": "numerical weather prediction",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "ocean acidification",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "overturning circulation",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "palaeoclimate",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "palaeontology",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "parameterisation",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "permafrost",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "plate tectonics",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "Pleistocene",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "radiative forcing",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "radiocarbon dating",
+      "fields": [
+        "earth",
+        "humanities"
+      ]
+    },
+    {
+      "en": "radiometric dating",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "reanalysis",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "remote sensing",
+      "fields": [
+        "earth",
+        "humanities"
+      ]
+    },
+    {
+      "en": "sediment core",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "seismic wave",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "seismology",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "Southern Oscillation",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "stable isotope",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "stratigraphy",
+      "fields": [
+        "earth",
+        "humanities"
+      ]
+    },
+    {
+      "en": "subduction zone",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "synthetic aperture radar",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "teleconnection",
+      "fields": [
+        "earth"
+      ]
+    },
+    {
+      "en": "behavioural economics",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "causal inference",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "cliodynamics",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "cognitive bias",
+      "fields": [
+        "social",
+        "humanities"
+      ]
+    },
+    {
+      "en": "confidence interval",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "construct validity",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "content analysis",
+      "fields": [
+        "social",
+        "humanities"
+      ]
+    },
+    {
+      "en": "counterfactual",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "cross-sectional study",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "demography",
+      "fields": [
+        "social",
+        "humanities"
+      ]
+    },
+    {
+      "en": "difference-in-differences",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "econometrics",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "effect size",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "ethnography",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "factor analysis",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "field experiment",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "game theory",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "Gini coefficient",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "instrumental variable",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "longitudinal study",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "mechanism design",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "Nash equilibrium",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "natural experiment",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "network analysis",
+      "fields": [
+        "social",
+        "humanities"
+      ]
+    },
+    {
+      "en": "optical character recognition",
+      "fields": [
+        "social",
+        "humanities"
+      ]
+    },
+    {
+      "en": "p-hacking",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "p-value",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "panel data",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "preregistration",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "price elasticity",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "prosopography",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "psychometrics",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "publication bias",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "regression discontinuity",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "replication crisis",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "sampling bias",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "selection bias",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "sentiment analysis",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "statistical power",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "statistical significance",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "stylometry",
+      "fields": [
+        "social",
+        "humanities"
+      ]
+    },
+    {
+      "en": "survey experiment",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "synthetic control",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "topic model",
+      "fields": [
+        "social",
+        "humanities"
+      ]
+    },
+    {
+      "en": "treatment effect",
+      "fields": [
+        "social"
+      ]
+    },
+    {
+      "en": "word embedding",
+      "fields": [
+        "social",
+        "humanities"
+      ]
+    },
+    {
+      "en": "apocrypha",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "authorship attribution",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "canon law",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "Christology",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "codex",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "codicology",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "cognate",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "corpus linguistics",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "critical edition",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "cuneiform",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "decipherment",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "distant reading",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "epigraphy",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "epistemology",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "eschatology",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "exegesis",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "form criticism",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "Gnosticism",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "ground-penetrating radar",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "hadith",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "handwritten text recognition",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "hermeneutics",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "historical-critical method",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "Linear B",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "linguistic typology",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "Masoretic text",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "midrash",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "Mishnah",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "morphology",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "natural theology",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "ostracon",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "palaeography",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "palimpsest",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "papyrology",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "papyrus",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "patristic",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "Peshitta",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "philology",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "phonology",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "photogrammetry",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "proto-language",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "pseudepigrapha",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "recension",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "redaction criticism",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "Septuagint",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "soteriology",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "source criticism",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "stele",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "synoptic gospels",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "systematic theology",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "Targum",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "textual criticism",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "theodicy",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "variant reading",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "Vulgate",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "X-ray fluorescence",
+      "fields": [
+        "humanities"
+      ]
+    },
+    {
+      "en": "active learning",
+      "fields": []
+    },
+    {
+      "en": "attention mechanism",
+      "fields": []
+    },
+    {
+      "en": "Bayesian optimisation",
+      "fields": []
+    },
+    {
+      "en": "chain of thought",
+      "fields": []
+    },
+    {
+      "en": "convolutional neural network",
+      "fields": []
+    },
+    {
+      "en": "diffusion model",
+      "fields": []
+    },
+    {
+      "en": "embedding",
+      "fields": []
+    },
+    {
+      "en": "emulator",
+      "fields": []
+    },
+    {
+      "en": "fine-tuning",
+      "fields": []
+    },
+    {
+      "en": "foundation model",
+      "fields": []
+    },
+    {
+      "en": "generative model",
+      "fields": []
+    },
+    {
+      "en": "graph neural network",
+      "fields": []
+    },
+    {
+      "en": "high-performance computing",
+      "fields": []
+    },
+    {
+      "en": "knowledge graph",
+      "fields": []
+    },
+    {
+      "en": "latent space",
+      "fields": []
+    },
+    {
+      "en": "neural operator",
+      "fields": []
+    },
+    {
+      "en": "overfitting",
+      "fields": []
+    },
+    {
+      "en": "physics-informed neural network",
+      "fields": []
+    },
+    {
+      "en": "reinforcement learning",
+      "fields": []
+    },
+    {
+      "en": "retrieval-augmented generation",
+      "fields": []
+    },
+    {
+      "en": "self-supervised learning",
+      "fields": []
+    },
+    {
+      "en": "supervised learning",
+      "fields": []
+    },
+    {
+      "en": "surrogate model",
+      "fields": []
+    },
+    {
+      "en": "symbolic regression",
+      "fields": []
+    },
+    {
+      "en": "transformer",
+      "fields": []
+    },
+    {
+      "en": "unsupervised learning",
+      "fields": []
+    }
+  ]
+}

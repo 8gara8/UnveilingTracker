@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "id": "soc-2026-0145",
+  "field": "social",
+  "subfield": "politics-society",
+  "kind": "policy_people",
+  "title": {
+    "en": "SAMPLE: A research council plans to ask applicants about AI use",
+    "zh": "SAMPLE：研究委員會計畫詢問申請人使用 AI 的情形"
+  },
+  "depth": "story",
+  "explainer": {
+    "found": {
+      "en": "The Aldgate Research Council published a draft rule on AI in grant proposals. Applicants would have to say if AI tools helped write any part of a proposal. The draft asks for this statement in the proposal summary only. Comments are open until the end of the year.",
+      "zh": "Aldgate Research Council 公布了一份關於補助申請書使用 AI 的規則草案。依草案，申請人必須說明，AI 工具是否協助撰寫了申請書的任何部分。草案只要求在申請書摘要中提出這項說明。意見徵詢期開放到年底。"
+    },
+    "matters": {
+      "en": "Research councils decide who receives funding. A rule on AI use tells applicants what they must disclose, and it tells reviewers what they are reading. Other funders could copy a rule like this one, so its wording may matter far beyond one council.",
+      "zh": "研究委員會決定誰能獲得經費。關於 AI 使用的規定，會告訴申請人必須揭露什麼，也告訴審查人他們讀到的是什麼。其他資助機構可能仿效這樣的規定，所以它的措辭，影響所及可能遠遠超出一個委員會。"
+    },
+    "ai_helped": {
+      "en": "No AI system is named in the draft. The rule is about AI tools in general: it covers any tool that helped write a proposal. The council asks applicants to say what help they had, not which tool gave it.",
+      "zh": "草案沒有指名任何 AI 系統。這項規定談的是一般的 AI 工具：凡是協助撰寫申請書的工具，都包含在內。委員會要求申請人說明得到了什麼協助，而不是哪個工具提供的。"
+    },
+    "how_sure": {
+      "en": "Claimed. The Aldgate Research Council states the draft in its own announcement. It is a proposal, not yet a rule, and the council may change it after the comment period closes. No other source we read says how the council will act.",
+      "zh": "宣稱。Aldgate Research Council 在自己的公告中載明了這份草案。它只是提議，還不是正式規定，委員會可能在意見徵詢期結束後修改。我們讀過的其他來源，都沒有說明委員會會怎麼做。"
+    },
+    "background": {
+      "en": "Funding councils receive many proposals each year. Writers use many tools, from spell checkers to AI chatbots. A disclosure rule asks them to say what help they had.",
+      "zh": "補助委員會每年收到許多申請書。寫作者會用許多工具，從拼字檢查到 AI 聊天機器人都有。揭露規定要求他們說明得到了什麼協助。"
+    },
+    "could_lead": {
+      "en": "A final rule could set a pattern for other funders. It might also push applicants to hide their use of AI if the rule is unclear. Clear examples in the rule could prevent that.",
+      "zh": "最終規定可能成為其他資助機構的範本。如果規定不清楚，也可能讓申請人隱瞞自己使用 AI。規定中若有清楚的例子，就可能避免這種情況。"
+    }
+  },
+  "go_deeper": [
+    "s1"
+  ],
+  "ai": {
+    "role": "ai_tool",
+    "confidence": "confirmed",
+    "systems": [],
+    "evidence": [
+      {
+        "source_id": "s1",
+        "quote": "Applicants must say if AI tools helped write any part of a proposal",
+        "from_claimant": false
+      }
+    ]
+  },
+  "significance": "notable",
+  "rung": "claimed",
+  "rung_history": [
+    {
+      "rung": "claimed",
+      "date": "2026-10-08",
+      "recorded": "2026-10-09",
+      "source_id": "s1",
+      "by": "seed",
+      "note": null
+    }
+  ],
+  "since_then": [
+    {
+      "date": "2026-10-14",
+      "text": {
+        "en": "The council published its final rule. From 1 January, applicants must say if AI tools helped write any part of a proposal. The final rule covers every part of a proposal, not only the summary.",
+        "zh": "委員會公布了最終規定。從 1 月 1 日起，申請人必須說明 AI 工具是否協助撰寫了申請書的任何部分。最終規定涵蓋申請書的每個部分，不只是摘要。"
+      },
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "statement",
+      "title": "SAMPLE: Draft rule on AI use in grant proposals",
+      "publisher": "Aldgate Research Council",
+      "url": "https://www.aldgate-council-sample.gov/ut-sample/ai-disclosure-draft-rule",
+      "doi": null,
+      "published_at": "2026-10-08T09:00:00+08:00",
+      "seen_as": "seed",
+      "added": "2026-10-09"
+    },
+    {
+      "id": "s2",
+      "kind": "statement",
+      "title": "SAMPLE: Final rule on AI use in grant proposals",
+      "publisher": "Aldgate Research Council",
+      "url": "https://www.aldgate-council-sample.gov/ut-sample/ai-disclosure-final-rule",
+      "doi": null,
+      "published_at": "2026-10-13T10:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-14"
+    }
+  ],
+  "reactions": [],
+  "artefacts": {
+    "doi": [],
+    "arxiv": [],
+    "lean": [],
+    "trial": [],
+    "pdb": []
+  },
+  "figure": null,
+  "who": [
+    {
+      "name": "Aldgate Research Council (SAMPLE)",
+      "ror": null
+    }
+  ],
+  "terms": [],
+  "related": [],
+  "first_published": "2026-10-08",
+  "first_brief": "2026-10-14",
+  "briefs": [
+    "2026-10-14"
+  ],
+  "history": true,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-14"
+}
