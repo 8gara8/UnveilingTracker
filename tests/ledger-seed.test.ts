@@ -590,7 +590,7 @@ describe("a valid Ledger", () => {
       editions: [],
       urls: {
         "https://arxiv.org/abs/2901.99003": { first_cited: "2026-11-18", refs: ["phys-2018-0001", "bio-2019-0002"], sha256: hash("ledger-physics.html"), hashed_at: FETCHED_AT, last_check: null },
-        "https://cell.com/cell/abstract/ut-sample-ledger-0001": { first_cited: "2026-11-20", refs: ["bio-2019-0001"], sha256: hash("ledger-paper.html"), hashed_at: FETCHED_AT, last_check: null },
+        "https://journals.plos.org/plosone/article/ut-sample-ledger-0001": { first_cited: "2026-11-20", refs: ["bio-2019-0001"], sha256: hash("ledger-paper.html"), hashed_at: FETCHED_AT, last_check: null },
         "https://clinicaltrials.gov/study/NCT09990101": { first_cited: "2026-11-20", refs: ["bio-2019-0001"], sha256: hash("ledger-trial.html"), hashed_at: FETCHED_AT, last_check: null },
       },
     });
@@ -945,7 +945,7 @@ describe("a stored `removed` correction on a rerun (§4.10, §8.13)", () => {
     expect(probe.urls).not.toContain(REMOVED_TEXT.en);
     expect(probe.urls).not.toContain(TRIAL_URL);
     expect(readJson(w, "findings/bio-2019-0001.json").sources[1].url).toBe(REMOVED_TEXT.en);
-    expect(Object.keys(readJson(w, "archive-index.json").urls)).toEqual(["https://arxiv.org/abs/2901.99003", "https://cell.com/cell/abstract/ut-sample-ledger-0001"]);
+    expect(Object.keys(readJson(w, "archive-index.json").urls)).toEqual(["https://arxiv.org/abs/2901.99003", "https://journals.plos.org/plosone/article/ut-sample-ledger-0001"]);
   });
 
   it("X8 a rerun with a stored removal is byte-identical to the run before it", async () => {
@@ -1069,7 +1069,7 @@ describe("--verify and the pages", () => {
 
   it("P10 PRIMARY_ONLY's type check reads the types the snapshot found: a page typed as a news piece fails, the saved page's own type passes", async () => {
     const news = counting({
-      [PAPER_URL]: (r) => ({ ...r, body: Buffer.from(r.body!.toString("utf8").replace('content="Article"', 'content="News &amp; Views"')) }),
+      [PAPER_URL]: (r) => ({ ...r, body: Buffer.from(r.body!.toString("utf8").replace('content="Research Article"', 'content="News &amp; Views"')) }),
     });
     const w = world();
     const r = await seed(w, { fetch: news.fn });
@@ -1106,7 +1106,7 @@ describe("--verify and the pages", () => {
     expect(probe.urls).toContain(DOI_URL);
     expect(probe.urls).not.toContain(PAPER_URL);
     const snap = JSON.parse(fs.readFileSync(snapshotFile(w.root, DOI_URL), "utf8"));
-    expect(snap).toMatchObject({ url: DOI_URL, final_url: PAPER_URL, article_types: ["Article"] });
+    expect(snap).toMatchObject({ url: DOI_URL, final_url: PAPER_URL, article_types: ["Research Article"] });
     const urls = readJson(w, "archive-index.json").urls;
     expect(urls[normalizeUrl(DOI_URL)]).toMatchObject({ refs: ["bio-2019-0001"], sha256: snap.text_sha256, hashed_at: FETCHED_AT });
   });
@@ -1123,7 +1123,7 @@ describe("--verify and the pages", () => {
     const probe = landing(PAPER_URL);
     const news = (async (url: string, options?: FetchOptions) => {
       const real = await probe.fn(url, options);
-      return url === DOI_URL ? { ...real, body: Buffer.from(real.body!.toString("utf8").replace('content="Article"', 'content="News &amp; Views"')) } : real;
+      return url === DOI_URL ? { ...real, body: Buffer.from(real.body!.toString("utf8").replace('content="Research Article"', 'content="News &amp; Views"')) } : real;
     }) as typeof fetchFeed;
     const r = await seed(w, { fetch: news });
     expect(errorsOf(r.issues).map((i) => [i.code, i.path])).toEqual([["PRIMARY_ONLY", "seeds[1].sources[0].url"]]);
@@ -1182,7 +1182,7 @@ describe("--verify and the pages", () => {
     await seed(w, { outDir: null, now: () => Date.parse("2026-11-22T02:30:15Z") });
     const snap = JSON.parse(fs.readFileSync(snapshotFile(w.root, PAPER_URL), "utf8"));
     expect(snap.fetched_at).toBe("2026-11-22T10:30:15+08:00");
-    expect(snap.article_types).toEqual(["Article"]);
+    expect(snap.article_types).toEqual(["Research Article"]);
   });
 });
 

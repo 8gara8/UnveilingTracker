@@ -97,34 +97,60 @@ describe("the spec's Tests paragraph (§4.11)", () => {
     expect(passesFor(SMC, NO_TYPES)).toEqual(["reaction"]);
   });
 
-  it("a Nature d41586- URL passes the URL test for reaction only, and the type check only when typed News & Views", () => {
+  it("a Nature d41586- URL passes the URL test for reaction only, and the type check only when typed News And Views or Comment", () => {
     expect(kinds(NATURE_NV)).toEqual(["reaction"]);
-    expect(passesFor(NATURE_NV, evidence({ [NATURE_NV]: ["News & Views"] }))).toEqual(["reaction"]);
+    expect(passesFor(NATURE_NV, evidence({ [NATURE_NV]: ["News And Views"] }))).toEqual(["reaction"]);
     expect(passesFor(NATURE_NV, evidence({ [NATURE_NV]: ["news and views"] }))).toEqual(["reaction"]);
-    for (const type of ["News", "Editorial", "Career Feature", "Article", "Retraction Note"]) {
+    expect(passesFor(NATURE_NV, evidence({ [NATURE_NV]: ["Comment"] }))).toEqual(["reaction"]);
+    // Nature's dc.type spells it with "And" (K1b), so the ampersand form is not one of its types
+    expect(passesFor(NATURE_NV, evidence({ [NATURE_NV]: ["News & Views"] }))).toEqual([]);
+    for (const type of ["News", "Editorial", "Career Feature", "OriginalPaper", "Retraction Note"]) {
       expect(passesFor(NATURE_NV, evidence({ [NATURE_NV]: [type] })), type).toEqual([]);
     }
     expect(passesFor(NATURE_NV, NO_TYPES)).toEqual([]);
   });
 
-  it("a Science URL typed as research passes for paper only, as a retraction note for notice only, and as news for no kind", () => {
-    expect(kinds(SCIENCE)).toEqual(["paper", "reaction", "notice"]);
-    expect(passesFor(SCIENCE, evidence({ [SCIENCE]: ["Research Article"] }))).toEqual(["paper"]);
-    expect(passesFor(SCIENCE, evidence({ [SCIENCE]: ["Retraction"] }))).toEqual(["notice"]);
-    expect(passesFor(SCIENCE, evidence({ [SCIENCE]: ["Perspective"] }))).toEqual(["reaction"]);
-    expect(passesFor(SCIENCE, evidence({ [SCIENCE]: ["News"] }))).toEqual([]);
-    expect(passesFor(SCIENCE, NO_TYPES)).toEqual([]);
+  it("a Nature research URL typed as research passes for paper only, as a retraction note for notice only, and as news for no kind", () => {
     expect(passesFor(NATURE_PAPER, evidence({ [NATURE_PAPER]: ["Retraction Note"] }))).toEqual(["notice"]);
-    expect(passesFor(NATURE_PAPER, evidence({ [NATURE_PAPER]: ["Article"] }))).toEqual(["paper"]);
+    expect(passesFor(NATURE_PAPER, evidence({ [NATURE_PAPER]: ["OriginalPaper"] }))).toEqual(["paper"]);
+    expect(passesFor(NATURE_PAPER, evidence({ [NATURE_PAPER]: ["OriginalPaper"] }))).toEqual(["paper"]);
+    expect(passesFor(NATURE_PAPER, evidence({ [NATURE_PAPER]: ["News"] }))).toEqual([]);
+    expect(passesFor(NATURE_PAPER, NO_TYPES)).toEqual([]);
+  });
+
+  it("a Science, Cell Press or PNAS URL is judged by the URL test alone: paper and notice, whatever its page shows, and never reaction", () => {
+    // a plain GET reads none of these publishers' pages, so no type is read and no news item is told from research (K1b, §4.11)
+    const cell = "https://www.cell.com/cell/fulltext/S0092-8674(24)00123-4";
+    const pnas = "https://www.pnas.org/doi/10.1073/pnas.2400000121";
+    for (const url of [SCIENCE, cell, pnas]) {
+      expect(kinds(url), url).toEqual(["paper", "notice"]);
+      for (const ev of [null, NO_TYPES, evidence({ [url]: ["News"] }), evidence({ [url]: ["Research Article"] })]) expect(passesFor(url, ev), url).toEqual(["paper", "notice"]);
+      expect(typePlanFor(url, SEED), url).toEqual({ branch: "none" });
+      expect(typeFieldFor(url, SEED), url).toBeNull();
+      expect(articleTypeFits(url, "paper", null, SEED), url).toEqual({ status: "pass", branch: "none" });
+      expect(isPrimary(url, "reaction", SEED), url).toBe(false);
+    }
+    // the sciencemag.org hosts are Science's old ones, and /lookup/doi/ its resolver path
+    expect(kinds("https://www.sciencemag.org/lookup/doi/10.1126/science.adk1234")).toEqual(["paper", "notice"]);
+    expect(kinds("https://science.sciencemag.org/lookup/doi/10.1126/science.aaa1234")).toEqual(["paper", "notice"]);
+    // the old host's own /content/ pages are not listed
+    expect(primaryTest("https://science.sciencemag.org/content/1/2/3", SEED).refusal).toBe("unlisted");
+    expect(kinds("https://www.science.org/lookup/doi/10.1126/science.adk1234")).toEqual(["paper", "notice"]);
+    // its news and features stay refused by the path
+    expect(primaryTest(SCIENCE_NEWS, SEED)).toMatchObject({ refusal: "denied_path" });
   });
 
   it("a doi.org URL passes only through a landing that passes, an error landing included when its publisher's type_field is null", () => {
+    const scienceDoi = "https://doi.org/10.1126/science.adk1234";
+    // the GET ended on Science's page with an error: the landing is known, and Science shows no type to read
+    expect(passesFor(scienceDoi, evidence({}, { [scienceDoi]: SCIENCE }))).toEqual(["paper", "notice"]);
+    expect(passesFor(scienceDoi, NO_TYPES)).toEqual([]);
+    // Springer shows its type (dc.type), so the same error landing has none and fails
     const springerDoi = "https://doi.org/10.1007/s00222-024-01234-5";
-    // the GET ended on Springer's page with an error: the landing is known, the page gave no types
-    expect(passesFor(springerDoi, evidence({}, { [springerDoi]: SPRINGER }))).toEqual(["paper", "notice"]);
-    expect(passesFor(springerDoi, NO_TYPES)).toEqual([]);
+    expect(passesFor(springerDoi, evidence({}, { [springerDoi]: SPRINGER }))).toEqual([]);
+    expect(passesFor(springerDoi, evidence({ [SPRINGER]: ["OriginalPaper"] }, { [springerDoi]: SPRINGER }))).toEqual(["paper"]);
     const nvDoi = "https://doi.org/10.1038/d41586-024-01234-5";
-    expect(passesFor(nvDoi, evidence({ [nvDoi]: ["News & Views"] }, { [nvDoi]: NATURE_NV }))).toEqual(["reaction"]);
+    expect(passesFor(nvDoi, evidence({ [nvDoi]: ["News And Views"] }, { [nvDoi]: NATURE_NV }))).toEqual(["reaction"]);
     // an error landing on a publisher that shows its types has none to show
     expect(passesFor(nvDoi, evidence({}, { [nvDoi]: NATURE_NV }))).toEqual([]);
     const pressDoi = "https://doi.org/10.5555/a-story";
@@ -157,10 +183,16 @@ describe("the allowlist's examples", () => {
     [NATURE_NV, ["reaction"]],
     [NATURE_PAPER, ["paper", "notice"]],
     ["https://www.nature.com/articles/nature14539", ["paper", "notice"]],
-    [SCIENCE, ["paper", "reaction", "notice"]],
+    [SCIENCE, ["paper", "notice"]],
     [SCIENCE_NEWS, []],
-    ["https://www.cell.com/cell/fulltext/S0092-8674(24)00123-4", ["paper", "reaction", "notice"]],
-    ["https://www.pnas.org/doi/10.1073/pnas.2400000121", ["paper", "reaction", "notice"]],
+    ["https://www.cell.com/cell/fulltext/S0092-8674(24)00123-4", ["paper", "notice"]],
+    ["https://www.pnas.org/doi/10.1073/pnas.2400000121", ["paper", "notice"]],
+    ["https://linkinghub.elsevier.com/retrieve/pii/S0092867424001234", ["paper", "notice"]],
+    ["https://linkinghub.elsevier.com/", []],
+    ["https://www.scholarlypublishingcollective.org/jhu/article/x", ["paper", "notice"]],
+    ["https://www.nature.com/articles/nature.2016.19999", []],
+    ["https://doi.org/10.1038/nature.2016.19999", []],
+    ["https://doi.org/10.1038/nature14539", ["paper", "preprint", "dataset", "registry", "reaction", "notice"]],
     ["https://doi.org/10.1038/s41586-024-07487-w", ["paper", "preprint", "dataset", "registry", "reaction", "notice"]],
     ["https://doi.org/10.1038/d41586-024-00001-1", ["paper", "preprint", "dataset", "registry", "reaction", "notice"]],
     ["https://doi.org/10.1038/scientificamerican0924-30", []],
@@ -191,6 +223,20 @@ describe("the allowlist's examples", () => {
     ["https://www.eurekalert.org/multimedia/12345", []],
     ["https://www.cell.com/newsroom/x", ["statement"]],
     ["https://physics.aps.org/articles/v17/1", []],
+    ["https://link.aps.org/doi/10.1103/PhysRevLett.134.010001", ["paper", "notice"]],
+    ["https://link.aps.org/doi/10.1016/x", []],
+    ["https://www.biorxiv.org/content/10.64898/2026.01.01.123456v1", ["preprint"]],
+    ["https://www.medrxiv.org/content/10.64898/2026.01.01.123456v1", ["preprint"]],
+    ["https://github.com/teorth/erdosproblems", ["proof", "dataset", "checker"]],
+    ["https://docs.github.com/en/get-started", []],
+    ["https://discuss.huggingface.co/t/a-question/123", []],
+    ["https://huggingface.co/docs/transformers/index", []],
+    ["https://huggingface.co/blog/a-post", []],
+    ["https://huggingface.co/someone/a-model", ["dataset"]],
+    ["https://www.scimex.org/newsfeed/expert-reaction-to-an-ai-result", ["reaction"]],
+    ["https://www.sciencemediacentre.org/experts-react-to-an-ai-result/", ["reaction"]],
+    ["https://www.ntu.edu.tw/news/x", ["statement"]],
+    ["https://www.pku.edu.cn/news/x", ["statement"]],
     ["https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.010001", ["paper", "notice"]],
     ["https://elifesciences.org/articles/12345", ["paper", "notice"]],
     ["https://elifesciences.org/for-the-press/x", ["statement"]],
@@ -320,7 +366,11 @@ describe("decision 3: statement_suffixes in their three forms, for kind statemen
       "https://commission.europa.eu/x", "https://www.go.jp/x"]) {
       expect(kinds(url), url).toEqual(["statement"]);
     }
-    for (const url of ["https://www.ntu.edu.tw/x", "https://mit.edu.example.com/x", "https://example.com/news.mit.edu", "https://www.notgov/x"]) {
+    // Taiwan's, mainland China's, Hong Kong's, Singapore's and Australia's universities sit under their own .edu.<cc> forms (K1d)
+    for (const url of ["https://www.ntu.edu.tw/x", "https://www.pku.edu.cn/x", "https://www.hku.edu.hk/x", "https://www.nus.edu.sg/x", "https://www.unimelb.edu.au/x"]) {
+      expect(kinds(url), url).toEqual(["statement"]);
+    }
+    for (const url of ["https://mit.edu.example.com/x", "https://example.com/news.mit.edu", "https://www.notgov/x", "https://www.ntu.edu.tw.example.com/x"]) {
       expect(primaryTest(url, SEED), url).toEqual({ kinds: [], refusal: "unlisted", by: null });
     }
   });
@@ -550,7 +600,7 @@ describe("the deny lists", () => {
     });
     expect(primaryTest(SCIENCE_NEWS, config)).toEqual({ kinds: [], refusal: "denied_path", by: "/content/article/" });
     expect(kinds("https://www.science.org/content/page/about-us", config)).toEqual(["statement", "lab_post"]);
-    expect(kinds(SCIENCE, config)).toEqual(["paper", "statement", "reaction", "notice"]);
+    expect(kinds(SCIENCE, config)).toEqual(["paper", "statement", "notice"]);
   });
 
   it("deny_doi_prefixes fail a doi.org address for every kind, in any case, escape or resolver host", () => {
@@ -561,9 +611,12 @@ describe("the deny lists", () => {
       ["https://dx.doi.org/10.1021/cen-10201-cover", "10.1021/cen-"],
       ["https://doi.org//10.1063/pt.5.1234", "10.1063/pt."],
       ["https://doi.org/10.1063//pt.5.1234", "10.1063/pt."],
-      ["https://doi.org/10.1056/NEJM-JW.NA12345", "10.1056/nejm-jw."],
+      ["https://doi.org/10.1038/nature.2016.19411", "10.1038/nature.20"],
+      ["https://doi.org/10.1038/NATURE.2019.25551", "10.1038/nature.20"],
     ];
     for (const [url, prefix] of cases) expect(primaryTest(url, SEED), url).toEqual({ kinds: [], refusal: "denied_doi_prefix", by: prefix });
+    // NEJM Journal Watch has no DOI prefix of its own (K1b found none in Crossref), so a 10.1056/nejm-jw. DOI is no longer refused
+    expect(primaryTest("https://doi.org/10.1056/NEJM-JW.NA12345", SEED).refusal).toBeNull();
     // a denied prefix later in the DOI is no prefix
     expect(kinds("https://doi.org/10.5555/10.1021/cen-1")).toEqual(["paper", "preprint", "dataset", "registry", "reaction", "notice"]);
   });
@@ -575,9 +628,126 @@ describe("the deny lists", () => {
 
   it("Nature's News & Views prefix is never denied, and a DOI prefix is read on doi.org only", () => {
     expect(kinds("https://doi.org/10.1038/d41586-024-00001-1")).toContain("reaction");
+    // nature.20 is Nature's old news DOIs (nature.2015.NNNNN to nature.2019.NNNNN); a research DOI has no dot after "nature"
+    for (const doi of ["10.1038/nature14539", "10.1038/s41586-024-07487-w", "10.1038/nature"]) expect(kinds(`https://doi.org/${doi}`), doi).toContain("paper");
     // a page whose path happens to start with a denied DOI is judged by its own entry
     expect(kinds("https://journals.plos.org/10.1063/pt.5.1234")).toEqual(["paper", "notice"]);
     expect(kinds("https://journals.plos.org//10.1063/pt.5.1234")).toEqual(["paper", "notice"]);
+  });
+});
+
+describe("a registry's deny_hosts and deny_paths (K1b: documentation, forum and blog pages hold no records)", () => {
+  const REPO = "https://github.com/someone/a-dataset";
+  const HF_DATASET = "https://huggingface.co/datasets/someone/a-dataset";
+
+  it("a github.com repository page and a huggingface.co dataset page still pass for dataset", () => {
+    expect(isPrimary(REPO, "dataset", SEED)).toBe(true);
+    expect(isPrimary(HF_DATASET, "dataset", SEED)).toBe(true);
+    expect(kinds(REPO)).toEqual(["proof", "dataset"]);
+    expect(kinds(HF_DATASET)).toEqual(["dataset"]);
+    for (const url of ["https://huggingface.co/someone/a-model", "https://huggingface.co/spaces/someone/a-demo", "https://huggingface.co/", "https://github.com/someone"]) {
+      expect(kinds(url), url).toContain("dataset");
+    }
+  });
+
+  it("docs.github.com, discuss.huggingface.co and huggingface.co/docs fail for every kind, naming the host or prefix that refused them", () => {
+    const cases: [string, string][] = [
+      ["https://docs.github.com/en/get-started", "docs.github.com"],
+      ["https://docs.github.com/", "docs.github.com"],
+      ["https://discuss.huggingface.co/t/a-question/123", "discuss.huggingface.co"],
+      ["https://huggingface.co/docs/transformers/index", "/docs"],
+      ["https://huggingface.co/docs", "/docs"],
+      ["https://huggingface.co/blog/a-post", "/blog"],
+      ["https://huggingface.co/learn/nlp-course", "/learn"],
+      ["https://huggingface.co/posts/someone/123", "/posts"],
+      ["https://huggingface.co/papers/2401.00001", "/papers"],
+    ];
+    for (const [url, by] of cases) {
+      expect(primaryTest(url, SEED), url).toEqual({ kinds: [], refusal: "denied_registry", by });
+      for (const k of SOURCE_KINDS) expect(primaryProblem(url, k, SEED)?.code, `${url} ${k}`).toBe("denied_registry");
+      expect(candidateRefusal({ url, types: [] }, SEED), url).toBe("denied_registry");
+    }
+  });
+
+  it("is read in matchPath() form for a path, and for a host with its subdomains, its case and its trailing dot", () => {
+    for (const url of ["https://HUGGINGFACE.CO/DOCS/x", "https://huggingface.co/%64ocs/x", "https://huggingface.co//docs/x", "https://www.huggingface.co/docs/x",
+      "https://DISCUSS.huggingface.co./t/x", "https://more.discuss.huggingface.co/t/x", "https://docs.github.com./en/x", "https://x.docs.github.com/en/x"]) {
+      expect(primaryTest(url, SEED).refusal, url).toBe("denied_registry");
+    }
+    // a path entry is a plain string prefix, as every path entry is: /docs refuses /docs-archive too
+    expect(primaryTest("https://huggingface.co/docs-archive/x", SEED).refusal).toBe("denied_registry");
+    // a look-alike host is no subdomain of the denied one
+    expect(primaryTest("https://docs.github.com.example.com/x", SEED)).toEqual({ kinds: [], refusal: "unlisted", by: null });
+    expect(primaryTest("https://discuss.huggingface.co.example.com/x", SEED).refusal).toBe("unlisted");
+    // the query and the fragment are never read
+    expect(kinds("https://huggingface.co/datasets/a/b?next=/docs#/blog")).toEqual(["dataset"]);
+  });
+
+  it("refuses only on the hosts of the registry that lists it: another registry's host and a path with another meaning are untouched", () => {
+    // github.com has deny_hosts only, so a /docs path on it is a repository owner's page
+    expect(kinds("https://github.com/docs/a-repo")).toEqual(["proof", "dataset"]);
+    expect(kinds("https://github.com/blog/a-repo")).toEqual(["proof", "dataset"]);
+    // the deny lists of one entry never reach a host that entry does not list
+    expect(kinds("https://www.ebi.ac.uk/docs/x")).toEqual(["dataset", "registry"]);
+    expect(kinds("https://zenodo.org/records/1")).toEqual(["dataset"]);
+    expect(kinds("https://www.rcsb.org/docs/x")).toEqual([]);
+  });
+
+  it("is read after the press list, the deny paths and the DOI prefixes, and before every allowlist", () => {
+    // a lab, a checker or a statement entry that lists the same page does not bring it back
+    const config = variant({
+      tiers: (t) => t.statement_suffixes.push("github.com"),
+      labs: (l) => l.labs.push({ id: "gh-docs-lab", name: "A lab", hosts: ["docs.github.com"], paths: ["/"] }),
+      checkers: (c) => c.checkers.push({ id: "hf-docs-checker", name: "A checker", hosts: ["huggingface.co"], paths: ["/docs"], rungs: ["checked"] }),
+    });
+    expect(primaryTest("https://docs.github.com/en/x", config)).toEqual({ kinds: [], refusal: "denied_registry", by: "docs.github.com" });
+    expect(primaryTest("https://huggingface.co/docs/x", config)).toEqual({ kinds: [], refusal: "denied_registry", by: "/docs" });
+    expect(checkerRungsFor("https://huggingface.co/docs/x", config)).toBeNull();
+    // a page that is also a blocked host or a press host reports that refusal first
+    expect(primaryTest("https://gist.github.com/x", SEED).refusal).toBe("blocked_host");
+    const press = variant({ tiers: (t) => t.press_hosts.push("huggingface.co") });
+    expect(primaryTest("https://huggingface.co/docs/x", press)).toEqual({ kinds: [], refusal: "press_host", by: "huggingface.co" });
+  });
+
+  it("takes the first registry in file order that lists the host, its deny_hosts before its deny_paths, and a registry with no lists denies nothing", () => {
+    const config = variant({
+      tiers: (t) => {
+        t.registries.push(
+          { id: "second-github", name: "Another entry", hosts: ["github.com"], kinds: ["dataset"], paths: ["/"], deny_hosts: ["docs.github.com"], deny_paths: ["/features"] },
+        );
+        t.registries.find((r: any) => r.id === "github").deny_paths = ["/pricing"];
+      },
+    });
+    expect(primaryTest("https://docs.github.com/pricing", config)).toEqual({ kinds: [], refusal: "denied_registry", by: "docs.github.com" });
+    expect(primaryTest("https://github.com/pricing", config)).toEqual({ kinds: [], refusal: "denied_registry", by: "/pricing" });
+    expect(primaryTest("https://github.com/features/x", config)).toEqual({ kinds: [], refusal: "denied_registry", by: "/features" });
+    const none = variant({ tiers: (t) => { for (const r of t.registries) { r.deny_hosts = []; r.deny_paths = []; } } });
+    expect(kinds("https://docs.github.com/en/x", none)).toEqual(["proof", "dataset"]);
+    expect(kinds("https://huggingface.co/docs/x", none)).toEqual(["dataset"]);
+  });
+
+  it("says what is refused and what to cite, with no dash and no repeated address", () => {
+    expect(primaryProblem("https://docs.github.com/en/x", "dataset", SEED)).toEqual({
+      code: "denied_registry",
+      message: "Pages at docs.github.com hold no records: documentation, forum, blog and help pages are never sources. Cite the record's own page.",
+    });
+    expect(primaryProblem("https://huggingface.co/blog/x", "dataset", SEED)?.message).toBe(
+      "Pages at /blog hold no records: documentation, forum, blog and help pages are never sources. Cite the record's own page.",
+    );
+    for (const url of ["https://docs.github.com/en/x", "https://huggingface.co/papers/2401.00001"]) {
+      const message = primaryProblem(url, "dataset", SEED)?.message ?? "";
+      expect(message.includes(EM) || message.includes(EN)).toBe(false);
+      expect(message.includes(url)).toBe(false);
+    }
+  });
+
+  it("holds each deny entry of the seed to a page that the registry's own entry would otherwise list", () => {
+    // the refusal is no dead entry: without it, the sample page passes for the registry's kinds
+    const bare = variant({ tiers: (t) => { for (const r of t.registries) { r.deny_hosts = []; r.deny_paths = []; } } });
+    for (const r of SEED.sourceTiers.registries) {
+      for (const denied of r.deny_hosts) expect(kinds(`https://${denied}/x`, bare), `${r.id} ${denied}`).toEqual(expect.arrayContaining(r.kinds));
+      for (const denied of r.deny_paths) expect(kinds(`https://${r.hosts[0]}${denied}/x`, bare), `${r.id} ${denied}`).toEqual(expect.arrayContaining(r.kinds));
+    }
   });
 });
 
@@ -641,10 +811,11 @@ describe("the result of the URL test", () => {
     "https://doi.org/10.1038/s41586-024-07487-w", "https://doi.org/10.1038/scientificamerican0924-30", "https://gist.github.com/x",
     "http://www.nature.com/articles/s41586", "https://user@www.nature.com/articles/s41586", "https://www.nature.com:8443/articles/s41586",
     "https://www.eurekalert.org/multimedia/1", "https://scrollprize.substack.com/p/x", "https://www.fda.gov/x", "not a url",
+    "https://docs.github.com/en/x", "https://discuss.huggingface.co/t/x", "https://huggingface.co/docs/x", "https://huggingface.co/datasets/a/b",
   ];
 
   it("lists kinds in SOURCE_KINDS order, each once, and a refusal exactly when it lists none", () => {
-    const BY_REFUSALS = ["blocked_host", "press_host", "denied_path", "denied_doi_prefix"];
+    const BY_REFUSALS = ["blocked_host", "press_host", "denied_path", "denied_doi_prefix", "denied_registry"];
     for (const url of corpus) {
       const t: PrimaryTest = primaryTest(url, SEED);
       expect(t.kinds, url).toEqual(SOURCE_KINDS.filter((k) => t.kinds.includes(k)));
@@ -663,7 +834,7 @@ describe("the result of the URL test", () => {
   it("never changes its config or evidence, and gives the same answer every time", () => {
     const config = deepFreeze(variant());
     const doi = "https://doi.org/10.1038/d41586-024-01234-5";
-    const ev = deepFreeze(evidence({ [doi]: ["News & Views"], [PUBMED]: ["News"] }, { [doi]: NATURE_NV }));
+    const ev = deepFreeze(evidence({ [doi]: ["News And Views"], [PUBMED]: ["News"] }, { [doi]: NATURE_NV }));
     const run = () => corpus.concat(doi).flatMap((url) => [
       primaryTest(url, config), publishersFor(url, config).map((p) => p.id), checkerRungsFor(url, config), typePlanFor(url, config).branch,
       typeFieldFor(url, config), candidateRefusal({ url, types: ["News"] }, config),
@@ -702,6 +873,14 @@ describe("primaryProblem", () => {
     expect(primaryProblem(SCIENCE_NEWS, "paper", SEED)).toEqual({
       code: "denied_path", message: "Pages under /content/article/ on this site are news and features, not papers. Cite the paper's own page.",
     });
+    expect(primaryProblem("https://docs.github.com/en/get-started", "dataset", SEED)).toEqual({
+      code: "denied_registry",
+      message: "Pages at docs.github.com hold no records: documentation, forum, blog and help pages are never sources. Cite the record's own page.",
+    });
+    expect(primaryProblem("https://huggingface.co/docs/transformers", "dataset", SEED)).toEqual({
+      code: "denied_registry",
+      message: "Pages at /docs hold no records: documentation, forum, blog and help pages are never sources. Cite the record's own page.",
+    });
     expect(primaryProblem("https://doi.org/10.1021/cen-10201-cover", "paper", SEED)).toEqual({
       code: "denied_doi_prefix", message: "DOIs that start with 10.1021/cen- name a news publication's items, not papers. Cite the primary record.",
     });
@@ -719,7 +898,7 @@ describe("primaryProblem", () => {
       'This page can be cited as "paper" or "notice", not as "reaction". Give the source one of those kinds, or cite a page of kind "reaction".',
     );
     expect(primaryProblem(SCIENCE, "preprint", SEED)?.message).toBe(
-      'This page can be cited as "paper", "reaction" or "notice", not as "preprint". Give the source one of those kinds, or cite a page of kind "preprint".',
+      'This page can be cited as "paper" or "notice", not as "preprint". Give the source one of those kinds, or cite a page of kind "preprint".',
     );
   });
 
@@ -826,7 +1005,8 @@ describe("candidateRefusal (collect and ranking)", () => {
   it("from a feed that yields reactions, keeps a candidate that passes for reaction", () => {
     expect(candidateRefusal({ url: SMC, types: [], reaction: true }, SEED)).toBeNull();
     expect(candidateRefusal({ url: NATURE_NV, types: [], reaction: true }, SEED)).toBeNull();
-    expect(candidateRefusal({ url: SCIENCE, types: [], reaction: true }, SEED)).toBeNull();
+    // Science shows no type, so its pages are never reactions (K1b)
+    expect(candidateRefusal({ url: SCIENCE, types: [], reaction: true }, SEED)).toBe("wrong_kind");
     expect(candidateRefusal({ url: ARXIV, types: [], reaction: true }, SEED)).toBe("wrong_kind");
   });
 
@@ -856,23 +1036,27 @@ describe("typePlanFor and typeFieldFor (what the type check and the snapshot ste
     expect(plan(PMC_LEGACY)).toEqual({ branch: "record", ids: ["pmc-legacy"] });
     expect(plan(NATURE_PAPER)).toEqual({ branch: "publisher", ids: ["nature"] });
     expect(plan(NATURE_NV)).toEqual({ branch: "publisher", ids: ["nature"] });
-    expect(plan(SCIENCE)).toEqual({ branch: "publisher", ids: ["science"] });
-    expect(plan("https://www.cell.com/cell/fulltext/S0092-8674(24)00123-4")).toEqual({ branch: "publisher", ids: ["cell-press"] });
-    expect(plan("https://www.pnas.org/doi/10.1073/pnas.2400000121")).toEqual({ branch: "publisher", ids: ["pnas"] });
+    expect(plan(SPRINGER)).toEqual({ branch: "publisher", ids: ["springer"] });
+    expect(plan("https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0000001")).toEqual({ branch: "publisher", ids: ["plos"] });
+    // a publisher that shows no type (type_field null) has no type plan: its pages are judged by the URL test alone (K1b)
+    expect(plan(SCIENCE)).toEqual({ branch: "none" });
+    expect(plan("https://www.cell.com/cell/fulltext/S0092-8674(24)00123-4")).toEqual({ branch: "none" });
+    expect(plan("https://www.pnas.org/doi/10.1073/pnas.2400000121")).toEqual({ branch: "none" });
   });
 
   it("judges every other URL by the URL test alone", () => {
-    for (const url of [SPRINGER, ARXIV, SMC, TAO, QUANTA, SCIENCE_NEWS, "https://doi.org/", "https://doi.org/abc", "https://www.nature.com/news/x",
+    for (const url of [ARXIV, SMC, TAO, QUANTA, SCIENCE_NEWS, "https://doi.org/", "https://doi.org/abc", "https://www.nature.com/news/x",
       "https://pubmed.ncbi.nlm.nih.gov.example.com/1/", "https://www.ncbi.nlm.nih.gov/gene/1"]) {
       expect(plan(url), url).toEqual({ branch: "none" });
     }
   });
 
   it("names the type_field of the entry a final URL is on", () => {
-    expect(typeFieldFor(NATURE_PAPER, SEED)).toBe("citation_article_type");
-    expect(typeFieldFor(NATURE_NV, SEED)).toBe("citation_article_type");
-    expect(typeFieldFor(SCIENCE, SEED)).toBe("dc.type");
-    for (const url of [PUBMED, PMC, "https://doi.org/10.1038/x", SPRINGER, ARXIV]) expect(typeFieldFor(url, SEED), url).toBeNull();
+    expect(typeFieldFor(NATURE_PAPER, SEED)).toBe("dc.type");
+    expect(typeFieldFor(NATURE_NV, SEED)).toBe("dc.type");
+    expect(typeFieldFor(SPRINGER, SEED)).toBe("dc.type");
+    expect(typeFieldFor("https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0000001", SEED)).toBe("citation_article_type");
+    for (const url of [SCIENCE, PUBMED, PMC, "https://doi.org/10.1038/x", ARXIV]) expect(typeFieldFor(url, SEED), url).toBeNull();
     const config = variant({ tiers: (t) => { t.resolvers.find((r: any) => r.id === "pmc").type_field = ".publication-type"; } });
     expect(typeFieldFor(PMC, config)).toBe(".publication-type");
     expect(typeFieldFor(PUBMED, config)).toBeNull();
@@ -891,13 +1075,15 @@ describe("articleTypeFits", () => {
     expect(articleTypeFits(NATURE_PAPER, "paper", null, SEED)).toEqual({ status: "skipped", branch: "publisher" });
     expect(articleTypeFits(PUBMED, "paper", null, SEED)).toEqual({ status: "skipped", branch: "record" });
     expect(articleTypeFits("https://doi.org/10.1038/x", "paper", null, SEED)).toEqual({ status: "skipped", branch: "doi" });
-    for (const url of [ARXIV, SPRINGER, SMC, QUANTA]) expect(articleTypeFits(url, "paper", null, SEED), url).toEqual({ status: "pass", branch: "none" });
+    for (const url of [ARXIV, SMC, QUANTA]) expect(articleTypeFits(url, "paper", null, SEED), url).toEqual({ status: "pass", branch: "none" });
+    expect(articleTypeFits(SCIENCE, "paper", null, SEED)).toEqual({ status: "pass", branch: "none" });
+    expect(articleTypeFits(SPRINGER, "paper", null, SEED)).toEqual({ status: "skipped", branch: "publisher" });
   });
 
   it("on a typed publisher's page, passes when a type the evidence shows fits the kind, compared without case or padding", () => {
-    expect(articleTypeFits(NATURE_PAPER, "paper", evidence({ [NATURE_PAPER]: ["Article"] }), SEED)).toEqual({ status: "pass", branch: "publisher" });
-    expect(articleTypeFits(NATURE_NV, "reaction", evidence({ [NATURE_NV]: [" news  &  VIEWS "] }), SEED).status).toBe("pass");
-    expect(articleTypeFits(NATURE_PAPER, "paper", evidence({ [NATURE_PAPER]: ["News", "ARTICLE"] }), SEED).status).toBe("pass");
+    expect(articleTypeFits(NATURE_PAPER, "paper", evidence({ [NATURE_PAPER]: ["OriginalPaper"] }), SEED)).toEqual({ status: "pass", branch: "publisher" });
+    expect(articleTypeFits(NATURE_NV, "reaction", evidence({ [NATURE_NV]: [" news  AND  VIEWS "] }), SEED).status).toBe("pass");
+    expect(articleTypeFits(NATURE_PAPER, "paper", evidence({ [NATURE_PAPER]: ["News", "ORIGINALPAPER"] }), SEED).status).toBe("pass");
   });
 
   it("fails when the evidence shows no type, or none that fits, and says which kinds the types fit", () => {
@@ -905,13 +1091,13 @@ describe("articleTypeFits", () => {
       status: "fail", branch: "publisher", reason: "no_types", types: [], landing: null,
       message: "The run found no article type on this page, so it cannot be told from a news item. Cite another primary record of the work, such as its preprint or its PubMed record, or leave it out.",
     });
-    expect(articleTypeFits(NATURE_PAPER, "notice", evidence({ [NATURE_PAPER]: ["Article"] }), SEED)).toEqual({
-      status: "fail", branch: "publisher", reason: "type_no_fit", types: ["Article"], landing: null,
-      message: 'This page is typed "Article", which fits "paper", not "notice". Give the source that kind, or cite a page of the right type.',
+    expect(articleTypeFits(NATURE_PAPER, "notice", evidence({ [NATURE_PAPER]: ["OriginalPaper"] }), SEED)).toEqual({
+      status: "fail", branch: "publisher", reason: "type_no_fit", types: ["OriginalPaper"], landing: null,
+      message: 'This page is typed "OriginalPaper", which fits "paper", not "notice". Give the source that kind, or cite a page of the right type.',
     });
-    expect(articleTypeFits(NATURE_PAPER, "reaction", evidence({ [NATURE_PAPER]: ["Article", "Retraction Note"] }), SEED)).toMatchObject({
-      reason: "type_no_fit", types: ["Article", "Retraction Note"],
-      message: 'This page is typed "Article", "Retraction Note", which fits "paper" or "notice", not "reaction". Give the source one of those kinds, or cite a page of the right type.',
+    expect(articleTypeFits(NATURE_PAPER, "reaction", evidence({ [NATURE_PAPER]: ["OriginalPaper", "Retraction Note"] }), SEED)).toMatchObject({
+      reason: "type_no_fit", types: ["OriginalPaper", "Retraction Note"],
+      message: 'This page is typed "OriginalPaper", "Retraction Note", which fits "paper" or "notice", not "reaction". Give the source one of those kinds, or cite a page of the right type.',
     });
     expect(articleTypeFits(NATURE_PAPER, "paper", evidence({ [NATURE_PAPER]: ["News", "Editorial"] }), SEED)).toMatchObject({
       reason: "type_no_fit",
@@ -921,8 +1107,8 @@ describe("articleTypeFits", () => {
 
   it("reads the evidence under the URL's normalised form only", () => {
     const tagged = `${NATURE_NV}/?utm_source=feed#main`;
-    expect(articleTypeFits(tagged, "reaction", evidence({ [NATURE_NV]: ["News & Views"] }), SEED).status).toBe("pass");
-    const raw = Evidence.parse({ urls: [], fetched: [], texts: {}, seen_as: {}, types: { [NATURE_NV]: ["News & Views"] }, resolved: {} });
+    expect(articleTypeFits(tagged, "reaction", evidence({ [NATURE_NV]: ["News And Views"] }), SEED).status).toBe("pass");
+    const raw = Evidence.parse({ urls: [], fetched: [], texts: {}, seen_as: {}, types: { [NATURE_NV]: ["News And Views"] }, resolved: {} });
     expect(articleTypeFits(NATURE_NV, "reaction", raw, SEED)).toMatchObject({ status: "fail", reason: "no_types" });
   });
 
@@ -934,9 +1120,9 @@ describe("articleTypeFits", () => {
       }),
     });
     expect(articleTypeFits(NATURE_NV, "reaction", evidence({ [NATURE_NV]: ["Comment"] }), config)).toEqual({ status: "pass", branch: "publisher" });
-    expect(articleTypeFits(NATURE_NV, "reaction", evidence({ [NATURE_NV]: ["News & Views"] }), config).status).toBe("pass");
-    expect(typeFieldFor(NATURE_NV, config)).toBe("citation_article_type");
-    expect(typeFieldFor("https://www.nature.com/articles/s41586", config)).toBe("citation_article_type");
+    expect(articleTypeFits(NATURE_NV, "reaction", evidence({ [NATURE_NV]: ["News And Views"] }), config).status).toBe("pass");
+    expect(typeFieldFor(NATURE_NV, config)).toBe("dc.type");
+    expect(typeFieldFor("https://www.nature.com/articles/s41586", config)).toBe("dc.type");
   });
 
   it("on a PubMed or PMC record, passes only when the evidence shows types and none is refused", () => {
@@ -958,20 +1144,20 @@ describe("articleTypeFits", () => {
     const DOI = "https://doi.org/10.1038/d41586-024-01234-5";
 
     it("fails when the evidence lacks its landing", () => {
-      expect(articleTypeFits(DOI, "reaction", evidence({ [DOI]: ["News & Views"] }), SEED)).toEqual({
+      expect(articleTypeFits(DOI, "reaction", evidence({ [DOI]: ["News And Views"] }), SEED)).toEqual({
         status: "fail", branch: "doi", reason: "no_landing", types: [], landing: null,
         message: "The run has not seen where this DOI lands, so the type of its page is unknown. Cite the paper's own page after opening it, or leave it out.",
       });
     });
 
     it("reads its landing under the DOI's normalised form", () => {
-      expect(articleTypeFits(`${DOI}/?utm_source=feed`, "reaction", evidence({ [DOI]: ["News & Views"] }, { [DOI]: NATURE_NV }), SEED).status).toBe("pass");
+      expect(articleTypeFits(`${DOI}/?utm_source=feed`, "reaction", evidence({ [DOI]: ["News And Views"] }, { [DOI]: NATURE_NV }), SEED).status).toBe("pass");
     });
 
     it("passes on the types under the DOI's key or under its landing's", () => {
-      expect(articleTypeFits(DOI, "reaction", evidence({ [DOI]: ["News & Views"] }, { [DOI]: NATURE_NV }), SEED)).toEqual({ status: "pass", branch: "doi" });
-      expect(articleTypeFits(DOI, "reaction", evidence({ [NATURE_NV]: ["News & Views"] }, { [DOI]: NATURE_NV }), SEED).status).toBe("pass");
-      expect(articleTypeFits("https://dx.doi.org/10.1038/d41586-024-01234-5", "reaction", evidence({ [NATURE_NV]: ["News & Views"] },
+      expect(articleTypeFits(DOI, "reaction", evidence({ [DOI]: ["News And Views"] }, { [DOI]: NATURE_NV }), SEED)).toEqual({ status: "pass", branch: "doi" });
+      expect(articleTypeFits(DOI, "reaction", evidence({ [NATURE_NV]: ["News And Views"] }, { [DOI]: NATURE_NV }), SEED).status).toBe("pass");
+      expect(articleTypeFits("https://dx.doi.org/10.1038/d41586-024-01234-5", "reaction", evidence({ [NATURE_NV]: ["News And Views"] },
         { "https://dx.doi.org/10.1038/d41586-024-01234-5": NATURE_NV }), SEED).status).toBe("pass");
     });
 
@@ -985,11 +1171,11 @@ describe("articleTypeFits", () => {
 
     it("fails when the landing fails the URL test for the kind", () => {
       const paperDoi = "https://doi.org/10.1038/s41586-024-07487-w";
-      expect(articleTypeFits(paperDoi, "reaction", evidence({ [paperDoi]: ["Article"] }, { [paperDoi]: NATURE_PAPER }), SEED)).toEqual({
+      expect(articleTypeFits(paperDoi, "reaction", evidence({ [paperDoi]: ["OriginalPaper"] }, { [paperDoi]: NATURE_PAPER }), SEED)).toEqual({
         status: "fail", branch: "doi", reason: "landing_not_primary", types: [], landing: NATURE_PAPER,
         message: 'This DOI lands on a page that is not a primary source for kind "reaction". This page can be cited as "paper" or "notice", not as "reaction". Give the source one of those kinds, or cite a page of kind "reaction".',
       });
-      expect(articleTypeFits(paperDoi, "paper", evidence({ [paperDoi]: ["Article"] }, { [paperDoi]: NATURE_PAPER }), SEED).status).toBe("pass");
+      expect(articleTypeFits(paperDoi, "paper", evidence({ [paperDoi]: ["OriginalPaper"] }, { [paperDoi]: NATURE_PAPER }), SEED).status).toBe("pass");
       for (const landing of [QUANTA, "https://idp.nature.com/authorize?client_id=x", "http://www.nature.com/articles/s41586-024-07487-w", "https://gist.github.com/x"]) {
         expect(articleTypeFits(paperDoi, "paper", evidence({}, { [paperDoi]: landing }), SEED), landing).toMatchObject({ reason: "landing_not_primary", landing });
       }
@@ -1013,7 +1199,7 @@ describe("articleTypeFits", () => {
 
   it("holds no em or en dash in any message", () => {
     const DOI = "https://doi.org/10.1038/d41586-024-01234-5";
-    const evs = [NO_TYPES, evidence({ [NATURE_PAPER]: ["News"], [PUBMED]: ["News"], [DOI]: ["Article"] }, { [DOI]: QUANTA })];
+    const evs = [NO_TYPES, evidence({ [NATURE_PAPER]: ["News"], [PUBMED]: ["News"], [DOI]: ["OriginalPaper"] }, { [DOI]: QUANTA })];
     for (const ev of evs) {
       for (const url of [NATURE_PAPER, PUBMED, DOI]) {
         for (const k of SOURCE_KINDS) {

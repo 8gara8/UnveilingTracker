@@ -79,7 +79,7 @@ function evidenceJson(): Json {
     urls, fetched: [],
     texts: Object.fromEntries(urls.map((u) => [key(u), `Page text of ${u}.`])),
     seen_as: Object.fromEntries(urls.map((u) => [key(u), "pack"])),
-    types: { [key(NATURE)]: ["Article"] },
+    types: { [key(NATURE)]: ["OriginalPaper"] },
     resolved: {},
   };
 }
@@ -699,12 +699,12 @@ describe("PRIMARY_ONLY's type check in draft mode", () => {
 
   it("passes a typed publisher's page whose type fits the kind, and fails one with no type or the wrong one", () => {
     expect(draftOf("PRIMARY_ONLY")).toEqual([]);
-    expect(typed("paper", "https://www.nature.com/articles/s41586-026-00005-5", ["Letter"])).toEqual([]);
+    expect(typed("paper", "https://www.nature.com/articles/s41586-026-00005-5", ["BriefCommunication"])).toEqual([]);
     const none = typed("paper", "https://www.nature.com/articles/s41586-026-00005-5");
     expect(where(none)).toEqual(["error new_findings[0].sources[1].url"]);
     expect(none[0]!.message).toBe('s2 (kind "paper"): The run found no article type on this page, so it cannot be told from a news item. Cite another primary record of the work, such as its preprint or its PubMed record, or leave it out.');
-    const wrong = typed("paper", "https://www.nature.com/articles/s41586-026-00005-5", ["News & Views"]);
-    expect(wrong[0]!.message).toContain('This page is typed "News & Views", which fits "reaction", not "paper".');
+    const wrong = typed("paper", "https://www.nature.com/articles/s41586-026-00005-5", ["News And Views"]);
+    expect(wrong[0]!.message).toContain('This page is typed "News And Views", which fits "reaction", not "paper".');
     const news = typed("paper", "https://www.nature.com/articles/s41586-026-00005-5", ["News"]);
     expect(news[0]!.message).toContain("which is no primary kind");
   });
@@ -721,19 +721,19 @@ describe("PRIMARY_ONLY's type check in draft mode", () => {
 
   it("reads the evidence's types by normalised address, and the kind of the source", () => {
     const url = "https://www.nature.com/articles/s41586-026-00005-5";
-    expect(typed("paper", url, undefined, undefined, (_d, ev) => { ev.types[key(`${url}/?utm_source=x#top`)] = ["Article"]; })).toEqual([]);
+    expect(typed("paper", url, undefined, undefined, (_d, ev) => { ev.types[key(`${url}/?utm_source=x#top`)] = ["OriginalPaper"]; })).toEqual([]);
     const retraction = ["Retraction Note"];
     expect(typed("notice", url, retraction)).toEqual([]);
     expect(typed("paper", url, retraction)[0]!.message).toContain('which fits "notice", not "paper"');
-    expect(typed("paper", url, ["article"])).toEqual([]);
+    expect(typed("paper", url, ["originalpaper"])).toEqual([]);
   });
 
   it("passes a doi.org address only through a landing that passes, and says where a failing landing is", () => {
     const landing = "https://www.nature.com/articles/s41586-026-00003-3";
-    expect(typed("paper", DOI, undefined, landing, (_d, ev) => { see(ev, landing, ["Article"]); })).toEqual([]);
+    expect(typed("paper", DOI, undefined, landing, (_d, ev) => { see(ev, landing, ["OriginalPaper"]); })).toEqual([]);
     const lost = typed("paper", DOI);
     expect(lost[0]!.message).toBe('s2 (kind "paper"): The run has not seen where this DOI lands, so the type of its page is unknown. Cite the paper\'s own page after opening it, or leave it out.');
-    const wrongType = typed("paper", DOI, undefined, landing, (_d, ev) => { see(ev, landing, ["News & Views"]); });
+    const wrongType = typed("paper", DOI, undefined, landing, (_d, ev) => { see(ev, landing, ["News And Views"]); });
     expect(wrongType[0]!.message).toContain("This DOI lands on a page that fails the type check.");
     expect(wrongType[0]!.message.endsWith(` It lands on ${landing}.`)).toBe(true);
     const doiLanding = typed("paper", DOI, undefined, "https://doi.org/10.1038/other");
@@ -1574,13 +1574,13 @@ describe("a correction's source_url in draft mode: PRIMARY_ONLY", () => {
       draftOf("PRIMARY_ONLY", (d, ev) => { d.corrections[0].source_url = url; see(ev, url, types, landing); edit(d, ev); });
 
     it("passes a typed publisher's page whose type fits, and fails one with no type or a type no kind it passes for takes", () => {
-      expect(typed(LETTER, ["Letter"])).toEqual([]);
+      expect(typed(LETTER, ["BriefCommunication"])).toEqual([]);
       const none = typed(LETTER);
       expect(where(none)).toEqual([`error ${CORRECTION}`]);
       expect(none[0]!.message).toBe(
         `${CORRECTION_LABEL}: The run found no article type on this page, so it cannot be told from a news item. Cite another primary record of the work, such as its preprint or its PubMed record, or leave it out.`);
       expect(none[0]!.hint).toContain("allowlist in your context");
-      expect(typed(LETTER, ["News & Views"])[0]!.message).toContain('This page is typed "News & Views", which fits "reaction", not "paper".');
+      expect(typed(LETTER, ["News And Views"])[0]!.message).toContain('This page is typed "News And Views", which fits "reaction", not "paper".');
       expect(typed(LETTER, ["News"])[0]!.message).toContain("which is no primary kind");
     });
 
@@ -1590,10 +1590,10 @@ describe("a correction's source_url in draft mode: PRIMARY_ONLY", () => {
 
     it("passes a doi.org address only through a landing that passes, and says where a failing landing is", () => {
       const landing = "https://www.nature.com/articles/s41586-026-00003-3";
-      expect(typed(DOI, undefined, landing, (_d, ev) => { see(ev, landing, ["Article"]); })).toEqual([]);
+      expect(typed(DOI, undefined, landing, (_d, ev) => { see(ev, landing, ["OriginalPaper"]); })).toEqual([]);
       expect(typed(DOI)[0]!.message).toBe(
         `${CORRECTION_LABEL}: The run has not seen where this DOI lands, so the type of its page is unknown. Cite the paper's own page after opening it, or leave it out.`);
-      const wrong = typed(DOI, undefined, landing, (_d, ev) => { see(ev, landing, ["News & Views"]); });
+      const wrong = typed(DOI, undefined, landing, (_d, ev) => { see(ev, landing, ["News And Views"]); });
       expect(wrong[0]!.message).toContain("This DOI lands on a page that fails the type check.");
       expect(wrong[0]!.message.endsWith(` It lands on ${landing}.`)).toBe(true);
     });

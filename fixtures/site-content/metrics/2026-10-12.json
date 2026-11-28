@@ -5,9 +5,9 @@
   "data_cutoff": "2026-10-04",
   "versions": {
     "ai_terms": 1,
-    "journals": 1,
+    "journals": 2,
     "fields": 1,
-    "counters": 1
+    "counters": 2
   },
   "status": "ok",
   "pace": {
@@ -661,11 +661,11 @@
   "counters": [
     {
       "id": "erdos_ai",
-      "kind": "api",
+      "kind": "manual",
       "value": 53,
       "as_of": "2026-10-12",
       "breakdown": [],
-      "source_url": "https://www.erdosproblems.com/",
+      "source_url": "https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems",
       "status": "ok"
     },
     {
@@ -674,7 +674,7 @@
       "value": 109200,
       "as_of": "2026-10-12",
       "breakdown": [],
-      "source_url": "https://leanprover-community.github.io/mathlib_stats.html",
+      "source_url": "https://mathlib.org/mathlib_stats.html",
       "status": "ok"
     },
     {
@@ -745,7 +745,7 @@
       "value": null,
       "as_of": null,
       "breakdown": [],
-      "source_url": "https://www.wycliffe.net/resources/statistics/",
+      "source_url": "https://wycliffe.net/global-scripture-access/",
       "status": "missing"
     },
     {

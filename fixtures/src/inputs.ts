@@ -343,7 +343,7 @@ export const DECOYS: Readonly<Record<EditionName, readonly Decoy[]>> = {
       url: "https://www.nature.com/articles/s41586-026-ut-sample-0041", feed: "journal-nature", kind: "paper",
       title: "SAMPLE: Glacier retreat mapped with a deep learning model",
       text: decoyText("A deep learning model mapped the edges of mountain glaciers in satellite images.", "People checked the maps against field surveys."),
-      doi: "10.1038/s41586-026-ut-sample-0041", published_at: "2026-10-17T23:00:00+08:00", journal: "Nature", topic: "earth", types: ["Article"],
+      doi: "10.1038/s41586-026-ut-sample-0041", published_at: "2026-10-17T23:00:00+08:00", journal: "Nature", topic: "earth", types: ["OriginalPaper"],
     },
     {
       url: "https://www.sciencemediacentre.org/expert-reaction-to-ut-sample-glacier-retreat-maps/", feed: "smc-reactions", kind: "reaction",

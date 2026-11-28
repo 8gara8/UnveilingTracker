@@ -180,15 +180,15 @@ describe("the evidence feeds the type check (§4.11)", () => {
   const typed = (types: string[], extra: Partial<Snapshot> = {}) => buildEvidence({ snapshots: [snap(NATURE, "page text", { article_types: types, ...extra })] });
 
   it("X1 a publisher's page whose snapshot found a fitting type passes, one whose type is a news type fails, and none found fails", () => {
-    expect(articleTypeFits(NATURE, "paper", typed(["Article"]), config)).toMatchObject({ status: "pass", branch: "publisher" });
-    expect(articleTypeFits(NATURE, "paper", typed(["News & Views"]), config)).toMatchObject({ status: "fail", branch: "publisher", reason: "type_no_fit" });
+    expect(articleTypeFits(NATURE, "paper", typed(["OriginalPaper"]), config)).toMatchObject({ status: "pass", branch: "publisher" });
+    expect(articleTypeFits(NATURE, "paper", typed(["News And Views"]), config)).toMatchObject({ status: "fail", branch: "publisher", reason: "type_no_fit" });
     expect(articleTypeFits(NATURE, "paper", typed([]), config)).toMatchObject({ status: "fail", branch: "publisher", reason: "no_types" });
     expect(articleTypeFits(NATURE, "paper", null, config)).toMatchObject({ status: "skipped" });
     expect(primaryProblem(NATURE, "paper", config)).toBeNull();
   });
 
   it("X2 a doi.org URL is judged through the landing the evidence holds: a snapshot's final URL, or the step's `resolved`", () => {
-    const viaSnapshot = buildEvidence({ snapshots: [snap(NATURE_DOI, "page", { final_url: NATURE, article_types: ["Article"] })] });
+    const viaSnapshot = buildEvidence({ snapshots: [snap(NATURE_DOI, "page", { final_url: NATURE, article_types: ["OriginalPaper"] })] });
     // The type check reads the landing's types under the landing's own key: the snapshot above is under the DOI, so the types
     // the DOI's GET found are looked up under the DOI and its landing both.
     expect(articleTypeFits(NATURE_DOI, "paper", viaSnapshot, config)).toMatchObject({ status: "pass", branch: "doi" });

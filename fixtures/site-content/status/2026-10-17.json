@@ -223,7 +223,7 @@
           "note": null
         },
         {
-          "id": "journal-pnas",
+          "id": "journal-cell",
           "status": "ok",
           "newest": "2026-10-16T23:38:00+08:00",
           "checked_at": "2026-10-17T03:15:40+08:00",
@@ -232,7 +232,7 @@
           "note": null
         },
         {
-          "id": "eurekalert",
+          "id": "journal-pnas",
           "status": "ok",
           "newest": "2026-10-16T20:45:00+08:00",
           "checked_at": "2026-10-17T03:15:40+08:00",
@@ -241,7 +241,7 @@
           "note": null
         },
         {
-          "id": "lab-deepmind",
+          "id": "journal-prl",
           "status": "ok",
           "newest": "2026-10-16T21:52:00+08:00",
           "checked_at": "2026-10-17T03:15:40+08:00",
@@ -250,7 +250,7 @@
           "note": null
         },
         {
-          "id": "smc-reactions",
+          "id": "journal-annals-of-mathematics",
           "status": "ok",
           "newest": "2026-10-16T22:59:00+08:00",
           "checked_at": "2026-10-17T03:15:40+08:00",
@@ -259,7 +259,7 @@
           "note": null
         },
         {
-          "id": "openalex",
+          "id": "journal-nature-physics",
           "status": "ok",
           "newest": "2026-10-16T23:06:00+08:00",
           "checked_at": "2026-10-17T03:15:40+08:00",
@@ -268,7 +268,7 @@
           "note": null
         },
         {
-          "id": "crossref-updates",
+          "id": "journal-nature-chemistry",
           "status": "ok",
           "newest": "2026-10-16T20:13:00+08:00",
           "checked_at": "2026-10-17T03:15:40+08:00",
@@ -277,7 +277,7 @@
           "note": null
         },
         {
-          "id": "retraction-watch",
+          "id": "journal-nature-materials",
           "status": "ok",
           "newest": "2026-10-16T21:20:00+08:00",
           "checked_at": "2026-10-17T03:15:40+08:00",
@@ -286,7 +286,7 @@
           "note": null
         },
         {
-          "id": "ctgov",
+          "id": "journal-nature-medicine",
           "status": "ok",
           "newest": "2026-10-16T22:27:00+08:00",
           "checked_at": "2026-10-17T03:15:40+08:00",
@@ -295,7 +295,7 @@
           "note": null
         },
         {
-          "id": "rcsb",
+          "id": "journal-nejm",
           "status": "ok",
           "newest": "2026-10-16T23:34:00+08:00",
           "checked_at": "2026-10-17T03:15:40+08:00",
@@ -304,7 +304,7 @@
           "note": null
         },
         {
-          "id": "mathlib-stats",
+          "id": "journal-lancet",
           "status": "ok",
           "newest": "2026-10-16T20:41:00+08:00",
           "checked_at": "2026-10-17T03:15:40+08:00",
@@ -313,7 +313,7 @@
           "note": null
         },
         {
-          "id": "erdos",
+          "id": "journal-nature-biotechnology",
           "status": "ok",
           "newest": "2026-10-16T21:48:00+08:00",
           "checked_at": "2026-10-17T03:15:40+08:00",
@@ -322,7 +322,7 @@
           "note": null
         },
         {
-          "id": "scrollprize",
+          "id": "journal-nature-geoscience",
           "status": "ok",
           "newest": "2026-10-16T22:55:00+08:00",
           "checked_at": "2026-10-17T03:15:40+08:00",
@@ -331,12 +331,327 @@
           "note": null
         },
         {
-          "id": "naer-terms",
+          "id": "journal-nature-climate-change",
           "status": "ok",
           "newest": "2026-10-16T23:02:00+08:00",
           "checked_at": "2026-10-17T03:15:40+08:00",
           "stale_since": null,
           "records": 6,
+          "note": null
+        },
+        {
+          "id": "journal-aer",
+          "status": "ok",
+          "newest": "2026-10-16T20:09:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 11,
+          "note": null
+        },
+        {
+          "id": "journal-apsr",
+          "status": "ok",
+          "newest": "2026-10-16T21:16:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 2,
+          "note": null
+        },
+        {
+          "id": "journal-nature-human-behaviour",
+          "status": "ok",
+          "newest": "2026-10-16T22:23:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 7,
+          "note": null
+        },
+        {
+          "id": "journal-inventiones",
+          "status": "ok",
+          "newest": "2026-10-16T23:30:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 12,
+          "note": null
+        },
+        {
+          "id": "journal-jams",
+          "status": "ok",
+          "newest": "2026-10-16T20:37:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 3,
+          "note": null
+        },
+        {
+          "id": "journal-grl",
+          "status": "ok",
+          "newest": "2026-10-16T21:44:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 8,
+          "note": null
+        },
+        {
+          "id": "journal-jgr-atmospheres",
+          "status": "ok",
+          "newest": "2026-10-16T22:51:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 13,
+          "note": null
+        },
+        {
+          "id": "journal-language",
+          "status": "ok",
+          "newest": "2026-10-16T23:58:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 4,
+          "note": null
+        },
+        {
+          "id": "journal-antiquity",
+          "status": "ok",
+          "newest": "2026-10-16T20:05:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 9,
+          "note": null
+        },
+        {
+          "id": "journal-classical-quarterly",
+          "status": "ok",
+          "newest": "2026-10-16T21:12:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 14,
+          "note": null
+        },
+        {
+          "id": "journal-hts",
+          "status": "ok",
+          "newest": "2026-10-16T22:19:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 5,
+          "note": null
+        },
+        {
+          "id": "eurekalert",
+          "status": "ok",
+          "newest": "2026-10-16T23:26:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 10,
+          "note": null
+        },
+        {
+          "id": "lab-deepmind",
+          "status": "ok",
+          "newest": "2026-10-16T20:33:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 1,
+          "note": null
+        },
+        {
+          "id": "lab-openai",
+          "status": "ok",
+          "newest": "2026-10-16T21:40:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 6,
+          "note": null
+        },
+        {
+          "id": "lab-anthropic",
+          "status": "ok",
+          "newest": "2026-10-16T22:47:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 11,
+          "note": null
+        },
+        {
+          "id": "lab-meta-fair",
+          "status": "ok",
+          "newest": "2026-10-16T23:54:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 2,
+          "note": null
+        },
+        {
+          "id": "lab-microsoft-ai-for-science",
+          "status": "ok",
+          "newest": "2026-10-16T20:01:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 7,
+          "note": null
+        },
+        {
+          "id": "lab-futurehouse",
+          "status": "ok",
+          "newest": "2026-10-16T21:08:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 12,
+          "note": null
+        },
+        {
+          "id": "lab-periodic-labs",
+          "status": "ok",
+          "newest": "2026-10-16T22:15:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 3,
+          "note": null
+        },
+        {
+          "id": "lab-isomorphic-labs",
+          "status": "ok",
+          "newest": "2026-10-16T23:22:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 8,
+          "note": null
+        },
+        {
+          "id": "lab-lila-sciences",
+          "status": "ok",
+          "newest": "2026-10-16T20:29:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 13,
+          "note": null
+        },
+        {
+          "id": "lab-sakana-ai",
+          "status": "ok",
+          "newest": "2026-10-16T21:36:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 4,
+          "note": null
+        },
+        {
+          "id": "lab-arc-institute",
+          "status": "ok",
+          "newest": "2026-10-16T22:43:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 9,
+          "note": null
+        },
+        {
+          "id": "lab-allen-institute-for-ai",
+          "status": "ok",
+          "newest": "2026-10-16T23:50:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 14,
+          "note": null
+        },
+        {
+          "id": "smc-reactions",
+          "status": "ok",
+          "newest": "2026-10-16T20:57:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 5,
+          "note": null
+        },
+        {
+          "id": "openalex",
+          "status": "ok",
+          "newest": "2026-10-16T21:04:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 10,
+          "note": null
+        },
+        {
+          "id": "crossref-updates",
+          "status": "ok",
+          "newest": "2026-10-16T22:11:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 1,
+          "note": null
+        },
+        {
+          "id": "retraction-watch",
+          "status": "ok",
+          "newest": "2026-10-16T23:18:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 6,
+          "note": null
+        },
+        {
+          "id": "ctgov",
+          "status": "ok",
+          "newest": "2026-10-16T20:25:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 11,
+          "note": null
+        },
+        {
+          "id": "rcsb",
+          "status": "ok",
+          "newest": "2026-10-16T21:32:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 2,
+          "note": null
+        },
+        {
+          "id": "rcsb-unreleased",
+          "status": "ok",
+          "newest": "2026-10-16T22:39:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 7,
+          "note": null
+        },
+        {
+          "id": "mathlib-stats",
+          "status": "ok",
+          "newest": "2026-10-16T23:46:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 12,
+          "note": null
+        },
+        {
+          "id": "erdos",
+          "status": "ok",
+          "newest": "2026-10-16T20:53:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 3,
+          "note": null
+        },
+        {
+          "id": "scrollprize",
+          "status": "ok",
+          "newest": "2026-10-16T21:00:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 8,
+          "note": null
+        },
+        {
+          "id": "naer-terms",
+          "status": "ok",
+          "newest": "2026-10-16T22:07:00+08:00",
+          "checked_at": "2026-10-17T03:15:40+08:00",
+          "stale_since": null,
+          "records": 13,
           "note": null
         }
       ],

@@ -16,6 +16,19 @@
       ]
     },
     {
+      "id": "erdosproblems-data",
+      "name": "Erdős Problems data repository",
+      "hosts": [
+        "github.com"
+      ],
+      "paths": [
+        "/teorth/erdosproblems"
+      ],
+      "rungs": [
+        "checked"
+      ]
+    },
+    {
       "id": "lean-mathlib-repo",
       "name": "Lean mathlib repository",
       "hosts": [
@@ -32,7 +45,8 @@
       "id": "lean-mathlib-docs",
       "name": "Lean mathlib documentation",
       "hosts": [
-        "leanprover-community.github.io"
+        "leanprover-community.github.io",
+        "mathlib.org"
       ],
       "paths": [
         "/mathlib4_docs/",
@@ -92,7 +106,7 @@
         "www.abelprize.no"
       ],
       "paths": [
-        "/"
+        "/abel-prize-laureates/20"
       ],
       "rungs": [
         "checked"
@@ -120,7 +134,7 @@
         "kavliprize.org"
       ],
       "paths": [
-        "/"
+        "/laureates"
       ],
       "rungs": [
         "checked"

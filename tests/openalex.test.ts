@@ -624,7 +624,7 @@ describe("a fetched answer", () => {
     const body = JSON.stringify(groupBody({ [FIELD(26)]: 77 }));
     const whole = JSON.stringify({ schema_version: 1, url, fetched_at: "2026-11-28T09:00:00+08:00", sha256: sha256(body), body });
     const stray = {
-      "notes.txt": whole, [`leading_total.2026-11-28.${hash}.json.tmp-1`]: whole, [`leading_total.2026-11-28.${hash.toUpperCase()}.json`]: whole,
+      "notes.txt": whole, [`leading_total.2026-11-28.${hash}.json.tmp-1`]: whole,
       [`leading_total.2026-11-28.${"0".repeat(10)}.json`]: whole, [`leading_ai.2026-11-28.${hash}.json`]: whole, [`leading_total.28-11-2026.${hash}.json`]: whole,
       [`all_total.2026-11-28.${hash}.json`]: whole,
     };
@@ -635,6 +635,20 @@ describe("a fetched answer", () => {
     expect(answer.counts.mathematics).toBe(10);
     for (const [name, text] of Object.entries(stray)) expect(fs.readFileSync(path.join(dir, name), "utf8")).toBe(text);
     expect(fs.readdirSync(dir)).toHaveLength(Object.keys(stray).length + 1);
+  });
+
+  it("C9b: a file whose hash part is upper case is not an answer's, though its lower-case twin is the answer's name (read only: a case-insensitive disk would write the answer over it)", () => {
+    const url = urlOf(MONDAY, "leading_total");
+    const hash = sha256(url).slice(0, 10);
+    const dir = path.join(rig.cache, MONDAY);
+    fs.mkdirSync(dir, { recursive: true });
+    const body = JSON.stringify(groupBody({ [FIELD(26)]: 77 }));
+    const whole = JSON.stringify({ schema_version: 1, url, fetched_at: "2026-11-28T09:00:00+08:00", sha256: sha256(body), body });
+    const name = path.join(dir, `leading_total.2026-11-28.${hash.toUpperCase()}.json`);
+    fs.writeFileSync(name, whole);
+    const ref = { request: "leading_total" as const, week_start: MONDAY, url };
+    expect(readCachedAnswer(rig.cache, QUERY.fields, ref)).toBeNull();
+    expect(fs.readFileSync(name, "utf8")).toBe(whole);
   });
 
   it("C10: readCachedAnswer gives the newest answer, or the one whose body has the SHA-256 a manifest names, and null when there is none", async () => {

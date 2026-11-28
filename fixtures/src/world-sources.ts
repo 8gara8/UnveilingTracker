@@ -46,7 +46,7 @@ export const SOURCE_TABLE = {
     kind: "paper", publisher: "Nature",
     title: "SAMPLE: Reading a sealed Herculaneum scroll with machine learning",
     doi: "10.1038/nature-ut-sample-0001", published_at: "2026-10-13T23:00:00+08:00",
-    seen: "pack", feed: "journal-nature", types: ["Article"],
+    seen: "pack", feed: "journal-nature", types: ["OriginalPaper"],
     text: page(
       "Hundreds of papyrus scrolls from the library at Herculaneum were charred by the eruption of Mount Vesuvius in AD 79 and cannot be unrolled.",
       "We scanned one sealed scroll with X-rays and flattened its layers in software.",
@@ -64,7 +64,7 @@ export const SOURCE_TABLE = {
     kind: "reaction", publisher: "Nature",
     title: "SAMPLE: News and Views: A scroll gives up its text",
     doi: null, published_at: "2026-10-13T23:00:00+08:00",
-    seen: "fetched", types: ["News & Views"],
+    seen: "fetched", types: ["News And Views"],
     text: page(
       "By Mira Placeholder (SAMPLE), Ravenhurst University.",
       "This is the first time a sealed scroll has given up a whole passage of connected prose.",
@@ -202,7 +202,7 @@ export const SOURCE_TABLE = {
     kind: "notice", publisher: "Example Press",
     title: "SAMPLE: Retraction Note: A study of alloy coatings",
     doi: "10.1007/ut-sample-0005", published_at: "2026-10-13T16:00:00+08:00",
-    seen: "pack", feed: "crossref-updates",
+    seen: "pack", feed: "crossref-updates", types: ["Retraction Note"],
     text: page(
       "Retraction Note.",
       "The publisher has retracted this article because its text and images were produced with an undisclosed AI tool.",
@@ -213,7 +213,7 @@ export const SOURCE_TABLE = {
     kind: "notice", publisher: "Example Press",
     title: "SAMPLE: Retraction Note: Wear tests of a new steel",
     doi: "10.1007/ut-sample-0006", published_at: "2026-10-13T16:05:00+08:00",
-    seen: "pack", feed: "crossref-updates",
+    seen: "pack", feed: "crossref-updates", types: ["Retraction Note"],
     text: page(
       "Retraction Note.",
       "The publisher has retracted this article because its text and images were produced with an undisclosed AI tool.",
@@ -350,7 +350,7 @@ export const SOURCE_TABLE = {
     kind: "paper", publisher: "Eastvale Journal of Materials",
     title: "SAMPLE: A robotic lab finds a cheap metal mixture that splits water",
     doi: "10.1007/ut-sample-0008", published_at: "2026-10-05T16:00:00+08:00",
-    seen: "pack", feed: "crossref-journals",
+    seen: "pack", feed: "crossref-journals", types: ["OriginalPaper"],
     text: page(
       "Eastvale University robotics lab (SAMPLE).",
       "A robotic lab tested 200 mixtures of common metals in six weeks.",
@@ -439,7 +439,7 @@ export const SOURCE_TABLE = {
     kind: "notice", publisher: "Sample Review",
     title: "SAMPLE: Editorial note on the use of an AI chatbot in review",
     doi: "10.1007/ut-sample-0021", published_at: "2026-10-08T17:30:00+08:00",
-    seen: "search",
+    seen: "search", types: ["Expression of Concern"],
     text: page(
       "Editorial note.",
       "The reviews of 31 manuscripts were written with an AI chatbot after reviewers pasted in the unpublished text.",
@@ -490,7 +490,7 @@ export const SOURCE_TABLE = {
     kind: "paper", publisher: "Sample Physics Letters",
     title: "SAMPLE: A robot lab reports a new magnetic material",
     doi: "10.1007/ut-sample-0016", published_at: "2026-09-21T23:00:00+08:00",
-    seen: "pack", feed: "crossref-journals",
+    seen: "pack", feed: "crossref-journals", types: ["OriginalPaper"],
     text: page(
       "Hartwell Materials Lab (SAMPLE).",
       "A robot lab, run by the AI planner Cobalt Planner, found a new magnetic material that keeps its strength up to 400 degrees.",
@@ -504,7 +504,7 @@ export const SOURCE_TABLE = {
     kind: "notice", publisher: "Sample Physics Letters",
     title: "SAMPLE: Retraction: A robot lab reports a new magnetic material",
     doi: "10.1007/ut-sample-0017", published_at: "2026-10-08",
-    seen: "fetched",
+    seen: "fetched", types: ["Retraction Note"],
     text: page(
       "Retraction.",
       "The authors found errors in the raw data and the paper is retracted.",
@@ -544,7 +544,7 @@ export const SOURCE_TABLE = {
     kind: "paper", publisher: "Fusion Science Reports",
     title: "SAMPLE: An AI controller holds a plasma steady in a test machine",
     doi: "10.1007/ut-sample-0020", published_at: "2026-10-11T18:00:00+08:00",
-    seen: "pack", feed: "crossref-journals",
+    seen: "pack", feed: "crossref-journals", types: ["OriginalPaper"],
     text: page(
       "Fernhill Fusion Group (SAMPLE).",
       "An AI controller, the Fernhill Controller, held a plasma steady in a test machine for 90 seconds, three times longer than the standard controller.",

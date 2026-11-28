@@ -28,7 +28,7 @@ import { FIELDS, type FieldId } from "@/lib/vocab";
 const root = path.join(__dirname, "..");
 const SEED = loadConfig(path.join(root, "config"));
 const SETTINGS: MetricsSettings = { window_weeks: 13, provisional_weeks: 8, min_cases: 30, min_ratio: 1.25, hold_after_days: 182 };
-const VERSIONS: ConfigVersions = { ai_terms: 1, journals: 1, fields: 1, counters: 1 };
+const VERSIONS: ConfigVersions = { ai_terms: 1, journals: 2, fields: 1, counters: 2 };
 const read = (file: string): unknown => JSON.parse(fs.readFileSync(path.join(root, file), "utf8"));
 /** A pattern that matches exactly this message, nothing before it and nothing after. */
 const exact = (message: string): RegExp => new RegExp(`^${message.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`);
@@ -192,9 +192,9 @@ describe("the version check refuses to mix versions (SPEC §5.4)", () => {
   });
 
   it("is refused by applyWeeks and by computeMetrics, for a state that was built with other versions", () => {
-    const options = { cutoff: "2026-10-11", updated: "2026-10-15", versions: { ai_terms: 1, journals: 1, fields: 2 }, settings: SETTINGS };
+    const options = { cutoff: "2026-10-11", updated: "2026-10-15", versions: { ai_terms: 1, journals: 2, fields: 2 }, settings: SETTINGS };
     expect(() => applyWeeks(FIXTURE_STATE, [], options)).toThrow(/pace-weekly\.json was built with fields v1; config has v2/);
-    const input = (weekly: MetricsInput["weekly"]): MetricsInput => ({ ...baseInput(), weekly, versions: { ai_terms: 1, journals: 1, fields: 2, counters: 1 } });
+    const input = (weekly: MetricsInput["weekly"]): MetricsInput => ({ ...baseInput(), weekly, versions: { ai_terms: 1, journals: 2, fields: 2, counters: 2 } });
     expect(() => computeMetrics(input({ kind: "current", state: FIXTURE_STATE, requests: [] }))).toThrow(MetricsError);
     expect(() => computeMetrics(input({ kind: "reused", state: FIXTURE_STATE }))).toThrow(/fields v1; config has v2/);
     expect(() => computeMetrics({ ...input({ kind: "none" }), versions: VERSIONS })).not.toThrow();
@@ -436,7 +436,7 @@ describe("applyWeeks: fetched weeks join the state (SPEC §5.4)", () => {
     expect(PaceWeeklyFile.safeParse(next).success).toBe(true);
     expect(next.weeks).toHaveLength(FIXTURE_STATE.weeks.length);
     expect(next.updated).toBe("2026-10-15");
-    expect(next.versions).toEqual({ ai_terms: 1, journals: 1, fields: 1 });
+    expect(next.versions).toEqual({ ai_terms: 1, journals: 2, fields: 1 });
     const fetched = new Set(mondays("2026-08-10", "2026-10-05"));
     next.weeks.forEach((w, i) => {
       const was = FIXTURE_STATE.weeks[i]!;
@@ -821,8 +821,8 @@ describe("computeMetrics: the counters of the file", () => {
     const by = (id: string) => r.metrics.counters.find((c) => c.id === id)!;
     expect(by("mathlib_theorems")).toMatchObject({ value: 100, as_of: "2026-10-12", status: "ok" });
     expect(by("ai_drugs")).toMatchObject({ value: 20, as_of: "2026-10-12", status: "stale" });
-    expect(by("erdos_ai").status).toBe("missing");
-    expect(by("full_bibles").status).toBe("missing");
+    expect(by("erdos_ai").status).toBe("ok");
+    expect(by("full_bibles").status).toBe("ok");
     expect(by("ancient_texts_ai").status).toBe("missing");
     expect(r.manifest.counters.find((c) => c.id === "mathlib_theorems")).toEqual({ id: "mathlib_theorems", requests: [REQ], value: 100 });
     expect(r.log.some((l) => l.includes("ai_drugs"))).toBe(true);

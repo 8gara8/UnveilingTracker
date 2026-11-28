@@ -1894,12 +1894,13 @@
         "name": "Science (AAAS)",
         "hosts": [
           "www.science.org",
-          "science.org"
+          "science.org",
+          "www.sciencemag.org",
+          "science.sciencemag.org"
         ],
         "kinds": [
           "paper",
-          "notice",
-          "reaction"
+          "notice"
         ]
       },
       {
@@ -1911,8 +1912,7 @@
         ],
         "kinds": [
           "paper",
-          "notice",
-          "reaction"
+          "notice"
         ]
       },
       {
@@ -1924,15 +1924,15 @@
         ],
         "kinds": [
           "paper",
-          "notice",
-          "reaction"
+          "notice"
         ]
       },
       {
         "id": "aps",
         "name": "American Physical Society journals",
         "hosts": [
-          "journals.aps.org"
+          "journals.aps.org",
+          "link.aps.org"
         ],
         "kinds": [
           "paper",
@@ -1974,6 +1974,17 @@
         ]
       },
       {
+        "id": "elsevier-linkinghub",
+        "name": "Elsevier article links (Cell Press, ScienceDirect, The Lancet)",
+        "hosts": [
+          "linkinghub.elsevier.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
         "id": "wiley",
         "name": "Wiley Online Library",
         "hosts": [
@@ -1989,7 +2000,8 @@
         "name": "American Mathematical Society",
         "hosts": [
           "www.ams.org",
-          "ams.org"
+          "ams.org",
+          "pubs.ams.org"
         ],
         "kinds": [
           "paper",
@@ -2059,7 +2071,8 @@
         "name": "American Economic Association journals",
         "hosts": [
           "www.aeaweb.org",
-          "aeaweb.org"
+          "aeaweb.org",
+          "pubs.aeaweb.org"
         ],
         "kinds": [
           "paper",
@@ -2070,7 +2083,8 @@
         "id": "project-euclid",
         "name": "Project Euclid",
         "hosts": [
-          "projecteuclid.org"
+          "projecteuclid.org",
+          "link.intlpress.com"
         ],
         "kinds": [
           "paper",
@@ -2166,6 +2180,17 @@
         "hosts": [
           "www.jstor.org",
           "jstor.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "scholarly-publishing-collective",
+        "name": "Scholarly Publishing Collective (university presses' journals)",
+        "hosts": [
+          "scholarlypublishingcollective.org"
         ],
         "kinds": [
           "paper",
@@ -2377,6 +2402,17 @@
         ]
       },
       {
+        "id": "scimex",
+        "name": "Scimex (Australian Science Media Centre) expert reactions",
+        "hosts": [
+          "www.scimex.org",
+          "scimex.org"
+        ],
+        "kinds": [
+          "reaction"
+        ]
+      },
+      {
         "id": "terence-tao",
         "name": "Terence Tao's blog",
         "hosts": [
@@ -2529,6 +2565,16 @@
         ]
       },
       {
+        "id": "erdosproblems-data",
+        "name": "Erdős Problems data repository",
+        "hosts": [
+          "github.com"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
         "id": "lean-mathlib-repo",
         "name": "Lean mathlib repository",
         "hosts": [
@@ -2542,7 +2588,8 @@
         "id": "lean-mathlib-docs",
         "name": "Lean mathlib documentation",
         "hosts": [
-          "leanprover-community.github.io"
+          "leanprover-community.github.io",
+          "mathlib.org"
         ],
         "kinds": [
           "checker"
@@ -2725,6 +2772,11 @@
           ".ac.at",
           ".ac.th",
           ".ac.id",
+          ".edu.tw",
+          ".edu.cn",
+          ".edu.hk",
+          ".edu.sg",
+          ".edu.au",
           ".gov.uk",
           ".gov.au",
           ".gov.tw",

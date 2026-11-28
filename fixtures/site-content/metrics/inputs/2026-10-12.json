@@ -5,17 +5,17 @@
   "data_cutoff": "2026-10-04",
   "versions": {
     "ai_terms": 1,
-    "journals": 1,
+    "journals": 2,
     "fields": 1,
-    "counters": 1
+    "counters": 2
   },
   "openalex": [
     {
       "request": "leading_total",
       "week_start": "2026-08-03",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-03,to_publication_date:2026-08-09,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-03,to_publication_date:2026-08-09,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:16:42+08:00",
-      "sha256": "e16487f8ee714a2318a52a6abaa02f20f8a347153d14571eba3911a195ebf346",
+      "sha256": "b6fffd43babf03b91bfa3a6cdfc48217b806c91917e3d292d364b7a2a2f427f9",
       "counts": {
         "mathematics": 60,
         "physics": 280,
@@ -31,9 +31,9 @@
     {
       "request": "leading_ai",
       "week_start": "2026-08-03",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-03,to_publication_date:2026-08-09,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-03,to_publication_date:2026-08-09,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:16:43+08:00",
-      "sha256": "dccd56f4b4af9ad20a1ec72ac7cd39ffed936e2cb13e1beeb5bbb71392147420",
+      "sha256": "cb0fe7d4f544e79d22546e638c8292f4ca8e488e9619ab544b5ba3ae0fa63b17",
       "counts": {
         "mathematics": 3,
         "physics": 19,
@@ -85,9 +85,9 @@
     {
       "request": "leading_total",
       "week_start": "2026-08-10",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-10,to_publication_date:2026-08-16,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-10,to_publication_date:2026-08-16,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:16:46+08:00",
-      "sha256": "74d0073ed62d3f37d52f923c5c2c94c97b49a9086a4a89fcf560904cb03a77c8",
+      "sha256": "d1697e7af982f44319dcdf6ba861cdcfd5f2268333d02d52c2c121159a261713",
       "counts": {
         "mathematics": 62,
         "physics": 246,
@@ -103,9 +103,9 @@
     {
       "request": "leading_ai",
       "week_start": "2026-08-10",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-10,to_publication_date:2026-08-16,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-10,to_publication_date:2026-08-16,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:16:47+08:00",
-      "sha256": "7102343455f50f0462ca76f14919a1c7a5be6ddb296b094a1df03112c2d36654",
+      "sha256": "0f0533a34337e26475f516745e76de9dc50296aaeb487872467b5bb621a19e7b",
       "counts": {
         "mathematics": 2,
         "physics": 16,
@@ -157,9 +157,9 @@
     {
       "request": "leading_total",
       "week_start": "2026-08-17",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-17,to_publication_date:2026-08-23,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-17,to_publication_date:2026-08-23,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:16:50+08:00",
-      "sha256": "94e43590c74116785e49485603cc303e30cf3fe36e8665aacd0a01c2acfcd4e4",
+      "sha256": "5c3d65f61f63335ada5aa85667ff714638d251b47df691411dc680f6c63d9a4b",
       "counts": {
         "mathematics": 60,
         "physics": 240,
@@ -175,9 +175,9 @@
     {
       "request": "leading_ai",
       "week_start": "2026-08-17",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-17,to_publication_date:2026-08-23,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-17,to_publication_date:2026-08-23,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:16:51+08:00",
-      "sha256": "4e1781b10e03d05196f96c6b4017f1641d55b361301eca534c3c3826d2eb5efc",
+      "sha256": "42092fbc31c43e611075e638a5f2f59488d2fd5bcd8e10242d7cfca310134f82",
       "counts": {
         "mathematics": 3,
         "physics": 16,
@@ -229,9 +229,9 @@
     {
       "request": "leading_total",
       "week_start": "2026-08-24",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-24,to_publication_date:2026-08-30,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-24,to_publication_date:2026-08-30,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:16:54+08:00",
-      "sha256": "2cac32bca09051251d670d3572327ce8d5d27403e81bda035fa5af0821474e1c",
+      "sha256": "d3e62f569de851b87d05ca1e4dfc4505d336e0c170c8a4cab0cd978c57236b14",
       "counts": {
         "mathematics": 59,
         "physics": 234,
@@ -247,9 +247,9 @@
     {
       "request": "leading_ai",
       "week_start": "2026-08-24",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-24,to_publication_date:2026-08-30,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-24,to_publication_date:2026-08-30,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:16:55+08:00",
-      "sha256": "d0f902171c0a6c27dccc766e64f0d5e7b4b04b94672be68fc1059d21e227b6a9",
+      "sha256": "9a1fbcd264624a53b64a3e8b0fb495be819200cdb085fe403c51d45f0ebac917",
       "counts": {
         "mathematics": 3,
         "physics": 16,
@@ -301,9 +301,9 @@
     {
       "request": "leading_total",
       "week_start": "2026-08-31",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-31,to_publication_date:2026-09-06,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-31,to_publication_date:2026-09-06,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:16:58+08:00",
-      "sha256": "f7a9dd76891327040e77ffa27cf8639c472643f6d7a8a6b5205988534a4a47f5",
+      "sha256": "06480de14591b5e441298a1bf4cf35359a6dac7e91ec5e6e2a59691b3826dc02",
       "counts": {
         "mathematics": 58,
         "physics": 229,
@@ -319,9 +319,9 @@
     {
       "request": "leading_ai",
       "week_start": "2026-08-31",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-31,to_publication_date:2026-09-06,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-08-31,to_publication_date:2026-09-06,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:16:59+08:00",
-      "sha256": "9d6d26378c453f6317c5934f85290ee779541fbe15c305a3e746ee1e6e58aa16",
+      "sha256": "be9c8b56472a35cac2a17b1e7e892d89a76e462285d0147bbb4863cba02e0774",
       "counts": {
         "mathematics": 2,
         "physics": 15,
@@ -373,9 +373,9 @@
     {
       "request": "leading_total",
       "week_start": "2026-09-07",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-07,to_publication_date:2026-09-13,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-07,to_publication_date:2026-09-13,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:17:02+08:00",
-      "sha256": "95070a8e89b7c9c4d5b3090495711025ea33b2187838b0fe06ca1a3dc17391c7",
+      "sha256": "e56d7e0a1972cbe20d1d177cfc040bbc77c2350cebc7e7074aab296841dc694c",
       "counts": {
         "mathematics": 56,
         "physics": 222,
@@ -391,9 +391,9 @@
     {
       "request": "leading_ai",
       "week_start": "2026-09-07",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-07,to_publication_date:2026-09-13,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-07,to_publication_date:2026-09-13,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:17:03+08:00",
-      "sha256": "f32a733c31bd69583c5008ba1b83c58181647e48f937a7dc0d73eb78cc793fae",
+      "sha256": "b2df0305e995e8eae49c68cf1283c075981b03e3b4afb2b1e6d66724ec72af98",
       "counts": {
         "mathematics": 3,
         "physics": 15,
@@ -445,9 +445,9 @@
     {
       "request": "leading_total",
       "week_start": "2026-09-14",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-14,to_publication_date:2026-09-20,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-14,to_publication_date:2026-09-20,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:17:06+08:00",
-      "sha256": "ce7117d61b86379900e0112b3f1d17d886d3e012688218271edba2c066208090",
+      "sha256": "660ceff76e3c53ca1e689159aa328f59000e2e104837e91c198de6d1a799e605",
       "counts": {
         "mathematics": 55,
         "physics": 217,
@@ -463,9 +463,9 @@
     {
       "request": "leading_ai",
       "week_start": "2026-09-14",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-14,to_publication_date:2026-09-20,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-14,to_publication_date:2026-09-20,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:17:07+08:00",
-      "sha256": "816d5e508fec9a2efb9fd77229b56d9a33a2ef8b60db31fd394d24664e611e08",
+      "sha256": "5bcbda636ef6ef94d5a1d7f84d14f827e5243a8d8460ff0e8837f023f00c8a2b",
       "counts": {
         "mathematics": 2,
         "physics": 15,
@@ -517,9 +517,9 @@
     {
       "request": "leading_total",
       "week_start": "2026-09-21",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-21,to_publication_date:2026-09-27,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-21,to_publication_date:2026-09-27,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:17:10+08:00",
-      "sha256": "eed2680344a0094a2a60104bf7d86e22eba9c607a69e76781a56bf2404dd1962",
+      "sha256": "20bbcb48f72bbefc14fb89140166b214dad6a79a24b805584ab24533e6d062e0",
       "counts": {
         "mathematics": 53,
         "physics": 248,
@@ -535,9 +535,9 @@
     {
       "request": "leading_ai",
       "week_start": "2026-09-21",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-21,to_publication_date:2026-09-27,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-21,to_publication_date:2026-09-27,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:17:11+08:00",
-      "sha256": "c5f18ab371c36c202fa1c77ead814ad67b35ae33f6c314ae66eb923d07944d28",
+      "sha256": "2c1bbefba5b73ebab522e878cd1ad4fdc3098d8d1698e58f743793acc196f709",
       "counts": {
         "mathematics": 3,
         "physics": 17,
@@ -589,9 +589,9 @@
     {
       "request": "leading_total",
       "week_start": "2026-09-28",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-28,to_publication_date:2026-10-04,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-28,to_publication_date:2026-10-04,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:17:14+08:00",
-      "sha256": "e67f09e948f375c4a0dc7d8b99d79672cf35a8e0a8c30841f6fe3d296b14305d",
+      "sha256": "a9516f8d3798672b6abae4dda6d69aa655d559d0805623fc7af9f3a03c46c0db",
       "counts": {
         "mathematics": 61,
         "physics": 243,
@@ -607,9 +607,9 @@
     {
       "request": "leading_ai",
       "week_start": "2026-09-28",
-      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-28,to_publication_date:2026-10-04,type:article,has_abstract:true,primary_location.source.id:S137773608|S3880285|S110447773|S125754415|S24807848|S9999999901|S9999999902|S9999999903|S9999999904|S9999999905|S203256638|S62468778|S49861241|S9999999906|S9999999907|S9999999908|S23254222|S176007004|S9999999910|S9999999911|S9999999912,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
+      "url": "https://api.openalex.org/works?filter=from_publication_date:2026-09-28,to_publication_date:2026-10-04,type:article,has_abstract:true,primary_location.source.id:S3880285|S125754415|S24807848|S45918994|S111155417|S62468778|S176007004|S130224168|S207178839|S13479253|S36624081|S176347361|S173880072|S4210173305|S55827047|S52609742,title_and_abstract.search:%22machine%20learning%22%20OR%20%22deep%20learning%22%20OR%20%22neural%20network%22%20OR%20%22artificial%20intelligence%22%20OR%20%22large%20language%20model%22%20OR%20%22language%20model%22%20OR%20%22transformer%20model%22%20OR%20%22reinforcement%20learning%22%20OR%20%22generative%20model%22%20OR%20%22diffusion%20model%22%20OR%20%22graph%20neural%20network%22%20OR%20%22foundation%20model%22%20OR%20%22AlphaFold%22%20OR%20%22convolutional%20neural%22%20OR%20%22random%20forest%22%20OR%20%22support%20vector%20machine%22%20OR%20%22Bayesian%20optimization%22%20OR%20%22active%20learning%22%20OR%20%22autonomous%20laboratory%22%20OR%20%22self-driving%20laboratory%22&group_by=primary_topic.field.id",
       "fetched_at": "2026-10-12T03:17:15+08:00",
-      "sha256": "ade72d8c9c6a651a64605877d759f0b841ba71e1cc35cf902abebfc7d505543c",
+      "sha256": "267d185cd4e686dea39568ab378983d04081311d65550e24c61932bf43cd1e09",
       "counts": {
         "mathematics": 3,
         "physics": 17,
@@ -662,22 +662,16 @@
   "counters": [
     {
       "id": "erdos_ai",
-      "requests": [
-        {
-          "url": "https://www.erdosproblems.com/",
-          "fetched_at": "2026-10-12T03:17:18+08:00",
-          "sha256": "e19de545e54022dd8623b800d0512877ee7770d6d295c80cd1756faf8d18c731"
-        }
-      ],
+      "requests": [],
       "value": 53
     },
     {
       "id": "mathlib_theorems",
       "requests": [
         {
-          "url": "https://leanprover-community.github.io/mathlib_stats.html",
+          "url": "https://mathlib.org/mathlib_stats.html",
           "fetched_at": "2026-10-12T03:17:19+08:00",
-          "sha256": "63afae95dcffaacad734aac47d93d3e1609eb06d963ce0af6de7beafed8d3048"
+          "sha256": "17a1c4eacbd77f7e32d2b84559bf87dae726f429833a30b202f674cec2b2309e"
         }
       ],
       "value": 109200

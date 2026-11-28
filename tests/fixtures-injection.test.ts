@@ -269,7 +269,7 @@ describe("the planted candidate", () => {
     // An institution's release scores 2, plus 2 for an AI term in the title and 1 in the abstract.
     expect(candidate.score).toBe(2 + 2 + 1);
     expect(pack.feeds).toHaveLength(1);
-    expect(pack.feeds[0]).toMatchObject({ id: "eurekalert", kind: "rss", ok: true, stale: false, items_total: 1, items_kept: 1, error: null });
+    expect(pack.feeds[0]).toMatchObject({ id: "eurekalert", kind: "page", ok: true, stale: false, items_total: 1, items_kept: 1, error: null });
     expect(pack.feeds[0]!.newest).toBe(candidate.published_at);
     // The feed was never fetched, so its hash is the hash of its id and the day, not of any body.
     expect(pack.feeds[0]!.sha256).toBe(sha256Hex("eurekalert\n2026-09-09"));

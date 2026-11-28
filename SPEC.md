@@ -116,11 +116,12 @@ sure we are. Measurement is secondary: one Pace line a day and charts on Mondays
   `process.arch === "arm64"`. The checkout is never under `~/Documents` (iCloud makes conflict copies).
 - **The repo is public.** Never commit secrets, tokens, personal data, environment values or details of
   Kobol's security settings. `AGENTS.md` is internal working notes and is never published on the site.
-- **No credential handling.** Every feed is keyless (OpenAlex is checked in P2, §5.1). The one secret
-  is the agents' Claude Code OAuth token, which JL stores in the login keychain under the service
-  `unveiling-claude-oauth` (§9.6); `scripts/lib/keychain.ts` reads it at run time and passes it only to
-  the agent processes. Git pushes use `gh`'s existing keyring login; the run never writes to GitHub's
-  API. Never print, log, commit or paste a token. No `.env` file. If a step seems to need a credential,
+- **No credential handling.** Every feed is read without a key except OpenAlex, which budgets keyless callers
+  too tightly for the backfill (§5.1). The two secrets are the agents' Claude Code OAuth token, which JL stores
+  in the login keychain under the service `unveiling-claude-oauth` (§9.6), and OpenAlex's free key, under
+  `unveiling-openalex-key`; `scripts/lib/keychain.ts` reads each at run time, the token passing only to
+  the agent processes and the key only to the OpenAlex client. Git pushes use `gh`'s existing keyring login;
+  the run never writes to GitHub's API. Never print, log, commit or paste a token. No `.env` file. If a step seems to need a credential,
   choose a design that doesn't, or ask JL in the PR.
 - **The drafting agents are sandboxed** (§9.4, §9.5): no shell, git, connectors, MCP servers or hooks;
   they write only under `drafts/`. The English pass may search and fetch the web through a deny list;
@@ -189,8 +190,9 @@ This is the whole list. Claude does everything else and puts only these in a PR'
   repo if it is limited to selected repositories.
 - **Every PR:** merge it once Codex is done. Merging the P2 PR accepts the Pace history from 2015 and the
   Landmark Ledger it carries (each entry lists its basis in the P2 report; no separate review step).
-- **P2, only if OpenAlex needs a key:** sign up for its free key and store it with the helper (§9.6),
-  about two minutes. Claude checks first; the spec assumes keyless.
+- **P2, once, about three minutes:** sign up for OpenAlex's free key, verify its e-mail address, copy the
+  key from its settings page and store it with the helper (§9.6). The morning run fits OpenAlex's keyless
+  daily budget, but the backfill and the precision and recall samples do not (§5.1, §5.4).
 - **P3, once, about two minutes:** create the agent's token in Terminal on Kobol and store it in the
   keychain with the helper (§9.6).
 - **P4:** pick the AI accent (dawn gold or one alternative) from the PR's side-by-side screenshots.
@@ -604,7 +606,7 @@ CyberTracker's stack, unchanged except where the table says so. Its reasons hold
 | Config | JSON and one YAML registry in `config/`, changed only by PR | The run never writes them |
 | Tests | Vitest 5 | As Cyber |
 | Script runner | `tsx`, the repo's own copy, by absolute path | As Cyber |
-| Feed parsing | Built-in `fetch` and `JSON.parse` for the JSON APIs (OpenAlex, Crossref, bioRxiv, ClinicalTrials.gov, RCSB, PubMed E-utilities' JSON mode); `rss-parser` for the RSS feeds (journals, EurekAlert!, labs, the Vesuvius Challenge); `cheerio` for arXiv's Atom, XML and HTML; `yaml` for the registry; Node's CSV parsing written in `lib/feeds/csv.ts` for the Retraction Watch file | No new package |
+| Feed parsing | Built-in `fetch` and `JSON.parse` for the JSON APIs (OpenAlex, Crossref, bioRxiv, ClinicalTrials.gov, RCSB, PubMed E-utilities' JSON mode); `rss-parser` for the RSS feeds (journals, labs, the Science Media Centre, the Vesuvius Challenge); `cheerio` for arXiv's Atom, PubMed's `efetch` XML and HTML (EurekAlert!'s browse page and the labs' pages included); `yaml` for the registry; Node's CSV parsing written in `lib/feeds/csv.ts` for the Retraction Watch file; `node:zlib` to unzip RCSB's gzipped holdings file | No new package |
 | Package manager | npm, `package-lock.json` committed, `npm ci` | As Cyber |
 | Local runtime | `/opt/homebrew/bin/node` and `/opt/homebrew/bin/npm`, arm64; `engines.node` `>=22` | Preflight enforces arm64 |
 | CI runtime | Node 24 on GitHub Actions `ubuntu-latest` | As Cyber |
@@ -655,7 +657,8 @@ UnveilingTracker/
 │   ├── LEDGER.md                  # P2: how the Landmark history was chosen, and each entry's basis
 │   ├── RUNBOOK.md                 # P3: the morning, error codes, manual runs, recovery
 │   ├── reports/                   # Dated reports: P1 seed checks (the values P2 verifies), P2 backfill and Ledger,
-│   │                              # P3 dry runs, P5 go-live, calibration
+│   │                              # P3 dry runs, P5 go-live, calibration; p2-kobol/ holds Kobol's P2 batches (K1a to
+│   │                              # K1d: the live checks of OpenAlex, the feeds, the allowlists and the counters)
 │   └── screenshots/<phase>/       # P4, P5: <lang>/<page>-<width>.png, P4's in gold/ and blue/ above <lang>/ (§10 P4)
 ├── app/
 │   ├── (en)/                      # English: layout.tsx (<html lang="en">), page.tsx (Today), brief/[date],
@@ -1538,8 +1541,10 @@ interface CounterReading {
 ```
 
 - **`content/metrics/inputs/D.json`:** every OpenAlex request (URL without any key, `fetched_at`,
-  response SHA-256, the group counts used), each counter's request and value, the finding ids C and D
-  counted, and the config versions. It makes `--recompute` possible (§8.4).
+  response SHA-256, the group counts used, and the works the group counts leave out: those of the
+  excluded fields (`excluded_n`), of fields `fields.json` does not list (`unmapped_n`) and with no primary
+  topic, which `group_by` hides (`ungrouped_n`, §5.4)), each counter's request and value, the finding ids
+  C and D counted, and the config versions. It makes `--recompute` possible (§8.4).
 - **`content/state/pace-weekly.json`:** `{ schema_version, versions, updated, weeks: PaceWeek[] }`
   (`updated: IsoDate`, the Taipei date of the run that wrote it), every ISO week from 2015-01-05 to
   `data_cutoff`, oldest first:
@@ -1872,30 +1877,68 @@ loader and are no rows of §4.12's table:
   23 (earth and planetary, environmental science); social 33, 20, 32, 14, 18 (social sciences,
   economics, psychology, business, decision sciences); humanities 12 (arts and humanities); and
   `excluded` 17, 22, 21 (computer science, engineering, energy: AI research itself is out, JL). Each
-  OpenAlex field from 11 to 36 is listed once, under a field or in `excluded`. Verify in P2 against
-  OpenAlex's `/fields` list.
-- **`journals.json`** (`version`): the leading journals for Pace A, each `{ id, name, openalex_source,
-  issn, fields, in_pace }`, with `issn` as NNNN-NNNN and a right check digit, and `fields` the one to
-  seven fields the journal publishes in (Nature, Science and PNAS list all seven; §8.3 maps a candidate
-  to a field by its journal only when `fields` holds exactly one): Nature, Science, Cell, PNAS, Physical
-  Review Letters, Annals of Mathematics, Nature Physics, Nature Chemistry, Nature Materials, JACS,
-  Nature Medicine, NEJM, The Lancet, Nature Biotechnology, Nature Geoscience, Nature Climate Change,
-  American Economic Review, American Political Science Review, Nature Human Behaviour, Inventiones
-  Mathematicae, Journal of the AMS, Acta Mathematica, and for the humanities the field's top journals by
-  OpenAlex citation share (P2 picks 3 to 5 with a stated rule, from journals that pass the test below;
-  the P1 seed has none, so until then no journal lists the humanities alone). Every OpenAlex source id
-  is marked Verify in P2: the P1 seed writes the ones it does not know as the placeholders `S9999999901` to
-  `S9999999912` (12 journals), and none remains after P2. No two journals share a name, an OpenAlex
-  source id or an ISSN. `in_pace` is true when OpenAlex has `type:article,has_abstract:true` works from
-  the journal in every full year from 2015 and, in each of those years, their count is at least half its
-  yearly mean for 2015 to 2019 and the share of its `type:article` works that have an abstract is at
-  least half its 2015 to 2019 share; false otherwise (a journal that began later, or one whose works or
-  abstracts OpenAlex lacks for some years). Only journals with it true count in A (§5.1), so A compares
-  one set of journals across the years, and at least one journal has it true. Nature Human Behaviour
-  (first issue January 2017) has `in_pace` false. P1 seeds it true for the others; P2 settles each
-  journal with its yearly counts (§5.1), which its report gives with and without abstracts, naming every
-  journal left out of A. A journal with `in_pace` false is still read by the journal feeds and scored as
-  a leading journal (§4.13, §5.9). A change is a new version and a backfill (§5.4).
+  OpenAlex field from 11 to 36 is listed once, under a field or in `excluded`. Checked on 2026-11-28
+  against OpenAlex's `/fields` list (K1a): 26 fields, ids 11 to 36, each mapped exactly once, none
+  missing, extra or renamed.
+- **`journals.json`** (`version`, 2 after P2): the leading journals for Pace A, each `{ id, name,
+  openalex_source, issn, fields, in_pace }`, with `issn` as NNNN-NNNN and a right check digit, and `fields`
+  the one to seven fields the journal publishes in (Nature, Science and PNAS list all seven; §8.3 maps a
+  candidate to a field by its journal only when `fields` holds exactly one). It lists 30 journals: the 22
+  of the P1 seed (Nature, Science, Cell, PNAS, Physical Review Letters, Annals of Mathematics, Nature
+  Physics, Nature Chemistry, Nature Materials, JACS, Nature Medicine, NEJM, The Lancet, Nature
+  Biotechnology, Nature Geoscience, Nature Climate Change, American Economic Review, American Political
+  Science Review, Nature Human Behaviour, Inventiones Mathematicae, Journal of the AMS and Acta
+  Mathematica), and the 8 that P2 added by the rule below: for the earth sciences the Journal of
+  Geophysical Research: Atmospheres, Environmental Science & Technology and Geophysical Research Letters,
+  and for the humanities Language, Antiquity, The Classical Quarterly, the Journal of Biblical Literature
+  and HTS Teologiese Studies / Theological Studies. No two journals share a name, an OpenAlex source id or
+  an ISSN. Every OpenAlex source id was checked on 2026-11-28 (K1a, by `GET /sources/issn:<issn>` and
+  `/sources/<id>`, each journal compared by name): the ten ids the P1 seed knew were right, the 12
+  placeholders `S9999999901` to `S9999999912` are replaced by the ids OpenAlex returned, and none remains.
+  Names are display names (OpenAlex writes "New England Journal of Medicine" and "Inventiones
+  mathematicae"), since matching is by id, and each ISSN is one of its journal's.
+  `in_pace` is true when OpenAlex has `type:article,has_abstract:true` works from the journal in every full
+  year from 2015 and, in each of those years, their count is at least half its yearly mean for 2015 to
+  2019, the share of its `type:article` works that have an abstract is at least half its 2015 to 2019
+  share, and that share is at least 50%; false otherwise (a journal that began later, or one whose works or
+  abstracts OpenAlex lacks for some years). The absolute floor of 50% is there because the relative tests
+  alone passed journals for which OpenAlex held almost no abstracts in 2015 to 2019 and many from about
+  2021 (abstracts for 3% of Nature's articles in 2015 to 2019 and 30% in 2025; Cell 10% and 51%, Nature
+  Chemistry 0.5% and 35%, Nature Biotechnology 4% and 24%), so A would have compared a different mix of
+  papers in each year. Only journals with it true count in A (§5.1), so A compares one set of journals
+  across the years, and at least one has it true.
+  A therefore compares 16 of the 30 journals (each journal's yearly counts, with and without abstracts, are
+  in `docs/reports/p2-kobol/journals-openalex.json` for the 22 of the seed and in `earth-candidates.json` and
+  `humanities-candidates.json` beside it for the 8 added): Science, PNAS, Physical Review Letters, Annals of
+  Mathematics, JACS, NEJM, the American Political Science Review, the Journal of the AMS, the three earth
+  journals and the five humanities journals. The 14 left out: Nature, Cell, Nature Chemistry and Nature
+  Biotechnology fail the floor alone; Nature Physics, Nature Materials, Nature Medicine, The Lancet,
+  Nature Geoscience, Nature Climate Change, the American Economic Review, Nature Human Behaviour (first
+  issue January 2017: no article in 2015, and none with an abstract in 2015, 2016 and 2018), Inventiones Mathematicae and Acta
+  Mathematica fail the relative tests (the AER's article count fell from about 270 a year to about 110
+  from 2018, which fits the AEA's Papers and Proceedings leaving it; Acta Mathematica prints about ten
+  articles a year and fell below half its mean in 2025 by a fraction of one paper). Every field has an
+  `in_pace` journal that lists it alone: mathematics (Annals, JAMS), physics (PRL), chemistry (JACS),
+  biology (NEJM), earth (three), social science (APSR) and the humanities (five). A journal with `in_pace`
+  false is still read by the journal feeds and scored as a leading journal (§4.13, §5.9). A change is a
+  new version and a backfill (§5.4).
+  **The rule that picks a field's journals** (it picked the humanities', for which the P1 seed had none,
+  and earth's, since Nature Geoscience and Nature Climate Change fail the test): from the journals
+  (OpenAlex source type `journal`) with at least 60% of their listed topics in the field's OpenAlex
+  fields (humanities 12, earth 19 and 23), found by
+  `/sources?filter=topics.field.id:<ids>,type:journal&sort=cited_by_count:desc` and, for the humanities,
+  also by grouping their 2015 to 2019 articles with abstracts by journal over seven subfields (religious studies, philosophy, history, language and
+  linguistics, classics, archaeology and literature), keep those that pass the `in_pace` test with its
+  floor, have an abstract on at least 50% of their 2015 to 2019 articles and average at least 20 articles
+  with abstracts a year in 2015 to 2019; rank by the source record's own `cited_by_count`; take the top 5
+  (humanities, at most 2 from one OpenAlex subfield) or the top 3 (earth). Humanities: Language,
+  Antiquity, The Classical Quarterly, the Journal of Biblical Literature and HTS Teologiese Studies /
+  Theological Studies. Earth: the Journal of Geophysical Research: Atmospheres (given its ISSN 2169-897X,
+  which is in its `issn` list, since OpenAlex's record carries the old all-sections JGR ISSN-L 0148-0227
+  and its citation count may include legacy JGR; Water Resources Research is the next pick),
+  Environmental Science & Technology and Geophysical Research Letters. Philosophy and literature get no
+  journal: OpenAlex lacks abstracts for their leading journals in some years. Calibration reruns the rule
+  on the newest year (§10 Calibration).
 - **`ai-terms.json`** (`version`): the phrases a title or abstract must contain to count as naming AI
   methods: "machine learning", "deep learning", "neural network", "artificial intelligence", "large
   language model", "language model", "transformer model", "reinforcement learning", "generative model",
@@ -1913,34 +1956,75 @@ loader and are no rows of §4.12's table:
   `deny_doi_prefixes`, `registries`, `statement_suffixes`, `reaction_sources`, `press_hosts` and
   `figure_hosts`. A host is lower case with at least two labels (`www.nature.com`); a path starts with `/`,
   and `/` alone is any path; an `id` is unique in its list:
-  - `publishers`: `{ id, name, hosts, kinds, paths, deny_paths, reaction_paths, type_field, types }`,
-    e.g. Nature (`nature.com`, kinds `paper` and `notice`, paths `/articles/s`, reaction paths
-    `/articles/d41586-`, which Nature's News & Views share with its news), Science (`science.org`, kinds
-    `paper`, `notice` and `reaction`, paths `/doi/10.1126/`, which its research, Perspectives and print
-    news share, deny `/content/article/`), Cell Press and PNAS (the same three kinds, `reaction` for
-    their Previews and Commentaries), APS journals, Annals, Springer, Elsevier's ScienceDirect, Wiley,
-    the AMS, PLOS, eLife, NEJM, The Lancet, the American Chemical Society, the American Economic
-    Association and Project Euclid (the hosts of JACS, the AER and Acta Mathematica), for the humanities
-    and theology Cambridge Core, Oxford Academic, Taylor & Francis, De Gruyter, Brill, SAGE, Project MUSE
-    and JSTOR (kinds `paper` and `notice`; **Verify in P2:** each one's hosts and article paths, which its
-    entry lists), and the preprint servers (kind `preprint`: `arxiv.org` `/abs/`, `biorxiv.org` and
-    `medrxiv.org` `/content/10.1101/`, `ssrn.com`, `osf.io/preprints`, `chemrxiv.org`). A `reaction_paths`
-    path passes for kind `reaction` only. `type_field` names where a page gives its article type: a CSS
-    selector for its type label (read with cheerio) when it starts with `.` or `#` or holds white space,
-    `>` or `[`, else the name of a `<meta>` tag. `types` lists, for each kind its URLs can pass for, the
-    type values that fit it: research types fit `paper`, notice types (retraction, correction and
-    expression-of-concern notes) fit `notice` only, commentary types (News & Views, Perspective, Comment,
-    Commentary, Preview, Viewpoint) fit `reaction` only, and a type listed for no kind (news, editorial,
-    feature, interview) fits none. A typed publisher lists types for each kind its URLs can pass for (its
-    `kinds`, and `reaction` when it has `reaction_paths`) and for no other, and a type stands under one
-    kind only. A publisher whose pages show no type, and every preprint server, has `type_field` null, is
-    judged by the URL test alone and lists no `types`, no `reaction` and no `reaction_paths`.
-    **Verify in P2:** for each publisher, the tag or label, its values for research, commentary and news,
-    whether the snapshot's GET from Kobol reads it (where it does not, `type_field` is null), and the
-    hosts its `doi.org` URLs land on (its entry lists each); and for Nature, that its News & Views are
-    all under `/articles/d41586-` (where some are not, P2 adds their paths to `reaction_paths`); and that
-    each publisher's `paths` admit its papers from 2015 on, which the Ledger cites (older Nature papers
-    have ids such as `nature14539`, outside `/articles/s`), P2 adding the older paths it finds.
+  - `publishers`: `{ id, name, hosts, kinds, paths, deny_paths, reaction_paths, type_field, types }`.
+    A `reaction_paths` path passes for kind `reaction` only. `type_field` names where a page gives its
+    article type: a CSS selector for its type label (read with cheerio) when it starts with `.` or `#` or
+    holds white space, `>` or `[`, else the name of a `<meta>` tag. `types` lists, for each kind its URLs
+    can pass for, the type values that fit it: research types fit `paper`, notice types (retraction,
+    correction and expression-of-concern notes) fit `notice` only, commentary types (News & Views,
+    Perspective, Comment, Commentary, Preview, Viewpoint) fit `reaction` only, and a type listed for no
+    kind (news, editorial, feature, interview) fits none. A typed publisher lists types for each kind its
+    URLs can pass for (its `kinds`, and `reaction` when it has `reaction_paths`) and for no other, and a
+    type stands under one kind only. A publisher whose pages show no type, and every preprint server, has
+    `type_field` null, is judged by the URL test alone and lists no `types`, no `reaction` and no
+    `reaction_paths`. Types are compared without case, trimmed and with one space between words.
+    **Settled in P2** (Kobol's batch K1b, 2026-11-28, which fetched 141 pages of the 31 seed publishers the
+    way the snapshot step does: a plain GET, with no workaround; `docs/reports/p2-kobol/K1b-publishers.md`;
+    §0.4 rows 341 to 344). Only ten serve an article page to it: Nature, Springer, APS, the AMS, PLOS,
+    Cambridge Core, Annals (its own site, for older papers), arXiv, bioRxiv and medRxiv. The others answer a
+    bot check (a Cloudflare 403, a client challenge, an AWS challenge or a redirect to a verify page) or a
+    script shell. So three publishers keep a type and every other entry has `type_field` null:
+    - **Typed.** Nature (`nature.com`, kinds `paper` and `notice`, paths `/articles/s` and `/articles/n`,
+      which together cover every id from `s41586-` back to `nature14539`, `nphys3255`, `nm.4053` and
+      `ncomms10235`; `deny_paths` `/articles/nature.2`, its old news ids such as `nature.2016.19411`;
+      `reaction_paths` `/articles/d41586-`, which its News & Views and Comment share with its news, all 24
+      current ones sampled being under it; `type_field` `dc.type`, because `citation_article_type` says
+      "Article" for research, reviews and correspondence alike), Springer (`link.springer.com`,
+      `/article/`, `dc.type`) and PLOS (`journals.plos.org`, any path, `citation_article_type`). Their
+      `types`: `paper` OriginalPaper, ReviewPaper and BriefCommunication (Nature adds Analysis; PLOS has
+      Research Article); `notice` Erratum, Correction, Retraction, Retraction Note, Addendum and Expression
+      of Concern (Nature adds Editorial Expression of Concern; PLOS has Retraction, Correction and
+      Expression of Concern); and for Nature `reaction` News And Views and Comment (`dc.type` spells it
+      with "And", so a "News & Views" with an ampersand fits nothing). Nature's News, Research Highlight,
+      Book Review, Podcast, Futures and Letter are listed for no kind and fit none. K1b saw no notice page
+      that showed an expression-of-concern value, so those listed are the seed's, and Nature's Analysis is
+      unconfirmed; both stay until a page shows one.
+    - **Untyped, judged by the URL test alone.** Science (`science.org`, with the older hosts
+      `www.sciencemag.org` and `science.sciencemag.org`; paths `/doi/10.1126/` and `/lookup/doi/10.1126/`,
+      where 2015 DOIs land; deny `/content/article/`, its print news), Cell Press, PNAS, APS journals
+      (`journals.aps.org`, with `link.aps.org` for DOIs, path `/doi/10.1103/`), Annals, Elsevier's
+      ScienceDirect, Wiley, the AMS (with `pubs.ams.org`), eLife, NEJM, The Lancet, the American Chemical
+      Society, the American Economic Association (with `pubs.aeaweb.org`, path `/doi/`) and Project Euclid
+      (the hosts of JACS, the AER and Acta Mathematica, with International Press's `link.intlpress.com`, path
+      `/JDetail/`, where Acta's DOIs land); for the humanities and theology Cambridge Core, Oxford Academic,
+      Taylor & Francis, De Gruyter, Brill, SAGE, Project MUSE and JSTOR (kinds `paper` and `notice`); and the
+      preprint servers (kind `preprint`: `arxiv.org` `/abs/`, `biorxiv.org` and `medrxiv.org`
+      `/content/10.1101/` and, for the DOIs they give from 2026 (§4.1), `/content/10.64898/`, `ssrn.com`,
+      `osf.io/preprints/`, `chemrxiv.org`). Science, Cell Press and PNAS had a type and the `reaction` kind
+      in the seed. Their pages answer 403, so by the rule above they lose both: a Science Perspective, a Cell
+      Preview or a PNAS Commentary is no longer a reaction through its publisher (the route stays through
+      `reaction_sources` and, at Nature, `d41586-`). Their feeds do carry a type (Science's `dc:type`; Cell
+      Press's and The Lancet's `prism:section`), so collect could copy it into a candidate's `types`; that is
+      left open (§0.4 row 342).
+    - **Two new entries,** for hosts that DOIs land on: `elsevier-linkinghub` (`linkinghub.elsevier.com`,
+      `/retrieve/pii/`, kinds `paper` and `notice`: where a DOI of Cell Press, ScienceDirect or The Lancet
+      lands first, a page that moves on only by a meta refresh, which the snapshot does not follow; its path
+      covers The Lancet's news as well as research, so the URL alone cannot keep that out) and
+      `scholarly-publishing-collective` (`scholarlypublishingcollective.org`, `/`, where the DOIs of
+      university presses' journals on JSTOR land).
+    - **Left as they were.** `osf.io` stays at `/preprints/`: its DOIs land on `osf.io/<id>`, outside it, so
+      an OSF DOI fails the URL test and the source cites its `osf.io/preprints/` address instead (K1b offered
+      `/`, which would admit the whole host). Project MUSE's DOIs land on its `/verify` bot check, which no
+      path admits, so a MUSE source cites its `muse.jhu.edu/article/` address. There is no entry for
+      `physics.aps.org` (Physics Viewpoints as reactions): that host is in `press_hosts`, and a publisher
+      entry does not lift the press refusal (§0.4 row 344). Each publisher's paths admit its papers from 2015
+      on, which the Ledger cites, as K1b's sample DOIs from 2015 to 2026 showed.
+    - **Blocked pages have no text.** A quote or a number from a page that answers 403 has no fetched text to
+      be found in (§4.12), so a source from such a publisher is cited through an open copy: the paper's PMC
+      copy (PNAS after six months, eLife, Cell Press, NEJM, The Lancet, Wiley, Oxford Academic, SAGE and
+      Science's author manuscripts), its arXiv preprint (Annals, Acta Mathematica), or its NBER or author
+      working paper (the American Economic Association). De Gruyter, Brill, Project MUSE, JSTOR and ChemRxiv
+      have no general open copy. K1b's list is `open_copies` in `K1b-source-tiers-proposed.json`.
   - `resolvers`: `{ id, name, hosts, kinds, paths, type_field, refused_pubtypes }`: `doi.org` (with
     `dx.doi.org`; paths `/10.`; kinds `paper`, `preprint`, `dataset`, `registry`, `notice` and `reaction`,
     which the type check below narrows by the DOI's landing; allowed except DOI prefixes that only news
@@ -1950,33 +2034,52 @@ loader and are no rows of §4.12's table:
     `reaction`: PubMed's and PMC's record pages never pass for it (a reaction cites the publisher's own
     page). Their entries carry a `type_field`, and `refused_pubtypes` lists the types that fail whatever
     the kind: PubMed's News, Newspaper Article, Editorial, Comment and Interview, and PMC's names for
-    them. A record's types can come from either record page (§4.14), so a type is refused when the list
-    of any resolver holds it (compared without case or padding). **Verify in P2:** PMC's current host
-    and paths, the two record pages' tags or labels, and PMC's names, which P2 records; where a record
-    page shows no type, its entry's `type_field` is null, so only a PubMed record from the pack, which
-    carries `pubtype`, passes.
+    them. A record's types can come from either record (§4.14), so a type is refused when the list
+    of any resolver holds it (compared without case or padding). **Settled in P2** (K1b and K1d, 2026-11-28;
+    §0.4 row 347): PMC's current address is `pmc.ncbi.nlm.nih.gov/articles/PMC<n>/`, and the older
+    `www.ncbi.nlm.nih.gov/pmc/articles/PMC<n>/` answers 301 to it, so both entries stay. PubMed's record
+    pages answer a cookie and script check (203) and PMC's pages show no type, so both resolvers' `type_field`
+    is null and a cited record's types come from E-utilities (below). PubMed's refused names are its own
+    publication types, as written; PMC's are JATS `article-type` values, lower case with hyphens
+    (`research-article`, `review-article`, `brief-report`, `case-report`, `letter`, `editorial`, `news`,
+    `article-commentary`, `interview`, `book-review`, `correction`, `retraction`, `expression-of-concern`),
+    and the list refuses `news`, `editorial`, `article-commentary`, `interview` and, added by K1b,
+    `book-review`.
   - `deny_doi_prefixes`: the DOI prefixes of publications that publish only news, in lower case, each a
     registrant and the start of a suffix (`10.1021/cen-`); a `doi.org` URL whose DOI starts with one
-    fails for every kind. No prefix may cover Nature's `10.1038/d41586-`. The P1 seed has four, recalled
-    from memory: `10.1038/scientificamerican`, `10.1021/cen-`, `10.1063/pt.` and `10.1056/nejm-jw.`
-    (Scientific American, Chemical & Engineering News, Physics Today and NEJM Journal Watch).
-    **Verify in P2:** each prefix against that publisher's own DOIs; P2 drops any it cannot confirm (the
-    list may be empty) and adds the news-only prefixes the packs show.
-  - `registries`: `{ id, name, hosts, kinds, paths }`: `clinicaltrials.gov/study/` and
-    `rcsb.org/structure/` (kind `registry`), `ebi.ac.uk` with `alphafold.ebi.ac.uk` (any path; kinds
+    fails for every kind. No prefix may cover Nature's `10.1038/d41586-`. **Settled in P2** (K1b, checked
+    against each publisher's own DOIs in Crossref; §0.4 row 346): the list has four prefixes,
+    `10.1038/scientificamerican` (40 of 40 Scientific American works sampled carry it), `10.1021/cen-`
+    (Chemical & Engineering News), `10.1063/pt.` (Physics Today from about 2017; its older items use
+    `10.1063/1.NNNN`, which AIP's research journals share, so they cannot be listed) and
+    `10.1038/nature.20`, Nature's old news DOIs `nature.2015.NNNNN` to `nature.2019.NNNNN` (no research DOI
+    has a dot after `nature`). The seed's `10.1056/nejm-jw.` is dropped: Crossref holds no NEJM Journal
+    Watch work under `10.1056`. A PR adds the news-only prefixes the packs show.
+  - `registries`: `{ id, name, hosts, kinds, paths, deny_hosts, deny_paths }`: `clinicaltrials.gov/study/`
+    and `rcsb.org/structure/` (kind `registry`), `ebi.ac.uk` with `alphafold.ebi.ac.uk` (any path; kinds
     `registry` and `dataset`), `zenodo.org/records/` (kind `dataset`), `github.com` (kinds `dataset` and
     `proof` only), `huggingface.co` (kind `dataset` only) and Lean mathlib's documentation,
-    `leanprover-community.github.io/mathlib4_docs/` (kind `proof`). **Verify in P2:** `github.com` and
-    `huggingface.co` match their subdomains, so `docs.github.com` and `discuss.huggingface.co` pass for
-    `dataset`; P2 checks which subdomains hold records and, for one that does not, adds a way to refuse
-    it (a `deny_paths` list on registry entries, or an exact-host form) with its test and a §0.4 row.
+    `leanprover-community.github.io/mathlib4_docs/` (kind `proof`). A host entry matches its subdomains, so
+    two lists say which of an entry's pages are not records, both always written, `[]` when empty:
+    `deny_hosts` holds hosts that are subdomains of one of the entry's hosts (never one of them: a host that
+    is both is refused, and a denied host under none of them refuses nothing, so the schema rejects both),
+    and `deny_paths` path prefixes in `matchPath()` form (§4.2) on the entry's hosts. A URL that an entry
+    listing its host refuses by either list fails for every kind, with the refusal `denied_registry` (the
+    URL test, below). **Settled in P2** (K1b; §0.4 row 345): `github` denies `docs.github.com`, whose
+    documentation holds no records (`gist.github.com`, `api.github.com` and `codeload.github.com` are
+    already refused by `BLOCKED_HOSTS`, and `*.github.io` is another domain); `huggingface` denies
+    `discuss.huggingface.co` and the paths `/docs`, `/blog`, `/learn`, `/posts` and `/papers`, where Hugging
+    Face keeps its documentation, blog, courses, posts and paper pages (its records are
+    `/datasets/<org>/<name>`, and models and spaces). The two sites' scripts mention "captcha", but their
+    pages are real.
   - `statement_suffixes`: one flat list whose entries give kind `statement` and no other, each in one of
     three forms: a suffix (it starts with `.`: any host that ends with it), a host (`mpg.de`: that host
     and its subdomains) or a host with a path prefix (`cell.com/newsroom`: that host and its subdomains,
     under the prefix); a suffix and a host are lower case, and a path prefix starts with `/` and holds no
     space, `?` or `#`. The seed lists the suffixes `.edu`, `.gov`, `.int` and `.europa.eu`; the academic
     forms `.ac.uk`, `.ac.jp`, `.ac.kr`, `.ac.il`, `.ac.nz`, `.ac.za`, `.ac.in`, `.ac.cn`, `.ac.at`, `.ac.th`
-    and `.ac.id`; the government forms `.gov.uk`, `.gov.au`, `.gov.tw`, `.gov.sg`, `.gov.hk`, `.gov.in`,
+    and `.ac.id`; the university forms `.edu.tw`, `.edu.cn`, `.edu.hk`, `.edu.sg` and `.edu.au`; the
+    government forms `.gov.uk`, `.gov.au`, `.gov.tw`, `.gov.sg`, `.gov.hk`, `.gov.in`,
     `.gov.za`, `.gov.br`, `.gov.cn`, `.gov.il` and `.gov.ie`; and `.go.jp`, `.go.kr`, `.gouv.fr`, `.gc.ca`
     and `.govt.nz` (a suffix has no country wildcard, so each is written out). It lists the hosts of
     institutions: `mpg.de`, `cnrs.fr`, `riken.jp`, `sinica.edu.tw`, `cern.ch`, `home.cern`, `embl.org`,
@@ -1993,14 +2096,32 @@ loader and are no rows of §4.12's table:
     sites and further institutions. A host that a `resolvers` or `registries` entry names gets no
     `statement` from any entry (the URL test, below), but a publisher's host may: Annals, at
     `annals.math.princeton.edu`, passes for `paper` and `notice` as a publisher and for `statement`
-    through `.edu`. **Verify in P2:** that each body's host is its own site with its figures or documents,
-    and that the country forms cover the countries the packs show (Taiwan's universities, under `.edu.tw`,
-    are in none of them); P2 corrects any that is not and adds the ones it needs.
+    through `.edu`. **Settled in P2** (Kobol's K1d, 2026-11-28; §0.4 row 348): every host listed above
+    answered 200 with its own readable content (`sil.org` through a redirect to `global.sil.org`;
+    `vatican.va` serves its 2025 note on AI, *Antiqua et nova*, under `/roman_curia/congregations/cfaith/`),
+    and so did every newsroom but `cell.com/newsroom`, which answers a Cloudflare 403 to a plain GET: it stays
+    listed, because a statement is judged by the URL test alone, but its pages cannot be snapshotted, so a
+    quote or a number from one has no text to be found in (§4.12). Taiwan's universities sit under `.edu.tw`
+    (`www.ntu.edu.tw` and `www.nthu.edu.tw` answered 200), which no seeded form covered, so the file adds it
+    and the academic forms of China, Hong Kong, Singapore and Australia, which the news names most. A suffix
+    cannot cover a country whose universities use plain country domains, such as `uni-heidelberg.de` or
+    `utoronto.ca` (Germany, Canada, the Netherlands, France and the Nordic countries): each needs a host
+    entry of its own, added by PR when a source needs it, or its release is cited through
+    `eurekalert.org/news-releases/`. `.edu.tw` also makes `terms.naer.edu.tw`, the Chinese pass's one
+    allowed host (§9.5), a `statement` host, which `tests/fixture-safety.test.ts` now counts among the real
+    hosts a fixture link must not name without an invented marker.
   - `reaction_sources`: `{ id, name, hosts, paths }` whose pages are kind `reaction` and no other: the
-    Science Media Centre's expert reactions (`sciencemediacentre.org`, paths `/expert-reaction-`), its
-    sister centres, and named scientists' own blogs and pages, listed one by one by PR. **Verify in P2:**
-    the SMC's expert-reaction path, and which sister centres publish named scientists' reactions; P2
-    writes the path it finds and lists those centres with their paths.
+    Science Media Centre's expert reactions (`sciencemediacentre.org`, paths `/expert-reaction-` and
+    `/experts-react-`, which its feed carries both), Scimex, the Australian centre (`scimex.org`, path
+    `/newsfeed/expert-reaction-`), and named scientists' own blogs and pages (Terence Tao's,
+    `terrytao.wordpress.com`, any path), more listed one by one by PR. **Settled in P2** (Kobol's K1d,
+    2026-11-28; §0.4 row 349): the other sister centres were read and are not listed. The New Zealand centre
+    (`sciencemediacentre.co.nz`, dated paths `/YYYY/MM/DD/`), the German (`sciencemediacenter.de`, `/angebote/`),
+    the Spanish (`sciencemediacentre.es`, slugs at the root) and Taiwan's (`smctw.tw`, numbered posts at the
+    root, in Traditional Chinese) publish their reactions on paths that briefings and background share, so
+    no path prefix picks the reactions out and an entry would admit the others as reactions; the Canadian
+    centre served no text to a plain GET. A PR may add one with a path that does. Tao's blog stays at `/`
+    (his posts are `/YYYY/MM/DD/slug/`).
   - `press_hosts`: the deny list (news outlets, magazines, blogs, aggregators, including science
     journalism such as Quanta, New Scientist, Scientific American, and journals' news sections); a URL on
     it fails PRIMARY_ONLY whatever its kind, unless a `reaction_sources`, `labs.json` or `checkers.json`
@@ -2008,17 +2129,28 @@ loader and are no rows of §4.12's table:
     blog on a blog platform: an entry for the host alone would let the platform's other pages through,
     and the entry's paths keep them out). The press refusal is then lifted for the whole URL, so the URL
     passes for every kind its entries give it, not only that of the entry that won.
-  - `figure_hosts`: hosts the site may show figures from (`media.springernature.com`, `www.science.org`,
-    `www.cell.com`, `www.pnas.org`, `arxiv.org`, `www.ncbi.nlm.nih.gov`, …), also the CSP's `img-src`. A
-    figure's host is one of them exactly as written, with no subdomain, parent or `www.` variant, and its
-    `image_url` is an https address with no user info and no port (FIGURE_LICENCE, §4.12).
+  - `figure_hosts`: hosts the site may show figures from, also the CSP's `img-src`: 14, `media.springernature.com`
+    and `media.nature.com` (Nature, Scientific Reports, Springer; Nature's Comment), `cdn.journals.aps.org`,
+    `static.cambridge.org`, `www.science.org`, `www.cell.com`, `www.pnas.org`, `arxiv.org`,
+    `cdn.ncbi.nlm.nih.gov` (PMC's figures; the page host `pmc.ncbi.nlm.nih.gov` serves none),
+    `www.biorxiv.org`, `www.medrxiv.org`, `iiif.elifesciences.org`, `journals.plos.org` and `cdn.rcsb.org`
+    (RCSB's structure pages use `files.rcsb.org` too, which is not listed). **Settled in P2** (K1b; §0.4
+    row 350): the hosts were seen serving figures on Nature, Scientific Reports, Springer, APS, Cambridge
+    Core, PMC, bioRxiv, PLOS and the RCSB; those of Science, Cell Press, PNAS and eLife could not be
+    checked (their pages are blocked) and `arxiv.org` and `www.medrxiv.org` were not seen to serve a figure,
+    so these six stay as seeded, hosts each publisher is known to use. `www.ncbi.nlm.nih.gov` is dropped
+    (PMC moved and its old pages redirect) and so is `pmc.ncbi.nlm.nih.gov`, which serves none; and
+    `physics.aps.org`, which serves figures with Physics Viewpoints, is not listed because it is a
+    press host. A figure's host is one of them exactly as written, with no subdomain, parent or `www.`
+    variant, and its `image_url` is an https address with no user info and no port (FIGURE_LICENCE, §4.12).
   - **The URL test**, `isPrimary(url, kind)`: true when an entry lists the URL's host and path for
     `kind` and nothing refuses the URL. The steps run in this order, and the first to refuse the URL
     refuses it for every kind: (1) the address is https, with no user name or password and no port but
     443; (2) no `BLOCKED_HOSTS` entry (§4.2) matches it, which is read before any list here, so
     `gist.github.com`, `api.github.com` and `codeload.github.com` fail though `github.com` is a registry
     host; (3) no `press_hosts` entry matches its host, unless the exception above applies; (4) no `deny_paths`
-    prefix of a publisher on its host and no `deny_doi_prefixes` prefix on a `doi.org` address matches
+    prefix of a publisher on its host, no `deny_doi_prefixes` prefix on a `doi.org` address and no
+    `deny_hosts` host or `deny_paths` prefix of a registry that lists its host (`denied_registry`) matches
     it. Each entry that lists the URL's host and a path prefix of its path then gives the URL its kinds:
     a publisher its `kinds` (and `reaction` through its `reaction_paths`), a resolver or registry its
     `kinds`, a lab `lab_post`, a checker `checker` and `statement_suffixes` `statement`; but a
@@ -2048,7 +2180,11 @@ loader and are no rows of §4.12's table:
     PubMed or PMC URL passes only when the evidence shows its types and none is in `refused_pubtypes`;
     the kind is not read, so a record typed as a retraction notice also passes for `paper`. A correction's
     `source_url` names no kind: it passes when its type fits some kind that the URL test gave it. Every other
-    URL is judged by the URL test alone.
+    URL is judged by the URL test alone. In practice the check bites at Nature, Springer, PLOS, PubMed and
+    PMC; everywhere else the URL test decides, so a news or commentary page of Science, Cell Press, PNAS, The
+    Lancet or ScienceDirect that no `deny_paths` or `deny_doi_prefixes` entry covers passes for `paper` and
+    `notice` (a Science Perspective, a Lancet World Report), and what remains against it is the grounding
+    and style checks of §4.12 and the writer's care (§0.4 row 343).
   - **Where the types come from.** The pack gives a candidate's `types` (§4.14: PubMed's esummary
     `pubtype`; [] for other feeds). The snapshot step (Cyber's `snapshotUrls()`), besides each cited URL
     with no text (Cyber's `citedUnseen()`; here a cited pack URL counts as one with no text until it has
@@ -2057,58 +2193,117 @@ loader and are no rows of §4.12's table:
     evidence lacks. A cited URL is a source's URL in the draft or the `source_url` of one of its corrections
     that is not null. A snapshot keeps `article_types`, what the `type_field` of the entry its `final_url`
     is on finds in the HTML before it becomes text; for a GET that answered an error after its redirects,
-    which writes no snapshot, the step's result keeps the final URL it reached. `buildEvidence()` adds
+    which writes no snapshot, the step's result keeps the final URL it reached. The step does not follow a
+    meta refresh: an Elsevier DOI lands on `linkinghub.elsevier.com/retrieve/pii/...`, a page that moves on
+    only by one, so that address is its landing, and the `elsevier-linkinghub` entry lists it. A PubMed or
+    PMC record's types do not come from its page, since PubMed's answers a cookie and script check and
+    PMC's shows no type (K1b, K1d; §0.4 row 359) but from E-utilities, one id at a time and within NCBI's
+    3 requests a second (§4.13). For a PubMed URL the step asks
+    `eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id=<pmid>` and reads the
+    array `result.<pmid>.pubtype` (`["Journal Article"]` for research, `["Journal Article","Review"]`,
+    `["Editorial"]`, `["News"]`, `["Journal Article","Comment"]`). For a PMC URL it asks
+    `efetch.fcgi?db=pmc&id=<the number without "PMC">`, whose JATS answer holds the type in the
+    `article-type` attribute of the root `<article>` (`research-article`, `review-article`, `editorial`,
+    `news`, `article-commentary`); that answer carries the whole text, about 100 KB for an article, so its
+    body is capped and only that attribute is kept. These types enter the evidence like a snapshot's
+    `article_types`. `refused_pubtypes` holds as written: "News", "Editorial" and "Comment" are PubMed's own
+    strings, and a commentary record carries both "Journal Article" and "Comment" and is refused because
+    one of its types is listed. `buildEvidence()` adds
     `types` (for each normalised URL, the pack's types followed by its snapshot's `article_types`) and
     `resolved` (the final URL of each URL's GET, read or not, where it differs from the URL).
     `ledger-seed.ts` with `--verify` (§8.13) gets both from its own fetches; without it a seed gets the
     URL test alone.
   - **Tests** (`tests/primary.test.ts`): an SMC expert-reaction page passes for `reaction` and fails for
     `paper`; a Nature `d41586-` URL passes the URL test for `reaction` only and the type check only when
-    typed News & Views; a Science URL typed as research passes for `paper` only, one typed as a
-    retraction note for `notice` only (§4.12), and one typed as news fails for every kind; a `doi.org`
-    URL passes only through a landing that passes, one that answered an error included when its
-    publisher's `type_field` is null; a PubMed record typed News fails, and no PubMed record passes for
-    `reaction`; a `reaction_sources` entry on a press host passes; a press URL fails for every kind;
-    `gist.github.com`, `api.github.com` and `codeload.github.com` fail for every kind though `github.com`
-    is a registry host; no PubMed or PMC record and no ClinicalTrials.gov page passes for `statement`,
+    typed News And Views (an ampersand "News & Views" is a type no entry lists); a Nature URL typed
+    OriginalPaper passes for `paper` only, one typed as a retraction note for `notice` only (§4.12), and one
+    typed News fails for every kind; a Science, Cell Press or PNAS URL, which is untyped, passes the URL test
+    for `paper` and `notice` and never for `reaction`; a Nature `nature.2016.19411` URL and
+    `10.1038/nature.2016.19411` DOI fail; a `doi.org` URL passes only through a landing that passes, one
+    that answered an error included when its publisher's `type_field` is null; a PubMed record typed News
+    fails, and no PubMed record passes for `reaction`; a `reaction_sources` entry on a press host passes; a
+    press URL fails for every kind; `gist.github.com`, `api.github.com` and `codeload.github.com` fail for
+    every kind though `github.com` is a registry host, and so do `docs.github.com`,
+    `discuss.huggingface.co` and `huggingface.co/docs` and `/blog`, through a registry's `deny_hosts` or
+    `deny_paths` (a `github.com` repository page and a `huggingface.co/datasets/` page pass for
+    `dataset`); no PubMed or PMC record and no ClinicalTrials.gov page passes for `statement`,
     but a `.gov` host that no resolver or registry names does; a statement entry passes in each of its
-    three forms and for `statement` only; an address that is not https, or has user info or a port other
-    than 443, fails for every kind; every seed entry passes for its own kinds, and every `press_hosts`
-    entry and its subdomains fail for every kind.
+    three forms and for `statement` only (and a Taiwan university's `.edu.tw` host passes); an address that
+    is not https, or has user info or a port other than 443, fails for every kind; every seed entry passes
+    for its own kinds, and every `press_hosts` entry and its subdomains fail for every kind.
 - **`labs.json`:** each lab `{ id, name, hosts, paths }` whose own posts are kind `lab_post`: Google
   DeepMind, OpenAI, Anthropic (the id `anthropic`, whose hosts §4.4's disclosure test reads), Meta FAIR,
   Microsoft Research AI for Science, FutureHouse, Periodic Labs, Isomorphic Labs, Lila Sciences, Sakana
-  AI, the Arc Institute, Allen Institute for AI (Verify in P2).
+  AI, the Arc Institute, Allen Institute for AI. **Settled in P2** (Kobol's K1d, 2026-11-28; §0.4 row 351):
+  each lab's own recent post answered 200 and was readable. Meta FAIR's paths are `/blog/` and
+  `/research/publications/` (`/research/` is a product page today, and the blog is all of Meta AI, not FAIR
+  alone), and Microsoft Research AI for Science's `/en-us/research/lab/microsoft-research-ai-for-science/`,
+  `/en-us/research/blog/` and `/en-us/research/publication/` (`/en-us/research/` alone admits every
+  Microsoft Research page, and the blog is shared, so it still admits other groups' posts); the others
+  admit their whole host.
 - **`checkers.json`:** recognised checkers for the Checked rung and above, `{ id, name, hosts, paths,
   rungs }`, with `rungs` the counted rungs (`checked`, `confirmed`, `applied`) that its records can show.
   A checker's own pages are kind `checker`, and an entry has no other kind (mathlib's repository and
   documentation are also kind `proof`, through `registries`, above). The entries: erdosproblems.com
-  (`checked`), the Lean mathlib repository and its documentation (`checked`), prize committees (Nobel,
-  Breakthrough, Fields, Abel, Wolf, Kavli, Lasker, the Vesuvius Challenge at scrollprize.org and its
-  announcements at scrollprize.substack.com; `checked`), CASP's prediction center (`checked`),
-  regulators (FDA, EMA, Taiwan FDA, PMDA; `applied`), and ClinicalTrials.gov results (`confirmed` only
-  with a paper or statement saying the endpoint was met).
+  (`checked`) and, as an entry of its own, the data repository `github.com/teorth/erdosproblems`
+  (`checked`; the site no longer shows statuses, K1d), the Lean mathlib repository and its documentation
+  (`checked`; the documentation at `leanprover-community.github.io` and its statistics page at
+  `mathlib.org`), prize committees (Nobel, Breakthrough, Fields, Abel, Wolf, Kavli, Lasker, the Vesuvius
+  Challenge at scrollprize.org and its announcements at scrollprize.substack.com; `checked`), CASP's
+  prediction center (`checked`), regulators (FDA, EMA, Taiwan FDA, PMDA; `applied`), and ClinicalTrials.gov
+  results (`confirmed` only with a paper or statement saying the endpoint was met). **Settled in P2** (K1d;
+  §0.4 row 351): each committee's own record page answered 200; the Abel Prize's laureate pages are
+  `/abel-prize-laureates/<year>` (the path `/abel-prize-laureates` without a year is 404, so the entry's path
+  is `/abel-prize-laureates/20`) and the Kavli Prize's list is `/laureates` (`/prizes` is 404). The other
+  committees admit their whole host, as seeded: K1d saw the Nobel Prize's records under `/prizes/`, the
+  Breakthrough Prize's under `/Laureates/`, the Fields Medal's under `/imu-awards/` and the Lasker Awards'
+  under `/winners/`, and a PR may narrow one of those entries to its path. The regulators' record pages were seen on `www.accessdata.fda.gov`
+  (Drugs@FDA, `/scripts/cder/daf/`, with letters and labels under `/drugsatfda_docs/`) and
+  `www.ema.europa.eu` (`/en/medicines/human/EPAR/`); Taiwan FDA's and PMDA's hosts answered 200 but no
+  approval record was sampled.
 - **`ai-drugs.json`** (`version`): AI-found drugs for the counter, each `{ id, name, developer,
   ai_basis, source_url, trials: NCT ids, approved }`; `ai_basis` quotes the developer's or a paper's own
   statement that AI found or designed it. `approved` is `null` or `{ regulator, date, source_url }`: an
   approval of the drug (the earliest, if several), `regulator` a `checkers.json` id with the rung
   `applied`, and `source_url` that regulator's own record of it, on the checker's hosts and paths; a PR
-  sets it from that record. A PR adds entries; the counter reads each trial's phase (§5.7).
+  sets it from that record. A PR adds entries; the counter reads each trial's phase (§5.7). **Settled in P2**
+  (Kobol's K1d, 2026-11-28; §0.4 row 358): version 2 lists four drugs, each `ai_basis` a quote of 25 words
+  or fewer that was found verbatim in the text of the page fetched that day: rentosertib (Insilico
+  Medicine; the Nature Medicine paper of 2025), ISM5411 and ISM6331 (Insilico Medicine's own releases,
+  through EurekAlert!) and REC-4881 (Recursion's pipeline page); every `approved` is `null`. Baricitinib for
+  COVID-19, which K1d also read (BenevolentAI found the use, Eli Lilly's drug; the FDA approved the new
+  indication on 2022-05-10), is left out: the drug's earliest approval is its 2018 one for rheumatoid
+  arthritis, which has no AI in it, so whether a repurposed drug belongs, and which approval it carries, is
+  JL's decision. Other candidates (ISM3412, IAM1363, REC-617, REC-994, EXS-21546, VRG50635, BEN-8744 and
+  zasocitinib) are not listed, each for want of a quotable statement on a page Kobol could read.
 - **`counters.json`** (`version`): the seven counters of §5.7, in its order (`erdos_ai`,
   `mathlib_theorems`, `ai_drugs`, `pdb_structures`, `ai_retractions`, `full_bibles`,
   `ancient_texts_ai`), each `{ id, label: L10n, unit: L10n, kind, source, value, as_of, source_url,
-  figures }`. A counter's `kind` is one that §5.7 gives its id (`erdos_ai` is `api` or `manual`),
-  `source` says in words where the figure comes from, and `source_url` is an https page on every counter
-  (the tracker's own `content/findings` folder on GitHub for `ancient_texts_ai`). `value` and `as_of`
-  are set, together (a value has its date), only for the `manual` counters other than `full_bibles`,
-  changed by PR with a source. `full_bibles` keeps them null and holds `figures` instead (`[]` on every
-  other counter): the Wycliffe Global Alliance's annual totals of languages with a full Bible, each
-  `{ as_of, total, source_url }`, oldest first with one figure for each date, a PR adding each year's
-  with its source; §5.7 computes the counter from them.
+  figures }`. A counter's `kind` is one that §5.7 gives its id (`erdos_ai` is `api` or `manual`; at
+  version 2 it is `manual`), `source` says in words where the figure comes from, and `source_url` is an
+  https page on every counter (the tracker's own `content/findings` folder on GitHub for
+  `ancient_texts_ai`). `value` and `as_of` are set, together (a value has its date), only for the `manual`
+  counters other than `full_bibles`, changed by PR with a source. `full_bibles` keeps them null and holds
+  `figures` instead (`[]` on every other counter): the Wycliffe Global Alliance's annual totals of
+  languages with a full Bible, each `{ as_of, total, source_url }`, oldest first with one figure for each
+  date, a PR adding each year's with its source; §5.7 computes the counter from them. **Settled in P2**
+  (Kobol's K1d, 2026-11-28, which read every source; §0.4 rows 352 to 357): version 2. `erdos_ai` is
+  `manual`, 69 as of 2026-06-30, with the AI contributions page of the erdosproblems GitHub wiki as its
+  `source_url`; `mathlib_theorems` reads `https://mathlib.org/mathlib_stats.html`; `full_bibles` holds the
+  four figures that Wycliffe's statistics pages give (724 at 2022-09-01, 736 at 2023-09-01, 756 at
+  2024-09-01 and 776 at 2025-08-01), so it reads 20, and its `source_url` is
+  `https://wycliffe.net/global-scripture-access/` (the old statistics address redirects there); the
+  `source` of `pdb_structures` and `ai_retractions` names what each reads (§5.7). Only the 2025 figure's
+  page gives a day, so the others are dated the first of their month. `ancient_texts_ai`'s `source_url`
+  answers 404 until the folder it names exists, which P2's merge brings.
 - **`markers.json`:** dated chart markers `{ date, label: L10n, source_url }`, oldest first, no two with
   the same date and English label, `source_url` the event's own primary source: AlphaFold 2 at CASP14
   (2020-11-30), ChatGPT (2022-11-30), the Vesuvius Challenge grand prize (2024-02-05), the Chemistry
   Nobel for protein structure prediction and design (2024-10-09), and others added by PR in date order.
+  K1d (2026-11-28) found all four `source_url` values answering 200 and each the event's own page: OpenAI's
+  "Introducing ChatGPT", the Vesuvius Challenge's "Grand Prize awarded" and the 2024 Chemistry press release say what
+  their markers say, and CASP14's home page does not itself say that AlphaFold 2 led, but it is the event's own
+  page, so it stays (§0.4 row 351).
 - **`terms-zh.json`** (`version`): the Taiwan-usage lists that ZH_TERMS, ZH_AVOID and ZH_TRADITIONAL
   read (§4.12). After `schema_version` and `version` its keys are `fixed`, `avoid`, `japanese_only` and
   `simplified_only`, in that order; the last two are each one string of Han characters, each once and in
@@ -2378,15 +2573,18 @@ largest weekday page the budgets allow is 980 words, and every soft file runs wi
 can pass the target. Its soft path is proved by published-mode cases of `tests/validate.test.ts` that lower `words_target` (a
 page total over it is a warning on the brief being published), and on drafts by T cases and tests that lower the budgets.
 `tests/fixture-safety.test.ts` reads every file of the fixture folders
-(`context`, `drafts`, `drafts-zh`, `empty-content`, `evidence`, `injection`, `metrics`, `packs`, `site-content` and `state`; JSON as its
-keys and string values, any other file whole) and the links of the builders in `fixtures/src/` (not `fixtures/src/invalid/`), and fails
-on a folder or a kind of file it does not list. A link is https and whole, with no user info, port, IP address or internationalised host,
+(`context`, `drafts`, `drafts-zh`, `empty-content`, `evidence`, `feeds` (P2's saved pages and feeds), `injection`, `metrics`, `packs`,
+`site-content` and `state`; JSON as its keys and string values, any other file whole) and the links of the builders in `fixtures/src/` (not
+`fixtures/src/invalid/`), and fails on a folder or a kind of file it does not list. A link is https and whole, with no user info, port, IP address or internationalised host,
 on no blocked or press host, and on a host the run reads or allows (a primary or figure host, a reserved example domain, this site, a host
 `config/sources.yaml` names); a link on a real host points at an invented page (the word `sample` in its host or path, an id in the
 invented block whose digits begin 99 and run to at least five, `NCT099` or `NCT99` for a trial, `zz` and a digit in a PDB id, or an
 8-digit Zenodo record number that begins 999, above any number Zenodo has issued), unless it is an endpoint the run reads or a front
-page. There is no e-mail address but a reserved example one, no machine path, no model identifier, no credential-shaped string, no
-attack-code pattern, no invisible character, no raw HTML tag and no hit of DUAL_USE's detectors; a named person or speaker is an invented
+page. The one http address allowed is an XML namespace declared in a saved feed (`fixtures/feeds/**/*.xml`), by a listed prefix such as
+`http://www.w3.org/` or `http://purl.org/`; a feed's own http links and item ids are rewritten to https samples when it is saved. There is
+no e-mail address but a reserved example one, no machine path, no model identifier, no credential-shaped string, no
+attack-code pattern, no invisible character, no raw HTML tag (the saved pages and feeds, `fixtures/feeds/pages/*.html` and
+`fixtures/feeds/**/*.xml`, are markup on purpose, with invented prose, and only this one check skips them) and no hit of DUAL_USE's detectors; a named person or speaker is an invented
 placeholder marked SAMPLE; no actor of a setback, a retraction or a dispute is an organisation that `config/` lists; the canary's token and
 address stand only in `fixtures/injection/` and the CANARY negatives, in their planted forms; no file reaches 1 MB and `fixtures/` stays
 under 6 MB. The negative fixtures that plant one of these (`invalid--BLOCKED_HOST` and `invalid--SOURCE_URL` for links,
@@ -2450,7 +2648,7 @@ test proves each list exact.
 | `XREF` | H (published) | A brief's finding ids exist; each finding's `briefs` lists the briefs that show it (in its story, items or deep dive; a brief that only names it, in its Lead, rung changes, review, correction or report lines, may be listed and need not be) and only editions that name it (§4.6); terms, `related` ids and a glossary term's `first_finding` exist; corrections and reports name existing records, with sequential ids; the path of each `removed` correction holds `REMOVED_TEXT` ("Removed text"); the archive index lists exactly the stored briefs. `validatePublished()` is given one brief and no folder, so it skips what needs the others (another edition's `briefs`, the archive index, the file list, and which terms are hidden for their own name, §8.9: LANG_PARITY then excepts none). A run over a whole content folder (`validateAll()`) also checks that each stored brief has the files it points at, each a regular file: its metrics file (`pace.metrics_file`, unless its Pace `status` is `missing`, §5.4) and its day's `status/D.json`, a data-only edition's included (its inputs manifest is not asked for), else one error at `briefs/D.json: pace.metrics_file` or `briefs/D.json: (status)` naming the file to restore; a file that is there but does not parse is the SCHEMA issue of its own file and is not reported again. Not checked: that a term's `first_date`, a correction's `date` or a report's `resolved_on` is a stored edition's date, that a correction's `report_id` and its report's `correction_id` name each other, and the archive index's `finding_count` and `corrected`. A `publishing` date with no `briefs/D.json` in the folder is one error at `(publishing)`, since no record would then be judged as being published |
 | `LANG_PARITY` | H (published) | A brief with `languages.zh` true has a non-null `zh` on each `L10n` of its own, the `after` of each correction it lists, the title of each finding it names (§4.6), the explainer, figure alt and glossary terms of each finding it first published (except a term hidden for its own name, §8.9), and each rung note recorded on its date in a finding it names. All are fixed once published, so a later English-only edition never fails an older brief; a null `zh` anywhere else, such as a correction's `before` copied from English-only text (§4.1), shows in English (§6) |
 | `FILE_LAYOUT` | H (published) | Cyber's `FILE_UNEXPECTED`: only the paths of §3 under `content/`. The walk ignores `.DS_Store` anywhere and a regular file named `README.md` in the folder's root, the placeholder that keeps an empty content folder in git; any other path is a stray at `<path>: (file)`, a `README.md` in a subfolder, a `README.txt`, a `.gitkeep` and a link or folder named `README.md` among them |
-| `SEED_SOURCES` | H (seed) | With `--verify` (on Kobol): every source URL of a seed file has a page snapshot, one already in `cache/snapshots/` or one taken now from a 2xx answer with HTML, as Cyber's `snapshotUrls()` takes them (a PDF fails: cite its landing page); `ledger-seed.ts` (§8.13) runs it in place of `SOURCE_SEEN`, and `QUOTE_VERBATIM` matches each quote in the snapshots' text; its passing and failing cases are §8.13's tests (P2). **Verify in P2:** which publishers refuse that GET from Kobol (an error answer, or a page without the article); a seed whose source is refused cites the same record on a page that answers, such as its PubMed or PMC record where that passes `PRIMARY_ONLY` and holds the quotes, and P2's PR names any seed that still has none, which stays out of `seed/ledger/` until one answers |
+| `SEED_SOURCES` | H (seed) | With `--verify` (on Kobol): every source URL of a seed file has a page snapshot, one already in `cache/snapshots/` or one taken now from a 2xx answer with HTML, as Cyber's `snapshotUrls()` takes them (a PDF fails: cite its landing page); `ledger-seed.ts` (§8.13) runs it in place of `SOURCE_SEEN`, and `QUOTE_VERBATIM` matches each quote in the snapshots' text; its passing and failing cases are §8.13's tests (P2). **Settled in P2** (K1b, §4.11; §0.4 row 359): 21 of the 31 seed publishers refuse that GET from Kobol (a challenge page, an error answer or a page without the article); a seed whose source is refused cites the same record on a page that answers, such as its PubMed or PMC record where that passes `PRIMARY_ONLY` and holds the quotes, and P2's PR names any seed that still has none, which stays out of `seed/ledger/` until one answers |
 
 **Word budgets** (`countWords()`, model prose only; the Chinese caps are these × `zh_factor`, rounded up):
 
@@ -2518,8 +2716,11 @@ PRIMARY_ONLY admits a setback's notices and the publisher's statement, and the n
 or retracted rung cites. Each journal publisher's `source-tiers.json` entry lists kind `notice`, whose
 types (its retraction, correction and expression-of-concern notes) fit `notice` only, and its own
 newsroom is a listed institution under `statement_suffixes` (§4.11). `tests/primary.test.ts` passes a
-page typed as a retraction note for `notice` alone. **Verify in P2:** each publisher's names for those
-types, the paths its notices use, and its newsroom's host and path, which P2 writes into the file.
+page typed as a retraction note for `notice` alone. **Settled in P2** (K1b and K1d; §4.11, §0.4 rows 343
+and 348): Nature, Springer and PLOS name their notice types in `types`, and their notices use the paths of
+their papers; the other journal publishers' pages cannot be read, so a notice at one passes the URL test
+for `notice` as a paper does for `paper`; each newsroom's host and path is in `statement_suffixes`
+(`cell.com/newsroom` answers a 403, so its pages cannot be snapshotted).
 
 **DUAL_USE's strings and patterns.** It reads every string of both drafts, whatever its key: prose,
 titles, the brief-level text, term definitions, figure alt text and credits, every quote (evidence,
@@ -2643,37 +2844,138 @@ topic, journal or arXiv category, §8.3); `budget` is the most requests the feed
 `fresh_days` and `date_zone` are Cyber's: a feed whose newest item is more than `fresh_days` days old,
 judged at `at(D, window_end)` by collect and at the clock by `sources:check`, is stale (`STALE`; `NODATE`
 when no item has a readable date), and `fresh_days` is `null` for a feed with no dated items to judge
-(counts, figures, records looked up by id); `date_zone` is the UTC offset, such as `+08:00`, of the
-feed's times written without a zone when the feed names none, or `null`, which reads them as UTC. P2's
-`sources:check` settles both on every feed.
-The file's header comment repeats these definitions. Drafted in Foundation, finalised in P2 with
-`npm run sources:check` on Kobol; every URL below is **Verify in P2**.
+(counts, figures, records looked up by id, and the lab pages that print no dates). An item dated after the
+run's date (after today, for `sources:check`) is ignored in that judgement, so a row dated in the future
+cannot keep a feed fresh for ever (the Retraction Watch file holds one dated 2027-08-27, K1c).
+`date_zone` is the UTC offset, such as `+08:00`, of the feed's times written without a zone when the feed
+names none, or `null`, which reads them as UTC. K1c settled both on every feed on 2026-11-28:
+`fresh_days` is the longest normal gap between a feed's items, rounded up, plus a day (or, for a feed that
+holds too few items to show one, its publishing cadence, rounded the same way), the arXiv feeds' being
+computed below; `date_zone` is `null` on every feed but `lab-sakana-ai` (`+09:00`), because every other
+feed names its zone or dates an item by a calendar day, which none of its publishers sets in Taipei time.
+The file's header comment repeats these definitions. Drafted in Foundation and finalised in P2: Kobol's
+batch K1c (`docs/reports/p2-kobol/K1c-feeds.md`, with K1a's `K1a-openalex.md` for OpenAlex) read
+every URL below on 2026-11-28, and `config/sources.yaml` holds what it found: 62 feeds, the 27
+of the Foundation draft (some with a new address, kind or budget) and 35 new (23 journal feeds, 11 lab
+feeds and `rcsb-unreleased`, which K1d's reading of the RCSB's files added). `npm run sources:check` on Kobol reads them again whenever a feed is in doubt. **Not settled in
+P2** (`sources:check` or P3's dry runs settle them, each change with a §0.4 row): the Sunday and
+Monday arXiv announcements against `arxiv.org/list/<cat>/new` (below), the queries of `arxiv-physics`
+beyond `physics*` and of `arxiv-stat-ml`, the cadence of `lab-microsoft-ai-for-science`'s feed (14 days is
+a guess), the length of EurekAlert!'s daily summaries view and how collect drops the news and corrections
+that `crossref-journals` returns beside the papers (below).
 
 | Id | Kind | What | Parser |
 |---|---|---|---|
-| `arxiv-<cat>` (math, physics, astro-ph, cond-mat, quant-ph, q-bio, physics.chem-ph, stat.ML cross-lists) | api | arXiv's API (`export.arxiv.org/api/query`) for the announcement inside the pack window (below), filtered by `ai-terms.json` in title or abstract | Atom via cheerio |
-| `biorxiv`, `medrxiv` | api | `api.biorxiv.org/details/<server>/<from>/<to>` | JSON |
-| `pubmed` | api | E-utilities `esearch` and `esummary` (JSON) on AI terms for the window | JSON |
-| `crossref-journals` | api | Crossref `works?filter=issn:…,from-pub-date:…` for the leading journals' new articles | JSON |
-| `journal-<id>` | rss | Each leading journal's current-issue or online-first feed | rss-parser |
-| `eurekalert` | rss | EurekAlert! releases by field (institutions' own releases) | rss-parser |
-| `lab-<id>` | rss or page | Each lab's own blog or research feed (`labs.json`) | rss-parser or cheerio |
-| `smc-reactions` | page | Science Media Centre expert reactions, each a named scientist's own published reaction (kind `reaction`, §4.11 `reaction_sources`) | cheerio |
+| `arxiv-<cat>` (8 feeds: `math`, `physics`, `astro-ph`, `cond-mat`, `quant-ph`, `q-bio`, `physics-chem-ph`, `stat-ml`) | api | arXiv's API (`export.arxiv.org/api/query`) for the announcement inside the pack window (below), with the category query listed after this table, filtered by `ai-terms.json` in title or abstract; the fallback is arXiv's listing feed, `rss.arxiv.org/atom/<category>` | Atom via cheerio |
+| `biorxiv`, `medrxiv` | api | `api.biorxiv.org/details/<server>/<from>/<to>/<cursor>`: 30 items a page, by cursor, for the UTC days the window touches. Their DOIs begin 10.1101 (older papers) or 10.64898 (new ones, §4.1) | JSON |
+| `pubmed` | api | E-utilities: `esearch` (JSON, `datetype=edat`, the AI terms, `retmax=1000`), `esummary` (JSON, 200 PMIDs a request: title, dates, DOI and `pubtype`, but no abstract) and `efetch` (XML, 200 PMIDs a request, for the abstracts that `must_match` and the pack read) | JSON; `efetch` XML via cheerio |
+| `crossref-journals` | api | Crossref `works?filter=issn:…,from-pub-date:…`, one request for each journal, for the leading journals' new articles. Crossref holds almost no abstract for them (0 of 5 for Nature), so `must_match` reads the title alone, and a candidate has no abstract text | JSON |
+| `journal-<id>` (26 feeds) | rss | Each leading journal's current-issue, online-first or most-recent feed. JACS, Environmental Science & Technology, Acta Mathematica and the Journal of Biblical Literature have none (below) | rss-parser |
+| `eurekalert` | page | EurekAlert!'s browse page, `www.eurekalert.org/news-releases/browse` (institutions' own releases). Its RSS feeds are gone (404) | cheerio |
+| `lab-<id>` (12 feeds) | rss or page | Each lab's own feed or news page (`labs.json`); Microsoft's is Microsoft Research's site-wide feed, since the lab's own has had no item since 2025-06-18 | rss-parser or cheerio |
+| `smc-reactions` | rss | Science Media Centre expert reactions, each a named scientist's own published reaction (kind `reaction`, §4.11 `reaction_sources`): its feed `/feed/`, which mixes post kinds, so only paths that begin `/expert-reaction-to-` or `/experts-react-` are kept; the fallback is its home page | rss-parser; the fallback via cheerio |
 | `openalex` | api | The Pace (§5.1) | JSON |
 | `crossref-updates` | api | Retractions, corrections and expressions of concern for stored DOIs (§5.8) | JSON |
-| `retraction-watch` | file | The Retraction Watch data file Crossref publishes (counter, §5.7; the rung watch's Monday match, §5.8) | CSV |
+| `retraction-watch` | file | The Retraction Watch data file Crossref publishes (counter, §5.7; the rung watch's Monday match, §5.8): 74,173 rows, 68.4 MB on 2026-11-28 | CSV |
 | `ctgov` | api | ClinicalTrials.gov API v2, the trials in `ai-drugs.json` and in stored findings | JSON |
 | `rcsb` | api | RCSB search API: released entries by deposit date (counter, §5.7) | JSON |
-| `mathlib-stats` | page | mathlib's statistics page (counter) | cheerio |
-| `erdos` | page or file | erdosproblems.com, or its public data repository, for problems solved with AI credit (counter) | per Verify |
-| `scrollprize` | rss or page | The Vesuvius Challenge's own announcements | rss-parser or cheerio |
+| `rcsb-unreleased` | file | RCSB's holdings file of unreleased entries, `files.rcsb.org/pub/pdb/holdings/unreleased_entries.json.gz` (counter, §5.7): one keyless GET of 1.16 MB gzipped, 16.1 MB of JSON and 36,382 entries keyed by PDB id on 2026-11-28, each with its `status_code` and `deposit_date` (17,898 of them withdrawn, `WDRN`) | JSON, unzipped first |
+| `mathlib-stats` | page | mathlib's statistics page at `mathlib.org/mathlib_stats.html` (counter; the old address is a one-kilobyte page that redirects by script) | cheerio |
+| `erdos` | page | erdosproblems.com's home page (its forum and blog threads). The counter `erdos_ai` reads nothing: the site no longer shows statuses and the repository has no AI field, so the counter is manual (K1d, §5.7) | cheerio |
+| `scrollprize` | rss | The Vesuvius Challenge's own announcements (its Substack feed) | rss-parser |
 | `naer-terms` | page | 樂詞網 search and term pages: the Chinese pass fetches them (its one allowed host, §9.5), and stage 8 snapshots those it fetched, as `ledger-seed --verify` does each seed term's `official_url` (ZH_OFFICIAL, §4.12) | none (never read by collect) |
+
+**The arXiv category queries** (`cat:` terms joined with OR; a wildcard matches every category of an
+archive). Collect holds this table as code, one line for each of the eight feeds. `physics*` is the
+physics archive alone, and arXiv reports a paper by its alias when its category has one (`math.IT` as
+`cs.IT`, `math.MP` as `math-ph`), which `math*` misses (16 papers of one announcement were `cs.IT`), so:
+
+| Feed | Query | Fields |
+|---|---|---|
+| `arxiv-math` | `(cat:math* OR cat:cs.IT OR cat:math-ph)` | `mathematics` |
+| `arxiv-physics` | `(cat:physics* OR cat:hep* OR cat:gr-qc OR cat:nucl*)` | `physics` |
+| `arxiv-astro-ph` | `cat:astro-ph*` | `physics` |
+| `arxiv-cond-mat` | `cat:cond-mat*` | `physics`, `chemistry` |
+| `arxiv-quant-ph` | `cat:quant-ph` | `physics` |
+| `arxiv-q-bio` | `cat:q-bio*` | `biology` |
+| `arxiv-physics-chem-ph` | `cat:physics.chem-ph` | `chemistry` |
+| `arxiv-stat-ml` | `cat:stat.ML` | none: each paper is mapped by its own categories (§8.3) |
+
+`arxiv-physics` takes `hep*`, `gr-qc` and `nucl*` because `fields.json` has the subfields "particles and
+nuclei" and "astronomy and cosmology" under physics, whose papers are mostly in those archives (K1c found
+`physics*` narrower than its name), and `physics.chem-ph` papers are in both `arxiv-physics` and
+`arxiv-physics-chem-ph`, which collect de-duplicates by arXiv id (§8.3). `hep*`, `gr-qc` and `nucl*` are not yet
+checked against `arxiv.org/list/<cat>/new` (K1c read `math*` and `physics*` only). A feed has one
+fallback, and a listing feed holds one archive's papers (`rss.arxiv.org/atom/physics` is the physics archive
+alone), so on a morning when the API fails `arxiv-physics` reads its fallback and loses the `hep`, `gr-qc` and
+`nucl` papers; the other seven's fallbacks name the archive or category of their query.
 
 A feed that fails degrades the pack (the pack's `degraded`, and `failed_feeds` in the context's `pack`
 block, which lists the feeds whose `ok` is false in the pack's `feeds`, §4.15), never the run. A
-`journal-<id>` or `lab-<id>` feed has an id of its own: it need not equal the id of its journal in
-`journals.json` or of its lab in `labs.json` (the seed's `lab-deepmind` is the feed of the lab
-`google-deepmind`), and nothing checks one against the other.
+`lab-<id>` feed has an id of its own: it need not equal the id of its lab in `labs.json` (the seed's
+`lab-deepmind` is the feed of the lab `google-deepmind`), and nothing checks one against the other. A
+`journal-<id>` feed's id is `journal-` and its journal's id in `journals.json`, except that
+`geophysical-research-letters` and `hts-theological-studies` are shortened to `grl` and `hts`, and four
+journals have no feed (below); `tests/repo-files.test.ts` checks that every journal has its feed, or is one
+of the four. A fallback is read with its feed's own parser (§0.4 row 46), with one exception,
+`smc-reactions`, whose RSS reader hands its HTML fallback to the HTML reader, and it counts in the feed's
+`budget`, so a feed with a fallback has a budget of at least 2.
+
+**What K1c found** (2026-11-28), which the readers rely on:
+
+- **Journals with no feed.** `pubs.acs.org` (JACS, Environmental Science & Technology) answers every plain
+  GET with a Cloudflare browser check (403, `cf-mitigated: challenge`), and no workaround is tried. Acta
+  Mathematica and the Journal of Biblical Literature publish no feed. All four come only through
+  `crossref-journals`. The eight Nature research journals' feeds hold only their 8 newest items, so
+  `crossref-journals` is their full list.
+- **Dates come in several forms**, and a reader parses each, never guesses: RFC 822 with a numeric zone or
+  `GMT`; ISO 8601 with a `Z` or an offset (`+09:00`, `-08:00`, `-05:00`); a bare `YYYY-MM-DD` (Nature's
+  `dc:date`, Cell, the Cambridge journals, Inventiones' `pubDate`); `DD-Mon-YYYY` (EurekAlert!); "Nov 17,
+  2026" (Anthropic), "July 9, 2026" (Meta), "November 20, 2026" (Lila) and "November 26, 2026" (the Science
+  Media Centre's page); and the AMS feed's "Thu, 24 Sep 2026 12:53 EDT", which ends in a zone name. The APIs
+  and the file have their own: PubMed's `sortpubdate` ("2026/11/27 00:00", beside `pubdate` "2026 Nov 27"),
+  bioRxiv's and medRxiv's `date` (`YYYY-MM-DD`), Crossref's `date-parts` (a year alone for some records, §5.8)
+  and the Retraction Watch file's "M/D/YYYY 0:00" (US month first). A bare date is read in `date_zone`, which
+  is UTC for all of them. APSR's items are not in date order.
+- **No DOI in the item:** Annals of Mathematics, Language and HTS items, and the lab and EurekAlert!
+  items. The candidate has no `doi` and keeps its link (§8.3 maps it by the journal alone).
+- **The text is not always an abstract.** PubMed's `esummary` and Crossref's records hold none for most
+  leading journals (above), and the Nature feeds carry a standfirst, a line or two under the title, so
+  `must_match` and the pack read what the source gives and a candidate may hold a title and a standfirst only.
+  Crossref's `filter=issn:` also returns news, correspondence and corrections, whose `type` is
+  `journal-article` like a paper's, so collect needs another test to drop them (K1c suggests the title or a
+  subtype); the reader's test is settled on Kobol's captures, with a §0.4 row.
+- **A journal's address may redirect before it serves:** Inventiones' (`link.springer.com/search.rss`)
+  answers with a redirect carrying `error=cookies_not_supported` and then serves the feed, so a reader
+  follows redirects (`fetchFeed()` does, `lib/feeds/http.ts`) and judges the final answer.
+- **Page feeds**: the sites' class names are generated, so a selector keys on the path and on `<time>`:
+
+  | Feed | Selector | Gives |
+  |---|---|---|
+  | `eurekalert` | `article.post` with `a[href^="/news-releases/"]` | link, title, the date as "DD-Mon-YYYY", the institution and the release type |
+  | `smc-reactions` (fallback) | `article.article-list-item > header h3 a` and its `time` | link, title, date |
+  | `lab-anthropic` | `a[href^="/research/"]` (on the `/news` fallback: `article` with `a[href^="/news/"]`), with the nearest `time` | link, title, date |
+  | `lab-meta-fair` | `a[href*="/blog/"]` with a slug, and the card's date text | link, title, date |
+  | `lab-futurehouse` | `div.card a.u-link-cover[href^="/research/"]` | link, title; no date |
+  | `lab-periodic-labs` | `a[href^="./news/"]` holding a `time[datetime]` | link (relative), title, ISO date |
+  | `lab-isomorphic-labs` | `a.news-card[href^="/articles/"]` and `a.news-featured_title[href^="/articles/"]` | link, title; no date |
+  | `lab-lila-sciences` | `div.news-list_item a[href^="/news/"]` and its date text | link, title, date; the list also links outside press, which the primary-source check drops (§4.12) |
+  | `lab-arc-institute` | `article[class*="PostList_postItem"] h3 a[href^="/news/"]` with `time[datetime]` | link, title, ISO date |
+
+  `lab-futurehouse` and `lab-isomorphic-labs` print no dates, so they have no `fresh_days`, and an undated
+  item cannot enter a 24-hour window (§8.3): until a feed or a dated page exists, they give the agent no
+  candidate, and the labs' pages are reached by the agent's own research. `lab-meta-fair`'s page is
+  rendered by the client and its newest post shown was dated 2026-07-09. `lab-anthropic`'s fallback is
+  `/news`, and `lab-microsoft-ai-for-science` reads Microsoft Research's site-wide feed, so `must_match`
+  is true for it and for every lab whose posts are not all about AI for science (`lab-openai` posts all its
+  news there, and `lab-arc-institute`'s news is not all about AI); it is false for `lab-deepmind`, as the
+  Foundation drafted it, and for the four companies whose every post is the point: `lab-futurehouse`,
+  `lab-periodic-labs`, `lab-isomorphic-labs` and `lab-lila-sciences`. A lab feed lists its `fields` only when
+  its lab works in one or two (those four and `lab-arc-institute`); the other seven are mapped one candidate
+  at a time (§8.3).
+- **Science's feed** answered 403 to a second request in the same minute (K1c): a feed is read once in a
+  morning, so the run never meets it, but a `sources:check` within a minute of another read of that feed
+  can: wait a minute and run it again (the feed's `budget` of 1 leaves no retry).
 
 **arXiv's calendar** (`lib/feeds/arxiv.ts`). arXiv announces new submissions at 20:00 US Eastern
 (`America/New_York`, so it follows US summer time), Sunday to Thursday, except on the US dates in
@@ -2686,8 +2988,12 @@ and on the morning a skipped announcement would have reached, there is none, and
 announcement, on the Friday before; its list is the new submissions from the deadline of the previous
 announcement not in `arxiv_skipped` to its own, so a skipped announcement's submissions fall into the
 next one. A list is fetched once, by the pack whose window holds it: `arxiv-<cat>` adds
-`submittedDate:[<from> TO <to>]` to its category query (from the list's start to one minute before its
-deadline, `YYYYMMDDHHMM` in UTC) and keeps the answer as `cache/feeds/arxiv/<id>.<US date>.xml`, reused
+`submittedDate:[<from> TO <to>]` to its category query (the table above), where `<from>` is the minute of
+the previous deadline and `<to>` the minute of the list's own deadline, both `YYYYMMDDHHMM` in UTC. The
+API reads `submittedDate` in UTC and includes the start minute from its first second but **not the end
+minute**, so `<to>` is the deadline's own minute and a paper submitted at 13:59:59 US Eastern is in this
+list and one at 14:00:00 in the next, which two lists that meet therefore never share. The answer is kept
+as `cache/feeds/arxiv/<id>.<US date>.xml`, reused
 by name and pruned after 60 days as Cyber's `readZip()` and `pruneCache()` treat its zips (§9.8;
 `pruneCache()` never enters a subfolder, so `cacheBodyDirs()` lists this one; one that does not parse is
 removed and fetched again; an answer with no entry is not kept). A window with no announcement asks for
@@ -2700,16 +3006,47 @@ window's list and within `budget`, only when it is not there. Every entry is dat
 each list at the midnight after its announcement). `arxiv_skipped` holds the US dates of the
 announcements arXiv's blog says it skips for holidays (such as 2026-11-11, Veterans Day, whose
 submissions arXiv announced on 2026-11-12; a holiday on a Friday skips the Sunday announcement after it,
-such as 2026-07-05 after 2026-07-03); P2 seeds it from the holidays on arXiv's availability page and the
-blog's notice for each, and a PR adds each later notice. **Verify in P2:** that `submittedDate` reads UTC
-with both ends included and each end a whole minute (`[<m> TO <m>]` returns a paper submitted partway
-through minute `<m>`), and, on a Tuesday and a Wednesday before 08:00 Taipei (the Sunday and Monday
-announcements), that `arxiv-math`'s window list holds the new submissions and cross-lists that
-`https://arxiv.org/list/math/new` shows for that announcement, apart from papers arXiv held and announced
-later. If the ends differ, the query follows what Kobol sees; if the API cannot give one announcement's
-list, the feeds read arXiv's listing feeds (`https://rss.arxiv.org/atom/<cat>`: the previous day's
-announcement only, renewed at midnight US Eastern and empty on the US weekend) dated the same way. Each
-change gets a §0.4 row.
+such as 2026-07-05 after 2026-07-03). P2 seeded it with 19 dates, from the holidays on arXiv's availability
+page and the blog's notice of 2026-11-25 (K1c): the eight dates of 2026 that are past, which the tests
+use (2026-01-01, 2026-01-19, 2026-06-21, 2026-07-05, 2026-09-07, 2026-10-12, 2026-11-11 and 2026-11-26),
+and the eleven of the next twelve months (2026-12-27, 2027-01-03, 2027-01-18, 2027-02-15, 2027-05-31,
+2027-06-20, 2027-07-05, 2027-09-06, 2027-10-11, 2027-11-11 and 2027-11-25), each with its source in a
+comment. A PR adds each later notice, from the same two pages.
+
+**Checked on 2026-11-28 (K1c).**
+
+- **The window's list against `arxiv.org/list/math/new`**, for the announcement of Wednesday 2026-11-25
+  20:00 US Eastern (the page's "Thursday, 26 November 2026"): with the end minute and the aliases above,
+  the API's list held 409 papers, every one on the page, which holds 440 (379 new submissions and 61
+  cross-lists). The 31 on the page that the API lacked were all submitted before the window: papers
+  arXiv held and announced late, which the spec allows. The query as the spec first wrote it (`math*`
+  alone, ending a minute early) found 391 and missed 18 papers inside the window. The other seven feeds'
+  lists of that announcement held 116 papers (`arxiv-physics`, with `physics*` alone), 101, 124, 103, 24,
+  15 and 28 (`arxiv-stat-ml`, 16 of them cross-listed to another archive too).
+- **`id_list`:** a request with 100 ids and `max_results=100` answered for all 100.
+- **The listing feed fallback:** `rss.arxiv.org/atom/math` answered 200 with an empty feed (updated
+  2026-11-27T05:00Z) on the Friday after US Thanksgiving, as expected when no announcement came. It holds
+  the previous announcement only, and each `arxiv-<cat>` feed's `fallback_url` is that feed, read when the
+  API fails, dated by announcement as above.
+- **`fresh_days` is 5** for every `arxiv-<cat>` feed. The longest normal gap from the newest cached list
+  to a morning's window end (03:15 Taipei) comes after a skipped announcement. Take Thanksgiving 2026:
+  Thursday 2026-11-26's announcement is skipped, so the newest list on Monday 2026-11-30 at 03:15 Taipei
+  is Wednesday 2026-11-25's, announced on Thursday 2026-11-26 at 09:00 Taipei, 3 days 18 hours 15 minutes
+  before: 3.76 days (K1c wrote 3.75; the spec's earlier example, in US summer time with the announcement
+  at 08:00 Taipei, 3.8). The next list, Sunday 2026-11-29's, takes both days' submissions and is read on
+  Tuesday 2026-12-01. A normal week's longest gap is shorter (Friday 09:00 to Monday 03:15, 2.76 days), and
+  Christmas, New Year and the other seeded Friday holidays give the same 3.76 or 3.8. Rounded up, 4, plus
+  a day, 5 (the day also covers `sources:check`, which judges at the clock and can see up to about 10 hours
+  more), so an API that answers with no entry is flagged `STALE` about a day after the longest normal
+  gap, not only after the drafted 7. A PR that adds a skip and so lengthens the gap raises it the same way.
+- **Not settled: the Sunday and Monday announcements.** The comparison with `arxiv.org/list/math/new`
+  needs a Tuesday and a Wednesday morning before 08:00 Taipei (the Sunday's list is read on Tuesday, the
+  Monday's on Wednesday), and K1c ran on a Saturday. P3's dry runs do it (§10 P3 step 6): on one Tuesday
+  and one Wednesday, `arxiv-math`'s window list is compared with the new submissions and cross-lists that
+  `https://arxiv.org/list/math/new` shows for that announcement, apart from papers arXiv held and
+  announced later. The same comparison shows whether another alias leaves papers out (`math.ST` is also
+  `stat.TH`, for one). If the lists differ, the query follows what Kobol sees, and each change gets a §0.4
+  row.
 
 **Budgets.** A feed's `budget` counts the scripts' requests to it in every stage of the morning (§8.2),
 never the agents' fetches, which `web_fetches` and `zh_fetches` count, nor a snapshot round's GETs
@@ -2724,6 +3061,33 @@ most it asks for (§5.4: four requests for each of the 8 provisional weeks, the 
 `window_weeks` (13) older ones). Collect, which runs before it, makes at most 12 OpenAlex requests for
 its candidates' topics (§8.3).
 
+The registry's budgets (K1c's reading of each feed, 2026-11-28; a change to a feed's shape changes its
+budget): a feed with one address 1, with a fallback 2 (the `arxiv-<cat>` feeds: the API's one request and
+the listing feed's); `biorxiv` 20 (the window touches two UTC days, which held 511 items when K1c read them, 18
+pages of 30, with two to spare) and `medrxiv` 5 (111 items, 4 pages); `pubmed` 12 (one `esearch`, then
+`esummary` and `efetch` at 200 PMIDs a request, 5 each for the `retmax` of 1,000, with one to spare);
+`crossref-journals` 40 (one request for each of the 30 journals and 10 for a second page or a retry);
+`eurekalert` 2 (two browse pages of 12 releases, a small part of a weekday's 150 or so); `lab-anthropic`,
+`smc-reactions`, `erdos` and `rcsb` 2, `rcsb-unreleased` 1 (one GET); `crossref-updates` 10 and `ctgov` 10 (above); `openalex` 100.
+
+**Body caps and timeouts** (`fetchFeed()`, `lib/feeds/http.ts`). A body is cut at 5 MiB and a request
+times out after 15 seconds, except for two feeds that need more: an arXiv list (10 MiB, 45 seconds; the
+largest K1c read, `arxiv-math`'s 409 entries, is far under it) and the Retraction Watch file (128 MiB, 90
+seconds). The file held 74,173 rows and was 68.4 MB on 2026-11-28, over the 5 MiB default more than
+thirteen times, so it has a cap of its own, with room to almost double; its newest row is dated 2027-08-27,
+which is why a future date is ignored when freshness is judged (above). The 90 seconds are not measured
+here: Kobol's first full `sources:check` confirms that the download fits them, and the PR that raises a
+cap or a timeout gets a §0.4 row.
+
+RCSB's holdings file (`rcsb-unreleased`) is a gzip of 1.16 MB (16.1 MB unzipped on 2026-11-28), so the
+default cap judges its bytes as downloaded, which are the gzip's, and it fits. The code that unzips it caps the
+unzipped text itself, at 64 MiB (four times today's size), so that a corrupt or hostile gzip cannot fill
+memory, and a file over either cap is a failed feed; the cache keeps it as received (§9.8). The
+Retraction Watch file is read whole: its response carries an `ETag` and a GET with `If-None-Match`
+answers 304, but its repository gets a commit on each working day, so a weekly read always finds it
+changed, and a range request cannot pick out the new rows, since the file is not sorted by date (K1d;
+§0.4 row 355).
+
 **Rate limits.** A host that limits how fast one client may ask gets one queue in `fetchFeed()`, which
 every request to it joins, a retry included, whatever the stage or `pool()` slot that sends it. arXiv's
 API and listing feeds (`export.arxiv.org`, `rss.arxiv.org`): one request at a time, each starting at
@@ -2737,9 +3101,19 @@ with `max_results` set to their number, since it defaults to 10). In fixture run
 the waits are skipped, as Cyber skips its 6 s wait between NVD pages. `tests/http.test.ts` checks, with
 a fake clock, that two arXiv requests sent from two slots never overlap, the second starting at least 3
 seconds after the first ended, and that two Crossref filters never overlap and start at least a second
-apart. **Verify in P2:** each host's limits, which `docs/SOURCES.md` records (P2 step 1), and that an
-arXiv `id_list` request and a ClinicalTrials.gov `filter.ids` request answer for every id they name (if
-one does not, its batch shrinks until it does); a change gets a §0.4 row.
+apart. **Checked on 2026-11-28 (K1c);** `docs/SOURCES.md` records each host's limits (P2 step 1). arXiv's
+API terms say "no more than one request every three seconds" and "a single connection at a time", for
+all machines together; the terms do not say whether `rss.arxiv.org` shares that allowance, so the queue
+treats the two hosts as one. Crossref's answers carry `x-rate-limit-limit: 5`, `x-rate-limit-interval: 1s`
+and `x-concurrency-limit: 1` for its public pool, which the queue's limits fit inside. NCBI's answers
+carry `x-ratelimit-limit: 3`, the limit without a key (no key is used). The other hosts state none:
+bioRxiv's API pages 30 items at a time, and ClinicalTrials.gov, the RCSB, GitLab (which hosts the
+Retraction Watch file; unauthenticated it allows 500 requests in its window), EurekAlert!, the
+publishers' feeds and the labs' pages are each read a few times a morning. An arXiv `id_list` request
+with 100 ids and `max_results=100` answered for all 100, and so did a ClinicalTrials.gov `filter.ids`
+request with 100 NCT ids and `pageSize=100` (without `pageSize`, 10); so no batch shrinks. The one
+oddity: Science's feed answered 403 to a second request in the same minute, above. A change gets a §0.4
+row.
 
 ### 4.14 Source pack
 
@@ -2749,8 +3123,8 @@ one does not, its batch shrinks until it does); a change gets a §0.4 row.
 none), `published_at`, `journal`, `fields` (by §8.3's field mapping: at least one, none twice),
 `ai_terms_matched`, `journal_leading` (boolean: its `journal` is one that `journals.json` lists, whether
 or not `in_pace` is true), `types` (the article types its feed gives, §4.11, `[]` for a feed that gives
-none: a publisher page's own type is read when a source is judged and reaches the evidence, never the
-pack), `stored_finding` (the id of an existing finding it matches by DOI, arXiv id or trial number, for
+none: a publisher page's own type, and a cited PubMed or PMC record's, which the snapshot step reads
+from E-utilities (§4.11), are read when a source is judged and reach the evidence, never the pack), `stored_finding` (the id of an existing finding it matches by DOI, arXiv id or trial number, for
 returning facts, else null), `flags` (below), `score` and `deep_read` (§5.9). The Markdown groups
 candidates by field, then lists the standing stories.
 It holds no rung-watch proposals or reports: stage 4 makes and updates them after collect (§8.2), and the
@@ -2853,10 +3227,20 @@ Scripts compute every number from public data or from the stored findings; the a
 
 `scripts/lib/openalex.ts`: one request per second at most, `fetchFeed()`'s timeouts (Cyber's
 `lib/feeds/http.ts`), its own cache of the group-by answers below (`cache/openalex/`, §5.4), the run's
-user agent, and no `mailto` or other personal data. **Verify in P2:**
-that keyless requests still work at this volume (the backfill makes about 2,500); if OpenAlex now needs
-a key, JL stores its free key with the helper (§9.6, `unveiling-openalex-key`), the client adds
-`api_key=` and `inputs` records every URL with the key removed, all with a §0.4 row.
+user agent, and no `mailto` or other personal data (OpenAlex has ignored `mailto` since February 2026).
+**Keyless access is budgeted** (checked on 2026-11-28, K1a, with 315 requests): every caller on one IP
+address shares $0.10 a day, 1,000 credits (the `x-ratelimit-*` headers of each answer show what is left),
+reset at midnight UTC (08:00 Taipei); a free key gets $1 a day, 10,000 credits, and a new key spends its
+first $1 at most $0.10 every 5 minutes. A list, or a group-by on a list, costs 1 credit; any `.search`
+filter, or a group-by on one, costs 10. So a week of the four requests below costs 22 credits
+(`leading_total` and `all_total` 1 each, `leading_ai` and `all_ai` 10 each). The morning's 9 weeks (36
+requests, 198 credits) and collect's DOI lookups fit the keyless budget, narrowly (it is shared with
+everything else on Kobol's address, a browser on openalex.org included), but the backfill (about 13,600
+credits, §5.4) and the precision and recall samples (10 credits a request, §10 P2 step 2) do not, and
+paging past a first page needs a key. So JL signs up for the free key in P2 and stores it with the helper
+(§0.3, §9.6, `unveiling-openalex-key`); the client reads it from the keychain, adds `api_key=` to every
+request whenever the keychain holds one, the morning's included, and `inputs` records every URL with the
+key removed.
 
 For each ISO week (Monday `M` to Sunday `S`) four group-by requests, each
 `GET https://api.openalex.org/works?filter=<f>&group_by=primary_topic.field.id`:
@@ -2872,14 +3256,23 @@ For each ISO week (Monday `M` to Sunday `S`) four group-by requests, each
 and URL-encoded; `leading_total`'s journals are those with `in_pace` true, by `openalex_source` (§4.11).
 `has_abstract:true` applies to numerator and denominator alike, so a paper without an abstract can never
 be counted as "not AI". Each group's key (an OpenAlex field id) maps to one of our fields through
-`fields.json`; excluded and unmapped keys are dropped and counted in `inputs`. **Verify in P2:** the
-filter names, that the search filter takes quoted phrases with OR, the 100-value limit on the journal
-list, that the group counts add up to the ungrouped count within 1%, and each journal's yearly counts of
-`type:article` works with and without `has_abstract:true`, from 2015 to the last full year (two
-`group_by=publication_year` requests for each journal), which set its `in_pace` by §4.11's test. A
-journal that fails gets `in_pace` false; if that leaves a field with no `in_pace` journal whose `fields`
-is that field alone, P2 adds that field's top journals by OpenAlex citation share among those that pass
-(at least one, with a stated rule, as for the humanities), and the PR names them.
+`fields.json`; the answer's field id is `https://openalex.org/fields/13`, whose prefix the client strips.
+Excluded and unmapped keys are dropped and counted in `inputs`, and so are the works with no primary
+topic, which `group_by` hides (§5.4). **Checked on 2026-11-28 (K1a):** the filter names; that
+`title_and_abstract.search` takes quoted phrases joined with OR (the 20 phrases found 63,291 of 3,749,447
+articles of 2019, 1.7%), that a quoted phrase matches as a phrase, that words are stemmed (so "neural
+network" also matches "neural networks") and that a hyphen counts as a space; that `NOT` works inside the
+filter, to find a phrase alone; that `primary_location.source.id` takes at most 100 values (101 values
+answer 400, "Maximum number of values exceeded"), so the journal list can never outgrow it; that `sample`
+(at most 10,000) and `seed` work with these filters and the same seed gives the same works; that the
+group counts add up to the ungrouped count within 1% for every kind (week 2026-09-07: 464 of 466, 27 of
+27, 87,076 of 87,209 and 6,518 of 6,519), the gap being the works with no primary topic (`:include_unknown`
+counted 133 in `all_total`, exactly the gap); that a group-by returns at most 200 groups (the field
+grouping has 26) and cannot group by a date; and each journal's yearly counts of `type:article` works with
+and without `has_abstract:true`, from 2015 to the last full year (two `group_by=publication_year`
+requests for each journal), which set its `in_pace` by §4.11's test with its floor. A journal that fails
+gets `in_pace` false; a field left with no `in_pace` journal whose `fields` is that field alone gets
+journals by the rule of §4.11, as earth and the humanities did in P2, and the PR names them.
 
 ### 5.2 Statistics, display and the Pace sentence
 
@@ -2969,15 +3362,21 @@ no entry.
 ### 5.4 The weekly series and the backfill
 
 `content/state/pace-weekly.json` (§4.7) holds every week's counts from 2015-01-05. **Each morning**
-`metrics.ts` refetches the 8 provisional weeks and the newest firm week (36 requests, about a minute),
+`metrics.ts` refetches the 8 provisional weeks and the newest firm week (36 requests and 198 credits, about a minute),
 replaces them, and recomputes A and B; a week leaving the provisional span becomes firm with its last
 fetch. A week's last morning, the last that refetches it as the newest firm week, is 64 days after its
 Sunday (7 × `provisional_weeks` + 8). An older firm week fetched before its last morning (by a backfill
 while it was newer, or before missed mornings), or missing from the state (after nine weeks or more
 without a run), is fetched too, newest first, at most `window_weeks`
 (13) a morning. **The backfill** (`npm run backfill -- --pace`, P2, on Kobol) fetches every week from
-2015-01-05 to `data_cutoff` (about 2,500 requests, under an hour at one a second; cached, so a rerun is
-fast). Each cached OpenAlex answer keeps its request URL and Taipei fetch date; the backfill reuses the
+2015-01-05 to `data_cutoff`: about 620 weeks, 2,480 requests and about 13,600 credits (§5.1). At one
+request a second that is under an hour, but a free key's budget is 10,000 credits a day, so the backfill
+runs over two budget days: it stops when OpenAlex refuses a request and is run again after 08:00 Taipei,
+resumed from the cache (`cache/openalex/`), and a resumed run never uses `--refresh`, which would refetch
+the first day's answers. A new key's first $1 is released $0.10 at a time every 5 minutes (§5.1), so in
+the key's first hour a refusal is also met by running it again a few minutes later. Without a key it
+would take about 14 days. A rerun on a day when everything is cached is fast. Each cached OpenAlex answer
+keeps its request URL and Taipei fetch date; the backfill reuses the
 newest for a URL only when it was fetched on the run's own Taipei date or, without `--refresh`, on or
 after the week's last morning, and refetches any other, so a catch-up never freezes a provisional count
 and a same-day rerun stays byte-identical. A change to `ai-terms.json`, `journals.json` or
@@ -2988,12 +3387,26 @@ P2 PR carries the state built with `--out content`, and for a later change the `
 rebuilds it with `--refresh` (§10 P5 step 1). After go-live the PR that changes them carries only the config and
 its tests; on the day JL merges it, Claude fast-forwards the main checkout (§9.3) and, in that checkout,
 runs `npm run backfill -- --pace --refresh --push`, started before 02:00 or from 04:30 so that its
-hour of requests and its push fall outside 03:00 to 04:30 (§8.4); it commits `state: pace to <cutoff>`.
+hour of requests and its push fall outside 03:00 to 04:30 (§8.4; a change that refetches every week costs
+the same credits as the first backfill and may need two budget days on a free key, so that change is timed
+for them, as Calibration's is); it commits `state: pace to <cutoff>`.
 A morning run between the merge and the push publishes with the Pace missing (`E_METRICS`, whose
 `NEXT_STEP` line, §8.2, names this push, its checkout and its hours instead of Cyber's
 `fix in a PR, then <rerun>`): the metrics stage ends without staging `metrics/D.json` (§4.7), so its
 brief's `pace.status` is `missing`, and XREF's check that the edition's metrics file exists passes such a
 brief (§4.12). The first run after the push has the Pace again.
+
+**A week's counts are not even** (K1a, 2026-11-28). OpenAlex gives a work that is dated only to a month,
+or only to a year, a `publication_date` on the 1st of the month, or on 1 January. So a normal week holds
+about 87,000 to 92,000 works (`all_total`), but the weeks that hold a 1st of the month hold 1.7 to 2.1
+times as many (161,832 for the week of 2026-08-31, 190,964 for 2026-09-28 and 151,710 for 2026-10-26),
+and the week of 1 January holds more, and a week's share mixes in papers from the rest of its month. A
+and B are ratios of two counts, so the spikes mostly cancel; they are kept as they come, the year-ago
+window having the same pattern, and Methodology says so (§6). The counts show no indexing lag (the newest
+full week already held 87,950 works, level with weeks two months older), though works change after they
+are indexed (topics, abstracts), which is why the newest 8 weeks stay provisional. The `inputs` manifest
+holds each request's works with no primary topic (`ungrouped_n`, §4.7), beside the excluded and unmapped
+counts: 133 of 87,209 in one week, 0.15%.
 
 ### 5.5 C: AI's share of the Landmarks
 
@@ -3028,15 +3441,30 @@ is held.
 are fetched on Monday runs (and by `metrics --counters`), and otherwise carried from the last reading
 with its own `as_of`.
 
-| Id | Kind | Source (Verify in P2) | Value |
+| Id | Kind | Source | Value |
 |---|---|---|---|
-| `erdos_ai` | api, else manual | erdosproblems.com's public data (or its GitHub data repository) | Erdős problems solved with AI credit |
-| `mathlib_theorems` | api | mathlib's statistics page | Theorems formalised in Lean's mathlib |
+| `erdos_ai` | manual | The AI contributions page of erdosproblems' GitHub wiki, frozen on 2026-06-30 (below) | Erdős problems that page marks as fully resolved in its primary-contribution sections |
+| `mathlib_theorems` | api | mathlib's statistics page, `mathlib.org/mathlib_stats.html` (`mathlib-stats`, §4.13) | Theorems formalised in Lean's mathlib |
 | `ai_drugs` | api | `ai-drugs.json` plus ClinicalTrials.gov API v2 for each trial | AI-found drugs by the highest stage reached: phase 1, 2 or 3 of a trial that has started, or approved by a regulator (`approved`, §4.11) |
-| `pdb_structures` | api | RCSB search API (released entries, by `rcsb_accession_info.deposit_date`) plus RCSB's record of unreleased entries (below) | Structures deposited last year and this year so far, released or not |
+| `pdb_structures` | api | RCSB search API (released entries, by `rcsb_accession_info.deposit_date`) plus RCSB's holdings file of unreleased entries (`rcsb-unreleased`, below) | Structures deposited last year and this year so far, released or not |
 | `ai_retractions` | api | The Retraction Watch data file via Crossref (`retraction-watch` in the registry) | Retractions per year whose reason includes computer-generated content |
 | `full_bibles` | manual | Wycliffe Global Alliance's annual statistics (`counters.json` `figures`) | Languages that gained a full Bible in each year (the difference between consecutive annual figures), with the total and the year of the figure |
 | `ancient_texts_ai` | ledger | The findings, as `filedAs()` files them on D − 1 (§4.10); its `source_url` is the tracker's own `content/findings` folder on GitHub | Humanities findings of kind `result` in subfield `ancient-texts`, with an AI role and a counted rung |
+
+**`erdos_ai`** is `manual` (Kobol's K1d, 2026-11-28; §0.4 row 352), because no api route exists. The data
+repository `github.com/teorth/erdosproblems` holds 1,221 problems in `data/problems.yaml` with no AI field,
+its `data/statistics_history.csv` counts solved and formalized problems with no AI column, and
+erdosproblems.com stopped showing statuses. The list of AI contributions is the repository's wiki page
+"AI contributions to Erdős problems", which says it is no longer updated as of 30 June 2026. The counter
+is 69 as of 2026-06-30: the distinct problems that page marks as fully resolved in its
+primary-contribution sections (19 where AI worked standalone, 19 where it built on the literature and 37
+where it collaborated with humans; none where it worked alongside the literature). The page warns that
+it is not a benchmark, and the counter cannot grow while the page is frozen; JL may prefer to retire it.
+
+**`mathlib_theorems`** reads `https://mathlib.org/mathlib_stats.html` (`mathlib-stats`, §4.13; K1d, row
+353): the Theorems cell, the second cell of the second row of the page's first `table.table-borderless`
+(its columns are Definitions, Theorems and Contributors), which read 297,154 on 2026-11-28. The page
+gives its date only in a script of 2.5 MB, so the reading is dated by the day it was fetched.
 
 **`ai_drugs`** reads each listed trial's `protocolSection.statusModule.overallStatus` and
 `protocolSection.designModule.phases`. A trial counts toward its phase only once its status shows it
@@ -3046,28 +3474,48 @@ started: `RECRUITING`, `ENROLLING_BY_INVITATION`, `ACTIVE_NOT_RECRUITING`, `SUSP
 `PHASE4` and `NA` count as none, so approval comes only from an entry's `approved`. A drug's stage is
 `approved` when its `approved` is set, else the highest phase of its started trials; `value` is the number
 of drugs with a stage and `breakdown` the number at each (`1`, `2`, `3`, `approved`), so an entry with no
-approval and no started trial is left out until it has one.
+approval and no started trial is left out until it has one. On the four entries of 2026-11-28 (§4.11) that
+makes 4 drugs: one at phase 1 (ISM6331), two at phase 2 (ISM5411 and REC-4881, whose terminated phase 2
+trial counts as started) and one at phase 3 (rentosertib).
 
 **`pdb_structures`** adds, for each year, the released entries that the search API counts by deposit date
-(`return_counts`) and the unreleased entries deposited that year, withdrawn ones (status `WDRN`) left
-out; `value` is this year's count and `breakdown` gives both years (key the year). **Verify in P2:**
-which keyless RCSB record gives every unreleased entry's deposit date without a request for each entry
-(which no Monday budget fits): the holdings file
-`https://files.rcsb.org/pub/pdb/holdings/unreleased_entries.json.gz`, the unreleased-entries CSV of
-`https://www.rcsb.org/pages/unreleased`, or the Data API's `holdings/unreleased`. P2 adds the one it uses
-to the registry as an entry of its own, `rcsb-unreleased` (its §4.13 row, its `sources.yaml` feed with
-the budget its requests need, and its id in the S2 list of `tests/repo-files.test.ts`), and the P2 report
-gives last year's count beside wwPDB's own deposition statistics for that year. If none does, the counter
-counts releases by `rcsb_accession_info.initial_release_date` ("Structures released last year and this
-year so far"), P2 changes this table's `pdb_structures` row, the §5 table's Counters row, §4.13's `rcsb`
-row and the feed's `name` to match, and adds a §0.4 row saying why: the search API holds only released
-entries, and many deposits stay on hold until their paper appears, so released entries alone undercount
-the newest deposits.
+(`return_counts`, a GET with `?json=<query>`) and the unreleased entries deposited that year, withdrawn
+ones (status `WDRN`) left out; `value` is this year's count and `breakdown` gives both years (key the
+year). **Settled in P2** (Kobol's K1d, 2026-11-28; §0.4 row 354): the unreleased entries come from the
+holdings file `https://files.rcsb.org/pub/pdb/holdings/unreleased_entries.json.gz`, the registry's
+`rcsb-unreleased` (§4.13): one keyless GET, 1.16 MB gzipped (16.1 MB unzipped), 36,382 entries keyed by PDB
+id, each `{ status_code, deposit_date, ... }` with the date written `2024-07-12T00:00:00+00:00`. Its status
+codes are HPUB, HOLD, AUTH, PROC, WAIT, REPL, AUCO, POLC, REFI and `WDRN` (17,898 entries). The Data API's
+`holdings/unreleased` answers 400 without ids and `www.rcsb.org/pages/unreleased` is drawn by script, so
+neither serves. Against wwPDB's own deposition statistics (`https://www.wwpdb.org/stats/deposition`, updated
+17 November 2026), which count withdrawn entries: for 2025, the search API's 17,052 released entries plus
+2,290 unreleased ones make 19,342, and with the 1,644 withdrawn ones 20,986, within 11 of wwPDB's 20,975;
+for 2026 to 28 November, 4,632 released plus 16,086 unreleased make 20,718 (wwPDB gave 20,605 on 17
+November, withdrawn entries included). So the counter reads below wwPDB's figure by the withdrawn
+entries, and the fallback of counting releases (`rcsb_accession_info.initial_release_date`) was not
+needed.
+
+**`ai_retractions`** reads the Retraction Watch data file that Crossref publishes (`retraction-watch`,
+§4.13; K1d, §0.4 row 356): a CSV of 74,173 rows and 68,441,942 bytes on 2026-11-28, whose header ends in a
+comma (an empty 21st column). A row counts when its `RetractionNature` is `Retraction` (the file also
+holds Expression of concern, Correction and Reinstatement rows) and its `Reason`, a list of reasons each
+followed by a `;`, holds exactly `Computer-Aided Content or Computer-Generated Content`; it counts in the
+year of its `RetractionDate`, written `M/D/YYYY 0:00` (one row is dated 2027, in no year the counter
+reports). `value` is this year's count and `breakdown` gives last year's and this year's (key the year).
+K1d counted retractions by that reason: 5,622 in 2023, 1,454 in 2024, 1,276 in 2025 and 280 in 2026 to 28
+November; the reason appears in 9,567 rows of any nature. The file's credit line, for `docs/SOURCES.md`, is
+"Retraction Watch Database (Center for Scientific Integrity), made openly available by Crossref."
 
 **`full_bibles`** is computed from its `figures` (§4.11): `value` is the newest annual total minus the one
 before it, the languages that gained a full Bible between the two figures; `as_of` and `source_url` are
 the newest figure's, and `breakdown` holds its total (`total`). With fewer than two figures `value` is
-null and `status` is `missing`.
+null and `status` is `missing`. **Settled in P2** (K1d; §0.4 row 357): the file holds four figures, read
+from Wycliffe's infographics (the totals are drawn in images, not written in the page text): 724
+(September 2022), 736 (September 2023), 756 (September 2024) and 776 (August 2025), so the counter reads
+20 as of 2025-08-01, with `breakdown` `total` 776. Only the 2025 page says a day ("As of 1 August,
+2025"); the others give a month and are dated the first. The 2024 page is 404, so that figure's
+`source_url` is the main statistics page, which holds its images, as the 2025 figure's does; the old
+address `www.wycliffe.net/resources/statistics/` redirects there.
 
 Tests (`tests/counters.test.ts`, on fixtures): a trial not yet recruiting or withdrawn adds no phase; a
 trial listing phases 1 and 2 counts as phase 1; an entry with `approved` set is approved whatever its
@@ -3157,20 +3605,21 @@ did not reach keeps its date too. A missing file, or one that fails its schema, 
 never checked, which only restarts the rotation. With 1,500 followed findings, 40 of them first briefed
 in the last 14 days, each of the others comes round about every 6 mornings.
 
-**Verify in P2:** that one Crossref request with 50 `updates:` filters answers as their OR; if it does
-not, the batch (§8.9) shrinks and `crossref-updates`' budget grows to fit 300 findings. Crossref's API
-has shown Retraction Watch's retractions since January 2025, marked `source` `retraction-watch`: for a
-work whose retraction only Retraction Watch records, and for one whose expression of concern only it
-records, check whether `works?filter=updates:<doi>` returns the notice and whether the work's own record
-(`https://api.crossref.org/works/<doi>`) lists it under `updated-by`. If the filter returns it, nothing
-changes. If only `updated-by` lists it, the daily check also reads the findings' own records
-(`works?filter=doi:<doi1>,doi:<doi2>,…`, 50 a request, `crossref-updates`' budget raised to fit them) and
-acts on their `updated-by` entries as on the notices above, reading each notice's own record
-(`works/<doi>`, in the same budget) for the source it adds, or making a Proposal when it has none. If
-neither does, the Monday match alone covers them. Also check that the records of a retraction notice, an
-expression of concern and a journal article hold the fields a script-added source reads (above: `title`,
-`container-title`, `publisher`, `published`); if they lack `published`, `issued` is read the same way.
-Each change gets a §0.4 row.
+**Settled in P2 (K1c, 2026-11-28):** one Crossref request with 50 `updates:` filters answers as their OR
+(50 filters gave 72 notices naming 49 of the 50 works, one DOI having been asked twice), so a batch is 50
+DOIs with `rows=1000`, Crossref's most (§8.9): a single notice can name hundreds of works (one EDP
+Sciences notice named 266) but is one row of the answer, and a batch whose `total-results` exceeds `rows`
+halves and is asked again within `crossref-updates`' budget. Crossref's API shows Retraction Watch's retractions and expressions of
+concern, marked `source` `retraction-watch`, and for a work that only Retraction Watch records,
+`works?filter=updates:<doi>` returns the notice and the work's own record lists it under `updated-by` (a
+retraction, a retraction whose notice DOI is the paper's own, and an expression of concern were each
+checked; in a sample, 6 of 25 recent expressions of concern and 3 of 10 retractions of earlier years had
+only Retraction Watch's record). So nothing changes: the daily check reads the filter alone, and needs no
+`doi:` batch of the findings' own records. A retraction notice, an expression-of-concern notice and a
+journal article each hold the fields a script-added source reads (`title`, `container-title`,
+`publisher`, and `published` with `issued` equal to it); a notice's own `type` is `journal-article`, the
+update type being in `update-to`, and a notice whose `published` is a year alone (the EDP Sciences notice
+only Retraction Watch records) goes to the agent as a Proposal, as above.
 
 ### 5.9 Candidate ranking
 
@@ -3280,7 +3729,7 @@ Every route exists under `/` and `/zh/`.
 | `/glossary` | none | Every term, both languages on each page (the page's language first), with its first finding and the banners of the corrections on it (§4.10) | "No terms yet." |
 | `/didnt-hold-up` | none | Findings now Disputed or Retracted, newest change first, each with its rung history and what happened | "Nothing has fallen yet." |
 | `/archive` | none | Every edition, newest first, with its edition kind and finding count | "No editions yet." |
-| `/methodology` | none | STYLE.md sections by number (`STYLE_SECTIONS`; `/zh/methodology` renders the same numbers from `routine/STYLE-METHOD-ZH.md`, §11), the Pace method with its config versions and the journals and phrases it counts (`in_pace` true), the ladder and AI roles, the primary-source rule and allowlist summary, feed status (14 days), the corrections log | Renders from vocab and config |
+| `/methodology` | none | STYLE.md sections by number (`STYLE_SECTIONS`; `/zh/methodology` renders the same numbers from `routine/STYLE-METHOD-ZH.md`, §11), the Pace method with its config versions, the journals and phrases it counts (`in_pace` true) and how it treats a week's uneven counts (§5.4), the ladder and AI roles, the primary-source rule and allowlist summary, feed status (14 days), the corrections log | Renders from vocab and config |
 | `/about` | none | Who writes it, how, data credits (each `Credit:` line of `docs/SOURCES.md`; on `/zh/about` the `Credit (zh):` line that follows it, §10 P2), how to report an error, and every report with its status | Always the same |
 | `/feed.xml`, `/zh/feed.xml` | n/a | RSS 2.0 of the last 30 valid briefs, in that language | A valid channel with no items |
 | `/og/findings/[id]`, `/og/brief/[date]` | as their pages | 1200 × 630 PNG share previews (§7) | n/a |
@@ -3700,7 +4149,7 @@ candidate has at least one (§4.14). Once the feeds are read, collect asks OpenA
 DOIs of those candidates that `must_match` keeps (§4.13), through `scripts/lib/openalex.ts` (§5.1), each
 DOI once, in §4.1's form and URL-encoded, 100 to a request (`works?filter=doi:<a>|<b>|…`, with
 `per-page=100` and `select=doi,primary_topic`): `per-page` defaults to 25, `|` joins at most 100 values
-(the limit §5.1's Verify in P2 checks), and `select` keeps the answer far under `fetchFeed()`'s 5 MB body
+(the limit §5.1 checked), and `select` keeps the answer far under `fetchFeed()`'s 5 MB body
 cap. It makes at most 12 such requests a morning, what `openalex`'s `budget` leaves after the 88 that
 stage 3 may make (§4.13), and orders the DOIs by their oldest candidate's `published_at`, ties by DOI, so
 the oldest are asked first. A record is matched to its candidates by its `doi`, read as §4.1 stores DOIs;
@@ -3709,10 +4158,13 @@ next mapping when it has no DOI, or one holding `,` or `|`, which the filter syn
 beyond the requests that the budget and collect's deadline allow, or its request fails (which puts no
 feed in `failed_feeds`); when OpenAlex has not indexed it yet (often a fresh one, since OpenAlex can
 index a paper days or weeks after it appears); and when its record has no `primary_topic` or a field that
-`fields.json` lists as `excluded` or does not map. The answers are not cached. **Verify in P2:** that the
-`doi:` filter takes DOIs in §4.1's form (else collect sends `https://doi.org/<doi>`), and that one
-request answers for each of its 100 DOIs that OpenAlex holds, with its `doi` and `primary_topic` (else a
-batch shrinks, or `select` is dropped, until it does); each change gets a §0.4 row. Tests
+`fields.json` lists as `excluded` or does not map. The answers are not cached. **Checked on 2026-11-28
+(K1a):** the `doi:` filter takes DOIs in §4.1's form, bare and lower case (the original case and the
+`https://doi.org/` form also work, but make the URL 4,379 bytes against 2,779 for 100 DOIs, both under the
+8,190-byte limit), and one request of 1 credit answers for each of its 100 DOIs that OpenAlex holds, with
+`doi` as `https://doi.org/10…` (read as §4.1 stores DOIs) and `primary_topic.field.id` as
+`https://openalex.org/fields/13` (its prefix is stripped, §5.1); `per-page` with a hyphen is accepted
+(the docs write `per_page`, with 100 the supported maximum). Tests
 (`tests/collect.test.ts`, the answers served through `UT_FIXTURE_FEEDS`): 150 DOIs make two requests, the
 100 oldest and then the other 50; two candidates with one DOI are asked for once and both take its field;
 a candidate whose DOI OpenAlex holds takes its topic's field; one whose DOI the answer lacks, one whose
@@ -4595,7 +5047,7 @@ or the daily log's last lines when there is no chat edition. It never reads a co
 | What | Held by | Used for | JL's part |
 |---|---|---|---|
 | Claude Code OAuth token, service `unveiling-claude-oauth` | JL's login keychain on Kobol | Both agent passes only (§9.4) | Creates it in P3; renews it within a year |
-| OpenAlex key, service `unveiling-openalex-key` (only if P2 finds one is needed) | JL's login keychain | `scripts/lib/openalex.ts` | Signs up and stores it in P2, only if needed |
+| OpenAlex key, service `unveiling-openalex-key` | JL's login keychain | `scripts/lib/openalex.ts` | Signs up and stores it in P2, once (below) |
 | GitHub | `gh`'s keyring login as 8gara8 | Repo creation, publish's pushes, branches and PRs | None |
 | Vercel | JL's Vercel connector | Build sessions, project `unveilingtracker` only | None |
 
@@ -4621,13 +5073,20 @@ arguments; reads it back to check it; and clears the clipboard. It then runs the
 `E_NOT_A_TOKEN`, `E_STORE`, `E_SMOKE`) with a short reason, never the value. While the main checkout
 has no `scripts/agent-check.ts` (P3 adds it), it skips the smoke test and its `ok` line says so.
 `zsh $HOME/.unveiling/store-token.zsh --openalex` stores a copied OpenAlex key under
-`unveiling-openalex-key` the same way (`E_NOT_A_KEY` for a value that cannot be one) and tests it with
-one OpenAlex request in place of the smoke test, passing the key to `curl` on standard input.
-**Verify in P3** (in P2 for `--openalex`, if a key is needed): JL's first run prints `ok`; on
+`unveiling-openalex-key` the same way (`E_NOT_A_KEY` for a value that cannot be one: empty, or shorter
+than 8 characters, since OpenAlex documents no key format, where a token needs 20) and tests it with one
+OpenAlex request of 1 credit in place of the smoke test, passing the key to `curl` on standard input. The
+key is needed in P2 (§5.1), and JL's part is: make an account at `openalex.org/signup` (free, no card),
+verify its e-mail address (a key works only once it is verified), copy the key from Settings, API key
+(`openalex.org/settings/api-key`), and run `zsh $HOME/.unveiling/store-token.zsh --openalex` in Terminal
+on Kobol, which prints `ok`. An agent could ask OpenAlex for a key by sending JL's e-mail address to an
+outside service; Claude does not, and the key is JL's to make.
+**Verify in P3** (in P2 for `--openalex`): JL's first run prints `ok`; on
 `E_STORE`, Claude fixes the helper on Kobol, never by putting the value in a command's arguments. On
 `E_SMOKE` the value is stored but failed its test: Claude reads the reason, reruns `npm run agent:check`
 to see which test fails (§8.12; one refused from 03:00 to 04:30 is simply run later) or, for a key, reads
-OpenAlex's answer in the reason (§5.1), and fixes the cause; JL repeats the steps above only when the
+OpenAlex's own reason in the helper's line (`E_SMOKE: OpenAlex answered HTTP 403 with the stored key
+(key_not_activated).`, the key never shown, §5.1), and fixes the cause; JL repeats the steps above only when the
 value itself was refused.
 
 ### 9.7 Environment variables
@@ -4657,7 +5116,9 @@ evidence files, both contexts, the candidates cut list, the re-check result, `D.
 OpenAlex request in D's `inputs` (§4.7, §8.4), and the backfill reuses cached answers (§5.4). Mornings
 add about 13,000 answers a year (36 a morning) and a backfill that refetches every week (the first, or
 one with `--refresh`) about 2,500; at about 4 KB an answer with its URL, that is about 50 MB a year and
-10 MB a backfill. `tests/prune.test.ts` checks that a 61-day-old answer in `cache/openalex/` stays.
+10 MB a backfill. `tests/prune.test.ts` checks that a 61-day-old answer in `cache/openalex/` stays. `cache/feeds/` keeps one
+body for each feed, replaced at each read, so the Retraction Watch file (68.4 MB on 2026-11-28, kept whole)
+and RCSB's holdings file (1.16 MB, kept as received, gzipped) take one copy each (§4.13).
 
 ### 9.9 One-time setup on Kobol
 
@@ -4846,18 +5307,29 @@ week since 2015 and reproduces; the counters read; the Ledger holds about 100 ha
    (§4.13); scrubbed captures into `fixtures/feeds/` (Cyber's scrubber: real formats, invented prose).
    `docs/SOURCES.md`: each feed's terms, limits and credit line, the credit as a `Credit:` line followed
    by a `Credit (zh):` line in Traditional Chinese (wording a feed's terms fix stays as it is there, the
-   Chinese after it), which `/about` shows (§6).
-   **Verify in P2:** with `arxiv_skipped` seeded (§4.13), the longest gap from the newest arXiv
-   announcement to a morning's window end (for example 3.8 days from a Wednesday's announcement to the
-   next Monday's window end, when a holiday skips the Thursday's); the `arxiv-<cat>` feeds' `fresh_days`
-   becomes that gap rounded up, plus one day (5 for 3.8; the day also covers `sources:check`, which
-   judges at the clock and can see up to about 10 hours more), so an API that answers with no entry is
-   flagged `STALE` about a day after the longest normal gap, not only after the drafted 7. A later PR
-   that adds a skip to `arxiv_skipped` and so lengthens that gap raises `fresh_days` the same way.
+   Chinese after it), which `/about` shows (§6). **Settled in P2:** `docs/SOURCES.md` is written for every feed
+in the registry, for the four journals with no feed, and for the hosts that are not feeds (Wycliffe's
+statistics, the erdosproblems wiki, NCBI's E-utilities and `doi.org`): each feed's address, limits and
+terms and its two credit lines, and a note and no credit lines for a feed the run does not read;
+`tests/sources-doc.test.ts` checks it against `config/sources.yaml` (§0.4 row 360).
+   **Settled in P2 (K1c and K1d, 2026-11-28; `config/sources.yaml` holds the 62 feeds, with the 19 dates of
+   `arxiv_skipped` and each feed's comment):** with `arxiv_skipped` seeded (§4.13), the longest gap from the
+   newest arXiv announcement to a morning's window end is 3.76 days (3.8 in US summer time: from
+   Wednesday 2026-11-25's announcement to Monday 2026-11-30's window end, when Thanksgiving skips the
+   Thursday's); the `arxiv-<cat>` feeds' `fresh_days` is that gap rounded up, plus one day, 5 (the day also
+   covers `sources:check`, which judges at the clock and can see up to about 10 hours more), so an API
+   that answers with no entry is flagged `STALE` about a day after the longest normal gap, not only after
+   the drafted 7. A later PR that adds a skip to `arxiv_skipped` and so lengthens that gap raises
+   `fresh_days` the same way. The query's end is the deadline's own minute (the API excludes it) and
+   `arxiv-math` takes the aliases §4.13 lists, which K1c found by comparing a real announcement's list;
+   `arxiv-physics`' extra archives (`hep*`, `gr-qc`, `nucl*`) are not yet compared with one, and the
+   Tuesday and Wednesday comparison is P3's (step 6 there).
 2. `scripts/lib/openalex.ts`, `lib/metrics/index.ts`, `scripts/metrics.ts`, `scripts/backfill.ts --pace` (§5); the Verify items
    of §5.1 (keyless access, filters, OR search, the 100-value limit, group totals, each journal's
-   yearly counts, which set its `in_pace`); `fields.json` and `journals.json`'s OpenAlex
-   ids checked, none of the seed's placeholders left, and the humanities journals picked by §4.11's rule.
+   yearly counts, which set its `in_pace`), all settled by K1a on 2026-11-28 (§5.1, §4.11); `fields.json`
+   and `journals.json`'s OpenAlex ids checked, none of the seed's placeholders left, the humanities and
+   earth journals picked by §4.11's rule. Keyless access does not carry the backfill, so JL's one step in
+   P2 is the free key (§0.3, §9.6); the backfill's 13,600 credits run over two budget days (§5.4).
    The backfill on Kobol (on one Taipei date D, its edition date: `<today>` in the
    milestone; §8.4) into `content/state/pace-weekly.json` and D's
    `content/metrics/` files, run twice for byte-identical output. A sample of 100 papers the AI terms
@@ -4879,13 +5351,18 @@ week since 2015 and reproduces; the counters read; the Ledger holds about 100 ha
    learn or decide, or a way of teaching). The report gives the precision by field and period for the
    final phrases (Claude judges each phrase a sampled paper matched, and a paper that no longer matches
    drops out) and for each sampled phrase, the recall, every phrase set false or added, and each sampled
-   paper's OpenAlex id and judgments. **Verify in P2:** that OpenAlex's `sample` and `seed` parameters
-   work with these filters, and that the search filter takes `NOT` (to find a phrase alone); where either
-   does not, P2 pages through the matching works, compares ids and draws with the seed.
+   paper's OpenAlex id and judgments. K1a checked on 2026-11-28 that OpenAlex's `sample` and `seed`
+   parameters work with these filters (the same seed gives the same works) and that the search filter
+   takes `NOT` (to find a phrase alone), so the sampler draws with them and the paging fallback is only
+   for a request OpenAlex refuses; each sample request costs 10 credits (§5.1), from the same daily
+   budget as the backfill's.
 3. The counters (§5.7: `lib/metrics/counters.ts`), each Verify item settled (api, else manual with a source); `full_bibles`'s
    `figures` from the Wycliffe Global Alliance's annual totals, the two latest years at least, and
    `ai-drugs.json`'s first entries, each with an AI basis quoted from the developer's or a paper's own
-   words (§4.11, Appendix B).
+   words (§4.11, Appendix B). **Settled in P2** (Kobol's K1d, 2026-11-28; §0.4 rows 352 to 358): `erdos_ai`
+   has no api route and is `manual` (69 as of 2026-06-30); `pdb_structures` has a feed of its own,
+   `rcsb-unreleased`; `full_bibles` holds four figures; `ai-drugs.json` has four entries; §4.11 and §5.7
+   hold each result.
 4. **The Ledger history.** `scripts/ledger-seed.ts` (§8.13) with `lib/schema/seed.ts` (`SeedFinding`), and Cyber's `scripts/lib/snapshot.ts` and `scripts/lib/evidence.ts` for its `--verify`. `docs/LEDGER.md` states the frame first: candidates are the winners and
    runners-up of Science's Breakthrough of the Year (2015 onward), Physics World's Breakthrough of the
    Year top ten, and results from 2015 onward that won a major prize in `checkers.json`; plus, for
@@ -4919,7 +5396,15 @@ week since 2015 and reproduces; the counters read; the Ledger holds about 100 ha
    `github.com` and `huggingface.co` that hold no records, refused as §4.11 says; the
    `statement_suffixes` hosts and the countries' forms; `reaction_sources`' paths; `labs.json`'s hosts;
    and each `figure_hosts` host against the images its publisher's pages serve.
-   `tests/primary.test.ts` passes on the result.
+   `tests/primary.test.ts` passes on the result. **Settled in P2** (Kobol's K1b and K1d, 2026-11-28; §0.4 rows
+   341 to 351 and 359; §4.11 holds each result): 10 of the 31 publishers serve a readable page to a plain GET,
+   so only Nature, Springer and PLOS keep a type, and Science, Cell Press and PNAS lose theirs and the
+   `reaction` kind; of the four `deny_doi_prefixes` one is dropped (`10.1056/nejm-jw.`) and one added
+   (`10.1038/nature.20`); `github.com` and `huggingface.co` refuse their documentation, forum and blog
+   pages through a registry's `deny_hosts` and `deny_paths`; a PubMed or PMC record's types come from
+   E-utilities; `statement_suffixes` gains `.edu.tw` and four more university forms; `reaction_sources` gets
+   a second Science Media Centre path and Scimex; `labs.json` narrows two labs' paths; and `figure_hosts`
+   has 14 hosts.
 
 ```
 npm run sources:check                                    # no priority-1 problem; the table in the PR
@@ -4984,8 +5469,12 @@ proven, and dry runs on past dates pass.
    01:40, as §9.3's dry-run row says: CyberTracker's task already runs at 04:30 every morning.
 5. `docs/RUNBOOK.md`: every error code with its next step, where to look, the lock, `needs-review/`,
    token renewal, manual runs (§9.3).
-6. **Verify:** the CLI flags (§9.4); that a scheduled task's conversation accepts JL's reply (left for P5
-   if only the app can show it); which GitHub answer carries an issue's `closed_by.login` (§8.9); that
+6. **Verify:** the CLI flags (§9.4); on one Tuesday and one Wednesday morning before 08:00 Taipei, that
+   `arxiv-math`'s window list holds the new submissions and cross-lists that
+   `https://arxiv.org/list/math/new` shows for the Sunday's and the Monday's announcements, apart from
+   papers arXiv held and announced later, and that no other alias leaves papers out (§4.13; K1c ran on a
+   Saturday, so it compared the Wednesday announcement only); that a scheduled task's conversation accepts
+   JL's reply (left for P5 if only the app can show it); which GitHub answer carries an issue's `closed_by.login` (§8.9); that
    樂詞網's search and term pages carry their terms in their served HTML (ZH_OFFICIAL, §4.12, §8.6); the
    Chinese pass's time on the largest backlog that §4.5's caps allow (§4.6's backlog Verify); and, from
    the timed run's log times, that the validate loop's three checks with their drops and three of Cyber's
@@ -5406,11 +5895,12 @@ finishes. After P1, `config/` governs.
   Challenge grand prize (2024-02-05); the Nobel Prize in Chemistry for protein design and structure
   prediction (2024-10-09), oldest first. Each with a primary source URL.
 - **`counters.json`:** the seven counters of §5.7, each with the page of its source as its `source_url`
-  (§4.11) and `erdos_ai` of kind `api`; `full_bibles` manual, its `figures` empty until P2 adds the
-  Wycliffe Global Alliance's annual totals for at least the two latest years, each with its date and
-  source (Verify in P2), so that its reading is `missing` until then (§5.7).
-- **`ai-drugs.json`:** `drugs` empty in the P1 seed; P2 adds only entries whose AI basis it can quote
-  from the developer's or a paper's own words (Verify in P2); grown by PR.
+  (§4.11). The P1 seed had `erdos_ai` of kind `api` and `full_bibles` manual with its `figures` empty, so
+  that its reading was `missing`. P2 left the file at version 2 (§4.11, §5.7): `erdos_ai` manual (69 as of
+  2026-06-30), `mathlib_theorems` at its new address, and `full_bibles` with four figures (724, 736, 756
+  and 776, from September 2022 to August 2025), so that it reads 20.
+- **`ai-drugs.json`:** `drugs` empty in the P1 seed; P2 added the four entries of §4.11, each with an AI
+  basis quoted from the developer's or a paper's own words, which left the file at version 2; grown by PR.
 - **`standing-stories.json`:** `stories` empty; grown by PR.
 - **`fields.json` `subfields`** (`{ id, en, zh }`, ids unique in the file; the OpenAlex mapping is
   §4.11's). Mathematics: `number-theory` Number theory · 數論, `combinatorics` Combinatorics · 組合學,
@@ -5437,11 +5927,12 @@ finishes. After P1, `config/` governs.
   考古與文化資產, `languages` Languages and linguistics · 語言與語言學, `literature-arts` Literature and
   the arts · 文學與藝術, `philosophy` Philosophy · 哲學.
 - **`journals.json`, `ai-terms.json`, `fields.json`, `source-tiers.json`, `labs.json`, `checkers.json`,
-  `jargon.json`, `hype-words.json`, `dual-use.json`:** §4.11; OpenAlex ids (12 journals hold placeholders),
-  hosts, the humanities journals (none seeded) and the four `deny_doi_prefixes` Verify in P2 (§4.11).
-  **Verify in P2:** each `figure_hosts` host against the image URLs of figures on its publisher's
-  article pages (PMC's pages may have moved to `pmc.ncbi.nlm.nih.gov`, its images with them or to
-  another host); `figure_hosts` lists every host P2 finds serving them and drops any that serves none.
+  `jargon.json`, `hype-words.json`, `dual-use.json`:** §4.11; hosts and the four `deny_doi_prefixes` were settled in P2, which left `source-tiers.json` at version 2 (§4.11). The seed's 12 placeholder OpenAlex
+  ids and its missing earth and humanities journals were settled in P2, which left `journals.json` at
+  version 2 (§4.11).
+  **Settled in P2:** the 14 `figure_hosts` hosts of §4.11, each checked against the image URLs of figures on
+  its publisher's article pages where a plain GET reads them (PMC's pages moved to `pmc.ncbi.nlm.nih.gov`,
+  its images stay on `cdn.ncbi.nlm.nih.gov`).
 
 ## Appendix C. Kobol facts
 

@@ -2,7 +2,7 @@
   "https://arxiv.org/abs/2901.99003": { "file": "pages/ledger-physics.html", "content_type": "text/html; charset=utf-8" },
   "https://clinicaltrials.gov/study/NCT09990101": { "file": "pages/ledger-trial.html", "content_type": "text/html; charset=utf-8" },
   "https://terms.naer.edu.tw/detail/9990001/": { "file": "pages/ledger-term.html", "content_type": "text/html; charset=utf-8" },
-  "https://www.cell.com/cell/abstract/ut-sample-ledger-0001": { "file": "pages/ledger-paper.html", "content_type": "text/html; charset=utf-8" },
-  "https://www.cell.com/cell/abstract/ut-sample-ledger-missing": { "status": 404 },
-  "https://www.cell.com/cell/pdf/ut-sample-ledger-0001.pdf": { "file": "pages/ledger-paper.html", "content_type": "application/pdf" }
+  "https://journals.plos.org/plosone/article/ut-sample-ledger-0001": { "file": "pages/ledger-paper.html", "content_type": "text/html; charset=utf-8" },
+  "https://journals.plos.org/plosone/article/ut-sample-ledger-missing": { "status": 404 },
+  "https://journals.plos.org/plosone/article/file/ut-sample-ledger-0001.pdf": { "file": "pages/ledger-paper.html", "content_type": "application/pdf" }
 }

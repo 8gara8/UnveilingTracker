@@ -1,13 +1,15 @@
-// Fixture safety for the folders P1 builds (SPEC §0.2, §4.12 "Fixtures"; AGENTS rules 8, 10, 11 and 15): real formats, invented prose, and
+// Fixture safety for the folders P1 and P2 build (SPEC §0.2, §4.12 "Fixtures"; AGENTS rules 8, 10, 11 and 15): real formats, invented prose, and
 // nothing a reader could use, be harmed by, or that names a real person (the repo is public). Over every file of fixtures/{context,drafts,
-// drafts-zh,empty-content,evidence,injection,metrics,packs,site-content,state}/, JSON read as its keys and string values, any other file whole:
+// drafts-zh,empty-content,evidence,feeds,injection,metrics,packs,site-content,state}/, JSON read as its keys and string values, any other file whole:
 //   - links: https, no user info, port, IP address or internationalised host, on no blocked and no press host, and on a host the run reads or
-//     allows (a primary or figure host, a reserved example domain, this site, a host config/sources.yaml names); a real host's page is an invented one;
+//     allows (a primary or figure host, a reserved example domain, this site, a host config/sources.yaml names); a real host's page is an invented one.
+//     The one http address allowed is an XML namespace in a saved feed (fixtures/feeds/**/*.xml), by the prefixes listed below;
 //   - no e-mail address but a reserved example one, and no machine path;
 //   - people: a reaction's speaker and every named person is an invented placeholder marked SAMPLE; no actor of a negative event (a setback, a
 //     retraction, a dispute) is a real organisation the config lists (F-28);
 //   - no model identifier, credential-shaped string, run of sequence letters, agent-with-method sentence, numbered steps (DUAL_USE's own detectors),
-//     attack-code pattern, invisible character or raw HTML tag;
+//     attack-code pattern, invisible character or raw HTML tag (the saved pages and feeds of fixtures/feeds/ are markup on purpose, so this one check
+//     skips them: fixtures/feeds/pages/*.html and fixtures/feeds/**/*.xml, with invented prose);
 //   - the canary's token and address stand in the planted files and the CANARY negatives only, in the planted forms;
 //   - no file over 1 MB, the whole under 6 MB, and every file read: a folder or kind of file this test does not list fails.
 // The negative fixtures plant what a rule refuses, so each check names the files that may hold its plant and a test proves that list exact. The
@@ -31,8 +33,8 @@ const ROOT = path.join(__dirname, "..");
 const config = loadConfig(path.join(ROOT, "config"));
 const MB = 1024 * 1024;
 
-/** The fixture folders P1 builds, each scanned. P2 adds its own (feeds, captures) to this list with the checks they need. */
-const FAMILIES = ["context", "drafts", "drafts-zh", "empty-content", "evidence", "injection", "metrics", "packs", "site-content", "state"];
+/** The fixture folders each scanned: P1's, and P2's `feeds` (the saved pages and feed captures; P2 adds the checks they need below). */
+const FAMILIES = ["context", "drafts", "drafts-zh", "empty-content", "evidence", "feeds", "injection", "metrics", "packs", "site-content", "state"];
 /** The builders' source code: not a fixture, so it is read only for its links (the world's, never the negatives' in invalid/). */
 const CODE_FOLDER = "src";
 const TEXT_KINDS = [".json", ".md", ".txt", ".xml", ".html"];
@@ -173,6 +175,17 @@ const INVENTED_PATH = /sample|(?<!\d)99\d{3}|NCT0?99\d{4,}|zz\d/i;
 const ZENODO_ID = /zenodo\.org\/(?:api\/)?records?\/(\d+)|zenodo\.(\d+)/i;
 /** Zenodo numbered past 9,990,000 in 2023, so its 99 block is real; an invented record number has 8 digits and begins 999, above any number it has issued. */
 const ZENODO_INVENTED = /^999\d{5,}$/;
+/**
+ * The http XML namespaces a saved feed (fixtures/feeds/**\/*.xml) may declare: identifiers that no reader fetches or shows, which the feeds'
+ * publishers write over http. Each ends in a slash or is a whole address, so a look-alike host (purl.org.example.biz) is not one; any other http
+ * address in a feed, a link or an item id, still fails as not https.
+ */
+const XML_NAMESPACE_PREFIXES = [
+  "http://purl.org/", "http://www.w3.org/", "http://prismstandard.org/", "http://a9.com/-/spec/opensearch/", "http://arxiv.org/schemas/",
+  "http://webns.net/mvcb/", "http://wellformedweb.org/CommentAPI/", "http://search.yahoo.com/mrss/", "http://www.itunes.com/dtds/podcast-1.0.dtd",
+];
+const XML_NAMESPACE = new RegExp(`^(?:${XML_NAMESPACE_PREFIXES.map(escapeRegExp).join("|")})`, "i");
+const isFeedXml = (file: string): boolean => /^fixtures\/feeds\/(?:[^/]+\/)*[^/]+\.xml$/.test(file);
 /** A scheme other than http(s) in front of "://". */
 const OTHER_SCHEME = /(?<![A-Za-z0-9+.-])(?![hH][tT][tT][pP][sS]?:\/\/)[A-Za-z][A-Za-z0-9+.-]{1,31}:\/\/\S{0,40}/g;
 
@@ -222,6 +235,7 @@ function linkProblems(texts: readonly FixtureText[], code = false): string[] {
     for (const s of t.strings) {
       for (const m of s.matchAll(OTHER_SCHEME)) bad.add(`${t.file}: ${m[0]} uses a scheme other than https`);
       for (const u of extractUrls(s)) {
+        if (!code && isFeedXml(t.file) && XML_NAMESPACE.test(u)) continue;
         const why = addressProblem(u, !code);
         if (why !== null) bad.add(`${t.file}: ${u} ${why}`);
       }
@@ -412,9 +426,12 @@ function invisibleProblems(texts: readonly FixtureText[]): string[] {
 const RAW_TAG = /<\/?[A-Za-z][A-Za-z0-9:-]*(?:\s[^<>]*)?\/?>|<!--|<\?[A-Za-z]|<!\[CDATA\[|<!DOCTYPE/i;
 /** Files that are markup on purpose: the planted page and item. The wrapper tag of untrusted text (SPEC §4.14) is the only tag any other file may hold. */
 const MARKUP_FILES = new Set(["fixtures/injection/page.html", "fixtures/injection/item.xml"]);
+/** The Ledger's saved pages (fixtures/feeds/pages/*.html) and the feed captures (fixtures/feeds/**\/*.xml): the formats a reader parses, with invented prose. Only the tag check skips them. */
+const FEED_MARKUP = /^fixtures\/feeds\/(?:pages\/[^/]+\.html|(?:[^/]+\/)*[^/]+\.xml)$/;
+const isMarkupFile = (file: string): boolean => MARKUP_FILES.has(file) || FEED_MARKUP.test(file);
 const WRAPPER_TAG = /<\/?untrusted(?:\s+source="[a-z0-9-]+")?>/g;
 function tagProblems(texts: readonly FixtureText[]): string[] {
-  return texts.filter((t) => !MARKUP_FILES.has(t.file)).flatMap((t) => {
+  return texts.filter((t) => !isMarkupFile(t.file)).flatMap((t) => {
     const hit = firstMatch(t.strings.map((s) => s.replace(WRAPPER_TAG, "")), RAW_TAG);
     return hit === undefined ? [] : [`${t.file}: a raw HTML tag (${hit})`];
   });
@@ -591,6 +608,11 @@ describe("fixture safety: content", () => {
     expect(tagProblems(TEXTS)).toEqual([]);
     expect(tagProblems([fixtureText("fixtures/injection/pack.md", "see <untrusted> and <untrusted source=\"x-y\">a</untrusted>"), fixtureText("fixtures/context/p.json", JSON.stringify({ a: "<untrusted source=\"a-b\">t</untrusted>" }))])).toEqual([]);
     for (const f of MARKUP_FILES) expect(TEXTS.find((t) => t.file === f)?.text, f).toMatch(RAW_TAG);
+    // The saved pages and feed captures are markup, and the tag check skips exactly them: each is a real page or feed, not a stray file that happens to hold a tag.
+    const feedMarkup = TEXTS.filter((t) => FEED_MARKUP.test(t.file));
+    expect(feedMarkup.length).toBeGreaterThan(0);
+    for (const t of feedMarkup) expect(t.text, t.file).toMatch(RAW_TAG);
+    expect(TEXTS.filter((t) => t.folder === "feeds" && !FEED_MARKUP.test(t.file)).every((t) => t.file.endsWith(".json"))).toBe(true);
   });
 });
 
@@ -639,7 +661,9 @@ describe("fixture safety: the checks catch planted problems", () => {
       ["https://doi.org/10.1103/PhysRevLett.129.099001", "may exist"], ["https://clinicaltrials.gov/study/NCT05123456", "may exist"],
       ["https://zenodo.org/records/9990002", "Zenodo record"], ["https://doi.org/10.5281/zenodo.7654321", "Zenodo record"], ["https://zenodo.org/api/records/12345678", "Zenodo record"],
       ["https://gitlab.com/someone-real/real-repo", "page of a host the run reads"], ["https://api.openalex.org/works/W1234567890", "page of a host the run reads"],
-      ["https://terms.naer.edu.tw/detail/1234567/", "page of a host the run reads"],
+      ["https://files.rcsb.org/pub/pdb/holdings/other_holdings.json.gz", "page of a host the run reads"],
+      // 樂詞網 sits under .edu.tw, which section 4.11's statement suffixes list for Taiwan's universities (K1d), so its pages are a real host's now
+      ["https://terms.naer.edu.tw/detail/1234567/", "may exist"],
     ];
     for (const [url, why] of cases) expect(linkProblems([planted(`See ${url} now.`)]), url).toEqual([expect.stringContaining(why)]);
     expect(linkProblems([planted("Read t.me/ut-sample and TINYURL.com/x for more.")])).toEqual([
@@ -648,6 +672,22 @@ describe("fixture safety: the checks catch planted problems", () => {
     expect(linkProblems([plant("fixtures/context/planted.xml", "<a href=\"https://www.example.net/ut-sample?a=1&amp;b=2\">x</a> and http://bit.ly/x")])).toEqual([
       "fixtures/context/planted.xml: http://bit.ly/x is not https", "fixtures/context/planted.xml: http://bit.ly/x is blocked (shortener)",
     ]);
+  });
+
+  it("an http XML namespace passes in a saved feed only, by a listed prefix; any other http address, in a feed or elsewhere, still fails", () => {
+    const ns = `<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom"><category scheme="http://arxiv.org/schemas/atom"/></feed>`;
+    expect(linkProblems(["fixtures/feeds/rss/a.xml", "fixtures/feeds/live/deep/b.xml"].map((f) => plant(f, ns)))).toEqual([]);
+    expect(linkProblems([plant("fixtures/feeds/rss/a.xml", `<rss xmlns:dc="HTTP://PURL.ORG/dc/elements/1.1/"/>`)])).toEqual([]);
+    // Not in a feed: the same text in another folder, another kind of file or a JSON string fails.
+    const where = ["fixtures/context/a.xml", "fixtures/feeds/pages/a.html", "fixtures/feeds/a.md", "fixtures/injection/item.xml"];
+    for (const f of where) expect(linkProblems([plant(f, ns)]).sort(), f).toEqual(expect.arrayContaining(["http://www.w3.org/2005/Atom", "http://arxiv.org/schemas/atom"].map((u) => `${f}: ${u} is not https`)));
+    expect(linkProblems([plant("fixtures/feeds/index.json", JSON.stringify({ a: "http://purl.org/dc/elements/1.1/" }))])).toEqual(["fixtures/feeds/index.json: http://purl.org/dc/elements/1.1/ is not https"]);
+    // Not by another prefix: a look-alike host, another host, a feed's own http link or item id, https is judged as everywhere.
+    for (const bad of ["http://purl.org.example.biz/x", "http://www.w3.org.example.biz/x", "http://example.org/ns", "http://arxiv.org/abs/2610.99001v1", "http://link.aps.org/doi/10.1103/ut-sample-0001", "http://bit.ly/x"]) {
+      expect(linkProblems([plant("fixtures/feeds/rss/a.xml", `<x:a xmlns:x="${bad}"/>`)]).filter((p) => p.endsWith("is not https")), bad).toEqual([`fixtures/feeds/rss/a.xml: ${bad} is not https`]);
+    }
+    expect(linkProblems([plant("fixtures/feeds/rss/a.xml", `<link>https://www.nature.com/articles/real-paper</link>`)])).toEqual([expect.stringContaining("may exist")]);
+    expect(linkProblems([plant("fixtures/feeds/rss/a.xml", `<link>https://www.nature.com/articles/nature-ut-sample-0001</link>`)])).toEqual([]);
   });
 
   it("a link that is fine passes: example, own, run, primary and figure hosts, an invented page, the counters' pages, the canary's address", () => {
@@ -864,6 +904,17 @@ describe("fixture safety: the checks catch planted problems", () => {
     expect(tagProblems([planted("a <img src=x> tag")])).toEqual(["fixtures/drafts/planted.json: a raw HTML tag (<img src=x>)"]);
     expect(tagProblems([plant("fixtures/injection/pack.md", "a <img src=x> tag and <untrusted>")])).toHaveLength(1);
     expect(tagProblems([plant("fixtures/injection/page.html", "<p>ok</p><!-- a note -->"), plant("fixtures/injection/item.xml", "<item/>"), planted("a < b and b > c, and a<b, a <! b and a <? b")])).toEqual([]);
+    // The saved feeds' markup is skipped, and nothing else under fixtures/feeds/: a page or feed of the right kind in the right folder passes, a tag anywhere else fails.
+    const markup = "<!doctype html><p>a</p><!-- n --><?xml version=\"1.0\"?><rss><item/></rss><![CDATA[x]]>";
+    expect(tagProblems(["fixtures/feeds/pages/a.html", "fixtures/feeds/rss/a.xml", "fixtures/feeds/live/deep/er/b.xml", "fixtures/feeds/a.xml"].map((f) => plant(f, markup)))).toEqual([]);
+    for (const f of [
+      "fixtures/feeds/index.json", "fixtures/feeds/pages/a.json", "fixtures/feeds/pages/a.md", "fixtures/feeds/other/a.html", "fixtures/feeds/pages/deep/a.html", "fixtures/feeds/a.html",
+      "fixtures/drafts/a.xml", "fixtures/state/pages/a.html", "fixtures/feedsx/a.xml", "fixtures/feeds/pages/a.html.json", "fixtures/injection/other.html",
+    ]) {
+      expect(tagProblems([f.endsWith(".json") ? plant(f, JSON.stringify({ a: "<b>x</b>" })) : plant(f, "<b>x</b>")]), f).toHaveLength(1);
+    }
+    expect(isMarkupFile("fixtures/injection/page.html")).toBe(true);
+    expect(isMarkupFile("fixtures/injection/pack.md")).toBe(false);
   });
 
   it("the canary's address and token pass only in their exact forms and files", () => {
@@ -911,7 +962,7 @@ describe("fixture safety: the checks catch planted problems", () => {
   it("a stray folder, a missing family, an odd file, a kind of file no check reads and a symlink fail the layout; bytes that are no text throw", () => {
     const files = FAMILIES.map((f) => `fixtures/${f}/a.json`);
     expect(layoutProblems([...FAMILIES, CODE_FOLDER], files, [])).toEqual([]);
-    expect(layoutProblems([...FAMILIES, CODE_FOLDER, "feeds"], files, [])).toEqual(["fixtures/feeds is not a listed fixture folder"]);
+    expect(layoutProblems([...FAMILIES, CODE_FOLDER, "captures"], files, [])).toEqual(["fixtures/captures is not a listed fixture folder"]);
     expect(layoutProblems([...FAMILIES, "stray.json"], files, [])).toEqual(["fixtures/stray.json is not a listed fixture folder"]);
     expect(layoutProblems(FAMILIES.slice(1), files, [])).toEqual([`fixtures/${FAMILIES[0]} is missing`]);
     expect(layoutProblems(FAMILIES, files.slice(1), [])).toEqual([`fixtures/${FAMILIES[0]} holds no file`]);
@@ -935,17 +986,19 @@ describe("fixture safety: the checks catch planted problems", () => {
       for (const f of FAMILIES) fs.mkdirSync(path.join(dir, "fixtures", f), { recursive: true });
       fs.mkdirSync(path.join(dir, "fixtures", "context", "deep", "er"), { recursive: true });
       fs.writeFileSync(path.join(dir, "fixtures", "context", "deep", "er", "a.json"), "{}");
-      fs.mkdirSync(path.join(dir, "fixtures", "feeds"));
-      fs.writeFileSync(path.join(dir, "fixtures", "feeds", "a.xml"), "<a/>");
+      fs.mkdirSync(path.join(dir, "fixtures", "captures"));
+      fs.writeFileSync(path.join(dir, "fixtures", "captures", "a.xml"), "<a/>");
+      fs.writeFileSync(path.join(dir, "fixtures", "feeds", "b.xml"), "<b/>");
       fs.writeFileSync(path.join(dir, "fixtures", "stray.txt"), "x");
       fs.symlinkSync(path.join(dir, "fixtures", "stray.txt"), path.join(dir, "fixtures", "state", "link.json"));
       const list = listFixtures(dir);
-      expect(list.files).toEqual(["fixtures/context/deep/er/a.json"]);
+      expect(list.files).toEqual(["fixtures/context/deep/er/a.json", "fixtures/feeds/b.xml"]);
       expect(list.odd).toEqual(["fixtures/state/link.json"]);
-      expect(list.entries).toContain("feeds");
-      expect(layoutProblems(list.entries, list.files, list.odd)).toEqual(expect.arrayContaining(["fixtures/feeds is not a listed fixture folder", "fixtures/stray.txt is not a listed fixture folder"]));
-      expect(fixtureSizes(dir).map((s) => s.file)).toContain("fixtures/feeds/a.xml");
-      expect(readTexts(dir, list.files).map((t) => t.value)).toEqual([{}]);
+      expect(list.entries).toContain("captures");
+      expect(layoutProblems(list.entries, list.files, list.odd)).toEqual(expect.arrayContaining(["fixtures/captures is not a listed fixture folder", "fixtures/stray.txt is not a listed fixture folder"]));
+      expect(layoutProblems(list.entries, list.files, list.odd)).not.toContain("fixtures/feeds is not a listed fixture folder");
+      expect(fixtureSizes(dir).map((s) => s.file)).toContain("fixtures/captures/a.xml");
+      expect(readTexts(dir, list.files).map((t) => t.value)).toEqual([{}, undefined]);
       fs.writeFileSync(path.join(dir, "fixtures", "context", "bad.md"), Buffer.from([0x61, 0xff, 0x62]));
       expect(() => readTexts(dir, ["fixtures/context/bad.md"])).toThrow("fixtures/context/bad.md is not UTF-8 text");
       fs.writeFileSync(path.join(dir, "fixtures", "context", "bad.json"), "{ not json");

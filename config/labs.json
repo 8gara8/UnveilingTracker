@@ -43,7 +43,7 @@
       ],
       "paths": [
         "/blog/",
-        "/research/"
+        "/research/publications/"
       ]
     },
     {
@@ -54,7 +54,9 @@
         "microsoft.com"
       ],
       "paths": [
-        "/en-us/research/"
+        "/en-us/research/lab/microsoft-research-ai-for-science/",
+        "/en-us/research/blog/",
+        "/en-us/research/publication/"
       ]
     },
     {

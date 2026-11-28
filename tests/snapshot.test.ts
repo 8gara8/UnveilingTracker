@@ -32,7 +32,7 @@ const ARXIV = "https://arxiv.org/abs/2901.99003";
 const APS = "https://journals.aps.org/prl/abstract/10.1103/ut-sample-0001";
 const PAGE = [
   "<!DOCTYPE html><html><head><title>Sample page</title><style>p { color: red }</style>",
-  "<meta name=\"citation_article_type\" content=\"Article\"></head><body>",
+  "<meta name=\"dc.type\" content=\"OriginalPaper\"><meta name=\"citation_article_type\" content=\"Research Article\"></head><body>",
   "<nav>Home Products Support</nav><header>Site header</header>",
   "<script>var sample = 1;</script>",
   "<article><h1>SAMPLE page</h1><p>Version 9.2 fixes the flaw; 3 products are affected.</p></article>",
@@ -83,12 +83,12 @@ function fakeFetch(replies: Record<string, Partial<FetchResult> & { html?: strin
   return { calls, fn };
 }
 
-/** The config with the Cell entry's `type_field` replaced (a CSS selector, a meta name), for the selector tests. */
+/** The config with the PLOS entry's `type_field` replaced (a CSS selector, a meta name), for the selector tests. */
 function withTypeField(typeField: string): Pick<typeof config, "sourceTiers"> {
   const sourceTiers = structuredClone(config.sourceTiers);
-  const cell = sourceTiers.publishers.find((p) => p.hosts.includes("www.cell.com"));
-  if (cell === undefined) throw new Error("the seed has no cell.com entry");
-  cell.type_field = typeField;
+  const plos = sourceTiers.publishers.find((p) => p.hosts.includes("journals.plos.org"));
+  if (plos === undefined) throw new Error("the seed has no journals.plos.org entry");
+  plos.type_field = typeField;
   return { sourceTiers };
 }
 
@@ -296,16 +296,18 @@ describe("articleTypesOf", () => {
     expect(articleTypesOf(pageWith(`<meta name="citation_article_type">`), PAPER_URL, config)).toEqual([]);
   });
 
-  it("A2 each publisher's own field: Nature's citation_article_type, Science's dc.type", () => {
-    expect(articleTypesOf(pageWith(meta("citation_article_type", "Letter")), NATURE, config)).toEqual(["Letter"]);
-    expect(articleTypesOf(pageWith(meta("dc.type", "Research Article")), "https://www.science.org/doi/10.1126/science.ut-sample", config)).toEqual(["Research Article"]);
-    expect(articleTypesOf(pageWith(meta("dc.type", "Research Article")), NATURE, config)).toEqual([]);
+  it("A2 each typed publisher's own field: Nature's and Springer's dc.type, PLOS's citation_article_type, and none for Science, which no GET reads (K1b)", () => {
+    expect(articleTypesOf(pageWith(meta("dc.type", "BriefCommunication")), NATURE, config)).toEqual(["BriefCommunication"]);
+    expect(articleTypesOf(pageWith(meta("dc.type", "OriginalPaper")), "https://link.springer.com/article/10.1007/ut-sample", config)).toEqual(["OriginalPaper"]);
+    expect(articleTypesOf(pageWith(meta("citation_article_type", "Research Article")), PAPER_URL, config)).toEqual(["Research Article"]);
+    expect(articleTypesOf(pageWith(meta("dc.type", "Research Article")), "https://www.science.org/doi/10.1126/science.ut-sample", config)).toEqual([]);
+    expect(articleTypesOf(pageWith(meta("citation_article_type", "Research Article")), NATURE, config)).toEqual([]);
   });
 
   it("A3 the entry is the FINAL URL's: a doi.org page names nothing, the page it landed on does", () => {
-    const html = pageWith(meta("citation_article_type", "Article"));
+    const html = pageWith(meta("dc.type", "OriginalPaper"));
     expect(articleTypesOf(html, NATURE_DOI, config)).toEqual([]);
-    expect(articleTypesOf(html, NATURE, config)).toEqual(["Article"]);
+    expect(articleTypesOf(html, NATURE, config)).toEqual(["OriginalPaper"]);
   });
 
   it("A4 is [] for a URL on no entry with a type_field", () => {
@@ -377,7 +379,7 @@ describe("snapshotUrls", () => {
     for (const gone of ["var sample", "Home Products", "Site header", "Footer text", "color"]) expect(s.text).not.toContain(gone);
     expect(s).toEqual({
       url: NATURE, final_url: NATURE, status: 200, fetched_at: "2026-11-20T09:00:00+08:00", content_type: "text/html; charset=utf-8",
-      text_sha256: textSha256(PAGE_TEXT), article_types: ["Article"], text: PAGE_TEXT,
+      text_sha256: textSha256(PAGE_TEXT), article_types: ["OriginalPaper"], text: PAGE_TEXT,
     });
     // The file is the same object, with its keys in this order, under the hash of the normalised URL.
     const file = snapshotFile(root, NATURE);
@@ -398,9 +400,9 @@ describe("snapshotUrls", () => {
   });
 
   it("S4 stores the article types the FINAL URL's entry finds, even when the URL asked for was a doi.org one", async () => {
-    const f = fakeFetch({ [NATURE_DOI]: { finalUrl: NATURE, html: pageWith(meta("citation_article_type", "Review Article")) } });
+    const f = fakeFetch({ [NATURE_DOI]: { finalUrl: NATURE, html: pageWith(meta("dc.type", "ReviewPaper")) } });
     const r = await snapshotUrls({ root: tmpRoot(), urls: [NATURE_DOI], deadline: soon(), config, fetch: f.fn });
-    expect(r.taken.map((s) => [s.url, s.final_url, s.article_types])).toEqual([[NATURE_DOI, NATURE, ["Review Article"]]]);
+    expect(r.taken.map((s) => [s.url, s.final_url, s.article_types])).toEqual([[NATURE_DOI, NATURE, ["ReviewPaper"]]]);
     expect(r.resolved).toEqual({ [normalizeUrl(NATURE_DOI)]: NATURE });
   });
 
@@ -668,7 +670,7 @@ describe("snapshotUrls in fixture mode (fixtures/feeds/)", () => {
     const s = r.taken[0]!;
     expect(s.url).toBe(PAPER_URL);
     expect(s.final_url).toBe(PAPER_URL);
-    expect(s.article_types).toEqual(["Article"]);
+    expect(s.article_types).toEqual(["Research Article"]);
     expect(s.fetched_at).toBe("2026-11-20T09:00:00+08:00");
     expect(s.text).toContain("antibiotic");
     expect(s.text_sha256).toBe(textSha256(s.text));

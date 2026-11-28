@@ -13,12 +13,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { SeedFinding } from "../../lib/schema/seed";
 
-export const PAPER_URL = "https://www.cell.com/cell/abstract/ut-sample-ledger-0001";
+export const PAPER_URL = "https://journals.plos.org/plosone/article/ut-sample-ledger-0001";
 export const TRIAL_URL = "https://clinicaltrials.gov/study/NCT09990101";
 export const PREPRINT_URL = "https://arxiv.org/abs/2901.99003";
 export const TERM_URL = "https://terms.naer.edu.tw/detail/9990001/";
-export const MISSING_URL = "https://www.cell.com/cell/abstract/ut-sample-ledger-missing";
-export const PDF_URL = "https://www.cell.com/cell/pdf/ut-sample-ledger-0001.pdf";
+export const MISSING_URL = "https://journals.plos.org/plosone/article/ut-sample-ledger-missing";
+export const PDF_URL = "https://journals.plos.org/plosone/article/file/ut-sample-ledger-0001.pdf";
 
 /** `UT_FIXTURE_FEEDS` for a test: the folder `fixtures/feeds/` of the repository. */
 export const FEEDS_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..", "fixtures", "feeds");

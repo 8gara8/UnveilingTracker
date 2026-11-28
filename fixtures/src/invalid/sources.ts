@@ -308,10 +308,12 @@ export const sourcesNamed: readonly NamedCase[] = [
     },
   },
   {
-    name: "PRIMARY_ONLY: the Sunday deep dive's Cell article typed Research Article, cited as a notice",
+    name: "PRIMARY_ONLY: the Sunday deep dive's Cell article, cited as a reaction",
     code: "PRIMARY_ONLY", edition: "sunday", expect: only("PRIMARY_ONLY"),
     mutate: (d) => {
-      sourceIn(d.sources, "b1").kind = "notice";
+      // Cell Press pages answer 403 to a plain GET, so no type separates a Preview from a research article and the entry has no
+      // `reaction` kind (§4.11, K1b): the URL test refuses the kind.
+      sourceIn(d.sources, "b1").kind = "reaction";
     },
   },
   {

@@ -11,7 +11,7 @@
   "feeds": [
     {
       "id": "eurekalert",
-      "kind": "rss",
+      "kind": "page",
       "ok": true,
       "stale": false,
       "newest": "2026-09-08T18:00:00+08:00",

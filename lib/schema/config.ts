@@ -403,7 +403,29 @@ export const Resolver = z.strictObject({
   }
 });
 
-export const RegistryEntry = z.strictObject({ id: ConfigId, name: Text, hosts: hostList, kinds: kindList, paths: pathList(1) });
+/**
+ * A registry entry (§4.11): its `hosts` match each host and its subdomains, so `deny_hosts` names the subdomains that hold no records
+ * (`docs.github.com`, `discuss.huggingface.co`) and `deny_paths` the path prefixes on its hosts that hold none (`/docs`); a URL on one
+ * fails for every kind (`primaryTest()`). A denied host is a proper subdomain of a host the entry lists and is itself none of them,
+ * else the entry would both list and refuse it (or refuse nothing).
+ */
+export const RegistryEntry = z.strictObject({
+  id: ConfigId,
+  name: Text,
+  hosts: hostList,
+  kinds: kindList,
+  paths: pathList(1),
+  deny_hosts: distinct(HostName, "Denied host").describe("Subdomains of `hosts` that hold no records"),
+  deny_paths: pathList(0).describe("Path prefixes on `hosts` that hold no records"),
+}).superRefine((r, ctx) => {
+  r.deny_hosts.forEach((denied, i) => {
+    if (r.hosts.includes(denied)) {
+      ctx.addIssue({ code: "custom", message: `${denied} is a host of this entry and cannot also be denied: remove one of the two`, path: ["deny_hosts", i] });
+    } else if (!r.hosts.some((h) => denied.endsWith(`.${h}`))) {
+      ctx.addIssue({ code: "custom", message: `${denied} is under none of the entry's hosts, so denying it refuses nothing`, path: ["deny_hosts", i] });
+    }
+  });
+});
 
 export const ReactionSource = z.strictObject({ id: ConfigId, name: Text, hosts: hostList, paths: pathList(1) });
 

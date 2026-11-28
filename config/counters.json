@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": 1,
+  "version": 2,
   "counters": [
     {
       "id": "erdos_ai",
@@ -12,11 +12,11 @@
         "en": "problems",
         "zh": "個問題"
       },
-      "kind": "api",
-      "source": "erdosproblems.com's public data, or its GitHub data repository",
-      "value": null,
-      "as_of": null,
-      "source_url": "https://www.erdosproblems.com/",
+      "kind": "manual",
+      "source": "The AI contributions page of erdosproblems' GitHub wiki, frozen on 2026-06-30 (it is no longer updated): problems with a full resolution in its primary-contribution sections",
+      "value": 69,
+      "as_of": "2026-06-30",
+      "source_url": "https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems",
       "figures": []
     },
     {
@@ -30,10 +30,10 @@
         "zh": "個定理"
       },
       "kind": "api",
-      "source": "Lean mathlib's statistics page",
+      "source": "Lean mathlib's statistics page (mathlib.org): the Theorems cell of its counts table",
       "value": null,
       "as_of": null,
-      "source_url": "https://leanprover-community.github.io/mathlib_stats.html",
+      "source_url": "https://mathlib.org/mathlib_stats.html",
       "figures": []
     },
     {
@@ -64,7 +64,7 @@
         "zh": "個結構"
       },
       "kind": "api",
-      "source": "RCSB search API, by deposit date, and RCSB's record of unreleased entries",
+      "source": "RCSB search API, released entries by deposit date, plus RCSB's holdings file of unreleased entries (withdrawn ones left out)",
       "value": null,
       "as_of": null,
       "source_url": "https://www.rcsb.org/",
@@ -81,7 +81,7 @@
         "zh": "篇論文"
       },
       "kind": "api",
-      "source": "The Retraction Watch data file, through Crossref",
+      "source": "The Retraction Watch data file, through Crossref: rows whose reasons include Computer-Aided Content or Computer-Generated Content",
       "value": null,
       "as_of": null,
       "source_url": "https://gitlab.com/crossref/retraction-watch-data",
@@ -98,11 +98,32 @@
         "zh": "種語言"
       },
       "kind": "manual",
-      "source": "Wycliffe Global Alliance annual statistics, entered by pull request as figures",
+      "source": "Wycliffe Global Alliance's annual Global Scripture Access statistics (infographics on its statistics pages), entered by pull request as figures",
       "value": null,
       "as_of": null,
-      "source_url": "https://www.wycliffe.net/resources/statistics/",
-      "figures": []
+      "source_url": "https://wycliffe.net/global-scripture-access/",
+      "figures": [
+        {
+          "as_of": "2022-09-01",
+          "total": 724,
+          "source_url": "https://wycliffe.net/global-scripture-access/2022-global-scripture-access/"
+        },
+        {
+          "as_of": "2023-09-01",
+          "total": 736,
+          "source_url": "https://wycliffe.net/global-scripture-access/2023-global-scripture-access/"
+        },
+        {
+          "as_of": "2024-09-01",
+          "total": 756,
+          "source_url": "https://wycliffe.net/global-scripture-access/"
+        },
+        {
+          "as_of": "2025-08-01",
+          "total": 776,
+          "source_url": "https://wycliffe.net/global-scripture-access/"
+        }
+      ]
     },
     {
       "id": "ancient_texts_ai",

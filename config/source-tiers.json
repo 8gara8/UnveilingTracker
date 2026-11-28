@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": 1,
+  "version": 2,
   "publishers": [
     {
       "id": "nature",
@@ -15,36 +15,34 @@
       ],
       "paths": [
         "/articles/s",
-        "/articles/nature"
+        "/articles/n"
       ],
-      "deny_paths": [],
+      "deny_paths": [
+        "/articles/nature.2"
+      ],
       "reaction_paths": [
         "/articles/d41586-"
       ],
-      "type_field": "citation_article_type",
+      "type_field": "dc.type",
       "types": {
         "paper": [
-          "Article",
-          "Letter",
-          "Analysis",
-          "Brief Communication",
-          "Review Article",
-          "Review"
+          "OriginalPaper",
+          "ReviewPaper",
+          "BriefCommunication",
+          "Analysis"
         ],
         "notice": [
-          "Retraction Note",
-          "Retraction",
-          "Publisher Correction",
-          "Author Correction",
-          "Correction",
           "Erratum",
-          "Corrigendum",
+          "Correction",
+          "Retraction",
+          "Retraction Note",
+          "Addendum",
           "Editorial Expression of Concern",
           "Expression of Concern"
         ],
         "reaction": [
-          "News & Views",
-          "News and Views"
+          "News And Views",
+          "Comment"
         ]
       }
     },
@@ -53,42 +51,26 @@
       "name": "Science (AAAS)",
       "hosts": [
         "www.science.org",
-        "science.org"
+        "science.org",
+        "www.sciencemag.org",
+        "science.sciencemag.org"
       ],
       "kinds": [
         "paper",
-        "notice",
-        "reaction"
+        "notice"
       ],
       "paths": [
         "/doi/10.1126/",
         "/doi/full/10.1126/",
-        "/doi/abs/10.1126/"
+        "/doi/abs/10.1126/",
+        "/lookup/doi/10.1126/"
       ],
       "deny_paths": [
         "/content/article/"
       ],
       "reaction_paths": [],
-      "type_field": "dc.type",
-      "types": {
-        "paper": [
-          "Research Article",
-          "Report",
-          "Review",
-          "research-article",
-          "review-article"
-        ],
-        "notice": [
-          "Retraction",
-          "Correction",
-          "Erratum",
-          "Editorial Expression of Concern",
-          "Expression of Concern"
-        ],
-        "reaction": [
-          "Perspective"
-        ]
-      }
+      "type_field": null,
+      "types": {}
     },
     {
       "id": "cell-press",
@@ -99,8 +81,7 @@
       ],
       "kinds": [
         "paper",
-        "notice",
-        "reaction"
+        "notice"
       ],
       "paths": [
         "/cell/",
@@ -130,27 +111,8 @@
       ],
       "deny_paths": [],
       "reaction_paths": [],
-      "type_field": "citation_article_type",
-      "types": {
-        "paper": [
-          "Article",
-          "Research Article",
-          "Short Article",
-          "Resource",
-          "Report",
-          "Review"
-        ],
-        "notice": [
-          "Retraction",
-          "Correction",
-          "Erratum",
-          "Expression of Concern"
-        ],
-        "reaction": [
-          "Preview",
-          "Commentary"
-        ]
-      }
+      "type_field": null,
+      "types": {}
     },
     {
       "id": "pnas",
@@ -161,8 +123,7 @@
       ],
       "kinds": [
         "paper",
-        "notice",
-        "reaction"
+        "notice"
       ],
       "paths": [
         "/doi/10.1073/",
@@ -171,30 +132,15 @@
       ],
       "deny_paths": [],
       "reaction_paths": [],
-      "type_field": "dc.type",
-      "types": {
-        "paper": [
-          "Research Article",
-          "Review",
-          "research-article",
-          "review-article"
-        ],
-        "notice": [
-          "Retraction",
-          "Correction",
-          "Erratum",
-          "Expression of Concern"
-        ],
-        "reaction": [
-          "Commentary"
-        ]
-      }
+      "type_field": null,
+      "types": {}
     },
     {
       "id": "aps",
       "name": "American Physical Society journals",
       "hosts": [
-        "journals.aps.org"
+        "journals.aps.org",
+        "link.aps.org"
       ],
       "kinds": [
         "paper",
@@ -213,7 +159,8 @@
         "/prapplied/",
         "/prfluids/",
         "/prmaterials/",
-        "/rmp/"
+        "/rmp/",
+        "/doi/10.1103/"
       ],
       "deny_paths": [],
       "reaction_paths": [],
@@ -253,8 +200,22 @@
       ],
       "deny_paths": [],
       "reaction_paths": [],
-      "type_field": null,
-      "types": {}
+      "type_field": "dc.type",
+      "types": {
+        "paper": [
+          "OriginalPaper",
+          "ReviewPaper",
+          "BriefCommunication"
+        ],
+        "notice": [
+          "Erratum",
+          "Correction",
+          "Retraction",
+          "Retraction Note",
+          "Addendum",
+          "Expression of Concern"
+        ]
+      }
     },
     {
       "id": "sciencedirect",
@@ -269,6 +230,24 @@
       ],
       "paths": [
         "/science/article/"
+      ],
+      "deny_paths": [],
+      "reaction_paths": [],
+      "type_field": null,
+      "types": {}
+    },
+    {
+      "id": "elsevier-linkinghub",
+      "name": "Elsevier article links (Cell Press, ScienceDirect, The Lancet)",
+      "hosts": [
+        "linkinghub.elsevier.com"
+      ],
+      "kinds": [
+        "paper",
+        "notice"
+      ],
+      "paths": [
+        "/retrieve/pii/"
       ],
       "deny_paths": [],
       "reaction_paths": [],
@@ -298,7 +277,8 @@
       "name": "American Mathematical Society",
       "hosts": [
         "www.ams.org",
-        "ams.org"
+        "ams.org",
+        "pubs.ams.org"
       ],
       "kinds": [
         "paper",
@@ -327,8 +307,17 @@
       ],
       "deny_paths": [],
       "reaction_paths": [],
-      "type_field": null,
-      "types": {}
+      "type_field": "citation_article_type",
+      "types": {
+        "paper": [
+          "Research Article"
+        ],
+        "notice": [
+          "Retraction",
+          "Correction",
+          "Expression of Concern"
+        ]
+      }
     },
     {
       "id": "elife",
@@ -411,7 +400,8 @@
       "name": "American Economic Association journals",
       "hosts": [
         "www.aeaweb.org",
-        "aeaweb.org"
+        "aeaweb.org",
+        "pubs.aeaweb.org"
       ],
       "kinds": [
         "paper",
@@ -419,7 +409,8 @@
       ],
       "paths": [
         "/articles",
-        "/journals/"
+        "/journals/",
+        "/doi/"
       ],
       "deny_paths": [],
       "reaction_paths": [],
@@ -430,7 +421,8 @@
       "id": "project-euclid",
       "name": "Project Euclid",
       "hosts": [
-        "projecteuclid.org"
+        "projecteuclid.org",
+        "link.intlpress.com"
       ],
       "kinds": [
         "paper",
@@ -438,7 +430,8 @@
       ],
       "paths": [
         "/journals/",
-        "/euclid."
+        "/euclid.",
+        "/JDetail/"
       ],
       "deny_paths": [],
       "reaction_paths": [],
@@ -599,6 +592,24 @@
       "types": {}
     },
     {
+      "id": "scholarly-publishing-collective",
+      "name": "Scholarly Publishing Collective (university presses' journals)",
+      "hosts": [
+        "scholarlypublishingcollective.org"
+      ],
+      "kinds": [
+        "paper",
+        "notice"
+      ],
+      "paths": [
+        "/"
+      ],
+      "deny_paths": [],
+      "reaction_paths": [],
+      "type_field": null,
+      "types": {}
+    },
+    {
       "id": "arxiv",
       "name": "arXiv",
       "hosts": [
@@ -627,7 +638,8 @@
         "preprint"
       ],
       "paths": [
-        "/content/10.1101/"
+        "/content/10.1101/",
+        "/content/10.64898/"
       ],
       "deny_paths": [],
       "reaction_paths": [],
@@ -645,7 +657,8 @@
         "preprint"
       ],
       "paths": [
-        "/content/10.1101/"
+        "/content/10.1101/",
+        "/content/10.64898/"
       ],
       "deny_paths": [],
       "reaction_paths": [],
@@ -769,7 +782,8 @@
         "news",
         "editorial",
         "article-commentary",
-        "interview"
+        "interview",
+        "book-review"
       ]
     },
     {
@@ -791,7 +805,8 @@
         "news",
         "editorial",
         "article-commentary",
-        "interview"
+        "interview",
+        "book-review"
       ]
     }
   ],
@@ -799,7 +814,7 @@
     "10.1038/scientificamerican",
     "10.1021/cen-",
     "10.1063/pt.",
-    "10.1056/nejm-jw."
+    "10.1038/nature.20"
   ],
   "registries": [
     {
@@ -814,7 +829,9 @@
       ],
       "paths": [
         "/study/"
-      ]
+      ],
+      "deny_hosts": [],
+      "deny_paths": []
     },
     {
       "id": "rcsb",
@@ -828,7 +845,9 @@
       ],
       "paths": [
         "/structure/"
-      ]
+      ],
+      "deny_hosts": [],
+      "deny_paths": []
     },
     {
       "id": "ebi",
@@ -844,7 +863,9 @@
       ],
       "paths": [
         "/"
-      ]
+      ],
+      "deny_hosts": [],
+      "deny_paths": []
     },
     {
       "id": "zenodo",
@@ -858,7 +879,9 @@
       ],
       "paths": [
         "/records/"
-      ]
+      ],
+      "deny_hosts": [],
+      "deny_paths": []
     },
     {
       "id": "github",
@@ -872,7 +895,11 @@
       ],
       "paths": [
         "/"
-      ]
+      ],
+      "deny_hosts": [
+        "docs.github.com"
+      ],
+      "deny_paths": []
     },
     {
       "id": "huggingface",
@@ -885,6 +912,16 @@
       ],
       "paths": [
         "/"
+      ],
+      "deny_hosts": [
+        "discuss.huggingface.co"
+      ],
+      "deny_paths": [
+        "/docs",
+        "/blog",
+        "/learn",
+        "/posts",
+        "/papers"
       ]
     },
     {
@@ -898,7 +935,9 @@
       ],
       "paths": [
         "/mathlib4_docs/"
-      ]
+      ],
+      "deny_hosts": [],
+      "deny_paths": []
     }
   ],
   "statement_suffixes": [
@@ -917,6 +956,11 @@
     ".ac.at",
     ".ac.th",
     ".ac.id",
+    ".edu.tw",
+    ".edu.cn",
+    ".edu.hk",
+    ".edu.sg",
+    ".edu.au",
     ".gov.uk",
     ".gov.au",
     ".gov.tw",
@@ -973,7 +1017,19 @@
         "sciencemediacentre.org"
       ],
       "paths": [
-        "/expert-reaction-"
+        "/expert-reaction-",
+        "/experts-react-"
+      ]
+    },
+    {
+      "id": "scimex",
+      "name": "Scimex (Australian Science Media Centre) expert reactions",
+      "hosts": [
+        "www.scimex.org",
+        "scimex.org"
+      ],
+      "paths": [
+        "/newsfeed/expert-reaction-"
       ]
     },
     {
@@ -1143,12 +1199,13 @@
   ],
   "figure_hosts": [
     "media.springernature.com",
+    "media.nature.com",
+    "cdn.journals.aps.org",
+    "static.cambridge.org",
     "www.science.org",
     "www.cell.com",
     "www.pnas.org",
     "arxiv.org",
-    "www.ncbi.nlm.nih.gov",
-    "pmc.ncbi.nlm.nih.gov",
     "cdn.ncbi.nlm.nih.gov",
     "www.biorxiv.org",
     "www.medrxiv.org",

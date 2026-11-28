@@ -1,131 +1,172 @@
-# Source registry (SPEC §4.13). Drafted in Foundation from the spec's table; P2 finalises it on Kobol with
-# `npm run sources:check`, which reads every URL. Until then every URL here is "Verify in P2": the cloud
-# container that drafted it cannot reach these hosts (SPEC Appendix C).
+# Source registry (SPEC §4.13). Drafted in Foundation from the spec's table and finalised in P2 from Kobol's live
+# reads: batch K1c read every URL below on 2026-11-28 (12:46 to 13:30 Taipei, 04:46 to 05:30 UTC) and batch K1a
+# read OpenAlex's (docs/reports/p2-kobol/K1c-feeds.md and K1a-openalex.md). Each `url` answered 200, except
+# `lab-microsoft-ai-for-science`'s, which K1c named as the live feed without reading its items. Each `fresh_days`
+# is the longest normal gap between items, rounded up, plus a day (a feed that shows too few items has its
+# publishing cadence, rounded the same way); the one that is a guess is that same feed's 14, and a later
+# `sources:check` on Kobol may move any of them.
 #
 # Every key is explicit on every feed:
 #   id            unique; also the file name of the feed's saved fixture
 #   name          what the feed is, as the sources:check table prints it
 #   kind          api | rss | page | file
 #   url           where the feed is read; for an api, the endpoint the parser builds its query on
-#   fallback_url  read when url fails, or null
-#   priority      1: the morning needs it (a problem fails sources:check); 2: wanted; 3: counters and extras
+#   fallback_url  read when url fails, or null; counted in `budget`, so a feed with one has a budget of at least 2
+#   priority      1: the morning needs it (a problem fails sources:check); 2: wanted; 3: counters and extras (a
+#                 journal's feed is 2 when the journal counts in the Pace, else 3; Nature and Science keep the 1
+#                 the Foundation drafted)
 #   fresh_days    the feed is stale when its newest item is more than this many days old (judged at the pack
-#                 window's end by collect, at the clock by sources:check); null for a feed with no dated
-#                 items to judge (counts, figures, records looked up by id)
+#                 window's end by collect, at the clock by sources:check; an item dated after the run's date is
+#                 ignored); null for a feed with no dated items to judge (counts, figures, records looked up by
+#                 id, and the two lab pages that print no dates)
 #   must_match    true: an item enters the pack only if its title or abstract matches config/ai-terms.json
 #   date_zone     the UTC offset (+08:00) of the feed's times written without a zone when the feed names
-#                 none, or null, which reads them as UTC (P2's sources:check settles it and fresh_days)
+#                 none, or null, which reads them as UTC (K1c: every feed names its zone or gives a bare
+#                 calendar day that no publisher dates in Taipei time; Sakana AI's +09:00 is the one set)
 #   fields        the fields (SPEC §4.2 FIELDS) its items belong to; [] when each item is mapped on its own
 #                 (OpenAlex topic, journal or arXiv category, SPEC §8.3)
 #   parser        atom | json | rss | html | csv | none (none: never read by collect)
 #   budget        the most requests the feed may make in one morning
 #
-# arxiv_skipped: the US dates of the arXiv announcements that arXiv's blog says it skips for holidays (a
-# Friday holiday skips the Sunday announcement after it); each announcement's list runs from the deadline
-# of the previous announcement not listed (SPEC §4.13). P2 seeds it from arXiv's availability page and
-# blog; a PR adds each later notice.
+# Journals without a feed here: JACS and Environmental Science & Technology (pubs.acs.org answers every plain GET
+# with a Cloudflare challenge; no workaround is tried), Acta Mathematica and the Journal of Biblical Literature
+# (they publish no feed). `crossref-journals` carries all four with the rest of config/journals.json.
+#
+# Not settled yet: the Sunday and Monday arXiv announcements against arxiv.org/list/<cat>/new (a P3 dry run on a
+# Tuesday and a Wednesday), `arxiv-physics`'s `hep*`, `nucl*` and `gr-qc` and `arxiv-stat-ml`'s queries (K1c read
+# `math*` and `physics*` only), the cadence of `lab-microsoft-ai-for-science`'s site-wide feed (K1c read only the
+# lab's own stale feed), the length of EurekAlert!'s daily summaries view, and how collect drops the news and
+# corrections that `crossref-journals` returns beside the papers.
+#
+# arxiv_skipped: the US dates of the arXiv announcements that arXiv skips for holidays (a Friday holiday skips the
+# Sunday announcement after it); each announcement's list runs from the deadline of the previous announcement not
+# listed (SPEC §4.13). Seeded in P2 from arXiv's availability page (A) and its blog notice of 2026-11-25 (B),
+# K1c's list: the eight dates of 2026 that are past, kept for the tests, then the eleven of the next twelve
+# months. A PR adds each later notice from those two pages and raises the `arxiv-<cat>` feeds' `fresh_days` if a
+# skip lengthens the longest gap, 3.76 days at most so far (SPEC §4.13, §10 P2 step 1).
+#   A = https://info.arxiv.org/help/availability.html
+#   B = https://blog.arxiv.org/2026/11/25/holiday-announcement-schedule/
 schema_version: 1
-arxiv_skipped: []
+arxiv_skipped:
+  - "2026-01-01"  # A: New Year's Day (Thursday)
+  - "2026-01-19"  # A: Martin Luther King Jr. Day
+  - "2026-06-21"  # A: Juneteenth observed on Friday 2026-06-19 skips the Sunday announcement
+  - "2026-07-05"  # A: Independence Day observed on Friday 2026-07-03 skips the Sunday announcement
+  - "2026-09-07"  # A: Labor Day
+  - "2026-10-12"  # A: Columbus Day
+  - "2026-11-11"  # A: Veterans Day
+  - "2026-11-26"  # A and B: Thanksgiving; its submissions go out on Sunday 2026-11-29
+  - "2026-12-27"  # B: Christmas on Friday 2026-12-25 skips the Sunday announcement; the list goes out Monday 2026-12-28
+  - "2027-01-03"  # B: New Year's Day on Friday 2027-01-01 skips the Sunday announcement; the list goes out Monday 2027-01-04
+  - "2027-01-18"  # A: Martin Luther King Jr. Day
+  - "2027-02-15"  # A: Presidents' Day
+  - "2027-05-31"  # A: Memorial Day
+  - "2027-06-20"  # A: Juneteenth observed on Friday 2027-06-18 skips the Sunday announcement
+  - "2027-07-05"  # A: Independence Day observed
+  - "2027-09-06"  # A: Labor Day
+  - "2027-10-11"  # A: Columbus Day
+  - "2027-11-11"  # A: Veterans Day
+  - "2027-11-25"  # A: Thanksgiving
 feeds:
-  # ── Preprint servers and indexes ──────────────────────────────────────────────────────────────
+  # ── Preprint servers and indexes ──────────────────────────────────────────────────────────────────
   - id: arxiv-math
-    name: arXiv API, mathematics (each announcement's new submissions)
+    name: "arXiv API, mathematics: math*, cs.IT and math-ph (each announcement's new submissions)"
     kind: api
     url: https://export.arxiv.org/api/query
-    fallback_url: null
+    fallback_url: https://rss.arxiv.org/atom/math
     priority: 1
-    fresh_days: 7
+    fresh_days: 5
     must_match: true
     date_zone: null
     fields: [mathematics]
     parser: atom
     budget: 2
   - id: arxiv-physics
-    name: arXiv API, physics
+    name: "arXiv API, physics: physics*, hep*, gr-qc and nucl*"
     kind: api
     url: https://export.arxiv.org/api/query
-    fallback_url: null
+    fallback_url: https://rss.arxiv.org/atom/physics
     priority: 1
-    fresh_days: 7
+    fresh_days: 5
     must_match: true
     date_zone: null
     fields: [physics]
     parser: atom
     budget: 2
   - id: arxiv-astro-ph
-    name: arXiv API, astrophysics
+    name: "arXiv API, astrophysics: astro-ph*"
     kind: api
     url: https://export.arxiv.org/api/query
-    fallback_url: null
+    fallback_url: https://rss.arxiv.org/atom/astro-ph
     priority: 2
-    fresh_days: 7
+    fresh_days: 5
     must_match: true
     date_zone: null
     fields: [physics]
     parser: atom
     budget: 2
   - id: arxiv-cond-mat
-    name: arXiv API, condensed matter
+    name: "arXiv API, condensed matter: cond-mat*"
     kind: api
     url: https://export.arxiv.org/api/query
-    fallback_url: null
+    fallback_url: https://rss.arxiv.org/atom/cond-mat
     priority: 2
-    fresh_days: 7
+    fresh_days: 5
     must_match: true
     date_zone: null
     fields: [physics, chemistry]
     parser: atom
     budget: 2
   - id: arxiv-quant-ph
-    name: arXiv API, quantum physics
+    name: "arXiv API, quantum physics: quant-ph"
     kind: api
     url: https://export.arxiv.org/api/query
-    fallback_url: null
+    fallback_url: https://rss.arxiv.org/atom/quant-ph
     priority: 2
-    fresh_days: 7
+    fresh_days: 5
     must_match: true
     date_zone: null
     fields: [physics]
     parser: atom
     budget: 2
   - id: arxiv-q-bio
-    name: arXiv API, quantitative biology
+    name: "arXiv API, quantitative biology: q-bio*"
     kind: api
     url: https://export.arxiv.org/api/query
-    fallback_url: null
+    fallback_url: https://rss.arxiv.org/atom/q-bio
     priority: 2
-    fresh_days: 7
+    fresh_days: 5
     must_match: true
     date_zone: null
     fields: [biology]
     parser: atom
     budget: 2
   - id: arxiv-physics-chem-ph
-    name: arXiv API, chemical physics
+    name: "arXiv API, chemical physics: physics.chem-ph"
     kind: api
     url: https://export.arxiv.org/api/query
-    fallback_url: null
+    fallback_url: https://rss.arxiv.org/atom/physics.chem-ph
     priority: 2
-    fresh_days: 7
+    fresh_days: 5
     must_match: true
     date_zone: null
     fields: [chemistry]
     parser: atom
     budget: 2
   - id: arxiv-stat-ml
-    name: arXiv API, statistics and machine learning papers cross-listed to a science category
+    name: "arXiv API, statistics and machine learning papers cross-listed to a science category: stat.ML"
     kind: api
     url: https://export.arxiv.org/api/query
-    fallback_url: null
+    fallback_url: https://rss.arxiv.org/atom/stat.ML
     priority: 2
-    fresh_days: 7
+    fresh_days: 5
     must_match: true
     date_zone: null
     fields: []
     parser: atom
     budget: 2
   - id: biorxiv
-    name: bioRxiv API, new preprints in the window
+    name: bioRxiv API, new preprints in the window (30 a page; DOIs 10.1101 and 10.64898)
     kind: api
     url: https://api.biorxiv.org/details/biorxiv
     fallback_url: null
@@ -135,9 +176,9 @@ feeds:
     date_zone: null
     fields: [biology]
     parser: json
-    budget: 5
+    budget: 20
   - id: medrxiv
-    name: medRxiv API, new preprints in the window
+    name: medRxiv API, new preprints in the window (30 a page; DOIs 10.1101 and 10.64898)
     kind: api
     url: https://api.biorxiv.org/details/medrxiv
     fallback_url: null
@@ -149,7 +190,7 @@ feeds:
     parser: json
     budget: 5
   - id: pubmed
-    name: PubMed E-utilities (esearch and esummary, JSON) on the AI terms
+    name: PubMed E-utilities (esearch, then esummary titles and efetch abstracts, 200 PMIDs a request) on the AI terms
     kind: api
     url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi
     fallback_url: null
@@ -159,7 +200,7 @@ feeds:
     date_zone: null
     fields: [biology]
     parser: json
-    budget: 4
+    budget: 12
   - id: crossref-journals
     name: Crossref works, the leading journals' new articles (config/journals.json)
     kind: api
@@ -171,8 +212,8 @@ feeds:
     date_zone: null
     fields: []
     parser: json
-    budget: 30
-  # ── Journals' own feeds (P2 adds one per config/journals.json entry that has a feed) ─────────────
+    budget: 40
+  # ── Journals' own feeds (one per config/journals.json entry that has a feed; priority 2 when the journal counts in the Pace, else 3, but 1 for Nature and Science) ───
   - id: journal-nature
     name: Nature, latest research
     kind: rss
@@ -197,6 +238,18 @@ feeds:
     fields: []
     parser: rss
     budget: 1
+  - id: journal-cell
+    name: Cell, in press
+    kind: rss
+    url: https://www.cell.com/cell/inpress.rss
+    fallback_url: https://www.cell.com/cell/current.rss
+    priority: 3
+    fresh_days: 7
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 2
   - id: journal-pnas
     name: PNAS, current issue
     kind: rss
@@ -209,11 +262,10 @@ feeds:
     fields: []
     parser: rss
     budget: 1
-  # ── Institutions, labs and reactions ──────────────────────────────────────────────────────────
-  - id: eurekalert
-    name: EurekAlert! news releases (institutions' own releases)
+  - id: journal-prl
+    name: Physical Review Letters, recent papers
     kind: rss
-    url: https://www.eurekalert.org/rss.xml
+    url: https://feeds.aps.org/rss/recent/prl.xml
     fallback_url: null
     priority: 2
     fresh_days: 4
@@ -221,32 +273,429 @@ feeds:
     date_zone: null
     fields: []
     parser: rss
-    budget: 2
-  - id: lab-deepmind
-    name: Google DeepMind's own blog (config/labs.json; P2 adds one feed per lab)
+    budget: 1
+  - id: journal-annals-of-mathematics
+    name: Annals of Mathematics, accepted papers
     kind: rss
-    url: https://deepmind.google/blog/rss.xml
+    url: https://annals.math.princeton.edu/feed
     fallback_url: null
     priority: 2
-    fresh_days: 30
-    must_match: false
+    fresh_days: 71
+    must_match: true
     date_zone: null
     fields: []
     parser: rss
     budget: 1
-  - id: smc-reactions
-    name: Science Media Centre expert reactions, each a named scientist's own published reaction
-    kind: page
-    url: https://www.sciencemediacentre.org/
+  - id: journal-nature-physics
+    name: Nature Physics, latest research
+    kind: rss
+    url: https://www.nature.com/nphys.rss
     fallback_url: null
     priority: 3
-    fresh_days: 14
+    fresh_days: 10
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-nature-chemistry
+    name: Nature Chemistry, latest research
+    kind: rss
+    url: https://www.nature.com/nchem.rss
+    fallback_url: null
+    priority: 3
+    fresh_days: 10
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-nature-materials
+    name: Nature Materials, latest research
+    kind: rss
+    url: https://www.nature.com/nmat.rss
+    fallback_url: null
+    priority: 3
+    fresh_days: 10
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-nature-medicine
+    name: Nature Medicine, latest research
+    kind: rss
+    url: https://www.nature.com/nm.rss
+    fallback_url: null
+    priority: 3
+    fresh_days: 10
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-nejm
+    name: NEJM, current issue
+    kind: rss
+    url: https://www.nejm.org/action/showFeed?jc=nejm&type=etoc&feed=rss
+    fallback_url: null
+    priority: 2
+    fresh_days: 8
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-lancet
+    name: The Lancet, current issue
+    kind: rss
+    url: https://www.thelancet.com/rssfeed/lancet_current.xml
+    fallback_url: https://www.thelancet.com/rssfeed/lancet_online.xml
+    priority: 3
+    fresh_days: 8
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 2
+  - id: journal-nature-biotechnology
+    name: Nature Biotechnology, latest research
+    kind: rss
+    url: https://www.nature.com/nbt.rss
+    fallback_url: null
+    priority: 3
+    fresh_days: 10
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-nature-geoscience
+    name: Nature Geoscience, latest research
+    kind: rss
+    url: https://www.nature.com/ngeo.rss
+    fallback_url: null
+    priority: 3
+    fresh_days: 10
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-nature-climate-change
+    name: Nature Climate Change, latest research
+    kind: rss
+    url: https://www.nature.com/nclimate.rss
+    fallback_url: null
+    priority: 3
+    fresh_days: 10
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-aer
+    name: American Economic Review, current issue
+    kind: rss
+    url: https://pubs.aeaweb.org/action/showFeed?type=etoc&feed=rss&jc=aer
+    fallback_url: null
+    priority: 3
+    fresh_days: 35
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-apsr
+    name: American Political Science Review, recent articles
+    kind: rss
+    url: https://www.cambridge.org/core/rss/product/id/833A7242AC7B607BA7F6168DA072DB3B
+    fallback_url: null
+    priority: 2
+    fresh_days: 80
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-nature-human-behaviour
+    name: Nature Human Behaviour, latest research
+    kind: rss
+    url: https://www.nature.com/nathumbehav.rss
+    fallback_url: null
+    priority: 3
+    fresh_days: 10
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-inventiones
+    name: Inventiones mathematicae, recent articles
+    kind: rss
+    url: https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=222&channel-name=Inventiones%20mathematicae
+    fallback_url: null
+    priority: 3
+    fresh_days: 19
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-jams
+    name: Journal of the AMS, current issue
+    kind: rss
+    url: https://www.ams.org/rss/jams.rss
+    fallback_url: null
+    priority: 2
+    fresh_days: 100
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-grl
+    name: Geophysical Research Letters, most recent
+    kind: rss
+    url: https://agupubs.onlinelibrary.wiley.com/feed/19448007/most-recent
+    fallback_url: null
+    priority: 2
+    fresh_days: 4
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-jgr-atmospheres
+    name: "Journal of Geophysical Research: Atmospheres, most recent"
+    kind: rss
+    url: https://agupubs.onlinelibrary.wiley.com/feed/21698996/most-recent
+    fallback_url: null
+    priority: 2
+    fresh_days: 4
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-language
+    name: Language, latest articles (Project MUSE)
+    kind: rss
+    url: https://muse.jhu.edu/feeds/latest_articles?jid=112
+    fallback_url: null
+    priority: 2
+    fresh_days: 100
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-antiquity
+    name: Antiquity, recent articles
+    kind: rss
+    url: https://www.cambridge.org/core/rss/product/id/C06207AB2CE3EE948718B5F6E30870D7
+    fallback_url: null
+    priority: 2
+    fresh_days: 65
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-classical-quarterly
+    name: The Classical Quarterly, recent articles
+    kind: rss
+    url: https://www.cambridge.org/core/rss/product/id/98B56E98F6176CC085C2D10BEF5DA258
+    fallback_url: null
+    priority: 2
+    fresh_days: 190
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: journal-hts
+    name: HTS Teologiese Studies / Theological Studies, recent articles
+    kind: rss
+    url: https://hts.org.za/index.php/hts/gateway/plugin/WebFeedGatewayPlugin/rss2
+    fallback_url: null
+    priority: 2
+    fresh_days: 15
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  # ── Institutions, labs and reactions ──────────────────────────────────────────────────────────────
+  - id: eurekalert
+    name: EurekAlert! news releases, the browse page (institutions' own releases; 12 a page)
+    kind: page
+    url: https://www.eurekalert.org/news-releases/browse
+    fallback_url: null
+    priority: 2
+    fresh_days: 4
     must_match: true
     date_zone: null
     fields: []
     parser: html
     budget: 2
-  # ── Metrics, the rung watch and the counters ──────────────────────────────────────────────────
+  - id: lab-deepmind
+    name: Google DeepMind's own blog
+    kind: rss
+    url: https://deepmind.google/blog/rss.xml
+    fallback_url: null
+    priority: 2
+    fresh_days: 22
+    must_match: false
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: lab-openai
+    name: OpenAI's news feed (all of its news, product posts included)
+    kind: rss
+    url: https://openai.com/news/rss.xml
+    fallback_url: null
+    priority: 2
+    fresh_days: 7
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: lab-anthropic
+    name: Anthropic's research page (no feed; the news page is the fallback)
+    kind: page
+    url: https://www.anthropic.com/research
+    fallback_url: https://www.anthropic.com/news
+    priority: 2
+    fresh_days: 30
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: html
+    budget: 2
+  - id: lab-meta-fair
+    name: Meta FAIR's blog page (no feed; client-rendered, so a plain read may show older posts)
+    kind: page
+    url: https://ai.meta.com/blog/
+    fallback_url: null
+    priority: 2
+    fresh_days: 45
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: html
+    budget: 1
+  - id: lab-microsoft-ai-for-science
+    name: Microsoft Research's site-wide feed (the AI for Science lab's own feed has had no item since 2025-06-18)
+    kind: rss
+    url: https://www.microsoft.com/en-us/research/feed/
+    fallback_url: null
+    priority: 2
+    fresh_days: 14
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: lab-futurehouse
+    name: FutureHouse's research page (no feed; the list prints no dates)
+    kind: page
+    url: https://www.futurehouse.org/research
+    fallback_url: null
+    priority: 2
+    fresh_days: null
+    must_match: false
+    date_zone: null
+    fields: [biology]
+    parser: html
+    budget: 1
+  - id: lab-periodic-labs
+    name: Periodic Labs' news page (no feed)
+    kind: page
+    url: https://periodic.com/news
+    fallback_url: null
+    priority: 2
+    fresh_days: 90
+    must_match: false
+    date_zone: null
+    fields: [physics, chemistry]
+    parser: html
+    budget: 1
+  - id: lab-isomorphic-labs
+    name: Isomorphic Labs' news page (no feed; the list prints no dates)
+    kind: page
+    url: https://www.isomorphiclabs.com/news
+    fallback_url: null
+    priority: 2
+    fresh_days: null
+    must_match: false
+    date_zone: null
+    fields: [chemistry, biology]
+    parser: html
+    budget: 1
+  - id: lab-lila-sciences
+    name: Lila Sciences' news page (no feed; the list also links outside press, which collect drops)
+    kind: page
+    url: https://www.lila.ai/news
+    fallback_url: null
+    priority: 2
+    fresh_days: 30
+    must_match: false
+    date_zone: null
+    fields: [chemistry, biology]
+    parser: html
+    budget: 1
+  - id: lab-sakana-ai
+    name: Sakana AI's blog (Atom)
+    kind: rss
+    url: https://sakana.ai/feed.xml
+    fallback_url: null
+    priority: 2
+    fresh_days: 30
+    must_match: true
+    date_zone: "+09:00"
+    fields: []
+    parser: rss
+    budget: 1
+  - id: lab-arc-institute
+    name: Arc Institute's news page (no feed)
+    kind: page
+    url: https://arcinstitute.org/news
+    fallback_url: null
+    priority: 2
+    fresh_days: 30
+    must_match: true
+    date_zone: null
+    fields: [biology]
+    parser: html
+    budget: 1
+  - id: lab-allen-institute-for-ai
+    name: Allen Institute for AI's news feed
+    kind: rss
+    url: https://allenai.org/rss.xml
+    fallback_url: null
+    priority: 2
+    fresh_days: 30
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 1
+  - id: smc-reactions
+    name: Science Media Centre expert reactions, each a named scientist's own published reaction (the home page is the fallback)
+    kind: rss
+    url: https://www.sciencemediacentre.org/feed/
+    fallback_url: https://www.sciencemediacentre.org/
+    priority: 3
+    fresh_days: 7
+    must_match: true
+    date_zone: null
+    fields: []
+    parser: rss
+    budget: 2
+  # ── Metrics, the rung watch and the counters ──────────────────────────────────────────────────────
   - id: openalex
     name: OpenAlex works, the Pace's weekly group-by counts (SPEC §5.1)
     kind: api
@@ -272,7 +721,7 @@ feeds:
     parser: json
     budget: 10
   - id: retraction-watch
-    name: The Retraction Watch data file that Crossref publishes (counter, SPEC §5.7; rung watch, SPEC §5.8)
+    name: The Retraction Watch data file that Crossref publishes, 68 MB (counter, SPEC §5.7; rung watch, SPEC §5.8)
     kind: file
     url: https://gitlab.com/crossref/retraction-watch-data/-/raw/main/retraction_watch.csv
     fallback_url: null
@@ -307,10 +756,26 @@ feeds:
     fields: [biology]
     parser: json
     budget: 2
+  # K1d (2026-11-28): RCSB's holdings file lists every unreleased entry with its deposit date and status (36,382
+  # entries, 17,898 of them withdrawn, status WDRN). It is a gzip file of 1.16 MB that unzips to 16.1 MB: the 5 MiB
+  # body cap judges the gzip bytes, and the code that unzips it caps the unzipped size itself (SPEC section 4.13,
+  # Body caps and timeouts).
+  - id: rcsb-unreleased
+    name: RCSB PDB's holdings file of unreleased entries, a gzip of 1.16 MB (counter, SPEC §5.7)
+    kind: file
+    url: https://files.rcsb.org/pub/pdb/holdings/unreleased_entries.json.gz
+    fallback_url: null
+    priority: 3
+    fresh_days: null
+    must_match: false
+    date_zone: null
+    fields: [biology]
+    parser: json
+    budget: 1
   - id: mathlib-stats
     name: mathlib's statistics page (counter)
     kind: page
-    url: https://leanprover-community.github.io/mathlib_stats.html
+    url: https://mathlib.org/mathlib_stats.html
     fallback_url: null
     priority: 3
     fresh_days: null
@@ -320,7 +785,7 @@ feeds:
     parser: html
     budget: 1
   - id: erdos
-    name: erdosproblems.com, problems solved with AI credit (counter)
+    name: erdosproblems.com, its home page with the forum and blog threads (the counter erdos_ai is manual, SPEC §5.7)
     kind: page
     url: https://www.erdosproblems.com/
     fallback_url: null
@@ -337,13 +802,13 @@ feeds:
     url: https://scrollprize.substack.com/feed
     fallback_url: null
     priority: 3
-    fresh_days: 60
+    fresh_days: 80
     must_match: false
     date_zone: null
     fields: [humanities]
     parser: rss
     budget: 1
-  # ── The Chinese pass's one allowed host (SPEC §9.5); stage 8 snapshots the pages it fetched ───
+  # ── The Chinese pass's one allowed host (SPEC §9.5); stage 8 snapshots the pages it fetched ───────
   - id: naer-terms
     name: 樂詞網, the National Academy for Educational Research's term database (official Taiwan terms)
     kind: page

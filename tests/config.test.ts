@@ -21,6 +21,7 @@ import type { ConfigCode, ConfigFiles, ConfigIndex, ConfigIssue, ConfigKey, Load
 import { byCodeUnit } from "@/lib/ids";
 import { jsonText, sha256Hex } from "@/lib/json";
 import { isPrimary, pressHostFor, primaryTest } from "@/lib/primary";
+import { quoteWords } from "@/lib/rules/grounding";
 import {
   AiDrugsFile, AiTermsFile, CheckersFile, ClockTime, COUNTER_IDS, CountersFile, DualUseFile, FieldsFile, HostName, HypeWordsFile, JargonFile,
   JournalsFile, LabsFile, MarkersFile, OPENALEX_FIELD_MAX, OPENALEX_FIELD_MIN, PathPrefix, Publisher, ReactionSource, RegistryEntry, Resolver,
@@ -365,9 +366,65 @@ describe("config/journals.json and config/ai-terms.json", () => {
       "Nature Chemistry", "Nature Materials", "Journal of the American Chemical Society", "Nature Medicine", "The New England Journal of Medicine",
       "The Lancet", "Nature Biotechnology", "Nature Geoscience", "Nature Climate Change", "American Economic Review", "American Political Science Review",
       "Nature Human Behaviour", "Inventiones Mathematicae", "Journal of the American Mathematical Society", "Acta Mathematica",
+      // The 8 that P2 added by §4.11's rule: three for earth, five for the humanities (K1a, 2026-11-28).
+      "Journal of Geophysical Research: Atmospheres", "Environmental Science & Technology", "Geophysical Research Letters", "Language", "Antiquity",
+      "The Classical Quarterly", "Journal of Biblical Literature", "HTS Teologiese Studies / Theological Studies",
     ]) expect(names, name).toContain(name);
     expect(SEED.journals.journals.find((j) => j.id === "nature-human-behaviour")?.in_pace).toBe(false);
     expect(SEED.index.paceJournals.length).toBeGreaterThan(0);
+  });
+
+  it("is version 2 with 30 journals, no placeholder source id, and the earth and humanities journals each listing their one field", () => {
+    expect(SEED.journals.version).toBe(2);
+    expect(SEED.journals.journals).toHaveLength(30);
+    // The seed's placeholders S9999999901 to S9999999912 are all replaced by the ids OpenAlex returned.
+    for (const j of SEED.journals.journals) expect(j.openalex_source, j.id).not.toMatch(/^S99999999\d\d$/);
+    const fieldsOf = (ids: string[]) => ids.map((id) => SEED.journals.journals.find((j) => j.id === id)?.fields);
+    expect(fieldsOf(["jgr-atmospheres", "environmental-science-and-technology", "geophysical-research-letters"])).toEqual([["earth"], ["earth"], ["earth"]]);
+    expect(fieldsOf(["language", "antiquity", "classical-quarterly", "journal-of-biblical-literature", "hts-theological-studies"])).toEqual(Array(5).fill(["humanities"]));
+    // JGR: Atmospheres has the ISSN OpenAlex lists for it, not the old all-sections JGR ISSN-L (K1a).
+    expect(SEED.journals.journals.find((j) => j.id === "jgr-atmospheres")?.issn).toBe("2169-897X");
+  });
+
+  it("holds each journal's in_pace as §4.11's test with its 50% floor gives it from K1a's yearly counts, and every field has a journal of its own", () => {
+    type Yearly = { articles: Record<string, number>; with_abstract: Record<string, number> };
+    const reports = path.join(root, "docs", "reports", "p2-kobol");
+    const json = (file: string) => JSON.parse(fs.readFileSync(path.join(reports, file), "utf8"));
+    const counts = new Map<string, Yearly>();
+    for (const j of json("journals-openalex.json").journals as { found: { openalex_source: string }; yearly: Yearly }[]) counts.set(j.found.openalex_source, j.yearly);
+    for (const file of ["earth-candidates.json", "humanities-candidates.json"]) {
+      for (const c of json(file).candidates as { openalex_source: string; yearly: Yearly }[]) counts.set(c.openalex_source, c.yearly);
+    }
+    const years = Array.from({ length: 11 }, (_, i) => String(2015 + i));
+    const base = years.slice(0, 5);
+    const sum = (rec: Record<string, number>, ys: string[]) => ys.reduce((t, y) => t + rec[y], 0);
+    /** The test of §4.11: an abstract article in every year from 2015, each year's count at least half the 2015-2019 yearly mean, each year's abstract share at least half the 2015-2019 share and at least 50%. */
+    const passes = (y: Yearly): boolean => {
+      const mean = sum(y.with_abstract, base) / base.length;
+      const baseShare = sum(y.with_abstract, base) / sum(y.articles, base);
+      return years.every((yr) => {
+        const w = y.with_abstract[yr];
+        const share = w / y.articles[yr];
+        return w > 0 && w >= mean / 2 && share >= baseShare / 2 && share >= 0.5;
+      });
+    };
+    const given: Record<string, boolean> = {};
+    for (const j of SEED.journals.journals) {
+      const y = counts.get(j.openalex_source);
+      expect(y, `${j.id} has yearly counts in K1a's files`).toBeDefined();
+      given[j.id] = passes(y!);
+    }
+    expect(Object.fromEntries(SEED.journals.journals.map((j) => [j.id, j.in_pace]))).toEqual(given);
+    // The floor is what leaves these four out: without it each passes the relative tests.
+    for (const id of ["nature", "cell", "nature-chemistry", "nature-biotechnology"]) {
+      const j = SEED.journals.journals.find((x) => x.id === id)!;
+      const y = counts.get(j.openalex_source)!;
+      expect(j.in_pace, id).toBe(false);
+      expect(years.every((yr) => y.with_abstract[yr] > 0 && y.with_abstract[yr] >= sum(y.with_abstract, base) / 10 && y.with_abstract[yr] / y.articles[yr] >= sum(y.with_abstract, base) / sum(y.articles, base) / 2), `${id} passes the relative tests`).toBe(true);
+    }
+    expect(SEED.journals.journals.filter((j) => j.in_pace)).toHaveLength(16);
+    // §5.1: each field has an in_pace journal that lists it alone.
+    for (const f of FIELDS) expect(SEED.journals.journals.some((j) => j.in_pace && j.fields.length === 1 && j.fields[0] === f), f).toBe(true);
   });
 
   it("lists the twenty phrases of section 4.11", () => {
@@ -386,7 +443,7 @@ describe("config/source-tiers.json, labs.json and checkers.json", () => {
     for (const id of [
       "nature", "science", "cell-press", "pnas", "aps", "annals-of-mathematics", "springer", "sciencedirect", "wiley", "ams", "plos", "elife", "nejm", "lancet",
       "cambridge-core", "oxford-academic", "taylor-francis", "de-gruyter", "brill", "sage", "project-muse", "jstor", "arxiv", "biorxiv", "medrxiv", "ssrn",
-      "osf-preprints", "chemrxiv",
+      "osf-preprints", "chemrxiv", "elsevier-linkinghub", "scholarly-publishing-collective",
     ]) expect(t.publishers.map((p) => p.id), id).toContain(id);
     expect(t.publishers.filter((p) => ["arxiv", "biorxiv", "medrxiv", "ssrn", "osf-preprints", "chemrxiv"].includes(p.id)).every((p) => p.kinds.join() === "preprint" && p.type_field === null))
       .toBe(true);
@@ -397,20 +454,32 @@ describe("config/source-tiers.json, labs.json and checkers.json", () => {
     expect(t.reaction_sources.map((r) => r.id)).toEqual(expect.arrayContaining(["smc", "terence-tao"]));
     expect(t.statement_suffixes).toEqual(expect.arrayContaining([".edu", ".gov", ".int", ".europa.eu", "mpg.de", "cnrs.fr", "riken.jp", "sinica.edu.tw", "wycliffe.net",
       "unitedbiblesocieties.org", "sil.org", "vatican.va", "eurekalert.org/news-releases/"]));
-    expect(t.figure_hosts).toEqual(expect.arrayContaining(["media.springernature.com", "www.science.org", "www.cell.com", "www.pnas.org", "arxiv.org", "www.ncbi.nlm.nih.gov"]));
+    // K1b (pass D): the hosts that serve figures, each read on Kobol (section 4.11, figure_hosts)
+    expect(t.figure_hosts).toEqual([
+      "media.springernature.com", "media.nature.com", "cdn.journals.aps.org", "static.cambridge.org", "www.science.org", "www.cell.com", "www.pnas.org", "arxiv.org",
+      "cdn.ncbi.nlm.nih.gov", "www.biorxiv.org", "www.medrxiv.org", "iiif.elifesciences.org", "journals.plos.org", "cdn.rcsb.org",
+    ]);
+    // the page host of NCBI is not a figure host (its figures are on cdn.ncbi.nlm.nih.gov), and a press host never is (CONFIG_CONFLICT)
+    expect(t.figure_hosts).not.toContain("www.ncbi.nlm.nih.gov");
+    expect(t.figure_hosts).not.toContain("physics.aps.org");
   });
 
   it("treats Nature, Science, Cell Press and PNAS as section 4.11 says", () => {
     const by = (id: string) => SEED.sourceTiers.publishers.find((p) => p.id === id)!;
     // P2 adds the paths it finds (section 4.11), so the lists are held to hold the spec's, not to be them
     expect(by("nature").kinds).toEqual(["paper", "notice"]);
-    expect(by("nature").paths).toEqual(expect.arrayContaining(["/articles/s", "/articles/nature"]));
+    // K1b: Nature's research articles are /articles/s..., its older ones /articles/n... (nature.20xx news ids are refused by deny_paths)
+    expect(by("nature").paths).toEqual(["/articles/s", "/articles/n"]);
+    expect(by("nature").deny_paths).toEqual(["/articles/nature.2"]);
     expect(by("nature").reaction_paths).toEqual(expect.arrayContaining(["/articles/d41586-"]));
     expect(by("nature").hosts).toEqual(expect.arrayContaining(["nature.com"]));
-    expect(by("science").kinds).toEqual(["paper", "notice", "reaction"]);
+    // K1b: a plain GET reads none of Science, Cell Press or PNAS, so each is judged by the URL test alone, with no type and no reaction
+    for (const id of ["science", "cell-press", "pnas"]) {
+      expect([by(id).kinds, by(id).type_field, by(id).types, by(id).reaction_paths], id).toEqual([["paper", "notice"], null, {}, []]);
+    }
     expect(by("science").deny_paths).toEqual(expect.arrayContaining(["/content/article/"]));
-    expect(by("science").paths).toEqual(expect.arrayContaining(["/doi/10.1126/"]));
-    for (const id of ["cell-press", "pnas"]) expect(by(id).kinds, id).toEqual(["paper", "notice", "reaction"]);
+    expect(by("science").paths).toEqual(expect.arrayContaining(["/doi/10.1126/", "/lookup/doi/10.1126/"]));
+    expect(by("science").hosts).toEqual(expect.arrayContaining(["www.science.org", "www.sciencemag.org", "science.sciencemag.org"]));
     expect(SEED.sourceTiers.deny_doi_prefixes.some((p) => "10.1038/d41586-".startsWith(p))).toBe(false);
     expect(SEED.sourceTiers.resolvers.find((r) => r.id === "doi")?.kinds).toContain("reaction");
     for (const r of SEED.sourceTiers.resolvers.filter((x) => x.id !== "doi")) expect(r.kinds, r.id).not.toContain("reaction");
@@ -435,6 +504,40 @@ describe("config/source-tiers.json, labs.json and checkers.json", () => {
       "clinicaltrials-gov-results": "confirmed",
     });
   });
+
+  it("holds K1b's and K1d's changes to the labs and checkers", () => {
+    const lab = (id: string) => SEED.labs.labs.find((l) => l.id === id)!;
+    expect(lab("meta-fair").paths).toEqual(["/blog/", "/research/publications/"]);
+    expect(lab("microsoft-research-ai-for-science").paths).toEqual([
+      "/en-us/research/lab/microsoft-research-ai-for-science/", "/en-us/research/blog/", "/en-us/research/publication/",
+    ]);
+    const checker = (id: string) => SEED.checkers.checkers.find((c) => c.id === id)!;
+    expect(checker("kavli-prize").paths).toEqual(["/laureates"]);
+    expect(checker("abel-prize").paths).toEqual(["/abel-prize-laureates/20"]);
+    expect(checker("lean-mathlib-docs").hosts).toEqual(["leanprover-community.github.io", "mathlib.org"]);
+    // the repository and the site are two entries, since an entry's hosts and paths are crossed (section 4.11)
+    expect(checker("erdosproblems").hosts).toEqual(["www.erdosproblems.com", "erdosproblems.com"]);
+    expect(checker("erdosproblems-data")).toMatchObject({ hosts: ["github.com"], paths: ["/teorth/erdosproblems"], rungs: ["checked"] });
+  });
+
+  it("holds K1b's source-tiers: the refusal lists of the two registries, the DOI prefixes, the suffixes and the reaction sources", () => {
+    const t = SEED.sourceTiers;
+    expect(t.version).toBe(2);
+    expect(Object.fromEntries(t.registries.filter((r) => r.deny_hosts.length + r.deny_paths.length > 0).map((r) => [r.id, [r.deny_hosts, r.deny_paths]]))).toEqual({
+      github: [["docs.github.com"], []],
+      huggingface: [["discuss.huggingface.co"], ["/docs", "/blog", "/learn", "/posts", "/papers"]],
+    });
+    expect(t.deny_doi_prefixes).toEqual(["10.1038/scientificamerican", "10.1021/cen-", "10.1063/pt.", "10.1038/nature.20"]);
+    expect(t.statement_suffixes).toEqual(expect.arrayContaining([".ac.id", ".edu.tw", ".edu.cn", ".edu.hk", ".edu.sg", ".edu.au"]));
+    expect(t.reaction_sources.find((r) => r.id === "smc")!.paths).toEqual(["/expert-reaction-", "/experts-react-"]);
+    expect(t.reaction_sources.find((r) => r.id === "scimex")).toMatchObject({ hosts: ["www.scimex.org", "scimex.org"], paths: ["/newsfeed/expert-reaction-"] });
+    // the DOI prefixes that mark a news item of a journal publisher; a Nature research DOI is not one
+    expect(t.deny_doi_prefixes.some((p) => "10.1038/s41586-024-07000-0".startsWith(p))).toBe(false);
+    // book reviews are refused at both PubMed Central addresses
+    for (const id of ["pmc", "pmc-legacy"]) expect(t.resolvers.find((r) => r.id === id)!.refused_pubtypes, id).toContain("book-review");
+    // the publishers kept typed are the three whose pages a plain GET reads and that name a type; the rest are judged by the URL test alone
+    expect(t.publishers.filter((p) => p.type_field !== null).map((p) => [p.id, p.type_field])).toEqual([["nature", "dc.type"], ["springer", "dc.type"], ["plos", "citation_article_type"]]);
+  });
 });
 
 describe("config/counters.json, markers.json, ai-drugs.json and standing-stories.json", () => {
@@ -442,10 +545,41 @@ describe("config/counters.json, markers.json, ai-drugs.json and standing-stories
     const kinds = Object.fromEntries(SEED.counters.counters.map((c) => [c.id, c.kind]));
     expect(Object.keys(kinds)).toEqual([...COUNTER_IDS]);
     expect(kinds).toMatchObject({ mathlib_theorems: "api", ai_drugs: "api", pdb_structures: "api", ai_retractions: "api", full_bibles: "manual", ancient_texts_ai: "ledger" });
-    // "api, else manual": P2 settles which on Kobol (section 5.7)
-    expect(["api", "manual"]).toContain(kinds.erdos_ai);
-    // the Wycliffe totals and the manual figures come with P2 and by PR, so the seed is not held to a count of them
+    // "api, else manual": K1d settled it (section 5.7): the AI contributions wiki is frozen and no data file carries the credit, so manual
+    expect(kinds.erdos_ai).toBe("manual");
+    // only the manual counters hold a reading in the seed; full_bibles holds figures instead of a value
     for (const c of SEED.counters.counters.filter((k) => k.kind !== "manual")) expect([c.id, c.value, c.as_of], c.id).toEqual([c.id, null, null]);
+  });
+
+  it("holds K1d's readings: erdos_ai frozen at 69 on 2026-06-30, mathlib's page, RCSB's two sources, the Retraction Watch file and Wycliffe's figures", () => {
+    const by = (id: string) => SEED.counters.counters.find((c) => c.id === id)!;
+    expect(SEED.counters.version).toBe(2);
+    expect([by("erdos_ai").value, by("erdos_ai").as_of]).toEqual([69, "2026-06-30"]);
+    expect(by("erdos_ai").source_url).toBe("https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems");
+    expect(by("mathlib_theorems").source_url).toBe("https://mathlib.org/mathlib_stats.html");
+    expect(by("pdb_structures").source).toMatch(/unreleased/);
+    expect(by("ai_retractions").source).toMatch(/Computer-Aided Content or Computer-Generated Content/);
+    const bibles = by("full_bibles");
+    expect(bibles.figures!.map((f) => [f.as_of, f.total])).toEqual(bibles.figures!.map((f) => [f.as_of, f.total]).sort((a, b) => byCodeUnit(String(a[0]), String(b[0]))));
+    expect(bibles.figures!.length).toBeGreaterThanOrEqual(4);
+    for (const f of bibles.figures!) expect(f.source_url, f.as_of).toMatch(/^https:\/\/(www\.)?wycliffe\.net\//);
+  });
+
+  it("lists the four AI-found drugs K1d could quote, each quoted within the quote limit, none approved, and leaves baricitinib out", () => {
+    const drugs = SEED.aiDrugs.drugs;
+    expect(SEED.aiDrugs.version).toBe(2);
+    expect(drugs.map((d) => d.id)).toEqual(["rentosertib", "ism5411", "ism6331", "rec-4881"]);
+    expect(drugs.map((d) => d.trials)).toEqual([
+      ["NCT05154240", "NCT05938920", "NCT05975983", "NCT07687459"], ["NCT06012578", "NCT07265570"], ["NCT06566079"], ["NCT05552755", "NCT06005974"],
+    ]);
+    for (const d of drugs) {
+      // the basis is a verbatim quote of the primary page, so it stays within the 25 words a finding's quote may have (section 4.3; QUOTE_MAX_WORDS in lib/rules/grounding.ts is not exported)
+      expect(quoteWords(d.ai_basis), d.id).toBeLessThanOrEqual(25);
+      expect(d.approved, d.id).toBeNull();
+      expect(d.source_url, d.id).toMatch(/^https:\/\//);
+    }
+    // baricitinib for COVID-19 was a repurposing found by an AI model, not an AI-found drug candidate in the sense of section 5.7
+    expect(JSON.stringify(SEED.aiDrugs)).not.toMatch(/baricitinib/i);
   });
 
   it("has the four markers of Appendix B, oldest first, each with a primary source", () => {
@@ -1067,7 +1201,8 @@ describe("JournalsFile and AiTermsFile", () => {
   it("JournalsFile holds an ISSN with the right check digit (ISO 3297: weights 8 to 2, modulus 11, X for 10)", () => {
     const one = (issn: string) => {
       const f = journals();
-      f.journals = [{ ...f.journals[0], issn }];
+      // one journal alone must count in the Pace, and Nature (first in the file) no longer does (§4.11, the abstract floor)
+      f.journals = [{ ...f.journals[0], issn, in_pace: true }];
       return f;
     };
     for (const ok of ["0028-0836", "2434-561X", "0000-0000", "0036-8075", "1749-4885"]) expectValid(JournalsFile, one(ok));
@@ -1277,11 +1412,11 @@ describe("Resolver, RegistryEntry and ReactionSource", () => {
   });
 
   it("RegistryEntry and ReactionSource take an id, a name, hosts and paths (and kinds, for a registry)", () => {
-    const registry = { id: "zenodo", name: "Zenodo", hosts: ["zenodo.org"], kinds: ["dataset"], paths: ["/records/"] };
+    const registry = { id: "zenodo", name: "Zenodo", hosts: ["zenodo.org"], kinds: ["dataset"], paths: ["/records/"], deny_hosts: [], deny_paths: [] };
     const reaction = { id: "smc", name: "Science Media Centre expert reactions", hosts: ["sciencemediacentre.org"], paths: ["/expert-reaction-"] };
     expectValid(RegistryEntry, registry);
     expectValid(ReactionSource, reaction);
-    expect(Object.keys(RegistryEntry.shape)).toEqual(["id", "name", "hosts", "kinds", "paths"]);
+    expect(Object.keys(RegistryEntry.shape)).toEqual(["id", "name", "hosts", "kinds", "paths", "deny_hosts", "deny_paths"]);
     expect(Object.keys(ReactionSource.shape)).toEqual(["id", "name", "hosts", "paths"]);
     expectStrictAndComplete(RegistryEntry, registry);
     expectStrictAndComplete(ReactionSource, reaction);
@@ -1292,6 +1427,26 @@ describe("Resolver, RegistryEntry and ReactionSource", () => {
     expectMutationFails(ReactionSource, reaction, (r) => { r.hosts = ["https://sciencemediacentre.org"]; }, "hosts.0");
     expectMutationFails(ReactionSource, reaction, (r) => { r.paths = []; }, "paths");
     expectMutationFails(ReactionSource, reaction, (r) => { r.kind = "reaction"; }, "", "Unrecognized key");
+  });
+
+  it("RegistryEntry takes deny_hosts under its own hosts and deny_paths as path prefixes, both always written", () => {
+    const github = { id: "github", name: "GitHub repositories", hosts: ["github.com"], kinds: ["dataset", "proof"], paths: ["/"], deny_hosts: ["docs.github.com"], deny_paths: [] as string[] };
+    expectValid(RegistryEntry, github);
+    expectValid(RegistryEntry, { ...github, deny_hosts: [], deny_paths: ["/docs", "/blog"] });
+    expectValid(RegistryEntry, { ...github, deny_hosts: ["docs.github.com", "gist.github.com"], deny_paths: ["/features/"] });
+    expectMutationFails(RegistryEntry, github, (r) => { delete r.deny_hosts; }, "deny_hosts");
+    expectMutationFails(RegistryEntry, github, (r) => { delete r.deny_paths; }, "deny_paths");
+    // a denied host is a subdomain of one of the entry's hosts, and not one of them
+    expectMutationFails(RegistryEntry, github, (r) => { r.deny_hosts = ["github.com"]; }, "deny_hosts.0", "is a host of this entry");
+    expectMutationFails(RegistryEntry, github, (r) => { r.deny_hosts = ["docs.example.org"]; }, "deny_hosts.0", "under none of the entry's hosts");
+    expectMutationFails(RegistryEntry, github, (r) => { r.deny_hosts = ["notgithub.com"]; }, "deny_hosts.0", "under none of the entry's hosts");
+    expectMutationFails(RegistryEntry, github, (r) => { r.deny_hosts = ["docs.github.com", "docs.github.com"]; }, "deny_hosts.1", "already used at index 0");
+    expectMutationFails(RegistryEntry, github, (r) => { r.deny_hosts = ["https://docs.github.com"]; }, "deny_hosts.0");
+    expectMutationFails(RegistryEntry, github, (r) => { r.deny_hosts = [""]; }, "deny_hosts.0");
+    expectMutationFails(RegistryEntry, github, (r) => { r.deny_paths = ["docs"]; }, "deny_paths.0");
+    expectMutationFails(RegistryEntry, github, (r) => { r.deny_paths = ["/docs", "/docs"]; }, "deny_paths.1", "already used at index 0");
+    expectMutationFails(RegistryEntry, github, (r) => { r.deny_hosts = "docs.github.com"; }, "deny_hosts");
+    expectMutationFails(RegistryEntry, github, (r) => { r.deny_paths = "/docs"; }, "deny_paths");
   });
 });
 
@@ -1459,12 +1614,20 @@ describe("AiDrugsFile", () => {
 });
 
 describe("CountersFile", () => {
-  const counters = (): any => raw("counters");
+  const seed = (): any => raw("counters");
+  /** The seed with erdos_ai read from an API again (no value, no date): the form most mutations below start from, since the seed's own is manual. */
+  const counters = (): any => {
+    const f = seed();
+    f.counters[0].kind = "api";
+    f.counters[0].value = null;
+    f.counters[0].as_of = null;
+    return f;
+  };
   const at = (id: string): number => (COUNTER_IDS as readonly string[]).indexOf(id);
   const figure = (as_of: string): any => ({ as_of, total: 756, source_url: "https://www.wycliffe.net/resources/statistics/" });
 
   it("takes the seed, with the keys in the order of SPEC section 4.11", () => {
-    expectStrictAndComplete(CountersFile, counters());
+    expectStrictAndComplete(CountersFile, seed());
     expect(Object.keys(CountersFile.shape)).toEqual(["schema_version", "version", "counters"]);
     expect(Object.keys(CountersFile.shape.counters.element.shape)).toEqual(["id", "label", "unit", "kind", "source", "value", "as_of", "source_url", "figures"]);
     expect([...COUNTER_IDS]).toEqual(["erdos_ai", "mathlib_theorems", "ai_drugs", "pdb_structures", "ai_retractions", "full_bibles", "ancient_texts_ai"]);
@@ -2048,7 +2211,7 @@ describe("the cross-file checks of validateConfig()", () => {
       expectFound(crossFile((c) => { c.checkers.checkers = c.checkers.checkers.filter((k) => k.id !== "breakthrough-prize"); }), "CONFIG_REF", here("checkers", "checkers"), "breakthrough-prize");
       for (const name of ["Breakthrough Prize Foundation", "Breakthrough prize", "The Breakthrough Prize", "Breakthrough Prize "]) {
         const found = crossFile((c) => { c.checkers.checkers[checkerIndex(c, "breakthrough-prize")]!.name = name; });
-        expectFound(found, "CONFIG_REF", here("checkers", `checkers[${4}].name`), `must be exactly "Breakthrough Prize"`);
+        expectFound(found, "CONFIG_REF", here("checkers", `checkers[${checkerIndex(parsedSeed(), "breakthrough-prize")}].name`), `must be exactly "Breakthrough Prize"`);
       }
       expectFound(crossFile((c) => { c.checkers.checkers = c.checkers.checkers.filter((k) => k.id !== "vesuvius-challenge"); }), "CONFIG_REF", here("checkers", "checkers"), "vesuvius-challenge");
       for (const keep of [["scrollprize.org"], ["scrollprize.substack.com"], ["www.scrollprize.org"]]) {

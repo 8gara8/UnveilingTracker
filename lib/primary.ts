@@ -8,8 +8,10 @@
 // it fails for every kind. (2) A BLOCKED_HOSTS entry (`blockedEntry()`) fails it for every kind, before any allowlist
 // is read, so gist.github.com, api.github.com and codeload.github.com fail although github.com is a registry host.
 // (3) A `press_hosts` entry fails it for every kind, unless a `reaction_sources`, `labs.json` or `checkers.json` entry
-// names its host and path, which wins. (4) A `deny_paths` prefix of a publisher on its host, or a `deny_doi_prefixes`
-// prefix on a doi.org address, fails it for every kind. (5) Then each entry that lists the host and a path prefix adds
+// names its host and path, which wins. (4) A `deny_paths` prefix of a publisher on its host, a `deny_doi_prefixes`
+// prefix on a doi.org address, or a registry's `deny_hosts` host (and its subdomains) or `deny_paths` prefix on that
+// registry's own hosts (docs.github.com, huggingface.co/docs: places that hold no records), fails it for every kind.
+// (5) Then each entry that lists the host and a path prefix adds
 // its kinds: a publisher its `kinds` (and `reaction` through its `reaction_paths`), a resolver or registry its `kinds`,
 // a lab `lab_post`, a checker `checker`, and the `statement_suffixes` `statement`; a `reaction_sources` entry makes it
 // `reaction` and no other kind. A URL passes for the kinds so collected; for none it is refused as unlisted.
@@ -32,7 +34,7 @@
 // type check, the publisher lookup for it and the helpers for collect and the rules are new.
 
 import type { ConfigFiles } from "./config";
-import { statementForm, type Checker, type Publisher, type Resolver } from "./schema/config";
+import { statementForm, type Checker, type Publisher, type RegistryEntry, type Resolver } from "./schema/config";
 import type { Evidence } from "./schema/misc";
 import { blockedEntry, hostMatches, hostOf, matchPath, normalizeUrl } from "./urls";
 import { COUNTED_RUNGS, SOURCE_KINDS, type CountedRung, type SourceKind } from "./vocab";
@@ -115,7 +117,7 @@ const fold = (type: string): string => type.trim().replace(/\s+/g, " ").toLowerC
 // ── The URL test ─────────────────────────────────────────────────────────────────────────────────
 
 /** Why the URL test fails for every kind: the address, a list that refuses it, or no entry that lists it. */
-export type UrlRefusal = ShapeRefusal | "blocked_host" | "press_host" | "denied_path" | "denied_doi_prefix" | "unlisted";
+export type UrlRefusal = ShapeRefusal | "blocked_host" | "press_host" | "denied_path" | "denied_doi_prefix" | "denied_registry" | "unlisted";
 
 /** `UrlRefusal`, or `wrong_kind` for a URL that passes for other kinds than the one asked for. */
 export type PrimaryRefusal = UrlRefusal | "wrong_kind";
@@ -126,8 +128,8 @@ export interface PrimaryTest {
   /** Why no kind passes; null exactly when `kinds` is not empty. */
   refusal: UrlRefusal | null;
   /**
-   * What refused it: the BLOCKED_HOSTS pattern, the first press entry the host is or sits under, the denied path prefix or the denied
-   * DOI prefix, as the lists write them; null for the other refusals.
+   * What refused it: the BLOCKED_HOSTS pattern, the first press entry the host is or sits under, the denied path prefix, the denied
+   * DOI prefix or the registry's denied host or path prefix, as the lists write them; null for the other refusals.
    */
   by: string | null;
 }
@@ -139,6 +141,21 @@ function deniedPath(a: Address, publishers: readonly Publisher[]): string | null
   for (const p of publishers) {
     if (!onHost(a.host, p.hosts)) continue;
     const prefix = p.deny_paths.find((d) => a.path.startsWith(matchPath(d)));
+    if (prefix !== undefined) return prefix;
+  }
+  return null;
+}
+
+/**
+ * The first host or path prefix, as a registry writes it, that a registry listing the address's host refuses (its `deny_hosts`, which
+ * match the host and its subdomains, then its `deny_paths`), else null.
+ */
+function deniedRegistry(a: Address, registries: readonly RegistryEntry[]): string | null {
+  for (const r of registries) {
+    if (!onHost(a.host, r.hosts)) continue;
+    const host = r.deny_hosts.find((d) => hostMatches(a.host, d));
+    if (host !== undefined) return host;
+    const prefix = r.deny_paths.find((d) => a.path.startsWith(matchPath(d)));
     if (prefix !== undefined) return prefix;
   }
   return null;
@@ -207,6 +224,8 @@ export function primaryTest(url: string, config: PrimaryConfig): PrimaryTest {
   if (path !== null) return refused("denied_path", path);
   const doi = deniedDoiPrefix(a, t.deny_doi_prefixes);
   if (doi !== null) return refused("denied_doi_prefix", doi);
+  const record = deniedRegistry(a, t.registries);
+  if (record !== null) return refused("denied_registry", record);
 
   const kinds = kindsOf(a, config);
   return kinds.length === 0 ? refused("unlisted", null) : { kinds, refusal: null, by: null };
@@ -267,6 +286,8 @@ export function primaryProblem(url: string, kind: SourceKind, config: PrimaryCon
       return { code, message: `Pages under ${t.by} on this site are news and features, not papers. Cite the paper's own page.` };
     case "denied_doi_prefix":
       return { code, message: `DOIs that start with ${t.by} name a news publication's items, not papers. Cite the primary record.` };
+    case "denied_registry":
+      return { code, message: `Pages at ${t.by} hold no records: documentation, forum, blog and help pages are never sources. Cite the record's own page.` };
     case "unlisted":
       return {
         code,

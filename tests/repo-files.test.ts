@@ -133,13 +133,78 @@ describe("config/sources.yaml (SPEC §4.13)", () => {
   it("S2: holds a feed for every row of the spec's table", () => {
     const ids = reg.feeds.map((f) => String(f.id));
     for (const id of ["biorxiv", "medrxiv", "pubmed", "crossref-journals", "eurekalert", "smc-reactions", "openalex", "crossref-updates",
-      "retraction-watch", "ctgov", "rcsb", "mathlib-stats", "erdos", "scrollprize", "naer-terms"]) {
+      "retraction-watch", "ctgov", "rcsb", "rcsb-unreleased", "mathlib-stats", "erdos", "scrollprize", "naer-terms"]) {
       expect(ids, id).toContain(id);
     }
     for (const prefix of ["arxiv-", "journal-", "lab-"]) expect(ids.some((i) => i.startsWith(prefix)), prefix).toBe(true);
     // Collect never reads 樂詞網: the Chinese pass fetches it through its own sandbox (§9.5), and stage 8
     // snapshots the pages it fetched (§8.2), neither against a feed's budget (§4.13).
     expect(reg.feeds.find((f) => f.id === "naer-terms")).toMatchObject({ parser: "none", budget: 0 });
+  });
+
+  it("S3: the families have the counts §4.13's table gives, and every journal has its feed but the four with none", () => {
+    const ids = reg.feeds.map((f) => String(f.id));
+    expect(reg.feeds).toHaveLength(62);
+    expect(ids.filter((i) => i.startsWith("arxiv-"))).toHaveLength(8);
+    expect(ids.filter((i) => i.startsWith("journal-"))).toHaveLength(26);
+    expect(ids.filter((i) => i.startsWith("lab-"))).toHaveLength(12);
+    expect(spec).toContain("| `journal-<id>` (26 feeds) |");
+    expect(spec).toContain("| `lab-<id>` (12 feeds) |");
+    // §4.13: a journal's feed is `journal-` and its id, but for two shortened ids; four journals have no feed
+    // (JACS and Environmental Science & Technology answer a browser check, Acta and the JBL publish none).
+    const SHORT: Record<string, string> = { "geophysical-research-letters": "grl", "hts-theological-studies": "hts" };
+    const NONE = ["jacs", "environmental-science-and-technology", "acta-mathematica", "journal-of-biblical-literature"];
+    const journals = (JSON.parse(read("config/journals.json")) as { journals: { id: string; in_pace: boolean }[] }).journals;
+    const expected = journals.filter((j) => !NONE.includes(j.id)).map((j) => `journal-${SHORT[j.id] ?? j.id}`);
+    expect(NONE.every((n) => journals.some((j) => j.id === n))).toBe(true);
+    expect(ids.filter((i) => i.startsWith("journal-")).sort()).toEqual([...expected].sort());
+    // A journal's feed is read as RSS, maps each item by its journal and its text, and has priority 2 when the journal counts in the Pace
+    // and 3 when it does not, but Nature's and Science's keep the 1 the Foundation drafted (the file's header, §4.13).
+    for (const j of journals.filter((x) => !NONE.includes(x.id))) {
+      const feed = reg.feeds.find((f) => f.id === `journal-${SHORT[j.id] ?? j.id}`);
+      expect(feed, j.id).toMatchObject({ kind: "rss", parser: "rss", fields: [], must_match: true, priority: j.id === "nature" || j.id === "science" ? 1 : j.in_pace ? 2 : 3 });
+    }
+  });
+
+  it("S4: arxiv_skipped holds the 19 dates K1c found, each in the spec's text, and the arXiv feeds follow §4.13", () => {
+    const skipped = reg.arxiv_skipped as string[];
+    expect(skipped).toHaveLength(19);
+    const section = spec.slice(spec.indexOf("### 4.13 Source registry"), spec.indexOf("### 4.14 Source pack"));
+    // The eight past dates, which the tests use, and the eleven of the next twelve months (§4.13).
+    for (const d of skipped) expect(section, d).toContain(d);
+    expect(skipped).toContain("2026-11-26");
+    expect(skipped).toContain("2026-11-11");
+    // Each arXiv feed has its category query in the spec's table and the listing feed as its fallback.
+    const table = [...section.matchAll(/^\| `(arxiv-[a-z-]+)` \| `[^`]+` \|/gm)].map((m) => m[1]);
+    const arxiv = reg.feeds.filter((f) => String(f.id).startsWith("arxiv-"));
+    expect(table.sort()).toEqual(arxiv.map((f) => String(f.id)).sort());
+    for (const f of arxiv) {
+      expect(f, String(f.id)).toMatchObject({ kind: "api", parser: "atom", fresh_days: 5, must_match: true, budget: 2, url: "https://export.arxiv.org/api/query" });
+      expect(String(f.fallback_url), String(f.id)).toMatch(/^https:\/\/rss\.arxiv\.org\/atom\/[A-Za-z.-]+$/);
+    }
+  });
+
+  it("S5: a fallback is counted in the budget, a feed's kind fits its parser, the undated lab pages have no fresh_days and only Sakana AI sets a date_zone", () => {
+    for (const f of reg.feeds) {
+      const id = String(f.id);
+      if (f.fallback_url !== null) expect(f.budget as number, id).toBeGreaterThanOrEqual(2);
+      if (f.kind === "file") expect(f.parser, id).toBe(id === "rcsb-unreleased" ? "json" : "csv");
+      if (f.kind === "rss") expect(f.parser, id).toBe("rss");
+      if (f.kind === "page") expect(["html", "none"], id).toContain(f.parser);
+      if (f.kind === "api") expect(["atom", "json"], id).toContain(f.parser);
+      // The two lab pages that print no dates have no fresh_days to judge.
+      if (id === "lab-futurehouse" || id === "lab-isomorphic-labs") expect(f.fresh_days, id).toBeNull();
+    }
+    // The one feed read as RSS whose fallback is an HTML page (§4.13): its reader hands the page to the HTML reader.
+    expect(reg.feeds.find((f) => f.id === "smc-reactions")).toMatchObject({ kind: "rss", parser: "rss", fallback_url: "https://www.sciencemediacentre.org/" });
+    // Sakana AI's feed is the one that sets a date_zone (§4.13).
+    expect(reg.feeds.filter((f) => f.date_zone !== null).map((f) => f.id)).toEqual(["lab-sakana-ai"]);
+    // §4.13's labs: must_match is false for lab-deepmind and the four companies whose every post is the point, true for the other seven;
+    // `fields` is listed for the five labs that work in one or two, and the other seven are mapped one candidate at a time (§8.3).
+    const labs = reg.feeds.filter((f) => String(f.id).startsWith("lab-"));
+    expect(labs).toHaveLength(12);
+    expect(labs.filter((f) => f.must_match === false).map((f) => f.id).sort()).toEqual(["lab-deepmind", "lab-futurehouse", "lab-isomorphic-labs", "lab-lila-sciences", "lab-periodic-labs"]);
+    expect(labs.filter((f) => (f.fields as string[]).length > 0).map((f) => f.id).sort()).toEqual(["lab-arc-institute", "lab-futurehouse", "lab-isomorphic-labs", "lab-lila-sciences", "lab-periodic-labs"]);
   });
 });
 

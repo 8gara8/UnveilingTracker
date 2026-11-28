@@ -21,7 +21,13 @@ import { CounterInput, CounterReading } from "@/lib/schema/metrics";
 import type { RequestRecord } from "@/lib/schema/metrics";
 
 const SEED = loadConfig(path.join(__dirname, "..", "config"));
-const counter = (id: string): Counter => structuredClone(SEED.counters.counters.find((c) => c.id === id)!);
+const configCounter = (id: string): Counter => structuredClone(SEED.counters.counters.find((c) => c.id === id)!);
+/**
+ * A counter as the tests below read it. `erdos_ai` is the P1 seed's: an api counter with no value, which the functions of
+ * `erdosAi()` read. At version 2 the config holds it as a manual counter with a value (SPEC §4.11, §0.4 row 352), which the
+ * tests of the config's own counters read through `configCounter()`.
+ */
+const counter = (id: string): Counter => (id === "erdos_ai" ? { ...configCounter(id), kind: "api", value: null, as_of: null } : configCounter(id));
 /** The em dash and en dash, built from their code points so that no source line holds one. */
 /** A pattern that matches exactly this message, nothing before it and nothing after. */
 const exact = (message: string): RegExp => new RegExp(`^${message.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`);
@@ -221,8 +227,13 @@ describe("fullBibles: the difference of the two newest annual figures", () => {
     }
   });
 
-  it("reads the seed's empty figures as missing", () => {
-    expect(fullBibles(counter("full_bibles")).status).toBe("missing");
+  it("reads no figures as missing, and the config's four figures as 20, the 2025 total less the 2024 one", () => {
+    expect(fullBibles({ ...counter("full_bibles"), figures: [] }).status).toBe("missing");
+    expect(valid(fullBibles(counter("full_bibles")))).toMatchObject({ id: "full_bibles", kind: "manual", value: 20, as_of: "2025-08-01", status: "ok" });
+  });
+
+  it("reads the config's erdos_ai as the manual 69 of 2026-06-30, the frozen wiki page's count", () => {
+    expect(valid(manualReading(configCounter("erdos_ai")))).toMatchObject({ id: "erdos_ai", kind: "manual", value: 69, as_of: "2026-06-30", status: "ok" });
   });
 
   it("does not clamp a total that fell", () => {
@@ -733,7 +744,7 @@ describe("countersDue: counters are read on Mondays, and when forced", () => {
 });
 
 describe("computeCounters: the seven readings of a day", () => {
-  const configCounters = SEED.counters.counters;
+  const configCounters = SEED.counters.counters.map((c) => (c.id === "erdos_ai" ? counter("erdos_ai") : c));
   const MONDAY = "2026-11-23";
   const TUESDAY = "2026-11-24";
   const ok = (id: string, over: Partial<CounterReading> = {}): CounterReading => {
@@ -793,7 +804,8 @@ describe("computeCounters: the seven readings of a day", () => {
       expect(r.readings.find((x) => x.id === "full_bibles")).toMatchObject({ value: 19, as_of: "2025-09-30", status: "ok" });
       expect(r.inputs.find((x) => x.id === "full_bibles")).toEqual({ id: "full_bibles", requests: [], value: 19 });
     }
-    expect(run().readings.find((x) => x.id === "full_bibles")!.status).toBe("missing");
+    const noFigures = configCounters.map((c) => (c.id === "full_bibles" ? { ...c, figures: [] } : c));
+    expect(run({ counters: noFigures }).readings.find((x) => x.id === "full_bibles")!.status).toBe("missing");
   });
 
   it("reads a manual counter other than full_bibles from the config every day, so a pull request shows at once", () => {

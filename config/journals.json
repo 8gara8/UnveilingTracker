@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": 1,
+  "version": 2,
   "journals": [
     {
       "id": "nature",
@@ -16,7 +16,7 @@
         "social",
         "humanities"
       ],
-      "in_pace": true
+      "in_pace": false
     },
     {
       "id": "science",
@@ -42,7 +42,7 @@
       "fields": [
         "biology"
       ],
-      "in_pace": true
+      "in_pace": false
     },
     {
       "id": "pnas",
@@ -73,7 +73,7 @@
     {
       "id": "annals-of-mathematics",
       "name": "Annals of Mathematics",
-      "openalex_source": "S9999999901",
+      "openalex_source": "S45918994",
       "issn": "0003-486X",
       "fields": [
         "mathematics"
@@ -83,37 +83,37 @@
     {
       "id": "nature-physics",
       "name": "Nature Physics",
-      "openalex_source": "S9999999902",
+      "openalex_source": "S156274416",
       "issn": "1745-2473",
       "fields": [
         "physics"
       ],
-      "in_pace": true
+      "in_pace": false
     },
     {
       "id": "nature-chemistry",
       "name": "Nature Chemistry",
-      "openalex_source": "S9999999903",
+      "openalex_source": "S202193212",
       "issn": "1755-4330",
       "fields": [
         "chemistry"
       ],
-      "in_pace": true
+      "in_pace": false
     },
     {
       "id": "nature-materials",
       "name": "Nature Materials",
-      "openalex_source": "S9999999904",
+      "openalex_source": "S103895331",
       "issn": "1476-1122",
       "fields": [
         "chemistry"
       ],
-      "in_pace": true
+      "in_pace": false
     },
     {
       "id": "jacs",
       "name": "Journal of the American Chemical Society",
-      "openalex_source": "S9999999905",
+      "openalex_source": "S111155417",
       "issn": "0002-7863",
       "fields": [
         "chemistry"
@@ -128,7 +128,7 @@
       "fields": [
         "biology"
       ],
-      "in_pace": true
+      "in_pace": false
     },
     {
       "id": "nejm",
@@ -148,37 +148,37 @@
       "fields": [
         "biology"
       ],
-      "in_pace": true
+      "in_pace": false
     },
     {
       "id": "nature-biotechnology",
       "name": "Nature Biotechnology",
-      "openalex_source": "S9999999906",
+      "openalex_source": "S106963461",
       "issn": "1087-0156",
       "fields": [
         "biology"
       ],
-      "in_pace": true
+      "in_pace": false
     },
     {
       "id": "nature-geoscience",
       "name": "Nature Geoscience",
-      "openalex_source": "S9999999907",
+      "openalex_source": "S48977010",
       "issn": "1752-0894",
       "fields": [
         "earth"
       ],
-      "in_pace": true
+      "in_pace": false
     },
     {
       "id": "nature-climate-change",
       "name": "Nature Climate Change",
-      "openalex_source": "S9999999908",
+      "openalex_source": "S183584863",
       "issn": "1758-678X",
       "fields": [
         "earth"
       ],
-      "in_pace": true
+      "in_pace": false
     },
     {
       "id": "aer",
@@ -188,7 +188,7 @@
       "fields": [
         "social"
       ],
-      "in_pace": true
+      "in_pace": false
     },
     {
       "id": "apsr",
@@ -203,7 +203,7 @@
     {
       "id": "nature-human-behaviour",
       "name": "Nature Human Behaviour",
-      "openalex_source": "S9999999909",
+      "openalex_source": "S2764866340",
       "issn": "2397-3374",
       "fields": [
         "social"
@@ -213,17 +213,17 @@
     {
       "id": "inventiones",
       "name": "Inventiones Mathematicae",
-      "openalex_source": "S9999999910",
+      "openalex_source": "S98347115",
       "issn": "0020-9910",
       "fields": [
         "mathematics"
       ],
-      "in_pace": true
+      "in_pace": false
     },
     {
       "id": "jams",
       "name": "Journal of the American Mathematical Society",
-      "openalex_source": "S9999999911",
+      "openalex_source": "S130224168",
       "issn": "0894-0347",
       "fields": [
         "mathematics"
@@ -233,10 +233,90 @@
     {
       "id": "acta-mathematica",
       "name": "Acta Mathematica",
-      "openalex_source": "S9999999912",
+      "openalex_source": "S113542759",
       "issn": "0001-5962",
       "fields": [
         "mathematics"
+      ],
+      "in_pace": false
+    },
+    {
+      "id": "jgr-atmospheres",
+      "name": "Journal of Geophysical Research: Atmospheres",
+      "openalex_source": "S207178839",
+      "issn": "2169-897X",
+      "fields": [
+        "earth"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "environmental-science-and-technology",
+      "name": "Environmental Science & Technology",
+      "openalex_source": "S13479253",
+      "issn": "0013-936X",
+      "fields": [
+        "earth"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "geophysical-research-letters",
+      "name": "Geophysical Research Letters",
+      "openalex_source": "S36624081",
+      "issn": "0094-8276",
+      "fields": [
+        "earth"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "language",
+      "name": "Language",
+      "openalex_source": "S176347361",
+      "issn": "0097-8507",
+      "fields": [
+        "humanities"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "antiquity",
+      "name": "Antiquity",
+      "openalex_source": "S173880072",
+      "issn": "0003-598X",
+      "fields": [
+        "humanities"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "classical-quarterly",
+      "name": "The Classical Quarterly",
+      "openalex_source": "S4210173305",
+      "issn": "0009-8388",
+      "fields": [
+        "humanities"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "journal-of-biblical-literature",
+      "name": "Journal of Biblical Literature",
+      "openalex_source": "S55827047",
+      "issn": "0021-9231",
+      "fields": [
+        "humanities"
+      ],
+      "in_pace": true
+    },
+    {
+      "id": "hts-theological-studies",
+      "name": "HTS Teologiese Studies / Theological Studies",
+      "openalex_source": "S52609742",
+      "issn": "0259-9422",
+      "fields": [
+        "humanities"
       ],
       "in_pace": true
     }

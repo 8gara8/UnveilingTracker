@@ -100,7 +100,7 @@
   },
   "types": {
     "https://nature.com/articles/nature-ut-sample-0001": [
-      "Article"
+      "OriginalPaper"
     ],
     "https://science.org/doi/10.1126/ut-sample.0031": [
       "Research Article"
@@ -108,8 +108,14 @@
     "https://pnas.org/doi/10.1073/ut-sample.0003": [
       "Research Article"
     ],
+    "https://link.springer.com/article/10.1007/ut-sample-0006": [
+      "Retraction Note"
+    ],
+    "https://link.springer.com/article/10.1007/ut-sample-0005": [
+      "Retraction Note"
+    ],
     "https://nature.com/articles/d41586-ut-sample-0002": [
-      "News & Views"
+      "News And Views"
     ]
   },
   "resolved": {}

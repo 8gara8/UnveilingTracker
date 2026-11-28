@@ -344,7 +344,9 @@ const resolverEntries = (host: string, p: string, kind: SourceKind): boolean =>
   && kind !== "reaction";
 
 const registryEntries = (host: string, p: string, kind: SourceKind): boolean =>
-  (TIERS.registries as any[]).some((e) => (e.kinds as string[]).includes(kind) && hostIn(host, e.hosts) && startsWithAny(p, e.paths));
+  (TIERS.registries as any[]).some((e) => (e.kinds as string[]).includes(kind) && hostIn(host, e.hosts) && startsWithAny(p, e.paths)
+    // a registry's refusal lists (K1b): the denied subdomains and path prefixes hold no records
+    && !hostIn(host, e.deny_hosts) && !(e.deny_paths as string[]).some((x) => p.startsWith(x)));
 
 const statementEntries = (host: string, p: string): boolean =>
   (TIERS.statement_suffixes as string[]).some((entry) => {

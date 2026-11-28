@@ -176,7 +176,7 @@
     },
     {
       "id": "eurekalert",
-      "kind": "rss",
+      "kind": "page",
       "ok": true,
       "stale": false,
       "newest": "2026-10-13T20:00:00+08:00",
@@ -198,7 +198,7 @@
     },
     {
       "id": "smc-reactions",
-      "kind": "page",
+      "kind": "rss",
       "ok": true,
       "stale": false,
       "newest": "2026-10-13T22:30:00+08:00",

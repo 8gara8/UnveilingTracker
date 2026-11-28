@@ -52,7 +52,7 @@
   },
   "types": {
     "https://nature.com/articles/s41586-026-ut-sample-0041": [
-      "Article"
+      "OriginalPaper"
     ],
     "https://pubmed.ncbi.nlm.nih.gov/99990041": [
       "Journal Article"

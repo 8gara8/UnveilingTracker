@@ -33,6 +33,12 @@
   "types": {
     "https://science.org/doi/10.1126/ut-sample.0051": [
       "Research Article"
+    ],
+    "https://link.springer.com/article/10.1007/ut-sample-0020": [
+      "OriginalPaper"
+    ],
+    "https://doi.org/10.1007/ut-sample-0017": [
+      "Retraction Note"
     ]
   },
   "resolved": {
