@@ -1,0 +1,164 @@
+{
+ "slug": "willow-error-correction-below-threshold",
+ "title": "Google's Willow chip lowers quantum errors as the code grows",
+ "first_published": "2024-08-24",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2408.13687",
+   "final_url": "https://arxiv.org/abs/2408.13687",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Quantum error correction below the surface code threshold",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2024-08-24"
+    },
+    {
+     "source": "citation_date",
+     "date": "2024-08-24"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-12-09"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-024-08449-y",
+   "crossref": {
+    "doi": "10.1038/s41586-024-08449-y",
+    "resolves": true,
+    "title": "Quantum error correction below the surface code threshold",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-12-9",
+    "authors_first3": [
+     "Google Quantum AI and Collaborators",
+     "Acharya",
+     "Abanin"
+    ],
+    "author_count": 256,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41586-026-10559-8",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2408.13687: Quantum error correction below the surface code threshold",
+   "passages": [
+    "Quantum error correction provides a path to reach practical quantum computing by combining multiple physical qubits into a logical qubit, where the logical error rate is suppressed exponentially as more qubits are added.",
+    "The logical error rate of our larger quantum memory is suppressed by a factor of $\\Lambda$ = 2.14 $\\pm$ 0.02 when increasing the code distance by two, culminating in a 101-qubit distance-7 code with 0.143% $\\pm$ 0.003% error per cycle of error correction.",
+    "In this work, we present two surface code memories operating below this threshold: a distance-7 code and a distance-5 code integrated with a real-time decoder.",
+    "However, this exponential suppression only occurs if the physical error rate is below a critical threshold.",
+    "To probe the limits of our error-correction performance, we run repetition codes up to distance-29 and find that logical performance is limited by rare correlated error events occurring approximately once every hour, or 3 $\\times$ 10$^9$ cycles.",
+    "We maintain below-threshold performance when decoding in real time, achieving an average decoder latency of 63 $\\mu$s at distance-5 up to a million cycles, with a cycle time of 1.1 $\\mu$s."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.nature.com/articles/s41586-024-08449-y",
+   "final_url": "https://www.nature.com/articles/s41586-024-08449-y?error=cookies_not_supported&code=03540eab-7485-4aec-932c-168dc3e85c11",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Quantum error correction below the surface code threshold",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-01-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-12-09"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-12-09"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-12-09"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-12-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-12-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-08-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-11-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-12-09"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-024-08449-y",
+   "crossref": {
+    "doi": "10.1038/s41586-024-08449-y",
+    "resolves": true,
+    "title": "Quantum error correction below the surface code threshold",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-12-9",
+    "authors_first3": [
+     "Google Quantum AI and Collaborators",
+     "Acharya",
+     "Abanin"
+    ],
+    "author_count": 256,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41586-026-10559-8",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Quantum error correction1–4 provides a path to reach practical quantum computing by combining multiple physical qubits into a logical qubit, in which the logical error rate is suppressed exponentially as more qubits are added. However, this exponential suppression only occurs if the physical error r",
+   "passages": [
+    "These results indicate that superconducting processors can remain stable for the hours-long timescales required for large-scale fault-tolerant algorithms21.A repetition code memory in the ultralow-error regimeDespite realizing below-threshold surface codes, orders of magnitude remain between present logical error rates and the requirements for practical quantum computation.",
+    "Data for ‘quantum error correction below the surface code threshold’.",
+    "Quantum error correction below the surface code threshold.",
+    "Quantum error correction is postulated to realize high-fidelity logical qubits by distributing quantum information for many entangled physical qubits to protect against errors.",
+    "The fast operation times of superconducting qubits, ranging from tens to hundreds of nanoseconds, provide an advantage in speed but also a challenge for decoding errors both quickly and accurately.In this work, we realize surface codes operating below the threshold on two Willow processors.",
+    "However, we expect that many of our high-accuracy decoding methods can eventually be made real time by introducing techniques like layered or windowed decoding27,43,44.OutlookIn this work, we have demonstrated surface code memory below the threshold in our new Willow architecture."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

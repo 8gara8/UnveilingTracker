@@ -1,0 +1,287 @@
+{
+ "slug": "pauli-blocking-light-scattering-fermions",
+ "title": "Three teams see ultracold fermion gases turn more transparent",
+ "first_published": "2021-03-03",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2103.06921",
+   "final_url": "https://arxiv.org/abs/2103.06921",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Pauli blocking of light scattering in degenerate fermions",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2021-03-11"
+    },
+    {
+     "source": "citation_date",
+     "date": "2021-03-11"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-11-19"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.abi6153",
+   "crossref": {
+    "doi": "10.1126/science.abi6153",
+    "resolves": true,
+    "title": "Pauli blocking of light scattering in degenerate fermions",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-11-19",
+    "authors_first3": [
+     "Margalit",
+     "Lu",
+     "Top"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2103.06921: Pauli blocking of light scattering in degenerate fermions",
+   "passages": [
+    "Pauli blocking also occurs when free atoms scatter light elastically (Rayleigh scattering) and the final external momentum states are already occupied.",
+    "Higher electronic orbitals cannot decay to lower-lying states if they are already occupied -- this is Pauli blocking due to occupation of internal states.",
+    "Pauli blocking of spontaneous emission is responsible for the stability of atoms.",
+    "Here we report the creation of a dense Fermi gas of ultracold lithium atoms and show that at low temperatures light scattering is suppressed.",
+    "We also explore the suppression of inelastic light scattering when two colliding atoms emit light shifted in frequency.",
+    "A suppression of the total rate of light scattering requires a quantum-degenerate Fermi gas with a Fermi energy larger than the photon recoil energy."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2103.02319",
+   "final_url": "https://arxiv.org/abs/2103.02319",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Observation of Pauli blocking in light scattering from quantum degenerate fermions",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2021-03-03"
+    },
+    {
+     "source": "citation_date",
+     "date": "2021-03-03"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-11-19"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.abh3470",
+   "crossref": {
+    "doi": "10.1126/science.abh3470",
+    "resolves": true,
+    "title": "Observation of Pauli blocking in light scattering from quantum degenerate fermions",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-11-19",
+    "authors_first3": [
+     "Deb",
+     "Kjærgaard"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2103.02319: Observation of Pauli blocking in light scattering from quantum degenerate fermions",
+   "passages": [
+    "Deb, Niels Kjærgaard View a PDF of the paper titled Observation of Pauli blocking in light scattering from quantum degenerate fermions, by Amita B.",
+    "We attribute the observed increased transmission of light through the quantum degenerate Fermi gas to Pauli blocking, where Fermi-Dirac statistics causes atoms to occupy a large region of the momentum space limiting the number of accessible states for the scattered atom.",
+    "The Pauli exclusion principle forbids indistinguishable fermions to occupy the same quantum mechanical state.",
+    "Here we perform measurements on the scattering of off-resonant light from ultracold gasses of fermionic atoms.",
+    "For Fermi gases in the quantum degenerate regime, we observe a marked suppression in light scattering as compared to a similarly prepared thermal Bose gas.",
+    "Our work confirms a longstanding fundamental result in the theory of the optical response of quantum gases and is an important step towards novel cooling and thermometry mechanisms for degenerate Fermi gases."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2103.02216",
+   "final_url": "https://arxiv.org/abs/2103.02216",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Pauli blocking of atomic spontaneous decay",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2021-03-03"
+    },
+    {
+     "source": "citation_date",
+     "date": "2021-03-03"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-11-19"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.abh3483",
+   "crossref": {
+    "doi": "10.1126/science.abh3483",
+    "resolves": true,
+    "title": "Pauli blocking of atom-light scattering",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-11-19",
+    "authors_first3": [
+     "Sanner",
+     "Sonderhouse",
+     "Hutson"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2103.02216: Pauli blocking of atomic spontaneous decay",
+   "passages": [
+    "Spontaneous decay of an excited atomic state is a fundamental process that originates from the interaction between matter and vacuum modes of the electromagnetic field.",
+    "The rate of decay can thus be engineered by modifying the density of final states of the joint atom-photon system.",
+    "Imposing suitable boundary conditions on the electromagnetic field has been shown to alter the density of vacuum modes near the atomic transition, resulting in modified atomic decay rates.",
+    "Here we report the first experimental demonstration of suppression of atomic radiative decay by reducing the density of available energy-momentum modes of the atomic motion when it is embedded inside a Fermi sea."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://doi.org/10.1126/science.abh3470",
+   "final_url": "https://www.science.org/doi/10.1126/science.abh3470",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-11-19"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.abh3470",
+   "crossref": {
+    "doi": "10.1126/science.abh3470",
+    "resolves": true,
+    "title": "Observation of Pauli blocking in light scattering from quantum degenerate fermions",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-11-19",
+    "authors_first3": [
+     "Deb",
+     "Kjærgaard"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "arxiv",
+     "url": "https://arxiv.org/abs/2103.02319",
+     "final_url": "https://arxiv.org/abs/2103.02319",
+     "status": 200,
+     "readable": true,
+     "title_found": "Observation of Pauli blocking in light scattering from quantum degenerate fermions",
+     "title_match": true,
+     "date": "2021-03-03",
+     "passages": [
+      "Deb, Niels Kjærgaard View a PDF of the paper titled Observation of Pauli blocking in light scattering from quantum degenerate fermions, by Amita B.",
+      "We attribute the observed increased transmission of light through the quantum degenerate Fermi gas to Pauli blocking, where Fermi-Dirac statistics causes atoms to occupy a large region of the momentum space limiting the number of accessible states for the scattered atom.",
+      "The Pauli exclusion principle forbids indistinguishable fermions to occupy the same quantum mechanical state.",
+      "Here we perform measurements on the scattering of off-resonant light from ultracold gasses of fermionic atoms.",
+      "For Fermi gases in the quantum degenerate regime, we observe a marked suppression in light scattering as compared to a similarly prepared thermal Bose gas.",
+      "Our work confirms a longstanding fundamental result in the theory of the optical response of quantum gases and is an important step towards novel cooling and thermometry mechanisms for degenerate Fermi gases."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://doi.org/10.1126/science.abi6153",
+   "final_url": "https://www.science.org/doi/10.1126/science.abi6153",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-11-19"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.abi6153",
+   "crossref": {
+    "doi": "10.1126/science.abi6153",
+    "resolves": true,
+    "title": "Pauli blocking of light scattering in degenerate fermions",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-11-19",
+    "authors_first3": [
+     "Margalit",
+     "Lu",
+     "Top"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

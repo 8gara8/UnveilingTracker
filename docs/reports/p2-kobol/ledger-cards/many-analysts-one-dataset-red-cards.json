@@ -1,0 +1,229 @@
+{
+ "slug": "many-analysts-one-dataset-red-cards",
+ "title": "29 teams analyse one dataset and reach different answers",
+ "first_published": "2018-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1177/2515245917747646",
+   "final_url": "https://journals.sagepub.com/doi/10.1177/2515245917747646",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2018-08-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1177/2515245917747646",
+   "crossref": {
+    "doi": "10.1177/2515245917747646",
+    "resolves": true,
+    "title": "Many Analysts, One Data Set: Making Transparent How Variations in Analytic Choices Affect Results",
+    "container": "Advances in Methods and Practices in Psychological Science",
+    "publisher": "SAGE Publications",
+    "type": "journal-article",
+    "issued": "2018-8-23",
+    "authors_first3": [
+     "Silberzahn",
+     "Uhlmann",
+     "Martin"
+    ],
+    "author_count": 65,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1177/2515245918810511",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {
+     "has-review": [
+      "10.3410/f.733854636.793554750",
+      "10.3410/f.733854636.793562714"
+     ],
+     "has-preprint": [
+      "10.31234/osf.io/qkwst"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1016/j.obhdp.2021.02.003",
+   "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0749597821000200",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Redirecting",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-06-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1016/j.obhdp.2021.02.003",
+   "crossref": {
+    "doi": "10.1016/j.obhdp.2021.02.003",
+    "resolves": true,
+    "title": "Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis",
+    "container": "Organizational Behavior and Human Decision Processes",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2021-7",
+    "authors_first3": [
+     "Schweinsberg",
+     "Feldman",
+     "Staub"
+    ],
+    "author_count": 179,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://doi.org/10.1073/pnas.2203150119",
+   "final_url": "https://pnas.org/doi/10.1073/pnas.2203150119",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-10-28"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1073/pnas.2203150119",
+   "crossref": {
+    "doi": "10.1073/pnas.2203150119",
+    "resolves": true,
+    "title": "Observing many researchers using the same data and hypothesis reveals a hidden universe of uncertainty",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2022-10-28",
+    "authors_first3": [
+     "Breznau",
+     "Rinke",
+     "Wuttke"
+    ],
+    "author_count": 166,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1073/pnas.2410677121",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {
+     "has-preprint": [
+      "10.31222/osf.io/cd5j9",
+      "10.31222/osf.io/cd5j9_v1"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9636921/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9636921/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Observing many researchers using the same data and hypothesis reveals a hidden universe of uncertainty",
+     "title_match": true,
+     "date": "2022-10-27",
+     "passages": [
+      "Open in a new tab Broad variation in the findings from 73 teams testing the same hypothesis with the same data.",
+      "Even highly skilled scientists motivated to come to accurate results varied tremendously in what they found when provided with the same data and hypothesis to test.",
+      "Supplementary Materials Supplementary File pnas.2203150119.sapp.pdf (2.9MB, pdf) Data Availability Statement Data and code have been deposited in GitHub (https://github.com/nbreznau/CRI) (33), and Harvard Dataverse (https://doi.org/10.7910/DVN/UUP8CX) (34).",
+      "This reveals a universe of uncertainty that remains hidden when considering a single study in isolation.",
+      "This six-question module is also the source of the data used by David Brady and Ryan Finnigan (19) in one of the most cited investigations of the substantive hypothesis participants were instructed to test.",
+      "This was followed by a request that the teams develop their own ideal models for testing the same hypothesis using potentially all of the provided data, but that they submit their analysis plan prior to running the models."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": null,
+   "final_url": null,
+   "status": null,
+   "readable": false,
+   "reason": "no url",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.1111/ecin.12992",
+      "title": "The influence of hidden researcher decisions in applied microeconomics",
+      "container": "Economic Inquiry",
+      "date": "2021-3-22",
+      "score": 64.78017
+     },
+     {
+      "doi": "10.2139/ssrn.3602409",
+      "title": "The Influence of Hidden Researcher Decisions in Applied Microeconomics",
+      "container": null,
+      "date": "2020",
+      "score": 39.491314
+     },
+     {
+      "doi": "10.1111/ecin.v59.4",
+      "container": "Economic Inquiry",
+      "date": "2021-10",
+      "score": 32.072018
+     }
+    ],
+    "arxiv": []
+   },
+   "resolved_to": "https://doi.org/10.1111/ecin.12992",
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

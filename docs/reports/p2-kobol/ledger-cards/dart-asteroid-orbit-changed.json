@@ -1,0 +1,328 @@
+{
+ "slug": "dart-asteroid-orbit-changed",
+ "title": "A spacecraft crash changes an asteroid's orbit for the first time",
+ "first_published": "2023-03-01",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-023-05810-5",
+   "final_url": "https://www.nature.com/articles/s41586-023-05810-5?error=cookies_not_supported&code=8e429b78-a8c4-4a1a-a07c-ac5c991a6cc4",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Successful kinetic impact into an asteroid for planetary defence",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-11-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-02-08"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-03-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-05810-5",
+   "crossref": {
+    "doi": "10.1038/s41586-023-05810-5",
+    "resolves": true,
+    "title": "Successful kinetic impact into an asteroid for planetary defence",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-3-1",
+    "authors_first3": [
+     "Daly",
+     "Ernst",
+     "Barnouin"
+    ],
+    "author_count": 101,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-basis-for": [
+      "10.52843/cassyni.mzg943"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Although no known asteroid poses a threat to Earth for at least the next century, the catalogue of near-Earth asteroids is incomplete for objects whose impacts would produce regional devastation1,2. Several approaches have been proposed to potentially prevent an asteroid impact with Earth by deflect",
+   "passages": [
+    "The successful impact of the DART spacecraft with Dimorphos and the resulting change in the orbit of Dimorphos7 demonstrates that kinetic impactor technology is a viable technique to potentially defend Earth if necessary.",
+    "Here we report the DART spacecraft’s autonomous kinetic impact into Dimorphos and reconstruct the impact event, including the timeline leading to impact, the location and nature of the DART impact site, and the size and shape of Dimorphos.",
+    "The blocky nature of the impact site probably influenced crater formation, ejecta and momentum enhancement, as seen in impact experiments28,32,33,34, numerical simulations25,35 and the Small Carry-on Impactor experiment on Hayabusa25.DART did not measure the mass of Dimorphos.",
+    "NASA’s Double Asteroid Redirection Test (DART) mission is a full-scale test of kinetic impact technology.",
+    "2: The asteroid Dimorphos and the DART impact site as seen in calibrated DRACO images.Full size imagea, Dimorphos with an appropriately scaled and correctly oriented outline of the DART spacecraft centred on the impact site.",
+    "Successful kinetic impact into an asteroid for planetary defence."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.nature.com/articles/s41586-023-05805-2",
+   "final_url": "https://www.nature.com/articles/s41586-023-05805-2?error=cookies_not_supported&code=c75427ed-57a2-4996-a003-669d34158044",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Orbital period change of Dimorphos due to the DART kinetic impact",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-11-18"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-02-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-03-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-05805-2",
+   "crossref": {
+    "doi": "10.1038/s41586-023-05805-2",
+    "resolves": true,
+    "title": "Orbital period change of Dimorphos due to the DART kinetic impact",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-3-1",
+    "authors_first3": [
+     "Thomas",
+     "Naidu",
+     "Scheirich"
+    ],
+    "author_count": 49,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The Double Asteroid Redirection Test (DART) spacecraft successfully performed the first test of a kinetic impactor for asteroid deflection by impacting Dimorphos, the secondary of near-Earth binary asteroid (65803) Didymos, and changing the orbital period of Dimorphos. A change in orbital period of ",
+   "passages": [
+    "Asteroids, comets and Kuiper belt Astrophysical dust Rings and moons Asteroid Dynamics and Impact Processes MainNASA’s DART successfully impacted Dimorphos, the secondary of the near-Earth binary asteroid (65803) Didymos, on 26 September 2022 at 23:14 UTC.",
+    "Orbital period change of Dimorphos due to the DART kinetic impact.",
+    "Here we report the change in the orbital period of Dimorphos as a result of the DART kinetic impact to be −33.0 ± 1.0 (3σ) min.",
+    "The primary objective of DART was to change the orbital period of Dimorphos around Didymos to demonstrate that a kinetic impactor is a viable method of asteroid deflection1,7.",
+    "Data availability The lightcurves and radar data used in this analysis of the orbital period are available in the JHU/APL Data Archive at https://lib.jhuapl.edu/papers/orbital-period-change-of-dimorphos-due-to-the-dart/.",
+    "If the incident momentum from the impacting spacecraft was simply transferred to the asteroid target with no further momentum enhancement, an orbital period change for Dimorphos of roughly 7 min was expected1."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.nature.com/articles/s41586-023-05852-9",
+   "final_url": "https://www.nature.com/articles/s41586-023-05852-9?error=cookies_not_supported&code=b3d8369d-bacd-4056-8961-ce451f3c65b7",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Light curves and colours of the ejecta from Dimorphos after the DART impact",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-03-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-11-06"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-02-15"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-03-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-05852-9",
+   "crossref": {
+    "doi": "10.1038/s41586-023-05852-9",
+    "resolves": true,
+    "title": "Light curves and colours of the ejecta from Dimorphos after the DART impact",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-3-1",
+    "authors_first3": [
+     "Graykowski",
+     "Lambert",
+     "Marchis"
+    ],
+    "author_count": 44,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "On 26 September 2022, the Double Asteroid Redirection Test (DART) spacecraft struck Dimorphos, a satellite of the asteroid 65803 Didymos1. Because it is a binary system, it is possible to determine how much the orbit of the satellite changed, as part of a test of what is necessary to deflect an aste",
+   "passages": [
+    "2: Apparent magnitude of Didymos before, during and after impact.Full size imageThe light curve of the Didymos binary system on 26 September 2022 during the DART spacecraft’s impact into Dimorphos as observed by three citizen astronomers located on Réunion Island using eVscopes.",
+    "Light curves and colours of the ejecta from Dimorphos after the DART impact.",
+    "The fast-moving ejecta plume moves eastwards on the plane of the sky and dissipates over time, from a–f. g,h, Two tails (solar and antisolar directions) developed from the ejecta produced by the DART spacecraft roughly 113.7 h after impact into Dimorphos.",
+    "The solid blue line is a weighted, linear fit to magnitudes measured from just after impact on 26 September to 25 October 2022, after which measurements were consistent with the resting absolute magnitude.",
+    "When measuring the magnitude before impact and after the fast-moving ejecta dissipated, we use observations from the eVscope in L’Étang-Salé, Réunion on 26 September 2022.",
+    "It is apparent in a and c that the Didymos binary system became redder directly after the DART spacecraft struck Dimorphos and that when the fast ejecta dissipated, the colours returned to their original colours."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://arxiv.org/abs/2303.05548",
+   "final_url": "https://arxiv.org/abs/2303.05548",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Light Curves and Colors of the Ejecta from Dimorphos after the DART Impact",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-03-09"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-03-09"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-03-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-05852-9",
+   "crossref": {
+    "doi": "10.1038/s41586-023-05852-9",
+    "resolves": true,
+    "title": "Light curves and colours of the ejecta from Dimorphos after the DART impact",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-3-1",
+    "authors_first3": [
+     "Graykowski",
+     "Lambert",
+     "Marchis"
+    ],
+    "author_count": 44,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2303.05548: Light Curves and Colors of the Ejecta from Dimorphos after the DART Impact",
+   "passages": [
+    "On 26 September 2022 the Double Asteroid Redirection Test (DART) spacecraft impacted Dimorphos, a satellite of the asteroid 65803 Didymos.",
+    "Here we report optical observations of Dimorphos before, during and after the impact, from a network of citizen science telescopes across the world.",
+    "We estimate lower limits on the mass contained in the ejecta, which was 0.3 - 0.5% Dimorphos' mass depending on the dust size.",
+    "We also observe a reddening of the ejecta upon impact.",
+    "In nominal cases, pre-impact predictions of the orbital period reduction ranged from ~8.8 - 17.2 minutes.",
+    "We find a maximum brightening of 2.29 $\\pm$ 0.14 mag upon impact."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

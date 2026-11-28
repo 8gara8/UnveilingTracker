@@ -1,0 +1,53 @@
+{
+ "slug": "imo-2025-gold-level-ai",
+ "title": "Gemini Deep Think reaches gold-medal level at the 2025 IMO",
+ "first_published": "2025-07-21",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/",
+   "final_url": "https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Advanced version of Gemini with Deep Think officially achieves gold-medal standard at the International Mathematical Olympiad",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2025-07-21"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-07-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-01-31"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-08-31"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The International Mathematical Olympiad (“IMO”) is the world’s most prestigious competition for young mathematicians, and has been held annually since 1959. Each country taking part is represented by…",
+   "passages": [
+    "Explore IMO-Bench highlights Read more about the IMO-Bench paper Access the IMO-Bench datasets AcknowledgementsWe thank the International Mathematical Olympiad organization for their support.This project was a large-scale collaboration, and its success is due to the combined efforts of many individuals and teams.",
+    "Last year, Google DeepMind’s combined AlphaProof and AlphaGeometry 2 systems achieved the silver-medal standard, solving four out of the six problems and scoring 28 points.",
+    "The solutions can be found online here.We can confirm that Google DeepMind has reached the much-desired milestone, earning 35 out of a possible 42 points — a gold medal score.",
+    "Medals are awarded to the top half of contestants, with approximately 8% receiving a prestigious gold medal.Recently, the IMO has also become an aspirational challenge for AI systems as a test of their advanced mathematical problem-solving and reasoning capabilities.",
+    "At IMO 2024, AlphaGeometry and AlphaProof required experts to first translate problems from natural language into domain-specific languages, such as Lean, and vice-versa for the proofs.",
+    "Gregor Dolinar This achievement is a significant advance over last year’s breakthrough result."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

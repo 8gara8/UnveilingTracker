@@ -1,0 +1,139 @@
+{
+ "slug": "mobile-robot-chemist-photocatalyst-search",
+ "title": "A mobile robot chemist found a more active photocatalyst on its own",
+ "first_published": "2020-07-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-020-2442-2",
+   "final_url": "https://www.nature.com/articles/s41586-020-2442-2?error=cookies_not_supported&code=09eee354-4ac2-428e-b7dd-aee640400a89",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A mobile robotic chemist",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-06-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-07-08"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-07-08"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-07-08"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-07-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-07-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-11-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-03-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-07-08"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-020-2442-2",
+   "crossref": {
+    "doi": "10.1038/s41586-020-2442-2",
+    "resolves": true,
+    "title": "A mobile robotic chemist",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-7-8",
+    "authors_first3": [
+     "Burger",
+     "Maffettone",
+     "Gusev"
+    ],
+    "author_count": 14,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Technologies such as batteries, biomaterials and heterogeneous catalysts have functions that are defined by mixtures of molecular and mesoscale components. As yet, this multi-length-scale complexity cannot be fully captured by atomistic simulations, and the design of such materials from first princi",
+   "passages": [
+    "1 Mobile robotic chemist.The mobile robot used for this project, shown here performing a six-point calibration with respect to the black location cube that is attached to the bench, in this case associated with the solid cartridge station (see also Supplementary Fig.",
+    "We thank KUKA Robotics for help with gripper design and the initial implementation of the robot.Author informationAuthors and AffiliationsLeverhulme Centre for Functional Materials Design, Materials Innovation Factory and Department of Chemistry, University of Liverpool, Liverpool, UKBenjamin Burger, Phillip M.",
+    "4 Hydrogen evolution rates for candidate bioderived sacrificial hole scavengers.Results of a robotic screen for sacrificial hole scavengers using the mobile robot workflow.",
+    "Additional informationPeer review information Nature thanks Volker Krueger, Tyler McQuade and Magda Titirici for their contribution to the peer review of this work.Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.Extended data figures and tablesExtended Data Fig.",
+    "1: Autonomous mobile robot and experimental stations.Fig.",
+    "Mobile robot for life science automation."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://news.liverpool.ac.uk/2020/07/08/experiment-too-big-hire-a-mobile-robot-scientist/",
+   "final_url": "https://news.liverpool.ac.uk/2020/07/08/experiment-too-big-hire-a-mobile-robot-scientist/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Experiment too big? Hire a mobile robot scientist - University of Liverpool News",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2020-07-08"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-07-08"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-07-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-07-08"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Experiment too big? Hire a mobile robot scientist",
+   "passages": [
+    "The robot scientist, the first of its kind, makes its own decisions about which chemistry experiments to perform next, and has already discovered a new catalyst.",
+    "In the first published example, the robot conducts 688 experiments over 8 days, working for 172 out of 192 hours.",
+    "University of Liverpool PhD student Dr Benjamin Burger, who built and programmed the robot, says: “The biggest challenge was to make the system robust.",
+    "The paper `A mobile robotic chemist’ (doi: 10.1038/s41586-020-2442-2) is published in Nature.",
+    "This 1.75-meter tall robot is mobile and can roam around the laboratory, performing a wide range of different tasks.",
+    "The robot independently carries out all tasks in the experiment such as weighing out solids, dispensing liquids, removing air from the vessel, running the catalytic reaction, and quantifying the reaction products."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

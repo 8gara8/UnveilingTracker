@@ -1,0 +1,93 @@
+{
+ "slug": "active-learning-copper-aluminium-co2-catalyst",
+ "title": "Active machine learning finds a copper-aluminium catalyst for CO2 to ethylene",
+ "first_published": "2020-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-020-2242-8",
+   "final_url": "https://www.nature.com/articles/s41586-020-2242-8?error=cookies_not_supported&code=e6cad9cc-723e-4941-9aa0-8dcca5a72119",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Accelerated discovery of CO2 electrocatalysts using active machine learning",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-05-13"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-05-13"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-05-13"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-05-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-05-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-04-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-03-13"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-05-13"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-020-2242-8",
+   "crossref": {
+    "doi": "10.1038/s41586-020-2242-8",
+    "resolves": true,
+    "title": "Accelerated discovery of CO2 electrocatalysts using active machine learning",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-5-13",
+    "authors_first3": [
+     "Zhong",
+     "Tran",
+     "Min"
+    ],
+    "author_count": 22,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The rapid increase in global energy demand and the need to replace carbon dioxide (CO2)-emitting fossil fuels with renewable sources have driven interest in chemical storage of intermittent solar and wind energy1,2. Particularly attractive is the electrochemical reduction of CO2 to chemical feedstoc",
+   "passages": [
+    "Here we describe Cu-Al electrocatalysts, identified using density functional theory calculations in combination with active machine learning, that efficiently reduce CO2 to ethylene with the highest Faradaic efficiency reported so far.",
+    "Accelerated discovery of CO2 electrocatalysts using active machine learning.",
+    "Active learning across intermetallics to guide discovery of electrocatalysts for CO2 reduction and H2 evolution.",
+    "All authors discussed the results and assisted during manuscript preparation.Corresponding authorsCorrespondence to Zachary Ulissi or Edward H.",
+    "Catalysis Electrocatalysis Materials for energy and catalysis Electrochemical CO2 Reduction Mechanisms and Catalysis Data availability Source data to generate figures and tables are available from the corresponding authors on reasonable request.",
+    "Sustained high-selectivity CO2 electroreduction to ethylene via hydroxide-mediated catalysis at an abrupt reaction interface."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "slug": "ai-maps-global-fishing-footprint",
+ "title": "AI reading ship tracks maps where the world's fishing fleet works",
+ "first_published": "2018-02-22",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.science.org/doi/10.1126/science.aao5646",
+   "final_url": "https://www.science.org/doi/10.1126/science.aao5646",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2018-2-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.aao5646",
+   "crossref": {
+    "doi": "10.1126/science.aao5646",
+    "resolves": true,
+    "title": "Tracking the global footprint of fisheries",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2018-2-23",
+    "authors_first3": [
+     "Kroodsma",
+     "Mayorga",
+     "Hochberg"
+    ],
+    "author_count": 14,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://globalfishingwatch.org/",
+   "final_url": "https://globalfishingwatch.org/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Home",
+   "title_match": false,
+   "dates_found": [
+    {
+     "source": "ld+json datePublished",
+     "date": "2017-02-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-10-23"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Sustainable ocean through increased transparency: we create map visualizations, data and analysis to enable scientific research and transform ocean management",
+   "passages": [
+    "We believe human activity at sea should be common knowledge in order to safeguard the global ocean for the good of all."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

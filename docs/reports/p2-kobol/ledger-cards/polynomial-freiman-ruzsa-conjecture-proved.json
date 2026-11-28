@@ -1,0 +1,124 @@
+{
+ "slug": "polynomial-freiman-ruzsa-conjecture-proved",
+ "title": "Marton's conjecture on small doubling proved in characteristic 2",
+ "first_published": "2023-11",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2311.05762",
+   "final_url": "https://arxiv.org/abs/2311.05762",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "On a conjecture of Marton",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-12-12"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-11-09"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2311.05762: On a conjecture of Marton",
+   "passages": [
+    "Gowers, Ben Green, Freddie Manners, Terence Tao View a PDF of the paper titled On a conjecture of Marton, by W.",
+    "Marton, widely known as the polynomial Freiman--Ruzsa conjecture, in characteristic $2$.",
+    "The argument extends to odd characteristic, with details to follow in a subsequent paper.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://annals.math.princeton.edu/2025/201-2/p05",
+   "final_url": "https://annals.math.princeton.edu/2025/201-2/p05",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "On a conjecture of Marton",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-01-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-03-01"
+    }
+   ],
+   "date_ok": false,
+   "doi": "https://doi.org/10.4007/annals.2025.201.2.5",
+   "crossref": {
+    "doi": "https://doi.org/10.4007/annals.2025.201.2.5",
+    "resolves": true,
+    "title": "On a conjecture of Marton",
+    "container": "Annals of Mathematics",
+    "publisher": "Annals of Mathematics",
+    "type": "journal-article",
+    "issued": "2025-3-1",
+    "authors_first3": [
+     "Gowers",
+     "Green",
+     "Manners"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "KeywordsFreiman's theorem, additive combinatorics, doubling, sumsets DOI https://doi.org/10.4007/annals.2025.201.2.5 MR 4880432 zbMATH8014495 Milestones Received: 13 December 2023 Revised: 10 October 2024 Accepted: 11 October 2024 Published online: 12 March 2025 Authors W.",
+    "Marton, widely known as the polynomial Freiman–Ruzsa conjecture, in characteristic $2$.",
+    "The argument extends to odd characteristic, with details to follow in a subsequent paper."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://github.com/teorth/pfr",
+   "final_url": "https://github.com/teorth/pfr",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "GitHub - teorth/pfr: Repository for formalization of the Polynomial Freiman Ruzsa conjecture (and related results)",
+   "title_match": "partial",
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Repository for formalization of the Polynomial Freiman Ruzsa conjecture (and related results) - teorth/pfr",
+   "passages": [
+    "The Polynomial Freiman-Ruzsa Conjecture The original purpose of this repository is to hold a Lean4 formalization of the proof of the Polynomial Freiman-Ruzsa (PFR) conjecture of Katalin Marton (see also this blog post).",
+    "After the primary purpose of the project was completed, a second stage of the project developed several consequences of PFR, as well as an argument of Jyun-Jie Liao that reduced the exponent $12$ to $11$.",
+    "The entropy forms of the conjecture are proved here too but are not among the compared declarations, because a Palomar Challenge module may not import anything outside Lean core and Mathlib, and Mathlib has no Shannon entropy or entropic Ruzsa distance.",
+    "Palomar registration PFRPalomar/Challenge.lean states, in Lean-core-and-Mathlib terms only, the six headline theorems of the three source papers, and PFRPalomar/Solution.lean proves each of them from the corresponding result in PFR/.",
+    "Moving material to mathlib As the first two phases of the project are completed, we are currently working towards stabilising the new results and contributing them to mathlib.",
+    "The pair is the Palomar Challenge/Solution record for this project; comparator.json names the six compared declarations and formalization.yaml carries the structured provenance, the correspondence with the papers, and the limitations."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

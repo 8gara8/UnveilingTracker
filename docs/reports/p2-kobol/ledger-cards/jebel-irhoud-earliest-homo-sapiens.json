@@ -1,0 +1,232 @@
+{
+ "slug": "jebel-irhoud-earliest-homo-sapiens",
+ "title": "Jebel Irhoud fossils put early Homo sapiens at about 300,000 years ago",
+ "first_published": "2017-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/nature22336",
+   "final_url": "https://www.nature.com/articles/nature22336?error=cookies_not_supported&code=fb1c9600-9a43-4b96-a51a-6ee1dfa0d528",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2017-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2017-06-08"
+    },
+    {
+     "source": "dc.date",
+     "date": "2017-06-08"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2017-06-08"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2017-06-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-06-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-05-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-04-06"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-06-08"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature22336",
+   "crossref": {
+    "doi": "10.1038/nature22336",
+    "resolves": true,
+    "title": "New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2017-6-8",
+    "authors_first3": [
+     "Hublin",
+     "Ben-Ncer",
+     "Bailey"
+    ],
+    "author_count": 11,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41586-018-0166-3",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "New human fossils from Jebel Irhoud (Morocco) document the earliest evolutionary stage of Homo sapiens and display modern conditions of the face and mandible combined with more primative features of the neurocranium. The exact place and time that our species emerged remains obscure because the fossi",
+   "passages": [
+    "Letter Published: 08 June 2017 New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens Jean-Jacques Hublin1,2, Abdelouahed Ben-Ncer3, Shara E.",
+    "Temming for their technical assistance.Author informationAuthors and AffiliationsDepartment of Human Evolution, Max Planck Institute for Evolutionary Anthropology, Deutscher Platz 6, Leipzig, 04103, GermanyJean-Jacques Hublin, Sarah E.",
+    "New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens.",
+    "Here we report newly discovered human fossils from Jebel Irhoud, Morocco, and interpret the affinities of the hominins from this site with other archaic and recent human groups.",
+    "Archaeology Biological anthropology Paleoanthropology and Archaeological Taphonomy Change history13 June 2018In the originally published version of this Letter, the PC1 and PC2 values in Fig.",
+    "The age of the Jebel Irhoud (Morocco) hominins and the origins of the Middle Stone Age."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.nature.com/articles/nature22335",
+   "final_url": "https://www.nature.com/articles/nature22335?error=cookies_not_supported&code=43b2145a-f480-40cc-80b9-ff4c74eedee9",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The age of the hominin fossils from Jebel Irhoud, Morocco, and the origins of the Middle Stone Age",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2017-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2017-06-08"
+    },
+    {
+     "source": "dc.date",
+     "date": "2017-06-08"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2017-06-08"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2017-06-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-06-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-05-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-04-05"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-06-08"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature22335",
+   "crossref": {
+    "doi": "10.1038/nature22335",
+    "resolves": true,
+    "title": "The age of the hominin fossils from Jebel Irhoud, Morocco, and the origins of the Middle Stone Age",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2017-6-8",
+    "authors_first3": [
+     "Richter",
+     "Grün",
+     "Joannes-Boyau"
+    ],
+    "author_count": 12,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Thermoluminescence dating of fire-heated flint artefacts, and directly associated newly discovered remains of Homo sapiens, indicate that the Middle Stone Age site of Jebel Irhoud in Morocco is 383–247 thousand years old. The exact place and time that our species emerged remains obscure because the ",
+   "passages": [
+    "Letter Published: 08 June 2017 The age of the hominin fossils from Jebel Irhoud, Morocco, and the origins of the Middle Stone Age Daniel Richter1,2,3, Rainer Grün4,5, Renaud Joannes-Boyau4,6, Teresa E.",
+    "Paris VI (1985)Download referencesAcknowledgementsThe Jebel Irhoud project is jointly conducted and supported by the Moroccan Institut National des Sciences de l’Archéologie et du Patrimoine and the Department of Human Evolution of the Max Planck Institute for Evolutionary Anthropology (MPI-EVA).",
+    "The age of the hominin fossils from Jebel Irhoud, Morocco, and the origins of the Middle Stone Age.",
+    "Here we report the ages, determined by thermoluminescence dating, of fire-heated flint artefacts obtained from new excavations at the Middle Stone Age site of Jebel Irhoud, Morocco, which are directly associated with newly discovered remains of H. sapiens8.",
+    "The north African site of Jebel Irhoud contains one of the earliest directly dated Middle Stone Age assemblages, and its associated human remains are the oldest reported for H. sapiens.",
+    "New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": null,
+   "final_url": null,
+   "status": null,
+   "readable": false,
+   "reason": "no url",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.1007/978-3-319-55065-7_301345",
+      "title": "Max Planck Institute for Evolutionary Anthropology",
+      "container": "Encyclopedia of Animal Cognition and Behavior",
+      "date": "2022",
+      "score": 42.894657
+     },
+     {
+      "doi": "10.24132/jwscg.2023.1",
+      "title": "Automatic Individual Identification of Patterned Solitary Species Based on Unlabeled Video Data",
+      "container": "Journal of WSCG",
+      "date": "2023-7",
+      "score": 41.23318
+     },
+     {
+      "doi": "10.1163/1872-9037_afco_asc_1230",
+      "title": "Max Planck Institute for Social Anthropology, Library",
+      "container": "African Studies Companion Online",
+      "date": "",
+      "score": 39.53399
+     }
+    ],
+    "arxiv": []
+   },
+   "resolved_to": null,
+   "verdict": "unresolved"
+  }
+ ]
+}

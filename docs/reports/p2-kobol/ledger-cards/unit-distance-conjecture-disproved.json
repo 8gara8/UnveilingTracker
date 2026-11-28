@@ -1,0 +1,185 @@
+{
+ "slug": "unit-distance-conjecture-disproved",
+ "title": "AI model disproves Erdős's unit distance conjecture",
+ "first_published": "2026-05-20",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+   "final_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An OpenAI model has disproved a central conjecture in discrete geometry",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-18"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics.",
+   "passages": [
+    "The proof brings unexpected, sophisticated ideas from algebraic number theory to bear on an elementary geometric question.Fields medalist Tim Gowers, writing in the companion paper, calls the result “a milestone in AI mathematics.”",
+    "No previous AI-generated proof has come close to that.”Tim Gowers“The model’s CoT is deeply interesting.",
+    "(The original AI proof does not give an explicit δ\\deltaδ, but a forthcoming refinement due to Princeton mathematics professor Will Sawin has shown one can take δ=0.014\\delta=0.014δ=0.014.)The history of the problem helps to see why the result is surprising.",
+    "An internal OpenAI model has disproved this longstanding conjecture, providing an infinite family of examples that yield a polynomial improvement.",
+    "The proof has been checked by a group of external mathematicians.",
+    "Noga Alon, a leading combinatorialist at Princeton, describes it as “one of Erdős’ favorite problems.”"
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2605.20695",
+   "final_url": "https://arxiv.org/abs/2605.20695",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Remarks on the disproof of the unit distance conjecture",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-05-20"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-05-20"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2605.20695: Remarks on the disproof of the unit distance conjecture",
+   "passages": [
+    "We present a short, digested, human-verified version of the recent OpenAI-generated counterexample to the Erdős unit distance conjecture, and a sequence of reflections on it."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2605.20579",
+   "final_url": "https://arxiv.org/abs/2605.20579",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An explicit lower bound for the unit distance problem",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-05-20"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-05-20"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2605.20579: An explicit lower bound for the unit distance problem",
+   "passages": [
+    "This improves on very recent work of a team at OpenAI, who proved the same result with an inexplicit exponent greater than $1$, drastically improving on the best previous lower bound and disproving a conjecture of Erdős.",
+    "We show that there are sets of $n$ points in the plane with $n$ arbitrarily large that contain more than $n^{1.014}$ pairs of points separated by a distance exactly $1$."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2605.20695",
+   "final_url": "https://arxiv.org/abs/2605.20695",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Remarks on the disproof of the unit distance conjecture",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-05-20"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-05-20"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2605.20695: Remarks on the disproof of the unit distance conjecture",
+   "passages": [
+    "We present a short, digested, human-verified version of the recent OpenAI-generated counterexample to the Erdős unit distance conjecture, and a sequence of reflections on it.",
+    "The argument relies crucially on ideas that may, at least in retrospect, be attributed to Ellenberg-Venkatesh, Golod-Shafarevich, and Hajir-Maire-Ramakrishna."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2605.20579",
+   "final_url": "https://arxiv.org/abs/2605.20579",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An explicit lower bound for the unit distance problem",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-05-20"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-05-20"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2605.20579: An explicit lower bound for the unit distance problem",
+   "passages": [
+    "This improves on very recent work of a team at OpenAI, who proved the same result with an inexplicit exponent greater than $1$, drastically improving on the best previous lower bound and disproving a conjecture of Erdős.",
+    "We show that there are sets of $n$ points in the plane with $n$ arbitrarily large that contain more than $n^{1.014}$ pairs of points separated by a distance exactly $1$.",
+    "The method is number-theoretic, relying on constructing algebraic number fields of large degree and small discriminant with many primes of small norm via a Golod-Shafarevich criterion argument."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

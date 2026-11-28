@@ -1,0 +1,228 @@
+{
+ "slug": "bennu-samples-ammonia-nucleobases-ancient-brine",
+ "title": "Bennu samples hold ammonia, amino acids, all five nucleobases and brine salts",
+ "first_published": "2025-01-29",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41550-024-02472-9",
+   "final_url": "https://www.nature.com/articles/s41550-024-02472-9?error=cookies_not_supported&code=741ad728-27a2-461c-9613-6561e8278d18",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Abundant ammonia and nitrogen-rich soluble organic matter in samples from asteroid (101955) Bennu",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-01-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-07-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-12-16"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-01-29"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41550-024-02472-9",
+   "crossref": {
+    "doi": "10.1038/s41550-024-02472-9",
+    "resolves": true,
+    "title": "Abundant ammonia and nitrogen-rich soluble organic matter in samples from asteroid (101955) Bennu",
+    "container": "Nature Astronomy",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-1-29",
+    "authors_first3": [
+     "Glavin",
+     "Dworkin",
+     "Alexander"
+    ],
+    "author_count": 62,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41550-026-03052-9",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Organic matter in meteorites reveals clues about early Solar System chemistry and the origin of molecules important to life, but terrestrial exposure complicates interpretation. Samples returned from the B-type asteroid Bennu by the Origins, Spectral Interpretation, Resource Identification, and Secu",
+   "passages": [
+    "Abundant ammonia and nitrogen-rich soluble organic matter in samples from asteroid (101955) Bennu.",
+    "Isotopic measurements of valine will be needed to constrain the origin of the measured l-excess in the Bennu extract.Ammonia and formaldehyde are potential precursors for the synthesis of amino acids and other soluble organic molecules and were key targets for this investigation.",
+    "Most of the ammonia in the Bennu aggregate samples was likely to have been originally retained as salts or bound to clay minerals or organic matter15,16 because highly volatile free ammonia is prone to loss.",
+    "Bright carbonate veins on asteroid (101955) Bennu: implications for aqueous alteration history.",
+    "Samples returned from the B-type asteroid Bennu by the Origins, Spectral Interpretation, Resource Identification, and Security–Regolith Explorer mission enabled us to study pristine carbonaceous astromaterial without uncontrolled exposure to Earth’s biosphere.",
+    "Here we show that Bennu samples are volatile rich, with more carbon, nitrogen and ammonia than samples from asteroid Ryugu and most meteorites."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.nature.com/articles/s41586-024-08495-6",
+   "final_url": "https://www.nature.com/articles/s41586-024-08495-6?error=cookies_not_supported&code=278ff4c2-3ade-4623-acbb-439e6b866f9a",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An evaporite sequence from ancient brine recorded in Bennu samples",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-12-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-01-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-07-31"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-12-05"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-01-29"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-024-08495-6",
+   "crossref": {
+    "doi": "10.1038/s41586-024-08495-6",
+    "resolves": true,
+    "title": "An evaporite sequence from ancient brine recorded in Bennu samples",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-1-29",
+    "authors_first3": [
+     "McCoy",
+     "Russell",
+     "Zega"
+    ],
+    "author_count": 66,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Evaporation or freezing of water-rich fluids with dilute concentrations of dissolved salts can produce brines, as observed in closed basins on Earth1 and detected by remote sensing on icy bodies in the outer Solar System2,3. The mineralogical evolution of these brines is well understood in regard to",
+   "passages": [
+    "An evaporite sequence from ancient brine recorded in Bennu samples.",
+    "Given the uncertainties in analysis of small, irregular grains, this is a reasonable approximation for villiaumite (NaF).The occurrence of diverse salts, particularly Na-rich salts, distinguishes Bennu samples from meteorites, in which evaporite minerals are rare.",
+    "Bennu samples contain nucleobases47, including the five canonical nucleobases that comprise nucleic acids in terrestrial biology.",
+    "Here we report the occurrence of salt minerals in samples of the asteroid (101955) Bennu returned by the OSIRIS-REx mission5.",
+    "These include sodium-bearing phosphates and sodium-rich carbonates, sulfates, chlorides and fluorides formed during evaporation of a late-stage brine that existed early in the history of Bennu’s parent body.",
+    "Other classes of minerals observed in closed basins on Earth, including borates and lithium-rich fluorides and brines, are not observed in Bennu samples, consistent with the parts-per-million concentrations of B and Li in their bulk composition5.The salt sequence recorded in the Bennu samples (Fig."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.science.org/doi/10.1126/science.abn9033",
+   "final_url": "https://www.science.org/doi/10.1126/science.abn9033",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-2-24"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.abn9033",
+   "crossref": {
+    "doi": "10.1126/science.abn9033",
+    "resolves": true,
+    "title": "Soluble organic molecules in samples of the carbonaceous asteroid (162173) Ryugu",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2023-2-24",
+    "authors_first3": [
+     "Naraoka",
+     "Takano",
+     "Dworkin"
+    ],
+    "author_count": 115,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "slug": "erdos-1196-primitive-sets-ai-proof",
+ "title": "GPT-5.4 Pro proves Erdős problem 1196 on primitive sets",
+ "first_published": "2026-04",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.erdosproblems.com/1196",
+   "final_url": "https://www.erdosproblems.com/1196",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "1196 | Erdős Problems",
+   "title_match": "partial",
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "An account of this proof and the method is given by Alexeev, Barreto, Li, Lichtman, Price, Shah, Tang, and Tao [ABLLPSTT26].",
+    "Lichtman [Li23] has proved that\\[\\sum_{a\\in A}\\frac{1}{a\\log a}< e^{\\gamma}\\frac{\\pi}{4}+o(1)\\approx 1.399+o(1).\\]This was solved by GPT-5.4 Pro (prompted by Price), which proved that for any primitive set $A\\subset \\mathbb{N}$\\[\\sum_{\\substack{a\\in A\\\\ a>x}}\\frac{1}{a\\log a}\\leq 1+O\\left(\\frac{1}{\\log x}\\right).\\]See the comment section for further refinements and discussion.",
+    "Lichtman [Li20] proved that if $A$ is the set of all integers with exactly $k$ prime factors (so that $A\\subset [2^k,\\infty)$ and $A$ is a primitive set) then\\[\\sum_{a\\in A}\\frac{1}{a\\log a}\\geq 1+O(k^{-1/2+o(1)}),\\]and suggested that the true rate of decay may be $O(2^{-k})$.",
+    "Additional thanks to: Liam Price Proof expositions (0) If you would like to contribute an exposition of a proof related to this problem, please message a moderator or email [email protected] No proof expositions yet.",
+    "Gorodetsky, Lichtman, and Wong [GLW24] have proved that\\[\\sum_{a\\in A}\\frac{1}{a\\log a}= 1-(c+o(1))k^22^{-k}\\]where $c\\approx 0.0656$ is an explicit constant.See also [164] for the case $x=1$.",
+    "Bloom, Erdős Problem #1196, https://www.erdosproblems.com/1196, accessed 2026-11-28 From the external database."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2605.00301",
+   "final_url": "https://arxiv.org/abs/2605.00301",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Primitive sets and von Mangoldt chains: Erd\\H{o}s Problem #1196 and beyond",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-05-01"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-05-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2605.00301: Primitive sets and von Mangoldt chains: Erdős Problem #1196 and beyond",
+   "passages": [
+    "As applications, we prove two 1966 conjectures of Erdős-Sárközy-Szemerédi, on primitive sets of large numbers (#1196) and on divisibility chains (#1217).",
+    "We introduce a new method for bounding Erdős sums of primitive sets, suggested from output of GPT-5.4 Pro, based on Markov chains with von Mangoldt weights.",
+    "The method also provides a short proof of the Erdős Primitive Set Conjecture (#164), as well as the related claim that 2 is an ''Erdős-strong'' prime.",
+    "A set of integers is primitive if no number in the set divides another.",
+    "The method leads to a host of applications, yet seems to have been overlooked by the prior literature since Erdős's seminal 1935 paper.",
+    "Moreover, the method resolves a revised form of the Banks-Martin conjecture, which has long been viewed as a unifying `master theorem' for the area."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://terrytao.wordpress.com/2026/05/03/primitive-sets-and-von-mangoldt-chains-erdos-problem-1196-and-beyond/",
+   "final_url": "https://terrytao.wordpress.com/2026/05/03/primitive-sets-and-von-mangoldt-chains-erdos-problem-1196-and-beyond/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Primitive sets and von Mangoldt chains: Erdős Problem #1196 and beyond",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2026-05-04"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-05-04"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Boris Alexeev, Kevin Barreto, Yanyang Li, Jared Duker Lichtman, Liam Price, Jibran Iqbal Shah, Quanyu Tang, and I have just uploaded to the arXiv our paper Primitive sets and von Mangoldt chains: E…",
+   "passages": [
+    "The first app illustrates the “zeta process” that was introduced in my recent paper with Alexeev, Barreto, Li, Lichtman, Price, Shah, and Tang, though it was first discovered by an AI.",
+    "It was thus notable that this problem was first solved by an autonomous AI query (by the fifth author) a few weeks ago.",
+    "Theorem 4 ( is Erdős-strong) If is a primitive set consisting of even numbers, then Theorem 5 (Ahlswede–Khachatrian–Sárközy) If is a primitive set, then whenever .",
+    "Theorem 6 (Erdős–Sárközy–Szemerédi, #1217) Let be such that the upper doubly logarithmic density is positive.",
+    "This was one of the most well-known open problems in the study of primitive sets, and had attracted some number of partial results (for instance, Lichtman was able to show the upper bound of ).",
+    "The key innovation (which was uncovered by the AI-assisted proofs, though not quite in the notation and framework presented here) is to switch to the von Mangoldt chain, which removes the bias towards numbers whose largest prime factor is small."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

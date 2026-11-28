@@ -1,0 +1,136 @@
+{
+ "slug": "boron-arsenide-high-thermal-conductivity",
+ "title": "Three teams measure very high heat conduction in boron arsenide",
+ "first_published": "2018-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.science.org/doi/10.1126/science.aat5522",
+   "final_url": "https://www.science.org/doi/10.1126/science.aat5522",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2018-8-10"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.aat5522",
+   "crossref": {
+    "doi": "10.1126/science.aat5522",
+    "resolves": true,
+    "title": "Experimental observation of high thermal conductivity in boron arsenide",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2018-8-10",
+    "authors_first3": [
+     "Kang",
+     "Li",
+     "Wu"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.science.org/doi/10.1126/science.aat8982",
+   "final_url": "https://www.science.org/doi/10.1126/science.aat8982",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2018-8-10"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.aat8982",
+   "crossref": {
+    "doi": "10.1126/science.aat8982",
+    "resolves": true,
+    "title": "High thermal conductivity in cubic boron arsenide crystals",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2018-8-10",
+    "authors_first3": [
+     "Li",
+     "Zheng",
+     "Lv"
+    ],
+    "author_count": 8,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.science.org/doi/10.1126/science.aat7932",
+   "final_url": "https://www.science.org/doi/10.1126/science.aat7932",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2018-8-10"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.aat7932",
+   "crossref": {
+    "doi": "10.1126/science.aat7932",
+    "resolves": true,
+    "title": "Unusual high thermal conductivity in boron arsenide bulk crystals",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2018-8-10",
+    "authors_first3": [
+     "Tian",
+     "Song",
+     "Chen"
+    ],
+    "author_count": 27,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

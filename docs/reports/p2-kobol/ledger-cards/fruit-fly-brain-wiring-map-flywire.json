@@ -1,0 +1,183 @@
+{
+ "slug": "fruit-fly-brain-wiring-map-flywire",
+ "title": "Complete wiring map of an adult fruit fly brain, neuron by neuron",
+ "first_published": "2023-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-024-07558-y",
+   "final_url": "https://www.nature.com/articles/s41586-024-07558-y?error=cookies_not_supported&code=61857b27-55b6-4937-accd-a16fd5816ef9",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Neuronal wiring diagram of an adult brain",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-07-11"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-05-10"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-10-02"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-024-07558-y",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07558-y",
+    "resolves": true,
+    "title": "Neuronal wiring diagram of an adult brain",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-10-2",
+    "authors_first3": [
+     "Dorkenwald",
+     "Matsliah",
+     "Sterling"
+    ],
+    "author_count": 294,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1101/2023.06.27.546656"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Connections between neurons can be mapped by acquiring and analysing electron microscopic brain images. In recent years, this approach has been applied to chunks of brains to reconstruct local connectivity maps that are highly informative1–6, but nevertheless inadequate for understanding brain funct",
+   "passages": [
+    "Schlegel et al.12 used the cell types proposed for the hemibrain as a starting point for cell typing neurons in the central brain in FlyWire.",
+    "Preprint at bioRxiv https://doi.org/10.1101/2023.10.16.562634 (2023).Repérant, J. et al.",
+    "Here we present a neuronal wiring diagram of a whole brain containing 5 × 107 chemical synapses7 between 139,255 neurons reconstructed from an adult female Drosophila melanogaster8,9.",
+    "Schlegel et al.12 show quantitatively using FlyWire brain and hemibrain data that these two types of stereotypy are similar in degree.Optic lobes, columns and beyondSo far we have mentioned neurons that connect the optic lobes with each other, or with the central brain.",
+    "A notable overlap is the use of neuroglancer112 for browser-based 3D visualization.FlyWire’s whole-brain automated segmentation was proofread with an estimated 33 person-years of effort (Methods), whereas hemibrain proofreading required 50 person-years for a part of the brain1.",
+    "As of publication, FlyWire has 12 add-on apps ranging from a batch processor to cell naming helper (https://blog.flywire.ai/2022/08/11/flywire-addons/).Proofreading strategy to complete the connectomeAs previously described8, proofreading of the connectome was focused on the microtubule-rich ‘backbones’ of neurons."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1038/s41586-024-07686-5",
+   "final_url": "https://www.nature.com/articles/s41586-024-07686-5?error=cookies_not_supported&code=15c21e8b-ea1a-479a-adc5-ae69f2ad1dcc",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Whole-brain annotation and multi-connectome cell typing of Drosophila",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-07-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-06-06"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-10-02"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-024-07686-5",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07686-5",
+    "resolves": true,
+    "title": "Whole-brain annotation and multi-connectome cell typing of Drosophila",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-10-2",
+    "authors_first3": [
+     "Schlegel",
+     "Yin",
+     "Bates"
+    ],
+    "author_count": 307,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The fruit fly Drosophila melanogaster has emerged as a key model organism in neuroscience, in large part due to the concentration of collaboratively generated molecular, genetic and digital resources available for it. Here we complement the approximately 140,000 neuron FlyWire whole-brain connectome",
+   "passages": [
+    "The availability of a complete adult fly brain connectome now allows brain-spanning circuits to be mapped and linked to circuit dynamics and behaviour as has long been possible for the nematode and more recently the Drosophila larva (3,016 neurons)6.",
+    "Systematic annotation of a complete adult male Drosophila nerve cord connectome reveals principles of functional organisation. eLife 13, RP97766 (2024).Court, R. et al.",
+    "Spatial readout of visual looming in the central brain of Drosophila. eLife https://doi.org/10.7554/eLife.57685 (2020).Andriatsilavo, M. et al.",
+    "Here we complement the approximately 140,000 neuron FlyWire whole-brain connectome1 with a systematic and hierarchical annotation of neuronal classes, cell types and developmental units (hemilineages).",
+    "Cellular neuroscience Computational neuroscience Neural circuits Neurogenetics of Drosophila Melanogaster MainThe adult fruit fly represents the current frontier for whole-brain connectomics.",
+    "As this defines a de facto standard cell typing for large parts of the fly brain, our initial work plan was simply to reidentify hemibrain cell types in FlyWire, providing a critical resource for the fly neuroscience community."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,442 @@
+{
+ "slug": "gw170817-neutron-star-merger-light",
+ "title": "Gravitational waves and light seen together from a neutron-star merger",
+ "first_published": "2017-10-16",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1103/PhysRevLett.119.161101",
+   "final_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.161101",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-10-16"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1103/physrevlett.119.161101",
+   "crossref": {
+    "doi": "10.1103/physrevlett.119.161101",
+    "resolves": true,
+    "title": "GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral",
+    "container": "Physical Review Letters",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2017-10-16",
+    "authors_first3": [
+     "Abbott",
+     "Abbott",
+     "Abbott"
+    ],
+    "author_count": 1125,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "For the first time, researchers have detected both light and gravitational waves from the same event in space.",
+   "passages": [
+    "119, 161101 – Published 16 October, 2017DOI: https://doi.org/10.1103/PhysRevLett.119.161101 Export CitationShow metricsHide metricsAbstractOn August 17, 2017 at 12∶41:04 UTC the Advanced LIGO and Advanced Virgo gravitational-wave detectors made their first observation of a binary neutron star inspiral.",
+    "It is your responsibility to obtain the proper permission from the rights holder directly for these figures.Export citationExport citationChoose format for download:BibTeXEndNote (RIS)Download CitationFeatured in PhysicsEditors' SuggestionOpen AccessGW170817: Observation of Gravitational Waves from a Binary Neutron Star InspiralB.",
+    "LIGO Scientific Collaboration and Virgo Collaboration, LIGO Open Science Center (LOSC), 2017 [https://doi.org/10.7935/K5B8566F].",
+    "Restricting the component spins to the range inferred in binary neutron stars, we find the component masses to be in the range 1.17–1.60 M⊙, with the total mass of the system 2.74−0.01+0.04M⊙.",
+    "We infer the component masses of the binary to be between 0.86 and 2.26 M⊙, in agreement with masses of known neutron stars.",
+    "The association with the γ-ray burst GRB 170817A, detected by Fermi-GBM 1.7 s after the coalescence, corroborates the hypothesis of a neutron star merger and provides the first direct evidence of a link between these mergers and short γ-ray bursts."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/1710.05832v1",
+   "final_url": "https://arxiv.org/abs/1710.05832v1",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "citation_date",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-10-16"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1103/physrevlett.119.161101",
+   "crossref": {
+    "doi": "10.1103/physrevlett.119.161101",
+    "resolves": true,
+    "title": "GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral",
+    "container": "Physical Review Letters",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2017-10-16",
+    "authors_first3": [
+     "Abbott",
+     "Abbott",
+     "Abbott"
+    ],
+    "author_count": 1125,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1710.05832v1: GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral",
+   "passages": [
+    "On August 17, 2017 at 12:41:04 UTC the Advanced LIGO and Advanced Virgo gravitational-wave detectors made their first observation of a binary neutron star inspiral.",
+    "Restricting the component spins to the range inferred in binary neutron stars, we find the component masses to be in the range 1.17 to 1.60 $M_\\odot$, with the total mass of the system $2.74^{+0.04}_{-0.01}\\,M_\\odot$.",
+    "We infer the component masses of the binary to be between 0.86 and 2.26 $M_\\odot$, in agreement with masses of known neutron stars.",
+    "The association with the gamma-ray burst GRB 170817A, detected by Fermi-GBM 1.7 s after the coalescence, corroborates the hypothesis of a neutron star merger and provides the first direct evidence of a link between these mergers and short gamma-ray bursts.",
+    "Subsequent identification of transient counterparts across the electromagnetic spectrum in the same location further supports the interpretation of this event as a neutron star merger.",
+    "This unprecedented joint gravitational and electromagnetic observation provides insight into astrophysics, dense matter, gravitation and cosmology."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.nature.com/articles/nature24303",
+   "final_url": "https://www.nature.com/articles/nature24303?error=cookies_not_supported&code=69ecbd11-e2ab-41f8-ae75-86787f6eff5b",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A kilonova as the electromagnetic counterpart to a gravitational-wave source",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2017-10-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "dc.date",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-09-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-09-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-10-16"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature24303",
+   "crossref": {
+    "doi": "10.1038/nature24303",
+    "resolves": true,
+    "title": "A kilonova as the electromagnetic counterpart to a gravitational-wave source",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2017-10-16",
+    "authors_first3": [
+     "Smartt",
+     "Chen",
+     "Jerkstrand"
+    ],
+    "author_count": 122,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Observations and modelling of an optical transient counterpart to a gravitational-wave event and γ-ray burst reveal that neutron-star mergers produce gravitational waves and radioactively powered kilonovae, and are a source of heavy elements. Merging neutron stars are potential sources of gravitatio",
+   "passages": [
+    "Letter Published: 16 October 2017 A kilonova as the electromagnetic counterpart to a gravitational-wave source S.",
+    "Swope Supernova Survey 2017a (SSS17a), the optical counterpart to a gravitational wave source.",
+    "LIGO/Virgo G298048: GROND photometry of the candidate optical counterpart reveals brightening in the NIR.",
+    "This indicates that neutron-star mergers produce gravitational waves and radioactively powered kilonovae, and are a nucleosynthetic source of the r-process elements.",
+    "LIGO/Virgo G298048: updated sky map from gravitational-wave data.",
+    "A kilonova as the electromagnetic counterpart to a gravitational-wave source."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.nature.com/articles/nature24291",
+   "final_url": "https://www.nature.com/articles/nature24291?error=cookies_not_supported&code=c8364e24-d521-4228-a666-497cfa6c7403",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Optical emission from a kilonova following a gravitational-wave-detected neutron-star merger",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2017-10-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "dc.date",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-09-12"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-09-21"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-10-16"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature24291",
+   "crossref": {
+    "doi": "10.1038/nature24291",
+    "resolves": true,
+    "title": "Optical emission from a kilonova following a gravitational-wave-detected neutron-star merger",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2017-10-16",
+    "authors_first3": [
+     "Arcavi",
+     "Hosseinzadeh",
+     "Howell"
+    ],
+    "author_count": 11,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Optical to near-infrared observations of a transient coincident with the detection of the gravitational-wave signature of a binary neutron-star merger and a low-luminosity short-duration γ-ray burst are presented and modelled. Merging neutron stars are potential sources of gravitational waves and ha",
+   "passages": [
+    "Letter Published: 16 October 2017 Optical emission from a kilonova following a gravitational-wave-detected neutron-star merger Iair Arcavi1,2, Griffin Hosseinzadeh1,2, D.",
+    "Optical follow-up of gravitational-wave events with Las Cumbres Observatory.",
+    "Optical emission from a kilonova following a gravitational-wave-detected neutron-star merger.",
+    "Here we report optical to near-infrared observations of a transient coincident with the detection of the gravitational-wave signature of a binary neutron-star merger and with a low-luminosity short-duration γ-ray burst20.",
+    "LIGO/Virgo G298048: potential optical counterpart discovered by Swope telescope.",
+    "LIGO/Virgo G298048: ATLAS pre-discovery limits 601 to 16 days before first detection of SSS17a/DLT17ck."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://arxiv.org/abs/1710.05452",
+   "final_url": "https://arxiv.org/abs/1710.05452",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Swope Supernova Survey 2017a (SSS17a), the Optical Counterpart to a Gravitational Wave Source",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "citation_date",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-12-22"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.aap9811",
+   "crossref": {
+    "doi": "10.1126/science.aap9811",
+    "resolves": true,
+    "title": "Swope Supernova Survey 2017a (SSS17a), the optical counterpart to a gravitational wave source",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2017-12-22",
+    "authors_first3": [
+     "Coulter",
+     "Foley",
+     "Kilpatrick"
+    ],
+    "author_count": 17,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1710.05452: Swope Supernova Survey 2017a (SSS17a), the Optical Counterpart to a Gravitational Wave Source",
+   "passages": [
+    "On 2017 August 17, the Laser Interferometer Gravitational-wave Observatory (LIGO) and the Virgo interferometer detected gravitational waves emanating from a binary neutron star merger, GW170817.",
+    "Rojas-Bravo View a PDF of the paper titled Swope Supernova Survey 2017a (SSS17a), the Optical Counterpart to a Gravitational Wave Source, by D.",
+    "10.9 hours after the gravitational wave trigger, we discovered a transient and fading optical source, Swope Supernova Survey 2017a (SSS17a), coincident with GW170817.",
+    "The precise location of GW170817 provides an opportunity to probe the nature of these cataclysmic events by combining electromagnetic and gravitational-wave observations.",
+    "Nearly simultaneously, the Fermi and INTEGRAL telescopes detected a gamma-ray transient, GRB 170817A.",
+    "SSS17a is located in NGC 4993, an S0 galaxy at a distance of 40 megaparsecs."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://www.nature.com/articles/nature24453",
+   "final_url": "https://www.nature.com/articles/nature24453?error=cookies_not_supported&code=61be7f46-8eec-4986-aed5-2712c0d6f23e",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Origin of the heavy elements in binary neutron-star mergers from a gravitational-wave event",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2017-10-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "dc.date",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-10-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-09-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-09-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-10-16"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature24453",
+   "crossref": {
+    "doi": "10.1038/nature24453",
+    "resolves": true,
+    "title": "Origin of the heavy elements in binary neutron-star mergers from a gravitational-wave event",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2017-10-16",
+    "authors_first3": [
+     "Kasen",
+     "Metzger",
+     "Barnes"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Modelling the electromagnetic emission of kilonovae enables the mass, velocity and composition (with some heavy elements) of the ejecta from a neutron-star merger to be derived from the observations. Merging neutron stars are potential sources of gravitational waves and have long been predicted to p",
+   "passages": [
+    "Origin of the heavy elements in binary neutron-star mergers from a gravitational-wave event.",
+    "LIGO/Virgo G298048: potential optical counterpart discovered by Swope telescope.",
+    "Optical emission from a kilonova following a gravitational-wave-detected neutron-star merger.",
+    "The electromagnetic counterpart of the binary neutron star merger LIGO/Virgo GW170817.",
+    "Theoretical modelling1,2,3,4,5,6,7 shows that the matter that is expelled in the violent merger of two neutron stars can assemble into heavy elements such as gold and platinum in a process known as rapid neutron capture (r-process) nucleosynthesis.",
+    "The discovery of an electromagnetic counterpart to the gravitational-wave source13 GW170817 represents the first opportunity to detect and scrutinize a sample of freshly synthesized r-process elements14,15,16,17,18."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

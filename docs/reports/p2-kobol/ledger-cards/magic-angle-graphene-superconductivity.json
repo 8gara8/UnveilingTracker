@@ -1,0 +1,507 @@
+{
+ "slug": "magic-angle-graphene-superconductivity",
+ "title": "Twisted bilayer graphene turns superconducting at a magic angle",
+ "first_published": "2018-03-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/nature26160",
+   "final_url": "https://www.nature.com/articles/nature26160?error=cookies_not_supported&code=3b411625-b3c4-41cf-938f-cf557dafd859",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Unconventional superconductivity in magic-angle graphene superlattices",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "dc.date",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-02-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-02-26"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-03-05"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature26160",
+   "crossref": {
+    "doi": "10.1038/nature26160",
+    "resolves": true,
+    "title": "Unconventional superconductivity in magic-angle graphene superlattices",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-3-5",
+    "authors_first3": [
+     "Cao",
+     "Fatemi",
+     "Fang"
+    ],
+    "author_count": 7,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.14293/S2199-1006.1.SOR-UNCAT.A1803.02342.v1.RPRHDF"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The behaviour of strongly correlated materials, and in particular unconventional superconductors, has been studied extensively for decades, but is still not well understood. This lack of theoretical understanding has motivated the development of experimental techniques for studying such behaviour, s",
+   "passages": [
+    "Here we report the realization of intrinsic unconventional superconductivity—which cannot be explained by weak electron–phonon interactions—in a two-dimensional superlattice created by stacking two sheets of graphene that are twisted relative to each other by a small angle.",
+    "Unconventional superconductivity in magic-angle graphene superlattices.",
+    "For twist angles of about 1.1°—the first ‘magic’ angle—the electronic band structure of this ‘twisted bilayer graphene’ exhibits flat bands near zero Fermi energy, resulting in correlated insulating states at half-filling.",
+    "The relatively high superconducting critical temperature of twisted bilayer graphene, given such a small Fermi surface (which corresponds to a carrier density of about 1011 per square centimetre), puts it among the superconductors with the strongest pairing strength between electrons.",
+    "Twisted bilayer graphene is a precisely tunable, purely carbon-based, two-dimensional superconductor.",
+    "The temperature–carrier-density phase diagram of twisted bilayer graphene is similar to that of copper oxides (or cuprates), and includes dome-shaped regions that correspond to superconductivity."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1038/nature26154",
+   "final_url": "https://www.nature.com/articles/nature26154?error=cookies_not_supported&code=0106d191-23fb-4305-9c40-03e18fdc4219",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Correlated insulator behaviour at half-filling in magic-angle graphene superlattices",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "dc.date",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-10-06"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-02-21"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-03-05"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature26154",
+   "crossref": {
+    "doi": "10.1038/nature26154",
+    "resolves": true,
+    "title": "Correlated insulator behaviour at half-filling in magic-angle graphene superlattices",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-3-5",
+    "authors_first3": [
+     "Cao",
+     "Fatemi",
+     "Demir"
+    ],
+    "author_count": 12,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "When the two graphene sheets in a van der Waals heterostructure are twisted relative to each other by a specific amount, Mott-like insulating phases are observed at half-filling. Strong interactions between electrons are behind many exotic phenomena in condensed matter, such as the fractional quantu",
+   "passages": [
+    "These properties of magic-angle-twisted bilayer graphene heterostructures suggest that these materials could be used to study other exotic many-body quantum phases in two dimensions in the absence of a magnetic field.",
+    "Letter Published: 05 March 2018 Correlated insulator behaviour at half-filling in magic-angle graphene superlattices Yuan Cao1, Valla Fatemi1, Ahmet Demir1, Shiang Fang2, Spencer L.",
+    "Here we study a heterostructure consisting of bilayer graphene, in which the two graphene layers are twisted relative to each other by a certain angle.",
+    "Correlated insulator behaviour at half-filling in magic-angle graphene superlattices.",
+    "Unraveling the intrinsic and robust nature of van Hove singularities in twisted bilayer graphene by scanning tunneling microscopy and theoretical analysis.",
+    "R.C.A. acknowledges support by the Gordon and Betty Moore Foundation under grant number GBMF2931.Author informationAuthors and AffiliationsDepartment of Physics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USAYuan Cao, Valla Fatemi, Ahmet Demir, Spencer L."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/1808.07865",
+   "final_url": "https://arxiv.org/abs/1808.07865",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Tuning superconductivity in twisted bilayer graphene",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2018-08-24"
+    },
+    {
+     "source": "citation_date",
+     "date": "2018-08-23"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-03-08"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.aav1910",
+   "crossref": {
+    "doi": "10.1126/science.aav1910",
+    "resolves": true,
+    "title": "Tuning superconductivity in twisted bilayer graphene",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2019-3-8",
+    "authors_first3": [
+     "Yankowitz",
+     "Chen",
+     "Polshyn"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1808.07865: Tuning superconductivity in twisted bilayer graphene",
+   "passages": [
+    "Our results demonstrate twisted bilayer graphene to be a uniquely tunable platform for exploring novel correlated states.",
+    "Remarkably, an isolated low-energy flat band can be induced in bilayer graphene by simply rotating the layers to 1.1$^{\\circ}$, resulting in the appearance of gate-tunable superconducting and correlated insulating phases.",
+    "We establish the capability to induce superconductivity at a twist angle larger than 1.1$^{\\circ}$ $-$ in which correlated phases are otherwise absent $-$ by varying the interlayer spacing with hydrostatic pressure.",
+    "Here, we demonstrate that in addition to the twist angle, the interlayer coupling can also be modified to precisely tune these phases.",
+    "Realizing devices with low disorder additionally reveals new details about the superconducting phase diagram and its relationship to the nearby insulator."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://doi.org/10.1126/science.aav1910",
+   "final_url": "https://www.science.org/doi/10.1126/science.aav1910",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2019-03-08"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.aav1910",
+   "crossref": {
+    "doi": "10.1126/science.aav1910",
+    "resolves": true,
+    "title": "Tuning superconductivity in twisted bilayer graphene",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2019-3-8",
+    "authors_first3": [
+     "Yankowitz",
+     "Chen",
+     "Polshyn"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "arxiv",
+     "url": "https://arxiv.org/abs/1808.07865",
+     "final_url": "https://arxiv.org/abs/1808.07865",
+     "status": 200,
+     "readable": true,
+     "title_found": "Tuning superconductivity in twisted bilayer graphene",
+     "title_match": true,
+     "date": "2018-08-23",
+     "passages": [
+      "Our results demonstrate twisted bilayer graphene to be a uniquely tunable platform for exploring novel correlated states.",
+      "Remarkably, an isolated low-energy flat band can be induced in bilayer graphene by simply rotating the layers to 1.1$^{\\circ}$, resulting in the appearance of gate-tunable superconducting and correlated insulating phases.",
+      "We establish the capability to induce superconductivity at a twist angle larger than 1.1$^{\\circ}$ $-$ in which correlated phases are otherwise absent $-$ by varying the interlayer spacing with hydrostatic pressure.",
+      "Here, we demonstrate that in addition to the twist angle, the interlayer coupling can also be modified to precisely tune these phases.",
+      "Realizing devices with low disorder additionally reveals new details about the superconducting phase diagram and its relationship to the nearby insulator.",
+      "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://doi.org/10.1038/s41586-019-1695-0",
+   "final_url": "https://www.nature.com/articles/s41586-019-1695-0?error=cookies_not_supported&code=cdcb8508-b599-4e1d-a285-b5b9c658b957",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Superconductors, orbital magnets and correlated states in magic-angle bilayer graphene",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "dc.date",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-03-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-08-12"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-10-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-019-1695-0",
+   "crossref": {
+    "doi": "10.1038/s41586-019-1695-0",
+    "resolves": true,
+    "title": "Superconductors, orbital magnets and correlated states in magic-angle bilayer graphene",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-10-30",
+    "authors_first3": [
+     "Lu",
+     "Stepanov",
+     "Yang"
+    ],
+    "author_count": 13,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Superconductivity can occur under conditions approaching broken-symmetry parent states1. In bilayer graphene, the twisting of one layer with respect to the other at ‘magic’ twist angles of around 1 degree leads to the emergence of ultra-flat&nbsp;moiré superlattice minibands. Such bands are a rich a",
+   "passages": [
+    "Article Published: 30 October 2019 Superconductors, orbital magnets and correlated states in magic-angle bilayer graphene Xiaobo Lu1, Petr Stepanov1, Wei Yang1, Ming Xie2, Mohammed Ali Aamir1, Ipsita Das1, Carles Urgell1, Kenji Watanabe3, Takashi Taniguchi3, Guangyu Zhang4, Adrian Bachtold1, Allan H.",
+    "Superconductors, orbital magnets and correlated states in magic-angle bilayer graphene.",
+    "On the nature of the correlated insulator states in twisted bilayer graphene.",
+    "Possible correlated insulating states in magic-angle twisted bilayer graphene under strongly competing interactions.",
+    "Here we report the fabrication of magic-angle twisted bilayer graphene devices with highly uniform twist angles.",
+    "This study provides a more detailed view of the phenomenology of magic-angle twisted bilayer graphene, adding to our evolving understanding of its emergent properties."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://news.mit.edu/2020/mit-pablo-jarillo-herrero-wins-wolf-prize-physics-0116",
+   "final_url": "https://news.mit.edu/2020/mit-pablo-jarillo-herrero-wins-wolf-prize-physics-0116",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Pablo Jarillo-Herrero wins Wolf Prize for groundbreaking work on twistronics",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2020-01-16"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "MIT Professor Pablo Jarillo-Herrero was awarded a share of the 2020 Wolf Prize in Physics for his contributions to twisted bilayer graphene research, or twistronics, which has uncovered unique electrical properties with the long-range potential for creating new superconducting materials.",
+   "passages": [
+    "Carol Breen | Department of Physics Publication Date: January 16, 2020 Press Inquiries Press Contact: Carol Breen Email: breen@mit.edu Phone: 617-252-3040 MIT Department of Physics Close Caption: \"It's an incredible and humbling honor to receive this recognition,\" says Pablo Jarillo-Herrero.",
+    "The condensed-matter experimentalist shares the prize with theorists Professor Allan MacDonald of the University of Texas at Austin, and Rafi Bistrizter of Applied Materials Israel.",
+    "Prior Wolf Prize laureates in the MIT Department of Physics include Lester Wolfe Professor of Physics Emeritus Daniel Kleppner (2005) and MIT Institute Professors Emeriti Bruno Rossi (1987) and Victor Weisskopf (1981).",
+    "By creating and measuring bilayer graphene of multiple twist angles, Jarillo-Herrero's group reached a breakthrough in 2018 with the discovery of “the magic angle” — two layers positioned at 1.1 degrees — that resulted in unique, entirely unpredicted electronic behaviors.",
+    "In Jarillo-Herrero’s group, experiments were inspired by a 2011 paper by theorists MacDonald and Bistritzer predicting the interesting properties of electrons resulting from the rotating, or twisting, of the atomic lattices of stacked layers of graphene.",
+    "Credits: Photo: Valencia Plaza/Kike Taberner Caption: A native of Valencia, Spain, Pablo Jarillo-Herrero joined MIT as an assistant professor of physics in January 2008 and was promoted to full professor in 2018."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://www.nature.com/articles/d41586-018-02660-4",
+   "final_url": "https://www.nature.com/articles/d41586-018-02660-4?error=cookies_not_supported&code=ef2ea3f8-b0c0-43fd-997b-cd54f3a9d6f5",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Novel electronic states seen in graphene",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "dc.date",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-03-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-03-05"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-018-02660-4",
+   "crossref": {
+    "doi": "10.1038/d41586-018-02660-4",
+    "resolves": true,
+    "title": "Novel electronic states seen in graphene",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-3-5",
+    "authors_first3": [
+     "Mele"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "A simple system made from two sheets of graphene has been converted from an insulator to a superconductor. The finding holds promise for opening up studies of an unconventional form of superconductivity.",
+   "passages": [
+    "NEWS AND VIEWS 05 March 2018 Novel electronic states seen in graphene A simple system made from two sheets of graphene has been converted from an insulator to a superconductor.",
+    "The insulator turns into the superconductor when a small number of charge carriers are added to the graphene.",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,...",
+    "The finding holds promise for opening up studies of an unconventional form of superconductivity.",
+    "This connection between the states is unlikely to be a coincidence — as Sherlock Holmes might have commented, “the universe is rarely so lazy”."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

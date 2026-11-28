@@ -1,0 +1,97 @@
+{
+ "slug": "kymriah-car-t-childhood-leukaemia-approved",
+ "title": "First CAR-T cell therapy approved for children with relapsed leukaemia",
+ "first_published": "2017-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1056/NEJMoa1709866",
+   "final_url": "https://www.nejm.org/doi/10.1056/NEJMoa1709866",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2018-01-31"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1056/nejmoa1709866",
+   "crossref": {
+    "doi": "10.1056/nejmoa1709866",
+    "resolves": true,
+    "title": "Tisagenlecleucel in Children and Young Adults with B-Cell Lymphoblastic Leukemia",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2018-2",
+    "authors_first3": [
+     "Maude",
+     "Laetsch",
+     "Buechner"
+    ],
+    "author_count": 35,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.732586746.793581842",
+      "10.3410/f.732586746.793562627"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5996391/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5996391/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Tisagenlecleucel in Children and Young Adults with B-Cell Lymphoblastic Leukemia",
+     "title_match": true,
+     "date": "2018-01-31",
+     "passages": [
+      "Safety and response of incorporating CD19 chimeric antigen receptor T cell therapy in typical salvage regimens for children and young adults with acute lymphoblastic leukemia.",
+      "METHODS STUDY DESIGN We conducted a single-cohort, phase 2, multicenter, global study of tisagenlecleucel in children and young adults with relapsed or refractory B-cell ALL.",
+      "Analysis of a global registration trial of the efficacy and safety of CTL019 in pediatric and young adults with relapsed/refractory acute lymphoblastic leukemia (ALL) Blood.",
+      "T cells expressing CD19 chimeric antigen receptors for acute lymphoblastic leukaemia in children and young adults: a phase 1 dose-escalation trial.",
+      "Intent-to-treat leukemia remission by CD19 CAR T cells of defined formulation and dose in children and young adults.",
+      "Tisagenlecleucel (formerly CTL019), an anti-CD19 chimeric antigen receptor (CAR) T-cell therapy, is under investigation in patients with relapsed or refractory B-cell cancers, including B-cell acute lymphoblastic leukemia (ALL)."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approval-brings-first-gene-therapy-united-states",
+   "final_url": "https://www.fda.gov/news-events/press-announcements/fda-approval-brings-first-gene-therapy-united-states",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Page Not Found | FDA",
+   "title_match": false,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "dead"
+  }
+ ]
+}

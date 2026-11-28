@@ -1,0 +1,269 @@
+{
+ "slug": "top-quark-entanglement-atlas-cms",
+ "title": "ATLAS and CMS observe quantum entanglement between top quarks",
+ "first_published": "2023-11-13",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2311.07288",
+   "final_url": "https://arxiv.org/abs/2311.07288",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Observation of quantum entanglement in top-quark pairs using the ATLAS detector",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-11-13"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-09-18"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-024-07824-z",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07824-z",
+    "resolves": true,
+    "title": "Observation of quantum entanglement with top quarks at the ATLAS detector",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-9-18",
+    "authors_first3": [
+     "The ATLAS Collaboration",
+     "Aad",
+     "Abbott"
+    ],
+    "author_count": 2890,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2311.07288: Observation of quantum entanglement in top-quark pairs using the ATLAS detector",
+   "passages": [
+    "Here we report the highest-energy observation of entanglement, in top$-$antitop quark events produced at the Large Hadron Collider, using a proton$-$proton collision dataset with a center-of-mass energy of $\\sqrt{s}=13$ TeV and an integrated luminosity of 140 fb$^{-1}$ recorded with the ATLAS experiment.",
+    "The observed result is more than five standard deviations from a scenario without entanglement and constitutes the first observation of entanglement in a pair of quarks and the highest-energy observation of entanglement so far.",
+    "However, entanglement remains largely unexplored at the highest accessible energy scales.",
+    "Spin entanglement is detected from the measurement of a single observable $D$, inferred from the angle between the charged leptons in their parent top- and antitop-quark rest frames.",
+    "The observable is measured in a narrow interval around the top$-$antitop quark production threshold, where the entanglement detection is expected to be significant.",
+    "49 pages in total, author list starting page 32, 4 figures, 2 tables, published as Nature 633 (2024) 542."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1038/s41586-024-07824-z",
+   "final_url": "https://www.nature.com/articles/s41586-024-07824-z?error=cookies_not_supported&code=2d065093-028b-4474-b0e0-f06cc22dffd7",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Observation of quantum entanglement with top quarks at the ATLAS detector",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-08-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-09-18"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-09-18"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-09-18"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-09-18"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-09-18"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-11-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-07-12"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-09-18"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-024-07824-z",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07824-z",
+    "resolves": true,
+    "title": "Observation of quantum entanglement with top quarks at the ATLAS detector",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-9-18",
+    "authors_first3": [
+     "The ATLAS Collaboration",
+     "Aad",
+     "Abbott"
+    ],
+    "author_count": 2890,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Entanglement is a key feature of quantum mechanics1–3, with applications in fields such as metrology, cryptography, quantum information and quantum computation4–8. It has been observed in a wide variety of systems and length scales, ranging from the microscopic9–13 to the macroscopic14–16. However, ",
+   "passages": [
+    "Observation of quantum entanglement with top quarks at the ATLAS detector.",
+    "Experimental particle physics Particle physics Quantum Entanglement in High Energy Physics MainParticle colliders, such as the Large Hadron Collider (LHC) at CERN, probe fundamental particles and their interactions at the highest energies accessible in a laboratory, exceeded only by astrophysical sources.",
+    "In this Article, the spin correlation between the top quark and antitop quark is used to probe the effects of quantum entanglement, in proton–proton (pp) collision events recorded with the ATLAS detector with a centre-of-mass energy of 13 TeV.",
+    "Beyond the fundamental interest of exploring quantum entanglement in a new setting, this observation demonstrates the potential of using high-energy colliders, such as the LHC, as tools for testing our fundamental understanding of quantum mechanics.",
+    "However, the spins of these pairs are expected to be correlated, and this correlation has already been observed by both the ATLAS and CMS experiments at the LHC22,23,24,25,26.",
+    "The observed result is more than five standard deviations from a scenario without entanglement and hence constitutes the first observation of entanglement in a pair of quarks and the highest-energy observation of entanglement so far."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2406.03976",
+   "final_url": "https://arxiv.org/abs/2406.03976",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Observation of quantum entanglement in top quark pair production in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2024-10-29"
+    },
+    {
+     "source": "citation_date",
+     "date": "2024-06-06"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-10-23"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1088/1361-6633/ad7e4d",
+   "crossref": {
+    "doi": "10.1088/1361-6633/ad7e4d",
+    "resolves": true,
+    "title": "Observation of quantum entanglement in top quark pair production in proton–proton collisions at\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n                      <mml:mrow>\n                        <mml:msqrt>\n                          <mml:mi>s</mml:mi>\n                        </mml:msqrt>\n                        <mml:mo>=</mml:mo>\n                        <mml:mn>13</mml:mn>\n                      </mml:mrow>\n                    </mml:math>\n                     TeV",
+    "container": "Reports on Progress in Physics",
+    "publisher": "IOP Publishing",
+    "type": "journal-article",
+    "issued": "2024-10-23",
+    "authors_first3": [
+     "CMS Collaboration"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2406.03976: Observation of quantum entanglement in top quark pair production in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
+   "passages": [
+    "An entanglement-sensitive observable $D$ is derived from the top quark spin-dependent parts of the $\\mathrm{t\\bar{t}}$ production density matrix and measured in the region of the $\\mathrm{t\\bar{t}}$ production threshold.",
+    "With an observed significance of 5.1 standard deviations with respect to the non-entangled hypothesis, this provides observation of quantum mechanical entanglement within $\\mathrm{t\\bar{t}}$ pairs in this phase space.",
+    "Entanglement is an intrinsic property of quantum mechanics and is predicted to be exhibited in the particles produced at the Large Hadron Collider.",
+    "This measurement provides a new probe of quantum mechanics at the highest energies ever produced.",
+    "Added the journal reference and the DOI.",
+    "The events are selected based on the presence of two leptons with opposite charges and high transverse momentum."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://doi.org/10.1088/1361-6633/ad7e4d",
+   "final_url": "https://iopscience.iop.org/article/10.1088/1361-6633/ad7e4d",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Observation of quantum entanglement in top quark pair production in proton–proton collisions at $\\sqrt{s} = 13$ TeV",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2024-10-23"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-10-23"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-10-23"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1088/1361-6633/ad7e4d",
+   "crossref": {
+    "doi": "10.1088/1361-6633/ad7e4d",
+    "resolves": true,
+    "title": "Observation of quantum entanglement in top quark pair production in proton–proton collisions at\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n                      <mml:mrow>\n                        <mml:msqrt>\n                          <mml:mi>s</mml:mi>\n                        </mml:msqrt>\n                        <mml:mo>=</mml:mo>\n                        <mml:mn>13</mml:mn>\n                      </mml:mrow>\n                    </mml:math>\n                     TeV",
+    "container": "Reports on Progress in Physics",
+    "publisher": "IOP Publishing",
+    "type": "journal-article",
+    "issued": "2024-10-23",
+    "authors_first3": [
+     "CMS Collaboration"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "meta",
+    "value": "Text"
+   },
+   "meta_description": "Observation of quantum entanglement in top quark pair production in proton–proton collisions at s=13 TeV, CMS Collaboration, The",
+   "passages": [
+    "Data and simulated samplesThe analysis is performed using 36.3 fb−1 of pp collision data collected by the CMS experiment during the 2016 LHC run at a CM energy of 13 TeV.",
+    "This proxy is measured using events containing two oppositely charged electrons or muons produced in pp collisions at a center-of-mass energy of 13 TeV.",
+    "This result differs from the result reported by the ATLAS Collaboration in that we measure the entanglement at the parton level while the ATLAS Collaboration reports their observable at the particle level.",
+    "An entanglement-sensitive observable D is derived from the top quark spin-dependent parts of the production density matrix and measured in the region of the production threshold.",
+    "We focus on a measurement of entanglement in top quark pairs, which provides a new probe to test predictions of quantum mechanics at the highest energies currently accessible [27–29].",
+    "Including toponium in production simulations is important in light of the recent ATLAS and CMS differential cross section results [48–52], which indicate difficulties in modeling the data near the production threshold."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

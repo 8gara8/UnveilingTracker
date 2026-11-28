@@ -1,0 +1,226 @@
+{
+ "slug": "exponential-improvement-diagonal-ramsey-numbers",
+ "title": "First exponential improvement for diagonal Ramsey numbers since 1935",
+ "first_published": "2023-03",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2303.09521",
+   "final_url": "https://arxiv.org/abs/2303.09521",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An exponential improvement for diagonal Ramsey",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2025-08-04"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-03-16"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2303.09521: An exponential improvement for diagonal Ramsey",
+   "passages": [
+    "This is the first exponential improvement over the upper bound of Erdős and Szekeres, proved in 1935.",
+    "The Ramsey number $R(k)$ is the minimum $n \\in \\mathbb{N}$ such that every red-blue colouring of the edges of the complete graph $K_n$ on $n$ vertices contains a monochromatic copy of $K_k$.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://annals.math.princeton.edu/2026/203-3/p04",
+   "final_url": "https://annals.math.princeton.edu/2026/203-3/p04",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An exponential improvement for diagonal Ramsey",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-01-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-05-01"
+    }
+   ],
+   "date_ok": false,
+   "doi": "https://doi.org/10.4007/annals.2026.203.3.4",
+   "crossref": {
+    "doi": "https://doi.org/10.4007/annals.2026.203.3.4",
+    "resolves": true,
+    "title": "An exponential improvement for diagonal Ramsey",
+    "container": "Annals of Mathematics",
+    "publisher": "Annals of Mathematics",
+    "type": "journal-article",
+    "issued": "2026-5-1",
+    "authors_first3": [
+     "Campos",
+     "Griffiths",
+     "Morris"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "This is the first exponential improvement over the upper bound of Erdös and Szekeres, proved in 1935."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2407.19026",
+   "final_url": "https://arxiv.org/abs/2407.19026",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Optimizing the CGMS upper bound on Ramsey numbers",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-08-29"
+    },
+    {
+     "source": "citation_date",
+     "date": "2024-07-26"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2407.19026: Optimizing the CGMS upper bound on Ramsey numbers",
+   "passages": [
+    "In a recent breakthrough Campos, Griffiths, Morris and Sahasrabudhe obtained the first exponential improvement of the upper bound on the diagonal Ramsey numbers since 1935.",
+    "We shorten their proof, replacing the underlying book algorithm with a simple inductive statement."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://arxiv.org/abs/2501.10852",
+   "final_url": "https://arxiv.org/abs/2501.10852",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Formalising New Mathematics in Isabelle: Diagonal Ramsey",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2025-01-18"
+    },
+    {
+     "source": "citation_date",
+     "date": "2025-01-18"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2501.10852: Formalising New Mathematics in Isabelle: Diagonal Ramsey",
+   "passages": [
+    "The formalisation of mathematics is starting to become routine, but the value of this technology to the work of mathematicians remains to be shown.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2407.19026",
+   "final_url": "https://arxiv.org/abs/2407.19026",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Optimizing the CGMS upper bound on Ramsey numbers",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-08-29"
+    },
+    {
+     "source": "citation_date",
+     "date": "2024-07-26"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2407.19026: Optimizing the CGMS upper bound on Ramsey numbers",
+   "passages": [
+    "In a recent breakthrough Campos, Griffiths, Morris and Sahasrabudhe obtained the first exponential improvement of the upper bound on the diagonal Ramsey numbers since 1935."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2501.10852",
+   "final_url": "https://arxiv.org/abs/2501.10852",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Formalising New Mathematics in Isabelle: Diagonal Ramsey",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2025-01-18"
+    },
+    {
+     "source": "citation_date",
+     "date": "2025-01-18"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2501.10852: Formalising New Mathematics in Isabelle: Diagonal Ramsey",
+   "passages": [
+    "The formalisation of mathematics is starting to become routine, but the value of this technology to the work of mathematicians remains to be shown."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

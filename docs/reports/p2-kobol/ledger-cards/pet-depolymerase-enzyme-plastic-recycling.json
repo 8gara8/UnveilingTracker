@@ -1,0 +1,128 @@
+{
+ "slug": "pet-depolymerase-enzyme-plastic-recycling",
+ "title": "An engineered enzyme breaks down PET plastic for recycling",
+ "first_published": "2020-04-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-020-2149-4",
+   "final_url": "https://www.nature.com/articles/s41586-020-2149-4?error=cookies_not_supported&code=7b49b1ab-cfd3-46c1-8ed4-917388ef02bb",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An engineered PET depolymerase to break down and recycle plastic bottles",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-04-08"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-04-08"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-04-08"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-04-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-04-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-06-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-02-19"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-04-08"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-020-2149-4",
+   "crossref": {
+    "doi": "10.1038/s41586-020-2149-4",
+    "resolves": true,
+    "title": "An engineered PET depolymerase to break down and recycle plastic bottles",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-4-8",
+    "authors_first3": [
+     "Tournier",
+     "Topham",
+     "Gilles"
+    ],
+    "author_count": 20,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.737702041.793587689"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Present estimates suggest that of the 359 million tons of plastics produced annually worldwide1, 150–200 million tons accumulate in landfill or in the natural environment2. Poly(ethylene terephthalate) (PET) is the most abundant polyester plastic, with almost 70 million tons manufactured annually wo",
+   "passages": [
+    "Article Published: 08 April 2020 An engineered PET depolymerase to break down and recycle plastic bottles V.",
+    "An engineered PET depolymerase to break down and recycle plastic bottles.",
+    "We acknowledge Carbios (Saint-Beauzire, France), CRITT Bio-Industries (Toulouse, France), Pivert (Venette, France) and Leitat Technological Center (Barcelona, Spain) for their contribution to the purification of the terephthalic acid and for PET and bottle production.",
+    "We also show that biologically recycled PET exhibiting the same properties as petrochemical PET can be produced from enzymatically depolymerized PET waste, before being processed into bottles, thereby contributing towards the concept of a circular PET economy.",
+    "We also thank the Structural Biophysics Team of the Institute of Pharmacology and Structural Biology (IPBS, Toulouse, France) for access to the crystallization facility, as well as the ALBA (Barcelona, Spain) and ESRF (Grenoble, France) synchrotrons for data collection.",
+    "Poly(ethylene terephthalate) (PET) is the most abundant polyester plastic, with almost 70 million tons manufactured annually worldwide for use in textiles and packaging3."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.carbios.com/en/",
+   "final_url": "https://www.carbios.com/en/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Home - Carbios",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-09-23"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "Carbios’ enzymatic PET recycling technology fully aligns with the European Commission’s ambition to advance circularity and reduce the environmental footprint of plastics.",
+    "Industry Apparel Technologies PET Biorecycling Explorer See all success stories EU LIFE program LIFE: Accelerating the deployment of enzymatic recycling in Europe The EU LIFE program, one of Europe’s largest environmental funding schemes, supports high‑impact innovations with strong industrial‑scale potential.",
+    "Resin Packaging waste – Reborn as safe, pure, and high-quality packaging Learn more about Resin Fiber Textile waste – Regenerated as strong, consistent and premium polyester."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

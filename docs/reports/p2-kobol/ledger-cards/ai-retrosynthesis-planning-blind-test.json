@@ -1,0 +1,360 @@
+{
+ "slug": "ai-retrosynthesis-planning-blind-test",
+ "title": "A neural-network program plans chemical syntheses that chemists rate as equal",
+ "first_published": "2018-03-28",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/nature25978",
+   "final_url": "https://www.nature.com/articles/nature25978?error=cookies_not_supported&code=b553484e-5625-4635-aa7a-22407c163fa8",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Planning chemical syntheses with deep neural networks and symbolic AI",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-02-28"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2018-03-29"
+    },
+    {
+     "source": "dc.date",
+     "date": "2018-03-29"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2018-03-29"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2018-03-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-03-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-08-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-01-31"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-02-28"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature25978",
+   "crossref": {
+    "doi": "10.1038/nature25978",
+    "resolves": true,
+    "title": "Planning chemical syntheses with deep neural networks and symbolic AI",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-3",
+    "authors_first3": [
+     "Segler",
+     "Preuss",
+     "Waller"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.732909768.793565016"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "To plan the syntheses of small organic molecules, chemists use retrosynthesis, a problem-solving technique in which target molecules are recursively transformed into increasingly simpler precursors. Computer-aided retrosynthesis would be a valuable tool but at present it is slow and provides results",
+   "passages": [
+    "Article Published: 29 March 2018 Planning chemical syntheses with deep neural networks and symbolic AI Marwin H.",
+    "Planning chemical syntheses with deep neural networks and symbolic AI.",
+    "These deep neural networks were trained on essentially all reactions ever published in organic chemistry.",
+    "Neural networks for video game AI.",
+    "In a double-blind AB test, chemists on average considered our computer-generated routes to be equivalent to reported literature routes.",
+    "Computer-assisted planning of organic syntheses: the second generation of programs."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/1708.04202",
+   "final_url": "https://arxiv.org/abs/1708.04202",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Learning to Plan Chemical Syntheses",
+   "title_match": "placeholder",
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2017-08-14"
+    },
+    {
+     "source": "citation_date",
+     "date": "2017-08-14"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-02-28"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature25978",
+   "crossref": {
+    "doi": "10.1038/nature25978",
+    "resolves": true,
+    "title": "Planning chemical syntheses with deep neural networks and symbolic AI",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-3",
+    "authors_first3": [
+     "Segler",
+     "Preuss",
+     "Waller"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.732909768.793565016"
+     ]
+    }
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1708.04202: Learning to Plan Chemical Syntheses",
+   "passages": [
+    "To plan their syntheses, chemists employ a problem solving technique called retrosynthesis.",
+    "These deep neural networks were trained on 12 million reactions, which represents essentially all reactions ever published in organic chemistry.",
+    "We anticipate that our method will accelerate drug and materials discovery by assisting chemists to plan better syntheses faster, and by enabling fully automated robot synthesis.",
+    "In retrosynthesis, target molecules are recursively transformed into increasingly simpler precursor compounds until a set of readily available starting materials is obtained.",
+    "Finally after a 60 year history of computer-aided synthesis planning, chemists can no longer distinguish between routes generated by a computer system and real routes taken from the scientific literature.",
+    "From medicines to materials, small organic molecules are indispensable for human well-being."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.uni-muenster.de/news/view.php?cmdid=9457",
+   "final_url": "https://www.uni-muenster.de/news/view.php?cmdid=9457",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Chemical synthesis with artificial intelligence: Researchers develop new computer method",
+   "title_match": false,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2018-03-29"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The news portal offers current information about studies, research and life at Münster University.",
+   "passages": [
+    "Mike Preuss, a business information specialist, at the University of Münster.",
+    "Mike Preuss, an information systems specialist and co-author of the study, summarizes it as follows, in a somewhat simplified way: “The deep neural networks are used for predicting which reactions are possible with a certain molecule.",
+    "Segler is a doctoral student at the Institute of Organic Chemistry, and Waller now works at the University of Shanghai in China.",
+    "“We hope that, using our method, chemists will not have to try out so much in the lab,” Segler adds, “and that as a result, and using fewer resources, they will be able to produce the compounds which make our high standard of living possible.”",
+    "Mark Waller, both chemists, carried out the study together with Dr.",
+    "Marwin Segler, the lead author of the study, puts it in a nutshell: “Retrosynthesis is the ultimate discipline in organic chemistry."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.nature.com/articles/d41586-018-03774-5",
+   "final_url": "https://www.nature.com/articles/d41586-018-03774-5?error=cookies_not_supported&code=fbaf734c-f7ad-4c47-ad76-910564244619",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AI designs organic syntheses",
+   "title_match": "placeholder",
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-02-28"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "dc.date",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-03-28"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-018-03774-5",
+   "crossref": {
+    "doi": "10.1038/d41586-018-03774-5",
+    "resolves": true,
+    "title": "AI designs organic syntheses",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-3-28",
+    "authors_first3": [
+     "Lowe"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "Software that devises effective schemes for synthetic chemistry has depended on the input of rules from researchers. A system is now reported in which an artificial-intelligence program learns the rules for itself.",
+   "passages": [
+    "But in a paper in Nature, Segler et al.1 report that an artificial-intelligence program can design routes for synthesizing compounds that — at least, on paper — seem just as good as those produced by humans.",
+    "News 19 NOV 26 How Singapore has turned a nation into a smart-city testing ground Nature Index 25 NOV 26 Can Beijing scale up its smart-city ambitions?",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,...",
+    "Rumoured ‘bombshell’ stuns scientists News Explainer 26 NOV 26 AI is ditching hallucinated references — and other bad habits News 19 NOV 26 AI is turbocharging cyberattacks — can computer scientists catch up?",
+    "A system is now reported in which an artificial-intelligence program learns the rules for itself."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://www.nature.com/articles/d41586-018-03774-5",
+   "final_url": "https://www.nature.com/articles/d41586-018-03774-5?error=cookies_not_supported&code=fbaf734c-f7ad-4c47-ad76-910564244619",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AI designs organic syntheses",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-02-28"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "dc.date",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-03-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-03-28"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-018-03774-5",
+   "crossref": {
+    "doi": "10.1038/d41586-018-03774-5",
+    "resolves": true,
+    "title": "AI designs organic syntheses",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-3-28",
+    "authors_first3": [
+     "Lowe"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "Software that devises effective schemes for synthetic chemistry has depended on the input of rules from researchers. A system is now reported in which an artificial-intelligence program learns the rules for itself.",
+   "passages": [
+    "But in a paper in Nature, Segler et al.1 report that an artificial-intelligence program can design routes for synthesizing compounds that — at least, on paper — seem just as good as those produced by humans.",
+    "Rumoured ‘bombshell’ stuns scientists News Explainer 26 NOV 26 AI is ditching hallucinated references — and other bad habits News 19 NOV 26 AI is turbocharging cyberattacks — can computer scientists catch up?",
+    "News 19 NOV 26 How Singapore has turned a nation into a smart-city testing ground Nature Index 25 NOV 26 Can Beijing scale up its smart-city ambitions?",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,...",
+    "A system is now reported in which an artificial-intelligence program learns the rules for itself."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

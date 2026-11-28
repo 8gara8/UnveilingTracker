@@ -1,0 +1,93 @@
+{
+ "slug": "computer-planned-natural-product-syntheses",
+ "title": "Software plans the synthesis of complex natural products, and chemists make them",
+ "first_published": "2020-10",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-020-2855-y",
+   "final_url": "https://www.nature.com/articles/s41586-020-2855-y?error=cookies_not_supported&code=a17f2f2c-8136-42ad-8dc5-c3ca02231368",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Computational planning of the synthesis of complex natural products",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-10-13"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-10-13"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-10-13"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-10-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-10-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-07-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-10-06"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-10-13"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-020-2855-y",
+   "crossref": {
+    "doi": "10.1038/s41586-020-2855-y",
+    "resolves": true,
+    "title": "Computational planning of the synthesis of complex natural products",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-10-13",
+    "authors_first3": [
+     "Mikulak-Klucznik",
+     "Gołębiowska",
+     "Bayly"
+    ],
+    "author_count": 16,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Training algorithms to computationally plan multistep organic syntheses has been a challenge for more than 50 years1–7. However, the field has progressed greatly since the development of early programs such as LHASA1,7, for which reaction choices at each step were made by human operators. Multiple s",
+   "passages": [
+    "Siitonen (Rice University), as well as four others, who prefer to remain anonymous.Author informationAuthors and AffiliationsInstitute of Organic Chemistry, Polish Academy of Sciences, Warsaw, PolandBarbara Mikulak-Klucznik, Patrycja Gołębiowska, Oskar Popik, Tomasz Klucznik, Sara Szymkuć, Ewa P.",
+    "Here we demonstrate that such computational synthesis planning is possible, provided that the program’s knowledge of organic chemistry and data-based artificial intelligence routines are augmented with causal relationships17,18, allowing it to ‘strategize’ over multiple synthetic steps.",
+    "Article Published: 13 October 2020 Computational planning of the synthesis of complex natural products Barbara Mikulak-Klucznik ORCID: orcid.org/0000-0001-5263-07311, Patrycja Gołębiowska1, Alison A.",
+    "Synthesis of tacamonidine was supported in part (B.M.-K., T.K., B.A.G.) by the National Science Center, NCN, Poland under the Symfonia Award (#2014/12/W/ST5/00592).",
+    "Synthesis of lamellodysidine A was supported in part (P.G., B.A.G.) by the National Science Center, NCN, Poland under the Maestro Award (#2018/30/A/ST5/00529).",
+    "Computational planning of the synthesis of complex natural products."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,171 @@
+{
+ "slug": "complete-human-genome-sequence-t2t",
+ "title": "First complete, gap-free sequence of a human genome published",
+ "first_published": "2021-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1126/science.abj6987",
+   "final_url": "https://www.science.org/doi/10.1126/science.abj6987",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-03-31"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.abj6987",
+   "crossref": {
+    "doi": "10.1126/science.abj6987",
+    "resolves": true,
+    "title": "The complete sequence of a human genome",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2022-4",
+    "authors_first3": [
+     "Nurk",
+     "Koren",
+     "Rhie"
+    ],
+    "author_count": 100,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.741879536.793594127"
+     ],
+     "has-preprint": [
+      "10.1101/2021.05.26.445798"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9186530/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9186530/",
+     "status": 200,
+     "readable": true,
+     "title_found": "The complete sequence of a human genome",
+     "title_match": true,
+     "date": "2022-03-30",
+     "passages": [
+      "The resulting T2T-CHM13 reference assembly removes a 20-year-old barrier that has hidden 8% of the genome from sequence-based analysis, including all centromeric regions and the entire short arms of five human chromosomes.",
+      "Cell line and sequencing As with many prior reference genome improvement efforts (1, 8, 17–20), including the T2T assemblies of human chromosomes X (14) and 8 (21), we targeted a complete hydatidiform mole for sequencing.",
+      "(D) Total non-gap bases in UCSC reference genome releases dating back to September 2000 (hg4) and ending with T2T-CHM13 in 2021.Long-read shotgun sequencing overcomes the limitations of BAC-based assembly and bypasses the challenges of structural polymorphism between genomes.",
+      "PMC Copyright notice PMCID: PMC9186530 NIHMSID: NIHMS1775562 PMID: 35357919 The publisher's version of this article is available at Science Abstract Since its initial release in 2000, the human reference genome has covered only the euchromatic fraction of the genome, leaving important heterochromatic regions unfinished.",
+      "Twenty years after the initial drafts, a truly complete sequence of a human genome reveals what has been missing.",
+      "The GRCh38 reference assembly contains 151 Mbp of unknown sequence distributed throughout the genome, including pericentromeric and subtelomeric regions, recent segmental duplications, ampliconic gene arrays, and ribosomal DNA (rDNA) arrays, all of which are necessary for fundamental cellular processes (Fig."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1038/s41586-023-05896-x",
+   "final_url": "https://www.nature.com/articles/s41586-023-05896-x?error=cookies_not_supported&code=52c32e37-da9c-469f-ad45-6c49ad36a46d",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A draft human pangenome reference",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-05-10"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-05-10"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-05-10"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-05-10"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-05-10"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-07-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-02-28"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-05-10"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-023-05896-x",
+   "crossref": {
+    "doi": "10.1038/s41586-023-05896-x",
+    "resolves": true,
+    "title": "A draft human pangenome reference",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-5-10",
+    "authors_first3": [
+     "Liao",
+     "Asri",
+     "Ebler"
+    ],
+    "author_count": 119,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1101/2022.07.09.499321"
+     ],
+     "has-review": [
+      "10.3410/f.742641394.793598748",
+      "10.3410/f.742641394.793599764"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Here the Human Pangenome Reference Consortium presents a first draft of the human pangenome reference. The pangenome contains 47 phased, diploid assemblies from a cohort of genetically diverse individuals1. These assemblies cover more than 99% of the expected sequence in each genome and are more tha",
+   "passages": [
+    "Here we sequence and assemble a set of diverse individual genomes and present a draft human pangenome, the first release from the Human Pangenome Reference Consortium (HPRC)15.",
+    "Recently, the Telomere-to-Telomere (T2T) consortium finished the first complete sequence of a haploid human genome, T2T-CHM13, which provides a contiguous representation of each autosome and of chromosome X, with the exception of some ribosomal DNA arrays that remain to be fully resolved3.",
+    "Genome assembly algorithms Genome informatics Genomics Haplotypes Genomic Analysis and Sequencing Technologies MainThe human reference genome has formed the backbone of human genomics since its initial draft release more than 20 years ago2.",
+    "This suggests that significant care must be taken when studying them, and new methods may need to be developed to fully understand and characterize this component of the human pangenome.A near-term application of pangenome references will be to improve reference-based sequence mapping workflows.",
+    "31).Improved RNA sequencing mappingTo evaluate the benefit of our pangenome reference on transcriptomics, we simulated RNA sequencing (RNA-seq) reads and mapped them to a pangenome and to a standard reference genome (Methods).",
+    "To find such regions, we lifted over the CHM13 HSat1, HSat2 and HSat3 annotation to each assembly by aligning the assembly contigs to the reference T2T-CHM13 (v.1.1) and GRCh38 (chromosome Y) and projecting the HSat coordinates back to the assembly (using python script project_blocks.py)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

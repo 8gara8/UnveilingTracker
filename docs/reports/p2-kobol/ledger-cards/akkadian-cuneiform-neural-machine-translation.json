@@ -1,0 +1,70 @@
+{
+ "slug": "akkadian-cuneiform-neural-machine-translation",
+ "title": "Neural network translates Akkadian cuneiform texts into English",
+ "first_published": "2023-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1093/pnasnexus/pgad096",
+   "final_url": "https://academic.oup.com/pnasnexus/article/doi/10.1093/pnasnexus/pgad096/7147349",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-04-30"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1093/pnasnexus/pgad096",
+   "crossref": {
+    "doi": "10.1093/pnasnexus/pgad096",
+    "resolves": true,
+    "title": "Translating Akkadian to English with neural machine translation",
+    "container": "PNAS Nexus",
+    "publisher": "Oxford University Press (OUP)",
+    "type": "journal-article",
+    "issued": "2023-5",
+    "authors_first3": [
+     "Gutherz",
+     "Gordin",
+     "Sáenz"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10153418/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10153418/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Translating Akkadian to English with neural machine translation",
+     "title_match": true,
+     "date": "2023-05-01",
+     "passages": [
+      "Jonathan Berant, School of Computer Sciences, Tel Aviv University, Tel Aviv 69978, Israel.Supplementary material Supplementary material is available at PNAS Nexus online.Funding This work was supported by the Ministry of Science and Technology grant 3-16464 (S.G.).",
+      "This paper presents a state of the art neural machine translation model for the automatic translation of Akkadian texts into English, from Unicode cuneiform glyphs and from transliterations of the cuneiform signs, achieving 36.52 and 37.47 Best Bilingual Evaluation Understudy 4 (BLEU4) scores, respectively.",
+      "Keywords: Babylonian heritage, cuneiform script, ancient low-resource language, Akkadian–English translation, machine translation, neural networks Significance Statement.",
+      "In this paper, we present the first neural machine translation (NMT) into English from Akkadian, one of the oldest yet better attested ancient languages (ca.",
+      "We show the high potential in assisting scholars and interested laypeople alike, by using natural language processing (NLP) methods such as convolutional neural networks (CNN), to automatically translate Akkadian from cuneiform Unicode glyphs directly to English (C2E) and from transliteration to English (T2E).",
+      "PT, proper translation; IT, improper translation; IH, intrinsic hallucination; and EH, extrinsic hallucination.Challenges in translating Akkadian There are several challenges in translating an ancient language like Akkadian."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

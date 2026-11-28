@@ -1,0 +1,82 @@
+{
+ "slug": "halicin-deep-learning-antibiotic-discovery",
+ "title": "Deep learning finds halicin, a new kind of antibiotic",
+ "first_published": "2020-02-20",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1016/j.cell.2020.01.021",
+   "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867420301021",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Redirecting",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2020-01-31"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1016/j.cell.2020.01.021",
+   "crossref": {
+    "doi": "10.1016/j.cell.2020.01.021",
+    "resolves": true,
+    "title": "A Deep Learning Approach to Antibiotic Discovery",
+    "container": "Cell",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2020-2",
+    "authors_first3": [
+     "Stokes",
+     "Yang",
+     "Swanson"
+    ],
+    "author_count": 20,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1016/j.cell.2020.04.001",
+      "type": "erratum",
+      "source": "publisher"
+     }
+    ],
+    "relation": {
+     "has-review": [
+      "10.3410/f.737402248.793571615",
+      "10.3410/f.737402248.793571477",
+      "10.3410/f.737402248.793576936"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8349178/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8349178/",
+     "status": 200,
+     "readable": true,
+     "title_found": "A deep learning approach to antibiotic discovery",
+     "title_match": true,
+     "date": "2020-02-19",
+     "passages": [
+      "Our deep neural network model works by building a molecular graph based on a specific property, in our case the inhibition of the growth of E. coli, using a directed message passing approach.",
+      "Next, we considered whether halicin might induce bacterial cell death against E. coli in a metabolically repressed, antibiotic-tolerant state (Balaban et al., 2019; Stokes et al., 2019a; 2019b).",
+      "We first trained a deep neural network model with empirical data analyzing E. coli growth inhibition by molecules from a widely available FDA-approved drug library supplemented with a modest natural product library, totalling 2,335 molecules.",
+      "Deep learning approaches could therefore enable us to expand our antibiotic arsenal and help outpace the dissemination of resistance.STAR METHODS LEAD CONTACT AND MATERIALS AVAILABILITY Further information and requests for resources and reagents should be directed to James J.",
+      "First, we trained a deep neural network model to predict growth inhibition of Escherichia coli using a collection of 2,335 molecules.",
+      "Brown, 2015; Kohanski et al., 2010), and so long as it is possible to gather a sufficient quantity of reproducible hit compounds from a primary screen, deep neural network approaches would be well-suited to predict additional molecules with the desired biological property."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

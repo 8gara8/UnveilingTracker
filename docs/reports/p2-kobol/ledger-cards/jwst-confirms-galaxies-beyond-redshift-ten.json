@@ -1,0 +1,276 @@
+{
+ "slug": "jwst-confirms-galaxies-beyond-redshift-ten",
+ "title": "JWST spectra confirm very early galaxies at redshifts above 10",
+ "first_published": "2022-12-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41550-023-01918-w",
+   "final_url": "https://www.nature.com/articles/s41550-023-01918-w?error=cookies_not_supported&code=6a0295d8-42b0-4053-a9f0-2ee462efd35c",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Spectroscopic confirmation of four metal-poor galaxies at z = 10.3–13.2",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-04-04"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-04-04"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-04-04"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-04-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-04-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-12-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-02-13"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-04-04"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41550-023-01918-w",
+   "crossref": {
+    "doi": "10.1038/s41550-023-01918-w",
+    "resolves": true,
+    "title": "Spectroscopic confirmation of four metal-poor galaxies at z = 10.3–13.2",
+    "container": "Nature Astronomy",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-4-4",
+    "authors_first3": [
+     "Curtis-Lake",
+     "Carniani",
+     "Cameron"
+    ],
+    "author_count": 59,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Finding and characterizing the first galaxies that illuminated the early universe at cosmic dawn is pivotal to understand the physical conditions and the processes that led to the formation of the first stars. In the first few months of operations, imaging from the James Webb Space Telescope (JWST) ",
+   "passages": [
+    "In the first few months of operations, imaging from the James Webb Space Telescope (JWST) has been used to identify tens of candidates of galaxies at redshift (z) greater than 10, less than 450 million years after the Big Bang.",
+    "Here we present spectroscopic confirmation and analysis of four galaxies unambiguously detected at redshift 10.3 ≤ z ≤ 13.2, previously selected from JWST Near Infrared Camera imaging.",
+    "On the ages of bright galaxies ~500 Myr after the Big Bang: insights into star formation activity at z≳15 with JWST.",
+    "B.R., B.D.J., D.J.E., M.R., E.E., C.N.A.W. and F.S. acknowledge support from the JWST/NIRCam Science Team contract to the University of Arizona, NAS5-02015.",
+    "Spectroscopic confirmation of four metal-poor galaxies at z = 10.3–13.2.",
+    "A long time ago in a galaxy far, far away: a candidate z ~12 galaxy in early JWST CEERS imaging."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2212.04568",
+   "final_url": "https://arxiv.org/abs/2212.04568",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Spectroscopic confirmation of four metal-poor galaxies at z=10.3-13.2",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-02-27"
+    },
+    {
+     "source": "citation_date",
+     "date": "2022-12-08"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2212.04568: Spectroscopic confirmation of four metal-poor galaxies at z=10.3-13.2",
+   "passages": [
+    "In the first few months of operations, imaging from the James Webb Space Telescope (JWST) have been used to identify tens of candidates of galaxies at redshift (z) greater than 10, less than 450 million years after the Big Bang.",
+    "Here we present spectroscopic confirmation and analysis of four galaxies unambiguously detected at redshift 10.3<z<13.2, previously selected from NIRCam imaging.",
+    "The spectra reveal that these primeval galaxies are extremely metal poor, have masses between 10^7 and a few times 10^8 solar masses, and young ages.",
+    "Finding and characterising the first galaxies that illuminated the early Universe at cosmic dawn is pivotal to understand the physical conditions and the processes that led to the formation of the first stars.",
+    "These findings demonstrate the rapid emergence of the first generations of galaxies at cosmic dawn.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.nature.com/articles/s41586-023-06521-7",
+   "final_url": "https://www.nature.com/articles/s41586-023-06521-7?error=cookies_not_supported&code=00f7b195-1619-424c-a7a3-5469ef5fe716",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Confirmation and refutation of very luminous galaxies in the early Universe",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-08-14"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-08-14"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-08-14"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-08-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-08-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-03-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-08-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-08-14"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-023-06521-7",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06521-7",
+    "resolves": true,
+    "title": "Confirmation and refutation of very luminous galaxies in the early Universe",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-8-14",
+    "authors_first3": [
+     "Arrabal Haro",
+     "Dickinson",
+     "Finkelstein"
+    ],
+    "author_count": 37,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "During the first 500 million years of cosmic history, the first stars and galaxies formed, seeding the Universe with heavy elements and eventually reionizing the intergalactic medium1–3. Observations with&nbsp;the&nbsp;James Webb Space Telescope (JWST) have uncovered a surprisingly high abundance of",
+   "passages": [
+    "Article Published: 14 August 2023 Confirmation and refutation of very luminous galaxies in the early Universe Pablo Arrabal Haro ORCID: orcid.org/0000-0002-7959-87831, Mark Dickinson ORCID: orcid.org/0000-0001-5414-51311, Steven L.",
+    "Observations with the James Webb Space Telescope (JWST) have uncovered a surprisingly high abundance of candidates for early star-forming galaxies, with distances (redshifts, z), estimated from multiband photometry, as large as z ≈ 16, far beyond pre-JWST limits4,5,6,7,8,9.",
+    "Confirmation and refutation of very luminous galaxies in the early Universe.",
+    "Early universe Galaxies and clusters Luminosity Functions and Star Formation in High-Redshift Galaxies Data availability The JWST NIRSpec data are available from the Mikulski Archive for Space Telescopes (MAST; http://archive.stsci.edu), under programme ID 2750.",
+    "JADES Imaging of GN-z11: revealing the morphology and environment of a luminous galaxy 430 Myr after the Big Bang.",
+    "A long time ago in a galaxy far, far away: a candidate z ~ 12 galaxy in early JWST CEERS imaging."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://arxiv.org/abs/2303.15431",
+   "final_url": "https://arxiv.org/abs/2303.15431",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Confirmation and refutation of very luminous galaxies in the early universe",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-08-16"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-03-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-08-14"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-023-06521-7",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06521-7",
+    "resolves": true,
+    "title": "Confirmation and refutation of very luminous galaxies in the early Universe",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-8-14",
+    "authors_first3": [
+     "Arrabal Haro",
+     "Dickinson",
+     "Finkelstein"
+    ],
+    "author_count": 37,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2303.15431: Confirmation and refutation of very luminous galaxies in the early universe",
+   "passages": [
+    "During the first 500 million years of cosmic history, the first stars and galaxies formed, seeding the Universe with heavy elements and eventually reionizing the intergalactic medium.",
+    "Observations with JWST have uncovered a surprisingly high abundance of candidates for early star-forming galaxies, with distances (redshifts, $z$), estimated from multi-band photometry, as large as $z\\approx 16$, far beyond pre-JWST limits.",
+    "These results reinforce evidence for the early, rapid formation of remarkably luminous galaxies, while also highlighting the necessity of spectroscopic verification.",
+    "The large abundance of bright, early galaxies may indicate shortcomings in current galaxy formation models, or deviation from physical properties (such as the stellar initial mass function) that are generally believed to hold at later times.",
+    "While generally robust, such photometric redshifts can suffer from degeneracies and occasionally catastrophic errors.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

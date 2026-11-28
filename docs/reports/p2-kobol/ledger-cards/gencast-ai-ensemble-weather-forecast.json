@@ -1,0 +1,131 @@
+{
+ "slug": "gencast-ai-ensemble-weather-forecast",
+ "title": "GenCast, an AI model, makes 15-day probabilistic forecasts in minutes",
+ "first_published": "2023-12",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-024-08252-9",
+   "final_url": "https://www.nature.com/articles/s41586-024-08252-9?error=cookies_not_supported&code=34171352-6465-476c-9f91-41cb1a180e1b",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Probabilistic weather forecasting with machine learning",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-12-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-12-04"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-12-04"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-12-04"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-12-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-12-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-04-30"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-10-18"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-12-04"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-024-08252-9",
+   "crossref": {
+    "doi": "10.1038/s41586-024-08252-9",
+    "resolves": true,
+    "title": "Probabilistic weather forecasting with machine learning",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-12-4",
+    "authors_first3": [
+     "Price",
+     "Sanchez-Gonzalez",
+     "Alet"
+    ],
+    "author_count": 12,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Weather forecasts are fundamentally uncertain, so predicting the range of probable weather scenarios is crucial for important decisions, from warning the public about hazardous weather to planning renewable energy use. Traditionally, weather forecasts have been based on numerical weather prediction ",
+   "passages": [
+    "GenCast generates an ensemble of stochastic 15-day global forecasts, at 12-h steps and 0.25° latitude–longitude resolution, for more than 80 surface and atmospheric variables, in 8 min.",
+    "Nonetheless, ENS—along with other NWP-based ensemble forecasts—is still prone to errors, is slow to run and is time-consuming to engineer.Recent advances in machine learning (ML)-based weather prediction (MLWP) have been shown to provide greater accuracy and efficiency than NWP for non-probabilistic forecasts2,3,13,14,15,16,17,18.",
+    "Code availability Code implementing GenCast is available as part of the GitHub (https://github.com/google-deepmind/graphcast) repository (DOI: 10.5281/zenodo.14261754), which also provides download links for both ERA5 and operational versions of the model weights.",
+    "Preprint at arxiv.org/abs/2312.03876 (2023).Li, H. et al. uXi: a cascade machine learning forecasting system for 15-day global weather forecast. npj Clim.",
+    "Here we introduce GenCast, a probabilistic weather model with greater skill and speed than the top operational medium-range weather forecast in the world, ENS, the ensemble forecast of the European Centre for Medium-Range Weather Forecasts4.",
+    "ENS of the European Centre for Medium-Range Weather Forecasting (ECMWF)4 is the state-of-the-art NWP-based ensemble forecast in the broader Integrated Forecast System of the ECMWF and will subsume their deterministic forecast, HRES, going forward12.ENS satisfies several key desiderata of a probabilistic weather model."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2312.15796",
+   "final_url": "https://arxiv.org/abs/2312.15796",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "GenCast: Diffusion-based ensemble forecasting for medium-range weather",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2024-05-01"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-12-25"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2312.15796: GenCast: Diffusion-based ensemble forecasting for medium-range weather",
+   "passages": [
+    "GenCast generates an ensemble of stochastic 15-day global forecasts, at 12-hour steps and 0.25 degree latitude-longitude resolution, for over 80 surface and atmospheric variables, in 8 minutes.",
+    "Here, we introduce GenCast, a probabilistic weather model with greater skill and speed than the top operational medium-range weather forecast in the world, the European Centre for Medium-Range Forecasts (ECMWF)'s ensemble forecast, ENS.",
+    "Weather forecasts are fundamentally uncertain, so predicting the range of probable weather scenarios is crucial for important decisions, from warning the public about hazardous weather, to planning renewable energy use.",
+    "Unlike traditional approaches, which are based on numerical weather prediction (NWP), GenCast is a machine learning weather prediction (MLWP) method, trained on decades of reanalysis data.",
+    "It has greater skill than ENS on 97.4% of 1320 targets we evaluated, and better predicts extreme weather, tropical cyclones, and wind power production.",
+    "This work helps open the next chapter in operational weather forecasting, where critical weather-dependent decisions are made with greater accuracy and efficiency."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+{
+ "slug": "steppe-ancestry-reshapes-europe-ancient-dna",
+ "title": "Ancient DNA shows steppe herders reshaped Europe's ancestry about 4,500 years ago",
+ "first_published": "2015-02",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/nature14317",
+   "final_url": "https://www.nature.com/articles/nature14317?error=cookies_not_supported&code=feae6bd6-be71-4c6c-9d2d-5c54bfa69b0c",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Massive migration from the steppe was a source for Indo-European languages in Europe",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2015-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2015-03-02"
+    },
+    {
+     "source": "dc.date",
+     "date": "2015-03-02"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2015-03-02"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2015-03-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-03-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2014-12-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-02-12"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-03-02"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature14317",
+   "crossref": {
+    "doi": "10.1038/nature14317",
+    "resolves": true,
+    "title": "Massive migration from the steppe was a source for Indo-European languages in Europe",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2015-3-2",
+    "authors_first3": [
+     "Haak",
+     "Lazaridis",
+     "Patterson"
+    ],
+    "author_count": 39,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1101/013433"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "A genome-wide analysis of 69 ancient Europeans reveals the history of population migrations around the time that Indo-European languages arose in Europe, when there was a large migration into Europe from the Eurasian steppe in the east (providing a genetic ancestry still present in Europeans today);",
+   "passages": [
+    "Western and Eastern Europe came into contact ∼4,500 years ago, as the Late Neolithic Corded Ware people from Germany traced ∼75% of their ancestry to the Yamnaya, documenting a massive migration into the heartland of Europe from its eastern periphery.",
+    "Massive migration from the steppe was a source for Indo-European languages in Europe.",
+    "By ∼6,000–5,000 years ago, farmers throughout much of Europe had more hunter-gatherer ancestry than their predecessors, but in Russia, the Yamnaya steppe herders of this time were descended not only from the preceding eastern European hunter-gatherers, but also from a population of Near Eastern ancestry.",
+    "Ancient DNA reveals prehistoric gene-flow from Siberia in the complex human population history of North East Europe.",
+    "At the beginning of the Neolithic period in Europe, ∼8,000–7,000 years ago, closely related groups of early farmers appeared in Germany, Hungary and Spain, different from indigenous hunter-gatherers, whereas Russia was inhabited by a distinctive population of hunter-gatherers with high affinity to a ∼24,000-year-old Siberian6.",
+    "The Human Origins genotype dataset including ancient individuals can be found at (http://genetics.med.harvard.edu/reichlab/Reich_Lab/Datasets.html)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.nature.com/articles/nature14507",
+   "final_url": "https://www.nature.com/articles/nature14507?error=cookies_not_supported&code=bfe66389-5612-44de-89d9-236878dcdac4",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Population genomics of Bronze Age Eurasia",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2015-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2015-06-10"
+    },
+    {
+     "source": "dc.date",
+     "date": "2015-06-10"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2015-06-10"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2015-06-10"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-06-10"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-02-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-05-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-06-10"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature14507",
+   "crossref": {
+    "doi": "10.1038/nature14507",
+    "resolves": true,
+    "title": "Population genomics of Bronze Age Eurasia",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2015-6-10",
+    "authors_first3": [
+     "Allentoft",
+     "Sikora",
+     "Sjögren"
+    ],
+    "author_count": 66,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The Bronze Age of Eurasia (around 3000–1000 BC) was a period of major cultural changes. However, there is debate about whether these changes resulted from the circulation of ideas or from human migrations, potentially also facilitating the spread of languages and certain phenotypic traits. We invest",
+   "passages": [
+    "We show that the Bronze Age was a highly dynamic period involving large-scale population migrations and replacements, responsible for shaping major parts of present-day demographic structure in both Europe and Asia.",
+    "Nature http://dx.doi.org/10.1038/nature14317 (this issue)Olalde, I. et al.",
+    "J., Haak, W., Donlon, D., Cooper, A. & The Genographic Consortium Survival and recovery of DNA from ancient teeth and bones.",
+    "Allentoft and Martin Sikora: These authors contributed equally to this work.Authors and AffiliationsCentre for GeoGenetics, Natural History Museum, University of Copenhagen, Øster Voldgade 5-7, 1350, Copenhagen K, DenmarkMorten E.",
+    "We investigated this by using new, improved methods to sequence low-coverage genomes from 101 ancient humans from across Eurasia.",
+    "Our findings are consistent with the hypothesized spread of Indo-European languages during the Early Bronze Age."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.biorxiv.org/content/10.1101/013433",
+   "final_url": "https://www.biorxiv.org/content/10.1101/013433v1",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Massive migration from the steppe is a source for Indo-European languages in Europe",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2015-01-01"
+    },
+    {
+     "source": "citation_date",
+     "date": "2015-02-10"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2015-02-10"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-02-10"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1101/013433",
+   "crossref": {
+    "doi": "10.1101/013433",
+    "resolves": true,
+    "title": "Massive migration from the steppe is a source for Indo-European languages in Europe",
+    "container": null,
+    "publisher": "openRxiv",
+    "type": "posted-content",
+    "issued": "2015-2-10",
+    "authors_first3": [
+     "Haak",
+     "Lazaridis",
+     "Patterson"
+    ],
+    "author_count": 39,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-preprint-of": [
+      "10.1038/nature14317"
+     ]
+    }
+   },
+   "type_found": "preprint",
+   "meta_description": "bioRxiv - the preprint server for biology, operated by openRxiv, a nonprofit organization dedicated to advancing scientific communication",
+   "passages": [
+    "Western and Eastern Europe came into contact ~4,500 years ago, as the Late Neolithic Corded Ware people from Germany traced ~3/4 of their ancestry to the Yamnaya, documenting a massive migration into the heartland of Europe from its eastern periphery.",
+    "By ~6,000-5,000 years ago, a resurgence of hunter-gatherer ancestry had occurred throughout much of Europe, but in Russia, the Yamnaya steppe herders of this time were descended not only from the preceding eastern European hunter-gatherers, but from a population of Near Eastern ancestry.",
+    "Enrichment of these positions decreases the sequencing required for genome-wide ancient DNA analysis by a median of around 250-fold, allowing us to study an order of magnitude more individuals than previous studies1–⇓⇓⇓⇓⇓⇓8 and to obtain new insights about the past.",
+    "We show that the populations of western and far eastern Europe followed opposite trajectories between 8,000-5,000 years ago.",
+    "This steppe ancestry persisted in all sampled central Europeans until at least ~3,000 years ago, and is ubiquitous in present-day Europeans.",
+    "These results provide support for the theory of a steppe origin9 of at least some of the Indo-European languages of Europe."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

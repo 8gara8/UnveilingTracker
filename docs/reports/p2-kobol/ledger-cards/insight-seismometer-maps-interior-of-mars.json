@@ -1,0 +1,199 @@
+{
+ "slug": "insight-seismometer-maps-interior-of-mars",
+ "title": "InSight's marsquake recordings give the first measured look inside Mars",
+ "first_published": "2021-07-22",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.science.org/doi/10.1126/science.abf8966",
+   "final_url": "https://www.science.org/doi/10.1126/science.abf8966",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-7-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.abf8966",
+   "crossref": {
+    "doi": "10.1126/science.abf8966",
+    "resolves": true,
+    "title": "Thickness and structure of the martian crust from InSight seismic data",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-7-23",
+    "authors_first3": [
+     "Knapmeyer-Endrun",
+     "Panning",
+     "Bissig"
+    ],
+    "author_count": 39,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.science.org/doi/10.1126/science.abf2966",
+   "final_url": "https://www.science.org/doi/10.1126/science.abf2966",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-7-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.abf2966",
+   "crossref": {
+    "doi": "10.1126/science.abf2966",
+    "resolves": true,
+    "title": "Upper mantle structure of Mars from InSight seismic data",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-7-23",
+    "authors_first3": [
+     "Khan",
+     "Ceylan",
+     "van Driel"
+    ],
+    "author_count": 30,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.science.org/doi/10.1126/science.abi7730",
+   "final_url": "https://www.science.org/doi/10.1126/science.abi7730",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-7-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.abi7730",
+   "crossref": {
+    "doi": "10.1126/science.abi7730",
+    "resolves": true,
+    "title": "Seismic detection of the martian core",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-7-23",
+    "authors_first3": [
+     "Stähler",
+     "Khan",
+     "Banerdt"
+    ],
+    "author_count": 41,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://doi.org/10.1073/pnas.2217090120",
+   "final_url": "https://pnas.org/doi/10.1073/pnas.2217090120",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-04-24"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1073/pnas.2217090120",
+   "crossref": {
+    "doi": "10.1073/pnas.2217090120",
+    "resolves": true,
+    "title": "First observations of core-transiting seismic phases on Mars",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2023-4-24",
+    "authors_first3": [
+     "Irving",
+     "Lekić",
+     "Durán"
+    ],
+    "author_count": 34,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10161042/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10161042/",
+     "status": 200,
+     "readable": true,
+     "title_found": "First observations of core-transiting seismic phases on Mars",
+     "title_match": true,
+     "date": "2023-04-23",
+     "passages": [
+      "10.1029/2020EA001317. [DOI] 56.Kim D., et al. , Potential pitfalls in the analysis and structural interpretation of seismic data from the Mars InSight mission.",
+      "Using seismic data gathered by the InSight mission, we have made the first observations of seismic waves traveling through Mars’ core.",
+      "These observations, made using seismic data collected by the InSight geophysical mission, have allowed us to construct the first seismically constrained models for the elastic properties of Mars’ core.",
+      "Khan et al., Upper mantle structure of Mars from InSight seismic data.",
+      "Drilleau et al., Marsquake locations and 1-D seismic models for Mars from InSight data.",
+      "Huang et al., Seismic detection of a deep mantle discontinuity within Mars by InSight."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

@@ -1,0 +1,207 @@
+{
+ "slug": "alphatensor-matrix-multiplication-algorithms",
+ "title": "AlphaTensor finds faster matrix multiplication schemes for some sizes",
+ "first_published": "2022-10-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-022-05172-4",
+   "final_url": "https://www.nature.com/articles/s41586-022-05172-4?error=cookies_not_supported&code=efbe3aa7-3eb6-4e63-8b3e-75074fb563a9",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Discovering faster matrix multiplication algorithms with reinforcement learning",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2022-10-05"
+    },
+    {
+     "source": "dc.date",
+     "date": "2022-10-05"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2022-10-05"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-10-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-10-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-10-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-08-02"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-10-05"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-022-05172-4",
+   "crossref": {
+    "doi": "10.1038/s41586-022-05172-4",
+    "resolves": true,
+    "title": "Discovering faster matrix multiplication algorithms with reinforcement learning",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2022-10-5",
+    "authors_first3": [
+     "Fawzi",
+     "Balog",
+     "Huang"
+    ],
+    "author_count": 13,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.742353014.793595962"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Improving the efficiency of algorithms for fundamental computations can have a widespread impact, as it can affect the overall speed of a large amount of computations. Matrix multiplication is one such primitive task, occurring in many systems—from neural networks to scientific computing routines. T",
+   "passages": [
+    "In particular, AlphaTensor finds an algorithm for multiplying 4 × 4 matrices using 47 multiplications in \\({{\\mathbb{Z}}}_{2}\\), thereby outperforming Strassen’s two-level algorithm2, which involves 72 = 49 multiplications.",
+    "Discovering faster matrix multiplication algorithms with reinforcement learning.",
+    "Here we report a deep reinforcement learning approach based on AlphaZero1 for discovering efficient and provably correct algorithms for the multiplication of arbitrary matrices.",
+    "We use AlphaTensor to find matrix multiplication algorithms over different arithmetics—namely, modular arithmetic (that is, multiplying matrices in the quotient ring \\({{\\mathbb{Z}}}_{2}\\)), and standard arithmetic (that is, multiplying matrices in \\({\\mathbb{R}}\\)).Figure 3 (left) shows the complexity (that is, rank) of the algorithms discovered by AlphaTensor.",
+    "Our agent goes beyond this limit, discovering decompositions matching or surpassing state-of-the-art for large tensors such as \\({{\\mathscr{T}}}_{5}\\).Analysing the symmetries of matrix multiplication algorithmsFrom a mathematical standpoint, the diverse algorithms discovered by AlphaTensor show that the space is richer than previously known.",
+    "It is noted that steps 6–9 do not involve any multiplications.Rapid tailored algorithm discoveryWe show a use-case where AlphaTensor finds practically efficient matrix multiplication algorithms, tailored to specific hardware, with zero prior hardware knowledge."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://deepmind.google/blog/discovering-novel-algorithms-with-alphatensor/",
+   "final_url": "https://deepmind.google/blog/discovering-novel-algorithms-with-alphatensor/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Discovering novel algorithms with AlphaTensor",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2022-10-05"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-10-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-11-30"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "In our paper, published today in Nature, we introduce AlphaTensor, the first artificial intelligence (AI) system for discovering novel, efficient, and provably correct algorithms for fundamental task…",
+   "passages": [
+    "Through learning, AlphaTensor gradually improves over time, re-discovering historical fast matrix multiplication algorithms such as Strassen’s, eventually surpassing the realm of human intuition and discovering algorithms faster than previously known.Single-player game played by AlphaTensor, where the goal is to find a correct matrix multiplication algorithm.",
+    "Building on the progress of human intuition, AlphaTensor discovered algorithms that are more efficient than the state of the art for many matrix sizes.",
+    "Leveraging this diversity, we adapted AlphaTensor to specifically find algorithms that are fast on a given hardware, such as Nvidia V100 GPU, and Google TPU v2.",
+    "These algorithms multiply large matrices 10-20% faster than the commonly used algorithms on the same hardware, which showcases AlphaTensor’s flexibility in optimising arbitrary objectives.AlphaTensor with an objective corresponding to the runtime of the algorithm.",
+    "By exploring the space of possible algorithms in a more effective way than previous approaches, AlphaTensor helps advance our understanding of the richness of matrix multiplication algorithms.",
+    "This sheds light on a 50-year-old open question in mathematics about finding the fastest way to multiply two matrices.This paper is a stepping stone in DeepMind’s mission to advance science and unlock the most fundamental problems using AI."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2212.01175",
+   "final_url": "https://arxiv.org/abs/2212.01175",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Flip Graphs for Matrix Multiplication",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2022-12-02"
+    },
+    {
+     "source": "citation_date",
+     "date": "2022-12-02"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2212.01175: Flip Graphs for Matrix Multiplication",
+   "passages": [
+    "We introduce a new method for discovering matrix multiplication schemes based on random walks in a certain graph, which we call the flip graph.",
+    "Using this method, we were able to reduce the number of multiplications for the matrix formats (4, 4, 5) and (5, 5, 5), both in characteristic two and for arbitrary ground fields."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2212.01175",
+   "final_url": "https://arxiv.org/abs/2212.01175",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Flip Graphs for Matrix Multiplication",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2022-12-02"
+    },
+    {
+     "source": "citation_date",
+     "date": "2022-12-02"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2212.01175: Flip Graphs for Matrix Multiplication",
+   "passages": [
+    "Using this method, we were able to reduce the number of multiplications for the matrix formats (4, 4, 5) and (5, 5, 5), both in characteristic two and for arbitrary ground fields.",
+    "We introduce a new method for discovering matrix multiplication schemes based on random walks in a certain graph, which we call the flip graph."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

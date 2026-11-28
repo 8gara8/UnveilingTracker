@@ -1,0 +1,124 @@
+{
+ "slug": "ultra-poor-graduation-trial-six-countries",
+ "title": "Aid bundle for the very poor raises incomes in six countries",
+ "first_published": "2015-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1126/science.1260799",
+   "final_url": "https://www.science.org/doi/10.1126/science.1260799",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2015-05-15"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.1260799",
+   "crossref": {
+    "doi": "10.1126/science.1260799",
+    "resolves": true,
+    "title": "A multifaceted program causes lasting progress for the very poor: Evidence from six countries",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2015-5-15",
+    "authors_first3": [
+     "Banerjee",
+     "Duflo",
+     "Goldberg"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1093/qje/qjx003",
+   "final_url": "https://academic.oup.com/qje/article/132/2/811/3075123",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2017-03-20"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1093/qje/qjx003",
+   "crossref": {
+    "doi": "10.1093/qje/qjx003",
+    "resolves": true,
+    "title": "Labor Markets and Poverty in Village Economies*",
+    "container": "The Quarterly Journal of Economics",
+    "publisher": "Oxford University Press (OUP)",
+    "type": "journal-article",
+    "issued": "2017-3-20",
+    "authors_first3": [
+     "Bandiera",
+     "Burgess",
+     "Das"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.nobelprize.org/prizes/economic-sciences/2019/summary/",
+   "final_url": "https://www.nobelprize.org/prizes/economic-sciences/2019/summary/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2019",
+   "title_match": "partial",
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2019 was awarded jointly to Abhijit Banerjee, Esther Duflo and Michael Kremer \"for their experimental approach to alleviating global poverty\"",
+   "passages": [
+    "28 Nov 2026. <https://www.nobelprize.org/prizes/economic-sciences/2019/summary/> Go to the top of the page Nobel Prizes and laureates Nobel Prizes 2019 Fifteen laureates were awarded in 2019, for achievements that have conferred the greatest benefit to humankind.",
+    "Explore prizes and laureates Look for popular awards and laureates in different fields, and discover the history of the Nobel Prize.",
+    "The prize-awarding institutions For more than a century, these academic institutions have worked independently to select Nobel Prize laureates.",
+    "Outreach organisations Several outreach organisations and activities have been developed to inspire generations and disseminate knowledge about the Nobel Prize.",
+    "Their work and discoveries range from how cells adapt to changes in levels of oxygen to our ability to fight global poverty.",
+    "Nobel Prizes 2026 Six prizes were awarded for achievements that have conferred the greatest benefit to humankind."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "slug": "gluon-amplitudes-nonzero-ai-conjecture",
+ "title": "AI conjectures a formula that shows single-minus gluon amplitudes are nonzero",
+ "first_published": "2026-02-12",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2602.12176",
+   "final_url": "https://arxiv.org/abs/2602.12176",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Single-minus gluon tree amplitudes are nonzero",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-03-09"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-02-12"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2602.12176: Single-minus gluon tree amplitudes are nonzero",
+   "passages": [
+    "Single-minus tree-level $n$-gluon scattering amplitudes are reconsidered.",
+    "We derive a piecewise-constant closed-form expression for the decay of a single minus-helicity gluon into $n-1$ plus-helicity gluons as a function of their momenta.",
+    "This formula nontrivially satisfies multiple consistency conditions including Weinberg's soft theorem."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://openai.com/index/new-result-theoretical-physics/",
+   "final_url": "https://openai.com/index/new-result-theoretical-physics/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "GPT-5.2 derives a new result in theoretical physics",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-20"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "A new preprint shows GPT-5.2 proposing a new formula for a gluon amplitude, later formally proved and verified by OpenAI and academic collaborators.",
+   "passages": [
+    "(39) in the preprint, was first conjectured by GPT‑5.2 Pro.",
+    "It was also checked against the soft theorem, which constrains how amplitudes behave when a particle becomes soft.With the help of GPT‑5.2, these amplitudes have already been extended from gluons to gravitons, and other generalizations are also on their way.",
+    "This preprint felt like a glimpse into the future of AI-assisted science, with physicists working hand-in-hand with AI to generate and validate new insights.",
+    "A scattering amplitude is the quantity physicists use to compute the probability that particles interact in a particular way.",
+    "These simplifications have repeatedly revealed deeper structure in quantum field theory, the framework that provides a description of physics that unifies special relativity with quantum mechanics.One case, however, has generally been treated as absent (having zero amplitude).",
+    "The human authors worked out the amplitudes for integer n n n up to n=6 n=6 n=6 by hand, obtaining very complicated expressions shown in Eqs."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2603.26609",
+   "final_url": "https://arxiv.org/abs/2603.26609",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "$\\mathcal{N}=4$ single-minus superamplitudes and dual superconformal symmetry",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-10-12"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-03-27"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2603.26609: $\\mathcal{N}=4$ single-minus superamplitudes and dual superconformal symmetry",
+   "passages": [
+    "The superamplitude factorises into a permutation-invariant measure $\\Delta^{(n-1)}$ with uniform little-group weight that imposes the half-collinearity constraint, a piecewise constant stripped amplitude $\\tilde{A}_{1\\ldots n}$ that is helicity blind and dual conformal invariant, and (super)momentum conservation delta functions.",
+    "We prove dual superconformal covariance of the $n$-point superamplitude, and further analyse the $\\mathrm{Gr}(k,n)$ Grassmannian integral at $k=1$.",
+    "We construct the $\\mathcal{N}=4$ supersymmetric completion of the recently proposed single-minus gluon amplitudes in $(2,2)$ signature, which are nonvanishing for all multiplicities on a half-collinear kinematic locus.",
+    "For $n=3$, our superamplitude reduces to the known $\\overline{\\rm MHV}$ superamplitude.",
+    "Finally, we present the corresponding single-minus superamplitude in $\\mathcal{N}=8$ supergravity."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://openai.com/index/new-result-theoretical-physics/",
+   "final_url": "https://openai.com/index/new-result-theoretical-physics/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "GPT-5.2 derives a new result in theoretical physics",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-20"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "A new preprint shows GPT-5.2 proposing a new formula for a gluon amplitude, later formally proved and verified by OpenAI and academic collaborators.",
+   "passages": [
+    "This preprint felt like a glimpse into the future of AI-assisted science, with physicists working hand-in-hand with AI to generate and validate new insights.",
+    "A scattering amplitude is the quantity physicists use to compute the probability that particles interact in a particular way.",
+    "The human authors worked out the amplitudes for integer n n n up to n=6 n=6 n=6 by hand, obtaining very complicated expressions shown in Eqs.",
+    "These simplifications have repeatedly revealed deeper structure in quantum field theory, the framework that provides a description of physics that unifies special relativity with quantum mechanics.One case, however, has generally been treated as absent (having zero amplitude).",
+    "When one gluon has negative helicity (meaning one of the two possible spin orientations a massless particle can have) and the remaining n−1 n-1 n−1 gluons have positive helicity, standard textbook arguments suggest that the corresponding tree-level amplitude must be zero.",
+    "(39) in the preprint, was first conjectured by GPT‑5.2 Pro."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

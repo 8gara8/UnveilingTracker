@@ -1,0 +1,237 @@
+{
+ "slug": "gw150914-first-gravitational-waves",
+ "title": "LIGO detects gravitational waves from two merging black holes",
+ "first_published": "2016-02-11",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1103/PhysRevLett.116.061102",
+   "final_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.116.061102",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Observation of Gravitational Waves from a Binary Black Hole Merger",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2016-02-11"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2016-02-11"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2016-02-11"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1103/physrevlett.116.061102",
+   "crossref": {
+    "doi": "10.1103/physrevlett.116.061102",
+    "resolves": true,
+    "title": "Observation of Gravitational Waves from a Binary Black Hole Merger",
+    "container": "Physical Review Letters",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2016-2-11",
+    "authors_first3": [
+     "Abbott",
+     "Abbott",
+     "Abbott"
+    ],
+    "author_count": 1012,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Gravitational waves emitted by the merger of two black holes have been detected, setting the course for a new era of observational astrophysics.",
+   "passages": [
+    "In the source frame, the initial black hole masses are 36−4+5M⊙ and 29−4+4M⊙, and the final black hole mass is 62−4+4M⊙, with 3.0−0.5+0.5M⊙c2 radiated in gravitational waves.",
+    "116, 061102 – Published 11 February, 2016DOI: https://doi.org/10.1103/PhysRevLett.116.061102 Export CitationShow metricsHide metricsAbstractOn September 14, 2015 at 09:50:45 UTC the two detectors of the Laser Interferometer Gravitational-Wave Observatory simultaneously observed a transient gravitational-wave signal.",
+    "It is your responsibility to obtain the proper permission from the rights holder directly for these figures.Export citationExport citationChoose format for download:BibTeXEndNote (RIS)Download CitationFeatured in PhysicsEditors' SuggestionOpen AccessObservation of Gravitational Waves from a Binary Black Hole MergerB.",
+    "It matches the waveform predicted by general relativity for the inspiral and merger of a pair of black holes and the ringdown of the resulting single black hole.",
+    "These observations demonstrate the existence of binary stellar-mass black hole systems.",
+    "Weiss, Laser Interferometer Gravitational-wave Observatory (LIGO) Technical Report, 1989, https://dcc.ligo.org/LIGO-M890001/public/main."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/1602.03837",
+   "final_url": "https://arxiv.org/abs/1602.03837",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Observation of Gravitational Waves from a Binary Black Hole Merger",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2016-02-11"
+    },
+    {
+     "source": "citation_date",
+     "date": "2016-02-11"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2016-02-11"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1103/physrevlett.116.061102",
+   "crossref": {
+    "doi": "10.1103/physrevlett.116.061102",
+    "resolves": true,
+    "title": "Observation of Gravitational Waves from a Binary Black Hole Merger",
+    "container": "Physical Review Letters",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2016-2-11",
+    "authors_first3": [
+     "Abbott",
+     "Abbott",
+     "Abbott"
+    ],
+    "author_count": 1012,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1602.03837: Observation of Gravitational Waves from a Binary Black Hole Merger",
+   "passages": [
+    "This is the first direct detection of gravitational waves and the first observation of a binary black hole merger.",
+    "In the source frame, the initial black hole masses are $36^{+5}_{-4} M_\\odot$ and $29^{+4}_{-4} M_\\odot$, and the final black hole mass is $62^{+4}_{-4} M_\\odot$, with $3.0^{+0.5}_{-0.5} M_\\odot c^2$ radiated in gravitational waves.",
+    "It matches the waveform predicted by general relativity for the inspiral and merger of a pair of black holes and the ringdown of the resulting single black hole.",
+    "All uncertainties define 90% credible this http URL observations demonstrate the existence of binary stellar-mass black hole systems.",
+    "On September 14, 2015 at 09:50:45 UTC the two detectors of the Laser Interferometer Gravitational-Wave Observatory simultaneously observed a transient gravitational-wave signal.",
+    "The signal sweeps upwards in frequency from 35 to 250 Hz with a peak gravitational-wave strain of $1.0 \\times 10^{-21}$."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.nobelprize.org/prizes/physics/2017/press-release/",
+   "final_url": "https://www.nobelprize.org/prizes/physics/2017/press-release/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Nobel Prize in Physics 2017",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The Nobel Prize in Physics 2017 was divided, one half awarded to Rainer Weiss, the other half jointly to Barry C. Barish and Kip S. Thorne \"for decisive contributions to the LIGO detector and the observation of gravitational waves\"",
+   "passages": [
+    "Thorne LIGO/VIRGO Collaboration “for decisive contributions to the LIGO detector and the observation of gravitational waves” Gravitational waves finally captured On 14 September 2015, the universe’s gravitational waves were observed for the very first time.",
+    "Feynman Professor of Theoretical Physics, California Institute of Technology, Pasadena, CA, USA https://www.its.caltech.edu/~kip/index.html/ LIGO/VIRGO COLLABORATION www.ligo.org Prize amount: 9 million Swedish krona.",
+    "The waves, which were predicted by Albert Einstein a hundred years ago, came from a collision between two black holes.",
+    "The 2017 Nobel Laureates have, with their enthusiasm and determination, each been invaluable to the success of LIGO.",
+    "Early on, both Kip Thorne and Rainer Weiss were firmly convinced that gravitational waves could be detected and bring about a revolution in our knowledge of the universe.",
+    "It took 1.3 billion years for the waves to arrive at the LIGO detector in the USA."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://www.nature.com/articles/nature17306",
+   "final_url": "https://www.nature.com/articles/nature17306?error=cookies_not_supported&code=ca793d92-35f4-45d0-84e3-068438563df6",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Dawn of a new astronomy",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2016-02-29"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2016-02-24"
+    },
+    {
+     "source": "dc.date",
+     "date": "2016-02-24"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2016-02-24"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2016-02-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-02-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-02-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-03-03"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2016-02-24"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature17306",
+   "crossref": {
+    "doi": "10.1038/nature17306",
+    "resolves": true,
+    "title": "Dawn of a new astronomy",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2016-2-24",
+    "authors_first3": [
+     "Miller"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "BriefCommunication"
+   },
+   "meta_description": "The discovery of gravitational waves from a merging black-hole system opens a window on the Universe that promises to test gravity at its strongest, and to reveal many surprises about black holes and other astrophysical systems.",
+   "passages": [
+    "Astronomy and astrophysics Cosmology Gravitational Wave Detection and Analysis Notes See all news & views ReferencesEinstein, A.",
+    "He has never been a member of the LIGO or Virgo scientific collaborations.",
+    "M.C.M. was the chair of the LIGO Program Advisory Committee during 2010–14, and a member of the same committee for three years before that.",
+    "Explore related subjects Discover the latest articles and news in related subjects.",
+    "Preprint at http://arxiv.org/abs/1602.03841 (2016).Kreidberg, L., Bailyn, C."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

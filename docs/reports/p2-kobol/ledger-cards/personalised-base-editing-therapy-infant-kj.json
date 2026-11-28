@@ -1,0 +1,70 @@
+{
+ "slug": "personalised-base-editing-therapy-infant-kj",
+ "title": "First custom base-editing therapy treats an infant with a rare metabolic disease",
+ "first_published": "2025-05-15",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1056/NEJMoa2504747",
+   "final_url": "https://www.nejm.org/doi/10.1056/NEJMoa2504747",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2025-06-12"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1056/nejmoa2504747",
+   "crossref": {
+    "doi": "10.1056/nejmoa2504747",
+    "resolves": true,
+    "title": "Patient-Specific In Vivo Gene Editing to Treat a Rare Genetic Disease",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2025-6-12",
+    "authors_first3": [
+     "Musunuru",
+     "Grandinette",
+     "Wang"
+    ],
+    "author_count": 45,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12713542/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12713542/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Patient-Specific In Vivo Gene Editing to Treat a Rare Genetic Disease",
+     "title_match": true,
+     "date": "2025-05-14",
+     "passages": [
+      "Patient-customized oligonucleotide therapy for a rare genetic disease.",
+      "We developed a customized base-editing therapy, starting immediately after a neonate was diagnosed with severe carbamoyl phosphate synthetase 1 deficiency, a disease with an estimated 50% mortality in early infancy.",
+      "Immediately upon learning of the patient’s genetic diagnosis, we started generating mouse models to assess the in vivo editing efficiency of k-abe.",
+      "PMC Copyright notice PMCID: PMC12713542 NIHMSID: NIHMS2124718 PMID: 40373211 The publisher's version of this article is available at N Engl J Med SUMMARY Base editors can correct disease-causing genetic variants.",
+      "Subsequent validation of in vivo corrective editing using a second mouse model, with the Q335X variant introduced into the endogenous mouse Cps1 locus, is described in the Supplementary Appendix (Fig.",
+      "Like antisense oligonucleotides,24,25 corrective gene editing lends itself to rapid customization for individual patients due to the platform nature of the technology.9 Shared components among gene-editing therapies could include the same lipid nanoparticle formulation and mRNA, with the gRNA customized to each patient’s variant."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

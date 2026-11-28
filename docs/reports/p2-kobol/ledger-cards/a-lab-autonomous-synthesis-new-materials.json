@@ -1,0 +1,249 @@
+{
+ "slug": "a-lab-autonomous-synthesis-new-materials",
+ "title": "An AI-guided robot lab reports making 41 new inorganic materials",
+ "first_published": "2023-11-29",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-023-06734-w",
+   "final_url": "https://www.nature.com/articles/s41586-023-06734-w?error=cookies_not_supported&code=e93b8d30-2c58-4e69-8f68-fa704f6f7071",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An autonomous laboratory for the accelerated synthesis of inorganic materials",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-05-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-10-10"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-11-29"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-06734-w",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06734-w",
+    "resolves": true,
+    "title": "An autonomous laboratory for the accelerated synthesis of inorganic materials",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-11-29",
+    "authors_first3": [
+     "Szymanski",
+     "Rendy",
+     "Fei"
+    ],
+    "author_count": 16,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41586-025-09992-y",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "To close the gap between the rates of computational screening and experimental realization of novel materials1,2, we introduce the A-Lab, an autonomous laboratory for the solid-state synthesis of inorganic powders. This platform uses computations, historical data from the literature, machine learnin",
+   "passages": [
+    "Over 17 days of continuous operation, the A-Lab realized 36 compounds from a set of 57 targets including a variety of oxides and phosphates that were identified using large-scale ab initio phase-stability data from the Materials Project and Google DeepMind.",
+    "An autonomous laboratory for the accelerated synthesis of inorganic materials.",
+    "Over 17 days of operation, the A-Lab successfully synthesized 36 of 57 target materials that span 33 elements and 40 structural prototypes (Supplementary Fig.",
+    "4: Barriers to the synthesis of materials predicted to be stable.Full size imageThe 17 target materials that could not be synthesized by the A-Lab, for which each is categorized by the feature that complicates its synthesis.",
+    "However, these reports were not included in the algorithms that the A-Lab uses to design its initial guess for a synthesis recipe.The algorithm we used for identifying potential synthesis targets is available on GitHub (https://github.com/mattmcdermott/novel-materials-screening).",
+    "All target materials considered in this work are new to the lab, that is, not present in the training data for the algorithms it uses to propose synthesis recipes (Methods)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10700133",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10700133/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An autonomous laboratory for the accelerated synthesis of inorganic materials",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-11-28"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-11-29"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-06734-w",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06734-w",
+    "resolves": true,
+    "title": "An autonomous laboratory for the accelerated synthesis of inorganic materials",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-11-29",
+    "authors_first3": [
+     "Szymanski",
+     "Rendy",
+     "Fei"
+    ],
+    "author_count": 16,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41586-025-09992-y",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "To close the gap between the rates of computational screening and experimental realization of novel materials1,2, we introduce the A-Lab, an autonomous laboratory for the solid-state synthesis of inorganic powders. This platform uses computations, ...",
+   "passages": [
+    "Gerbrand Ceder, Email: gceder@berkeley.edu.Extended data is available for this paper at 10.1038/s41586-023-06734-w.Supplementary information The online version contains supplementary material available at 10.1038/s41586-023-06734-w.References 1.Jain, A., Shin, Y. & Persson, K.",
+    "Over 17 days of continuous operation, the A-Lab realized 36 compounds from a set of 57 targets including a variety of oxides and phosphates that were identified using large-scale ab initio phase-stability data from the Materials Project and Google DeepMind.",
+    "Here we present the A-Lab, an autonomous laboratory that integrates robotics with the use of ab initio databases, ML-driven data interpretation, synthesis heuristics learned from text-mined literature data and active learning to optimize the synthesis of inorganic materials in powder form.",
+    "Abstract To close the gap between the rates of computational screening and experimental realization of novel materials1,2, we introduce the A-Lab, an autonomous laboratory for the solid-state synthesis of inorganic powders.",
+    "Given a set of air-stable target materials (that is, desired synthesis products whose yield we aim to maximize) screened using the Materials Project14, the A-Lab generates synthesis recipes using ML models trained on historical data from the literature and then performs these recipes with robotics.",
+    "Over 17 days of operation, the A-Lab successfully synthesized 36 of 57 target materials that span 33 elements and 40 structural prototypes (Supplementary Fig."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://newscenter.lbl.gov/2023/04/17/meet-the-autonomous-lab-of-the-future/",
+   "final_url": "https://newscenter.lbl.gov/2023/04/17/meet-the-autonomous-lab-of-the-future/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Meet the Autonomous Lab of the Future",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2023-04-17"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-04-17"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-04-17"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Robots operate instruments and artificial intelligence makes decisions to find useful new materials at the A-Lab",
+   "passages": [
+    "“Our vision is using AI to discover the materials of the future,” said Yan Zeng, a staff scientist leading the A-Lab at the Department of Energy’s Lawrence Berkeley National Laboratory (Berkeley Lab).",
+    "Berkeley Lab is a multiprogram national laboratory, managed by the University of California for the U.S.",
+    "Scientists are also building out integrations with other projects, such as MaterialSynthesis.org, and leveraging x-rays from Berkeley Lab’s powerful synchrotron, the Advanced Light Source.",
+    "That will not only give us a handful of useful new materials, but also train our models to make better predictions that can guide future science.”",
+    "Enter A-Lab, which can process 50 to 100 times as many samples as a human every day and use AI to quickly pursue promising finds.",
+    "The system at A-Lab is designed as a “closed-loop,” where decision making is handled without human interference."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://chemrxiv.org/engage/chemrxiv/article-details/65957d349138d231611ad8f7",
+   "final_url": "https://chemrxiv.org/engage/chemrxiv/article-details/65957d349138d231611ad8f7",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": false,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://chemrxiv.org/engage/chemrxiv/article-details/65957d349138d231611ad8f7",
+   "final_url": "https://chemrxiv.org/engage/chemrxiv/article-details/65957d349138d231611ad8f7",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "slug": "linear-elamite-script-deciphered",
+ "title": "Linear Elamite, a 4,000-year-old Iranian script, is deciphered",
+ "first_published": "2022",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": null,
+   "final_url": null,
+   "status": null,
+   "readable": false,
+   "reason": "no url",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.1515/za-2022-0003",
+      "title": "<b>The Decipherment of Linear Elamite Writing</b>",
+      "container": "Zeitschrift für Assyriologie und vorderasiatische Archäologie",
+      "date": "2022-7-1",
+      "score": 175.87419
+     },
+     {
+      "doi": "10.2307/jj.20785734.12",
+      "title": "Le déchiffrement de l’élamite linéaire, un système d’écriture iranien du 3e millénaire av. J.-C.",
+      "container": "Dechiffrements / Decipherments",
+      "date": "2022-10-10",
+      "score": 61.954742
+     },
+     {
+      "doi": "10.1515/za-2025-0012",
+      "title": "New Radiocarbon Evidence from Shahdad and the Earliest Datable Linear Elamite Text",
+      "container": "Zeitschrift für Assyriologie und vorderasiatische Archäologie",
+      "date": "2025-11-26",
+      "score": 53.52717
+     }
+    ],
+    "arxiv": []
+   },
+   "resolved_to": "https://doi.org/10.1515/za-2022-0003",
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "slug": "creating-moves-to-opportunity-voucher-trial",
+ "title": "Housing voucher counselling moves families to high-opportunity neighbourhoods",
+ "first_published": "2019-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": null,
+   "final_url": null,
+   "status": null,
+   "readable": false,
+   "reason": "no url",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.3386/w26164",
+      "title": "Creating Moves to Opportunity: Experimental Evidence on Barriers to Neighborhood Choice",
+      "container": null,
+      "date": "2019-8",
+      "score": 137.43903
+     },
+     {
+      "doi": "10.1257/aer.20200407",
+      "title": "Creating Moves to Opportunity: Experimental Evidence on Barriers to Neighborhood Choice",
+      "container": "American Economic Review",
+      "date": "2024-5-1",
+      "score": 125.51324
+     },
+     {
+      "doi": "10.1257/rct.2807-3.0",
+      "title": "Creating Moves to Opportunity in Seattle and King County",
+      "container": "AEA Randomized Controlled Trials",
+      "date": "2018-3-28",
+      "score": 93.1812
+     }
+    ],
+    "arxiv": []
+   },
+   "resolved_to": "https://doi.org/10.3386/w26164",
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": null,
+   "final_url": null,
+   "status": null,
+   "readable": false,
+   "reason": "no url",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.3386/w26164",
+      "title": "Creating Moves to Opportunity: Experimental Evidence on Barriers to Neighborhood Choice",
+      "container": null,
+      "date": "2019-8",
+      "score": 78.59235
+     },
+     {
+      "doi": "10.1257/rct.2807-1.0",
+      "title": "Creating Moves to Opportunity in Seattle and King County",
+      "container": "AEA Randomized Controlled Trials",
+      "date": "2018-3-28",
+      "score": 67.46478
+     },
+     {
+      "doi": "10.1257/rct.2807-3.0",
+      "title": "Creating Moves to Opportunity in Seattle and King County",
+      "container": "AEA Randomized Controlled Trials",
+      "date": "2018-3-28",
+      "score": 67.382256
+     }
+    ],
+    "arxiv": []
+   },
+   "resolved_to": null,
+   "verdict": "unresolved"
+  }
+ ]
+}

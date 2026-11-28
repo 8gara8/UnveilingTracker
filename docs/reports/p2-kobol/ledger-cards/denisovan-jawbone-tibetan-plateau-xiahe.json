@@ -1,0 +1,137 @@
+{
+ "slug": "denisovan-jawbone-tibetan-plateau-xiahe",
+ "title": "Denisovan jawbone found on the Tibetan plateau, far from Siberia",
+ "first_published": "2019-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-019-1139-x",
+   "final_url": "https://www.nature.com/articles/s41586-019-1139-x?error=cookies_not_supported&code=27078ec7-ec5c-47ac-a1aa-eda7318fec59",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A late Middle Pleistocene Denisovan mandible from the Tibetan Plateau",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2019-05-01"
+    },
+    {
+     "source": "dc.date",
+     "date": "2019-05-01"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2019-05-01"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2019-05-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-05-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-12-10"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-03-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-04-30"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-019-1139-x",
+   "crossref": {
+    "doi": "10.1038/s41586-019-1139-x",
+    "resolves": true,
+    "title": "A late Middle Pleistocene Denisovan mandible from the Tibetan Plateau",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-5",
+    "authors_first3": [
+     "Chen",
+     "Welker",
+     "Shen"
+    ],
+    "author_count": 19,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Denisovans are members of a hominin group who are currently only known directly from fragmentary fossils, the genomes of which have been studied from a single site, Denisova Cave1–3 in Siberia. They are also known indirectly from their genetic legacy through gene flow into several low-altitude East ",
+   "passages": [
+    "Letter Published: 01 May 2019 A late Middle Pleistocene Denisovan mandible from the Tibetan Plateau Fahu Chen1,2 na1, Frido Welker2,3,4 na1, Chuan-Chou Shen5,6 na1, Shara E.",
+    "Here we report a Denisovan mandible, identified by ancient protein analysis9,10, found on the Tibetan Plateau in Baishiya Karst Cave, Xiahe, Gansu, China.",
+    "A late Middle Pleistocene Denisovan mandible from the Tibetan Plateau.",
+    "F.H.C., F.W., J.-J.H., D.J.Z. and C.-C.S. wrote the paper with contributions of all authors.Corresponding authorsCorrespondence to Fahu Chen, Dongju Zhang or Jean-Jacques Hublin.Ethics declarations Competing interests The authors declare no competing interests.",
+    "Our results indicate that archaic hominins occupied the Tibetan Plateau in the Middle Pleistocene epoch and successfully adapted to high-altitude hypoxic environments long before the regional arrival of modern Homo sapiens.",
+    "Archaeology Biological anthropology Evolutionary genetics Prehistoric Human Occupation of the Tibetan Plateau Data availability All the proteomic mass spectrometry data have been deposited in the ProteomeXchange Consortium repository (http://www.proteomexchange.org/) with the identifier PXD011377."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1126/science.abb6320",
+   "final_url": "https://www.science.org/doi/10.1126/science.abb6320",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2020-10-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.abb6320",
+   "crossref": {
+    "doi": "10.1126/science.abb6320",
+    "resolves": true,
+    "title": "Denisovan DNA in Late Pleistocene sediments from Baishiya Karst Cave on the Tibetan Plateau",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2020-10-30",
+    "authors_first3": [
+     "Zhang",
+     "Xia",
+     "Chen"
+    ],
+    "author_count": 27,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

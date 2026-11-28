@@ -1,0 +1,204 @@
+{
+ "slug": "alphamissense-predicts-harm-of-missense-variants",
+ "title": "AlphaMissense rates 71 million possible protein-changing DNA variants",
+ "first_published": "2023-09-19",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37733863/",
+   "final_url": "https://pubmed.ncbi.nlm.nih.gov/37733863/",
+   "status": 203,
+   "readable": false,
+   "reason": "203 cookie wall (record read through esummary)",
+   "title_found": "Accurate proteome-wide missense variant effect prediction with AlphaMissense.",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "esummary sortpubdate",
+     "date": "2023-09-22"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-9-22"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.adg7492",
+   "crossref": {
+    "doi": "10.1126/science.adg7492",
+    "resolves": true,
+    "title": "Accurate proteome-wide missense variant effect prediction with AlphaMissense",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2023-9-22",
+    "authors_first3": [
+     "Cheng",
+     "Novati",
+     "Pan"
+    ],
+    "author_count": 16,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": {
+    "source": "esummary pubtype",
+    "value": [
+     "Journal Article"
+    ]
+   },
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1126/science.adg7492",
+   "final_url": "https://www.science.org/doi/10.1126/science.adg7492",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-09-22"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.adg7492",
+   "crossref": {
+    "doi": "10.1126/science.adg7492",
+    "resolves": true,
+    "title": "Accurate proteome-wide missense variant effect prediction with AlphaMissense",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2023-9-22",
+    "authors_first3": [
+     "Cheng",
+     "Novati",
+     "Pan"
+    ],
+    "author_count": 16,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://deepmind.google/blog/alphamissense-catalogue-of-genetic-mutations-to-help-pinpoint-the-cause-of-diseases/",
+   "final_url": "https://deepmind.google/blog/a-catalogue-of-genetic-mutations-to-help-pinpoint-the-cause-of-diseases/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A catalogue of genetic mutations to help pinpoint the cause of diseases",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2023-09-19"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-09-19"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "New AI tool classifies the effects of 71 million ‘missense’ mutations \nUncovering the root causes of disease is one of the greatest challenges in human genetics. With millions of possible mutations …",
+   "passages": [
+    "September 19, 2023 ScienceA catalogue of genetic mutations to help pinpoint the cause of diseases Share CopiedNew AI tool classifies the effects of 71 million ‘missense’ mutations Uncovering the root causes of disease is one of the greatest challenges in human genetics.",
+    "In a paper published in Science, we show it categorised 89% of all 71 million possible missense variants as either likely pathogenic or likely benign.",
+    "Of more than 4 million missense variants that have been seen already in humans, only 2% have been annotated as pathogenic or benign by experts, roughly 0.1% of all 71 million possible missense variants.",
+    "Our adapted model can predict the pathogenicity of missense variants altering individual amino acids of proteins.To train AlphaMissense, we fine-tuned AlphaFold on labels distinguishing variants seen in human and closely related primate populations.",
+    "Taylor, Natasha Latysheva, Hamish Tomlinson, Augustin Žídek, Roz Onions, Mira Lutfi, Jon Small, Molly Beck, Annette Obika, Hannah Gladman, Folake Abu, Alyssa Pierce, James Tam, Q Green, Meera Last, Tharindi Hapuarachchi and the greater Google DeepMind team for their support, help and feedback.",
+    "The AlphaMissense catalogue was developed using AlphaMissense, our new AI model which classifies missense variants."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://zenodo.org/records/10813168",
+   "final_url": "https://zenodo.org/records/10813168",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Predictions for AlphaMissense",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-09-19"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.5281/zenodo.10813168",
+   "crossref": {
+    "doi": "10.5281/zenodo.10813168",
+    "resolves": false,
+    "status": 404
+   },
+   "type_found": null,
+   "meta_description": "This repository provide AlphaMissense predictions. For questions about AlphaMissense or the prediction Database please email alphamissense@google.com.  File…",
+   "passages": [
+    "File descriptions AlphaMissense_hg19.tsv.gz, AlphaMissense_hg38.tsv.gz Predictions for all possible single nucleotide missense variants (71M) from 19k human protein-coding genes (canonical transcripts) for both hg19 and hg38 coordinates.",
+    "AlphaMissense_gene_hg19.tsv.gz, AlphaMissense_gene_hg38.tsv.gz Gene-level average predictions, which were computed by taking the mean alphamissense_pathogenicity over all possible missense variants in a transcript (canonical transcript).",
+    "AlphaMissense_aa_substitutions.tsv.gz Predictions for all possible single amino acid substitutions within 20k UniProt canonical isoforms (216M protein variants).",
+    "AlphaMissense_isoforms_hg38.tsv.gz Predictions for all possible missense variants for 60k non-canonical transcript isoforms (hg38, GENCODE V32).",
+    "Disclaimer This is not an officially supported Google product The AlphaMissense Database contains predictions with varying levels of confidence, caution should be exercised in use.",
+    "For questions about AlphaMissense or the prediction Database please email alphamissense@google.com."
+   ],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.6019/tol.alphamissense2024-w.2024.00001.1",
+      "title": "AlphaMissense predictions for human genetic variation research",
+      "container": null,
+      "date": "",
+      "score": 34.3332
+     },
+     {
+      "doi": "10.1126/science.zvqdw12",
+      "title": "Google DeepMind releases code behind its most advanced protein prediction program",
+      "container": "AAAS Articles DO Group",
+      "date": "2024-11-11",
+      "score": 29.037828
+     },
+     {
+      "doi": "10.15607/rss.2023.xix.024",
+      "title": "Demonstrating Large Language Models on Robots",
+      "container": "Robotics: Science and Systems XIX",
+      "date": "2023-7-10",
+      "score": 29.026318
+     }
+    ],
+    "arxiv": []
+   },
+   "resolved_to": null,
+   "verdict": "unresolved"
+  }
+ ]
+}

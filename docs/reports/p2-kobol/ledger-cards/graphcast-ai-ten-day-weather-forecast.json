@@ -1,0 +1,212 @@
+{
+ "slug": "graphcast-ai-ten-day-weather-forecast",
+ "title": "GraphCast, an AI model, makes ten-day global forecasts in under a minute",
+ "first_published": "2022-12",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.science.org/doi/10.1126/science.adi2336",
+   "final_url": "https://www.science.org/doi/10.1126/science.adi2336",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-12-22"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.adi2336",
+   "crossref": {
+    "doi": "10.1126/science.adi2336",
+    "resolves": true,
+    "title": "Learning skillful medium-range global weather forecasting",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2023-12-22",
+    "authors_first3": [
+     "Lam",
+     "Sanchez-Gonzalez",
+     "Willson"
+    ],
+    "author_count": 18,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "arxiv",
+     "url": "https://arxiv.org/abs/2212.12794",
+     "final_url": "https://arxiv.org/abs/2212.12794",
+     "status": 200,
+     "readable": true,
+     "title_found": "GraphCast: Learning skillful medium-range global weather forecasting",
+     "title_match": true,
+     "date": "2023/08/04",
+     "passages": [
+      "We show that GraphCast significantly outperforms the most accurate operational deterministic systems on 90% of 1380 verification targets, and its forecasts support better severe event prediction, including tropical cyclones, atmospheric rivers, and extreme temperatures.",
+      "We introduce a machine learning-based method called \"GraphCast\", which can be trained directly from reanalysis data.",
+      "GraphCast is a key advance in accurate and efficient weather forecasting, and helps realize the promise of machine learning for modeling complex dynamical systems.",
+      "Global medium-range weather forecasting is critical to decision-making across many social and economic domains.",
+      "Traditional numerical weather prediction uses increased compute resources to improve forecast accuracy, but cannot directly use historical weather data to improve the underlying model.",
+      "It predicts hundreds of weather variables, over 10 days at 0.25 degree resolution globally, in under one minute."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2212.12794",
+   "final_url": "https://arxiv.org/abs/2212.12794",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "GraphCast: Learning skillful medium-range global weather forecasting",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-08-04"
+    },
+    {
+     "source": "citation_date",
+     "date": "2022-12-24"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2212.12794: GraphCast: Learning skillful medium-range global weather forecasting",
+   "passages": [
+    "We introduce a machine learning-based method called \"GraphCast\", which can be trained directly from reanalysis data.",
+    "We show that GraphCast significantly outperforms the most accurate operational deterministic systems on 90% of 1380 verification targets, and its forecasts support better severe event prediction, including tropical cyclones, atmospheric rivers, and extreme temperatures.",
+    "GraphCast is a key advance in accurate and efficient weather forecasting, and helps realize the promise of machine learning for modeling complex dynamical systems.",
+    "Global medium-range weather forecasting is critical to decision-making across many social and economic domains.",
+    "Traditional numerical weather prediction uses increased compute resources to improve forecast accuracy, but cannot directly use historical weather data to improve the underlying model.",
+    "It predicts hundreds of weather variables, over 10 days at 0.25 degree resolution globally, in under one minute."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://deepmind.google/discover/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/",
+   "final_url": "https://deepmind.google/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "GraphCast: AI model for faster and more accurate global weather forecasting",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2023-11-14"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-11-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-08-31"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-06-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Our state-of-the-art model delivers 10-day weather predictions at unprecedented accuracy in under one minute",
+   "passages": [
+    "In a world of increasingly extreme weather, fast and accurate forecasts have never been more important.In a paper published in Science, we introduce GraphCast, a state-of-the-art AI model able to make medium-range weather forecasts with unprecedented accuracy.",
+    "This ability has the potential to save lives through greater preparedness.GraphCast takes a significant step forward in AI for weather prediction, offering more accurate and efficient forecasts, and opening paths to support decision-making critical to the needs of our industries and societies.",
+    "As the weather patterns evolve in a changing climate, GraphCast will evolve and improve as higher quality data becomes available.To make AI-powered weather forecasting more accessible, we’ve open sourced our model’s code.",
+    "Making 10-day forecasts with GraphCast takes less than a minute on a single Google TPU v4 machine.",
+    "GraphCast forecasts can help characterize atmospheric rivers, which could help planning emergency responses together with AI models to forecast floods.Finally, predicting extreme temperatures is of growing importance in our warming world.",
+    "And, by open sourcing the model code for GraphCast, we are enabling scientists and forecasters around the world to benefit billions of people in their everyday lives."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://arxiv.org/abs/2307.10128",
+   "final_url": "https://arxiv.org/abs/2307.10128",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The rise of data-driven weather forecasting",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-11-03"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-07-19"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-05-31"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1175/bams-d-23-0162.1",
+   "crossref": {
+    "doi": "10.1175/bams-d-23-0162.1",
+    "resolves": true,
+    "title": "The Rise of Data-Driven Weather Forecasting: A First Statistical Assessment of Machine Learning–Based Weather Forecasts in an Operational-Like Context",
+    "container": "Bulletin of the American Meteorological Society",
+    "publisher": "American Meteorological Society",
+    "type": "journal-article",
+    "issued": "2024-6",
+    "authors_first3": [
+     "Ben Bouallègue",
+     "Clare",
+     "Magnusson"
+    ],
+    "author_count": 17,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2307.10128: The rise of data-driven weather forecasting",
+   "passages": [
+    "Data-driven modeling based on machine learning (ML) is showing enormous potential for weather forecasting.",
+    "The computational cost of running a forecast with standard NWP systems greatly hinders the improvements that can be made from increasing model resolution and ensemble sizes.",
+    "Here, we compare for the first time ML-generated forecasts with standard NWP-based forecasts in an operational-like context, initialized from the same initial conditions.",
+    "Increasing forecast smoothness and bias drift with forecast lead time are identified as current drawbacks of ML-based forecasts.",
+    "The uptake of ML methods could be a game-changer for the incremental progress in traditional numerical weather prediction (NWP) known as the 'quiet revolution' of weather forecasting.",
+    "The results are very promising, with comparable skill for both global metrics and extreme events, when verified against both the operational analysis and synoptic observations."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

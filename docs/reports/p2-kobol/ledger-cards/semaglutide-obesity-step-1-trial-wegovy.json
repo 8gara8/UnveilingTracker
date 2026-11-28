@@ -1,0 +1,205 @@
+{
+ "slug": "semaglutide-obesity-step-1-trial-wegovy",
+ "title": "Weekly semaglutide lowers body weight by about 15 percent in trial",
+ "first_published": "2021-02-10",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33567185/",
+   "final_url": "https://pubmed.ncbi.nlm.nih.gov/33567185/",
+   "status": 203,
+   "readable": false,
+   "reason": "203 cookie wall (record read through esummary)",
+   "title_found": "Once-Weekly Semaglutide in Adults with Overweight or Obesity.",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "esummary sortpubdate",
+     "date": "2021-03-18"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-3-18"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1056/nejmoa2032183",
+   "crossref": {
+    "doi": "10.1056/nejmoa2032183",
+    "resolves": true,
+    "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2021-3-18",
+    "authors_first3": [
+     "Wilding",
+     "Batterham",
+     "Calanna"
+    ],
+    "author_count": 14,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": {
+    "source": "esummary pubtype",
+    "value": [
+     "Journal Article",
+     "Multicenter Study",
+     "Randomized Controlled Trial",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   },
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8089593/",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8089593/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Efficacy and Safety of Once-Weekly Subcutaneous Semaglutide 2.4 MG in Adults With Overweight or Obesity (STEP 1)",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-05-02"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-05-01"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1210/jendso/bvab048.018",
+   "crossref": {
+    "doi": "10.1210/jendso/bvab048.018",
+    "resolves": true,
+    "title": "Efficacy and Safety of Once-Weekly Subcutaneous Semaglutide 2.4 MG in Adults With Overweight or Obesity (STEP 1)",
+    "container": "Journal of the Endocrine Society",
+    "publisher": "The Endocrine Society",
+    "type": "journal-article",
+    "issued": "2021-5-1",
+    "authors_first3": [
+     "Wilding",
+     "Batterham",
+     "Calanna"
+    ],
+    "author_count": 14,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "abstract"
+   },
+   "meta_description": "Background: Despite the increasing global adverse health impact of obesity, there are few pharmacological options for effective weight management. STEP 1 investigated the efficacy and safety of the glucagon-like peptide-1 analogue, subcutaneous ...",
+   "passages": [
+    "Conclusion: In adults with overweight or obesity, once-weekly s.c. semaglutide 2.4 mg plus lifestyle intervention induced a mean weight loss of approximately 15% by week 68.",
+    "Adults aged ≥18 years with either body mass index (BMI) ≥30 kg/m2 or BMI ≥27 kg/m2 with ≥1 weight-related comorbidity, without type 2 diabetes, were randomized 2:1 to 68 weeks’ treatment with once-weekly s.c. semaglutide 2.4 mg or placebo, both as adjunct to lifestyle intervention.",
+    "STEP 1 investigated the efficacy and safety of the glucagon-like peptide-1 analogue, subcutaneous (s.c.) semaglutide, for weight management in adults with overweight or obesity.",
+    "Similar results were obtained with the trial product estimand: mean body weight change# was -16.9% for semaglutide vs -2.4% for placebo (ETD: -14.4%; 95% CI: -15.3, -13.6; p<0.0001).",
+    "Mean body weight change from baseline to week 68 was −14.9% in the semaglutide group vs −2.4% with placebo (estimated treatment difference [ETD]: −12.4%; 95% confidence interval (CI): −13.4, −11.5; p<0.0001).",
+    "Participants were more likely to achieve weight loss ≥5%, ≥10%, ≥15%, and ≥20%# with semaglutide vs placebo (86.4% vs 31.5%, 69.1% vs 12.0%, 50.5% vs 4.9%, and 32.0% vs 1.7%, respectively; p<0.0001 for all)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/215256s000lbl.pdf",
+   "final_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/215256s000lbl.pdf",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://laskerfoundation.org/winners/glp-1-based-therapy-for-obesity/",
+   "final_url": "https://laskerfoundation.org/winners/glp-1-based-therapy-for-obesity/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "GLP-1-based therapy for obesity - Lasker Foundation",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-08-14"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Explore All 2024 Winners & Awards >    \nJoel Habener\nMassachusetts General Hospital  \nLotte Bjerre Knudsen\nNovo Nordisk  \nSvetlana Mojsov\nThe Rockefeller University           \n\nFor the discovery and development of GLP-1-based drugs that have revolutionized the treatment",
+   "passages": [
+    "Joel Habener (Massachusetts General Hospital) and Svetlana Mojsov (The Rockefeller University) discerned the physiologically active form of the hormone, and Lotte Bjerre Knudsen (Novo Nordisk) turned it into medications that promote weight loss.",
+    "Habener, Mojsov, and Knudsen have introduced a new era of weight management in which GLP-1-based pharmaceuticals promise to dramatically enhance health.",
+    "Fatty acids, plump with potential A couple of years later, Knudsen took the helm of GLP-1 therapeutic development at Novo Nordisk, and in 1996, a paper caught her attention.",
+    "Through their ambitious and committed endeavors, Habener, Mojsov, and Knudsen have transformed the health prospects for the tremendous number of people whose surplus weight compromises their wellbeing.",
+    "Enter Lotte Knudsen, a medicinal chemist at Novo Nordisk, determined to not just to develop a drug for diabetes, but to also determine whether GLP-1 might be another long-sought drug—one that safely and effectively causes weight loss.",
+    "This 1992 publication built the case that the hormone might provide the foundation for a safe diabetes drug, and several companies, including Novo Nordisk, AstraZeneca, Eli Lilly, and GSK latched onto this idea."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://aaas.org/news/sciences-2023-breakthrough-glp-1-agonists-show-promise-against-obesity-associated-disease",
+   "final_url": "https://www.aaas.org/news/sciences-2023-breakthrough-glp-1-agonists-show-promise-against-obesity-associated-disease",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Science’s 2023 Breakthrough: GLP-1 Agonists Show Promise Against Obesity-Associated Disease | American Association for the Advancement of Science (AAAS)",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The new class of drug therapies for weight loss is also challenging outdated notions about obesity.",
+   "passages": [
+    "Moreover, the results from another trial, published in November in show that among 17,000 people with excess weight and cardiovascular disease, those taking semaglutide had a 20% lower risk of heart attacks and strokes than those on placebo.",
+    "Drug treatments for obesity have had \"a sorry past, one often intertwined with social pressure to lose weight and the widespread belief that excess weight reflects weak willpower,\" writes Jennifer Couzin-Frankel in the Breakthrough news feature, published in the Dec.",
+    "\"Old pejorative tropes about obesity being the result of low willpower were hurtful to begin with, but now there is compelling evidence that a biochemical difference, not mental weakness, is responsible for weight gain,\" writes Thorp.",
+    "Although the causes of obesity span myriad genetic, physiological, environmental and social factors, risks of obesity-related medical problems can be life-threatening and include heart disease, diabetes, arthritis, liver disease and certain cancers.",
+    "However, a new class of drug therapies for weight loss has emerged and is showing promising results — and challenging outdated notions about obesity.",
+    "This year, two landmark clinical trials showed that GLP-1 agonists produced meaningful health benefits beyond weight loss itself, Couzin-Frankel reports."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

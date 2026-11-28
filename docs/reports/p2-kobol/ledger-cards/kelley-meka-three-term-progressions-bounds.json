@@ -1,0 +1,110 @@
+{
+ "slug": "kelley-meka-three-term-progressions-bounds",
+ "title": "Kelley and Meka's strong bounds for three-term progressions",
+ "first_published": "2023-02-10",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2302.05537",
+   "final_url": "https://arxiv.org/abs/2302.05537",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Strong Bounds for 3-Progressions",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2024-10-28"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-02-10"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2302.05537: Strong Bounds for 3-Progressions",
+   "passages": [
+    "Our approach is first to develop new analytic techniques for addressing some related questions in the finite-field setting and then to apply some analogous variants of these same techniques, suitably adapted for the more complicated setting of integers."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2309.02353",
+   "final_url": "https://arxiv.org/abs/2309.02353",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An improvement to the Kelley-Meka bounds on three-term arithmetic progressions",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-09-05"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-09-05"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2309.02353: An improvement to the Kelley-Meka bounds on three-term arithmetic progressions",
+   "passages": [
+    "Bloom, Olof Sisask View a PDF of the paper titled An improvement to the Kelley-Meka bounds on three-term arithmetic progressions, by Thomas F.",
+    "In a recent breakthrough Kelley and Meka proved a quasipolynomial upper bound for the density of sets of integers without non-trivial three-term arithmetic progressions.",
+    "We present a simple modification to their method that strengthens their conclusion, in particular proving that if $A\\subset\\{1,\\ldots,N\\}$ has no non-trivial three-term arithmetic progressions then \\[\\lvert A\\rvert \\leq \\exp(-c(\\log N)^{1/9})N\\] for some $c>0$."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2309.02353",
+   "final_url": "https://arxiv.org/abs/2309.02353",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An improvement to the Kelley-Meka bounds on three-term arithmetic progressions",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-09-05"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-09-05"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2309.02353: An improvement to the Kelley-Meka bounds on three-term arithmetic progressions",
+   "passages": [
+    "In a recent breakthrough Kelley and Meka proved a quasipolynomial upper bound for the density of sets of integers without non-trivial three-term arithmetic progressions.",
+    "Bloom, Olof Sisask View a PDF of the paper titled An improvement to the Kelley-Meka bounds on three-term arithmetic progressions, by Thomas F.",
+    "We present a simple modification to their method that strengthens their conclusion, in particular proving that if $A\\subset\\{1,\\ldots,N\\}$ has no non-trivial three-term arithmetic progressions then \\[\\lvert A\\rvert \\leq \\exp(-c(\\log N)^{1/9})N\\] for some $c>0$."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

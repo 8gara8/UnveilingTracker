@@ -1,0 +1,351 @@
+{
+ "slug": "gnome-millions-of-crystal-structures-predicted",
+ "title": "Deep learning predicts 2.2 million new stable crystal structures",
+ "first_published": "2023-11-29",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-023-06735-9",
+   "final_url": "https://www.nature.com/articles/s41586-023-06735-9?error=cookies_not_supported&code=106542d0-bb67-48bd-bbdf-5bf77ac182fa",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Scaling deep learning for materials discovery",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-05-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-10-10"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-11-29"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-06735-9",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06735-9",
+    "resolves": true,
+    "title": "Scaling deep learning for materials discovery",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-11-29",
+    "authors_first3": [
+     "Merchant",
+     "Batzner",
+     "Schoenholz"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Novel functional materials enable fundamental breakthroughs across technological applications from clean energy to information processing1–11. From microchips to batteries and photovoltaics, discovery of inorganic crystals has been bottlenecked by expensive trial-and-error approaches. Concurrently, ",
+   "passages": [
+    "In a series of rounds, these graph networks for materials exploration (GNoME) are trained on available data and used to filter candidate structures.",
+    "Data availability Crystal structures corresponding to stable discoveries discussed throughout the paper will be made available at https://github.com/google-deepmind/materials_discovery.",
+    "Here we show that graph networks trained at scale can reach unprecedented levels of generalization, improving the efficiency of materials discovery by an order of magnitude.",
+    "In particular, GNoME models found 2.2 million crystal structures stable with respect to the Materials Project.",
+    "Code availability Software to analyse stable crystals and associated phase diagrams, as well as the software implementation of the static GNN and the interatomic potentials, will be made available at https://github.com/google-deepmind/materials_discovery.",
+    "Scaling deep learning for materials discovery."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10700131",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10700131/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Scaling deep learning for materials discovery",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-11-28"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-11-29"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-06735-9",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06735-9",
+    "resolves": true,
+    "title": "Scaling deep learning for materials discovery",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-11-29",
+    "authors_first3": [
+     "Merchant",
+     "Batzner",
+     "Schoenholz"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Novel functional materials enable fundamental breakthroughs across technological applications from clean energy to information processing1–11. From microchips to batteries and photovoltaics, discovery of inorganic crystals has been bottlenecked by ...",
+   "passages": [
+    "In a series of rounds, these graph networks for materials exploration (GNoME) are trained on available data and used to filter candidate structures.",
+    "All authors contributed to discussion and writing.Peer review Peer review information Nature thanks the anonymous reviewers for their contribution to the peer review of this work.Data availability Crystal structures corresponding to stable discoveries discussed throughout the paper will be made available at https://github.com/google-deepmind/materials_discovery.",
+    "Data Availability Statement Crystal structures corresponding to stable discoveries discussed throughout the paper will be made available at https://github.com/google-deepmind/materials_discovery.",
+    "Here we show that graph networks trained at scale can reach unprecedented levels of generalization, improving the efficiency of materials discovery by an order of magnitude.",
+    "In this paper, we scale up machine learning for materials exploration through large-scale active learning, yielding the first models that accurately predict stability and, therefore, can guide materials discovery.",
+    "In particular, GNoME models found 2.2 million crystal structures stable with respect to the Materials Project."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://deepmind.google/discover/blog/millions-of-new-materials-discovered-with-deep-learning/",
+   "final_url": "https://deepmind.google/blog/millions-of-new-materials-discovered-with-deep-learning/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Millions of new materials discovered with deep learning",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-11-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-11-30"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "We share the discovery of 2.2 million new crystals  –  equivalent to nearly 800 years’ worth of knowledge. We introduce Graph Networks for Materials Exploration (GNoME), our new deep learning tool th…",
+   "passages": [
+    "We introduce Graph Networks for Materials Exploration (GNoME), our new deep learning tool that dramatically increases the speed and efficiency of discovery by predicting the stability of new materials.With GNoME, we’ve multiplied the number of technologically viable materials known to humanity.",
+    "Of these, 380,000 are considered the most stable, and lie on the “final” convex hull – the new standard we have set for materials stability.GNoME: Harnessing graph networks for materials explorationGNoME uses two pipelines to discover low-energy (stable) materials.",
+    "The outputs of both pipelines are evaluated using established Density Functional Theory calculations and those results are added to the GNoME database, informing the next round of active learning.GNoME is a state-of-the-art graph neural network (GNN) model.",
+    "We will be contributing 380,000 materials that we predict to be stable to the Materials Project, which is now processing the compounds and adding them into its online database.",
+    "Among these candidates are materials that have the potential to develop future transformative technologies ranging from superconductors, powering supercomputers, and next-generation batteries to boost the efficiency of electric vehicles.GNoME shows the potential of using AI to discover and develop new materials at scale.",
+    "This project discovered 2.2 million new crystals that are stable by current scientific standards and lie below the convex hull of previous discoveries."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11044265",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11044265/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Artificial Intelligence Driving Materials Discovery? Perspective on the Article: Scaling Deep Learning for Materials Discovery",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-04-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-04-08"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1021/acs.chemmater.4c00643",
+   "crossref": {
+    "doi": "10.1021/acs.chemmater.4c00643",
+    "resolves": true,
+    "title": "Artificial Intelligence Driving Materials Discovery? Perspective on the Article: Scaling Deep Learning for Materials Discovery",
+    "container": "Chemistry of Materials",
+    "publisher": "American Chemical Society (ACS)",
+    "type": "journal-article",
+    "issued": "2024-4-8",
+    "authors_first3": [
+     "Cheetham",
+     "Seshadri"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "review-article"
+   },
+   "meta_description": "The discovery of new crystalline inorganic compounds—novel compositions of matter within known structure types, or even compounds with completely new crystal structures—constitutes an important goal of solid-state and materials chemistry. Some ...",
+   "passages": [
+    "PMC Copyright notice PMCID: PMC11044265 PMID: 38681084 Abstract The discovery of new crystalline inorganic compounds—novel compositions of matter within known structure types, or even compounds with completely new crystal structures—constitutes an important goal of solid-state and materials chemistry.",
+    "The recent report from a group of scientists at Google who employ a combination of existing data sets, high-throughput density functional theory calculations of structural stability, and the tools of artificial intelligence and machine learning (AI/ML) to propose new compounds is an exciting advance.",
+    "Their approach claims to “enable the discovery of 2.2 million structures below the current convex hull, many of which escaped previous human chemical intuition...representing an order-of-magnitude expansion in stable materials known to humanity”.",
+    "In this perspective, we scrutinize the claims by Merchant et al. by looking in detail at a small, randomized subset of the new materials in both the GNoME Explorer archive and the Stable Structure database to evaluate their novelty.",
+    "There are many communities who would justifiably be upset by the description “representing an order-of-magnitude expansion in stable materials”: polymers, glasses, metal–organic frameworks, heterostructures, and composites are only a few excluded materials classes that come to mind, and that are each infinite in their scope.",
+    "Open in a new tab Views of the crystal structures of (a) known Zr4Ir4N (ICSD 640826) compared in a similar projection and identical scaling with (b) the proposed structure of Hf4Ir8N4NbZr11."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://chemrxiv.org/engage/chemrxiv/article-details/65957d349138d231611ad8f7",
+   "final_url": "https://chemrxiv.org/engage/chemrxiv/article-details/65957d349138d231611ad8f7",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": false,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11044265",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11044265/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Artificial Intelligence Driving Materials Discovery? Perspective on the Article: Scaling Deep Learning for Materials Discovery",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-04-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-04-08"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1021/acs.chemmater.4c00643",
+   "crossref": {
+    "doi": "10.1021/acs.chemmater.4c00643",
+    "resolves": true,
+    "title": "Artificial Intelligence Driving Materials Discovery? Perspective on the Article: Scaling Deep Learning for Materials Discovery",
+    "container": "Chemistry of Materials",
+    "publisher": "American Chemical Society (ACS)",
+    "type": "journal-article",
+    "issued": "2024-4-8",
+    "authors_first3": [
+     "Cheetham",
+     "Seshadri"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "review-article"
+   },
+   "meta_description": "The discovery of new crystalline inorganic compounds—novel compositions of matter within known structure types, or even compounds with completely new crystal structures—constitutes an important goal of solid-state and materials chemistry. Some ...",
+   "passages": [
+    "PMC Copyright notice PMCID: PMC11044265 PMID: 38681084 Abstract The discovery of new crystalline inorganic compounds—novel compositions of matter within known structure types, or even compounds with completely new crystal structures—constitutes an important goal of solid-state and materials chemistry.",
+    "Their approach claims to “enable the discovery of 2.2 million structures below the current convex hull, many of which escaped previous human chemical intuition...representing an order-of-magnitude expansion in stable materials known to humanity”.",
+    "In this perspective, we scrutinize the claims by Merchant et al. by looking in detail at a small, randomized subset of the new materials in both the GNoME Explorer archive and the Stable Structure database to evaluate their novelty.",
+    "The recent report from a group of scientists at Google who employ a combination of existing data sets, high-throughput density functional theory calculations of structural stability, and the tools of artificial intelligence and machine learning (AI/ML) to propose new compounds is an exciting advance.",
+    "There are many communities who would justifiably be upset by the description “representing an order-of-magnitude expansion in stable materials”: polymers, glasses, metal–organic frameworks, heterostructures, and composites are only a few excluded materials classes that come to mind, and that are each infinite in their scope.",
+    "More scrutiny of the “new” materials needs to be performed prior to putting them into a database and claiming “...an order-of-magnitude expansion in stable materials known to humanity”."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "url": "https://chemrxiv.org/engage/chemrxiv/article-details/65957d349138d231611ad8f7",
+   "final_url": "https://chemrxiv.org/engage/chemrxiv/article-details/65957d349138d231611ad8f7",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

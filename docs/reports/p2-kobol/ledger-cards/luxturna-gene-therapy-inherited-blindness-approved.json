@@ -1,0 +1,135 @@
+{
+ "slug": "luxturna-gene-therapy-inherited-blindness-approved",
+ "title": "Gene therapy improves vision in inherited retinal disease and wins FDA approval",
+ "first_published": "2017-07-14",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1016/S0140-6736(17)31868-8",
+   "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0140673617318688",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Redirecting",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2017-07-31"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1016/s0140-6736(17)31868-8",
+   "crossref": {
+    "doi": "10.1016/s0140-6736(17)31868-8",
+    "resolves": true,
+    "title": "Efficacy and safety of voretigene neparvovec (AAV2-hRPE65v2) in patients with RPE65 -mediated inherited retinal dystrophy: a randomised, controlled, open-label, phase 3 trial",
+    "container": "The Lancet",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2017-8",
+    "authors_first3": [
+     "Russell",
+     "Bennett",
+     "Wellman"
+    ],
+    "author_count": 36,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5726391/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5726391/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Efficacy and safety of voretigene neparvovec (AAV2-hRPE65v2) in patients with RPE65-mediated inherited retinal dystrophy: a randomised, controlled, open-label, phase 3 trial",
+     "title_match": true,
+     "date": "2017-07-13",
+     "passages": [
+      "The data presented here, which add to the evolving safety and efficacy profile of voretigene neparvovec, show improved light sensitivity, visual fields, and navigational ability under dim lighting conditions in patients with RPE65-mediated inherited retinal dystrophy, a population with no approved pharmacological treatment options.",
+      "PMC Copyright notice PMCID: PMC5726391 NIHMSID: NIHMS924255 PMID: 28712537 The publisher's version of this article is available at Lancet See commentary \"Gene Therapy for RPE65-mediated Retinal Dystrophies.\" in Surv Ophthalmol, 10.1016/j.survophthal.2017.12.006.",
+      "See commentary \"Gene therapy for RPE65-mediated inherited retinal dystrophy completes phase 3.\" with doi: 10.1016/S0140-6736(17)31622-7.",
+      "Safety and durability of effect of contralateral-eye administration of AAV2 gene therapy in patients with childhood-onset blindness caused by RPE65 mutations: a follow-on phase 1 trial.",
+      "It demonstrates the efficacy of voretigene neparvovec, the first gene therapy potentially available for a type of visual impairment that is otherwise untreatable with established classes of therapeutics.",
+      "The manufacturing techniques optimised in the voretigene neparvovec clinical programme might potentially be applied to the treatment of other genetic diseases, advancing the field of gene therapy.Acknowledgments This study was funded by Spark Therapeutics."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-novel-gene-therapy-treat-patients-rare-form-inherited-vision-loss",
+   "final_url": "https://www.fda.gov/news-events/press-announcements/fda-approves-novel-gene-therapy-treat-patients-rare-form-inherited-vision-loss",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Page Not Found | FDA",
+   "title_match": false,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "dead"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.science.org/doi/10.1126/science.358.6370.1522",
+   "final_url": "https://www.science.org/doi/10.1126/science.358.6370.1522",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2017-12-22"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.358.6370.1522",
+   "crossref": {
+    "doi": "10.1126/science.358.6370.1522",
+    "resolves": true,
+    "title": "The runners up",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2017-12-22",
+    "authors_first3": [
+     "Stokstad",
+     "Pennisi",
+     "Kaiser"
+    ],
+    "author_count": 8,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

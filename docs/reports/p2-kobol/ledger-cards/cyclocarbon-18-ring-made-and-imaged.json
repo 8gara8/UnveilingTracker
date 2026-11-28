@@ -1,0 +1,51 @@
+{
+ "slug": "cyclocarbon-18-ring-made-and-imaged",
+ "title": "Chemists make and image a ring of 18 carbon atoms",
+ "first_published": "2019-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1126/science.aay1914",
+   "final_url": "https://www.science.org/doi/10.1126/science.aay1914",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2019-09-20"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.aay1914",
+   "crossref": {
+    "doi": "10.1126/science.aay1914",
+    "resolves": true,
+    "title": "An sp-hybridized molecular carbon allotrope, cyclo[18]carbon",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2019-9-20",
+    "authors_first3": [
+     "Kaiser",
+     "Scriven",
+     "Schulz"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

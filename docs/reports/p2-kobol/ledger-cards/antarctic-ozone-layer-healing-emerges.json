@@ -1,0 +1,74 @@
+{
+ "slug": "antarctic-ozone-layer-healing-emerges",
+ "title": "The Antarctic ozone hole starts to shrink after the ban on CFCs",
+ "first_published": "2016-06-30",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.science.org/doi/10.1126/science.aae0061",
+   "final_url": "https://www.science.org/doi/10.1126/science.aae0061",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2016-7-15"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.aae0061",
+   "crossref": {
+    "doi": "10.1126/science.aae0061",
+    "resolves": true,
+    "title": "Emergence of healing in the Antarctic ozone layer",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2016-7-15",
+    "authors_first3": [
+     "Solomon",
+     "Ivy",
+     "Kinnison"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://ozone.unep.org/science/assessment/sap",
+   "final_url": "https://ozone.unep.org/science/assessment/sap",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Scientific Assessment Panel (SAP) | Ozone Secretariat",
+   "title_match": "partial",
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "Pursuant to Article 6 of the Montreal Protocol on Substances that Deplete the Ozone Layer, a report is prepared every three or four years by the SAP which consists of hundreds of top scientists from around the world."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

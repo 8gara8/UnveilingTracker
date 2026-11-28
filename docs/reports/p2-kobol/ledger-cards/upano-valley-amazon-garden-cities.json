@@ -1,0 +1,50 @@
+{
+ "slug": "upano-valley-amazon-garden-cities",
+ "title": "Laser survey finds 2,000-year-old urban settlements in the Ecuadorian Amazon",
+ "first_published": "2024-01",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.science.org/doi/10.1126/science.adi6317",
+   "final_url": "https://www.science.org/doi/10.1126/science.adi6317",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2024-1-12"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.adi6317",
+   "crossref": {
+    "doi": "10.1126/science.adi6317",
+    "resolves": true,
+    "title": "Two thousand years of garden urbanism in the Upper Amazon",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2024-1-12",
+    "authors_first3": [
+     "Rostain",
+     "Dorison",
+     "de Saulieu"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

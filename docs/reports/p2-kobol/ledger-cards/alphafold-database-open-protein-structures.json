@@ -1,0 +1,294 @@
+{
+ "slug": "alphafold-database-open-protein-structures",
+ "title": "AlphaFold Database opens predicted structures for over 200 million proteins",
+ "first_published": "2021-07-22",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://link.springer.com/10.1038/s41586-021-03828-1",
+   "final_url": "https://link.springer.com/article/10.1038/s41586-021-03828-1?error=cookies_not_supported&code=87da4e06-3e90-44c7-b139-9499f7d7de84",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Highly accurate protein structure prediction for the human proteome",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-07-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2021-07-22"
+    },
+    {
+     "source": "dc.date",
+     "date": "2021-07-22"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2021-07-22"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2021-07-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-07-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-05-11"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-07-16"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-07-22"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-021-03828-1",
+   "crossref": {
+    "doi": "10.1038/s41586-021-03828-1",
+    "resolves": true,
+    "title": "Highly accurate protein structure prediction for the human proteome",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2021-7-22",
+    "authors_first3": [
+     "Tunyasuvunakool",
+     "Adler",
+     "Wu"
+    ],
+    "author_count": 33,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.740510745.793587948",
+      "10.3410/f.740510745.793588378",
+      "10.3410/f.740510745.793589266"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Protein structures can provide invaluable information, both for reasoning about biological processes and for enabling interventions such as structure-based drug development or targeted mutagenesis. After decades of effort, 17% of the total residues in human protein sequences are covered by an experi",
+   "passages": [
+    "Highly accurate protein structure prediction with AlphaFold.",
+    "Highly accurate protein structure prediction for the human proteome.",
+    "All of our predictions can be accessed freely at https://alphafold.ebi.ac.uk/, hosted by the European Bioinformatics Institute.Model confidence and added coverageWe predicted structures for the UniProt human reference proteome (one representative sequence per gene), with an upper length limit of 2,700 residues6.",
+    "By providing scalable structure prediction with very high accuracy, AlphaFold could enable an exciting shift towards structural bioinformatics, further illuminating protein space.MethodsStructure prediction (human proteome)Sequences for the human reference proteome were obtained from UniProt release 2021_026.",
+    "Based on the same human proteome dataset as in c (n = 10,537,122 residues).We consider a prediction highly accurate when—in addition to a good backbone prediction—the side chains are frequently correctly oriented.",
+    "To evaluate the applicability of AlphaFold to this collection, we predicted structures for 1 year of targets from the Continuous Automated Model Evaluation (CAMEO) benchmark39,40—a structure-prediction assessment that measures a wider range of difficulties."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8387240/",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8387240/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Highly accurate protein structure prediction for the human proteome",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-07-21"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-07-22"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-021-03828-1",
+   "crossref": {
+    "doi": "10.1038/s41586-021-03828-1",
+    "resolves": true,
+    "title": "Highly accurate protein structure prediction for the human proteome",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2021-7-22",
+    "authors_first3": [
+     "Tunyasuvunakool",
+     "Adler",
+     "Wu"
+    ],
+    "author_count": 33,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.740510745.793587948",
+      "10.3410/f.740510745.793588378",
+      "10.3410/f.740510745.793589266"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Protein structures can provide invaluable information, both for reasoning about biological processes and for enabling interventions such as structure-based drug development or targeted mutagenesis. After decades of effort, 17% of the total residues ...",
+   "passages": [
+    "Highly accurate protein structure prediction with AlphaFold.",
+    "All of our predictions can be accessed freely at https://alphafold.ebi.ac.uk/, hosted by the European Bioinformatics Institute.Model confidence and added coverage We predicted structures for the UniProt human reference proteome (one representative sequence per gene), with an upper length limit of 2,700 residues6.",
+    "By providing scalable structure prediction with very high accuracy, AlphaFold could enable an exciting shift towards structural bioinformatics, further illuminating protein space.Methods Structure prediction (human proteome) Sequences for the human reference proteome were obtained from UniProt release 2021_026.",
+    "To evaluate the applicability of AlphaFold to this collection, we predicted structures for 1 year of targets from the Continuous Automated Model Evaluation (CAMEO) benchmark39,40—a structure-prediction assessment that measures a wider range of difficulties.",
+    "In the current dataset, long regions with pLDDT < 50 adopt a readily identifiable ribbon-like appearance, and should not be interpreted as structures but rather as a prediction of disorder.Discussion In this study, we generated comprehensive, state-of-the-art structure predictions for the human proteome.",
+    "A.Ž., S.P., T.G., A.C. and K.T. developed the data-processing pipelines to produce the AlphaFold protein structure database."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://alphafold.ebi.ac.uk/",
+   "final_url": "https://alphafold.ebi.ac.uk/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AlphaFold Protein Structure Database",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "AlphaFold Protein Structure Database",
+   "passages": [
+    "Mean pLDDT 82.24.View proteinFind out moreMethodology Human proteome predictions Downloads Online training course About AlphaFold DB Google DeepMind EMBL-EBI What’s new?",
+    "AI-derived residue annotations – October 2026 AlphaFold Database now integrates AI-derived residue-level annotations from the scientific literature, providing biological context for individual residues alongside predicted protein structures.",
+    "BackgroundAlphaFold is an AI system developed by Google DeepMind that predicts a protein’s 3D structure from its amino acid sequence.",
+    "Google DeepMind and EMBL’s European Bioinformatics Institute (EMBL-EBI) have partnered to create AlphaFold DB to make these predictions freely available to the scientific community.",
+    "The latest database release contains over 200 million entries, providing broad coverage of UniProt (the standard repository of protein sequences and annotations).",
+    "Mean pLDDT 85.57.View protein In CASP14, AlphaFold was the top-ranked protein structure prediction method by a large margin, producing predictions with high accuracy."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.embl.org/news/science/ai-protein-prediction-breakthrough/",
+   "final_url": "https://www.embl.org/news/science/ai-protein-prediction-breakthrough/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Artificial intelligence — a scientific game changer in 2021 | EMBL",
+   "title_match": false,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2021-12-17"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2021-12-17"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2021-12-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-12-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-04"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The ability to predict protein structures from amino acid sequences using AI named 2021 ‘Breakthrough of the Year' by Science magazine",
+   "passages": [
+    "The prediction of the structures of the human proteome using DeepMind’s AI-driven AlphaFold algorithm is one of the biggest scientific breakthroughs since the mapping of the human genome.",
+    "After having already been referred to as one of the most influential scientific developments in 2021 by Nature magazine, the impact that AI had on protein structure prediction was now also recognised as 2021 ‘Breakthrough of the Year’ by Science magazine.",
+    "Compared with the time of its launch in July 2021, the AlphaFold database already contains double the number of protein predictions, which have been accessed by more than 310K unique users.",
+    "With millions of protein structure predictions available in the future, the possibilities for discoveries seem endless.",
+    "Making the data of protein predictions freely and openly available to the scientific community accelerates the impact of this technology."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://www.ipd.uw.edu/2021/12/2021-breakthrough-of-the-year",
+   "final_url": "https://www.ipd.uw.edu/2021/12/2021-breakthrough-of-the-year/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Breakthrough of the Year – Institute for Protein Design",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2021-12-18"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2021-12-17"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2021-12-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-12-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-09-08"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The journal Science has selected artificial intelligence algorithms that predict the three-dimensional shapes of proteins — as well as the blizzard of protein structures they have revealed — as their 2021 Breakthrough of the Year. We are honored to have our work in this field recognized alongside th",
+   "passages": [
+    "We are honored to have our work in this field recognized alongside that of the company DeepMind."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

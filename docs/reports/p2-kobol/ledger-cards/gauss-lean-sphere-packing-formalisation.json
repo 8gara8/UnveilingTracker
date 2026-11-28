@@ -1,0 +1,116 @@
+{
+ "slug": "gauss-lean-sphere-packing-formalisation",
+ "title": "AI completes Lean formalisation of sphere packing in dimensions 8 and 24",
+ "first_published": "2026-03",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2604.23468",
+   "final_url": "https://arxiv.org/abs/2604.23468",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Progress in Formalizing Sphere Packing in Dimension 8",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-05-29"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-04-25"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2604.23468: Progress in Formalizing Sphere Packing in Dimension 8",
+   "passages": [
+    "A significant milestone was achieved in February 2026: the result was formally verified, with the final stages of the verification done by Math, Inc.'s autoformalization model 'Gauss'.",
+    "In 2016, Viazovska famously solved the sphere packing problem in dimension $8$, using modular forms to construct a 'magic' function satisfying optimality conditions determined by Cohn and Elkies in 2003.",
+    "In March 2024, Hariharan and Viazovska launched a project to formalize this solution and related mathematical facts in the Lean Theorem Prover.",
+    "We discuss the techniques used to achieve this milestone, reflect on the unique collaboration between humans and Gauss, and discuss project objectives that remain."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://leanprover-community.github.io/blog/posts/SpherePacking-1",
+   "final_url": "https://leanprover-community.github.io/blog/posts/SpherePacking-1/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The Sphere Packing Project | Post 1 - The Story",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2026-03-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-03-02"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The Sphere Packing Project maintainers tell the story of the project, up to the recent autoformalisation.\n\n\nThis is the first of two blog posts that will discuss the recent\nformalisation of Viazovska'",
+   "passages": [
+    "The Sphere Packing Project | Post 1 - The Story Chris Birkbeck Sidharth Hariharan Seewoo Lee 2026-03-02 22:35 Source The Sphere Packing Project maintainers tell the story of the project, up to the recent autoformalisation.",
+    "This is the first of two blog posts that will discuss the recent formalisation of Viazovska's solution to the sphere packing problem in dimensions $8$ and $24$.",
+    "Another fruitful collaboration at ItaLean was the working group for sphere packing, where Sid, Bhavik and Maryna gave ItaLean participants a hands-on introduction to both the mathematics and the Lean aspects of the project.",
+    "To that end, we are continuing to work with Math Inc and the broader community to golf, refactor, generalise, modularise, and otherwise edit the AI-written code to a form more suitable for consolidation and merging into our repository.",
+    "Sid and Maryna had their first meeting about the sphere packing project at the start of the spring semester at EPFL, in late February 2024.",
+    "Together, we designed the sphere packing autoformalisation challenge, where we would gather informal statements and proofs of three project tasks---one about modular forms, one about the construction of the magic function, and one about the inequalities---and feed them to autoformalisation agents."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://actu.epfl.ch/news/prof-viazovska-s-proofs-of-sphere-packing-formaliz/",
+   "final_url": "https://actu.epfl.ch/news/prof-viazovska-s-proofs-of-sphere-packing-formaliz/",
+   "status": 200,
+   "readable": false,
+   "reason": "200 Cloudflare challenge",
+   "title_found": "Prof. Viazovska's proofs of sphere packing formalized with AI",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2026-11-02"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2026-03-11"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-03-11"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The proofs that earned EPFL professor Maryna Viazovska the Fields Medal in 2022 have now reached a new milestone: their complete formalization by computer, achieved through a collaboration between mathematicians and artificial intelligence tools.",
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

@@ -1,0 +1,214 @@
+{
+ "slug": "alphaqubit-neural-quantum-decoder",
+ "title": "A neural network decodes quantum errors better than hand-built decoders",
+ "first_published": "2024-11-20",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-024-08148-8",
+   "final_url": "https://www.nature.com/articles/s41586-024-08148-8?error=cookies_not_supported&code=9fd3f14c-7628-472a-822d-1a5b4339a855",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Learning high-accuracy error decoding for quantum processors",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-10-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-11-20"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-11-20"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-11-20"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-11-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-11-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-02-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-10-02"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-11-20"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-024-08148-8",
+   "crossref": {
+    "doi": "10.1038/s41586-024-08148-8",
+    "resolves": true,
+    "title": "Learning high-accuracy error decoding for quantum processors",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-11-20",
+    "authors_first3": [
+     "Bausch",
+     "Senior",
+     "Heras"
+    ],
+    "author_count": 18,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Building a large-scale quantum computer requires effective strategies to correct errors that inevitably arise in physical quantum systems1. Quantum error-correction codes2 present a way to reach this goal by encoding logical information redundantly into many physical qubits. A key challenge in imple",
+   "passages": [
+    "Our decoder outperforms other state-of-the-art decoders on real-world data from Google’s Sycamore quantum processor for distance-3 and distance-5 surface codes4.",
+    "2b)—decodes the Sycamore surface code experiments more accurately than any previous decoder (machine learning or otherwise).Fig.",
+    "AlphaQubit thus sets a benchmark for the field of machine-learning decoding, and opens up the prospect of using highly accurate machine-learning decoders in real quantum hardware.Several challenges remain.",
+    "As our architecture is not specific to the surface code, we anticipate that it can be adapted to colour codes or other quantum low-density parity check codes.As a machine-learning model, our decoder’s greatest strengths come from its ability to learn from real experimental data.",
+    "First, on experimental data from a Sycamore quantum processor on distance-3 and distance-5 surface codes4, when pretraining on synthetic data modelling device noise and then finetuning on experimental samples, we observe significantly better error suppression than state-of-the-art correlated matching and tensor-network decoders4,26,27,31,45.",
+    "Here we develop a recurrent, transformer-based neural network that learns to decode the surface code, the leading quantum error-correction code3."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2512.07737",
+   "final_url": "https://arxiv.org/abs/2512.07737",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A scalable and real-time neural decoder for topological quantum codes",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-03-11"
+    },
+    {
+     "source": "citation_date",
+     "date": "2025-12-08"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2512.07737: A scalable and real-time neural decoder for topological quantum codes",
+   "passages": [
+    "Here we introduce AlphaQubit 2, a neural-network decoder that achieves near-optimal logical error rates for both surface and color codes at scale under realistic noise.",
+    "Quantum error correction (QEC) bridges this gap, but depends on decoders being simultaneously fast, accurate, and scalable.",
+    "We demonstrate real-time decoding faster than 1{\\mu}s per cycle on commercial accelerators: for the surface code to distance 11, with better accuracy than leading real-time decoders; and the first real-time decoding of the color code to distance 9.",
+    "These results support the practical application of a wider class of promising QEC codes, and establish a credible path towards high-accuracy, real-time neural decoding at the scales required for fault-tolerant quantum computation.",
+    "Fault-tolerant quantum computing will require error rates far below those achievable with physical qubits.",
+    "This combination of requirements remains unmet by a machine-learning decoder, nor by any decoder for promising resource-efficient codes such as the color code."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://www.nature.com/articles/d41586-024-03557-1",
+   "final_url": "https://www.nature.com/articles/d41586-024-03557-1?error=cookies_not_supported&code=90d48298-cdff-45ba-9916-8765fc616c6a",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Quantum computing: physics–AI collaboration quashes quantum errors",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-10-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-11-20"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-11-20"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-11-20"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-11-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-11-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-11-20"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-024-03557-1",
+   "crossref": {
+    "doi": "10.1038/d41586-024-03557-1",
+    "resolves": true,
+    "title": "Quantum computing: physics–AI collaboration quashes quantum errors",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-11-20",
+    "authors_first3": [
+     "Haider"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "Machine-learning strategy for quantum error correction.",
+   "passages": [
+    "NEWS AND VIEWS 20 November 2024 Quantum computing: physics–AI collaboration quashes quantum errors A neural network has learnt to correct the errors that arise during quantum computation, outperforming algorithms that were designed by humans.",
+    "Yet, a major obstacle stands in the way: quantum processors are prone to errors caused by disturbances from their environment and other sources.",
+    "The strategy sets out a promising path towards practical quantum computers.",
+    "By Nadia Haider0 Nadia Haider Nadia Haider is in the Quantum Computing Division of QuTech and the Department of Microelectronics, Delft University of Technology, 2628 CD Delft, the Netherlands.",
+    "Overcoming this challenge is crucial to building a practical quantum computer."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

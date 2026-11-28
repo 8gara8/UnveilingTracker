@@ -1,0 +1,93 @@
+{
+ "slug": "closed-loop-machine-learning-fast-charging",
+ "title": "Closed-loop machine learning picks better fast-charging plans for batteries",
+ "first_published": "2020-02",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-020-1994-5",
+   "final_url": "https://www.nature.com/articles/s41586-020-1994-5?error=cookies_not_supported&code=df698b3a-ce50-4a55-94a6-990f09c4cc0c",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Closed-loop optimization of fast-charging protocols for batteries with machine learning",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-01-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-02-19"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-02-19"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-02-19"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-02-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-02-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-08-06"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-12-19"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-02-19"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-020-1994-5",
+   "crossref": {
+    "doi": "10.1038/s41586-020-1994-5",
+    "resolves": true,
+    "title": "Closed-loop optimization of fast-charging protocols for batteries with machine learning",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-2-19",
+    "authors_first3": [
+     "Attia",
+     "Grover",
+     "Jin"
+    ],
+    "author_count": 16,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Simultaneously optimizing many design parameters in time-consuming experiments causes bottlenecks in a broad range of scientific and engineering disciplines1,2. One such example is process and control optimization for lithium-ion batteries during materials selection, cell manufacturing and operation",
+   "passages": [
+    "Article Published: 19 February 2020 Closed-loop optimization of fast-charging protocols for batteries with machine learning Peter M.",
+    "Closed-loop optimization of fast-charging protocols for batteries with machine learning.",
+    "A.G., T.M.M., B.C. and S.E. developed the Bayesian optimization algorithm and incorporated early outcome predictions into the closed loop.",
+    "Bayesian optimization offers the largest advantage when the number of channels is low relative to the number of protocols.Extended Data Fig.",
+    "Taking the human out of the loop: a review of Bayesian optimization.",
+    "The complete closed loop (that is, with Bayesian optimization) consistently outperforms the closed loop without Bayesian optimization."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

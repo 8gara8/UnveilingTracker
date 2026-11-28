@@ -1,0 +1,208 @@
+{
+ "slug": "coscientist-language-model-agent-runs-chemistry",
+ "title": "A language-model agent planned and ran chemistry experiments on its own",
+ "first_published": "2023-12-20",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-023-06792-0",
+   "final_url": "https://www.nature.com/articles/s41586-023-06792-0?error=cookies_not_supported&code=4c3b6a77-a93e-4eb1-9c36-0bdb8158b167",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Autonomous chemical research with large language models",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-12-20"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-12-20"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-12-20"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-12-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-12-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-04-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-10-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-12-20"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-06792-0",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06792-0",
+    "resolves": true,
+    "title": "Autonomous chemical research with large language models",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-12-20",
+    "authors_first3": [
+     "Boiko",
+     "MacKnight",
+     "Kline"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Transformer-based large language models are making significant strides in various fields, such as natural language processing1–5, biology6,7, chemistry8–10 and computer programming11,12. Here, we show the development and capabilities of Coscientist, an artificial intelligence system driven by GPT-4 ",
+   "passages": [
+    "Preprint at https://chemrxiv.org/engage/chemrxiv/article-details/64f6560579853bbd781bcef6 (2023).Download referencesAcknowledgementsWe thank the following Carnegie Mellon University Chemistry groups for their assistance with providing the chemicals needed for the Coscientist’s experiments: Sydlik, Garcia Borsch, Matyjaszewski and Ly.",
+    "G.G. is grateful to the Carnegie Mellon University Cloud Lab Initiative led by the Mellon College of Science for its vision of the future of physical sciences.",
+    "D.A.B., R.M. and G.G. wrote this manuscript.Corresponding authorCorrespondence to Gabe Gomes.Ethics declarations Competing interests G.G. is part of the AI Scientific Advisory Board of Emerald Cloud Lab.",
+    "G.G. thanks Carnegie Mellon University; the Mellon College of Sciences and its Department of Chemistry; and the College of Engineering and its Department of Chemical Engineering for the start-up support.",
+    "In this study, we have demonstrated the compatibility with the Opentrons Python API and the Emerald Cloud Lab (ECL) Symbolic Lab Language (SLL).",
+    "We also thank the team at Emerald Cloud Lab (with special attention to Y."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10733136",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10733136/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Autonomous chemical research with large language models",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-12-19"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-12-20"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-06792-0",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06792-0",
+    "resolves": true,
+    "title": "Autonomous chemical research with large language models",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-12-20",
+    "authors_first3": [
+     "Boiko",
+     "MacKnight",
+     "Kline"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Transformer-based large language models are making significant strides in various fields, such as natural language processing1–5, biology6,7, chemistry8–10 and computer programming11,12. Here, we show the development and capabilities of Coscientist, ...",
+   "passages": [
+    "Acknowledgements We thank the following Carnegie Mellon University Chemistry groups for their assistance with providing the chemicals needed for the Coscientist’s experiments: Sydlik, Garcia Borsch, Matyjaszewski and Ly.",
+    "G.G. is grateful to the Carnegie Mellon University Cloud Lab Initiative led by the Mellon College of Science for its vision of the future of physical sciences.",
+    "G.G. thanks Carnegie Mellon University; the Mellon College of Sciences and its Department of Chemistry; and the College of Engineering and its Department of Chemical Engineering for the start-up support.",
+    "In this study, we have demonstrated the compatibility with the Opentrons Python API and the Emerald Cloud Lab (ECL) Symbolic Lab Language (SLL).",
+    "We also thank the team at Emerald Cloud Lab (with special attention to Y.",
+    "In this work, we present a multi-LLMs-based intelligent agent (hereafter simply called Coscientist) capable of autonomous design, planning and performance of complex scientific experiments."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2304.05332",
+   "final_url": "https://arxiv.org/abs/2304.05332",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Emergent autonomous scientific research capabilities of large language models",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-04-11"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-04-11"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2304.05332: Emergent autonomous scientific research capabilities of large language models",
+   "passages": [
+    "In this paper, we present an Intelligent Agent system that combines multiple large language models for autonomous design, planning, and execution of scientific experiments.",
+    "Extreme scaling and reinforcement learning from human feedback have significantly improved the quality of generated text, enabling these models to perform various tasks and reason about their choices.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.cmu.edu/chemistry/news/2023/1220_ai-coscientist-automates-discovery.html",
+   "final_url": "https://www.cmu.edu/chemistry/news/2023/1220_ai-coscientist-automates-discovery.html",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Carnegie Mellon University",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "dead"
+  }
+ ]
+}

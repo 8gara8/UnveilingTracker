@@ -1,0 +1,252 @@
+{
+ "slug": "sphere-packing-dimensions-8-and-24",
+ "title": "Sphere packing solved in dimensions 8 and 24",
+ "first_published": "2016-03",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://annals.math.princeton.edu/2017/185-3/p07",
+   "final_url": "https://annals.math.princeton.edu/2017/185-3/p07",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The sphere packing problem in dimension 8",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2017-01-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-05-01"
+    }
+   ],
+   "date_ok": false,
+   "doi": "https://doi.org/10.4007/annals.2017.185.3.7",
+   "crossref": {
+    "doi": "https://doi.org/10.4007/annals.2017.185.3.7",
+    "resolves": true,
+    "title": "The sphere packing problem in dimension $8$",
+    "container": "Annals of Mathematics",
+    "publisher": "Annals of Mathematics",
+    "type": "journal-article",
+    "issued": "2017-5-1",
+    "authors_first3": [
+     "Viazovska"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "KeywordsFourier analysis, Sphere packing, modular forms Mathematical Subject ClassificationPrimary 2000: 11F03, 11F30, 52C17 DOI https://doi.org/10.4007/annals.2017.185.3.7 MR 3664816 zbMATH06731863 Milestones Received: 8 April 2016 Revised: 18 December 2016 Accepted: 19 December 2016 Published online: 12 April 2017 Authors Maryna S.",
+    "Viazovska Abstract In this paper we prove that no packing of unit balls in Euclidean space $\\mathbb R^8$ has density greater than that of the $E_8$-lattice packing."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/1603.04246",
+   "final_url": "https://arxiv.org/abs/1603.04246",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The sphere packing problem in dimension 8",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2017-04-04"
+    },
+    {
+     "source": "citation_date",
+     "date": "2016-03-14"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-05-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.4007/annals.2017.185.3.7",
+   "crossref": {
+    "doi": "10.4007/annals.2017.185.3.7",
+    "resolves": true,
+    "title": "The sphere packing problem in dimension $8$",
+    "container": "Annals of Mathematics",
+    "publisher": "Annals of Mathematics",
+    "type": "journal-article",
+    "issued": "2017-5-1",
+    "authors_first3": [
+     "Viazovska"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1603.04246: The sphere packing problem in dimension 8",
+   "passages": [
+    "In this paper we prove that no packing of unit balls in Euclidean space $\\mathbb{R}^8$ has density greater than that of the $E_8$-lattice packing.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://annals.math.princeton.edu/2017/185-3/p08",
+   "final_url": "https://annals.math.princeton.edu/2017/185-3/p08",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The sphere packing problem in dimension $24$",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2017-01-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-05-01"
+    }
+   ],
+   "date_ok": false,
+   "doi": "https://doi.org/10.4007/annals.2017.185.3.8",
+   "crossref": {
+    "doi": "https://doi.org/10.4007/annals.2017.185.3.8",
+    "resolves": true,
+    "title": "The sphere packing problem in dimension $24$",
+    "container": "Annals of Mathematics",
+    "publisher": "Annals of Mathematics",
+    "type": "journal-article",
+    "issued": "2017-5-1",
+    "authors_first3": [
+     "Cohn",
+     "Kumar",
+     "Miller"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "Miller, Danylo Radchenko, Maryna Viazovska Abstract Building on Viazovska’s recent solution of the sphere packing problem in eight dimensions, we prove that the Leech lattice is the densest packing of congruent spheres in twenty-four dimensions and that it is the unique optimal periodic packing.",
+    "In particular, we find an optimal auxiliary function for the linear programming bounds, which is an analogue of Viazovska’s function for the eight-dimensional case."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://mathunion.org/imu-awards/fields-medal/fields-medals-2022",
+   "final_url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2022",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Fields Medals 2022",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Explore the 2022 Fields Medal winners recognized for groundbreaking achievements in mathematics and their future promise.",
+   "passages": [
+    "In 2022, the prize funds from the University of Toronto were supplemented by generous support from the Heidelberg Laureate Forum Foundation/Klaus Tschira Stiftung."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://arxiv.org/abs/2604.23468",
+   "final_url": "https://arxiv.org/abs/2604.23468",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Progress in Formalizing Sphere Packing in Dimension 8",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-05-29"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-04-25"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2604.23468: Progress in Formalizing Sphere Packing in Dimension 8",
+   "passages": [
+    "In 2016, Viazovska famously solved the sphere packing problem in dimension $8$, using modular forms to construct a 'magic' function satisfying optimality conditions determined by Cohn and Elkies in 2003.",
+    "In March 2024, Hariharan and Viazovska launched a project to formalize this solution and related mathematical facts in the Lean Theorem Prover.",
+    "A significant milestone was achieved in February 2026: the result was formally verified, with the final stages of the verification done by Math, Inc.'s autoformalization model 'Gauss'."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://arxiv.org/abs/1607.02111",
+   "final_url": "https://arxiv.org/abs/1607.02111",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A Breakthrough in Sphere Packing: The Search for Magic Functions",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2016-07-07"
+    },
+    {
+     "source": "citation_date",
+     "date": "2016-07-07"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1607.02111: A Breakthrough in Sphere Packing: The Search for Magic Functions",
+   "passages": [
+    "This paper is an exposition, written for the Nieuw Archief voor Wiskunde, about the two recent breakthrough results in the theory of sphere packings."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

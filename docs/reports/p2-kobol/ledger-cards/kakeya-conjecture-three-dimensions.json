@@ -1,0 +1,143 @@
+{
+ "slug": "kakeya-conjecture-three-dimensions",
+ "title": "Kakeya sets in three dimensions have full dimension",
+ "first_published": "2025-02-24",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2502.17655",
+   "final_url": "https://arxiv.org/abs/2502.17655",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Volume estimates for unions of convex sets, and the Kakeya set conjecture in three dimensions",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2025-02-24"
+    },
+    {
+     "source": "citation_date",
+     "date": "2025-02-24"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2502.17655: Volume estimates for unions of convex sets, and the Kakeya set conjecture in three dimensions",
+   "passages": [
+    "As a consequence, we prove that every Kakeya set in $\\mathbb{R}^3$ has Minkowski and Hausdorff dimension 3.",
+    "We study sets of $\\delta$ tubes in $\\mathbb{R}^3$, with the property that not too many tubes can be contained inside a common convex set $V$.",
+    "We show that the union of tubes from such a set must have almost maximal volume."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://mathunion.org/imu-awards/fields-medal/fields-medals-2026",
+   "final_url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2026",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Fields Medals 2026 | International Mathematical Union (IMU)",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "For 2026, the prize funds from the University of Toronto are supplemented by generous support from the Fields Institute.",
+    "Yu Deng For his work in partial differential equations, including the rigorous derivation of the Boltzmann equation from hard-sphere dynamics for rarefied gases, the derivation of wave kinetic equations from nonlinear dispersive systems, and probabilistic approaches to nonlinear Schrodinger dynamics."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://terrytao.wordpress.com/2025/02/25/the-three-dimensional-kakeya-conjecture-after-wang-and-zahl/",
+   "final_url": "https://terrytao.wordpress.com/2025/02/25/the-three-dimensional-kakeya-conjecture-after-wang-and-zahl/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The three-dimensional Kakeya conjecture, after Wang and Zahl",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2025-02-26"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-02-26"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "There has been some spectacular progress in geometric measure theory: Hong Wang and Joshua Zahl have just released a preprint that resolves the three-dimensional case of the infamous Kakeya set con…",
+   "passages": [
+    "This conjecture asserts that a Kakeya set – a subset of that contains a unit line segment in every direction, must have Minkowski and Hausdorff dimension equal to three.",
+    "Reply 4 March, 2025 at 8:31 am Terence Tao The Kakeya set conjecture implies the Nikodym set conjecture as a corollary (this is a simple argument coming from applying a projective transformation to convert a Nikodym set into a Kakeya set).",
+    "Reply 5 March, 2025 at 9:22 am Terence Tao The Kakeya set problem is related to the Kakeya needle problem, but technically the two problems are distinct.",
+    "With a somewhat lengthy induction on scales argument, Wang and Zahl are able to show that (a suitable version of) implies an “x-ray” version of itself, in which the lower bound of super-Kakeya configurations is noticeably better than the lower bound for Kakeya configurations.",
+    "The Kakeya set problem (in its Minkowski dimension formulation) can be phrased as a problem of understanding how to pack tubes of small but non-zero thickness in different orientations in as small a set as possible.",
+    "We assume (or some suitable variant thereof), and consider some thickened Kakeya set where is something resembling what we might call a “Kakeya configuration” at scale : a collection of thin tubes of dimension that are -separated in direction."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://terrytao.wordpress.com/2025/02/25/the-three-dimensional-kakeya-conjecture-after-wang-and-zahl/",
+   "final_url": "https://terrytao.wordpress.com/2025/02/25/the-three-dimensional-kakeya-conjecture-after-wang-and-zahl/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The three-dimensional Kakeya conjecture, after Wang and Zahl",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2025-02-26"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-02-26"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "There has been some spectacular progress in geometric measure theory: Hong Wang and Joshua Zahl have just released a preprint that resolves the three-dimensional case of the infamous Kakeya set con…",
+   "passages": [
+    "This conjecture asserts that a Kakeya set – a subset of that contains a unit line segment in every direction, must have Minkowski and Hausdorff dimension equal to three.",
+    "With a somewhat lengthy induction on scales argument, Wang and Zahl are able to show that (a suitable version of) implies an “x-ray” version of itself, in which the lower bound of super-Kakeya configurations is noticeably better than the lower bound for Kakeya configurations.",
+    "The Kakeya set problem (in its Minkowski dimension formulation) can be phrased as a problem of understanding how to pack tubes of small but non-zero thickness in different orientations in as small a set as possible.",
+    "We assume (or some suitable variant thereof), and consider some thickened Kakeya set where is something resembling what we might call a “Kakeya configuration” at scale : a collection of thin tubes of dimension that are -separated in direction.",
+    "Reply 8 August, 2026 at 3:53 pm jennifer suzuki Being someone who does not work in the geometric measure theory, I of course had absolutely no ability to understand the original proof published by Wang-Zahl.",
+    "In their new paper, Wang and Zahl established (1) for ."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

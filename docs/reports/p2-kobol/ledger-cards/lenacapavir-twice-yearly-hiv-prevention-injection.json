@@ -1,0 +1,180 @@
+{
+ "slug": "lenacapavir-twice-yearly-hiv-prevention-injection",
+ "title": "Twice-yearly lenacapavir shots prevent HIV in a large trial of women",
+ "first_published": "2024-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/39046157/",
+   "final_url": "https://pubmed.ncbi.nlm.nih.gov/39046157/",
+   "status": 203,
+   "readable": false,
+   "reason": "203 cookie wall (record read through esummary)",
+   "title_found": "Twice-Yearly Lenacapavir or Daily F/TAF for HIV Prevention in Cisgender Women.",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "esummary sortpubdate",
+     "date": "2024-10-03"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-10-3"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1056/nejmoa2407001",
+   "crossref": {
+    "doi": "10.1056/nejmoa2407001",
+    "resolves": true,
+    "title": "Twice-Yearly Lenacapavir or Daily F/TAF for HIV Prevention in Cisgender Women",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2024-10-3",
+    "authors_first3": [
+     "Bekker",
+     "Das",
+     "Abdool Karim"
+    ],
+    "author_count": 40,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": {
+    "source": "esummary pubtype",
+    "value": [
+     "Journal Article",
+     "Clinical Trial, Phase III",
+     "Randomized Controlled Trial",
+     "Multicenter Study",
+     "Comparative Study"
+    ]
+   },
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/220018Orig1s000ltr.pdf",
+   "final_url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/220018Orig1s000ltr.pdf",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.ema.europa.eu/en/documents/assessment-report/yeytuo-epar-public-assessment-report_en.pdf",
+   "final_url": "https://www.ema.europa.eu/en/documents/assessment-report/yeytuo-epar-public-assessment-report_en.pdf",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.eurekalert.org/news-releases/1067507",
+   "final_url": "https://www.eurekalert.org/news-releases/1067507",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Breakthrough of the Year: A drug that prevents HIV infection, providing six months of protection per shot",
+   "title_match": false,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "As its 2024 Breakthrough of The Year,&nbsp;Science&nbsp;has named the development of lenacapavir &ndash; a promising new injectable drug that prevents HIV infection. The award also recognizes related work surrounding gaining a new&nbsp;understanding of the structure and function of HIV&rsquo;s capsi",
+   "passages": [
+    "Journal Science DOI 10.1126/science.adv1489 Article Title The great work continues Article Publication Date 13-Dec-2024 Disclaimer: AAAS and EurekAlert! are not responsible for the accuracy of news releases posted to EurekAlert! by contributing institutions or for the use of any information through the EurekAlert system.",
+    "Initially developed as a rescue therapy for patients resistant to other drugs, lenacapavir’s long-lasting injectable form now positions it as a game-changer in HIV prevention.",
+    "It overcomes adherence issues seen with daily oral pre-exposure prophylaxis (PrEP) and bimonthly injections like cabotegravir, particularly for populations facing stigma and access challenges.",
+    "Combined with previous biomedical advances, lenacapavir represents a pivotal step toward diminishing HIV/AIDS as a global health crisis.",
+    "The award also recognizes related work surrounding gaining a new understanding of the structure and function of HIV’s capsid protein.",
+    "Despite decades of advancements, HIV continues to infect more than a million people annually, with a vaccine remaining elusive."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://clinicaltrials.gov/study/NCT04994509",
+   "final_url": "https://clinicaltrials.gov/study/NCT04994509",
+   "status": 200,
+   "readable": false,
+   "reason": "page drawn by script; record read through the API",
+   "title_found": "Pre-Exposure Prophylaxis Study of Lenacapavir and Emtricitabine/Tenofovir Alafenamide in Adolescent Girls and Young Women at Risk of HIV Infection",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "startDate",
+     "date": "2021-08-30"
+    }
+   ],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": {
+    "source": "ClinicalTrials.gov API v2",
+    "value": {
+     "status": "ACTIVE_NOT_RECRUITING",
+     "phases": [
+      "PHASE3"
+     ]
+    }
+   },
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "ctgov-api",
+     "url": "https://clinicaltrials.gov/api/v2/studies/NCT04994509",
+     "status": 200,
+     "readable": true,
+     "title_match": false,
+     "passages": []
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

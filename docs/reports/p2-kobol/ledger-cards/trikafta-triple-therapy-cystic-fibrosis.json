@@ -1,0 +1,199 @@
+{
+ "slug": "trikafta-triple-therapy-cystic-fibrosis",
+ "title": "Triple drug Trikafta treats the cause of cystic fibrosis for most patients",
+ "first_published": "2019-10",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1056/NEJMoa1908639",
+   "final_url": "https://www.nejm.org/doi/10.1056/NEJMoa1908639",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2019-11-07"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1056/nejmoa1908639",
+   "crossref": {
+    "doi": "10.1056/nejmoa1908639",
+    "resolves": true,
+    "title": "Elexacaftor–Tezacaftor–Ivacaftor for Cystic Fibrosis with a Single Phe508del Allele",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2019-11-7",
+    "authors_first3": [
+     "Middleton",
+     "Mall",
+     "Dřevínek"
+    ],
+    "author_count": 21,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7282384/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7282384/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Elexacaftor–Tezacaftor–Ivacaftor for Cystic Fibrosis with a Single Phe508del Allele",
+     "title_match": true,
+     "date": "2019-10-30",
+     "passages": [
+      "We studied the effect of a triple-combination CFTR modulator regimen in patients with cystic fibrosis who have a single Phe508del allele.",
+      "In conclusion, this 24-week, phase 3 trial involving 403 patients with cystic fibrosis confirmed the efficacy of triple-combination CFTR modulator therapy in patients 12 years of age or older who were heterozygous for the Phe508del CFTR mutation and a minimal-function mutation.",
+      "Clinical development of triple-combination CFTR modulators for cystic fibrosis patients with one or two F508del alleles.",
+      "Adverse events leading to discontinuation of the trial regimen occurred in 1% of the patients in the elexacaftor–tezacaftor–ivacaftor group.CONCLUSIONS Elexacaftor–tezacaftor–ivacaftor was efficacious in patients with cystic fibrosis with Phe508del–minimal function genotypes, in whom previous CFTR modulator regimens were ineffective.",
+      "These data support the hypothesis that the presence of a single Phe508del allele is sufficient to impart the benefit of triple-combination therapy independent of the minimal-function mutation.",
+      "METHODS PARTICIPANTS, TRIAL DESIGN, AND OVERSIGHT This phase 3, multicenter, randomized, double-blind, placebo-controlled trial of elexacaftor–tezacaftor–ivacaftor involved patients 12 years of age or older with cystic fibrosis and Phe508del-minimal function genotypes."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1016/S0140-6736(19)32597-8",
+   "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0140673619325978",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Redirecting",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2019-11-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1016/s0140-6736(19)32597-8",
+   "crossref": {
+    "doi": "10.1016/s0140-6736(19)32597-8",
+    "resolves": true,
+    "title": "Efficacy and safety of the elexacaftor plus tezacaftor plus ivacaftor combination regimen in people with cystic fibrosis homozygous for the F508del mutation: a double-blind, randomised, phase 3 trial",
+    "container": "The Lancet",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2019-11",
+    "authors_first3": [
+     "Heijerman",
+     "McKone",
+     "Downey"
+    ],
+    "author_count": 65,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1016/s0140-6736(20)31021-7",
+      "type": "erratum",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7571408/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7571408/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Efficacy and safety of the elexacaftor/tezacaftor/ivacaftor combination regimen in people with cystic fibrosis homozygous for the F508del mutation: a double-blind, randomised, phase 3 trial",
+     "title_match": true,
+     "date": "2019-10-30",
+     "passages": [
+      "Clinical development of triple-combination CFTR modulators for cystic fibrosis patients with one or two F508del alleles.",
+      "Long-term safety and efficacy of ivacaftor in patients with cystic fibrosis who have the Gly551Asp-CFTR mutation: a phase 3, open-label extension study (PERSIST).",
+      "Ivacaftor in subjects with cystic fibrosis who are homozygous for the F508del-CFTR mutation.",
+      "Lumacaftor/ivacaftor treatment of patients with cystic fibrosis heterozygous for F508del-CFTR.",
+      "The primary objective of the trial was to evaluate the efficacy of ELX in triple combination with TEZ/IVA, in comparison with TEZ/IVA alone, in pwCF homozygous for the F508del mutation.",
+      "Evidence before this study F508del, the most common defective form of the cystic fibrosis transmembrane conductance regulator protein (F508del-CFTR), can be corrected with currently available dual modulator combinations."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.niddk.nih.gov/news/archive/2019/therapies-treat-molecular-cause-cystic-fibrosis-now-approved-for-ninety-percent-people-with-disease",
+   "final_url": "https://www.niddk.nih.gov/news/archive/2019/therapies-treat-molecular-cause-cystic-fibrosis-now-approved-for-ninety-percent-people-with-disease",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Therapies To Treat the Molecular Cause of Cystic Fibrosis Now Approved for Ninety Percent of People with the Disease - NIDDK",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-09-11"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-10-31"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Therapies To Treat the Molecular Cause of Cystic Fibrosis Now Approved for Ninety Percent of People with the Disease Research Update",
+   "passages": [
+    "In 2019, scientists found that such a three-drug combination was significantly more effective than the approved two-drug therapies at improving CFTR function in people with two copies of Phe508del.",
+    "Food and Drug Administration (FDA) approved two different two-drug combinations of ivacaftor, the channel opening drug, along with either of two CFTR stabilizing drugs, tezacaftor or lumacaftor.",
+    "The FDA has now approved this triple combination therapy for people ages 12 and over with CF and at least one copy of Phe508del.",
+    "However, even though they provided some clinical benefit, CFTR function remained too low in people with two copies of Phe508del.",
+    "Scientists reasoned that an additional CFTR-stabilizing medicine might be added to one of the approved two-drug combinations to have greater benefit.",
+    "This gene encodes the CFTR protein, a key cellular channel for chloride ions, (one of the two chemical components of table salt)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://directorsblog.nih.gov/2020/01/02/celebrating-biomedical-breakthroughs-in-2019/",
+   "final_url": "https://directorsblog.nih.gov/2020/01/02/celebrating-biomedical-breakthroughs-in-2019/",
+   "status": null,
+   "readable": false,
+   "reason": "ENOTFOUND",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "dead"
+  }
+ ]
+}

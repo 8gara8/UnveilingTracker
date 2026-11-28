@@ -1,0 +1,381 @@
+{
+ "slug": "alphafold2-casp14-protein-structure-prediction",
+ "title": "AlphaFold 2 predicts protein structures at near-experimental accuracy in CASP14",
+ "first_published": "2020-11-30",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-021-03819-2",
+   "final_url": "https://www.nature.com/articles/s41586-021-03819-2?error=cookies_not_supported&code=875c6a0a-d5fa-4586-84c5-782213100cf8",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Highly accurate protein structure prediction with AlphaFold",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-07-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2021-07-15"
+    },
+    {
+     "source": "dc.date",
+     "date": "2021-07-15"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2021-07-15"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2021-07-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-07-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-05-11"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-07-12"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-07-15"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-021-03819-2",
+   "crossref": {
+    "doi": "10.1038/s41586-021-03819-2",
+    "resolves": true,
+    "title": "Highly accurate protein structure prediction with AlphaFold",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2021-7-15",
+    "authors_first3": [
+     "Jumper",
+     "Evans",
+     "Pritzel"
+    ],
+    "author_count": 34,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.740477161.793587441",
+      "10.3410/f.740477161.793588825",
+      "10.3410/f.740477161.793587548"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Proteins are essential to life, and understanding their structure can facilitate a mechanistic understanding of their function. Through an enormous experimental effort1–4, the structures of around 100,000 unique proteins have been determined5, but this represents a small fraction of the billions of ",
+   "passages": [
+    "We validated an entirely redesigned version of our neural network-based model, AlphaFold, in the challenging 14th Critical Assessment of protein Structure Prediction (CASP14)15, demonstrating accuracy competitive with experimental structures in a majority of cases and greatly outperforming other methods.",
+    "1: AlphaFold produces highly accurate structures.Full size imagea, The performance of AlphaFold on the CASP14 dataset (n = 87 protein domains) relative to the top-15 entries (out of 146 entries), group numbers correspond to the numbers assigned to entrants by CASP.",
+    "Overall, these analyses validate that the high accuracy and reliability of AlphaFold on CASP14 proteins also transfers to an uncurated collection of recent PDB submissions, as would be expected (see Supplementary Methods 1.15 and Supplementary Fig.",
+    "Highly accurate protein structure prediction with AlphaFold.",
+    "2a that the high accuracy that AlphaFold demonstrated in CASP14 extends to a large sample of recently released PDB structures; in this dataset, all structures were deposited in the PDB after our training data cut-off and are analysed as full chains (see Methods, Supplementary Fig.",
+    "2: Accuracy of AlphaFold on recent PDB structures.Full size imageThe analysed structures are newer than any structure in the training set."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34265844/",
+   "final_url": "https://pubmed.ncbi.nlm.nih.gov/34265844/",
+   "status": 203,
+   "readable": false,
+   "reason": "203 cookie wall (record read through esummary)",
+   "title_found": "Highly accurate protein structure prediction with AlphaFold.",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "esummary sortpubdate",
+     "date": "2021-08-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-7-15"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-021-03819-2",
+   "crossref": {
+    "doi": "10.1038/s41586-021-03819-2",
+    "resolves": true,
+    "title": "Highly accurate protein structure prediction with AlphaFold",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2021-7-15",
+    "authors_first3": [
+     "Jumper",
+     "Evans",
+     "Pritzel"
+    ],
+    "author_count": 34,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": {
+    "source": "esummary pubtype",
+    "value": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   },
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8371605/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8371605/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Highly accurate protein structure prediction with AlphaFold",
+     "title_match": true,
+     "date": "2021 Jul 15",
+     "passages": [
+      "We validated an entirely redesigned version of our neural network-based model, AlphaFold, in the challenging 14th Critical Assessment of protein Structure Prediction (CASP14)15, demonstrating accuracy competitive with experimental structures in a majority of cases and greatly outperforming other methods.",
+      "In CASP14, AlphaFold structures were vastly more accurate than competing methods.",
+      "2a that the high accuracy that AlphaFold demonstrated in CASP14 extends to a large sample of recently released PDB structures; in this dataset, all structures were deposited in the PDB after our training data cut-off and are analysed as full chains (see Methods, Supplementary Fig.",
+      "Overall, these analyses validate that the high accuracy and reliability of AlphaFold on CASP14 proteins also transfers to an uncurated collection of recent PDB submissions, as would be expected (see Supplementary Methods 1.15 and Supplementary Fig.",
+      "The AlphaFold network directly predicts the 3D coordinates of all heavy atoms for a given protein using the primary amino acid sequence and aligned sequences of homologues as inputs (Fig.",
+      "Kemp for their help managing the project; the JAX, TensorFlow and XLA teams for detailed support and enabling machine learning models of the complexity of AlphaFold; our colleagues at DeepMind, Google and Alphabet for their encouragement and support; and J."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34559429/",
+   "final_url": "https://pubmed.ncbi.nlm.nih.gov/34559429/",
+   "status": 203,
+   "readable": false,
+   "reason": "203 cookie wall (record read through esummary)",
+   "title_found": "Assessment of prediction methods for protein structures determined by NMR in CASP14: Impact of AlphaFold2.",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "esummary sortpubdate",
+     "date": "2021-12-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-10-19"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1002/prot.26246",
+   "crossref": {
+    "doi": "10.1002/prot.26246",
+    "resolves": true,
+    "title": "Assessment of prediction methods for protein structures determined by\n                    <scp>NMR</scp>\n                    in\n                    <scp>CASP14</scp>\n                    : Impact of\n                    <scp>AlphaFold2</scp>",
+    "container": "Proteins: Structure, Function, and Bioinformatics",
+    "publisher": "Wiley",
+    "type": "journal-article",
+    "issued": "2021-10-19",
+    "authors_first3": [
+     "Huang",
+     "Zhang",
+     "Bersch"
+    ],
+    "author_count": 15,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": {
+    "source": "esummary pubtype",
+    "value": [
+     "Journal Article",
+     "Research Support, N.I.H., Extramural",
+     "Research Support, U.S. Gov't, Non-P.H.S."
+    ]
+   },
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8616817/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8616817/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Assessment of prediction methods for protein structures determined by NMR in CASP14: Impact of AlphaFold2",
+     "title_match": true,
+     "date": "2021 Oct 19",
+     "passages": [
+      "Assessment of prediction methods for protein structures determined by NMR in CASP14: Impact of AlphaFold2 .",
+      "These results demonstrate the remarkable accuracy of some CASP14 prediction models, particularly AlphaFold2, and reveal different reasons for the differences between experimental and prediction models for each target for which the reference struture was determined by NMR methods.2.",
+      "ANSURR scores The Accuracy of NMR Structures Using RCI and Rigidity (ANSURR) method provides an independent assessment of model quality by comparing protein flexibility computed from backbone chemical shifts with protein flexibility predicted with a graph theory based measure of structural rigidity.",
+      "The CASP14 blind protein structure prediction results have provided the opportunity to assess the potential for using predicted protein structures to guide experimental NMR data analysis.",
+      "Open in a new tab Structural analysis for CASP14 targets 1055 and 1027. (left) Superimposed ensembles for (A) NMR structure (PDB ID 6zyc) (green) and (B) AF2 structures (blue) of T1055, illustrating the not‐well‐defined segments (brown) as defined by Cyrange.",
+      "Considering the results with more than 90 protein targets, 1 the accuracy of structures predicted by AlphaFold2 appear to be generally sufficient to provide reliable guidance to NMR data analysis."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://predictioncenter.org/casp14/",
+   "final_url": "https://predictioncenter.org/casp14/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Home - CASP14",
+   "title_match": "partial",
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "In the most recent CASP round, CASP14, nearly 100 groups from around the world submitted more than 67,000 models on 90 modeling targets (see Critical assessment of methods of protein structure prediction (CASP) - Round XIII).",
+    "If you are new to CASP and don't have an account with the Prediction Center, you will have to register with the Prediction Center first and only then proceed to CASP14 registration.",
+    "If you already have an account with the Prediction Center, you can go directly to the CASP14 registration page.",
+    "Goals New Call for targets Scope Timetable Registration Targets Format Assessment Results Conference Organizers Goals CASP assesses many aspects of modeling, including the accuracy of protein topologies, atom co-ordinates, and multi-protein assemblies.",
+    "CASP14 will address the following questions: How similar are the models to the corresponding experimental structure?",
+    "The contact prediction (RR) category will be expanded to allow submission of inter-residue distance predictions in addition to the inter-residue contact predictions (see CASP14 format page link in the Model submission section)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://www.aaas.org/news/sciences-2021-breakthrough-ai-powered-protein-prediction",
+   "final_url": "https://www.aaas.org/news/sciences-2021-breakthrough-ai-powered-protein-prediction",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Science’s 2021 Breakthrough: AI-powered Protein Prediction | American Association for the Advancement of Science (AAAS)",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The journal's Breakthrough of the Year allows scientists to predict thousands of accurate protein structures at a fraction of the time and cost of previous methods.",
+   "passages": [
+    "AlphaFold, developed by the Google sister company DeepMind, trained itself on databases of solved protein structures and showed protein structure prediction at accuracies comparable to current experimental techniques.",
+    "To honor this feat, Science has named AI-powered protein prediction as its 2021 Breakthrough of the Year.",
+    "Each is born a linear chain of amino acids, assembled through the instructions encoded in our DNA, and subsequently folded into elaborate 3D shapes, which determine how they interact with other molecules and define their biological functions.",
+    "Each AI-driven software program demonstrates the ability to predict a wide variety of complex protein structures quickly and accurately based solely on the amino acids they contain.",
+    "This year, scientists have shown that artificial intelligence (AI)-driven software can achieve this long-standing goal and predict accurate protein structures by the thousands and at a fraction of the time and cost involved with previous methods.",
+    "\"This is a breakthrough that will keep on giving."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://www.nobelprize.org/prizes/chemistry/2024/press-release/",
+   "final_url": "https://www.nobelprize.org/prizes/chemistry/2024/press-release/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Nobel Prize in Chemistry 2024",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The Nobel Prize in Chemistry 2024 was divided, one half awarded to David Baker \"for computational protein design\", the other half jointly to Demis Hassabis and John Jumper \"for protein structure prediction\"",
+   "passages": [
+    "Demis Hassabis and John Jumper have developed an AI model to solve a 50-year-old problem: predicting proteins’ complex structures.",
+    "In 2003, David Baker succeeded in using these blocks to design a new protein that was unlike any other protein.",
+    "Both of these discoveries open up vast possibilities,” says Heiner Linke, Chair of the Nobel Committee for Chemistry.",
+    "In 2020, Demis Hassabis and John Jumper presented an AI model called AlphaFold2.",
+    "That we can now predict protein structures and design our own proteins confers the greatest benefit to humankind.",
+    "David Baker has succeeded with the almost impossible feat of building entirely new kinds of proteins."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "url": "https://deepmind.google/discover/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology/",
+   "final_url": "https://deepmind.google/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AlphaFold: a solution to a 50-year-old grand challenge in biology",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2020-11-30"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-11-30"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-12-31"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-06-30"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-06-30"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Proteins are essential to life, supporting practically all its functions. They are large complex molecules, made up of chains of amino acids, and what a protein does largely depends on its unique 3D …",
+   "passages": [
+    "Figuring out what shapes proteins fold into is known as the “protein folding problem”, and has stood as a grand challenge in biology for the past 50 years.",
+    "In a major scientific advance, the latest version of our AI system AlphaFold has been recognised as a solution to this grand challenge by the organisers of the biennial Critical Assessment of protein Structure Prediction (CASP).",
+    "Our methods may prove especially helpful for important classes of proteins, such as membrane proteins, that are very difficult to crystallise and therefore challenging to experimentally determine.This computational work represents a stunning advance on the protein-folding problem, a 50-year-old grand challenge in biology.",
+    "Additionally, AlphaFold can predict which parts of each predicted protein structure are reliable using an internal confidence measure.We trained this system on publicly available data consisting of ~170,000 protein structures from the protein data bank together with large databases containing protein sequences of unknown structure.",
+    "These insights could enable more precise work on drug development, complementing existing experimental methods to find promising treatments faster.AlphaFold is a once in a generation advance, predicting protein structures with incredible speed and precision.",
+    "While our team won’t be able to respond to every enquiry, if AlphaFold may be relevant to your work, please submit a few lines about it to alphafold@deepmind.com."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

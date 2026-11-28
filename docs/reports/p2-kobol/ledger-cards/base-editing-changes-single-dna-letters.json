@@ -1,0 +1,235 @@
+{
+ "slug": "base-editing-changes-single-dna-letters",
+ "title": "Base editing changes single DNA letters without cutting both strands",
+ "first_published": "2016-04-20",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/nature17946",
+   "final_url": "https://www.nature.com/articles/nature17946?error=cookies_not_supported&code=90c9621b-62a0-47bd-bec9-7deb5be3ad27",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Programmable editing of a target base in genomic DNA without double-stranded DNA cleavage",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2016-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2016-04-20"
+    },
+    {
+     "source": "dc.date",
+     "date": "2016-04-20"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2016-04-20"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2016-04-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-04-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-02-26"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-03-30"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2016-04-20"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature17946",
+   "crossref": {
+    "doi": "10.1038/nature17946",
+    "resolves": true,
+    "title": "Programmable editing of a target base in genomic DNA without double-stranded DNA cleavage",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2016-4-20",
+    "authors_first3": [
+     "Komor",
+     "Kim",
+     "Packer"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.726297168.793520904",
+      "10.3410/f.726297168.793525986"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "CRISPR/Cas9 DNA editing creates a double-stranded break in the target DNA, which can frequently generate random insertion or deletion of bases (indels); a new genome editing approach combining Cas9 with a cytidine deaminase is described here, which corrects point mutations more efficiently than cano",
+   "passages": [
+    "Letter Published: 20 April 2016 Programmable editing of a target base in genomic DNA without double-stranded DNA cleavage Alexis C.",
+    "Here we report the development of ‘base editing’, a new approach to genome editing that enables the direct, irreversible conversion of one target DNA base into another in a programmable manner, without requiring dsDNA backbone cleavage or a donor template.",
+    "Programmable editing of a target base in genomic DNA without double-stranded DNA cleavage.",
+    "High-throughput profiling of off-target DNA cleavage reveals RNA-programmed Cas9 nuclease specificity.",
+    "Three days after plasmid delivery, genomic DNA was extracted and analysed for base editing at the six genomic loci by HTS.",
+    "Structures of a CRISPR–Cas9 R-loop complex primed for DNA cleavage."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1038/nbt.3816",
+   "final_url": "https://www.nature.com/articles/nbt.3816?error=cookies_not_supported&code=907b6d38-9cba-4d5f-9c7d-9af2b110e79a",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Highly efficient RNA-guided base editing in mouse embryos",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2017-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2017-02-27"
+    },
+    {
+     "source": "dc.date",
+     "date": "2017-02-27"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2017-02-27"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2017-02-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-02-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-12-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-02-08"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-02-27"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/nbt.3816",
+   "crossref": {
+    "doi": "10.1038/nbt.3816",
+    "resolves": true,
+    "title": "Highly efficient RNA-guided base editing in mouse embryos",
+    "container": "Nature Biotechnology",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2017-2-27",
+    "authors_first3": [
+     "Kim",
+     "Ryu",
+     "Kim"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.727363082.793529464"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Mice with targeted point mutations are generated efficiently using Cas9–cytidine deaminase fusions. Base editors (BEs) composed of a cytidine deaminase fused to CRISPR–Cas9 convert cytidine to uridine, leading to single-base-pair substitutions in eukaryotic cells. We delivered BE mRNA or ribonucleop",
+   "passages": [
+    "Highly efficient RNA-guided base editing in mouse embryos.",
+    "CRISPR-Cas9 genome editing Transgenic organisms Genome Editing Techniques in Plant and Animal Systems Accession codes Primary accessions Sequence Read Archive SRP095234 ReferencesKomor, A.C., Kim, Y.B., Packer, M.S., Zuris, J.A. & Liu, D.R.",
+    "All authors discussed the results and commented on the manuscript.Publisher's note: Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.Corresponding authorCorrespondence to Jin-Soo Kim.Ethics declarations Competing interests J.-S.K. is a founder of and shareholder in ToolGen.",
+    "Wt, wild-type.Supplementary Figure 5 No off-target mutations were detectably induced at potential off-target sites in Dmd mutant mice.Targeted deep sequencing was used to measure base editing efficiencies at potential off-target sites in Dmd mutant mice (n=3).",
+    "Plant http://dx.doi.org/10.1016/j.molp.2016.12.001 (2016).Lu, Y. & Zhu, J.-k.",
+    "Integrated supplementary informationSupplementary Figure 1 Targeted mutagenesis in mouse embryos by microinjection of deaminse-nCas9 mRNA and sgRNAs.(a) and (b) Alignments of mutant sequences from blastocysts that developed after microinjection of BE3-encoding mRNA and sgRNA into zygotes."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://chembiophd.hms.harvard.edu/news/david-liu-awarded-breakthrough-prize",
+   "final_url": "https://chembiophd.hms.harvard.edu/news/david-liu-awarded-breakthrough-prize",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "Access Denied",
+   "title_match": false,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://breakthroughprize.org/",
+   "final_url": "https://breakthroughprize.org/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Breakthrough Prize",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The Breakthrough Prize is the world’s largest science prize. Its founders are Sergey Brin, Priscilla Chan and Mark Zuckerberg, Julia and Yuri Milner, and Anne Wojcicki. The Prize recognizes discoveries in fundamental physics, life science and mathematics.",
+   "passages": [
+    "Darwin distilled the chaos of life to a single idea.",
+    "Yet a single mind can extend it immensely."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

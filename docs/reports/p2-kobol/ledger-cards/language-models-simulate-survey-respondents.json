@@ -1,0 +1,310 @@
+{
+ "slug": "language-models-simulate-survey-respondents",
+ "title": "Language models can imitate survey respondents from different groups",
+ "first_published": "2022-09",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1017/pan.2023.2",
+   "final_url": "https://www.cambridge.org/core/journals/political-analysis/article/out-of-one-many-using-language-models-to-simulate-human-samples/035D7C8A55B237942FB6DBAD7CAA4E49",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Out of One, Many: Using Language Models to Simulate Human Samples",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-06-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-02-21"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-02-21"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1017/pan.2023.2",
+   "crossref": {
+    "doi": "10.1017/pan.2023.2",
+    "resolves": true,
+    "title": "Out of One, Many: Using Language Models to Simulate Human Samples",
+    "container": "Political Analysis",
+    "publisher": "Cambridge University Press (CUP)",
+    "type": "journal-article",
+    "issued": "2023-2-21",
+    "authors_first3": [
+     "Argyle",
+     "Busby",
+     "Fulda"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Out of One, Many: Using Language Models to Simulate Human Samples - Volume 31 Issue 3",
+   "passages": [
+    "Argyle*Affiliation:Department of Political Science, Brigham Young University, Provo, UT, USA. e-mail: lpargyle@byu.edu, ethan.busby@byu.edu, jgub@byu.eduEthan C.",
+    "BusbyAffiliation:Department of Political Science, Brigham Young University, Provo, UT, USA. e-mail: lpargyle@byu.edu, ethan.busby@byu.edu, jgub@byu.eduNancy FuldaAffiliation:Department of Computer Science, Brigham Young University, Provo, UT, USA. e-mail: nfulda@cs.byu.edu, christophermichaelrytting@gmail.com, wingated@cs.byu.eduJoshua R.",
+    "We suggest that language models with sufficient algorithmic fidelity thus constitute a novel and powerful tool to advance understanding of humans and society across a variety of disciplines.Keywordsartificial intelligencemachine learningcomputational social sciencepublic opinionInformationTypeArticleInformationPolitical Analysis , Volume 31 , Issue 3 , July 2023, pp.",
+    "Gubler (a1), Christopher Rytting (a2) and David Wingate (a2) DOI: https://doi.org/10.1017/pan.2023.2 Your Kindle email address Please provide your Kindle email. @free.kindle.com @kindle.com (service fees apply) Available formats PDF Please select a format to save.",
+    "Gubler (a1), Christopher Rytting (a2) and David Wingate (a2) DOI: https://doi.org/10.1017/pan.2023.2 Available formats PDF Please select a format to save.",
+    "Acknowledgments The authors thank the Departments of Computer Science and Political Science at Brigham Young University for support and for feedback on this manuscript."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1016/j.tics.2023.04.008",
+   "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1364661323000980",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Redirecting",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-06-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1016/j.tics.2023.04.008",
+   "crossref": {
+    "doi": "10.1016/j.tics.2023.04.008",
+    "resolves": true,
+    "title": "Can AI language models replace human participants?",
+    "container": "Trends in Cognitive Sciences",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2023-7",
+    "authors_first3": [
+     "Dillion",
+     "Tandon",
+     "Gu"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://doi.org/10.1017/pan.2024.5",
+   "final_url": "https://www.cambridge.org/core/journals/political-analysis/article/synthetic-replacements-for-human-survey-data-the-perils-of-large-language-models/B92267DC26195C7F36E63EA04A47D2FE",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Synthetic Replacements for Human Survey Data? The Perils of Large Language Models",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-05-17"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-05-17"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1017/pan.2024.5",
+   "crossref": {
+    "doi": "10.1017/pan.2024.5",
+    "resolves": true,
+    "title": "Synthetic Replacements for Human Survey Data? The Perils of Large Language Models",
+    "container": "Political Analysis",
+    "publisher": "Cambridge University Press (CUP)",
+    "type": "journal-article",
+    "issued": "2024-5-17",
+    "authors_first3": [
+     "Bisbee",
+     "Clinton",
+     "Dorff"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Synthetic Replacements for Human Survey Data? The Perils of Large Language Models - Volume 32 Issue 4",
+   "passages": [
+    "Beyond the substantive concerns with this overconfidence, the undersized variance of synthetic responses poses serious inferential problems for attempts to use such data for pre-analysis study design as some scholars have suggested (Argyle et al.",
+    "(Reference Bisbee, Clinton, Dorff, Kenkel and Larson2024) at https://doi.org/10.7910/DVN/VPN481.",
+    "Large language models (LLMs) that synthesize vast corpora of human-generated text might look like the new frontier in characterizing public opinion without the expense of traditional polling.",
+    "Our approach is to generate a dataset of synthetic opinions from ChatGPT about contemporary politics in the United States that we compare to opinions from a survey of matched human respondents from the 2016 and 2020 American National Election surveys.",
+    "(Reference Argyle, Busby, Fulda, Gubler, Rytting and Wingate2023) use GPT-3, a predecessor to the GPT-3.5 LLM underlying the ChatGPT program we query in our main analysis.",
+    "Even though the synthetic data broadly perform well in terms of summarizing overall human opinion, issues emerge when we look at subgroups."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://arxiv.org/abs/2303.17548",
+   "final_url": "https://arxiv.org/abs/2303.17548",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Whose Opinions Do Language Models Reflect?",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-03-30"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-03-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2303.17548: Whose Opinions Do Language Models Reflect?",
+   "passages": [
+    "Our analysis not only confirms prior observations about the left-leaning tendencies of some human feedback-tuned LMs, but also surfaces groups whose opinions are poorly reflected by current LMs (e.g., 65+ and widowed individuals).",
+    "Language models (LMs) are increasingly being used in open-ended contexts, where the opinions reflected by LMs in response to subjective queries can have a profound impact, both on user satisfaction, as well as shaping the views of society at large.",
+    "Using this framework, we create OpinionsQA, a new dataset for evaluating the alignment of LM opinions with those of 60 US demographic groups over topics ranging from abortion to automation.",
+    "In this work, we put forth a quantitative framework to investigate the opinions reflected by LMs -- by leveraging high-quality public opinion polls and their associated human responses.",
+    "Across topics, we find substantial misalignment between the views reflected by current LMs and those of US demographic groups: on par with the Democrat-Republican divide on climate change.",
+    "Notably, this misalignment persists even after explicitly steering the LMs towards particular demographic groups."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://doi.org/10.1016/j.tics.2023.04.008",
+   "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1364661323000980",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Redirecting",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-06-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1016/j.tics.2023.04.008",
+   "crossref": {
+    "doi": "10.1016/j.tics.2023.04.008",
+    "resolves": true,
+    "title": "Can AI language models replace human participants?",
+    "container": "Trends in Cognitive Sciences",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2023-7",
+    "authors_first3": [
+     "Dillion",
+     "Tandon",
+     "Gu"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "url": "https://doi.org/10.1017/pan.2024.5",
+   "final_url": "https://www.cambridge.org/core/journals/political-analysis/article/synthetic-replacements-for-human-survey-data-the-perils-of-large-language-models/B92267DC26195C7F36E63EA04A47D2FE",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Synthetic Replacements for Human Survey Data? The Perils of Large Language Models",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-05-17"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-05-17"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1017/pan.2024.5",
+   "crossref": {
+    "doi": "10.1017/pan.2024.5",
+    "resolves": true,
+    "title": "Synthetic Replacements for Human Survey Data? The Perils of Large Language Models",
+    "container": "Political Analysis",
+    "publisher": "Cambridge University Press (CUP)",
+    "type": "journal-article",
+    "issued": "2024-5-17",
+    "authors_first3": [
+     "Bisbee",
+     "Clinton",
+     "Dorff"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Synthetic Replacements for Human Survey Data? The Perils of Large Language Models - Volume 32 Issue 4",
+   "passages": [
+    "(Reference Argyle, Busby, Fulda, Gubler, Rytting and Wingate2023) use GPT-3, a predecessor to the GPT-3.5 LLM underlying the ChatGPT program we query in our main analysis.",
+    "(Reference Argyle, Busby, Fulda, Gubler, Rytting and Wingate2023) who provide a mock transcript between an interviewer and the respondent to generate their “silicon” samples.",
+    "(Reference Argyle, Busby, Fulda, Gubler, Rytting and Wingate2023), these three analyses correspond most closely evaluating the algorithmic fidelity in terms of the Social Science Turing Test, Pattern Correspondence, and Forward Continuity, respectively.",
+    "Beyond the substantive concerns with this overconfidence, the undersized variance of synthetic responses poses serious inferential problems for attempts to use such data for pre-analysis study design as some scholars have suggested (Argyle et al.",
+    "Published by Cambridge University Press on behalf of The Society for Political Methodology Public opinion polling is seemingly in a crisis (Shapiro Reference Shapiro2019).",
+    "Large language models (LLMs) that synthesize vast corpora of human-generated text might look like the new frontier in characterizing public opinion without the expense of traditional polling."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

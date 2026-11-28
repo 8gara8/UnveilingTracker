@@ -1,0 +1,165 @@
+{
+ "slug": "ai-flagged-baricitinib-covid-treatment",
+ "title": "AI knowledge graph flags baricitinib for COVID-19, later approved by the FDA",
+ "first_published": "2020-02-04",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1016/S0140-6736(20)30304-4",
+   "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0140673620303044",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Redirecting",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2020-01-31"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1016/s0140-6736(20)30304-4",
+   "crossref": {
+    "doi": "10.1016/s0140-6736(20)30304-4",
+    "resolves": true,
+    "title": "Baricitinib as potential treatment for 2019-nCoV acute respiratory disease",
+    "container": "The Lancet",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2020-2",
+    "authors_first3": [
+     "Richardson",
+     "Griffin",
+     "Tucker"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1016/s0140-6736(20)31376-3",
+      "type": "erratum",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7137985/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7137985/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Baricitinib as potential treatment for 2019-nCoV acute respiratory disease",
+     "title_match": true,
+     "date": "2020-02-03",
+     "passages": [
+      "Open in a new tab The BenevolentAI knowledge graph The BenevolentAI knowledge graph integrates biomedical data from structured and unstructured sources.",
+      "Given the scale and rapid spread of the 2019 novel coronavirus (2019-nCoV) acute respiratory disease, there is an immediate need for medicines that can help before a vaccine can be produced.",
+      "JAK1/2=janus kinase 1/2.Of 378 AAK1 inhibitors in the knowledge graph, 47 have been approved for medical use and six inhibited AAK1 with high affinity.",
+      "All other authors are employees of BenevolentAI.",
+      "Since January 2020 Elsevier has created a COVID-19 resource centre with free information in English and Mandarin on the novel coronavirus COVID-19.",
+      "We identified baricitinib, which is predicted to reduce the ability of the virus to infect lung cells."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1056/NEJMoa2031994",
+   "final_url": "https://www.nejm.org/doi/10.1056/NEJMoa2031994",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-03-04"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1056/nejmoa2031994",
+   "crossref": {
+    "doi": "10.1056/nejmoa2031994",
+    "resolves": true,
+    "title": "Baricitinib plus Remdesivir for Hospitalized Adults with Covid-19",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2021-3-4",
+    "authors_first3": [
+     "Kalil",
+     "Patterson",
+     "Mehta"
+    ],
+    "author_count": 60,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.739192899.793583686"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7745180/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7745180/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Baricitinib plus Remdesivir for Hospitalized Adults with Covid-19",
+     "title_match": true,
+     "date": "2020-12-10",
+     "passages": [
+      "The effects of combination treatment with baricitinib, a Janus kinase inhibitor, plus remdesivir are not known.Methods We conducted a double-blind, randomized, placebo-controlled trial evaluating baricitinib plus remdesivir in hospitalized adults with Covid-19.",
+      "44 of 793 patients [5.5%]).Discussion The results of this randomized, double-blind, placebo-controlled trial show that combination treatment with the antiinflammatory drug baricitinib and the antiviral drug remdesivir was safe and superior to remdesivir alone for the treatment of hospitalized patients with Covid-19 pneumonia.",
+      "The faster recovery in patients who received baricitinib plus remdesivir suggests that the combination treatment may have an effect in lowering the hospital-associated risk of nosocomial infections, thrombosis, and errors in hospital drug administration.",
+      "In fact, patients receiving baricitinib plus remdesivir had a significantly lower incidence of adverse events, adverse events leading to discontinuation of the trial drug, serious adverse events, serious adverse events with a fatal outcome, and infection-related adverse events than patients who received remdesivir alone.",
+      "Primary Outcome Patients who received combination treatment with baricitinib plus remdesivir recovered a median of 1 day faster than patients who received remdesivir and placebo (median, 7 days vs.",
+      "11.2%; difference, −5.3 percentage points; 95% CI, −8.7 to −1.9; P=0.003).Conclusions Baricitinib plus remdesivir was superior to remdesivir alone in reducing recovery time and accelerating improvement in clinical status among patients with Covid-19, notably among those receiving high-flow oxygen or noninvasive ventilation."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207924",
+   "final_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207924",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Drugs@FDA: FDA-Approved Drugs",
+   "title_match": "partial",
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,236 @@
+{
+ "slug": "eht-m87-black-hole-shadow",
+ "title": "First image of a black hole's shadow, in galaxy M87",
+ "first_published": "2019-04-10",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.3847/2041-8213/ab0ec7",
+   "final_url": "https://iopscience.iop.org/article/10.3847/2041-8213/ab0ec7",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2019-04-10"
+    },
+    {
+     "source": "dc.date",
+     "date": "2019-04-10"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-04-10"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.3847/2041-8213/ab0ec7",
+   "crossref": {
+    "doi": "10.3847/2041-8213/ab0ec7",
+    "resolves": true,
+    "title": "First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole",
+    "container": "The Astrophysical Journal Letters",
+    "publisher": "American Astronomical Society",
+    "type": "journal-article",
+    "issued": "2019-4-10",
+    "authors_first3": [
+     "The Event Horizon Telescope Collaboration",
+     "Akiyama",
+     "Alberdi"
+    ],
+    "author_count": 349,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "meta",
+    "value": "Text"
+   },
+   "meta_description": "First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole, The Event Horizon Telescope Collaboration, Akiyama, Kazunori, Alberdi, Antxon, Alef, Walter, Asada, Keiichi, Azulay, Rebecca, Baczko, Anne-Kathrin, Ball, David, Baloković, Mislav, Barrett, John, Bintley, Dan, Bl",
+   "passages": [
+    "This allows us to reconstruct event-horizon-scale images of the supermassive black hole candidate in the center of the giant elliptical galaxy M87.",
+    "Conclusion and OutlookWe have assembled the EHT, a global VLBI array operating at a wavelength of 1.3 mm and imaged horizon-scale structures around the supermassive black hole candidate in M87.",
+    "2041-8205/875/1/L1Abstract When surrounded by a transparent emission region, black holes are expected to reveal a dark shadow caused by gravitational light bending and photon capture at the event horizon.",
+    "Overall, the observed image is consistent with expectations for the shadow of a Kerr black hole as predicted by general relativity.",
+    "These observations, however, were not able to image the black hole shadow due to limited baseline coverage.Based on three recent stellar population measurements, we here adopt a distance to M87 of 16.8 ± 0.8 Mpc (Blakeslee et al.",
+    "These jets may be powered either by magnetic fields threading the event horizon, extracting the rotational energy from the black hole (Blandford & Znajek 1977), or from the accretion flow (Blandford & Payne 1982)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/1906.11238",
+   "final_url": "https://arxiv.org/abs/1906.11238",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2019-06-26"
+    },
+    {
+     "source": "citation_date",
+     "date": "2019-06-26"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-04-10"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.3847/2041-8213/ab0ec7",
+   "crossref": {
+    "doi": "10.3847/2041-8213/ab0ec7",
+    "resolves": true,
+    "title": "First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole",
+    "container": "The Astrophysical Journal Letters",
+    "publisher": "American Astronomical Society",
+    "type": "journal-article",
+    "issued": "2019-4-10",
+    "authors_first3": [
+     "The Event Horizon Telescope Collaboration",
+     "Akiyama",
+     "Alberdi"
+    ],
+    "author_count": 349,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1906.11238: First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole",
+   "passages": [
+    "This allows us to reconstruct event-horizon-scale images of the supermassive black hole candidate in the center of the giant elliptical galaxy M87.",
+    "When surrounded by a transparent emission region, black holes are expected to reveal a dark shadow caused by gravitational light bending and photon capture at the event horizon.",
+    "Overall, the observed image is consistent with expectations for the shadow of a Kerr black hole as predicted by general relativity.",
+    "To image and study this phenomenon, we have assembled the Event Horizon Telescope, a global very long baseline interferometry array observing at a wavelength of 1.3 mm.",
+    "We have resolved the central compact radio source as an asymmetric bright emission ring with a diameter of 42+/-3 micro-as, which is circular and encompasses a central depression in brightness with a flux ratio ~10:1.",
+    "The asymmetry in brightness in the ring can be explained in terms of relativistic beaming of the emission from a plasma rotating close to the speed of light around a black hole."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.nature.com/articles/s41586-023-05843-w",
+   "final_url": "https://www.nature.com/articles/s41586-023-05843-w?error=cookies_not_supported&code=cf913a54-b2be-4d95-ab6e-af9772f0e287",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A ring-like accretion structure in M87 connecting its black hole and jet",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-04-26"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-04-26"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-04-26"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-04-26"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-04-26"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-10-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-02-14"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-04-26"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-023-05843-w",
+   "crossref": {
+    "doi": "10.1038/s41586-023-05843-w",
+    "resolves": true,
+    "title": "A ring-like accretion structure in M87 connecting its black hole and jet",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-4-26",
+    "authors_first3": [
+     "Lu",
+     "Asada",
+     "Krichbaum"
+    ],
+    "author_count": 121,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The nearby radio galaxy M87 is a prime target for studying black hole accretion and jet formation1,2. Event Horizon Telescope observations of M87 in 2017, at a wavelength of 1.3 mm, revealed a ring-like structure, which was interpreted as gravitationally lensed emission around a central black hole3.",
+   "passages": [
+    "Event Horizon Telescope observations of M87 in 2017, at a wavelength of 1.3 mm, revealed a ring-like structure, which was interpreted as gravitationally lensed emission around a central black hole3.",
+    "At 1.3 mm, the first visibility minimum is seen at a significantly larger (u, v) distance of about 3.4 Gλ for the Event Horizon Telescope (EHT) data9.",
+    "A ring-like accretion structure in M87 connecting its black hole and jet.",
+    "Monitoring the morphology of M87* in 2009–2017 with the Event Horizon Telescope.",
+    "As the jet footpoint is anchored at the event horizon, some flattening of the jet width profile is expected near the black hole.",
+    "The quasi-cylindrical shape in region I requires some change in the physical conditions to connect the innermost Blandford–Znajek jet from the event horizon to the upstream jet (region II).The observed parabolic shape is consistent with a black-hole-driven jet through the Blandford–Znajek18 process19."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://breakthroughprize.org/Laureates/1/P1/Y2020",
+   "final_url": "https://breakthroughprize.org/Laureates/1/P1/Y2020",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "2020 Breakthrough Prize in Fundamental Physics Laureates",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

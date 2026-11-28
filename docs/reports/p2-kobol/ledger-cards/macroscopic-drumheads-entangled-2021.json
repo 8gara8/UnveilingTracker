@@ -1,0 +1,229 @@
+{
+ "slug": "macroscopic-drumheads-entangled-2021",
+ "title": "Two teams entangle pairs of vibrating drumheads",
+ "first_published": "2020-04-12",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2004.05515",
+   "final_url": "https://arxiv.org/abs/2004.05515",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Direct observation of deterministic macroscopic entanglement",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2021-09-06"
+    },
+    {
+     "source": "citation_date",
+     "date": "2020-04-12"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-05-07"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.abf2998",
+   "crossref": {
+    "doi": "10.1126/science.abf2998",
+    "resolves": true,
+    "title": "Direct observation of deterministic macroscopic entanglement",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-5-7",
+    "authors_first3": [
+     "Kotler",
+     "Peterson",
+     "Shojaee"
+    ],
+    "author_count": 12,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2004.05515: Direct observation of deterministic macroscopic entanglement",
+   "passages": [
+    "Here, using pulsed electromechanics, we deterministically entangle two mechanical drumheads with masses of 70 pg.",
+    "Quantum entanglement of mechanical systems emerges when distinct objects move with such a high degree of correlation that they can no longer be described separately.",
+    "Although quantum mechanics presumably applies to objects of all sizes, directly observing entanglement becomes challenging as masses increase, requiring measurement and control with a vanishingly small error.",
+    "Such entangled macroscopic systems are uniquely poised to serve in fundamental tests of quantum mechanics, enable sensing beyond the standard quantum limit, and function as long-lived nodes of future quantum networks.",
+    "Through nearly quantum-limited measurements of the position and momentum quadratures of both drums, we perform quantum state tomography and thereby directly observe entanglement."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1126/science.abf2998",
+   "final_url": "https://www.science.org/doi/10.1126/science.abf2998",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-05-07"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.abf2998",
+   "crossref": {
+    "doi": "10.1126/science.abf2998",
+    "resolves": true,
+    "title": "Direct observation of deterministic macroscopic entanglement",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-5-7",
+    "authors_first3": [
+     "Kotler",
+     "Peterson",
+     "Shojaee"
+    ],
+    "author_count": 12,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "arxiv",
+     "url": "https://arxiv.org/abs/2004.05515",
+     "final_url": "https://arxiv.org/abs/2004.05515",
+     "status": 200,
+     "readable": true,
+     "title_found": "Direct observation of deterministic macroscopic entanglement",
+     "title_match": true,
+     "date": "2020-04-12",
+     "passages": [
+      "Here, using pulsed electromechanics, we deterministically entangle two mechanical drumheads with masses of 70 pg.",
+      "Quantum entanglement of mechanical systems emerges when distinct objects move with such a high degree of correlation that they can no longer be described separately.",
+      "Although quantum mechanics presumably applies to objects of all sizes, directly observing entanglement becomes challenging as masses increase, requiring measurement and control with a vanishingly small error.",
+      "Such entangled macroscopic systems are uniquely poised to serve in fundamental tests of quantum mechanics, enable sensing beyond the standard quantum limit, and function as long-lived nodes of future quantum networks.",
+      "Through nearly quantum-limited measurements of the position and momentum quadratures of both drums, we perform quantum state tomography and thereby directly observe entanglement.",
+      "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2009.12902",
+   "final_url": "https://arxiv.org/abs/2009.12902",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Quantum-mechanics free subsystem with mechanical oscillators",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2021-05-12"
+    },
+    {
+     "source": "citation_date",
+     "date": "2020-09-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-05-07"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.abf5389",
+   "crossref": {
+    "doi": "10.1126/science.abf5389",
+    "resolves": true,
+    "title": "Quantum mechanics–free subsystem with mechanical oscillators",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-5-7",
+    "authors_first3": [
+     "Mercier de Lépinay",
+     "Ockeloen-Korppi",
+     "Woolley"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2009.12902: Quantum-mechanics free subsystem with mechanical oscillators",
+   "passages": [
+    "We realize such a quantum-mechanics free subsystem using two micromechanical oscillators, and show the measurements of two collective quadratures while evading the quantum backaction by $8$ decibels on both of them, obtaining a total noise within a factor two of the full quantum limit.",
+    "Here we show how it is possible to measure an oscillator without quantum backaction of the measurement by constructing one effective oscillator from two physical oscillators.",
+    "Moreover, we directly verify the quantum entanglement of the two oscillators by measuring the Duan quantity $1.4$ decibels below the separability bound.",
+    "This facilitates detection of weak forces and the generation and measurement of nonclassical motional states of the oscillators."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://doi.org/10.1126/science.abf5389",
+   "final_url": "https://www.science.org/doi/10.1126/science.abf5389",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-05-07"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.abf5389",
+   "crossref": {
+    "doi": "10.1126/science.abf5389",
+    "resolves": true,
+    "title": "Quantum mechanics–free subsystem with mechanical oscillators",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-5-7",
+    "authors_first3": [
+     "Mercier de Lépinay",
+     "Ockeloen-Korppi",
+     "Woolley"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

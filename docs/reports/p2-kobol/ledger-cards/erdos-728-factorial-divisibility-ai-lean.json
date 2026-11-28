@@ -1,0 +1,72 @@
+{
+ "slug": "erdos-728-factorial-divisibility-ai-lean",
+ "title": "AI and Lean settle Erdős problem 728 on factorial divisibility",
+ "first_published": "2026-01",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.erdosproblems.com/728",
+   "final_url": "https://www.erdosproblems.com/728",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "728 | Erdős Problems",
+   "title_match": "partial",
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "Are there infinitely many integers $a,b,n$ with $a\\geq \\epsilon n$ and $b\\geq \\epsilon n$ such that\\[a! b! \\mid n!(a+b-n)!\\]and $a+b>n+C\\log n$? #728: [EGRS75,p.91] number theory | factorials A question of Erdős, Graham, Ruzsa, and Straus [EGRS75].",
+    "Erdős [Er68c] proved that if $a!b!\\mid n!$ then $a+b\\leq n+O(\\log n)$.",
+    "Bloom, Erdős Problem #728, https://www.erdosproblems.com/728, accessed 2026-11-28 From the external database.",
+    "Comments (87) Proof claims (0) More information and links This page was last edited 06 January 2026.",
+    "(View history) (View the LaTeX source) When referring to this problem, please use the original sources of Erdős.",
+    "Additional thanks to: Yael Dillies and Moritz Firsching Proof expositions (0) If you would like to contribute an exposition of a proof related to this problem, please message a moderator or email [email protected] No proof expositions yet."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2601.07421",
+   "final_url": "https://arxiv.org/abs/2601.07421",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Resolution of Erd\\H{o}s Problem #728: a writeup of Aristotle's Lean proof",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-01-26"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-01-12"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2601.07421: Resolution of Erdős Problem #728: a writeup of Aristotle's Lean proof",
+   "passages": [
+    "The system in question is a combination of GPT-5.2 Pro by OpenAI and Aristotle by Harmonic, operated by Kevin Barreto.",
+    "We provide a writeup of a resolution of Erdős Problem #728; this is the first Erdős problem (a problem proposed by Paul Erdős which has been collected in the Erdős Problems website) regarded as fully resolved autonomously by an AI system.",
+    "The overall strategy is similar to results regarding divisors of $\\binom{2n}{n}$ studied earlier by Erdős and by Pomerance.",
+    "These \"carry-rich but spike-free\" choices of $m$ force the needed $p$-adic inequalities and the divisibility."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

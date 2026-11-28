@@ -1,0 +1,163 @@
+{
+ "slug": "covid-ai-models-unfit-for-use",
+ "title": "Two reviews find COVID-19 prediction and AI models unfit for clinical use",
+ "first_published": "2020-04",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1136/bmj.m1328",
+   "final_url": "https://www.bmj.com/lookup/doi/10.1136/bmj.m1328",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2020-04-07"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1136/bmj.m1328",
+   "crossref": {
+    "doi": "10.1136/bmj.m1328",
+    "resolves": true,
+    "title": "Prediction models for diagnosis and prognosis of covid-19: systematic review and critical appraisal",
+    "container": "BMJ",
+    "publisher": "BMJ",
+    "type": "journal-article",
+    "issued": "2020-4-7",
+    "authors_first3": [
+     "Wynants",
+     "Van Calster",
+     "Collins"
+    ],
+    "author_count": 57,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.737693696.793573809"
+     ],
+     "has-preprint": [
+      "10.1101/2020.03.24.20041020"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7222643/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7222643/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Prediction models for diagnosis and prognosis of covid-19: systematic review and critical appraisal",
+     "title_match": true,
+     "date": "2020-04-06",
+     "passages": [
+      "Finally, studies should adhere to the TRIPOD (transparent reporting of a multivariable prediction model for individual prognosis or diagnosis) reporting guideline.Systematic review registration Protocol https://osf.io/ehc47/, registration https://osf.io/wy245.Readers’ note This article is a living systematic review that will be updated to reflect emerging evidence.",
+      "Prediction of criticality in patients with severe Covid-19 infection using three clinical features: a machine learning-based prognostic model with clinical data in Wuhan. medRxiv [Preprint] 2020.",
+      "This version is update 1 of the original article published on 7 April 2020 (BMJ 2020;369:m1328), and previous updates can be found as data supplements (https://www.bmj.com/content/369/bmj.m1328/related#datasupp).",
+      "AI4COVID-19: AI enabled preliminary diagnosis for covid-19 from cough samples via an app. arXiv e-prints [Preprint] 2020. https://ui.adsabs.harvard.edu/abs/2020arXiv200401275I. [DOI] [PMC free article] [PubMed] 54.",
+      "Critical appraisal and data extraction for systematic reviews of prediction modelling studies: the CHARMS checklist.",
+      "Rapid AI development cycle for the coronavirus (covid-19) pandemic: initial results for automated detection & patient monitoring using deep learning CT image analysis. arXiv e-prints [Preprint] 2020. https://ui.adsabs.harvard.edu/abs/2020arXiv200305037G 26.Chen J, Wu L, Zhang J, et al."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1038/s42256-021-00307-0",
+   "final_url": "https://www.nature.com/articles/s42256-021-00307-0?error=cookies_not_supported&code=b41e05cb-c64d-4f06-8bc9-862c2d213adb",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Common pitfalls and recommendations for using machine learning to detect and prognosticate for COVID-19 using chest radiographs and CT scans",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-02-28"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2021-03-15"
+    },
+    {
+     "source": "dc.date",
+     "date": "2021-03-15"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2021-03-15"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2021-03-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-03-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-08-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-01-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-03-15"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s42256-021-00307-0",
+   "crossref": {
+    "doi": "10.1038/s42256-021-00307-0",
+    "resolves": true,
+    "title": "Common pitfalls and recommendations for using machine learning to detect and prognosticate for COVID-19 using chest radiographs and CT scans",
+    "container": "Nature Machine Intelligence",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2021-3-15",
+    "authors_first3": [
+     "Roberts",
+     "Driggs",
+     "Thorpe"
+    ],
+    "author_count": 54,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Machine learning methods offer great promise for fast and accurate detection and prognostication of coronavirus disease 2019 (COVID-19) from standard-of-care chest radiographs (CXR) and chest computed tomography (CT) images. Many articles have been published in 2020 describing new machine learning-b",
+   "passages": [
+    "Common pitfalls and recommendations for using machine learning to detect and prognosticate for COVID-19 using chest radiographs and CT scans.",
+    "While Wynants et al. reviewed multivariable models with any type of clinical input data, the present review focuses specifically on machine learning-based diagnostic and prognostic models using medical imaging.",
+    "In this systematic review, we consider all published papers and preprints, for the period from 1 January 2020 to 3 October 2020, which describe new machine learning models for the diagnosis or prognosis of COVID-19 from CXR or CT images.",
+    "Values reported for the area under the receiver operating characteristic curve (AUC) ranged from 0.70 to 1.00.Diagnostic models using CT scans and traditional machine learning methodsEight papers employed traditional machine learning methods for COVID-19 diagnosis using hand-engineered features40,57,58,59,60,61,62 or convolutional neural network (CNN)-extracted features46.",
+    "The traditional machine-learning model in the hybrid paper40 had a 0.05 lower accuracy than their deep learning model.Prognostic models for COVID-19 using CT and CXR imagesNineteen papers developed models for the prognosis of patients with COVID-1951,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80, fifteen using CT and four using CXR.",
+    "In this Analysis, we reviewed the entire literature of machine learning methods as applied to chest CT and CXR for the diagnosis and prognosis of COVID-19."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

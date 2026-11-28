@@ -1,0 +1,319 @@
+{
+ "slug": "centaur-model-predicts-human-choices",
+ "title": "A fine-tuned language model predicts human choices across psychology experiments",
+ "first_published": "2024-10",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-025-09215-4",
+   "final_url": "https://www.nature.com/articles/s41586-025-09215-4?error=cookies_not_supported&code=6a1ca983-0e90-4cd8-9c69-5ff94f2a39e6",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A foundation model to predict and capture human cognition",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-07-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-10-26"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-05-29"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-07-02"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-025-09215-4",
+   "crossref": {
+    "doi": "10.1038/s41586-025-09215-4",
+    "resolves": true,
+    "title": "A foundation model to predict and capture human cognition",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-7-2",
+    "authors_first3": [
+     "Binz",
+     "Akata",
+     "Bethge"
+    ],
+    "author_count": 40,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Establishing a unified theory of cognition has been an important goal in psychology1,2. A first step towards such a theory is to create a computational model that can predict human behaviour in a wide range of settings. Here we introduce Centaur, a computational model that can predict and simulate h",
+   "passages": [
+    "2 Negative log-likelihoods of Centaur and alternative Llama variants on Psych-101.To rule out the hypothesis that finetuning on any data aligns a model with human behavior, we compared Centaur to various Llama variants finetuned for other purposes (i.e. non-cognitive tasks).",
+    "First, we show that Centaur predicts behaviour of held-out participants (those who are not part of the training data) better than existing cognitive models in almost every single experiment.",
+    "We found that Centaur’s representations consistently outperformed Llama’s representations in predicting human neural activity (all pairwise one-sided t-tests, P ≤ 0.001), indicating that fine-tuning a model on large-scale behavioural data aligned its internal representations to human neural activity.",
+    "We performed an inverse-weighted meta-analysis39 on the difference in correlations between Centaur and Llama, and this indicated that there was a significant benefit of fine-tuning when pooling across layers (β = 0.007, 95% confidence interval [0.0002, 0.013], P = 0.045).",
+    "Scharfenberg for contributions to the data collection.FundingOpen access funding provided by Helmholtz Zentrum München - Deutsches Forschungszentrum für Gesundheit und Umwelt (GmbH).Author informationAuthors and AffiliationsInstitute for Human-Centered AI, Helmholtz Center, Munich, GermanyMarcel Binz, Elif Akata, Julian Coda-Forno, Can Demircan, Susanne Haridi, Akshay K.",
+    "Here we introduce Centaur, a computational model that can predict and simulate human behaviour in any experiment expressible in natural language."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2410.20268",
+   "final_url": "https://arxiv.org/abs/2410.20268",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Centaur: a foundation model of human cognition",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2025-04-28"
+    },
+    {
+     "source": "citation_date",
+     "date": "2024-10-26"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2410.20268: Centaur: a foundation model of human cognition",
+   "passages": [
+    "We derived Centaur by finetuning a state-of-the-art language model on a novel, large-scale data set called Psych-101.",
+    "Centaur not only captures the behavior of held-out participants better than existing cognitive models, but also generalizes to new cover stories, structural task modifications, and entirely new domains.",
+    "Here we introduce Centaur, a computational model that can predict and simulate human behavior in any experiment expressible in natural language.",
+    "Taken together, our results demonstrate that it is possible to discover computational models that capture human behavior across a wide range of domains.",
+    "While there have been previous attempts to instantiate such theories by building computational models, we currently do not have one model that captures the human mind in its entirety.",
+    "Establishing a unified theory of cognition has been a major goal of psychology."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": null,
+   "final_url": null,
+   "status": null,
+   "readable": false,
+   "reason": "no url",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.31234/osf.io/v9w37_v1",
+      "title": "Centaur: A model without a theory",
+      "container": null,
+      "date": "2025-6-26",
+      "score": 39.513336
+     },
+     {
+      "doi": "10.31234/osf.io/v9w37_v3",
+      "title": "Centaur: A model without a theory",
+      "container": null,
+      "date": "2025-7-7",
+      "score": 39.242016
+     },
+     {
+      "doi": "10.1002/aehe.3640240209",
+      "title": "Colleagues, consultants, and chairs",
+      "container": "ASHE-ERIC Higher Education Report",
+      "date": "1995-2",
+      "score": 36.392494
+     }
+    ],
+    "arxiv": []
+   },
+   "resolved_to": null,
+   "verdict": "unresolved"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": null,
+   "final_url": null,
+   "status": null,
+   "readable": false,
+   "reason": "no url",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.1038/d41586-025-00974-8",
+      "title": "Daily briefing: Why RNA hasn’t yet had its ‘AlphaFold’ moment",
+      "container": "Nature",
+      "date": "2025-3-26",
+      "score": 27.999722
+     },
+     {
+      "doi": "10.1016/j.neuron.2026.09.012",
+      "title": "Toward an automated science of the mind",
+      "container": "Neuron",
+      "date": "2026-10",
+      "score": 27.01095
+     },
+     {
+      "doi": "10.1515/9783035629149-018",
+      "title": "Helmholtz Pioneer Campus, Munich Interview with Steffen Vogt",
+      "container": "Structure and Type",
+      "date": "2025-10-15",
+      "score": 26.793854
+     }
+    ],
+    "arxiv": []
+   },
+   "resolved_to": null,
+   "verdict": "unresolved"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": null,
+   "final_url": null,
+   "status": null,
+   "readable": false,
+   "reason": "no url",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.56528/nbp",
+      "title": "nbproject: Manage Jupyter notebooks",
+      "container": "Lamin Reports",
+      "date": "2022",
+      "score": 29.698898
+     },
+     {
+      "doi": "10.31234/osf.io/yhcf4",
+      "title": "Reconstructing the Einstellung effect",
+      "container": null,
+      "date": "2021-8-10",
+      "score": 26.708797
+     },
+     {
+      "doi": "10.31234/osf.io/9fnmj",
+      "title": "Exploration beyond bandits",
+      "container": null,
+      "date": "2021-2-19",
+      "score": 26.20185
+     }
+    ],
+    "arxiv": []
+   },
+   "resolved_to": null,
+   "verdict": "unresolved"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "url": null,
+   "final_url": null,
+   "status": null,
+   "readable": false,
+   "reason": "no url",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.56528/nbp",
+      "title": "nbproject: Manage Jupyter notebooks",
+      "container": "Lamin Reports",
+      "date": "2022",
+      "score": 29.688559
+     },
+     {
+      "doi": "10.31234/osf.io/yhcf4",
+      "title": "Reconstructing the Einstellung effect",
+      "container": null,
+      "date": "2021-8-10",
+      "score": 26.681187
+     },
+     {
+      "doi": "10.31234/osf.io/qx4h5",
+      "title": "Exploration With a Finite Brain",
+      "container": null,
+      "date": "2022-1-27",
+      "score": 26.221664
+     }
+    ],
+    "arxiv": []
+   },
+   "resolved_to": null,
+   "verdict": "unresolved"
+  }
+ ]
+}

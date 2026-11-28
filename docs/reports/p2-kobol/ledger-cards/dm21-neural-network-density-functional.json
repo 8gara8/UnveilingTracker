@@ -1,0 +1,89 @@
+{
+ "slug": "dm21-neural-network-density-functional",
+ "title": "A neural-network density functional handles fractional electrons better",
+ "first_published": "2021-12-09",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1126/science.abj6511",
+   "final_url": "https://www.science.org/doi/10.1126/science.abj6511",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-12-10"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.abj6511",
+   "crossref": {
+    "doi": "10.1126/science.abj6511",
+    "resolves": true,
+    "title": "Pushing the frontiers of density functionals by solving the fractional electron problem",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-12-10",
+    "authors_first3": [
+     "Kirkpatrick",
+     "McMorrow",
+     "Turban"
+    ],
+    "author_count": 17,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://deepmind.google/discover/blog/simulating-matter-on-the-quantum-scale-with-ai/",
+   "final_url": "https://deepmind.google/blog/simulating-matter-on-the-quantum-scale-with-ai/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Simulating matter on the quantum scale with AI",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2021-12-09"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2021-12-09"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Solving some of the major challenges of the 21st Century, such as producing clean electricity or developing high temperature superconductors, will require us to design new materials with specific pro…",
+   "passages": [
+    "Right: Learned functional (DM21) correctly localises charge on one molecule.These longstanding challenges are both related to how functionals behave when presented with a system that exhibits “fractional electron character.”",
+    "By using a neural network to represent the functional and tailoring our training dataset to capture the fractional electron behaviour expected for the exact functional, we found that we could solve the problems of delocalization and spin symmetry-breaking.",
+    "Now, in a paper (Open Access PDF) published in Science, we propose DM21, a neural network achieving state of the art accuracy on large parts of chemistry.",
+    "Thus, errors in the functional can lead to errors in the calculated electron density.",
+    "Movement of charge and bond breaking are core to many important technological applications, but these problems can also lead to massive qualitative failure of functionals to describe the simplest molecules, such as hydrogen.",
+    "To do this on a computer requires the simulation of electrons, the subatomic particles that govern how atoms bond to form molecules and are also responsible for the flow of electricity in solids."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

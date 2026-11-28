@@ -1,0 +1,195 @@
+{
+ "slug": "alphaevolve-matrix-multiplication-kissing-number",
+ "title": "AlphaEvolve finds 48-multiplication scheme for 4x4 complex matrices",
+ "first_published": "2025-05-14",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/",
+   "final_url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2025-05-14"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-05-14"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "New AI agent evolves algorithms for math and practical applications in computing by combining the creativity of large language models with automated evaluators",
+   "passages": [
+    "These changes are highly non-trivial, requiring 15 mutations during the evolutionary process.AlphaEvolve’s procedure found an algorithm to multiply 4x4 complex-valued matrices using 48 scalar multiplications, improving upon Strassen’s 1969 algorithm that was previously known as the best in this setting.",
+    "In roughly 75% of cases, it rediscovered state-of-the-art solutions, to the best of our knowledge.And in 20% of cases, AlphaEvolve improved the previously best known solutions, making progress on the corresponding open problems.",
+    "AlphaEvolve discovered a configuration of 593 outer spheres and established a new lower bound in 11 dimensions.The path forwardAlphaEvolve displays the progression from discovering algorithms for specific domains to developing more complex algorithms for a wide range of real-world challenges.",
+    "May 14, 2025 ScienceAlphaEvolve: A Gemini-powered coding agent for designing advanced algorithmsAlphaEvolve team Share CopiedNew AI agent evolves algorithms for math and practical applications in computing by combining the creativity of large language models with automated evaluatorsLarge language models (LLMs) are remarkably versatile.",
+    "And now we’ve expanded these capabilities to target fundamental and highly complex problems in mathematics and modern computing.Today, we’re announcing AlphaEvolve, an evolutionary coding agent powered by large language models for general-purpose algorithm discovery and optimization.",
+    "Provided with a minimal code skeleton for a computer program, AlphaEvolve designed many components of a novel gradient-based optimization procedure that discovered multiple new algorithms for matrix multiplication, a fundamental problem in computer science."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2506.13131",
+   "final_url": "https://arxiv.org/abs/2506.13131",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AlphaEvolve: A coding agent for scientific and algorithmic discovery",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2025-06-16"
+    },
+    {
+     "source": "citation_date",
+     "date": "2025-06-16"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2506.13131: AlphaEvolve: A coding agent for scientific and algorithmic discovery",
+   "passages": [
+    "In this white paper, we present AlphaEvolve, an evolutionary coding agent that substantially enhances capabilities of state-of-the-art LLMs on highly challenging tasks such as tackling open scientific problems or optimizing critical pieces of computational infrastructure.",
+    "When applied to optimizing critical components of large-scale computational stacks at Google, AlphaEvolve developed a more efficient scheduling algorithm for data centers, found a functionally equivalent simplification in the circuit design of hardware accelerators, and accelerated the training of the LLM underpinning AlphaEvolve itself.",
+    "Furthermore, AlphaEvolve discovered novel, provably correct algorithms that surpass state-of-the-art solutions on a spectrum of problems in mathematics and computer science, significantly expanding the scope of prior automated discovery methods (Romera-Paredes et al., 2023).",
+    "We believe AlphaEvolve and coding agents like it can have a significant impact in improving solutions of problems across many areas of science and computation.",
+    "Using an evolutionary approach, continuously receiving feedback from one or more evaluators, AlphaEvolve iteratively improves the algorithm, potentially leading to new scientific and practical discoveries.",
+    "AlphaEvolve orchestrates an autonomous pipeline of LLMs, whose task is to improve an algorithm by making direct changes to the code."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2506.13242",
+   "final_url": "https://arxiv.org/abs/2506.13242",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A non-commutative algorithm for multiplying 4x4 matrices using 48 non-complex multiplications",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-07-27"
+    },
+    {
+     "source": "citation_date",
+     "date": "2025-06-16"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2506.13242: A non-commutative algorithm for multiplying 4x4 matrices using 48 non-complex multiplications",
+   "passages": [
+    "Specifically, the number of scalar multiplications required to multiply two 4x4 matrices was reduced in \\cite{Fawzi:2022aa} from 49 (using two recursion levels of Strassen's algorithm) to 47 in characteristic 2, and more recently to 48 in \\cite{alphaevolve} over the complex numbers.",
+    "We propose an algorithm requiring 48 multiplications that uses only rational coefficients, thereby removing the requirement for complex-number arithmetic, and making this algorithm valid over any ring except those of characteristic 2.",
+    "Similarly, the number of scalar multiplications required to multiply a 3x4 matrix by a 4x7 matrix was reduced from 66 in \\cite{Smirnov:2021aa} to 63 in \\cite{alphaevolve} by an algorithm over complex numbers.",
+    "Using the same techniques, we propose an equivalent algorithm in 63 multiplications using only rational coefficients.",
+    "In both cases the rational algorithm is obtained by identifying an isotropy that projects the previously known complex-valued decomposition onto the field of rational numbers."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://arxiv.org/abs/2511.02864",
+   "final_url": "https://arxiv.org/abs/2511.02864",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Mathematical exploration and discovery at scale",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2025-12-22"
+    },
+    {
+     "source": "citation_date",
+     "date": "2025-11-03"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2511.02864: Mathematical exploration and discovery at scale",
+   "passages": [
+    "In this paper we showcase AlphaEvolve as a tool for autonomously discovering novel mathematical constructions and advancing our understanding of long-standing open problems.",
+    "AlphaEvolve (Novikov et al., 2025) is a generic evolutionary coding agent that combines the generative capabilities of LLMs with automated evaluation in an iterative evolutionary framework that proposes, tests, and refines algorithmic solutions to challenging scientific and practical problems.",
+    "To demonstrate its breadth, we considered a list of 67 problems spanning mathematical analysis, combinatorics, geometry, and number theory.",
+    "In some instances, AlphaEvolve is also able to generalize results for a finite number of input values into a formula valid for all input values.",
+    "The system rediscovered the best known solutions in most of the cases and discovered improved solutions in several.",
+    "Furthermore, we are able to combine this methodology with Deep Think and AlphaProof in a broader framework where the additional proof-assistants and reasoning systems provide automated proof generation and further mathematical insights."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2506.13242",
+   "final_url": "https://arxiv.org/abs/2506.13242",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A non-commutative algorithm for multiplying 4x4 matrices using 48 non-complex multiplications",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-07-27"
+    },
+    {
+     "source": "citation_date",
+     "date": "2025-06-16"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2506.13242: A non-commutative algorithm for multiplying 4x4 matrices using 48 non-complex multiplications",
+   "passages": [
+    "Specifically, the number of scalar multiplications required to multiply two 4x4 matrices was reduced in \\cite{Fawzi:2022aa} from 49 (using two recursion levels of Strassen's algorithm) to 47 in characteristic 2, and more recently to 48 in \\cite{alphaevolve} over the complex numbers.",
+    "Similarly, the number of scalar multiplications required to multiply a 3x4 matrix by a 4x7 matrix was reduced from 66 in \\cite{Smirnov:2021aa} to 63 in \\cite{alphaevolve} by an algorithm over complex numbers.",
+    "We propose an algorithm requiring 48 multiplications that uses only rational coefficients, thereby removing the requirement for complex-number arithmetic, and making this algorithm valid over any ring except those of characteristic 2.",
+    "In both cases the rational algorithm is obtained by identifying an isotropy that projects the previously known complex-valued decomposition onto the field of rational numbers.",
+    "Using the same techniques, we propose an equivalent algorithm in 63 multiplications using only rational coefficients."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

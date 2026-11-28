@@ -1,0 +1,69 @@
+{
+ "slug": "nazca-geoglyphs-ai-finds-303",
+ "title": "Deep learning helps find 303 new Nazca geoglyph figures",
+ "first_published": "2024-09",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.pnas.org/doi/10.1073/pnas.2407652121",
+   "final_url": "https://www.pnas.org/doi/10.1073/pnas.2407652121",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": "placeholder",
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2024-9-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1073/pnas.2407652121",
+   "crossref": {
+    "doi": "10.1073/pnas.2407652121",
+    "resolves": true,
+    "title": "AI-accelerated Nazca survey nearly doubles the number of known figurative geoglyphs and sheds light on their purpose",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2024-9-23",
+    "authors_first3": [
+     "Sakai",
+     "Sakurai",
+     "Lu"
+    ],
+    "author_count": 7,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11459208/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11459208/",
+     "status": 200,
+     "readable": true,
+     "title_found": "AI-accelerated Nazca survey nearly doubles the number of known figurative geoglyphs and sheds light on their purpose",
+     "title_match": true,
+     "date": "2024 Sep 23",
+     "passages": [
+      "Here, we report the deployment of an AI system to the entire Nazca region, a UNESCO World Heritage site, leading to the discovery of 303 new figurative geoglyphs within only 6 mo of field survey, nearly doubling the number of known figurative geoglyphs.",
+      "The AI-assisted method is much more scalable, as evidenced by the number of new geoglyphs it has identified: It has assisted in detecting 303 new figurative relief-type geoglyphs, almost doubling the amount of known relief-type geoglyphs (Fig.",
+      "Inset: Location of the Nazca study area within present-day Peru.The field survey of the promising geoglyph candidates from September 2022 until February 2023 was conducted on foot for ground truthing under the permission of the Peruvian Ministry of Culture.",
+      "This AI model focuses on relief-type geoglyphs that are small and difficult to identify since the distribution of the large line-type figurative geoglyphs is known from previous (manual) aerial studies that do not necessarily require inspection of high-resolution images.",
+      "Data created by us on the geoglyphs are available upon request to Masato Sakai: sakai@human.kj.yamagata-u.ac.jp, if permission is granted by the Peruvian Ministry of Culture and other organizations.",
+      "Open in a new tab Field survey confirms 303 new relief-type figurative Nazca geoglyphs."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

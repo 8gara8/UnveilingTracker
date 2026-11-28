@@ -1,0 +1,216 @@
+{
+ "slug": "german-flying-insect-biomass-decline",
+ "title": "German reserves lost about 75 percent of flying-insect weight in 27 years",
+ "first_published": "2017-10-18",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0185809",
+   "final_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0185809",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "More than 75 percent decline over 27 years in total flying insect biomass in protected areas",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2017-10-17"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-10-18"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1371/journal.pone.0185809",
+   "crossref": {
+    "doi": "10.1371/journal.pone.0185809",
+    "resolves": true,
+    "title": "More than 75 percent decline over 27 years in total flying insect biomass in protected areas",
+    "container": "PLOS ONE",
+    "publisher": "Public Library of Science (PLoS)",
+    "type": "journal-article",
+    "issued": "2017-10-18",
+    "authors_first3": [
+     "Hallmann",
+     "Sorg",
+     "Jongejans"
+    ],
+    "author_count": 12,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.732005636.793540388",
+      "10.3410/f.732005636.793538384",
+      "10.3410/f.732005636.793540585"
+     ],
+     "has-part": [
+      "https://doi.org/10.1371/journal.pone.0185809.g001",
+      "https://doi.org/10.1371/journal.pone.0185809.g002",
+      "https://doi.org/10.1371/journal.pone.0185809.g003"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "meta",
+    "value": "Research Article"
+   },
+   "meta_description": "Global declines in insects have sparked wide interest among scientists, politicians, and the general public. Loss of insect diversity and abundance is expected to provoke cascading effects on food webs and to jeopardize ecosystem services. Our understanding of the extent and underlying causes of thi",
+   "passages": [
+    "PLoS ONE 12(10): e0185809. https://doi.org/10.1371/journal.pone.0185809Editor: Eric Gordon Lamb, University of Saskatchewan, CANADA Received: July 28, 2017; Accepted: September 19, 2017; Published: October 18, 2017Copyright: © 2017 Hallmann et al.",
+    "(2017) More than 75 percent decline over 27 years in total flying insect biomass in protected areas.",
+    "Here, we used a standardized protocol to measure total insect biomass using Malaise traps, deployed over 27 years in 63 nature protection areas in Germany (96 unique location-year combinations) to infer on the status and trend of local entomofauna.",
+    "The traps, collecting design, and accompanying methods of biomass measurement as designed and applied by the Entomological Society Krefeld are described elsewhere [34–36] and in S2 Appendix.",
+    "Our analysis estimates a seasonal decline of 76%, and mid-summer decline of 82% in flying insect biomass over the 27 years of study.",
+    "The widespread insect biomass decline is alarming, ever more so as all traps were placed in protected areas that are meant to preserve ecosystem functions and biodiversity."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.nature.com/articles/s41586-019-1684-3",
+   "final_url": "https://www.nature.com/articles/s41586-019-1684-3?error=cookies_not_supported&code=9dabadd4-fad0-4e5d-ac8f-7e04230dbf86",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Arthropod decline in grasslands and forests is associated with landscape-level drivers",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "dc.date",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-02-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-09-16"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-10-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-019-1684-3",
+   "crossref": {
+    "doi": "10.1038/s41586-019-1684-3",
+    "resolves": true,
+    "title": "Arthropod decline in grasslands and forests is associated with landscape-level drivers",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-10-30",
+    "authors_first3": [
+     "Seibold",
+     "Gossner",
+     "Simons"
+    ],
+    "author_count": 19,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.736829562.793567326"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Recent reports of local extinctions of arthropod species1, and of massive declines in arthropod biomass2, point to land-use intensification as a major driver of decreasing biodiversity. However, to our knowledge, there are no multisite time series of arthropod occurrences across gradients of land-us",
+   "passages": [
+    "Article Published: 30 October 2019 Arthropod decline in grasslands and forests is associated with landscape-level drivers Sebastian Seibold1,2, Martin M.",
+    "More than 75 percent decline over 27 years in total flying insect biomass in protected areas.",
+    "Our results suggest that major drivers of arthropod decline act at larger spatial scales, and are (at least for grasslands) associated with agriculture at the landscape level.",
+    "Arthropod decline in grasslands and forests is associated with landscape-level drivers.",
+    "To place the insect diversity trend estimates in a broader context we conducted a multi-site analysis, and found a wide variety of invertebrate trends over time, including declines as reported in Seibold et al.",
+    "2019 study on insect declines in Germany and found that after accounting for temporal pseudoreplication by adding a year random intercept term, four of five declines in abundance, species richness and biomass became non-significant."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://doi.org/10.1126/science.aax9931",
+   "final_url": "https://www.science.org/doi/10.1126/science.aax9931",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2020-04-24"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.aax9931",
+   "crossref": {
+    "doi": "10.1126/science.aax9931",
+    "resolves": true,
+    "title": "Meta-analysis reveals declines in terrestrial but increases in freshwater insect abundances",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2020-4-24",
+    "authors_first3": [
+     "van Klink",
+     "Bowler",
+     "Gongalsky"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1126/science.aee6983",
+      "type": "expression_of_concern",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

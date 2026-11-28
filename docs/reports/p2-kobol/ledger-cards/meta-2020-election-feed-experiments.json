@@ -1,0 +1,376 @@
+{
+ "slug": "meta-2020-election-feed-experiments",
+ "title": "2020 election feed experiments find little change in political attitudes",
+ "first_published": "2023-07",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1126/science.abp9364",
+   "final_url": "https://www.science.org/doi/10.1126/science.abp9364",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-07-28"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.abp9364",
+   "crossref": {
+    "doi": "10.1126/science.abp9364",
+    "resolves": true,
+    "title": "How do social media feed algorithms affect attitudes and behavior in an election campaign?",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2023-7-28",
+    "authors_first3": [
+     "Guess",
+     "Malhotra",
+     "Pan"
+    ],
+    "author_count": 29,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1126/science.adu8261",
+      "type": "correction",
+      "source": "publisher"
+     },
+     {
+      "doi": "10.1126/science.aeh2575",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1126/science.add8424",
+   "final_url": "https://www.science.org/doi/10.1126/science.add8424",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-07-28"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.add8424",
+   "crossref": {
+    "doi": "10.1126/science.add8424",
+    "resolves": true,
+    "title": "Reshares on social media amplify political news but do not detectably affect beliefs or opinions",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2023-7-28",
+    "authors_first3": [
+     "Guess",
+     "Malhotra",
+     "Pan"
+    ],
+    "author_count": 29,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://doi.org/10.1038/s41586-023-06297-w",
+   "final_url": "https://www.nature.com/articles/s41586-023-06297-w?error=cookies_not_supported&code=8827476b-fd05-4b57-8382-a022d4b140d8",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Like-minded sources on Facebook are prevalent but not polarizing",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-07-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-07-27"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-07-27"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-07-27"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-07-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-07-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-12-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-06-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-07-27"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-06297-w",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06297-w",
+    "resolves": true,
+    "title": "Like-minded sources on Facebook are prevalent but not polarizing",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-7-27",
+    "authors_first3": [
+     "Nyhan",
+     "Settle",
+     "Thorson"
+    ],
+    "author_count": 30,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41586-023-06795-x",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Many critics raise concerns about the prevalence of ‘echo chambers’ on social media and their potential role in increasing political polarization. However, the lack of available data and the challenges of conducting large-scale field experiments have made it difficult to assess the scope of the prob",
+   "passages": [
+    "To evaluate a potential response to concerns about the effects of echo chambers, we conducted a multi-wave field experiment on Facebook among 23,377 users for whom we reduced exposure to content from like-minded sources during the 2020 US presidential election by about one-third.",
+    "These precisely estimated results suggest that although exposure to content from like-minded sources on social media is common, reducing its prevalence during the 2020 US presidential election did not correspondingly reduce polarization in beliefs or attitudes.",
+    "Reducing exposure to like-minded content could also induce people to seek out such information elsewhere online (that is, not on Facebook34).In this study, we measure the prevalence of exposure to content from politically like-minded sources among active adult Facebook users in the US.",
+    "2: Day-level exposure to content from like-minded sources in the Facebook Feed by experimental group.Full size imageMean day-level share of respondent views of content from like-minded sources by experimental group between 1 July and 23 December 2020.",
+    "3 Day-level exposure to content from cross-cutting sources in the Facebook Feed by experimental group.Mean day-level share of respondent views of content from cross-cutting sources by experimental group July 1–December 23, 2020.",
+    "2 Pre-treatment exposure to Facebook Feed content by source type: Study participants and daily Facebook users.Pre-treatment distribution of Facebook Feed exposure to content from like-minded sources (left column), cross-cutting sources (center column), and those that fall into neither category (right column)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://doi.org/10.1126/science.adi2430",
+   "final_url": "https://www.science.org/doi/10.1126/science.adi2430",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-07-28"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.adi2430",
+   "crossref": {
+    "doi": "10.1126/science.adi2430",
+    "resolves": true,
+    "title": "Independence by permission",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2023-7-28",
+    "authors_first3": [
+     "Wagner"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": null,
+   "final_url": null,
+   "status": null,
+   "readable": false,
+   "reason": "no url",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.1257/pol.20240806",
+      "title": "The Effect of Deactivating Facebook and Instagram on Users’ Emotional State",
+      "container": "American Economic Journal: Economic Policy",
+      "date": "2026-11-1",
+      "score": 51.575165
+     },
+     {
+      "doi": "10.4324/9781003479598-8",
+      "title": "Cross-Platform Emotions and Audience Engagement in Social Media Political Campaigning: Comparing Candidates' Facebook and Instagram Images in the 2020 US Election",
+      "container": "Dissonant Public Spheres",
+      "date": "2024-6-10",
+      "score": 44.39764
+     },
+     {
+      "doi": "10.1007/978-3-031-48418-6_3",
+      "title": "Your Team: Mentors, Staff, Colleagues, and Mentees",
+      "container": "Women Rock Science",
+      "date": "2024",
+      "score": 40.44056
+     }
+    ],
+    "arxiv": []
+   },
+   "resolved_to": null,
+   "verdict": "unresolved"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://doi.org/10.1126/science.adi2430",
+   "final_url": "https://www.science.org/doi/10.1126/science.adi2430",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-07-28"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.adi2430",
+   "crossref": {
+    "doi": "10.1126/science.adi2430",
+    "resolves": true,
+    "title": "Independence by permission",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2023-7-28",
+    "authors_first3": [
+     "Wagner"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "url": null,
+   "final_url": null,
+   "status": null,
+   "readable": false,
+   "reason": "no url",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.1257/pol.20240806",
+      "title": "The Effect of Deactivating Facebook and Instagram on Users’ Emotional State",
+      "container": "American Economic Journal: Economic Policy",
+      "date": "2026-11-1",
+      "score": 51.575165
+     },
+     {
+      "doi": "10.1038/s41562-025-02329-9",
+      "title": "The effects of Facebook and Instagram political advertisements on the 2020 US election",
+      "container": "Nature Human Behaviour",
+      "date": "2026-3-5",
+      "score": 38.09812
+     },
+     {
+      "doi": "10.4324/9781003479598-8",
+      "title": "Cross-Platform Emotions and Audience Engagement in Social Media Political Campaigning: Comparing Candidates' Facebook and Instagram Images in the 2020 US Election",
+      "container": "Dissonant Public Spheres",
+      "date": "2024-6-10",
+      "score": 32.997684
+     }
+    ],
+    "arxiv": []
+   },
+   "resolved_to": null,
+   "verdict": "unresolved"
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "slug": "en-gedi-scroll-read-without-opening",
+ "title": "Virtual unwrapping reads a burned 1,700-year-old Hebrew scroll unopened",
+ "first_published": "2016-09",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.science.org/doi/10.1126/sciadv.1601247",
+   "final_url": "https://www.science.org/doi/10.1126/sciadv.1601247",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2016-9-2"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/sciadv.1601247",
+   "crossref": {
+    "doi": "10.1126/sciadv.1601247",
+    "resolves": true,
+    "title": "From damage to discovery via virtual unwrapping: Reading the scroll from En-Gedi",
+    "container": "Science Advances",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2016-9-2",
+    "authors_first3": [
+     "Seales",
+     "Parker",
+     "Segal"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5031465/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5031465/",
+     "status": 200,
+     "readable": true,
+     "title_found": "From damage to discovery via virtual unwrapping: Reading the scroll from En-Gedi",
+     "title_match": true,
+     "date": "2016 Sep 21",
+     "passages": [
+      "All scan data and results from this paper are archived at the Department of Computer Science, University of Kentucky (Lexington, KY) and are available at http://vis.uky.edu/virtual-unwrapping/engedi2016/.SUPPLEMENTARY MATERIALS Supplementary material for this article is available at http://advances.sciencemag.org/cgi/content/full/2/9/e1601247/DC1 table S1.",
+      "The Israel Antiquities Authority (IAA) faithfully preserved the scroll fragments, although in the 40 years following the discovery, no one produced a means to overcome the irreversible damage they had suffered in situ.",
+      "The virtual unwrapping that we performed on the En-Gedi scroll proves the effectiveness of our software pipeline as a noninvasive alternative: a technological engine for text discovery in the face of profound damage.",
+      "Find articles by Yosef Porath 3 Author information Article notes Copyright and License information 1Department of Computer Science, University of Kentucky, Lexington, KY 40506, USA.",
+      "PMC Copyright notice PMCID: PMC5031465 PMID: 27679821 Computational virtual unwrapping of the En-Gedi scroll reveals it to be the earliest Pentateuchal book ever found in a Holy Ark.",
+      "The successful application of our virtual unwrapping pipeline to the En-Gedi scroll represents a confluence of physics, computer science, and the humanities."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

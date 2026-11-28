@@ -1,0 +1,367 @@
+{
+ "slug": "pulsar-timing-gravitational-wave-background",
+ "title": "Four pulsar timing teams report a background of gravitational waves",
+ "first_published": "2023-06-28",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2306.16213",
+   "final_url": "https://arxiv.org/abs/2306.16213",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The NANOGrav 15-year Data Set: Evidence for a Gravitational-Wave Background",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-06-28"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-06-28"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-06-29"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.3847/2041-8213/acdac6",
+   "crossref": {
+    "doi": "10.3847/2041-8213/acdac6",
+    "resolves": true,
+    "title": "The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background",
+    "container": "The Astrophysical Journal Letters",
+    "publisher": "American Astronomical Society",
+    "type": "journal-article",
+    "issued": "2023-6-29",
+    "authors_first3": [
+     "Agazie",
+     "Anumarlapudi",
+     "Archibald"
+    ],
+    "author_count": 115,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2306.16213: The NANOGrav 15-year Data Set: Evidence for a Gravitational-Wave Background",
+   "passages": [
+    "We report multiple lines of evidence for a stochastic signal that is correlated among 67 pulsars from the 15-year pulsar-timing data set collected by the North American Nanohertz Observatory for Gravitational Waves.",
+    "Published in Astrophysical Journal Letters as part of Focus on NANOGrav's 15-year Data Set and the Gravitational Wave Background.",
+    "We have built a statistical background distribution for these latter Bayes factors using a method that removes inter-pulsar correlations from our data set, finding $p = 10^{-3}$ (approx. $3\\sigma$) for the observed Bayes factors in the null no-correlation scenario.",
+    "The inferred gravitational-wave background amplitude and spectrum are consistent with astrophysical expectations for a signal from a population of supermassive black-hole binaries, although more exotic cosmological and astrophysical sources cannot be excluded.",
+    "Assuming a fiducial $f^{-2/3}$ characteristic-strain spectrum, as appropriate for an ensemble of binary supermassive black-hole inspirals, the strain amplitude is $2.4^{+0.7}_{-0.6} \\times 10^{-15}$ (median + 90% credible interval) at a reference frequency of 1/(1 yr).",
+    "The correlations follow the Hellings-Downs pattern expected for a stochastic gravitational-wave background."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.3847/2041-8213/acdac6",
+   "final_url": "https://iopscience.iop.org/article/10.3847/2041-8213/acdac6",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-06-29"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-06-29"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-06-29"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.3847/2041-8213/acdac6",
+   "crossref": {
+    "doi": "10.3847/2041-8213/acdac6",
+    "resolves": true,
+    "title": "The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background",
+    "container": "The Astrophysical Journal Letters",
+    "publisher": "American Astronomical Society",
+    "type": "journal-article",
+    "issued": "2023-6-29",
+    "authors_first3": [
+     "Agazie",
+     "Anumarlapudi",
+     "Archibald"
+    ],
+    "author_count": 115,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "meta",
+    "value": "Text"
+   },
+   "meta_description": "The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background, Agazie, Gabriella, Anumarlapudi, Akash, Archibald, Anne M., Arzoumanian, Zaven, Baker, Paul T., Bécsy, Bence, Blecha, Laura, Brazier, Adam, Brook, Paul R., Burke-Spolaor, Sarah, Burnette, Rand, Case, Robin, Charisi, Maria, Ch",
+   "passages": [
+    "2041-8205/951/1/L8Abstract We report multiple lines of evidence for a stochastic signal that is correlated among 67 pulsars from the 15 yr pulsar timing data set collected by the North American Nanohertz Observatory for Gravitational Waves.",
+    "A previous analysis of the 12.5 yr NANOGrav data set found strong evidence for excess low-frequency noise with common spectral properties across the array but inconclusive evidence for Hellings–Downs interpulsar correlations, which would point to the GW origin of the background.",
+    "The following article is Open accessThe NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave BackgroundGabriella Agazie, Akash Anumarlapudi, Anne M.",
+    "2022; Allen 2023).In this letter we present multiple lines of evidence for an excess low-frequency signal with HD correlations in the NANOGrav 15 yr data set (Figure 1).",
+    "Summary of the main Bayesian and optimal-statistic analyses presented in this paper, which establish multiple lines of evidence for the presence of Hellings–Downs correlations in the 15 yr NANOGrav data set.",
+    "2020; hereafter NG12gwb) for the 12.5 yr data set collected by the North American Nanohertz Observatory for Gravitational waves (NANOGrav; McLaughlin 2013; Ransom et al."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2306.16214",
+   "final_url": "https://arxiv.org/abs/2306.16214",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The second data release from the European Pulsar Timing Array III. Search for gravitational wave signals",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-06-28"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-06-28"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-10-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1051/0004-6361/202346844",
+   "crossref": {
+    "doi": "10.1051/0004-6361/202346844",
+    "resolves": true,
+    "title": "The second data release from the European Pulsar Timing Array",
+    "container": "Astronomy &amp; Astrophysics",
+    "publisher": "EDP Sciences",
+    "type": "journal-article",
+    "issued": "2023-10",
+    "authors_first3": [
+     "EPTA Collaboration and InPTA Collaboration:",
+     "Antoniadis",
+     "Arumugam"
+    ],
+    "author_count": 99,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2306.16214: The second data release from the European Pulsar Timing Array III. Search for gravitational wave signals",
+   "passages": [
+    "The second data release from the European Pulsar Timing Array III.",
+    "Wu View a PDF of the paper titled The second data release from the European Pulsar Timing Array III.",
+    "By continuing our detection efforts as part of the International Pulsar Timing Array (IPTA), we expect to be able to improve the measurement of spatial correlations and better characterise this signal in the coming years.",
+    "The addition of the InPTA data yields results that are broadly consistent with the EPTA-only data sets, with the benefit of better noise modelling.",
+    "With the full data set, we find marginal evidence for a GWB, with a Bayes factor of four and a false alarm probability of $4\\%$.",
+    "The inferred spectrum from the latest EPTA data from new generation observing systems is rather uncertain and in mild tension with the common signal measured in the full data set."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://arxiv.org/abs/2306.16215",
+   "final_url": "https://arxiv.org/abs/2306.16215",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Search for an isotropic gravitational-wave background with the Parkes Pulsar Timing Array",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-06-28"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-06-28"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-06-29"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.3847/2041-8213/acdd02",
+   "crossref": {
+    "doi": "10.3847/2041-8213/acdd02",
+    "resolves": true,
+    "title": "Search for an Isotropic Gravitational-wave Background with the Parkes Pulsar Timing Array",
+    "container": "The Astrophysical Journal Letters",
+    "publisher": "American Astronomical Society",
+    "type": "journal-article",
+    "issued": "2023-6-29",
+    "authors_first3": [
+     "Reardon",
+     "Zic",
+     "Shannon"
+    ],
+    "author_count": 29,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2306.16215: Search for an isotropic gravitational-wave background with the Parkes Pulsar Timing Array",
+   "passages": [
+    "Pulsar timing arrays aim to detect nanohertz-frequency gravitational waves (GWs).",
+    "The long timing baselines of the PPTA and the access to southern pulsars will continue to play an important role in the International Pulsar Timing Array.",
+    "A background of GWs modulates pulsar arrival times and manifests as a stochastic process, common to all pulsars, with a signature spatial correlation.",
+    "For a spectral index of $\\alpha=-2/3$, corresponding to an isotropic background of GWs radiated by inspiraling supermassive black hole binaries, we recover an amplitude of $A=2.04^{+0.25}_{-0.22} \\times 10^{-15}$.",
+    "For a process with $\\alpha=-2/3$, we measure spatial correlations consistent with a GWB, with an estimated false-alarm probability of $p \\lesssim 0.02$ (approx. $2\\sigma$).",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://doi.org/10.3847/2041-8213/acdd02",
+   "final_url": "https://iopscience.iop.org/article/10.3847/2041-8213/acdd02",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Search for an Isotropic Gravitational-wave Background with the Parkes Pulsar Timing Array",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-06-29"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-06-29"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-06-29"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.3847/2041-8213/acdd02",
+   "crossref": {
+    "doi": "10.3847/2041-8213/acdd02",
+    "resolves": true,
+    "title": "Search for an Isotropic Gravitational-wave Background with the Parkes Pulsar Timing Array",
+    "container": "The Astrophysical Journal Letters",
+    "publisher": "American Astronomical Society",
+    "type": "journal-article",
+    "issued": "2023-6-29",
+    "authors_first3": [
+     "Reardon",
+     "Zic",
+     "Shannon"
+    ],
+    "author_count": 29,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "meta",
+    "value": "Text"
+   },
+   "meta_description": "Search for an Isotropic Gravitational-wave Background with the Parkes Pulsar Timing Array, Reardon, Daniel J., Zic, Andrew, Shannon, Ryan M., Hobbs, George B., Bailes, Matthew, Di Marco, Valentina, Kapur, Agastya, Rogers, Axl F., Thrane, Eric, Askew, Jacob, Bhat, N. D. Ramesh, Cameron, Andrew, Curył",
+   "passages": [
+    "Exactly this situation occurred when the North American Nanohertz Observatory for gravitational waves (NANOGrav) detected a “common-spectrum” process in their pulsars using 12.5 yr of MSP timing data, but was unable to establish a significant cross correlation between pulsar pairs (Arzoumanian et al.",
+    "In a coordinated effort, the NANOGrav, EPTA and Indian Pulsar Timing Array (Joshi et al.",
+    "2041-8205/951/1/L6Abstract Pulsar timing arrays aim to detect nanohertz-frequency gravitational waves (GWs).",
+    "The long timing baselines of the PPTA and the access to southern pulsars will continue to play an important role in the International Pulsar Timing Array.",
+    "Pulsar timing array (PTA) experiments offer a complementary window into the GW landscape in the nanohertz-frequency band at frequencies Hz.",
+    "2016), which motivates the combination of global PTA data sets under the International Pulsar Timing Array (IPTA; Hobbs et al."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://arxiv.org/abs/2306.16216",
+   "final_url": "https://arxiv.org/abs/2306.16216",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Searching for the nano-Hertz stochastic gravitational wave background with the Chinese Pulsar Timing Array Data Release I",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-06-28"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-06-28"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-06-29"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1088/1674-4527/acdfa5",
+   "crossref": {
+    "doi": "10.1088/1674-4527/acdfa5",
+    "resolves": true,
+    "title": "Searching for the Nano-Hertz Stochastic Gravitational Wave Background with the Chinese Pulsar Timing Array Data Release I",
+    "container": "Research in Astronomy and Astrophysics",
+    "publisher": "IOP Publishing",
+    "type": "journal-article",
+    "issued": "2023-6-29",
+    "authors_first3": [
+     "Xu",
+     "Chen",
+     "Guo"
+    ],
+    "author_count": 27,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2306.16216: Searching for the nano-Hertz stochastic gravitational wave background with the Chinese Pulsar Timing Array Data Release I",
+   "passages": [
+    "The Chinese Pulsar Timing Array (CPTA) is a collaboration aiming at the direct GW detection with observations carried out using Chinese radio telescopes.",
+    "We expect that the future International Pulsar Timing Array data analysis and the next CPTA data release will be more sensitive to the nHz GWB, which could verify the current results.",
+    "Observing and timing a group of millisecond pulsars (MSPs) with high rotational stability enables the direct detection of gravitational waves (GWs).",
+    "This short article serves as a `table of contents' for a forthcoming series of papers related to the CPTA Data Release 1 (CPTA DR1) which uses observations from the Five-hundred-meter Aperture Spherical radio Telescope (FAST).",
+    "The GW signals can be identified from the spatial correlations encoded in the times-of-arrival of widely spaced pulsar-pairs.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

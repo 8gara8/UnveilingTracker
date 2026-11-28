@@ -1,0 +1,239 @@
+{
+ "slug": "weyl-semimetal-first-observed-taas",
+ "title": "Weyl fermions are observed for the first time in a crystal",
+ "first_published": "2015-02-12",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/1502.03807",
+   "final_url": "https://arxiv.org/abs/1502.03807",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Discovery of a Weyl Fermion Semimetal and Topological Fermi Arcs",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2015-07-19"
+    },
+    {
+     "source": "citation_date",
+     "date": "2015-02-12"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-08-07"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.aaa9297",
+   "crossref": {
+    "doi": "10.1126/science.aaa9297",
+    "resolves": true,
+    "title": "Discovery of a Weyl fermion semimetal and topological Fermi arcs",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2015-8-7",
+    "authors_first3": [
+     "Xu",
+     "Belopolski",
+     "Alidoust"
+    ],
+    "author_count": 21,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1502.03807: Discovery of a Weyl Fermion Semimetal and Topological Fermi Arcs",
+   "passages": [
+    "This work (Science 2015) is based on the first theoretical prediction of TaAs family as Weyl Semimetals, see Nature Commun.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1126/science.aaa9297",
+   "final_url": "https://www.science.org/doi/10.1126/science.aaa9297",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2015-08-07"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.aaa9297",
+   "crossref": {
+    "doi": "10.1126/science.aaa9297",
+    "resolves": true,
+    "title": "Discovery of a Weyl fermion semimetal and topological Fermi arcs",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2015-8-7",
+    "authors_first3": [
+     "Xu",
+     "Belopolski",
+     "Alidoust"
+    ],
+    "author_count": 21,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "arxiv",
+     "url": "https://arxiv.org/abs/1502.03807",
+     "final_url": "https://arxiv.org/abs/1502.03807",
+     "status": 200,
+     "readable": true,
+     "title_found": "Discovery of a Weyl Fermion Semimetal and Topological Fermi Arcs",
+     "title_match": true,
+     "date": "2015-02-12",
+     "passages": [
+      "This work (Science 2015) is based on the first theoretical prediction of TaAs family as Weyl Semimetals, see Nature Commun.",
+      "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/1502.04684",
+   "final_url": "https://arxiv.org/abs/1502.04684",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Experimental discovery of Weyl semimetal TaAs",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2015-08-04"
+    },
+    {
+     "source": "citation_date",
+     "date": "2015-02-16"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-07-31"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1103/physrevx.5.031013",
+   "crossref": {
+    "doi": "10.1103/physrevx.5.031013",
+    "resolves": true,
+    "title": "Experimental Discovery of Weyl Semimetal TaAs",
+    "container": "Physical Review X",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2015-7-31",
+    "authors_first3": [
+     "Lv",
+     "Weng",
+     "Fu"
+    ],
+    "author_count": 14,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1502.04684: Experimental discovery of Weyl semimetal TaAs",
+   "passages": [
+    "Here we report the experimental realization of a Weyl semimetal in TaAs by observing Fermi arcs formed by its surface states using angle-resolved photoemission spectroscopy.",
+    "Ding View a PDF of the paper titled Experimental discovery of Weyl semimetal TaAs, by B.",
+    "The surface state of a Weyl semimetal displays pairs of entangled Fermi arcs at two opposite surfaces.",
+    "Our first-principles calculations, matching remarkably well with the experimental results, further confirm that TaAs is a Weyl semimetal.",
+    "Electrons in a Weyl semimetal behave as Weyl fermions, which have many exotic properties, such as chiral anomaly and magnetic monopoles in the crystal momentum space.",
+    "Weyl semimetals are a class of materials that can be regarded as three-dimensional analogs of graphene breaking time reversal or inversion symmetry."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://doi.org/10.1103/PhysRevX.5.031013",
+   "final_url": "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.5.031013",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Experimental Discovery of Weyl Semimetal TaAs",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2015-07-31"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2015-07-31"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-07-31"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1103/physrevx.5.031013",
+   "crossref": {
+    "doi": "10.1103/physrevx.5.031013",
+    "resolves": true,
+    "title": "Experimental Discovery of Weyl Semimetal TaAs",
+    "container": "Physical Review X",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2015-7-31",
+    "authors_first3": [
+     "Lv",
+     "Weng",
+     "Fu"
+    ],
+    "author_count": 14,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Weyl fermions possess exotic properties and can act like magnetic monopoles. Researchers show that TaAs is a Weyl semimetal, demonstrating for the first time that Weyl semimetals can be identified experimentally.",
+   "passages": [
+    "Here, we report the experimental realization of a Weyl semimetal in TaAs by observing Fermi arcs formed by its surface states using angle-resolved photoemission spectroscopy.",
+    "Ding1,2,†1Beijing National Laboratory for Condensed Matter Physics and Institute of Physics, Chinese Academy of Sciences, Beijing 100190, China2Collaborative Innovation Center of Quantum Matter, Beijing, China3Department of Physics, Tsinghua University, Beijing 100084, China*Corresponding author. tqian@iphy.ac.cn†Corresponding author. dingh@iphy.ac.cnPDFShareXFacebookMendeleyLinkedInRedditSina WeiboPhys.",
+    "The surface state of a Weyl semimetal displays pairs of entangled Fermi arcs at two opposite surfaces.",
+    "When these Weyl fermions are projected onto a surface, they will exhibit Fermi arcs connecting two Weyl fermions with opposite chirality.",
+    "Observations of Fermi arcs are a direct and distinguished exhibition of Weyl fermions or magnetic monopoles in a crystal, which is one of the hallmarks of a Weyl semimetal.",
+    "Furthermore, based on first-principles calculations, we are able to clearly resolve the pattern of these Fermi arcs connecting the projected Weyl fermions; separated Weyl nodes are a characteristic of a Weyl semimetal."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

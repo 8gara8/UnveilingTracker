@@ -1,0 +1,172 @@
+{
+ "slug": "nif-fusion-target-gain-above-one",
+ "title": "NIF fusion shot yields more energy than the laser delivered",
+ "first_published": "2022-12-13",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1103/PhysRevLett.132.065102",
+   "final_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.065102",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Achievement of Target Gain Larger than Unity in an Inertial Fusion Experiment",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2024-02-05"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2024-02-05"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-02-05"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1103/physrevlett.132.065102",
+   "crossref": {
+    "doi": "10.1103/physrevlett.132.065102",
+    "resolves": true,
+    "title": "Achievement of Target Gain Larger than Unity in an Inertial Fusion Experiment",
+    "container": "Physical Review Letters",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2024-2-5",
+    "authors_first3": [
+     "Abu-Shawareb",
+     "Acree",
+     "Adams"
+    ],
+    "author_count": 1356,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Scientists have now vetted details of the 2022 laser-powered fusion reaction that produced more energy than it consumed.",
+   "passages": [
+    "132, 065102 – Published 5 February, 2024DOI: https://doi.org/10.1103/PhysRevLett.132.065102 Export CitationShow metricsHide metricsAbstractOn December 5, 2022, an indirect drive fusion implosion on the National Ignition Facility (NIF) achieved a target gain Gtarget of 1.5.",
+    "It is your responsibility to obtain the proper permission from the rights holder directly for these figures.Export citationExport citationChoose format for download:BibTeXEndNote (RIS)Download CitationFeatured in PhysicsEditors' SuggestionOpen AccessAchievement of Target Gain Larger than Unity in an Inertial Fusion ExperimentH.",
+    "132, 065104 (2024)Observations and properties of the first laboratory fusion experiment to exceed a target gain of unityA.",
+    "E 109, 025203 (2024)Design of the first fusion experiment to achieve target energy gain G>1A.",
+    "ViewpointNuclear-Fusion Reaction Beats BreakevenPublished 5 February, 2024Scientists have now vetted details of the 2022 laser-powered fusion reaction that produced more energy than it consumed.See more in PhysicsSee AlsoEnergy Principles of Scientific Breakeven in an Inertial Fusion ExperimentO.",
+    "This license permits unrestricted use, distribution, and reproduction in any medium, provided attribution to the author(s) and the published article's title, journal citation, and DOI are maintained."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.nature.com/articles/s42254-022-00547-y",
+   "final_url": "https://www.nature.com/articles/s42254-022-00547-y?error=cookies_not_supported&code=d9a9bd2c-52ea-4eea-b6aa-a3840d74c6a3",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A milestone in fusion research is reached",
+   "title_match": "placeholder",
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-12-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2022-12-14"
+    },
+    {
+     "source": "dc.date",
+     "date": "2022-12-14"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2022-12-14"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-12-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-12-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-12-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-12-14"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-12-14"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s42254-022-00547-y",
+   "crossref": {
+    "doi": "10.1038/s42254-022-00547-y",
+    "resolves": true,
+    "title": "A milestone in fusion research is reached",
+    "container": "Nature Reviews Physics",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2022-12-14",
+    "authors_first3": [
+     "Betti"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "BriefCommunication"
+   },
+   "meta_description": "Ignition of a millimetre-sized pellet containing a mix of deuterium–tritium, published in 2022, puts to rest questions about the capability of lasers to ignite thermonuclear fuel.",
+   "passages": [
+    "Fusion energy output greater than the kinetic energy of an imploding shell at the National Ignition Facility.",
+    "Experimental achievement and signatures of ignition at the National Ignition Facility.",
+    "Lawson criterion for ignition exceeded in an inertial fusion experiment.",
+    "Design of an inertial fusion experiment exceeding the Lawson criterion for ignition.",
+    "This material is based upon work supported by the US Department of Energy National Nuclear Security Administration under award nos.",
+    "This achievement comes on the back of other experiments in 2020–2021, which achieved the first demonstration of a burning plasma in the laboratory."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://eprints.whiterose.ac.uk/184381/1/Nature_news_and_views_Jan2022_final.pdf",
+   "final_url": "https://eprints.whiterose.ac.uk/id/eprint/184381/1/Nature_news_and_views_Jan2022_final.pdf",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

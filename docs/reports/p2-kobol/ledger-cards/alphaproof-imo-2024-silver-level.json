@@ -1,0 +1,143 @@
+{
+ "slug": "alphaproof-imo-2024-silver-level",
+ "title": "AlphaProof and AlphaGeometry 2 reach IMO silver-medal level",
+ "first_published": "2024-07-25",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/",
+   "final_url": "https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AI achieves silver-medal standard solving International Mathematical Olympiad problems",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2024-07-25"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-07-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-04-30"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-01-31"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-11-30"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Breakthrough models AlphaProof and AlphaGeometry 2 solve advanced reasoning problems in mathematics",
+   "passages": [
+    "We earned 28 out of 42 total points, achieving the same level as a silver medalist in the competition.AlphaProof: a formal approach to reasoningAlphaProof is a system that trains itself to prove mathematical statements in the formal language Lean.",
+    "See our system's IMO 2024 solutions Each of the six problems can earn seven points, with a total maximum of 42.",
+    "For IMO 2024, AlphaGeometry 2 solved Problem 4 within 19 seconds after receiving its formalization.Illustration of Problem 4, which asks to prove the sum of ∠KIL and ∠XPY equals 180°.",
+    "But current AI systems still struggle with solving general math problems because of limitations in reasoning skills and training data.Today, we present AlphaProof, a new reinforcement-learning based system for formal math reasoning, and AlphaGeometry 2, an improved version of our geometry-solving system.",
+    "Prof Sir Timothy Gowers IMO gold medalist and Fields Medal winner First, the problems were manually translated into formal mathematical language for our systems to understand.",
+    "Our systems solved one problem within minutes and took up to three days to solve the others.AlphaProof solved two algebra problems and one number theory problem by determining the answer and proving it was correct."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.nature.com/articles/s41586-025-09833-y",
+   "final_url": "https://www.nature.com/articles/s41586-025-09833-y?error=cookies_not_supported&code=833ecb04-5749-43f4-b566-d0505d2649f6",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Olympiad-level formal mathematical reasoning with reinforcement learning",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-02-28"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-11-12"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-11-12"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-11-12"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-11-12"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-11-12"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-06-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-10-30"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-11-12"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-025-09833-y",
+   "crossref": {
+    "doi": "10.1038/s41586-025-09833-y",
+    "resolves": true,
+    "title": "Olympiad-level formal mathematical reasoning with reinforcement learning",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-11-12",
+    "authors_first3": [
+     "Hubert",
+     "Mehta",
+     "Sartran"
+    ],
+    "author_count": 39,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "A long-standing goal of artificial intelligence (AI) is to build systems capable of complex reasoning in vast domains, a task epitomized by mathematics with its boundless concepts and demand for rigorous proof. Recent AI systems, often reliant on human data, typically lack the formal verification ne",
+   "passages": [
+    "28, Google DeepMind.Discussion and conclusionWe have introduced AlphaProof, an RL agent capable of proving complex mathematical problems within the formal environment of the Lean theorem prover.",
+    "At the 2024 International Mathematical Olympiad competition, our AI system, with AlphaProof as its core reasoning engine, solved three out of the five non-geometry problems, including the competition’s most difficult problem.",
+    "AlphaProof markedly improved state-of-the-art results on elite historical mathematics competition problems and, notably, proved three out of five problems at the 2024 International Mathematical Olympiad (IMO) competition.",
+    "5: Combined AI system performance at the IMO 2024.Full size imageOur combined system scored 28 points, with AlphaProof solving three problems (P1, P2 and P6) and AlphaGeometry 23 solving one (P4).",
+    "Consequently, for dedicated Olympiad geometry problems (such as IMO 2024 P4), we used AlphaGeometry 23, a system specifically designed for modern olympiad geometry.",
+    "Olympiad-level formal mathematical reasoning with reinforcement learning."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

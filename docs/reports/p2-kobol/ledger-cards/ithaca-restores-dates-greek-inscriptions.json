@@ -1,0 +1,131 @@
+{
+ "slug": "ithaca-restores-dates-greek-inscriptions",
+ "title": "Ithaca neural network restores, places and dates damaged Greek inscriptions",
+ "first_published": "2022-03",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-022-04448-z",
+   "final_url": "https://www.nature.com/articles/s41586-022-04448-z?error=cookies_not_supported&code=2026f74f-c3b1-4c66-b09d-986f99640dc2",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Restoring and attributing ancient texts using deep neural networks",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-02-28"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2022-03-09"
+    },
+    {
+     "source": "dc.date",
+     "date": "2022-03-09"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2022-03-09"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-03-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-03-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-08-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-01-19"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-03-09"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-022-04448-z",
+   "crossref": {
+    "doi": "10.1038/s41586-022-04448-z",
+    "resolves": true,
+    "title": "Restoring and attributing ancient texts using deep neural networks",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2022-3-9",
+    "authors_first3": [
+     "Assael",
+     "Sommerschield",
+     "Shillingford"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Ancient history relies on disciplines such as epigraphy—the study of inscribed texts known as inscriptions—for evidence of the thought, language, society and history of past civilizations1. However, over the centuries, many inscriptions have been damaged to the point of illegibility, transported far",
+   "passages": [
+    "3.Restoring full texts with IthacaTo overcome memory constraints and length limitations for long inscriptions (>768 characters), Ithaca can be applied iteratively to restore all missing text in a damaged inscription.",
+    "Prag and N.d.F. supervised the project.Corresponding authorsCorrespondence to Yannis Assael or Thea Sommerschield.Ethics declarations Competing interests The authors declare no competing interests.",
+    "Here we present Ithaca, a deep neural network for the textual restoration, geographical attribution and chronological attribution of ancient Greek inscriptions.",
+    "(2022) presented Ithaca as an effective tool to assist historians in achieving automatic restoration of broken inscriptions and acquisition of geographic and temporal attribution information of ancient Greek inscriptions.",
+    "Ithaca can attribute inscriptions to their original location with an accuracy of 71% and can date them to less than 30 years of their ground-truth ranges, redating key texts of Classical Athens and contributing to topical debates in ancient history.",
+    "Restoring and attributing ancient texts using deep neural networks."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://deepmind.google/discover/blog/predicting-the-past-with-ithaca/",
+   "final_url": "https://deepmind.google/blog/predicting-the-past-with-ithaca/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Predicting the past with Ithaca",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2022-03-09"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-03-09"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The birth of human writing marked the dawn of History and is crucial to our understanding of past civilisations and the world we live in today. For example, more than 2,500 years ago, the Greeks bega…",
+   "passages": [
+    "Provided with these inputs, Ithaca restores the text, and identifies the time and place in which the text was written.Collaborative toolsIthaca is trained on the largest digital dataset of Greek inscriptions from the Packard Humanities Institute.",
+    "However, many of the inscriptions historians are interested in analysing with Ithaca are damaged and often missing chunks of text.",
+    "This restored inscription (IG I3 4B) records a decree concerning the Acropolis of Athens and dates 485/4 BCE.",
+    "The output highlights the words in different colour intensities that led to Ithaca’s predictions for missing text, location and dates.Figure 4.",
+    "Ithaca is named after the Greek island in Homer’s Odyssey and builds upon and extends Pythia, our previous system that focused on textual restoration.",
+    "Ithaca’s outputs. (a) Restoration predictions for 6 missing characters (dashes) in an Athenian inscription (IG II2 116)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

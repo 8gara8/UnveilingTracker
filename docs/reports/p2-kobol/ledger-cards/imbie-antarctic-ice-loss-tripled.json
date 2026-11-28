@@ -1,0 +1,162 @@
+{
+ "slug": "imbie-antarctic-ice-loss-tripled",
+ "title": "Antarctica's ice loss has tripled since 2012, a joint satellite assessment finds",
+ "first_published": "2018-06-13",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-018-0179-y",
+   "final_url": "https://www.nature.com/articles/s41586-018-0179-y?error=cookies_not_supported&code=b9e559b1-dbb9-4fd7-913a-4545cec1bbdd",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Mass balance of the Antarctic Ice Sheet from 1992 to 2017",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2018-06-13"
+    },
+    {
+     "source": "dc.date",
+     "date": "2018-06-13"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2018-06-13"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2018-06-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-06-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-04-12"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-04-24"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-05-31"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-018-0179-y",
+   "crossref": {
+    "doi": "10.1038/s41586-018-0179-y",
+    "resolves": true,
+    "title": "Mass balance of the Antarctic Ice Sheet from 1992 to 2017",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-6",
+    "authors_first3": [
+     "The IMBIE team"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-part": [
+      "10.5194/tc-15-233-2021"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The Antarctic Ice Sheet is an important indicator of climate change and driver of sea-level rise. Here we combine satellite observations of its changing volume, flow and gravitational attraction with modelling of its surface mass balance to show that it lost 2,720 ± 1,390 billion tonnes of ice betwe",
+   "passages": [
+    "5 Individual rates of ice-sheet mass balance.a–i, Mass-balance estimates were determined from satellite altimetry (a–c), gravimetry (d–e) and the input–output method (g–i) for the Antarctic Peninsula (a, d, g), East Antarctica (b, e, h) and West Antarctica (c, f, i).",
+    "We find large variations in and among model estimates of surface mass balance and glacial isostatic adjustment for East Antarctica, with its average rate of mass gain over the period 1992–2017 (5 ± 46 billion tonnes per year) being the least certain.",
+    "Wolfgang Richter 19 June 2018, 13:11 What's about the contrary result to this study by another study?No problem: NASA glaciologist Jay Zwally informed any days ago, that nis new study confirms his findings in 2015 that the Antarctica is gaining mass!See: http://dailycaller.com/2018...",
+    "David Ray Gillard 14 June 2018, 22:06 Hello:I recently read an article that stated the southern ice cap has lost 200billion tons of ice every year from 2012 to 2017.",
+    "Antarctic ice-mass balance 2003 to 2012: regional reanalysis of GRACE satellite gravimetry measurements with improved estimate of glacial-isostatic adjustment based on GPS uplift rates.",
+    "Estimating the Greenland ice sheet surface mass balance contribution to future sea level rise using the regional atmospheric climate model MAR."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1073/pnas.1812883116",
+   "final_url": "https://pnas.org/doi/full/10.1073/pnas.1812883116",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2019-01-14"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1073/pnas.1812883116",
+   "crossref": {
+    "doi": "10.1073/pnas.1812883116",
+    "resolves": true,
+    "title": "Four decades of Antarctic Ice Sheet mass balance from 1979–2017",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2019-1-14",
+    "authors_first3": [
+     "Rignot",
+     "Mouginot",
+     "Scheuchl"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-part": [
+      "10.5194/tc-19-1153-2025"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6347714/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6347714/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Four decades of Antarctic Ice Sheet mass balance from 1979–2017",
+     "title_match": true,
+     "date": "2019-01-13",
+     "passages": [
+      "Significance Statement We evaluate the state of the mass balance of the Antarctic Ice Sheet over the last four decades using a comprehensive, precise satellite record and output products from a regional atmospheric climate model to document its impact on sea-level rise.",
+      "Keywords: glaciology, Antarctica, remote sensing, climate change, sea-level riseAbstract We use updated drainage inventory, ice thickness, and ice velocity data to calculate the grounding line ice discharge of 176 basins draining the Antarctic Ice Sheet from 1979 to 2017.",
+      "We derive the ice sheet mass balance for 1979–2017, the acceleration in ice mass loss on a decadal time scale (Fig.",
+      "The mass loss tripled after the 1990s, averaged 24 Gt/y in 1979–2017, with an acceleration of 16 Gt/y per decade.West Antarctica.",
+      "Mass balance of the Antarctic ice sheet from 1992 to 2017.",
+      "The techniques have been compared (8–10) to yield reconciled numbers for ice-sheet-wide assessments for the time periods 1992–2011 and 1992–2017, except for East Antarctica, where uncertainties remain."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

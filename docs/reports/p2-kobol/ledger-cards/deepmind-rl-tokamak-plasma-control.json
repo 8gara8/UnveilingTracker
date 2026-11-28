@@ -1,0 +1,259 @@
+{
+ "slug": "deepmind-rl-tokamak-plasma-control",
+ "title": "Reinforcement learning controls plasma in a tokamak fusion device",
+ "first_published": "2022-02-16",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-021-04301-9",
+   "final_url": "https://www.nature.com/articles/s41586-021-04301-9?error=cookies_not_supported&code=eabb691c-9480-4222-985a-60f4d46b4d94",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Magnetic control of tokamak plasmas through deep reinforcement learning",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-01-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2022-02-16"
+    },
+    {
+     "source": "dc.date",
+     "date": "2022-02-16"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2022-02-16"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-02-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-02-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-07-14"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-12-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-02-16"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-021-04301-9",
+   "crossref": {
+    "doi": "10.1038/s41586-021-04301-9",
+    "resolves": true,
+    "title": "Magnetic control of tokamak plasmas through deep reinforcement learning",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2022-2-16",
+    "authors_first3": [
+     "Degrave",
+     "Felici",
+     "Buchli"
+    ],
+    "author_count": 31,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Nuclear fusion using magnetic confinement, in particular in the tokamak configuration, is a promising path towards sustainable energy. A core challenge is to shape and maintain a high-temperature plasma within the tokamak vessel. This requires high-dimensional, high-frequency, closed-loop control us",
+   "passages": [
+    "Magnetic control of tokamak plasmas through deep reinforcement learning.",
+    "FGE and LIUQE are available subject to license agreement from the Swiss Plasma Center at EPFL (Antoine Merle antoine.merle@epfl.ch, Federico Felici federico.felici@epfl.ch).",
+    "Real time magnetic control of the snowflake plasma configuration in the TCV tokamak.",
+    "This is a promising new direction for plasma controller design, with the potential to accelerate fusion science, explore new configurations and aid in future tokamak development.Learning control and training architectureOur architecture, depicted in Fig.",
+    "Experiments are executed without further tuning of the control-policy network weights after training, in other words, there is ‘zero-shot’ transfer from simulation to hardware.The control policies reliably transfer onto TCV through several key attributes of the learning procedure, depicted in Fig.",
+    "More broadly, our approach may enable the discovery of new reactor designs by jointly optimizing the plasma shape, sensing, actuation, wall design, heat load and magnetic controller to maximize overall performance.MethodsTokamak à Configuration VariableThe TCV 1,34, shown in Fig."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://deepmind.google/discover/blog/accelerating-fusion-science-through-learned-plasma-control/",
+   "final_url": "https://deepmind.google/blog/accelerating-fusion-science-through-learned-plasma-control/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Accelerating fusion science through learned plasma control",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2022-02-16"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-02-16"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Successfully controlling the nuclear fusion plasma in a tokamak with deep reinforcement learning",
+   "passages": [
+    "February 16, 2022 ScienceAccelerating fusion science through learned plasma control Share CopiedSuccessfully controlling the nuclear fusion plasma in a tokamak with deep reinforcement learningNote: This blog was first published on 16 Feb 2022.",
+    "On the right, you can see the reconstructed plasma shape and the target points we wanted to hit. (credit: DeepMind & SPC/EPFL)In the video above, we see the plasma at the top of TCV at the instant our system takes control.",
+    "Here on earth, one way scientists have recreated these extreme conditions is by using a tokamak, a doughnut-shaped vacuum surrounded by magnetic coils, that is used to contain a plasma of hydrogen that is hotter than the core of the Sun.",
+    "For example, a control system needs to coordinate the tokamak's many magnetic coils and adjust the voltage on them thousands of times per second to ensure the plasma never touches the walls of the vessel, which would result in heat loss and possibly damage.",
+    "We were able to use these to allow our RL system to learn to control TCV in simulation and then validate our results on the real TCV, showing we could successfully sculpt the plasma into the desired shapes.",
+    "We predict reinforcement learning will be a transformative technology for industrial and scientific control applications in the years to come, with applications ranging from energy efficiency to personalised medicine.In May 2024, we released TORAX, a new open source plasma simulator."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.nature.com/articles/s41586-024-07024-9",
+   "final_url": "https://www.nature.com/articles/s41586-024-07024-9?error=cookies_not_supported&code=5ee4e4a7-eba0-4e30-9737-a81c3eeb0127",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Avoiding fusion plasma tearing instability with deep reinforcement learning",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-01-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-02-21"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-02-21"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-02-21"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-02-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-02-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-07-12"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-01-03"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-02-21"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-024-07024-9",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07024-9",
+    "resolves": true,
+    "title": "Avoiding fusion plasma tearing instability with deep reinforcement learning",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-2-21",
+    "authors_first3": [
+     "Seo",
+     "Kim",
+     "Jalalvand"
+    ],
+    "author_count": 10,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.21203/rs.3.rs-3163842/v1"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "For stable and efficient fusion energy production using a tokamak reactor, it is essential to maintain a high-pressure hydrogenic plasma without plasma disruption. Therefore, it is necessary to actively control the tokamak based on the observed plasma state, to manoeuvre high-pressure plasma while a",
+   "passages": [
+    "Avoiding fusion plasma tearing instability with deep reinforcement learning.",
+    "Therefore, it is necessary to actively control the tokamak based on the observed plasma state, to manoeuvre high-pressure plasma while avoiding tearing instability, the leading cause of disruptions.",
+    "Magnetic control of tokamak plasmas through deep reinforcement learning.",
+    "The plasma control system (PCS) algorithm calculates the low-level control signals of the magnetic coils and the powers of individual beams to satisfy the high-level AI controls, as well as user-prescribed constraints.",
+    "We also note that this demonstration is a successful extension of machine-learning capability in the fusion area, bringing insight and a path to developing the integrated control for high-performance operational scenarios in future tokamak devices, beyond the single instability control.",
+    "Safety factor profile control with reduced central solenoid flux consumption during plasma current ramp-up phase using a reinforcement learning technique."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://arxiv.org/abs/2307.11546",
+   "final_url": "https://arxiv.org/abs/2307.11546",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Towards practical reinforcement learning for tokamak magnetic control",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-10-05"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-07-21"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2307.11546: Towards practical reinforcement learning for tokamak magnetic control",
+   "passages": [
+    "Mankowitz, Martin Riedmiller, The TCV Team View a PDF of the paper titled Towards practical reinforcement learning for tokamak magnetic control, by Brendan D.",
+    "Reinforcement learning (RL) has shown promising results for real-time control systems, including the domain of plasma magnetic control.",
+    "We present new experiments using the upgraded RL-based controllers on the TCV tokamak, which validate the simulation results achieved, and point the way towards routinely achieving accurate discharges using the RL approach.",
+    "In this work, we address key drawbacks of the RL method; achieving higher control accuracy for desired plasma properties, reducing the steady-state error, and decreasing the required time to learn new tasks.",
+    "We present simulation results that show up to 65\\% improvement in shape accuracy, achieve substantial reduction in the long-term bias of the plasma current, and additionally reduce the training time required to learn new tasks by a factor of 3 or more.",
+    "However, there are still significant drawbacks compared to traditional feedback control approaches for magnetic confinement."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

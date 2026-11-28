@@ -1,0 +1,98 @@
+{
+ "slug": "fast-petase-machine-learning-plastic-enzyme",
+ "title": "Machine learning helps engineer an enzyme that breaks down PET plastic",
+ "first_published": "2022-04-27",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-022-04599-z",
+   "final_url": "https://www.nature.com/articles/s41586-022-04599-z?error=cookies_not_supported&code=6b4d9810-9c48-4142-acf6-3eca96ae758b",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Machine learning-aided engineering of hydrolases for PET depolymerization",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2022-04-27"
+    },
+    {
+     "source": "dc.date",
+     "date": "2022-04-27"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2022-04-27"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-04-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-04-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-10-10"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-02-28"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-04-27"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-022-04599-z",
+   "crossref": {
+    "doi": "10.1038/s41586-022-04599-z",
+    "resolves": true,
+    "title": "Machine learning-aided engineering of hydrolases for PET depolymerization",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2022-4-27",
+    "authors_first3": [
+     "Lu",
+     "Diaz",
+     "Czarnecki"
+    ],
+    "author_count": 13,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.742067859.793593935",
+      "10.3410/f.742067859.793593764"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Plastic waste poses an ecological challenge1–3 and enzymatic degradation offers one, potentially green and scalable, route for polyesters waste recycling4. Poly(ethylene terephthalate) (PET) accounts for 12% of global solid waste5, and a circular carbon economy for PET is theoretically attainable th",
+   "passages": [
+    "Article Published: 27 April 2022 Machine learning-aided engineering of hydrolases for PET depolymerization Hongyuan Lu1, Daniel J.",
+    "Machine learning-aided engineering of hydrolases for PET depolymerization.",
+    "Here, we use a structure-based, machine learning algorithm to engineer a robust and active PET hydrolase.",
+    "An engineered PET depolymerase to break down and recycle plastic bottles.",
+    "H.L. performed enzyme engineering, purification and the depolymerization experiments of both model and pc-PET substrates.",
+    "R.S. is a cofounder of Aperiam, a company that applies machine learning to protein engineering."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

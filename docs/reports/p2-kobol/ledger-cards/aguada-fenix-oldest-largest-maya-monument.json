@@ -1,0 +1,93 @@
+{
+ "slug": "aguada-fenix-oldest-largest-maya-monument",
+ "title": "Aguada Fenix: the oldest and largest known Maya monument",
+ "first_published": "2020-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-020-2343-4",
+   "final_url": "https://www.nature.com/articles/s41586-020-2343-4?error=cookies_not_supported&code=cf5024a1-9131-47ce-8230-ca982d10b130",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Monumental architecture at Aguada Fénix and the rise of Maya civilization",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-06-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-11-26"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-04-30"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-06-03"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-020-2343-4",
+   "crossref": {
+    "doi": "10.1038/s41586-020-2343-4",
+    "resolves": true,
+    "title": "Monumental architecture at Aguada Fénix and the rise of Maya civilization",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-6-3",
+    "authors_first3": [
+     "Inomata",
+     "Triadan",
+     "Vázquez López"
+    ],
+    "author_count": 11,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Archaeologists have traditionally thought that the development of Maya civilization was gradual, assuming that small villages began to emerge during the Middle Preclassic period (1000–350&nbsp;bc; dates are calibrated throughout) along with the use of ceramics and the adoption of sedentism1. Recent ",
+   "passages": [
+    "Article Published: 03 June 2020 Monumental architecture at Aguada Fénix and the rise of Maya civilization Takeshi Inomata ORCID: orcid.org/0000-0002-5236-56131, Daniela Triadan1, Verónica A.",
+    "Monumental architecture at Aguada Fénix and the rise of Maya civilization.",
+    "García for their dedicated work.Author informationAuthors and AffiliationsSchool of Anthropology, University of Arizona, Tucson, AZ, USATakeshi Inomata & Daniela TriadanDepartment of Anthropology and Archaeology, University of Calgary, Alberta, CanadaVerónica A.",
+    "The construction volume of the main plateau of Aguada Fénix is larger than that of the La Danta complex (the largest construction in the Maya lowlands previously known) and that of the Pyramid of the Sun of Teotihuacan, the largest city in Preclassic-to-Classic Mesoamerica.",
+    "Aguada Fénix and other ceremonial complexes of the same period suggest the importance of communal work in the initial development of Maya civilization.",
+    "Here we describe an airborne lidar survey and excavations of the previously unknown site of Aguada Fénix (Tabasco, Mexico) with an artificial plateau, which measures 1,400 m in length and 10 to 15 m in height and has 9 causeways radiating out from it."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

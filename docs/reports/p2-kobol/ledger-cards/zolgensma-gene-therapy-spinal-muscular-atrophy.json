@@ -1,0 +1,132 @@
+{
+ "slug": "zolgensma-gene-therapy-spinal-muscular-atrophy",
+ "title": "One-time gene therapy keeps infants with severe spinal muscular atrophy alive",
+ "first_published": "2017-11-02",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1056/NEJMoa1706198",
+   "final_url": "https://www.nejm.org/doi/10.1056/NEJMoa1706198",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2017-11-02"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1056/nejmoa1706198",
+   "crossref": {
+    "doi": "10.1056/nejmoa1706198",
+    "resolves": true,
+    "title": "Single-Dose Gene-Replacement Therapy for Spinal Muscular Atrophy",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2017-11-2",
+    "authors_first3": [
+     "Mendell",
+     "Al-Zaidy",
+     "Shell"
+    ],
+    "author_count": 26,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.science.org/doi/10.1126/science.358.6370.1522",
+   "final_url": "https://www.science.org/doi/10.1126/science.358.6370.1522",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2017-12-22"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.358.6370.1522",
+   "crossref": {
+    "doi": "10.1126/science.358.6370.1522",
+    "resolves": true,
+    "title": "The runners up",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2017-12-22",
+    "authors_first3": [
+     "Stokstad",
+     "Pennisi",
+     "Kaiser"
+    ],
+    "author_count": 8,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-innovative-gene-therapy-treat-pediatric-patients-spinal-muscular-atrophy-rare-disease",
+   "final_url": "https://www.fda.gov/news-events/press-announcements/fda-approves-innovative-gene-therapy-treat-pediatric-patients-spinal-muscular-atrophy-rare-disease",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "FDA approves innovative gene therapy to treat pediatric patients with spinal muscular atrophy, a rare disease and leading genetic cause of infant mortality",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2019-05-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-05-24"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "FDA approves innovative gene therapy to treat pediatric patients with spinal muscular atrophy, a rare disease and leading genetic cause of infant mortality",
+   "passages": [
+    "FDA News Release FDA approves innovative gene therapy to treat pediatric patients with spinal muscular atrophy, a rare disease and leading genetic cause of infant mortality More Press Announcements For Immediate Release: May 24, 2019 The U.S.",
+    "Food and Drug Administration today approved Zolgensma (onasemnogene abeparvovec-xioi), the first gene therapy approved to treat children less than two years of age with spinal muscular atrophy (SMA), the most severe form of SMA and a leading genetic cause of infant mortality.",
+    "SMA is a rare genetic disease caused by a mutation in the survival motor neuron 1 (SMN1) gene.",
+    "The potential for gene therapy products to change the lives of those patients who may have faced a terminal condition, or worse, death, provides hope for the future.",
+    "The FDA also awarded the manufacturer a rare pediatric disease priority review voucher, under a program intended to encourage the development of new drugs and biological products for the prevention and treatment of certain rare pediatric diseases.",
+    "“Today’s approval marks another milestone in the transformational power of gene and cell therapies to treat a wide range of diseases,” said Acting FDA Commissioner Ned Sharpless, M.D."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

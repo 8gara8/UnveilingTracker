@@ -1,0 +1,131 @@
+{
+ "slug": "homo-naledi-new-human-species",
+ "title": "Homo naledi: a new small-brained human species from South Africa",
+ "first_published": "2015-09-10",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://elifesciences.org/articles/09560",
+   "final_url": "https://elifesciences.org/articles/09560",
+   "status": 200,
+   "readable": false,
+   "reason": "200 client challenge (JavaScript)",
+   "title_found": "Client Challenge",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2015-9-10"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.7554/elife.09560",
+   "crossref": {
+    "doi": "10.7554/elife.09560",
+    "resolves": true,
+    "title": "Homo naledi, a new species of the genus Homo from the Dinaledi Chamber, South Africa",
+    "container": "eLife",
+    "publisher": "eLife Sciences Publications, Ltd",
+    "type": "journal-article",
+    "issued": "2015-9-10",
+    "authors_first3": [
+     "Berger",
+     "Hawks",
+     "de Ruiter"
+    ],
+    "author_count": 47,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4559886/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4559886/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Homo naledi, a new species of the genus Homo from the Dinaledi Chamber, South Africa",
+     "title_match": true,
+     "date": "2015 Sep 10",
+     "passages": [
+      "Now Berger et al. report the recent discovery of an extinct species from the genus Homo that was unearthed from deep underground in what has been named the Dinaledi Chamber, in the Rising Star cave system in South Africa.",
+      "Abstract Homo naledi is a previously-unknown species of extinct hominin discovered within the Dinaledi Chamber of the Rising Star cave system, Cradle of Humankind, South Africa.",
+      "Geological and taphonomic evidence for deliberate body disposal by the primitive hominin species Homo naledi from the Dinaledi Chamber, South Africa. eLife.",
+      "DOI: http://dx.doi.org/10.7554/eLife.09560.002Introduction Fossil hominins were first recognized in the Dinaledi Chamber in the Rising Star cave system in October 2013.",
+      "Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.Thank you for submitting your work entitled “A new species of the genus Homo from the Dinaledi Chamber, South Africa” for peer review at eLife.",
+      "The authors describe a large collection of recently discovered hominin fossils from the Dinaledi Chamber in the Rising Star cave system in South Africa."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://elifesciences.org/articles/24231",
+   "final_url": "https://elifesciences.org/articles/24231",
+   "status": 200,
+   "readable": false,
+   "reason": "200 client challenge (JavaScript)",
+   "title_found": "Client Challenge",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2017-5-9"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.7554/elife.24231",
+   "crossref": {
+    "doi": "10.7554/elife.24231",
+    "resolves": true,
+    "title": "The age of Homo naledi and associated sediments in the Rising Star Cave, South Africa",
+    "container": "eLife",
+    "publisher": "eLife Sciences Publications, Ltd",
+    "type": "journal-article",
+    "issued": "2017-5-9",
+    "authors_first3": [
+     "Dirks",
+     "Roberts",
+     "Hilbert-Wolf"
+    ],
+    "author_count": 20,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5423772/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5423772/",
+     "status": 200,
+     "readable": true,
+     "title_found": "The age of Homo naledi and associated sediments in the Rising Star Cave, South Africa",
+     "title_match": true,
+     "date": "2017 May 9",
+     "passages": [
+      "More than 1500 fossils representing at least 15 individuals of this species were unearthed from the Rising Star cave system in South Africa between 2013 and 2014.",
+      "Finally in two related reports, Berger et al. suggest how a primitive-looking species like H. naledi survived more recently than many would have predicted, while Hawks et al. describe the discovery of more H. naledi fossils from a separate chamber in the same cave system.",
+      "Geological and taphonomic evidence for deliberate body disposal by the primitive hominin species Homo naledi from the Dinaledi Chamber, South Africa. eLife.",
+      "We would like to thank the South African Heritage Resource Agency for the necessary permits to work on the Rising Star site; the Jacobs family and later the Lee Berger Foundation for granting access.",
+      "Homo naledi , a new species of the genus Homo from the Dinaledi Chamber, South Africa. eLife.",
+      "PMC Copyright notice PMCID: PMC5423772 PMID: 28483040 See \"Geological and taphonomic context for the new hominin species Homo naledi from the Dinaledi Chamber, South Africa\" in volume 4, e09561."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+{
+ "slug": "logical-qubits-atom-array-processor",
+ "title": "A neutral-atom processor runs error-corrected logical qubits, up to 48",
+ "first_published": "2023-12-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2312.03982v1",
+   "final_url": "https://arxiv.org/abs/2312.03982v1",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Logical quantum processor based on reconfigurable atom arrays",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-12-07"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-12-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-12-06"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-06927-3",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06927-3",
+    "resolves": true,
+    "title": "Logical quantum processor based on reconfigurable atom arrays",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-12-6",
+    "authors_first3": [
+     "Bluvstein",
+     "Evered",
+     "Geim"
+    ],
+    "author_count": 21,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2312.03982v1: Logical quantum processor based on reconfigurable atom arrays",
+   "passages": [
+    "However, the overhead in the realization of error-corrected ``logical'' qubits, where information is encoded across many physical qubits for redundancy, poses significant challenges to large-scale logical quantum computing.",
+    "Here we report the realization of a programmable quantum processor based on encoded logical qubits operating with up to 280 physical qubits.",
+    "Finally, using three-dimensional [[8,3,2]] code blocks, we realize computationally complex sampling circuits with up to 48 logical qubits entangled with hypercube connectivity with 228 logical two-qubit gates and 48 logical CCZ gates.",
+    "Utilizing logical-level control and a zoned architecture in reconfigurable neutral atom arrays, our system combines high two-qubit gate fidelities, arbitrary connectivity, as well as fully programmable single-qubit rotations and mid-circuit readout.",
+    "We find that this logical encoding substantially improves algorithmic performance with error detection, outperforming physical qubit fidelities at both cross-entropy benchmarking and quantum simulations of fast scrambling.",
+    "Suppressing errors is the central challenge for useful quantum computing, requiring quantum error correction for large-scale processing."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1038/s41586-023-06927-3",
+   "final_url": "https://www.nature.com/articles/s41586-023-06927-3?error=cookies_not_supported&code=629e0509-68fc-4556-84fc-5d76e021f25f",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Logical quantum processor based on reconfigurable atom arrays",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-01-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-12-06"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-12-06"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-12-06"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-12-06"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-12-06"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-10-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-12-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-12-06"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-06927-3",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06927-3",
+    "resolves": true,
+    "title": "Logical quantum processor based on reconfigurable atom arrays",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-12-6",
+    "authors_first3": [
+     "Bluvstein",
+     "Evered",
+     "Geim"
+    ],
+    "author_count": 21,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Suppressing errors is the central challenge for useful quantum computing1, requiring quantum error correction (QEC)2–6 for large-scale processing. However, the overhead in the realization of error-corrected ‘logical’ qubits, in which information is encoded across many physical qubits for redundancy2",
+   "passages": [
+    "Logical quantum processor based on reconfigurable atom arrays.",
+    "However, the overhead in the realization of error-corrected ‘logical’ qubits, in which information is encoded across many physical qubits for redundancy2,3,4, poses substantial challenges to large-scale logical quantum computing.",
+    "Here we report the realization of a programmable quantum processor based on encoded logical qubits operating with up to 280 physical qubits.",
+    "1: A programmable logical processor based on reconfigurable atom arrays.Full size imagea, Schematic of the logical processor, split into three zones: storage, entangling and readout (see Extended Data Fig.",
+    "For the 48-logical-qubit circuit (128 physical qubits in total), we encode eight blocks and entangle them, and then drop them into storage; then, we pick up 64 new physical qubits from storage, encode them into eight blocks in the entangling zone and entangle them.",
+    "Exploring entangled systems of 3, 6, 12, 24 and 48 logical qubits, in all cases, we find a finite XEB score, which improves with increased error detection (Fig."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2404.02280v1",
+   "final_url": "https://arxiv.org/abs/2404.02280v1",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Demonstration of logical qubits and repeated error correction with better-than-physical error rates",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2024-04-02"
+    },
+    {
+     "source": "citation_date",
+     "date": "2024-04-02"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2404.02280v1: Demonstration of logical qubits and repeated error correction with better-than-physical error rates",
+   "passages": [
+    "Svore (1) ((1) Microsoft Azure Quantum, (2) Quantinuum) View a PDF of the paper titled Demonstration of logical qubits and repeated error correction with better-than-physical error rates, by M.",
+    "As a step towards this ambitious goal, we present experiments on a trapped-ion QCCD processor where, through the use of fault-tolerant encoding and error correction, we are able to suppress logical error rates to levels below the physical error rates.",
+    "These results signify an important transition from noisy intermediate scale quantum computing to reliable quantum computing, and demonstrate advanced capabilities required for large-scale fault-tolerant quantum computing."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

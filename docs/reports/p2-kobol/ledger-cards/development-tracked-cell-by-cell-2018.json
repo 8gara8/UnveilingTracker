@@ -1,0 +1,349 @@
+{
+ "slug": "development-tracked-cell-by-cell-2018",
+ "title": "Single-cell sequencing tracks development cell by cell in zebrafish, frog and flatworm",
+ "first_published": "2018-04-26",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.aaas.org/news/tracking-development-cell-cell-sciences-breakthrough-2018",
+   "final_url": "https://www.aaas.org/news/tracking-development-cell-cell-sciences-breakthrough-2018",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Tracking Development Cell by Cell is Science’s Breakthrough of 2018 | American Association for the Advancement of Science (AAAS)",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Science has chosen single-cell analyses of gene activity through time as its 2018 Breakthrough of the Year , honoring a trifecta of methods that together are enabling researchers to determine, at the individual cell level, which genes are turned on and off as an early embryo develops.",
+   "passages": [
+    "Each year, Science's reporters and editors choose the Breakthrough by considering the year's most significant scientific discovery, development, or trend.",
+    "By popular vote, readers also declared tracking cell by cell development their winner for 2018.",
+    "\"The ability to isolate thousands of individual cells and sequence each one's genetic material offers a snapshot of what RNA is being produced in each cell at that moment.",
+    "\"By combining these techniques with single-cell RNA-sequencing, scientists can both monitor the behavior of individual cells and see how they fit into the unfolding architecture of the organism.",
+    "\"These technologies create some of the most extraordinary movies ever made, showing how a single cell grows into the intricate tissues and organs of a mature animal,\" said Tim Appenzeller, Science's news editor.",
+    "Other groups hope to harness single-cell RNA-seq to better understand what happens inside of individual cells during the onset and progression of illnesses such as cancer and diabetes."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1126/science.aar4362",
+   "final_url": "https://www.science.org/doi/10.1126/science.aar4362",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2018-05-31"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.aar4362",
+   "crossref": {
+    "doi": "10.1126/science.aar4362",
+    "resolves": true,
+    "title": "Single-cell mapping of gene expression landscapes and lineage in the zebrafish embryo",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2018-6",
+    "authors_first3": [
+     "Wagner",
+     "Weinreb",
+     "Collins"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.733108042.793545382",
+      "10.3410/f.733108042.793583885",
+      "10.3410/f.733108042.793553280"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6083445/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6083445/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Single-cell mapping of gene expression landscapes and lineage in the zebrafish embryo",
+     "title_match": true,
+     "date": "2018-04-25",
+     "passages": [
+      "As single-cell atlases and landscapes of embryo development become routinely available, one is challenged to reconsider the relationship between a cell lineage (by definition, a tree), and the considerably more topologically complex gene expression landscape through which these cells traverse.",
+      "Here, we applied single-cell RNA sequencing to >92,000 cells from zebrafish embryos during the first day of development.",
+      "J.A.B. shared access to unpublished single-cell data. *Corresponding author. sean_megason@hms.harvard.edu (S.G.M.); allon_klein@hms.harvard.edu (A.M.K.)",
+      "PMC Copyright notice PMCID: PMC6083445 NIHMSID: NIHMS981912 PMID: 29700229 The publisher's version of this article is available at Science Abstract High-throughput mapping of cellular differentiation hierarchies from single-cell data promises to empower systematic interrogations of vertebrate development and disease.",
+      "Here, we utilized inDrops scRNA-seq (4, 7) to collect over 92,000 single-cell transcriptomes from dissociated wild-type and mutant zebrafish embryos during the first 24 hours of embryonic development (Fig.",
+      "After sequencing, we classified each of the chordin-and control-targeted cells to reference cell clusters of the 14hpf wild-type embryo (fig."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://doi.org/10.1126/science.aar3131",
+   "final_url": "https://www.science.org/doi/10.1126/science.aar3131",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2018-05-31"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.aar3131",
+   "crossref": {
+    "doi": "10.1126/science.aar3131",
+    "resolves": true,
+    "title": "Single-cell reconstruction of developmental trajectories during zebrafish embryogenesis",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2018-6",
+    "authors_first3": [
+     "Farrell",
+     "Wang",
+     "Riesenfeld"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.733108090.793583896",
+      "10.3410/f.733108090.793547245"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6247916/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6247916/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Single-cell reconstruction of developmental trajectories during zebrafish embryogenesis",
+     "title_match": true,
+     "date": "2018-04-25",
+     "passages": [
+      "Here, we address these challenges by combining large-scale single-cell transcriptomics during zebrafish embryogenesis with the development of a novel simulated diffusion-based computational approach to reconstruct developmental trajectories, called URD (named after the Norse mythological figure who nurtures the world tree and decides all fates).",
+      "Data availability: The raw data reported in this paper are archived at NCBI GEO (Accession Number GSE106587) and in processed and interactively browseable forms in the Broad Single-Cell Portal (https://portals.broadinstitute.org/single_cell/study/single-cell-reconstruction-of-developmental-trajectories-during-zebrafish-embryogenesis).",
+      "To uncover these transcriptional trajectories during zebrafish embryogenesis, we sequenced 38,731 cells and developed URD, a simulated diffusion-based computational reconstruction method.",
+      "S3).Connected Gene Modules Support Reconstructed Developmental Trajectories To complement the specification tree and in order to find groups of genes that are coexpressed within cell populations, we applied non-negative matrix factorization (NMF) to the single-cell transcriptomes (19).",
+      "PMC Copyright notice PMCID: PMC6247916 NIHMSID: NIHMS993376 PMID: 29700225 The publisher's version of this article is available at Science Abstract During embryogenesis, cells acquire distinct fates by transitioning through transcriptional states.",
+      "Open in a new tab (A) Single-cell transcriptomes were collected from zebrafish embryos at 12 developmental stages (colored dots) spanning 3.3–12 hours post-fertilization (hpf)."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://doi.org/10.1126/science.aar5780",
+   "final_url": "https://www.science.org/doi/10.1126/science.aar5780",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2018-05-31"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.aar5780",
+   "crossref": {
+    "doi": "10.1126/science.aar5780",
+    "resolves": true,
+    "title": "The dynamics of gene expression in vertebrate embryogenesis at single-cell resolution",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2018-6",
+    "authors_first3": [
+     "Briggs",
+     "Weinreb",
+     "Wagner"
+    ],
+    "author_count": 7,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.733108089.793555548",
+      "10.3410/f.733108089.793550345",
+      "10.3410/f.733108089.793583884"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6038144/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6038144/",
+     "status": 200,
+     "readable": true,
+     "title_found": "The dynamics of gene expression in vertebrate embryogenesis at single-cell resolution",
+     "title_match": true,
+     "date": "2018-04-25",
+     "passages": [
+      "From measurements of whole frog embryos spanning zygotic genome activation through early organogenesis, we derived a detailed catalog of cell states in vertebrate development and a map of differentiation across all lineages over time.",
+      "Incorporating a matched time series of zebrafish development from a companion paper, we reveal conserved and divergent features of vertebrate early developmental gene expression programs.",
+      "In vertebrate embryos, as well as in other phyla, a provisional body plan organization arises before overt cell type specific differentiation and this provides a scaffold for the emerging complexity.",
+      "By collecting single-cell transcriptomes over time of embryo development, it is possible to infer a continuum gene expression manifold connecting cell states across all lineages.",
+      "S17) (2-fold enriched; P < 0.001 binomial- test, Bonferroni corrected).Assessing the retention of pluripotency during neural crest development The utility of single-cell gene expression maps extends from studying general features of development to clarifying specific developmental relationships.",
+      "As shown for the neural crest, the sensitivity and single-cell resolution of our gene expression resource can be used to test specific hypotheses about fundamental developmental processes."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://doi.org/10.1126/science.aaq1723",
+   "final_url": "https://www.science.org/doi/10.1126/science.aaq1723",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2018-05-25"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.aaq1723",
+   "crossref": {
+    "doi": "10.1126/science.aaq1723",
+    "resolves": true,
+    "title": "Cell type atlas and lineage tree of a whole complex animal by single-cell transcriptomics",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2018-5-25",
+    "authors_first3": [
+     "Plass",
+     "Solana",
+     "Wolf"
+    ],
+    "author_count": 10,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://doi.org/10.1126/science.aaq1736",
+   "final_url": "https://www.science.org/doi/10.1126/science.aaq1736",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2018-05-25"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.aaq1736",
+   "crossref": {
+    "doi": "10.1126/science.aaq1736",
+    "resolves": true,
+    "title": "Cell type transcriptome atlas for the planarian\n            <i>Schmidtea mediterranea</i>",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2018-5-25",
+    "authors_first3": [
+     "Fincher",
+     "Wurtzel",
+     "de Hoog"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6563842/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6563842/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Cell type transcriptome atlas for the planarian Schmidtea mediterranea",
+     "title_match": true,
+     "date": "2018-04-18",
+     "passages": [
+      "We used single-cell RNA sequencing to determine the transcriptomes for essentially every cell type of a complete animal: the regenerative planarian Schmidtea mediterranea.",
+      "Identifying the transcriptomes for potentially all cell types for many organisms should be readily attainable and is a powerful new approach to metazoan biology.One Sentence Summary Single-cell RNA sequencing identifies the transcriptomes for most-to-all cell types of the planarian Schmidtea mediterranea.",
+      "Recent advances in RNA sequencing of individual cells have greatly enhanced the ability to determine cell-type transcriptomes (4, 5), and single-cell RNA sequencing (SCS) of thousands of cells has become readily achievable (6).",
+      "PMC Copyright notice PMCID: PMC6563842 NIHMSID: NIHMS1023600 PMID: 29674431 The publisher's version of this article is available at Science Abstract The transcriptome of a cell dictates its unique cell-type biology..",
+      "Single-cell RNA sequencing of 50,562 planarian cells Planarians have a complex internal anatomy including a brain, ventral nerve cords, peripheral nervous system, epidermis, intestine, muscle, an excretory system (the protonephridia), and a centrally located pharynx (10).",
+      "Several transcription factors required for the specification of various planarian cell types have been identified with RNAi and gene expression studies."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

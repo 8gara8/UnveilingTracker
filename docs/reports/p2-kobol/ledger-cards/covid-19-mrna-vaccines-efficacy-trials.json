@@ -1,0 +1,286 @@
+{
+ "slug": "covid-19-mrna-vaccines-efficacy-trials",
+ "title": "mRNA COVID-19 vaccines prevent about 95 percent of cases in large trials",
+ "first_published": "2020-11-09",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33301246/",
+   "final_url": "https://pubmed.ncbi.nlm.nih.gov/33301246/",
+   "status": 203,
+   "readable": false,
+   "reason": "203 cookie wall (record read through esummary)",
+   "title_found": "Safety and Efficacy of the BNT162b2 mRNA Covid-19 Vaccine.",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "esummary sortpubdate",
+     "date": "2020-12-31"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-12-31"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1056/nejmoa2034577",
+   "crossref": {
+    "doi": "10.1056/nejmoa2034577",
+    "resolves": true,
+    "title": "Safety and Efficacy of the BNT162b2 mRNA Covid-19 Vaccine",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2020-12-31",
+    "authors_first3": [
+     "Polack",
+     "Thomas",
+     "Kitchin"
+    ],
+    "author_count": 29,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": {
+    "source": "esummary pubtype",
+    "value": [
+     "Clinical Trial, Phase II",
+     "Clinical Trial, Phase III",
+     "Journal Article",
+     "Multicenter Study",
+     "Randomized Controlled Trial",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   },
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7745181/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7745181/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Safety and Efficacy of the BNT162b2 mRNA Covid-19 Vaccine",
+     "title_match": true,
+     "date": "2020 Dec 10",
+     "passages": [
+      "The severe case split provides preliminary evidence of vaccine-mediated protection against severe disease, alleviating many of the theoretical concerns over vaccine-mediated disease enhancement.11 The favorable safety profile observed during phase 1 testing of BNT162b24,8 was confirmed in the phase 2/3 portion of the trial.",
+      "The confidence interval (CI) for vaccine efficacy (VE) is derived according to the Clopper–Pearson method.Discussion A two-dose regimen of BNT162b2 (30 μg per dose, given 21 days apart) was found to be safe and 95% effective against Covid-19.",
+      "The primary end points were efficacy of the vaccine against laboratory-confirmed Covid-19 and safety.Results A total of 43,548 participants underwent randomization, of whom 43,448 received injections: 21,720 with BNT162b2 and 21,728 with placebo.",
+      "The incidence of serious adverse events was low and was similar in the vaccine and placebo groups.Conclusions A two-dose regimen of BNT162b2 conferred 95% protection against Covid-19 in persons 16 years of age or older.",
+      "Vaccine efficacy among participants with hypertension was analyzed separately but was consistent with the other subgroup analyses (vaccine efficacy, 94.6%; 95% CI, 68.7 to 99.9; case split: BNT162b2, 2 cases; placebo, 44 cases).",
+      "Here, we report safety and efficacy findings from the phase 2/3 part of a global phase 1/2/3 trial evaluating the safety, immunogenicity, and efficacy of 30 μg of BNT162b2 in preventing Covid-19 in persons 16 years of age or older."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7745181/",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7745181/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Safety and Efficacy of the BNT162b2 mRNA Covid-19 Vaccine",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-12-09"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-12-31"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1056/nejmoa2034577",
+   "crossref": {
+    "doi": "10.1056/nejmoa2034577",
+    "resolves": true,
+    "title": "Safety and Efficacy of the BNT162b2 mRNA Covid-19 Vaccine",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2020-12-31",
+    "authors_first3": [
+     "Polack",
+     "Thomas",
+     "Kitchin"
+    ],
+    "author_count": 29,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.739182803.793581854",
+      "10.3410/f.739182803.793581035"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) infection and the resulting coronavirus disease 2019 (Covid-19) have afflicted tens of millions of people in a worldwide pandemic. Safe and effective vaccines are needed urgently. In an ...",
+   "passages": [
+    "The severe case split provides preliminary evidence of vaccine-mediated protection against severe disease, alleviating many of the theoretical concerns over vaccine-mediated disease enhancement.11 The favorable safety profile observed during phase 1 testing of BNT162b24,8 was confirmed in the phase 2/3 portion of the trial.",
+    "The confidence interval (CI) for vaccine efficacy (VE) is derived according to the Clopper–Pearson method.Discussion A two-dose regimen of BNT162b2 (30 μg per dose, given 21 days apart) was found to be safe and 95% effective against Covid-19.",
+    "The primary end points were efficacy of the vaccine against laboratory-confirmed Covid-19 and safety.Results A total of 43,548 participants underwent randomization, of whom 43,448 received injections: 21,720 with BNT162b2 and 21,728 with placebo.",
+    "The incidence of serious adverse events was low and was similar in the vaccine and placebo groups.Conclusions A two-dose regimen of BNT162b2 conferred 95% protection against Covid-19 in persons 16 years of age or older.",
+    "Vaccine efficacy among participants with hypertension was analyzed separately but was consistent with the other subgroup analyses (vaccine efficacy, 94.6%; 95% CI, 68.7 to 99.9; case split: BNT162b2, 2 cases; placebo, 44 cases).",
+    "Here, we report safety and efficacy findings from the phase 2/3 part of a global phase 1/2/3 trial evaluating the safety, immunogenicity, and efficacy of 30 μg of BNT162b2 in preventing Covid-19 in persons 16 years of age or older."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://doi.org/10.1056/NEJMoa2035389",
+   "final_url": "https://www.nejm.org/doi/10.1056/NEJMoa2035389",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-02-04"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1056/nejmoa2035389",
+   "crossref": {
+    "doi": "10.1056/nejmoa2035389",
+    "resolves": true,
+    "title": "Efficacy and Safety of the mRNA-1273 SARS-CoV-2 Vaccine",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2021-2-4",
+    "authors_first3": [
+     "Baden",
+     "El Sahly",
+     "Essink"
+    ],
+    "author_count": 37,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.739278972.793583021"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7787219/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7787219/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Efficacy and Safety of the mRNA-1273 SARS-CoV-2 Vaccine",
+     "title_match": true,
+     "date": "2020-12-29",
+     "passages": [
+      "11 with mRNA-1273, indicating a vaccine efficacy of 95.2% [95% CI, 91.2 to 97.4]), and assessment including participants who were SARS-CoV-2 seropositive at baseline in the per-protocol analysis (187 cases with placebo, vs.",
+      "Serious adverse events were rare, and the incidence was similar in the two groups.Conclusions The mRNA-1273 vaccine showed 94.1% efficacy at preventing Covid-19 illness, including severe disease.",
+      "Safety and efficacy of the ChAdOx1 nCoV-19 vaccine (AZD1222) against SARS-CoV-2: an interim analysis of four randomised controlled trials in Brazil, South Africa, and the UK.",
+      "June 11, 2020. (https://www.biorxiv.org/content/10.1101/2020.06.11.145920v1). preprint. [DOI] [PMC free article] [PubMed] 15.Corbett KS, Flynn B, Foulds KE, et al.",
+      "The vaccine efficacy estimate, based on a total of 95 adjudicated cases (63% of the target total), was 94.5%, with a one-sided P value of less than 0.001 to reject the null hypothesis that vaccine efficacy would be 30% or less.",
+      "This was an increase from the 95 cases observed at the first interim analysis data cutoff on November 11, 2020."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-takes-key-action-fight-against-covid-19-issuing-emergency-use-authorization-first-covid-19",
+   "final_url": "https://www.fda.gov/news-events/press-announcements/fda-takes-key-action-fight-against-covid-19-issuing-emergency-use-authorization-first-covid-19",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Page Not Found | FDA",
+   "title_match": false,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "dead"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://www.fda.gov/media/144412/download",
+   "final_url": "https://www.fda.gov/media/144412/download",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://www.nobelprize.org/prizes/medicine/2023/press-release/",
+   "final_url": "https://www.nobelprize.org/prizes/medicine/2023/press-release/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Nobel Prize in Physiology or Medicine 2023",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The Nobel Prize in Physiology or Medicine 2023 was awarded jointly to Katalin Karikó and Drew Weissman \"for their discoveries concerning nucleoside base modifications that enabled the development of effective mRNA vaccines against COVID-19\"",
+   "passages": [
+    "In 1951, Max Theiler was awarded the Nobel Prize in Physiology or Medicine for developing the yellow fever vaccine.",
+    "Illustrator: Mattias Karlén The Nobel Assembly, consisting of 50 professors at Karolinska Institutet, awards the Nobel Prize in Physiology or Medicine.",
+    "The Nobel Laureates discovered that base-modified mRNA can be used to block activation of inflammatory reactions (secretion of signaling molecules) and increase protein production when mRNA is delivered to cells. © The Nobel Committee for Physiology or Medicine.",
+    "Protective effects of around 95% were reported, and both vaccines were approved as early as December 2020.",
+    "Read more about this year’s prize Scientific background: Discoveries concerning nucleoside base modifications that enabled the development of effective mRNA vaccines against COVID-19 Katalin Karikó was born in 1955 in Szolnok, Hungary.",
+    "Methods for vaccine production before the COVID-19 pandemic. © The Nobel Committee for Physiology or Medicine."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

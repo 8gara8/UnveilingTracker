@@ -1,0 +1,118 @@
+{
+ "slug": "mof-water-harvesting-from-desert-air",
+ "title": "A metal-organic framework pulls drinking water from dry desert air",
+ "first_published": "2017-04",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1126/science.aam8743",
+   "final_url": "https://www.science.org/doi/10.1126/science.aam8743",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2017-04-28"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.aam8743",
+   "crossref": {
+    "doi": "10.1126/science.aam8743",
+    "resolves": true,
+    "title": "Water harvesting from air with metal-organic frameworks powered by natural sunlight",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2017-4-28",
+    "authors_first3": [
+     "Kim",
+     "Yang",
+     "Rao"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.727506695.793530882"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1126/sciadv.aat3198",
+   "final_url": "https://www.science.org/doi/10.1126/sciadv.aat3198",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2018-05-31"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/sciadv.aat3198",
+   "crossref": {
+    "doi": "10.1126/sciadv.aat3198",
+    "resolves": true,
+    "title": "Practical water production from desert air",
+    "container": "Science Advances",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2018-6",
+    "authors_first3": [
+     "Fathieh",
+     "Kalmutzki",
+     "Kapustin"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5993474/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5993474/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Practical water production from desert air",
+     "title_match": true,
+     "date": "2018-06-07",
+     "passages": [
+      "Find articles by Omar M Yaghi 1,2,3,† Author information Article notes Copyright and License information 1Department of Chemistry, Kavli Energy NanoScience Institute, and Berkeley Global Science Institute, University of California, Berkeley, Berkeley, CA 94720, USA.",
+      "Methods to harvest water from humid air are known (2–6), but doing so at low humidity in desert climates is as yet undeveloped (7).",
+      "MOF-801 was chosen for several reasons: (i) high hydrolytic stability, (ii) well-studied water sorption behavior, (iii) good cycling stability, (iv) low regeneration energy, and (v) a sorption isotherm that satisfies all mentioned prerequisites (7) for practical water production (Fig.",
+      "Funding: We are grateful to the support of Baden Aniline and Soda Factory–Ludwigshafen, Germany, for synthesis and characterization of compounds and King Abdulaziz City of Science and Technology, Saudi Arabia, for water adsorption studies.",
+      "3King Abdulaziz City for Science and Technology (KACST), Riyadh 11442, Saudi Arabia. *These authors contributed equally to this work. †Corresponding author.",
+      "Email: yaghi@berkeley.edu Received 2018 Feb 15; Accepted 2018 Apr 24; Collection date 2018 Jun."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

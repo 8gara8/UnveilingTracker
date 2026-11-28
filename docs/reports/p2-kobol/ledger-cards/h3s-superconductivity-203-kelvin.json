@@ -1,0 +1,293 @@
+{
+ "slug": "h3s-superconductivity-203-kelvin",
+ "title": "Hydrogen sulfide superconducts at 203 kelvin under very high pressure",
+ "first_published": "2015-06-26",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/nature14964",
+   "final_url": "https://www.nature.com/articles/nature14964?error=cookies_not_supported&code=14e24d92-04cf-4652-b475-73a848832d84",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Conventional superconductivity at 203 kelvin at high pressures in the sulfur hydride system",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2015-08-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2015-08-17"
+    },
+    {
+     "source": "dc.date",
+     "date": "2015-08-17"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2015-08-17"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2015-08-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-08-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-06-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-07-22"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-08-17"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature14964",
+   "crossref": {
+    "doi": "10.1038/nature14964",
+    "resolves": true,
+    "title": "Conventional superconductivity at 203 kelvin at high pressures in the sulfur hydride system",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2015-8-17",
+    "authors_first3": [
+     "Drozdov",
+     "Eremets",
+     "Troyan"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Conventional superconductivity is observed at 203 kelvin in the sulfur hydride system, well above the highest superconducting transition temperature obtained in the copper oxides, raising hopes that even higher transition temperatures will be discovered in other hydrogen-rich systems. The discovery ",
+   "passages": [
+    "Letter Published: 17 August 2015 Conventional superconductivity at 203 kelvin at high pressures in the sulfur hydride system A.",
+    "Conventional superconductivity at 203 kelvin at high pressures in the sulfur hydride system.",
+    "Eremets: These authors contributed equally to this work.Authors and AffiliationsMax-Planck-Institut für Chemie, Hahn-Meitner-Weg 1, Mainz, 55128, GermanyA.",
+    "As the nature of superconductivity in these materials is still not fully understood (they are not conventional superconductors), the prospects for achieving still higher transition temperatures by this route are not clear.",
+    "In contrast, the Bardeen–Cooper–Schrieffer theory of conventional superconductivity gives a guide for achieving high Tc with no theoretical upper bound—all that is needed is a favourable combination of high-frequency phonons, strong electron–phonon coupling, and a high density of states4.",
+    "On cooling, we see signatures of superconductivity: a sharp drop of the resistivity to zero and a decrease of the transition temperature with magnetic field, with magnetic susceptibility measurements confirming a Tc of 203 kelvin."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/1506.08190",
+   "final_url": "https://arxiv.org/abs/1506.08190",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Conventional superconductivity at 203 K at high pressures",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2015-06-26"
+    },
+    {
+     "source": "citation_date",
+     "date": "2015-06-26"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-08-17"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature14964",
+   "crossref": {
+    "doi": "10.1038/nature14964",
+    "resolves": true,
+    "title": "Conventional superconductivity at 203 kelvin at high pressures in the sulfur hydride system",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2015-8-17",
+    "authors_first3": [
+     "Drozdov",
+     "Eremets",
+     "Troyan"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1506.08190: Conventional superconductivity at 203 K at high pressures",
+   "passages": [
+    "Shylin View a PDF of the paper titled Conventional superconductivity at 203 K at high pressures, by A.P.",
+    "Even higher Tc, room temperature superconductivity, can be expected in other hydrogen-based materials since hydrogen atoms provide the high frequency phonon modes as well as the strong electron-phonon coupling.",
+    "As the nature of superconductivity in these materials has still not been explained, the prospects for a higher Tc are not clear.",
+    "The high Tc superconductivity most likely is due to H3S which is formed from H2S under its decomposition under pressure.",
+    "These conditions can be fulfilled for metallic hydrogen and covalent compounds dominated by hydrogen4,5.",
+    "With cooling superconductivity was found deduced from a sharp drop of the resistivity to zero and a decrease of Tc with magnetic field."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://academic.oup.com/nsr/article/6/4/713/5487527",
+   "final_url": "https://academic.oup.com/nsr/article/6/4/713/5487527",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": false,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://doi.org/10.1093/nsr/nwz061",
+   "final_url": "https://academic.oup.com/nsr/article/6/4/713/5487527",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2019-05-09"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1093/nsr/nwz061",
+   "crossref": {
+    "doi": "10.1093/nsr/nwz061",
+    "resolves": true,
+    "title": "High-temperature superconductivity in sulfur hydride evidenced by alternating-current magnetic susceptibility",
+    "container": "National Science Review",
+    "publisher": "Oxford University Press (OUP)",
+    "type": "journal-article",
+    "issued": "2019-5-9",
+    "authors_first3": [
+     "Huang",
+     "Wang",
+     "Duan"
+    ],
+    "author_count": 11,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8291430/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8291430/",
+     "status": 200,
+     "readable": true,
+     "title_found": "High-temperature superconductivity in sulfur hydride evidenced by alternating-current magnetic susceptibility",
+     "title_match": true,
+     "date": "2019-05-08",
+     "passages": [
+      "Keywords: high pressure, hydrides, superconductivity, Meissner effect A comment on this article is 'Faulty evidence for superconductivity in ac magnetic susceptibility of sulfur hydride under pressure' by Hirsch (https://doi.org/10.1093/nsr/nwac086).",
+      "This article is published and distributed under the terms of the Oxford University Press, Standard Journals Publication Model (https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model) PMC Copyright notice PMCID: PMC8291430 PMID: 34691926 See commentary \"Faulty evidence for superconductivity in ac magnetic susceptibility of sulfur hydride under pressure\" in volume 9, nwac086.",
+      "A quick overview of previous superconductivity experiments under high pressure also shows that the superconducting critical temperature observed in electrical resistance measurements is always higher than that found from magnetic susceptibility data [21,29].",
+      "The idea of conventional high-temperature superconductivity in hydrogen-dominant compounds has thus been realized in the sulfur hydride system under hydrostatic pressure, opening further exciting perspectives for possibly realizing room-temperature superconductivity in hydrogen-based compounds.Supplementary Material nwz061_Supplemental_File Click here for additional data file.",
+      "Conventional superconductivity at 203 kelvin at high pressures in the sulfur hydride system.",
+      "Here, we report the superconductivity identification of sulfur hydride at pressure, employing an in situ alternating-current magnetic susceptibility technique."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://arxiv.org/abs/1509.03156",
+   "final_url": "https://arxiv.org/abs/1509.03156",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Crystal Structure of 200 K-Superconducting Phase of Sulfur Hydride System",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2015-09-10"
+    },
+    {
+     "source": "citation_date",
+     "date": "2015-09-10"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2016-05-09"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/nphys3760",
+   "crossref": {
+    "doi": "10.1038/nphys3760",
+    "resolves": true,
+    "title": "Crystal structure of the superconducting phase of sulfur hydride",
+    "container": "Nature Physics",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2016-5-9",
+    "authors_first3": [
+     "Einaga",
+     "Sakata",
+     "Ishikawa"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1509.03156: Crystal Structure of 200 K-Superconducting Phase of Sulfur Hydride System",
+   "passages": [
+    "This article reports the experimentally clarified crystal structure of a recently discovered sulfur hydride in high temperature superconducting phase which has the highest critical temperature Tc over 200 K which has been ever reported.",
+    "Herein we have carried out the simultaneous measurements electrical resistance and synchrotron x-ray diffraction under high pressure, and clearly revealed that the hydrogen sulfide, H2S, decomposes to H3S and its crystal structure has body-centered cubic symmetry in the superconducting phase.",
+    "For understanding the mechanism of the high superconductivity, the information of its crystal structure is very essential."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,179 @@
+{
+ "slug": "cfc11-unexpected-emissions-traced-to-china",
+ "title": "Ozone-damaging gas CFC-11 was being emitted again, partly from eastern China",
+ "first_published": "2018-05-16",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-018-0106-2",
+   "final_url": "https://www.nature.com/articles/s41586-018-0106-2?error=cookies_not_supported&code=73f1d0a6-dc2a-4319-8602-1c66aead3da2",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An unexpected and persistent increase in global emissions of ozone-depleting CFC-11",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2018-05-16"
+    },
+    {
+     "source": "dc.date",
+     "date": "2018-05-16"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2018-05-16"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2018-05-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-05-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-11-07"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-03-19"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-04-30"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-018-0106-2",
+   "crossref": {
+    "doi": "10.1038/s41586-018-0106-2",
+    "resolves": true,
+    "title": "An unexpected and persistent increase in global emissions of ozone-depleting CFC-11",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-5",
+    "authors_first3": [
+     "Montzka",
+     "Dutton",
+     "Yu"
+    ],
+    "author_count": 17,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The Montreal Protocol was designed to protect the stratospheric ozone layer by enabling reductions in the abundance of ozone-depleting substances such as chlorofluorocarbons (CFCs) in the atmosphere1–3. The reduction in the atmospheric concentration of trichlorofluoromethane (CFC-11) has made the se",
+   "passages": [
+    "Letter Published: 16 May 2018 An unexpected and persistent increase in global emissions of ozone-depleting CFC-11 Stephen A.",
+    "5 and 6, suggest an increase in CFC-11 emissions from eastern Asia that is coincident with the increase in global emissions derived from our sampling network.Extended Data Fig.",
+    "Although our data and analyses do not allow for a robust identification of the origin of the increase in CFC-11 emissions, we explore China’s potential contribution because it is also the largest producer and user of HCFCs in eastern Asia (see ref.",
+    "An unexpected and persistent increase in global emissions of ozone-depleting CFC-11.",
+    "Eduardo Fernandez 18 May 2018, 16:34 This sounds like a nightmare, and is especially a bad news for the countries bordering the south pole, like Chile and Argentina.",
+    "John Richardson 19 May 2018, 16:47 How hard is this to figure out."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.nature.com/articles/s41586-019-1193-4",
+   "final_url": "https://www.nature.com/articles/s41586-019-1193-4?error=cookies_not_supported&code=617a4894-e45d-497a-a1df-1795e7212f09",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Increase in CFC-11 emissions from eastern China based on atmospheric observations",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2019-05-22"
+    },
+    {
+     "source": "dc.date",
+     "date": "2019-05-22"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2019-05-22"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2019-05-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-05-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-11-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-04-02"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-04-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-019-1193-4",
+   "crossref": {
+    "doi": "10.1038/s41586-019-1193-4",
+    "resolves": true,
+    "title": "Increase in CFC-11 emissions from eastern China based on atmospheric observations",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-5",
+    "authors_first3": [
+     "Rigby",
+     "Park",
+     "Saito"
+    ],
+    "author_count": 32,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The recovery of the stratospheric ozone layer relies on the continued decline in the atmospheric concentrations of ozone-depleting gases such as chlorofluorocarbons1. The atmospheric concentration of trichlorofluoromethane (CFC-11), the second-most abundant chlorofluorocarbon, has declined substanti",
+   "passages": [
+    "Letter Published: 22 May 2019 Increase in CFC-11 emissions from eastern China based on atmospheric observations M.",
+    "Here, using high-frequency atmospheric observations from Gosan, South Korea, and Hateruma, Japan, together with global monitoring data and atmospheric chemical transport model simulations, we investigate regional CFC-11 emissions from eastern Asia.",
+    "This increase accounts for a substantial fraction (at least 40 to 60 per cent) of the global rise in CFC-11 emissions.",
+    "NOAA data are taken as the ‘combined set’ data record (a best-estimate record based on flask samples and in situ measurements), available from the NOAA Global Monitoring Division data server (https://www.esrl.noaa.gov/gmd/dv/ftpdata.html, or more specifically ftp://ftp.cmdl.noaa.gov/hats/cfcs/cfc11/combined/).",
+    "Increase in CFC-11 emissions from eastern China based on atmospheric observations.",
+    "We show that emissions from eastern mainland China are 7.0 ± 3.0 (±1 standard deviation) gigagrams per year higher in 2014–2017 than in 2008–2012, and that the increase in emissions arises primarily around the northeastern provinces of Shandong and Hebei."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

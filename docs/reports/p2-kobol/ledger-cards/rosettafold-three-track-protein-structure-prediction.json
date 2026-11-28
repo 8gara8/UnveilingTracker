@@ -1,0 +1,295 @@
+{
+ "slug": "rosettafold-three-track-protein-structure-prediction",
+ "title": "RoseTTAFold predicts protein structures and complexes with a three-track network",
+ "first_published": "2021-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1126/science.abj8754",
+   "final_url": "https://www.science.org/doi/10.1126/science.abj8754",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-08-20"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.abj8754",
+   "crossref": {
+    "doi": "10.1126/science.abj8754",
+    "resolves": true,
+    "title": "Accurate prediction of protein structures and interactions using a three-track neural network",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-8-20",
+    "authors_first3": [
+     "Baek",
+     "DiMaio",
+     "Anishchenko"
+    ],
+    "author_count": 32,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1101/2021.06.14.448402"
+     ],
+     "has-review": [
+      "10.3410/f.740477162.793587949",
+      "10.3410/f.740477162.793587584",
+      "10.3410/f.740477162.793587452"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7612213/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7612213/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Accurate prediction of protein structures and interactions using a 3-track neural network",
+     "title_match": "partial",
+     "date": "2021-07-14",
+     "passages": [
+      "PMC Copyright notice PMCID: PMC7612213 EMSID: EMS140725 PMID: 34282049 The publisher's version of this article is available at Science See commentary \"Solution of the protein structure prediction problem at last: crucial innovations and next frontiers\" in Fac Rev, volume 11, 38.",
+      "Abstract DeepMind presented remarkably accurate predictions at the recent CASP14 protein structure prediction assessment conference.",
+      "The network also enables rapid generation of accurate protein-protein complex models from sequence information alone, short circuiting traditional approaches which require modeling of individual subunits followed by docking.",
+      "In developing RoseTTAFold, we found that combining predictions from multiple discontinuous crops generated more accurate structures than predicting the entire structure at once (fig.",
+      "S4D), but more training will be required for rigorous comparison.Enabling experimental protein structure determination With the recent considerable progress in protein structure prediction, a key question is what accurate protein structure models can be used for.",
+      "In all four cases, the predicted models had sufficient structural similarity to the true structures that led to successful MR solutions (see Methods for details; the per-residue error estimates by DeepAccNet (12) allowed the more accurate parts to be weighted more heavily)."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7612213/",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7612213/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Accurate prediction of protein structures and interactions using a 3-track neural network",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-07-14"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-08-20"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.abj8754",
+   "crossref": {
+    "doi": "10.1126/science.abj8754",
+    "resolves": true,
+    "title": "Accurate prediction of protein structures and interactions using a three-track neural network",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-8-20",
+    "authors_first3": [
+     "Baek",
+     "DiMaio",
+     "Anishchenko"
+    ],
+    "author_count": 32,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1101/2021.06.14.448402"
+     ],
+     "has-review": [
+      "10.3410/f.740477162.793587949",
+      "10.3410/f.740477162.793587584",
+      "10.3410/f.740477162.793587452"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "DeepMind presented remarkably accurate predictions at the recent CASP14 protein structure prediction assessment conference. We explored network architectures incorporating related ideas and obtained the best performance with a 3-track network in ...",
+   "passages": [
+    "PMC Copyright notice PMCID: PMC7612213 EMSID: EMS140725 PMID: 34282049 The publisher's version of this article is available at Science See commentary \"Solution of the protein structure prediction problem at last: crucial innovations and next frontiers\" in Fac Rev, volume 11, 38.",
+    "Abstract DeepMind presented remarkably accurate predictions at the recent CASP14 protein structure prediction assessment conference.",
+    "The network also enables rapid generation of accurate protein-protein complex models from sequence information alone, short circuiting traditional approaches which require modeling of individual subunits followed by docking.",
+    "In developing RoseTTAFold, we found that combining predictions from multiple discontinuous crops generated more accurate structures than predicting the entire structure at once (fig.",
+    "S4D), but more training will be required for rigorous comparison.Enabling experimental protein structure determination With the recent considerable progress in protein structure prediction, a key question is what accurate protein structure models can be used for.",
+    "In all four cases, the predicted models had sufficient structural similarity to the true structures that led to successful MR solutions (see Methods for details; the per-residue error estimates by DeepAccNet (12) allowed the more accurate parts to be weighted more heavily)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.biorxiv.org/content/10.1101/2021.06.14.448402v1.full.pdf+html",
+   "final_url": "https://www.biorxiv.org/content/10.1101/2021.06.14.448402v1",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Accurate prediction of protein structures and interactions using a 3-track network",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-01-01"
+    },
+    {
+     "source": "citation_date",
+     "date": "2021-06-15"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2021-06-15"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-06-15"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1101/2021.06.14.448402",
+   "crossref": {
+    "doi": "10.1101/2021.06.14.448402",
+    "resolves": true,
+    "title": "Accurate prediction of protein structures and interactions using a 3-track network",
+    "container": null,
+    "publisher": "openRxiv",
+    "type": "posted-content",
+    "issued": "2021-6-15",
+    "authors_first3": [
+     "Baek",
+     "DiMaio",
+     "Anishchenko"
+    ],
+    "author_count": 32,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "is-preprint-of": [
+      "10.1126/science.abj8754"
+     ]
+    }
+   },
+   "type_found": "preprint",
+   "meta_description": "bioRxiv - the preprint server for biology, operated by openRxiv, a nonprofit organization dedicated to advancing scientific communication",
+   "passages": [
+    "Share Accurate prediction of protein structures and interactions using a 3-track network Minkyung Baek, Frank DiMaio, Ivan Anishchenko, Justas Dauparas, Sergey Ovchinnikov, Gyu Rie Lee, Jue Wang, Qian Cong, Lisa N.",
+    "The network also enables rapid generation of accurate models of protein-protein complexes from sequence information alone, short circuiting traditional approaches which require modeling of individual subunits followed by docking.",
+    "We explored network architectures incorporating related ideas and obtained the best performance with a 3-track network in which information at the 1D sequence level, the 2D distance map level, and the 3D coordinate level is successively transformed and integrated.",
+    "The 3-track network produces structure predictions with accuracies approaching those of DeepMind in CASP14, enables rapid solution of challenging X-ray crystallography and cryo-EM structure modeling problems, and provides insights into the functions of proteins of currently unknown structure.",
+    "Copyright The copyright holder for this preprint is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.ipd.uw.edu/2021/07/rosettafold-accurate-protein-structure-prediction-accessible-to-all/",
+   "final_url": "https://www.ipd.uw.edu/2021/07/rosettafold-accurate-protein-structure-prediction-accessible-to-all/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "RoseTTAFold: Accurate protein structure prediction accessible to all – Institute for Protein Design",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2021-07-15"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2021-07-15"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2021-07-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-07-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-09-08"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Today we report the development and initial applications of RoseTTAFold, a software tool that uses deep learning to quickly and accurately predict protein structures based on limited information. Without the aid of such software, it can take years of laboratory work to determine the structure of jus",
+   "passages": [
+    "RoseTTAFold: Accurate protein structure prediction accessible to all July 15, 2021 Publication Share via: Today we report the development and initial applications of RoseTTAFold, a software tool that uses deep learning to quickly and accurately predict protein structures based on limited information.",
+    "RoseTTAFold is a “three-track” neural network, meaning it simultaneously considers patterns in protein sequences, how a protein’s amino acids interact with one another, and a protein’s possible three-dimensional structure.",
+    "As reported in Science, our team used RoseTTAFold to compute hundreds of new protein structures, including many poorly understood proteins from the human genome.",
+    "Accurate prediction of protein structures and interactions using a 3-track network.",
+    "With RoseTTAFold, a protein structure can be computed in as little as ten minutes on a single gaming computer.",
+    "Without the aid of such software, it can take years of laboratory work to determine the structure of just one protein."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://www.aaas.org/news/sciences-2021-breakthrough-ai-powered-protein-prediction",
+   "final_url": "https://www.aaas.org/news/sciences-2021-breakthrough-ai-powered-protein-prediction",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Science’s 2021 Breakthrough: AI-powered Protein Prediction | American Association for the Advancement of Science (AAAS)",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The journal's Breakthrough of the Year allows scientists to predict thousands of accurate protein structures at a fraction of the time and cost of previous methods.",
+   "passages": [
+    "RoseTTA fold — developed by a team led by David Baker, a University of Washington computational biochemist, performed similarly to AlphaFold, but using only a fraction of the computational processing power and time.",
+    "To honor this feat, Science has named AI-powered protein prediction as its 2021 Breakthrough of the Year.",
+    "AlphaFold, developed by the Google sister company DeepMind, trained itself on databases of solved protein structures and showed protein structure prediction at accuracies comparable to current experimental techniques.",
+    "This year, scientists have shown that artificial intelligence (AI)-driven software can achieve this long-standing goal and predict accurate protein structures by the thousands and at a fraction of the time and cost involved with previous methods.",
+    "To date, determining a protein's structure was a time-consuming and costly process, involving complicated lab analyses and methods like X-ray crystallography and cryo-electron microscopy (cryo-EM).",
+    "Each AI-driven software program demonstrates the ability to predict a wide variety of complex protein structures quickly and accurately based solely on the amino acids they contain."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

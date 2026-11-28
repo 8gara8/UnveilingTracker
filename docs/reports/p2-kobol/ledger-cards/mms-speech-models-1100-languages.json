@@ -1,0 +1,45 @@
+{
+ "slug": "mms-speech-models-1100-languages",
+ "title": "Meta's MMS speech models cover over 1,100 languages using Bible recordings",
+ "first_published": "2023-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2305.13516",
+   "final_url": "https://arxiv.org/abs/2305.13516",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Scaling Speech Technology to 1,000+ Languages",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-05-22"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-05-22"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2305.13516: Scaling Speech Technology to 1,000+ Languages",
+   "passages": [
+    "The Massively Multilingual Speech (MMS) project increases the number of supported languages by 10-40x, depending on the task.",
+    "We built pre-trained wav2vec 2.0 models covering 1,406 languages, a single multilingual automatic speech recognition model for 1,107 languages, speech synthesis models for the same number of languages, as well as a language identification model for 4,017 languages.",
+    "Experiments show that our multilingual speech recognition model more than halves the word error rate of Whisper on 54 languages of the FLEURS benchmark while being trained on a small fraction of the labeled data.",
+    "However, current speech technology is restricted to about one hundred languages which is a small fraction of the over 7,000 languages spoken around the world.",
+    "Expanding the language coverage of speech technology has the potential to improve access to information for many more people.",
+    "The main ingredients are a new dataset based on readings of publicly available religious texts and effectively leveraging self-supervised learning."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,388 @@
+{
+ "slug": "loophole-free-bell-tests-2015",
+ "title": "Three teams close the loopholes in tests of Bell's theorem",
+ "first_published": "2015-08-24",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/nature15759",
+   "final_url": "https://www.nature.com/articles/nature15759?error=cookies_not_supported&code=b13b71c0-fa7d-4b68-b689-63e5f90c1789",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2015-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2015-10-21"
+    },
+    {
+     "source": "dc.date",
+     "date": "2015-10-21"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2015-10-21"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2015-10-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-10-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-08-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-09-28"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-10-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature15759",
+   "crossref": {
+    "doi": "10.1038/nature15759",
+    "resolves": true,
+    "title": "Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2015-10",
+    "authors_first3": [
+     "Hensen",
+     "Bernien",
+     "Dréau"
+    ],
+    "author_count": 19,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "A Bell experiment that is ‘loophole’ free—leaving no room for explanations based on experimental imperfections—reveals a statistically significant conflict with local realism The celebrated Bell inequality, a theorem published by John Bell in 1964, has long served as a basis for experimentally testi",
+   "passages": [
+    "Numerous Bell inequality tests have been reported3,4,5,6,7,8,9,10,11,12,13; however, all experiments reported so far required additional assumptions to obtain a contradiction with local realism, resulting in ‘loopholes’13,14,15,16.",
+    "Letter Published: 21 October 2015 Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres B.",
+    "Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres.",
+    "Here we report a Bell experiment that is free of any such additional assumption and thus directly tests the principles underlying Bell’s inequality.",
+    "Atomic and molecular physics Quantum physics Quantum Nonlocality and Bell Inequality Phenomena ReferencesBell, J.",
+    "Violation of Bell’s inequality under strict Einstein locality conditions."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/1508.05949",
+   "final_url": "https://arxiv.org/abs/1508.05949",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Experimental loophole-free violation of a Bell inequality using entangled electron spins separated by 1.3 km",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2015-08-24"
+    },
+    {
+     "source": "citation_date",
+     "date": "2015-08-24"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-10-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature15759 10.4121/uuid:6e19e9b2-4a2d-40b5-8dd3-a660bf3c0a31",
+   "crossref": {
+    "doi": "10.1038/nature15759 10.4121/uuid:6e19e9b2-4a2d-40b5-8dd3-a660bf3c0a31",
+    "resolves": true,
+    "title": "Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2015-10",
+    "authors_first3": [
+     "Hensen",
+     "Bernien",
+     "Dréau"
+    ],
+    "author_count": 19,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1508.05949: Experimental loophole-free violation of a Bell inequality using entangled electron spins separated by 1.3 km",
+   "passages": [
+    "Hanson View a PDF of the paper titled Experimental loophole-free violation of a Bell inequality using entangled electron spins separated by 1.3 km, by B.",
+    "Bell showed that in any local realist theory the correlations between distant measurements satisfy an inequality and, moreover, that this inequality can be violated according to quantum theory.",
+    "However, because of experimental limitations, all experiments to date required additional assumptions to obtain a contradiction with local realism, resulting in loopholes.",
+    "In his seminal work, John Bell proved that no theory of nature that obeys locality and realism can reproduce all the predictions of quantum theory.",
+    "This provided a recipe for experimental tests of the fundamental principles underlying the laws of nature.",
+    "In the past decades, numerous ingenious Bell inequality tests have been reported."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/1511.03190",
+   "final_url": "https://arxiv.org/abs/1511.03190",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Significant-loophole-free test of Bell's theorem with entangled photons",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2015-12-20"
+    },
+    {
+     "source": "citation_date",
+     "date": "2015-11-10"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-12-16"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1103/physrevlett.115.250401",
+   "crossref": {
+    "doi": "10.1103/physrevlett.115.250401",
+    "resolves": true,
+    "title": "Significant-Loophole-Free Test of Bell’s Theorem with Entangled Photons",
+    "container": "Physical Review Letters",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2015-12-16",
+    "authors_first3": [
+     "Giustina",
+     "Versteegh",
+     "Wengerowsky"
+    ],
+    "author_count": 22,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1511.03190: Significant-loophole-free test of Bell's theorem with entangled photons",
+   "passages": [
+    "Previous experiments convincingly supported the quantum predictions.",
+    "The purely statistical probability of our results to occur under local realism does not exceed $3.74 \\times 10^{-31}$, corresponding to an 11.5 standard deviation effect.",
+    "Local realism is the worldview in which physical properties of objects exist independently of measurement and where physical influences cannot travel faster than the speed of light.",
+    "Bell's theorem states that this worldview is incompatible with the predictions of quantum mechanics, as is expressed in Bell's inequalities.",
+    "Yet, every experiment requires assumptions that provide loopholes for a local realist explanation.",
+    "Here we report a Bell test that closes the most significant of these loopholes simultaneously."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://doi.org/10.1103/PhysRevLett.115.250401",
+   "final_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.115.250401",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Significant-Loophole-Free Test of Bell’s Theorem with Entangled Photons",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2015-12-16"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2015-12-16"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-12-16"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1103/physrevlett.115.250401",
+   "crossref": {
+    "doi": "10.1103/physrevlett.115.250401",
+    "resolves": true,
+    "title": "Significant-Loophole-Free Test of Bell’s Theorem with Entangled Photons",
+    "container": "Physical Review Letters",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2015-12-16",
+    "authors_first3": [
+     "Giustina",
+     "Versteegh",
+     "Wengerowsky"
+    ],
+    "author_count": 22,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "By closing two loopholes at once, three experimental tests of Bell's inequalities remove the last doubts that we should renounce local realism. They also open the door to new quantum information technologies.",
+   "passages": [
+    "Vo, A Statistical Test Suite for Random and Pseudorandom Number Generators for Cryptographic Applications, Technical Report (National Institute of Standards and Technology, Gaithersburg, MD, 2010), SP 800-22; http://csrc.nist.gov/publications/PubsSPs.html#800-22.",
+    "115, 250401 – Published 16 December, 2015DOI: https://doi.org/10.1103/PhysRevLett.115.250401 Export CitationShow metricsHide metricsAbstractLocal realism is the worldview in which physical properties of objects exist independently of measurement and where physical influences cannot travel faster than the speed of light.",
+    "It is your responsibility to obtain the proper permission from the rights holder directly for these figures.Export citationExport citationChoose format for download:BibTeXEndNote (RIS)Download CitationFeatured in PhysicsEditors' SuggestionOpen AccessSignificant-Loophole-Free Test of Bell’s Theorem with Entangled PhotonsMarissa Giustina1,2,*, Marijn A.",
+    "Using a well-optimized source of entangled photons, rapid setting generation, and highly efficient superconducting detectors, we observe a violation of a Bell inequality with high statistical significance.",
+    "They also open the door to new quantum information technologies.See more in PhysicsSee AlsoStrong Loophole-Free Test of Local RealismLynden K.",
+    "See Supplemental Material at http://link.aps.org/supplemental/10.1103/PhysRevLett.115.250401, which includes Refs. [30–35], for more information about the experimental setup and data analysis."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://arxiv.org/abs/1511.03189",
+   "final_url": "https://arxiv.org/abs/1511.03189",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A strong loophole-free test of local realism",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2016-09-06"
+    },
+    {
+     "source": "citation_date",
+     "date": "2015-11-10"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-12-16"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1103/physrevlett.115.250402",
+   "crossref": {
+    "doi": "10.1103/physrevlett.115.250402",
+    "resolves": true,
+    "title": "Strong Loophole-Free Test of Local Realism",
+    "container": "Physical Review Letters",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2015-12-16",
+    "authors_first3": [
+     "Shalm",
+     "Meyer-Scott",
+     "Christensen"
+    ],
+    "author_count": 34,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1511.03189: A strong loophole-free test of local realism",
+   "passages": [
+    "Mirin, Emanuel Knill, Sae Woo Nam View a PDF of the paper titled A strong loophole-free test of local realism, by Lynden K.",
+    "We present a loophole-free violation of local realism using entangled photon pairs.",
+    "We therefore reject the hypothesis that local realism governs our experiment.",
+    "We ensure that all relevant events in our Bell test are spacelike separated by placing the parties far enough apart and by using fast random number generators and high-speed polarization measurements.",
+    "Using a hypothesis test, we compute p-values as small as $5.9\\times 10^{-9}$ for our Bell violation while maintaining the spacelike separation of our events.",
+    "We estimate the degree to which a local realistic system could predict our measurement choices."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://doi.org/10.1103/PhysRevLett.115.250402",
+   "final_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.115.250402",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Strong Loophole-Free Test of Local Realism",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2015-12-16"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2015-12-16"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-12-16"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1103/physrevlett.115.250402",
+   "crossref": {
+    "doi": "10.1103/physrevlett.115.250402",
+    "resolves": true,
+    "title": "Strong Loophole-Free Test of Local Realism",
+    "container": "Physical Review Letters",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2015-12-16",
+    "authors_first3": [
+     "Shalm",
+     "Meyer-Scott",
+     "Christensen"
+    ],
+    "author_count": 34,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "By closing two loopholes at once, three experimental tests of Bell's inequalities remove the last doubts that we should renounce local realism. They also open the door to new quantum information technologies.",
+   "passages": [
+    "Nam, Data for “Strong loophole-free test of local realism,” National Institute of Standards and Technology, DOI: 10.5060/D2JW8BTT (2015).",
+    "We therefore reject the hypothesis that local realism governs our experiment.ClosePrevNextReuse & PermissionsView figure in articlePhysics Subject Headings (PhySH)NonlocalityOptical tests of quantum theoryQuantum communicationQuantum foundations*This work includes contributions of the National Institute of Standards and Technology, which are not subject to U.S. copyright.",
+    "115, 250402 – Published 16 December, 2015DOI: https://doi.org/10.1103/PhysRevLett.115.250402 Export CitationShow metricsHide metricsAbstractWe present a loophole-free violation of local realism using entangled photon pairs.",
+    "ViewpointClosing the Door on Einstein and Bohr’s Quantum DebatePublished 16 December, 2015By closing two loopholes at once, three experimental tests of Bell’s inequalities remove the last doubts that we should renounce local realism.",
+    "It is your responsibility to obtain the proper permission from the rights holder directly for these figures.Export citationExport citationChoose format for download:BibTeXEndNote (RIS)Download CitationFeatured in PhysicsEditors' SuggestionOpen AccessStrong Loophole-Free Test of Local Realism*Lynden K.",
+    "They also open the door to new quantum information technologies.See more in PhysicsSee AlsoSignificant-Loophole-Free Test of Bell’s Theorem with Entangled PhotonsMarissa Giustina, Marijn A."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

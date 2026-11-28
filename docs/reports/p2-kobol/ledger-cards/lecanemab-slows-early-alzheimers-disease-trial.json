@@ -1,0 +1,89 @@
+{
+ "slug": "lecanemab-slows-early-alzheimers-disease-trial",
+ "title": "Lecanemab slows decline in early Alzheimer's disease in a phase 3 trial",
+ "first_published": "2022-09",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1056/NEJMoa2212948",
+   "final_url": "https://www.nejm.org/doi/10.1056/NEJMoa2212948",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-01-05"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1056/nejmoa2212948",
+   "crossref": {
+    "doi": "10.1056/nejmoa2212948",
+    "resolves": true,
+    "title": "Lecanemab in Early Alzheimer’s Disease",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2023-1-5",
+    "authors_first3": [
+     "van Dyck",
+     "Swanson",
+     "Aisen"
+    ],
+    "author_count": 19,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-converts-novel-alzheimers-disease-treatment-traditional-approval",
+   "final_url": "https://www.fda.gov/news-events/press-announcements/fda-converts-novel-alzheimers-disease-treatment-traditional-approval",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "FDA Converts Novel Alzheimer’s Disease Treatment to Traditional Approval",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2023-07-06"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-07-06"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The FDA converted Leqembi (lecanemab-irmb), indicated to treat adult patients with Alzheimer’s Disease, to traditional approval following a determination that a confirmatory trial verified clinical benefit.",
+   "passages": [
+    "Leqembi is the first amyloid beta-directed antibody to be converted from an accelerated approval to a traditional approval for the treatment of Alzheimer’s disease.",
+    "Food and Drug Administration converted Leqembi (lecanemab-irmb), indicated to treat adult patients with Alzheimer’s Disease, to traditional approval following a determination that a confirmatory trial verified clinical benefit.",
+    "The labeling states that there are no safety or effectiveness data on initiating treatment at earlier or later stages of the disease than were studied.The approval of Leqembi was granted to Eisai Inc.",
+    "Treatment was initiated in patients with mild cognitive impairment or mild dementia stage of disease and confirmed presence of amyloid beta pathology.",
+    "On June 9, the FDA convened the Peripheral and Central Nervous System Drugs Advisory Committee to discuss whether Study 301 provided evidence of clinical benefit of Leqembi for the treatment of Alzheimer’s disease.",
+    "As a postmarketing requirement of the accelerated approval, the FDA required the applicant to conduct a clinical trial, often referred to as a confirmatory study, to verify the anticipated clinical benefit of Leqembi."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

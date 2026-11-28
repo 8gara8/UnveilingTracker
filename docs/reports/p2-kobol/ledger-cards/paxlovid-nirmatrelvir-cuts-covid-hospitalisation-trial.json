@@ -1,0 +1,175 @@
+{
+ "slug": "paxlovid-nirmatrelvir-cuts-covid-hospitalisation-trial",
+ "title": "Oral nirmatrelvir with ritonavir cuts COVID-19 hospital admission and death",
+ "first_published": "2021-11",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1056/NEJMoa2118542",
+   "final_url": "https://www.nejm.org/doi/10.1056/NEJMoa2118542",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-04-14"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1056/nejmoa2118542",
+   "crossref": {
+    "doi": "10.1056/nejmoa2118542",
+    "resolves": true,
+    "title": "Oral Nirmatrelvir for High-Risk, Nonhospitalized Adults with Covid-19",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2022-4-14",
+    "authors_first3": [
+     "Hammond",
+     "Leister-Tebbe",
+     "Gardner"
+    ],
+    "author_count": 12,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8908851/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8908851/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Oral Nirmatrelvir for High-Risk, Nonhospitalized Adults with Covid-19",
+     "title_match": true,
+     "date": "2022-02-15",
+     "passages": [
+      "Methods Objectives, Patients, and Oversight This phase 2–3, double-blind, randomized, placebo-controlled trial evaluated the efficacy, viral load, and safety associated with the use of nirmatrelvir plus ritonavir among nonhospitalized, symptomatic adults with Covid-19 who were at high risk for progression to severe disease.",
+      "The EPIC-HR trial (Evaluation of Protease Inhibition for Covid-19 in High-Risk Patients) evaluated the safety and efficacy of nirmatrelvir plus ritonavir in nonhospitalized adults with mild-to-moderate Covid-19 at high risk for progression to severe disease.",
+      "Adverse events considered by the site investigator to be related to the trial drug or placebo were more common among recipients of nirmatrelvir plus ritonavir (7.8%) than among placebo recipients (3.8%).",
+      "Hammond can be contacted at jennifer.hammond@pfizer.com, or at Pfizer, 500 Arcola Rd., Collegeville, PA 19426. *A list of the EPIC-HR investigators is provided in the Supplementary Appendix. ✉Corresponding author.",
+      "Nirmatrelvir and matching placebo were manufactured by Pfizer, ritonavir tablets were manufactured and tested by Hetero Labs, and blinding of the tablets was performed by Pfizer through over-encapsulation.",
+      "Through day 34, no serious adverse events resulted in death among recipients of nirmatrelvir plus ritonavir; there were 13 deaths among placebo recipients, and all the deaths were Covid-19–related (Covid-19 pneumonia, 8 patients; Covid-19, 3 patients; pneumonitis, 1 patient; and acute respiratory failure, 1 patient)."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1056/NEJMoa2204919",
+   "final_url": "https://www.nejm.org/doi/10.1056/NEJMoa2204919",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-08-31"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1056/nejmoa2204919",
+   "crossref": {
+    "doi": "10.1056/nejmoa2204919",
+    "resolves": true,
+    "title": "Nirmatrelvir Use and Severe Covid-19 Outcomes during the Omicron Surge",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2022-9",
+    "authors_first3": [
+     "Arbel",
+     "Wolff Sagy",
+     "Hoshen"
+    ],
+    "author_count": 16,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.742291932.793595208"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9454652/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9454652/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Nirmatrelvir Use and Severe Covid-19 Outcomes during the Omicron Surge",
+     "title_match": true,
+     "date": "2022-08-23",
+     "passages": [
+      "During the omicron variant surge, among adults 65 years of age or older, the rates of severe Covid-19 outcomes were significantly lower among those who received nirmatrelvir than among those who did not receive nirmatrelvir.",
+      "Therefore, our objective was to assess the effectiveness of nirmatrelvir in preventing severe Covid-19 outcomes during the omicron surge in a population with widespread SARS-CoV-2 immunity.",
+      "Arbel can be contacted at ronenarb@clalit.org.il or at the Division of Community Medical Services, Clalit Health Services, 101 Arlozorov St., Tel Aviv 6209804, Israel. #Drs.",
+      "Methods Study Design This observational, retrospective cohort study was based on data obtained from electronic medical records for members of Clalit Health Services (CHS), a large health care organization that covers approximately 52% of the entire Israeli population and almost two thirds of older adults.",
+      "Open in a new tab CHS denotes Clalit Health Services, GFR glomerular filtration rate, and SARS-CoV-2 severe acute respiratory syndrome coronavirus 2.Table 1.",
+      "PMC Copyright notice PMCID: PMC9454652 PMID: 36001529 Abstract Background The oral protease inhibitor nirmatrelvir has shown substantial efficacy in high-risk, unvaccinated patients infected with the B.1.617.2 (delta) variant of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-antiviral-treatment-covid-19-adults",
+   "final_url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-antiviral-treatment-covid-19-adults",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "FDA Approves First Oral Antiviral for Treatment of COVID-19 in Adults",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2023-05-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-05-25"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The FDA approved oral antiviral Paxlovid for the treatment of mild-to-moderate COVID-19 in adults who are at high risk for progression to severe COVID-19, including hospitalization or death.",
+   "passages": [
+    "Food and Drug Administration approved the oral antiviral Paxlovid (nirmatrelvir tablets and ritonavir tablets, co-packaged for oral use) for the treatment of mild-to-moderate COVID-19 in adults who are at high risk for progression to severe COVID-19, including hospitalization or death.",
+    "Paxlovid is the fourth drug—and first oral antiviral pill—approved by the FDA to treat COVID-19 in adults.",
+    "EPIC-HR was a randomized, double-blind, placebo-controlled clinical trial studying Paxlovid for the treatment of non-hospitalized symptomatic adults with a laboratory confirmed diagnosis of SARS-CoV-2 infection.",
+    "In conjunction with today’s approval, the FDA is providing all prescribers with important information for prescribing Paxlovid properly and safely, such as dosing instructions, potential side effects and information regarding drugs that may cause drug-drug interactions with Paxlovid.",
+    "Paxlovid significantly reduced the proportion of people with COVID-19 related hospitalization or death from any cause through 28 days of follow-up by 86% compared to placebo among patients treated within five days of symptom onset and who did not receive COVID-19 therapeutic monoclonal antibody treatment.",
+    "Based on the data currently available to the FDA, there is not a clear association between Paxlovid treatment and COVID-19 rebound."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

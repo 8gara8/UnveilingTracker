@@ -1,0 +1,194 @@
+{
+ "slug": "crispr-sickle-cell-therapy-casgevy-approved",
+ "title": "First CRISPR gene-editing therapy for sickle cell disease reaches approval",
+ "first_published": "2020-12-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33283989/",
+   "final_url": "https://pubmed.ncbi.nlm.nih.gov/33283989/",
+   "status": 203,
+   "readable": false,
+   "reason": "203 cookie wall (record read through esummary)",
+   "title_found": "CRISPR-Cas9 Gene Editing for Sickle Cell Disease and β-Thalassemia.",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "esummary sortpubdate",
+     "date": "2021-01-21"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-1-21"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1056/nejmoa2031054",
+   "crossref": {
+    "doi": "10.1056/nejmoa2031054",
+    "resolves": true,
+    "title": "CRISPR-Cas9 Gene Editing for Sickle Cell Disease and β-Thalassemia",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2021-1-21",
+    "authors_first3": [
+     "Frangoul",
+     "Altshuler",
+     "Cappellini"
+    ],
+    "author_count": 26,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": {
+    "source": "esummary pubtype",
+    "value": [
+     "Clinical Trial",
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   },
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1056/nejmoa2031054",
+   "final_url": "https://www.nejm.org/doi/10.1056/NEJMoa2031054",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-01-21"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1056/nejmoa2031054",
+   "crossref": {
+    "doi": "10.1056/nejmoa2031054",
+    "resolves": true,
+    "title": "CRISPR-Cas9 Gene Editing for Sickle Cell Disease and β-Thalassemia",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2021-1-21",
+    "authors_first3": [
+     "Frangoul",
+     "Altshuler",
+     "Cappellini"
+    ],
+    "author_count": 26,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease",
+   "final_url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "FDA Approves First Gene Therapies to Treat Patients with Sickle Cell Disease",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2023-12-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-12-08"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The FDA approved the first cell-based gene therapies, Casgevy and Lyfgenia, for the treatment of sickle cell disease in patients 12 years and older. One of these therapies, Casgevy, is the first FDA-approved treatment to utilize a type of novel genome editing technology.",
+   "passages": [
+    "Food and Drug Administration approved two milestone treatments, Casgevy and Lyfgenia, representing the first cell-based gene therapies for the treatment of sickle cell disease (SCD) in patients 12 years and older.",
+    "Casgevy, a cell-based gene therapy, is approved for the treatment of sickle cell disease in patients 12 years of age and older with recurrent vaso-occlusive crises.",
+    "Lyfgenia uses a lentiviral vector (gene delivery vehicle) for genetic modification and is approved for the treatment of patients 12 years of age and older with sickle cell disease and a history of vaso-occlusive events.",
+    "With Lyfgenia, the patient’s blood stem cells are genetically modified to produce HbAT87Q, a gene-therapy derived hemoglobin that functions similarly to hemoglobin A, which is the normal adult hemoglobin produced in persons not affected by sickle cell disease.",
+    "The FDA granted approval of Casgevy to Vertex Pharmaceuticals Inc. and approval of Lyfgenia to Bluebird Bio Inc. ### Boilerplate The FDA, an agency within the U.S.",
+    "Additionally, one of these therapies, Casgevy, is the first FDA-approved treatment to utilize a type of novel genome editing technology, signaling an innovative advancement in the field of gene therapy."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.aaas.org/news/aaas-fellow-receives-nobel-prize-chemistry-development-crispr",
+   "final_url": "https://www.aaas.org/news/aaas-fellow-receives-nobel-prize-chemistry-development-crispr",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AAAS Fellow Receives Nobel Prize in Chemistry for Development of CRISPR | American Association for the Advancement of Science (AAAS)",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Researchers have used CRISPR to produce new cancer therapies, crops that are resistant to climate change and more.",
+   "passages": [
+    "Read about the AAAS Fellows who were awarded the 2020 Nobel Prize in Physiology or Medicine and 2019 Nobel Prizes in Physics and Chemistry.",
+    "The AAAS Council elected Jennifer Doudna a Fellow in 2008. | Niklas Elmehed/© Nobel Media During a plenary address at the 2016 AAAS Annual Meeting in Boston, Doudna described the technical process of developing CRISPR and reflected on the technology’s implications for bioethics and business.",
+    "She and fellow laureate Emmanuelle Charpentier published their Nobel-winning CRISPR study in Science in 2012, and Doudna has authored dozens of articles in the magazine’s Insights, Policy Forum, and Perspectives sections.",
+    "“We are pleased to have published the original CRISPR paper from Doudna and Charpentier in 2012 that was the basis for this prize.”",
+    "She also highlighted the daily emails she receives from people interested in learning about CRISPR’s potential to help treat their diseases.",
+    "In addition to carrying the lifetime honor of Fellowship since 2008, Doudna has spoken at the AAAS Annual Meeting and has served since 2007 on the board of reviewing editors at Science, the organization’s flagship journal."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://www.science.org/content/article/and-science-s-2015-breakthrough-year",
+   "final_url": "https://www.science.org/content/article/and-science-s-2015-breakthrough-year",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": false,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

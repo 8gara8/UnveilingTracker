@@ -1,0 +1,115 @@
+{
+ "slug": "aeneas-latin-inscriptions-context-restoration",
+ "title": "Aeneas network finds parallels, restores and dates Latin inscriptions",
+ "first_published": "2025-07",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-025-09292-5",
+   "final_url": "https://www.nature.com/articles/s41586-025-09292-5?error=cookies_not_supported&code=da420005-c1e5-44b4-8a88-ebfef0914767",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Contextualizing ancient texts with generative neural networks",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-08-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-07-23"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-07-23"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-07-23"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-07-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-07-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-12-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-06-16"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-07-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-025-09292-5",
+   "crossref": {
+    "doi": "10.1038/s41586-025-09292-5",
+    "resolves": true,
+    "title": "Contextualizing ancient texts with generative neural networks",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-7-23",
+    "authors_first3": [
+     "Assael",
+     "Sommerschield",
+     "Cooley"
+    ],
+    "author_count": 14,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Human history is born in writing. Inscriptions are among the earliest written forms, and offer direct insights into the thought, language and history of ancient civilizations. Historians capture these insights by identifying parallels—inscriptions with shared phrasing, function or cultural setting—t",
+   "passages": [
+    "Here we introduce Aeneas, a generative neural network for contextualizing ancient texts.",
+    "It would seem […] that Aeneas retrieves texts which are thematically or stylistically similar to the target text (as one would hope!), however, in the cases of funerary epigraphy, these parallels are as of little use to the epigrapher are manually retrieved parallels!",
+    "Contextualizing ancient texts with generative neural networks.",
+    "Aeneas retrieves textual and contextual parallels, leverages visual inputs, handles arbitrary-length text restoration, and advances the state of the art in key tasks.",
+    "Given the image and textual transcription of an inscription (with damaged sections of unknown length marked with ‘#’), Aeneas uses a transformer-based decoder (the torso) to process the text.",
+    "Code availability The Aeneas source code is available at https://github.com/google-deepmind/predictingthepast under Apache License 2.0, along with the trained weights, licensed under a Creative Commons Attribution-ShareAlike 4.0 International license (CC BY-SA 4.0)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://predictingthepast.com/",
+   "final_url": "https://predictingthepast.com/",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Predicting the Past | Contextualising, restoring, and attributing ancient texts",
+   "title_match": false,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Ithaca and Aeneas are generative AI models designed to assist historians in the study of ancient Greek and Latin inscriptions. They are part of a wider initiative on developing collaborative AI for historical research.",
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

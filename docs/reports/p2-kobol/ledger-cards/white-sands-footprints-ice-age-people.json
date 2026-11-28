@@ -1,0 +1,93 @@
+{
+ "slug": "white-sands-footprints-ice-age-people",
+ "title": "Footprints at White Sands dated to about 23,000 years ago",
+ "first_published": "2021-09",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.science.org/doi/10.1126/science.abg7586",
+   "final_url": "https://www.science.org/doi/10.1126/science.abg7586",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-9-24"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.abg7586",
+   "crossref": {
+    "doi": "10.1126/science.abg7586",
+    "resolves": true,
+    "title": "Evidence of humans in North America during the Last Glacial Maximum",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2021-9-24",
+    "authors_first3": [
+     "Bennett",
+     "Bustos",
+     "Pigati"
+    ],
+    "author_count": 15,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.science.org/doi/10.1126/science.adh5007",
+   "final_url": "https://www.science.org/doi/10.1126/science.adh5007",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-10-6"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.adh5007",
+   "crossref": {
+    "doi": "10.1126/science.adh5007",
+    "resolves": true,
+    "title": "Independent age estimates resolve the controversy of ancient human footprints at White Sands",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2023-10-6",
+    "authors_first3": [
+     "Pigati",
+     "Springer",
+     "Honke"
+    ],
+    "author_count": 11,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

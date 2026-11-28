@@ -1,0 +1,66 @@
+{
+ "slug": "vesuvius-challenge-reads-herculaneum-scroll",
+ "title": "Machine-learning ink detection lets contestants read sealed Herculaneum scrolls",
+ "first_published": "2023-10",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://scrollprize.org/grandprize",
+   "final_url": "https://scrollprize.org/grandprize",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Vesuvius Challenge 2023 Grand Prize awarded: we can read the scrolls!",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-02-05"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The 2000-year-old scroll discusses music, food, and how to enjoy life’s pleasures.",
+   "passages": [
+    "For this we primarily use a tool called Volume Cartographer, created by Seth Parker and others in Brent Seales’ lab, and augmented by our contestants, primarily Julian Schilliger (Grand Prize winner) and Philip Allgaier.",
+    "Vesuvius Challenge 2023 Grand Prize awarded: we can read the first scroll!",
+    "February 5th, 2024 We’re announcing the winners of the Vesuvius Challenge 2023 Grand Prize.",
+    "On March 15th, 2023, Nat Friedman, Daniel Gross, and Brent Seales launched the Vesuvius Challenge to answer this question.",
+    "The results of this review were clear and unanimous: the Vesuvius Challenge Grand Prize of $700,000 is awarded to a team of three for their excellent submission.",
+    "Youssef NaderLuke FarritorJulian Schilliger All three winning team members have been strong community contributors since the very beginning of Vesuvius Challenge."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://scrollprize.org/",
+   "final_url": "https://scrollprize.org/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Vesuvius Challenge — Reading the Herculaneum Scrolls with AI",
+   "title_match": false,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Vesuvius Challenge uses machine learning and computer vision to read the carbonized Herculaneum scrolls buried by Vesuvius in 79 AD. Over $2,199,250 awarded.",
+   "passages": [
+    "Help us make it fully automatic.Win the $1,000,000 Grand PrizeLearn about the current pathInk DetectionWe can see ink in some scrolls, but models trained on one rarely transfer to the next.",
+    "Help us make them work on every scroll.Win the $500,000 First Letters PrizesLearn how to find a letterOur story​All milestones79 AD1750201520232026‹Vesuvius erupts, burying a villa and its library of papyrus scrolls under twenty meters of ash.The scrolls are carbonized by the heat, but also preserved."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,384 @@
+{
+ "slug": "osc-2015-psychology-replication-project",
+ "title": "Replication of 100 psychology studies finds weaker effects than the originals",
+ "first_published": "2015-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1126/science.aac4716",
+   "final_url": "https://www.science.org/doi/10.1126/science.aac4716",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2015-08-28"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.aac4716",
+   "crossref": {
+    "doi": "10.1126/science.aac4716",
+    "resolves": true,
+    "title": "Estimating the reproducibility of psychological science",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2015-8-28",
+    "authors_first3": [
+     "Open Science Collaboration"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.725745455.793510459"
+     ],
+     "has-preprint": [
+      "10.31219/osf.io/447b3"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1126/science.aad7243",
+   "final_url": "https://www.science.org/doi/10.1126/science.aad7243",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2016-03-04"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.aad7243",
+   "crossref": {
+    "doi": "10.1126/science.aad7243",
+    "resolves": true,
+    "title": "Comment on “Estimating the reproducibility of psychological science”",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2016-3-4",
+    "authors_first3": [
+     "Gilbert",
+     "King",
+     "Pettigrew"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://doi.org/10.1371/journal.pone.0149794",
+   "final_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0149794",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A Bayesian Perspective on the Reproducibility Project: Psychology",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2016-02-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2016-02-26"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1371/journal.pone.0149794",
+   "crossref": {
+    "doi": "10.1371/journal.pone.0149794",
+    "resolves": true,
+    "title": "A Bayesian Perspective on the Reproducibility Project: Psychology",
+    "container": "PLOS ONE",
+    "publisher": "Public Library of Science (PLoS)",
+    "type": "journal-article",
+    "issued": "2016-2-26",
+    "authors_first3": [
+     "Etz",
+     "Vandekerckhove"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "meta",
+    "value": "Research Article"
+   },
+   "meta_description": "We revisit the results of the recent Reproducibility Project: Psychology by the Open Science Collaboration. We compute Bayes factors—a quantity that can be used to express comparative evidence for an hypothesis but also for the null hypothesis—for a large subset (N = 72) of the original papers and t",
+   "passages": [
+    "From a Bayesian reanalysis of the Reproducibility Project: Psychology, we conclude that one reason many published effects fail to replicate appears to be that the evidence for their existence was unacceptably weak in the first place.",
+    "PLoS ONE 11(2): e0149794. https://doi.org/10.1371/journal.pone.0149794Editor: Daniele Marinazzo, Universiteit Gent, BELGIUM Received: December 16, 2015; Accepted: February 4, 2016; Published: February 26, 2016Copyright: © 2016 Etz, Vandekerckhove.",
+    "1 IntroductionThe summer of 2015 saw the first published results of the long-awaited Reproducibility Project: Psychology by the Open Science Collaboration [1] (henceforth OSC).",
+    "3.4 Consistency of results One of the stated goals of the Reproducibility Project: Psychology was to test whether previously found effects would obtain in an identical replication of a published study.",
+    "We conclude that the apparent failure of the Reproducibility Project to replicate many target effects can be adequately explained by overestimation of effect sizes (or overestimation of evidence against the null hypothesis) due to small sample sizes and publication bias in the psychological literature.",
+    "Here, we formally evaluate that insight, and use the results of the Reproducibility Project: Psychology to conclude that publication bias and low-powered designs indeed contribute to the poor reproducibility, but also that many of the replication attempts in OSC were themselves underpowered."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://doi.org/10.1177/1745691616646366",
+   "final_url": "https://journals.sagepub.com/doi/10.1177/1745691616646366",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2016-06-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1177/1745691616646366",
+   "crossref": {
+    "doi": "10.1177/1745691616646366",
+    "resolves": true,
+    "title": "What Should Researchers Expect When They Replicate Studies? A Statistical View of Replicability in Psychological Science",
+    "container": "Perspectives on Psychological Science",
+    "publisher": "SAGE Publications",
+    "type": "journal-article",
+    "issued": "2016-7",
+    "authors_first3": [
+     "Patil",
+     "Peng",
+     "Leek"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4968573/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4968573/",
+     "status": 200,
+     "readable": true,
+     "title_found": "What should we expect when we replicate? A statistical view of replicability in psychological science",
+     "title_match": true,
+     "date": "2016-06-30",
+     "passages": [
+      "This is the intuition behind the recent tour-de-force replication of 100 psychological studies by the Open Science Collaboration, Reproducibility Project: Psychology (Collaboration et al., 2015).",
+      "In this sense, our analysis complements the finding of the Open Science Collaboration while simultaneously providing some additional perspective on the expectation of replicability.Conclusion We need a new definition for replication that acknowledges variation in both the original study and in the replication study.",
+      "The percentage of P-values less than 0.05 ranged from 73% to 91% (1st to 3rd quartile; high: 100%; low: 6%) with a high degree of variability (Figure S1).Prediction Intervals Sampling variation alone may contribute to “un-replicated” results if you define replication by a P-value cutoff.",
+      "An introduction to registered replication reports at perspectives on psychological science.",
+      "This may lead to effects that replicate successfully, in that replication results are consistent with statistical expectations, but that do not provide much information about the size (or existence) of the true effect.",
+      "Despite the measured tone of the manuscript, the resulting mass, social, and scientific media coverage of the paper fixated on a statement that only 36% of the studies replicated the original result (Patil & Leek, 2015)."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://doi.org/10.1126/science.aad7243",
+   "final_url": "https://www.science.org/doi/10.1126/science.aad7243",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2016-03-04"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1126/science.aad7243",
+   "crossref": {
+    "doi": "10.1126/science.aad7243",
+    "resolves": true,
+    "title": "Comment on “Estimating the reproducibility of psychological science”",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2016-3-4",
+    "authors_first3": [
+     "Gilbert",
+     "King",
+     "Pettigrew"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "url": "https://doi.org/10.1371/journal.pone.0149794",
+   "final_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0149794",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A Bayesian Perspective on the Reproducibility Project: Psychology",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2016-02-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2016-02-26"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1371/journal.pone.0149794",
+   "crossref": {
+    "doi": "10.1371/journal.pone.0149794",
+    "resolves": true,
+    "title": "A Bayesian Perspective on the Reproducibility Project: Psychology",
+    "container": "PLOS ONE",
+    "publisher": "Public Library of Science (PLoS)",
+    "type": "journal-article",
+    "issued": "2016-2-26",
+    "authors_first3": [
+     "Etz",
+     "Vandekerckhove"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "meta",
+    "value": "Research Article"
+   },
+   "meta_description": "We revisit the results of the recent Reproducibility Project: Psychology by the Open Science Collaboration. We compute Bayes factors—a quantity that can be used to express comparative evidence for an hypothesis but also for the null hypothesis—for a large subset (N = 72) of the original papers and t",
+   "passages": [
+    "1 IntroductionThe summer of 2015 saw the first published results of the long-awaited Reproducibility Project: Psychology by the Open Science Collaboration [1] (henceforth OSC).",
+    "3.4 Consistency of results One of the stated goals of the Reproducibility Project: Psychology was to test whether previously found effects would obtain in an identical replication of a published study.",
+    "From a Bayesian reanalysis of the Reproducibility Project: Psychology, we conclude that one reason many published effects fail to replicate appears to be that the evidence for their existence was unacceptably weak in the first place.",
+    "PLoS ONE 11(2): e0149794. https://doi.org/10.1371/journal.pone.0149794Editor: Daniele Marinazzo, Universiteit Gent, BELGIUM Received: December 16, 2015; Accepted: February 4, 2016; Published: February 26, 2016Copyright: © 2016 Etz, Vandekerckhove.",
+    "Studies with smaller, non-significant effects are rarely published, driving up the average effect size [11].",
+    "3.3 Evidence in the replication studies The set of replication studies was entirely preregistered, with all data sets fully in the open and no opportunity for publication bias to muddy the results."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 2,
+   "url": "https://doi.org/10.1177/1745691616646366",
+   "final_url": "https://journals.sagepub.com/doi/10.1177/1745691616646366",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2016-06-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1177/1745691616646366",
+   "crossref": {
+    "doi": "10.1177/1745691616646366",
+    "resolves": true,
+    "title": "What Should Researchers Expect When They Replicate Studies? A Statistical View of Replicability in Psychological Science",
+    "container": "Perspectives on Psychological Science",
+    "publisher": "SAGE Publications",
+    "type": "journal-article",
+    "issued": "2016-7",
+    "authors_first3": [
+     "Patil",
+     "Peng",
+     "Leek"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4968573/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4968573/",
+     "status": 200,
+     "readable": true,
+     "title_found": "What should we expect when we replicate? A statistical view of replicability in psychological science",
+     "title_match": true,
+     "date": "2016-06-30",
+     "passages": [
+      "This is the intuition behind the recent tour-de-force replication of 100 psychological studies by the Open Science Collaboration, Reproducibility Project: Psychology (Collaboration et al., 2015).",
+      "In this sense, our analysis complements the finding of the Open Science Collaboration while simultaneously providing some additional perspective on the expectation of replicability.Conclusion We need a new definition for replication that acknowledges variation in both the original study and in the replication study.",
+      "An introduction to registered replication reports at perspectives on psychological science.",
+      "This may lead to effects that replicate successfully, in that replication results are consistent with statistical expectations, but that do not provide much information about the size (or existence) of the true effect.",
+      "The widely publicized 36% figure refers only to the percentage of study pairs that reported a statistically significant (P < 0.05) result in both the original and replication studies.",
+      "They compared average effect sizes, compared effect sizes to confidence intervals, and measured subjective and qualitative assessments of replication."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

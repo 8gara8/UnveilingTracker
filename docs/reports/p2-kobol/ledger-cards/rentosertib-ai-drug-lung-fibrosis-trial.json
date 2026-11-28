@@ -1,0 +1,297 @@
+{
+ "slug": "rentosertib-ai-drug-lung-fibrosis-trial",
+ "title": "AI-discovered drug rentosertib meets its safety goal in a phase 2a lung fibrosis trial",
+ "first_published": "2025-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/40461817/",
+   "final_url": "https://pubmed.ncbi.nlm.nih.gov/40461817/",
+   "status": 203,
+   "readable": false,
+   "reason": "203 cookie wall (record read through esummary)",
+   "title_found": "A generative AI-discovered TNIK inhibitor for idiopathic pulmonary fibrosis: a randomized phase 2a trial.",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "esummary sortpubdate",
+     "date": "2025-08-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-6-3"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41591-025-03743-2",
+   "crossref": {
+    "doi": "10.1038/s41591-025-03743-2",
+    "resolves": true,
+    "title": "A generative AI-discovered TNIK inhibitor for idiopathic pulmonary fibrosis: a randomized phase 2a trial",
+    "container": "Nature Medicine",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-6-3",
+    "authors_first3": [
+     "Xu",
+     "Ren",
+     "Wang"
+    ],
+    "author_count": 27,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": {
+    "source": "esummary pubtype",
+    "value": [
+     "Journal Article",
+     "Randomized Controlled Trial",
+     "Clinical Trial, Phase II",
+     "Multicenter Study"
+    ]
+   },
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12353801/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12353801/",
+     "status": 200,
+     "readable": true,
+     "title_found": "A generative AI-discovered TNIK inhibitor for idiopathic pulmonary fibrosis: a randomized phase 2a trial",
+     "title_match": true,
+     "date": "2025 Jun 3",
+     "passages": [
+      "Here we present the results of the first phase 2a multicenter, double-blind, randomized, placebo-controlled trial testing the safety and efficacy of rentosertib (formerly ISM001-055), a first-in-class AI-generated small-molecule inhibitor of TNIK, a first-in-class target in idiopathic pulmonary fibrosis (IPF) discovered using generative AI.",
+      "Our approach resulted in the first antifibrotic, small-molecule TNIK inhibitor, rentosertib (formerly ISM001-055), for the treatment of IPF designed by generative AI.",
+      "Here, we present the results of a phase 2a multicenter, double-blind, randomized, placebo-controlled trial to assess the safety, tolerability, PK and impact on FVC of rentosertib at a range of doses for up to 12 weeks in patients with IPF.",
+      "As an answer to this question, our group used generative AI-driven discovery tools22,23 to identify Traf2- and Nck-interacting kinase (TNIK) de novo as a critical regulator of idiopathic pulmonary fibrosis (IPF) pathology as it orchestrates multiple profibrotic and proinflammatory cellular programs9.",
+      "Our generative AI-powered approach streamlined preclinical candidate nomination to a mere 18 months and completion of phase 0/1 clinical testing to under 30 months from the initiation of target discovery, representing a revolutionary shift in the streamlining of drug discovery9.",
+      "A small-molecule TNIK inhibitor targets fibrosis in preclinical and clinical models."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1038/s41591-025-03743-2",
+   "final_url": "https://www.nature.com/articles/s41591-025-03743-2?error=cookies_not_supported&code=c85ef314-87e6-4892-8a9f-4cbeb4ac126a",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A generative AI-discovered TNIK inhibitor for idiopathic pulmonary fibrosis: a randomized phase 2a trial",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-07-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-06-03"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-06-03"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-06-03"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-06-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-06-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-12-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-04-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-06-03"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41591-025-03743-2",
+   "crossref": {
+    "doi": "10.1038/s41591-025-03743-2",
+    "resolves": true,
+    "title": "A generative AI-discovered TNIK inhibitor for idiopathic pulmonary fibrosis: a randomized phase 2a trial",
+    "container": "Nature Medicine",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-6-3",
+    "authors_first3": [
+     "Xu",
+     "Ren",
+     "Wang"
+    ],
+    "author_count": 27,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Despite substantial progress in artificial intelligence (AI) for generative chemistry, few novel AI-discovered or AI-designed drugs have reached human clinical trials. Here we present the results of the first phase 2a multicenter, double-blind, randomized, placebo-controlled trial testing the safety",
+   "passages": [
+    "Here we present the results of the first phase 2a multicenter, double-blind, randomized, placebo-controlled trial testing the safety and efficacy of rentosertib (formerly ISM001-055), a first-in-class AI-generated small-molecule inhibitor of TNIK, a first-in-class target in idiopathic pulmonary fibrosis (IPF) discovered using generative AI.",
+    "A generative AI-discovered TNIK inhibitor for idiopathic pulmonary fibrosis: a randomized phase 2a trial.",
+    "Our approach resulted in the first antifibrotic, small-molecule TNIK inhibitor, rentosertib (formerly ISM001-055), for the treatment of IPF designed by generative AI.",
+    "A small-molecule TNIK inhibitor targets fibrosis in preclinical and clinical models.",
+    "8).DiscussionIn this phase 2a study, treatment with rentosertib at 30 mg QD, 30 mg BID and 60 mg QD over 12 weeks was safe and well tolerated.",
+    "The 60 mg rentosertib QD dose exhibited the greatest mean improvement in lung function, as measured by FVC, whereas patients receiving placebo experienced an average decline in FVC."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://doi.org/10.1038/s41587-024-02143-0",
+   "final_url": "https://www.nature.com/articles/s41587-024-02143-0?error=cookies_not_supported&code=3f2331fa-bdd0-49e9-b973-651dd19edbd9",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A small-molecule TNIK inhibitor targets fibrosis in preclinical and clinical models",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-12-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-03-08"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-03-08"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-03-08"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-03-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-03-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-06-26"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-01-16"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-03-08"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41587-024-02143-0",
+   "crossref": {
+    "doi": "10.1038/s41587-024-02143-0",
+    "resolves": true,
+    "title": "A small-molecule TNIK inhibitor targets fibrosis in preclinical and clinical models",
+    "container": "Nature Biotechnology",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-3-8",
+    "authors_first3": [
+     "Ren",
+     "Aliper",
+     "Chen"
+    ],
+    "author_count": 30,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Idiopathic pulmonary fibrosis (IPF) is an aggressive interstitial lung disease with a high mortality rate. Putative drug targets in IPF have failed to translate into effective therapies at the clinical level. We identify TRAF2- and NCK-interacting kinase (TNIK) as an anti-fibrotic target using a pre",
+   "passages": [
+    "1: AI-augmented pipeline for target discovery.Full size imagea, The PandaOmics target-discovery platform was applied to lung and kidney fibrosis datasets to generate target hypotheses, followed by the Chemistry42 platform application to generate small-molecule leads targeting TNIK.",
+    "Thus, TNIK is an attractive target for lung fibrosis, supported by both the unique omic-driven analysis and other AI-based approaches.Generative AI-designed TNIK inhibitorsTo identify TNIK inhibitors, we exploited available crystal structures of the TNIK kinase domain56 and the Chemistry42 structure-based drug-design AI workflow (Fig.",
+    "A small-molecule TNIK inhibitor targets fibrosis in preclinical and clinical models.",
+    "Using a comprehensive generative AI-driven drug-design technique, we designed a small-molecule inhibitor of TNIK, INS018_055.",
+    "Using AI-driven methodology, we generated INS018_055, a small-molecule TNIK inhibitor, which exhibits desirable drug-like properties and anti-fibrotic activity across different organs in vivo through oral, inhaled or topical administration.",
+    "TNIK scored as number 1 using the ‘protein and receptor kinase’ PandaOmics setting, which was based on the combination of bioinformatic and AI-driven philosophies applied to multi-model omics datasets followed by application of novelty, small-molecule druggability and protein class filters."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://clinicaltrials.gov/study/NCT05938920",
+   "final_url": "https://clinicaltrials.gov/study/NCT05938920",
+   "status": 200,
+   "readable": false,
+   "reason": "page drawn by script; record read through the API",
+   "title_found": "Study Evaluating INS018_055 Administered Orally to Subjects With Idiopathic Pulmonary Fibrosis (IPF)",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "startDate",
+     "date": "2023-06-19"
+    }
+   ],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": {
+    "source": "ClinicalTrials.gov API v2",
+    "value": {
+     "status": "COMPLETED",
+     "phases": [
+      "PHASE2"
+     ]
+    }
+   },
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "ctgov-api",
+     "url": "https://clinicaltrials.gov/api/v2/studies/NCT05938920",
+     "status": 200,
+     "readable": true,
+     "title_match": "partial",
+     "passages": []
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

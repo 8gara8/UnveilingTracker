@@ -1,0 +1,69 @@
+{
+ "slug": "arad-ostraca-handwriting-analysis-literacy",
+ "title": "Handwriting analysis finds many writers in Judah's Arad letters, about 600 BCE",
+ "first_published": "2016-04",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.pnas.org/doi/10.1073/pnas.1522200113",
+   "final_url": "https://www.pnas.org/action/cookieAbsent",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2016-4-11"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1073/pnas.1522200113",
+   "crossref": {
+    "doi": "10.1073/pnas.1522200113",
+    "resolves": true,
+    "title": "Algorithmic handwriting analysis of Judah’s military correspondence sheds light on composition of biblical texts",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2016-4-11",
+    "authors_first3": [
+     "Faigenbaum-Golovin",
+     "Shaus",
+     "Sober"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855551/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4855551/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Algorithmic handwriting analysis of Judah’s military correspondence sheds light on composition of biblical texts",
+     "title_match": true,
+     "date": "2016 Apr 11",
+     "passages": [
+      "The dissemination of writing within the Judahite army around 600 BCE is also confirmed by the existence of other military-related corpora of ostraca, at Horvat ‘Uza (19) and Tel Malḥata (20) in the vicinity of Arad, and at Lachish¶ in the Shephelah (summary in ref.",
+      "Images are courtesy of the Institute of Archaeology, Tel Aviv University, and of the Israel Antiquities Authority.See Supporting Information for additional details regarding the methods in use and their results on both Ancient and Modern Hebrew datasets (available at www-nuclear.tau.ac.il/∼eip/ostraca/DataSets/Arad_Ancient_Hebrew.zip and www-nuclear.tau.ac.il/∼eip/ostraca/DataSets/Modern_Hebrew.zip, respectively).",
+      "Alkow Department of Archaeology and Ancient Near Eastern Civilizations, Tel Aviv University, Tel Aviv 69978, Israel; dSchool of Physics and Astronomy, Sackler Faculty of Exact Sciences, Tel Aviv University, Tel Aviv 69978, Israel 2To whom correspondence may be addressed.",
+      "Images are courtesy of the Institute of Archaeology, Tel Aviv University, and of the Israel Antiquities Authority.Our algorithmic sequence consisted of three consecutive stages, operating on digital images of the ostraca (see Supporting Information).",
+      "These images were obtained by scanning the negatives taken by the Arad expedition (courtesy of the Israel Antiquities Authority and the Institute of Archaeology of Tel Aviv University).",
+      "This paper focuses on 16 ink inscriptions found in the desert fortress of Arad, written ca."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

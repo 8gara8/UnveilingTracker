@@ -1,0 +1,119 @@
+{
+ "slug": "ebola-antibody-drugs-palm-trial-approved",
+ "title": "Ebola antibody drugs cut deaths in the PALM trial, then won approval",
+ "first_published": "2019-08-12",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1056/NEJMoa1910993",
+   "final_url": "https://www.nejm.org/doi/10.1056/NEJMoa1910993",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2019-12-12"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1056/nejmoa1910993",
+   "crossref": {
+    "doi": "10.1056/nejmoa1910993",
+    "resolves": true,
+    "title": "A Randomized, Controlled Trial of Ebola Virus Disease Therapeutics",
+    "container": "New England Journal of Medicine",
+    "publisher": "Massachusetts Medical Society",
+    "type": "journal-article",
+    "issued": "2019-12-12",
+    "authors_first3": [
+     "Mulangu",
+     "Dodd",
+     "Davey"
+    ],
+    "author_count": 17,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.736989380.793588341",
+      "10.3410/f.736989380.793568530"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10680050/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10680050/",
+     "status": 200,
+     "readable": true,
+     "title_found": "A Randomized, Controlled Trial of Ebola Virus Disease Therapeutics",
+     "title_match": true,
+     "date": "2019-11-26",
+     "passages": [
+      "Medical countermeasures during the 2018 Ebola virus disease outbreak in the North Kivu and Ituri Provinces of the Democratic Republic of the Congo: a rapid genomic assessment.",
+      "On the importance of randomized controlled trials for Ebola virus disease therapeutics: a meta-analysis from the West African outbreak.",
+      "(Funded by the National Institute of Allergy and Infectious Diseases and others; PALM ClinicalTrials.gov number, NCT03719586.)",
+      "Cone, R.E., L.H., B.H., E.H., J.L., J.P., M.S., Y.S., J.T.); Regeneron (S.S.); Ridgeback Biotherapeutics (W.H.); the Mitchell Group (N.G., D.V.); and University of Minnesota (J.N.).Footnotes *A complete list of members of the PALM Consortium Study Team is provided in the Supplementary Appendix, available at NEJM.org.",
+      "A randomized, controlled trial of ZMapp for Ebola virus infection.",
+      "Statistical considerations for a trial of Ebola virus disease therapeutics."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://directorsblog.nih.gov/2020/01/02/celebrating-biomedical-breakthroughs-in-2019/",
+   "final_url": "https://directorsblog.nih.gov/2020/01/02/celebrating-biomedical-breakthroughs-in-2019/",
+   "status": null,
+   "readable": false,
+   "reason": "ENOTFOUND",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "dead"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-ebola-virus",
+   "final_url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-ebola-virus",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Page Not Found | FDA",
+   "title_match": false,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "dead"
+  }
+ ]
+}

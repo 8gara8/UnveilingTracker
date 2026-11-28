@@ -1,0 +1,327 @@
+{
+ "slug": "muon-g-2-fermilab-confirms-brookhaven",
+ "title": "Fermilab confirms the muon's magnetic moment is above the Standard Model value",
+ "first_published": "2021-04-07",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1103/PhysRevLett.126.141801",
+   "final_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.141801",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Measurement of the Positive Muon Anomalous Magnetic Moment to 0.46 ppm",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2021-04-07"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2021-04-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-04-07"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1103/physrevlett.126.141801",
+   "crossref": {
+    "doi": "10.1103/physrevlett.126.141801",
+    "resolves": true,
+    "title": "Measurement of the Positive Muon Anomalous Magnetic Moment to 0.46 ppm",
+    "container": "Physical Review Letters",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2021-4-7",
+    "authors_first3": [
+     "Abi",
+     "Albahri",
+     "Al-Kilani"
+    ],
+    "author_count": 238,
+    "update_to": [
+     {
+      "doi": "10.1103/physrevlett.126.141801",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "updated_by": [
+     {
+      "doi": "10.1103/physrevlett.126.141801",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Measurements of the muon magnetic moment strengthen a previously reported tension with theoretical predictions, ushering in a new era of precision tests of the standard model.",
+   "passages": [
+    "126, 141801 – Published 7 April, 2021DOI: https://doi.org/10.1103/PhysRevLett.126.141801 Export CitationShow metricsHide metricsAbstractWe present the first results of the Fermilab National Accelerator Laboratory (FNAL) Muon g−2 Experiment for the positive muon magnetic anomaly aμ≡(gμ−2)/2.",
+    "(Muon g−2 Collaboration), Final report of the muon E821 anomalous magnetic moment measurement at BNL, Phys.",
+    "(Muon g−2 Collaboration), companion paper, Beam dynamics corrections to the Run-1 measurement of the muon anomalous magnetic moment at Fermilab, Phys.",
+    "Blum et al., The anomalous magnetic moment of the muon in the standard model, Phys.",
+    "(Muon g−2 Collaboration), companion paper, Magnetic-field measurement and analysis for the Muon g−2 Experiment at Fermilab, Phys.",
+    "It is your responsibility to obtain the proper permission from the rights holder directly for these figures.Export citationExport citationChoose format for download:BibTeXEndNote (RIS)Download CitationFeatured in PhysicsEditors' SuggestionOpen AccessMeasurement of the Positive Muon Anomalous Magnetic Moment to 0.46 ppmB."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2104.03281",
+   "final_url": "https://arxiv.org/abs/2104.03281",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Measurement of the Positive Muon Anomalous Magnetic Moment to 0.46 ppm",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2021-04-07"
+    },
+    {
+     "source": "citation_date",
+     "date": "2021-04-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-04-07"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1103/physrevlett.126.141801",
+   "crossref": {
+    "doi": "10.1103/physrevlett.126.141801",
+    "resolves": true,
+    "title": "Measurement of the Positive Muon Anomalous Magnetic Moment to 0.46 ppm",
+    "container": "Physical Review Letters",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2021-4-7",
+    "authors_first3": [
+     "Abi",
+     "Albahri",
+     "Al-Kilani"
+    ],
+    "author_count": 238,
+    "update_to": [
+     {
+      "doi": "10.1103/physrevlett.126.141801",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "updated_by": [
+     {
+      "doi": "10.1103/physrevlett.126.141801",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2104.03281: Measurement of the Positive Muon Anomalous Magnetic Moment to 0.46 ppm",
+   "passages": [
+    "(137 additional authors not shown) View a PDF of the paper titled Measurement of the Positive Muon Anomalous Magnetic Moment to 0.46 ppm, by B.",
+    "Hertzog [view email] [v1] Wed, 7 Apr 2021 17:36:08 UTC (495 KB) Full-text links: Access Paper: View a PDF of the paper titled Measurement of the Positive Muon Anomalous Magnetic Moment to 0.46 ppm, by B.",
+    "We present the first results of the Fermilab Muon g-2 Experiment for the positive muon magnetic anomaly $a_\\mu \\equiv (g_\\mu-2)/2$.",
+    "The result is 3.3 standard deviations greater than the standard model prediction and is in excellent agreement with the previous Brookhaven National Laboratory (BNL) E821 measurement.",
+    "Intensity variation of high-energy positrons from muon decays directly encodes the difference frequency $\\omega_a$ between the spin-precession and cyclotron frequencies for polarized muons in a magnetic storage ring.",
+    "The storage ring magnetic field is measured using nuclear magnetic resonance probes calibrated in terms of the equivalent proton spin precession frequency ${\\tilde{\\omega}'^{}_p}$ in a spherical water sample at 34.7$^{\\circ}$C."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/hep-ex/0602035",
+   "final_url": "https://arxiv.org/abs/hep-ex/0602035",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Final Report of the Muon E821 Anomalous Magnetic Moment Measurement at BNL",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2006-02-20"
+    },
+    {
+     "source": "citation_date",
+     "date": "2006-02-20"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2006-04-07"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1103/physrevd.73.072003",
+   "crossref": {
+    "doi": "10.1103/physrevd.73.072003",
+    "resolves": true,
+    "title": "Final report of the E821 muon anomalous magnetic moment measurement at BNL",
+    "container": "Physical Review D",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2006-4-7",
+    "authors_first3": [
+     "Bennett",
+     "Bousquet",
+     "Brown"
+    ],
+    "author_count": 76,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper hep-ex/0602035: Final Report of the Muon E821 Anomalous Magnetic Moment Measurement at BNL",
+   "passages": [
+    "Bennett, et al View a PDF of the paper titled Final Report of the Muon E821 Anomalous Magnetic Moment Measurement at BNL, by Muon (g-2) Collaboration: G.W.",
+    "Hertzog [view email] [v1] Mon, 20 Feb 2006 23:30:55 UTC (817 KB) Full-text links: Access Paper: View a PDF of the paper titled Final Report of the Muon E821 Anomalous Magnetic Moment Measurement at BNL, by Muon (g-2) Collaboration: G.W.",
+    "Summary paper of E821 Collaboration measurements of the muon anomalous magnetic moment, each reported earlier in Letters or Brief Reports; 96 pages, 41 figures, 16 tables.",
+    "We present the final report from a series of precision measurements of the muon anomalous magnetic moment, a_mu = (g-2)/2.",
+    "The standard model value for a_mu includes contributions from virtual QED, weak, and hadronic processes.",
+    "Present standard model evaluations, based on e+e- hadronic cross sections, lie 2.2 - 2.7 standard deviations below the experimental result."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://arxiv.org/abs/2506.03069",
+   "final_url": "https://arxiv.org/abs/2506.03069",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Measurement of the Positive Muon Anomalous Magnetic Moment to 127 ppb",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2025-06-03"
+    },
+    {
+     "source": "citation_date",
+     "date": "2025-06-03"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2506.03069: Measurement of the Positive Muon Anomalous Magnetic Moment to 127 ppb",
+   "passages": [
+    "(95 additional authors not shown) View a PDF of the paper titled Measurement of the Positive Muon Anomalous Magnetic Moment to 127 ppb, by The Muon $g-2$ Collaboration: D.",
+    "A new measurement of the magnetic anomaly $a_{\\mu}$ of the positive muon is presented based on data taken from 2020 to 2023 by the Muon $g-2$ Experiment at Fermi National Accelerator Laboratory (FNAL).",
+    "The new experimental world average, dominated by the measurements at FNAL, is $a_{\\mu}(\\text{exp}) =116\\,592\\,0715(145) \\times 10^{-12}$ (124 ppb)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://www.nature.com/articles/d41586-021-01172-y",
+   "final_url": "https://www.nature.com/articles/d41586-021-01172-y?error=cookies_not_supported&code=72ef4188-149e-4d56-adc3-3a891b5b58cc",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Prediction for magnetic moment of the muon informs a test of the standard model of particle physics",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2021-05-05"
+    },
+    {
+     "source": "dc.date",
+     "date": "2021-05-05"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2021-05-05"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2021-05-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-05-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-10-21"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-05-05"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-021-01172-y",
+   "crossref": {
+    "doi": "10.1038/d41586-021-01172-y",
+    "resolves": true,
+    "title": "Prediction for magnetic moment of the muon informs a test of the standard model of particle physics",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2021-5-5",
+    "authors_first3": [
+     "Meyer"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "Fresh evidence in a longstanding puzzle of particle physics.",
+   "passages": [
+    "But one such test — the determination of the magnetic moment of an elementary particle known as the muon — has resulted in a long-standing discrepancy between theory and experiment.",
+    "Using this value, they show that the magnetic moment predicted by the standard model is compatible with experimental measurements.",
+    "Writing in Nature, Borsanyi et al.1 report a calculation of the value of the largest of these effects to a precision commensurate with that of the experimental measurement of the magnetic moment.",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,...",
+    "At the same time, they find a moderate inconsistency between their result and previous determinations of the strong-interaction effect.",
+    "The previous determinations are based on a different methodology from that used by Borsanyi and colleagues, and are widely viewed as being on firm ground."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

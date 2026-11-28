@@ -1,0 +1,378 @@
+{
+ "slug": "nudge-meta-analysis-publication-bias-dispute",
+ "title": "A nudge meta-analysis is challenged: the effect may vanish after bias correction",
+ "first_published": "2022-01",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1073/pnas.2107346118",
+   "final_url": "https://pnas.org/doi/full/10.1073/pnas.2107346118",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2021-12-30"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1073/pnas.2107346118",
+   "crossref": {
+    "doi": "10.1073/pnas.2107346118",
+    "resolves": true,
+    "title": "The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2021-12-30",
+    "authors_first3": [
+     "Mertens",
+     "Herberz",
+     "Hahnel"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1073/pnas.2204059119",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8740589/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8740589/",
+     "status": 200,
+     "readable": true,
+     "title_found": "The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains",
+     "title_match": true,
+     "date": "2021-12-29",
+     "passages": [
+      "J., Brosch T., The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains.",
+      "Drawing on more than 200 studies reporting over 450 effect sizes (n = 2,149,683), we present a comprehensive analysis of the effectiveness of choice architecture interventions across techniques, behavioral domains, and contextual study characteristics.",
+      "In addition to the overall effect size of choice architecture interventions, our systematic comparison of interventions across different techniques, behavioral domains, and contextual study characteristics reveals substantial variations in the effectiveness of choice architecture as a behavior change tool.",
+      "Besides the effect size variations between different categories of choice architecture techniques, our results reveal considerable differences in the effectiveness of choice architecture interventions across behavioral domains.",
+      "Together, these results point to a publication bias in the literature that may favor the reporting of successful as opposed to unsuccessful implementations of choice architecture interventions in studies with small sample sizes.",
+      "With an average intervention effect of d = 0.25 (95% CI [0.12, 0.37]), this domain was less receptive to choice architecture interventions than the other behavioral domains we investigated."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1073/pnas.2200300119",
+   "final_url": "https://pnas.org/doi/full/10.1073/pnas.2200300119",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-07-19"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1073/pnas.2200300119",
+   "crossref": {
+    "doi": "10.1073/pnas.2200300119",
+    "resolves": true,
+    "title": "No evidence for nudging after adjusting for publication bias",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2022-7-19",
+    "authors_first3": [
+     "Maier",
+     "Bartoš",
+     "Stanley"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9351501/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9351501/",
+     "status": 200,
+     "readable": true,
+     "title_found": "No evidence for nudging after adjusting for publication bias",
+     "title_match": true,
+     "date": "2022-07-18",
+     "passages": [
+      "Maier et al., Code and data for analyses in “No evidence for nudging after adjusting for publication bias.”",
+      "1) is the real headline; when this publication bias is appropriately corrected for, no evidence for the effectiveness of nudges remains (Fig.",
+      "As a rule of thumb, Bayes factors between 3 and 10 indicate moderate evidence, and Bayes factors larger than 10 indicate strong evidence.Mertens et al.",
+      "Mertens et al. argue that severe publication bias is only partially supported by the funnel plot and proceed largely without taking publication bias into account in their subsequent analyses.",
+      "Mertens et al.’s headline finding is that “choice architecture [nudging] is an effective and widely applicable behavior change tool” (p.",
+      "We propose their finding of “moderate publication bias” (p."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://doi.org/10.1073/pnas.2200732119",
+   "final_url": "https://pnas.org/doi/full/10.1073/pnas.2200732119",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-07-19"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1073/pnas.2200732119",
+   "crossref": {
+    "doi": "10.1073/pnas.2200732119",
+    "resolves": true,
+    "title": "No reason to expect large and consistent effects of nudge interventions",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2022-7-19",
+    "authors_first3": [
+     "Szaszi",
+     "Higney",
+     "Charlton"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9351519/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9351519/",
+     "status": 200,
+     "readable": true,
+     "title_found": "No reason to expect large and consistent effects of nudge interventions",
+     "title_match": true,
+     "date": "2022-07-18",
+     "passages": [
+      "Higney, No reason to expect large and consistent effects of nudge interventions.",
+      "For example, assuming a severe degree of publication bias, 95% of these studies’ effects would be ±1.00 around the average d = 0.08 effect, showing large variability, with much of this variability possibly arising from variability in publication bias itself.",
+      "Until then, with a few exceptions [e.g., defaults (6)], we see no reason to expect large and consistent effects when designing nudge experiments or running interventions.",
+      "Furthermore, the authors estimate that, even after adjusting for publication bias, the effects of nudge interventions vary considerably across studies.",
+      "(1) focus their message on the average effect size estimated without adjusting for publication bias, concluding that “our results show that choice architecture interventions overall promote behavior change with a small to medium effect size of Cohen’s d = 0.43” (p.",
+      "After adjusting for a hypothesized severe to moderate degree of publication bias, their adjusted estimated average effect of nudges is between d = 0.08 (severe) and d = 0.31 (moderate)."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://doi.org/10.3982/ECTA18709",
+   "final_url": "https://www.econometricsociety.org/publications/econometrica/2022/01/01/rcts-scale-comprehensive-evidence-two-nudge-units",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "RCTs to Scale: Comprehensive Evidence from Two Nudge Units - The Econometric Society",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-01-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.3982/ecta18709",
+   "crossref": {
+    "doi": "10.3982/ecta18709",
+    "resolves": true,
+    "title": "RCTs to Scale: Comprehensive Evidence From Two Nudge Units",
+    "container": "Econometrica",
+    "publisher": "The Econometric Society",
+    "type": "journal-article",
+    "issued": "2022",
+    "authors_first3": [
+     "DellaVigna",
+     "Linos"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "View PDF Supplement to \"RCTs to Scale: Comprehensive Evidence from Two Nudge Units\"This zip file contains the replication files for the manuscript.",
+    "We assemble a unique data set of 126 RCTs covering 23 million individuals, including all trials run by two of the largest Nudge Units in the United States.",
+    "81-116Stefano DellaVigna, Elizabeth LinosNudge interventions have quickly expanded from academic studies to larger implementation in so‐called Nudge Units in governments.",
+    "81-116, https://doi.org/10.3982/ECTA18709copy Chicago DellaVigna, Stefano, and Elizabeth Linos.",
+    "In the Nudge Units sample, the average impact is still sizable and highly statistically significant, but smaller at 1.4 percentage points, an 8.0% increase.",
+    "We compare these trials to a sample of nudge trials in academic journals from two recent meta‐analyses."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://doi.org/10.1073/pnas.2200300119",
+   "final_url": "https://pnas.org/doi/full/10.1073/pnas.2200300119",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-07-19"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1073/pnas.2200300119",
+   "crossref": {
+    "doi": "10.1073/pnas.2200300119",
+    "resolves": true,
+    "title": "No evidence for nudging after adjusting for publication bias",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2022-7-19",
+    "authors_first3": [
+     "Maier",
+     "Bartoš",
+     "Stanley"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9351501/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9351501/",
+     "status": 200,
+     "readable": true,
+     "title_found": "No evidence for nudging after adjusting for publication bias",
+     "title_match": true,
+     "date": "2022-07-18",
+     "passages": [
+      "Maier et al., Code and data for analyses in “No evidence for nudging after adjusting for publication bias.”",
+      "1) is the real headline; when this publication bias is appropriately corrected for, no evidence for the effectiveness of nudges remains (Fig.",
+      "Mertens et al. argue that severe publication bias is only partially supported by the funnel plot and proceed largely without taking publication bias into account in their subsequent analyses.",
+      "Mertens et al.’s headline finding is that “choice architecture [nudging] is an effective and widely applicable behavior change tool” (p.",
+      "As a rule of thumb, Bayes factors between 3 and 10 indicate moderate evidence, and Bayes factors larger than 10 indicate strong evidence.Mertens et al.",
+      "Their sensitivity analysis (4) indicates that the true effect size could be as low as d = 0.08 (if publication bias is severe)."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "url": "https://doi.org/10.1073/pnas.2200732119",
+   "final_url": "https://pnas.org/doi/full/10.1073/pnas.2200732119",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2022-07-19"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1073/pnas.2200732119",
+   "crossref": {
+    "doi": "10.1073/pnas.2200732119",
+    "resolves": true,
+    "title": "No reason to expect large and consistent effects of nudge interventions",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2022-7-19",
+    "authors_first3": [
+     "Szaszi",
+     "Higney",
+     "Charlton"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9351519/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9351519/",
+     "status": 200,
+     "readable": true,
+     "title_found": "No reason to expect large and consistent effects of nudge interventions",
+     "title_match": true,
+     "date": "2022-07-18",
+     "passages": [
+      "For example, assuming a severe degree of publication bias, 95% of these studies’ effects would be ±1.00 around the average d = 0.08 effect, showing large variability, with much of this variability possibly arising from variability in publication bias itself.",
+      "(1) focus their message on the average effect size estimated without adjusting for publication bias, concluding that “our results show that choice architecture interventions overall promote behavior change with a small to medium effect size of Cohen’s d = 0.43” (p.",
+      "After adjusting for a hypothesized severe to moderate degree of publication bias, their adjusted estimated average effect of nudges is between d = 0.08 (severe) and d = 0.31 (moderate).",
+      "Furthermore, the authors estimate that, even after adjusting for publication bias, the effects of nudge interventions vary considerably across studies.",
+      "For example, the authors assume that the nudge literature is impacted by publication bias; that is, larger positive, and statistically significant, comparisons are more likely to be reported.",
+      "J., Brosch T., The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

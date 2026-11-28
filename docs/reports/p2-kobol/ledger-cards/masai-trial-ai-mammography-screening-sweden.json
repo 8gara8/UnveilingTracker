@@ -1,0 +1,161 @@
+{
+ "slug": "masai-trial-ai-mammography-screening-sweden",
+ "title": "AI-supported mammography screening matches double reading with less workload",
+ "first_published": "2023-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37541274/",
+   "final_url": "https://pubmed.ncbi.nlm.nih.gov/37541274/",
+   "status": 203,
+   "readable": false,
+   "reason": "203 cookie wall (record read through esummary)",
+   "title_found": "Artificial intelligence-supported screen reading versus standard double reading in the Mammography Screening with Artificial Intelligence trial (MASAI): a clinical safety analysis of a randomised, controlled, non-inferiority, single-blinded, screening accuracy study.",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "esummary sortpubdate",
+     "date": "2023-08-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-8"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1016/s1470-2045(23)00298-x",
+   "crossref": {
+    "doi": "10.1016/s1470-2045(23)00298-x",
+    "resolves": true,
+    "title": "Artificial intelligence-supported screen reading versus standard double reading in the Mammography Screening with Artificial Intelligence trial (MASAI): a clinical safety analysis of a randomised, controlled, non-inferiority, single-blinded, screening accuracy study",
+    "container": "The Lancet Oncology",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2023-8",
+    "authors_first3": [
+     "Lång",
+     "Josefsson",
+     "Larsson"
+    ],
+    "author_count": 9,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": {
+    "source": "esummary pubtype",
+    "value": [
+     "Randomized Controlled Trial",
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't",
+     "Equivalence Trial"
+    ]
+   },
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/39904652/",
+   "final_url": "https://pubmed.ncbi.nlm.nih.gov/39904652/",
+   "status": 203,
+   "readable": false,
+   "reason": "203 cookie wall (record read through esummary)",
+   "title_found": "Screening performance and characteristics of breast cancer detected in the Mammography Screening with Artificial Intelligence trial (MASAI): a randomised, controlled, parallel-group, non-inferiority, single-blinded, screening accuracy study.",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "esummary sortpubdate",
+     "date": "2025-03-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-3"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1016/s2589-7500(24)00267-x",
+   "crossref": {
+    "doi": "10.1016/s2589-7500(24)00267-x",
+    "resolves": true,
+    "title": "Screening performance and characteristics of breast cancer detected in the Mammography Screening with Artificial Intelligence trial (MASAI): a randomised, controlled, parallel-group, non-inferiority, single-blinded, screening accuracy study",
+    "container": "The Lancet Digital Health",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2025-3",
+    "authors_first3": [
+     "Hernström",
+     "Josefsson",
+     "Sartor"
+    ],
+    "author_count": 10,
+    "update_to": [],
+    "updated_by": []
+   },
+   "type_found": {
+    "source": "esummary pubtype",
+    "value": [
+     "Journal Article",
+     "Randomized Controlled Trial",
+     "Research Support, Non-U.S. Gov't",
+     "Equivalence Trial"
+    ]
+   },
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://clinicaltrials.gov/study/NCT04838756",
+   "final_url": "https://clinicaltrials.gov/study/NCT04838756",
+   "status": 200,
+   "readable": false,
+   "reason": "page drawn by script; record read through the API",
+   "title_found": "Mammography Screening With Artificial Intelligence (MASAI)",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "startDate",
+     "date": "2021-04-12"
+    }
+   ],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": {
+    "source": "ClinicalTrials.gov API v2",
+    "value": {
+     "status": "COMPLETED",
+     "phases": [
+      "NA"
+     ]
+    }
+   },
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "ctgov-api",
+     "url": "https://clinicaltrials.gov/api/v2/studies/NCT04838756",
+     "status": 200,
+     "readable": true,
+     "title_match": true,
+     "passages": []
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  }
+ ]
+}

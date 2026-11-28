@@ -1,0 +1,96 @@
+{
+ "slug": "liquid-tensor-experiment-lean-complete",
+ "title": "Lean finishes computer check of the liquid vector space theorem",
+ "first_published": "2022-07-14",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://leanprover-community.github.io/blog/posts/lte-final",
+   "final_url": "https://leanprover-community.github.io/blog/posts/lte-final/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Completion of the Liquid Tensor Experiment",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2022-07-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-07-15"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "We are proud to announce that as of 15:46:13 (EST) on Thursday, July 14 2022 the Liquid Tensor Experiment has been\ncompleted.\nA year and a half after the\nchallenge\nwas posed by Peter Scholze we have f",
+   "passages": [
+    "A year and a half after the challenge was posed by Peter Scholze we have finally formally verified the main theorem of liquid vector spaces using the Lean proof assistant.",
+    "Completion of the Liquid Tensor Experiment Mathlib community 2022-07-15 15:00 Source We are proud to announce that as of 15:46:13 (EST) on Thursday, July 14 2022 the Liquid Tensor Experiment has been completed.",
+    "Statement The main theorem of liquid vector spaces, by Clausen and Scholze, is the following claim about certain condensed real vector spaces: Let $0 < p' < p \\le 1$ be real numbers.",
+    "The Liquid Tensor Experiment also heavily relied on many parts of mathlib, the main mathematical library for the Lean proof assistant.",
+    "The project was led by Johan Commelin and relied on continuous mathematical support from Scholze.",
+    "For details, we refer to the lecture notes on Analytic Geometry by Peter Scholze; in particular to section 9."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://github.com/leanprover-community/lean-liquid",
+   "final_url": "https://github.com/leanprover-community/lean-liquid",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "GitHub - leanprover-community/lean-liquid: 💧 Liquid Tensor Experiment",
+   "title_match": "partial",
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "💧 Liquid Tensor Experiment. Contribute to leanprover-community/lean-liquid development by creating an account on GitHub.",
+   "passages": [
+    "The preliminary announcement of a proof of Theorem 9.4 was made on 28th May 2021, by Johan Commelin and his team from the Lean prover community.",
+    "Liquid Tensor Experiment For the eponymous blogpost by Peter Scholze which started it all: see https://xenaproject.wordpress.com/2020/12/05/liquid-tensor-experiment/.",
+    "The file src/liquid.lean contains the statement of the first target (the first half of the project).",
+    "Our formalisation could not have even started without a major classical mathematical library backing it up, and so we chose Lean 3 as the engine behind the project.",
+    "When the project started, it was immediately noticed that there was a \"sub-boss\" in the form of Analytic 9.4, a far more technical theorem involving a completely different class of objects and which Scholze was claiming was a sufficiently powerful stepping stone.",
+    "Getting the project At the moment, we support two ways of browsing this repository: Either via Gitpod or by using a Lean development environment."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://people.mpim-bonn.mpg.de/scholze/Analytic.pdf",
+   "final_url": "https://people.mpim-bonn.mpg.de/scholze/Analytic.pdf",
+   "status": 200,
+   "readable": false,
+   "reason": "pdf",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

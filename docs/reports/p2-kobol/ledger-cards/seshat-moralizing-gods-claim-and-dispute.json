@@ -1,0 +1,433 @@
+{
+ "slug": "seshat-moralizing-gods-claim-and-dispute",
+ "title": "History database tests moralizing gods, then a dispute over missing data",
+ "first_published": "2019-03",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-019-1043-4",
+   "final_url": "https://www.nature.com/articles/s41586-019-1043-4?error=cookies_not_supported&code=a8c4f2d9-c9b2-4030-b396-f53c9d766cf5",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "RETRACTED ARTICLE: Complex societies precede moralizing gods throughout world history",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2019-03-20"
+    },
+    {
+     "source": "dc.date",
+     "date": "2019-03-20"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2019-03-20"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2019-03-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-03-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-01-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-02-19"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-03-20"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-019-1043-4",
+   "crossref": {
+    "doi": "10.1038/s41586-019-1043-4",
+    "resolves": true,
+    "title": "RETRACTED ARTICLE: Complex societies precede moralizing gods throughout world history",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-3-20",
+    "authors_first3": [
+     "Whitehouse",
+     "François",
+     "Savage"
+    ],
+    "author_count": 13,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41586-021-03656-3",
+      "type": "retraction",
+      "source": "retraction-watch"
+     },
+     {
+      "doi": "10.1038/s41586-021-03656-3",
+      "type": "retraction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The origins of religion and of complex societies represent evolutionary puzzles1–8. The ‘moralizing gods’ hypothesis offers a solution to both puzzles by proposing that belief in morally concerned supernatural agents culturally evolved to facilitate cooperation among strangers in large-scale societi",
+   "passages": [
+    "Letter Published: 20 March 2019 RETRACTED ARTICLE: Complex societies precede moralizing gods throughout world history Harvey Whitehouse1 na1, Pieter François1,2 na1, Patrick E.",
+    "RETRACTED ARTICLE: Complex societies precede moralizing gods throughout world history.",
+    "Author informationAuthor notesThese authors contributed equally: Harvey Whitehouse, Pieter François, Patrick E.",
+    "SavageAuthors and AffiliationsCentre for the Study of Social Cohesion, University of Oxford, Oxford, UKHarvey Whitehouse, Pieter François, Patrick E.",
+    "Our analyses not only confirm the association between moralizing gods and social complexity, but also reveal that moralizing gods follow—rather than precede—large increases in social complexity.",
+    "Moralizing gods are not a prerequisite for the evolution of social complexity, but they may help to sustain and expand complex multi-ethnic empires after they have become established."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1038/s41586-021-03655-4",
+   "final_url": "https://www.nature.com/articles/s41586-021-03655-4?error=cookies_not_supported&code=6d0f98a3-e9d1-4674-9178-3588b1d7e06c",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Treatment of missing data determined conclusions regarding moralizing gods",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-06-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2021-07-07"
+    },
+    {
+     "source": "dc.date",
+     "date": "2021-07-07"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2021-07-07"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2021-07-07"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-07-07"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-05-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-02-18"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-07-07"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-021-03655-4",
+   "crossref": {
+    "doi": "10.1038/s41586-021-03655-4",
+    "resolves": true,
+    "title": "Treatment of missing data determined conclusions regarding moralizing gods",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2021-7-7",
+    "authors_first3": [
+     "Beheim",
+     "Atkinson",
+     "Bulbulia"
+    ],
+    "author_count": 15,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "Letter"
+   },
+   "meta_description": null,
+   "passages": [
+    "Matters Arising Published: 07 July 2021 Treatment of missing data determined conclusions regarding moralizing gods Bret Beheim ORCID: orcid.org/0000-0003-4653-31551, Quentin D.",
+    "Nature https://doi.org/10.1038/s41586-019-1043-4 (2019)Whitehouse, et al.1 used the Seshat archaeo-historical databank2 to argue that beliefs in moralizing gods appear in world history only after the formation of complex ‘megasocieties’ of around one million people.",
+    "Treatment of missing data determined conclusions regarding moralizing gods.",
+    "However, inspection of the data they used shows that 61% of the data points on moralizing gods in the Seshat databank are missing values, mostly from smaller populations of less than one million people.",
+    "History Religion Historical and Theological Perspectives on Ancient Religions Data availability Supplementary data are available at https://github.com/babeheim/moralizing-gods-reanalysis.",
+    "Complex societies precede moralizing gods throughout world history."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": null,
+   "final_url": null,
+   "status": null,
+   "readable": false,
+   "reason": "no url",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.31234/osf.io/2amjz",
+      "title": "Historians Respond to Whitehouse et al. (2019), “Complex Societies Precede Moralizing Gods Throughout World History”",
+      "container": null,
+      "date": "2019-5-2",
+      "score": 140.64519
+     },
+     {
+      "doi": "10.1558/jch.39578",
+      "title": "Some Remarks on Whitehouse et al. (2019), “Complex Societies Precede Moralizing Gods throughout World History”",
+      "container": "Journal of Cognitive Historiography",
+      "date": "2022-1-6",
+      "score": 115.89691
+     },
+     {
+      "doi": "10.1558/jch.39885",
+      "title": "Big Gods and Big Rituals",
+      "container": "Journal of Cognitive Historiography",
+      "date": "2022-1-6",
+      "score": 98.64565
+     }
+    ],
+    "arxiv": []
+   },
+   "resolved_to": "https://doi.org/10.31234/osf.io/2amjz",
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://doi.org/10.1073/pnas.1708800115",
+   "final_url": "https://pnas.org/doi/full/10.1073/pnas.1708800115",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2017-12-21"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1073/pnas.1708800115",
+   "crossref": {
+    "doi": "10.1073/pnas.1708800115",
+    "resolves": true,
+    "title": "Quantitative historical analysis uncovers a single dimension of complexity that structures global variation in human social organization",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2017-12-21",
+    "authors_first3": [
+     "Turchin",
+     "Currie",
+     "Whitehouse"
+    ],
+    "author_count": 53,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5777031/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5777031/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Quantitative historical analysis uncovers a single dimension of complexity that structures global variation in human social organization",
+     "title_match": true,
+     "date": "2017-12-20",
+     "passages": [
+      "To advance beyond purely theoretical debates and comparisons based on limited samples, we have built a massive repository of systematically collected, structured historical and archaeological data known as “Seshat: Global History Databank” (26) (Materials and Methods).",
+      "To test between competing hypotheses, we constructed a massive repository of historical and archaeological information known as “Seshat: Global History Databank.”",
+      "Data deposition: We have created a publicly accessible website (seshatdatabank.info/) that shows how entries in “Seshat: Global History Databank,” are supported by references, and explanations and justifications of the codes.",
+      "Keywords: cultural evolution, sociopolitical complexity, comparative history, comparative archaeology, quantitative historyAbstract Do human societies from around the world exhibit similarities in the way that they are structured, and show commonalities in the ways that they have evolved?",
+      "In this paper, we address these issues by building a global historical and archaeological database that takes into account the fragmentary and disputed nature of information about the human past.",
+      "To test hypotheses about the underlying structure of variation in human social organization, we apply a suite of statistical techniques to these data, including principal component analysis (PCA)."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-021-03655-4",
+   "final_url": "https://www.nature.com/articles/s41586-021-03655-4?error=cookies_not_supported&code=6d0f98a3-e9d1-4674-9178-3588b1d7e06c",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Treatment of missing data determined conclusions regarding moralizing gods",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-06-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2021-07-07"
+    },
+    {
+     "source": "dc.date",
+     "date": "2021-07-07"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2021-07-07"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2021-07-07"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-07-07"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-05-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-02-18"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-07-07"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-021-03655-4",
+   "crossref": {
+    "doi": "10.1038/s41586-021-03655-4",
+    "resolves": true,
+    "title": "Treatment of missing data determined conclusions regarding moralizing gods",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2021-7-7",
+    "authors_first3": [
+     "Beheim",
+     "Atkinson",
+     "Bulbulia"
+    ],
+    "author_count": 15,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "Letter"
+   },
+   "meta_description": null,
+   "passages": [
+    "Nature https://doi.org/10.1038/s41586-019-1043-4 (2019)Whitehouse, et al.1 used the Seshat archaeo-historical databank2 to argue that beliefs in moralizing gods appear in world history only after the formation of complex ‘megasocieties’ of around one million people.",
+    "Matters Arising Published: 07 July 2021 Treatment of missing data determined conclusions regarding moralizing gods Bret Beheim ORCID: orcid.org/0000-0003-4653-31551, Quentin D.",
+    "However, inspection of the data they used shows that 61% of the data points on moralizing gods in the Seshat databank are missing values, mostly from smaller populations of less than one million people.",
+    "History Religion Historical and Theological Perspectives on Ancient Religions Data availability Supplementary data are available at https://github.com/babeheim/moralizing-gods-reanalysis.",
+    "Complex societies precede moralizing gods throughout world history.",
+    "2 Distribution of social complexity score by ‘moralizing gods’ outcome status.Before statistical analyses were performed in Whitehouse, et al.1, all ‘unknown’ or ‘suspected unknown’ (NA) cases were treated as moralizing gods ‘absent’ (0) without explicit description in the manuscript."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "url": null,
+   "final_url": null,
+   "status": null,
+   "readable": false,
+   "reason": "no url",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": {
+    "crossref": [
+     {
+      "doi": "10.31235/osf.io/jerza",
+      "title": "An Integrative Approach to Estimating Productivity in Past Societies using Seshat: Global History Databank",
+      "container": null,
+      "date": "2019-1-31",
+      "score": 62.108486
+     },
+     {
+      "doi": "10.63744/e3j3d5qsvq99",
+      "title": "A Macroscope for Global History: Seshat Global History Databank, a methodological overview",
+      "container": "Digital Humanities Quarterly",
+      "date": "2016-10-24",
+      "score": 60.339394
+     },
+     {
+      "doi": "10.21237/c7clio6127917",
+      "title": "Seshat: The Global History Databank",
+      "container": "Cliodynamics: The Journal of Quantitative History and Cultural Evolution",
+      "date": "2015-6-30",
+      "score": 54.782963
+     }
+    ],
+    "arxiv": []
+   },
+   "resolved_to": null,
+   "verdict": "unresolved"
+  }
+ ]
+}

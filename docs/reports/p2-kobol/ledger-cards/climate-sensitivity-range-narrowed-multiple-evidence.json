@@ -1,0 +1,99 @@
+{
+ "slug": "climate-sensitivity-range-narrowed-multiple-evidence",
+ "title": "A 25-author assessment narrows how much warming doubled carbon dioxide brings",
+ "first_published": "2020-07-22",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1029/2019RG000678",
+   "final_url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000678",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2020-09-25"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1029/2019rg000678",
+   "crossref": {
+    "doi": "10.1029/2019rg000678",
+    "resolves": true,
+    "title": "An Assessment of Earth's Climate Sensitivity Using Multiple Lines of Evidence",
+    "container": "Reviews of Geophysics",
+    "publisher": "American Geophysical Union (AGU)",
+    "type": "journal-article",
+    "issued": "2020-9-25",
+    "authors_first3": [
+     "Sherwood",
+     "Webb",
+     "Annan"
+    ],
+    "author_count": 25,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524012/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7524012/",
+     "status": 200,
+     "readable": true,
+     "title_found": "An Assessment of Earth's Climate Sensitivity Using Multiple Lines of Evidence",
+     "title_match": true,
+     "date": "2020-09-24",
+     "passages": [
+      "Combining multiple lines of evidence will increase our confidence and tighten the range of likely ECS if the lines of evidence are broadly consistent.",
+      "It would be perhaps easier to imagine some unanticipated negative cloud feedback—but one that simultaneously has not appeared in climate models, detailed cloud simulations, or observed interannual variability or trends since 1979, so all lines of evidence would somehow have missed this feedback.",
+      "Key Findings Each main line of evidence considered here—process knowledge, the historical warming record, and the paleoclimate record—accords poorly with values outside the traditional “Charney” range of 1.5–4.5 K for climate sensitivity S.",
+      "The most recent report by the Intergovernmental Panel on Climate Change (IPCC) (2013) asserted the same now‐familiar range but more precisely dubbed it a >66% (“likely”) credible interval, implying an up to one in three chances of being outside that range.",
+      "Many previous studies have used past climate changes to constrain climate sensitivity using Bayesian methods (e.g., Aldrin et al., 2012; Johansson et al., 2015; Skeie et al., 2014, 2018) and so had to specify priors.",
+      "GCM simulations and observations of the seasonal cycle, interannual variability, and climate trends all exhibit relatively small changes in relative humidity with warming, and therefore large increases in specific humidity with warming (Boucher et al., 2013; Dessler & Sherwood, 2009)."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/",
+   "final_url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Chapter 7: The Earth’s Energy Budget, Climate Feedbacks, and Climate Sensitivity",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": ".",
+   "passages": [
+    "It also provides a fundamental test of climate models and their projections.This chapter principally builds on the IPCC Fifth Assessment Report (AR5; Boucher, 2012; Church et al., 2013; M.",
+    "Some climate models of the new generation are more sensitive than the range assessed in the IPCC Sixth Assessment Report.",
+    "In particular, the addition of ‘(one standard deviation)’ indicates that the range represents one standard deviation.In Box 7.1 an energy budget framework is introduced, which forms the basis for the discussions and scientific assessment in the remainder of this chapter and across the Report.",
+    "For the period 1970–2011, AR5 reported that the global energy budget was closed within uncertainties (high confidence) and consistent with the likely range of assessed climate sensitivity (Church et al., 2013).",
+    "ESMs are also used to estimate uncertainty due the internal climate variability that may have contributed to observed changes in temperature and energy imbalance (e.g., Palmer and McNeall, 2014; Sherwood et al., 2020).",
+    "The evidence comprising the AR6 assessment is shown below this: energy balance constraints [–2 to 0 W m–2 with no best estimate]; observational evidence from satellite retrievals of –1.4 [–2.2 to –0.6] W m–2; and climate model-based evidence of –1.25 [–2.1 to –0.4] W m–2."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "slug": "rts-s-malaria-vaccine-first-approved",
+ "title": "First malaria vaccine RTS,S cuts clinical cases in African children",
+ "first_published": "2015-04-23",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1016/S0140-6736(15)60721-8",
+   "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0140673615607218",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Redirecting",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2015-06-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1016/s0140-6736(15)60721-8",
+   "crossref": {
+    "doi": "10.1016/s0140-6736(15)60721-8",
+    "resolves": true,
+    "title": "Efficacy and safety of RTS,S/AS01 malaria vaccine with or without a booster dose in infants and children in Africa: final results of a phase 3, individually randomised, controlled trial",
+    "container": "The Lancet",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2015-7",
+    "authors_first3": [],
+    "author_count": 0,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [
+    {
+     "kind": "pmc",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5626001/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5626001/",
+     "status": 200,
+     "readable": true,
+     "title_found": "Efficacy and safety of RTS,S/AS01 malaria vaccine with or without a booster dose in infants and children in Africa: final results of a phase 3, individually randomised, controlled trial",
+     "title_match": true,
+     "date": "2015-04-22",
+     "passages": [
+      "Efficacy and safety of the RTS,S/AS01 malaria vaccine during 18 months after vaccination: a phase 3 randomized, controlled trial in children and young infants at 11 African sites.",
+      "PMC Copyright notice PMCID: PMC5626001 EMSID: EMS74290 PMID: 25913272 The publisher's version of this article is available at Lancet See commentary \"Final results from a pivotal phase 3 malaria vaccine trial.\" on page 5.",
+      "Design of a phase III multicenter trial to evaluate the efficacy of the RTS,S/AS01 malaria vaccine in children across diverse transmission settings in Africa.",
+      "No significant efficacy against severe malaria was noted during the study period in young infants or children who did not receive a booster dose of vaccine.",
+      "First results of phase 3 trial of RTS,S/AS01 malaria vaccine in African children.",
+      "Efficacy against clinical malaria (primary case definition) of a primary schedule with or without a booster dose and incremental efficacy of the booster dose."
+     ]
+    }
+   ],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable_via_open_copy"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.ema.europa.eu/en/medicines/human/EU-opinions/mosquirix",
+   "final_url": "https://www.ema.europa.eu/en/medicines/human/EU-opinions/mosquirix",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Page or document not found | European Medicines Agency (EMA)",
+   "title_match": false,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2023-01-11"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "We are sorry, but the content you tried to access is unavailable at the link you used, which was either incorrect or out-of-date. To help you find what you are looking for, we have included some useful tips.",
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "dead"
+  }
+ ]
+}

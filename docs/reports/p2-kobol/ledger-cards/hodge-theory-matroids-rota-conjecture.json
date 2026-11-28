@@ -1,0 +1,187 @@
+{
+ "slug": "hodge-theory-matroids-rota-conjecture",
+ "title": "Hodge theory proves the Heron-Rota-Welsh conjecture for matroids",
+ "first_published": "2015-11",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/1511.02888",
+   "final_url": "https://arxiv.org/abs/1511.02888",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Hodge Theory for Combinatorial Geometries",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2018-05-01"
+    },
+    {
+     "source": "citation_date",
+     "date": "2015-11-09"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1511.02888: Hodge Theory for Combinatorial Geometries",
+   "passages": [
+    "We use the Hodge-Riemann relations to resolve a conjecture of Heron, Rota, and Welsh that postulates the log-concavity of the coefficients of the characteristic polynomial of M.",
+    "We prove the hard Lefschetz theorem and the Hodge-Riemann relations for a commutative ring associated to an arbitrary matroid M.",
+    "We furthermore conclude that the f-vector of the independence complex of a matroid forms a log-concave sequence, proving a conjecture of Mason and Welsh for general matroids.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://annals.math.princeton.edu/2018/188-2/p01",
+   "final_url": "https://annals.math.princeton.edu/2018/188-2/p01",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Hodge theory for combinatorial geometries",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-01-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-09-01"
+    }
+   ],
+   "date_ok": false,
+   "doi": "https://doi.org/10.4007/annals.2018.188.2.1",
+   "crossref": {
+    "doi": "https://doi.org/10.4007/annals.2018.188.2.1",
+    "resolves": true,
+    "title": "Hodge theory for combinatorial geometries",
+    "container": "Annals of Mathematics",
+    "publisher": "Annals of Mathematics",
+    "type": "journal-article",
+    "issued": "2018-9-1",
+    "authors_first3": [
+     "Adiprasito",
+     "Huh",
+     "Katz"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "We use the Hodge-Riemann relations to resolve a conjecture of Heron, Rota, and Welsh that postulates the log-concavity of the coefficients of the characteristic polynomial of $\\mathrm {M}$.",
+    "We furthermore conclude that the $f$-vector of the independence complex of a matroid forms a log-concave sequence, proving a conjecture of Mason and Welsh for general matroids."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2002.03341",
+   "final_url": "https://arxiv.org/abs/2002.03341",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A semi-small decomposition of the Chow ring of a matroid",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2020-10-14"
+    },
+    {
+     "source": "citation_date",
+     "date": "2020-02-09"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2002.03341: A semi-small decomposition of the Chow ring of a matroid",
+   "passages": [
+    "The decomposition is used to give simple proofs of Poincaré duality, the hard Lefschetz theorem, and the Hodge-Riemann relations for the Chow ring, recovering the main result of [AHK18].",
+    "We give a semi-small orthogonal decomposition of the Chow ring of a matroid M.",
+    "We also show that a similar semi-small orthogonal decomposition holds for the augmented Chow ring of M."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://mathunion.org/imu-awards/fields-medal/fields-medals-2022",
+   "final_url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2022",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Fields Medals 2022",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Explore the 2022 Fields Medal winners recognized for groundbreaking achievements in mathematics and their future promise.",
+   "passages": [
+    "In 2022, the prize funds from the University of Toronto were supplemented by generous support from the Heidelberg Laureate Forum Foundation/Klaus Tschira Stiftung."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2002.03341",
+   "final_url": "https://arxiv.org/abs/2002.03341",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A semi-small decomposition of the Chow ring of a matroid",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2020-10-14"
+    },
+    {
+     "source": "citation_date",
+     "date": "2020-02-09"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2002.03341: A semi-small decomposition of the Chow ring of a matroid",
+   "passages": [
+    "The decomposition is used to give simple proofs of Poincaré duality, the hard Lefschetz theorem, and the Hodge-Riemann relations for the Chow ring, recovering the main result of [AHK18].",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

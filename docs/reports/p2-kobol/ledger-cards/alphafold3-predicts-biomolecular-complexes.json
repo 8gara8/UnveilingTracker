@@ -1,0 +1,224 @@
+{
+ "slug": "alphafold3-predicts-biomolecular-complexes",
+ "title": "AlphaFold 3 predicts how proteins, DNA, RNA and drugs fit together",
+ "first_published": "2024-05-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1038/s41586-024-07487-w",
+   "final_url": "https://www.nature.com/articles/s41586-024-07487-w?error=cookies_not_supported&code=ceb61b3d-31c7-4b33-8cbd-c25641291c7c",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-05-08"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-05-08"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-05-08"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-05-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-05-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-12-19"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-04-29"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-05-08"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-024-07487-w",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07487-w",
+    "resolves": true,
+    "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-5-8",
+    "authors_first3": [
+     "Abramson",
+     "Adler",
+     "Dunger"
+    ],
+    "author_count": 48,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41586-024-08416-7",
+      "type": "addendum",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The introduction of AlphaFold 21 has spurred a revolution in modelling the structure of proteins and their interactions, enabling a huge range of applications in protein modelling and design2–6. Here we describe our AlphaFold 3 model with a substantially updated diffusion-based architecture that is ",
+   "passages": [
+    "Accurate structure prediction of biomolecular interactions with AlphaFold 3.",
+    "Here we describe our AlphaFold 3 model with a substantially updated diffusion-based architecture that is capable of predicting the joint structure of complexes including proteins, nucleic acids, small molecules, ions and modified residues.",
+    "6 for examples of predicted protein, DNA and RNA structures with covalent modifications, including analysis of the impact of phosphorylation on predictions.While expanding in modelling abilities, AF3 has also improved in protein complex accuracy relative to AlphaFold-Multimer (v.2.3)7,8.",
+    "Highly accurate protein structure prediction with AlphaFold.",
+    "GitHub https://github.com/google-deepmind/alphafold/blob/main/docs/technical_note_v2.3.0.md (2022).Isert, C., Atz, K. & Schneider, G.",
+    "E2Efold-3D: end-to-end deep learning method for accurate de novo RNA 3D structure prediction."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11168924/",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11168924/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-05-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-05-08"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-024-07487-w",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07487-w",
+    "resolves": true,
+    "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-5-8",
+    "authors_first3": [
+     "Abramson",
+     "Adler",
+     "Dunger"
+    ],
+    "author_count": 48,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41586-024-08416-7",
+      "type": "addendum",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "The introduction of AlphaFold 21 has spurred a revolution in modelling the structure of proteins and their interactions, enabling a huge range of applications in protein modelling and design2–6. Here we describe our AlphaFold 3 model with a ...",
+   "passages": [
+    "PMC Copyright notice PMCID: PMC11168924 PMID: 38718835 See the addendum \"Addendum: Accurate structure prediction of biomolecular interactions with AlphaFold 3\" in volume 636 on page E4.",
+    "Ground truth structure in grey; predicted protein in blue, predicted RNA in purple, predicted DNA in magenta, predicted ions in orange, with predicted modifications highlighted via spheres.While expanding in modelling abilities, AF3 has also improved in protein complex accuracy relative to AlphaFold-Multimer (v.2.3)7,8.",
+    "Here we describe our AlphaFold 3 model with a substantially updated diffusion-based architecture that is capable of predicting the joint structure of complexes including proteins, nucleic acids, small molecules, ions and modified residues.",
+    "Comparison between AlphaFold 3 and RoseTTAFold2NA (RF2NA) (RNA: N = 29 structures, paired Wilcoxon signed-rank test, p = 1.6 * 10−7; DNA: N = 63 structures, paired two-sided Wilcoxon signed-rank test, p = 5.2 * 10−12).",
+    "Highly accurate protein structure prediction with AlphaFold.",
+    "E2Efold-3D: end-to-end deep learning method for accurate de novo RNA 3D structure prediction."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11634763/",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11634763/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Addendum: Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-11-26"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-11-27"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-024-08416-7",
+   "crossref": {
+    "doi": "10.1038/s41586-024-08416-7",
+    "resolves": true,
+    "title": "Addendum: Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-11-27",
+    "authors_first3": [
+     "Abramson",
+     "Adler",
+     "Dunger"
+    ],
+    "author_count": 48,
+    "update_to": [
+     {
+      "doi": "10.1038/s41586-024-07487-w",
+      "type": "addendum",
+      "source": "publisher"
+     }
+    ],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "addendum"
+   },
+   "meta_description": null,
+   "passages": [
+    "PMC Copyright notice PMCID: PMC11634763 PMID: 39604737 See \"Accurate structure prediction of biomolecular interactions with AlphaFold 3\" in volume 630 on page 493.",
+    "Google DeepMind has now released the underlying inference code, which can be accessed here: https://github.com/google-deepmind/alphafold3.",
+    "The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

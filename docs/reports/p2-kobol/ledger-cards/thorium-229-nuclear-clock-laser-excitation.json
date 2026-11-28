@@ -1,0 +1,162 @@
+{
+ "slug": "thorium-229-nuclear-clock-laser-excitation",
+ "title": "Lasers excite the thorium-229 nucleus, a step to a nuclear clock",
+ "first_published": "2024-04-18",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2404.12311",
+   "final_url": "https://arxiv.org/abs/2404.12311",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Laser excitation of the $^{229}$Th nuclear isomeric transition in a solid-state host",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2024-04-18"
+    },
+    {
+     "source": "citation_date",
+     "date": "2024-04-18"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2404.12311: Laser excitation of the $^{229}$Th nuclear isomeric transition in a solid-state host",
+   "passages": [
+    "Hudson View a PDF of the paper titled Laser excitation of the $^{229}$Th nuclear isomeric transition in a solid-state host, by R.",
+    "This feature is assigned to the excitation of the $^{229}$Th nuclear isomeric state, whose energy is found to be $8.355733(2)_{\\textrm{stat}}(10)_{\\textrm{sys}}$ eV in $^{229}$Th:\\thor:LiSrAlF$_6$.",
+    "Two spectroscopic features near the nuclear transition energy are observed.",
+    "The second is a narrow, laser-linewidth-limited spectral feature at $148.38219(4)_{\\textrm{stat}}(20)_{\\textrm{sys}}$ nm ($2020407.3(5)_{\\textrm{stat}}(30)_{\\textrm{sys}}$ GHz) that decays with a lifetime of $568(13)_{\\textrm{stat}}(20)_{\\textrm{sys}}$ s.",
+    "The first is a broad excitation feature that produces red-shifted fluorescence that decays with a timescale of a few seconds."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1103/PhysRevLett.132.182501",
+   "final_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.182501",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Laser Excitation of the Th-229 Nucleus",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2024-04-29"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2024-04-29"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-04-29"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1103/physrevlett.132.182501",
+   "crossref": {
+    "doi": "10.1103/physrevlett.132.182501",
+    "resolves": true,
+    "title": "Laser Excitation of the Th-229 Nucleus",
+    "container": "Physical Review Letters",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2024-4-29",
+    "authors_first3": [
+     "Tiedau",
+     "Okhapkin",
+     "Zhang"
+    ],
+    "author_count": 17,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Researchers use a laser to excite and precisely measure a long-sought exotic nuclear state, paving the way for precise timekeeping and ultrasensitive quantum sensing.",
+   "passages": [
+    "132, 182501 – Published 29 April, 2024DOI: https://doi.org/10.1103/PhysRevLett.132.182501 Export CitationShow metricsHide metricsAbstractThe 8.4 eV nuclear isomer state in Th-229 is resonantly excited in Th-doped CaF2 crystals using a tabletop tunable laser system.",
+    "Schumm‡Vienna Center for Quantum Science and Technology, Atominstitut, TU Wien, 1020 Vienna, Austria*These authors contributed equally to this letter.†ekkehard.peik@ptb.de‡thorsten.schumm@tuwien.ac.atPDFShareXFacebookMendeleyLinkedInRedditSina WeiboPhys.",
+    "See Supplemental Material at http://link.aps.org/supplemental/10.1103/PhysRevLett.132.182501 for Th:CaF2 crystal production, an estimation of the expected isomer signal, decay and background subtraction, additional resonance scans and decay curves, which includes Refs. [22,26,28,30].",
+    "The nuclear resonance for the Th4+ ions in Th:CaF2 is measured at the wavelength 148.3821(5) nm, frequency 2020.409(7) THz, and the fluorescence lifetime in the crystal is 630(15) s, corresponding to an isomer half-life of 1740(50) s for a nucleus isolated in vacuum.",
+    "18 — 3 May 2024Received 5 February 2024Revised 12 March 2024Accepted 14 March 2024Export CitationReuse & PermissionsDOI: https://doi.org/10.1103/PhysRevLett.132.182501Published by the American Physical Society under the terms of the Creative Commons Attribution 4.0 International license.",
+    "This license permits unrestricted use, distribution, and reproduction in any medium, provided attribution to the author(s) and the published article's title, journal citation, and DOI are maintained."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2406.18719",
+   "final_url": "https://arxiv.org/abs/2406.18719",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Frequency ratio of the $^{229\\mathrm{m}}$Th nuclear isomeric transition and the $^{87}$Sr atomic clock",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2024-09-07"
+    },
+    {
+     "source": "citation_date",
+     "date": "2024-06-26"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-09-04"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-024-07839-6",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07839-6",
+    "resolves": true,
+    "title": "Frequency ratio of the 229mTh nuclear isomeric transition and the 87Sr atomic clock",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-9-4",
+    "authors_first3": [
+     "Zhang",
+     "Ooi",
+     "Higgins"
+    ],
+    "author_count": 12,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2406.18719: Frequency ratio of the $^{229\\mathrm{m}}$Th nuclear isomeric transition and the $^{87}$Sr atomic clock",
+   "passages": [
+    "This VUV comb establishes a frequency link between nuclear and electronic energy levels and allows us to directly measure the frequency ratio of the $^{229}$Th nuclear clock transition and the $^{87}$Sr atomic clock.",
+    "Here, we use a VUV frequency comb to directly excite the narrow $^{229}$Th nuclear clock transition in a solid-state CaF$_2$ host material and determine the absolute transition frequency.",
+    "We stabilize the fundamental frequency comb to the JILA $^{87}$Sr clock$^2$ and coherently upconvert the fundamental to its 7th harmonic in the VUV range using a femtosecond enhancement cavity.",
+    "However, quantum state-resolved spectroscopy of the $^{229m}$Th isomer to determine the underlying nuclear structure and establish a direct frequency connection with existing atomic clocks has yet to be performed.",
+    "Thorium-229 nuclei exhibit a uniquely low energy nuclear transition within reach of state-of-the-art vacuum ultraviolet (VUV) laser light sources and have therefore been proposed for construction of the first nuclear clock$^{3,4}$.",
+    "These results mark the start of nuclear-based solid-state optical clock and demonstrate the first comparison of nuclear and atomic clocks for fundamental physics studies."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}
