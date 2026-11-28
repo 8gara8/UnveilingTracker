@@ -1,0 +1,1829 @@
+{
+ "note": "Extra candidate sources of the Landmark Ledger, drafted in the cloud from memory and partial search; nothing here is verified (each claim starts with how the cloud draft knew the URL: seen in a search result, rebuilt from a DOI, or from memory). Input for Kobol batch K2b, the same shape as K2-input.json. Fields: candidates (title, first_published, one_line, who) and items (one row per cited URL: slug, role source or reaction, i the index, kind, url or null, title, claim).",
+ "candidates": [
+  {
+   "slug": "four-new-elements-complete-seventh-row",
+   "title": "Four superheavy elements are recognised, completing the periodic table's seventh row",
+   "first_published": "2015-12-30",
+   "subfield": "synthesis",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "confirmed",
+   "bar": "rung",
+   "who": [
+    "RIKEN Nishina Center, Japan (Kosuke Morita group, element 113)",
+    "Joint Institute for Nuclear Research, Dubna, with Lawrence Livermore and Oak Ridge National Laboratories (elements 115, 117 and 118)"
+   ],
+   "one_line": "An IUPAC and IUPAP expert panel recognised the discovery of elements 113, 115, 117 and 118, the last four of the seventh row. A team at GSI in Germany had reproduced element 117 in 2014.",
+   "field": "chemistry"
+  },
+  {
+   "slug": "borophene-two-teams-make-2d-boron",
+   "title": "Borophene, a one-atom-thick metal sheet of pure boron, is made and confirmed",
+   "first_published": "2015-12-18",
+   "subfield": "materials",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "confirmed",
+   "bar": "rung",
+   "who": [
+    "Northwestern University and Argonne National Laboratory (Mark Hersam and Nathan Guisinger groups)"
+   ],
+   "one_line": "Northwestern and Argonne researchers grew atomically thin boron sheets on silver, as theory had predicted, and showed they conduct like a metal. A Chinese team reported similar sheets in March 2016.",
+   "field": "chemistry"
+  },
+  {
+   "slug": "lk-99-independent-checks-no-superconductivity",
+   "title": "Independent labs find LK-99 is not a room-temperature superconductor",
+   "first_published": "2023-08",
+   "subfield": "materials",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "confirmed",
+   "bar": "rung",
+   "who": [
+    "Max Planck Institute for Solid State Research, Stuttgart (Pascal Puphal, Bernhard Keimer)",
+    "Institute of Physics, Chinese Academy of Sciences, Beijing (Shilin Zhu, Jianlin Luo; from memory)",
+    "University of Manchester (Ivan Timokhin, Artem Mishchenko; from memory)",
+    "University of Illinois Urbana-Champaign (Prashant Jain)"
+   ],
+   "one_line": "Within weeks, labs in Germany, China, the UK and the US found that LK-99 does not superconduct, and that copper sulfide in the samples explains the claimed signs.",
+   "field": "chemistry"
+  },
+  {
+   "slug": "rigorous-test-electric-ammonia-claims-lithium",
+   "title": "A strict test shows most electric ammonia claims lacked proof, except lithium-mediated",
+   "first_published": "2019-05-22",
+   "subfield": "catalysis",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "confirmed",
+   "bar": "rung",
+   "who": [
+    "Technical University of Denmark (Ib Chorkendorff and Jens Nørskov groups)",
+    "Stanford University (Thomas Jaramillo, Stacey Bent and Matteo Cargnello groups; from memory)",
+    "Imperial College London (Ifan Stephens; from memory)"
+   ],
+   "one_line": "A team from Denmark, the US and the UK showed how to check electric ammonia from nitrogen with isotope labels. It found no ammonia from the best aqueous metal catalysts, and proved ammonia from a lithium route.",
+   "field": "chemistry"
+  },
+  {
+   "slug": "neural-networks-solve-schrodinger-equation-molecules",
+   "title": "Two teams use neural networks to solve the Schrödinger equation for molecules",
+   "first_published": "2019-09-05",
+   "subfield": "materials",
+   "ai_role": "ai_solved",
+   "ai_systems": [
+    "FermiNet (Fermionic Neural Network), Google DeepMind and Imperial College London"
+   ],
+   "proposed_rung": "confirmed",
+   "bar": "rung",
+   "who": [
+    "Google DeepMind with Imperial College London (David Pfau, James Spencer, Alexander Matthews, Matthew Foulkes)"
+   ],
+   "one_line": "DeepMind and Imperial researchers trained a neural network to represent the electrons of a small molecule and solve its quantum equation without training data. A Berlin team independently built a similar network, PauliNet.",
+   "field": "chemistry"
+  },
+  {
+   "slug": "ebola-vaccine-ervebo-ring-trial",
+   "title": "Ebola vaccine protects in Guinea ring trial, then wins approval",
+   "first_published": "2015-07",
+   "subfield": "infection-immunity",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "applied",
+   "bar": "rung",
+   "who": [
+    "World Health Organization",
+    "Guinea Ministry of Health",
+    "Merck"
+   ],
+   "one_line": "In a 2015 ring vaccination trial in Guinea, the rVSV-ZEBOV vaccine prevented Ebola in contacts of cases. The vaccine, later called Ervebo, was approved by the US FDA and the European Union in late 2019.",
+   "field": "biology"
+  },
+  {
+   "slug": "sotorasib-first-kras-drug-approved",
+   "title": "First KRAS-targeting cancer drug, sotorasib, wins FDA approval for lung cancer",
+   "first_published": "2019-10",
+   "subfield": "drugs",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "applied",
+   "bar": "rung",
+   "who": [
+    "Amgen",
+    "University of Texas MD Anderson Cancer Center"
+   ],
+   "one_line": "Sotorasib blocks a mutant form of KRAS, a cancer driver long judged undruggable. After early trials, the FDA gave it accelerated approval in May 2021 for lung cancer with the KRAS G12C change.",
+   "field": "biology"
+  },
+  {
+   "slug": "prime-editing-rewrites-dna-no-breaks",
+   "title": "Prime editing rewrites DNA without cutting both strands or using donor DNA",
+   "first_published": "2019-10-21",
+   "subfield": "genomics",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "confirmed",
+   "bar": "rung",
+   "who": [
+    "Liu lab, Broad Institute of MIT and Harvard",
+    "Howard Hughes Medical Institute"
+   ],
+   "one_line": "Prime editing is a CRISPR-based tool that copies a short typed-in DNA sequence into a chosen spot, without cutting both DNA strands or supplying a separate donor DNA piece. Other labs have used it in plants and other organisms.",
+   "field": "biology"
+  },
+  {
+   "slug": "speech-neuroprostheses-stanford-ucsf-2023",
+   "title": "Two brain implants turn attempted speech into text and voice",
+   "first_published": "2023-08-23",
+   "subfield": "neuroscience",
+   "ai_role": "ai_tool",
+   "ai_systems": [
+    "Recurrent neural network speech decoder (Stanford)",
+    "Deep learning speech and avatar decoder (UCSF)"
+   ],
+   "proposed_rung": "confirmed",
+   "bar": "rung",
+   "who": [
+    "Stanford University",
+    "University of California San Francisco"
+   ],
+   "one_line": "Two teams, at Stanford and UCSF, reported brain implants that let people who cannot speak, one with ALS and one after a stroke, communicate faster than earlier devices by decoding attempted speech with neural networks.",
+   "field": "biology"
+  },
+  {
+   "slug": "r21-malaria-vaccine-who-prequalified",
+   "title": "R21/Matrix-M malaria vaccine protects children and gains WHO prequalification",
+   "first_published": "2021-04",
+   "subfield": "infection-immunity",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "applied",
+   "bar": "rung",
+   "who": [
+    "University of Oxford",
+    "Clinical Research Unit of Nanoro, Burkina Faso",
+    "Serum Institute of India"
+   ],
+   "one_line": "In Burkina Faso, a low-dose R21/Matrix-M malaria vaccine given to young children before the rainy season cut clinical malaria in a randomised trial. WHO recommended it in October 2023 and prequalified it in December 2023.",
+   "field": "biology"
+  },
+  {
+   "slug": "noaa-ai-global-weather-models-operational",
+   "title": "NOAA puts three AI global weather models into daily operation",
+   "first_published": "2025-12-17",
+   "subfield": "weather",
+   "ai_role": "ai_ran",
+   "ai_systems": [
+    "AIGFS (NOAA)",
+    "AIGEFS (NOAA)",
+    "HGEFS (NOAA)"
+   ],
+   "proposed_rung": "applied",
+   "bar": "rung",
+   "who": [
+    "NOAA National Weather Service",
+    "NOAA Earth Prediction Innovation Center (EPIC)"
+   ],
+   "one_line": "On 17 December 2025 NOAA put three AI-driven global weather models into operation at the National Weather Service: AIGFS, AIGEFS and the hybrid HGEFS, which combines AI and physics-based ensemble forecasts.",
+   "field": "earth"
+  },
+  {
+   "slug": "deepmind-cyclone-model-hurricane-center-use",
+   "title": "Google DeepMind's cyclone model is used by the US National Hurricane Center",
+   "first_published": "2025-06",
+   "subfield": "weather",
+   "ai_role": "ai_tool",
+   "ai_systems": [
+    "Weather Lab cyclone model (Google DeepMind)"
+   ],
+   "proposed_rung": "applied",
+   "bar": "rung",
+   "who": [
+    "Google DeepMind",
+    "US National Hurricane Center (NOAA National Weather Service)"
+   ],
+   "one_line": "In 2025 Google DeepMind put an experimental AI cyclone model online in its Weather Lab, and the US National Hurricane Center used it as one of its forecast guidance tools during the hurricane season.",
+   "field": "earth"
+  },
+  {
+   "slug": "great-barrier-reef-2016-mass-bleaching",
+   "title": "Mass bleaching hits the Great Barrier Reef in 2016",
+   "first_published": "2017-03",
+   "subfield": "ecology",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "confirmed",
+   "bar": "rung",
+   "who": [
+    "James Cook University and the ARC Centre of Excellence for Coral Reef Studies (Hughes et al.)"
+   ],
+   "one_line": "In 2016 mass coral bleaching struck the Great Barrier Reef for the third time since 1998. Aerial surveys of thousands of reefs found the worst damage in the north; the Nature study links it to rising sea temperatures.",
+   "field": "earth"
+  },
+  {
+   "slug": "aegis-ai-picks-mars-laser-targets",
+   "title": "A Mars rover uses AI software to choose its own laser targets",
+   "first_published": "2016-06",
+   "subfield": "planetary",
+   "ai_role": "ai_ran",
+   "ai_systems": [
+    "AEGIS (NASA Jet Propulsion Laboratory)"
+   ],
+   "proposed_rung": "applied",
+   "bar": "rung",
+   "who": [
+    "NASA Jet Propulsion Laboratory (Caltech)",
+    "Mars Science Laboratory ChemCam team"
+   ],
+   "one_line": "Since 2016 NASA's Curiosity rover has used AEGIS, software that NASA calls AI, to choose rock targets and aim its ChemCam laser on its own, without waiting for instructions from Earth.",
+   "field": "earth"
+  },
+  {
+   "slug": "score-project-social-science-replicability",
+   "title": "Large project retests social-science claims and about half replicate",
+   "first_published": "2026-04",
+   "subfield": "replication",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "checked",
+   "bar": "reactions",
+   "who": [
+    "SCORE collaboration (865 researchers)",
+    "Center for Open Science"
+   ],
+   "one_line": "A collaboration of 865 researchers retested claims from social and behavioural science papers for replicability, reproducibility and robustness. Three Nature papers report that roughly half of the retested claims held up.",
+   "field": "social"
+  },
+  {
+   "slug": "ai-chatbot-chats-shift-voter-preferences",
+   "title": "Short chats with AI chatbots shift voters' political preferences",
+   "first_published": "2025-12-04",
+   "subfield": "politics-society",
+   "ai_role": "ai_ran",
+   "ai_systems": [
+    "GPT-4o (OpenAI), to be checked against the two papers"
+   ],
+   "proposed_rung": "checked",
+   "bar": "reactions",
+   "who": [
+    "Cornell University and MIT (Lin et al., Nature)",
+    "University of Oxford and London School of Economics (Hackenburg et al., Science)"
+   ],
+   "one_line": "Two papers published together tested AI chatbots that talk with voters. Short conversations moved people's stated preferences, and the most persuasive set-ups packed in more factual claims, which were less accurate on average.",
+   "field": "social"
+  },
+  {
+   "slug": "chatgpt-beats-crowd-workers-text-labels",
+   "title": "ChatGPT labels text for social science better than crowd workers",
+   "first_published": "2023-03",
+   "subfield": "replication",
+   "ai_role": "ai_tool",
+   "ai_systems": [
+    "ChatGPT gpt-3.5-turbo (OpenAI)"
+   ],
+   "proposed_rung": "confirmed",
+   "bar": "rung",
+   "who": [
+    "University of Zurich (Gilardi, Alizadeh, Kubli)"
+   ],
+   "one_line": "In five labelling tasks on tweets and news, ChatGPT's zero-shot accuracy beat crowd workers on four and its agreement was higher on all, at about twenty times lower cost. Other teams later reproduced the pattern with GPT-4.",
+   "field": "social"
+  },
+  {
+   "slug": "phone-data-targets-cash-aid-togo",
+   "title": "Phone data and machine learning pick who gets emergency cash in Togo",
+   "first_published": "2022-03",
+   "subfield": "economics",
+   "ai_role": "ai_tool",
+   "ai_systems": [
+    "machine-learning model trained on mobile phone records and surveys (UC Berkeley and Northwestern University researchers)"
+   ],
+   "proposed_rung": "applied",
+   "bar": "rung",
+   "who": [
+    "University of California, Berkeley",
+    "Northwestern University",
+    "Government of Togo (Novissi programme)"
+   ],
+   "one_line": "In 2020 Togo's government paid emergency cash to people chosen with a model trained on mobile phone records. A Nature study found it targeted poorer people better than geography-based methods, while missing some of the poor.",
+   "field": "social"
+  },
+  {
+   "slug": "ai-dialogues-reduce-conspiracy-beliefs",
+   "title": "Chats with an AI chatbot weaken belief in conspiracy theories",
+   "first_published": "2024-09",
+   "subfield": "psychology",
+   "ai_role": "ai_ran",
+   "ai_systems": [
+    "GPT-4 Turbo (OpenAI)"
+   ],
+   "proposed_rung": "checked",
+   "bar": "reactions",
+   "who": [
+    "MIT Sloan School of Management",
+    "American University",
+    "Cornell University"
+   ],
+   "one_line": "About 2,000 US adults who believed a conspiracy theory had a short chat with a GPT-4 Turbo chatbot that offered tailored facts. Belief fell by about a fifth on average, and the drop lasted at least two months.",
+   "field": "social"
+  },
+  {
+   "slug": "generative-ai-assistant-raises-support-productivity",
+   "title": "AI assistant raises customer-support productivity in a large field study",
+   "first_published": "2023-04",
+   "subfield": "economics",
+   "ai_role": "ai_tool",
+   "ai_systems": [
+    "GPT-based conversational assistant (OpenAI model family), deployed by a software firm"
+   ],
+   "proposed_rung": "confirmed",
+   "bar": "rung",
+   "who": [
+    "Stanford University (Brynjolfsson, Li)",
+    "Massachusetts Institute of Technology (Li, Raymond)"
+   ],
+   "one_line": "In a field study of about 5,000 customer-support agents, access to a generative AI assistant raised issues resolved per hour by about 14 percent, with the largest gains for the least experienced workers.",
+   "field": "social"
+  },
+  {
+   "slug": "replication-nature-science-social-experiments",
+   "title": "Replication of 21 social-science experiments from Nature and Science",
+   "first_published": "2018-08",
+   "subfield": "replication",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "checked",
+   "bar": "reactions",
+   "who": [
+    "Social Sciences Replication Project (Camerer, Dreber, Johannesson and others)",
+    "Center for Open Science"
+   ],
+   "one_line": "A team repeated 21 social-science experiments first published in Nature and Science from 2010 to 2015, with much larger samples. Thirteen replicated, and the repeat effects were on average about half the size of the originals.",
+   "field": "social"
+  },
+  {
+   "slug": "six-microcredit-trials-find-modest-effects",
+   "title": "Six trials in six countries find microcredit gains modest",
+   "first_published": "2015-01",
+   "subfield": "economics",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "confirmed",
+   "bar": "rung",
+   "who": [
+    "Six independent research teams, one for each country",
+    "Innovations for Poverty Action and the Abdul Latif Jameel Poverty Action Lab (partners in several trials)"
+   ],
+   "one_line": "Six randomised trials of microcredit in six countries, published together, found modest gains in business activity but no clear gain in average household income or wellbeing.",
+   "field": "social"
+  },
+  {
+   "slug": "growth-mindset-national-experiment-ninth-graders",
+   "title": "National experiment finds a short growth-mindset lesson helps some students",
+   "first_published": "2019-08",
+   "subfield": "psychology",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "checked",
+   "bar": "reactions",
+   "who": [
+    "University of Texas at Austin",
+    "Stanford University",
+    "National Study of Learning Mindsets team"
+   ],
+   "one_line": "A national randomised study of over 12,000 US ninth-graders found a short online growth-mindset lesson raised lower achievers' grades and advanced maths enrolment, with effects clustered in schools with supportive peer norms.",
+   "field": "social"
+  },
+  {
+   "slug": "moral-machine-self-driving-car-choices",
+   "title": "Global online game maps moral preferences for self-driving car dilemmas",
+   "first_published": "2018-10",
+   "subfield": "psychology",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "checked",
+   "bar": "reactions",
+   "who": [
+    "MIT Media Lab",
+    "Toulouse School of Economics"
+   ],
+   "one_line": "An online game collected about 40 million decisions from people in 233 countries and territories on whom a self-driving car should spare, finding shared preferences and three regional clusters.",
+   "field": "social"
+  },
+  {
+   "slug": "entire-herculaneum-scroll-read-first-time",
+   "title": "An entire carbonised Herculaneum scroll is read for the first time",
+   "first_published": "2026-06",
+   "subfield": "ancient-texts",
+   "ai_role": "ai_tool",
+   "ai_systems": [
+    "Machine-learning ink-detection and virtual-unwrapping software of the Vesuvius Challenge and the Digital Restoration Initiative, University of Kentucky (exact names and makers not read)"
+   ],
+   "proposed_rung": "checked",
+   "bar": "reactions",
+   "who": [
+    "Vesuvius Challenge",
+    "Digital Restoration Initiative, University of Kentucky",
+    "Diamond Light Source (UK) and ESRF (France), scanning partners (roles not read)"
+   ],
+   "one_line": "Researchers virtually unwrapped an entire rolled Herculaneum papyrus from X-ray scans and, with AI help, read its complete text: the first whole carbonised scroll read without opening it.",
+   "field": "humanities"
+  },
+  {
+   "slug": "minoans-mycenaeans-ancient-dna-aegean-farmers",
+   "title": "Ancient DNA links Minoans and Mycenaeans to early Aegean farmers",
+   "first_published": "2017-08-02",
+   "subfield": "archaeology",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "confirmed",
+   "bar": "rung",
+   "who": [
+    "Iosif Lazaridis, David Reich and colleagues, Harvard Medical School (memory)"
+   ],
+   "one_line": "Genomes of ancient people from Crete, mainland Greece and Anatolia showed Minoans and Mycenaeans were closely related, both descended mostly from early Aegean farmers with some Caucasus or Iran-related ancestry, and Mycenaeans also had steppe-related ancestry.",
+   "field": "humanities"
+  },
+  {
+   "slug": "old-kingdom-egyptian-genome-nuwayrat",
+   "title": "First whole genome from ancient Egypt, from a 4,800-year-old man",
+   "first_published": "2025-07-02",
+   "subfield": "archaeology",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "checked",
+   "bar": "reactions",
+   "who": [
+    "Liverpool John Moores University (Linus Girdland-Flink) and the Francis Crick Institute (Pontus Skoglund), with co-authors (memory)"
+   ],
+   "one_line": "DNA from the teeth of a man buried at Nuwayrat in the Old Kingdom gave the first whole genome from ancient Egypt: about four-fifths North African ancestry and about one-fifth from the eastern Fertile Crescent.",
+   "field": "humanities"
+  },
+  {
+   "slug": "nllb-200-translates-200-languages",
+   "title": "One AI model translates between 200 languages, many with little text",
+   "first_published": "2022-07",
+   "subfield": "languages",
+   "ai_role": "ai_tool",
+   "ai_systems": [
+    "NLLB-200 (Meta AI)"
+   ],
+   "proposed_rung": "checked",
+   "bar": "reactions",
+   "who": [
+    "Meta AI (the NLLB Team)",
+    "UC Berkeley and Johns Hopkins University co-authors (memory)"
+   ],
+   "one_line": "Meta's NLLB-200 model translates directly between 200 languages, including many with little written text, and scored better than earlier systems on average in tests against human-checked benchmarks.",
+   "field": "humanities"
+  },
+  {
+   "slug": "kalambo-falls-earliest-wooden-structure-476000",
+   "title": "Earliest known wooden structure, built at least 476,000 years ago in Zambia",
+   "first_published": "2023-09-20",
+   "subfield": "archaeology",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "checked",
+   "bar": "reactions",
+   "who": [
+    "University of Liverpool (Larry Barham) and Aberystwyth University (Geoff Duller), with co-authors (memory)"
+   ],
+   "one_line": "Luminescence dating of cut, interlocking logs preserved in waterlogged deposits at Kalambo Falls, Zambia, gave a minimum age of 476,000 years, showing early hominins shaped wood into a structure long before Homo sapiens.",
+   "field": "humanities"
+  },
+  {
+   "slug": "sulawesi-oldest-narrative-cave-art-51200",
+   "title": "Oldest known story-telling cave art found in Sulawesi, 51,200 years old",
+   "first_published": "2024-07-03",
+   "subfield": "archaeology",
+   "ai_role": "none",
+   "ai_systems": [],
+   "proposed_rung": "checked",
+   "bar": "reactions",
+   "who": [
+    "Griffith University (Maxime Aubert, Adam Brumm) and BRIN, Indonesia (Adhi Agus Oktaviana), with co-authors (memory)"
+   ],
+   "one_line": "A cave painting in Sulawesi, Indonesia, of human-like figures with a pig was dated, through uranium-series dating of mineral crusts over it, to at least 51,200 years ago: the oldest known narrative art.",
+   "field": "humanities"
+  }
+ ],
+ "items": [
+  {
+   "slug": "four-new-elements-complete-seventh-row",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://doi.org/10.1515/pac-2015-0502",
+   "title": "Discovery of the elements with atomic numbers Z = 113, 115 and 117 (IUPAC Technical Report), Pure and Applied Chemistry 88, 139 (2016)",
+   "claim": "[doi] DOI read from the IUPAC news page, which I fetched; that page puts the report at volume 88, page 139, online 21 January 2016. It is the Joint Working Party's report, a body other than the discoverers. Title from a search result for the Chemistry International digest and from memory. The De Gruyter host is in source-tiers; the page itself was not fetched."
+  },
+  {
+   "slug": "four-new-elements-complete-seventh-row",
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://doi.org/10.1515/pac-2015-0501",
+   "title": "Discovery of the element with atomic number Z = 118 completing the 7th row of the periodic table (IUPAC Technical Report), Pure and Applied Chemistry 88, 155 (2016)",
+   "claim": "[doi] DOI and page number read from the IUPAC news page (fetched). Title from memory. Same Joint Working Party."
+  },
+  {
+   "slug": "four-new-elements-complete-seventh-row",
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.112.172501",
+   "title": "48Ca+249Bk fusion reaction leading to element Z=117: long-lived alpha-decaying 270Db and discovery of 266Lr (Physical Review Letters 112, 172501, 2014)",
+   "claim": "[doi] Title, journal and DOI seen in several search results (a Bern repository record that I fetched, ADS, Oak Ridge). The APS address is rebuilt from the DOI; a fetch of the APS page failed in this container, so its readability is untested. A GSI Darmstadt-led team (from memory), separate from the Dubna group, made element 117 again. This is the confirming source."
+  },
+  {
+   "slug": "four-new-elements-complete-seventh-row",
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.104.142502",
+   "title": "Synthesis of a new element with atomic number Z=117 (Physical Review Letters 104, 142502, 2010)",
+   "claim": "[doi] The DOI was seen inside an APS Physics address in a search result; title from memory. The original claim for element 117 by the Dubna, Livermore, Oak Ridge and Vanderbilt team."
+  },
+  {
+   "slug": "four-new-elements-complete-seventh-row",
+   "role": "source",
+   "i": 4,
+   "kind": "statement",
+   "url": "https://www.riken.jp/en/news_pubs/research_news/pr/2015/20151231_1/",
+   "title": "RIKEN: element 113 discovery recognised by IUPAC (31 December 2015)",
+   "claim": "[seen] Seen in a search result with a '?Opens' suffix, which I dropped; the page was fetched. It says IUPAC told Kosuke Morita by letter on 31 December 2015, and gave RIKEN priority and the right to propose a name. riken.jp is a statement host."
+  },
+  {
+   "slug": "four-new-elements-complete-seventh-row",
+   "role": "source",
+   "i": 5,
+   "kind": "statement",
+   "url": "https://www.riken.jp/en/news_pubs/news/2016/20161130_1/",
+   "title": "RIKEN: IUPAC approves the name nihonium for element 113 (30 November 2016)",
+   "claim": "[seen] Page fetched. Says RIKEN proposed the name on 18 March 2016 and IUPAC approved it after a five-month comment period."
+  },
+  {
+   "slug": "four-new-elements-complete-seventh-row",
+   "role": "source",
+   "i": 6,
+   "kind": "statement",
+   "url": "https://www.iupac.org/news/news-detail/article/discovery-and-assignment-of-elements-with-atomic-numbers-113-115-117-and-118.html",
+   "title": "IUPAC: Discovery and assignment of elements with atomic numbers 113, 115, 117 and 118 (30 December 2015)",
+   "claim": "[seen] Page fetched. States the Joint Working Party's verdict and which teams are credited for each element. Caution: iupac.org matches no statement suffix in source-tiers.json, so it may fail the URL test as a statement. Keep it as background unless the allowlist gains it."
+  },
+  {
+   "slug": "four-new-elements-complete-seventh-row",
+   "role": "source",
+   "i": 7,
+   "kind": "statement",
+   "url": "https://www.ornl.gov/publication/synthesis-new-element-atomic-number-z117",
+   "title": "Oak Ridge National Laboratory: synthesis of a new element, atomic number Z=117",
+   "claim": "[seen] Seen in a search result; page not read. A .gov host."
+  },
+  {
+   "slug": "borophene-two-teams-make-2d-boron",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4922135",
+   "title": "Synthesis of borophenes: anisotropic, two-dimensional boron polymorphs (Science 350, 1513, 18 December 2015; PubMed Central author manuscript)",
+   "claim": "[seen] Page fetched. Authors from Argonne, Northwestern, Stony Brook, Nankai, UT San Antonio and two Russian institutes. Sheets grown on silver under ultrahigh vacuum; the abstract says borophene shows metallic characteristics. Science's own page is on a blocked host, so this open copy is the one to cite."
+  },
+  {
+   "slug": "borophene-two-teams-make-2d-boron",
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://link.springer.com/article/10.1038/nchem.2491",
+   "title": "Experimental realization of two-dimensional boron sheets (Nature Chemistry 8, 563, 2016)",
+   "claim": "[doi] Springer page at link.springer.com/10.1038/nchem.2491 was seen and fetched; the tier test wants /article/ in the path, so that is added here. Independent team at the Institute of Physics, Chinese Academy of Sciences, Beijing (Baojie Feng, Kehui Wu and colleagues). Received 17 July 2015, online 28 March 2016. It cites Mannix et al. This is the confirming source."
+  },
+  {
+   "slug": "borophene-two-teams-make-2d-boron",
+   "role": "source",
+   "i": 2,
+   "kind": "statement",
+   "url": "https://www.mccormick.northwestern.edu/news/articles/2015/12/scientists-create-atomically-thin-metallic-boron.html",
+   "title": "Northwestern Engineering: scientists create atomically thin metallic boron (December 2015)",
+   "claim": "[seen] Seen in a search result; page not read. A .edu host, and inside the original team."
+  },
+  {
+   "slug": "borophene-two-teams-make-2d-boron",
+   "role": "source",
+   "i": 3,
+   "kind": "statement",
+   "url": "https://www.anl.gov/article/scientists-create-atomically-thin-metallic-boron",
+   "title": "Argonne National Laboratory: scientists create atomically thin metallic boron",
+   "claim": "[seen] Seen in a search result; page not read. A .gov host, and inside the original team."
+  },
+  {
+   "slug": "borophene-two-teams-make-2d-boron",
+   "role": "source",
+   "i": 4,
+   "kind": "reaction",
+   "url": "https://doi.org/10.1038/nchem.2521",
+   "title": "Polyphony in B flat (Nature Chemistry News and Views, 25 April 2016)",
+   "claim": "[doi] The address nature.com/articles/nchem.2521 was seen as associated content on the Feng paper's page, which I fetched; authors and date read there. A catalogue record for 10_1038_nchem_2521 was seen in a search, which settles the DOI. The nchem. path is not among the Nature host's reaction paths (d41586- only), so the doi.org form is given. Text of the piece not read."
+  },
+  {
+   "slug": "borophene-two-teams-make-2d-boron",
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://doi.org/10.1038/nchem.2521",
+   "who": "Zhuhua Zhang, Evgeni S. Penev and Boris I. Yakobson",
+   "affiliation": "Rice University, Houston (from memory; Zhang may have moved since)",
+   "claim": "News and Views on the Chinese team's paper and the borophene work around it. Yakobson's group wrote early theory on boron sheets but is not in who. Only one reaction piece found."
+  },
+  {
+   "slug": "lk-99-independent-checks-no-superconductivity",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://doi.org/10.1063/5.0172755",
+   "title": "Single crystal synthesis, structure, and magnetism of Pb10-xCux(PO4)6O (Puphal et al., APL Materials, 1 October 2023)",
+   "claim": "[seen] DOI seen on a catalogue record that I fetched, which names APL Materials (AIP Publishing), 1 October 2023 and the seven authors. Phase-pure crystals are transparent insulators with no sign of superconductivity (read on the arXiv abstract). This is the one journal version with a located DOI, so it is the confirming paper; AIP's own page was not fetched."
+  },
+  {
+   "slug": "lk-99-independent-checks-no-superconductivity",
+   "role": "source",
+   "i": 1,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2308.06256",
+   "title": "Single crystal synthesis, structure, and magnetism of Pb10-xCux(PO4)6O (Puphal et al., arXiv, 11 August 2023)",
+   "claim": "[seen] Abstract page fetched. Preprint of the APL Materials paper."
+  },
+  {
+   "slug": "lk-99-independent-checks-no-superconductivity",
+   "role": "source",
+   "i": 2,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2308.04353",
+   "title": "First order transition in Pb10-xCux(PO4)6O (0.9<x<1.1) containing Cu2S (Zhu, Wu, Li and Luo, arXiv, 8 August 2023)",
+   "claim": "[seen] Abstract page fetched. A sharp resistivity drop with no zero resistance, traced to a structural change in Cu2S near 385 K. Affiliations not shown on the page."
+  },
+  {
+   "slug": "lk-99-independent-checks-no-superconductivity",
+   "role": "source",
+   "i": 3,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2308.03823",
+   "title": "Synthesis and characterisation of LK-99 (Timokhin, Chen, Wang, Yang and Mishchenko, arXiv, 7 August 2023)",
+   "claim": "[seen] Abstract page fetched. Own synthesis and transport tests, no sign of superconductivity. Affiliation not shown on the page."
+  },
+  {
+   "slug": "lk-99-independent-checks-no-superconductivity",
+   "role": "source",
+   "i": 4,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2308.05222",
+   "title": "Superionic phase transition of copper(I) sulfide and its implication for purported superconductivity of LK-99 (Prashant K. Jain, arXiv)",
+   "claim": "[seen] Page fetched. University of Illinois Urbana-Champaign. Argues the Cu2S transition near 104 degrees Celsius explains the reported resistivity drop and heat-capacity feature. Submission date not shown on the page."
+  },
+  {
+   "slug": "lk-99-independent-checks-no-superconductivity",
+   "role": "source",
+   "i": 5,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2307.12008",
+   "title": "The First Room-Temperature Ambient-Pressure Superconductor (Lee, Kim and Kwon, arXiv, 22 July 2023)",
+   "claim": "[seen] Abstract page fetched. The original claim, from outside the checking teams."
+  },
+  {
+   "slug": "lk-99-independent-checks-no-superconductivity",
+   "role": "source",
+   "i": 6,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2307.12037",
+   "title": "Superconductor Pb10-xCux(PO4)6O showing levitation at room temperature and atmospheric pressure and mechanism (Lee, Kim, Kim, Im, An and Auh, arXiv, 22 July 2023)",
+   "claim": "[seen] Abstract page fetched. The companion claim paper."
+  },
+  {
+   "slug": "rigorous-test-electric-ammonia-claims-lithium",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-019-1260-x",
+   "title": "A rigorous electrochemical ammonia synthesis protocol with quantitative isotope measurements (Nature 570, 504-508, 2019)",
+   "claim": "[seen] Page fetched. 21 authors; corresponding author Ib Chorkendorff. No ammonia from the most promising pure-metal catalysts in water; ammonia from lithium electrodeposition in tetrahydrofuran confirmed and quantified. The page lists no News and Views."
+  },
+  {
+   "slug": "rigorous-test-electric-ammonia-claims-lithium",
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7641139",
+   "title": "Identification and elimination of false positives in electrochemical nitrogen reduction studies (Nature Communications 11, 5546, 3 November 2020)",
+   "claim": "[seen] Page fetched. Monash University, an independent group. Reviewed 127 aqueous papers and found none met all three reliability criteria; traced false positives to oxidised nitrogen contamination; adopted the earlier protocols; called the lithium-mediated process the only one robustly proven. It ran no new lithium experiment. This is the confirming source."
+  },
+  {
+   "slug": "rigorous-test-electric-ammonia-claims-lithium",
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://link.springer.com/article/10.1038/s41586-022-05108-y",
+   "title": "Electroreduction of nitrogen with almost 100% current-to-ammonia efficiency (Nature 609, 722-727, 2022)",
+   "claim": "[seen] Page fetched. Same Monash group (Du, Chatti, Hodgetts, Cherepanov, Nguyen, Matuszek, MacFarlane, Simonov). Lithium-mediated nitrogen reduction in a concentrated imide lithium electrolyte, a rate of 150 nmol per second per square centimetre and near 100 percent current-to-ammonia efficiency. Cites the 2019 paper as reference 6."
+  },
+  {
+   "slug": "rigorous-test-electric-ammonia-claims-lithium",
+   "role": "source",
+   "i": 3,
+   "kind": "statement",
+   "url": "https://www.monash.edu/science/news-events/news/2022/monash-university-scientists-achieve-new-ammonia-breakthrough",
+   "title": "Monash University: scientists achieve new ammonia breakthrough (2022)",
+   "claim": "[seen] Page fetched. Notes the Monash spin-off Jupiter Ionics, so it is a statement by a party with an interest. Does not mention lithium."
+  },
+  {
+   "slug": "neural-networks-solve-schrodinger-equation-molecules",
+   "role": "source",
+   "i": 0,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1909.02487",
+   "title": "Ab-initio solution of the many-electron Schrödinger equation with deep neural networks (Pfau, Spencer, Matthews and Foulkes, arXiv, 5 September 2019)",
+   "claim": "[seen] Abstract page fetched. The network needs only atomic positions and charges, and the abstract says it predicts nitrogen dissociation curves and hydrogen chains better than coupled cluster."
+  },
+  {
+   "slug": "neural-networks-solve-schrodinger-equation-molecules",
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033429",
+   "title": "Ab initio solution of the many-electron Schrödinger equation with deep neural networks (Physical Review Research 2, 033429, 2020)",
+   "claim": "[doi] DOI seen on the arXiv page and in an Imperial repository file name; a catalogue record gives September 2020. APS address rebuilt from the DOI and not fetched."
+  },
+  {
+   "slug": "neural-networks-solve-schrodinger-equation-molecules",
+   "role": "source",
+   "i": 2,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1909.08423",
+   "title": "Deep neural network solution of the electronic Schrödinger equation (Hermann, Schätzle and Noé, arXiv, 16 September 2019)",
+   "claim": "[seen] Abstract page fetched. PauliNet, a deep wave function trained by variational Monte Carlo."
+  },
+  {
+   "slug": "neural-networks-solve-schrodinger-equation-molecules",
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://link.springer.com/article/10.1038/s41557-020-0544-y",
+   "title": "Deep-neural-network solution of the electronic Schrödinger equation (Nature Chemistry 12, 891-897, 2020)",
+   "claim": "[seen] Page fetched. Freie Universität Berlin (Noé group; affiliation from memory, not shown on the page). Near-exact solutions for molecules with up to 30 electrons, matching specialised methods on the cyclobutadiene transition state. Lists FermiNet's preprint as reference 31. No News and Views listed. This is the confirming source."
+  },
+  {
+   "slug": "neural-networks-solve-schrodinger-equation-molecules",
+   "role": "source",
+   "i": 4,
+   "kind": "lab_post",
+   "url": "https://deepmind.google/discover/blog/ferminet-quantum-physics-and-chemistry-from-first-principles/",
+   "title": "Google DeepMind: FermiNet, quantum physics and chemistry from first principles",
+   "claim": "[seen] Seen in a search result whose title carries 22 August 2024 (an updated post that covers a later Science paper). Page not read."
+  },
+  {
+   "slug": "ebola-vaccine-ervebo-ring-trial",
+   "role": "source",
+   "i": 0,
+   "kind": "checker",
+   "url": "https://www.fda.gov/vaccines-blood-biologics/ervebo",
+   "title": "ERVEBO (US FDA product page)",
+   "claim": "[seen] URL and title seen in a search result for fda.gov; page not read. Memory: the FDA approved Ervebo on 2019-12-19, the first Ebola vaccine to be licensed in the US."
+  },
+  {
+   "slug": "ebola-vaccine-ervebo-ring-trial",
+   "role": "source",
+   "i": 1,
+   "kind": "checker",
+   "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/ervebo",
+   "title": "Ervebo (European Medicines Agency EPAR page)",
+   "claim": "[seen] URL and title seen in a search result for ema.europa.eu; page not read. Memory: conditional marketing authorisation in the EU in November 2019."
+  },
+  {
+   "slug": "ebola-vaccine-ervebo-ring-trial",
+   "role": "source",
+   "i": 2,
+   "kind": "statement",
+   "url": "https://www.ema.europa.eu/en/news/first-vaccine-protect-against-ebola",
+   "title": "First vaccine to protect against Ebola (EMA news release)",
+   "claim": "[seen] URL and title seen in a search result; page not read."
+  },
+  {
+   "slug": "ebola-vaccine-ervebo-ring-trial",
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5364328",
+   "title": "Efficacy and effectiveness of an rVSV-vectored vaccine in preventing Ebola virus disease: final results from the Guinea ring vaccination, open-label, cluster-randomised trial (Lancet 2017, open copy)",
+   "claim": "[seen] PMC id seen as the top result of a search for this exact title; page not read. This is the open copy of the final results."
+  },
+  {
+   "slug": "ebola-vaccine-ervebo-ring-trial",
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://doi.org/10.1016/S0140-6736(15)61117-5",
+   "title": "Efficacy and effectiveness of an rVSV-vectored vaccine expressing Ebola surface glycoprotein: interim results from the Guinea ring vaccination cluster-randomised trial (Lancet 2015)",
+   "claim": "[memory] DOI from memory, not seen. The title was seen on several repository pages (an Epicentre MSF page and a gov.uk research outputs page) but no open copy of the 2015 interim paper was seen."
+  },
+  {
+   "slug": "sotorasib-first-kras-drug-approved",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-019-1694-1",
+   "title": "The clinical KRAS(G12C) inhibitor AMG 510 drives anti-tumour immunity (Nature)",
+   "claim": "[doi] DOI 10.1038/S41586-019-1694-1 and the nature.com PDF address seen in a search result for this exact title; the article page address is rebuilt from the DOI. Canon et al., Nature, Oct 2019 (memory for the month)."
+  },
+  {
+   "slug": "sotorasib-first-kras-drug-approved",
+   "role": "source",
+   "i": 1,
+   "kind": "checker",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sotorasib-kras-g12c-mutated-nsclc",
+   "title": "FDA grants accelerated approval to sotorasib for KRAS G12C mutated NSCLC",
+   "claim": "[memory] The same path was seen in a search result under the host cacmap.fda.gov with the title above; the www.fda.gov form is rebuilt from it, not seen. Memory: approval on 2021-05-28."
+  },
+  {
+   "slug": "sotorasib-first-kras-drug-approved",
+   "role": "source",
+   "i": 2,
+   "kind": "checker",
+   "url": "https://fda.gov/drugs/resources-information-approved-drugs/ongoing-cancer-accelerated-approvals",
+   "title": "Ongoing cancer accelerated approvals (US FDA)",
+   "claim": "[seen] URL and title seen in a search result; page not read. A fallback FDA record that should list the accelerated approval and its confirmatory-trial status."
+  },
+  {
+   "slug": "prime-editing-rewrites-dna-no-breaks",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-019-1711-4",
+   "title": "Search-and-replace genome editing without double-strand breaks or donor DNA (Nature)",
+   "claim": "[seen] Address seen in a search result for the exact title (DOI 10.1038/s41586-019-1711-4 also seen); page not read. Anzalone et al., online 21 Oct 2019 (memory)."
+  },
+  {
+   "slug": "prime-editing-rewrites-dna-no-breaks",
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6907074",
+   "title": "Search-and-replace genome editing without double-strand breaks or donor DNA (author manuscript, PMC)",
+   "claim": "[seen] Open copy of the original paper; PMC id seen in a search result; page not read."
+  },
+  {
+   "slug": "prime-editing-rewrites-dna-no-breaks",
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41587-020-0455-x",
+   "title": "Prime genome editing in rice and wheat (Nature Biotechnology)",
+   "claim": "[doi] Independent team, Chinese Academy of Sciences (Gao lab, memory). DOI 10.1038/s41587-020-0455-x seen at dx.doi.org in a search result for this title; the nature.com address is rebuilt from it."
+  },
+  {
+   "slug": "prime-editing-rewrites-dna-no-breaks",
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680537/",
+   "title": "Engineering herbicide resistance via prime editing in rice (Plant Biotechnology Journal, open copy)",
+   "claim": "[seen] Independent team (KAUST, memory). Address seen in a search result; page not read."
+  },
+  {
+   "slug": "prime-editing-rewrites-dna-no-breaks",
+   "role": "source",
+   "i": 4,
+   "kind": "checker",
+   "url": "https://breakthroughprize.org/Laureates/L3978",
+   "title": "Breakthrough Prize laureate page for David R. Liu (2025 Life Sciences, base editing and prime editing)",
+   "claim": "[seen] Address seen as the first result of a search for the 2025 prize; page not read. Memory: the 2025 Breakthrough Prize in Life Sciences citation names both base editing and prime editing."
+  },
+  {
+   "slug": "prime-editing-rewrites-dna-no-breaks",
+   "role": "source",
+   "i": 5,
+   "kind": "statement",
+   "url": "https://www.broadinstitute.org/news/david-liu-receives-breakthrough-prize-life-sciences",
+   "title": "David Liu receives Breakthrough Prize in Life Sciences (Broad Institute)",
+   "claim": "[seen] The institution's own post; address seen in a search result; page not read."
+  },
+  {
+   "slug": "speech-neuroprostheses-stanford-ucsf-2023",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-023-06377-x",
+   "title": "A high-performance speech neuroprosthesis (Nature)",
+   "claim": "[doi] Willett et al., Stanford. The nature.com PDF address s41586-023-06377-x was seen in a search result; the article page address is rebuilt from it."
+  },
+  {
+   "slug": "speech-neuroprostheses-stanford-ucsf-2023",
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/10468393",
+   "title": "A high-performance speech neuroprosthesis (open copy, PMC)",
+   "claim": "[seen] PMC id seen in two search results for the Stanford paper; page not read."
+  },
+  {
+   "slug": "speech-neuroprostheses-stanford-ucsf-2023",
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-023-06443-4",
+   "title": "A high-performance neuroprosthesis for speech decoding and avatar control (Nature)",
+   "claim": "[seen] Metzger et al., UCSF with UC Berkeley (memory). Address seen in a search result for the exact title; page not read."
+  },
+  {
+   "slug": "speech-neuroprostheses-stanford-ucsf-2023",
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10826467",
+   "title": "A high-performance neuroprosthesis for speech decoding and avatar control (open copy, PMC)",
+   "claim": "[seen] PMC id seen in a search for the UCSF title (it also appeared beside the Stanford search); which of the two papers it holds was not read, so check it before use."
+  },
+  {
+   "slug": "speech-neuroprostheses-stanford-ucsf-2023",
+   "role": "source",
+   "i": 4,
+   "kind": "lab_post",
+   "url": "https://med.stanford.edu/news/all-news/2023/08/brain-implant-speech-als.html",
+   "title": "Stanford Medicine news release on the speech brain implant (August 2023)",
+   "claim": "[seen] Institution's own release; address seen in a search result; page not read."
+  },
+  {
+   "slug": "speech-neuroprostheses-stanford-ucsf-2023",
+   "role": "source",
+   "i": 5,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-023-02546-0",
+   "title": "Brain implants that enable speech pass performance milestones (Nature, News and Views)",
+   "claim": "[seen] Address seen in a search for this title; page not read, so its article type (News and Views, not news) is unchecked. The UMC Utrecht repository lists the title, so the author is from Utrecht (memory: Ramsey, with Crone of Johns Hopkins)."
+  },
+  {
+   "slug": "speech-neuroprostheses-stanford-ucsf-2023",
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-023-02546-0",
+   "who": "Nick F. Ramsey and Nathan E. Crone (memory)",
+   "affiliation": "UMC Utrecht; Johns Hopkins University School of Medicine (memory)",
+   "claim": "Commentary on both papers. Only one reaction piece was found, so the bar does not rest on reactions."
+  },
+  {
+   "slug": "r21-malaria-vaccine-who-prequalified",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8121760",
+   "title": "Efficacy of a low-dose candidate malaria vaccine, R21 in adjuvant Matrix-M, with seasonal administration to children in Burkina Faso: a randomised controlled trial (Lancet, open copy)",
+   "claim": "[seen] PMC id seen as a top result for the exact title; page not read. Datoo et al., Lancet 2021, online April 2021 (memory)."
+  },
+  {
+   "slug": "r21-malaria-vaccine-who-prequalified",
+   "role": "source",
+   "i": 1,
+   "kind": "statement",
+   "url": "https://www.who.int/news/item/21-12-2023-who-prequalifies-a-second-malaria-vaccine-a-significant-milestone-in-prevention-of-the-disease",
+   "title": "WHO prequalifies a second malaria vaccine, a significant milestone in prevention of the disease",
+   "claim": "[seen] Address and title seen in a search result; page not read."
+  },
+  {
+   "slug": "r21-malaria-vaccine-who-prequalified",
+   "role": "source",
+   "i": 2,
+   "kind": "statement",
+   "url": "https://www.who.int/marshallislands/news/detail-global/02-10-2023-who-recommends-r21-matrix-m-vaccine-for-malaria-prevention-in-updated-advice-on-immunization",
+   "title": "WHO recommends R21/Matrix-M vaccine for malaria prevention in updated advice on immunization (2 Oct 2023)",
+   "claim": "[seen] Address and title seen in a search result; page not read."
+  },
+  {
+   "slug": "r21-malaria-vaccine-who-prequalified",
+   "role": "source",
+   "i": 3,
+   "kind": "lab_post",
+   "url": "https://www.ox.ac.uk/news/2024-02-01-new-phase-3-trial-data-confirm-uniquely-high-efficacy-and-good-safety-profile",
+   "title": "New phase 3 trial data confirm uniquely high efficacy and good safety profile (University of Oxford, 1 Feb 2024)",
+   "claim": "[seen] Institution's own release on the phase 3 results published in the Lancet; address seen in a search result; page not read."
+  },
+  {
+   "slug": "noaa-ai-global-weather-models-operational",
+   "role": "source",
+   "i": 0,
+   "kind": "statement",
+   "url": "https://www.noaa.gov/news-release/noaa-deploys-new-generation-of-ai-driven-global-weather-models",
+   "title": "NOAA deploys new generation of AI-driven global weather models (NOAA news release)",
+   "claim": "[seen] URL and title seen in a search result limited to noaa.gov and related hosts; page not read. This is the Applied record: the agency's own statement that the models are in operation. noaa.gov passes the .gov statement test."
+  },
+  {
+   "slug": "noaa-ai-global-weather-models-operational",
+   "role": "source",
+   "i": 1,
+   "kind": "statement",
+   "url": "https://epic.noaa.gov/noaa-deploys-new-ai-driven-global-weather-models/",
+   "title": "NOAA Deploys New AI Driven Global Weather Models (Earth Prediction Innovation Center)",
+   "claim": "[seen] URL and title seen in two search results; page not read. NOAA's EPIC programme, which supports the AI weather work (EAGLE), reporting the same deployment."
+  },
+  {
+   "slug": "noaa-ai-global-weather-models-operational",
+   "role": "source",
+   "i": 2,
+   "kind": "statement",
+   "url": "https://wmo.int/media/news-from-members/noaa-deploys-new-generation-of-ai-driven-global-weather-models",
+   "title": "NOAA deploys new generation of AI-driven global weather models (World Meteorological Organization, news from members)",
+   "claim": "[seen] URL and title seen in a search result; page not read. The World Meteorological Organization (a UN agency, .int host) carrying NOAA's announcement: a second host that reads, not an independent test of the models."
+  },
+  {
+   "slug": "deepmind-cyclone-model-hurricane-center-use",
+   "role": "source",
+   "i": 0,
+   "kind": "lab_post",
+   "url": "https://deepmind.google/blog/how-were-supporting-better-tropical-cyclone-prediction-with-ai/",
+   "title": "How we're supporting better tropical cyclone prediction with AI (Google DeepMind)",
+   "claim": "[seen] URL and title seen in a search result; page not read. The lab's own post about the model and the Weather Lab site; deepmind.google passes as a lab host. The June 2025 date is from memory."
+  },
+  {
+   "slug": "deepmind-cyclone-model-hurricane-center-use",
+   "role": "source",
+   "i": 1,
+   "kind": "statement",
+   "url": "https://www.weather.gov/news/261102-AI-Hurricane-Forecasting",
+   "title": "AI in Hurricane Forecasting at the National Hurricane Center (National Weather Service)",
+   "claim": "[seen] URL and title seen in two search results; page not read. This is the Applied record: the forecasting agency's own account of AI at the hurricane centre. The number 261102 may be a date (2 November 2026): check the date and what the page says about the DeepMind model."
+  },
+  {
+   "slug": "deepmind-cyclone-model-hurricane-center-use",
+   "role": "source",
+   "i": 2,
+   "kind": "statement",
+   "url": "https://techpartnerships.noaa.gov/noaa-and-google-team-up-to-advance-the-use-of-ai-hurricane-and-tropical-weather-forecast-models/",
+   "title": "NOAA and Google team up to advance the use of AI hurricane and tropical weather forecast models (NOAA Technology Partnerships Office)",
+   "claim": "[seen] URL and title seen in a search result; page not read. NOAA's own record of the partnership with Google."
+  },
+  {
+   "slug": "great-barrier-reef-2016-mass-bleaching",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/nature21707",
+   "title": "Global warming and recurrent mass bleaching of corals (Hughes et al., Nature 543, 373)",
+   "claim": "[doi] Rebuilt from the DOI 10.1038/nature21707, which was seen inside an IDEAS (RePEc) URL for Nature volume 543, issue 7645 (March 2017); the nature.com page itself was not seen. The paper is the Checked record."
+  },
+  {
+   "slug": "great-barrier-reef-2016-mass-bleaching",
+   "role": "source",
+   "i": 1,
+   "kind": "statement",
+   "url": "https://www.aims.gov.au/information-centre/news-and-stories/extent-and-severity-2016-coral-bleaching-australias-coral-reefs-revealed",
+   "title": "Extent and severity of 2016 coral bleaching in Australia's coral reefs revealed (Australian Institute of Marine Science)",
+   "claim": "[seen] URL seen in a search result (the result's own title was only 'red coral image'; this title is read from the URL slug); page not read. This is the Confirmed record: a separate Australian Government institute reporting the extent and severity of the same 2016 event from its own surveys. aims.gov.au passes the .gov.au statement test."
+  },
+  {
+   "slug": "great-barrier-reef-2016-mass-bleaching",
+   "role": "source",
+   "i": 2,
+   "kind": "statement",
+   "url": "https://www.aims.gov.au/information-centre/news-and-stories/taking-stock-2016-mass-coral-bleaching-event",
+   "title": "Taking stock: 2016 mass coral bleaching event (Australian Institute of Marine Science)",
+   "claim": "[seen] URL seen in a search result; title read from the URL slug; page not read. A second AIMS account of the event."
+  },
+  {
+   "slug": "aegis-ai-picks-mars-laser-targets",
+   "role": "source",
+   "i": 0,
+   "kind": "statement",
+   "url": "https://www.jpl.nasa.gov/news/nasa-mars-rover-can-choose-laser-targets-on-its-own/",
+   "title": "NASA Mars Rover Can Choose Laser Targets on Its Own (NASA JPL news)",
+   "claim": "[seen] URL and title seen in two search results; page not read. The 2016 announcement that the rover picks laser targets by itself. The month (June 2016) is from memory."
+  },
+  {
+   "slug": "aegis-ai-picks-mars-laser-targets",
+   "role": "source",
+   "i": 1,
+   "kind": "statement",
+   "url": "https://www.jpl.nasa.gov/news/laser-targeting-ai-yields-more-mars-science/",
+   "title": "Laser-targeting A.I. Yields More Mars Science (NASA JPL news)",
+   "claim": "[seen] URL and title seen in two search results; page not read. A later JPL release on what the autonomous targeting added. This and the first page are the Applied record: use on Mars in routine science operations."
+  },
+  {
+   "slug": "aegis-ai-picks-mars-laser-targets",
+   "role": "source",
+   "i": 2,
+   "kind": "statement",
+   "url": "https://ai.jpl.nasa.gov/public/projects/aegis/",
+   "title": "AEGIS (JPL Artificial Intelligence Group project page)",
+   "claim": "[seen] URL and title seen in two search results; page not read. The project's own description of the software."
+  },
+  {
+   "slug": "score-project-social-science-replicability",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-025-10078-y",
+   "title": "Investigating the replicability of the social and behavioural sciences (Nature)",
+   "claim": "[seen] URL and title seen in a search result limited to nature.com. Page not read. The main replication paper. Nature volume 652, issue 8108, 2 April 2026 (issue seen in a search result)."
+  },
+  {
+   "slug": "score-project-social-science-replicability",
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-026-10203-5",
+   "title": "Investigating the reproducibility of the social and behavioural sciences (Nature)",
+   "claim": "[seen] URL and title seen in a search result. Page not read. Second of the SCORE papers."
+  },
+  {
+   "slug": "score-project-social-science-replicability",
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-025-09844-9",
+   "title": "Investigating the analytical robustness of the social and behavioural sciences (Nature)",
+   "claim": "[seen] URL and title seen in a search result. Page not read. Third of the SCORE papers. A fourth Nature article, 'Reproducibility and robustness of economics and political science research' (https://www.nature.com/articles/s41586-026-10251-x), was also seen and may belong to the same package."
+  },
+  {
+   "slug": "score-project-social-science-replicability",
+   "role": "source",
+   "i": 3,
+   "kind": "lab_post",
+   "url": "https://www.cos.io/about/news/large-scale-collaboration-releases-new-findings-on-research-credibility",
+   "title": "Large-Scale Collaboration Releases New Findings on Research Credibility (Center for Open Science)",
+   "claim": "[seen] URL and title seen. Page not read. The Center for Open Science is the lead team, so this is not an independent reaction."
+  },
+  {
+   "slug": "score-project-social-science-replicability",
+   "role": "source",
+   "i": 4,
+   "kind": "lab_post",
+   "url": "https://www.nature.com/collections/idajfifcfg",
+   "title": "Reliable research in the social and behavioural and sciences (Nature collection)",
+   "claim": "[seen] URL and title seen. Page not read. The collection page should list every piece Nature ran with the papers, including any News and Views."
+  },
+  {
+   "slug": "score-project-social-science-replicability",
+   "role": "source",
+   "i": 5,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-026-00955-5",
+   "title": "Half of social-science studies fail replication test in years-long project (Nature)",
+   "claim": "[seen] URL and title seen. This is Nature's own news report, so it is probably press-type and does not count as one of the two reactions."
+  },
+  {
+   "slug": "score-project-social-science-replicability",
+   "role": "source",
+   "i": 6,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-026-01957-z",
+   "title": "Make science more reliable: study people as they go about their lives (Nature)",
+   "claim": "[seen] URL and title seen. Article type and author not read. It may be an opinion piece by an outside researcher; check before using it."
+  },
+  {
+   "slug": "score-project-social-science-replicability",
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-026-01957-z",
+   "who": "author not read",
+   "affiliation": "not read",
+   "claim": "Possible reaction. Type and author must be read on the page."
+  },
+  {
+   "slug": "ai-chatbot-chats-shift-voter-preferences",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-025-09771-9",
+   "title": "Persuading voters using human-AI dialogues (Lin et al., Nature)",
+   "claim": "[seen] Title is from my own query and the URL was seen in search results (once with a '?error=server_error' tail, which I removed). Page not read. Nature volume 648, issue 8093, 11 December 2025 (issue seen in a search result)."
+  },
+  {
+   "slug": "ai-chatbot-chats-shift-voter-preferences",
+   "role": "source",
+   "i": 1,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2507.13919",
+   "title": "The Levers of Political Persuasion with Conversational AI (Hackenburg et al., arXiv)",
+   "claim": "[seen] URL and title seen. Page not read. The Science paper itself is on a host that blocks; this arXiv copy is the one to cite."
+  },
+  {
+   "slug": "ai-chatbot-chats-shift-voter-preferences",
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://researchonline.lse.ac.uk/id/eprint/130605",
+   "title": "The levers of political persuasion with conversational artificial intelligence (LSE Research Online)",
+   "claim": "[seen] URL and title seen. Page not read. Institutional record of the Science paper."
+  },
+  {
+   "slug": "ai-chatbot-chats-shift-voter-preferences",
+   "role": "source",
+   "i": 3,
+   "kind": "lab_post",
+   "url": "https://www.ox.ac.uk/news/2025-12-11-study-reveals-how-conversational-ai-can-exert-influence-over-political-beliefs",
+   "title": "Study reveals how conversational AI can exert influence over political beliefs (University of Oxford)",
+   "claim": "[seen] URL seen. Page not read."
+  },
+  {
+   "slug": "ai-chatbot-chats-shift-voter-preferences",
+   "role": "source",
+   "i": 4,
+   "kind": "lab_post",
+   "url": "https://www.news.cornell.edu/stories/2025/12/ai-chatbots-can-effectively-sway-voters-either-direction",
+   "title": "AI chatbots can effectively sway voters in either direction (Cornell University)",
+   "claim": "[seen] URL seen. Page not read."
+  },
+  {
+   "slug": "ai-chatbot-chats-shift-voter-preferences",
+   "role": "source",
+   "i": 5,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2403.14380",
+   "title": "On the Conversational Persuasiveness of Large Language Models: A Randomized Controlled Trial (Salvi et al., arXiv)",
+   "claim": "[seen] URL seen. Page not read. A separate team at EPFL; published in Nature Human Behaviour in 2025 (nature.com/articles/s41562-025-02194-6, rebuilt from the DOI seen in an IDEAS URL, so confidence 'doi'). Useful as an independent check of the direction of the effect, in a debate setting."
+  },
+  {
+   "slug": "ai-chatbot-chats-shift-voter-preferences",
+   "role": "source",
+   "i": 6,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-025-03733-x",
+   "title": "AI chatbots can persuade voters to change their minds (Nature)",
+   "claim": "[seen] URL and title seen. A Vrije Universiteit Amsterdam repository record (https://research.vu.nl/en/publications/ai-chatbots-can-persuade-voters-to-change-their-minds/) carries the same title, which suggests a scholar's News and Views. Article type not read."
+  },
+  {
+   "slug": "ai-chatbot-chats-shift-voter-preferences",
+   "role": "source",
+   "i": 7,
+   "kind": "reaction",
+   "url": "https://dare.uva.nl/id/083fe9f4-62f9-413e-939f-3a9f537c58a1",
+   "title": "AI chatbots can persuade voters (University of Amsterdam repository record)",
+   "claim": "[seen] URL and title seen (and a PDF copy on pure.uva.nl). Journal and article type not read: it may be the Science Perspective on the Hackenburg paper."
+  },
+  {
+   "slug": "ai-chatbot-chats-shift-voter-preferences",
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-025-03733-x",
+   "who": "author not read",
+   "affiliation": "Vrije Universiteit Amsterdam (from the VU repository record)",
+   "claim": "Probably a Nature News and Views on the Lin et al. paper. Read the page for the type, author and affiliation."
+  },
+  {
+   "slug": "ai-chatbot-chats-shift-voter-preferences",
+   "role": "reaction",
+   "i": 1,
+   "kind": "reaction",
+   "url": "https://dare.uva.nl/id/083fe9f4-62f9-413e-939f-3a9f537c58a1",
+   "who": "authors not read",
+   "affiliation": "University of Amsterdam (from the repository record)",
+   "claim": "Commentary titled 'AI chatbots can persuade voters'. The journal is unknown; the Science Perspective on the companion paper is the likely one. Read it."
+  },
+  {
+   "slug": "chatgpt-beats-crowd-workers-text-labels",
+   "role": "source",
+   "i": 0,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2303.15056",
+   "title": "ChatGPT Outperforms Crowd-Workers for Text-Annotation Tasks (Gilardi, Alizadeh, Kubli, arXiv)",
+   "claim": "[seen] URL and title seen in search results. Page not read. First posted March 2023 (the arXiv number is 2303)."
+  },
+  {
+   "slug": "chatgpt-beats-crowd-workers-text-labels",
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10372638",
+   "title": "ChatGPT outperforms crowd workers for text-annotation tasks (PNAS, open copy on PMC)",
+   "claim": "[seen] URL and title seen. Page not read. The PNAS version (2023); the PNAS site itself blocks the snapshot step, so cite this PMC copy."
+  },
+  {
+   "slug": "chatgpt-beats-crowd-workers-text-labels",
+   "role": "source",
+   "i": 2,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2304.06588",
+   "title": "ChatGPT-4 Outperforms Experts and Crowd Workers in Annotating Political Twitter Messages with Zero-Shot Learning (Tornberg, arXiv)",
+   "claim": "[seen] URL and title seen (as arxiv.org/pdf/2304.06588). Page not read. The independent confirmation with GPT-4, by a researcher at the University of Amsterdam (affiliation from memory)."
+  },
+  {
+   "slug": "chatgpt-beats-crowd-workers-text-labels",
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://aclanthology.org/2024.cl-1.8",
+   "title": "Can Large Language Models Transform Computational Social Science? (Ziems et al., Computational Linguistics 2024)",
+   "claim": "[seen] URL and title seen (also arxiv.org/abs/2305.03514). Page not read. A wider test by other teams (Stanford and others, from memory): models do well at labelling but do not beat the best fine-tuned systems, so this only partly confirms."
+  },
+  {
+   "slug": "chatgpt-beats-crowd-workers-text-labels",
+   "role": "source",
+   "i": 4,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2304.11085",
+   "title": "Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark (Reiss, arXiv)",
+   "claim": "[seen] URL and title seen. Page not read. A caution: repeated runs on the same text can give different labels."
+  },
+  {
+   "slug": "chatgpt-beats-crowd-workers-text-labels",
+   "role": "source",
+   "i": 5,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11954583",
+   "title": "Are chatbots reliable text annotators? Sometimes (PMC)",
+   "claim": "[seen] URL and title seen (as ncbi.nlm.nih.gov/pmc/articles/PMC11954583). Page not read. A second caution, by a Danish team (from memory: Aarhus University). PMC records never pass as kind 'reaction' in source-tiers.json, so it is listed as a paper."
+  },
+  {
+   "slug": "phone-data-targets-cash-aid-togo",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-022-04484-9",
+   "title": "Machine learning and phone data can improve targeting of humanitarian aid (Nature)",
+   "claim": "[seen] URL and title seen in search results. Page not read."
+  },
+  {
+   "slug": "phone-data-targets-cash-aid-togo",
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8967719",
+   "title": "Machine learning and phone data can improve targeting of humanitarian aid (PMC open copy)",
+   "claim": "[seen] URL and title seen. Page not read."
+  },
+  {
+   "slug": "phone-data-targets-cash-aid-togo",
+   "role": "source",
+   "i": 2,
+   "kind": "preprint",
+   "url": "https://www.nber.org/papers/w29070",
+   "title": "Machine Learning and Mobile Phone Data Can Improve the Targeting of Humanitarian Assistance (NBER working paper 29070)",
+   "claim": "[seen] URL and title seen. Page not read. The 2021 working paper version."
+  },
+  {
+   "slug": "phone-data-targets-cash-aid-togo",
+   "role": "source",
+   "i": 3,
+   "kind": "lab_post",
+   "url": "https://cega.berkeley.edu/feature/togo-cash-transfers/",
+   "title": "Togo cash transfers (Center for Effective Global Action, UC Berkeley)",
+   "claim": "[seen] URL seen. Page not read. Written by the authors' own centre, so it is not independent."
+  },
+  {
+   "slug": "phone-data-targets-cash-aid-togo",
+   "role": "source",
+   "i": 4,
+   "kind": "lab_post",
+   "url": "https://www.povertyactionlab.org/case-study/using-machine-learning-and-mobile-phone-data-improve-speed-and-cost-effectiveness-social",
+   "title": "Using machine learning and mobile phone data to improve the speed and cost-effectiveness of social protection (J-PAL case study)",
+   "claim": "[seen] URL seen (the result had a '?lang=es' tail, removed). Page not read. J-PAL is a research network that includes one of the authors, so it is not fully independent."
+  },
+  {
+   "slug": "ai-dialogues-reduce-conspiracy-beliefs",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.adq1814",
+   "title": "Durably reducing conspiracy beliefs through dialogues with AI (Costello, Pennycook, Rand, Science)",
+   "claim": "[memory] DOI recalled, not seen. Science blocks the snapshot step, so this cannot be the cited copy; use the preprint below."
+  },
+  {
+   "slug": "ai-dialogues-reduce-conspiracy-beliefs",
+   "role": "source",
+   "i": 1,
+   "kind": "preprint",
+   "url": "https://osf.io/preprints/psyarxiv/xcwdn_v1",
+   "title": "Durably reducing conspiracy beliefs through dialogues with AI (PsyArXiv preprint)",
+   "claim": "[memory] This URL was seen in a search result for the paper's authors and topic, but the title was not shown. I recall the id 'xcwdn' as the preprint of this paper; confirm on the page before use."
+  },
+  {
+   "slug": "ai-dialogues-reduce-conspiracy-beliefs",
+   "role": "source",
+   "i": 2,
+   "kind": "dataset",
+   "url": "https://datadryad.org/dataset/doi:10.5061/dryad.v6wwpzh4h",
+   "title": "Data from: Durably reducing conspiracy beliefs through dialogues with AI (Dryad)",
+   "claim": "[seen] URL and title seen. Page not read."
+  },
+  {
+   "slug": "ai-dialogues-reduce-conspiracy-beliefs",
+   "role": "source",
+   "i": 3,
+   "kind": "lab_post",
+   "url": "https://news.cornell.edu/node/329310",
+   "title": "AI succeeds in combatting conspiracy theories (Cornell University)",
+   "claim": "[seen] URL and title seen. Page not read. Co-author Gordon Pennycook is at Cornell, so this is not independent."
+  },
+  {
+   "slug": "ai-dialogues-reduce-conspiracy-beliefs",
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12578366",
+   "title": "Dialogues with large language models reduce conspiracy beliefs even when the AI is perceived as human (PMC)",
+   "claim": "[seen] URL and title seen (as ncbi.nlm.nih.gov/pmc/articles/PMC12578366). Page not read. I recall some of the same authors, so it is a follow-up and not an independent replication."
+  },
+  {
+   "slug": "ai-dialogues-reduce-conspiracy-beliefs",
+   "role": "source",
+   "i": 5,
+   "kind": "reaction",
+   "url": "https://www.scimex.org/newsfeed/using-chatbots-to-reduce-conspiracy-beliefs",
+   "title": "EXPERT REACTION: Using chatbots to reduce conspiracy beliefs (Scimex)",
+   "claim": "[seen] URL and title seen. Page not read. Expert comments from Australian and New Zealand researchers (from the format of Scimex pages)."
+  },
+  {
+   "slug": "ai-dialogues-reduce-conspiracy-beliefs",
+   "role": "source",
+   "i": 6,
+   "kind": "reaction",
+   "url": "https://www.sciencemediacentre.co.nz/2024/09/13/using-chatbots-to-reduce-conspiracy-beliefs/",
+   "title": "Using chatbots to reduce conspiracy beliefs - Expert Reaction (Science Media Centre, New Zealand)",
+   "claim": "[seen] URL and title seen. Page not read. Dated 13 September 2024 by its URL."
+  },
+  {
+   "slug": "ai-dialogues-reduce-conspiracy-beliefs",
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://www.scimex.org/newsfeed/using-chatbots-to-reduce-conspiracy-beliefs",
+   "who": "experts quoted on the page (names not read)",
+   "affiliation": "Australian and New Zealand universities (not read)",
+   "claim": "Expert-reaction compilation. Scimex is not in source-tiers.json's reaction_sources, which lists only the UK Science Media Centre's host."
+  },
+  {
+   "slug": "ai-dialogues-reduce-conspiracy-beliefs",
+   "role": "reaction",
+   "i": 1,
+   "kind": "reaction",
+   "url": "https://www.sciencemediacentre.co.nz/2024/09/13/using-chatbots-to-reduce-conspiracy-beliefs/",
+   "who": "experts quoted on the page (names not read)",
+   "affiliation": "New Zealand and Australian universities (not read)",
+   "claim": "Sister centre of the UK SMC. SPEC row 12 mentions sister centres, but the config host list does not, so check isPrimary before counting it."
+  },
+  {
+   "slug": "generative-ai-assistant-raises-support-productivity",
+   "role": "source",
+   "i": 0,
+   "kind": "preprint",
+   "url": "https://www.nber.org/papers/w31161",
+   "title": "Generative AI at Work (Brynjolfsson, Li, Raymond; NBER working paper 31161)",
+   "claim": "[seen] URL and title seen in search results. Page not read. April 2023 working paper; I recall the final version in the Quarterly Journal of Economics (2025), a host that blocks."
+  },
+  {
+   "slug": "generative-ai-assistant-raises-support-productivity",
+   "role": "source",
+   "i": 1,
+   "kind": "lab_post",
+   "url": "https://siepr.stanford.edu/publications/working-paper/generative-ai-work",
+   "title": "Generative AI at Work (Stanford Institute for Economic Policy Research)",
+   "claim": "[seen] URL seen (with a '?utm_source' tail, removed). Page not read."
+  },
+  {
+   "slug": "generative-ai-assistant-raises-support-productivity",
+   "role": "source",
+   "i": 2,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2302.06590",
+   "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot (Peng et al., arXiv)",
+   "claim": "[seen] URL and title seen. Page not read. A separate randomized trial by another team (GitHub, Microsoft Research and MIT, from memory): programmers with the AI pair programmer finished a task faster. Confirms the direction on a different job."
+  },
+  {
+   "slug": "generative-ai-assistant-raises-support-productivity",
+   "role": "source",
+   "i": 3,
+   "kind": "lab_post",
+   "url": "https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714",
+   "title": "Study finds ChatGPT boosts worker productivity for some writing tasks (MIT News)",
+   "claim": "[seen] URL seen. Page not read. MIT's release on Noy and Zhang's randomized experiment (Science, July 2023; DOI 10.1126/science.adh2586 from memory, a blocked host). A second team, on writing tasks."
+  },
+  {
+   "slug": "replication-nature-science-social-experiments",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41562-018-0399-z",
+   "title": "Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015 (Nature Human Behaviour)",
+   "claim": "[seen] URL and title seen in search results. Page not read."
+  },
+  {
+   "slug": "replication-nature-science-social-experiments",
+   "role": "source",
+   "i": 1,
+   "kind": "lab_post",
+   "url": "https://www.cos.io/about/news/do-social-science-research-findings-published-in-nature-and-science-replicate",
+   "title": "Do social science research findings published in Nature and Science replicate? (Center for Open Science)",
+   "claim": "[seen] URL and title seen. Page not read. The Center for Open Science is part of the team, so this is not independent."
+  },
+  {
+   "slug": "replication-nature-science-social-experiments",
+   "role": "source",
+   "i": 2,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-018-06075-z",
+   "title": "Nature item d41586-018-06075-z (title not read)",
+   "claim": "[seen] URL seen as a PDF link in a search result for the paper. Title and type not read; it may be Nature's own news report, which would be press-type."
+  },
+  {
+   "slug": "six-microcredit-trials-find-modest-effects",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://dspace.mit.edu/handle/1721.1/95940",
+   "title": "Six Randomized Evaluations of Microcredit: Introduction and Further Steps (Banerjee, Karlan, Zinman; MIT DSpace open copy)",
+   "claim": "[seen] URL seen. Page not read. The journal version is American Economic Journal: Applied Economics 7(1), January 2015 (RePEc page seen)."
+  },
+  {
+   "slug": "six-microcredit-trials-find-modest-effects",
+   "role": "source",
+   "i": 1,
+   "kind": "preprint",
+   "url": "https://www.nber.org/papers/w18950",
+   "title": "The Miracle of Microfinance? Evidence from a Randomized Evaluation (Banerjee, Duflo, Glennerster, Kinnan; NBER 18950)",
+   "claim": "[seen] URL and title seen. Page not read. The India trial. Journal version AEJ: Applied 7(1), pp. 22 to 53 (RePEc page seen)."
+  },
+  {
+   "slug": "six-microcredit-trials-find-modest-effects",
+   "role": "source",
+   "i": 2,
+   "kind": "preprint",
+   "url": "https://www.nber.org/papers/w20144",
+   "title": "Estimating the Impact of Microcredit on Those Who Take It Up: Evidence from a Randomized Experiment in Morocco (Crepon, Devoto, Duflo, Pariente; NBER 20144)",
+   "claim": "[seen] URL and title seen. Page not read. The Morocco trial. The AEJ: Applied DOI 10.1257/app.20130535 was seen in an aeaweb PDF URL."
+  },
+  {
+   "slug": "six-microcredit-trials-find-modest-effects",
+   "role": "source",
+   "i": 3,
+   "kind": "preprint",
+   "url": "https://www.nber.org/papers/w19119",
+   "title": "Win Some Lose Some? Evidence from a Randomized Microcredit Program Placement Experiment by Compartamos Banco (Angelucci, Karlan, Zinman; NBER 19119)",
+   "claim": "[seen] URL and title seen. Page not read. The Mexico trial. Its AEJ: Applied version is 'Microcredit Impacts: Evidence from a Randomized Microcredit Program Placement Experiment by Compartamos Banco' (DOI 10.1257/app.20130537 seen in an aeaweb PDF URL)."
+  },
+  {
+   "slug": "six-microcredit-trials-find-modest-effects",
+   "role": "source",
+   "i": 4,
+   "kind": "paper",
+   "url": "https://dspace.mit.edu/handle/1721.1/95969",
+   "title": "Crepon et al. Morocco trial (MIT DSpace open copy)",
+   "claim": "[seen] URL seen. Page not read."
+  },
+  {
+   "slug": "growth-mindset-national-experiment-ninth-graders",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6786290",
+   "title": "A national experiment reveals where a growth mindset improves achievement (Yeager et al., Nature, PMC open copy)",
+   "claim": "[seen] URL and title seen (as ncbi.nlm.nih.gov/pmc/articles/PMC6786290). Page not read."
+  },
+  {
+   "slug": "growth-mindset-national-experiment-ninth-graders",
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-019-1466-y",
+   "title": "A national experiment reveals where a growth mindset improves achievement (Nature)",
+   "claim": "[doi] DOI taken from an IDEAS URL that was seen (10.1038_s41586-019-1466-y); the nature.com page can be rebuilt from it. Page not read."
+  },
+  {
+   "slug": "growth-mindset-national-experiment-ninth-graders",
+   "role": "source",
+   "i": 2,
+   "kind": "lab_post",
+   "url": "https://www.hks.harvard.edu/publications/national-experiment-reveals-where-growth-mindset-improves-achievement",
+   "title": "A national experiment reveals where a growth mindset improves achievement (Harvard Kennedy School publication page)",
+   "claim": "[seen] URL seen. Page not read."
+  },
+  {
+   "slug": "moral-machine-self-driving-car-choices",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-018-0637-6",
+   "title": "The Moral Machine experiment (Awad et al., Nature)",
+   "claim": "[doi] Rebuilt from the DOI 10.1038/s41586-018-0637-6, which was seen in an IDEAS URL. Page not read. Nature volume 563, November 2018."
+  },
+  {
+   "slug": "moral-machine-self-driving-car-choices",
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://dspace.mit.edu/handle/1721.1/125065",
+   "title": "The Moral Machine experiment (MIT DSpace open copy)",
+   "claim": "[seen] URL seen. Page not read."
+  },
+  {
+   "slug": "moral-machine-self-driving-car-choices",
+   "role": "source",
+   "i": 2,
+   "kind": "lab_post",
+   "url": "https://www.media.mit.edu/publications/the-moral-machine-experiment",
+   "title": "The Moral Machine experiment (MIT Media Lab publication page)",
+   "claim": "[seen] URL seen. Page not read. The authors' own lab, so not independent."
+  },
+  {
+   "slug": "entire-herculaneum-scroll-read-first-time",
+   "role": "source",
+   "i": 0,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2606.29085",
+   "title": "Complete virtual unwrapping and reading of a rolled Herculaneum papyrus",
+   "claim": "[seen] Title and arXiv id seen in two search results (abs and html pages); not read. The id 2606 puts the posting in June 2026. arXiv abs pages read. Authors, which scroll and the method are not known to me."
+  },
+  {
+   "slug": "entire-herculaneum-scroll-read-first-time",
+   "role": "source",
+   "i": 1,
+   "kind": "checker",
+   "url": "https://scrollprize.org/firstscroll",
+   "title": "An entire Herculaneum scroll has been read for the first time (Vesuvius Challenge)",
+   "claim": "[seen] Title seen in two search results; not read. scrollprize.org is the vesuvius-challenge entry of config/checkers.json (rung checked only). The organisers are in who, so this does not reach Confirmed."
+  },
+  {
+   "slug": "entire-herculaneum-scroll-read-first-time",
+   "role": "source",
+   "i": 2,
+   "kind": "statement",
+   "url": "https://uknow.uky.edu/research/day-herculaneum-scrolls-began-speaking-again",
+   "title": "The day the Herculaneum scrolls began speaking again (University of Kentucky)",
+   "claim": "[seen] Title and address seen in a search result; not read. A .edu host, so it passes the statement test. It is the university's own story, and the university is in who."
+  },
+  {
+   "slug": "entire-herculaneum-scroll-read-first-time",
+   "role": "source",
+   "i": 3,
+   "kind": "statement",
+   "url": "https://www.diamond.ac.uk/Home/News/LatestNews/2026/New-secrets-revealed-from-the-Herculaneum-scrolls.html",
+   "title": "New secrets revealed from Herculaneum scrolls (Diamond Light Source)",
+   "claim": "[seen] Title and address seen in two search results; not read. An .ac.uk host. It may describe the same result or an earlier scanning step: the reviewer must read it. If Diamond is a team other than the authors and the page reports the reading, this may be an outside statement."
+  },
+  {
+   "slug": "entire-herculaneum-scroll-read-first-time",
+   "role": "source",
+   "i": 4,
+   "kind": "statement",
+   "url": "https://www.esrf.fr/home/news/general/content-news/general/the-day-the-herculaneum-scrolls-began-speaking-again.html",
+   "title": "The day the Herculaneum scrolls began speaking again (ESRF, the European Synchrotron)",
+   "claim": "[seen] Title and address seen in two search results; not read. esrf.fr is on no statement suffix of source-tiers.json, so it probably fails the statement host test: keep it as background unless the allowlist gains it. Same title as the Kentucky page, so it may be the same release."
+  },
+  {
+   "slug": "minoans-mycenaeans-ancient-dna-aegean-farmers",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/nature23310",
+   "title": "Genetic origins of the Minoans and Mycenaeans (Lazaridis et al., Nature 2017)",
+   "claim": "[doi] The DOI 10.1038/nature23310 was seen in a search result (a link.springer.com DOI address); the nature.com address is rebuilt from it. Title seen in several results. Nature 548, published 2 August 2017 (date from memory)."
+  },
+  {
+   "slug": "minoans-mycenaeans-ancient-dna-aegean-farmers",
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5565772",
+   "title": "Genetic origins of the Minoans and Mycenaeans (open copy)",
+   "claim": "[seen] Address seen in a search result for this paper, with no title shown: confirm it is the Lazaridis paper. A Harvard repository copy (dash.harvard.edu, handle 1/35014964) was also seen; that host is not on the allowlist."
+  },
+  {
+   "slug": "minoans-mycenaeans-ancient-dna-aegean-farmers",
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41559-022-01952-3",
+   "title": "Ancient DNA reveals admixture history and endogamy in the prehistoric Aegean (Skourtanioti et al., Nature Ecology and Evolution 2023)",
+   "claim": "[seen] DOI and title seen in a search result; not read. A later study of 100 or so ancient Aegean genomes by a different group (Max Planck Institute, Jena, from memory). This is the proposed confirming source: it must be read to see that it supports the main claim. Its Max Planck repository copy was seen at pure.mpg.de but that host is not on the allowlist."
+  },
+  {
+   "slug": "minoans-mycenaeans-ancient-dna-aegean-farmers",
+   "role": "source",
+   "i": 3,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9911347",
+   "title": "Ancient DNA reveals admixture history and endogamy in the prehistoric Aegean (open copy)",
+   "claim": "[seen] Address seen in a search result with the same title for the 2023 paper; not read."
+  },
+  {
+   "slug": "old-kingdom-egyptian-genome-nuwayrat",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-025-09195-5",
+   "title": "Whole-genome ancestry of an Old Kingdom Egyptian (Nature 2025)",
+   "claim": "[seen] Title and address seen in two search results; not read. Nature volume 644, issue 8077 (21 August 2025) was seen as an issue page. Online date 2 July 2025 is from memory (the Nature news item and daily briefing were seen with 2 and 3 July numbering)."
+  },
+  {
+   "slug": "old-kingdom-egyptian-genome-nuwayrat",
+   "role": "source",
+   "i": 1,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-025-02036-5",
+   "title": "A genome from ancient Egypt (Nature)",
+   "claim": "[seen] Title and address seen in two search results; not read. The short title is in the style of a News and Views, but the article type was not seen: a news story passes the path test and fails the type test. Needs an author and affiliation from the page."
+  },
+  {
+   "slug": "old-kingdom-egyptian-genome-nuwayrat",
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-025-02036-5",
+   "who": "author not read (News and Views expected, type unverified)",
+   "affiliation": "not read",
+   "claim": "Only one possible reaction piece was seen. A Nature news story, 'First human genome from ancient Egypt sequenced from 4,800-year-old teeth' (d41586-025-02102-y), was also seen; a news story is press and is not a reaction."
+  },
+  {
+   "slug": "nllb-200-translates-200-languages",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-024-07335-x",
+   "title": "Scaling neural machine translation to 200 languages (NLLB Team, Nature 2024)",
+   "claim": "[doi] The PDF address nature.com/articles/s41586-024-07335-x.pdf was seen in a search result; the article address is the same without .pdf. Published in Nature in June 2024 (date from memory, about 5 June)."
+  },
+  {
+   "slug": "nllb-200-translates-200-languages",
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11208141",
+   "title": "Scaling neural machine translation to 200 languages (open copy)",
+   "claim": "[seen] Address seen in two search results (two address forms); title seen on the older ncbi.nlm.nih.gov form. Not read."
+  },
+  {
+   "slug": "nllb-200-translates-200-languages",
+   "role": "source",
+   "i": 2,
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2207.04672",
+   "title": "No Language Left Behind: Scaling Human-Centered Machine Translation (arXiv 2207.04672)",
+   "claim": "[seen] Address seen in a search result; the title is from memory. The July 2022 preprint is why first_published is 2022-07."
+  },
+  {
+   "slug": "nllb-200-translates-200-languages",
+   "role": "source",
+   "i": 3,
+   "kind": "lab_post",
+   "url": "https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/",
+   "title": "NLLB-200: high-quality machine translation for 200 languages (Meta AI)",
+   "claim": "[seen] Address seen in several search results, with a snippet naming 'Meta AI' and 'NLLB-200' (the Traditional Chinese version). ai.meta.com /blog/ is on config/labs.json. A claim by the maker."
+  },
+  {
+   "slug": "kalambo-falls-earliest-wooden-structure-476000",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-023-06557-9",
+   "title": "Evidence for the earliest structural use of wood at least 476,000 years ago (Nature 2023)",
+   "claim": "[seen] Title and address seen in a search result; not read. Nature volume 622, issue 7981 (5 October 2023) was seen as an issue page. Online date 20 September 2023 is from memory."
+  },
+  {
+   "slug": "kalambo-falls-earliest-wooden-structure-476000",
+   "role": "source",
+   "i": 1,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-023-02858-1",
+   "title": "Hominins built with wood 476,000 years ago (Nature)",
+   "claim": "[seen] Title and address seen in a search result; not read. The title is in the style of a News and Views but the article type was not seen. A news story from the same week, 'These ancient whittled logs could be the earliest known wooden structure' (d41586-023-02928-4), was also seen and is press."
+  },
+  {
+   "slug": "kalambo-falls-earliest-wooden-structure-476000",
+   "role": "reaction",
+   "i": 0,
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-023-02858-1",
+   "who": "author not read (News and Views expected, type unverified)",
+   "affiliation": "not read",
+   "claim": "One possible reaction piece. A second outside commentary is needed and none was seen."
+  },
+  {
+   "slug": "sulawesi-oldest-narrative-cave-art-51200",
+   "role": "source",
+   "i": 0,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-024-07541-7",
+   "title": "Narrative cave art in Indonesia by 51,200 years ago (Nature 2024)",
+   "claim": "[seen] Title and address seen in a search result; not read. Online date 3 July 2024 is from memory (the CNN and Griffith pages were seen dated 4 July in Australian and Asian time)."
+  },
+  {
+   "slug": "sulawesi-oldest-narrative-cave-art-51200",
+   "role": "source",
+   "i": 1,
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11269172",
+   "title": "Narrative cave art in Indonesia by 51,200 years ago (open copy)",
+   "claim": "[seen] Address seen in a search result next to the paper's PubMed record; title not shown there. Confirm it is the same paper."
+  },
+  {
+   "slug": "sulawesi-oldest-narrative-cave-art-51200",
+   "role": "source",
+   "i": 2,
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-025-09968-y",
+   "title": "Rock art from at least 67,800 years ago in Sulawesi (Nature)",
+   "claim": "[seen] Title and address seen in a search result (a later paper than my knowledge); not read. Probably the same research group, so it extends the claim and is not an outside check."
+  }
+ ]
+}
