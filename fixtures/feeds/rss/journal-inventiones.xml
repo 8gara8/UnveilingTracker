@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">
+  <channel>
+    <title>Sample feed journal-inventiones</title>
+    <link>https://link.springer.com/</link>
+    <description>An invented feed in the shape of journal-inventiones.</description>
+    <item>
+      <title>Sample report inventiones: a learned model of invented data</title>
+      <link>https://link.springer.com/ut-sample/journal-inventiones-1</link>
+      <guid isPermaLink="false">journal-inventiones-ut-sample-1</guid>
+      <pubDate>2026-10-21</pubDate>
+      <description>An invented summary number 1 of a sample item from journal-inventiones.</description>
+    </item>
+    <item>
+      <title>Sample note inventiones: an older item outside the window</title>
+      <link>https://link.springer.com/ut-sample/journal-inventiones-2</link>
+      <guid isPermaLink="false">journal-inventiones-ut-sample-2</guid>
+      <pubDate>2026-10-19</pubDate>
+      <description>An invented summary number 2 of a sample item from journal-inventiones.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <id>https://arxiv.org/api/ut-sample-arxiv-math-2026-10-18</id>
+  <title>arXiv Query: sample answer for arxiv-math-2026-10-18</title>
+  <updated>2026-10-21T00:00:00-04:00</updated>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <opensearch:itemsPerPage>2000</opensearch:itemsPerPage>
+  <entry>
+    <id>https://arxiv.org/abs/2610.99003v1</id>
+    <updated>2026-10-10T12:00:00Z</updated>
+    <published>2026-10-10T12:00:00Z</published>
+    <title>A sample theorem found with help from a search program</title>
+    <summary>An invented note on a sample statement whose proof a search program suggested.</summary>
+    <author><name>Ada Placeholder (SAMPLE)</name></author>
+    <link href="https://arxiv.org/abs/2610.99003v1" rel="alternate" type="text/html"/>
+    <arxiv:primary_category term="math.LO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.LO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LO" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

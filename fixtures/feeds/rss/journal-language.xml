@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://purl.org/rss/1.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel rdf:about="https://muse.jhu.edu/ut-sample/journal-language/feed">
+    <title>Sample feed journal-language</title>
+    <link>https://muse.jhu.edu/</link>
+    <description>An invented feed in the shape of journal-language.</description>
+    <dc:date>2026-10-21</dc:date>
+    <items><rdf:Seq>
+      <rdf:li rdf:resource="https://muse.jhu.edu/ut-sample/journal-language-1"/>
+      <rdf:li rdf:resource="https://muse.jhu.edu/ut-sample/journal-language-2"/>
+    </rdf:Seq></items>
+  </channel>
+  <item rdf:about="https://muse.jhu.edu/ut-sample/journal-language-1">
+    <title>Sample report language: a learned model of invented data</title>
+    <link>https://muse.jhu.edu/ut-sample/journal-language-1</link>
+    <description>An invented summary number 1 of a sample item from journal-language.</description>
+    <dc:date>2026-10-21T04:00:00-05:00</dc:date>
+    <prism:publicationName>Sample journal-language</prism:publicationName>
+  </item>
+  <item rdf:about="https://muse.jhu.edu/ut-sample/journal-language-2">
+    <title>Sample note language: an older item outside the window</title>
+    <link>https://muse.jhu.edu/ut-sample/journal-language-2</link>
+    <description>An invented summary number 2 of a sample item from journal-language.</description>
+    <dc:date>2026-10-19T09:00:00-05:00</dc:date>
+    <prism:publicationName>Sample journal-language</prism:publicationName>
+  </item>
+</rdf:RDF>

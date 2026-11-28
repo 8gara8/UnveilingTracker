@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">
+  <channel>
+    <title>Sample feed journal-annals-of-mathematics</title>
+    <link>https://annals.math.princeton.edu/</link>
+    <description>An invented feed in the shape of journal-annals-of-mathematics.</description>
+    <item>
+      <title>Sample report annals-of-mathematics: a learned model of invented data</title>
+      <link>https://annals.math.princeton.edu/ut-sample/journal-annals-of-mathematics-1</link>
+      <guid isPermaLink="false">journal-annals-of-mathematics-ut-sample-1</guid>
+      <pubDate>Wed, 21 Oct 2026 04:00:00:00 +0000</pubDate>
+      <description>An invented summary number 1 of a sample item from journal-annals-of-mathematics.</description>
+    </item>
+    <item>
+      <title>Sample note annals-of-mathematics: an older item outside the window</title>
+      <link>https://annals.math.princeton.edu/ut-sample/journal-annals-of-mathematics-2</link>
+      <guid isPermaLink="false">journal-annals-of-mathematics-ut-sample-2</guid>
+      <pubDate>Mon, 19 Oct 2026 09:00:00:00 +0000</pubDate>
+      <description>An invented summary number 2 of a sample item from journal-annals-of-mathematics.</description>
+    </item>
+  </channel>
+</rss>

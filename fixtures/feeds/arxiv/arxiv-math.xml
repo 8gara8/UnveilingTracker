@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <id>https://arxiv.org/api/ut-sample-arxiv-math</id>
+  <title>arXiv Query: sample answer for arxiv-math</title>
+  <updated>2026-10-21T00:00:00-04:00</updated>
+  <opensearch:totalResults>2</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <opensearch:itemsPerPage>2000</opensearch:itemsPerPage>
+  <entry>
+    <id>https://arxiv.org/abs/2610.99001v1</id>
+    <updated>2026-10-12T15:00:00Z</updated>
+    <published>2026-10-12T15:00:00Z</published>
+    <title>A small neural network guesses the sign of a sample invariant</title>
+    <summary>We train a small neural network on invented examples and report how often it guesses a sample invariant correctly.</summary>
+    <author><name>Ada Placeholder (SAMPLE)</name></author>
+    <link href="https://arxiv.org/abs/2610.99001v1" rel="alternate" type="text/html"/>
+    <arxiv:primary_category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>https://arxiv.org/abs/2610.99002v2</id>
+    <updated>2026-10-13T09:30:00Z</updated>
+    <published>2026-10-13T09:30:00Z</published>
+    <title>Counting sample lattice paths with a plain recursion</title>
+    <summary>A short note on a sample counting problem that uses no learning method at all.</summary>
+    <author><name>Ada Placeholder (SAMPLE)</name></author>
+    <arxiv:doi>10.1000/ut-sample-arxiv-0002</arxiv:doi>
+    <link href="https://arxiv.org/abs/2610.99002v2" rel="alternate" type="text/html"/>
+    <arxiv:primary_category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

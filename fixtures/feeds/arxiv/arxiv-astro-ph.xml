@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <id>https://arxiv.org/api/ut-sample-arxiv-astro-ph</id>
+  <title>arXiv Query: sample answer for arxiv-astro-ph</title>
+  <updated>2026-10-21T00:00:00-04:00</updated>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <opensearch:itemsPerPage>2000</opensearch:itemsPerPage>
+  <entry>
+    <id>https://arxiv.org/abs/2610.99021v1</id>
+    <updated>2026-10-13T08:00:00Z</updated>
+    <published>2026-10-13T08:00:00Z</published>
+    <title>Language model triage of sample survey candidates</title>
+    <summary>A sample study of ranking invented survey candidates with a language model.</summary>
+    <author><name>Ada Placeholder (SAMPLE)</name></author>
+    <link href="https://arxiv.org/abs/2610.99021v1" rel="alternate" type="text/html"/>
+    <arxiv:primary_category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

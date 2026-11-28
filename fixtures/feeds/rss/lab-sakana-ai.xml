@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://sakana.ai/ut-sample/lab-sakana-ai/feed</id>
+  <title>Sample feed lab-sakana-ai</title>
+  <updated>2026-10-21T13:00:00+09:00</updated>
+  <entry>
+    <id>https://sakana.ai/ut-sample/lab-sakana-ai-1</id>
+    <title>Sample report sakana-ai: a learned model of invented data</title>
+    <link href="https://sakana.ai/ut-sample/lab-sakana-ai-1" rel="alternate"/>
+    <published>2026-10-21T13:00:00+09:00</published>
+    <updated>2026-10-21T13:00:00+09:00</updated>
+    <summary>An invented summary number 1 of a sample item from lab-sakana-ai.</summary>
+  </entry>
+  <entry>
+    <id>https://sakana.ai/ut-sample/lab-sakana-ai-2</id>
+    <title>Sample note sakana-ai: an older item outside the window</title>
+    <link href="https://sakana.ai/ut-sample/lab-sakana-ai-2" rel="alternate"/>
+    <published>2026-10-19T13:00:00+09:00</published>
+    <updated>2026-10-19T13:00:00+09:00</updated>
+    <summary>An invented summary number 2 of a sample item from lab-sakana-ai.</summary>
+  </entry>
+</feed>

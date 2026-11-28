@@ -1,0 +1,126 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message": {
+    "total-results": 3,
+    "items-per-page": 100,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    },
+    "items": [
+      {
+        "DOI": "10.1038/ut-sample-cr-0001",
+        "URL": "https://doi.org/10.1038/ut-sample-cr-0001",
+        "title": [
+          "A sample result from a learned model of invented chemistry"
+        ],
+        "container-title": [
+          "Nature"
+        ],
+        "type": "journal-article",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              21
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              21
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              21
+            ]
+          ]
+        },
+        "abstract": "An invented abstract with plain text only."
+      },
+      {
+        "DOI": "10.1038/ut-sample-cr-0002",
+        "URL": "https://doi.org/10.1038/ut-sample-cr-0002",
+        "title": [
+          "A sample article with no abstract in the record"
+        ],
+        "container-title": [
+          "Nature"
+        ],
+        "type": "journal-article",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              20
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              20
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              20
+            ]
+          ]
+        }
+      },
+      {
+        "DOI": "10.1038/ut-sample-cr-0003",
+        "URL": "https://doi.org/10.1038/ut-sample-cr-0003",
+        "title": [
+          "A sample item with only a month"
+        ],
+        "container-title": [
+          "Nature"
+        ],
+        "type": "journal-article",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

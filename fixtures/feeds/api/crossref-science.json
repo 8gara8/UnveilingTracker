@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message": {
+    "total-results": 1,
+    "items-per-page": 100,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    },
+    "items": [
+      {
+        "DOI": "10.1126/ut-sample-cr-0101",
+        "URL": "https://doi.org/10.1126/ut-sample-cr-0101",
+        "title": [
+          "A sample report on invented climate data"
+        ],
+        "container-title": [
+          "Science"
+        ],
+        "type": "journal-article",
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              21
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              21
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              21
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://purl.org/rss/1.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel rdf:about="https://www.nature.com/ut-sample/journal-nature/feed">
+    <title>Sample feed journal-nature</title>
+    <link>https://www.nature.com/</link>
+    <description>An invented feed in the shape of journal-nature.</description>
+    <dc:date>2026-10-21</dc:date>
+    <items><rdf:Seq>
+      <rdf:li rdf:resource="https://www.nature.com/ut-sample/journal-nature-1"/>
+      <rdf:li rdf:resource="https://www.nature.com/ut-sample/journal-nature-2"/>
+    </rdf:Seq></items>
+  </channel>
+  <item rdf:about="https://www.nature.com/ut-sample/journal-nature-1">
+    <title>Sample report nature: a learned model of invented data</title>
+    <link>https://www.nature.com/ut-sample/journal-nature-1</link>
+    <description>An invented summary number 1 of a sample item from journal-nature.</description>
+    <dc:date>2026-10-21</dc:date>
+    <prism:doi>10.1038/ut-sample-journal-nature-0001</prism:doi>
+    <dc:identifier>doi:10.1038/ut-sample-journal-nature-0001</dc:identifier>
+    <prism:publicationName>Sample journal-nature</prism:publicationName>
+  </item>
+  <item rdf:about="https://www.nature.com/ut-sample/journal-nature-2">
+    <title>Sample note nature: an older item outside the window</title>
+    <link>https://www.nature.com/ut-sample/journal-nature-2</link>
+    <description>An invented summary number 2 of a sample item from journal-nature.</description>
+    <dc:date>2026-10-19</dc:date>
+    <prism:doi>10.1038/ut-sample-journal-nature-0002</prism:doi>
+    <dc:identifier>doi:10.1038/ut-sample-journal-nature-0002</dc:identifier>
+    <prism:publicationName>Sample journal-nature</prism:publicationName>
+  </item>
+</rdf:RDF>

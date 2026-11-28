@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <id>https://arxiv.org/api/ut-sample-arxiv-physics-chem-ph</id>
+  <title>arXiv Query: sample answer for arxiv-physics-chem-ph</title>
+  <updated>2026-10-21T00:00:00-04:00</updated>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <opensearch:itemsPerPage>2000</opensearch:itemsPerPage>
+  <entry>
+    <id>https://arxiv.org/abs/2610.99061v1</id>
+    <updated>2026-10-13T05:05:00Z</updated>
+    <published>2026-10-13T05:05:00Z</published>
+    <title>A foundation model for sample molecular energies</title>
+    <summary>An invented foundation model scored on sample molecular energies.</summary>
+    <author><name>Ada Placeholder (SAMPLE)</name></author>
+    <link href="https://arxiv.org/abs/2610.99061v1" rel="alternate" type="text/html"/>
+    <arxiv:primary_category term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

@@ -1,0 +1,65 @@
+{
+  "messages": [
+    {
+      "status": "ok",
+      "interval": "2026-10-20:2026-10-21",
+      "cursor": 0,
+      "count": 3,
+      "count_new_papers": "3",
+      "total": 5
+    }
+  ],
+  "collection": [
+    {
+      "doi": "10.1101/2026.10.20.99001",
+      "title": "A language model reads sample protein notes",
+      "authors": "Placeholder, A. (SAMPLE)",
+      "author_corresponding": "Ada Placeholder (SAMPLE)",
+      "author_corresponding_institution": "Placeholder Institute",
+      "date": "2026-10-20",
+      "version": "1",
+      "type": "new results",
+      "license": "cc_by",
+      "category": "bioinformatics",
+      "jatsxml": "https://www.biorxiv.org/content/early/2026/10/20/10.1101/2026.10.20.99001.source.xml",
+      "abstract": "An invented study of a language model that reads sample protein notes.",
+      "funder": "NA",
+      "published": "NA",
+      "server": "bioRxiv"
+    },
+    {
+      "doi": "10.1101/2026.10.20.99002",
+      "title": "Sample cell counts with a plain method",
+      "authors": "Placeholder, A. (SAMPLE)",
+      "author_corresponding": "Ada Placeholder (SAMPLE)",
+      "author_corresponding_institution": "Placeholder Institute",
+      "date": "2026-10-20",
+      "version": "1",
+      "type": "new results",
+      "license": "cc_by",
+      "category": "cell biology",
+      "jatsxml": "https://www.biorxiv.org/content/early/2026/10/20/10.1101/2026.10.20.99002.source.xml",
+      "abstract": "A sample paper that counts invented cells without any learning method.",
+      "funder": "NA",
+      "published": "NA",
+      "server": "bioRxiv"
+    },
+    {
+      "doi": "10.1101/2026.10.19.99003",
+      "title": "A sample paper posted twice, first version",
+      "authors": "Placeholder, A. (SAMPLE)",
+      "author_corresponding": "Ada Placeholder (SAMPLE)",
+      "author_corresponding_institution": "Placeholder Institute",
+      "date": "2026-10-19",
+      "version": "1",
+      "type": "new results",
+      "license": "cc_by",
+      "category": "genomics",
+      "jatsxml": "https://www.biorxiv.org/content/early/2026/10/20/10.1101/2026.10.19.99003.source.xml",
+      "abstract": "The first version of an invented paper.",
+      "funder": "NA",
+      "published": "NA",
+      "server": "bioRxiv"
+    }
+  ]
+}

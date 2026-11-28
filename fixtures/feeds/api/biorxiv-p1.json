@@ -1,0 +1,48 @@
+{
+  "messages": [
+    {
+      "status": "ok",
+      "interval": "2026-10-20:2026-10-21",
+      "cursor": 3,
+      "count": 2,
+      "count_new_papers": "2",
+      "total": 5
+    }
+  ],
+  "collection": [
+    {
+      "doi": "10.1101/2026.10.19.99003",
+      "title": "A sample paper posted twice, second version",
+      "authors": "Placeholder, A. (SAMPLE)",
+      "author_corresponding": "Ada Placeholder (SAMPLE)",
+      "author_corresponding_institution": "Placeholder Institute",
+      "date": "2026-10-21",
+      "version": "2",
+      "type": "new results",
+      "license": "cc_by",
+      "category": "genomics",
+      "jatsxml": "https://www.biorxiv.org/content/early/2026/10/20/10.1101/2026.10.19.99003.source.xml",
+      "abstract": "The second version of the same invented paper.",
+      "funder": "NA",
+      "published": "NA",
+      "server": "bioRxiv"
+    },
+    {
+      "doi": "10.64898/2026.10.21.99004",
+      "title": "A diffusion model for sample structures",
+      "authors": "Placeholder, A. (SAMPLE)",
+      "author_corresponding": "Ada Placeholder (SAMPLE)",
+      "author_corresponding_institution": "Placeholder Institute",
+      "date": "2026-10-21",
+      "version": "1",
+      "type": "new results",
+      "license": "cc_by",
+      "category": "biophysics",
+      "jatsxml": "https://www.biorxiv.org/content/early/2026/10/20/10.64898/2026.10.21.99004.source.xml",
+      "abstract": "An invented diffusion model for sample structures.",
+      "funder": "NA",
+      "published": "NA",
+      "server": "bioRxiv"
+    }
+  ]
+}

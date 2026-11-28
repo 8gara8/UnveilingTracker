@@ -1,0 +1,13 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message": {
+    "total-results": 0,
+    "items-per-page": 100,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    },
+    "items": []
+  }
+}

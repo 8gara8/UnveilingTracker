@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">
+  <channel>
+    <title>Sample feed lab-allen-institute-for-ai</title>
+    <link>https://allenai.org/</link>
+    <description>An invented feed in the shape of lab-allen-institute-for-ai.</description>
+    <item>
+      <title>Sample report allen-institute-for-ai: a learned model of invented data</title>
+      <link>https://allenai.org/ut-sample/lab-allen-institute-for-ai-1</link>
+      <guid isPermaLink="false">lab-allen-institute-for-ai-ut-sample-1</guid>
+      <pubDate>2026-10-21T04:00:00-08:00</pubDate>
+      <description>An invented summary number 1 of a sample item from lab-allen-institute-for-ai.</description>
+    </item>
+    <item>
+      <title>Sample note allen-institute-for-ai: an older item outside the window</title>
+      <link>https://allenai.org/ut-sample/lab-allen-institute-for-ai-2</link>
+      <guid isPermaLink="false">lab-allen-institute-for-ai-ut-sample-2</guid>
+      <pubDate>2026-10-19T09:00:00-08:00</pubDate>
+      <description>An invented summary number 2 of a sample item from lab-allen-institute-for-ai.</description>
+    </item>
+  </channel>
+</rss>

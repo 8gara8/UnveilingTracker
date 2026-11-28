@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <id>https://rss.arxiv.org/atom/ut-sample-listing</id>
+  <title>sample listing</title>
+  <updated>2026-10-21T04:00:00Z</updated>
+  <entry>
+    <id>oai:arXiv.org:2610.99001v1</id>
+    <title>A small neural network guesses the sign of a sample invariant</title>
+    <updated>2026-10-21T04:00:00Z</updated>
+    <summary>We train a small neural network on invented examples.</summary>
+    <category term="math.CO"/>
+    <arxiv:announce_type>new</arxiv:announce_type>
+  </entry>
+  <entry>
+    <id>oai:arXiv.org:2610.99004v3</id>
+    <title>A sample revision of an older paper</title>
+    <updated>2026-10-21T04:00:00Z</updated>
+    <summary>A revised version of an older invented paper.</summary>
+    <category term="math.NT"/>
+    <arxiv:announce_type>replace</arxiv:announce_type>
+  </entry>
+</feed>

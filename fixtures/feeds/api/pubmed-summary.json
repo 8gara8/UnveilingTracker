@@ -1,0 +1,100 @@
+{
+  "header": {
+    "type": "esummary",
+    "version": "0.3"
+  },
+  "result": {
+    "99000001": {
+      "uid": "99000001",
+      "pubdate": "2026 Oct 21",
+      "epubdate": "2026 Oct 21",
+      "source": "Journal of Placeholder Medicine",
+      "authors": [
+        {
+          "name": "Ada Placeholder (SAMPLE)",
+          "authtype": "Author"
+        }
+      ],
+      "title": "A sample trial of a machine learning triage tool",
+      "fulljournalname": "Journal of Placeholder Medicine",
+      "sortpubdate": "2026/10/21 00:00",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "99000001"
+        },
+        {
+          "idtype": "doi",
+          "idtypen": 3,
+          "value": "10.1000/ut-sample-pm-0001"
+        }
+      ],
+      "pubtype": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ]
+    },
+    "99000002": {
+      "uid": "99000002",
+      "pubdate": "2026 Oct 20",
+      "epubdate": "2026 Oct 20",
+      "source": "Journal of Placeholder Medicine",
+      "authors": [
+        {
+          "name": "Ada Placeholder (SAMPLE)",
+          "authtype": "Author"
+        }
+      ],
+      "title": "Sample review of language models in the clinic",
+      "fulljournalname": "Journal of Placeholder Medicine",
+      "sortpubdate": "2026/10/20 00:00",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "99000002"
+        }
+      ],
+      "pubtype": [
+        "Journal Article",
+        "Review"
+      ]
+    },
+    "99000003": {
+      "uid": "99000003",
+      "pubdate": "2026 Oct",
+      "epubdate": "2026 Oct",
+      "source": "Placeholder Letters",
+      "authors": [
+        {
+          "name": "Ada Placeholder (SAMPLE)",
+          "authtype": "Author"
+        }
+      ],
+      "title": "A sample note with no abstract",
+      "fulljournalname": "Placeholder Letters",
+      "sortpubdate": "2026/10/21 00:00",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "99000003"
+        },
+        {
+          "idtype": "doi",
+          "idtypen": 3,
+          "value": "10.1000/ut-sample-pm-0003"
+        }
+      ],
+      "pubtype": [
+        "Letter"
+      ]
+    },
+    "uids": [
+      "99000001",
+      "99000002",
+      "99000003"
+    ]
+  }
+}

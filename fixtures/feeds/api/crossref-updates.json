@@ -1,0 +1,86 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message": {
+    "total-results": 2,
+    "items-per-page": 1000,
+    "items": [
+      {
+        "DOI": "10.1000/ut-sample-notice-0001",
+        "URL": "https://doi.org/10.1000/ut-sample-notice-0001",
+        "title": [
+          "Retraction notice for a sample paper"
+        ],
+        "container-title": [
+          "Journal of Placeholder Science"
+        ],
+        "publisher": "Placeholder Press",
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              19
+            ]
+          ]
+        },
+        "update-to": [
+          {
+            "DOI": "10.1000/ut-sample-rw-0001",
+            "type": "retraction",
+            "label": "Retraction",
+            "source": "publisher",
+            "updated": {
+              "date-parts": [
+                [
+                  2026,
+                  10,
+                  19
+                ]
+              ],
+              "timestamp": 1792368000000,
+              "date-time": "2026-10-19T00:00:00Z"
+            }
+          }
+        ]
+      },
+      {
+        "DOI": "10.1000/ut-sample-notice-0002",
+        "URL": "https://doi.org/10.1000/ut-sample-notice-0002",
+        "title": [
+          "Expression of concern for a sample paper"
+        ],
+        "container-title": [
+          "Journal of Placeholder Science"
+        ],
+        "publisher": "Placeholder Press",
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        },
+        "update-to": [
+          {
+            "DOI": "10.1000/ut-sample-rw-0002",
+            "type": "expression_of_concern",
+            "label": "Expression of concern",
+            "source": "retraction-watch",
+            "updated": {
+              "date-parts": [
+                [
+                  2026,
+                  10,
+                  20
+                ]
+              ],
+              "date-time": "2026-10-20T00:00:00Z"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

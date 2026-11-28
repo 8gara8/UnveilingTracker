@@ -189,6 +189,8 @@ const isFeedXml = (file: string): boolean => /^fixtures\/feeds\/(?:[^/]+\/)*[^/]
 /** A scheme other than http(s) in front of "://". */
 const OTHER_SCHEME = /(?<![A-Za-z0-9+.-])(?![hH][tT][tT][pP][sS]?:\/\/)[A-Za-z][A-Za-z0-9+.-]{1,31}:\/\/\S{0,40}/g;
 
+/** A request of bioRxiv's or medRxiv's date-range API (`details/<server>/<from>/<to>/<cursor>`): its dates and cursor are the run's own, so it names no page that may exist (P2, the feed readers' fixtures). */
+const RANGE_REQUEST = /^api\.biorxiv\.org\/details\/(?:biorxiv|medrxiv)\/\d{4}-\d{2}-\d{2}\/\d{4}-\d{2}-\d{2}\/\d+$/;
 /**
  * Why an address may not stand in a fixture, or null. With `classify` false only the safety tests run (the shape of the address, the blocked
  * list, the press list); with it, the host must also be one the run reads or allows, and a real host's page must be an invented one.
@@ -218,7 +220,7 @@ function addressProblem(url: string, classify: boolean): string | null {
   } catch {
     // keep the escaped form
   }
-  if (RUN_ENDPOINTS.has(endpointOf(u))) return null;
+  if (RUN_ENDPOINTS.has(endpointOf(u)) || RANGE_REQUEST.test(endpointOf(u))) return null;
   const zenodo = ZENODO_ID.exec(`${host}${page}`);
   if (zenodo !== null && !ZENODO_INVENTED.test(zenodo[1] ?? zenodo[2]!)) return "is a Zenodo record that may exist (an invented number has 8 digits and begins 999)";
   const frontPage = u.pathname === "/" && u.search === "" && u.hash === "";

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <id>https://arxiv.org/api/ut-sample-arxiv-physics-2026-10-19</id>
+  <title>arXiv Query: sample answer for arxiv-physics-2026-10-19</title>
+  <updated>2026-10-21T00:00:00-04:00</updated>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <opensearch:itemsPerPage>2000</opensearch:itemsPerPage>
+  <entry>
+    <id>https://arxiv.org/abs/2610.99012v1</id>
+    <updated>2026-10-14T13:00:00Z</updated>
+    <published>2026-10-14T13:00:00Z</published>
+    <title>Neural network closure for a sample fluid model</title>
+    <summary>A sample closure model for an invented fluid problem.</summary>
+    <author><name>Ada Placeholder (SAMPLE)</name></author>
+    <link href="https://arxiv.org/abs/2610.99012v1" rel="alternate" type="text/html"/>
+    <arxiv:primary_category term="physics.flu-dyn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.flu-dyn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

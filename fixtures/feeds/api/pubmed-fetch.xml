@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PubmedArticleSet>
+  <PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+      <PMID Version="1">99000001</PMID>
+      <Article PubModel="Print-Electronic">
+        <Journal><Title>Journal of Placeholder Medicine</Title></Journal>
+        <ArticleTitle>A sample trial of a machine learning triage tool</ArticleTitle>
+        <Abstract>
+          <AbstractText Label="BACKGROUND">Invented background about a sample triage tool.</AbstractText>
+          <AbstractText Label="RESULTS">The invented tool ranked <i>sample</i> cases as well as a plain checklist.</AbstractText>
+        </Abstract>
+      </Article>
+    </MedlineCitation>
+    <PubmedData><ArticleIdList><ArticleId IdType="pubmed">99000001</ArticleId></ArticleIdList></PubmedData>
+  </PubmedArticle>
+  <PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+      <PMID Version="1">99000002</PMID>
+      <Article PubModel="Print">
+        <Journal><Title>Journal of Placeholder Medicine</Title></Journal>
+        <ArticleTitle>Sample review of language models in the clinic</ArticleTitle>
+        <Abstract><AbstractText>An invented review of how language models are used in a sample clinic.</AbstractText></Abstract>
+      </Article>
+    </MedlineCitation>
+  </PubmedArticle>
+  <PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+      <PMID Version="1">99000003</PMID>
+      <Article PubModel="Print"><Journal><Title>Placeholder Letters</Title></Journal><ArticleTitle>A sample note with no abstract</ArticleTitle></Article>
+    </MedlineCitation>
+  </PubmedArticle>
+</PubmedArticleSet>
