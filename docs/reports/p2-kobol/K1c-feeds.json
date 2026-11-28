@@ -1,0 +1,3009 @@
+{
+  "checked": "2026-11-28, about 12:46 to 13:30 Taipei (04:46 to 05:30 UTC), Kobol, GET only, the run user agent",
+  "requests": {
+    "total": 269,
+    "note": "GET only, paced per host (arXiv 3 s, Crossref and the rest 1.1 s, NCBI 0.4 s); no login, no key, no CAPTCHA; OpenAlex not called"
+  },
+  "feeds": [
+    {
+      "id": "arxiv-math",
+      "name": "arXiv API, mathematics",
+      "kind": "api",
+      "parser": "atom",
+      "status": 200,
+      "url": "https://export.arxiv.org/api/query",
+      "proposed_url": "https://export.arxiv.org/api/query",
+      "fallback_url": "https://rss.arxiv.org/atom/math",
+      "format": "Atom 1.0 with opensearch and arxiv namespaces",
+      "items": 409,
+      "newest": "2026-11-25T18:59:26Z",
+      "date_format": "published and updated: ISO 8601 with Z (UTC); the entry is dated by its announcement, not these",
+      "date_zone": null,
+      "fresh_days": 5,
+      "fresh_days_basis": "longest normal gap from an announcement to a morning window end at 03:15 Taipei: 3.75 days (Thanksgiving, Christmas, New Year: Thursday 20:00 ET list to Monday 03:15 Taipei); rounded up 4, plus a day",
+      "doi_field": "arxiv:doi (a few entries only)",
+      "abstract_field": "summary",
+      "type_field": null,
+      "journal_field": "arxiv:journal_ref (a few only)",
+      "authors_field": "one author/name per author",
+      "sketch": "<feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:opensearch=... xmlns:arxiv=...><opensearch:totalResults>409</opensearch:totalResults><entry><id>http://arxiv.org/abs/2611.00001v1</id><title>[text]</title><updated>2026-11-25T18:59:26Z</updated><link href=\"https://arxiv.org/abs/2611.00001v1\" rel=\"alternate\" type=\"text/html\"/><link href=\"https://arxiv.org/pdf/2611.00001v1\" rel=\"related\" type=\"application/pdf\" title=\"pdf\"/><summary>[text]</summary><category term=\"math.AG\" scheme=\"http://arxiv.org/schemas/atom\"/><published>2026-11-25T18:59:26Z</published><arxiv:comment>[text]</arxiv:comment><arxiv:primary_category term=\"math.AG\"/><author><name>[name]</name></author></entry>\n<entry ...second entry: two category terms (math.PR, cs.IT), arxiv:doi and arxiv:journal_ref present on a few entries only...</entry>",
+      "credit": {
+        "en": "Credit: Preprint metadata from arXiv (arxiv.org), CC0 1.0; each link goes to the paper on arXiv.",
+        "zh": "Credit (zh): 預印本詮釋資料來自 arXiv（arxiv.org），採 CC0 1.0；各連結指向 arXiv 上的論文。",
+        "basis": "arXiv API terms of use: descriptive metadata are CC0 1.0; link to the abstract page; do not imply endorsement by arXiv"
+      },
+      "host_limits": "one request every 3 seconds, one connection at a time, for all machines together (arXiv API terms of use)",
+      "problems": [
+        "the category query must OR the aliases: cat:math* misses cs.IT (the alias of math.IT) and math-ph (the alias of math.MP), 16 new submissions and 2 cross-lists in this announcement",
+        "the submittedDate end minute is exclusive: [A TO B] runs from A:00 to before B:00, so the query must end at the deadline minute (14:00 ET), not one minute before (SPEC 4.13 says one minute before)"
+      ],
+      "in_registry": true
+    },
+    {
+      "id": "arxiv-physics",
+      "name": "arXiv API, physics",
+      "kind": "api",
+      "parser": "atom",
+      "status": 200,
+      "url": "https://export.arxiv.org/api/query",
+      "proposed_url": "https://export.arxiv.org/api/query",
+      "fallback_url": "https://rss.arxiv.org/atom/physics",
+      "format": "Atom 1.0, as arxiv-math",
+      "items": 116,
+      "query": "cat:physics* AND submittedDate:[202611241900 TO 202611251900]",
+      "cross_lists_in_answer": 38,
+      "with_doi": 3,
+      "date_format": "as arxiv-math",
+      "date_zone": null,
+      "fresh_days": 5,
+      "fresh_days_basis": "as arxiv-math",
+      "doi_field": "arxiv:doi (few)",
+      "abstract_field": "summary",
+      "journal_field": "arxiv:journal_ref (few)",
+      "authors_field": "author/name",
+      "sketch": "<feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:opensearch=... xmlns:arxiv=...><opensearch:totalResults>409</opensearch:totalResults><entry><id>http://arxiv.org/abs/2611.00001v1</id><title>[text]</title><updated>2026-11-25T18:59:26Z</updated><link href=\"https://arxiv.org/abs/2611.00001v1\" rel=\"alternate\" type=\"text/html\"/><link href=\"https://arxiv.org/pdf/2611.00001v1\" rel=\"related\" type=\"application/pdf\" title=\"pdf\"/><summary>[text]</summary><category term=\"math.AG\" scheme=\"http://arxiv.org/schemas/atom\"/><published>2026-11-25T18:59:26Z</published><arxiv:comment>[text]</arxiv:comment><arxiv:primary_category term=\"math.AG\"/><author><name>[name]</name></author></entry>\n<entry ...second entry: two category terms (math.PR, cs.IT), arxiv:doi and arxiv:journal_ref present on a few entries only...</entry>",
+      "credit": {
+        "en": "Credit: Preprint metadata from arXiv (arxiv.org), CC0 1.0; each link goes to the paper on arXiv.",
+        "zh": "Credit (zh): 預印本詮釋資料來自 arXiv（arxiv.org），採 CC0 1.0；各連結指向 arXiv 上的論文。",
+        "basis": "arXiv API terms of use: descriptive metadata are CC0 1.0; link to the abstract page; do not imply endorsement by arXiv"
+      },
+      "host_limits": "as arxiv-math",
+      "problems": [
+        "cat:physics* is only the physics.* archive; it holds no hep-*, gr-qc, nucl-* or math-ph, which is narrower than the name says"
+      ],
+      "in_registry": true
+    },
+    {
+      "id": "arxiv-astro-ph",
+      "name": "arXiv API, astrophysics",
+      "kind": "api",
+      "parser": "atom",
+      "status": 200,
+      "url": "https://export.arxiv.org/api/query",
+      "proposed_url": "https://export.arxiv.org/api/query",
+      "fallback_url": "https://rss.arxiv.org/atom/astro-ph",
+      "format": "Atom 1.0, as arxiv-math",
+      "items": 101,
+      "query": "cat:astro-ph* AND submittedDate:[202611241900 TO 202611251900]",
+      "cross_lists_in_answer": 14,
+      "with_doi": 6,
+      "date_format": "as arxiv-math",
+      "date_zone": null,
+      "fresh_days": 5,
+      "fresh_days_basis": "as arxiv-math",
+      "doi_field": "arxiv:doi (few)",
+      "abstract_field": "summary",
+      "journal_field": "arxiv:journal_ref (few)",
+      "authors_field": "author/name",
+      "sketch": "<feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:opensearch=... xmlns:arxiv=...><opensearch:totalResults>409</opensearch:totalResults><entry><id>http://arxiv.org/abs/2611.00001v1</id><title>[text]</title><updated>2026-11-25T18:59:26Z</updated><link href=\"https://arxiv.org/abs/2611.00001v1\" rel=\"alternate\" type=\"text/html\"/><link href=\"https://arxiv.org/pdf/2611.00001v1\" rel=\"related\" type=\"application/pdf\" title=\"pdf\"/><summary>[text]</summary><category term=\"math.AG\" scheme=\"http://arxiv.org/schemas/atom\"/><published>2026-11-25T18:59:26Z</published><arxiv:comment>[text]</arxiv:comment><arxiv:primary_category term=\"math.AG\"/><author><name>[name]</name></author></entry>\n<entry ...second entry: two category terms (math.PR, cs.IT), arxiv:doi and arxiv:journal_ref present on a few entries only...</entry>",
+      "credit": {
+        "en": "Credit: Preprint metadata from arXiv (arxiv.org), CC0 1.0; each link goes to the paper on arXiv.",
+        "zh": "Credit (zh): 預印本詮釋資料來自 arXiv（arxiv.org），採 CC0 1.0；各連結指向 arXiv 上的論文。",
+        "basis": "arXiv API terms of use: descriptive metadata are CC0 1.0; link to the abstract page; do not imply endorsement by arXiv"
+      },
+      "host_limits": "as arxiv-math",
+      "problems": [],
+      "in_registry": true
+    },
+    {
+      "id": "arxiv-cond-mat",
+      "name": "arXiv API, condensed matter",
+      "kind": "api",
+      "parser": "atom",
+      "status": 200,
+      "url": "https://export.arxiv.org/api/query",
+      "proposed_url": "https://export.arxiv.org/api/query",
+      "fallback_url": "https://rss.arxiv.org/atom/cond-mat",
+      "format": "Atom 1.0, as arxiv-math",
+      "items": 124,
+      "query": "cat:cond-mat* AND submittedDate:[202611241900 TO 202611251900]",
+      "cross_lists_in_answer": 38,
+      "with_doi": 6,
+      "date_format": "as arxiv-math",
+      "date_zone": null,
+      "fresh_days": 5,
+      "fresh_days_basis": "as arxiv-math",
+      "doi_field": "arxiv:doi (few)",
+      "abstract_field": "summary",
+      "journal_field": "arxiv:journal_ref (few)",
+      "authors_field": "author/name",
+      "sketch": "<feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:opensearch=... xmlns:arxiv=...><opensearch:totalResults>409</opensearch:totalResults><entry><id>http://arxiv.org/abs/2611.00001v1</id><title>[text]</title><updated>2026-11-25T18:59:26Z</updated><link href=\"https://arxiv.org/abs/2611.00001v1\" rel=\"alternate\" type=\"text/html\"/><link href=\"https://arxiv.org/pdf/2611.00001v1\" rel=\"related\" type=\"application/pdf\" title=\"pdf\"/><summary>[text]</summary><category term=\"math.AG\" scheme=\"http://arxiv.org/schemas/atom\"/><published>2026-11-25T18:59:26Z</published><arxiv:comment>[text]</arxiv:comment><arxiv:primary_category term=\"math.AG\"/><author><name>[name]</name></author></entry>\n<entry ...second entry: two category terms (math.PR, cs.IT), arxiv:doi and arxiv:journal_ref present on a few entries only...</entry>",
+      "credit": {
+        "en": "Credit: Preprint metadata from arXiv (arxiv.org), CC0 1.0; each link goes to the paper on arXiv.",
+        "zh": "Credit (zh): 預印本詮釋資料來自 arXiv（arxiv.org），採 CC0 1.0；各連結指向 arXiv 上的論文。",
+        "basis": "arXiv API terms of use: descriptive metadata are CC0 1.0; link to the abstract page; do not imply endorsement by arXiv"
+      },
+      "host_limits": "as arxiv-math",
+      "problems": [],
+      "in_registry": true
+    },
+    {
+      "id": "arxiv-quant-ph",
+      "name": "arXiv API, quantum physics",
+      "kind": "api",
+      "parser": "atom",
+      "status": 200,
+      "url": "https://export.arxiv.org/api/query",
+      "proposed_url": "https://export.arxiv.org/api/query",
+      "fallback_url": "https://rss.arxiv.org/atom/quant-ph",
+      "format": "Atom 1.0, as arxiv-math",
+      "items": 103,
+      "query": "cat:quant-ph AND submittedDate:[202611241900 TO 202611251900]",
+      "cross_lists_in_answer": 19,
+      "with_doi": 0,
+      "date_format": "as arxiv-math",
+      "date_zone": null,
+      "fresh_days": 5,
+      "fresh_days_basis": "as arxiv-math",
+      "doi_field": "arxiv:doi (few)",
+      "abstract_field": "summary",
+      "journal_field": "arxiv:journal_ref (few)",
+      "authors_field": "author/name",
+      "sketch": "<feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:opensearch=... xmlns:arxiv=...><opensearch:totalResults>409</opensearch:totalResults><entry><id>http://arxiv.org/abs/2611.00001v1</id><title>[text]</title><updated>2026-11-25T18:59:26Z</updated><link href=\"https://arxiv.org/abs/2611.00001v1\" rel=\"alternate\" type=\"text/html\"/><link href=\"https://arxiv.org/pdf/2611.00001v1\" rel=\"related\" type=\"application/pdf\" title=\"pdf\"/><summary>[text]</summary><category term=\"math.AG\" scheme=\"http://arxiv.org/schemas/atom\"/><published>2026-11-25T18:59:26Z</published><arxiv:comment>[text]</arxiv:comment><arxiv:primary_category term=\"math.AG\"/><author><name>[name]</name></author></entry>\n<entry ...second entry: two category terms (math.PR, cs.IT), arxiv:doi and arxiv:journal_ref present on a few entries only...</entry>",
+      "credit": {
+        "en": "Credit: Preprint metadata from arXiv (arxiv.org), CC0 1.0; each link goes to the paper on arXiv.",
+        "zh": "Credit (zh): 預印本詮釋資料來自 arXiv（arxiv.org），採 CC0 1.0；各連結指向 arXiv 上的論文。",
+        "basis": "arXiv API terms of use: descriptive metadata are CC0 1.0; link to the abstract page; do not imply endorsement by arXiv"
+      },
+      "host_limits": "as arxiv-math",
+      "problems": [],
+      "in_registry": true
+    },
+    {
+      "id": "arxiv-q-bio",
+      "name": "arXiv API, quantitative biology",
+      "kind": "api",
+      "parser": "atom",
+      "status": 200,
+      "url": "https://export.arxiv.org/api/query",
+      "proposed_url": "https://export.arxiv.org/api/query",
+      "fallback_url": "https://rss.arxiv.org/atom/q-bio",
+      "format": "Atom 1.0, as arxiv-math",
+      "items": 24,
+      "query": "cat:q-bio* AND submittedDate:[202611241900 TO 202611251900]",
+      "cross_lists_in_answer": 11,
+      "with_doi": 1,
+      "date_format": "as arxiv-math",
+      "date_zone": null,
+      "fresh_days": 5,
+      "fresh_days_basis": "as arxiv-math",
+      "doi_field": "arxiv:doi (few)",
+      "abstract_field": "summary",
+      "journal_field": "arxiv:journal_ref (few)",
+      "authors_field": "author/name",
+      "sketch": "<feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:opensearch=... xmlns:arxiv=...><opensearch:totalResults>409</opensearch:totalResults><entry><id>http://arxiv.org/abs/2611.00001v1</id><title>[text]</title><updated>2026-11-25T18:59:26Z</updated><link href=\"https://arxiv.org/abs/2611.00001v1\" rel=\"alternate\" type=\"text/html\"/><link href=\"https://arxiv.org/pdf/2611.00001v1\" rel=\"related\" type=\"application/pdf\" title=\"pdf\"/><summary>[text]</summary><category term=\"math.AG\" scheme=\"http://arxiv.org/schemas/atom\"/><published>2026-11-25T18:59:26Z</published><arxiv:comment>[text]</arxiv:comment><arxiv:primary_category term=\"math.AG\"/><author><name>[name]</name></author></entry>\n<entry ...second entry: two category terms (math.PR, cs.IT), arxiv:doi and arxiv:journal_ref present on a few entries only...</entry>",
+      "credit": {
+        "en": "Credit: Preprint metadata from arXiv (arxiv.org), CC0 1.0; each link goes to the paper on arXiv.",
+        "zh": "Credit (zh): 預印本詮釋資料來自 arXiv（arxiv.org），採 CC0 1.0；各連結指向 arXiv 上的論文。",
+        "basis": "arXiv API terms of use: descriptive metadata are CC0 1.0; link to the abstract page; do not imply endorsement by arXiv"
+      },
+      "host_limits": "as arxiv-math",
+      "problems": [],
+      "in_registry": true
+    },
+    {
+      "id": "arxiv-physics-chem-ph",
+      "name": "arXiv API, chemical physics",
+      "kind": "api",
+      "parser": "atom",
+      "status": 200,
+      "url": "https://export.arxiv.org/api/query",
+      "proposed_url": "https://export.arxiv.org/api/query",
+      "fallback_url": "https://rss.arxiv.org/atom/physics.chem-ph",
+      "format": "Atom 1.0, as arxiv-math",
+      "items": 15,
+      "query": "cat:physics.chem-ph AND submittedDate:[202611241900 TO 202611251900]",
+      "cross_lists_in_answer": 5,
+      "with_doi": 0,
+      "date_format": "as arxiv-math",
+      "date_zone": null,
+      "fresh_days": 5,
+      "fresh_days_basis": "as arxiv-math",
+      "doi_field": "arxiv:doi (few)",
+      "abstract_field": "summary",
+      "journal_field": "arxiv:journal_ref (few)",
+      "authors_field": "author/name",
+      "sketch": "<feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:opensearch=... xmlns:arxiv=...><opensearch:totalResults>409</opensearch:totalResults><entry><id>http://arxiv.org/abs/2611.00001v1</id><title>[text]</title><updated>2026-11-25T18:59:26Z</updated><link href=\"https://arxiv.org/abs/2611.00001v1\" rel=\"alternate\" type=\"text/html\"/><link href=\"https://arxiv.org/pdf/2611.00001v1\" rel=\"related\" type=\"application/pdf\" title=\"pdf\"/><summary>[text]</summary><category term=\"math.AG\" scheme=\"http://arxiv.org/schemas/atom\"/><published>2026-11-25T18:59:26Z</published><arxiv:comment>[text]</arxiv:comment><arxiv:primary_category term=\"math.AG\"/><author><name>[name]</name></author></entry>\n<entry ...second entry: two category terms (math.PR, cs.IT), arxiv:doi and arxiv:journal_ref present on a few entries only...</entry>",
+      "credit": {
+        "en": "Credit: Preprint metadata from arXiv (arxiv.org), CC0 1.0; each link goes to the paper on arXiv.",
+        "zh": "Credit (zh): 預印本詮釋資料來自 arXiv（arxiv.org），採 CC0 1.0；各連結指向 arXiv 上的論文。",
+        "basis": "arXiv API terms of use: descriptive metadata are CC0 1.0; link to the abstract page; do not imply endorsement by arXiv"
+      },
+      "host_limits": "as arxiv-math",
+      "problems": [],
+      "in_registry": true
+    },
+    {
+      "id": "arxiv-stat-ml",
+      "name": "arXiv API, statistics, machine learning",
+      "kind": "api",
+      "parser": "atom",
+      "status": 200,
+      "url": "https://export.arxiv.org/api/query",
+      "proposed_url": "https://export.arxiv.org/api/query",
+      "fallback_url": "https://rss.arxiv.org/atom/stat.ML",
+      "format": "Atom 1.0, as arxiv-math",
+      "items": 28,
+      "query": "cat:stat.ML AND submittedDate:[202611241900 TO 202611251900]",
+      "cross_lists_in_answer": 16,
+      "with_doi": 1,
+      "date_format": "as arxiv-math",
+      "date_zone": null,
+      "fresh_days": 5,
+      "fresh_days_basis": "as arxiv-math",
+      "doi_field": "arxiv:doi (few)",
+      "abstract_field": "summary",
+      "journal_field": "arxiv:journal_ref (few)",
+      "authors_field": "author/name",
+      "sketch": "<feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:opensearch=... xmlns:arxiv=...><opensearch:totalResults>409</opensearch:totalResults><entry><id>http://arxiv.org/abs/2611.00001v1</id><title>[text]</title><updated>2026-11-25T18:59:26Z</updated><link href=\"https://arxiv.org/abs/2611.00001v1\" rel=\"alternate\" type=\"text/html\"/><link href=\"https://arxiv.org/pdf/2611.00001v1\" rel=\"related\" type=\"application/pdf\" title=\"pdf\"/><summary>[text]</summary><category term=\"math.AG\" scheme=\"http://arxiv.org/schemas/atom\"/><published>2026-11-25T18:59:26Z</published><arxiv:comment>[text]</arxiv:comment><arxiv:primary_category term=\"math.AG\"/><author><name>[name]</name></author></entry>\n<entry ...second entry: two category terms (math.PR, cs.IT), arxiv:doi and arxiv:journal_ref present on a few entries only...</entry>",
+      "credit": {
+        "en": "Credit: Preprint metadata from arXiv (arxiv.org), CC0 1.0; each link goes to the paper on arXiv.",
+        "zh": "Credit (zh): 預印本詮釋資料來自 arXiv（arxiv.org），採 CC0 1.0；各連結指向 arXiv 上的論文。",
+        "basis": "arXiv API terms of use: descriptive metadata are CC0 1.0; link to the abstract page; do not imply endorsement by arXiv"
+      },
+      "host_limits": "as arxiv-math",
+      "problems": [],
+      "in_registry": true
+    },
+    {
+      "id": "biorxiv",
+      "name": "bioRxiv API",
+      "kind": "api",
+      "parser": "json",
+      "status": 200,
+      "url": "https://api.biorxiv.org/details/biorxiv",
+      "proposed_url": "https://api.biorxiv.org/details/biorxiv/<from>/<to>/<cursor>",
+      "fallback_url": null,
+      "format": "JSON: messages[0] (count, total, cursor) and collection[] of 30 a page",
+      "items": 511,
+      "newest": "2026-11-26",
+      "date_format": "date: YYYY-MM-DD (the posting day, no zone)",
+      "date_zone": null,
+      "fresh_days": 3,
+      "fresh_days_basis": "posts every day including weekends; observed newest 1.2 days; keep 3",
+      "doi_field": "doi (bare; prefix now 10.64898 for new posts, 10.1101 for older)",
+      "abstract_field": "abstract",
+      "type_field": "type (new results, confirmatory results, contradictory results)",
+      "journal_field": "server; published (the journal DOI or NA)",
+      "authors_field": "authors: one string, names joined by \"; \"",
+      "sketch": "{\"messages\":[{\"status\":\"ok\",\"category\":\"all\",\"interval\":\"2026-11-26:2026-11-27\",\"cursor\":0,\"count\":30,\"count_new_papers\":\"417\",\"total\":\"511\"}],\"collection\":[{\"title\":\"[text]\",\"authors\":\"[name]; [name]\",\"author_corresponding\":\"[name]\",\"author_corresponding_institution\":\"[text]\",\"doi\":\"10.64898/2026.07.23.000001\",\"date\":\"2026-11-26\",\"version\":\"2\",\"type\":\"new results\",\"license\":\"cc_by_nc_nd\",\"category\":\"biophysics\",\"jatsxml\":\"https://www.biorxiv.org/content/early/2026/11/26/2026.07.23.000001.source.xml\",\"abstract\":\"[text]\",\"published\":\"NA\",\"server\":\"bioRxiv\"},{\"...\":\"second item: version 1, type confirmatory results, doi 10.1101/2026.11.01.000002\"}]}",
+      "credit": {
+        "en": "Credit: Preprint metadata from the bioRxiv and medRxiv API (Cold Spring Harbor Laboratory).",
+        "zh": "Credit (zh): 預印本詮釋資料來自 bioRxiv 與 medRxiv API（冷泉港實驗室）。",
+        "basis": "no fixed wording found; each abstract carries its own licence in the license field"
+      },
+      "host_limits": "no documented limit; 30 items a page by cursor",
+      "problems": [
+        "30 items a page: 511 items over two days need 17 pages, so a one-day window needs about 9, more than budget 5",
+        "bioRxiv now issues DOIs with prefix 10.64898 (29 of 30 items); any DOI rule keyed to 10.1101 must take both"
+      ],
+      "in_registry": true
+    },
+    {
+      "id": "medrxiv",
+      "name": "medRxiv API",
+      "kind": "api",
+      "parser": "json",
+      "status": 200,
+      "url": "https://api.biorxiv.org/details/medrxiv",
+      "proposed_url": "https://api.biorxiv.org/details/medrxiv/<from>/<to>/<cursor>",
+      "format": "JSON, as biorxiv",
+      "items": 111,
+      "newest": "2026-11-26",
+      "date_format": "as biorxiv",
+      "date_zone": null,
+      "fresh_days": 3,
+      "fresh_days_basis": "daily, as biorxiv",
+      "doi_field": "doi (prefix 10.64898 seen)",
+      "abstract_field": "abstract",
+      "type_field": "type (PUBLISHAHEADOFPRINT and others)",
+      "journal_field": "server; published",
+      "authors_field": "authors string",
+      "sketch": "{\"messages\":[{\"status\":\"ok\",\"category\":\"all\",\"interval\":\"2026-11-26:2026-11-27\",\"cursor\":0,\"count\":30,\"count_new_papers\":\"417\",\"total\":\"511\"}],\"collection\":[{\"title\":\"[text]\",\"authors\":\"[name]; [name]\",\"author_corresponding\":\"[name]\",\"author_corresponding_institution\":\"[text]\",\"doi\":\"10.64898/2026.07.23.000001\",\"date\":\"2026-11-26\",\"version\":\"2\",\"type\":\"new results\",\"license\":\"cc_by_nc_nd\",\"category\":\"biophysics\",\"jatsxml\":\"https://www.biorxiv.org/content/early/2026/11/26/2026.07.23.000001.source.xml\",\"abstract\":\"[text]\",\"published\":\"NA\",\"server\":\"bioRxiv\"},{\"...\":\"second item: version 1, type confirmatory results, doi 10.1101/2026.11.01.000002\"}]}",
+      "credit": {
+        "en": "Credit: Preprint metadata from the bioRxiv and medRxiv API (Cold Spring Harbor Laboratory).",
+        "zh": "Credit (zh): 預印本詮釋資料來自 bioRxiv 與 medRxiv API（冷泉港實驗室）。",
+        "basis": "no fixed wording found; each abstract carries its own licence in the license field"
+      },
+      "host_limits": "as biorxiv",
+      "problems": [
+        "111 items over two days: 4 pages a two-day window, within budget 5"
+      ],
+      "in_registry": true
+    },
+    {
+      "id": "pubmed",
+      "name": "PubMed E-utilities",
+      "kind": "api",
+      "parser": "json",
+      "status": 200,
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+      "proposed_url": "esearch.fcgi?db=pubmed&retmode=json&datetype=edat&mindate=YYYY/MM/DD&maxdate=YYYY/MM/DD&term=<phrases>[Title/Abstract], then esummary.fcgi?db=pubmed&retmode=json&id=<ids>",
+      "format": "JSON (esearch idlist, then esummary result by uid)",
+      "items": 675,
+      "newest": "2026-11-27",
+      "date_format": "pubdate \"2026 Nov 27\", sortpubdate \"2026/11/27 00:00\" (no zone; the entry date filter is by US Eastern day)",
+      "date_zone": null,
+      "fresh_days": 4,
+      "fresh_days_basis": "entries every weekday; weekend gap 2 to 3 days; keep 4",
+      "doi_field": "articleids[] with idtype \"doi\"",
+      "abstract_field": "none in esummary",
+      "type_field": "pubtype[]",
+      "journal_field": "fulljournalname",
+      "authors_field": "authors[] (name, authtype)",
+      "sketch": "esearch: {\"header\":{\"type\":\"esearch\",\"version\":\"0.3\"},\"esearchresult\":{\"count\":\"675\",\"retmax\":\"20\",\"retstart\":\"0\",\"idlist\":[\"40000001\",\"40000002\"],\"translationset\":[],\"querytranslation\":\"(\\\"machine learning\\\"[Title/Abstract] OR ...) AND 2026/11/26:2026/11/27[Date - Entry]\"}}\nesummary: {\"result\":{\"uids\":[\"40000001\"],\"40000001\":{\"uid\":\"40000001\",\"pubdate\":\"2026 Nov 27\",\"epubdate\":\"2026 Nov 27\",\"source\":\"[abbrev]\",\"authors\":[{\"name\":\"[name]\",\"authtype\":\"Author\",\"clusterid\":\"\"}],\"title\":\"[text]\",\"pubtype\":[\"Journal Article\"],\"articleids\":[{\"idtype\":\"pubmed\",\"idtypen\":1,\"value\":\"40000001\"},{\"idtype\":\"doi\",\"idtypen\":3,\"value\":\"10.0000/sample.0001\"}],\"fulljournalname\":\"[journal]\",\"sortpubdate\":\"2026/11/27 00:00\",\"...\":\"no abstract field\"}}}",
+      "credit": {
+        "en": "Credit: Records from PubMed, courtesy of the U.S. National Library of Medicine.",
+        "zh": "Credit (zh): 書目資料來自 PubMed，由美國國家醫學圖書館提供。",
+        "basis": "NLM asks that PubMed data be credited to the NLM; no fixed wording on the E-utilities page read"
+      },
+      "host_limits": "at most 3 requests a second without a key (response header x-ratelimit-limit: 3)",
+      "problems": [
+        "esummary has no abstract: the search itself matched title or abstract, but the pack gets no abstract text unless collect adds efetch (XML) for the abstracts, one more request a morning"
+      ],
+      "in_registry": true
+    },
+    {
+      "id": "crossref-journals",
+      "name": "Crossref works for the leading journals",
+      "kind": "api",
+      "parser": "json",
+      "status": 200,
+      "url": "https://api.crossref.org/works",
+      "proposed_url": "https://api.crossref.org/works?filter=issn:<issn>,from-pub-date:<from>&rows=<n>",
+      "format": "JSON work-list",
+      "items": 116,
+      "newest": "2026-11-24",
+      "date_format": "date-parts [[YYYY,MM,DD]] (no zone) in published, issued, published-online, published-print; created/deposited/indexed have date-time with Z",
+      "date_zone": null,
+      "fresh_days": 4,
+      "fresh_days_basis": "Nature alone adds items every weekday; keep 4",
+      "doi_field": "DOI",
+      "abstract_field": "abstract (JATS string) where the publisher deposits one: none of 5 Nature items had one",
+      "type_field": "type (journal-article for notices too)",
+      "journal_field": "container-title[0]",
+      "authors_field": "author[] (given, family)",
+      "sketch": "{\"status\":\"ok\",\"message-type\":\"work-list\",\"message\":{\"total-results\":116,\"items\":[{\"DOI\":\"10.1038/s41586-026-00001-x\",\"type\":\"journal-article\",\"title\":[\"[text]\"],\"container-title\":[\"Nature\"],\"publisher\":\"Springer Science and Business Media LLC\",\"author\":[{\"given\":\"[name]\",\"family\":\"[name]\",\"sequence\":\"first\",\"affiliation\":[]}],\"published\":{\"date-parts\":[[2026,11,24]]},\"issued\":{\"date-parts\":[[2026,11,24]]},\"published-online\":{\"date-parts\":[[2026,11,24]]},\"created\":{\"date-parts\":[[2026,11,24]],\"date-time\":\"2026-11-24T09:01:55Z\",\"timestamp\":1795600915000},\"ISSN\":[\"0028-0836\",\"1476-4687\"],\"URL\":\"https://doi.org/10.1038/s41586-026-00001-x\"},{\"...\":\"second item: no abstract key, which most Nature and Science items lack; JATS abstract string where a publisher deposits one\"}]}}",
+      "credit": {
+        "en": "Credit: Metadata from Crossref.",
+        "zh": "Credit (zh): 詮釋資料來自 Crossref。",
+        "basis": "Crossref metadata is open (CC0 for facts); no fixed wording required"
+      },
+      "host_limits": "public pool: response headers x-rate-limit-limit 5, x-rate-limit-interval 1s, x-concurrency-limit 1",
+      "problems": [
+        "most Nature and Science records carry no abstract, so must_match reads their titles only",
+        "filter=issn: also returns news, correspondence and corrections with type journal-article; collect needs another way to drop them (title or subtype)"
+      ],
+      "in_registry": true
+    },
+    {
+      "id": "journal-nature",
+      "name": "Nature, latest research",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.nature.com/nature.rss",
+      "proposed_url": "https://www.nature.com/nature.rss",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 8 newest items",
+      "items": 75,
+      "newest": "2026-11-27T00:00:00.000Z",
+      "newest_age_days": 1.2,
+      "max_gap_days": 1,
+      "recent20_max_gap_days": 1,
+      "date_examples": [
+        "2026-11-27",
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "content:encoded",
+        "dc:title",
+        "dc:creator",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "prism:publicationName",
+        "prism:doi",
+        "prism:url"
+      ],
+      "date_format": "YYYY-MM-DD in dc:date (no time, no zone)",
+      "date_zone": null,
+      "fresh_days": 4,
+      "fresh_days_basis": "publishes every weekday; 75 items over 3 days; gap 1 day; weekend 3, plus a day",
+      "doi_field": "prism:doi (bare), dc:identifier \"doi:...\"",
+      "abstract_field": "none: content:encoded holds a short standfirst and the citation line",
+      "type_field": null,
+      "journal_field": "prism:publicationName",
+      "authors_field": "one dc:creator per author",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.nature.com/articles/s41586-026-00001-x\"><title><![CDATA[[text]]]></title><link>https://www.nature.com/articles/s41586-026-00001-x</link><content:encoded><![CDATA[<p>[text]</p>Nature, Published online: 27 November 2026; <a href=\"https://www.nature.com/articles/s41586-026-00001-x\">doi:10.1038/s41586-026-00001-x</a></p>[text]]]></content:encoded><dc:title><![CDATA[[text]]]></dc:title><dc:creator>[name]</dc:creator><dc:creator>[name]</dc:creator><dc:identifier>doi:10.1038/s41586-026-00001-x</dc:identifier><dc:source>Nature, Published online: 2026-11-27; | doi:10.1038/s41586-026-00001-x</dc:source><dc:date>2026-11-27</dc:date><prism:publicationName>Nature</prism:publicationName><prism:doi>10.1038/s41586-026-00001-x</prism:doi><prism:url>https://www.nature.com/articles/s41586-026-00001-x</prism:url></item>\n<item ...same keys, second item: dc:date 2026-11-26, one dc:creator...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Springer Nature's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Springer Nature 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": true
+    },
+    {
+      "id": "journal-science",
+      "name": "Science, current issue",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science",
+      "proposed_url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), the current issue (36 items)",
+      "items": 36,
+      "newest": "2026-11-26T08:00:00.000Z",
+      "newest_age_days": 1.87,
+      "max_gap_days": 42.04,
+      "recent20_max_gap_days": 0.04,
+      "date_examples": [
+        "2026-11-26T07:00:01Z",
+        "2026-11-26T07:00:01Z",
+        "2026-11-26T08:00:00Z"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "content:encoded",
+        "description",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "dc:type",
+        "dc:creator",
+        "prism:publicationName",
+        "prism:volume",
+        "prism:number",
+        "prism:startingPage",
+        "prism:endingPage",
+        "prism:coverDate",
+        "prism:coverDisplayDate",
+        "prism:doi",
+        "prism:url",
+        "prism:copyright"
+      ],
+      "date_format": "dc:date ISO 8601 with Z",
+      "date_zone": null,
+      "fresh_days": 8,
+      "fresh_days_basis": "weekly issue on Thursday: 7 plus a day",
+      "doi_field": "prism:doi, dc:identifier",
+      "abstract_field": "description (the issue summary, short)",
+      "type_field": "dc:type (Research Article, Perspective, In Depth, Letter...)",
+      "journal_field": "prism:publicationName",
+      "authors_field": "dc:creator (one string)",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.example-publisher.org/doi/abs/10.0000/sample.0001?af=R\"><title>[text]</title><link>https://www.example-publisher.org/doi/abs/10.0000/sample.0001?af=R</link><description>[text]</description><content:encoded>[text]</content:encoded><dc:identifier>doi:10.0000/sample.0001</dc:identifier><dc:source>[journal] Volume 392, Issue 6xxx, Page 1-2, November 2026.</dc:source><dc:date>2026-11-26T07:00:01Z</dc:date><dc:type>Research Article</dc:type><dc:creator>[name], [name]</dc:creator><prism:publicationName>[journal]</prism:publicationName><prism:volume>392</prism:volume><prism:number>6xxx</prism:number><prism:coverDate>2026-11-26</prism:coverDate><prism:coverDisplayDate>2026-11-26</prism:coverDisplayDate><prism:doi>10.0000/sample.0001</prism:doi><prism:url>https://www.example-publisher.org/doi/abs/10.0000/sample.0001?af=R</prism:url></item>\n<item ...second item: dc:type Perspective, dc:date 2026-11-26T08:00:00Z...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from AAAS's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 AAAS 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "a second fetch the same minute got 403 from the same host (Cloudflare); one request a morning is fine"
+      ],
+      "in_registry": true
+    },
+    {
+      "id": "journal-pnas",
+      "name": "PNAS, current issue",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=pnas",
+      "proposed_url": "https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=pnas",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 111 items",
+      "items": 111,
+      "newest": "2026-11-24T08:00:00.000Z",
+      "newest_age_days": 3.87,
+      "max_gap_days": 4,
+      "recent20_max_gap_days": 4,
+      "date_examples": [
+        "2026-11-24T08:00:00Z",
+        "2026-11-16T08:00:00Z",
+        "2026-11-17T08:00:00Z"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "description",
+        "dc:title",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "prism:publicationName",
+        "prism:volume",
+        "prism:number",
+        "prism:coverDate",
+        "prism:coverDisplayDate",
+        "prism:doi",
+        "prism:url",
+        "prism:copyright"
+      ],
+      "date_format": "dc:date ISO 8601 with Z",
+      "date_zone": null,
+      "fresh_days": 8,
+      "fresh_days_basis": "weekly issue: observed newest 3.9 days, recent gap 4; 7 plus a day",
+      "doi_field": "prism:doi",
+      "abstract_field": "description",
+      "type_field": null,
+      "journal_field": "prism:publicationName",
+      "authors_field": "none in this feed",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.example-publisher.org/doi/abs/10.0000/sample.0001?af=R\"><title>[text]</title><link>https://www.example-publisher.org/doi/abs/10.0000/sample.0001?af=R</link><description>[text]</description><content:encoded>[text]</content:encoded><dc:identifier>doi:10.0000/sample.0001</dc:identifier><dc:source>[journal] Volume 392, Issue 6xxx, Page 1-2, November 2026.</dc:source><dc:date>2026-11-26T07:00:01Z</dc:date><dc:type>Research Article</dc:type><dc:creator>[name], [name]</dc:creator><prism:publicationName>[journal]</prism:publicationName><prism:volume>392</prism:volume><prism:number>6xxx</prism:number><prism:coverDate>2026-11-26</prism:coverDate><prism:coverDisplayDate>2026-11-26</prism:coverDisplayDate><prism:doi>10.0000/sample.0001</prism:doi><prism:url>https://www.example-publisher.org/doi/abs/10.0000/sample.0001?af=R</prism:url></item>\n<item ...second item: dc:type Perspective, dc:date 2026-11-26T08:00:00Z...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from PNAS's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 PNAS 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": true
+    },
+    {
+      "id": "journal-cell",
+      "name": "Cell, in press",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.cell.com/cell/inpress.rss",
+      "proposed_url": "https://www.cell.com/cell/inpress.rss",
+      "fallback_url": "https://www.cell.com/cell/current.rss",
+      "format": "RSS 1.0 (RDF), 67 items",
+      "items": 67,
+      "newest": "2026-11-24T00:00:00.000Z",
+      "newest_age_days": 4.2,
+      "max_gap_days": 6,
+      "recent20_max_gap_days": 5,
+      "date_examples": [
+        "2026-11-24",
+        "2026-11-24",
+        "2026-11-23"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "description",
+        "dc:title",
+        "dc:creator",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "prism:publicationName",
+        "prism:publicationDate",
+        "prism:section"
+      ],
+      "date_format": "dc:date YYYY-MM-DD (no zone)",
+      "date_zone": null,
+      "fresh_days": 7,
+      "fresh_days_basis": "in-press items most weekdays; recent gap 5; 6 rounded, plus a day",
+      "doi_field": "dc:identifier \"doi:...\"",
+      "abstract_field": "description",
+      "type_field": "prism:section",
+      "journal_field": "prism:publicationName",
+      "authors_field": "dc:creator",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.cell.com/cell/fulltext/S0092-8674(26)00001-0?rss=yes\"><title>[text]</title><link>https://www.cell.com/cell/fulltext/S0092-8674(26)00001-0?rss=yes</link><description>[text]</description><dc:title>[text]</dc:title><dc:creator>[name], [name]</dc:creator><dc:identifier>doi:10.1016/j.cell.2026.00.001</dc:identifier><dc:source>[journal], Volume 189, Issue 24</dc:source><dc:date>2026-11-25</dc:date><prism:publicationName>[journal]</prism:publicationName><prism:publicationDate>2026-11-25</prism:publicationDate><prism:section>Article</prism:section></item>\n<item ...second item: prism:section Preview, dc:date 2026-11-24...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Cell Press (Elsevier)'s own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Cell Press (Elsevier) 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": false
+    },
+    {
+      "id": "journal-prl",
+      "name": "Physical Review Letters, recent",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://feeds.aps.org/rss/recent/prl.xml",
+      "proposed_url": "https://feeds.aps.org/rss/recent/prl.xml",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 100 items",
+      "items": 100,
+      "newest": "2026-11-25T10:00:00.000Z",
+      "newest_age_days": 2.78,
+      "max_gap_days": 3,
+      "recent20_max_gap_days": 0,
+      "date_examples": [
+        "2026-11-25T10:00:00+00:00",
+        "2026-11-25T10:00:00+00:00",
+        "2026-11-25T10:00:00+00:00"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "description",
+        "content:encoded",
+        "dc:title",
+        "dc:creator",
+        "dc:date",
+        "dc:rights",
+        "dc:source",
+        "dc:type",
+        "dc:identifier",
+        "prism:doi",
+        "prism:publicationName",
+        "prism:volume",
+        "prism:number",
+        "prism:publicationDate",
+        "prism:url",
+        "prism:startingPage",
+        "dc:subject",
+        "prism:section"
+      ],
+      "date_format": "dc:date ISO 8601 with +00:00",
+      "date_zone": null,
+      "fresh_days": 4,
+      "fresh_days_basis": "daily on weekdays; observed gap 3 (a weekend); plus a day",
+      "doi_field": "prism:doi",
+      "abstract_field": "description",
+      "type_field": "dc:type, prism:section",
+      "journal_field": "prism:publicationName",
+      "authors_field": "dc:creator (one string)",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"http://link.aps.org/doi/10.1103/sample-0001\"><title>[text]</title><link>http://link.aps.org/doi/10.1103/sample-0001</link><description>[text]</description><content:encoded>[text]</content:encoded><dc:title>[text]</dc:title><dc:creator>[name], [name], and [name]</dc:creator><dc:date>2026-11-25T10:00:00+00:00</dc:date><dc:rights>© 2026 American Physical Society</dc:rights><dc:source>Phys. Rev. Lett. 137, 220001 (2026)</dc:source><dc:type>Letter</dc:type><dc:identifier>doi:10.1103/sample-0001</dc:identifier><prism:doi>10.1103/sample-0001</prism:doi><prism:publicationName>Physical Review Letters</prism:publicationName><prism:volume>137</prism:volume><prism:number>22</prism:number><prism:publicationDate>2026-11-25T10:00:00+00:00</prism:publicationDate><prism:url>http://link.aps.org/doi/10.1103/sample-0001</prism:url><prism:startingPage>220001</prism:startingPage><dc:subject>[section]</dc:subject><prism:section>Condensed Matter and Materials</prism:section></item>\n<item ...second item: prism:section Particles and Fields...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from the American Physical Society's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 the American Physical Society 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": false
+    },
+    {
+      "id": "journal-annals-of-mathematics",
+      "name": "Annals of Mathematics",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://annals.math.princeton.edu/feed",
+      "proposed_url": "https://annals.math.princeton.edu/feed",
+      "fallback_url": null,
+      "format": "RSS 2.0 (WordPress), 100 items back to 2024",
+      "items": 100,
+      "newest": "2026-11-07T03:28:59.000Z",
+      "newest_age_days": 21.06,
+      "max_gap_days": 223.8,
+      "recent20_max_gap_days": 69.68,
+      "date_examples": [
+        "Sat, 07 Nov 2026 03:28:59 +0000",
+        "Thu, 05 Nov 2026 14:54:01 +0000",
+        "Thu, 27 Aug 2026 22:39:28 +0000"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "dc:creator",
+        "pubDate",
+        "category",
+        "guid",
+        "description",
+        "content:encoded"
+      ],
+      "date_format": "pubDate RFC 822 with +0000",
+      "date_zone": null,
+      "fresh_days": 71,
+      "fresh_days_basis": "accepted papers appear irregularly: the recent gap is 70 days; 70 plus a day",
+      "doi_field": "none",
+      "abstract_field": "description",
+      "type_field": "category",
+      "journal_field": "channel title",
+      "authors_field": "dc:creator",
+      "sketch": "<rss version=\"2.0\"><channel>...<item><title>[text]</title><link>https://www.example-site.org/[slug]/</link><dc:creator><![CDATA[[name]]]></dc:creator><pubDate>Sat, 07 Nov 2026 03:28:59 +0000</pubDate><category><![CDATA[[tag]]]></category><guid isPermaLink=\"false\">https://www.example-site.org/?p=12345</guid><description><![CDATA[[text]]]></description><content:encoded><![CDATA[<p>[text]</p>]]></content:encoded></item>\n<item ...second item: pubDate Thu, 05 Nov 2026 14:54:01 +0000...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Annals of Mathematics (Princeton)'s own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Annals of Mathematics (Princeton) 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "no DOI in the feed; Crossref has the DOIs once the paper is published"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-nature-physics",
+      "name": "Nature Physics",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.nature.com/nphys.rss",
+      "proposed_url": "https://www.nature.com/nphys.rss",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 8 newest items",
+      "items": 8,
+      "newest": "2026-11-27T00:00:00.000Z",
+      "newest_age_days": 1.2,
+      "max_gap_days": 8,
+      "recent20_max_gap_days": 8,
+      "date_examples": [
+        "2026-11-27",
+        "2026-11-27",
+        "2026-11-25"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "content:encoded",
+        "dc:title",
+        "dc:creator",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "prism:publicationName",
+        "prism:doi",
+        "prism:url"
+      ],
+      "date_format": "YYYY-MM-DD in dc:date (no time, no zone)",
+      "date_zone": null,
+      "fresh_days": 10,
+      "fresh_days_basis": "monthly title: 8 items cover 1 to 11 days; observed gaps up to 8 days; 9 plus a day",
+      "doi_field": "prism:doi (bare), dc:identifier \"doi:...\"",
+      "abstract_field": "none: content:encoded holds a short standfirst and the citation line",
+      "type_field": null,
+      "journal_field": "prism:publicationName",
+      "authors_field": "one dc:creator per author",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.nature.com/articles/s41586-026-00001-x\"><title><![CDATA[[text]]]></title><link>https://www.nature.com/articles/s41586-026-00001-x</link><content:encoded><![CDATA[<p>[text]</p>Nature, Published online: 27 November 2026; <a href=\"https://www.nature.com/articles/s41586-026-00001-x\">doi:10.1038/s41586-026-00001-x</a></p>[text]]]></content:encoded><dc:title><![CDATA[[text]]]></dc:title><dc:creator>[name]</dc:creator><dc:creator>[name]</dc:creator><dc:identifier>doi:10.1038/s41586-026-00001-x</dc:identifier><dc:source>Nature, Published online: 2026-11-27; | doi:10.1038/s41586-026-00001-x</dc:source><dc:date>2026-11-27</dc:date><prism:publicationName>Nature</prism:publicationName><prism:doi>10.1038/s41586-026-00001-x</prism:doi><prism:url>https://www.nature.com/articles/s41586-026-00001-x</prism:url></item>\n<item ...same keys, second item: dc:date 2026-11-26, one dc:creator...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Springer Nature's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Springer Nature 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "the feed holds only the 8 newest items, so a day with more papers loses some: Crossref (crossref-journals) is the complete list"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-nature-chemistry",
+      "name": "Nature Chemistry",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.nature.com/nchem.rss",
+      "proposed_url": "https://www.nature.com/nchem.rss",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 8 newest items",
+      "items": 8,
+      "newest": "2026-11-27T00:00:00.000Z",
+      "newest_age_days": 1.2,
+      "max_gap_days": 1,
+      "recent20_max_gap_days": 1,
+      "date_examples": [
+        "2026-11-27",
+        "2026-11-26",
+        "2026-11-26"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "content:encoded",
+        "dc:title",
+        "dc:creator",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "prism:publicationName",
+        "prism:doi",
+        "prism:url"
+      ],
+      "date_format": "YYYY-MM-DD in dc:date (no time, no zone)",
+      "date_zone": null,
+      "fresh_days": 10,
+      "fresh_days_basis": "monthly title: 8 items cover 1 to 11 days; observed gaps up to 8 days; 9 plus a day",
+      "doi_field": "prism:doi (bare), dc:identifier \"doi:...\"",
+      "abstract_field": "none: content:encoded holds a short standfirst and the citation line",
+      "type_field": null,
+      "journal_field": "prism:publicationName",
+      "authors_field": "one dc:creator per author",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.nature.com/articles/s41586-026-00001-x\"><title><![CDATA[[text]]]></title><link>https://www.nature.com/articles/s41586-026-00001-x</link><content:encoded><![CDATA[<p>[text]</p>Nature, Published online: 27 November 2026; <a href=\"https://www.nature.com/articles/s41586-026-00001-x\">doi:10.1038/s41586-026-00001-x</a></p>[text]]]></content:encoded><dc:title><![CDATA[[text]]]></dc:title><dc:creator>[name]</dc:creator><dc:creator>[name]</dc:creator><dc:identifier>doi:10.1038/s41586-026-00001-x</dc:identifier><dc:source>Nature, Published online: 2026-11-27; | doi:10.1038/s41586-026-00001-x</dc:source><dc:date>2026-11-27</dc:date><prism:publicationName>Nature</prism:publicationName><prism:doi>10.1038/s41586-026-00001-x</prism:doi><prism:url>https://www.nature.com/articles/s41586-026-00001-x</prism:url></item>\n<item ...same keys, second item: dc:date 2026-11-26, one dc:creator...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Springer Nature's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Springer Nature 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "the feed holds only the 8 newest items, so a day with more papers loses some: Crossref (crossref-journals) is the complete list"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-nature-materials",
+      "name": "Nature Materials",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.nature.com/nmat.rss",
+      "proposed_url": "https://www.nature.com/nmat.rss",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 8 newest items",
+      "items": 8,
+      "newest": "2026-11-26T00:00:00.000Z",
+      "newest_age_days": 2.2,
+      "max_gap_days": 4,
+      "recent20_max_gap_days": 4,
+      "date_examples": [
+        "2026-11-26",
+        "2026-11-24",
+        "2026-11-24"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "content:encoded",
+        "dc:title",
+        "dc:creator",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "prism:publicationName",
+        "prism:doi",
+        "prism:url"
+      ],
+      "date_format": "YYYY-MM-DD in dc:date (no time, no zone)",
+      "date_zone": null,
+      "fresh_days": 10,
+      "fresh_days_basis": "monthly title: 8 items cover 1 to 11 days; observed gaps up to 8 days; 9 plus a day",
+      "doi_field": "prism:doi (bare), dc:identifier \"doi:...\"",
+      "abstract_field": "none: content:encoded holds a short standfirst and the citation line",
+      "type_field": null,
+      "journal_field": "prism:publicationName",
+      "authors_field": "one dc:creator per author",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.nature.com/articles/s41586-026-00001-x\"><title><![CDATA[[text]]]></title><link>https://www.nature.com/articles/s41586-026-00001-x</link><content:encoded><![CDATA[<p>[text]</p>Nature, Published online: 27 November 2026; <a href=\"https://www.nature.com/articles/s41586-026-00001-x\">doi:10.1038/s41586-026-00001-x</a></p>[text]]]></content:encoded><dc:title><![CDATA[[text]]]></dc:title><dc:creator>[name]</dc:creator><dc:creator>[name]</dc:creator><dc:identifier>doi:10.1038/s41586-026-00001-x</dc:identifier><dc:source>Nature, Published online: 2026-11-27; | doi:10.1038/s41586-026-00001-x</dc:source><dc:date>2026-11-27</dc:date><prism:publicationName>Nature</prism:publicationName><prism:doi>10.1038/s41586-026-00001-x</prism:doi><prism:url>https://www.nature.com/articles/s41586-026-00001-x</prism:url></item>\n<item ...same keys, second item: dc:date 2026-11-26, one dc:creator...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Springer Nature's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Springer Nature 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "the feed holds only the 8 newest items, so a day with more papers loses some: Crossref (crossref-journals) is the complete list"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-nature-medicine",
+      "name": "Nature Medicine",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.nature.com/nm.rss",
+      "proposed_url": "https://www.nature.com/nm.rss",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 8 newest items",
+      "items": 8,
+      "newest": "2026-11-27T00:00:00.000Z",
+      "newest_age_days": 1.2,
+      "max_gap_days": 1,
+      "recent20_max_gap_days": 1,
+      "date_examples": [
+        "2026-11-27",
+        "2026-11-27",
+        "2026-11-26"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "content:encoded",
+        "dc:title",
+        "dc:creator",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "prism:publicationName",
+        "prism:doi",
+        "prism:url"
+      ],
+      "date_format": "YYYY-MM-DD in dc:date (no time, no zone)",
+      "date_zone": null,
+      "fresh_days": 10,
+      "fresh_days_basis": "monthly title: 8 items cover 1 to 11 days; observed gaps up to 8 days; 9 plus a day",
+      "doi_field": "prism:doi (bare), dc:identifier \"doi:...\"",
+      "abstract_field": "none: content:encoded holds a short standfirst and the citation line",
+      "type_field": null,
+      "journal_field": "prism:publicationName",
+      "authors_field": "one dc:creator per author",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.nature.com/articles/s41586-026-00001-x\"><title><![CDATA[[text]]]></title><link>https://www.nature.com/articles/s41586-026-00001-x</link><content:encoded><![CDATA[<p>[text]</p>Nature, Published online: 27 November 2026; <a href=\"https://www.nature.com/articles/s41586-026-00001-x\">doi:10.1038/s41586-026-00001-x</a></p>[text]]]></content:encoded><dc:title><![CDATA[[text]]]></dc:title><dc:creator>[name]</dc:creator><dc:creator>[name]</dc:creator><dc:identifier>doi:10.1038/s41586-026-00001-x</dc:identifier><dc:source>Nature, Published online: 2026-11-27; | doi:10.1038/s41586-026-00001-x</dc:source><dc:date>2026-11-27</dc:date><prism:publicationName>Nature</prism:publicationName><prism:doi>10.1038/s41586-026-00001-x</prism:doi><prism:url>https://www.nature.com/articles/s41586-026-00001-x</prism:url></item>\n<item ...same keys, second item: dc:date 2026-11-26, one dc:creator...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Springer Nature's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Springer Nature 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "the feed holds only the 8 newest items, so a day with more papers loses some: Crossref (crossref-journals) is the complete list"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-nature-biotechnology",
+      "name": "Nature Biotechnology",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.nature.com/nbt.rss",
+      "proposed_url": "https://www.nature.com/nbt.rss",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 8 newest items",
+      "items": 8,
+      "newest": "2026-11-24T00:00:00.000Z",
+      "newest_age_days": 4.2,
+      "max_gap_days": 4,
+      "recent20_max_gap_days": 4,
+      "date_examples": [
+        "2026-11-24",
+        "2026-11-23",
+        "2026-11-19"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "content:encoded",
+        "dc:title",
+        "dc:creator",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "prism:publicationName",
+        "prism:doi",
+        "prism:url"
+      ],
+      "date_format": "YYYY-MM-DD in dc:date (no time, no zone)",
+      "date_zone": null,
+      "fresh_days": 10,
+      "fresh_days_basis": "monthly title: 8 items cover 1 to 11 days; observed gaps up to 8 days; 9 plus a day",
+      "doi_field": "prism:doi (bare), dc:identifier \"doi:...\"",
+      "abstract_field": "none: content:encoded holds a short standfirst and the citation line",
+      "type_field": null,
+      "journal_field": "prism:publicationName",
+      "authors_field": "one dc:creator per author",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.nature.com/articles/s41586-026-00001-x\"><title><![CDATA[[text]]]></title><link>https://www.nature.com/articles/s41586-026-00001-x</link><content:encoded><![CDATA[<p>[text]</p>Nature, Published online: 27 November 2026; <a href=\"https://www.nature.com/articles/s41586-026-00001-x\">doi:10.1038/s41586-026-00001-x</a></p>[text]]]></content:encoded><dc:title><![CDATA[[text]]]></dc:title><dc:creator>[name]</dc:creator><dc:creator>[name]</dc:creator><dc:identifier>doi:10.1038/s41586-026-00001-x</dc:identifier><dc:source>Nature, Published online: 2026-11-27; | doi:10.1038/s41586-026-00001-x</dc:source><dc:date>2026-11-27</dc:date><prism:publicationName>Nature</prism:publicationName><prism:doi>10.1038/s41586-026-00001-x</prism:doi><prism:url>https://www.nature.com/articles/s41586-026-00001-x</prism:url></item>\n<item ...same keys, second item: dc:date 2026-11-26, one dc:creator...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Springer Nature's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Springer Nature 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "the feed holds only the 8 newest items, so a day with more papers loses some: Crossref (crossref-journals) is the complete list"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-nature-geoscience",
+      "name": "Nature Geoscience",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.nature.com/ngeo.rss",
+      "proposed_url": "https://www.nature.com/ngeo.rss",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 8 newest items",
+      "items": 8,
+      "newest": "2026-11-27T00:00:00.000Z",
+      "newest_age_days": 1.2,
+      "max_gap_days": 3,
+      "recent20_max_gap_days": 3,
+      "date_examples": [
+        "2026-11-27",
+        "2026-11-27",
+        "2026-11-25"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "content:encoded",
+        "dc:title",
+        "dc:creator",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "prism:publicationName",
+        "prism:doi",
+        "prism:url"
+      ],
+      "date_format": "YYYY-MM-DD in dc:date (no time, no zone)",
+      "date_zone": null,
+      "fresh_days": 10,
+      "fresh_days_basis": "monthly title: 8 items cover 1 to 11 days; observed gaps up to 8 days; 9 plus a day",
+      "doi_field": "prism:doi (bare), dc:identifier \"doi:...\"",
+      "abstract_field": "none: content:encoded holds a short standfirst and the citation line",
+      "type_field": null,
+      "journal_field": "prism:publicationName",
+      "authors_field": "one dc:creator per author",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.nature.com/articles/s41586-026-00001-x\"><title><![CDATA[[text]]]></title><link>https://www.nature.com/articles/s41586-026-00001-x</link><content:encoded><![CDATA[<p>[text]</p>Nature, Published online: 27 November 2026; <a href=\"https://www.nature.com/articles/s41586-026-00001-x\">doi:10.1038/s41586-026-00001-x</a></p>[text]]]></content:encoded><dc:title><![CDATA[[text]]]></dc:title><dc:creator>[name]</dc:creator><dc:creator>[name]</dc:creator><dc:identifier>doi:10.1038/s41586-026-00001-x</dc:identifier><dc:source>Nature, Published online: 2026-11-27; | doi:10.1038/s41586-026-00001-x</dc:source><dc:date>2026-11-27</dc:date><prism:publicationName>Nature</prism:publicationName><prism:doi>10.1038/s41586-026-00001-x</prism:doi><prism:url>https://www.nature.com/articles/s41586-026-00001-x</prism:url></item>\n<item ...same keys, second item: dc:date 2026-11-26, one dc:creator...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Springer Nature's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Springer Nature 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "the feed holds only the 8 newest items, so a day with more papers loses some: Crossref (crossref-journals) is the complete list"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-nature-climate-change",
+      "name": "Nature Climate Change",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.nature.com/nclimate.rss",
+      "proposed_url": "https://www.nature.com/nclimate.rss",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 8 newest items",
+      "items": 8,
+      "newest": "2026-11-27T00:00:00.000Z",
+      "newest_age_days": 1.2,
+      "max_gap_days": 5,
+      "recent20_max_gap_days": 5,
+      "date_examples": [
+        "2026-11-27",
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "content:encoded",
+        "dc:title",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "prism:publicationName",
+        "prism:doi",
+        "prism:url"
+      ],
+      "date_format": "YYYY-MM-DD in dc:date (no time, no zone)",
+      "date_zone": null,
+      "fresh_days": 10,
+      "fresh_days_basis": "monthly title: 8 items cover 1 to 11 days; observed gaps up to 8 days; 9 plus a day",
+      "doi_field": "prism:doi (bare), dc:identifier \"doi:...\"",
+      "abstract_field": "none: content:encoded holds a short standfirst and the citation line",
+      "type_field": null,
+      "journal_field": "prism:publicationName",
+      "authors_field": "one dc:creator per author",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.nature.com/articles/s41586-026-00001-x\"><title><![CDATA[[text]]]></title><link>https://www.nature.com/articles/s41586-026-00001-x</link><content:encoded><![CDATA[<p>[text]</p>Nature, Published online: 27 November 2026; <a href=\"https://www.nature.com/articles/s41586-026-00001-x\">doi:10.1038/s41586-026-00001-x</a></p>[text]]]></content:encoded><dc:title><![CDATA[[text]]]></dc:title><dc:creator>[name]</dc:creator><dc:creator>[name]</dc:creator><dc:identifier>doi:10.1038/s41586-026-00001-x</dc:identifier><dc:source>Nature, Published online: 2026-11-27; | doi:10.1038/s41586-026-00001-x</dc:source><dc:date>2026-11-27</dc:date><prism:publicationName>Nature</prism:publicationName><prism:doi>10.1038/s41586-026-00001-x</prism:doi><prism:url>https://www.nature.com/articles/s41586-026-00001-x</prism:url></item>\n<item ...same keys, second item: dc:date 2026-11-26, one dc:creator...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Springer Nature's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Springer Nature 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "the feed holds only the 8 newest items, so a day with more papers loses some: Crossref (crossref-journals) is the complete list"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-nature-human-behaviour",
+      "name": "Nature Human Behaviour",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.nature.com/nathumbehav.rss",
+      "proposed_url": "https://www.nature.com/nathumbehav.rss",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 8 newest items",
+      "items": 8,
+      "newest": "2026-11-26T00:00:00.000Z",
+      "newest_age_days": 2.2,
+      "max_gap_days": 1,
+      "recent20_max_gap_days": 1,
+      "date_examples": [
+        "2026-11-26",
+        "2026-11-26",
+        "2026-11-25"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "content:encoded",
+        "dc:title",
+        "dc:creator",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "prism:publicationName",
+        "prism:doi",
+        "prism:url"
+      ],
+      "date_format": "YYYY-MM-DD in dc:date (no time, no zone)",
+      "date_zone": null,
+      "fresh_days": 10,
+      "fresh_days_basis": "monthly title: 8 items cover 1 to 11 days; observed gaps up to 8 days; 9 plus a day",
+      "doi_field": "prism:doi (bare), dc:identifier \"doi:...\"",
+      "abstract_field": "none: content:encoded holds a short standfirst and the citation line",
+      "type_field": null,
+      "journal_field": "prism:publicationName",
+      "authors_field": "one dc:creator per author",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.nature.com/articles/s41586-026-00001-x\"><title><![CDATA[[text]]]></title><link>https://www.nature.com/articles/s41586-026-00001-x</link><content:encoded><![CDATA[<p>[text]</p>Nature, Published online: 27 November 2026; <a href=\"https://www.nature.com/articles/s41586-026-00001-x\">doi:10.1038/s41586-026-00001-x</a></p>[text]]]></content:encoded><dc:title><![CDATA[[text]]]></dc:title><dc:creator>[name]</dc:creator><dc:creator>[name]</dc:creator><dc:identifier>doi:10.1038/s41586-026-00001-x</dc:identifier><dc:source>Nature, Published online: 2026-11-27; | doi:10.1038/s41586-026-00001-x</dc:source><dc:date>2026-11-27</dc:date><prism:publicationName>Nature</prism:publicationName><prism:doi>10.1038/s41586-026-00001-x</prism:doi><prism:url>https://www.nature.com/articles/s41586-026-00001-x</prism:url></item>\n<item ...same keys, second item: dc:date 2026-11-26, one dc:creator...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Springer Nature's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Springer Nature 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "the feed holds only the 8 newest items, so a day with more papers loses some: Crossref (crossref-journals) is the complete list"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-jacs",
+      "name": "JACS",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 403,
+      "url": "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=jacsat",
+      "proposed_url": null,
+      "fallback_url": null,
+      "format": "blocked",
+      "items": null,
+      "date_format": null,
+      "date_zone": null,
+      "fresh_days": null,
+      "fresh_days_basis": "not readable",
+      "sketch": null,
+      "credit": {
+        "en": "Credit: Article titles and links from the American Chemical Society's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 the American Chemical Society 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "pubs.acs.org answers every plain GET with 403 and cf-mitigated: challenge (a Cloudflare browser check)",
+      "problems": [
+        "blocked by a Cloudflare challenge for both the ASAP and the issue feed; no workaround tried; rely on crossref-journals for JACS"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-nejm",
+      "name": "NEJM, current issue",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.nejm.org/action/showFeed?jc=nejm&type=etoc&feed=rss",
+      "proposed_url": "https://www.nejm.org/action/showFeed?jc=nejm&type=etoc&feed=rss",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 59 items",
+      "items": 59,
+      "newest": "2026-11-25T10:00:01.000Z",
+      "newest_age_days": 2.78,
+      "max_gap_days": 60.08,
+      "recent20_max_gap_days": 3.9,
+      "date_examples": [
+        "2026-11-25T10:00:01Z",
+        "2026-08-31T12:49:00Z",
+        "2026-08-28T09:00:02Z"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "content:encoded",
+        "description",
+        "dc:title",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "dc:creator",
+        "prism:publicationName",
+        "prism:volume",
+        "prism:number",
+        "prism:startingPage",
+        "prism:endingPage",
+        "prism:coverDate",
+        "prism:coverDisplayDate",
+        "prism:doi",
+        "prism:url",
+        "prism:copyright"
+      ],
+      "date_format": "dc:date ISO 8601 with Z",
+      "date_zone": null,
+      "fresh_days": 8,
+      "fresh_days_basis": "weekly issue on Thursday; 7 plus a day",
+      "doi_field": "prism:doi",
+      "abstract_field": "description",
+      "type_field": null,
+      "journal_field": "prism:publicationName",
+      "authors_field": "dc:creator",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.example-publisher.org/doi/abs/10.0000/sample.0001?af=R\"><title>[text]</title><link>https://www.example-publisher.org/doi/abs/10.0000/sample.0001?af=R</link><description>[text]</description><content:encoded>[text]</content:encoded><dc:identifier>doi:10.0000/sample.0001</dc:identifier><dc:source>[journal] Volume 392, Issue 6xxx, Page 1-2, November 2026.</dc:source><dc:date>2026-11-26T07:00:01Z</dc:date><dc:type>Research Article</dc:type><dc:creator>[name], [name]</dc:creator><prism:publicationName>[journal]</prism:publicationName><prism:volume>392</prism:volume><prism:number>6xxx</prism:number><prism:coverDate>2026-11-26</prism:coverDate><prism:coverDisplayDate>2026-11-26</prism:coverDisplayDate><prism:doi>10.0000/sample.0001</prism:doi><prism:url>https://www.example-publisher.org/doi/abs/10.0000/sample.0001?af=R</prism:url></item>\n<item ...second item: dc:type Perspective, dc:date 2026-11-26T08:00:00Z...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from the Massachusetts Medical Society's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 the Massachusetts Medical Society 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": false
+    },
+    {
+      "id": "journal-lancet",
+      "name": "The Lancet, current issue",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.thelancet.com/rssfeed/lancet_current.xml",
+      "proposed_url": "https://www.thelancet.com/rssfeed/lancet_current.xml",
+      "fallback_url": "https://www.thelancet.com/rssfeed/lancet_online.xml",
+      "format": "RSS 1.0 (RDF), 27 items",
+      "items": 27,
+      "newest": "2026-11-28T00:00:00.000Z",
+      "newest_age_days": 0.2,
+      "max_gap_days": 22,
+      "recent20_max_gap_days": 7.02,
+      "date_examples": [
+        "2026-11-28",
+        "2026-11-28",
+        "2026-11-04T23:30:02Z"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "description",
+        "dc:title",
+        "dc:creator",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "prism:publicationName",
+        "prism:publicationDate",
+        "prism:volume",
+        "prism:number",
+        "prism:issueIdentifier",
+        "prism:section",
+        "prism:startingPage"
+      ],
+      "date_format": "dc:date YYYY-MM-DD (no zone)",
+      "date_zone": null,
+      "fresh_days": 8,
+      "fresh_days_basis": "weekly issue on Friday (dated Saturday); 7 plus a day",
+      "doi_field": "dc:identifier",
+      "abstract_field": "description",
+      "type_field": "prism:section",
+      "journal_field": "prism:publicationName",
+      "authors_field": "dc:creator",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.cell.com/cell/fulltext/S0092-8674(26)00001-0?rss=yes\"><title>[text]</title><link>https://www.cell.com/cell/fulltext/S0092-8674(26)00001-0?rss=yes</link><description>[text]</description><dc:title>[text]</dc:title><dc:creator>[name], [name]</dc:creator><dc:identifier>doi:10.1016/j.cell.2026.00.001</dc:identifier><dc:source>[journal], Volume 189, Issue 24</dc:source><dc:date>2026-11-25</dc:date><prism:publicationName>[journal]</prism:publicationName><prism:publicationDate>2026-11-25</prism:publicationDate><prism:section>Article</prism:section></item>\n<item ...second item: prism:section Preview, dc:date 2026-11-24...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from The Lancet (Elsevier)'s own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 The Lancet (Elsevier) 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "the online-first feed holds items back to 2015 at its end, so its oldest dates are not gaps"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-aer",
+      "name": "American Economic Review, current issue",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://pubs.aeaweb.org/action/showFeed?type=etoc&feed=rss&jc=aer",
+      "proposed_url": "https://pubs.aeaweb.org/action/showFeed?type=etoc&feed=rss&jc=aer",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 11 items, one issue",
+      "items": 11,
+      "newest": "2026-10-30T01:40:05.000Z",
+      "newest_age_days": 29.13,
+      "max_gap_days": 0,
+      "recent20_max_gap_days": 0,
+      "date_examples": [
+        "2026-10-30T01:38:40Z",
+        "2026-10-30T01:37:04Z",
+        "2026-10-30T01:36:08Z"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "content:encoded",
+        "description",
+        "dc:title",
+        "dc:identifier",
+        "dc:source",
+        "dc:date",
+        "dc:rights",
+        "prism:publicationName",
+        "prism:volume",
+        "prism:number",
+        "prism:startingPage",
+        "prism:endingPage",
+        "prism:coverDate",
+        "prism:coverDisplayDate",
+        "prism:doi",
+        "prism:url",
+        "prism:copyright"
+      ],
+      "date_format": "dc:date ISO 8601 with Z",
+      "date_zone": null,
+      "fresh_days": 35,
+      "fresh_days_basis": "monthly issue: newest 29 days; 34 plus a day",
+      "doi_field": "prism:doi",
+      "abstract_field": "description",
+      "type_field": null,
+      "journal_field": "prism:publicationName",
+      "authors_field": "none",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.example-publisher.org/doi/abs/10.0000/sample.0001?af=R\"><title>[text]</title><link>https://www.example-publisher.org/doi/abs/10.0000/sample.0001?af=R</link><description>[text]</description><content:encoded>[text]</content:encoded><dc:identifier>doi:10.0000/sample.0001</dc:identifier><dc:source>[journal] Volume 392, Issue 6xxx, Page 1-2, November 2026.</dc:source><dc:date>2026-11-26T07:00:01Z</dc:date><dc:type>Research Article</dc:type><dc:creator>[name], [name]</dc:creator><prism:publicationName>[journal]</prism:publicationName><prism:volume>392</prism:volume><prism:number>6xxx</prism:number><prism:coverDate>2026-11-26</prism:coverDate><prism:coverDisplayDate>2026-11-26</prism:coverDisplayDate><prism:doi>10.0000/sample.0001</prism:doi><prism:url>https://www.example-publisher.org/doi/abs/10.0000/sample.0001?af=R</prism:url></item>\n<item ...second item: dc:type Perspective, dc:date 2026-11-26T08:00:00Z...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from the American Economic Association's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 the American Economic Association 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "the feed URL is on pubs.aeaweb.org; www.aeaweb.org/journals/aer/rss is 404"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-apsr",
+      "name": "American Political Science Review",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.cambridge.org/core/rss/product/id/833A7242AC7B607BA7F6168DA072DB3B",
+      "proposed_url": "https://www.cambridge.org/core/rss/product/id/833A7242AC7B607BA7F6168DA072DB3B",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 26 items, not in date order",
+      "items": 26,
+      "newest": "2026-10-28T00:00:00.000Z",
+      "newest_age_days": 31.2,
+      "max_gap_days": 95,
+      "recent20_max_gap_days": 79,
+      "date_examples": [
+        "2026-03-23",
+        "2026-03-23",
+        "2026-04-06"
+      ],
+      "item_children": [
+        "title",
+        "description",
+        "link",
+        "dc:identifier",
+        "dc:title",
+        "prism:startingPage",
+        "prism:endingPage",
+        "prism:doi",
+        "prism:url",
+        "prism:publicationDate",
+        "prism:volume",
+        "prism:number",
+        "prism:publicationTitle",
+        "dc:date",
+        "dc:creator"
+      ],
+      "date_format": "dc:date and prism:publicationDate YYYY-MM-DD",
+      "date_zone": null,
+      "fresh_days": 80,
+      "fresh_days_basis": "quarterly issues plus FirstView: recent gap 79 days",
+      "doi_field": "prism:doi",
+      "abstract_field": "description (on some items)",
+      "type_field": null,
+      "journal_field": "prism:publicationTitle",
+      "authors_field": "dc:creator",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.cambridge.org/core/product/identifier/S0000000026000001/type/journal_article\"><title>[text]</title><description>[text]</description><link>https://www.cambridge.org/core/product/identifier/S0000000026000001/type/journal_article</link><dc:identifier>doi:10.1017/sample.2026.1</dc:identifier><dc:title>[text]</dc:title><prism:startingPage>1</prism:startingPage><prism:endingPage>18</prism:endingPage><prism:doi>10.1017/sample.2026.1</prism:doi><prism:url>https://www.cambridge.org/core/product/identifier/S0000000026000001/type/journal_article</prism:url><prism:publicationDate>2026-10-28</prism:publicationDate><prism:volume>120</prism:volume><prism:number>4</prism:number><prism:publicationTitle>[journal]</prism:publicationTitle><dc:date>2026-10-28</dc:date><dc:creator>[name]</dc:creator></item>\n<item ...second item: no description, prism:publicationDate 2026-03-23 (items are not in date order)...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Cambridge University Press's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Cambridge University Press 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "the feed id is a Cambridge product id found on the journal page; a guessed id answered 204 with no body"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-inventiones",
+      "name": "Inventiones mathematicae",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=222&channel-name=Inventiones%20mathematicae",
+      "proposed_url": "https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=222&channel-name=Inventiones%20mathematicae",
+      "fallback_url": null,
+      "format": "RSS 2.0, 20 items",
+      "items": 20,
+      "newest": "2026-11-20T00:00:00.000Z",
+      "newest_age_days": 8.2,
+      "max_gap_days": 18,
+      "recent20_max_gap_days": 18,
+      "date_examples": [
+        "2026-11-20",
+        "2026-11-17",
+        "2026-11-11"
+      ],
+      "item_children": [
+        "title",
+        "description",
+        "link",
+        "pubDate",
+        "guid"
+      ],
+      "date_format": "pubDate YYYY-MM-DD (no time, no zone)",
+      "date_zone": null,
+      "fresh_days": 19,
+      "fresh_days_basis": "recent gap 18 days; plus a day",
+      "doi_field": "link (the article URL holds the DOI)",
+      "abstract_field": "description",
+      "type_field": null,
+      "journal_field": "none (the channel is \"Latest Results\")",
+      "authors_field": "none",
+      "sketch": "<rss version=\"2.0\"><channel><title>Latest Results</title>...<item><title>[text]</title><description>[text]</description><link>https://link.springer.com/article/10.1007/s00222-026-00001-0</link><pubDate>2026-11-20</pubDate><guid>https://link.springer.com/article/10.1007/s00222-026-00001-0</guid></item>\n<item ...pubDate 2026-11-02 (a date with no time and no zone)...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Springer's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Springer 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "link.springer.com redirects with error=cookies_not_supported but still serves the feed",
+        "pubDate is not RFC 822, so rss-parser gives a string to parse"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-jams",
+      "name": "Journal of the AMS",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.ams.org/rss/jams.rss",
+      "proposed_url": "https://www.ams.org/rss/jams.rss",
+      "fallback_url": null,
+      "format": "RSS 2.0, the current issue (4 items)",
+      "items": 4,
+      "newest": "2026-09-24T16:53:00.000Z",
+      "newest_age_days": 64.5,
+      "max_gap_days": 0,
+      "recent20_max_gap_days": 0,
+      "date_examples": [
+        "Thu, 24 Sep 2026 12:53 EDT",
+        "Thu, 24 Sep 2026 12:53 EDT",
+        "Thu, 24 Sep 2026 12:53 EDT"
+      ],
+      "item_children": [
+        "title",
+        "description",
+        "link",
+        "guid",
+        "pubDate"
+      ],
+      "date_format": "pubDate \"Thu, 24 Sep 2026 12:53 EDT\" (a named US zone)",
+      "date_zone": null,
+      "fresh_days": 100,
+      "fresh_days_basis": "quarterly issue: newest 64.5 days; a quarter (92) plus a week",
+      "doi_field": "none (the URL holds the PII)",
+      "abstract_field": "none (description is the authors)",
+      "type_field": null,
+      "journal_field": "channel title",
+      "authors_field": "description",
+      "sketch": "<rss version=\"2.0\"><channel>...<item><title>[text]</title><description>[name]</description><link>https://www.ams.org/jams/2026-39-04/S0894-0347-2026-00001-1/</link><guid>https://www.ams.org/jams/2026-39-04/S0894-0347-2026-00001-1/</guid><pubDate>Thu, 24 Sep 2026 12:53 EDT</pubDate></item>\n<item ...same pubDate (the issue date)...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from the American Mathematical Society's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 the American Mathematical Society 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "dates use a zone abbreviation (EDT, EST), which rss-parser and Date.parse read, but the format is not RFC 822 seconds"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-acta-mathematica",
+      "name": "Acta Mathematica",
+      "kind": "rss",
+      "parser": "rss",
+      "status": null,
+      "url": null,
+      "proposed_url": null,
+      "format": "none found",
+      "fresh_days": null,
+      "problems": [
+        "no feed found: intlpress.com/acta has no feed link, projecteuclid.org answered a 1 KB page with no content to a plain GET, and Springer journal-id 11511 is a different journal (newest item 2016); rely on crossref-journals"
+      ],
+      "credit": {
+        "en": "Credit: Article titles and links from International Press's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 International Press 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "in_registry": false
+    },
+    {
+      "id": "journal-es-and-t",
+      "name": "Environmental Science & Technology",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 403,
+      "url": "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=esthag",
+      "proposed_url": null,
+      "fallback_url": null,
+      "format": "blocked",
+      "items": null,
+      "newest": null,
+      "newest_age_days": null,
+      "max_gap_days": null,
+      "recent20_max_gap_days": null,
+      "date_examples": [],
+      "item_children": [],
+      "date_zone": null,
+      "fresh_days": null,
+      "type_field": null,
+      "sketch": null,
+      "credit": {
+        "en": "Credit: Article titles and links from undefined's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 undefined 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "pubs.acs.org Cloudflare challenge, as JACS; rely on crossref-journals"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "journal-grl",
+      "name": "Geophysical Research Letters",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://agupubs.onlinelibrary.wiley.com/feed/19448007/most-recent",
+      "proposed_url": "https://agupubs.onlinelibrary.wiley.com/feed/19448007/most-recent",
+      "fallback_url": null,
+      "format": "RSS 2.0, 14 newest items",
+      "items": 14,
+      "newest": "2026-11-27T02:29:18.000Z",
+      "newest_age_days": 1.1,
+      "max_gap_days": 0.98,
+      "recent20_max_gap_days": 0.98,
+      "date_examples": [
+        "Thu, 26 Nov 2026 18:29:18 -0800",
+        "Thu, 26 Nov 2026 18:17:19 -0800",
+        "Wed, 25 Nov 2026 18:46:15 -0800"
+      ],
+      "item_children": [
+        "link",
+        "pubDate",
+        "dc:date",
+        "source",
+        "prism:coverDate",
+        "prism:coverDisplayDate",
+        "guid",
+        "title",
+        "description",
+        "dc:description",
+        "content:encoded",
+        "dc:creator",
+        "category",
+        "dc:title",
+        "dc:identifier",
+        "prism:publicationName",
+        "prism:doi",
+        "prism:url",
+        "prism:section",
+        "prism:volume",
+        "prism:number"
+      ],
+      "date_format": "pubDate RFC 822 with -0800; dc:date ISO 8601 with -08:00",
+      "date_zone": null,
+      "fresh_days": 4,
+      "fresh_days_basis": "daily on weekdays; weekend 3, plus a day",
+      "doi_field": "prism:doi, dc:identifier, guid",
+      "abstract_field": "description, content:encoded",
+      "type_field": "category, prism:section",
+      "journal_field": "prism:publicationName",
+      "authors_field": "dc:creator (one string)",
+      "sketch": "<rss version=\"2.0\"><channel>...<item><link>https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2026GL000001?af=R</link><pubDate>Thu, 26 Nov 2026 18:29:18 -0800</pubDate><dc:date>2026-11-26T18:29:18-08:00</dc:date><source url=\"https://agupubs.onlinelibrary.wiley.com/feed/19448007/most-recent\">[journal]: Table of Contents</source><prism:coverDate>2026-11-28</prism:coverDate><prism:coverDisplayDate>2026-11-28</prism:coverDisplayDate><guid isPermaLink=\"false\">10.1029/2026GL000001</guid><title>[text]</title><description>[text]</description><dc:description>[text]</dc:description><content:encoded>[text]</content:encoded><dc:creator>[name], [name]</dc:creator><category>Research Letter</category><dc:title>[text]</dc:title><dc:identifier>10.1029/2026GL000001</dc:identifier><prism:publicationName>[journal]</prism:publicationName><prism:doi>10.1029/2026GL000001</prism:doi><prism:url>https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2026GL000001?af=R</prism:url><prism:section>Research Letter</prism:section><prism:volume>53</prism:volume><prism:number>22</prism:number></item>\n<item ...second item: pubDate Thu, 26 Nov 2026 05:22:33 -0800...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from AGU (Wiley)'s own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 AGU (Wiley) 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": false
+    },
+    {
+      "id": "journal-jgr-atmospheres",
+      "name": "JGR: Atmospheres",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://agupubs.onlinelibrary.wiley.com/feed/21698996/most-recent",
+      "proposed_url": "https://agupubs.onlinelibrary.wiley.com/feed/21698996/most-recent",
+      "fallback_url": null,
+      "format": "RSS 2.0, 11 newest items",
+      "items": 11,
+      "newest": "2026-11-26T13:22:33.000Z",
+      "newest_age_days": 1.64,
+      "max_gap_days": 0.79,
+      "recent20_max_gap_days": 0.79,
+      "date_examples": [
+        "Thu, 26 Nov 2026 05:22:33 -0800",
+        "Wed, 25 Nov 2026 10:28:29 -0800",
+        "Wed, 25 Nov 2026 03:43:27 -0800"
+      ],
+      "item_children": [
+        "link",
+        "pubDate",
+        "dc:date",
+        "source",
+        "prism:coverDate",
+        "prism:coverDisplayDate",
+        "guid",
+        "title",
+        "description",
+        "dc:description",
+        "content:encoded",
+        "dc:creator",
+        "category",
+        "dc:title",
+        "dc:identifier",
+        "prism:publicationName",
+        "prism:doi",
+        "prism:url",
+        "prism:section",
+        "prism:volume",
+        "prism:number"
+      ],
+      "date_format": "as GRL",
+      "date_zone": null,
+      "fresh_days": 4,
+      "fresh_days_basis": "as GRL",
+      "doi_field": "prism:doi",
+      "abstract_field": "description",
+      "type_field": "prism:section",
+      "journal_field": "prism:publicationName",
+      "authors_field": "dc:creator",
+      "sketch": "<rss version=\"2.0\"><channel>...<item><link>https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2026GL000001?af=R</link><pubDate>Thu, 26 Nov 2026 18:29:18 -0800</pubDate><dc:date>2026-11-26T18:29:18-08:00</dc:date><source url=\"https://agupubs.onlinelibrary.wiley.com/feed/19448007/most-recent\">[journal]: Table of Contents</source><prism:coverDate>2026-11-28</prism:coverDate><prism:coverDisplayDate>2026-11-28</prism:coverDisplayDate><guid isPermaLink=\"false\">10.1029/2026GL000001</guid><title>[text]</title><description>[text]</description><dc:description>[text]</dc:description><content:encoded>[text]</content:encoded><dc:creator>[name], [name]</dc:creator><category>Research Letter</category><dc:title>[text]</dc:title><dc:identifier>10.1029/2026GL000001</dc:identifier><prism:publicationName>[journal]</prism:publicationName><prism:doi>10.1029/2026GL000001</prism:doi><prism:url>https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2026GL000001?af=R</prism:url><prism:section>Research Letter</prism:section><prism:volume>53</prism:volume><prism:number>22</prism:number></item>\n<item ...second item: pubDate Thu, 26 Nov 2026 05:22:33 -0800...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from AGU (Wiley)'s own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 AGU (Wiley) 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": false
+    },
+    {
+      "id": "journal-language",
+      "name": "Language (LSA, Project MUSE)",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://muse.jhu.edu/feeds/latest_articles?jid=112",
+      "proposed_url": "https://muse.jhu.edu/feeds/latest_articles?jid=112",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 8 items, the newest issue",
+      "items": 8,
+      "newest": "2026-11-27T05:00:00.000Z",
+      "newest_age_days": 0.99,
+      "max_gap_days": 0,
+      "recent20_max_gap_days": 0,
+      "date_examples": [
+        "2026-11-27T00:00:00-05:00",
+        "2026-11-27T00:00:00-05:00",
+        "2026-11-27T00:00:00-05:00"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "description",
+        "ag:source",
+        "ag:sourceURL",
+        "ag:timestamp",
+        "annotate:reference",
+        "g:image_link",
+        "g:news_source",
+        "g:publish_date",
+        "dc:format",
+        "dc:language",
+        "dc:publisher",
+        "dc:title",
+        "dc:identifier",
+        "dcterms:issued",
+        "dcterms:created",
+        "prism:complianceProfile",
+        "prism:distributor",
+        "prism:byteCount",
+        "prism:publicationDate",
+        "prism:coverDate"
+      ],
+      "date_format": "prism:publicationDate and dcterms:issued ISO 8601 with -05:00",
+      "date_zone": null,
+      "fresh_days": 100,
+      "fresh_days_basis": "quarterly issue: a quarter plus a week",
+      "doi_field": "none (MUSE URL only)",
+      "abstract_field": "description",
+      "type_field": null,
+      "journal_field": "none (channel)",
+      "authors_field": "none",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://muse.jhu.edu/pub/22/article/000001\"><title>[text]</title><link>https://muse.jhu.edu/pub/22/article/000001</link><description>[text]</description><dc:publisher>[publisher]</dc:publisher><dc:title>[text]</dc:title><dc:identifier>https://muse.jhu.edu/pub/22/article/000001</dc:identifier><dcterms:issued>2026-11-27T00:00:00-05:00</dcterms:issued><prism:publicationDate>2026-11-27T00:00:00-05:00</prism:publicationDate><prism:coverDate>[season] 2026</prism:coverDate></item>\n<item ...same issue date, no DOI element...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Project MUSE (for the Linguistic Society of America)'s own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Project MUSE (for the Linguistic Society of America) 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": false
+    },
+    {
+      "id": "journal-antiquity",
+      "name": "Antiquity",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.cambridge.org/core/rss/product/id/C06207AB2CE3EE948718B5F6E30870D7",
+      "proposed_url": "https://www.cambridge.org/core/rss/product/id/C06207AB2CE3EE948718B5F6E30870D7",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 39 items, not in date order",
+      "items": 39,
+      "newest": "2026-10-01T00:00:00.000Z",
+      "newest_age_days": 58.2,
+      "max_gap_days": 36,
+      "recent20_max_gap_days": 36,
+      "date_examples": [
+        "2026-10-01",
+        "2026-07-20",
+        "2026-06-19"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "dc:identifier",
+        "dc:title",
+        "prism:startingPage",
+        "prism:endingPage",
+        "prism:doi",
+        "prism:url",
+        "prism:publicationDate",
+        "prism:volume",
+        "prism:number",
+        "prism:publicationTitle",
+        "dc:date",
+        "dc:creator"
+      ],
+      "date_format": "YYYY-MM-DD",
+      "date_zone": null,
+      "fresh_days": 65,
+      "fresh_days_basis": "bimonthly issue: newest 58 days, recent gap 36; 64 plus a day",
+      "doi_field": "prism:doi",
+      "abstract_field": "none on these items",
+      "type_field": null,
+      "journal_field": "prism:publicationTitle",
+      "authors_field": "dc:creator",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.cambridge.org/core/product/identifier/S0000000026000001/type/journal_article\"><title>[text]</title><description>[text]</description><link>https://www.cambridge.org/core/product/identifier/S0000000026000001/type/journal_article</link><dc:identifier>doi:10.1017/sample.2026.1</dc:identifier><dc:title>[text]</dc:title><prism:startingPage>1</prism:startingPage><prism:endingPage>18</prism:endingPage><prism:doi>10.1017/sample.2026.1</prism:doi><prism:url>https://www.cambridge.org/core/product/identifier/S0000000026000001/type/journal_article</prism:url><prism:publicationDate>2026-10-28</prism:publicationDate><prism:volume>120</prism:volume><prism:number>4</prism:number><prism:publicationTitle>[journal]</prism:publicationTitle><dc:date>2026-10-28</dc:date><dc:creator>[name]</dc:creator></item>\n<item ...second item: no description, prism:publicationDate 2026-03-23 (items are not in date order)...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Cambridge University Press's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Cambridge University Press 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": false
+    },
+    {
+      "id": "journal-classical-quarterly",
+      "name": "The Classical Quarterly",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.cambridge.org/core/rss/product/id/98B56E98F6176CC085C2D10BEF5DA258",
+      "proposed_url": "https://www.cambridge.org/core/rss/product/id/98B56E98F6176CC085C2D10BEF5DA258",
+      "fallback_url": null,
+      "format": "RSS 1.0 (RDF), 57 items, not in date order",
+      "items": 57,
+      "newest": "2026-09-08T00:00:00.000Z",
+      "newest_age_days": 81.2,
+      "max_gap_days": 41,
+      "recent20_max_gap_days": 41,
+      "date_examples": [
+        "2026-02-16",
+        "2026-01-22",
+        "2026-01-22"
+      ],
+      "item_children": [
+        "title",
+        "description",
+        "link",
+        "dc:identifier",
+        "dc:title",
+        "prism:startingPage",
+        "prism:endingPage",
+        "prism:doi",
+        "prism:url",
+        "prism:publicationDate",
+        "prism:volume",
+        "prism:number",
+        "prism:publicationTitle",
+        "dc:date",
+        "dc:creator"
+      ],
+      "date_format": "YYYY-MM-DD",
+      "date_zone": null,
+      "fresh_days": 190,
+      "fresh_days_basis": "two issues a year: newest 81 days; half a year plus a week",
+      "doi_field": "prism:doi",
+      "abstract_field": "description (some)",
+      "type_field": null,
+      "journal_field": "prism:publicationTitle",
+      "authors_field": "dc:creator",
+      "sketch": "<rdf:RDF ...><item rdf:about=\"https://www.cambridge.org/core/product/identifier/S0000000026000001/type/journal_article\"><title>[text]</title><description>[text]</description><link>https://www.cambridge.org/core/product/identifier/S0000000026000001/type/journal_article</link><dc:identifier>doi:10.1017/sample.2026.1</dc:identifier><dc:title>[text]</dc:title><prism:startingPage>1</prism:startingPage><prism:endingPage>18</prism:endingPage><prism:doi>10.1017/sample.2026.1</prism:doi><prism:url>https://www.cambridge.org/core/product/identifier/S0000000026000001/type/journal_article</prism:url><prism:publicationDate>2026-10-28</prism:publicationDate><prism:volume>120</prism:volume><prism:number>4</prism:number><prism:publicationTitle>[journal]</prism:publicationTitle><dc:date>2026-10-28</dc:date><dc:creator>[name]</dc:creator></item>\n<item ...second item: no description, prism:publicationDate 2026-03-23 (items are not in date order)...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from Cambridge University Press's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 Cambridge University Press 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": false
+    },
+    {
+      "id": "journal-jbl",
+      "name": "Journal of Biblical Literature",
+      "kind": "rss",
+      "status": null,
+      "url": null,
+      "proposed_url": null,
+      "format": "none found",
+      "fresh_days": null,
+      "problems": [
+        "no feed: sbl-site.org lists issues as news posts only; rely on crossref-journals"
+      ],
+      "credit": {
+        "en": "Credit: Article titles and links from the Society of Biblical Literature's own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 the Society of Biblical Literature 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "in_registry": false
+    },
+    {
+      "id": "journal-hts",
+      "name": "HTS Teologiese Studies / Theological Studies",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://hts.org.za/index.php/hts/gateway/plugin/WebFeedGatewayPlugin/rss2",
+      "proposed_url": "https://hts.org.za/index.php/hts/gateway/plugin/WebFeedGatewayPlugin/rss2",
+      "fallback_url": null,
+      "format": "RSS 2.0 (OJS), 10 items",
+      "items": 10,
+      "newest": "2026-11-26T09:00:00.000Z",
+      "newest_age_days": 1.83,
+      "max_gap_days": 14,
+      "recent20_max_gap_days": 14,
+      "date_examples": [
+        "Thu, 26 Nov 2026 10:00:00 +0100",
+        "Mon, 23 Nov 2026 06:00:00 +0100",
+        "Fri, 20 Nov 2026 06:00:00 +0100"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "description",
+        "author",
+        "dc:rights",
+        "cc:license",
+        "guid",
+        "pubDate"
+      ],
+      "date_format": "pubDate RFC 822 with +0100",
+      "date_zone": null,
+      "fresh_days": 15,
+      "fresh_days_basis": "continuous publication: recent gap 14 days; plus a day",
+      "doi_field": "none (article URL only)",
+      "abstract_field": "description",
+      "type_field": null,
+      "journal_field": "channel title",
+      "authors_field": "author (one string)",
+      "sketch": "<rss version=\"2.0\"><channel>...<item><title>[text]</title><link>https://hts.org.za/index.php/hts/article/view/00001</link><description>[text]</description><author>[name], [name]</author><dc:rights>Copyright (c) 2026 [name]</dc:rights><cc:license rdf:resource=\"http://creativecommons.org/licenses/by/4.0\"/><guid isPermaLink=\"true\">https://hts.org.za/index.php/hts/article/view/00001</guid><pubDate>Thu, 26 Nov 2026 10:00:00 +0100</pubDate></item>\n<item ...second item: pubDate Thu, 12 Nov 2026 10:00:00 +0100...</item>",
+      "credit": {
+        "en": "Credit: Article titles and links from AOSIS (open access, CC BY 4.0 per item)'s own RSS feed; each article belongs to its publisher.",
+        "zh": "Credit (zh): 論文標題與連結取自 AOSIS (open access, CC BY 4.0 per item) 自家的 RSS 訂閱；各篇論文權利屬其出版者。",
+        "basis": "no feed-specific wording found; the site terms keep copyright with the publisher; the tracker shows titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": false
+    },
+    {
+      "id": "eurekalert",
+      "name": "EurekAlert! news releases",
+      "kind": "page",
+      "parser": "html",
+      "status": 404,
+      "url": "https://www.eurekalert.org/rss.xml",
+      "proposed_url": "https://www.eurekalert.org/news-releases/browse",
+      "fallback_url": null,
+      "format": "HTML list: article.post, 12 a page (pages /news-releases/browse/1 to 6 and ?view=summaries&date=MM/DD/YYYY)",
+      "items": 12,
+      "newest": "2026-11-27",
+      "date_format": "text \"27-Nov-2026\" inside the item (no zone)",
+      "date_zone": null,
+      "fresh_days": 4,
+      "fresh_days_basis": "releases every weekday; weekend 3 plus a day",
+      "selector": "article.post: a[href^=\"/news-releases/\"] for link and title, the date text \"DD-Mon-YYYY\", the institution and the release type (\"Peer-Reviewed Publication\") in the item text",
+      "sketch": "<article class=\"[list item class]\"><a href=\"/news/[slug]\"><h3>[text]</h3></a><time datetime=\"2026-11-19T16:00:00.000Z\">[date text]</time><p>[text]</p></article> x n (selector and date form per feed in the table)",
+      "credit": {
+        "en": "Credit: News releases posted on EurekAlert! by AAAS; each release belongs to its institution.",
+        "zh": "Credit (zh): 新聞稿取自 AAAS 經營的 EurekAlert!，各稿權利屬發布機構。",
+        "basis": "EurekAlert! terms of service; releases are the institutions own"
+      },
+      "host_limits": "no documented limit; Apache server",
+      "problems": [
+        "the RSS feed is gone: /rss.xml, /rss.php and /rss/<topic>.xml are 404, and the help page now points to the browse page as its \"latest news release feed\"",
+        "about 150 releases a weekday against 12 a page: budget 2 reads 24; use the summaries view by date, whose length was not measured"
+      ],
+      "in_registry": true
+    },
+    {
+      "id": "lab-deepmind",
+      "name": "Google DeepMind's blog",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://deepmind.google/blog/rss.xml",
+      "proposed_url": "https://deepmind.google/blog/rss.xml",
+      "fallback_url": null,
+      "format": "RSS 2.0, 100 items",
+      "items": 100,
+      "newest": "2026-11-24T13:07:53.000Z",
+      "newest_age_days": 3.65,
+      "max_gap_days": 21,
+      "recent20_max_gap_days": 6.93,
+      "date_examples": [
+        "Tue, 24 Nov 2026 13:07:53 +0000",
+        "Mon, 23 Nov 2026 16:59:40 +0000",
+        "Wed, 18 Nov 2026 21:35:43 +0000"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "description",
+        "pubDate",
+        "guid",
+        "media:thumbnail",
+        "media:content"
+      ],
+      "date_format": "pubDate RFC 822 with +0000",
+      "date_zone": null,
+      "fresh_days": 22,
+      "fresh_days_basis": "recent gap 7 days, longest in the feed 21; 21 plus a day",
+      "doi_field": "none",
+      "abstract_field": "description",
+      "type_field": null,
+      "journal_field": "n/a",
+      "authors_field": "none",
+      "sketch": "<rss version=\"2.0\"><channel>...<item><title>[text]</title><link>https://www.example-lab.org/blog/[slug]</link><description>[text]</description><pubDate>Tue, 24 Nov 2026 13:07:53 +0000</pubDate><guid>https://www.example-lab.org/blog/[slug]</guid></item>\n<item ...second item: pubDate Tue, 17 Nov 2026 09:00:00 +0000...</item>",
+      "credit": {
+        "en": "Credit: Posts from Google DeepMind's own site.",
+        "zh": "Credit (zh): 文章取自 Google DeepMind 官方網站。",
+        "basis": "site terms; titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": true
+    },
+    {
+      "id": "lab-openai",
+      "name": "OpenAI news",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://openai.com/news/rss.xml",
+      "proposed_url": "https://openai.com/news/rss.xml",
+      "fallback_url": null,
+      "format": "RSS 2.0, 1,430 items (870 KB)",
+      "items": 1430,
+      "newest": "2026-11-24T13:00:00.000Z",
+      "newest_age_days": 3.66,
+      "max_gap_days": 98.04,
+      "recent20_max_gap_days": 1.58,
+      "date_examples": [
+        "Tue, 24 Nov 2026 13:00:00 GMT",
+        "Tue, 24 Nov 2026 11:00:00 GMT",
+        "Tue, 24 Nov 2026 00:00:00 GMT"
+      ],
+      "item_children": [
+        "title",
+        "description",
+        "link",
+        "guid",
+        "category",
+        "pubDate"
+      ],
+      "date_format": "pubDate RFC 822 GMT",
+      "date_zone": null,
+      "fresh_days": 7,
+      "fresh_days_basis": "several posts a week; recent gap 1.6 days; longer gaps in holidays: 7",
+      "doi_field": "none",
+      "abstract_field": "description",
+      "type_field": "category",
+      "journal_field": "n/a",
+      "authors_field": "none",
+      "sketch": "<rss version=\"2.0\"><channel>...<item><title>[text]</title><link>https://www.example-lab.org/blog/[slug]</link><description>[text]</description><pubDate>Tue, 24 Nov 2026 13:07:53 +0000</pubDate><guid>https://www.example-lab.org/blog/[slug]</guid></item>\n<item ...second item: pubDate Tue, 17 Nov 2026 09:00:00 +0000...</item>",
+      "credit": {
+        "en": "Credit: Posts from OpenAI's own site.",
+        "zh": "Credit (zh): 文章取自 OpenAI 官方網站。",
+        "basis": "site terms; titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "the feed is all of OpenAI news, product posts included; must_match should be true for it"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "lab-anthropic",
+      "name": "Anthropic research",
+      "kind": "page",
+      "parser": "html",
+      "status": 200,
+      "url": "https://www.anthropic.com/research",
+      "proposed_url": "https://www.anthropic.com/research",
+      "fallback_url": "https://www.anthropic.com/news",
+      "format": "HTML (no feed: /rss.xml and /news/rss.xml are 404)",
+      "items": 32,
+      "date_format": "<time> text \"Nov 17, 2026\" (no zone)",
+      "date_zone": null,
+      "fresh_days": 30,
+      "fresh_days_basis": "posts several a month",
+      "selector": "a[href^=\"/research/\"] for each post, with the nearest <time> for its date; on /news the posts are article elements with a[href^=\"/news/\"] and a <time>",
+      "sketch": "<article class=\"[list item class]\"><a href=\"/news/[slug]\"><h3>[text]</h3></a><time datetime=\"2026-11-19T16:00:00.000Z\">[date text]</time><p>[text]</p></article> x n (selector and date form per feed in the table)",
+      "credit": {
+        "en": "Credit: Posts from Anthropic's own site.",
+        "zh": "Credit (zh): 文章取自 Anthropic 官方網站。",
+        "basis": "site terms; titles and links only"
+      },
+      "host_limits": "none documented",
+      "problems": [
+        "class names are generated (W1FydW_...), so select by href prefix and <time>, not by class"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "lab-meta-fair",
+      "name": "Meta AI blog",
+      "kind": "page",
+      "parser": "html",
+      "status": 200,
+      "url": "https://ai.meta.com/blog/",
+      "proposed_url": "https://ai.meta.com/blog/",
+      "format": "HTML, no feed; 5 distinct posts in the served page",
+      "items": 5,
+      "date_format": "text \"July 9, 2026\" near each card (no <time>)",
+      "date_zone": null,
+      "fresh_days": 45,
+      "fresh_days_basis": "newest post in the page was July 2026",
+      "selector": "a[href*=\"/blog/\"] whose path has a slug, with the date text in the card",
+      "sketch": "<article class=\"[list item class]\"><a href=\"/news/[slug]\"><h3>[text]</h3></a><time datetime=\"2026-11-19T16:00:00.000Z\">[date text]</time><p>[text]</p></article> x n (selector and date form per feed in the table)",
+      "credit": {
+        "en": "Credit: Posts from Meta's own site.",
+        "zh": "Credit (zh): 文章取自 Meta 官方網站。",
+        "basis": "site terms; titles and links only"
+      },
+      "problems": [
+        "the page is client-rendered: only 5 posts and generated class names are in the HTML; ai.meta.com/research/ lists no posts",
+        "the newest dated post on the page is July 2026, so the page may not show the latest posts to a plain GET"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "lab-microsoft-ai-for-science",
+      "name": "Microsoft Research AI for Science",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.microsoft.com/en-us/research/lab/microsoft-research-ai-for-science/feed/",
+      "proposed_url": "https://www.microsoft.com/en-us/research/lab/microsoft-research-ai-for-science/feed/",
+      "fallback_url": null,
+      "format": "RSS 2.0 (WordPress), 5 items",
+      "items": 5,
+      "newest": "2025-06-18T10:00:52.000Z",
+      "newest_age_days": 527.79,
+      "max_gap_days": 453.16,
+      "recent20_max_gap_days": 453.16,
+      "date_examples": [
+        "Wed, 18 Jun 2025 10:00:52 +0000",
+        "Tue, 25 Feb 2025 19:24:44 +0000",
+        "Tue, 03 Sep 2024 19:08:05 +0000"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "dc:creator",
+        "pubDate",
+        "guid",
+        "description",
+        "content:encoded"
+      ],
+      "date_format": "pubDate RFC 822 +0000",
+      "date_zone": null,
+      "fresh_days": null,
+      "fresh_days_basis": "the lab feed is stale: its newest item is from June 2025",
+      "doi_field": "none",
+      "abstract_field": "description",
+      "type_field": null,
+      "journal_field": "n/a",
+      "authors_field": "dc:creator",
+      "sketch": "<rss version=\"2.0\"><channel>...<item><title>[text]</title><link>https://www.example-site.org/[slug]/</link><dc:creator><![CDATA[[name]]]></dc:creator><pubDate>Sat, 07 Nov 2026 03:28:59 +0000</pubDate><category><![CDATA[[tag]]]></category><guid isPermaLink=\"false\">https://www.example-site.org/?p=12345</guid><description><![CDATA[[text]]]></description><content:encoded><![CDATA[<p>[text]</p>]]></content:encoded></item>\n<item ...second item: pubDate Thu, 05 Nov 2026 14:54:01 +0000...</item>",
+      "credit": {
+        "en": "Credit: Posts from Microsoft Research's own site.",
+        "zh": "Credit (zh): 文章取自 Microsoft Research 官方網站。",
+        "basis": "site terms; titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [
+        "the lab's own feed has had no item since 2025-06-18; Microsoft Research's site-wide feed https://www.microsoft.com/en-us/research/feed/ is the live one, with must_match true"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "lab-futurehouse",
+      "name": "FutureHouse research",
+      "kind": "page",
+      "parser": "html",
+      "status": 200,
+      "url": "https://www.futurehouse.org/research",
+      "proposed_url": "https://www.futurehouse.org/research",
+      "format": "HTML (Webflow), 9 posts; no feed",
+      "items": 9,
+      "date_format": "no date on the list; each post page has one",
+      "date_zone": null,
+      "fresh_days": null,
+      "fresh_days_basis": "no dated items on the list page",
+      "selector": "div.card a.u-link-cover[href^=\"/research/\"]",
+      "sketch": "<article class=\"[list item class]\"><a href=\"/news/[slug]\"><h3>[text]</h3></a><time datetime=\"2026-11-19T16:00:00.000Z\">[date text]</time><p>[text]</p></article> x n (selector and date form per feed in the table)",
+      "credit": {
+        "en": "Credit: Posts from FutureHouse's own site.",
+        "zh": "Credit (zh): 文章取自 FutureHouse 官方網站。",
+        "basis": "site terms; titles and links only"
+      },
+      "problems": [
+        "/research-announcements redirects to /research; no dates on the list"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "lab-periodic-labs",
+      "name": "Periodic Labs news",
+      "kind": "page",
+      "parser": "html",
+      "status": 200,
+      "url": "https://periodic.com/news",
+      "proposed_url": "https://periodic.com/news",
+      "format": "HTML (Framer), 4 posts",
+      "items": 4,
+      "date_format": "<time datetime=\"2026-09-15T00:00:00.000Z\">",
+      "date_zone": null,
+      "fresh_days": 90,
+      "fresh_days_basis": "few posts: newest 2026-09-15",
+      "selector": "a[href^=\"./news/\"] containing a <time datetime>",
+      "sketch": "<article class=\"[list item class]\"><a href=\"/news/[slug]\"><h3>[text]</h3></a><time datetime=\"2026-11-19T16:00:00.000Z\">[date text]</time><p>[text]</p></article> x n (selector and date form per feed in the table)",
+      "credit": {
+        "en": "Credit: Posts from Periodic Labs's own site.",
+        "zh": "Credit (zh): 文章取自 Periodic Labs 官方網站。",
+        "basis": "site terms; titles and links only"
+      },
+      "problems": [
+        "relative links (./news/slug)"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "lab-isomorphic-labs",
+      "name": "Isomorphic Labs news",
+      "kind": "page",
+      "parser": "html",
+      "status": 200,
+      "url": "https://www.isomorphiclabs.com/news",
+      "proposed_url": "https://www.isomorphiclabs.com/news",
+      "format": "HTML (Webflow), 22 posts",
+      "items": 22,
+      "date_format": "no date on the list cards",
+      "date_zone": null,
+      "fresh_days": null,
+      "fresh_days_basis": "no dated items on the list",
+      "selector": "a.news-card[href^=\"/articles/\"], a.news-featured_title[href^=\"/articles/\"]",
+      "sketch": "<article class=\"[list item class]\"><a href=\"/news/[slug]\"><h3>[text]</h3></a><time datetime=\"2026-11-19T16:00:00.000Z\">[date text]</time><p>[text]</p></article> x n (selector and date form per feed in the table)",
+      "credit": {
+        "en": "Credit: Posts from Isomorphic Labs's own site.",
+        "zh": "Credit (zh): 文章取自 Isomorphic Labs 官方網站。",
+        "basis": "site terms; titles and links only"
+      },
+      "problems": [
+        "/articles and /blog are 404; the list is /news"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "lab-lila-sciences",
+      "name": "Lila Sciences news",
+      "kind": "page",
+      "parser": "html",
+      "status": 200,
+      "url": "https://www.lila.ai/news",
+      "proposed_url": "https://www.lila.ai/news",
+      "format": "HTML (Webflow)",
+      "items": 5,
+      "date_format": "text \"November 20, 2026\" in the card",
+      "date_zone": null,
+      "fresh_days": 30,
+      "fresh_days_basis": "several posts a month",
+      "selector": "div.news-list_item a[href^=\"/news/\"] with its date text",
+      "sketch": "<article class=\"[list item class]\"><a href=\"/news/[slug]\"><h3>[text]</h3></a><time datetime=\"2026-11-19T16:00:00.000Z\">[date text]</time><p>[text]</p></article> x n (selector and date form per feed in the table)",
+      "credit": {
+        "en": "Credit: Posts from Lila Sciences's own site.",
+        "zh": "Credit (zh): 文章取自 Lila Sciences 官方網站。",
+        "basis": "site terms; titles and links only"
+      },
+      "problems": [
+        "lila.ai redirects to www.lila.ai; the page also links many outside press items (/abs/...), which are not the lab's own"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "lab-sakana-ai",
+      "name": "Sakana AI blog",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://sakana.ai/feed.xml",
+      "proposed_url": "https://sakana.ai/feed.xml",
+      "fallback_url": null,
+      "format": "Atom 1.0 (Jekyll), 10 entries",
+      "items": 10,
+      "newest": "2026-11-25T15:00:00.000Z",
+      "newest_age_days": 2.58,
+      "max_gap_days": 9,
+      "recent20_max_gap_days": 9,
+      "date_examples": [
+        "2026-11-26T00:00:00+09:00",
+        "2026-11-25T00:00:00+09:00",
+        "2026-11-24T00:00:00+09:00"
+      ],
+      "item_children": [
+        "title",
+        "link",
+        "published",
+        "updated",
+        "id",
+        "content",
+        "author",
+        "category",
+        "summary"
+      ],
+      "date_format": "published ISO 8601 with +09:00",
+      "date_zone": "+09:00",
+      "fresh_days": 30,
+      "fresh_days_basis": "recent gap 9 days; labs post irregularly",
+      "doi_field": "none",
+      "abstract_field": "summary",
+      "type_field": null,
+      "journal_field": "n/a",
+      "authors_field": "author/name",
+      "sketch": "<feed xmlns=\"http://www.w3.org/2005/Atom\"><entry><title type=\"html\">[text]</title><link href=\"https://sakana.ai/[slug]/\" rel=\"alternate\" type=\"text/html\"/><published>2026-11-26T00:00:00+09:00</published><updated>2026-11-26T00:00:00+09:00</updated><id>https://sakana.ai/[slug]</id><content type=\"html\">[text]</content><author><name>[name]</name></author><category term=\"[tag]\"/><summary type=\"html\">[text]</summary></entry>\n<entry ...second entry: published 2026-11-17T00:00:00+09:00...</entry>",
+      "credit": {
+        "en": "Credit: Posts from Sakana AI's own site.",
+        "zh": "Credit (zh): 文章取自 Sakana AI 官方網站。",
+        "basis": "site terms; titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": false
+    },
+    {
+      "id": "lab-arc-institute",
+      "name": "Arc Institute news",
+      "kind": "page",
+      "parser": "html",
+      "status": 200,
+      "url": "https://arcinstitute.org/news",
+      "proposed_url": "https://arcinstitute.org/news",
+      "format": "HTML (Next.js), 5 posts; no feed",
+      "items": 5,
+      "date_format": "<time datetime=\"2026-11-19T16:00:00.000Z\">",
+      "date_zone": null,
+      "fresh_days": 30,
+      "fresh_days_basis": "posts every week or two",
+      "selector": "article[class*=\"PostList_postItem\"] h3 a[href^=\"/news/\"], with its <time datetime>",
+      "sketch": "<article class=\"[list item class]\"><a href=\"/news/[slug]\"><h3>[text]</h3></a><time datetime=\"2026-11-19T16:00:00.000Z\">[date text]</time><p>[text]</p></article> x n (selector and date form per feed in the table)",
+      "credit": {
+        "en": "Credit: Posts from Arc Institute's own site.",
+        "zh": "Credit (zh): 文章取自 Arc Institute 官方網站。",
+        "basis": "site terms; titles and links only"
+      },
+      "problems": [
+        "/rss.xml is 404"
+      ],
+      "in_registry": false
+    },
+    {
+      "id": "lab-allen-institute-for-ai",
+      "name": "Ai2 blog",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://allenai.org/rss.xml",
+      "proposed_url": "https://allenai.org/rss.xml",
+      "fallback_url": null,
+      "format": "RSS 2.0, 25 items",
+      "items": 25,
+      "newest": "2026-11-25T08:00:00.000Z",
+      "newest_age_days": 2.87,
+      "max_gap_days": 14,
+      "recent20_max_gap_days": 7,
+      "date_examples": [
+        "2026-11-25T00:00:00-08:00",
+        "2026-11-23T00:00:00-08:00",
+        "2026-11-19T00:00:00-08:00"
+      ],
+      "item_children": [
+        "guid",
+        "title",
+        "link",
+        "pubDate",
+        "description"
+      ],
+      "date_format": "pubDate ISO 8601 with -08:00 (not RFC 822)",
+      "date_zone": null,
+      "fresh_days": 30,
+      "fresh_days_basis": "recent gap 7 days",
+      "doi_field": "none",
+      "abstract_field": "description",
+      "type_field": null,
+      "journal_field": "n/a",
+      "authors_field": "none",
+      "sketch": "<rss version=\"2.0\"><channel>...<item><title>[text]</title><link>https://www.example-lab.org/blog/[slug]</link><description>[text]</description><pubDate>Tue, 24 Nov 2026 13:07:53 +0000</pubDate><guid>https://www.example-lab.org/blog/[slug]</guid></item>\n<item ...second item: pubDate Tue, 17 Nov 2026 09:00:00 +0000...</item>",
+      "credit": {
+        "en": "Credit: Posts from Ai2's own site.",
+        "zh": "Credit (zh): 文章取自 Ai2 官方網站。",
+        "basis": "site terms; titles and links only"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": false
+    },
+    {
+      "id": "smc-reactions",
+      "name": "Science Media Centre expert reactions",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://www.sciencemediacentre.org/",
+      "proposed_url": "https://www.sciencemediacentre.org/feed/",
+      "fallback_url": "https://www.sciencemediacentre.org/",
+      "format": "RSS 2.0 (WordPress) at /feed/, 20 items; the home page lists article.article-list-item with <time>",
+      "items": 20,
+      "date_format": "pubDate RFC 822 +0000; the page shows \"November 26, 2026\"",
+      "date_zone": null,
+      "fresh_days": 7,
+      "fresh_days_basis": "reactions on most weekdays; the page showed one a day for a week",
+      "selector": "page fallback: article.article-list-item > header h3 a (link, title) and time (date text)",
+      "sketch": "WordPress RSS 2.0 at /feed/: <item><title>[text]</title><link>https://www.sciencemediacentre.org/expert-reaction-to-[slug]/</link><dc:creator>[name]</dc:creator><pubDate>Thu, 26 Nov 2026 13:10:00 +0000</pubDate><category>[tag]</category><guid isPermaLink=\"false\">https://www.sciencemediacentre.org/?p=12345</guid><description>[text]</description><content:encoded>[expert names and quotes replaced by [text]]</content:encoded></item>",
+      "credit": {
+        "en": "Credit: Expert reactions from the Science Media Centre (sciencemediacentre.org).",
+        "zh": "Credit (zh): 專家回應取自英國科學媒體中心（sciencemediacentre.org）。",
+        "basis": "SMC reactions are written for reuse with attribution to each named expert; its copyright page returned 404, so recheck in K1d"
+      },
+      "problems": [
+        "the site has a feed, so kind rss is simpler than page; the feed mixes roundups and other posts, so keep must_match true and keep only /expert-reaction and /experts-react paths"
+      ],
+      "in_registry": true
+    },
+    {
+      "id": "mathlib-stats",
+      "name": "mathlib's statistics page",
+      "kind": "page",
+      "parser": "html",
+      "status": 200,
+      "url": "https://leanprover-community.github.io/mathlib_stats.html",
+      "proposed_url": "https://mathlib.org/mathlib_stats.html",
+      "format": "HTML; the old URL is a 1 KB page that moves by script and meta refresh, not by an HTTP redirect",
+      "fresh_days": null,
+      "selector": "the counts are in the page text (theorems, definitions, contributors); K1d settles the exact selector with the counter",
+      "sketch": null,
+      "credit": {
+        "en": "Credit: Statistics from the mathlib community (mathlib.org), Apache License 2.0.",
+        "zh": "Credit (zh): 統計數字來自 mathlib 社群（mathlib.org），採 Apache 2.0 授權。",
+        "basis": "mathlib and its site source are Apache 2.0"
+      },
+      "problems": [
+        "moved: leanprover-community.github.io/mathlib_stats.html now says \"Page Moved\" and points to https://mathlib.org/mathlib_stats.html"
+      ],
+      "in_registry": true
+    },
+    {
+      "id": "erdos",
+      "name": "erdosproblems.com",
+      "kind": "page",
+      "parser": "html",
+      "status": 200,
+      "url": "https://www.erdosproblems.com/",
+      "proposed_url": "https://www.erdosproblems.com/",
+      "fallback_url": "https://github.com/teorth/erdosproblems (data/ folder)",
+      "format": "HTML home page with forum and blog threads (li.thread-item, dates \"08 Oct 2026\"); the problem data is in the GitHub repo teorth/erdosproblems (data/, Apache 2.0)",
+      "fresh_days": null,
+      "selector": "home: ul.thread-list li.thread-item a.thread-title; the counter should read the repo data, which K1d checks",
+      "sketch": "<article class=\"[list item class]\"><a href=\"/news/[slug]\"><h3>[text]</h3></a><time datetime=\"2026-11-19T16:00:00.000Z\">[date text]</time><p>[text]</p></article> x n (selector and date form per feed in the table)",
+      "credit": {
+        "en": "Credit: Erdős problems data from Thomas Bloom's erdosproblems.com and its GitHub data (Apache License 2.0).",
+        "zh": "Credit (zh): 艾狄胥問題資料來自 Thomas Bloom 的 erdosproblems.com 及其 GitHub 資料庫（Apache 2.0 授權）。",
+        "basis": "teorth/erdosproblems LICENSE is Apache 2.0"
+      },
+      "problems": [],
+      "in_registry": true
+    },
+    {
+      "id": "scrollprize",
+      "name": "The Vesuvius Challenge's announcements",
+      "kind": "rss",
+      "parser": "rss",
+      "status": 200,
+      "url": "https://scrollprize.substack.com/feed",
+      "proposed_url": "https://scrollprize.substack.com/feed",
+      "fallback_url": null,
+      "format": "RSS 2.0 (Substack), 20 items, 561 KB with full posts",
+      "items": 20,
+      "newest": "2026-11-24T03:35:24.000Z",
+      "newest_age_days": 4.05,
+      "max_gap_days": 78.32,
+      "recent20_max_gap_days": 78.32,
+      "date_examples": [
+        "Tue, 24 Nov 2026 03:35:24 GMT",
+        "Sun, 15 Nov 2026 02:20:00 GMT",
+        "Mon, 02 Nov 2026 17:59:05 GMT"
+      ],
+      "item_children": [
+        "title",
+        "description",
+        "link",
+        "guid",
+        "dc:creator",
+        "pubDate",
+        "enclosure",
+        "content:encoded"
+      ],
+      "date_format": "pubDate RFC 822 GMT",
+      "date_zone": null,
+      "fresh_days": 80,
+      "fresh_days_basis": "the longest recent gap is 78.3 days; 79 rounded, plus a day (the seed has 60)",
+      "doi_field": "none",
+      "abstract_field": "description",
+      "type_field": null,
+      "journal_field": "n/a",
+      "authors_field": "dc:creator",
+      "sketch": "<rss version=\"2.0\"><channel>...<item><title>[text]</title><link>https://www.example-lab.org/blog/[slug]</link><description>[text]</description><pubDate>Tue, 24 Nov 2026 13:07:53 +0000</pubDate><guid>https://www.example-lab.org/blog/[slug]</guid></item>\n<item ...second item: pubDate Tue, 17 Nov 2026 09:00:00 +0000...</item>",
+      "credit": {
+        "en": "Credit: Vesuvius Challenge (scrollprize.org), content CC BY-NC 4.0.",
+        "zh": "Credit (zh): 維蘇威火山挑戰（scrollprize.org），內容採 CC BY-NC 4.0 授權。",
+        "basis": "site footer: Content licensed CC BY-NC 4.0"
+      },
+      "host_limits": "no documented rate limit for the feed; one request a morning",
+      "problems": [],
+      "in_registry": true
+    },
+    {
+      "id": "naer-terms",
+      "name": "樂詞網",
+      "kind": "page",
+      "parser": "none",
+      "status": 200,
+      "url": "https://terms.naer.edu.tw/",
+      "proposed_url": "https://terms.naer.edu.tw/",
+      "format": "HTML, 67 KB; never read by collect",
+      "fresh_days": null,
+      "sketch": null,
+      "credit": {
+        "en": "Credit: Terms from 樂詞網, National Academy for Educational Research.",
+        "zh": "Credit (zh): 詞彙取自國家教育研究院樂詞網。",
+        "basis": "its about page answered 404; recheck NAER's reuse terms in K1d"
+      },
+      "problems": [
+        "/about/ is 404: the reuse terms need a second look in K1d"
+      ],
+      "in_registry": true
+    },
+    {
+      "id": "openalex",
+      "name": "OpenAlex",
+      "kind": "api",
+      "status": "not called in K1c (budget)",
+      "url": "https://api.openalex.org/works",
+      "fresh_days": null,
+      "problems": [
+        "see K1a: keyless budget $0.10 a day"
+      ],
+      "credit": {
+        "en": "Credit: Counts from OpenAlex (openalex.org), CC0.",
+        "zh": "Credit (zh): 統計數字來自 OpenAlex（openalex.org），採 CC0。",
+        "basis": "OpenAlex data is CC0; citing OpenAlex is requested"
+      },
+      "in_registry": true
+    },
+    {
+      "id": "crossref-updates",
+      "name": "Crossref updates",
+      "kind": "api",
+      "parser": "json",
+      "status": 200,
+      "url": "https://api.crossref.org/works",
+      "proposed_url": "https://api.crossref.org/works?filter=updates:<doi1>,updates:<doi2>,...&rows=100",
+      "fresh_days": null,
+      "format": "JSON work-list; a notice is type journal-article whose update-to[] names the work, its update type and its source (publisher or retraction-watch)",
+      "sketch": "{\"status\":\"ok\",\"message-type\":\"work-list\",\"message\":{\"total-results\":116,\"items\":[{\"DOI\":\"10.1038/s41586-026-00001-x\",\"type\":\"journal-article\",\"title\":[\"[text]\"],\"container-title\":[\"Nature\"],\"publisher\":\"Springer Science and Business Media LLC\",\"author\":[{\"given\":\"[name]\",\"family\":\"[name]\",\"sequence\":\"first\",\"affiliation\":[]}],\"published\":{\"date-parts\":[[2026,11,24]]},\"issued\":{\"date-parts\":[[2026,11,24]]},\"published-online\":{\"date-parts\":[[2026,11,24]]},\"created\":{\"date-parts\":[[2026,11,24]],\"date-time\":\"2026-11-24T09:01:55Z\",\"timestamp\":1795600915000},\"ISSN\":[\"0028-0836\",\"1476-4687\"],\"URL\":\"https://doi.org/10.1038/s41586-026-00001-x\"},{\"...\":\"second item: no abstract key, which most Nature and Science items lack; JATS abstract string where a publisher deposits one\"}]}}",
+      "credit": {
+        "en": "Credit: Metadata from Crossref.",
+        "zh": "Credit (zh): 詮釋資料來自 Crossref。",
+        "basis": "Crossref metadata is open (CC0 for facts); no fixed wording required"
+      },
+      "host_limits": "as crossref-journals",
+      "problems": [
+        "50 updates filters are an OR (below); a notice can name many works (one notice named 266), so rows must be 100 or more and the answer can exceed 50 notices"
+      ],
+      "in_registry": true
+    },
+    {
+      "id": "retraction-watch",
+      "name": "Retraction Watch data file",
+      "kind": "file",
+      "parser": "csv",
+      "status": 200,
+      "url": "https://gitlab.com/crossref/retraction-watch-data/-/raw/main/retraction_watch.csv",
+      "proposed_url": "https://gitlab.com/crossref/retraction-watch-data/-/raw/main/retraction_watch.csv",
+      "format": "CSV, 74,173 rows, 68.4 MB, 21 columns (the last empty)",
+      "items": 74173,
+      "date_format": "RetractionDate and OriginalPaperDate \"M/D/YYYY 0:00\" (US month first, no zone)",
+      "date_zone": null,
+      "fresh_days": 30,
+      "fresh_days_basis": "the file is updated daily on weekdays; keep 30 as a counter feed",
+      "sketch": "Record ID,Title,Subject,Institution,Journal,Publisher,Country,Author,URLS,ArticleType,RetractionDate,RetractionDOI,RetractionPubMedID,OriginalPaperDate,OriginalPaperDOI,OriginalPaperPubMedID,RetractionNature,Reason,Paywalled,Notes,\n70001,[text],(BLS) Biology - Molecular;,[text],[journal],[publisher],Germany;United States,[name];[name],,Research Article;,7/24/2026 0:00,10.0000/sample.0001,0,8/27/2018 0:00,10.0000/sample.0001,30000001,Expression of concern,Concerns/Issues about Data;,No,[text],\n70002,[text],(PHY) Physics;,[text],[journal],[publisher],China,[name],,Review Article;,8/4/2026 0:00,10.0000/sample.0003,0,2/13/2026 0:00,10.0000/sample.0002,0,Retraction,Duplication of/in Article;,No,,",
+      "credit": {
+        "en": "Credit: Retraction Watch Database, made openly available by Crossref.",
+        "zh": "Credit (zh): Retraction Watch 資料庫，由 Crossref 開放提供。",
+        "basis": "the data repository README names the Center for Scientific Integrity and Crossref; check its exact citation line in K1d"
+      },
+      "host_limits": "gitlab.com unauthenticated: ratelimit-limit 500 (header ratelimit-name throttle_unauthenticated_web)",
+      "problems": [
+        "68.4 MB is far over fetchFeed()s 5 MB body cap: this feed needs its own cap",
+        "one row has RetractionDate 2027-08-27, in the future: a newest-date freshness check would never go stale; judge by the commit date or ignore future dates",
+        "RetractionNature values: Retraction 68,706, Expression of concern 3,741, Correction 1,562, Reinstatement 164"
+      ],
+      "in_registry": true
+    },
+    {
+      "id": "ctgov",
+      "name": "ClinicalTrials.gov API v2",
+      "kind": "api",
+      "parser": "json",
+      "status": 200,
+      "url": "https://clinicaltrials.gov/api/v2/studies",
+      "proposed_url": "https://clinicaltrials.gov/api/v2/studies?filter.ids=<ids>&pageSize=<n>&fields=NCTId,OverallStatus,Phase",
+      "fresh_days": null,
+      "format": "JSON: studies[] with protocolSection modules, nextPageToken",
+      "sketch": "{\"studies\":[{\"protocolSection\":{\"identificationModule\":{\"nctId\":\"NCT00000001\",\"briefTitle\":\"[text]\"},\"statusModule\":{\"overallStatus\":\"RECRUITING\",\"startDateStruct\":{\"date\":\"2026-03\",\"type\":\"ACTUAL\"},\"lastUpdatePostDateStruct\":{\"date\":\"2026-11-02\",\"type\":\"ACTUAL\"}},\"designModule\":{\"phases\":[\"PHASE2\"]}},\"hasResults\":false},{\"...\":\"second study: overallStatus COMPLETED, phases [PHASE1, PHASE2]\"}],\"nextPageToken\":\"[token]\"}",
+      "credit": {
+        "en": "Credit: Trial records from ClinicalTrials.gov, U.S. National Library of Medicine.",
+        "zh": "Credit (zh): 臨床試驗紀錄來自 ClinicalTrials.gov（美國國家醫學圖書館）。",
+        "basis": "US government data; NLM asks for the source and the date retrieved"
+      },
+      "host_limits": "no limit stated on the API page read; it asks for reasonable use",
+      "problems": [],
+      "in_registry": true
+    },
+    {
+      "id": "rcsb",
+      "name": "RCSB PDB search API",
+      "kind": "api",
+      "parser": "json",
+      "status": 200,
+      "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "proposed_url": "GET https://search.rcsb.org/rcsbsearch/v2/query?json=<url-encoded query> with return_counts",
+      "fresh_days": null,
+      "format": "JSON {query_id, result_type, total_count}",
+      "items": null,
+      "sketch": "{\"query_id\":\"00000000-0000-0000-0000-000000000000\",\"result_type\":\"entry\",\"total_count\":17052}",
+      "credit": {
+        "en": "Credit: RCSB Protein Data Bank (RCSB.org), data CC0 1.0.",
+        "zh": "Credit (zh): RCSB 蛋白質資料庫（RCSB.org），資料採 CC0 1.0。",
+        "basis": "RCSB usage policy: CC0 1.0; citing RCSB PDB is requested"
+      },
+      "host_limits": "none stated",
+      "problems": [
+        "a GET with the query in the json parameter works, so no POST is needed; 2025 had 17,052 entries by deposit date"
+      ],
+      "in_registry": true
+    }
+  ],
+  "arxiv": {
+    "submittedDate": {
+      "reads": "UTC",
+      "start": "inclusive from the first second of the start minute",
+      "end": "exclusive: [A TO B] stops before B:00 (a paper at 18:59:26 is in [1859 TO 1900] and not in [1859 TO 1859] or [1858 TO 1859])",
+      "consequence": "query from the previous deadline minute TO the deadline minute itself (14:00 ET as HHMM UTC), not one minute before; arXiv blog notices also say \"at or after 14:00 ... and before 14:00\""
+    },
+    "window_vs_new_page": {
+      "announcement": "Wednesday 2026-11-25 20:00 ET (arXiv lists it as Thursday, 26 November 2026)",
+      "query": "%28cat:math*+OR+cat:cs.IT+OR+cat:math-ph%29+AND+submittedDate:%5B202611241900+TO+202611251900%5D",
+      "total": 409,
+      "page_new": 379,
+      "page_cross": 61,
+      "page_in_api": 409,
+      "missing": [
+        "2611.33166",
+        "2611.33171",
+        "2611.33185",
+        "2611.33186",
+        "2611.33191",
+        "2611.33205",
+        "2611.33207",
+        "2611.33208",
+        "2611.33209",
+        "2611.33211",
+        "2611.33212",
+        "2611.33213",
+        "2611.33219",
+        "2611.33220",
+        "2611.33224",
+        "2611.33230",
+        "2611.33233",
+        "2611.33241",
+        "2611.33244",
+        "2611.33253",
+        "2611.33258",
+        "2611.33260",
+        "2610.15905",
+        "2611.31912",
+        "2611.33189",
+        "2611.33199",
+        "2611.33202",
+        "2611.33203",
+        "2611.33216",
+        "2611.33222",
+        "2611.33225"
+      ],
+      "extra": [],
+      "extra_n": 0,
+      "has_190000_paper_2611_33270_on_page": true,
+      "note": "with (cat:math* OR cat:cs.IT OR cat:math-ph) and [202611241900 TO 202611251900] the API gave 409 papers, every one on the /new page; the 31 papers on the page that the API window lacked were all submitted before the window (held by moderation and announced late, which the spec allows); the first query, cat:math* with the end one minute early, gave 391 and missed 18 in-window papers: 16 cs.IT, 2 at 18:59"
+    },
+    "id_list": {
+      "asked": 100,
+      "returned": 100,
+      "all_found": true
+    },
+    "rss_fallback": "https://rss.arxiv.org/atom/math answered 200 with an empty feed (updated 2026-11-27T05:00Z) on the US Thanksgiving Friday, as SPEC 4.13 says it is empty when no announcement came",
+    "tuesday_wednesday_check": "not done: today is Saturday 2026-11-28 in Taipei; checked one weekday announcement instead (above); the Sunday and Monday announcements (Tuesday and Wednesday mornings Taipei) need the same check on those mornings"
+  },
+  "arxiv_skipped": {
+    "source_page": "https://info.arxiv.org/help/availability.html",
+    "blog": "https://blog.arxiv.org/2026/11/25/holiday-announcement-schedule/",
+    "rule": "a holiday Monday to Thursday skips that day's 20:00 ET announcement; a Friday holiday skips the Sunday announcement after it (the blog notice for 2026-12-25 and 2027-01-01 says so: those lists go out on the Monday)",
+    "proposed": [
+      {
+        "date": "2026-12-27",
+        "why": "Christmas, Friday 2026-12-25: submissions from Thursday 14:00 ET to Monday 14:00 ET go out Monday 2026-12-28",
+        "source": "https://blog.arxiv.org/2026/11/25/holiday-announcement-schedule/"
+      },
+      {
+        "date": "2027-01-03",
+        "why": "New Year's Day, Friday 2027-01-01: list goes out Monday 2027-01-04",
+        "source": "https://blog.arxiv.org/2026/11/25/holiday-announcement-schedule/"
+      },
+      {
+        "date": "2027-01-18",
+        "why": "Martin Luther King Jr. Day (Monday)",
+        "source": "https://info.arxiv.org/help/availability.html"
+      },
+      {
+        "date": "2027-02-15",
+        "why": "Presidents' Day (Monday)",
+        "source": "https://info.arxiv.org/help/availability.html"
+      },
+      {
+        "date": "2027-05-31",
+        "why": "Memorial Day (Monday)",
+        "source": "https://info.arxiv.org/help/availability.html"
+      },
+      {
+        "date": "2027-06-20",
+        "why": "Juneteenth observed Friday 2027-06-18: skips the Sunday announcement",
+        "source": "https://info.arxiv.org/help/availability.html"
+      },
+      {
+        "date": "2027-07-05",
+        "why": "Independence Day observed (Monday)",
+        "source": "https://info.arxiv.org/help/availability.html"
+      },
+      {
+        "date": "2027-09-06",
+        "why": "Labor Day (Monday)",
+        "source": "https://info.arxiv.org/help/availability.html"
+      },
+      {
+        "date": "2027-10-11",
+        "why": "Columbus Day / Indigenous Peoples Day (Monday)",
+        "source": "https://info.arxiv.org/help/availability.html"
+      },
+      {
+        "date": "2027-11-11",
+        "why": "Veterans Day (Thursday)",
+        "source": "https://info.arxiv.org/help/availability.html"
+      },
+      {
+        "date": "2027-11-25",
+        "why": "Thanksgiving (Thursday)",
+        "source": "https://info.arxiv.org/help/availability.html"
+      }
+    ],
+    "already_past_2026": [
+      "2026-01-01",
+      "2026-01-19",
+      "2026-06-21 (Friday 2026-06-19)",
+      "2026-07-05 (Friday 2026-07-03)",
+      "2026-09-07",
+      "2026-10-12",
+      "2026-11-11",
+      "2026-11-26"
+    ],
+    "later": [
+      "2027-12-26 (Friday 2027-12-24)",
+      "2028-01-02 (Friday 2027-12-31)"
+    ],
+    "note": "the 2026 Thanksgiving notice moves Thursday 2026-11-26's list (Wednesday 14:00 to Friday 14:00 ET) to Sunday 2026-11-29: the spec's rule (the next announcement takes the skipped one's submissions) gives the same result"
+  },
+  "crossref": {
+    "updates_or": {
+      "one": 1,
+      "two": 2,
+      "fifty": 72,
+      "fifty_distinct_works_named": 49,
+      "note": "50 updates: filters joined by commas answer as their OR: 72 notices naming 49 of the 50 works (one DOI was asked twice, so 49 distinct); types seen: retraction, expression_of_concern, erratum, correction, each from publisher or retraction-watch"
+    },
+    "doi_batch_50": {
+      "asked": 50,
+      "distinct": 49,
+      "returned": 49,
+      "all_found": true
+    },
+    "retraction_watch_only": {
+      "retraction": {
+        "work": "10.1051/e3sconf/202342009013",
+        "filter_updates_returns_notice": true,
+        "notice": "10.1051/e3sconf/202342000001",
+        "updated_by_lists_it": true,
+        "updated_by_source": "retraction-watch"
+      },
+      "retraction_self_notice": {
+        "work": "10.1016/j.prp.2020.153272",
+        "filter_updates_returns": "10.1016/j.prp.2020.153272 (the paper itself: Retraction Watch gives the paper DOI as the notice DOI)",
+        "updated_by_lists_it": true
+      },
+      "expression_of_concern": {
+        "work": "10.1093/qjmed/hcac191",
+        "filter_updates_returns_notice": true,
+        "notice": "10.1093/qjmed/hcag296",
+        "updated_by_lists_it": true,
+        "updated_by_source": "retraction-watch"
+      },
+      "sample": "of 40 recent retractions all had both a publisher and a retraction-watch update; of 25 recent expressions of concern 6 had only retraction-watch; of 10 retractions from all years 3 had only retraction-watch"
+    },
+    "record_fields": {
+      "retraction_notice": {
+        "DOI": "10.1063/5.0352611",
+        "type": "journal-article",
+        "title_present": true,
+        "container_title": [
+          "Applied Physics Reviews"
+        ],
+        "publisher": "AIP Publishing",
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              4
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              4
+            ]
+          ]
+        }
+      },
+      "expression_of_concern_notice": {
+        "DOI": "10.1126/science.aej2383",
+        "type": "journal-article",
+        "title_present": true,
+        "container_title": [
+          "Science"
+        ],
+        "publisher": "American Association for the Advancement of Science (AAAS)",
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              11
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              11
+            ]
+          ]
+        }
+      },
+      "journal_article": {
+        "DOI": "10.1063/5.0308115",
+        "type": "journal-article",
+        "title_present": true,
+        "container_title": [
+          "Applied Physics Reviews"
+        ],
+        "publisher": "AIP Publishing",
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              13
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              13
+            ]
+          ]
+        }
+      },
+      "rw_only_notice": {
+        "DOI": "10.1051/e3sconf/202342000001",
+        "type": "journal-article",
+        "title_present": true,
+        "container_title": [
+          "E3S Web of Conferences"
+        ],
+        "publisher": "EDP Sciences",
+        "published": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "ctgov": {
+    "asked": 100,
+    "returned": 100,
+    "all_found": true,
+    "url_bytes": 1298,
+    "nextPageToken": "present (a paging cursor; value omitted)",
+    "status": 200,
+    "default_page_size_returned": 10
+  },
+  "credit_lines": {
+    "arxiv": {
+      "en": "Credit: Preprint metadata from arXiv (arxiv.org), CC0 1.0; each link goes to the paper on arXiv.",
+      "zh": "Credit (zh): 預印本詮釋資料來自 arXiv（arxiv.org），採 CC0 1.0；各連結指向 arXiv 上的論文。",
+      "basis": "arXiv API terms of use: descriptive metadata are CC0 1.0; link to the abstract page; do not imply endorsement by arXiv"
+    },
+    "biorxiv": {
+      "en": "Credit: Preprint metadata from the bioRxiv and medRxiv API (Cold Spring Harbor Laboratory).",
+      "zh": "Credit (zh): 預印本詮釋資料來自 bioRxiv 與 medRxiv API（冷泉港實驗室）。",
+      "basis": "no fixed wording found; each abstract carries its own licence in the license field"
+    },
+    "ncbi": {
+      "en": "Credit: Records from PubMed, courtesy of the U.S. National Library of Medicine.",
+      "zh": "Credit (zh): 書目資料來自 PubMed，由美國國家醫學圖書館提供。",
+      "basis": "NLM asks that PubMed data be credited to the NLM; no fixed wording on the E-utilities page read"
+    },
+    "crossref": {
+      "en": "Credit: Metadata from Crossref.",
+      "zh": "Credit (zh): 詮釋資料來自 Crossref。",
+      "basis": "Crossref metadata is open (CC0 for facts); no fixed wording required"
+    },
+    "rw": {
+      "en": "Credit: Retraction Watch Database, made openly available by Crossref.",
+      "zh": "Credit (zh): Retraction Watch 資料庫，由 Crossref 開放提供。",
+      "basis": "the data repository README names the Center for Scientific Integrity and Crossref; check its exact citation line in K1d"
+    },
+    "ctgov": {
+      "en": "Credit: Trial records from ClinicalTrials.gov, U.S. National Library of Medicine.",
+      "zh": "Credit (zh): 臨床試驗紀錄來自 ClinicalTrials.gov（美國國家醫學圖書館）。",
+      "basis": "US government data; NLM asks for the source and the date retrieved"
+    },
+    "rcsb": {
+      "en": "Credit: RCSB Protein Data Bank (RCSB.org), data CC0 1.0.",
+      "zh": "Credit (zh): RCSB 蛋白質資料庫（RCSB.org），資料採 CC0 1.0。",
+      "basis": "RCSB usage policy: CC0 1.0; citing RCSB PDB is requested"
+    },
+    "smc": {
+      "en": "Credit: Expert reactions from the Science Media Centre (sciencemediacentre.org).",
+      "zh": "Credit (zh): 專家回應取自英國科學媒體中心（sciencemediacentre.org）。",
+      "basis": "SMC reactions are written for reuse with attribution to each named expert; its copyright page returned 404, so recheck in K1d"
+    },
+    "eurekalert": {
+      "en": "Credit: News releases posted on EurekAlert! by AAAS; each release belongs to its institution.",
+      "zh": "Credit (zh): 新聞稿取自 AAAS 經營的 EurekAlert!，各稿權利屬發布機構。",
+      "basis": "EurekAlert! terms of service; releases are the institutions own"
+    },
+    "mathlib": {
+      "en": "Credit: Statistics from the mathlib community (mathlib.org), Apache License 2.0.",
+      "zh": "Credit (zh): 統計數字來自 mathlib 社群（mathlib.org），採 Apache 2.0 授權。",
+      "basis": "mathlib and its site source are Apache 2.0"
+    },
+    "erdos": {
+      "en": "Credit: Erdős problems data from Thomas Bloom's erdosproblems.com and its GitHub data (Apache License 2.0).",
+      "zh": "Credit (zh): 艾狄胥問題資料來自 Thomas Bloom 的 erdosproblems.com 及其 GitHub 資料庫（Apache 2.0 授權）。",
+      "basis": "teorth/erdosproblems LICENSE is Apache 2.0"
+    },
+    "vesuvius": {
+      "en": "Credit: Vesuvius Challenge (scrollprize.org), content CC BY-NC 4.0.",
+      "zh": "Credit (zh): 維蘇威火山挑戰（scrollprize.org），內容採 CC BY-NC 4.0 授權。",
+      "basis": "site footer: Content licensed CC BY-NC 4.0"
+    },
+    "naer": {
+      "en": "Credit: Terms from 樂詞網, National Academy for Educational Research.",
+      "zh": "Credit (zh): 詞彙取自國家教育研究院樂詞網。",
+      "basis": "its about page answered 404; recheck NAER's reuse terms in K1d"
+    }
+  }
+}
