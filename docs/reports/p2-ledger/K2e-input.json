@@ -1,0 +1,171 @@
+{
+ "note": "K2e: read the full text of these Nature commentary pages to get quotable sentences.",
+ "items": [
+  {
+   "url": "https://www.nature.com/articles/d41586-025-02132-6",
+   "type": "News And Views",
+   "title": "AI for Latin inscriptions supplies missing text and predicts date and location",
+   "slugs": [
+    "aeneas-latin-inscriptions-context-restoration"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-020-01570-8",
+   "type": "News And Views",
+   "title": "Large-scale early Maya sites in Mexico revealed by lidar mapping technology",
+   "slugs": [
+    "aguada-fenix-oldest-largest-maya-monument",
+    "maya-lidar-reveals-lowland-civilisation"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-025-03733-x",
+   "type": "News And Views",
+   "title": "AI chatbots can persuade voters to change their minds",
+   "slugs": [
+    "ai-chatbot-chats-shift-voter-preferences"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-025-03585-5",
+   "type": "News And Views",
+   "title": "Mathematicians put AI model AlphaProof to the test",
+   "slugs": [
+    "alphaproof-imo-2024-silver-level"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-024-03557-1",
+   "type": "News And Views",
+   "title": "Quantum computing: physics\u2013AI collaboration quashes quantum errors",
+   "slugs": [
+    "alphaqubit-neural-quantum-decoder"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-025-00084-5",
+   "type": "News And Views",
+   "title": "Asteroid Bennu contains salts from ancient brine",
+   "slugs": [
+    "bennu-samples-ammonia-nucleobases-ancient-brine"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-025-02353-9",
+   "type": "News And Views",
+   "title": "Could machine learning help to build a unified theory of cognition?",
+   "slugs": [
+    "centaur-model-predicts-human-choices"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-023-03790-0",
+   "type": "News And Views",
+   "title": "Large language models direct automated chemistry laboratory",
+   "slugs": [
+    "coscientist-language-model-agent-runs-chemistry"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-023-01020-1",
+   "type": "News And Views",
+   "title": "DART\u2019s data verify its smashing success at deflecting asteroid moon Dimorphos",
+   "slugs": [
+    "dart-asteroid-orbit-changed",
+    "dart-asteroid-orbit-changed",
+    "dart-asteroid-orbit-changed"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-022-01075-6",
+   "type": "News And Views",
+   "title": "Tailor-made enzymes poised to propel plastic recycling into a new era",
+   "slugs": [
+    "fast-petase-machine-learning-plastic-enzyme"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-024-03029-6",
+   "type": "News And Views",
+   "title": "A complete wiring diagram of the fruit-fly brain",
+   "slugs": [
+    "fruit-fly-brain-wiring-map-flywire",
+    "fruit-fly-brain-wiring-map-flywire"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-022-01855-0",
+   "type": "News And Views",
+   "title": "Atmospheric waves reinforced tsunami after Tongan eruption",
+   "slugs": [
+    "hunga-tonga-eruption-global-waves"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-022-00641-2",
+   "type": "News And Views",
+   "title": "AI minds the gap and fills in missing Greek inscriptions",
+   "slugs": [
+    "ithaca-restores-dates-greek-inscriptions"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-023-02858-1",
+   "type": "News And Views",
+   "title": "Hominins built with wood 476,000 years ago",
+   "slugs": [
+    "kalambo-falls-earliest-wooden-structure-476000"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-024-00075-y",
+   "type": "News And Views",
+   "title": "Mobile atoms enable efficient computation with logical qubits",
+   "slugs": [
+    "logical-qubits-atom-array-processor"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-024-00964-2",
+   "type": "News And Views",
+   "title": "Meta\u2019s AI translation model embraces overlooked languages",
+   "slugs": [
+    "nllb-200-translates-200-languages"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-025-00755-3",
+   "type": "News And Views",
+   "title": "Rare ancient DNA from Sahara opens a window on the region\u2019s verdant past",
+   "slugs": [
+    "old-kingdom-egyptian-genome-nuwayrat"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-023-02084-9",
+   "type": "News And Views",
+   "title": "The outlook for AI weather prediction",
+   "slugs": [
+    "pangu-weather-3d-neural-network-forecast"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-020-01393-7",
+   "type": "World View",
+   "title": "Machine learning can help get COVID-19 aid to those who need it most",
+   "slugs": [
+    "phone-data-targets-cash-aid-togo"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-026-00805-4",
+   "type": "News & Views Forum",
+   "title": "Huge meta-research project puts claims in social-science papers to the test",
+   "slugs": [
+    "score-project-social-science-replicability",
+    "score-project-social-science-replicability",
+    "score-project-social-science-replicability"
+   ]
+  }
+ ]
+}
