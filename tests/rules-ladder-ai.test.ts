@@ -283,7 +283,10 @@ function entryFails(rung: Rung, kind: SourceKind, f: Cell): boolean {
   const n = d.new_findings[0];
   n.kind = f.setback ? "setback" : "result";
   n.rung_history = [{ rung, date: "2026-11-20", source_id: "s1", note: null }];
-  n.sources = [src("s1", kind, f.independent ? "Confirming Journal" : "Example Journal", { url: listedUrl(rung, f.listed) }), src("s2", "paper", "Example Journal")];
+  // A paper's publisher is a journal, which names no team: it clashes only through a who name. Any other kind clashes through another source's publisher.
+  const clash = !f.independent;
+  n.sources = [src("s1", kind, clash && kind !== "paper" ? "Example Journal" : "Confirming Journal", { url: listedUrl(rung, f.listed) }), src("s2", "paper", "Example Journal")];
+  if (clash && kind === "paper") n.who = [{ name: "Confirming Journal", ror: null }];
   n.artefacts.trial = f.trial ? ["NCT00000001"] : [];
   return runRules(buildDraftInput(d as DraftBrief, draftInputs()), [rule("RUNG_EVIDENCE")]).some((i) => i.code === "RUNG_EVIDENCE");
 }
@@ -348,7 +351,7 @@ describe("RUNG_EVIDENCE in draft mode", () => {
     );
   });
 
-  it("asks for a team other than the original's: the publisher differs from every other source's publisher and from each who name, whatever the case or spacing", () => {
+  it("asks a paper for a team other than the original's: a journal names no team, so only a who name of the finding is the original's own, whatever the case or spacing", () => {
     const confirmed = (publisher: string, edit: Edit = () => {}) => draftOf("RUNG_EVIDENCE", (d) => {
       const n = d.new_findings[0];
       n.sources = [src("s1", "paper", publisher), src("s2", "paper", "Example Journal"), src("s3", "reaction", "Reacting Society")];
@@ -357,16 +360,54 @@ describe("RUNG_EVIDENCE in draft mode", () => {
       edit(d);
     });
     expect(confirmed("Confirming Journal")).toEqual([]);
-    expect(confirmed("Example Journal")).toHaveLength(1);
-    expect(confirmed("  EXAMPLE   journal ")).toHaveLength(1);
+    // Two papers in the same journal, by different teams, confirm each other (the validator sees no authors: STYLE.md §3 has the agent check them).
+    expect(confirmed("Example Journal")).toEqual([]);
+    expect(confirmed("  EXAMPLE   journal ")).toEqual([]);
     expect(confirmed("Example Lab")).toHaveLength(1);
     expect(confirmed("example lab")).toHaveLength(1);
-    expect(confirmed("A. Author")).toHaveLength(1);
-    // A reaction is another scientist's own words, never the original: its publisher is a team other than the authors'.
+    expect(confirmed("  A.   AUTHOR ")).toHaveLength(1);
     expect(confirmed("Reacting Society")).toEqual([]);
-    expect(confirmed("Example Journal")[0]!.message).toBe(
-      'The Confirmed entry cites s1, a paper from "Example Journal". A paper shows Confirmed only as a paper from a team other than the authors: its publisher and the finding\'s who differ from the original\'s or a paper that reports a trial endpoint met, on a finding that names a trial in artefacts.trial, and here "Example Journal" is the publisher of another source or a who name of the finding, or the finding names no trial in artefacts.trial.',
+    expect(confirmed("Example Lab")[0]!.message).toBe(
+      'The Confirmed entry cites s1, a paper from "Example Lab". A paper shows Confirmed only as a paper from a team other than the authors: a journal names no team, so its publisher need only differ from the finding\'s who, and the paper must not be one the original rests on or a paper that reports a trial endpoint met, on a finding that names a trial in artefacts.trial, and here "Example Lab" is a who name of the finding, or the finding names no trial in artefacts.trial.',
     );
+  });
+
+  it("takes a paper with the URL or the DOI of another source of the finding for the same paper, not a confirmation", () => {
+    const confirmed = (over: Json) => draftOf("RUNG_EVIDENCE", (d) => {
+      const n = d.new_findings[0];
+      n.sources = [src("s1", "paper", "Confirming Journal", over), src("s2", "paper", "Example Journal", { url: "https://example.org/paper/2", doi: "10.1000/orig.2" })];
+      n.rung_history = [{ rung: "confirmed", date: "2026-11-20", source_id: "s1", note: null }];
+      n.who = [{ name: "Example Lab", ror: null }];
+    });
+    expect(confirmed({ url: "https://example.org/paper/9", doi: "10.1000/other.9" })).toEqual([]);
+    expect(pathsOf(confirmed({ url: "https://doi.org/10.1000/orig.2", doi: null }))).toEqual(["new_findings[0].rung_history[0].source_id"]);
+    const sameUrl = confirmed({ url: "https://www.example.org/paper/2/" });
+    expect(pathsOf(sameUrl)).toEqual(["new_findings[0].rung_history[0].source_id"]);
+    expect(sameUrl[0]!.message).toContain("and here s1 is the same paper as s2, a source the finding already has, so it is the original's own");
+    expect(pathsOf(confirmed({ url: "https://example.org/paper/9", doi: "10.1000/orig.2" }))).toEqual(["new_findings[0].rung_history[0].source_id"]);
+    // A reaction's page is no paper of the original's.
+    expect(draftOf("RUNG_EVIDENCE", (d) => {
+      const n = d.new_findings[0];
+      n.sources = [src("s1", "paper", "Confirming Journal", { url: "https://example.org/paper/5" }), src("s2", "reaction", "First University", { url: "https://example.org/paper/5" })];
+      n.rung_history = [{ rung: "confirmed", date: "2026-11-20", source_id: "s1", note: null }];
+    })).toEqual([]);
+  });
+
+  it("keeps the old test for every other kind: a statement or checker from the publisher of another source or a who name is the original's own", () => {
+    const run = (kind: string, publisher: string) => draftOf("RUNG_EVIDENCE", (d) => {
+      const n = d.new_findings[0];
+      n.sources = [src("s1", kind, publisher, kind === "checker" ? { url: UNLISTED } : {}), src("s2", "paper", "Example Journal")];
+      n.rung_history = [{ rung: "confirmed", date: "2026-11-20", source_id: "s1", note: null }];
+      n.who = [{ name: "Example Lab", ror: null }];
+      n.artefacts.trial = [];
+    });
+    for (const kind of ["statement", "checker"]) {
+      expect(run(kind, "Example Journal"), kind).toHaveLength(1);
+      expect(run(kind, " example   JOURNAL"), kind).toHaveLength(1);
+      expect(run(kind, "Example Lab"), kind).toHaveLength(1);
+      expect(run(kind, "Confirming Journal"), kind).toEqual([]);
+    }
+    expect(run("statement", "Example Journal")[0]!.message).toContain('and here "Example Journal" is the publisher of another source or a who name of the finding');
   });
 
   it("takes the source an earlier entry below Confirmed cites for the original's own: citing it again for Confirmed or Applied fails, whoever else the finding lists", () => {
@@ -380,7 +421,7 @@ describe("RUNG_EVIDENCE in draft mode", () => {
     const again = run([["checked", "s1"], ["confirmed", "s1"]]);
     expect(pathsOf(again)).toEqual(["new_findings[0].rung_history[1].source_id"]);
     expect(again[0]!.message).toBe(
-      'The Confirmed entry cites s1, a paper from "Example Journal". A paper shows Confirmed only as a paper from a team other than the authors: its publisher and the finding\'s who differ from the original\'s or a paper that reports a trial endpoint met, on a finding that names a trial in artefacts.trial, and here s1 is also the source of the earlier Checked entry, so it is the original\'s own, or the finding names no trial in artefacts.trial.',
+      'The Confirmed entry cites s1, a paper from "Example Journal". A paper shows Confirmed only as a paper from a team other than the authors: a journal names no team, so its publisher need only differ from the finding\'s who, and the paper must not be one the original rests on or a paper that reports a trial endpoint met, on a finding that names a trial in artefacts.trial, and here s1 is also the source of the earlier Checked entry, so it is the original\'s own, or the finding names no trial in artefacts.trial.',
     );
     expect(run([["checked", "s1"], ["confirmed", "s2"]])).toEqual([]);
     // Only an entry below Confirmed makes its source the original's: a source that already showed Confirmed may show it again.
@@ -458,6 +499,8 @@ describe("RUNG_EVIDENCE in draft mode", () => {
       n.sources = [src("s1", kind, "Example Journal"), src("s2", "paper", "Example Journal")];
       n.rung_history = [{ rung: "confirmed", date: "2026-11-20", source_id: "s1", note: null }];
       n.artefacts.trial = trial;
+      // A paper's journal clashes only as a who name, so the original's team is named for the paper to need the trial route.
+      n.who = [{ name: "Example Journal", ror: null }];
     });
     expect(run("paper", ["NCT00000007"])).toEqual([]);
     expect(run("statement", ["NCT00000007"])).toEqual([]);
@@ -540,8 +583,9 @@ describe("RUNG_EVIDENCE in draft mode", () => {
   });
 
   it("takes the trial route as missing where the run shows artefacts that name no trial, and as met where it shows no artefacts", () => {
-    // b1 is a paper of arXiv, the publisher of the stored math finding's own preprint, so only a trial endpoint could confirm it.
+    // b1 is a statement of arXiv, the publisher of the stored math finding's own preprint, so only a trial endpoint could confirm it.
     const sameLab = (d: Json): void => {
+      d.sources[0].kind = "statement";
       d.sources[0].publisher = "arXiv";
       d.returning[0].rung = { rung: "confirmed", date: "2026-11-23", source_id: "b1", note: null };
     };
@@ -598,9 +642,10 @@ describe("RUNG_EVIDENCE: what each unmet need says", () => {
     ]);
   });
 
-  it("says that the publisher is another source's or a who name, and that the finding names no trial, for a Confirmed entry that has neither", () => {
-    expect(say(entry("confirmed", "paper", "Example Journal"))).toEqual([
-      'The Confirmed entry cites s1, a paper from "Example Journal". A paper shows Confirmed only as a paper from a team other than the authors: its publisher and the finding\'s who differ from the original\'s or a paper that reports a trial endpoint met, on a finding that names a trial in artefacts.trial, and here "Example Journal" is the publisher of another source or a who name of the finding, or the finding names no trial in artefacts.trial.',
+  it("says that the publisher is a who name (a paper) or another source's publisher or a who name (any other kind), and that the finding names no trial, for a Confirmed entry that has neither", () => {
+    const whoLab = (d: Json): void => { d.new_findings[0].who = [{ name: "Example Journal", ror: null }]; };
+    expect(say((d) => { entry("confirmed", "paper", "Example Journal")(d); whoLab(d); })).toEqual([
+      'The Confirmed entry cites s1, a paper from "Example Journal". A paper shows Confirmed only as a paper from a team other than the authors: a journal names no team, so its publisher need only differ from the finding\'s who, and the paper must not be one the original rests on or a paper that reports a trial endpoint met, on a finding that names a trial in artefacts.trial, and here "Example Journal" is a who name of the finding, or the finding names no trial in artefacts.trial.',
     ]);
     // A checker's record has the one route, from another team; a statement for Applied the same.
     expect(say(entry("confirmed", "checker", "Example Journal", { url: UNLISTED }))).toEqual([
@@ -668,7 +713,7 @@ describe("RUNG_EVIDENCE in published mode", () => {
       // a notice shows a rung only on a setback
       expect(pathsOf(pubOf("RUNG_EVIDENCE", notice))).toEqual([rungPath(PHYS, 1)]);
       expect(pubOf("RUNG_EVIDENCE", (w) => { notice(w); findingJson(w, PHYS).kind = "setback"; })).toEqual([]);
-      // a Confirmed entry on a source the Preprint entry ahead of it did not cite, from another publisher than the original's
+      // a Confirmed entry on a paper the Preprint entry ahead of it did not cite, whose publisher the finding's who does not name
       const confirm = (publisher: string) => (w: WorldJson): void => {
         returning(w);
         const f = findingJson(w, PHYS);
@@ -676,8 +721,10 @@ describe("RUNG_EVIDENCE in published mode", () => {
         f.rung_history.push({ rung: "confirmed", date: "2026-11-21", recorded: D, source_id: "s3", by: "agent", note: null });
         f.rung = "confirmed";
       };
-      expect(pathsOf(pubOf("RUNG_EVIDENCE", confirm("Example Journal")))).toEqual([rungPath(PHYS, 2)]);
+      // A paper's journal names no team, so only a who name of the finding is the original's own.
+      expect(pathsOf(pubOf("RUNG_EVIDENCE", confirm("Example Lab")))).toEqual([rungPath(PHYS, 2)]);
       expect(pubOf("RUNG_EVIDENCE", confirm("Confirming Journal"))).toEqual([]);
+      expect(pubOf("RUNG_EVIDENCE", confirm("Example Journal"))).toEqual([]);
     });
 
     it("judges an older entry on its source's kind all the same, as it does for every record", () => {
@@ -707,9 +754,9 @@ describe("RUNG_EVIDENCE in published mode", () => {
   });
 
   it("compares a confirming source with the sources the record held when the entry was recorded, a reaction aside", () => {
-    const confirm = (publisher: string, added: string, over: Json = {}) => (w: WorldJson): void => {
+    const confirm = (publisher: string, added: string, kind = "statement", over: Json = {}) => (w: WorldJson): void => {
       const f = findingJson(w, BIO);
-      f.sources.push({ id: "s3", kind: "paper", title: "A made-up confirmation", publisher, url: "https://example.org/paper/3", doi: null, published_at: "2026-11-21", seen_as: "pack", added });
+      f.sources.push({ id: "s3", kind, title: "A made-up confirmation", publisher, url: "https://example.org/paper/3", doi: null, published_at: "2026-11-21", seen_as: "pack", added });
       f.rung_history.push({ rung: "confirmed", date: "2026-11-21", recorded: D, source_id: "s3", by: "agent", note: null });
       f.rung = "confirmed";
       Object.assign(f, over);
@@ -717,6 +764,9 @@ describe("RUNG_EVIDENCE in published mode", () => {
     expect(pathsOf(pubOf("RUNG_EVIDENCE", confirm("Example Journal", D)))).toEqual([rungPath(BIO, 2)]);
     expect(pubOf("RUNG_EVIDENCE", confirm("Confirming Journal", D))).toEqual([]);
     expect(pubOf("RUNG_EVIDENCE", confirm("Example Lab", D))).toHaveLength(1);
+    // A paper is compared with the who names alone: the journal of s1 is no clash, a who name is.
+    expect(pubOf("RUNG_EVIDENCE", confirm("Example Journal", D, "paper"))).toEqual([]);
+    expect(pubOf("RUNG_EVIDENCE", confirm("Example Lab", D, "paper"))).toHaveLength(1);
     // s1 was added after the entry was recorded: it was not the original then.
     expect(pubOf("RUNG_EVIDENCE", (w) => { confirm("Example Journal", D)(w); findingJson(w, BIO).sources[0].added = "2026-11-25"; })).toEqual([]);
     // A trial named in artefacts.trial is another route.
@@ -729,6 +779,14 @@ describe("RUNG_EVIDENCE in published mode", () => {
     };
     expect(pubOf("RUNG_EVIDENCE", reacting("reaction"))).toEqual([]);
     expect(pubOf("RUNG_EVIDENCE", reacting("paper"))).toHaveLength(1);
+    // The same paper, by its address: s1's page cited again as a later paper is no confirmation, whatever its journal.
+    const samePaper = (same: boolean) => (w: WorldJson): void => {
+      confirm("Confirming Journal", D, "paper")(w);
+      const sources = findingJson(w, BIO).sources;
+      if (same) sources.find((x: Json) => x.id === "s3")!.url = sources.find((x: Json) => x.id === "s1")!.url;
+    };
+    expect(pubOf("RUNG_EVIDENCE", samePaper(false))).toEqual([]);
+    expect(pathsOf(pubOf("RUNG_EVIDENCE", samePaper(true)))).toEqual([rungPath(BIO, 2)]);
   });
 
   it("takes the source an earlier entry below Confirmed cites for the original's own, in every record, whoever else the record lists", () => {
@@ -774,7 +832,7 @@ describe("RUNG_EVIDENCE in published mode", () => {
     expect(pubOf("RUNG_EVIDENCE", (w) => { urlRemoved(w); gone("sources.1.url")(w); })).toHaveLength(1);
     const same = (w: WorldJson): void => {
       const f = findingJson(w, BIO);
-      f.sources.push({ id: "s3", kind: "paper", title: "A made-up confirmation", publisher: REMOVED_TEXT.en, url: "https://example.org/paper/3", doi: null, published_at: "2026-11-21", seen_as: "pack", added: D });
+      f.sources.push({ id: "s3", kind: "statement", title: "A made-up confirmation", publisher: REMOVED_TEXT.en, url: "https://example.org/paper/3", doi: null, published_at: "2026-11-21", seen_as: "pack", added: D });
       f.sources[0].publisher = REMOVED_TEXT.en;
       f.rung_history.push({ rung: "confirmed", date: "2026-11-21", recorded: D, source_id: "s3", by: "agent", note: null });
       f.rung = "confirmed";
@@ -793,6 +851,28 @@ describe("RUNG_EVIDENCE in published mode", () => {
     expect(pubOf("RUNG_EVIDENCE", whoSame)).toHaveLength(1);
     expect(pubOf("RUNG_EVIDENCE", (w) => { whoSame(w); gone("who.0.name")(w); })).toEqual([]);
     expect(pubOf("RUNG_EVIDENCE", (w) => { whoSame(w); gone("who.1.name")(w); })).toHaveLength(1);
+    // A paper at the address of an original source is the same paper, unless a stored correction removed that address (or its own).
+    const sameAddress = (w: WorldJson): void => {
+      const f = findingJson(w, BIO);
+      f.sources.push({ id: "s3", kind: "paper", title: "A made-up confirmation", publisher: "Confirming Journal", url: f.sources[0].url, doi: null, published_at: "2026-11-21", seen_as: "pack", added: D });
+      f.rung_history.push({ rung: "confirmed", date: "2026-11-21", recorded: D, source_id: "s3", by: "agent", note: null });
+      f.rung = "confirmed";
+    };
+    expect(pubOf("RUNG_EVIDENCE", sameAddress)).toHaveLength(1);
+    expect(pubOf("RUNG_EVIDENCE", (w) => { sameAddress(w); gone("sources.0.url")(w); })).toEqual([]);
+    expect(pubOf("RUNG_EVIDENCE", (w) => { sameAddress(w); gone("sources.2.url")(w); })).toEqual([]);
+    // The same DOI at two different URLs is the same paper too; a removed URL of either source leaves that source out whole, DOI included.
+    const sameDoi = (w: WorldJson): void => {
+      sameAddress(w);
+      const f = findingJson(w, BIO);
+      f.sources[0].doi = "10.1000/original.1";
+      const s3 = f.sources.find((x: Json) => x.id === "s3")!;
+      s3.url = "https://example.org/paper/other-address";
+      s3.doi = "10.1000/original.1";
+    };
+    expect(pubOf("RUNG_EVIDENCE", sameDoi)).toHaveLength(1);
+    expect(pubOf("RUNG_EVIDENCE", (w) => { sameDoi(w); gone("sources.0.url")(w); })).toEqual([]);
+    expect(pubOf("RUNG_EVIDENCE", (w) => { sameDoi(w); gone("sources.2.url")(w); })).toEqual([]);
     // A correction alone leaves out nothing: the record still holds the original's publisher, so the new source is judged against it.
     const filedOnly = (path: string) => (w: WorldJson): void => { w.corrections.push(correctionJson("C-0003", D, BIO, path, REMOVED_TEXT.en, "removed")); };
     expect(pubOf("RUNG_EVIDENCE", (w) => { whoSame(w); filedOnly("who.0.name")(w); })).toHaveLength(1);

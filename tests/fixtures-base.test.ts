@@ -327,12 +327,16 @@ describe.each([...FINDING_KEYS])("the world's finding %s", (key) => {
   });
 
   it("fits RUNG_EVIDENCE on each rung entry, with dates in order and none after its own edition", () => {
-    const original = { publishers: [SOURCE_TABLE[s.rung_history[0]!.source].publisher], who: s.who.map((w) => w.name) };
+    const first = SOURCE_TABLE[s.rung_history[0]!.source];
+    const original = {
+      publishers: [first.publisher], who: s.who.map((w) => w.name),
+      sources: [{ id: s.rung_history[0]!.source, url: first.url, doi: first.doi }],
+    };
     for (const [i, r] of s.rung_history.entries()) {
       const src = SOURCE_TABLE[r.source];
       const facts: EvidenceFacts = {
         setback: s.kind === "setback", checkerRungs: null, trial: s.artefacts.trial.length > 0,
-        independent: i > 0 && isIndependent(src.publisher, original),
+        independent: i > 0 && isIndependent(src.publisher, src.kind, original, { url: src.url, doi: src.doi }),
       };
       expect(evidenceFits(r.rung, src.kind, facts), `${r.rung} cites a ${src.kind} from ${src.publisher}`).toBe(true);
       expect(r.date <= r.recorded).toBe(true);

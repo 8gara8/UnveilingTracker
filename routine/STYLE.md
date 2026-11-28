@@ -92,7 +92,8 @@ shows the rung is cited. Every rung is dated, and a finding can climb or fall. T
   recognised checker such as a prize committee. The record: a paper, a proof, or the checker's record.
 - **Confirmed** (counts): reproduced or verified by a team other than the authors, not their own lab or
   institution, or a trial met its endpoint. The record: a paper, statement or checker's record from someone
-  other than the authors, or a trial endpoint met in a paper or statement.
+  other than the authors, or a trial endpoint met in a paper or statement. Two papers in the same journal can
+  confirm each other when different teams wrote them.
 - **Applied** (counts): in use outside the lab, such as a drug approved or a material in a product. The record:
   a regulator's record, or a statement of use outside the lab.
 - **Disputed** (not counted): questioned on the record, for example by an expression of concern. The record: a
@@ -103,6 +104,13 @@ The rules:
 
 - **Cite the record.** Each rung entry cites a source of a kind that fits the rung, as above (`RUNG_EVIDENCE`).
   No rung comes from press, a rumour or memory.
+- **Check the authors of a confirming paper.** A journal names no team, so the check cannot tell a second team
+  from the original team's own follow-up in the same journal, and a script only catches a paper whose publisher
+  is one of the finding's `who` names, or the very paper the finding already cites. Before a
+  paper is cited for Confirmed, open both papers and compare their author lists and institutions. Cite it only
+  when the confirming team is not the original team, which means no shared lead author, lab or institution
+  behind the result. A follow-up by the same lab stays Checked. A statement or checker's record is judged by
+  its publisher, which must not be the publisher of another source or a `who` name.
 - **Date every rung** by the event's own date: the preprint posted, the paper published, the notice issued.
   Entries run oldest first, none after the brief's own date, and the finding's rung is the last one
   (`RUNG_ORDER`). A rung note is at most 25 words.

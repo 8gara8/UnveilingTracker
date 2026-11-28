@@ -37,7 +37,7 @@
 import { breaksNonAiLandmarkOnly, exceedsClaimedCap, significanceAtLeast } from "../items";
 import { checkerRungsFor, checkersFor } from "../primary";
 import {
-  evidenceFits, evidenceKinds, isClaimedRung, isIndependent, rungDateProblem, RUNG_EVIDENCE, type EvidenceFacts, type EvidenceNeed,
+  evidenceFits, evidenceKinds, independenceClash, isClaimedRung, rungDateProblem, RUNG_EVIDENCE, type EvidenceFacts, type EvidenceNeed, type IndependenceClash,
 } from "../rungs";
 import { ID_PATTERNS, type IsoDate } from "../schema/common";
 import { wordRe } from "../text";
@@ -68,7 +68,7 @@ function orList(items: readonly string[]): string {
   return `${items.slice(0, -1).join(", ")} or ${items[items.length - 1]}`;
 }
 
-/** A name as compared (the same normal form as lib/rungs.ts `isIndependent()`): NFKC, lower case, runs of space collapsed. */
+/** A name as compared (the same normal form as lib/rungs.ts `independenceClash()`): NFKC, lower case, runs of space collapsed. */
 const nameKey = (name: string): string => name.normalize("NFKC").toLowerCase().replace(/\s+/g, " ").trim();
 const sameName = (a: string, b: string): boolean => nameKey(a) === nameKey(b);
 
@@ -157,16 +157,26 @@ function sourceGone(input: RuleInput, owner: FindingView, source: SourceView, fi
 
 // ── RUNG_EVIDENCE ────────────────────────────────────────────────────────────────────────────────
 
-/** What a route needs, worded for the message. */
-const NEED_TEXT: Readonly<Record<EvidenceNeed, string>> = {
-  setback: "for a setback",
-  lists_rung: "that config/checkers.json lists for that rung",
-  independent: "from a team other than the authors: its publisher and the finding's who differ from the original's",
-  trial: "that reports a trial endpoint met, on a finding that names a trial in artefacts.trial",
-};
+/** What a route needs, worded for the message; the `independent` need reads differently for a paper, whose publisher is a journal. */
+function needText(need: EvidenceNeed, kind: SourceKind): string {
+  switch (need) {
+    case "setback":
+      return "for a setback";
+    case "lists_rung":
+      return "that config/checkers.json lists for that rung";
+    case "independent":
+      return kind === "paper"
+        ? "from a team other than the authors: a journal names no team, so its publisher need only differ from the finding's who, and the paper must not be one the original rests on"
+        : "from a team other than the authors: its publisher and the finding's who differ from the original's";
+    case "trial":
+      return "that reports a trial endpoint met, on a finding that names a trial in artefacts.trial";
+  }
+}
 
 /** The need a fact fails, worded for the message; "" when the need is met. The verdict is `evidenceFits()`'s, never this. */
-function unmetReason(need: EvidenceNeed, rung: Rung, facts: EvidenceFacts, source: SourceView, kind: FindingKind | null, own: RungView | null): string {
+function unmetReason(
+  need: EvidenceNeed, rung: Rung, facts: EvidenceFacts, source: SourceView, kind: FindingKind | null, own: RungView | null, clash: IndependenceClash | null,
+): string {
   switch (need) {
     case "setback":
       return facts.setback ? "" : `the finding is filed as a ${kind === null ? "setback" : kind.replace("_", " ")}, not a setback`;
@@ -174,9 +184,12 @@ function unmetReason(need: EvidenceNeed, rung: Rung, facts: EvidenceFacts, sourc
       return facts.checkerRungs !== null && facts.checkerRungs.includes(rung) ? "" : `no config/checkers.json entry lists ${source.url} for ${rungName(rung)}`;
     case "independent":
       if (facts.independent) return "";
-      return own === null
-        ? `${quote(source.publisher)} is the publisher of another source or a who name of the finding`
-        : `${source.id} is also the source of the earlier ${rungName(own.rung)} entry, so it is the original's own`;
+      if (own !== null) return `${source.id} is also the source of the earlier ${rungName(own.rung)} entry, so it is the original's own`;
+      if (clash?.by === "same_paper") return `${source.id} is the same paper as ${clash.id}, a source the finding already has, so it is the original's own`;
+      // A paper's publisher is a journal: only a who name makes it the original's own. Any other kind is an institution, so another source's publisher does too.
+      return source.kind === "paper"
+        ? `${quote(source.publisher)} is a who name of the finding`
+        : `${quote(source.publisher)} is the publisher of another source or a who name of the finding`;
     case "trial":
       return facts.trial ? "" : "the finding names no trial in artefacts.trial";
   }
@@ -185,7 +198,7 @@ function unmetReason(need: EvidenceNeed, rung: Rung, facts: EvidenceFacts, sourc
 /** Every way a rung may be shown, as the table has it: "a paper; a proof; a notice (for a setback)". */
 function routesText(rung: Rung): string {
   return RUNG_EVIDENCE[rung]
-    .map((r) => `a ${kindName(r.kind)}${r.needs.length === 0 ? "" : ` (${r.needs.map((n) => NEED_TEXT[n]).join(", ")})`}`)
+    .map((r) => `a ${kindName(r.kind)}${r.needs.length === 0 ? "" : ` (${r.needs.map((n) => needText(n, r.kind)).join(", ")})`}`)
     .join("; ");
 }
 
@@ -243,37 +256,43 @@ function originalCitation(input: RuleInput, finding: FindingView, entry: RungVie
  */
 function evidenceFacts(
   input: RuleInput, finding: FindingView, entry: RungView, source: SourceView,
-): { facts: EvidenceFacts; kind: FindingKind | null; own: RungView | null } {
+): { facts: EvidenceFacts; kind: FindingKind | null; own: RungView | null; clash: IndependenceClash | null } {
   const recorded = entry.recorded ?? input.date;
   const kind = finding.filedOn(recorded).kind;
   const original = (finding.sources ?? []).filter((s) =>
     s.id !== source.id && s.kind !== "reaction" && (s.added === null || s.added <= recorded) && !gone(finding, `sources.${s.index}.publisher`));
   const who = (finding.who ?? []).filter((w) => !gone(finding, `who.${w.index}.name`)).map((w) => w.name);
   const own = originalCitation(input, finding, entry);
+  // A paper is the same paper as an original source when the URL or DOI is the same; an address a correction removed is not one to compare.
+  const sources = original.filter((s) => !gone(finding, `sources.${s.index}.url`)).map((s) => ({ id: s.id, url: s.url, doi: s.doi }));
+  const clash = own !== null || sourceGone(input, finding, source, "publisher") ? null
+    : independenceClash(
+      source.publisher, source.kind, { publishers: original.map((s) => s.publisher), who, sources },
+      sourceGone(input, finding, source, "url") ? undefined : { url: source.url, doi: source.doi },
+    );
   const facts: EvidenceFacts = {
     setback: kind === null || kind === "setback",
     // A removed URL is not an address to look up, a removed publisher not a name to compare: the need counts as met.
     checkerRungs: entry.publishing && !sourceGone(input, finding, source, "url") ? checkerRungsFor(source.url, input.config) : [entry.rung],
-    independent: sourceGone(input, finding, source, "publisher")
-      || (own === null && isIndependent(source.publisher, { publishers: original.map((s) => s.publisher), who })),
+    independent: sourceGone(input, finding, source, "publisher") || (own === null && clash === null),
     trial: finding.artefacts === null || finding.artefacts.trial.length > 0,
   };
-  return { facts, kind, own };
+  return { facts, kind, own, clash };
 }
 
 function evidenceIssue(input: RuleInput, finding: FindingView, entry: RungView): ValidationIssue | null {
   // An id its container lacks is SOURCE_IDS's, and a container the context does not show cannot be read.
   const { source } = resolveSource(input.views, finding, entry.source_id);
   if (source === null) return null;
-  const { facts, kind, own } = evidenceFacts(input, finding, entry, source);
+  const { facts, kind, own, clash } = evidenceFacts(input, finding, entry, source);
   if (evidenceFits(entry.rung, source.kind, facts)) return null;
   const rung = rungName(entry.rung);
   const cited = `The ${rung} entry cites ${source.id}, a ${kindName(source.kind)} from ${quote(source.publisher)}`;
   const routes = RUNG_EVIDENCE[entry.rung].filter((r) => r.kind === source.kind);
   const why = routes.length === 0
     ? `A ${kindName(source.kind)} cannot show ${rung}. ${rung} is shown by ${routesText(entry.rung)}.`
-    : `A ${kindName(source.kind)} shows ${rung} only as ${routes.map((r) => `a ${kindName(r.kind)}${r.needs.length === 0 ? "" : ` ${r.needs.map((n) => NEED_TEXT[n]).join(", ")}`}`).join(" or ")}, and here ${
-      routes.map((r) => orList(r.needs.map((n) => unmetReason(n, entry.rung, facts, source, kind, own)).filter((t) => t !== ""))).join(", or ")}.`;
+    : `A ${kindName(source.kind)} shows ${rung} only as ${routes.map((r) => `a ${kindName(r.kind)}${r.needs.length === 0 ? "" : ` ${r.needs.map((n) => needText(n, r.kind)).join(", ")}`}`).join(" or ")}, and here ${
+      routes.map((r) => orList(r.needs.map((n) => unmetReason(n, entry.rung, facts, source, kind, own, clash)).filter((t) => t !== ""))).join(", or ")}.`;
   return error(
     "RUNG_EVIDENCE", extendPath(entry.where, "source_id"), `${cited}. ${why}`,
     `Cite a source of a kind that fits (${orList(evidenceKinds(entry.rung).map(kindName))}), or give the entry the rung its source shows.`,

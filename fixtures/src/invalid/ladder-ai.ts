@@ -228,11 +228,24 @@ export const ladderAiNamed: readonly NamedCase[] = [
     expect: only("RUNG_EVIDENCE"),
   },
   {
-    name: "RUNG_EVIDENCE: a Confirmed paper from the original's own publisher",
+    // A journal names no team, so a paper in the same journal as the original may confirm it; a paper from a publisher that the
+    // finding's own `who` names is the original team's (SPEC §4.12 RUNG_EVIDENCE).
+    name: "RUNG_EVIDENCE: a Confirmed paper from a publisher the finding's who names",
     code: "RUNG_EVIDENCE", edition: "weekday",
     mutate: (d) => {
       const f = protein(d);
-      at(f.sources, 0, "first source of the result").publisher = "PNAS";
+      at(f.who, 0, "who name of the result").name = "PNAS";
+      f.artefacts.trial = [];
+    },
+    expect: only("RUNG_EVIDENCE"),
+  },
+  {
+    name: "RUNG_EVIDENCE: a Confirmed paper that is the same paper as the original's",
+    code: "RUNG_EVIDENCE", edition: "weekday",
+    mutate: (d) => {
+      const f = protein(d);
+      const second = at(f.sources, 1, "second source of the result");
+      at(f.sources, 0, "first source of the result").doi = second.doi;
       f.artefacts.trial = [];
     },
     expect: only("RUNG_EVIDENCE"),

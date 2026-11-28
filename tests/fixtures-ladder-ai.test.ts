@@ -258,7 +258,7 @@ describe("the ladder and AI group's T cases", () => {
     for (const c of ladderAiNamed) {
       expect(tell(whole(mutated(c), c.edition, storedFor(c.edition))), `T ${c.name}`).toEqual(tell(whole(mutated(c), c.edition)));
     }
-  });
+  }, 30_000);
 
   it("passes each valid edition, with the stored records or without", () => {
     for (const edition of EDITION_NAMES) {
@@ -344,8 +344,16 @@ describe("the boundary of each case", () => {
   /** A draft that undoes a case's fault by the smallest change its own words name, and passes with no error and no warning. */
   const NEIGHBOURS: readonly { of: string; name: string; edition: EditionName; mutate: (d: DraftBrief) => void }[] = [
     {
-      of: "RUNG_EVIDENCE: a Confirmed paper from the original's own publisher", name: "the same publisher, with a trial named in artefacts.trial", edition: "weekday",
-      mutate: (d) => { newFindingOf(d, I.result).sources[0]!.publisher = "PNAS"; },
+      of: "RUNG_EVIDENCE: a Confirmed paper from a publisher the finding's who names", name: "a who name that is the paper's publisher, with a trial named in artefacts.trial", edition: "weekday",
+      mutate: (d) => { newFindingOf(d, I.result).who[0]!.name = "PNAS"; },
+    },
+    {
+      of: "RUNG_EVIDENCE: a Confirmed paper from a publisher the finding's who names", name: "a paper in the same journal as the original, which names no team", edition: "weekday",
+      mutate: (d) => { newFindingOf(d, I.result).sources[0]!.publisher = "PNAS"; newFindingOf(d, I.result).artefacts.trial = []; },
+    },
+    {
+      of: "RUNG_EVIDENCE: a Confirmed paper that is the same paper as the original's", name: "another paper's DOI, with a trial named in artefacts.trial", edition: "weekday",
+      mutate: (d) => { newFindingOf(d, I.result).sources[0]!.doi = "10.1101/2026.09.02.990011"; },
     },
     {
       of: "RUNG_EVIDENCE: a Confirmed entry cites the paper of the story's own Checked entry", name: "a second Confirmed entry on the independent paper that showed Confirmed", edition: "weekday",

@@ -7,7 +7,7 @@ import { describe, expect, it } from "vitest";
 import { addDays } from "@/lib/dates";
 import {
   CHANGE_ORDER, CHANGE_RUNG, climbNote, concernNote, decideRungChange, evidenceFits, evidenceKinds, isClaimedRung, isCountedRung,
-  isFellRung, isFollowed, isIndependent, ladderIndex, lastRungDate, proposalNote, retractionNote, rungAt, rungDateProblem, rungMove,
+  isFellRung, independenceClash, isFollowed, isIndependent, ladderIndex, lastRungDate, proposalNote, retractionNote, rungAt, rungDateProblem, rungMove,
   rungOf, rungOrderProblem, RUNG_EVIDENCE, rungWatchOrder, scriptRungChange, scriptRungEntry,
   type ChangeKind, type EvidenceFacts, type EvidenceNeed, type JournalRecord, type NoticeRecord, type ProposalReason, type RungMove,
   type ScriptChange, type WatchCandidate, type WatchedFinding,
@@ -326,43 +326,86 @@ describe("evidenceFits", () => {
   });
 });
 
-describe("isIndependent", () => {
+describe("isIndependent for a kind other than a paper", () => {
   const original = { publishers: ["Nature", "arXiv"], who: ["Sample Lab", "A. B. Researcher"] };
 
   it("is true for a publisher that neither the original's sources nor its who name", () => {
-    expect(isIndependent("Science", original)).toBe(true);
-    expect(isIndependent("Other Lab", original)).toBe(true);
+    expect(isIndependent("Science", "statement", original)).toBe(true);
+    expect(isIndependent("Other Lab", "statement", original)).toBe(true);
   });
 
   it("is false for a publisher that an original source names", () => {
-    expect(isIndependent("Nature", original)).toBe(false);
-    expect(isIndependent("arXiv", original)).toBe(false);
+    expect(isIndependent("Nature", "statement", original)).toBe(false);
+    expect(isIndependent("arXiv", "statement", original)).toBe(false);
   });
 
   it("is false for a publisher that the finding's who names", () => {
-    expect(isIndependent("Sample Lab", original)).toBe(false);
-    expect(isIndependent("A. B. Researcher", original)).toBe(false);
+    expect(isIndependent("Sample Lab", "statement", original)).toBe(false);
+    expect(isIndependent("A. B. Researcher", "statement", original)).toBe(false);
   });
 
   it("compares without regard to case, runs of space, the ends of the name or Unicode compatibility forms", () => {
-    expect(isIndependent("NATURE", original)).toBe(false);
-    expect(isIndependent("  sample    lab ", original)).toBe(false);
-    expect(isIndependent("Sample\t\nLab", original)).toBe(false);
-    expect(isIndependent("Ｎａｔｕｒｅ", original)).toBe(false);
-    expect(isIndependent("a. b.  researcher", original)).toBe(false);
+    expect(isIndependent("NATURE", "statement", original)).toBe(false);
+    expect(isIndependent("  sample    lab ", "statement", original)).toBe(false);
+    expect(isIndependent("Sample\t\nLab", "statement", original)).toBe(false);
+    expect(isIndependent("Ｎａｔｕｒｅ", "statement", original)).toBe(false);
+    expect(isIndependent("a. b.  researcher", "statement", original)).toBe(false);
   });
 
   it("matches the whole name only, so a longer or shorter name is another team", () => {
-    expect(isIndependent("Nature Communications", original)).toBe(true);
-    expect(isIndependent("Nat", original)).toBe(true);
-    expect(isIndependent("Sample Lab Two", original)).toBe(true);
+    expect(isIndependent("Nature Communications", "statement", original)).toBe(true);
+    expect(isIndependent("Nat", "statement", original)).toBe(true);
+    expect(isIndependent("Sample Lab Two", "statement", original)).toBe(true);
   });
 
   it("is true against an empty original and compares Chinese names", () => {
-    expect(isIndependent("Nature", { publishers: [], who: [] })).toBe(true);
-    expect(isIndependent("中央研究院", { publishers: ["中央研究院"], who: [] })).toBe(false);
-    expect(isIndependent("中央研究院 ", { publishers: [], who: ["中央研究院"] })).toBe(false);
-    expect(isIndependent("臺灣大學", { publishers: ["中央研究院"], who: [] })).toBe(true);
+    expect(isIndependent("Nature", "statement", { publishers: [], who: [] })).toBe(true);
+    expect(isIndependent("中央研究院", "statement", { publishers: ["中央研究院"], who: [] })).toBe(false);
+    expect(isIndependent("中央研究院 ", "statement", { publishers: [], who: ["中央研究院"] })).toBe(false);
+    expect(isIndependent("臺灣大學", "statement", { publishers: ["中央研究院"], who: [] })).toBe(true);
+  });
+});
+
+describe("isIndependent for a paper", () => {
+  const original = {
+    publishers: ["Nature", "arXiv"], who: ["Sample Lab", "A. B. Researcher"],
+    sources: [
+      { id: "s1", url: "https://www.nature.com/articles/s41586-020-0001-1", doi: "10.1038/s41586-020-0001-1" },
+      { id: "s2", url: "https://arxiv.org/abs/2001.00001", doi: null },
+    ],
+  };
+  const other = { url: "https://www.nature.com/articles/s41586-021-0002-2", doi: "10.1038/s41586-021-0002-2" };
+
+  it("is true for a paper in the journal an original source names: a journal does not identify a team", () => {
+    expect(isIndependent("Nature", "paper", original, other)).toBe(true);
+    expect(isIndependent("arXiv", "paper", original, other)).toBe(true);
+    expect(isIndependent("NATURE", "paper", original)).toBe(true);
+  });
+
+  it("is false for a paper whose publisher the finding's who names, compared as any name is", () => {
+    expect(isIndependent("Sample Lab", "paper", original, other)).toBe(false);
+    expect(isIndependent("  a. b.  RESEARCHER ", "paper", original, other)).toBe(false);
+    expect(independenceClash("Sample Lab", "paper", original, other)).toEqual({ by: "who", name: "Sample Lab" });
+  });
+
+  it("is false for a paper whose URL or DOI is an original source's: the same paper", () => {
+    expect(independenceClash("Nature", "paper", original, { url: "https://nature.com/articles/s41586-020-0001-1/", doi: null })).toEqual({ by: "same_paper", id: "s1" });
+    expect(independenceClash("Journal", "paper", original, { url: "https://example.org/other", doi: "10.1038/S41586-020-0001-1" })).toEqual({ by: "same_paper", id: "s1" });
+    expect(independenceClash("Journal", "paper", original, { url: "https://doi.org/10.1038/s41586-020-0001-1", doi: null })).toEqual({ by: "same_paper", id: "s1" });
+    expect(isIndependent("Nature", "paper", original, other)).toBe(true);
+  });
+
+  it("leaves the same-paper test out when no address is given", () => {
+    expect(isIndependent("Nature", "paper", original)).toBe(true);
+    expect(isIndependent("Nature", "paper", { publishers: ["Nature"], who: [] }, other)).toBe(true);
+  });
+
+  it("still compares every other kind with the original sources' publishers and the who names", () => {
+    for (const kind of ["statement", "checker", "notice", "proof", "dataset", "registry", "lab_post"] as const) {
+      expect(independenceClash("Nature", kind, original, other), kind).toEqual({ by: "publisher", name: "Nature" });
+      expect(independenceClash("Sample Lab", kind, original, other), kind).toEqual({ by: "who", name: "Sample Lab" });
+      expect(isIndependent("Science", kind, original, other), kind).toBe(true);
+    }
   });
 });
 

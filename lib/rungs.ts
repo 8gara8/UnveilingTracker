@@ -11,6 +11,7 @@ import { addDays } from "./dates";
 import { shortDate, zhDate } from "./format";
 import type { L10n } from "./i18n";
 import { byCodeUnit, compareFindingIds } from "./ids";
+import { normalizeDoi, normalizeUrl } from "./urls";
 import type { RungChange } from "./schema/brief";
 import type { IsoDate, RungEntry } from "./schema/common";
 import type { RungProposal } from "./schema/context";
@@ -106,8 +107,8 @@ export function rungOrderProblem(
 
 /**
  * What a route needs besides the source's kind: `setback` (the finding is filed as one), `lists_rung` (the source is on a
- * `checkers.json` entry that lists the rung), `independent` (the source's publisher and the finding's `who` differ from the
- * original's), `trial` (the finding names a trial, so its paper or statement may report the endpoint met).
+ * `checkers.json` entry that lists the rung), `independent` (the source is from a team other than the original's: a paper's publisher differs from the finding's `who`
+ * names and the paper is not an original source; another kind's publisher differs from the original sources' publishers and the `who` names), `trial` (the finding names a trial, so its paper or statement may report the endpoint met).
  */
 export type EvidenceNeed = "setback" | "lists_rung" | "independent" | "trial";
 
@@ -143,7 +144,7 @@ export interface EvidenceFacts {
   readonly setback: boolean;
   /** The rungs of the `checkers.json` entry that lists the source's URL; null when no entry does. */
   readonly checkerRungs: readonly Rung[] | null;
-  /** The source's publisher and the finding's `who` differ from the original's (`isIndependent()`). */
+  /** The source is from a team other than the original's (`isIndependent()`). */
   readonly independent: boolean;
   /** The finding names a trial in `artefacts.trial`. */
   readonly trial: boolean;
@@ -172,25 +173,80 @@ export function evidenceKinds(rung: Rung): SourceKind[] {
   return [...new Set(RUNG_EVIDENCE[rung].map((r) => r.kind))];
 }
 
-/** What the original claim's record names: the publishers of its sources and the `who` names of the finding. */
+/** One source of the original claim's record, as the same-paper test reads it. */
+export interface OriginalSource {
+  readonly id: string;
+  readonly url: string;
+  /** The source's `doi`, as §4.1 stores it, or null. */
+  readonly doi: string | null;
+}
+
+/** What the original claim's record names: the publishers of its sources, its sources' addresses and the `who` names of the finding. */
 export interface OriginalRecord {
   readonly publishers: readonly string[];
   readonly who: readonly string[];
+  /** The original's sources, for the same-paper test of a confirming paper; left out, a paper is never the same paper as another source. */
+  readonly sources?: readonly OriginalSource[];
 }
+
+/** The address of the confirming source, for the same-paper test of a paper. */
+export interface ConfirmingPaper {
+  readonly url: string;
+  readonly doi: string | null;
+}
+
+/** Why a confirming source is not from a team other than the original's: what it clashes with. */
+export type IndependenceClash =
+  | { readonly by: "publisher"; readonly name: string }
+  | { readonly by: "who"; readonly name: string }
+  | { readonly by: "same_paper"; readonly id: string };
 
 /** A name as compared: Unicode compatibility form, lower case, runs of space collapsed. */
 function nameKey(name: string): string {
   return name.normalize("NFKC").toLowerCase().replace(/\s+/g, " ").trim();
 }
 
+/** The addresses a paper is known by: its normal URL and its DOI (given, or read from a doi.org URL). */
+function paperKeys(url: string, doi: string | null): string[] {
+  const keys = [`url:${normalizeUrl(url)}`];
+  const read = (doi === null ? null : normalizeDoi(doi)) ?? normalizeDoi(url);
+  if (read !== null) keys.push(`doi:${read}`);
+  return keys;
+}
+
 /**
- * True when a confirming source comes from a team other than the original's (§4.12 RUNG_EVIDENCE: "its publisher and `who`
- * differ from the original's"). A source carries no authors, so its `publisher` is compared with the original sources'
- * publishers and with the finding's `who` names, after `nameKey()`.
+ * What a confirming source clashes with, or null when it is from a team other than the original's (§4.12 RUNG_EVIDENCE). A source
+ * carries no authors, so the test reads what the record shows, names compared after `nameKey()`:
+ * - a `paper`'s publisher is a journal, which does not identify a team, so it is compared with the finding's `who` names only
+ *   (an institution or team named there is the original's own), and a paper whose URL or DOI is an original source's is the same
+ *   paper (`confirming`, with `original.sources`). That two papers in one journal are by different teams is the drafting agent's
+ *   and the seed writers' check of the author lists (STYLE.md §3); the validator cannot see authors;
+ * - any other kind's publisher is an institution, compared with the original sources' publishers and the `who` names.
  */
-export function isIndependent(publisher: string, original: OriginalRecord): boolean {
+export function independenceClash(
+  publisher: string, kind: SourceKind, original: OriginalRecord, confirming?: ConfirmingPaper,
+): IndependenceClash | null {
   const key = nameKey(publisher);
-  return ![...original.publishers, ...original.who].some((name) => nameKey(name) === key);
+  const who = original.who.find((name) => nameKey(name) === key);
+  if (kind === "paper") {
+    if (who !== undefined) return { by: "who", name: who };
+    if (confirming !== undefined && original.sources !== undefined) {
+      const mine = new Set(paperKeys(confirming.url, confirming.doi));
+      const same = original.sources.find((s) => paperKeys(s.url, s.doi).some((k) => mine.has(k)));
+      if (same !== undefined) return { by: "same_paper", id: same.id };
+    }
+    return null;
+  }
+  const named = original.publishers.find((name) => nameKey(name) === key);
+  if (named !== undefined) return { by: "publisher", name: named };
+  return who === undefined ? null : { by: "who", name: who };
+}
+
+/** True when `independenceClash()` finds none: the confirming source comes from a team other than the original's. */
+export function isIndependent(
+  publisher: string, kind: SourceKind, original: OriginalRecord, confirming?: ConfirmingPaper,
+): boolean {
+  return independenceClash(publisher, kind, original, confirming) === null;
 }
 
 // ── The rung watch: which findings, in what order (§5.8) ─────────────────────────────────────────

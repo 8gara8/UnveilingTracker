@@ -2610,7 +2610,7 @@ test proves each list exact.
 | `SOURCE_URL` | H | https; no user info; unique after `normalizeUrl()` within a container (the URL alone counts: two sources with one DOI and different URLs are no duplicates, nor is a page that the brief and a finding each cite); not on a `redirect` or `archive` entry of `BLOCKED_HOSTS` (Cyber's `sourceUrlProblem()`). The test of https is Cyber's `isHttpsUrl()`, a lenient `new URL()` read that passes an address with spaces around it or a missing `//`, since `normalizeUrl()` names the same page, and caps no length (`safeHref()`, §7, shows one over 2,000 characters unlinked). A correction's `source_url`, when it is not null, is held to all but the uniqueness test (two corrections may cite one page), on a draft's corrections and on every stored correction, as an error on one being published and a warning on an archived one (Stored records); any other blocked host in it is BLOCKED_HOST's |
 | `GO_DEEPER` | H | 1 to 3 ids, of kinds paper, preprint, proof, dataset, registry, checker, statement or lab_post (a setback's may also be notices); the ids are counted as listed, so a repeated id counts again and fails nothing here, and an id that names no source is SOURCE_IDS's |
 | `ARTEFACT_FORMAT` | H | Each artefact is in its stored form (§4.3: a DOI in lower case without `https://doi.org/`, an arXiv id, an NCT number, a PDB id, the https URL of a `.lean` file on github.com), in every mode and on every stored finding; in draft mode, with the evidence, each artefact also appears in the URL or fetched text of one of the finding's own sources ("Which sources a string is held to"). A DOI appears when it stands alone in the decoded URL or the text: a preprint server's version suffix (`v1`) may follow it, and a letter or digit, or a dot, hyphen, underscore or slash and then one, continues it into a longer DOI. An arXiv id appears without its version, in a label, a path or the paper's own `10.48550/arxiv.` DOI; an NCT number and a PDB id appear standing alone. A Lean URL appears as a source's own URL (equal after `normalizeUrl()`, in any case) or without its scheme in a source's text, so a source that is only the repository's root shows no file. The `after` of a correction whose path is `artefacts.<kind>.<n>`, but not of a `removed` correction that holds `REMOVED_TEXT` ("Removed text"), is held to the stored form of its kind, in every mode and on every stored correction, and is looked for in no page. An artefact cannot be removed: the removable paths hold no `artefacts.*` path (§4.10), so a draft's `removed` correction there fails SCHEMA, and the skip of an artefact that a stored finding's removed set names is reached only by a hand-edited stored correction |
-| `RUNG_EVIDENCE` | H | Each new rung entry cites a source whose kind fits: claimed: statement, lab_post; preprint: preprint; checked: paper, proof, or a checker listing the rung, and for a setback also a notice or a statement from the publisher of the papers it reports (the record itself shows the harm); confirmed: a paper, statement or checker from a team other than the authors (its publisher and `who` differ from the original's), or a trial endpoint met in a paper or statement; applied: a regulator in `checkers.json` or a statement of use outside the lab; disputed: notice, paper or statement; retracted: notice |
+| `RUNG_EVIDENCE` | H | Each new rung entry cites a source whose kind fits: claimed: statement, lab_post; preprint: preprint; checked: paper, proof, or a checker listing the rung, and for a setback also a notice or a statement from the publisher of the papers it reports (the record itself shows the harm); confirmed: a paper, statement or checker from a team other than the authors (a paper's publisher is a journal, so only the finding's `who` names must differ from it, and the paper must not be one of the original's own sources; a statement or checker's publisher differs from the other sources' publishers and from `who`), or a trial endpoint met in a paper or statement; applied: a regulator in `checkers.json` or a statement of use outside the lab; disputed: notice, paper or statement; retracted: notice |
 | `RUNG_ORDER` | H | Entries dated in order, none after D (the edition's date in a draft, the finding's `updated` on a stored record); `rung` is the last entry's (a draft's is derived from its entries); on a stored brief a `rung_changes` entry dated after the brief fails the same way |
 | `CLAIMED_CAP` | H | A finding whose rung is claimed or preprint is at most Notable, also when a draft's correction on `significance` refiles it or a draft rung entry moves it to claimed or preprint (§4.10, §8.9) |
 | `LANDMARK_BASIS` | H | A Landmark, also one a draft's correction on `significance` refiles as one, or that a draft rung entry moves from confirmed or applied to checked (§4.10, §8.9), has 2 or more reactions from different affiliations, none in its `who` (a reaction whose `who` or `affiliation` is a name in the finding's `who` list does not count), or a rung of confirmed or applied |
@@ -2690,11 +2690,20 @@ draft and for the records being published, and taken as met on any other record,
 (`confirmed` through a paper, a statement or a checker, whether or not a checker's entry lists Confirmed, and
 `applied` through a statement); and that the finding names a trial in `artefacts.trial` (`confirmed` through a paper
 or a statement that reports the endpoint met, a route that asks nothing of the source's independence, so the paper that showed
-Checked may confirm it). A source is independent when its `publisher` is none of the
-publishers of the finding's other sources that were on it when the entry was recorded (a reaction aside, as another
-scientist's) and none of the names in the finding's `who`, each compared whole after NFKC, lower-casing and collapsing
-runs of space, and it is not the source that an earlier Claimed, Preprint or Checked entry of the finding cites. A source has no
-authors, so a second paper from the original's publisher is never independent, whoever wrote it. What a record does
+Checked may confirm it). A source is independent by its kind. A `paper`'s publisher is a journal, which does not identify
+a team, so a paper is independent when its `publisher` is none of the names in the finding's `who` (compared whole after
+NFKC, lower-casing and collapsing runs of space), it is not the source that an earlier Claimed, Preprint or Checked entry of
+the finding cites, and its URL and DOI are not those of another source the finding held when the entry was recorded (a
+reaction aside, as another scientist's; URLs compared as `normalizeUrl()` writes them, a DOI as `normalizeDoi()` reads it, also
+from a doi.org URL; a source whose URL a stored `removed` correction rewrote is left out whole, DOI included, and a confirming
+paper whose own URL was rewritten is not compared): two papers in the same journal, by different teams, confirm each other. Any other kind (a statement, a
+checker's record, a notice, and so on) has an institution for a publisher, so it is independent when its `publisher` is none of the
+publishers of the finding's other sources that were on it when the entry was recorded (a reaction aside) and none of the
+names in the finding's `who`, compared the same way, and it is not the source that an earlier Claimed, Preprint or Checked
+entry cites. **Known limit:** a source has no authors, so the validator cannot tell that a confirming paper in the original's
+journal is by a different team: a team's own follow-up paper in the same journal is not caught. That check is the drafting
+agent's (STYLE.md §3: open both papers and compare the author lists and institutions) and, for the Landmark Ledger, the
+seed writers' and reviewers' (§8.13, §10 P2). What a record does
 not show, such as a stored finding that a draft sees only through the context (§4.15), counts as met, so that only the
 source's kind is judged there.
 
@@ -5378,7 +5387,10 @@ terms and its two credit lines, and a note and no credit lines for a feed the ru
    brief the seed is judged like a returning finding, in the entries a date gives it alone (§4.12 Stored
    records). Every `seeded` date is before the first edition's date, so that no seed's term has the
    `first_date` of an edition (§4.12 TERM_DEFINED).
-   About 100 entries; every one lists its frame and basis in `docs/LEDGER.md`.
+   About 100 entries; every one lists its frame and basis in `docs/LEDGER.md`. A seed that reaches Confirmed on a
+   second paper in the original's own journal is accepted only when the writer and the reviewer have compared
+   the author lists and institutions on the two papers' pages and found a different team, and say so in the
+   entry's `docs/LEDGER.md` basis (§4.12 RUNG_EVIDENCE: the validator sees no authors).
 5. `lib/rank.ts` (§5.9) and the pack (§4.14) from a real morning's collect. Its Markdown renderer replaces
    the stand-in `packMarkdown()` in `fixtures/src/injection.ts`, so that `fixtures:gen` renders
    `fixtures/injection/pack.md` with it, and collect's test parses `fixtures/injection/item.xml` and
