@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "soc-2026-0146",
+  "field": "social",
+  "subfield": "surveys-experiments",
+  "kind": "infrastructure",
+  "title": {
+    "en": "SAMPLE: An open dataset of 40,000 AI-run survey interviews",
+    "zh": "SAMPLE：4 萬場由 AI 進行的調查訪談開放資料集"
+  },
+  "depth": "item",
+  "explainer": {
+    "found": {
+      "en": "The Coldwater Institute survey lab released 40,000 interviews that an AI interviewer ran by chat with adult volunteers.",
+      "zh": "Coldwater Institute 的調查實驗室公開了 4 萬場訪談，由 AI 訪談員透過聊天，與成年志願者進行。"
+    },
+    "matters": {
+      "en": "Surveys take a great deal of time. A shared dataset lets other researchers study how AI interviewers work.",
+      "zh": "問卷調查非常耗時。共用的資料集，讓其他研究者能研究 AI 訪談員是怎麼運作的。"
+    },
+    "ai_helped": {
+      "en": "The Coldwater Institute survey lab built Survey Voice, which asked the questions and followed up on answers. People wrote the questions and checked a sample of the transcripts.",
+      "zh": "Coldwater Institute 的調查實驗室開發了 Survey Voice，由它提問，並針對回答追問。問題由人類撰寫，並由人類抽查部分逐字稿。"
+    },
+    "how_sure": {
+      "en": "Preprint. SSRN hosts the paper, which has not been peer reviewed. The Coldwater Institute survey lab, which built the system, is the source.",
+      "zh": "預印本。論文放在 SSRN 上，尚未經過同儕審查。這項消息的來源是開發這套系統的 Coldwater Institute 調查實驗室。"
+    },
+    "background": {
+      "en": "Researchers use interviews to learn what people think and why.",
+      "zh": "研究者用訪談來了解人們怎麼想，以及為什麼這麼想。"
+    },
+    "could_lead": {
+      "en": "AI interviewers could make large surveys cheaper, if their answers match those of people.",
+      "zh": "如果 AI 訪談員得到的答案和真人一致，大型問卷調查可能因此變得更便宜。"
+    }
+  },
+  "go_deeper": [
+    "s1",
+    "s2"
+  ],
+  "ai": {
+    "role": "ai_ran",
+    "confidence": "claimed",
+    "systems": [
+      {
+        "name": "Survey Voice",
+        "maker": "Coldwater Institute"
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "s1",
+        "quote": "Survey Voice asked the questions and followed up on answers",
+        "from_claimant": true
+      }
+    ]
+  },
+  "significance": "watch",
+  "rung": "preprint",
+  "rung_history": [
+    {
+      "rung": "preprint",
+      "date": "2026-10-05",
+      "recorded": "2026-10-13",
+      "source_id": "s1",
+      "by": "agent",
+      "note": null
+    }
+  ],
+  "since_then": [],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "preprint",
+      "title": "SAMPLE: An open dataset of AI-run survey interviews",
+      "publisher": "SSRN",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=9990001",
+      "doi": null,
+      "published_at": "2026-10-05T09:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-13"
+    },
+    {
+      "id": "s2",
+      "kind": "dataset",
+      "title": "SAMPLE: Dataset of 40,000 AI-run survey interviews",
+      "publisher": "Zenodo",
+      "url": "https://zenodo.org/records/99900002",
+      "doi": "10.5281/zenodo.99900002",
+      "published_at": "2026-10-05T09:30:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-13"
+    }
+  ],
+  "reactions": [],
+  "artefacts": {
+    "doi": [
+      "10.5281/zenodo.99900002"
+    ],
+    "arxiv": [],
+    "lean": [],
+    "trial": [],
+    "pdb": []
+  },
+  "figure": null,
+  "who": [
+    {
+      "name": "Coldwater Institute survey lab (SAMPLE)",
+      "ror": null
+    }
+  ],
+  "terms": [],
+  "related": [],
+  "first_published": "2026-10-05",
+  "first_brief": "2026-10-13",
+  "briefs": [
+    "2026-10-13"
+  ],
+  "history": false,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-14"
+}

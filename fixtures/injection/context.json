@@ -1,0 +1,1717 @@
+{
+  "date": "2026-09-09",
+  "format": "daily",
+  "window": {
+    "start": "2026-09-08T03:15:00+08:00",
+    "end": "2026-09-09T03:15:00+08:00"
+  },
+  "deadline": "2026-09-09T03:49:00+08:00",
+  "budgets": {
+    "web_fetches": 40,
+    "findings_max": 5,
+    "typical_findings": [
+      3,
+      5
+    ],
+    "deep_read_max": 15,
+    "words_target": 1000,
+    "words_max": 1300,
+    "reading_grade_soft": 12,
+    "reading_grade_max": 14
+  },
+  "candidates": [
+    {
+      "id": "cand-01",
+      "source_id": "eurekalert",
+      "title": "<untrusted source=\"eurekalert\">SAMPLE: Example Lab reports a protein folding result found with a deep learning model</untrusted>",
+      "abstract": "<untrusted source=\"eurekalert\">SAMPLE page, invented for tests and never fetched. The Example Lab reports a result on protein folding. The team checked it twice. A deep learning model ranked the candidate structures.</untrusted>",
+      "url": "https://www.eurekalert.org/news-releases/ut-sample-0099",
+      "doi": null,
+      "arxiv": null,
+      "trial": [],
+      "published_at": "2026-09-08T18:00:00+08:00",
+      "journal": null,
+      "fields": [
+        "biology"
+      ],
+      "ai_terms_matched": [
+        "deep learning"
+      ],
+      "journal_leading": false,
+      "types": [],
+      "stored_finding": null,
+      "flags": [
+        "injection_like"
+      ],
+      "score": 5,
+      "deep_read": true
+    }
+  ],
+  "pace": {
+    "sentence": "The Pace: 6.4% of papers in leading journals named AI methods in the 13 weeks to 12 Jul. That is up from 1.1% in 2015 to 2019, and up from 4.7% a year earlier. Clearly above the pre-AI level in 5 of 7 fields. Too few cases to judge in 1.",
+    "quotable": {
+      "pace.leading.pooled.window": "6.4%",
+      "pace.leading.pooled.baseline": "1.1%",
+      "pace.leading.pooled.year_ago": "4.7%",
+      "pace.leading.by_field.mathematics.window": "4.2%",
+      "pace.leading.by_field.mathematics.baseline": "0.6%",
+      "pace.leading.by_field.mathematics.year_ago": "3.0%",
+      "pace.leading.by_field.physics.window": "6.2%",
+      "pace.leading.by_field.physics.baseline": "0.9%",
+      "pace.leading.by_field.physics.year_ago": "4.4%",
+      "pace.leading.by_field.chemistry.window": "7.3%",
+      "pace.leading.by_field.chemistry.baseline": "1.0%",
+      "pace.leading.by_field.chemistry.year_ago": "5.2%",
+      "pace.leading.by_field.biology.window": "8.0%",
+      "pace.leading.by_field.biology.baseline": "1.2%",
+      "pace.leading.by_field.biology.year_ago": "5.7%",
+      "pace.leading.by_field.earth.window": "6.7%",
+      "pace.leading.by_field.earth.baseline": "0.8%",
+      "pace.leading.by_field.earth.year_ago": "4.7%",
+      "pace.leading.by_field.social.window": "2.2%",
+      "pace.leading.by_field.social.baseline": "1.9%",
+      "pace.leading.by_field.social.year_ago": "2.1%",
+      "pace.leading.by_field.humanities.window": "3.8%",
+      "pace.leading.by_field.humanities.baseline": "0.5%",
+      "pace.leading.by_field.humanities.year_ago": "2.7%",
+      "pace.all.pooled.window": "2.9%",
+      "pace.all.pooled.baseline": "0.5%",
+      "pace.all.pooled.year_ago": "2.1%",
+      "pace.all.by_field.mathematics.window": "1.4%",
+      "pace.all.by_field.mathematics.baseline": "0.2%",
+      "pace.all.by_field.mathematics.year_ago": "1.0%",
+      "pace.all.by_field.physics.window": "2.9%",
+      "pace.all.by_field.physics.baseline": "0.4%",
+      "pace.all.by_field.physics.year_ago": "2.1%",
+      "pace.all.by_field.chemistry.window": "3.4%",
+      "pace.all.by_field.chemistry.baseline": "0.5%",
+      "pace.all.by_field.chemistry.year_ago": "2.4%",
+      "pace.all.by_field.biology.window": "3.7%",
+      "pace.all.by_field.biology.baseline": "0.5%",
+      "pace.all.by_field.biology.year_ago": "2.7%",
+      "pace.all.by_field.earth.window": "2.7%",
+      "pace.all.by_field.earth.baseline": "0.3%",
+      "pace.all.by_field.earth.year_ago": "1.9%",
+      "pace.all.by_field.social.window": "0.9%",
+      "pace.all.by_field.social.baseline": "0.7%",
+      "pace.all.by_field.social.year_ago": "0.8%",
+      "pace.all.by_field.humanities.window": "1.2%",
+      "pace.all.by_field.humanities.baseline": "0.1%",
+      "pace.all.by_field.humanities.year_ago": "0.9%"
+    }
+  },
+  "recent_findings": [],
+  "ledger_for_sunday": [],
+  "week": null,
+  "rung_proposals": [],
+  "corrections": {
+    "flagged": []
+  },
+  "reports": [],
+  "standing_stories": [],
+  "pack": {
+    "md": "fixtures/injection/pack.md",
+    "json": "fixtures/injection/pack.json",
+    "degraded": false,
+    "failed_feeds": []
+  },
+  "config": {
+    "hype_words": [
+      "revolutionary",
+      "game-changing",
+      "groundbreaking",
+      "paradigm shift",
+      "unprecedented",
+      "stunning",
+      "mind-blowing",
+      "changes everything",
+      "breakthrough",
+      "revolutionise",
+      "revolutionises",
+      "revolutionised",
+      "revolutionising",
+      "revolutionize",
+      "revolutionizes",
+      "revolutionized",
+      "revolutionizing",
+      "gamechanging",
+      "game-changer",
+      "game-changers",
+      "gamechanger",
+      "gamechangers",
+      "ground-breaking",
+      "paradigm shifts",
+      "paradigm-shifting",
+      "unprecedentedly",
+      "stunningly",
+      "mindblowing",
+      "breakthroughs"
+    ],
+    "jargon": [
+      "algebraic geometry",
+      "algebraic topology",
+      "aperiodic tiling",
+      "asymptotic",
+      "Bayesian",
+      "cap set",
+      "category theory",
+      "combinatorics",
+      "computational complexity",
+      "conjecture",
+      "continuum hypothesis",
+      "curvature",
+      "differential geometry",
+      "Diophantine equation",
+      "eigenvalue",
+      "eigenvector",
+      "elliptic curve",
+      "entropy",
+      "formal verification",
+      "formalisation",
+      "Fourier transform",
+      "functional analysis",
+      "Galois group",
+      "geodesic",
+      "gradient descent",
+      "harmonic analysis",
+      "Hilbert space",
+      "homology",
+      "homotopy",
+      "kissing number",
+      "knot invariant",
+      "lattice",
+      "lemma",
+      "Lie algebra",
+      "Lie group",
+      "manifold",
+      "Markov chain",
+      "measure theory",
+      "modal logic",
+      "modular form",
+      "Monte Carlo method",
+      "NP-hard",
+      "partial differential equation",
+      "polynomial time",
+      "proof assistant",
+      "Ramsey number",
+      "regression",
+      "Ricci flow",
+      "SAT solver",
+      "singularity",
+      "sphere packing",
+      "stochastic process",
+      "tensor",
+      "topology",
+      "aerosol",
+      "band gap",
+      "Bose-Einstein condensate",
+      "boson",
+      "Cooper pair",
+      "cosmic microwave background",
+      "critical temperature",
+      "cryogenic",
+      "crystal structure",
+      "decoherence",
+      "density functional theory",
+      "entanglement",
+      "exciton",
+      "fermion",
+      "free-electron laser",
+      "gravitational wave",
+      "hadron",
+      "Hamiltonian",
+      "Higgs boson",
+      "inertial confinement",
+      "isotope",
+      "Josephson junction",
+      "lithography",
+      "logical qubit",
+      "magnetic confinement",
+      "metamaterial",
+      "molecular dynamics",
+      "nanoparticle",
+      "neutrino",
+      "neutron star",
+      "phase transition",
+      "phonon",
+      "photonic crystal",
+      "plasma",
+      "polymer",
+      "pulsar",
+      "quantum annealing",
+      "quantum dot",
+      "quantum error correction",
+      "quantum field theory",
+      "quantum gravity",
+      "quark",
+      "qubit",
+      "redshift",
+      "renormalisation",
+      "spectroscopy",
+      "spintronics",
+      "standard model",
+      "superconductivity",
+      "superconductor",
+      "superfluid",
+      "superposition",
+      "symmetry breaking",
+      "tokamak",
+      "topological insulator",
+      "twisted bilayer graphene",
+      "wavefunction",
+      "activation energy",
+      "adsorption",
+      "anode",
+      "bioinformatics",
+      "carbon nanotube",
+      "catalysis",
+      "catalyst",
+      "cathode",
+      "chirality",
+      "chromatography",
+      "cryo-electron microscopy",
+      "crystallography",
+      "electrocatalyst",
+      "electrochemistry",
+      "electrode",
+      "electrolysis",
+      "electrolyte",
+      "enantiomer",
+      "enzyme",
+      "force field",
+      "functional group",
+      "heterogeneous catalyst",
+      "high-entropy alloy",
+      "high-throughput screening",
+      "ligand",
+      "mass spectrometry",
+      "medicinal chemistry",
+      "metal-organic framework",
+      "monomer",
+      "nanomaterial",
+      "natural product",
+      "nuclear magnetic resonance",
+      "organic synthesis",
+      "perovskite",
+      "phase diagram",
+      "polymerisation",
+      "protein design",
+      "reaction mechanism",
+      "reagent",
+      "retrosynthesis",
+      "self-assembly",
+      "self-driving laboratory",
+      "sequencing",
+      "solid-state electrolyte",
+      "transition state",
+      "water splitting",
+      "X-ray crystallography",
+      "allele",
+      "amyloid",
+      "ancient DNA",
+      "antibody",
+      "antigen",
+      "antimicrobial resistance",
+      "bacteriophage",
+      "base editing",
+      "binding site",
+      "biomarker",
+      "brain-computer interface",
+      "checkpoint inhibitor",
+      "connectome",
+      "CRISPR",
+      "cytokine",
+      "environmental DNA",
+      "epigenetic",
+      "functional MRI",
+      "gene expression",
+      "gene therapy",
+      "genome",
+      "genome-wide association study",
+      "genotype",
+      "guide RNA",
+      "hazard ratio",
+      "heritability",
+      "hominin",
+      "immunotherapy",
+      "in silico",
+      "in vitro",
+      "in vivo",
+      "induced pluripotent stem cell",
+      "keystone species",
+      "kinase",
+      "mammography",
+      "messenger RNA",
+      "meta-analysis",
+      "metastasis",
+      "microbiome",
+      "mitochondrion",
+      "model organism",
+      "monoclonal antibody",
+      "nanobody",
+      "ontology",
+      "optogenetics",
+      "organoid",
+      "pharmacokinetics",
+      "phase 1 trial",
+      "phase 2 trial",
+      "phase 3 trial",
+      "phenology",
+      "phenotype",
+      "phylogenetics",
+      "plasmid",
+      "protein folding",
+      "proteome",
+      "randomised controlled trial",
+      "retinopathy",
+      "ribosome",
+      "single-cell sequencing",
+      "species distribution model",
+      "synthetic biology",
+      "systematic review",
+      "T cell",
+      "theory of mind",
+      "transcriptome",
+      "viral vector",
+      "working memory",
+      "zoonotic",
+      "albedo",
+      "atmospheric river",
+      "carbon cycle",
+      "carbon sequestration",
+      "carbon sink",
+      "climate sensitivity",
+      "data assimilation",
+      "dendrochronology",
+      "downscaling",
+      "ensemble forecast",
+      "general circulation model",
+      "geochemistry",
+      "geochronology",
+      "Holocene",
+      "hydrology",
+      "hyperspectral imaging",
+      "ice core",
+      "ice sheet",
+      "ice shelf",
+      "isotope dating",
+      "lidar",
+      "multispectral imaging",
+      "numerical weather prediction",
+      "ocean acidification",
+      "overturning circulation",
+      "palaeoclimate",
+      "palaeontology",
+      "parameterisation",
+      "permafrost",
+      "plate tectonics",
+      "Pleistocene",
+      "radiative forcing",
+      "radiocarbon dating",
+      "radiometric dating",
+      "reanalysis",
+      "remote sensing",
+      "sediment core",
+      "seismic wave",
+      "seismology",
+      "Southern Oscillation",
+      "stable isotope",
+      "stratigraphy",
+      "subduction zone",
+      "synthetic aperture radar",
+      "teleconnection",
+      "behavioural economics",
+      "causal inference",
+      "cliodynamics",
+      "cognitive bias",
+      "confidence interval",
+      "construct validity",
+      "content analysis",
+      "counterfactual",
+      "cross-sectional study",
+      "demography",
+      "difference-in-differences",
+      "econometrics",
+      "effect size",
+      "ethnography",
+      "factor analysis",
+      "field experiment",
+      "game theory",
+      "Gini coefficient",
+      "instrumental variable",
+      "longitudinal study",
+      "mechanism design",
+      "Nash equilibrium",
+      "natural experiment",
+      "network analysis",
+      "optical character recognition",
+      "p-hacking",
+      "p-value",
+      "panel data",
+      "preregistration",
+      "price elasticity",
+      "prosopography",
+      "psychometrics",
+      "publication bias",
+      "regression discontinuity",
+      "replication crisis",
+      "sampling bias",
+      "selection bias",
+      "sentiment analysis",
+      "statistical power",
+      "statistical significance",
+      "stylometry",
+      "survey experiment",
+      "synthetic control",
+      "topic model",
+      "treatment effect",
+      "word embedding",
+      "apocrypha",
+      "authorship attribution",
+      "canon law",
+      "Christology",
+      "codex",
+      "codicology",
+      "cognate",
+      "corpus linguistics",
+      "critical edition",
+      "cuneiform",
+      "decipherment",
+      "distant reading",
+      "epigraphy",
+      "epistemology",
+      "eschatology",
+      "exegesis",
+      "form criticism",
+      "Gnosticism",
+      "ground-penetrating radar",
+      "hadith",
+      "handwritten text recognition",
+      "hermeneutics",
+      "historical-critical method",
+      "Linear B",
+      "linguistic typology",
+      "Masoretic text",
+      "midrash",
+      "Mishnah",
+      "morphology",
+      "natural theology",
+      "ostracon",
+      "palaeography",
+      "palimpsest",
+      "papyrology",
+      "papyrus",
+      "patristic",
+      "Peshitta",
+      "philology",
+      "phonology",
+      "photogrammetry",
+      "proto-language",
+      "pseudepigrapha",
+      "recension",
+      "redaction criticism",
+      "Septuagint",
+      "soteriology",
+      "source criticism",
+      "stele",
+      "synoptic gospels",
+      "systematic theology",
+      "Targum",
+      "textual criticism",
+      "theodicy",
+      "variant reading",
+      "Vulgate",
+      "X-ray fluorescence",
+      "active learning",
+      "attention mechanism",
+      "Bayesian optimisation",
+      "chain of thought",
+      "convolutional neural network",
+      "diffusion model",
+      "embedding",
+      "emulator",
+      "fine-tuning",
+      "foundation model",
+      "generative model",
+      "graph neural network",
+      "high-performance computing",
+      "knowledge graph",
+      "latent space",
+      "neural operator",
+      "overfitting",
+      "physics-informed neural network",
+      "reinforcement learning",
+      "retrieval-augmented generation",
+      "self-supervised learning",
+      "supervised learning",
+      "surrogate model",
+      "symbolic regression",
+      "transformer",
+      "unsupervised learning"
+    ],
+    "field_cap": 2,
+    "fields": [
+      {
+        "id": "mathematics",
+        "subfields": [
+          {
+            "id": "number-theory",
+            "name": "Number theory"
+          },
+          {
+            "id": "combinatorics",
+            "name": "Combinatorics"
+          },
+          {
+            "id": "geometry-topology",
+            "name": "Geometry and topology"
+          },
+          {
+            "id": "algebra",
+            "name": "Algebra"
+          },
+          {
+            "id": "analysis-probability",
+            "name": "Analysis and probability"
+          },
+          {
+            "id": "formal-proof",
+            "name": "Formal proof"
+          }
+        ]
+      },
+      {
+        "id": "physics",
+        "subfields": [
+          {
+            "id": "particles-nuclei",
+            "name": "Particles and nuclei"
+          },
+          {
+            "id": "astronomy",
+            "name": "Astronomy and cosmology"
+          },
+          {
+            "id": "condensed-matter",
+            "name": "Condensed matter"
+          },
+          {
+            "id": "quantum",
+            "name": "Quantum physics and computing"
+          },
+          {
+            "id": "plasma-fusion",
+            "name": "Plasma and fusion"
+          },
+          {
+            "id": "atoms-optics",
+            "name": "Atomic and optical physics"
+          }
+        ]
+      },
+      {
+        "id": "chemistry",
+        "subfields": [
+          {
+            "id": "materials",
+            "name": "Materials"
+          },
+          {
+            "id": "catalysis",
+            "name": "Catalysis"
+          },
+          {
+            "id": "energy-materials",
+            "name": "Batteries and energy materials"
+          },
+          {
+            "id": "synthesis",
+            "name": "Synthesis and new molecules"
+          },
+          {
+            "id": "automated-labs",
+            "name": "Automated labs"
+          }
+        ]
+      },
+      {
+        "id": "biology",
+        "subfields": [
+          {
+            "id": "proteins",
+            "name": "Proteins and structure"
+          },
+          {
+            "id": "drugs",
+            "name": "Drugs and trials"
+          },
+          {
+            "id": "genomics",
+            "name": "Genes and genomes"
+          },
+          {
+            "id": "cells",
+            "name": "Cells and molecular biology"
+          },
+          {
+            "id": "neuroscience",
+            "name": "Neuroscience"
+          },
+          {
+            "id": "diagnosis",
+            "name": "Diagnosis and imaging"
+          },
+          {
+            "id": "infection-immunity",
+            "name": "Infection and immunity"
+          }
+        ]
+      },
+      {
+        "id": "earth",
+        "subfields": [
+          {
+            "id": "weather",
+            "name": "Weather forecasting"
+          },
+          {
+            "id": "climate",
+            "name": "Climate"
+          },
+          {
+            "id": "geology",
+            "name": "Geology and earthquakes"
+          },
+          {
+            "id": "ecology",
+            "name": "Ecology and biodiversity"
+          },
+          {
+            "id": "oceans-polar",
+            "name": "Oceans and polar regions"
+          },
+          {
+            "id": "planetary",
+            "name": "Planetary science"
+          }
+        ]
+      },
+      {
+        "id": "social",
+        "subfields": [
+          {
+            "id": "replication",
+            "name": "Replication and methods"
+          },
+          {
+            "id": "economics",
+            "name": "Economics"
+          },
+          {
+            "id": "psychology",
+            "name": "Psychology and behaviour"
+          },
+          {
+            "id": "politics-society",
+            "name": "Politics and society"
+          },
+          {
+            "id": "history-at-scale",
+            "name": "History at scale"
+          },
+          {
+            "id": "surveys-experiments",
+            "name": "Surveys and experiments"
+          }
+        ]
+      },
+      {
+        "id": "humanities",
+        "subfields": [
+          {
+            "id": "ancient-texts",
+            "name": "Ancient texts"
+          },
+          {
+            "id": "scripture-translation",
+            "name": "Scripture translation"
+          },
+          {
+            "id": "theology",
+            "name": "Theology and religious studies"
+          },
+          {
+            "id": "archaeology",
+            "name": "Archaeology and heritage"
+          },
+          {
+            "id": "languages",
+            "name": "Languages and linguistics"
+          },
+          {
+            "id": "literature-arts",
+            "name": "Literature and the arts"
+          },
+          {
+            "id": "philosophy",
+            "name": "Philosophy"
+          }
+        ]
+      }
+    ],
+    "source_kinds": [
+      {
+        "id": "paper",
+        "label": "Paper",
+        "means": "peer-reviewed article or proceedings"
+      },
+      {
+        "id": "preprint",
+        "label": "Preprint",
+        "means": "a paper posted publicly before peer review"
+      },
+      {
+        "id": "proof",
+        "label": "Proof",
+        "means": "a machine-checked proof file"
+      },
+      {
+        "id": "dataset",
+        "label": "Dataset",
+        "means": "a published set of data"
+      },
+      {
+        "id": "registry",
+        "label": "Registry entry",
+        "means": "a trial or structure record"
+      },
+      {
+        "id": "statement",
+        "label": "Statement",
+        "means": "an institution's or a prize committee's own release"
+      },
+      {
+        "id": "lab_post",
+        "label": "Lab post",
+        "means": "a lab's own post about its own work"
+      },
+      {
+        "id": "checker",
+        "label": "Checker's record",
+        "means": "a recognised checker's record"
+      },
+      {
+        "id": "reaction",
+        "label": "Reaction",
+        "means": "a named scientist's own published reaction"
+      },
+      {
+        "id": "notice",
+        "label": "Notice",
+        "means": "a retraction, correction or expression of concern"
+      }
+    ],
+    "allowlist": [
+      {
+        "id": "nature",
+        "name": "Nature Portfolio",
+        "hosts": [
+          "www.nature.com",
+          "nature.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice",
+          "reaction"
+        ]
+      },
+      {
+        "id": "science",
+        "name": "Science (AAAS)",
+        "hosts": [
+          "www.science.org",
+          "science.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice",
+          "reaction"
+        ]
+      },
+      {
+        "id": "cell-press",
+        "name": "Cell Press",
+        "hosts": [
+          "www.cell.com",
+          "cell.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice",
+          "reaction"
+        ]
+      },
+      {
+        "id": "pnas",
+        "name": "Proceedings of the National Academy of Sciences",
+        "hosts": [
+          "www.pnas.org",
+          "pnas.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice",
+          "reaction"
+        ]
+      },
+      {
+        "id": "aps",
+        "name": "American Physical Society journals",
+        "hosts": [
+          "journals.aps.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "annals-of-mathematics",
+        "name": "Annals of Mathematics",
+        "hosts": [
+          "annals.math.princeton.edu"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "springer",
+        "name": "Springer",
+        "hosts": [
+          "link.springer.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "sciencedirect",
+        "name": "Elsevier ScienceDirect",
+        "hosts": [
+          "www.sciencedirect.com",
+          "sciencedirect.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "wiley",
+        "name": "Wiley Online Library",
+        "hosts": [
+          "onlinelibrary.wiley.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "ams",
+        "name": "American Mathematical Society",
+        "hosts": [
+          "www.ams.org",
+          "ams.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "plos",
+        "name": "PLOS",
+        "hosts": [
+          "journals.plos.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "elife",
+        "name": "eLife",
+        "hosts": [
+          "elifesciences.org",
+          "www.elifesciences.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "nejm",
+        "name": "The New England Journal of Medicine",
+        "hosts": [
+          "www.nejm.org",
+          "nejm.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "lancet",
+        "name": "The Lancet",
+        "hosts": [
+          "www.thelancet.com",
+          "thelancet.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "acs",
+        "name": "American Chemical Society journals",
+        "hosts": [
+          "pubs.acs.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "aea",
+        "name": "American Economic Association journals",
+        "hosts": [
+          "www.aeaweb.org",
+          "aeaweb.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "project-euclid",
+        "name": "Project Euclid",
+        "hosts": [
+          "projecteuclid.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "cambridge-core",
+        "name": "Cambridge Core",
+        "hosts": [
+          "www.cambridge.org",
+          "cambridge.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "oxford-academic",
+        "name": "Oxford Academic",
+        "hosts": [
+          "academic.oup.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "taylor-francis",
+        "name": "Taylor & Francis Online",
+        "hosts": [
+          "www.tandfonline.com",
+          "tandfonline.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "de-gruyter",
+        "name": "De Gruyter",
+        "hosts": [
+          "www.degruyter.com",
+          "degruyter.com",
+          "www.degruyterbrill.com",
+          "degruyterbrill.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "brill",
+        "name": "Brill",
+        "hosts": [
+          "brill.com",
+          "www.brill.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "sage",
+        "name": "SAGE Journals",
+        "hosts": [
+          "journals.sagepub.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "project-muse",
+        "name": "Project MUSE",
+        "hosts": [
+          "muse.jhu.edu"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "jstor",
+        "name": "JSTOR",
+        "hosts": [
+          "www.jstor.org",
+          "jstor.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "arxiv",
+        "name": "arXiv",
+        "hosts": [
+          "arxiv.org",
+          "www.arxiv.org"
+        ],
+        "kinds": [
+          "preprint"
+        ]
+      },
+      {
+        "id": "biorxiv",
+        "name": "bioRxiv",
+        "hosts": [
+          "www.biorxiv.org",
+          "biorxiv.org"
+        ],
+        "kinds": [
+          "preprint"
+        ]
+      },
+      {
+        "id": "medrxiv",
+        "name": "medRxiv",
+        "hosts": [
+          "www.medrxiv.org",
+          "medrxiv.org"
+        ],
+        "kinds": [
+          "preprint"
+        ]
+      },
+      {
+        "id": "ssrn",
+        "name": "SSRN",
+        "hosts": [
+          "papers.ssrn.com",
+          "ssrn.com",
+          "www.ssrn.com"
+        ],
+        "kinds": [
+          "preprint"
+        ]
+      },
+      {
+        "id": "osf-preprints",
+        "name": "OSF Preprints",
+        "hosts": [
+          "osf.io"
+        ],
+        "kinds": [
+          "preprint"
+        ]
+      },
+      {
+        "id": "chemrxiv",
+        "name": "ChemRxiv",
+        "hosts": [
+          "chemrxiv.org",
+          "www.chemrxiv.org"
+        ],
+        "kinds": [
+          "preprint"
+        ]
+      },
+      {
+        "id": "doi",
+        "name": "DOI resolver",
+        "hosts": [
+          "doi.org",
+          "dx.doi.org"
+        ],
+        "kinds": [
+          "paper",
+          "preprint",
+          "dataset",
+          "registry",
+          "notice",
+          "reaction"
+        ]
+      },
+      {
+        "id": "pubmed",
+        "name": "PubMed",
+        "hosts": [
+          "pubmed.ncbi.nlm.nih.gov"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "pmc",
+        "name": "PubMed Central",
+        "hosts": [
+          "pmc.ncbi.nlm.nih.gov"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "pmc-legacy",
+        "name": "PubMed Central (older address)",
+        "hosts": [
+          "www.ncbi.nlm.nih.gov",
+          "ncbi.nlm.nih.gov"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ]
+      },
+      {
+        "id": "clinicaltrials-gov",
+        "name": "ClinicalTrials.gov",
+        "hosts": [
+          "clinicaltrials.gov",
+          "www.clinicaltrials.gov"
+        ],
+        "kinds": [
+          "registry"
+        ]
+      },
+      {
+        "id": "rcsb",
+        "name": "RCSB Protein Data Bank",
+        "hosts": [
+          "www.rcsb.org",
+          "rcsb.org"
+        ],
+        "kinds": [
+          "registry"
+        ]
+      },
+      {
+        "id": "ebi",
+        "name": "EMBL-EBI",
+        "hosts": [
+          "www.ebi.ac.uk",
+          "ebi.ac.uk",
+          "alphafold.ebi.ac.uk"
+        ],
+        "kinds": [
+          "registry",
+          "dataset"
+        ]
+      },
+      {
+        "id": "zenodo",
+        "name": "Zenodo",
+        "hosts": [
+          "zenodo.org",
+          "www.zenodo.org"
+        ],
+        "kinds": [
+          "dataset"
+        ]
+      },
+      {
+        "id": "github",
+        "name": "GitHub",
+        "hosts": [
+          "github.com"
+        ],
+        "kinds": [
+          "dataset",
+          "proof"
+        ]
+      },
+      {
+        "id": "huggingface",
+        "name": "Hugging Face",
+        "hosts": [
+          "huggingface.co"
+        ],
+        "kinds": [
+          "dataset"
+        ]
+      },
+      {
+        "id": "lean-mathlib-docs",
+        "name": "Lean mathlib documentation",
+        "hosts": [
+          "leanprover-community.github.io"
+        ],
+        "kinds": [
+          "proof"
+        ]
+      },
+      {
+        "id": "smc",
+        "name": "Science Media Centre expert reactions",
+        "hosts": [
+          "www.sciencemediacentre.org",
+          "sciencemediacentre.org"
+        ],
+        "kinds": [
+          "reaction"
+        ]
+      },
+      {
+        "id": "terence-tao",
+        "name": "Terence Tao's blog",
+        "hosts": [
+          "terrytao.wordpress.com"
+        ],
+        "kinds": [
+          "reaction"
+        ]
+      },
+      {
+        "id": "google-deepmind",
+        "name": "Google DeepMind",
+        "hosts": [
+          "deepmind.google",
+          "deepmind.com"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "openai",
+        "name": "OpenAI",
+        "hosts": [
+          "openai.com",
+          "www.openai.com"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "anthropic",
+        "name": "Anthropic",
+        "hosts": [
+          "www.anthropic.com",
+          "anthropic.com",
+          "claude.com"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "meta-fair",
+        "name": "Meta FAIR",
+        "hosts": [
+          "ai.meta.com"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "microsoft-research-ai-for-science",
+        "name": "Microsoft Research AI for Science",
+        "hosts": [
+          "www.microsoft.com",
+          "microsoft.com"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "futurehouse",
+        "name": "FutureHouse",
+        "hosts": [
+          "www.futurehouse.org",
+          "futurehouse.org"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "periodic-labs",
+        "name": "Periodic Labs",
+        "hosts": [
+          "periodic.com",
+          "www.periodic.com"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "isomorphic-labs",
+        "name": "Isomorphic Labs",
+        "hosts": [
+          "www.isomorphiclabs.com",
+          "isomorphiclabs.com"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "lila-sciences",
+        "name": "Lila Sciences",
+        "hosts": [
+          "lila.ai",
+          "www.lila.ai"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "sakana-ai",
+        "name": "Sakana AI",
+        "hosts": [
+          "sakana.ai"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "arc-institute",
+        "name": "Arc Institute",
+        "hosts": [
+          "arcinstitute.org",
+          "www.arcinstitute.org"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "allen-institute-for-ai",
+        "name": "Allen Institute for AI",
+        "hosts": [
+          "allenai.org",
+          "www.allenai.org"
+        ],
+        "kinds": [
+          "lab_post"
+        ]
+      },
+      {
+        "id": "erdosproblems",
+        "name": "Erdős Problems",
+        "hosts": [
+          "www.erdosproblems.com",
+          "erdosproblems.com"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "lean-mathlib-repo",
+        "name": "Lean mathlib repository",
+        "hosts": [
+          "github.com"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "lean-mathlib-docs",
+        "name": "Lean mathlib documentation",
+        "hosts": [
+          "leanprover-community.github.io"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "nobel-prize",
+        "name": "Nobel Prize",
+        "hosts": [
+          "www.nobelprize.org",
+          "nobelprize.org"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "breakthrough-prize",
+        "name": "Breakthrough Prize",
+        "hosts": [
+          "breakthroughprize.org",
+          "www.breakthroughprize.org"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "fields-medal",
+        "name": "Fields Medal (International Mathematical Union)",
+        "hosts": [
+          "www.mathunion.org",
+          "mathunion.org"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "abel-prize",
+        "name": "Abel Prize",
+        "hosts": [
+          "abelprize.no",
+          "www.abelprize.no"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "wolf-prize",
+        "name": "Wolf Prize",
+        "hosts": [
+          "wolffund.org.il",
+          "www.wolffund.org.il"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "kavli-prize",
+        "name": "Kavli Prize",
+        "hosts": [
+          "www.kavliprize.org",
+          "kavliprize.org"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "lasker-awards",
+        "name": "Lasker Awards",
+        "hosts": [
+          "laskerfoundation.org",
+          "www.laskerfoundation.org"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "vesuvius-challenge",
+        "name": "Vesuvius Challenge",
+        "hosts": [
+          "scrollprize.org",
+          "www.scrollprize.org",
+          "scrollprize.substack.com"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "casp",
+        "name": "CASP Protein Structure Prediction Center",
+        "hosts": [
+          "predictioncenter.org",
+          "www.predictioncenter.org"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "fda",
+        "name": "US Food and Drug Administration",
+        "hosts": [
+          "www.fda.gov",
+          "fda.gov",
+          "www.accessdata.fda.gov",
+          "accessdata.fda.gov"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "ema",
+        "name": "European Medicines Agency",
+        "hosts": [
+          "www.ema.europa.eu",
+          "ema.europa.eu"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "taiwan-fda",
+        "name": "Taiwan Food and Drug Administration",
+        "hosts": [
+          "www.fda.gov.tw",
+          "fda.gov.tw",
+          "mcp.fda.gov.tw"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "pmda",
+        "name": "Pharmaceuticals and Medical Devices Agency (Japan)",
+        "hosts": [
+          "www.pmda.go.jp",
+          "pmda.go.jp"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "clinicaltrials-gov-results",
+        "name": "ClinicalTrials.gov results",
+        "hosts": [
+          "clinicaltrials.gov",
+          "www.clinicaltrials.gov"
+        ],
+        "kinds": [
+          "checker"
+        ]
+      },
+      {
+        "id": "institutions",
+        "name": "Universities, government bodies, institutes and publishers' press offices",
+        "hosts": [
+          ".edu",
+          ".gov",
+          ".int",
+          ".europa.eu",
+          ".ac.uk",
+          ".ac.jp",
+          ".ac.kr",
+          ".ac.il",
+          ".ac.nz",
+          ".ac.za",
+          ".ac.in",
+          ".ac.cn",
+          ".ac.at",
+          ".ac.th",
+          ".ac.id",
+          ".gov.uk",
+          ".gov.au",
+          ".gov.tw",
+          ".gov.sg",
+          ".gov.hk",
+          ".gov.in",
+          ".gov.za",
+          ".gov.br",
+          ".gov.cn",
+          ".gov.il",
+          ".gov.ie",
+          ".go.jp",
+          ".go.kr",
+          ".gouv.fr",
+          ".gc.ca",
+          ".govt.nz",
+          "mpg.de",
+          "cnrs.fr",
+          "riken.jp",
+          "sinica.edu.tw",
+          "cern.ch",
+          "home.cern",
+          "embl.org",
+          "ethz.ch",
+          "nationalacademies.org",
+          "royalsociety.org",
+          "wycliffe.net",
+          "unitedbiblesocieties.org",
+          "sil.org",
+          "vatican.va",
+          "nobelprize.org",
+          "breakthroughprize.org",
+          "mathunion.org",
+          "abelprize.no",
+          "wolffund.org.il",
+          "kavliprize.org",
+          "laskerfoundation.org",
+          "scrollprize.org",
+          "scrollprize.substack.com",
+          "newsroom.wiley.com",
+          "group.springernature.com/gp/group/media/press-releases",
+          "elsevier.com/about/press-releases",
+          "cell.com/newsroom",
+          "aaas.org/news",
+          "elifesciences.org/for-the-press",
+          "eurekalert.org/news-releases/"
+        ],
+        "kinds": [
+          "statement"
+        ]
+      }
+    ]
+  }
+}

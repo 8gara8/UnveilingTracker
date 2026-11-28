@@ -256,7 +256,7 @@
       "significance": "major",
       "artefacts": {
         "doi": [
-          "10.1103/ut-sample-0016"
+          "10.1007/ut-sample-0016"
         ],
         "arxiv": [],
         "lean": [],
@@ -366,7 +366,7 @@
       "significance": "watch",
       "artefacts": {
         "doi": [
-          "10.5281/zenodo.9990002"
+          "10.5281/zenodo.99900002"
         ],
         "arxiv": [],
         "lean": [],
@@ -429,7 +429,7 @@
     },
     {
       "id": "chem-2026-0150",
-      "title": "SAMPLE: Springer Nature retracts 84 papers with undisclosed AI text",
+      "title": "SAMPLE: Example Press retracts 84 papers with undisclosed AI text",
       "field": "chemistry",
       "rung": "checked",
       "significance": "major",
@@ -793,10 +793,10 @@
       "kind": "setback",
       "significance": "major",
       "explainer": {
-        "found": "The journal eLife found that reviewers pasted the text of 31 unpublished manuscripts into a public AI chatbot to help write their reports.",
+        "found": "The journal Sample Review found that reviewers pasted the text of 31 unpublished manuscripts into a public AI chatbot to help write their reports.",
         "matters": "Authors send unpublished work to a journal in confidence. Pasting it into a public tool breaks that trust and may expose the work.",
-        "ai_helped": "Reviewers used an AI chatbot to help write reports. eLife does not name the chatbot.",
-        "how_sure": "Checked. eLife, the journal involved, says so in its own statement and in an editorial note.",
+        "ai_helped": "Reviewers used an AI chatbot to help write reports. Sample Review does not name the chatbot.",
+        "how_sure": "Checked. Sample Review, the journal involved, says so in its own statement and in an editorial note.",
         "background": "Peer review is the step where outside experts judge a paper before it is published.",
         "could_lead": "Journals could write clear rules and tell reviewers what they may share."
       },
@@ -827,9 +827,9 @@
         {
           "id": "s1",
           "kind": "statement",
-          "title": "SAMPLE: eLife says reviewers shared unpublished papers with an AI chatbot",
-          "publisher": "eLife",
-          "url": "https://elifesciences.org/for-the-press/ut-sample-reviewer-ai-chatbot",
+          "title": "SAMPLE: Sample Review says reviewers shared unpublished papers with an AI chatbot",
+          "publisher": "Sample Review",
+          "url": "https://www.eurekalert.org/news-releases/ut-sample-reviewer-ai-chatbot",
           "doi": null,
           "published_at": "2026-10-08T17:00:00+08:00",
           "seen_as": "search",
@@ -839,9 +839,9 @@
           "id": "s2",
           "kind": "notice",
           "title": "SAMPLE: Editorial note on the use of an AI chatbot in review",
-          "publisher": "eLife",
-          "url": "https://elifesciences.org/articles/ut-sample-90001",
-          "doi": null,
+          "publisher": "Sample Review",
+          "url": "https://link.springer.com/article/10.1007/ut-sample-0021",
+          "doi": "10.1007/ut-sample-0021",
           "published_at": "2026-10-08T17:30:00+08:00",
           "seen_as": "search",
           "added": "2026-10-08"
@@ -946,7 +946,7 @@
         "found": "A robot lab run by an AI planner reported a new magnetic material that keeps its strength up to 400 degrees.",
         "matters": "Strong magnets that work in the heat could help motors and generators, so a new material with that property would be useful.",
         "ai_helped": "Hartwell Materials Lab built the Cobalt Planner, which chose each sample to make next. Robots made and tested the samples.",
-        "how_sure": "Checked. Physical Review Letters published the paper after peer review. Hartwell Materials Lab, the maker of the planner, wrote the paper.",
+        "how_sure": "Checked. Sample Physics Letters published the paper after peer review. Hartwell Materials Lab, the maker of the planner, wrote the paper.",
         "background": "A magnet loses strength as it gets hot, and each material has its own limit.",
         "could_lead": "If other labs repeat the result, the material could be tried in real machines."
       },
@@ -982,7 +982,7 @@
           "recorded": "2026-10-09",
           "source_id": "s2",
           "by": "script",
-          "note": "Retracted by Physical Review Letters on 8 Oct 2026."
+          "note": "Retracted by Sample Physics Letters on 8 Oct 2026."
         }
       ],
       "since_then": [],
@@ -991,9 +991,9 @@
           "id": "s1",
           "kind": "paper",
           "title": "SAMPLE: A robot lab reports a new magnetic material",
-          "publisher": "Physical Review Letters",
-          "url": "https://journals.aps.org/prl/abstract/10.1103/ut-sample-0016",
-          "doi": "10.1103/ut-sample-0016",
+          "publisher": "Sample Physics Letters",
+          "url": "https://link.springer.com/article/10.1007/ut-sample-0016",
+          "doi": "10.1007/ut-sample-0016",
           "published_at": "2026-09-21T23:00:00+08:00",
           "seen_as": "pack",
           "added": "2026-09-22"
@@ -1002,9 +1002,9 @@
           "id": "s2",
           "kind": "notice",
           "title": "SAMPLE: Retraction: A robot lab reports a new magnetic material",
-          "publisher": "Physical Review Letters",
-          "url": "https://doi.org/10.1103/ut-sample-0017",
-          "doi": "10.1103/ut-sample-0017",
+          "publisher": "Sample Physics Letters",
+          "url": "https://doi.org/10.1007/ut-sample-0017",
+          "doi": "10.1007/ut-sample-0017",
           "published_at": "2026-10-08",
           "seen_as": "fetched",
           "added": "2026-10-09"
@@ -1153,8 +1153,8 @@
           "kind": "dataset",
           "title": "SAMPLE: Dataset of 40,000 AI-run survey interviews",
           "publisher": "Zenodo",
-          "url": "https://zenodo.org/records/9990002",
-          "doi": "10.5281/zenodo.9990002",
+          "url": "https://zenodo.org/records/99900002",
+          "doi": "10.5281/zenodo.99900002",
           "published_at": "2026-10-05T09:30:00+08:00",
           "seen_as": "search",
           "added": "2026-10-10"
@@ -1189,7 +1189,27 @@
       "stunning",
       "mind-blowing",
       "changes everything",
-      "breakthrough"
+      "breakthrough",
+      "revolutionise",
+      "revolutionises",
+      "revolutionised",
+      "revolutionising",
+      "revolutionize",
+      "revolutionizes",
+      "revolutionized",
+      "revolutionizing",
+      "gamechanging",
+      "game-changer",
+      "game-changers",
+      "gamechanger",
+      "gamechangers",
+      "ground-breaking",
+      "paradigm shifts",
+      "paradigm-shifting",
+      "unprecedentedly",
+      "stunningly",
+      "mindblowing",
+      "breakthroughs"
     ],
     "jargon": [
       "algebraic geometry",

@@ -1,0 +1,573 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "deadline": "2026-11-02T03:50:40+08:00",
+  "strings": [
+    {
+      "key": "lead.0",
+      "en": "Nothing cleared our bar today, and last week was quiet too.",
+      "kind": "lead",
+      "cap_chars": 108,
+      "group": {
+        "id": "lead",
+        "cap_chars": 108
+      }
+    },
+    {
+      "key": "review.big_picture",
+      "en": "Last week was quiet. No finding cleared our bar, so there is no result to review and none to single out. The record is still short, and we would rather say so than pad this page. A quiet week is not evidence for or against the hope that AI is speeding up discovery. We keep reading the sources every morning and will report a result as soon as one clears the bar.",
+      "kind": "long",
+      "cap_chars": 216,
+      "group": null
+    },
+    {
+      "key": "backlog.math-2026-0131.title",
+      "en": "SAMPLE: An AI checker flags a gap in a published proof",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "backlog.math-2026-0131.explainer.found",
+      "en": "Marlow Labs says its AI checker, Gapfinder, read a published proof in number theory and flagged a gap in one step.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.math-2026-0131.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.math-2026-0131.explainer.matters",
+      "en": "Mathematicians rely on checks like this to trust long proofs, so a flagged gap needs a careful answer.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.math-2026-0131.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.math-2026-0131.explainer.ai_helped",
+      "en": "Marlow Labs built Gapfinder, which found the gap with no human help.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.math-2026-0131.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.math-2026-0131.explainer.how_sure",
+      "en": "Preprint. arXiv hosts the paper, which has not been peer reviewed. Marlow Labs, the maker of the checker, is the source of the claim.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.math-2026-0131.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.math-2026-0131.explainer.background",
+      "en": "A published proof is one that a journal has accepted.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.math-2026-0131.explainer.could_lead",
+      "en": "If the gap is real, the authors could repair the step or withdraw the proof.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.math-2026-0131.rung.1",
+      "en": "Kestrel College says the authors reject the claim and say the flagged step is correct.",
+      "kind": "note",
+      "cap_chars": 45,
+      "group": null
+    },
+    {
+      "key": "backlog.math-2026-0140.title",
+      "en": "SAMPLE: Tiles that fill a surface only without repeating",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "backlog.math-2026-0140.explainer.found",
+      "en": "Two mathematicians at Eastvale University proved that tiles of one kind can fill a flat surface only in patterns that never repeat. Mathematicians had left this question open since 1968. The proof runs to 38 pages and needs no computer search. Other mathematicians can follow every step of it by hand, without special tools.",
+      "kind": "part",
+      "cap_chars": 99,
+      "group": {
+        "id": "backlog.math-2026-0140.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.math-2026-0140.explainer.matters",
+      "en": "Tilings appear in computer science and in the study of materials. A proof that some tiles can never form a repeating pattern tells designers what such patterns can and cannot do. It settles a question that had stood since 1968, and it gives researchers a new method to use.",
+      "kind": "part",
+      "cap_chars": 90,
+      "group": {
+        "id": "backlog.math-2026-0140.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.math-2026-0140.explainer.how_sure",
+      "en": "Checked. The Journal of Tiling Theory published the paper after peer review. Two mathematicians who were not on the paper, at Kestrel College and Northgate University, say they read the proof and found no gap. Their words are quoted on this page. The result stands on the journal's review and their reading, not on any claim by the authors.",
+      "kind": "part",
+      "cap_chars": 108,
+      "group": {
+        "id": "backlog.math-2026-0140.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.math-2026-0140.explainer.background",
+      "en": "A tiling covers a surface with copies of shapes and leaves no gaps. A floor of square tiles repeats the same pattern again and again. This proof is about tiles that can never do that.",
+      "kind": "part",
+      "cap_chars": 63,
+      "group": {
+        "id": "backlog.math-2026-0140.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.math-2026-0140.explainer.could_lead",
+      "en": "The method could help with the three-dimensional case, which is still open. It might also help scientists who study materials with patterns that never repeat, and designers who need such patterns in their work.",
+      "kind": "part",
+      "cap_chars": 63,
+      "group": {
+        "id": "backlog.math-2026-0140.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.earth-2026-0141.title",
+      "en": "SAMPLE: An AI model forecasts the weather ten days ahead",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "backlog.earth-2026-0141.explainer.found",
+      "en": "Larch Weather Systems built an AI model, Larch Forecast, that predicts the weather up to ten days ahead. In tests on two years of past weather, its ten-day forecasts had about 12 per cent fewer errors. The comparison was with numerical weather prediction, the standard method.",
+      "kind": "part",
+      "cap_chars": 99,
+      "group": {
+        "id": "backlog.earth-2026-0141.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.earth-2026-0141.explainer.matters",
+      "en": "Forecasts guide farmers, airlines and emergency plans. Fewer errors ten days out gives people more time to prepare for storms and heat. A small gain in accuracy reaches many people at once. Weather agencies pay close attention to any method that beats the standard one.",
+      "kind": "part",
+      "cap_chars": 90,
+      "group": {
+        "id": "backlog.earth-2026-0141.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.earth-2026-0141.explainer.ai_helped",
+      "en": "Larch Weather Systems built Larch Forecast. The model learns from past weather records, so it finds patterns in them instead of solving the equations of the air. The company also helped write the paper. The tests in the paper are the company's own.",
+      "kind": "part",
+      "cap_chars": 108,
+      "group": {
+        "id": "backlog.earth-2026-0141.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.earth-2026-0141.explainer.how_sure",
+      "en": "Applied. The Meridian Weather Service says it now relies on the model for its daily forecasts. Science published the paper after peer review, and Larch Weather Systems, the maker, helped write it. The tests used past weather only, so live forecasts may differ.",
+      "kind": "part",
+      "cap_chars": 108,
+      "group": {
+        "id": "backlog.earth-2026-0141.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.earth-2026-0141.explainer.background",
+      "en": "For many years, weather agencies have forecast by solving physical equations on large computers. Tests on past weather show how a new model would have done on days that are already known.",
+      "kind": "part",
+      "cap_chars": 63,
+      "group": {
+        "id": "backlog.earth-2026-0141.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.earth-2026-0141.explainer.could_lead",
+      "en": "If the gain holds in other seasons and other places, forecasters could trust longer forecasts and warn people earlier. Outside teams may test the model next, on live forecasts and in other regions.",
+      "kind": "part",
+      "cap_chars": 63,
+      "group": {
+        "id": "backlog.earth-2026-0141.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0144.title",
+      "en": "SAMPLE: Reviewers shared unpublished papers with an AI chatbot",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "backlog.soc-2026-0144.explainer.found",
+      "en": "The journal Sample Review found that reviewers pasted the text of 31 unpublished manuscripts into a public AI chatbot to help write their reports.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.soc-2026-0144.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0144.explainer.matters",
+      "en": "Authors send unpublished work to a journal in confidence. Pasting it into a public tool breaks that trust and may expose the work.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.soc-2026-0144.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0144.explainer.ai_helped",
+      "en": "Reviewers used an AI chatbot to help write reports. Sample Review does not name the chatbot.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.soc-2026-0144.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0144.explainer.how_sure",
+      "en": "Checked. Sample Review, the journal involved, says so in its own statement and in an editorial note.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.soc-2026-0144.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0144.explainer.background",
+      "en": "Peer review is the step where outside experts judge a paper before it is published.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.soc-2026-0144.explainer.could_lead",
+      "en": "Journals could write clear rules and tell reviewers what they may share.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.phys-2026-0134.title",
+      "en": "SAMPLE: A robot lab reports a magnetic material that keeps its strength",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "backlog.phys-2026-0134.explainer.found",
+      "en": "A robot lab run by an AI planner reported a new magnetic material that keeps its strength up to 400 degrees.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.phys-2026-0134.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.phys-2026-0134.explainer.matters",
+      "en": "Strong magnets that work in the heat could help motors and generators, so a new material with that property would be useful.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.phys-2026-0134.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.phys-2026-0134.explainer.ai_helped",
+      "en": "Hartwell Materials Lab built the Cobalt Planner, which chose each sample to make next. Robots made and tested the samples.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.phys-2026-0134.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.phys-2026-0134.explainer.how_sure",
+      "en": "Checked. Sample Physics Letters published the paper after peer review. Hartwell Materials Lab, the maker of the planner, wrote the paper.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.phys-2026-0134.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.phys-2026-0134.explainer.background",
+      "en": "A magnet loses strength as it gets hot, and each material has its own limit.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.phys-2026-0134.explainer.could_lead",
+      "en": "If other labs repeat the result, the material could be tried in real machines.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    }
+  ],
+  "terms": [
+    {
+      "id": "numerical-weather-prediction",
+      "en": "numerical weather prediction",
+      "definition": "The standard way to forecast weather: computers solve the equations of the air and sea, starting from today's measurements.",
+      "zh": null,
+      "official": null,
+      "cap_chars": 72
+    }
+  ],
+  "fixed": [
+    {
+      "en": "AI",
+      "zh": "AI",
+      "keys": [
+        "review.big_picture",
+        "backlog.math-2026-0131.title",
+        "backlog.math-2026-0131.explainer.found",
+        "backlog.earth-2026-0141.title",
+        "backlog.earth-2026-0141.explainer.found",
+        "backlog.soc-2026-0144.title",
+        "backlog.soc-2026-0144.explainer.found",
+        "backlog.soc-2026-0144.explainer.ai_helped",
+        "backlog.phys-2026-0134.explainer.found"
+      ]
+    },
+    {
+      "en": "model",
+      "zh": "模型",
+      "keys": [
+        "backlog.earth-2026-0141.title",
+        "backlog.earth-2026-0141.explainer.found",
+        "backlog.earth-2026-0141.explainer.ai_helped",
+        "backlog.earth-2026-0141.explainer.how_sure",
+        "backlog.earth-2026-0141.explainer.background",
+        "backlog.earth-2026-0141.explainer.could_lead"
+      ]
+    },
+    {
+      "en": "preprint",
+      "zh": "預印本",
+      "keys": [
+        "backlog.math-2026-0131.explainer.how_sure"
+      ]
+    },
+    {
+      "en": "peer review",
+      "zh": "同儕審查",
+      "keys": [
+        "backlog.math-2026-0140.explainer.how_sure",
+        "backlog.earth-2026-0141.explainer.how_sure",
+        "backlog.soc-2026-0144.explainer.background",
+        "backlog.phys-2026-0134.explainer.how_sure"
+      ]
+    },
+    {
+      "en": "journal",
+      "zh": "期刊",
+      "keys": [
+        "backlog.math-2026-0131.explainer.background",
+        "backlog.math-2026-0140.explainer.how_sure",
+        "backlog.soc-2026-0144.explainer.found",
+        "backlog.soc-2026-0144.explainer.matters",
+        "backlog.soc-2026-0144.explainer.how_sure",
+        "backlog.soc-2026-0144.explainer.could_lead"
+      ]
+    },
+    {
+      "en": "material",
+      "zh": "材料",
+      "keys": [
+        "backlog.phys-2026-0134.title",
+        "backlog.phys-2026-0134.explainer.found",
+        "backlog.phys-2026-0134.explainer.matters",
+        "backlog.phys-2026-0134.explainer.ai_helped",
+        "backlog.phys-2026-0134.explainer.how_sure",
+        "backlog.phys-2026-0134.explainer.background",
+        "backlog.phys-2026-0134.explainer.could_lead"
+      ]
+    },
+    {
+      "en": "proof",
+      "zh": "證明",
+      "keys": [
+        "backlog.math-2026-0131.title",
+        "backlog.math-2026-0131.explainer.found",
+        "backlog.math-2026-0131.explainer.matters",
+        "backlog.math-2026-0131.explainer.background",
+        "backlog.math-2026-0131.explainer.could_lead",
+        "backlog.math-2026-0140.explainer.found",
+        "backlog.math-2026-0140.explainer.matters",
+        "backlog.math-2026-0140.explainer.how_sure",
+        "backlog.math-2026-0140.explainer.background"
+      ]
+    }
+  ],
+  "hype": [
+    "革命性",
+    "顛覆性",
+    "劃時代",
+    "前所未有",
+    "史無前例",
+    "驚人",
+    "震撼",
+    "神奇",
+    "典範轉移",
+    "改變一切",
+    "突破"
+  ],
+  "hype_names": [
+    {
+      "en": "Breakthrough Prize",
+      "zh": "突破獎"
+    },
+    {
+      "en": "Breakthrough of the Year",
+      "zh": null
+    },
+    {
+      "en": "Breakthrough Listen",
+      "zh": null
+    },
+    {
+      "en": "Breakthrough Starshot",
+      "zh": null
+    },
+    {
+      "en": "Breakthrough T1D",
+      "zh": null
+    },
+    {
+      "en": "Breakthrough Energy",
+      "zh": null
+    },
+    {
+      "en": "Breakthrough Therapy",
+      "zh": null
+    },
+    {
+      "en": "Breakthrough Devices Program",
+      "zh": null
+    },
+    {
+      "en": "Breakthrough Device",
+      "zh": null
+    }
+  ],
+  "avoid": {
+    "人工智能": "人工智慧",
+    "算法": "演算法",
+    "軟件": "軟體",
+    "視頻": "影片",
+    "芯片": "晶片",
+    "數據庫": "資料庫",
+    "服務器": "伺服器",
+    "激光": "雷射",
+    "納米": "奈米",
+    "硅": "矽",
+    "等離子體": "電漿",
+    "量子比特": "量子位元",
+    "博客": "部落格",
+    "硬件": "硬體",
+    "互聯網": "網際網路",
+    "智能手機": "智慧型手機",
+    "集成電路": "積體電路",
+    "傳感器": "感測器",
+    "分辨率": "解析度",
+    "源代碼": "原始碼",
+    "腦機接口": "腦機介面",
+    "人機交互": "人機互動",
+    "中微子": "微中子",
+    "熒光": "螢光",
+    "艾滋": "愛滋",
+    "阿爾茨海默": "阿茲海默",
+    "耐藥性": "抗藥性",
+    "干細胞": "幹細胞",
+    "干燥": "乾燥",
+    "周期表": "週期表",
+    "篩查": "篩檢",
+    "單克隆": "單株",
+    "多克隆": "多株",
+    "線粒體": "粒線體",
+    "埃博拉": "伊波拉",
+    "同行評議": "同儕審查",
+    "置信區間": "信賴區間",
+    "課題組": "研究團隊",
+    "新西蘭": "紐西蘭",
+    "悉尼": "雪梨",
+    "特朗普": "川普",
+    "英偉達": "輝達",
+    "薛定諤": "薛丁格",
+    "麥克斯韋": "馬克士威",
+    "門捷列夫": "門得列夫",
+    "斯坦福": "史丹佛",
+    "伯克利": "柏克萊",
+    "沙特阿拉伯": "沙烏地阿拉伯",
+    "意大利": "義大利",
+    "肯尼亞": "肯亞",
+    "蒙特利爾": "蒙特婁",
+    "傅里葉": "傅立葉",
+    "盧瑟福": "拉塞福",
+    "玻爾": "波耳",
+    "哈勃": "哈伯",
+    "開普勒": "克卜勒",
+    "萊布尼茨": "萊布尼茲",
+    "坦桑尼亞": "坦尚尼亞",
+    "莫桑比克": "莫三比克",
+    "埃塞俄比亞": "衣索比亞"
+  },
+  "labels": {
+    "Mathematics": "數學",
+    "Physics": "物理",
+    "Chemistry and materials": "化學與材料",
+    "Biology and medicine": "生物與醫學",
+    "Earth and climate": "地球與氣候",
+    "Social science": "社會科學",
+    "Theology and humanities": "神學與人文",
+    "Claimed": "宣稱",
+    "Preprint": "預印本",
+    "Checked": "已查核",
+    "Confirmed": "已證實",
+    "Applied": "已應用",
+    "Disputed": "有爭議",
+    "Retracted": "已撤稿",
+    "AI-proposed": "AI 提出",
+    "AI-solved": "AI 解出",
+    "AI-ran": "AI 執行",
+    "AI-tool": "AI 工具",
+    "AI-checked": "AI 查核",
+    "No AI role": "無 AI 角色",
+    "Landmark": "里程碑",
+    "Major": "重大",
+    "Notable": "值得注意",
+    "Watch": "觀察中"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "id": "bio-2026-0149",
+  "field": "biology",
+  "subfield": "proteins",
+  "kind": "result",
+  "title": {
+    "en": "SAMPLE: A lab measures a protein that an AI had predicted",
+    "zh": "SAMPLE：實驗室測量了 AI 先前預測的蛋白質"
+  },
+  "depth": "item",
+  "explainer": {
+    "found": {
+      "en": "A second lab measured the shape of a protein complex and found that an AI model had predicted it correctly.",
+      "zh": "第二間實驗室測量了一個蛋白質複合體的形狀，發現 AI 模型先前的預測是正確的。"
+    },
+    "matters": {
+      "en": "A protein's shape shows how it works and how a drug might fit. Measuring a shape is slow.",
+      "zh": "蛋白質的形狀，顯示它如何運作，以及藥物可能如何契合。測量形狀很費時。"
+    },
+    "ai_helped": {
+      "en": "Halden Research built the model, Halden Fold. It posted its prediction before anyone had measured the complex.",
+      "zh": "Halden Research 開發了這個模型 Halden Fold。它在還沒有人測量這個複合體之前，就公布了預測結果。"
+    },
+    "how_sure": {
+      "en": "Confirmed. PNAS published the measured structure, which matches the prediction in every chain. Halden Research did not do the measurement.",
+      "zh": "已證實。PNAS 發表了測量得到的結構，與預測在每一條鏈上都相符。測量不是 Halden Research 做的。"
+    },
+    "background": {
+      "en": "The lab used cryo-electron microscopy, which images frozen molecules, to measure the complex. A first safety trial of a drug that binds the complex is registered as NCT09999002.",
+      "zh": "實驗室用冷凍電子顯微鏡（cryo-electron microscopy）測量這個複合體，這種技術替冷凍分子成像。一種能與這個複合體結合的藥物，第一項安全性試驗的登記編號為 NCT09999002。"
+    },
+    "could_lead": {
+      "en": "If more predictions match, AI could shorten the search for new medicines.",
+      "zh": "如果有更多預測相符，AI 可能縮短尋找新藥的過程。"
+    }
+  },
+  "go_deeper": [
+    "s2",
+    "s3"
+  ],
+  "ai": {
+    "role": "ai_solved",
+    "confidence": "confirmed",
+    "systems": [
+      {
+        "name": "Halden Fold",
+        "maker": "Halden Research"
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "s1",
+        "quote": "Halden Fold predicted the structure of the complex before any measurement",
+        "from_claimant": true
+      },
+      {
+        "source_id": "s2",
+        "quote": "The measured structure matches the model prediction in every chain",
+        "from_claimant": false
+      }
+    ]
+  },
+  "significance": "major",
+  "rung": "confirmed",
+  "rung_history": [
+    {
+      "rung": "preprint",
+      "date": "2026-09-02",
+      "recorded": "2026-10-14",
+      "source_id": "s1",
+      "by": "agent",
+      "note": null
+    },
+    {
+      "rung": "confirmed",
+      "date": "2026-10-13",
+      "recorded": "2026-10-14",
+      "source_id": "s2",
+      "by": "agent",
+      "note": {
+        "en": "A second lab measured the structure and found the prediction correct.",
+        "zh": "第二間實驗室測量了結構，發現預測是正確的。"
+      }
+    }
+  ],
+  "since_then": [],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "preprint",
+      "title": "SAMPLE: Predicted structure of a protein complex from Halden Fold",
+      "publisher": "bioRxiv",
+      "url": "https://www.biorxiv.org/content/10.1101/2026.09.02.990011v1",
+      "doi": "10.1101/2026.09.02.990011",
+      "published_at": "2026-09-02T10:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "kind": "paper",
+      "title": "SAMPLE: A measured structure tests an AI prediction of a protein complex",
+      "publisher": "PNAS",
+      "url": "https://www.pnas.org/doi/10.1073/ut-sample.0003",
+      "doi": "10.1073/ut-sample.0003",
+      "published_at": "2026-10-13T05:00:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "kind": "registry",
+      "title": "SAMPLE: Structure entry pdb_00009zz1",
+      "publisher": "RCSB Protein Data Bank",
+      "url": "https://www.rcsb.org/structure/pdb_00009zz1",
+      "doi": null,
+      "published_at": "2026-10-13",
+      "seen_as": "pack",
+      "added": "2026-10-14"
+    },
+    {
+      "id": "s4",
+      "kind": "registry",
+      "title": "SAMPLE: First safety trial of a drug that binds a protein complex",
+      "publisher": "ClinicalTrials.gov",
+      "url": "https://clinicaltrials.gov/study/NCT09999002",
+      "doi": null,
+      "published_at": "2026-10-12",
+      "seen_as": "search",
+      "added": "2026-10-14"
+    }
+  ],
+  "reactions": [],
+  "artefacts": {
+    "doi": [
+      "10.1073/ut-sample.0003",
+      "10.1101/2026.09.02.990011"
+    ],
+    "arxiv": [],
+    "lean": [],
+    "trial": [
+      "NCT09999002"
+    ],
+    "pdb": [
+      "pdb_00009zz1"
+    ]
+  },
+  "figure": null,
+  "who": [
+    {
+      "name": "Halden Research (SAMPLE)",
+      "ror": null
+    }
+  ],
+  "terms": [
+    "cryo-electron-microscopy"
+  ],
+  "related": [
+    "bio-2026-0143"
+  ],
+  "first_published": "2026-09-02",
+  "first_brief": "2026-10-14",
+  "briefs": [
+    "2026-10-14"
+  ],
+  "history": false,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-14"
+}

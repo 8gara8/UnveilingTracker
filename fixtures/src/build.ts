@@ -1,10 +1,11 @@
 // Writes every generated validator fixture (SPEC §4.12 "Fixtures and tests", §8.1), as the fork base's builder does: the
 // valid English drafts with their inputs (context, evidence, metrics and pack for each edition, `inputs.ts`, and the weekday's
-// `flags.txt`) and the invalid drafts today, and as each later part of the fixtures lands, its generator joins GENERATORS (the
-// soft drafts, the Chinese drafts, the sample content). One writer, one registry, two modes:
+// `flags.txt`), the invalid and soft drafts, the Chinese drafts and the sample content: each part has a generator in GENERATORS.
+// One writer, one registry, two modes:
 //   tsx fixtures/src/build.ts           write every file, remove any other file in FIXTURE_DIRS, then validate (fixtures:gen)
 //   tsx fixtures/src/build.ts --check   write nothing; exit 1 listing stale, missing or added files (fixtures:check)
-// Both exit 1 when a valid draft or one of its inputs fails `validDraftProblems()`, the one place they are validated.
+// Both exit 1 when a valid draft or one of its inputs fails `validDraftProblems()` (its schemas; tests/validate.test.ts runs the
+// rules on every valid draft).
 // The output is byte-stable: no timestamp, no machine path, and each JSON file is `jsonText(value, schema)` (SPEC §4.1),
 // so its keys follow the schema's order, two-space indent and a closing newline.
 //
@@ -20,17 +21,22 @@ import type { z } from "zod";
 import { jsonText } from "../../lib/json";
 import { AgentContext } from "../../lib/schema/context";
 import { DraftBrief } from "../../lib/schema/draft";
+import { DraftZh } from "../../lib/schema/draft-zh";
 import { MetricsFile } from "../../lib/schema/metrics";
 import { Evidence } from "../../lib/schema/misc";
 import { Pack } from "../../lib/schema/pack";
 import { editionDraft } from "./drafts";
 import { FLAGS_LINE, editionContext, editionEvidence, editionMetrics, editionPack } from "./inputs";
+import { injectionOutputs } from "./injection";
 import {
-  groundingCases, groundingNamed, groundingSoft, historyCases, historyNamed, historySoft, ladderAiCases, ladderAiNamed, ladderAiSoft,
+  engineCases, groundingCases, groundingNamed, groundingSoft, historyCases, historyNamed, historySoft, ladderAiCases, ladderAiNamed, ladderAiSoft,
   safetyCases, safetyNamed, safetySoft, sourcesCases, sourcesNamed, sourcesSoft, structureCases, structureNamed, structureSoft,
   wordsCases, wordsNamed, wordsSoft, zhCases, zhNamed, zhSoft, type ZhInvalidCase, type ZhNamedCase, type ZhSoftCase,
 } from "./invalid";
+import { siteOutputs } from "./site";
+import { stateOutputs } from "./state";
 import { EDITION_NAMES, REPO_ROOT, type EditionName } from "./world";
+import { zhDraft, zhOutputs } from "./zh-drafts";
 
 // ── JSON ─────────────────────────────────────────────────────────────────────────────────────────
 
@@ -111,6 +117,7 @@ export interface InvalidCase {
 
 /** Every English invalid case, one spread per file in fixtures/src/invalid/ (one file for each rule group). */
 export const INVALID_CASES: readonly InvalidCase[] = [
+  ...engineCases,
   ...structureCases,
   ...historyCases,
   ...ladderAiCases,
@@ -191,12 +198,12 @@ export function invalidDraft(c: InvalidCase): unknown {
 
 export const invalidDraftPath = (file: string): string => `fixtures/drafts/${file}`;
 
-/** The files of the invalid drafts: `cases` is INVALID_CASES unless a test brings its own. */
+/** The files of the invalid drafts, with each dash written as an escape (dashEscaped): `cases` is INVALID_CASES unless a test brings its own. */
 export function invalidOutputs(cases: readonly InvalidCase[] = INVALID_CASES): Output[] {
   return cases.map((c) => {
     if (c.file !== `invalid--${c.code}.json`) throw new Error(`${c.code}: its file is invalid--${c.code}.json, not ${c.file}`);
     const d = invalidDraft(c);
-    return { path: invalidDraftPath(c.file), text: DraftBrief.safeParse(d).success ? jsonText(d, DraftBrief) : jsonText(d) };
+    return { path: invalidDraftPath(c.file), text: dashEscaped(DraftBrief.safeParse(d).success ? jsonText(d, DraftBrief) : jsonText(d)) };
   });
 }
 
@@ -209,19 +216,63 @@ export function softDraft(c: SoftCase): unknown {
 
 export const softDraftPath = (file: string): string => `fixtures/drafts/${file}`;
 
-/** The files of the soft drafts: `cases` is SOFT_CASES unless a test brings its own. */
+/** The files of the soft drafts, with each dash written as an escape (dashEscaped): `cases` is SOFT_CASES unless a test brings its own. */
 export function softOutputs(cases: readonly SoftCase[] = SOFT_CASES): Output[] {
   return cases.map((c) => {
     if (c.file !== `soft--${c.code}.json`) throw new Error(`${c.code}: its file is soft--${c.code}.json, not ${c.file}`);
     const d = softDraft(c);
-    return { path: softDraftPath(c.file), text: DraftBrief.safeParse(d).success ? jsonText(d, DraftBrief) : jsonText(d) };
+    return { path: softDraftPath(c.file), text: dashEscaped(DraftBrief.safeParse(d).success ? jsonText(d, DraftBrief) : jsonText(d)) };
+  });
+}
+
+// ── Chinese invalid and soft drafts ──────────────────────────────────────────────────────────────
+
+/** The Chinese draft a case produces: a fresh copy of its edition's valid Chinese draft, mutated. */
+export function zhInvalidDraft(c: ZhInvalidCase | ZhSoftCase): unknown {
+  const draft = zhDraft(c.edition ?? "weekday");
+  const out = c.mutate(draft);
+  return out === undefined ? draft : out;
+}
+
+export const zhInvalidDraftPath = (file: string): string => `fixtures/drafts-zh/${file}`;
+
+/** Every dash ZH_NO_DASH refuses and a few it lets through (the Unicode dashes, the hyphen-minus apart), and the box-drawing lines U+2500 and U+2501. */
+const DASH_RE = new RegExp(`[\\p{Pd}${String.fromCodePoint(0x2500)}${String.fromCodePoint(0x2501)}]`, "gu");
+
+/**
+ * The text of a JSON file with each dash written as a `\uXXXX` escape (the hyphen-minus apart): JSON reads it back as the same
+ * character, and no committed file holds a dash as a character, so a scan of the repo for the dashes the writing rules forbid finds
+ * only the files that say so (the ZH_NO_DASH fixtures hold theirs this way).
+ */
+export function dashEscaped(text: string): string {
+  return text.replace(DASH_RE, (ch) => (ch === "-" ? ch : ch.split("").map((u) => `\\u${u.charCodeAt(0).toString(16).padStart(4, "0")}`).join("")));
+}
+
+/** The file text of a Chinese draft: its schema's `jsonText()` when it parses (a draft past the schema is written as is), with the dashes escaped. */
+const zhDraftText = (d: unknown): string => dashEscaped(DraftZh.safeParse(d).success ? jsonText(d, DraftZh) : jsonText(d));
+
+/** The files of the Chinese invalid drafts, `invalid--<CODE>.zh.json`: `cases` is ZH_INVALID_CASES unless a test brings its own. */
+export function zhInvalidOutputs(cases: readonly ZhInvalidCase[] = ZH_INVALID_CASES): Output[] {
+  return cases.map((c) => {
+    if (c.file !== `invalid--${c.code}.zh.json`) throw new Error(`${c.code}: its file is invalid--${c.code}.zh.json, not ${c.file}`);
+    return { path: zhInvalidDraftPath(c.file), text: zhDraftText(zhInvalidDraft(c)) };
+  });
+}
+
+/** The files of the Chinese soft drafts, `soft--<CODE>.zh.json` (none today): `cases` is ZH_SOFT_CASES unless a test brings its own. */
+export function zhSoftOutputs(cases: readonly ZhSoftCase[] = ZH_SOFT_CASES): Output[] {
+  return cases.map((c) => {
+    if (c.file !== `soft--${c.code}.zh.json`) throw new Error(`${c.code}: its file is soft--${c.code}.zh.json, not ${c.file}`);
+    return { path: zhInvalidDraftPath(c.file), text: zhDraftText(zhInvalidDraft(c)) };
   });
 }
 
 // ── The registry ─────────────────────────────────────────────────────────────────────────────────
 
 /** Every generator, in writing order. Each later part of the fixtures adds its own here. */
-export const GENERATORS: readonly (() => Output[])[] = [validOutputs, invalidOutputs, softOutputs];
+export const GENERATORS: readonly (() => Output[])[] = [
+  validOutputs, invalidOutputs, softOutputs, injectionOutputs, zhOutputs, zhInvalidOutputs, zhSoftOutputs, siteOutputs, stateOutputs,
+];
 
 /**
  * The folders the builder owns (SPEC §3, §8.1): every file in them is one a generator writes, so any other file there is
@@ -291,10 +342,10 @@ export function writeOutputs(outputs: readonly Output[], root: string = REPO_ROO
 // ── Validation ───────────────────────────────────────────────────────────────────────────────────
 
 /**
- * Every issue the valid drafts and their inputs have, as "valid-<name>.json: ERROR CODE path: message" for a draft and
- * "<folder>/<name>.json: ERROR CODE path: message" for an input. This is the one place they are validated: today by their
- * schemas (`SCHEMA`, the checks that need no other file); `validateDraft()` of each draft with its edition's inputs joins it when
- * the rules land, with the same line format, and any error or any warning is a problem. `inputOf` lets a test bring a broken input.
+ * Every issue the valid drafts and their inputs have against their schemas (`SCHEMA`, the checks that need no other file), as
+ * "valid-<name>.json: ERROR CODE path: message" for a draft and "<folder>/<name>.json: ERROR CODE path: message" for an input;
+ * any such issue is a problem. The rules judge each valid draft with its edition's inputs in tests/validate.test.ts, not here.
+ * `inputOf` lets a test bring a broken input.
  */
 export function validDraftProblems(
   draftOf: (name: EditionName) => unknown = editionDraft,

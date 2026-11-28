@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "math-2026-0140",
+  "field": "mathematics",
+  "subfield": "combinatorics",
+  "kind": "result",
+  "title": {
+    "en": "SAMPLE: Tiles that fill a surface only without repeating",
+    "zh": "SAMPLE：只能以不重複的方式鋪滿平面的磁磚"
+  },
+  "depth": "story",
+  "explainer": {
+    "found": {
+      "en": "Two mathematicians at Eastvale University proved that tiles of one kind can fill a flat surface only in patterns that never repeat. Mathematicians had left this question open since 1968. The proof runs to 38 pages and needs no computer search. Other mathematicians can follow every step of it by hand, without special tools.",
+      "zh": "Eastvale University 的兩位數學家證明，同一種磁磚鋪滿平面時，只能排出永不重複的圖案。這個問題自 1968 年起一直懸而未決。這份證明有 38 頁，不需要電腦搜尋。其他數學家不用特殊工具，也能動手把每個步驟走一遍。"
+    },
+    "matters": {
+      "en": "Tilings appear in computer science and in the study of materials. A proof that some tiles can never form a repeating pattern tells designers what such patterns can and cannot do. It settles a question that had stood since 1968, and it gives researchers a new method to use.",
+      "zh": "鋪磚出現在電腦科學和材料研究中。證明某些磁磚永遠排不出重複的圖案，能讓設計者知道這類圖案做得到什麼、做不到什麼。這解決了一個自 1968 年起懸而未決的問題，也給研究者一個可用的新方法。"
+    },
+    "ai_helped": null,
+    "how_sure": {
+      "en": "Checked. The Journal of Tiling Theory published the paper after peer review. Two mathematicians who were not on the paper, at Kestrel College and Northgate University, say they read the proof and found no gap. Their words are quoted on this page. The result stands on the journal's review and their reading, not on any claim by the authors.",
+      "zh": "已查核。Journal of Tiling Theory 在同儕審查後發表了這篇論文。兩位沒有參與論文的數學家，分別任職於 Kestrel College 和 Northgate University，表示他們讀過這份證明，沒有發現缺漏。他們的話引述於本頁。這項結果靠的是期刊的審查和他們的閱讀，不是作者的任何說法。"
+    },
+    "background": {
+      "en": "A tiling covers a surface with copies of shapes and leaves no gaps. A floor of square tiles repeats the same pattern again and again. This proof is about tiles that can never do that.",
+      "zh": "鋪磚是把形狀複製許多份，蓋滿一個表面，不留空隙。鋪滿方形磁磚的地板，會一再重複同樣的圖案。這份證明談的是永遠做不到這一點的磁磚。"
+    },
+    "could_lead": {
+      "en": "The method could help with the three-dimensional case, which is still open. It might also help scientists who study materials with patterns that never repeat, and designers who need such patterns in their work.",
+      "zh": "這個方法可能有助於處理三維的情形，這個問題仍未解決。它也可能幫助科學家研究圖案永不重複的材料，並幫助工作中需要這類圖案的設計者。"
+    }
+  },
+  "go_deeper": [
+    "s1"
+  ],
+  "ai": {
+    "role": "none",
+    "confidence": null,
+    "systems": [],
+    "evidence": []
+  },
+  "significance": "landmark",
+  "rung": "checked",
+  "rung_history": [
+    {
+      "rung": "checked",
+      "date": "2026-10-02",
+      "recorded": "2026-10-13",
+      "source_id": "s1",
+      "by": "agent",
+      "note": null
+    }
+  ],
+  "since_then": [],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "paper",
+      "title": "SAMPLE: Tiles that fill the plane only without repeating",
+      "publisher": "Journal of Tiling Theory",
+      "url": "https://www.cambridge.org/core/journals/ut-sample-journal-of-tiling-theory/article/ut-sample-0013",
+      "doi": "10.1017/ut-sample-0013",
+      "published_at": "2026-10-02T18:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-13"
+    },
+    {
+      "id": "s2",
+      "kind": "reaction",
+      "title": "SAMPLE: Expert reaction to a proof about tilings",
+      "publisher": "Science Media Centre",
+      "url": "https://www.sciencemediacentre.org/expert-reaction-to-ut-sample-tiling-proof/",
+      "doi": null,
+      "published_at": "2026-10-03T10:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-13"
+    }
+  ],
+  "reactions": [
+    {
+      "source_id": "s2",
+      "who": "Ines Fictional (SAMPLE)",
+      "affiliation": "Kestrel College",
+      "quote": "I read the proof twice and I could not find a gap"
+    },
+    {
+      "source_id": "s2",
+      "who": "Tomas Specimen (SAMPLE)",
+      "affiliation": "Northgate University",
+      "quote": "The question is settled, and the method will be used for years"
+    }
+  ],
+  "artefacts": {
+    "doi": [
+      "10.1017/ut-sample-0013"
+    ],
+    "arxiv": [],
+    "lean": [],
+    "trial": [],
+    "pdb": []
+  },
+  "figure": null,
+  "who": [
+    {
+      "name": "Eastvale University mathematicians (SAMPLE)",
+      "ror": null
+    }
+  ],
+  "terms": [],
+  "related": [],
+  "first_published": "2026-10-02",
+  "first_brief": "2026-10-13",
+  "briefs": [
+    "2026-10-13"
+  ],
+  "history": false,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-14"
+}

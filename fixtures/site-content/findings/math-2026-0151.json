@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "id": "math-2026-0151",
+  "field": "mathematics",
+  "subfield": "combinatorics",
+  "kind": "result",
+  "title": {
+    "en": "SAMPLE: An AI lab claims a proof of an open problem",
+    "zh": "SAMPLE：AI 實驗室宣稱證明了一個未解問題"
+  },
+  "depth": "item",
+  "explainer": {
+    "found": {
+      "en": "Marlow Labs says its AI system found a proof of an open problem about sums of sets of whole numbers.",
+      "zh": "Marlow Labs 表示，它的 AI 系統找到一個未解問題的證明，這個問題與整數集合的和有關。"
+    },
+    "matters": {
+      "en": "A proof would settle a question that mathematicians had left open.",
+      "zh": "證明若成立，就能解決數學家一直懸而未決的問題。"
+    },
+    "ai_helped": {
+      "en": "Marlow Labs built the Marlow Prover. The lab says the system found the proof with no human step in the argument.",
+      "zh": "Marlow Labs 開發了 Marlow Prover。這間實驗室表示，這套系統找到了證明，論證中沒有任何人類的步驟。"
+    },
+    "how_sure": {
+      "en": "Preprint. arXiv hosts the paper, which has not been peer reviewed. Marlow Labs is the source of the claim.",
+      "zh": "預印本。論文放在 arXiv 上，尚未經過同儕審查。這項說法的來源是 Marlow Labs。"
+    },
+    "background": {
+      "en": "A Lean file posted with the paper lets a proof assistant check the argument by machine.",
+      "zh": "隨論文附上的 Lean 檔案，能讓證明輔助工具（proof assistant）以機器檢查這份論證。"
+    },
+    "could_lead": {
+      "en": "If the Lean file checks, the proof could be accepted without waiting long for referees.",
+      "zh": "如果 Lean 檔案通過檢查，這份證明可能不必等待審稿人太久，就被接受。"
+    }
+  },
+  "go_deeper": [
+    "s1",
+    "s2"
+  ],
+  "ai": {
+    "role": "ai_solved",
+    "confidence": "claimed",
+    "systems": [
+      {
+        "name": "Marlow Prover",
+        "maker": "Marlow Labs"
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "s1",
+        "quote": "The proof was found by the Marlow Prover with no human step in the argument",
+        "from_claimant": true
+      }
+    ]
+  },
+  "significance": "notable",
+  "rung": "preprint",
+  "rung_history": [
+    {
+      "rung": "preprint",
+      "date": "2026-10-13",
+      "recorded": "2026-10-14",
+      "source_id": "s1",
+      "by": "agent",
+      "note": null
+    }
+  ],
+  "since_then": [],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "preprint",
+      "title": "SAMPLE: A proof of an open problem on sums of sets of whole numbers",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/2610.99001",
+      "doi": null,
+      "published_at": "2026-10-13T08:00:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "kind": "proof",
+      "title": "SAMPLE: SumSets.lean, the Lean proof file",
+      "publisher": "GitHub",
+      "url": "https://github.com/marlow-labs-sample/sumsets-proof/blob/main/SumSets.lean",
+      "doi": null,
+      "published_at": "2026-10-13",
+      "seen_as": "fetched",
+      "added": "2026-10-14"
+    }
+  ],
+  "reactions": [],
+  "artefacts": {
+    "doi": [],
+    "arxiv": [
+      "2610.99001"
+    ],
+    "lean": [
+      "https://github.com/marlow-labs-sample/sumsets-proof/blob/main/SumSets.lean"
+    ],
+    "trial": [],
+    "pdb": []
+  },
+  "figure": null,
+  "who": [
+    {
+      "name": "Marlow Labs (SAMPLE)",
+      "ror": null
+    }
+  ],
+  "terms": [
+    "proof-assistant"
+  ],
+  "related": [
+    "math-2026-0140",
+    "math-2026-0131"
+  ],
+  "first_published": "2026-10-13",
+  "first_brief": "2026-10-14",
+  "briefs": [
+    "2026-10-14"
+  ],
+  "history": false,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-14"
+}

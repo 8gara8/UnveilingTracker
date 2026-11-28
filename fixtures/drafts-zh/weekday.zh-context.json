@@ -1,0 +1,1339 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "deadline": "2026-10-14T03:55:18+08:00",
+  "strings": [
+    {
+      "key": "lead.0",
+      "en": "Scholars read the writing inside a sealed ancient scroll without opening it.",
+      "kind": "lead",
+      "cap_chars": 108,
+      "group": {
+        "id": "lead",
+        "cap_chars": 108
+      }
+    },
+    {
+      "key": "lead.1",
+      "en": "A lab measured a protein that an AI model had predicted, and the shape matched.",
+      "kind": "lead",
+      "cap_chars": 108,
+      "group": {
+        "id": "lead",
+        "cap_chars": 108
+      }
+    },
+    {
+      "key": "lead.2",
+      "en": "A publisher pulled many papers with undisclosed AI text, and a research council made its AI rule final.",
+      "kind": "lead",
+      "cap_chars": 108,
+      "group": {
+        "id": "lead",
+        "cap_chars": 108
+      }
+    },
+    {
+      "key": "new.new-1.title",
+      "en": "SAMPLE: A sealed scroll is read without being opened",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "new.new-1.explainer.found",
+      "en": "A team at Eastvale University read about 1,800 Greek letters inside a papyrus scroll that cannot be unrolled. The scroll came from the library at Herculaneum. The letters fill six columns of text, and the passage is part of a prose work on friendship.",
+      "kind": "part",
+      "cap_chars": 99,
+      "group": {
+        "id": "new.new-1.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "new.new-1.explainer.matters",
+      "en": "Hundreds of scrolls from the same library are still sealed. A method that reads them without opening them leaves each scroll whole. Scholars could then study many scrolls, not only this one. One expert calls it the first whole passage of connected prose from a sealed scroll.",
+      "kind": "part",
+      "cap_chars": 90,
+      "group": {
+        "id": "new.new-1.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "new.new-1.explainer.ai_helped",
+      "en": "Eastvale University built a model called the Ink Reader. The team scanned the scroll with X-rays and flattened its layers in software, a step called virtual unwrapping. The Ink Reader, trained on small patches where ink had been found by hand, then marked the ink in the scans. People read the marked letters.",
+      "kind": "part",
+      "cap_chars": 108,
+      "group": {
+        "id": "new.new-1.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "new.new-1.explainer.how_sure",
+      "en": "Checked. Nature published the paper after peer review. Scholars in two countries, outside the Eastvale team, checked the readings. Two experts quoted here, at Ravenhurst University and the Coldwater Institute, call the readings careful.",
+      "kind": "part",
+      "cap_chars": 108,
+      "group": {
+        "id": "new.new-1.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "new.new-1.explainer.background",
+      "en": "Mount Vesuvius erupted in AD 79 and buried the Roman town of Herculaneum. The eruption charred hundreds of papyrus scrolls in its library. None of them can be unrolled.",
+      "kind": "part",
+      "cap_chars": 63,
+      "group": {
+        "id": "new.new-1.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "new.new-1.explainer.could_lead",
+      "en": "The same method could open other sealed scrolls and bring back books that no one has read since the eruption. Scholars may then learn what the library held.",
+      "kind": "part",
+      "cap_chars": 63,
+      "group": {
+        "id": "new.new-1.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "new.new-1.figure.alt",
+      "en": "A flattened scan of one scroll layer, with the ink the model found marked in yellow over a column of Greek letters.",
+      "kind": "alt",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "new.new-2.title",
+      "en": "SAMPLE: A lab measures a protein that an AI had predicted",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "new.new-2.explainer.found",
+      "en": "A second lab measured the shape of a protein complex and found that an AI model had predicted it correctly.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "new.new-2.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "new.new-2.explainer.matters",
+      "en": "A protein's shape shows how it works and how a drug might fit. Measuring a shape is slow.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "new.new-2.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "new.new-2.explainer.ai_helped",
+      "en": "Halden Research built the model, Halden Fold. It posted its prediction before anyone had measured the complex.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "new.new-2.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "new.new-2.explainer.how_sure",
+      "en": "Confirmed. PNAS published the measured structure, which matches the prediction in every chain. Halden Research did not do the measurement.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "new.new-2.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "new.new-2.explainer.background",
+      "en": "The lab used cryo-electron microscopy, which images frozen molecules, to measure the complex. A first safety trial of a drug that binds the complex is registered as NCT09999002.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "new.new-2.explainer.could_lead",
+      "en": "If more predictions match, AI could shorten the search for new medicines.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "new.new-2.rung.1",
+      "en": "A second lab measured the structure and found the prediction correct.",
+      "kind": "note",
+      "cap_chars": 45,
+      "group": null
+    },
+    {
+      "key": "new.new-3.title",
+      "en": "SAMPLE: Example Press retracts 84 papers with undisclosed AI text",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "new.new-3.explainer.found",
+      "en": "Example Press retracted 84 papers in nine journals. The text and images in these papers came from an AI tool that the authors did not disclose.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "new.new-3.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "new.new-3.explainer.matters",
+      "en": "Other researchers may have cited these papers, so the harm can spread beyond the journals.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "new.new-3.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "new.new-3.explainer.ai_helped",
+      "en": "An AI tool made the text and images. The publisher's notices do not name the tool.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "new.new-3.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "new.new-3.explainer.how_sure",
+      "en": "Checked. Example Press, the publisher of the papers, says so in its own statement and in two retraction notices.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "new.new-3.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "new.new-3.explainer.background",
+      "en": "A retraction notice tells readers that a paper should no longer be relied on.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "new.new-3.explainer.could_lead",
+      "en": "Publishers could check for undisclosed AI text before they accept a paper.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "new.new-4.title",
+      "en": "SAMPLE: An AI lab claims a proof of an open problem",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "new.new-4.explainer.found",
+      "en": "Marlow Labs says its AI system found a proof of an open problem about sums of sets of whole numbers.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "new.new-4.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "new.new-4.explainer.matters",
+      "en": "A proof would settle a question that mathematicians had left open.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "new.new-4.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "new.new-4.explainer.ai_helped",
+      "en": "Marlow Labs built the Marlow Prover. The lab says the system found the proof with no human step in the argument.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "new.new-4.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "new.new-4.explainer.how_sure",
+      "en": "Preprint. arXiv hosts the paper, which has not been peer reviewed. Marlow Labs is the source of the claim.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "new.new-4.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "new.new-4.explainer.background",
+      "en": "A Lean file posted with the paper lets a proof assistant check the argument by machine.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "new.new-4.explainer.could_lead",
+      "en": "If the Lean file checks, the proof could be accepted without waiting long for referees.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "returning.soc-2026-0145.update",
+      "en": "The council published its final rule. From 1 January, applicants must say if AI tools helped write any part of a proposal. The final rule covers every part of a proposal, not only the summary.",
+      "kind": "line",
+      "cap_chars": 108,
+      "group": null
+    },
+    {
+      "key": "rung.chem-2026-0142",
+      "en": "An independent lab repeated the work and got a matching result.",
+      "kind": "note",
+      "cap_chars": 45,
+      "group": null
+    },
+    {
+      "key": "ideas.0",
+      "en": "Oren Nominal (SAMPLE) argues that journals should let AI check every submitted proof before human review begins.",
+      "kind": "line",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "ideas.1",
+      "en": "Sana Provisional (SAMPLE) argues that reviewers should be told plainly what they may share with AI tools.",
+      "kind": "line",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "also.0",
+      "en": "SAMPLE: A model predicts monsoon rainfall weeks ahead",
+      "kind": "line",
+      "cap_chars": 36,
+      "group": null
+    },
+    {
+      "key": "also.1",
+      "en": "SAMPLE: A public dataset of ancient inscriptions read with machine help",
+      "kind": "line",
+      "cap_chars": 36,
+      "group": null
+    },
+    {
+      "key": "corrections.0.after",
+      "en": "A tiling covers a surface with copies of shapes and leaves no gaps. A floor of square tiles repeats one pattern. This proof is about tiles that never do that, on the flat plane only.",
+      "kind": "long",
+      "cap_chars": 300,
+      "group": null
+    },
+    {
+      "key": "corrections.0.reason",
+      "en": "The paper proves the result for the flat plane only. The first text did not say so, and a reader reported it.",
+      "kind": "line",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "corrections.1.after",
+      "en": "Applied. The Meridian Weather Service says it runs the model alongside its own system and has not replaced that system. Science published the paper after peer review, and Larch Weather Systems, the maker, helped write it. The tests used past weather only, so live forecasts may differ.",
+      "kind": "long",
+      "cap_chars": 300,
+      "group": null
+    },
+    {
+      "key": "corrections.1.reason",
+      "en": "The weather service's statement says the model runs alongside its own system and has not replaced it. The first text said the service relies on the model.",
+      "kind": "line",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "reports.R-0002.reason",
+      "en": "The paper proves the result for the plane only. The first text did not say so, so we wrote a clarification.",
+      "kind": "line",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.soc-2026-0145.title",
+      "en": "SAMPLE: A research council plans to ask applicants about AI use",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "backlog.soc-2026-0145.explainer.found",
+      "en": "The Aldgate Research Council published a draft rule on AI in grant proposals. Applicants would have to say if AI tools helped write any part of a proposal. The draft asks for this statement in the proposal summary only. Comments are open until the end of the year.",
+      "kind": "part",
+      "cap_chars": 99,
+      "group": {
+        "id": "backlog.soc-2026-0145.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0145.explainer.matters",
+      "en": "Research councils decide who receives funding. A rule on AI use tells applicants what they must disclose, and it tells reviewers what they are reading. Other funders could copy a rule like this one, so its wording may matter far beyond one council.",
+      "kind": "part",
+      "cap_chars": 90,
+      "group": {
+        "id": "backlog.soc-2026-0145.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0145.explainer.ai_helped",
+      "en": "No AI system is named in the draft. The rule is about AI tools in general: it covers any tool that helped write a proposal. The council asks applicants to say what help they had, not which tool gave it.",
+      "kind": "part",
+      "cap_chars": 108,
+      "group": {
+        "id": "backlog.soc-2026-0145.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0145.explainer.how_sure",
+      "en": "Claimed. The Aldgate Research Council states the draft in its own announcement. It is a proposal, not yet a rule, and the council may change it after the comment period closes. No other source we read says how the council will act.",
+      "kind": "part",
+      "cap_chars": 108,
+      "group": {
+        "id": "backlog.soc-2026-0145.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0145.explainer.background",
+      "en": "Funding councils receive many proposals each year. Writers use many tools, from spell checkers to AI chatbots. A disclosure rule asks them to say what help they had.",
+      "kind": "part",
+      "cap_chars": 63,
+      "group": {
+        "id": "backlog.soc-2026-0145.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0145.explainer.could_lead",
+      "en": "A final rule could set a pattern for other funders. It might also push applicants to hide their use of AI if the rule is unclear. Clear examples in the rule could prevent that.",
+      "kind": "part",
+      "cap_chars": 63,
+      "group": {
+        "id": "backlog.soc-2026-0145.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.chem-2026-0142.title",
+      "en": "SAMPLE: A robotic lab finds a cheap metal mixture that splits water",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "backlog.chem-2026-0142.explainer.found",
+      "en": "A robotic lab at Eastvale University tested 200 mixtures of common metals in six weeks. One mixture sped up the splitting of water into hydrogen almost as well as platinum does.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.chem-2026-0142.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.chem-2026-0142.explainer.matters",
+      "en": "Platinum is rare. A cheap mixture that works nearly as well could make hydrogen from water less costly.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.chem-2026-0142.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.chem-2026-0142.explainer.ai_helped",
+      "en": "Marlow Labs built Marlow Selector, which chose which mixtures to try next. Robot arms mixed and tested the samples.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.chem-2026-0142.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.chem-2026-0142.explainer.how_sure",
+      "en": "Checked. The Eastvale Journal of Materials published the paper. The tests ran in one lab, and Marlow Labs, the maker of the AI system, helped write it.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.chem-2026-0142.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.chem-2026-0142.explainer.background",
+      "en": "Splitting water gives hydrogen. The reaction needs a material that speeds it up, and platinum is a common choice.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.chem-2026-0142.explainer.could_lead",
+      "en": "Robot labs could search many more mixtures in the same time and find other cheap materials.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.math-2026-0140.title",
+      "en": "SAMPLE: Tiles that fill a surface only without repeating",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "backlog.math-2026-0140.explainer.found",
+      "en": "Two mathematicians at Eastvale University proved that tiles of one kind can fill a flat surface only in patterns that never repeat. Mathematicians had left this question open since 1968. The proof runs to 38 pages and needs no computer search. Other mathematicians can follow every step of it by hand, without special tools.",
+      "kind": "part",
+      "cap_chars": 99,
+      "group": {
+        "id": "backlog.math-2026-0140.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.math-2026-0140.explainer.matters",
+      "en": "Tilings appear in computer science and in the study of materials. A proof that some tiles can never form a repeating pattern tells designers what such patterns can and cannot do. It settles a question that had stood since 1968, and it gives researchers a new method to use.",
+      "kind": "part",
+      "cap_chars": 90,
+      "group": {
+        "id": "backlog.math-2026-0140.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.math-2026-0140.explainer.how_sure",
+      "en": "Checked. The Journal of Tiling Theory published the paper after peer review. Two mathematicians who were not on the paper, at Kestrel College and Northgate University, say they read the proof and found no gap. Their words are quoted on this page. The result stands on the journal's review and their reading, not on any claim by the authors.",
+      "kind": "part",
+      "cap_chars": 108,
+      "group": {
+        "id": "backlog.math-2026-0140.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.math-2026-0140.explainer.background",
+      "en": "A tiling covers a surface with copies of shapes and leaves no gaps. A floor of square tiles repeats the same pattern again and again. This proof is about tiles that can never do that.",
+      "kind": "part",
+      "cap_chars": 63,
+      "group": {
+        "id": "backlog.math-2026-0140.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.math-2026-0140.explainer.could_lead",
+      "en": "The method could help with the three-dimensional case, which is still open. It might also help scientists who study materials with patterns that never repeat, and designers who need such patterns in their work.",
+      "kind": "part",
+      "cap_chars": 63,
+      "group": {
+        "id": "backlog.math-2026-0140.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.earth-2026-0141.title",
+      "en": "SAMPLE: An AI model forecasts the weather ten days ahead",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "backlog.earth-2026-0141.explainer.found",
+      "en": "Larch Weather Systems built an AI model, Larch Forecast, that predicts the weather up to ten days ahead. In tests on two years of past weather, its ten-day forecasts had about 12 per cent fewer errors. The comparison was with numerical weather prediction, the standard method.",
+      "kind": "part",
+      "cap_chars": 99,
+      "group": {
+        "id": "backlog.earth-2026-0141.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.earth-2026-0141.explainer.matters",
+      "en": "Forecasts guide farmers, airlines and emergency plans. Fewer errors ten days out gives people more time to prepare for storms and heat. A small gain in accuracy reaches many people at once. Weather agencies pay close attention to any method that beats the standard one.",
+      "kind": "part",
+      "cap_chars": 90,
+      "group": {
+        "id": "backlog.earth-2026-0141.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.earth-2026-0141.explainer.ai_helped",
+      "en": "Larch Weather Systems built Larch Forecast. The model learns from past weather records, so it finds patterns in them instead of solving the equations of the air. The company also helped write the paper. The tests in the paper are the company's own.",
+      "kind": "part",
+      "cap_chars": 108,
+      "group": {
+        "id": "backlog.earth-2026-0141.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.earth-2026-0141.explainer.how_sure",
+      "en": "Applied. The Meridian Weather Service says it now relies on the model for its daily forecasts. Science published the paper after peer review, and Larch Weather Systems, the maker, helped write it. The tests used past weather only, so live forecasts may differ.",
+      "kind": "part",
+      "cap_chars": 108,
+      "group": {
+        "id": "backlog.earth-2026-0141.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.earth-2026-0141.explainer.background",
+      "en": "For many years, weather agencies have forecast by solving physical equations on large computers. Tests on past weather show how a new model would have done on days that are already known.",
+      "kind": "part",
+      "cap_chars": 63,
+      "group": {
+        "id": "backlog.earth-2026-0141.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.earth-2026-0141.explainer.could_lead",
+      "en": "If the gain holds in other seasons and other places, forecasters could trust longer forecasts and warn people earlier. Outside teams may test the model next, on live forecasts and in other regions.",
+      "kind": "part",
+      "cap_chars": 63,
+      "group": {
+        "id": "backlog.earth-2026-0141.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.math-2026-0131.title",
+      "en": "SAMPLE: An AI checker flags a gap in a published proof",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "backlog.math-2026-0131.explainer.found",
+      "en": "Marlow Labs says its AI checker, Gapfinder, read a published proof in number theory and flagged a gap in one step.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.math-2026-0131.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.math-2026-0131.explainer.matters",
+      "en": "Mathematicians rely on checks like this to trust long proofs, so a flagged gap needs a careful answer.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.math-2026-0131.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.math-2026-0131.explainer.ai_helped",
+      "en": "Marlow Labs built Gapfinder, which found the gap with no human help.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.math-2026-0131.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.math-2026-0131.explainer.how_sure",
+      "en": "Preprint. arXiv hosts the paper, which has not been peer reviewed. Marlow Labs, the maker of the checker, is the source of the claim.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.math-2026-0131.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.math-2026-0131.explainer.background",
+      "en": "A published proof is one that a journal has accepted.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.math-2026-0131.explainer.could_lead",
+      "en": "If the gap is real, the authors could repair the step or withdraw the proof.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.math-2026-0131.rung.1",
+      "en": "Kestrel College says the authors reject the claim and say the flagged step is correct.",
+      "kind": "note",
+      "cap_chars": 45,
+      "group": null
+    },
+    {
+      "key": "backlog.bio-2026-0143.title",
+      "en": "SAMPLE: An AI model proposes a new antibiotic that works in mice",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "backlog.bio-2026-0143.explainer.found",
+      "en": "An AI model proposed a new antibiotic that cleared a drug-resistant skin infection in 8 of 10 mice. The model, Halden Design, ranked about 12 million molecules. The team made and tested 40 of the top ones. Three of the 40 stopped the growth of drug-resistant bacteria in dishes.",
+      "kind": "part",
+      "cap_chars": 99,
+      "group": {
+        "id": "backlog.bio-2026-0143.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.bio-2026-0143.explainer.matters",
+      "en": "Antimicrobial resistance makes some infections hard to treat, and doctors need new antibiotics. A first safety trial of the compound in people is registered as NCT09999001. The trial plans to enrol 24 healthy volunteers. It tests safety, not cure.",
+      "kind": "part",
+      "cap_chars": 90,
+      "group": {
+        "id": "backlog.bio-2026-0143.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.bio-2026-0143.explainer.ai_helped",
+      "en": "Halden Research built Halden Design, which ranks molecules by their chance of killing drug-resistant bacteria. The model proposed which molecules to make. People made them and ran every test. The Coldwater Institute ran the mouse tests and runs the safety trial.",
+      "kind": "part",
+      "cap_chars": 108,
+      "group": {
+        "id": "backlog.bio-2026-0143.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.bio-2026-0143.explainer.how_sure",
+      "en": "Checked. Cell published the paper after peer review. Halden Research, which built the model, helped write the paper, and no other lab has repeated the tests. The Coldwater Institute says it ran the mouse tests and runs the first safety trial.",
+      "kind": "part",
+      "cap_chars": 108,
+      "group": {
+        "id": "backlog.bio-2026-0143.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.bio-2026-0143.explainer.background",
+      "en": "Drug makers once found antibiotics by testing natural samples one by one. Computers can now rank a huge list of molecules before anyone makes one. That lets labs test only the best candidates.",
+      "kind": "part",
+      "cap_chars": 63,
+      "group": {
+        "id": "backlog.bio-2026-0143.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.bio-2026-0143.explainer.could_lead",
+      "en": "If later trials go well, the compound could become a treatment for drug-resistant infections. It might also show that AI can find other new antibiotics. First, other labs must repeat the tests.",
+      "kind": "part",
+      "cap_chars": 63,
+      "group": {
+        "id": "backlog.bio-2026-0143.explainer",
+        "cap_chars": 504
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0144.title",
+      "en": "SAMPLE: Reviewers shared unpublished papers with an AI chatbot",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "backlog.soc-2026-0144.explainer.found",
+      "en": "The journal Sample Review found that reviewers pasted the text of 31 unpublished manuscripts into a public AI chatbot to help write their reports.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.soc-2026-0144.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0144.explainer.matters",
+      "en": "Authors send unpublished work to a journal in confidence. Pasting it into a public tool breaks that trust and may expose the work.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.soc-2026-0144.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0144.explainer.ai_helped",
+      "en": "Reviewers used an AI chatbot to help write reports. Sample Review does not name the chatbot.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.soc-2026-0144.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0144.explainer.how_sure",
+      "en": "Checked. Sample Review, the journal involved, says so in its own statement and in an editorial note.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.soc-2026-0144.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0144.explainer.background",
+      "en": "Peer review is the step where outside experts judge a paper before it is published.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.soc-2026-0144.explainer.could_lead",
+      "en": "Journals could write clear rules and tell reviewers what they may share.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.phys-2026-0134.title",
+      "en": "SAMPLE: A robot lab reports a magnetic material that keeps its strength",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "backlog.phys-2026-0134.explainer.found",
+      "en": "A robot lab run by an AI planner reported a new magnetic material that keeps its strength up to 400 degrees.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.phys-2026-0134.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.phys-2026-0134.explainer.matters",
+      "en": "Strong magnets that work in the heat could help motors and generators, so a new material with that property would be useful.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.phys-2026-0134.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.phys-2026-0134.explainer.ai_helped",
+      "en": "Hartwell Materials Lab built the Cobalt Planner, which chose each sample to make next. Robots made and tested the samples.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.phys-2026-0134.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.phys-2026-0134.explainer.how_sure",
+      "en": "Checked. Sample Physics Letters published the paper after peer review. Hartwell Materials Lab, the maker of the planner, wrote the paper.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.phys-2026-0134.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.phys-2026-0134.explainer.background",
+      "en": "A magnet loses strength as it gets hot, and each material has its own limit.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.phys-2026-0134.explainer.could_lead",
+      "en": "If other labs repeat the result, the material could be tried in real machines.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.soc-2026-0146.title",
+      "en": "SAMPLE: An open dataset of 40,000 AI-run survey interviews",
+      "kind": "title",
+      "cap_chars": 22,
+      "group": null
+    },
+    {
+      "key": "backlog.soc-2026-0146.explainer.found",
+      "en": "The Coldwater Institute survey lab released 40,000 interviews that an AI interviewer ran by chat with adult volunteers.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.soc-2026-0146.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0146.explainer.matters",
+      "en": "Surveys take a great deal of time. A shared dataset lets other researchers study how AI interviewers work.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.soc-2026-0146.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0146.explainer.ai_helped",
+      "en": "The Coldwater Institute survey lab built Survey Voice, which asked the questions and followed up on answers. People wrote the questions and checked a sample of the transcripts.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.soc-2026-0146.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0146.explainer.how_sure",
+      "en": "Preprint. SSRN hosts the paper, which has not been peer reviewed. The Coldwater Institute survey lab, which built the system, is the source.",
+      "kind": "part",
+      "cap_chars": 180,
+      "group": {
+        "id": "backlog.soc-2026-0146.explainer",
+        "cap_chars": 180
+      }
+    },
+    {
+      "key": "backlog.soc-2026-0146.explainer.background",
+      "en": "Researchers use interviews to learn what people think and why.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    },
+    {
+      "key": "backlog.soc-2026-0146.explainer.could_lead",
+      "en": "AI interviewers could make large surveys cheaper, if their answers match those of people.",
+      "kind": "part",
+      "cap_chars": 72,
+      "group": null
+    }
+  ],
+  "terms": [
+    {
+      "id": "antimicrobial-resistance",
+      "en": "antimicrobial resistance",
+      "definition": "When germs stop responding to the drugs that used to kill them.",
+      "zh": null,
+      "official": null,
+      "cap_chars": 72
+    },
+    {
+      "id": "cryo-electron-microscopy",
+      "en": "cryo-electron microscopy",
+      "definition": "A way to see the shape of a molecule by imaging it frozen in ice with a beam of electrons.",
+      "zh": null,
+      "official": null,
+      "cap_chars": 72
+    },
+    {
+      "id": "numerical-weather-prediction",
+      "en": "numerical weather prediction",
+      "definition": "The standard way to forecast weather: computers solve the equations of the air and sea, starting from today's measurements.",
+      "zh": null,
+      "official": null,
+      "cap_chars": 72
+    },
+    {
+      "id": "papyrus",
+      "en": "papyrus",
+      "definition": "A writing sheet made from the papyrus plant, used in the ancient Mediterranean world.",
+      "zh": null,
+      "official": null,
+      "cap_chars": 72
+    },
+    {
+      "id": "proof-assistant",
+      "en": "proof assistant",
+      "definition": "A computer program that checks, step by step, that a mathematical proof follows the rules of logic.",
+      "zh": null,
+      "official": null,
+      "cap_chars": 72
+    },
+    {
+      "id": "virtual-unwrapping",
+      "en": "virtual unwrapping",
+      "definition": "Scanning a rolled scroll and flattening its layers on a computer, so the text can be read without unrolling it.",
+      "zh": null,
+      "official": null,
+      "cap_chars": 72
+    }
+  ],
+  "fixed": [
+    {
+      "en": "AI",
+      "zh": "AI",
+      "keys": [
+        "lead.1",
+        "lead.2",
+        "new.new-2.title",
+        "new.new-2.explainer.found",
+        "new.new-2.explainer.could_lead",
+        "new.new-3.title",
+        "new.new-3.explainer.found",
+        "new.new-3.explainer.ai_helped",
+        "new.new-3.explainer.could_lead",
+        "new.new-4.title",
+        "new.new-4.explainer.found",
+        "returning.soc-2026-0145.update",
+        "ideas.0",
+        "ideas.1",
+        "backlog.soc-2026-0145.title",
+        "backlog.soc-2026-0145.explainer.found",
+        "backlog.soc-2026-0145.explainer.matters",
+        "backlog.soc-2026-0145.explainer.ai_helped",
+        "backlog.soc-2026-0145.explainer.background",
+        "backlog.soc-2026-0145.explainer.could_lead",
+        "backlog.chem-2026-0142.explainer.how_sure",
+        "backlog.earth-2026-0141.title",
+        "backlog.earth-2026-0141.explainer.found",
+        "backlog.math-2026-0131.title",
+        "backlog.math-2026-0131.explainer.found",
+        "backlog.bio-2026-0143.title",
+        "backlog.bio-2026-0143.explainer.found",
+        "backlog.bio-2026-0143.explainer.could_lead",
+        "backlog.soc-2026-0144.title",
+        "backlog.soc-2026-0144.explainer.found",
+        "backlog.soc-2026-0144.explainer.ai_helped",
+        "backlog.phys-2026-0134.explainer.found",
+        "backlog.soc-2026-0146.title",
+        "backlog.soc-2026-0146.explainer.found",
+        "backlog.soc-2026-0146.explainer.matters",
+        "backlog.soc-2026-0146.explainer.could_lead"
+      ]
+    },
+    {
+      "en": "model",
+      "zh": "模型",
+      "keys": [
+        "lead.1",
+        "new.new-1.explainer.ai_helped",
+        "new.new-1.figure.alt",
+        "new.new-2.explainer.found",
+        "new.new-2.explainer.ai_helped",
+        "also.0",
+        "corrections.1.after",
+        "corrections.1.reason",
+        "backlog.earth-2026-0141.title",
+        "backlog.earth-2026-0141.explainer.found",
+        "backlog.earth-2026-0141.explainer.ai_helped",
+        "backlog.earth-2026-0141.explainer.how_sure",
+        "backlog.earth-2026-0141.explainer.background",
+        "backlog.earth-2026-0141.explainer.could_lead",
+        "backlog.bio-2026-0143.title",
+        "backlog.bio-2026-0143.explainer.found",
+        "backlog.bio-2026-0143.explainer.ai_helped",
+        "backlog.bio-2026-0143.explainer.how_sure"
+      ]
+    },
+    {
+      "en": "dataset",
+      "zh": "資料集",
+      "keys": [
+        "also.1",
+        "backlog.soc-2026-0146.title",
+        "backlog.soc-2026-0146.explainer.matters"
+      ]
+    },
+    {
+      "en": "preprint",
+      "zh": "預印本",
+      "keys": [
+        "new.new-4.explainer.how_sure",
+        "backlog.math-2026-0131.explainer.how_sure",
+        "backlog.soc-2026-0146.explainer.how_sure"
+      ]
+    },
+    {
+      "en": "peer review",
+      "zh": "同儕審查",
+      "keys": [
+        "new.new-1.explainer.how_sure",
+        "corrections.1.after",
+        "backlog.math-2026-0140.explainer.how_sure",
+        "backlog.earth-2026-0141.explainer.how_sure",
+        "backlog.bio-2026-0143.explainer.how_sure",
+        "backlog.soc-2026-0144.explainer.background",
+        "backlog.phys-2026-0134.explainer.how_sure"
+      ]
+    },
+    {
+      "en": "journal",
+      "zh": "期刊",
+      "keys": [
+        "new.new-3.explainer.found",
+        "new.new-3.explainer.matters",
+        "ideas.0",
+        "backlog.chem-2026-0142.explainer.how_sure",
+        "backlog.math-2026-0140.explainer.how_sure",
+        "backlog.math-2026-0131.explainer.background",
+        "backlog.soc-2026-0144.explainer.found",
+        "backlog.soc-2026-0144.explainer.matters",
+        "backlog.soc-2026-0144.explainer.how_sure",
+        "backlog.soc-2026-0144.explainer.could_lead"
+      ]
+    },
+    {
+      "en": "protein",
+      "zh": "蛋白質",
+      "keys": [
+        "lead.1",
+        "new.new-2.title",
+        "new.new-2.explainer.found",
+        "new.new-2.explainer.matters"
+      ]
+    },
+    {
+      "en": "material",
+      "zh": "材料",
+      "keys": [
+        "backlog.chem-2026-0142.explainer.how_sure",
+        "backlog.chem-2026-0142.explainer.background",
+        "backlog.chem-2026-0142.explainer.could_lead",
+        "backlog.phys-2026-0134.title",
+        "backlog.phys-2026-0134.explainer.found",
+        "backlog.phys-2026-0134.explainer.matters",
+        "backlog.phys-2026-0134.explainer.ai_helped",
+        "backlog.phys-2026-0134.explainer.how_sure",
+        "backlog.phys-2026-0134.explainer.background",
+        "backlog.phys-2026-0134.explainer.could_lead"
+      ]
+    },
+    {
+      "en": "proof",
+      "zh": "證明",
+      "keys": [
+        "new.new-4.title",
+        "new.new-4.explainer.found",
+        "new.new-4.explainer.matters",
+        "new.new-4.explainer.ai_helped",
+        "new.new-4.explainer.background",
+        "new.new-4.explainer.could_lead",
+        "corrections.0.after",
+        "backlog.math-2026-0140.explainer.found",
+        "backlog.math-2026-0140.explainer.matters",
+        "backlog.math-2026-0140.explainer.how_sure",
+        "backlog.math-2026-0140.explainer.background",
+        "backlog.math-2026-0131.title",
+        "backlog.math-2026-0131.explainer.found",
+        "backlog.math-2026-0131.explainer.matters",
+        "backlog.math-2026-0131.explainer.background",
+        "backlog.math-2026-0131.explainer.could_lead"
+      ]
+    },
+    {
+      "en": "papyrus",
+      "zh": "莎草紙",
+      "keys": [
+        "new.new-1.explainer.found",
+        "new.new-1.explainer.background",
+        "terms.papyrus"
+      ]
+    },
+    {
+      "en": "scroll",
+      "zh": "卷軸",
+      "keys": [
+        "lead.0",
+        "new.new-1.title",
+        "new.new-1.explainer.found",
+        "new.new-1.explainer.matters",
+        "new.new-1.explainer.ai_helped",
+        "new.new-1.explainer.background",
+        "new.new-1.explainer.could_lead",
+        "new.new-1.figure.alt",
+        "terms.virtual-unwrapping"
+      ]
+    },
+    {
+      "en": "retraction",
+      "zh": "撤稿",
+      "keys": [
+        "new.new-3.explainer.how_sure",
+        "new.new-3.explainer.background"
+      ]
+    },
+    {
+      "en": "software",
+      "zh": "軟體",
+      "keys": [
+        "new.new-1.explainer.ai_helped"
+      ]
+    }
+  ],
+  "hype": [
+    "革命性",
+    "顛覆性",
+    "劃時代",
+    "前所未有",
+    "史無前例",
+    "驚人",
+    "震撼",
+    "神奇",
+    "典範轉移",
+    "改變一切",
+    "突破"
+  ],
+  "hype_names": [
+    {
+      "en": "Breakthrough Prize",
+      "zh": "突破獎"
+    },
+    {
+      "en": "Breakthrough of the Year",
+      "zh": null
+    },
+    {
+      "en": "Breakthrough Listen",
+      "zh": null
+    },
+    {
+      "en": "Breakthrough Starshot",
+      "zh": null
+    },
+    {
+      "en": "Breakthrough T1D",
+      "zh": null
+    },
+    {
+      "en": "Breakthrough Energy",
+      "zh": null
+    },
+    {
+      "en": "Breakthrough Therapy",
+      "zh": null
+    },
+    {
+      "en": "Breakthrough Devices Program",
+      "zh": null
+    },
+    {
+      "en": "Breakthrough Device",
+      "zh": null
+    }
+  ],
+  "avoid": {
+    "人工智能": "人工智慧",
+    "算法": "演算法",
+    "軟件": "軟體",
+    "視頻": "影片",
+    "芯片": "晶片",
+    "數據庫": "資料庫",
+    "服務器": "伺服器",
+    "激光": "雷射",
+    "納米": "奈米",
+    "硅": "矽",
+    "等離子體": "電漿",
+    "量子比特": "量子位元",
+    "博客": "部落格",
+    "硬件": "硬體",
+    "互聯網": "網際網路",
+    "智能手機": "智慧型手機",
+    "集成電路": "積體電路",
+    "傳感器": "感測器",
+    "分辨率": "解析度",
+    "源代碼": "原始碼",
+    "腦機接口": "腦機介面",
+    "人機交互": "人機互動",
+    "中微子": "微中子",
+    "熒光": "螢光",
+    "艾滋": "愛滋",
+    "阿爾茨海默": "阿茲海默",
+    "耐藥性": "抗藥性",
+    "干細胞": "幹細胞",
+    "干燥": "乾燥",
+    "周期表": "週期表",
+    "篩查": "篩檢",
+    "單克隆": "單株",
+    "多克隆": "多株",
+    "線粒體": "粒線體",
+    "埃博拉": "伊波拉",
+    "同行評議": "同儕審查",
+    "置信區間": "信賴區間",
+    "課題組": "研究團隊",
+    "新西蘭": "紐西蘭",
+    "悉尼": "雪梨",
+    "特朗普": "川普",
+    "英偉達": "輝達",
+    "薛定諤": "薛丁格",
+    "麥克斯韋": "馬克士威",
+    "門捷列夫": "門得列夫",
+    "斯坦福": "史丹佛",
+    "伯克利": "柏克萊",
+    "沙特阿拉伯": "沙烏地阿拉伯",
+    "意大利": "義大利",
+    "肯尼亞": "肯亞",
+    "蒙特利爾": "蒙特婁",
+    "傅里葉": "傅立葉",
+    "盧瑟福": "拉塞福",
+    "玻爾": "波耳",
+    "哈勃": "哈伯",
+    "開普勒": "克卜勒",
+    "萊布尼茨": "萊布尼茲",
+    "坦桑尼亞": "坦尚尼亞",
+    "莫桑比克": "莫三比克",
+    "埃塞俄比亞": "衣索比亞"
+  },
+  "labels": {
+    "Mathematics": "數學",
+    "Physics": "物理",
+    "Chemistry and materials": "化學與材料",
+    "Biology and medicine": "生物與醫學",
+    "Earth and climate": "地球與氣候",
+    "Social science": "社會科學",
+    "Theology and humanities": "神學與人文",
+    "Claimed": "宣稱",
+    "Preprint": "預印本",
+    "Checked": "已查核",
+    "Confirmed": "已證實",
+    "Applied": "已應用",
+    "Disputed": "有爭議",
+    "Retracted": "已撤稿",
+    "AI-proposed": "AI 提出",
+    "AI-solved": "AI 解出",
+    "AI-ran": "AI 執行",
+    "AI-tool": "AI 工具",
+    "AI-checked": "AI 查核",
+    "No AI role": "無 AI 角色",
+    "Landmark": "里程碑",
+    "Major": "重大",
+    "Notable": "值得注意",
+    "Watch": "觀察中"
+  }
+}

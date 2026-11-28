@@ -317,7 +317,7 @@ export interface CorrectionSpec {
 export const WEEKDAY_CORRECTIONS: readonly CorrectionSpec[] = [
   {
     id: "C-0001", finding: "tilings", type: "clarification", path: "explainer.background",
-    after: "A tiling covers a surface with copies of shapes and leaves no gaps. A floor of square tiles repeats the same pattern again and again. This proof is about tiles that can never do that, and it covers the flat plane only.",
+    after: "A tiling covers a surface with copies of shapes and leaves no gaps. A floor of square tiles repeats one pattern. This proof is about tiles that never do that, on the flat plane only.",
     reason: "The paper proves the result for the flat plane only. The first text did not say so, and a reader reported it.",
     source: "tilings-paper", draftReportId: null, answers: "R-0002",
   },

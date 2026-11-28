@@ -1,0 +1,14 @@
+{
+  "urls": [
+    "https://www.eurekalert.org/news-releases/ut-sample-0099"
+  ],
+  "fetched": [],
+  "texts": {
+    "https://eurekalert.org/news-releases/ut-sample-0099": "SAMPLE: Example Lab reports a protein folding result found with a deep learning model\nSAMPLE page, invented for tests and never fetched. The Example Lab reports a result on protein folding. The team checked it twice. A deep learning model ranked the candidate structures."
+  },
+  "seen_as": {
+    "https://eurekalert.org/news-releases/ut-sample-0099": "pack"
+  },
+  "types": {},
+  "resolved": {}
+}

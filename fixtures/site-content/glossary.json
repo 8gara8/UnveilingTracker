@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "terms": [
+    {
+      "id": "antimicrobial-resistance",
+      "en": {
+        "term": "antimicrobial resistance",
+        "definition": "When germs stop responding to the drugs that used to kill them."
+      },
+      "zh": {
+        "term": "抗微生物抗藥性",
+        "definition": "病菌對過去能殺死它們的藥物不再有反應。",
+        "official": "抗微生物抗藥性",
+        "official_url": "https://terms.naer.edu.tw/detail/ut-sample-0101/"
+      },
+      "fields": [
+        "biology"
+      ],
+      "first_finding": "bio-2026-0143",
+      "first_date": "2026-10-09"
+    },
+    {
+      "id": "cryo-electron-microscopy",
+      "en": {
+        "term": "cryo-electron microscopy",
+        "definition": "A way to see the shape of a molecule by imaging it frozen in ice with a beam of electrons."
+      },
+      "zh": {
+        "term": "冷凍電子顯微鏡",
+        "definition": "把分子冷凍在冰中，用電子束成像，藉此看出分子形狀的方法。",
+        "official": null,
+        "official_url": null
+      },
+      "fields": [
+        "biology"
+      ],
+      "first_finding": "bio-2026-0149",
+      "first_date": "2026-10-14"
+    },
+    {
+      "id": "numerical-weather-prediction",
+      "en": {
+        "term": "numerical weather prediction",
+        "definition": "The standard way to forecast weather: computers solve the equations of the air and sea, starting from today's measurements."
+      },
+      "zh": {
+        "term": "數值天氣預報",
+        "definition": "預報天氣的標準方法：電腦從今天的測量資料出發，求解大氣和海洋的方程式。",
+        "official": "數值天氣預報",
+        "official_url": "https://terms.naer.edu.tw/detail/ut-sample-0102/"
+      },
+      "fields": [
+        "earth"
+      ],
+      "first_finding": "earth-2026-0141",
+      "first_date": "2026-10-12"
+    },
+    {
+      "id": "papyrus",
+      "en": {
+        "term": "papyrus",
+        "definition": "A writing sheet made from the papyrus plant, used in the ancient Mediterranean world."
+      },
+      "zh": {
+        "term": "莎草紙",
+        "definition": "用紙莎草製成的書寫紙張，用於古代地中海世界。",
+        "official": null,
+        "official_url": null
+      },
+      "fields": [
+        "humanities"
+      ],
+      "first_finding": "hum-2026-0148",
+      "first_date": "2026-10-14"
+    },
+    {
+      "id": "plasma",
+      "en": {
+        "term": "plasma",
+        "definition": "A very hot gas whose atoms have lost electrons, the state of matter in the sun and in fusion machines."
+      },
+      "zh": {
+        "term": "電漿",
+        "definition": "原子已失去電子的極高溫氣體，是太陽和核融合裝置中的物質狀態。",
+        "official": "電漿",
+        "official_url": "https://terms.naer.edu.tw/detail/ut-sample-0103/"
+      },
+      "fields": [
+        "physics"
+      ],
+      "first_finding": "phys-2026-0147",
+      "first_date": "2026-10-12"
+    },
+    {
+      "id": "proof-assistant",
+      "en": {
+        "term": "proof assistant",
+        "definition": "A computer program that checks, step by step, that a mathematical proof follows the rules of logic."
+      },
+      "zh": {
+        "term": "證明輔助工具",
+        "definition": "一種電腦程式，逐步檢查數學證明是否遵守邏輯規則。",
+        "official": null,
+        "official_url": null
+      },
+      "fields": [
+        "mathematics"
+      ],
+      "first_finding": "math-2026-0151",
+      "first_date": "2026-10-14"
+    },
+    {
+      "id": "virtual-unwrapping",
+      "en": {
+        "term": "virtual unwrapping",
+        "definition": "Scanning a rolled scroll and flattening its layers on a computer, so the text can be read without unrolling it."
+      },
+      "zh": {
+        "term": "虛擬展開",
+        "definition": "掃描捲起的卷軸，並在電腦上把各層攤平，讓文字不必攤開就能閱讀。",
+        "official": null,
+        "official_url": null
+      },
+      "fields": [
+        "humanities"
+      ],
+      "first_finding": "hum-2026-0148",
+      "first_date": "2026-10-14"
+    }
+  ]
+}

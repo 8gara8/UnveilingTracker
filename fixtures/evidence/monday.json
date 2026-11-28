@@ -4,21 +4,21 @@
     "https://pubs.acs.org/doi/10.1021/ut-sample-0052",
     "https://www.tandfonline.com/doi/10.1080/ut-sample-0053",
     "https://link.springer.com/article/10.1007/ut-sample-0020",
-    "https://elifesciences.org/for-the-press/ut-sample-reviewer-ai-chatbot",
-    "https://doi.org/10.1103/ut-sample-0017",
+    "https://www.eurekalert.org/news-releases/ut-sample-reviewer-ai-chatbot",
+    "https://doi.org/10.1007/ut-sample-0017",
     "https://www.fernhill-sample.edu/news/ut-sample-plasma-controller"
   ],
   "fetched": [
-    "https://elifesciences.org/for-the-press/ut-sample-reviewer-ai-chatbot",
-    "https://doi.org/10.1103/ut-sample-0017"
+    "https://www.eurekalert.org/news-releases/ut-sample-reviewer-ai-chatbot",
+    "https://doi.org/10.1007/ut-sample-0017"
   ],
   "texts": {
     "https://science.org/doi/10.1126/ut-sample.0051": "SAMPLE: Small earthquakes found with machine learning\nSAMPLE page, invented for tests and never fetched. A machine learning method found small earthquakes in old seismic records. Seismologists checked a sample by hand.",
     "https://pubs.acs.org/doi/10.1021/ut-sample-0052": "SAMPLE: An autonomous laboratory makes brighter dyes\nSAMPLE page, invented for tests and never fetched. An autonomous laboratory planned and ran its own dye experiments. Chemists checked the best dyes.",
     "https://tandfonline.com/doi/10.1080/ut-sample-0053": "SAMPLE: A random forest reads answers to an open survey question\nSAMPLE page, invented for tests and never fetched. A random forest sorted answers to an open survey question. Two coders checked its sorting.",
     "https://link.springer.com/article/10.1007/ut-sample-0020": "SAMPLE: An AI controller holds a plasma steady in a test machine\nSAMPLE page, invented for tests and never fetched. Fernhill Fusion Group (SAMPLE). An AI controller, the Fernhill Controller, held a plasma steady in a test machine for 90 seconds, three times longer than the standard controller. The controller, built by Fernhill Fusion Group, adjusted the magnets 1,000 times a second. It learned from practice runs. Other groups have not yet repeated the run. The Fernhill Controller was trained by reinforcement learning.\nSAMPLE: An AI controller holds a plasma steady in a test machine\nSAMPLE page, invented for tests and never fetched. Fernhill Fusion Group (SAMPLE). An AI controller, the Fernhill Controller, held a plasma steady in a test machine for 90 seconds, three times longer than the standard controller. The controller, built by Fernhill Fusion Group, adjusted the magnets 1,000 times a second. It learned from practice runs. Other groups have not yet repeated the run. The Fernhill Controller was trained by reinforcement learning.",
-    "https://elifesciences.org/for-the-press/ut-sample-reviewer-ai-chatbot": "SAMPLE: eLife says reviewers shared unpublished papers with an AI chatbot\nSAMPLE page, invented for tests and never fetched. eLife has found that reviewers pasted the text of 31 unpublished manuscripts into a public AI chatbot to help write their reports. eLife has banned the practice and has told the authors. We do not name the chatbot. We have not said how many reviewers were involved.",
-    "https://doi.org/10.1103/ut-sample-0017": "SAMPLE: Retraction: A robot lab reports a new magnetic material\nSAMPLE page, invented for tests and never fetched. Retraction. The authors found errors in the raw data and the paper is retracted. The claim of a new magnetic material is withdrawn.",
+    "https://eurekalert.org/news-releases/ut-sample-reviewer-ai-chatbot": "SAMPLE: Sample Review says reviewers shared unpublished papers with an AI chatbot\nSAMPLE page, invented for tests and never fetched. Sample Review has found that reviewers pasted the text of 31 unpublished manuscripts into a public AI chatbot to help write their reports. Sample Review has banned the practice and has told the authors. We do not name the chatbot. We have not said how many reviewers were involved.",
+    "https://doi.org/10.1007/ut-sample-0017": "SAMPLE: Retraction: A robot lab reports a new magnetic material\nSAMPLE page, invented for tests and never fetched. Retraction. The authors found errors in the raw data and the paper is retracted. The claim of a new magnetic material is withdrawn.",
     "https://fernhill-sample.edu/news/ut-sample-plasma-controller": "SAMPLE: Fernhill team shows AI control of a fusion plasma\nSAMPLE page, invented for tests and never fetched. Fernhill University said its fusion group ran the Fernhill Controller on a test machine. The controller kept the plasma steady for 90 seconds. People set the goal and ran the machine."
   },
   "seen_as": {
@@ -26,8 +26,8 @@
     "https://pubs.acs.org/doi/10.1021/ut-sample-0052": "pack",
     "https://tandfonline.com/doi/10.1080/ut-sample-0053": "pack",
     "https://link.springer.com/article/10.1007/ut-sample-0020": "pack",
-    "https://elifesciences.org/for-the-press/ut-sample-reviewer-ai-chatbot": "fetched",
-    "https://doi.org/10.1103/ut-sample-0017": "fetched",
+    "https://eurekalert.org/news-releases/ut-sample-reviewer-ai-chatbot": "fetched",
+    "https://doi.org/10.1007/ut-sample-0017": "fetched",
     "https://fernhill-sample.edu/news/ut-sample-plasma-controller": "search"
   },
   "types": {
@@ -36,6 +36,6 @@
     ]
   },
   "resolved": {
-    "https://doi.org/10.1103/ut-sample-0017": "https://journals.aps.org/prl/abstract/10.1103/ut-sample-0017"
+    "https://doi.org/10.1007/ut-sample-0017": "https://link.springer.com/article/10.1007/ut-sample-0017"
   }
 }

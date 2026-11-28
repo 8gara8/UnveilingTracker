@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "corrections": [
+    {
+      "id": "C-0001",
+      "date": "2026-10-14",
+      "finding_id": "math-2026-0140",
+      "edition_date": null,
+      "term_id": null,
+      "type": "clarification",
+      "path": "explainer.background",
+      "before": {
+        "en": "A tiling covers a surface with copies of shapes and leaves no gaps. A floor of square tiles repeats the same pattern again and again. This proof is about tiles that can never do that.",
+        "zh": "鋪磚是把形狀複製許多份，蓋滿一個表面，不留空隙。鋪滿方形磁磚的地板，會一再重複同樣的圖案。這份證明談的是永遠做不到這一點的磁磚。"
+      },
+      "after": {
+        "en": "A tiling covers a surface with copies of shapes and leaves no gaps. A floor of square tiles repeats one pattern. This proof is about tiles that never do that, on the flat plane only.",
+        "zh": "鋪磚是把形狀複製許多份，蓋滿一個表面，不留空隙。鋪滿方形磁磚的地板，只重複同一個圖案。這份證明談的是永遠做不到這一點的磁磚，只適用於平面。"
+      },
+      "reason": {
+        "en": "The paper proves the result for the flat plane only. The first text did not say so, and a reader reported it.",
+        "zh": "這篇論文只針對平面證明了這項結果。最初的文字沒有這樣說，一位讀者回報了這件事。"
+      },
+      "source_url": "https://www.cambridge.org/core/journals/ut-sample-journal-of-tiling-theory/article/ut-sample-0013",
+      "trigger": "reader_report",
+      "report_id": "R-0002"
+    },
+    {
+      "id": "C-0002",
+      "date": "2026-10-14",
+      "finding_id": "earth-2026-0141",
+      "edition_date": null,
+      "term_id": null,
+      "type": "correction",
+      "path": "explainer.how_sure",
+      "before": {
+        "en": "Applied. The Meridian Weather Service says it now relies on the model for its daily forecasts. Science published the paper after peer review, and Larch Weather Systems, the maker, helped write it. The tests used past weather only, so live forecasts may differ.",
+        "zh": "已應用。Meridian Weather Service 表示，它現在的每日預報依靠這個模型。Science 在同儕審查後發表了這篇論文，開發者 Larch Weather Systems 也參與撰寫。測試只用了過去的天氣，所以實際預報可能不同。"
+      },
+      "after": {
+        "en": "Applied. The Meridian Weather Service says it runs the model alongside its own system and has not replaced that system. Science published the paper after peer review, and Larch Weather Systems, the maker, helped write it. The tests used past weather only, so live forecasts may differ.",
+        "zh": "已應用。Meridian Weather Service 表示，它讓這個模型和自己的系統並行運作，並沒有取代原有的系統。Science 在同儕審查後發表了這篇論文，開發者 Larch Weather Systems 也參與撰寫。測試只用了過去的天氣，所以實際預報可能不同。"
+      },
+      "reason": {
+        "en": "The weather service's statement says the model runs alongside its own system and has not replaced it. The first text said the service relies on the model.",
+        "zh": "氣象機構的聲明表示，這個模型與它自己的系統並行運作，並沒有取代原有的系統。最初的文字說，這個機構依靠這個模型。"
+      },
+      "source_url": "https://www.meridian-weather-sample.gov/ut-sample/larch-forecast-guidance",
+      "trigger": "reader_report",
+      "report_id": "R-0001"
+    }
+  ]
+}

@@ -1,0 +1,594 @@
+{
+  "schema_version": 1,
+  "editions": [
+    {
+      "date": "2026-10-18",
+      "edition": "full",
+      "published_at": "2026-10-18T03:55:26+08:00",
+      "finding_count": 1,
+      "corrected": false
+    },
+    {
+      "date": "2026-10-17",
+      "edition": "full",
+      "published_at": "2026-10-17T03:51:21+08:00",
+      "finding_count": 0,
+      "corrected": false
+    },
+    {
+      "date": "2026-10-16",
+      "edition": "full",
+      "published_at": "2026-10-16T03:50:43+08:00",
+      "finding_count": 0,
+      "corrected": false
+    },
+    {
+      "date": "2026-10-15",
+      "edition": "data_only",
+      "published_at": "2026-10-15T03:19:50+08:00",
+      "finding_count": 0,
+      "corrected": false
+    },
+    {
+      "date": "2026-10-14",
+      "edition": "full",
+      "published_at": "2026-10-14T03:53:25+08:00",
+      "finding_count": 5,
+      "corrected": false
+    },
+    {
+      "date": "2026-10-13",
+      "edition": "full",
+      "published_at": "2026-10-13T03:54:50+08:00",
+      "finding_count": 4,
+      "corrected": false
+    },
+    {
+      "date": "2026-10-12",
+      "edition": "full",
+      "published_at": "2026-10-12T03:56:53+08:00",
+      "finding_count": 2,
+      "corrected": false
+    }
+  ],
+  "urls": {
+    "https://aldgate-council-sample.gov/ut-sample/ai-disclosure-draft-rule": {
+      "first_cited": "2026-10-09",
+      "refs": [
+        "soc-2026-0145"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": null
+    },
+    "https://aldgate-council-sample.gov/ut-sample/ai-disclosure-final-rule": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "soc-2026-0145",
+        "2026-10-14/brief"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://arxiv.org/abs/2609.99003": {
+      "first_cited": "2026-10-09",
+      "refs": [
+        "math-2026-0131"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": null
+    },
+    "https://arxiv.org/abs/2610.99001": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "math-2026-0151"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://arxiv.org/abs/2610.99002": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "2026-10-14/brief"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://arxiv.org/abs/2610.99004": {
+      "first_cited": "2026-10-17",
+      "refs": [
+        "2026-10-17/brief"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-17",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://arxiv.org/abs/2610.99005": {
+      "first_cited": "2026-10-17",
+      "refs": [
+        "2026-10-17/brief"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-17",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://biorxiv.org/content/10.1101/2026.09.02.990011v1": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "bio-2026-0149"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://cambridge.org/core/journals/ut-sample-journal-of-tiling-theory/article/ut-sample-0013": {
+      "first_cited": "2026-10-13",
+      "refs": [
+        "math-2026-0140"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-13",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://cell.com/cell-reports-medicine/fulltext/ut-sample-0015": {
+      "first_cited": "2026-10-16",
+      "refs": [
+        "bio-2026-0143",
+        "2026-10-16/brief",
+        "2026-10-18/brief"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-16",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://cell.com/cell/abstract/ut-sample-0014": {
+      "first_cited": "2026-10-09",
+      "refs": [
+        "bio-2026-0143",
+        "2026-10-18/brief"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": null
+    },
+    "https://clinicaltrials.gov/study/NCT09999001": {
+      "first_cited": "2026-10-09",
+      "refs": [
+        "bio-2026-0143",
+        "2026-10-18/brief"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": null
+    },
+    "https://clinicaltrials.gov/study/NCT09999002": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "bio-2026-0149"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://coldwater-sample.edu/news/ut-sample-new-antibiotic": {
+      "first_cited": "2026-10-09",
+      "refs": [
+        "bio-2026-0143",
+        "2026-10-18/brief"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": null
+    },
+    "https://doi.org/10.1007/ut-sample-0017": {
+      "first_cited": "2026-10-15",
+      "refs": [
+        "phys-2026-0134"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-15",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://eurekalert.org/news-releases/ut-sample-0003": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "hum-2026-0148"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://eurekalert.org/news-releases/ut-sample-ai-retractions": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "chem-2026-0150"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://eurekalert.org/news-releases/ut-sample-reviewer-ai-chatbot": {
+      "first_cited": "2026-10-13",
+      "refs": [
+        "soc-2026-0144"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-13",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://fernhill-sample.edu/news/ut-sample-plasma-controller": {
+      "first_cited": "2026-10-12",
+      "refs": [
+        "phys-2026-0147"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-12",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://github.com/marlow-labs-sample/sumsets-proof/blob/main/SumSets.lean": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "math-2026-0151"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://huggingface.co/datasets/ut-sample/quillon-bible-draft": {
+      "first_cited": "2026-10-18",
+      "refs": [
+        "hum-2026-0152"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-18",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://link.springer.com/article/10.1007/ut-sample-0005": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "chem-2026-0150"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://link.springer.com/article/10.1007/ut-sample-0006": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "chem-2026-0150"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://link.springer.com/article/10.1007/ut-sample-0008": {
+      "first_cited": "2026-10-13",
+      "refs": [
+        "chem-2026-0142"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-13",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://link.springer.com/article/10.1007/ut-sample-0016": {
+      "first_cited": "2026-10-09",
+      "refs": [
+        "phys-2026-0134"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": null
+    },
+    "https://link.springer.com/article/10.1007/ut-sample-0020": {
+      "first_cited": "2026-10-12",
+      "refs": [
+        "phys-2026-0147"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-12",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://link.springer.com/article/10.1007/ut-sample-0021": {
+      "first_cited": "2026-10-13",
+      "refs": [
+        "soc-2026-0144"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-13",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://math.kestrel-sample.edu/news/ut-sample-reply-to-checker": {
+      "first_cited": "2026-10-09",
+      "refs": [
+        "math-2026-0131"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": null
+    },
+    "https://meridian-weather-sample.gov/ut-sample/larch-forecast-guidance": {
+      "first_cited": "2026-10-12",
+      "refs": [
+        "earth-2026-0141"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-12",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://nature.com/articles/d41586-ut-sample-0002": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "hum-2026-0148"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://nature.com/articles/nature-ut-sample-0001": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "hum-2026-0148"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://onlinelibrary.wiley.com/doi/10.1002/ut-sample-0007": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "chem-2026-0142",
+        "2026-10-14/brief"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=9990001": {
+      "first_cited": "2026-10-13",
+      "refs": [
+        "soc-2026-0146"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-13",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://pnas.org/doi/10.1073/ut-sample.0003": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "bio-2026-0149"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://quillon-sample.edu/news/ut-sample-bible-translation-draft": {
+      "first_cited": "2026-10-18",
+      "refs": [
+        "hum-2026-0152"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-18",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://rcsb.org/structure/pdb_00009zz1": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "bio-2026-0149"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://science.org/doi/10.1126/ut-sample.0012": {
+      "first_cited": "2026-10-12",
+      "refs": [
+        "earth-2026-0141"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-12",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://sciencemediacentre.org/expert-reaction-to-ut-sample-ai-proof-checking": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "2026-10-14/brief"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://sciencemediacentre.org/expert-reaction-to-ut-sample-reviewers-and-ai-tools": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "2026-10-14/brief"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://sciencemediacentre.org/expert-reaction-to-ut-sample-sealed-scroll-text": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "hum-2026-0148"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://sciencemediacentre.org/expert-reaction-to-ut-sample-tiling-proof": {
+      "first_cited": "2026-10-13",
+      "refs": [
+        "math-2026-0140"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-13",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://zenodo.org/records/99900002": {
+      "first_cited": "2026-10-13",
+      "refs": [
+        "soc-2026-0146"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-13",
+        "result": "ok",
+        "http": 200
+      }
+    },
+    "https://zenodo.org/records/99900003": {
+      "first_cited": "2026-10-14",
+      "refs": [
+        "2026-10-14/brief"
+      ],
+      "sha256": null,
+      "hashed_at": null,
+      "last_check": {
+        "date": "2026-10-14",
+        "result": "ok",
+        "http": 200
+      }
+    }
+  }
+}

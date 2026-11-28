@@ -302,12 +302,12 @@
       "field": "chemistry",
       "subfield": "materials",
       "kind": "setback",
-      "title": "SAMPLE: Springer Nature retracts 84 papers with undisclosed AI text",
+      "title": "SAMPLE: Example Press retracts 84 papers with undisclosed AI text",
       "explainer": {
-        "found": "Springer Nature retracted 84 papers in nine journals. The text and images in these papers came from an AI tool that the authors did not disclose.",
+        "found": "Example Press retracted 84 papers in nine journals. The text and images in these papers came from an AI tool that the authors did not disclose.",
         "matters": "Other researchers may have cited these papers, so the harm can spread beyond the journals.",
         "ai_helped": "An AI tool made the text and images. The publisher's notices do not name the tool.",
-        "how_sure": "Checked. Springer Nature, the publisher of the papers, says so in its own statement and in two retraction notices.",
+        "how_sure": "Checked. Example Press, the publisher of the papers, says so in its own statement and in two retraction notices.",
         "background": "A retraction notice tells readers that a paper should no longer be relied on.",
         "could_lead": "Publishers could check for undisclosed AI text before they accept a paper."
       },
@@ -340,9 +340,9 @@
         {
           "id": "s1",
           "kind": "statement",
-          "title": "SAMPLE: Springer Nature retracts papers with AI-made text and images",
-          "publisher": "Springer Nature",
-          "url": "https://group.springernature.com/gp/group/media/press-releases/ut-sample-ai-retractions",
+          "title": "SAMPLE: Example Press retracts papers with AI-made text and images",
+          "publisher": "Example Press",
+          "url": "https://www.eurekalert.org/news-releases/ut-sample-ai-retractions",
           "doi": null,
           "published_at": "2026-10-13T17:00:00+08:00"
         },
@@ -350,7 +350,7 @@
           "id": "s2",
           "kind": "notice",
           "title": "SAMPLE: Retraction Note: A study of alloy coatings",
-          "publisher": "Springer Nature",
+          "publisher": "Example Press",
           "url": "https://link.springer.com/article/10.1007/ut-sample-0005",
           "doi": "10.1007/ut-sample-0005",
           "published_at": "2026-10-13T16:00:00+08:00"
@@ -359,7 +359,7 @@
           "id": "s3",
           "kind": "notice",
           "title": "SAMPLE: Retraction Note: Wear tests of a new steel",
-          "publisher": "Springer Nature",
+          "publisher": "Example Press",
           "url": "https://link.springer.com/article/10.1007/ut-sample-0006",
           "doi": "10.1007/ut-sample-0006",
           "published_at": "2026-10-13T16:05:00+08:00"
@@ -376,7 +376,7 @@
       "figure": null,
       "who": [
         {
-          "name": "Springer Nature (SAMPLE statement)",
+          "name": "Example Press (SAMPLE statement)",
           "ror": null
         }
       ],
@@ -537,7 +537,7 @@
       "term_id": null,
       "type": "clarification",
       "path": "explainer.background",
-      "after": "A tiling covers a surface with copies of shapes and leaves no gaps. A floor of square tiles repeats the same pattern again and again. This proof is about tiles that can never do that, and it covers the flat plane only.",
+      "after": "A tiling covers a surface with copies of shapes and leaves no gaps. A floor of square tiles repeats one pattern. This proof is about tiles that never do that, on the flat plane only.",
       "reason": "The paper proves the result for the flat plane only. The first text did not say so, and a reader reported it.",
       "source_url": "https://www.cambridge.org/core/journals/ut-sample-journal-of-tiling-theory/article/ut-sample-0013",
       "report_id": null
@@ -613,8 +613,8 @@
       "kind": "dataset",
       "title": "SAMPLE: Inscriptions read with machine help, a public dataset",
       "publisher": "Zenodo",
-      "url": "https://zenodo.org/records/9990003",
-      "doi": "10.5281/zenodo.9990003",
+      "url": "https://zenodo.org/records/99900003",
+      "doi": "10.5281/zenodo.99900003",
       "published_at": "2026-10-13T12:00:00+08:00"
     }
   ]

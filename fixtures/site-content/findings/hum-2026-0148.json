@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "id": "hum-2026-0148",
+  "field": "humanities",
+  "subfield": "ancient-texts",
+  "kind": "result",
+  "title": {
+    "en": "SAMPLE: A sealed scroll is read without being opened",
+    "zh": "SAMPLE：不必打開，就讀出了密封卷軸的內容"
+  },
+  "depth": "story",
+  "explainer": {
+    "found": {
+      "en": "A team at Eastvale University read about 1,800 Greek letters inside a papyrus scroll that cannot be unrolled. The scroll came from the library at Herculaneum. The letters fill six columns of text, and the passage is part of a prose work on friendship.",
+      "zh": "Eastvale University 的一個團隊，讀出了無法攤開的莎草紙（papyrus）卷軸內約 1,800 個希臘字母。這卷卷軸來自赫庫蘭尼姆的圖書館。這些字母排成六欄文字，這段文字屬於一部談友誼的散文作品。"
+    },
+    "matters": {
+      "en": "Hundreds of scrolls from the same library are still sealed. A method that reads them without opening them leaves each scroll whole. Scholars could then study many scrolls, not only this one. One expert calls it the first whole passage of connected prose from a sealed scroll.",
+      "zh": "同一座圖書館的數百卷卷軸仍然密封著。不打開就能讀的方法，能讓每卷卷軸保持完整。學者就有機會研究許多卷軸，而不只是這一卷。一位專家稱這是第一段從密封卷軸讀出的完整連貫散文。"
+    },
+    "ai_helped": {
+      "en": "Eastvale University built a model called the Ink Reader. The team scanned the scroll with X-rays and flattened its layers in software, a step called virtual unwrapping. The Ink Reader, trained on small patches where ink had been found by hand, then marked the ink in the scans. People read the marked letters.",
+      "zh": "Eastvale University 開發了名為 Ink Reader 的模型。團隊用 X 光掃描卷軸，並在軟體中把它的各層攤平，這個步驟稱為虛擬展開（virtual unwrapping）。Ink Reader 用人工找出墨跡的小片區域來訓練，接著在掃描影像中標出墨跡。由人類讀出被標出的字母。"
+    },
+    "how_sure": {
+      "en": "Checked. Nature published the paper after peer review. Scholars in two countries, outside the Eastvale team, checked the readings. Two experts quoted here, at Ravenhurst University and the Coldwater Institute, call the readings careful.",
+      "zh": "已查核。Nature 在同儕審查後發表了這篇論文。Eastvale 團隊以外、來自兩個國家的學者，檢查了這些判讀。這裡引用的兩位專家，分別任職於 Ravenhurst University 和 Coldwater Institute，稱這些判讀很嚴謹。"
+    },
+    "background": {
+      "en": "Mount Vesuvius erupted in AD 79 and buried the Roman town of Herculaneum. The eruption charred hundreds of papyrus scrolls in its library. None of them can be unrolled.",
+      "zh": "維蘇威火山在西元 79 年噴發，掩埋了羅馬城鎮赫庫蘭尼姆。這次噴發燒焦了這座城鎮圖書館中的數百卷莎草紙卷軸。這些卷軸都無法攤開。"
+    },
+    "could_lead": {
+      "en": "The same method could open other sealed scrolls and bring back books that no one has read since the eruption. Scholars may then learn what the library held.",
+      "zh": "同樣的方法可能讓其他密封的卷軸也能被讀取，找回自噴發以來沒人讀過的書。學者或許就能知道這座圖書館收藏了什麼。"
+    }
+  },
+  "go_deeper": [
+    "s1",
+    "s4"
+  ],
+  "ai": {
+    "role": "ai_tool",
+    "confidence": "confirmed",
+    "systems": [
+      {
+        "name": "Ink Reader",
+        "maker": "Eastvale University"
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "s1",
+        "quote": "trained a machine-learning model to detect ink",
+        "from_claimant": true
+      },
+      {
+        "source_id": "s3",
+        "quote": "The model found ink traces that no human reader could see",
+        "from_claimant": false
+      }
+    ]
+  },
+  "significance": "landmark",
+  "rung": "checked",
+  "rung_history": [
+    {
+      "rung": "checked",
+      "date": "2026-10-13",
+      "recorded": "2026-10-14",
+      "source_id": "s1",
+      "by": "agent",
+      "note": null
+    }
+  ],
+  "since_then": [],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "paper",
+      "title": "SAMPLE: Reading a sealed Herculaneum scroll with machine learning",
+      "publisher": "Nature",
+      "url": "https://www.nature.com/articles/nature-ut-sample-0001",
+      "doi": "10.1038/nature-ut-sample-0001",
+      "published_at": "2026-10-13T23:00:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "kind": "reaction",
+      "title": "SAMPLE: News and Views: A scroll gives up its text",
+      "publisher": "Nature",
+      "url": "https://www.nature.com/articles/d41586-ut-sample-0002",
+      "doi": null,
+      "published_at": "2026-10-13T23:00:00+08:00",
+      "seen_as": "fetched",
+      "added": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "kind": "reaction",
+      "title": "SAMPLE: Expert reaction to a sealed scroll read without unrolling",
+      "publisher": "Science Media Centre",
+      "url": "https://www.sciencemediacentre.org/expert-reaction-to-ut-sample-sealed-scroll-text/",
+      "doi": null,
+      "published_at": "2026-10-13T22:30:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-14"
+    },
+    {
+      "id": "s4",
+      "kind": "statement",
+      "title": "SAMPLE: Eastvale team reads a sealed scroll without opening it",
+      "publisher": "Eastvale University",
+      "url": "https://www.eurekalert.org/news-releases/ut-sample-0003",
+      "doi": null,
+      "published_at": "2026-10-13T20:00:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-14"
+    }
+  ],
+  "reactions": [
+    {
+      "source_id": "s2",
+      "who": "Mira Placeholder (SAMPLE)",
+      "affiliation": "Ravenhurst University",
+      "quote": "This is the first time a sealed scroll has given up a whole passage of connected prose"
+    },
+    {
+      "source_id": "s3",
+      "who": "Jonas Example (SAMPLE)",
+      "affiliation": "Coldwater Institute",
+      "quote": "The readings are careful and the Greek is sound"
+    }
+  ],
+  "artefacts": {
+    "doi": [
+      "10.1038/nature-ut-sample-0001"
+    ],
+    "arxiv": [],
+    "lean": [],
+    "trial": [],
+    "pdb": []
+  },
+  "figure": {
+    "source_id": "s1",
+    "image_url": "https://media.springernature.com/ut-sample/scroll-figure-2.png",
+    "licence": "CC-BY-4.0",
+    "licence_quote": "This article is licensed under a Creative Commons Attribution 4.0 International License",
+    "credit": "Figure 2 from the Eastvale imaging team, Nature (SAMPLE), CC BY 4.0",
+    "alt": {
+      "en": "A flattened scan of one scroll layer, with the ink the model found marked in yellow over a column of Greek letters.",
+      "zh": "卷軸其中一層的攤平掃描圖，模型找到的墨跡以黃色標在一欄希臘字母上。"
+    }
+  },
+  "who": [
+    {
+      "name": "Eastvale University imaging group (SAMPLE)",
+      "ror": null
+    }
+  ],
+  "terms": [
+    "virtual-unwrapping",
+    "papyrus"
+  ],
+  "related": [],
+  "first_published": "2026-10-13",
+  "first_brief": "2026-10-14",
+  "briefs": [
+    "2026-10-14"
+  ],
+  "history": false,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-14"
+}

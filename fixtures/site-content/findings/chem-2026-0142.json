@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "chem-2026-0142",
+  "field": "chemistry",
+  "subfield": "catalysis",
+  "kind": "result",
+  "title": {
+    "en": "SAMPLE: A robotic lab finds a cheap metal mixture that splits water",
+    "zh": "SAMPLE：機器人實驗室找到能分解水的廉價金屬混合物"
+  },
+  "depth": "item",
+  "explainer": {
+    "found": {
+      "en": "A robotic lab at Eastvale University tested 200 mixtures of common metals in six weeks. One mixture sped up the splitting of water into hydrogen almost as well as platinum does.",
+      "zh": "Eastvale University 的機器人實驗室在六週內測試了 200 種常見金屬的混合物。其中一種混合物加快水分解成氫的效果，幾乎和鉑一樣好。"
+    },
+    "matters": {
+      "en": "Platinum is rare. A cheap mixture that works nearly as well could make hydrogen from water less costly.",
+      "zh": "鉑很稀少。一種效果幾乎一樣好的廉價混合物，可能讓從水製氫的成本降低。"
+    },
+    "ai_helped": {
+      "en": "Marlow Labs built Marlow Selector, which chose which mixtures to try next. Robot arms mixed and tested the samples.",
+      "zh": "Marlow Labs 開發了 Marlow Selector，由它挑選接下來要嘗試的混合物。機器手臂混合並測試這些樣本。"
+    },
+    "how_sure": {
+      "en": "Checked. The Eastvale Journal of Materials published the paper. The tests ran in one lab, and Marlow Labs, the maker of the AI system, helped write it.",
+      "zh": "已查核。Eastvale Journal of Materials 發表了這篇論文。測試在一間實驗室進行，AI 系統的開發者 Marlow Labs 也參與撰寫。"
+    },
+    "background": {
+      "en": "Splitting water gives hydrogen. The reaction needs a material that speeds it up, and platinum is a common choice.",
+      "zh": "分解水會得到氫。這個反應需要一種加快反應的材料，鉑是常見的選擇。"
+    },
+    "could_lead": {
+      "en": "Robot labs could search many more mixtures in the same time and find other cheap materials.",
+      "zh": "機器人實驗室可能在同樣的時間內搜尋更多混合物，找到其他廉價材料。"
+    }
+  },
+  "go_deeper": [
+    "s1"
+  ],
+  "ai": {
+    "role": "ai_ran",
+    "confidence": "claimed",
+    "systems": [
+      {
+        "name": "Marlow Selector",
+        "maker": "Marlow Labs"
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "s1",
+        "quote": "Marlow Selector, built by Marlow Labs, chose which mixtures to try next",
+        "from_claimant": true
+      }
+    ]
+  },
+  "significance": "notable",
+  "rung": "confirmed",
+  "rung_history": [
+    {
+      "rung": "checked",
+      "date": "2026-10-05",
+      "recorded": "2026-10-13",
+      "source_id": "s1",
+      "by": "agent",
+      "note": null
+    },
+    {
+      "rung": "confirmed",
+      "date": "2026-10-13",
+      "recorded": "2026-10-14",
+      "source_id": "s2",
+      "by": "agent",
+      "note": {
+        "en": "An independent lab repeated the work and got a matching result.",
+        "zh": "一間獨立實驗室重複了這項研究，得到相符的結果。"
+      }
+    }
+  ],
+  "since_then": [],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "paper",
+      "title": "SAMPLE: A robotic lab finds a cheap metal mixture that splits water",
+      "publisher": "Eastvale Journal of Materials",
+      "url": "https://link.springer.com/article/10.1007/ut-sample-0008",
+      "doi": "10.1007/ut-sample-0008",
+      "published_at": "2026-10-05T16:00:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-13"
+    },
+    {
+      "id": "s2",
+      "kind": "paper",
+      "title": "SAMPLE: An independent repeat of a robot-found metal mixture",
+      "publisher": "Applied Catalysis Letters",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/ut-sample-0007",
+      "doi": "10.1002/ut-sample-0007",
+      "published_at": "2026-10-13T12:00:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-14"
+    }
+  ],
+  "reactions": [],
+  "artefacts": {
+    "doi": [
+      "10.1007/ut-sample-0008"
+    ],
+    "arxiv": [],
+    "lean": [],
+    "trial": [],
+    "pdb": []
+  },
+  "figure": null,
+  "who": [
+    {
+      "name": "Eastvale University robotics lab (SAMPLE)",
+      "ror": null
+    }
+  ],
+  "terms": [],
+  "related": [],
+  "first_published": "2026-10-05",
+  "first_brief": "2026-10-13",
+  "briefs": [
+    "2026-10-13"
+  ],
+  "history": false,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-14"
+}

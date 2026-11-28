@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "soc-2026-0144",
+  "field": "social",
+  "subfield": "replication",
+  "kind": "setback",
+  "title": {
+    "en": "SAMPLE: Reviewers shared unpublished papers with an AI chatbot",
+    "zh": "SAMPLE：審稿人把未發表的論文分享給 AI 聊天機器人"
+  },
+  "depth": "item",
+  "explainer": {
+    "found": {
+      "en": "The journal Sample Review found that reviewers pasted the text of 31 unpublished manuscripts into a public AI chatbot to help write their reports.",
+      "zh": "期刊 Sample Review 發現，審稿人把 31 份未發表稿件的內容貼進公開的 AI 聊天機器人，來協助撰寫審查報告。"
+    },
+    "matters": {
+      "en": "Authors send unpublished work to a journal in confidence. Pasting it into a public tool breaks that trust and may expose the work.",
+      "zh": "作者把尚未發表的成果寄給期刊，期待對方保密。把它貼進公開的工具，就違背了這份信任，也可能使成果外洩。"
+    },
+    "ai_helped": {
+      "en": "Reviewers used an AI chatbot to help write reports. Sample Review does not name the chatbot.",
+      "zh": "審稿人用 AI 聊天機器人協助撰寫報告。Sample Review 沒有說出這個聊天機器人的名稱。"
+    },
+    "how_sure": {
+      "en": "Checked. Sample Review, the journal involved, says so in its own statement and in an editorial note.",
+      "zh": "已查核。相關期刊 Sample Review 在自己的聲明和編輯說明中這麼表示。"
+    },
+    "background": {
+      "en": "Peer review is the step where outside experts judge a paper before it is published.",
+      "zh": "同儕審查是論文發表前，由外部專家評斷論文的步驟。"
+    },
+    "could_lead": {
+      "en": "Journals could write clear rules and tell reviewers what they may share.",
+      "zh": "期刊可能訂出明確的規則，告訴審稿人哪些內容可以分享。"
+    }
+  },
+  "go_deeper": [
+    "s1",
+    "s2"
+  ],
+  "ai": {
+    "role": "ai_tool",
+    "confidence": "confirmed",
+    "systems": [],
+    "evidence": [
+      {
+        "source_id": "s1",
+        "quote": "pasted the text of 31 unpublished manuscripts into a public AI chatbot",
+        "from_claimant": false
+      }
+    ]
+  },
+  "significance": "major",
+  "rung": "checked",
+  "rung_history": [
+    {
+      "rung": "checked",
+      "date": "2026-10-08",
+      "recorded": "2026-10-13",
+      "source_id": "s1",
+      "by": "agent",
+      "note": null
+    }
+  ],
+  "since_then": [],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "statement",
+      "title": "SAMPLE: Sample Review says reviewers shared unpublished papers with an AI chatbot",
+      "publisher": "Sample Review",
+      "url": "https://www.eurekalert.org/news-releases/ut-sample-reviewer-ai-chatbot",
+      "doi": null,
+      "published_at": "2026-10-08T17:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-13"
+    },
+    {
+      "id": "s2",
+      "kind": "notice",
+      "title": "SAMPLE: Editorial note on the use of an AI chatbot in review",
+      "publisher": "Sample Review",
+      "url": "https://link.springer.com/article/10.1007/ut-sample-0021",
+      "doi": "10.1007/ut-sample-0021",
+      "published_at": "2026-10-08T17:30:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-13"
+    }
+  ],
+  "reactions": [],
+  "artefacts": {
+    "doi": [],
+    "arxiv": [],
+    "lean": [],
+    "trial": [],
+    "pdb": []
+  },
+  "figure": null,
+  "who": [
+    {
+      "name": "Sample Review editors (SAMPLE)",
+      "ror": null
+    }
+  ],
+  "terms": [],
+  "related": [],
+  "first_published": "2026-10-08",
+  "first_brief": "2026-10-13",
+  "briefs": [
+    "2026-10-13"
+  ],
+  "history": false,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-14"
+}

@@ -1,0 +1,1 @@
+--zh-context fixtures/drafts-zh/weekday.zh-context.json --zh-evidence fixtures/drafts-zh/weekday.zh-evidence.json

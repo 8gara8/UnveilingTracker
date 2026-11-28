@@ -199,15 +199,15 @@ const MONDAY_TEXT = {
     "Last week's review picks out the AI antibiotic and weighs it against a journal setback and a retracted paper.",
   ],
   bigPicture: [
-    "The week mixed progress with warnings. The clearest progress came where someone other than the makers tested a result. A new weather model beat the standard method in tests on past weather. A proof about tiles was read and checked by two mathematicians who were not on the paper.",
+    "The week mixed progress with warnings. The clearest progress came where someone other than the makers tested a result. A proof about tiles was read and checked by two mathematicians who were not on the paper.",
     "The week's largest result involved no AI at all. Two mathematicians proved that tiles of one kind can fill a flat surface only in patterns that never repeat. We list it because a result of that size should never be missed, and we say plainly that no AI role is known.",
-    "Where AI did play a part, the stage of the evidence varied. The weather tests were the maker's own. A robotic lab found a cheap metal mixture that splits water, but in one lab so far. An AI model proposed an antibiotic that cleared an infection in mice, and the first safety trial in people has only begun. In each case we mark how sure we are and who says so.",
+    "Where AI did play a part, the stage of the evidence varied. A new weather model beat the standard method in tests on past weather, but the tests were the maker's own. A robotic lab found a cheap metal mixture that splits water, but in one lab so far. An AI model proposed an antibiotic that cleared an infection in mice, and the first safety trial in people has only begun. In each case we mark how sure we are and who says so.",
     "The week also held harm. A journal found that reviewers had pasted unpublished papers into a public chatbot. A paper from a robot lab on a magnetic material was retracted after its authors found errors in the raw data. The second case matters most to this tracker, because AI helped make the first claim and the claim did not stand.",
     "Two items were about the rules and tools around the science. A research council proposed that applicants say whether AI helped write a proposal. A lab released a large set of AI-run survey interviews that other researchers can study.",
     "Our reading is cautious. The best evidence came from checks by people outside the team that made the claim. The weakest came from claims that rest on one lab. This week we will watch whether other labs repeat the antibiotic tests and what the research council decides.",
   ],
   remarkable: "An AI model proposed a new antibiotic that cleared a drug-resistant infection in mice. People made and tested every molecule, and the first safety trial in people has begun.",
-  against: "Reviewers at the journal eLife pasted unpublished manuscripts into a public AI chatbot. A robot lab's paper on a magnetic material, planned by an AI, was retracted after the authors found errors in the raw data.",
+  against: "Reviewers at the journal Sample Review pasted unpublished manuscripts into a public AI chatbot. A robot lab's paper on a magnetic material, planned by an AI, was retracted after the authors found errors in the raw data.",
 } as const;
 
 const MONDAY_SHORT_TEXT = {

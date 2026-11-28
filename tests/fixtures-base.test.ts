@@ -1308,7 +1308,7 @@ describe("the evidence of the editions", () => {
     expect(fetchedKeys("sunday")).toEqual(["antibiotic-paper", "antibiotic-trial", "antibiotic-release", "antibiotic-second"]);
     expect(fetchedKeys("monday")).toEqual(["reviewer-statement", "fell-notice"]);
     expect(fetchedKeys("monday-short")).toEqual([]);
-    expect(committed("evidence", "monday").resolved).toEqual({ [normalizeUrl(SOURCE_TABLE["fell-notice"].url)]: "https://journals.aps.org/prl/abstract/10.1103/ut-sample-0017" });
+    expect(committed("evidence", "monday").resolved).toEqual({ [normalizeUrl(SOURCE_TABLE["fell-notice"].url)]: "https://link.springer.com/article/10.1007/ut-sample-0017" });
   });
 
   it.each(EDITION_NAMES.map((n) => [n]))("%s: every cited address passes the type check on the run's evidence", (name) => {

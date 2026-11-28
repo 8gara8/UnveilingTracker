@@ -214,12 +214,15 @@ function counters(date: string, findings: readonly Finding[], corrections: reado
   });
 }
 
-/** The metrics file of `date` (SPEC §4.7), computed at 03:17:30 Taipei, status ok, from the stored findings before `date`. */
-export function metricsFor(date: string): MetricsFile {
+/**
+ * The metrics file of `date` (SPEC §4.7), computed at 03:17:30 Taipei, status ok, from the stored findings before `date`: the world's
+ * own, or `stored` when the sample content (`site.ts`) brings the findings and corrections it holds before `date`.
+ */
+export function metricsFor(date: string, stored?: { readonly findings: readonly Finding[]; readonly corrections: readonly FilingCorrection[] }): MetricsFile {
   const c = fixtureConfig();
   const cutoff = dataCutoff(date);
-  const findings = storedFindingsBefore(date);
-  const corrections = correctionsBefore(date);
+  const findings = stored?.findings ?? storedFindingsBefore(date);
+  const corrections = stored?.corrections ?? correctionsBefore(date);
   const hold = c.run.pace;
   const { landmarks } = landmarkCounts(findings, corrections, date);
   const d = holdRate(findings, corrections, date, { min_cases: hold.min_cases, hold_after_days: hold.hold_after_days }).hold;
@@ -599,7 +602,7 @@ export const EVIDENCE_EXTRAS: readonly EvidenceExtra[] = [
 
 /** Where a cited doi.org source lands, as the run's GET of it ended (`resolved`). */
 const LANDINGS: Partial<Record<SourceKey, string>> = {
-  "fell-notice": "https://journals.aps.org/prl/abstract/10.1103/ut-sample-0017",
+  "fell-notice": "https://link.springer.com/article/10.1007/ut-sample-0017",
 };
 
 function buildEvidence(name: EditionName): Evidence {

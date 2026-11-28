@@ -1,0 +1,476 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "generated_at": "2026-10-14T03:41:18+08:00",
+  "lead": [
+    {
+      "text": "A lab measured a protein that an AI model had predicted, and the shape matched.",
+      "refs": [
+        "new-2"
+      ]
+    },
+    {
+      "text": "A publisher pulled many papers with undisclosed AI text, and a research council made its AI rule final.",
+      "refs": [
+        "new-3",
+        "soc-2026-0145"
+      ]
+    }
+  ],
+  "story": null,
+  "items": [
+    "new-2",
+    "new-3",
+    "new-4",
+    "soc-2026-0145"
+  ],
+  "new_findings": [
+    {
+      "ref": "new-2",
+      "field": "biology",
+      "subfield": "proteins",
+      "kind": "result",
+      "title": "SAMPLE: A lab measures a protein that an AI had predicted",
+      "explainer": {
+        "found": "A second lab measured the shape of a protein complex and found that an AI model had predicted it correctly.",
+        "matters": "A protein's shape shows how it works and how a drug might fit. Measuring a shape is slow.",
+        "ai_helped": "Halden Research built the model, Halden Fold. It posted its prediction before anyone had measured the complex.",
+        "how_sure": "Confirmed. PNAS published the measured structure, which matches the prediction in every chain. Halden Research did not do the measurement.",
+        "background": "The lab used cryo-electron microscopy, which images frozen molecules, to measure the complex. A first safety trial of a drug that binds the complex is registered as NCT09999002.",
+        "could_lead": "If more predictions match, AI could shorten the search for new medicines."
+      },
+      "go_deeper": [
+        "s2",
+        "s3"
+      ],
+      "ai": {
+        "role": "ai_solved",
+        "confidence": "confirmed",
+        "systems": [
+          {
+            "name": "Halden Fold",
+            "maker": "Halden Research"
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "s1",
+            "quote": "Halden Fold predicted the structure of the complex before any measurement",
+            "from_claimant": true
+          },
+          {
+            "source_id": "s2",
+            "quote": "The measured structure matches the model prediction in every chain",
+            "from_claimant": false
+          }
+        ]
+      },
+      "significance": "major",
+      "rung_history": [
+        {
+          "rung": "preprint",
+          "date": "2026-09-02",
+          "source_id": "s1",
+          "note": null
+        },
+        {
+          "rung": "confirmed",
+          "date": "2026-10-13",
+          "source_id": "s2",
+          "note": "A second lab measured the structure and found the prediction correct."
+        }
+      ],
+      "sources": [
+        {
+          "id": "s1",
+          "kind": "preprint",
+          "title": "SAMPLE: Predicted structure of a protein complex from Halden Fold",
+          "publisher": "bioRxiv",
+          "url": "https://www.biorxiv.org/content/10.1101/2026.09.02.990011v1",
+          "doi": "10.1101/2026.09.02.990011",
+          "published_at": "2026-09-02T10:00:00+08:00"
+        },
+        {
+          "id": "s2",
+          "kind": "paper",
+          "title": "SAMPLE: A measured structure tests an AI prediction of a protein complex",
+          "publisher": "PNAS",
+          "url": "https://www.pnas.org/doi/10.1073/ut-sample.0003",
+          "doi": "10.1073/ut-sample.0003",
+          "published_at": "2026-10-13T05:00:00+08:00"
+        },
+        {
+          "id": "s3",
+          "kind": "registry",
+          "title": "SAMPLE: Structure entry pdb_00009zz1",
+          "publisher": "RCSB Protein Data Bank",
+          "url": "https://www.rcsb.org/structure/pdb_00009zz1",
+          "doi": null,
+          "published_at": "2026-10-13"
+        },
+        {
+          "id": "s4",
+          "kind": "registry",
+          "title": "SAMPLE: First safety trial of a drug that binds a protein complex",
+          "publisher": "ClinicalTrials.gov",
+          "url": "https://clinicaltrials.gov/study/NCT09999002",
+          "doi": null,
+          "published_at": "2026-10-12"
+        }
+      ],
+      "reactions": [],
+      "artefacts": {
+        "doi": [
+          "10.1073/ut-sample.0003",
+          "10.1101/2026.09.02.990011"
+        ],
+        "arxiv": [],
+        "lean": [],
+        "trial": [
+          "NCT09999002"
+        ],
+        "pdb": [
+          "pdb_00009zz1"
+        ]
+      },
+      "figure": null,
+      "who": [
+        {
+          "name": "Halden Research (SAMPLE)",
+          "ror": null
+        }
+      ],
+      "terms": [
+        {
+          "new": true,
+          "term": "cryo-electron microscopy",
+          "definition": "A way to see the shape of a molecule by imaging it frozen in ice with a beam of electrons."
+        }
+      ],
+      "related": [
+        "bio-2026-0143"
+      ],
+      "first_published": "2026-09-02"
+    },
+    {
+      "ref": "new-3",
+      "field": "chemistry",
+      "subfield": "materials",
+      "kind": "setback",
+      "title": "SAMPLE: Example Press retracts 84 papers with undisclosed AI text",
+      "explainer": {
+        "found": "Example Press retracted 84 papers in nine journals. The text and images in these papers came from an AI tool that the authors did not disclose.",
+        "matters": "Other researchers may have cited these papers, so the harm can spread beyond the journals.",
+        "ai_helped": "An AI tool made the text and images. The publisher's notices do not name the tool.",
+        "how_sure": "Checked. Example Press, the publisher of the papers, says so in its own statement and in two retraction notices.",
+        "background": "A retraction notice tells readers that a paper should no longer be relied on.",
+        "could_lead": "Publishers could check for undisclosed AI text before they accept a paper."
+      },
+      "go_deeper": [
+        "s1",
+        "s2"
+      ],
+      "ai": {
+        "role": "ai_tool",
+        "confidence": "confirmed",
+        "systems": [],
+        "evidence": [
+          {
+            "source_id": "s1",
+            "quote": "produced with an AI tool that the authors did not disclose",
+            "from_claimant": false
+          }
+        ]
+      },
+      "significance": "major",
+      "rung_history": [
+        {
+          "rung": "checked",
+          "date": "2026-10-13",
+          "source_id": "s1",
+          "note": null
+        }
+      ],
+      "sources": [
+        {
+          "id": "s1",
+          "kind": "statement",
+          "title": "SAMPLE: Example Press retracts papers with AI-made text and images",
+          "publisher": "Example Press",
+          "url": "https://www.eurekalert.org/news-releases/ut-sample-ai-retractions",
+          "doi": null,
+          "published_at": "2026-10-13T17:00:00+08:00"
+        },
+        {
+          "id": "s2",
+          "kind": "notice",
+          "title": "SAMPLE: Retraction Note: A study of alloy coatings",
+          "publisher": "Example Press",
+          "url": "https://link.springer.com/article/10.1007/ut-sample-0005",
+          "doi": "10.1007/ut-sample-0005",
+          "published_at": "2026-10-13T16:00:00+08:00"
+        },
+        {
+          "id": "s3",
+          "kind": "notice",
+          "title": "SAMPLE: Retraction Note: Wear tests of a new steel",
+          "publisher": "Example Press",
+          "url": "https://link.springer.com/article/10.1007/ut-sample-0006",
+          "doi": "10.1007/ut-sample-0006",
+          "published_at": "2026-10-13T16:05:00+08:00"
+        }
+      ],
+      "reactions": [],
+      "artefacts": {
+        "doi": [],
+        "arxiv": [],
+        "lean": [],
+        "trial": [],
+        "pdb": []
+      },
+      "figure": null,
+      "who": [
+        {
+          "name": "Example Press (SAMPLE statement)",
+          "ror": null
+        }
+      ],
+      "terms": [],
+      "related": [
+        "soc-2026-0144"
+      ],
+      "first_published": "2026-10-13"
+    },
+    {
+      "ref": "new-4",
+      "field": "mathematics",
+      "subfield": "combinatorics",
+      "kind": "result",
+      "title": "SAMPLE: An AI lab claims a proof of an open problem",
+      "explainer": {
+        "found": "Marlow Labs says its AI system found a proof of an open problem about sums of sets of whole numbers.",
+        "matters": "A proof would settle a question that mathematicians had left open.",
+        "ai_helped": "Marlow Labs built the Marlow Prover. The lab says the system found the proof with no human step in the argument.",
+        "how_sure": "Preprint. arXiv hosts the paper, which has not been peer reviewed. Marlow Labs is the source of the claim.",
+        "background": "A Lean file posted with the paper lets a proof assistant check the argument by machine.",
+        "could_lead": "If the Lean file checks, the proof could be accepted without waiting long for referees."
+      },
+      "go_deeper": [
+        "s1",
+        "s2"
+      ],
+      "ai": {
+        "role": "ai_solved",
+        "confidence": "claimed",
+        "systems": [
+          {
+            "name": "Marlow Prover",
+            "maker": "Marlow Labs"
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "s1",
+            "quote": "The proof was found by the Marlow Prover with no human step in the argument",
+            "from_claimant": true
+          }
+        ]
+      },
+      "significance": "notable",
+      "rung_history": [
+        {
+          "rung": "preprint",
+          "date": "2026-10-13",
+          "source_id": "s1",
+          "note": null
+        }
+      ],
+      "sources": [
+        {
+          "id": "s1",
+          "kind": "preprint",
+          "title": "SAMPLE: A proof of an open problem on sums of sets of whole numbers",
+          "publisher": "arXiv",
+          "url": "https://arxiv.org/abs/2610.99001",
+          "doi": null,
+          "published_at": "2026-10-13T08:00:00+08:00"
+        },
+        {
+          "id": "s2",
+          "kind": "proof",
+          "title": "SAMPLE: SumSets.lean, the Lean proof file",
+          "publisher": "GitHub",
+          "url": "https://github.com/marlow-labs-sample/sumsets-proof/blob/main/SumSets.lean",
+          "doi": null,
+          "published_at": "2026-10-13"
+        }
+      ],
+      "reactions": [],
+      "artefacts": {
+        "doi": [],
+        "arxiv": [
+          "2610.99001"
+        ],
+        "lean": [
+          "https://github.com/marlow-labs-sample/sumsets-proof/blob/main/SumSets.lean"
+        ],
+        "trial": [],
+        "pdb": []
+      },
+      "figure": null,
+      "who": [
+        {
+          "name": "Marlow Labs (SAMPLE)",
+          "ror": null
+        }
+      ],
+      "terms": [
+        {
+          "new": true,
+          "term": "proof assistant",
+          "definition": "A computer program that checks, step by step, that a mathematical proof follows the rules of logic."
+        }
+      ],
+      "related": [
+        "math-2026-0140",
+        "math-2026-0131"
+      ],
+      "first_published": "2026-10-13"
+    }
+  ],
+  "returning": [
+    {
+      "finding_id": "soc-2026-0145",
+      "update": "The council published its final rule. From 1 January, applicants must say if AI tools helped write any part of a proposal. The final rule covers every part of a proposal, not only the summary.",
+      "source_ids": [
+        "b1"
+      ],
+      "rung": null
+    }
+  ],
+  "rung_changes": [
+    {
+      "finding_id": "chem-2026-0142",
+      "rung": {
+        "rung": "confirmed",
+        "date": "2026-10-13",
+        "source_id": "b2",
+        "note": "An independent lab repeated the work and got a matching result."
+      }
+    }
+  ],
+  "ideas": [
+    {
+      "text": "Oren Nominal (SAMPLE) argues that journals should let AI check every submitted proof before human review begins.",
+      "who": "Oren Nominal (SAMPLE)",
+      "source_id": "b3"
+    },
+    {
+      "text": "Sana Provisional (SAMPLE) argues that reviewers should be told plainly what they may share with AI tools.",
+      "who": "Sana Provisional (SAMPLE)",
+      "source_id": "b4"
+    }
+  ],
+  "also": [
+    {
+      "title": "SAMPLE: A model predicts monsoon rainfall weeks ahead",
+      "field": "earth",
+      "source_id": "b5"
+    },
+    {
+      "title": "SAMPLE: A public dataset of ancient inscriptions read with machine help",
+      "field": "humanities",
+      "source_id": "b6"
+    }
+  ],
+  "deep_dive": null,
+  "review": null,
+  "corrections": [
+    {
+      "finding_id": "math-2026-0140",
+      "edition_date": null,
+      "term_id": null,
+      "type": "clarification",
+      "path": "explainer.background",
+      "after": "A tiling covers a surface with copies of shapes and leaves no gaps. A floor of square tiles repeats one pattern. This proof is about tiles that never do that, on the flat plane only.",
+      "reason": "The paper proves the result for the flat plane only. The first text did not say so, and a reader reported it.",
+      "source_url": "https://www.cambridge.org/core/journals/ut-sample-journal-of-tiling-theory/article/ut-sample-0013",
+      "report_id": null
+    },
+    {
+      "finding_id": "earth-2026-0141",
+      "edition_date": null,
+      "term_id": null,
+      "type": "correction",
+      "path": "explainer.how_sure",
+      "after": "Applied. The Meridian Weather Service says it runs the model alongside its own system and has not replaced that system. Science published the paper after peer review, and Larch Weather Systems, the maker, helped write it. The tests used past weather only, so live forecasts may differ.",
+      "reason": "The weather service's statement says the model runs alongside its own system and has not replaced it. The first text said the service relies on the model.",
+      "source_url": "https://www.meridian-weather-sample.gov/ut-sample/larch-forecast-guidance",
+      "report_id": "R-0001"
+    }
+  ],
+  "report_decisions": [
+    {
+      "report_id": "R-0002",
+      "outcome": "upheld",
+      "reason": "The paper proves the result for the plane only. The first text did not say so, so we wrote a clarification.",
+      "correction": 0
+    }
+  ],
+  "sources": [
+    {
+      "id": "b1",
+      "kind": "statement",
+      "title": "SAMPLE: Final rule on AI use in grant proposals",
+      "publisher": "Aldgate Research Council",
+      "url": "https://www.aldgate-council-sample.gov/ut-sample/ai-disclosure-final-rule",
+      "doi": null,
+      "published_at": "2026-10-13T10:00:00+08:00"
+    },
+    {
+      "id": "b2",
+      "kind": "paper",
+      "title": "SAMPLE: An independent repeat of a robot-found metal mixture",
+      "publisher": "Applied Catalysis Letters",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/ut-sample-0007",
+      "doi": "10.1002/ut-sample-0007",
+      "published_at": "2026-10-13T12:00:00+08:00"
+    },
+    {
+      "id": "b3",
+      "kind": "reaction",
+      "title": "SAMPLE: Expert reaction to AI proof checking",
+      "publisher": "Science Media Centre",
+      "url": "https://www.sciencemediacentre.org/expert-reaction-to-ut-sample-ai-proof-checking/",
+      "doi": null,
+      "published_at": "2026-10-12T10:00:00+08:00"
+    },
+    {
+      "id": "b4",
+      "kind": "reaction",
+      "title": "SAMPLE: Expert reaction to reviewers and AI tools",
+      "publisher": "Science Media Centre",
+      "url": "https://www.sciencemediacentre.org/expert-reaction-to-ut-sample-reviewers-and-ai-tools/",
+      "doi": null,
+      "published_at": "2026-10-12T14:00:00+08:00"
+    },
+    {
+      "id": "b5",
+      "kind": "preprint",
+      "title": "SAMPLE: A model that predicts monsoon rainfall weeks ahead",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/2610.99002",
+      "doi": null,
+      "published_at": "2026-10-13T08:00:00+08:00"
+    },
+    {
+      "id": "b6",
+      "kind": "dataset",
+      "title": "SAMPLE: Inscriptions read with machine help, a public dataset",
+      "publisher": "Zenodo",
+      "url": "https://zenodo.org/records/99900003",
+      "doi": "10.5281/zenodo.99900003",
+      "published_at": "2026-10-13T12:00:00+08:00"
+    }
+  ]
+}

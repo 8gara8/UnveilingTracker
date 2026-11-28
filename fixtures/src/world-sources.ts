@@ -185,13 +185,13 @@ export const SOURCE_TABLE = {
 
   // ── The weekday: a setback built from retraction notices and the publisher's statement ──────────
   "retract-statement": {
-    url: "https://group.springernature.com/gp/group/media/press-releases/ut-sample-ai-retractions",
-    kind: "statement", publisher: "Springer Nature",
-    title: "SAMPLE: Springer Nature retracts papers with AI-made text and images",
+    url: "https://www.eurekalert.org/news-releases/ut-sample-ai-retractions",
+    kind: "statement", publisher: "Example Press",
+    title: "SAMPLE: Example Press retracts papers with AI-made text and images",
     doi: null, published_at: "2026-10-13T17:00:00+08:00",
     seen: "search",
     text: page(
-      "Springer Nature has retracted 84 papers in nine journals.",
+      "Example Press has retracted 84 papers in nine journals.",
       "The text and images in these papers were produced with an AI tool that the authors did not disclose.",
       "The retraction notices do not name the tool.",
       "We will keep checking papers from the same authors.",
@@ -199,7 +199,7 @@ export const SOURCE_TABLE = {
   },
   "retract-notice-1": {
     url: "https://link.springer.com/article/10.1007/ut-sample-0005",
-    kind: "notice", publisher: "Springer Nature",
+    kind: "notice", publisher: "Example Press",
     title: "SAMPLE: Retraction Note: A study of alloy coatings",
     doi: "10.1007/ut-sample-0005", published_at: "2026-10-13T16:00:00+08:00",
     seen: "pack", feed: "crossref-updates",
@@ -210,7 +210,7 @@ export const SOURCE_TABLE = {
   },
   "retract-notice-2": {
     url: "https://link.springer.com/article/10.1007/ut-sample-0006",
-    kind: "notice", publisher: "Springer Nature",
+    kind: "notice", publisher: "Example Press",
     title: "SAMPLE: Retraction Note: Wear tests of a new steel",
     doi: "10.1007/ut-sample-0006", published_at: "2026-10-13T16:05:00+08:00",
     seen: "pack", feed: "crossref-updates",
@@ -279,15 +279,15 @@ export const SOURCE_TABLE = {
     ),
   },
   "also-inscriptions": {
-    url: "https://zenodo.org/records/9990003",
+    url: "https://zenodo.org/records/99900003",
     kind: "dataset", publisher: "Zenodo",
     title: "SAMPLE: Inscriptions read with machine help, a public dataset",
-    doi: "10.5281/zenodo.9990003", published_at: "2026-10-13T12:00:00+08:00",
+    doi: "10.5281/zenodo.99900003", published_at: "2026-10-13T12:00:00+08:00",
     seen: "search",
     text: page(
       "Dataset record.",
       "Readings of ancient inscriptions, made with machine help and checked by scholars.",
-      "DOI 10.5281/zenodo.9990003.",
+      "DOI 10.5281/zenodo.99900003.",
     ),
   },
 
@@ -422,23 +422,23 @@ export const SOURCE_TABLE = {
     ),
   },
   "reviewer-statement": {
-    url: "https://elifesciences.org/for-the-press/ut-sample-reviewer-ai-chatbot",
-    kind: "statement", publisher: "eLife",
-    title: "SAMPLE: eLife says reviewers shared unpublished papers with an AI chatbot",
+    url: "https://www.eurekalert.org/news-releases/ut-sample-reviewer-ai-chatbot",
+    kind: "statement", publisher: "Sample Review",
+    title: "SAMPLE: Sample Review says reviewers shared unpublished papers with an AI chatbot",
     doi: null, published_at: "2026-10-08T17:00:00+08:00",
     seen: "search",
     text: page(
-      "eLife has found that reviewers pasted the text of 31 unpublished manuscripts into a public AI chatbot to help write their reports.",
-      "eLife has banned the practice and has told the authors.",
+      "Sample Review has found that reviewers pasted the text of 31 unpublished manuscripts into a public AI chatbot to help write their reports.",
+      "Sample Review has banned the practice and has told the authors.",
       "We do not name the chatbot.",
       "We have not said how many reviewers were involved.",
     ),
   },
   "reviewer-notice": {
-    url: "https://elifesciences.org/articles/ut-sample-90001",
-    kind: "notice", publisher: "eLife",
+    url: "https://link.springer.com/article/10.1007/ut-sample-0021",
+    kind: "notice", publisher: "Sample Review",
     title: "SAMPLE: Editorial note on the use of an AI chatbot in review",
-    doi: null, published_at: "2026-10-08T17:30:00+08:00",
+    doi: "10.1007/ut-sample-0021", published_at: "2026-10-08T17:30:00+08:00",
     seen: "search",
     text: page(
       "Editorial note.",
@@ -461,15 +461,15 @@ export const SOURCE_TABLE = {
     ),
   },
   "survey-data": {
-    url: "https://zenodo.org/records/9990002",
+    url: "https://zenodo.org/records/99900002",
     kind: "dataset", publisher: "Zenodo",
     title: "SAMPLE: Dataset of 40,000 AI-run survey interviews",
-    doi: "10.5281/zenodo.9990002", published_at: "2026-10-05T09:30:00+08:00",
+    doi: "10.5281/zenodo.99900002", published_at: "2026-10-05T09:30:00+08:00",
     seen: "search",
     text: page(
       "Dataset record.",
       "40,000 interview transcripts, with consent forms removed.",
-      "DOI 10.5281/zenodo.9990002.",
+      "DOI 10.5281/zenodo.99900002.",
     ),
   },
   "policy-draft": {
@@ -486,10 +486,10 @@ export const SOURCE_TABLE = {
     ),
   },
   "fell-paper": {
-    url: "https://journals.aps.org/prl/abstract/10.1103/ut-sample-0016",
-    kind: "paper", publisher: "Physical Review Letters",
+    url: "https://link.springer.com/article/10.1007/ut-sample-0016",
+    kind: "paper", publisher: "Sample Physics Letters",
     title: "SAMPLE: A robot lab reports a new magnetic material",
-    doi: "10.1103/ut-sample-0016", published_at: "2026-09-21T23:00:00+08:00",
+    doi: "10.1007/ut-sample-0016", published_at: "2026-09-21T23:00:00+08:00",
     seen: "pack", feed: "crossref-journals",
     text: page(
       "Hartwell Materials Lab (SAMPLE).",
@@ -500,10 +500,10 @@ export const SOURCE_TABLE = {
     ),
   },
   "fell-notice": {
-    url: "https://doi.org/10.1103/ut-sample-0017",
-    kind: "notice", publisher: "Physical Review Letters",
+    url: "https://doi.org/10.1007/ut-sample-0017",
+    kind: "notice", publisher: "Sample Physics Letters",
     title: "SAMPLE: Retraction: A robot lab reports a new magnetic material",
-    doi: "10.1103/ut-sample-0017", published_at: "2026-10-08",
+    doi: "10.1007/ut-sample-0017", published_at: "2026-10-08",
     seen: "fetched",
     text: page(
       "Retraction.",

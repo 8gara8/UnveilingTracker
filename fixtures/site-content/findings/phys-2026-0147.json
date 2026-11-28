@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "id": "phys-2026-0147",
+  "field": "physics",
+  "subfield": "plasma-fusion",
+  "kind": "result",
+  "title": {
+    "en": "SAMPLE: An AI controller steadies a fusion test machine",
+    "zh": "SAMPLE：AI 控制器穩定了核融合實驗裝置"
+  },
+  "depth": "item",
+  "explainer": {
+    "found": {
+      "en": "An AI controller held a plasma steady in a fusion test machine for 90 seconds, three times longer than the standard controller.",
+      "zh": "AI 控制器讓核融合實驗裝置中的電漿（plasma）穩定維持了 90 秒，是標準控制器的三倍。"
+    },
+    "matters": {
+      "en": "Fusion machines need steady control to work, and long runs are hard to reach. Better control is one step toward fusion power.",
+      "zh": "核融合裝置需要穩定的控制才能運作，而長時間運轉很難做到。更好的控制，是邁向核融合發電的一步。"
+    },
+    "ai_helped": {
+      "en": "Fernhill Fusion Group built the Fernhill Controller, which adjusted the magnets 1,000 times a second. It learned from practice runs.",
+      "zh": "Fernhill Fusion Group 開發了 Fernhill Controller，它每秒調整磁鐵 1,000 次。它從練習運轉中學習。"
+    },
+    "how_sure": {
+      "en": "Checked. Fusion Science Reports published the paper after peer review. Fernhill Fusion Group built the controller, and other groups have not yet repeated the run.",
+      "zh": "已查核。Fusion Science Reports 在同儕審查後發表了這篇論文。控制器由 Fernhill Fusion Group 開發，其他團隊還沒有重現這次運轉。"
+    },
+    "background": {
+      "en": "Fusion power needs a very hot gas held in place by magnets.",
+      "zh": "核融合發電需要一種被磁鐵固定在原位的極高溫氣體。"
+    },
+    "could_lead": {
+      "en": "If other groups repeat the run, AI control could become a standard part of fusion machines.",
+      "zh": "如果其他團隊重現這次運轉，AI 控制可能成為核融合裝置的標準配備。"
+    }
+  },
+  "go_deeper": [
+    "s1",
+    "s2"
+  ],
+  "ai": {
+    "role": "ai_ran",
+    "confidence": "claimed",
+    "systems": [
+      {
+        "name": "Fernhill Controller",
+        "maker": "Fernhill Fusion Group"
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "s1",
+        "quote": "The controller, built by Fernhill Fusion Group, adjusted the magnets 1,000 times a second",
+        "from_claimant": true
+      }
+    ]
+  },
+  "significance": "notable",
+  "rung": "checked",
+  "rung_history": [
+    {
+      "rung": "checked",
+      "date": "2026-10-11",
+      "recorded": "2026-10-12",
+      "source_id": "s1",
+      "by": "agent",
+      "note": null
+    }
+  ],
+  "since_then": [],
+  "sources": [
+    {
+      "id": "s1",
+      "kind": "paper",
+      "title": "SAMPLE: An AI controller holds a plasma steady in a test machine",
+      "publisher": "Fusion Science Reports",
+      "url": "https://link.springer.com/article/10.1007/ut-sample-0020",
+      "doi": "10.1007/ut-sample-0020",
+      "published_at": "2026-10-11T18:00:00+08:00",
+      "seen_as": "pack",
+      "added": "2026-10-12"
+    },
+    {
+      "id": "s2",
+      "kind": "statement",
+      "title": "SAMPLE: Fernhill team shows AI control of a fusion plasma",
+      "publisher": "Fernhill University",
+      "url": "https://www.fernhill-sample.edu/news/ut-sample-plasma-controller",
+      "doi": null,
+      "published_at": "2026-10-11T17:00:00+08:00",
+      "seen_as": "search",
+      "added": "2026-10-12"
+    }
+  ],
+  "reactions": [],
+  "artefacts": {
+    "doi": [
+      "10.1007/ut-sample-0020"
+    ],
+    "arxiv": [],
+    "lean": [],
+    "trial": [],
+    "pdb": []
+  },
+  "figure": null,
+  "who": [
+    {
+      "name": "Fernhill Fusion Group (SAMPLE)",
+      "ror": null
+    }
+  ],
+  "terms": [
+    "plasma"
+  ],
+  "related": [
+    "phys-2026-0134"
+  ],
+  "first_published": "2026-10-11",
+  "first_brief": "2026-10-12",
+  "briefs": [
+    "2026-10-12"
+  ],
+  "history": false,
+  "disclosure": false,
+  "applications": [],
+  "updated": "2026-10-12"
+}
