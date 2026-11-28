@@ -92,7 +92,16 @@ secondary: one Pace line a day, and charts on Mondays (SPEC §1).
     the hard limit 14).
   - **How it was checked:** every rule group and engine had an author and an independent reviewer; seven
     reviews of the spec against the code and against itself found the mismatches that SPEC §0.4 rows 103
-    to 296 record, each with the reason. Codex reviews the PR next.
+    to 296 record, each with the reason.
+  - **Kobol milestone (2026-11-28, about 08:20 Taipei, 00:20 UTC), on `9ff1b77` in the worktree
+    `/Users/kobol/Projects/UnveilingTracker-worktrees/p1-contract`:** `npm ci` and `npm run check` passed
+    (84 test files, 10,457 tests passed and 2 skipped, the two that need `/dev/full`, which macOS lacks);
+    each of the 40 English and 17 Chinese `invalid--` fixtures failed with exactly its own code, the 2 soft
+    ones passed with exactly their own warning, the valid Chinese draft passed, both `validate:all` runs
+    gave 0 errors, the sample Monday printed in 21 lines, and `fixtures/src/tools/simplified.ts --fetch
+    --check config/terms-zh.json` exited 0 with the file byte-identical. The sample's Pace line says
+    "13 weeks to 9 Aug" and its footer "Pace data to 4 Oct" on purpose: the newest 8 weeks are provisional
+    (SPEC §5.3), so the line stops 8 weeks before the data does. Codex reviews the PR next.
   - **Reversible defaults JL may overrule** are listed in the PR description (SPEC §0.4 gives the reason
     for each).
 - **Decisions by JL (do not reopen; design v0.4):**
