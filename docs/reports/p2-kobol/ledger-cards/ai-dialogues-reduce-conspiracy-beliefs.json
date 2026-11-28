@@ -1,0 +1,362 @@
+{
+ "slug": "ai-dialogues-reduce-conspiracy-beliefs",
+ "title": "Chats with an AI chatbot weaken belief in conspiracy theories",
+ "first_published": "2024-09",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1126/science.adq1814",
+   "final_url": "https://www.science.org/doi/10.1126/science.adq1814",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2024-09-13"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.adq1814",
+   "crossref": {
+    "doi": "10.1126/science.adq1814",
+    "resolves": true,
+    "title": "Durably reducing conspiracy beliefs through dialogues with AI",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2024-9-13",
+    "authors_first3": [
+     "Costello",
+     "Pennycook",
+     "Rand"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1126/science.aej2383",
+      "type": "expression_of_concern",
+      "source": "publisher"
+     },
+     {
+      "doi": "10.1126/science.aem1178",
+      "type": "correction",
+      "source": "publisher"
+     },
+     {
+      "doi": "10.1126/science.aem1178",
+      "type": "correction",
+      "source": "retraction-watch"
+     },
+     {
+      "doi": "10.1126/science.aej2383",
+      "type": "expression_of_concern",
+      "source": "retraction-watch"
+     }
+    ],
+    "relation": {
+     "is-supplemented-by": [
+      "10.1126/science.aeg5828"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://osf.io/preprints/psyarxiv/xcwdn_v1",
+   "final_url": "https://osf.io/preprints/psyarxiv/xcwdn_v1",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "OSF",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://datadryad.org/dataset/doi:10.5061/dryad.v6wwpzh4h",
+   "final_url": "https://datadryad.org/dataset/doi:10.5061/dryad.v6wwpzh4h",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Dryad | Data: Durably reducing conspiracy beliefs through dialogues with AI",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "README: Data from: Durably reducing conspiracy beliefs through dialogues with AI Thomas H.",
+    "To evaluate this possibility, we leveraged developments in generative artificial intelligence in two experiments whose primary analyses included 2044 conspiracy believers with complete pretreatment- and post-treatment-belief data after personalized evidence-based dialogues with GPT-4 Turbo.",
+    "This separation also preserves CC0 for Dryad data, MIT for code, and existing rights for publication materials.",
+    "Study and file scope Participants were assigned to an AI dialogue about a focal conspiracy belief or to an unrelated control dialogue.",
+    "The effect remained 2 months later, generalized across a wide range of conspiracy theories, and occurred even among participants with deeply entrenched beliefs.",
+    "Although the dialogues focused on a single conspiracy, they nonetheless diminished belief in unrelated conspiracies and shifted conspiracy-related behavioral intentions."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://news.cornell.edu/node/329310",
+   "final_url": "https://news.cornell.edu/stories/2024/09/ai-succeeds-combatting-conspiracy-theories",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AI succeeds in combatting conspiracy theories | Cornell Chronicle",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-09-12"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Arguing with a conspiracy theorist that the moon landing wasn’t staged is usually a futile effort, but ChatGPT might have better luck, according to new research by Cornell, American University and Massachusetts Institute of Technology psychologists.",
+   "passages": [
+    "To test their theory, Pennycook, Costello and Rand harnessed the power of GPT-4 Turbo, OpenAI’s most advanced large language model, to engage more than 2,000 conspiracy believers in personalized, evidence-based dialogues.",
+    "Participants were first asked to identify and describe a conspiracy theory they believed in using their own words, along with the evidence supporting their belief.GPT-4 Turbo then used this information to generate a personalized summary of the participant's belief and initiate a dialogue.",
+    "Participants also demonstrated shifts in their behavioral intentions related to conspiracy theories.",
+    "“Although much ink has been spilled over the potential for generative AI to supercharge disinformation, our study shows that it can also be part of the solution,” Rand said.",
+    "Social & Behavioral Sciences Media Inquiries Media Contact Becka Bowyer rpb224@cornell.edu 6072204185 Get Cornell news delivered right to your inbox."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12578366",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12578366/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Dialogues with large language models reduce conspiracy beliefs even when the AI is perceived as human",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-10-13"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-10-14"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1093/pnasnexus/pgaf325",
+   "crossref": {
+    "doi": "10.1093/pnasnexus/pgaf325",
+    "resolves": true,
+    "title": "Dialogues with large language models reduce conspiracy beliefs even when the AI is perceived as human",
+    "container": "PNAS Nexus",
+    "publisher": "Oxford University Press (OUP)",
+    "type": "journal-article",
+    "issued": "2025-10-14",
+    "authors_first3": [
+     "Boissin",
+     "Costello",
+     "Spinoza-Martín"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "brief-report"
+   },
+   "meta_description": "Although conspiracy beliefs are often viewed as resistant to correction, recent evidence shows that personalized, fact-based dialogues with a large language model (LLM) can reduce them. Is this effect driven by the debunking facts and evidence, or ...",
+   "passages": [
+    "PMC Copyright notice PMCID: PMC12578366 PMID: 41179846 Abstract Although conspiracy beliefs are often viewed as resistant to correction, recent evidence shows that personalized, fact-based dialogues with a large language model (LLM) can reduce them.",
+    "Just the facts: how dialogues with AI reduce conspiracy beliefs [preprint], ArXiv 2025.",
+    "Recent work, however, has challenged this view by demonstrating that a personalized evidence-based dialog with a conversational AI durably and substantially decreased belief in conspiracy theories (3).",
+    "Durably reducing conspiracy beliefs through dialogues with AI.",
+    "Large language models can argue in convincing ways about politics, but humans dislike AI authors: implications for governance.",
+    "Keywords: debunking, artificial intelligence, belief change, conspiracy beliefsIntroduction Beliefs in unfounded conspiracy theories are widely assumed to be essentially impervious to evidence-based correction (1)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://www.scimex.org/newsfeed/using-chatbots-to-reduce-conspiracy-beliefs",
+   "final_url": "https://www.scimex.org/newsfeed/using-chatbots-to-reduce-conspiracy-beliefs",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "url": "https://www.sciencemediacentre.co.nz/2024/09/13/using-chatbots-to-reduce-conspiracy-beliefs/",
+   "final_url": "https://www.sciencemediacentre.co.nz/2024/09/13/using-chatbots-to-reduce-conspiracy-beliefs/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Using chatbots to reduce conspiracy beliefs - Expert Reaction",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2024-09-13"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-09-13"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-09-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-09-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-10-27"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "A new US study* found personalised interactions with a chatbot could reduce belief in conspiracy theories.\nThe study, published in Science, involved 2190 Americans who held beliefs in conspiracy theories. Participants who had tailored conversations with a chatbot instructed to “very effectively per",
+   "passages": [
+    "Photo by Christin Hume on Unsplash Using chatbots to reduce conspiracy beliefs – Expert Reaction Expert Reactions | Published: 13 September 202427 October 2026 A new US study* found personalised interactions with a chatbot could reduce belief in conspiracy theories.",
+    "Participants who had tailored conversations with a chatbot instructed to “very effectively persuade” them against their conspiracy belief had an average of 20% reduction in these beliefs, which lasted for at least two months.",
+    "People reported a lower level of belief in their conspiracy after chatting with the AI bot, even two months later.",
+    "The Science Media Centre asked third-party experts to comment.",
+    "Dr Ana Stojanov, Lecturer, University of Otago, comments: “Having looked into how generative AI can support learning, I’m not surprised that it also shows promise in reducing conspiracy beliefs.",
+    "The study, published in Science, involved 2190 Americans who held beliefs in conspiracy theories."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://www.scimex.org/newsfeed/using-chatbots-to-reduce-conspiracy-beliefs",
+   "final_url": "https://www.scimex.org/newsfeed/using-chatbots-to-reduce-conspiracy-beliefs",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "url": "https://www.sciencemediacentre.co.nz/2024/09/13/using-chatbots-to-reduce-conspiracy-beliefs/",
+   "final_url": "https://www.sciencemediacentre.co.nz/2024/09/13/using-chatbots-to-reduce-conspiracy-beliefs/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Using chatbots to reduce conspiracy beliefs - Expert Reaction",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2024-09-13"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-09-13"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-09-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-09-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-10-27"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "A new US study* found personalised interactions with a chatbot could reduce belief in conspiracy theories.\nThe study, published in Science, involved 2190 Americans who held beliefs in conspiracy theories. Participants who had tailored conversations with a chatbot instructed to “very effectively per",
+   "passages": [
+    "Participants who had tailored conversations with a chatbot instructed to “very effectively persuade” them against their conspiracy belief had an average of 20% reduction in these beliefs, which lasted for at least two months.",
+    "Photo by Christin Hume on Unsplash Using chatbots to reduce conspiracy beliefs – Expert Reaction Expert Reactions | Published: 13 September 202427 October 2026 A new US study* found personalised interactions with a chatbot could reduce belief in conspiracy theories.",
+    "People reported a lower level of belief in their conspiracy after chatting with the AI bot, even two months later.",
+    "Dr Ana Stojanov, Lecturer, University of Otago, comments: “Having looked into how generative AI can support learning, I’m not surprised that it also shows promise in reducing conspiracy beliefs.",
+    "Dr John Kerr, Department of Public Health, University of Otago, comments: “Some conspiracy theories are relatively harmless; they are just kooky beliefs that don’t have any real impact on people’s daily lives and the choices they make.",
+    "“As I’ve said before, AI can act like an “all-knowing other,” and this study confirms that tailored interventions are more effective than generic approaches."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

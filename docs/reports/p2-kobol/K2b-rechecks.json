@@ -1,0 +1,488 @@
+[
+ {
+  "slug": "kakeya-conjecture-three-dimensions",
+  "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2026",
+  "final_url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2026",
+  "status": 200,
+  "readable": false,
+  "reason": "200 too little text",
+  "title_found": "Fields Medals 2026 | International Mathematical Union (IMU)",
+  "dates_found": [],
+  "doi": null,
+  "type_found": null,
+  "meta_description": null,
+  "passages": [],
+  "terms_found": {
+   "Kakeya": 0,
+   "Wang": 0,
+   "Hong Wang": 0,
+   "Zahl": 0
+  },
+  "crossref": null,
+  "open_copies": [],
+  "citation_form": {
+   "hong_wang_named_in_html": false,
+   "kakeya_in_html": false,
+   "html_citation": false,
+   "pdf_links": [
+    {
+     "href": "https://www.mathunion.org/fileadmin/documents/2026-07/Yu_Deng_Citations.pdf",
+     "text": "Citation"
+    },
+    {
+     "href": "https://www.mathunion.org/fileadmin/documents/2026-07/John_Pardon_Citations.pdf",
+     "text": "citation"
+    },
+    {
+     "href": "https://www.mathunion.org/fileadmin/documents/2026-07/Jacob_Tsimerman_Citations.pdf",
+     "text": "citation"
+    },
+    {
+     "href": "https://www.mathunion.org/fileadmin/documents/2026-07/Hong_Wang_Citations.pdf",
+     "text": "citation"
+    }
+   ]
+  },
+  "finding": "The 2026 Fields Medals page answers 200 but carries too little text for a snapshot (the citations are not in its HTML; Kakeya and Wang do not appear). Hong Wang’s citation is only a PDF: https://www.mathunion.org/fileadmin/documents/2026-07/Hong_Wang_Citations.pdf"
+ },
+ {
+  "slug": "kakeya-conjecture-three-dimensions",
+  "url": "https://terrytao.wordpress.com/2025/02/25/the-three-dimensional-kakeya-conjecture-after-wang-and-zahl/",
+  "final_url": "https://terrytao.wordpress.com/2025/02/25/the-three-dimensional-kakeya-conjecture-after-wang-and-zahl/",
+  "status": 200,
+  "readable": true,
+  "reason": null,
+  "title_found": "The three-dimensional Kakeya conjecture, after Wang and Zahl",
+  "dates_found": [
+   {
+    "source": "article:published_time",
+    "date": "2025-02-26"
+   }
+  ],
+  "doi": null,
+  "type_found": null,
+  "meta_description": "There has been some spectacular progress in geometric measure theory: Hong Wang and Joshua Zahl have just released a preprint that resolves the three-dimensional case of the infamous Kakeya set con…",
+  "passages": [
+   "With a somewhat lengthy induction on scales argument, Wang and Zahl are able to show that (a suitable version of) implies an “x-ray” version of itself, in which the lower bound of super-Kakeya configurations is noticeably better than the lower bound for Kakeya configurations.",
+   "In their new paper, Wang and Zahl established (1) for .",
+   "Did Wang and Zahl just prove that it is infinitesimal?",
+   "Reply 8 August, 2026 at 3:53 pm jennifer suzuki Being someone who does not work in the geometric measure theory, I of course had absolutely no ability to understand the original proof published by Wang-Zahl.",
+   "I had attempted to read the streamlined proof published by Wang’s advisor Guth, and the only thing I was able to understand were the first few pages regarding notations and definitions.",
+   "This conjecture asserts that a Kakeya set – a subset of that contains a unit line segment in every direction, must have Minkowski and Hausdorff dimension equal to three.",
+   "We assume (or some suitable variant thereof), and consider some thickened Kakeya set where is something resembling what we might call a “Kakeya configuration” at scale : a collection of thin tubes of dimension that are -separated in direction.",
+   "(I am told that Guth has a way to obtain this graininess reduction for this paper without invoking the polynomial method, but I have not studied the details.)",
+   "The exact dimensions of the grains are not specified in advance; the argument of Guth will show that is significantly larger than , but other than that there are no bounds.",
+   "One somewhat degenerate possibility is that there are enormous grains of dimensions approximately (i.e., ), so that the Kakeya set becomes more like a union of planar slabs."
+  ],
+  "terms_found": {
+   "Kakeya": 68,
+   "Wang": 18,
+   "Zahl": 16,
+   "Guth": 5,
+   "UCLA": 2
+  },
+  "crossref": null,
+  "open_copies": [],
+  "finding": "Terence Tao’s post is readable; Kakeya 68, Wang 18, Zahl 16, Guth 5 and UCLA 2 times in its text."
+ },
+ {
+  "slug": "halicin-deep-learning-antibiotic-discovery",
+  "url": "https://doi.org/10.3410/f.737402248.793571615",
+  "final_url": "https://facultyopinions.com/prime/737402248#eval793571615",
+  "status": 403,
+  "readable": false,
+  "reason": "403 too little text",
+  "title_found": "You don’t have access to this part of the site - Faculty Opinions",
+  "dates_found": [],
+  "doi": "10.3410/f.737402248.793571615",
+  "type_found": null,
+  "meta_description": null,
+  "passages": [],
+  "terms_found": {
+   "halicin": 0,
+   "Stokes": 0,
+   "antibiotic": 0
+  },
+  "crossref": {
+   "doi": "10.3410/f.737402248.793571615",
+   "resolves": true,
+   "title": "Faculty Opinions recommendation of A deep learning approach to antibiotic discovery.",
+   "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+   "publisher": "H1 Connect",
+   "type": "dataset",
+   "issued": "2020-2-25",
+   "authors_first3": [
+    "Che"
+   ],
+   "author_count": 1,
+   "relation": {
+    "is-review-of": [
+     {
+      "id-type": "doi",
+      "id": "10.1016/j.cell.2020.01.021",
+      "asserted-by": "subject"
+     }
+    ]
+   }
+  },
+  "reviewer": [],
+  "open_copies": [],
+  "finding": "The DOI resolves (Crossref: a Faculty Opinions recommendation of the Stokes et al. paper) and lands on facultyopinions.com/prime/737402248, which answers 403 to a plain GET; the reviewer and affiliation are not readable."
+ },
+ {
+  "slug": "halicin-deep-learning-antibiotic-discovery",
+  "url": "https://doi.org/10.3410/f.737402248.793571477",
+  "final_url": "https://facultyopinions.com/prime/737402248#eval793571477",
+  "status": 403,
+  "readable": false,
+  "reason": "403 too little text",
+  "title_found": "You don’t have access to this part of the site - Faculty Opinions",
+  "dates_found": [],
+  "doi": "10.3410/f.737402248.793571477",
+  "type_found": null,
+  "meta_description": null,
+  "passages": [],
+  "terms_found": {
+   "halicin": 0,
+   "Stokes": 0,
+   "antibiotic": 0
+  },
+  "crossref": {
+   "doi": "10.3410/f.737402248.793571477",
+   "resolves": true,
+   "title": "Faculty Opinions recommendation of A deep learning approach to antibiotic discovery.",
+   "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+   "publisher": "H1 Connect",
+   "type": "dataset",
+   "issued": "2020-2-21",
+   "authors_first3": [
+    "Whitfield"
+   ],
+   "author_count": 1,
+   "relation": {
+    "is-review-of": [
+     {
+      "id-type": "doi",
+      "id": "10.1016/j.cell.2020.01.021",
+      "asserted-by": "subject"
+     }
+    ]
+   }
+  },
+  "reviewer": [],
+  "open_copies": [],
+  "finding": "The DOI resolves (Crossref: a Faculty Opinions recommendation of the Stokes et al. paper) and lands on facultyopinions.com/prime/737402248, which answers 403 to a plain GET; the reviewer and affiliation are not readable."
+ },
+ {
+  "slug": "halicin-deep-learning-antibiotic-discovery",
+  "url": "https://doi.org/10.3410/f.737402248.793576936",
+  "final_url": "https://facultyopinions.com/prime/737402248#eval793576936",
+  "status": 403,
+  "readable": false,
+  "reason": "403 too little text",
+  "title_found": "You don’t have access to this part of the site - Faculty Opinions",
+  "dates_found": [],
+  "doi": "10.3410/f.737402248.793576936",
+  "type_found": null,
+  "meta_description": null,
+  "passages": [],
+  "terms_found": {
+   "halicin": 0,
+   "Stokes": 0,
+   "antibiotic": 0
+  },
+  "crossref": {
+   "doi": "10.3410/f.737402248.793576936",
+   "resolves": true,
+   "title": "Faculty Opinions recommendation of A deep learning approach to antibiotic discovery.",
+   "container": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+   "publisher": "H1 Connect",
+   "type": "dataset",
+   "issued": "2020-7-24",
+   "authors_first3": [
+    "Swinney"
+   ],
+   "author_count": 1,
+   "relation": {
+    "is-review-of": [
+     {
+      "id-type": "doi",
+      "id": "10.1016/j.cell.2020.01.021",
+      "asserted-by": "subject"
+     }
+    ]
+   }
+  },
+  "reviewer": [],
+  "open_copies": [],
+  "finding": "The DOI resolves (Crossref: a Faculty Opinions recommendation of the Stokes et al. paper) and lands on facultyopinions.com/prime/737402248, which answers 403 to a plain GET; the reviewer and affiliation are not readable."
+ },
+ {
+  "slug": "halicin-deep-learning-antibiotic-discovery",
+  "search": "Europe PMC: TITLE_ABS:\"halicin\" NOT authors Stokes JM, Collins JJ, Barzilay R; sorted by citations",
+  "count": 34,
+  "later_papers": [
+   {
+    "title": "The Delivery of the Novel Drug 'Halicin' Using Electrospun Fibers for the Treatment of Pressure Ulcer against Pathogenic Bacteria.",
+    "doi": "10.3390/pharmaceutics12121189",
+    "date": "2020-12-08",
+    "journal": "Pharmaceutics",
+    "authors": "Aburayan WS, Booq RY, BinSaleh NS, Alfassam HA, Bakr AA, Bukhary HA, Alyamani EJ, Tawfik EA.",
+    "pmcid": "PMC7762391",
+    "isOpenAccess": "Y",
+    "source": "MED",
+    "open_copy": {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7762391/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7762391/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "The Delivery of the Novel Drug ‘Halicin’ Using Electrospun Fibers for the Treatment of Pressure Ulcer against Pathogenic Bacteria",
+     "dates_found": [
+      {
+       "source": "citation_publication_date",
+       "date": "2020 Dec 8"
+      }
+     ],
+     "doi": "10.3390/pharmaceutics12121189",
+     "type_found": null,
+     "meta_description": "Pressure ulcer or bedsore is a form of skin infection that commonly occurs with patients admitted to the hospital for an extended period of time, which might lead to severe complications in the absence of medical attention, resulting in infection ...",
+     "passages": [
+      "In this study, a drug named ‘Halicin’ inhibited different gram-positive and gram-negative bacteria, including certain antibiotics-resistant strains.",
+      "Halicin (5-[(5-Nitro-2-thiazolyl) thio]-1,3,4thiadiazol-2-amine) structure is more analogous to a class of anti-parasitic drugs that contains nitrogen and metronidazole antibiotic [31,36].",
+      "Halicin, a newly discovered drug effective against several bacterial strains, including multidrug-resistant bacteria, was investigated to reduce bacterial infection burden.",
+      "The diameters of inhibition growth zones were measured, and the results have shown that the drug-loaded fibers were able to inhibit the growth of bacteria compared to the halicin discs.",
+      "Keywords: electrospinning, electrospun fibers, halicin, antibacterial dressing, pressure ulcer1.",
+      "However, in some cases, antibiotics are necessary and required to target different types of resistant bacteria.",
+      "Therefore, discovering novel antibiotics with low-to-none bacterial resistance is essential to overcome the rise of antibiotic-resistant bacterial strains [29].",
+      "Among surgical, organ transplantation, cancer, and critical care patients, antibiotic therapies were able to enhance such population’s clinical outcomes throughout the reduction of infection-associated mortality.",
+      "According to the World Health Organization (WHO) 2019 report, approximately 700,000 people die every year from antibiotic-resistant infections.",
+      "In the United States, nearly two million are infected with antibiotic-resistant bacteria yearly, with a mortality of 23,000 of these cases according to Center for Disease Control and Prevention (CDC) [30]."
+     ],
+     "terms_found": {
+      "halicin": 49,
+      "Stokes": 2,
+      "antibiotic": 18
+     }
+    }
+   },
+   {
+    "title": "Assessment of the Antibacterial Efficacy of Halicin against Pathogenic Bacteria.",
+    "doi": "10.3390/antibiotics10121480",
+    "date": "2021-12-02",
+    "journal": "Antibiotics (Basel, Switzerland)",
+    "authors": "Booq RY, Tawfik EA, Alfassam HA, Alfahad AJ, Alyamani EJ.",
+    "pmcid": "PMC8698312",
+    "isOpenAccess": "Y",
+    "source": "MED",
+    "open_copy": {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8698312/",
+     "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8698312/",
+     "status": 200,
+     "readable": true,
+     "reason": null,
+     "title_found": "Assessment of the Antibacterial Efficacy of Halicin against Pathogenic Bacteria",
+     "dates_found": [
+      {
+       "source": "citation_publication_date",
+       "date": "2021 Dec 2"
+      }
+     ],
+     "doi": "10.3390/antibiotics10121480",
+     "type_found": null,
+     "meta_description": "Artificial intelligence (AI) is a new technology that has been employed to screen and discover new drugs. Using AI, an anti-diabetic treatment (Halicin) was nominated and proven to have a unique antibacterial activity against several harmful ...",
+     "passages": [
+      "Using AI, an anti-diabetic treatment (Halicin) was nominated and proven to have a unique antibacterial activity against several harmful bacterial strains, including multidrug-resistant bacteria.",
+      "This study aims to explore the antibacterial effect of halicin and microbial susceptibility using the zone of inhibition and the minimum inhibition concentration (MIC) values while assessing the stability of stored halicin over a period of time with cost-effective and straightforward methods.",
+      "The MIC of halicin was found to be 16 μg/mL for S. aureus (ATCC BAA-977), 32 μg/mL for E. coli (ATCC 25922), 128 μg/mL for A. baumannii (ATCC BAA-747), and 256 μg/mL for MDR A. baumannii.",
+      "MICs and zones of inhibition were found to be high (R = 0.90 to 0.98), suggesting that halicin has a promising antimicrobial activity and may be used as a wide-spectrum antibacterial drug.",
+      "Keywords: halicin, zone of inhibition, disc diffusion, minimum inhibitory concentration, multidrug-resistant bacteria, gram-positive, gram-negative bacterial strains1.",
+      "Introduction The rise of antibiotic-resistant bacteria is considered a crucial health threat globally [1].",
+      "The team used a machine-learning algorithm AI from the ZINC15 database, an online collection of nearly 1.5 billion chemical compounds, to discover a previously developed anti-diabetic ‘Halicin’ (formerly known as SU-3327) with remarkable antibacterial activity against MDR bacteria [4].",
+      "Unfortunately, the standard guidelines reference lacks the antibacterial activity of halicin against pathogenic bacteria, making it difficult to validate its antibacterial efficacy.",
+      "Here, halicin MIC was validated and determined.",
+      "The results of the antibacterial activity were correlated with the disc diffusion assay against gram-positive and gram-negative bacteria, including multidrug-resistant bacterium, to construct linear regression graphs of the halicin antibacterial drug.2."
+     ],
+     "terms_found": {
+      "halicin": 45,
+      "Stokes": 1,
+      "antibiotic": 8
+     }
+    }
+   },
+   {
+    "title": "Synergism between the Synthetic Antibacterial and Antibiofilm Peptide (SAAP)-148 and Halicin.",
+    "doi": "10.3390/antibiotics11050673",
+    "date": "2022-05-17",
+    "journal": "Antibiotics (Basel, Switzerland)",
+    "authors": "van Gent ME, van der Reijden TJK, Lennard PR, de Visser AW, Schonkeren-Ravensbergen B, Dolezal N, Cordfunke RA, Drijfhou",
+    "pmcid": "PMC9137631",
+    "isOpenAccess": "Y",
+    "source": "MED"
+   },
+   {
+    "title": "Halicin Is Effective Against Staphylococcus aureus Biofilms In Vitro.",
+    "doi": "10.1097/corr.0000000000002251",
+    "date": "2022-05-17",
+    "journal": "Clinical orthopaedics and related research",
+    "authors": "Higashihira S, Higashihira S, Simpson SJ, Collier CD, Natoli RM, Kittaka M, Greenfield EM.",
+    "pmcid": "PMC9278916",
+    "isOpenAccess": "N",
+    "source": "MED"
+   },
+   {
+    "title": "Physical and Functional Characterization of PLGA Nanoparticles Containing the Antimicrobial Peptide SAAP-148.",
+    "doi": "10.3390/ijms24032867",
+    "date": "2023-02-02",
+    "journal": "International journal of molecular sciences",
+    "authors": "Ali M, van Gent ME, de Waal AM, van Doodewaerd BR, Bos E, Koning RI, Cordfunke RA, Drijfhout JW, Nibbering PH.",
+    "pmcid": "PMC9918011",
+    "isOpenAccess": "Y",
+    "source": "MED"
+   },
+   {
+    "title": "Artificial Intelligence in Small-Molecule Drug Discovery: A Critical Review of Methods, Applications, and Real-World Outcomes.",
+    "doi": "10.3390/ph18091271",
+    "date": "2025-08-26",
+    "journal": "Pharmaceuticals (Basel, Switzerland)",
+    "authors": "Niazi SK.",
+    "pmcid": "PMC12472608",
+    "isOpenAccess": "Y",
+    "source": "MED"
+   },
+   {
+    "title": "Repurposing Halicin as a potent covalent inhibitor for the SARS-CoV-2 main protease.",
+    "doi": "10.1016/j.crchbi.2022.100025",
+    "date": "2022-04-22",
+    "journal": "Current research in chemical biology",
+    "authors": "Yang KS, Alex Kuo ST, Blankenship LR, Geng ZZ, Li SG, Russell DH, Yan X, Xu S, Liu WR.",
+    "pmcid": "PMC9023366",
+    "isOpenAccess": "Y",
+    "source": "MED"
+   },
+   {
+    "title": "Halicin: A New Horizon in Antibacterial Therapy against Veterinary Pathogens.",
+    "doi": "10.3390/antibiotics13060492",
+    "date": "2024-05-27",
+    "journal": "Antibiotics (Basel, Switzerland)",
+    "authors": "Wang S, Zhao K, Chen Z, Liu D, Tang S, Sun C, Chen H, Wang Y, Wu C.",
+    "pmcid": "PMC11200678",
+    "isOpenAccess": "Y",
+    "source": "MED"
+   },
+   {
+    "title": "Study on antibacterial effect of halicin (SU3327) against Enterococcus faecalis and Enterococcus faecium.",
+    "doi": "10.1093/femspd/ftac037",
+    "date": "2022-10-01",
+    "journal": "Pathogens and disease",
+    "authors": "Hussain Z, Pengfei S, Yimin L, Shasha L, Zehao L, Yifan Y, Linhui L, Linying Z, Yong W.",
+    "pmcid": null,
+    "isOpenAccess": "N",
+    "source": "MED"
+   },
+   {
+    "title": "Safety and efficacy evaluation of halicin as an effective drug for inhibiting intestinal infections.",
+    "doi": "10.3389/fphar.2024.1389293",
+    "date": "2024-05-09",
+    "journal": "Frontiers in pharmacology",
+    "authors": "Zhang M, Lin S, Han L, Zhang J, Liu S, Yang X, Wang R, Yang X, Yi Y.",
+    "pmcid": "PMC11111955",
+    "isOpenAccess": "Y",
+    "source": "MED"
+   }
+  ],
+  "finding": "Europe PMC finds 34 papers on halicin with no Stokes, Collins or Barzilay as author; the two most cited open ones were read in PMC with passages (an electrospun-fibre delivery study, 2020, and an antibacterial efficacy assessment, 2021)."
+ },
+ {
+  "slug": "steppe-ancestry-reshapes-europe-ancient-dna",
+  "request": "Saag et al. 2017",
+  "crossref_search": [
+   {
+    "doi": "10.1016/j.cub.2017.06.022",
+    "title": "Extensive Farming in Estonia Started through a Sex-Biased Migration from the Steppe",
+    "container": "Current Biology",
+    "publisher": "Elsevier BV",
+    "date": "2017-7",
+    "score": 83.50918
+   },
+   {
+    "doi": "10.1101/112714",
+    "title": "Extensive farming in Estonia started through a sex-biased migration from the Steppe",
+    "publisher": "openRxiv",
+    "date": "2017-3-2",
+    "score": 83.241844
+   },
+   {
+    "doi": "10.1016/j.cub.2022.05.058",
+    "title": "Historical human migrations: From the steppe to the basin",
+    "container": "Current Biology",
+    "publisher": "Elsevier BV",
+    "date": "2022-7",
+    "score": 39.63101
+   }
+  ],
+  "crossref": {
+   "doi": "10.1016/j.cub.2017.06.022",
+   "resolves": true,
+   "title": "Extensive Farming in Estonia Started through a Sex-Biased Migration from the Steppe",
+   "container": "Current Biology",
+   "publisher": "Elsevier BV",
+   "type": "journal-article",
+   "issued": "2017-7",
+   "authors_first3": [
+    "Saag",
+    "Varul",
+    "Scheib"
+   ],
+   "author_count": 14,
+   "relation": {
+    "has-preprint": [
+     {
+      "id-type": "doi",
+      "id": "10.1101/112714",
+      "asserted-by": "object"
+     }
+    ]
+   }
+  },
+  "open_copies": [],
+  "europepmc": null,
+  "preprints": [],
+  "finding": "Saag et al. 2017 is 10.1016/j.cub.2017.06.022 (Current Biology, Elsevier, July 2017); no PMC copy and no preprint found in Europe PMC."
+ },
+ {
+  "slug": "steppe-ancestry-reshapes-europe-ancient-dna",
+  "request": "Allentoft et al. 2015 open preprint or copy",
+  "europepmc": [],
+  "arxiv_entries": 0,
+  "crossref_posted_content": [
+   {
+    "doi": "10.21203/rs.3.rs-10296029/v1",
+    "title": "Mixed-data Morphometric Classification of Seima–Turbino Stone Projectiles: Hafting Templates and Inter-site Variability across Bronze Age Eurasia",
+    "date": "2026-11-10",
+    "publisher": "Springer Science and Business Media LLC"
+   },
+   {
+    "doi": "10.2139/ssrn.4549572",
+    "title": "Bronze Age Wool Textile and Fur Items from Northern Eurasia: Identification of the Fiber Origin and Differentiation between Domestic Animal Species",
+    "date": "2023",
+    "publisher": "Elsevier BV"
+   },
+   {
+    "doi": "10.64628/ab.vqs5jjsj5",
+    "title": "DNA study uncovers continental origins of Britain’s bronze age population",
+    "date": "2026-2-23",
+    "publisher": "The Conversation Media Group Ltd"
+   }
+  ],
+  "pmc_copy": null,
+  "crossref": {
+   "doi": "10.1038/nature14507",
+   "title": "Population genomics of Bronze Age Eurasia",
+   "issued": "2015-6-10",
+   "container": "Nature",
+   "relation": "none (Crossref lists no preprint for it)"
+  },
+  "finding": "No open preprint found: Crossref lists no preprint relation for 10.1038/nature14507, its posted-content search returned unrelated works, arXiv has no entry with that title, and Europe PMC searches by title returned no record of the paper or a PMC copy. Only the Nature page remains, which nature.com serves to a plain GET (K2 and K1b)."
+ }
+]

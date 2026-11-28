@@ -1,0 +1,521 @@
+{
+ "slug": "speech-neuroprostheses-stanford-ucsf-2023",
+ "title": "Two brain implants turn attempted speech into text and voice",
+ "first_published": "2023-08-23",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-023-06377-x",
+   "final_url": "https://www.nature.com/articles/s41586-023-06377-x?error=cookies_not_supported&code=3387e1cd-58e3-4c20-b8a0-79862fcdc232",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A high-performance speech neuroprosthesis",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-07-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-01-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-06-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-08-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-06377-x",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06377-x",
+    "resolves": true,
+    "title": "A high-performance speech neuroprosthesis",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-8-23",
+    "authors_first3": [
+     "Willett",
+     "Kunz",
+     "Fan"
+    ],
+    "author_count": 12,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1101/2023.01.21.524489"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Speech brain–computer interfaces (BCIs) have the potential to restore rapid communication to people with paralysis by decoding neural activity evoked by attempted speech into text1,2 or sound3,4. Early demonstrations, although promising, have not yet achieved accuracies sufficiently high for communi",
+   "passages": [
+    "Speech recognition with deep recurrent neural networks.",
+    "We trained a recurrent neural network (RNN) decoder to emit, at each 80 ms time step, the probability of each phoneme being spoken at that time.",
+    "4d).DiscussionPeople with neurological disorders such as brainstem stroke or ALS frequently face severe speech and motor impairment and, in some cases, complete loss of the ability to speak (locked-in syndrome28).",
+    "Brain–machine interface Neural decoding Speech Disorders Assessment and Treatment in Neurological Conditions MainIt is not yet known how orofacial movement and speech production are organized in motor cortex at single-neuron resolution.",
+    "2: Neural decoding of attempted speech in real time.Full size imagea, Diagram of the decoding algorithm.",
+    "In IEEE Intl Conf. on Acoustics, Speech, and Signal Processing https://doi.org/10.1109/ICASSP.1992.225858 (IEEE, 1992).Hinton, G. et al."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/10468393",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10468393/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A high-performance speech neuroprosthesis",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-08-22"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-08-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-06377-x",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06377-x",
+    "resolves": true,
+    "title": "A high-performance speech neuroprosthesis",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-8-23",
+    "authors_first3": [
+     "Willett",
+     "Kunz",
+     "Fan"
+    ],
+    "author_count": 12,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.1101/2023.01.21.524489"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Speech brain–computer interfaces (BCIs) have the potential to restore rapid communication to people with paralysis by decoding neural activity evoked by attempted speech into text1,2 or sound3,4. Early demonstrations, although promising, have not ...",
+   "passages": [
+    "Speech recognition with deep recurrent neural networks.",
+    "Abstract Speech brain–computer interfaces (BCIs) have the potential to restore rapid communication to people with paralysis by decoding neural activity evoked by attempted speech into text1,2 or sound3,4.",
+    "4d).Discussion People with neurological disorders such as brainstem stroke or ALS frequently face severe speech and motor impairment and, in some cases, complete loss of the ability to speak (locked-in syndrome28).",
+    "We trained a recurrent neural network (RNN) decoder to emit, at each 80 ms time step, the probability of each phoneme being spoken at that time.",
+    "PMC Copyright notice PMCID: PMC10468393 PMID: 37612500 Previous version available: This article is based on a previously available preprint posted on bioRxiv on April 25, 2023: \" A high-performance speech neuroprosthesis \".",
+    "Neural decoding of attempted speech in real time."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.nature.com/articles/s41586-023-06443-4",
+   "final_url": "https://www.nature.com/articles/s41586-023-06443-4?error=cookies_not_supported&code=e2ca8b81-9a5d-47e9-ad4f-b864e61131f7",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A high-performance neuroprosthesis for speech decoding and avatar control",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-07-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-02-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-07-17"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-08-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-06443-4",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06443-4",
+    "resolves": true,
+    "title": "A high-performance neuroprosthesis for speech decoding and avatar control",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-8-23",
+    "authors_first3": [
+     "Metzger",
+     "Littlejohn",
+     "Silva"
+    ],
+    "author_count": 15,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41586-024-07735-z",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Speech neuroprostheses have the potential to restore communication to people living with paralysis, but naturalistic speed and expressivity are elusive1. Here we use high-density surface recordings of the speech cortex in a clinical-trial participant with severe limb and vocal paralysis to achieve h",
+   "passages": [
+    "Speech recognition with deep recurrent neural networks.",
+    "We trained and evaluated deep-learning models using neural data collected as the participant attempted to silently speak sentences.",
+    "Article Published: 23 August 2023 A high-performance neuroprosthesis for speech decoding and avatar control Sean L.",
+    "A high-performance neuroprosthesis for speech decoding and avatar control.",
+    "Here we use high-density surface recordings of the speech cortex in a clinical-trial participant with severe limb and vocal paralysis to achieve high-performance real-time decoding across three complementary speech-related output modalities: text, speech audio and facial-avatar animation.",
+    "Connectionist temporal classification: labelling unsegmented sequence data with recurrent neural networks."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10826467",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10826467/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A high-performance neuroprosthesis for speech decoding and avatar control",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-08-22"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-08-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-06443-4",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06443-4",
+    "resolves": true,
+    "title": "A high-performance neuroprosthesis for speech decoding and avatar control",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-8-23",
+    "authors_first3": [
+     "Metzger",
+     "Littlejohn",
+     "Silva"
+    ],
+    "author_count": 15,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41586-024-07735-z",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Speech neuroprostheses have the potential to restore communication to people living with paralysis, but naturalistic speed and expressivity are elusive1. Here we use high-density surface recordings of the speech cortex in a clinical-trial ...",
+   "passages": [
+    "Following the Food and Drug Administration’s investigational device exemption approval for the neural-implant device used in this study, the study protocol was approved by the University of California, San Francisco Institutional Review Board.",
+    "Find articles by Edward F Chang 1,2,3,✉ Author information Article notes Copyright and License information 1Department of Neurological Surgery, University of California, San Francisco, San Francisco, CA, USA.",
+    "We trained and evaluated deep-learning models using neural data collected as the participant attempted to silently speak sentences.",
+    "We trained deep-learning models to learn mappings between these ECoG features and phones, speech-sound features and articulatory gestures, which we then used to output text, synthesize speech audio and animate a virtual avatar, respectively (Fig.",
+    "Neural activity was processed and used to train deep-learning models to predict phone probabilities, speech-sound features and articulatory gestures.",
+    "Initial efforts to decode text from the brain activity ofa person with anarthria during attempted speech had various limitations, including slow decoding rates and small vocabulary sizes1,3."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://med.stanford.edu/news/all-news/2023/08/brain-implant-speech-als.html",
+   "final_url": "https://med.stanford.edu/news/all-news/2023/08/brain-implant-speech-als.html",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Brain implants, software guide speech-disabled person’s intended words to computer screen",
+   "title_match": false,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-07-29"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Our brains remember how to formulate words even if the muscles responsible for saying them out loud are incapacitated. A brain-computer hookup is making the dream of restoring speech a reality.",
+   "passages": [
+    "On March 29, 2022, a Stanford Medicine neurosurgeon placed two tiny sensors apiece in two separate regions - both implicated in speech production - along the surface of Bennett's brain.",
+    "Pat Bennett has lost her ability to speak because of ALS.Steve Fisch \"These initial results have proven the concept, and eventually technology will catch up to make it easily accessible to people who cannot speak,\" Bennett wrote.",
+    "The devices transmit signals from a couple of speech-related regions in Bennett’s brain to state-of-the-art software that decodes her brain activity and converts it to text displayed on a computer screen.",
+    "Find more photos here (credit: Steve Fisch/Stanford Medicine).",
+    "“But in a group of ALS patients, it begins with speech difficulties.",
+    "Combined with state-of-the-art decoding software, they're designed to translate the brain activity accompanying attempts at speech into words on a screen."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://www.nature.com/articles/d41586-023-02546-0",
+   "final_url": "https://www.nature.com/articles/d41586-023-02546-0?error=cookies_not_supported&code=c14af650-2ea8-4f5f-96ed-a453b288acf5",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Brain implants that enable speech pass performance milestones",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-07-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-08-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-023-02546-0",
+   "crossref": {
+    "doi": "10.1038/d41586-023-02546-0",
+    "resolves": true,
+    "title": "Brain implants that enable speech pass performance milestones",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-8-23",
+    "authors_first3": [
+     "Ramsey",
+     "Crone"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "Thoughts converted to sentences at speeds nearing that of normal speech.",
+   "passages": [
+    "NEWS AND VIEWS 23 August 2023 Brain implants that enable speech pass performance milestones Two brain–computer interfaces have been developed that bring unprecedented capabilities for translating brain signals into sentences — at speeds close to that of normal speech, and with vocabularies exceeding 1,000 words.",
+    "Two articles published in Nature demonstrate that individuals who are unable to speak as a result of severe paralysis could potentially use implantable brain–computer interfaces (BCIs) to communicate at rates much greater than those typically achievable with alternative communication options.",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,...",
+    "Willett et al.1 report a device that records brain activity using electrodes that penetrate the brain’s cortex, whereas Metzger and colleagues’ device2 uses electrodes placed on the cortical surface.",
+    "These studies signal a turning point in the development of BCI technology that aims to restore communication for people with severe paralysis."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://www.nature.com/articles/d41586-023-02546-0",
+   "final_url": "https://www.nature.com/articles/d41586-023-02546-0?error=cookies_not_supported&code=c14af650-2ea8-4f5f-96ed-a453b288acf5",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Brain implants that enable speech pass performance milestones",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-07-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-08-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-023-02546-0",
+   "crossref": {
+    "doi": "10.1038/d41586-023-02546-0",
+    "resolves": true,
+    "title": "Brain implants that enable speech pass performance milestones",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-8-23",
+    "authors_first3": [
+     "Ramsey",
+     "Crone"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "Thoughts converted to sentences at speeds nearing that of normal speech.",
+   "passages": [
+    "NEWS AND VIEWS 23 August 2023 Brain implants that enable speech pass performance milestones Two brain–computer interfaces have been developed that bring unprecedented capabilities for translating brain signals into sentences — at speeds close to that of normal speech, and with vocabularies exceeding 1,000 words.",
+    "Two articles published in Nature demonstrate that individuals who are unable to speak as a result of severe paralysis could potentially use implantable brain–computer interfaces (BCIs) to communicate at rates much greater than those typically achievable with alternative communication options.",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,...",
+    "Willett et al.1 report a device that records brain activity using electrodes that penetrate the brain’s cortex, whereas Metzger and colleagues’ device2 uses electrodes placed on the cortical surface.",
+    "These studies signal a turning point in the development of BCI technology that aims to restore communication for people with severe paralysis."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

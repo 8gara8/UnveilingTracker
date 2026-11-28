@@ -1,0 +1,375 @@
+{
+ "slug": "borophene-two-teams-make-2d-boron",
+ "title": "Borophene, a one-atom-thick metal sheet of pure boron, is made and confirmed",
+ "first_published": "2015-12-18",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4922135",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4922135/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Synthesis of borophenes: Anisotropic, two-dimensional boron polymorphs",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2015-12-17"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2015-12-18"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1126/science.aad1080",
+   "crossref": {
+    "doi": "10.1126/science.aad1080",
+    "resolves": true,
+    "title": "Synthesis of borophenes: Anisotropic, two-dimensional boron polymorphs",
+    "container": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "journal-article",
+    "issued": "2015-12-18",
+    "authors_first3": [
+     "Mannix",
+     "Zhou",
+     "Kiraly"
+    ],
+    "author_count": 15,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "At the atomic-cluster scale, pure boron is markedly similar to carbon, forming simple planar molecules and cage-like fullerenes.Theoretical studies predict that two-dimensional (2D) boron sheets will adopt an atomic configuration similar to that of ...",
+   "passages": [
+    "Find articles by Nathan P Guisinger 1,* Author information Copyright and License information 1Center for Nanoscale Materials, Argonne National Laboratory, 9700 South Cass Avenue, Building 440, Argonne, IL 60439, USA.",
+    "We synthesized atomically thin, crystalline 2D boron sheets (i.e., borophene) on silver surfaces under ultrahigh-vacuum conditions.",
+    "Inset shows atomic continuity across the Ag(111) step (Vsample = −0.5 V, It = 700 pA).We have grown atomically thin, borophene sheets under ultrahigh-vacuum (UHV) conditions (Fig.",
+    "Find articles by Andrew J Mannix 1,2, Xiang-Feng Zhou Xiang-Feng Zhou 3Department of Geosciences, Center for Materials by Design, and Institute for Advanced Computational Science, Stony Brook University, Stony Brook, NY 11794, USA.",
+    "Unlike bulk boron allotropes, borophene shows metallic characteristics that are consistent with predictions of a highly anisotropic, 2D metal.",
+    "10Department of Chemistry, Northwestern University, 2220 Campus Drive, Evanston, IL 60208, USA. *Corresponding author. nguisinger@anl.gov (N.P.G.); m-hersam@northwestern.edu (M.C.H.); artem.oganov@stonybrook.edu (A.R.O.)"
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://link.springer.com/article/10.1038/nchem.2491",
+   "final_url": "https://link.springer.com/article/10.1038/nchem.2491?error=cookies_not_supported&code=59edaf35-5e1c-4787-92d5-08052f4d6e1c",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Experimental realization of two-dimensional boron sheets",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2016-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2016-03-28"
+    },
+    {
+     "source": "dc.date",
+     "date": "2016-03-28"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2016-03-28"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2016-03-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-03-28"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2015-07-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-03-02"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2016-03-28"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/nchem.2491",
+   "crossref": {
+    "doi": "10.1038/nchem.2491",
+    "resolves": true,
+    "title": "Experimental realization of two-dimensional boron sheets",
+    "container": "Nature Chemistry",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2016-3-28",
+    "authors_first3": [
+     "Feng",
+     "Zhang",
+     "Zhong"
+    ],
+    "author_count": 10,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "A variety of two-dimensional materials have been reported in recent years, yet single-element systems such as graphene and black phosphorus have remained rare. Boron analogues have been predicted, as boron atoms possess a short covalent radius and the flexibility to adopt sp2 hybridization, features",
+   "passages": [
+    "Boron analogues have been predicted, as boron atoms possess a short covalent radius and the flexibility to adopt sp2 hybridization, features that favour the formation of two-dimensional allotropes, and one example of such a borophene material has been reported recently.",
+    "Here, we present a parallel experimental work showing that two-dimensional boron sheets can be grown epitaxially on a Ag(111) substrate.",
+    "Experimental realization of two-dimensional boron sheets.",
+    "Preprint at http://arxiv.org/abs/1601.01393 (2016).Liu, Z. et al.",
+    "All authors contributed to data analyses and discussions.Corresponding authorsCorrespondence to Hui Li, Lan Chen or Kehui Wu.Ethics declarations Competing interests The authors declare no competing financial interests.",
+    "An introduction to boron: history, sources, uses, and chemistry."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.mccormick.northwestern.edu/news/articles/2015/12/scientists-create-atomically-thin-metallic-boron.html",
+   "final_url": "https://www.mccormick.northwestern.edu/news/articles/2015/12/scientists-create-atomically-thin-metallic-boron.html",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Scientists Create Atomically Thin Metallic Boron",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "ld+json datePublished",
+     "date": "2015-12-17"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Professor Mark Hersam and a team of scientists have, for the first time, created a two-dimensional sheet of boron -- a material known as borophene.",
+   "passages": [
+    "Department of Energy’s (DOE) Argonne National Laboratory, Northwestern University and Stony Brook University has, for the first time, created a two-dimensional sheet of boron -- a material known as borophene.",
+    "Because borophene is both metallic and atomically thin, it holds promise for possible applications ranging from electronics to photovoltaics, said Argonne nanoscientist Nathan Guisinger, who led the experiment.",
+    "“Boron has a rich and storied history and a very complicated chemistry,” added Mark Hersam, professor of materials science and engineering at Northwestern’s McCormick School of Engineering and Applied Science, who helped advise Mannix.",
+    "Although at least 16 bulk allotropes of boron are known, scientists had never before been able to make a whole sheet, or monolayer, of borophene.",
+    "Borophene is an unusual material because it shows many metallic properties at the nanoscale even though three-dimensional, or bulk, boron is nonmetallic and semiconducting.",
+    "While other two-dimensional materials look more or less like perfectly smooth and even planes at the nanoscale, borophene looks like corrugated cardboard, buckling up and down depending on how the boron atoms bind to one another, according to Mannix."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.anl.gov/article/scientists-create-atomically-thin-metallic-boron",
+   "final_url": "https://www.anl.gov/article/scientists-create-atomically-thin-metallic-boron",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://doi.org/10.1038/nchem.2521",
+   "final_url": "https://www.nature.com/articles/nchem.2521?error=cookies_not_supported&code=27643ffe-8c14-4bbc-b127-a6b16d4e9847",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Polyphony in B flat",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2016-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2016-04-25"
+    },
+    {
+     "source": "dc.date",
+     "date": "2016-04-25"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2016-04-25"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2016-04-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-04-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-04-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-06-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2016-04-25"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/nchem.2521",
+   "crossref": {
+    "doi": "10.1038/nchem.2521",
+    "resolves": true,
+    "title": "Polyphony in B flat",
+    "container": "Nature Chemistry",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2016-4-25",
+    "authors_first3": [
+     "Zhang",
+     "Penev",
+     "Yakobson"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "BriefCommunication"
+   },
+   "meta_description": "Early theories suggested the possibility of atomically thin boron layers, but electron-deficient boron favours multicentre bonds and assembles into various polymorphs, making the synthesis of such layers challenging. Now, in two independent experiments, the deposition of atomic boron has offered thi",
+   "passages": [
+    "Nano Lett. http://dx.doi.org/10.1021/acs.nanolett.6b00070 (2016).Download referencesAuthor informationAuthors and AffiliationsEvgeni S.",
+    "Materials chemistry Two-dimensional materials Two-Dimensional Boron Materials and Their Properties ReferencesSergeeva, A.",
+    "Now, in two independent experiments, the deposition of atomic boron has offered this long-sought material on a silver platter.",
+    "Explore related subjects Discover the latest articles and news in related subjects."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://doi.org/10.1038/nchem.2521",
+   "final_url": "https://www.nature.com/articles/nchem.2521?error=cookies_not_supported&code=27643ffe-8c14-4bbc-b127-a6b16d4e9847",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Polyphony in B flat",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2016-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2016-04-25"
+    },
+    {
+     "source": "dc.date",
+     "date": "2016-04-25"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2016-04-25"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2016-04-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-04-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-04-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-06-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2016-04-25"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/nchem.2521",
+   "crossref": {
+    "doi": "10.1038/nchem.2521",
+    "resolves": true,
+    "title": "Polyphony in B flat",
+    "container": "Nature Chemistry",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2016-4-25",
+    "authors_first3": [
+     "Zhang",
+     "Penev",
+     "Yakobson"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "BriefCommunication"
+   },
+   "meta_description": "Early theories suggested the possibility of atomically thin boron layers, but electron-deficient boron favours multicentre bonds and assembles into various polymorphs, making the synthesis of such layers challenging. Now, in two independent experiments, the deposition of atomic boron has offered thi",
+   "passages": [
+    "Now, in two independent experiments, the deposition of atomic boron has offered this long-sought material on a silver platter.",
+    "Explore related subjects Discover the latest articles and news in related subjects.",
+    "Nano Lett. http://dx.doi.org/10.1021/acs.nanolett.6b00070 (2016).Download referencesAuthor informationAuthors and AffiliationsEvgeni S.",
+    "Materials chemistry Two-dimensional materials Two-Dimensional Boron Materials and Their Properties ReferencesSergeeva, A."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

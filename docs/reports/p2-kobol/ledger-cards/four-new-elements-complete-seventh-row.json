@@ -1,0 +1,312 @@
+{
+ "slug": "four-new-elements-complete-seventh-row",
+ "title": "Four superheavy elements are recognised, completing the periodic table's seventh row",
+ "first_published": "2015-12-30",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1515/pac-2015-0502",
+   "final_url": "https://www.degruyterbrill.com/document/doi/10.1515/pac-2015-0502/html",
+   "status": 202,
+   "readable": false,
+   "reason": "202 AWS WAF challenge",
+   "title_found": null,
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2016-01-21"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1515/pac-2015-0502",
+   "crossref": {
+    "doi": "10.1515/pac-2015-0502",
+    "resolves": true,
+    "title": "Discovery of the elements with atomic numbers<i>Z</i> = 113, 115 and 117 (IUPAC Technical Report)",
+    "container": "Pure and Applied Chemistry",
+    "publisher": "Walter de Gruyter GmbH",
+    "type": "journal-article",
+    "issued": "2016-1-21",
+    "authors_first3": [
+     "Karol",
+     "Barber",
+     "Sherrill"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1515/pac-2015-0501",
+   "final_url": "https://www.degruyterbrill.com/document/doi/10.1515/pac-2015-0501/html",
+   "status": 202,
+   "readable": false,
+   "reason": "202 AWS WAF challenge",
+   "title_found": null,
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2016-01-21"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1515/pac-2015-0501",
+   "crossref": {
+    "doi": "10.1515/pac-2015-0501",
+    "resolves": true,
+    "title": "Discovery of the element with atomic number <i>Z</i> = 118 completing the 7<sup>th</sup> row of the periodic table (IUPAC Technical Report)",
+    "container": "Pure and Applied Chemistry",
+    "publisher": "Walter de Gruyter GmbH",
+    "type": "journal-article",
+    "issued": "2016-1-21",
+    "authors_first3": [
+     "Karol",
+     "Barber",
+     "Sherrill"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.112.172501",
+   "final_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.112.172501",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "<span class=\"aps-inline-formula\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mmultiscripts><mrow><mi>Ca</mi></mrow><mprescripts></mprescripts><none></none><mrow><mn>48</mn></mrow></mmultiscripts><mo>+</mo><mmultiscripts><mrow><mi>Bk</mi></mrow><mprescripts></mprescripts><none></none><mrow><mn>249</mn></mrow></mmultiscripts></mrow></math></span> Fusion Reaction Leading to Element <span class=\"aps-inline-formula\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>Z</mi><mo>=</mo><mn>117</mn></mrow></math></span>: Long-Lived <span class=\"aps-inline-formula\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>α</mi></math></span>-Decaying <span class=\"aps-inline-formula\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mmultiscripts><mrow><mi>Db</mi></mrow><mprescripts></mprescripts><none></none><mrow><mn>270</mn></mrow></mmultiscripts></mrow></math></span> and Discovery of <span class=\"aps-inline-formula\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mmultiscripts><mrow><mi>Lr</mi></mrow><mprescripts></mprescripts><none></none><mrow><mn>266</mn></mrow></mmultiscripts></mrow></math></span>",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2014-05-01"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2014-05-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2014-05-01"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1103/physrevlett.112.172501",
+   "crossref": {
+    "doi": "10.1103/physrevlett.112.172501",
+    "resolves": true,
+    "title": "<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\">\n                      <mml:mrow>\n                        <mml:mmultiscripts>\n                          <mml:mrow>\n                            <mml:mi>Ca</mml:mi>\n                          </mml:mrow>\n                          <mml:mprescripts/>\n                          <mml:none/>\n                          <mml:mrow>\n                            <mml:mn>48</mml:mn>\n                          </mml:mrow>\n                        </mml:mmultiscripts>\n                        <mml:mo>+</mml:mo>\n                        <mml:mmultiscripts>\n                          <mml:mrow>\n                            <mml:mi>Bk</mml:mi>\n                          </mml:mrow>\n                          <mml:mprescripts/>\n                          <mml:none/>\n                          <mml:mrow>\n                            <mml:mn>249</mml:mn>\n                          </mml:mrow>\n                        </mml:mmultiscripts>\n                      </mml:mrow>\n                    </mml:math>\n                    Fusion Reaction Leading to Element\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\">\n                      <mml:mrow>\n                        <mml:mi>Z</mml:mi>\n                        <mml:mo>=</mml:mo>\n                        <mml:mn>117</mml:mn>\n                      </mml:mrow>\n                    </mml:math>\n                    : Long-Lived\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\">\n                      <mml:mi>α</mml:mi>\n                    </mml:math>\n                    -Decaying\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\">\n                      <mml:mrow>\n                        <mml:mmultiscripts>\n                          <mml:mrow>\n                            <mml:mi>Db</mml:mi>\n                          </mml:mrow>\n                          <mml:mprescripts/>\n                          <mml:none/>\n                          <mml:mrow>\n                            <mml:mn>270</mml:mn>\n                          </mml:mrow>\n                        </mml:mmultiscripts>\n                      </mml:mrow>\n                    </mml:math>\n                    and Discovery of\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\">\n                      <mml:mrow>\n                        <mml:mmultiscripts>\n                          <mml:mrow>\n                            <mml:mi>Lr</mml:mi>\n                          </mml:mrow>\n                          <mml:mprescripts/>\n                          <mml:none/>\n                          <mml:mrow>\n                            <mml:mn>266</mml:mn>\n                          </mml:mrow>\n                        </mml:mmultiscripts>\n                      </mml:mrow>\n                    </mml:math>",
+    "container": "Physical Review Letters",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2014-5-1",
+    "authors_first3": [
+     "Khuyagbaatar",
+     "Yakushev",
+     "Düllmann"
+    ],
+    "author_count": 72,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Researchers have independently confirmed the existence of element $117$ and have discovered a new isotope along the way.",
+   "passages": [
+    "112, 172501 – Published 1 May, 2014DOI: https://doi.org/10.1103/PhysRevLett.112.172501 Export CitationShow metricsHide metricsAbstractThe superheavy element with atomic number Z=117 was produced as an evaporation residue in the Ca48+Bk249 fusion reaction at the gas-filled recoil separator TASCA at GSI Darmstadt, Germany.",
+    "17 — 2 May 2014Received 22 February 2014Export CitationReuse & PermissionsDOI: https://doi.org/10.1103/PhysRevLett.112.172501© 2014 American Physical SocietyOutlineInformationOutlineCiting Articles (263)AbstractPhysics News and CommentaryArticle TextSupplemental MaterialReferencesInformationPhys.",
+    "Export citationExport citationChoose format for download:BibTeXEndNote (RIS)Download CitationFeatured in PhysicsEditors' SuggestionCa48+Bk249 Fusion Reaction Leading to Element Z=117: Long-Lived α-Decaying Db270 and Discovery of Lr266J.",
+    "The identification of the long-lived (T1/2=1.0−0.4+1.9 h) α-emitter Db270 marks an important step towards the observation of even more long-lived nuclei of superheavy elements located on an “island of stability.”"
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.104.142502",
+   "final_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.104.142502",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Synthesis of a New Element with Atomic Number <span class=\"aps-inline-formula\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>Z</mi><mo>=</mo><mn>117</mn></math></span>",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2010-04-09"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2010-04-09"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2010-04-09"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1103/physrevlett.104.142502",
+   "crossref": {
+    "doi": "10.1103/physrevlett.104.142502",
+    "resolves": true,
+    "title": "Synthesis of a New Element with Atomic Number\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\">\n                      <mml:mi>Z</mml:mi>\n                      <mml:mo>=</mml:mo>\n                      <mml:mn>117</mml:mn>\n                    </mml:math>",
+    "container": "Physical Review Letters",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2010-4-9",
+    "authors_first3": [
+     "Oganessian",
+     "Abdullin",
+     "Bailey"
+    ],
+    "author_count": 33,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "The discovery of a new chemical element with atomic number $Z=117$ is reported. The isotopes $^{293}117$ and $^{294}117$ were produced in fusion reactions between $^{48}\\mathrm{Ca}$ and $^{249}\\mathrm{Bk}$. Decay chains involving 11 new nuclei were identified by means of the Dubna gas-filled recoil ",
+   "passages": [
+    "104, 142502 – Published 9 April, 2010DOI: https://doi.org/10.1103/PhysRevLett.104.142502 Export CitationShow metricsHide metricsAbstractThe discovery of a new chemical element with atomic number Z=117 is reported.",
+    "14 — 9 April 2010Received 15 March 2010Export CitationReuse & PermissionsDOI: https://doi.org/10.1103/PhysRevLett.104.142502© 2010 American Physical SocietyOutlineInformationOutlineCiting Articles (651)AbstractCollectionPhysics News and CommentaryArticle TextACKNOWLEDGEMENTSReferencesInformationPhys.",
+    "ViewpointExploring the island of superheavy elementsPublished 9 April, 2010A collaboration of Russian and US physicists has created the superheavy element 117, an experimental achievement that fills in the final gap on the list of observed elements up to element 118.See more in PhysicsArticle TextReferences (18)Yu.",
+    "Export citationExport citationChoose format for download:BibTeXEndNote (RIS)Download CitationFeatured in PhysicsEditors' SuggestionFree to ReadSynthesis of a New Element with Atomic Number Z=117Yu.",
+    "Decay chains involving 11 new nuclei were identified by means of the Dubna gas-filled recoil separator."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://www.riken.jp/en/news_pubs/research_news/pr/2015/20151231_1/",
+   "final_url": "https://www.riken.jp/en/news_pubs/research_news/pr/2015/20151231_1/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "It’s official! Element 113 was discovered at RIKEN | RIKEN",
+   "title_match": "partial",
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "Element 113 was discovered at RIKEN Japanese Page Element 113, discovered by a RIKEN group led by Kosuke Morita, has become the first element on the periodic table found in Asia.",
+    "In response to the new event, coupled with the group’s demonstration of the decay chain, IUPAC has announced that Morita’s group will be given priority for the discovery of the new element, a privilege that includes the right to propose a name for it.",
+    "Sherrill, Emanuele Vardaci, and Toshimitsu Yamazaki, \"Discovery of the elements with atomic numbers Z = 113, 115 and 117 (TBA)\", To appear in Pure and Applied Chemistry, early 2016 issue.",
+    "In the late 1980s, the group began using RIKEN’s Linear Accelerator Facility and the GARIS ion separator, developed by Morita and his group, to explore new synthetic superheavy elements.",
+    "The work of discovering new superheavy elements is very difficult, and the elements tend to decay extremely quickly—the isotopes of 113 produced at RIKEN lasted for less than a thousandth of a second.",
+    "Two atomic nuclei fused, leading to the creation of a nucleus of element 113, which quickly underwent four alpha decays to transform into dubnium-262 (element 105), which then underwent spontaneous fission."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://www.riken.jp/en/news_pubs/news/2016/20161130_1/",
+   "final_url": "https://www.riken.jp/en/news_pubs/news/2016/20161130_1/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Element 113 has an official name! The name is nihonium, and the chemical symbol Nh | RIKEN",
+   "title_match": "partial",
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "Morita released the following comment: “I am very pleased that the name and symbol of the new element 113, ‘nihonium’ and ‘Nh’ which our group proposed to IUPAC, were formally acknowledged.",
+    "In response, on March 18 the group gave IUPAC a proposal for the name nihonium and the chemical symbol Nh.",
+    "A five-month period of public comment began on June 8, and following its conclusion, on November 30 IUPAC announced that the names had been officially approved.",
+    "Morita’s team began their work to discover new super heavy elements in September 2003, using RIKEN's heavy ion linear accelerator (RILAC), which forms part of RIKEN’s heavy ion beam accelerator facility, the RI Beam Factory.",
+    "On December 31, 2015, the group’s discovery was officially recognized, and IUPAC awarded them naming rights to the new element.",
+    "In July 2004 the group successfully synthesized element 113 for the first time, and was successful again in April 2005 and August 2012."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "url": "https://www.iupac.org/news/news-detail/article/discovery-and-assignment-of-elements-with-atomic-numbers-113-115-117-and-118.html",
+   "final_url": "https://www.iupac.org/news/news-detail/article/discovery-and-assignment-of-elements-with-atomic-numbers-113-115-117-and-118.html",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "url": "https://www.ornl.gov/publication/synthesis-new-element-atomic-number-z117",
+   "final_url": "https://www.ornl.gov/publication/synthesis-new-element-atomic-number-z117",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

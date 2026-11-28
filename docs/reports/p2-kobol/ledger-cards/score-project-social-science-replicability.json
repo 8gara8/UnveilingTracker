@@ -1,0 +1,574 @@
+{
+ "slug": "score-project-social-science-replicability",
+ "title": "Large project retests social-science claims and about half replicate",
+ "first_published": "2026-04",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-025-10078-y",
+   "final_url": "https://www.nature.com/articles/s41586-025-10078-y?error=cookies_not_supported&code=b3257408-3049-4f3a-af12-03f1547187d2",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Investigating the replicability of the social and behavioural sciences",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "dc.date",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-03-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-12-19"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-04-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-025-10078-y",
+   "crossref": {
+    "doi": "10.1038/s41586-025-10078-y",
+    "resolves": true,
+    "title": "Investigating the replicability of the social and behavioural sciences",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-4-1",
+    "authors_first3": [
+     "Tyner",
+     "Abatayo",
+     "Daley"
+    ],
+    "author_count": 292,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Pursuing replicability — independent evidence for previous claims — is important for creating generalizable knowledge1,2. Here we attempted replications of 274 claims of positive results from 164 quantitative papers published from 2009 to 2018 in 54 journals in the social and behavioural sciences. R",
+   "passages": [
+    "Article Published: 01 April 2026 Investigating the replicability of the social and behavioural sciences Andrew H.",
+    "Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015.",
+    "Investigating the replicability of the social and behavioural sciences.",
+    "Here we attempted replications of 274 claims of positive results from 164 quantitative papers published from 2009 to 2018 in 54 journals in the social and behavioural sciences.",
+    "Replicability, robustness, and reproducibility in psychological science.",
+    "Investigating variation in replicability: a “many labs” replication project."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.nature.com/articles/s41586-026-10203-5",
+   "final_url": "https://www.nature.com/articles/s41586-026-10203-5?error=cookies_not_supported&code=3345bbe7-3567-4afe-941f-fc935b9f13fc",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Investigating the reproducibility of the social and behavioural sciences",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "dc.date",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-03-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-01-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-04-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-026-10203-5",
+   "crossref": {
+    "doi": "10.1038/s41586-026-10203-5",
+    "resolves": true,
+    "title": "Investigating the reproducibility of the social and behavioural sciences",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-4-1",
+    "authors_first3": [
+     "Miske",
+     "Abatayo",
+     "Daley"
+    ],
+    "author_count": 128,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Published claims should be reproducible, yielding the same result when the same analysis is applied&nbsp;to the same data1,2. Here we assess reproducibility in a stratified random sample of 600 papers published from 2009 to 2018 in 62 journals spanning the social and behavioural sciences. The author",
+   "passages": [
+    "Article Published: 01 April 2026 Investigating the reproducibility of the social and behavioural sciences Olivia Miske1, Anna Lou Abatayo ORCID: orcid.org/0000-0002-2686-50752, Mason Daley1, Mirka Dirzo1, Nicholas Fox ORCID: orcid.org/0000-0002-3772-86661, Noah Haber1, Krystal M.",
+    "Investigating the analytical robustness of the social and behavioural sciences.",
+    "Investigating the replicability of the social and behavioural sciences.",
+    "Investigating the reproducibility of the social and behavioural sciences.",
+    "Here we assess reproducibility in a stratified random sample of 600 papers published from 2009 to 2018 in 62 journals spanning the social and behavioural sciences.",
+    "We observed higher reproducibility for papers from political science and economics compared with other fields, for more recent papers compared with older papers and for papers from journals that require data sharing."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.nature.com/articles/s41586-025-09844-9",
+   "final_url": "https://www.nature.com/articles/s41586-025-09844-9?error=cookies_not_supported&code=7dc3ac36-22a1-468d-85b9-783dd7555dd5",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Investigating the analytical robustness of the social and behavioural sciences",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-03-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "dc.date",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-01-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-10-31"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-04-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-025-09844-9",
+   "crossref": {
+    "doi": "10.1038/s41586-025-09844-9",
+    "resolves": true,
+    "title": "Investigating the analytical robustness of the social and behavioural sciences",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-4-1",
+    "authors_first3": [
+     "Aczel",
+     "Szaszi",
+     "Clelland"
+    ],
+    "author_count": 494,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.31222/osf.io/twqsv_v1"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The same dataset can be analysed in different justifiable ways to answer the same research question, potentially challenging the robustness of empirical science1–3. In this crowd initiative, we investigated the degree to which research findings in the social and behavioural sciences are contingent o",
+   "passages": [
+    "Article Published: 01 April 2026 Investigating the analytical robustness of the social and behavioural sciences Balazs Aczel ORCID: orcid.org/0000-0001-9364-49881 na1, Barnabas Szaszi ORCID: orcid.org/0000-0001-7078-27121,2 na1, Harry T.",
+    "Investigating the analytical robustness of the social and behavioural sciences.",
+    "Scientific community Social sciences Statistical Methods in Psychological Science Data availability Study data and materials are available on the project OSF (https://osf.io/q5h2c/) and GitHub repositories (https://github.com/marton-balazs-kovacs/multi100/).",
+    "N. van Dongen & Eric-Jan WagenmakersDepartment of Data and Decision Sciences, Emory University, Atlanta, GA, USADanilo FreireDepartment of Political and Social Sciences, European University Institute, Fiesole, ItalyJoris Frese & Maik HamjediersCenter for Science of Science & Innovation, Evanston, IL, USAAlexander C.",
+    "We found that 34% of the independent reanalyses yielded the same result (within a tolerance region of ±0.05 Cohen’s d) as the original report; with a four times broader tolerance region, this indicator increased to 57%.",
+    "Mass reproducibility and replicability: a new hope."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.cos.io/about/news/large-scale-collaboration-releases-new-findings-on-research-credibility",
+   "final_url": "https://www.cos.io/about/news/large-scale-collaboration-releases-new-findings-on-research-credibility",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Large-Scale Collaboration Releases New Findings on Research Credibility",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Findings from the Systematizing Confidence in Open Research and Evidence (SCORE) program—a collaborative effort among 865 researchers—have been published in Nature. SCORE offers new evidence on research reproducibility, robustness, and replicability in the social and behavioral sciences, and the pre",
+   "passages": [
+    "Five members of the Center for Open Science provided a brief review of the reproducibility, robustness, and replicability terminology that underlies the meaning and interpretation of the findings from the SCORE program.",
+    "In the process, SCORE accumulated an enormous database of information about the credibility of a large sample of findings from across the social and behavioral sciences.",
+    "Sampling of claims, gathering of credibility measures, and conducting of replication and reproduction studies was coordinated by the Center for Open Science (COS).",
+    "The SCORE team sampled claims from 3,900 papers published from 2009-2018 in 62 journals spanning criminology, economics, education, finance, health, management, marketing, organizational behavior, psychology, political science, public administration, and sociology.",
+    "As reported by Tyner and 291 co-authors, SCORE revealed that it is challenging to replicate original findings with independent data.",
+    "Reform efforts in the social and behavioral sciences over the last 10 years might result in higher repeatability compared with the findings from SCORE which were based on papers published from 2009 to 2018."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://www.nature.com/collections/idajfifcfg",
+   "final_url": "https://www.nature.com/collections/idajfifcfg?error=cookies_not_supported&code=af40eb26-5942-42af-b436-4c26f011c867",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Reliable research in the social and behavioural and sciences",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Reliable research in the social and behavioural and sciences",
+   "passages": [
+    "Nosek Article1 Apr 2026 Nature Investigating the replicability of the social and behavioural sciences A large-scale study on the replicability of claims from social and behavioural science journals reports that about half of the results replicate in the same patterns as the original study.",
+    "Editorial1 Apr 2026 Nature Half of social-science studies fail replication test in years-long project Results from massive, ‘eagerly awaited’ initiative reinforce concerns about the credibility of science — but raise hope for solutions.",
+    "To obtain the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in Internet Explorer)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://www.nature.com/articles/d41586-026-00955-5",
+   "final_url": "https://www.nature.com/articles/d41586-026-00955-5?error=cookies_not_supported&code=7e295a49-acb9-4760-856f-c10c3afd7c1e",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Half of social-science studies fail replication test in years-long project",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "dc.date",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-01"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-04-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-026-00955-5",
+   "crossref": {
+    "doi": "10.1038/d41586-026-00955-5",
+    "resolves": true,
+    "title": "Half of social-science studies fail replication test in years-long project",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-4-1",
+    "authors_first3": [
+     "Jones"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News"
+   },
+   "meta_description": "Results from massive, ‘eagerly awaited’ initiative reinforce concerns about the credibility of science — but raise hope for solutions.",
+   "passages": [
+    "NEWS 01 April 2026 Half of social-science studies fail replication test in years-long project Results from massive, ‘eagerly awaited’ initiative reinforce concerns about the credibility of science — but raise hope for solutions.",
+    "Publishing open access increases your chances Nature Index 27 NOV 26 Navigating grief in academia: ways to find balance Career Column 26 NOV 26 The world’s leading science cities are changing — here’s why Nature Index 25 NOV 26 Are you a budding science sleuth?",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,..."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "url": "https://www.nature.com/articles/d41586-026-01957-z",
+   "final_url": "https://www.nature.com/articles/d41586-026-01957-z?error=cookies_not_supported&code=6cef57f7-e660-4423-8b46-b03d5d0c6485",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Make science more reliable: study people as they go about their lives",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2026-06-22"
+    },
+    {
+     "source": "dc.date",
+     "date": "2026-06-22"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-06-22"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-06-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-06-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-11"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-09"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-06-22"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/d41586-026-01957-z",
+   "crossref": {
+    "doi": "10.1038/d41586-026-01957-z",
+    "resolves": true,
+    "title": "Make science more reliable: study people as they go about their lives",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-6-22",
+    "authors_first3": [
+     "List"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "Comment"
+   },
+   "meta_description": "Researchers have long discussed the replication crisis. Now it’s time to tackle another problem in the behavioural sciences: generalizability.",
+   "passages": [
+    "Now it’s time to tackle another problem in the behavioural sciences: generalizability.",
+    "Take Scared Straight, a programme run by more than 30 US states between 1978 and 2015 that aimed to dissuade at-risk teenagers from becoming hardened criminals by bringing them face-to-face with people incarcerated in maximum-security prisons1,2.",
+    "The programme was extended after a pilot project, the subject of a 1978 documentary, found that 80–90% of teenage participants stayed out of trouble.",
+    "But the intervention did not work when scaled up.",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,..."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://www.nature.com/articles/d41586-026-01957-z",
+   "final_url": "https://www.nature.com/articles/d41586-026-01957-z?error=cookies_not_supported&code=6cef57f7-e660-4423-8b46-b03d5d0c6485",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Make science more reliable: study people as they go about their lives",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2026-06-22"
+    },
+    {
+     "source": "dc.date",
+     "date": "2026-06-22"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-06-22"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-06-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-06-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-11"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-09"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-06-22"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/d41586-026-01957-z",
+   "crossref": {
+    "doi": "10.1038/d41586-026-01957-z",
+    "resolves": true,
+    "title": "Make science more reliable: study people as they go about their lives",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-6-22",
+    "authors_first3": [
+     "List"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "Comment"
+   },
+   "meta_description": "Researchers have long discussed the replication crisis. Now it’s time to tackle another problem in the behavioural sciences: generalizability.",
+   "passages": [
+    "Now it’s time to tackle another problem in the behavioural sciences: generalizability.",
+    "The programme was extended after a pilot project, the subject of a 1978 documentary, found that 80–90% of teenage participants stayed out of trouble.",
+    "But the intervention did not work when scaled up."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

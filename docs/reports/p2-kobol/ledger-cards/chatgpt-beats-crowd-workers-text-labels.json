@@ -1,0 +1,313 @@
+{
+ "slug": "chatgpt-beats-crowd-workers-text-labels",
+ "title": "ChatGPT labels text for social science better than crowd workers",
+ "first_published": "2023-03",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2303.15056",
+   "final_url": "https://arxiv.org/abs/2303.15056",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "ChatGPT Outperforms Crowd-Workers for Text-Annotation Tasks",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-07-19"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-03-27"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-07-18"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1073/pnas.2305016120",
+   "crossref": {
+    "doi": "10.1073/pnas.2305016120",
+    "resolves": true,
+    "title": "ChatGPT outperforms crowd workers for text-annotation tasks",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2023-7-18",
+    "authors_first3": [
+     "Gilardi",
+     "Alizadeh",
+     "Kubli"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2303.15056: ChatGPT Outperforms Crowd-Workers for Text-Annotation Tasks",
+   "passages": [
+    "Specifically, the zero-shot accuracy of ChatGPT exceeds that of crowd-workers for four out of five tasks, while ChatGPT's intercoder agreement exceeds that of both crowd-workers and trained annotators for all tasks.",
+    "Using a sample of 2,382 tweets, we demonstrate that ChatGPT outperforms crowd-workers for several annotation tasks, including relevance, stance, topics, and frames detection.",
+    "Moreover, the per-annotation cost of ChatGPT is less than $0.003 -- about twenty times cheaper than MTurk.",
+    "Many NLP applications require manual data annotations for a variety of tasks, notably to train classifiers or evaluate the performance of unsupervised models.",
+    "These results show the potential of large language models to drastically increase the efficiency of text classification.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10372638",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10372638/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "ChatGPT outperforms crowd workers for text-annotation tasks",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-07-17"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-07-18"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1073/pnas.2305016120",
+   "crossref": {
+    "doi": "10.1073/pnas.2305016120",
+    "resolves": true,
+    "title": "ChatGPT outperforms crowd workers for text-annotation tasks",
+    "container": "Proceedings of the National Academy of Sciences",
+    "publisher": "National Academy of Sciences",
+    "type": "journal-article",
+    "issued": "2023-7-18",
+    "authors_first3": [
+     "Gilardi",
+     "Alizadeh",
+     "Kubli"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "brief-report"
+   },
+   "meta_description": "Many NLP applications require manual text annotations for a variety of tasks, notably to train classifiers or evaluate the performance of unsupervised models. Depending on the size and degree of complexity, the tasks may be conducted by crowd ...",
+   "passages": [
+    "15.Gilardi F., Alizadeh M., Kubli M., Replication Data for: ChatGPT outperforms crowd-workers for text-annotation tasks.",
+    "Using four samples of tweets and news articles (n = 6,183), we show that ChatGPT outperforms crowd workers for several annotation tasks, including relevance, stance, topics, and frame detection.",
+    "Across the four datasets, the zero-shot accuracy of ChatGPT exceeds that of crowd workers by about 25 percentage points on average, while ChatGPT’s intercoder agreement exceeds that of both crowd workers and trained annotators for all tasks.",
+    "Open in a new tab ChatGPT zero-shot text annotation performance in four datasets (A: tweets, 2020-2021; B: news articles, 2020-2021; C: tweets, 2023; D: tweets, 2017-2022), compared to MTurk and trained annotators.",
+    "We then evaluated the performance of ChatGPT against two benchmarks: i) its accuracy, relative to that of crowd workers, and ii) its intercoder agreement, relative to that of crowd workers as well as of our trained annotators.",
+    "We find that across the four datasets, ChatGPT’s zero-shot accuracy is higher than that of MTurk for most tasks."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2304.06588",
+   "final_url": "https://arxiv.org/abs/2304.06588",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "ChatGPT-4 Outperforms Experts and Crowd Workers in Annotating Political Twitter Messages with Zero-Shot Learning",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-04-13"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-04-13"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2304.06588: ChatGPT-4 Outperforms Experts and Crowd Workers in Annotating Political Twitter Messages with Zero-Shot Learning",
+   "passages": [
+    "This paper assesses the accuracy, reliability and bias of the Large Language Model (LLM) ChatGPT-4 on the text analysis task of classifying the political affiliation of a Twitter poster based on the content of a tweet.",
+    "The LLM is compared to manual annotation by both expert classifiers and crowd workers, generally considered the gold standard for such tasks.",
+    "We use Twitter messages from United States politicians during the 2020 election, providing a ground truth against which to measure accuracy.",
+    "The paper finds that ChatGPT-4 has achieves higher accuracy, higher reliability, and equal or lower bias than the human classifiers.",
+    "The LLM is able to correctly annotate messages that require reasoning on the basis of contextual knowledge, and inferences around the author's intentions - traditionally seen as uniquely human abilities.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://aclanthology.org/2024.cl-1.8",
+   "final_url": "https://aclanthology.org/2024.cl-1.8/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Can Large Language Models Transform Computational Social Science?",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-02-29"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-01-01"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1162/coli_a_00502",
+   "crossref": {
+    "doi": "10.1162/coli_a_00502",
+    "resolves": true,
+    "title": "Can Large Language Models Transform Computational Social\n                    Science?",
+    "container": "Computational Linguistics",
+    "publisher": "MIT Press",
+    "type": "journal-article",
+    "issued": "2024",
+    "authors_first3": [
+     "Ziems",
+     "Held",
+     "Shaikh"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Caleb Ziems, William Held, Omar Shaikh, Jiaao Chen, Zhehao Zhang, Diyi Yang. Computational Linguistics, Volume 50, Issue 1 - March 2024. 2024.",
+   "passages": [
+    "In summary, LLMs are posed to meaningfully participate in social science analysis in partnership with humans.Anthology ID:2024.cl-1.8Volume:Computational Linguistics, Volume 50, Issue 1 - March 2024Month:MarchYear:2024Address:Cambridge, MAVenue:CLSIG:Publisher:MIT PressNote:Pages:237–291Language:URL:https://aclanthology.org/2024.cl-1.8/DOI:10.1162/coli_a_00502Bibkey:ziems-etal-2024-largeCite (ACL):Caleb Ziems, William Held, Omar Shaikh, Jiaao Chen, Zhehao Zhang, and Diyi Yang.",
+    "If zero-shot LLMs can also reliably classify and explain social phenomena like persuasiveness and political ideology, then LLMs could augment the computational social science (CSS) pipeline in important ways.",
+    "On taxonomic labeling tasks (classification), LLMs fail to outperform the best fine-tuned models but still achieve fair levels of agreement with humans.",
+    "Towards this end, we contribute a set of prompting best practices and an extensive evaluation pipeline to measure the zero-shot performance of 13 language models on 25 representative English CSS benchmarks.",
+    "You may use <b>...</b> for bold, <i>...</i> for italic, <u>...</u> for underline, <sc>...</sc> for small-caps, <tt>...<tt> for typewriter text, <url>...</url> for URLs, <a href=...> for hyperlinks, and <par/> for paragraph breaks.",
+    "Once you create that issue, the correction will be reviewed by a staff member.⚠️ Mobile Users: Submitting this form to create a new issue will only work with github.com, not the GitHub Mobile app.Important: The Anthology treat PDFs as authoritative."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://arxiv.org/abs/2304.11085",
+   "final_url": "https://arxiv.org/abs/2304.11085",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-04-17"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-04-17"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2304.11085: Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark",
+   "passages": [
+    "Reiss View a PDF of the paper titled Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark, by Michael V.",
+    "Reiss [view email] [v1] Mon, 17 Apr 2023 00:41:19 UTC (29 KB) Full-text links: Access Paper: View a PDF of the paper titled Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark, by Michael V.",
+    "Recent studies have demonstrated promising potential of ChatGPT for various text annotation and classification tasks.",
+    "Therefore, this study investigates the consistency of ChatGPT's zero-shot capabilities for text annotation and classification, focusing on different model parameters, prompt variations, and repetitions of identical inputs.",
+    "Although pooling outputs from multiple repetitions can improve reliability, this study advises caution when using ChatGPT for zero-shot text annotation and underscores the need for thorough validation, such as comparison against human-annotated data.",
+    "The unsupervised application of ChatGPT for text annotation and classification is not recommended."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11954583",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11954583/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Are chatbots reliable text annotators? Sometimes",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-03-31"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-03-27"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1093/pnasnexus/pgaf069",
+   "crossref": {
+    "doi": "10.1093/pnasnexus/pgaf069",
+    "resolves": true,
+    "title": "Are chatbots reliable text annotators? Sometimes",
+    "container": "PNAS Nexus",
+    "publisher": "Oxford University Press (OUP)",
+    "type": "journal-article",
+    "issued": "2025-3-27",
+    "authors_first3": [
+     "Kristensen-McLachlan",
+     "Canavan",
+     "Kárdos"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "brief-report"
+   },
+   "meta_description": "Recent research highlights the significant potential of ChatGPT for text annotation in social science research. However, ChatGPT is a closed-source product, which has major drawbacks with regards to transparency, reproducibility, cost, and data ...",
+   "passages": [
+    "Using a new dataset of tweets from US news media and focusing on simple binary text annotation tasks, we find significant variation in the performance of ChatGPT and OS models across the tasks and that the supervised classifier using DistilBERT generally outperforms both.",
+    "Given the unreliable performance of ChatGPT and the significant challenges it poses to Open Science, we advise caution when using ChatGPT for substantive text annotation tasks.",
+    "Early experimentation has highlighted the potential of ChatGPT for text annotation (1–3), but the empirical evidence is still limited, and other studies are more circumspect about the accuracy and reliability (4, 5).",
+    "ChatGpt outperforms crowd-workers for text-annotation tasks.",
+    "Keywords: large language models, data annotation, social sciences, Open Science, Natural Language ProcessingIntroduction The rapid development of large language models (LLMs), such as ChatGPT, has generated substantial scientific interest.",
+    "In this paper, we systematically evaluate the performance of ChatGPT against alternative open-source (OS) models and supervised classifiers developed on a new set of data and tasks."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

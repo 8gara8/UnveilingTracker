@@ -1,0 +1,218 @@
+{
+ "slug": "nllb-200-translates-200-languages",
+ "title": "One AI model translates between 200 languages, many with little text",
+ "first_published": "2022-07",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-024-07335-x",
+   "final_url": "https://www.nature.com/articles/s41586-024-07335-x?error=cookies_not_supported&code=381d086e-ee3c-4bf9-b12b-6fa5e2f0f3df",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Scaling neural machine translation to 200 languages",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-06-05"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-06-05"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-06-05"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-06-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-06-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-05-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-03-19"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-06-05"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-024-07335-x",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07335-x",
+    "resolves": true,
+    "title": "Scaling neural machine translation to 200 languages",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-6-5",
+    "authors_first3": [
+     "NLLB Team",
+     "Costa-jussà",
+     "Cross"
+    ],
+    "author_count": 39,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The development of neural techniques has opened up new avenues for research in machine translation. Today, neural machine translation (NMT) systems can leverage highly multilingual capacities and even perform zero-shot translation, delivering promising results in terms of language coverage and quali",
+   "passages": [
+    "Our effort was designed to contribute one solution to help alter this status quo.For many low-resource language communities, NLLB-200 is one of the first models designed to support translation into or out of their languages.",
+    "It is our hope that in future iterations, NLLB-200 continues to include scholars from fields underrepresented in the world of machine translation and AI, particularly those from humanities and social sciences backgrounds.",
+    "Scaling neural machine translation to 200 languages.",
+    "Our final model—which includes 200 languages and three times as many low-resource languages as high-resource ones—performs, as a mean, 44% better than the previous state-of-the-art systems.",
+    "This comparison can be done for all possible pairs in two collections of monolingual texts.As our mining approach requires a multilingual embedding space, there are several challenges when scaling this representation to all NLLB-200 languages.",
+    "Overall, the results show that NLLB-200 improves on state-of-the-art systems by a notable margin despite supporting 200 languages, or twice as many languages (and more than 30,000 additional directions) compared with any previous work."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11208141",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11208141/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Scaling neural machine translation to 200 languages",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-06-04"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-06-05"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-024-07335-x",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07335-x",
+    "resolves": true,
+    "title": "Scaling neural machine translation to 200 languages",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-6-5",
+    "authors_first3": [
+     "NLLB Team",
+     "Costa-jussà",
+     "Cross"
+    ],
+    "author_count": 39,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "The development of neural techniques has opened up new avenues for research in machine translation. Today, neural machine translation (NMT) systems can leverage highly multilingual capacities and even perform zero-shot translation, delivering ...",
+   "passages": [
+    "For many low-resource language communities, NLLB-200 is one of the first models designed to support translation into or out of their languages.",
+    "Overall, the results show that NLLB-200 improves on state-of-the-art systems by a notable margin despite supporting 200 languages, or twice as many languages (and more than 30,000 additional directions) compared with any previous work.",
+    "It is our hope that in future iterations, NLLB-200 continues to include scholars from fields underrepresented in the world of machine translation and AI, particularly those from humanities and social sciences backgrounds.",
+    "Our final model—which includes 200 languages and three times as many low-resource languages as high-resource ones—performs, as a mean, 44% better than the previous state-of-the-art systems.",
+    "As our mining approach requires a multilingual embedding space, there are several challenges when scaling this representation to all NLLB-200 languages.",
+    "Compared with other machine translation services and across all languages, articles translated with NLLB-200 has the lowest percentage of deletion (0.13%) and highest percentage of translation modification kept under 10%."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2207.04672",
+   "final_url": "https://arxiv.org/abs/2207.04672",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "No Language Left Behind: Scaling Human-Centered Machine Translation",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2022-08-25"
+    },
+    {
+     "source": "citation_date",
+     "date": "2022-07-11"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2207.04672: No Language Left Behind: Scaling Human-Centered Machine Translation",
+   "passages": [
+    "In No Language Left Behind, we took on this challenge by first contextualizing the need for low-resource language translation support through exploratory interviews with native speakers.",
+    "Critically, we evaluated the performance of over 40,000 different translation directions using a human-translated benchmark, Flores-200, and combined human evaluation with a novel toxicity benchmark covering all languages in Flores-200 to assess translation safety.",
+    "What does it take to break the 200 language barrier while ensuring safe, high quality results, all while keeping ethical considerations in mind?",
+    "However, such efforts have coalesced around a small subset of languages, leaving behind the vast majority of mostly low-resource languages.",
+    "Our model achieves an improvement of 44% BLEU relative to the previous state-of-the-art, laying important groundwork towards realizing a universal translation system.",
+    "More specifically, we developed a conditional compute model based on Sparsely Gated Mixture of Experts that is trained on data obtained with novel and effective data mining techniques tailored for low-resource languages."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/",
+   "final_url": "https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "200 languages within a single AI model: A breakthrough in high-quality machine translation",
+   "title_match": "partial",
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Introducing CommerceMM: A new approach to multimodal understanding for online shopping",
+   "passages": [
+    "Today, we’re announcing an important breakthrough in NLLB: We’ve built a single AI model called NLLB-200, which translates 200 different languages with state-of-the-art results.",
+    "Meta AI is also providing up to $200,000 of grants to nonprofit organizations for real world applications for NLLB-200.",
+    "The challenges of building a single model for hundreds of languages Machine translation systems, like all AI models, are trained on data.",
+    "With NLLB-200, we are closer to one day having systems that enable people to communicate with whomever they choose.",
+    "In contrast, NLLB-200 supports 55 African languages with high-quality results.",
+    "FLORES-200 can be used to evaluate translation systems for a wide range of applications, including health pamphlets, films, books, and online content within countries or regions where a number of low-resource languages are spoken."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

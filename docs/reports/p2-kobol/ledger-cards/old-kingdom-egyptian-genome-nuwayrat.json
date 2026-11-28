@@ -1,0 +1,233 @@
+{
+ "slug": "old-kingdom-egyptian-genome-nuwayrat",
+ "title": "First whole genome from ancient Egypt, from a 4,800-year-old man",
+ "first_published": "2025-07-02",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-025-09195-5",
+   "final_url": "https://www.nature.com/articles/s41586-025-09195-5?error=cookies_not_supported&code=72ce1c1d-ba9a-4643-8578-c2e22b3eb10f",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Whole-genome ancestry of an Old Kingdom Egyptian",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-07-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-06-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-05-23"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-07-02"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-025-09195-5",
+   "crossref": {
+    "doi": "10.1038/s41586-025-09195-5",
+    "resolves": true,
+    "title": "Whole-genome ancestry of an Old Kingdom Egyptian",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-7-2",
+    "authors_first3": [
+     "Morez Jacobs",
+     "Irish",
+     "Cooke"
+    ],
+    "author_count": 21,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Ancient Egyptian society flourished for millennia, reaching its peak during the Dynastic Period (approximately 3150–30 bce). However, owing to poor DNA preservation, questions about regional interconnectivity over time have not been addressed because whole-genome sequencing has not yet been possible",
+   "passages": [
+    "Sampling permit was granted by the World Museum.Ancient DNA extraction, library preparation and sequencingSampling and DNA extraction of seven permanent teeth belonging to an individual from Nuwayrat were carried out in dedicated ancient DNA facilities at Liverpool John Moores University.",
+    "Although our analyses are limited to a single Egyptian individual who, on the basis of his relatively high-status burial, may not be representative of the general population, our results revealed ancestry links to earlier North African groups and populations of the eastern Fertile Crescent.",
+    "Future whole-genome sequencing of DNA from more individuals will allow for a more detailed and nuanced understanding of ancient Egyptian civilization and its inhabitants.MethodsProvenance and ethicsThe human remains were excavated from the Nuwayrat necropolis near Beni Hasan, Egypt.",
+    "The mitochondrial DNA (haplogroup I/N1a1b2) and chromosome Y (haplogroup E1b1b1b2b~) haplogroups of the Nuwayrat individual are most common in present-day North African and West Asian groups (Supplementary Table 4), consistent with the whole-genome affinities.",
+    "They were donated between 1902 and 1904 by the Egyptian Antiquities Service to the members of the Beni Hasan excavation committee and subsequently donated to the Institute of Archaeology, University of Liverpool and exported under the John Garstang export permit.",
+    "See the detailed breakdown of the quality indicators and calibration results for the three replicates and the combined date in Supplementary Table 2. e, Egyptian civilization timeline and radiocarbon date of the Nuwayrat and Third Intermediate Period individuals. mtDNA, mitochondrial DNA."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.nature.com/articles/d41586-025-02036-5",
+   "final_url": "https://www.nature.com/articles/d41586-025-02036-5?error=cookies_not_supported&code=f9ceb9fc-5392-471d-bd00-6aa4d4f82390",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A genome from ancient Egypt",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "dc.date",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-18"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-07-02"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-025-02036-5",
+   "crossref": {
+    "doi": "10.1038/d41586-025-02036-5",
+    "resolves": true,
+    "title": "A genome from ancient Egypt",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-7-2",
+    "authors_first3": [],
+    "author_count": 0,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "Research Briefings"
+   },
+   "meta_description": "Most of an ancient Egyptian’s ancestry is best explained using North African genomes — the rest, by genomes from Mesopotamia.",
+   "passages": [
+    "Compared with published genomes of ancient individuals, most of the man’s ancestry best matches those of older individuals from North Africa, although around one-fifth best matches those of earlier ones from Mesopotamia.",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,..."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://www.nature.com/articles/d41586-025-02036-5",
+   "final_url": "https://www.nature.com/articles/d41586-025-02036-5?error=cookies_not_supported&code=f9ceb9fc-5392-471d-bd00-6aa4d4f82390",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A genome from ancient Egypt",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "dc.date",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-07-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-18"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-07-02"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-025-02036-5",
+   "crossref": {
+    "doi": "10.1038/d41586-025-02036-5",
+    "resolves": true,
+    "title": "A genome from ancient Egypt",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-7-2",
+    "authors_first3": [],
+    "author_count": 0,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "Research Briefings"
+   },
+   "meta_description": "Most of an ancient Egyptian’s ancestry is best explained using North African genomes — the rest, by genomes from Mesopotamia.",
+   "passages": [
+    "Compared with published genomes of ancient individuals, most of the man’s ancestry best matches those of older individuals from North Africa, although around one-fifth best matches those of earlier ones from Mesopotamia.",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,..."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

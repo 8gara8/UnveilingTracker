@@ -1,0 +1,586 @@
+{
+ "slug": "ai-chatbot-chats-shift-voter-preferences",
+ "title": "Short chats with AI chatbots shift voters' political preferences",
+ "first_published": "2025-12-04",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-025-09771-9",
+   "final_url": "https://www.nature.com/articles/s41586-025-09771-9?error=cookies_not_supported&code=a9ff899d-9a7e-4fb5-8b62-27efc7dd733e",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Persuading voters using human–artificial intelligence dialogues",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-01-17"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-10-16"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-12-04"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-025-09771-9",
+   "crossref": {
+    "doi": "10.1038/s41586-025-09771-9",
+    "resolves": true,
+    "title": "Persuading voters using human–artificial intelligence dialogues",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-12-4",
+    "authors_first3": [
+     "Lin",
+     "Czarnek",
+     "Lewis"
+    ],
+    "author_count": 8,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "There is great public concern about the potential use of generative artificial intelligence (AI) for political persuasion and the resulting impacts on elections and democracy1–6. We inform these concerns using pre-registered experiments to assess the ability of large language models to influence vot",
+   "passages": [
+    "Article Published: 04 December 2025 Persuading voters using human–artificial intelligence dialogues Hause Lin ORCID: orcid.org/0000-0003-4590-70391, Gabriela Czarnek2, Benjamin Lewis1, Joshua P.",
+    "In the context of the 2024 US presidential election, the 2025 Canadian federal election and the 2025 Polish presidential election, we assigned participants randomly to have a conversation with an AI model that advocated for one of the top two candidates.",
+    "Not all facts and evidence presented, however, were accurate; across all three countries, the AI models advocating for candidates on the political right made more inaccurate claims.",
+    "4: A conversation with an AI model changed participants’ candidate preferences in the 2025 Canadian and Polish elections.Fig.",
+    "Together, these findings highlight the potential for AI to influence voters and the important role it might play in future elections.",
+    "Leveraging AI for democratic discourse: chat interventions can improve online political conversations at scale."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2507.13919",
+   "final_url": "https://arxiv.org/abs/2507.13919",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The Levers of Political Persuasion with Conversational AI",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2025-07-18"
+    },
+    {
+     "source": "citation_date",
+     "date": "2025-07-18"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2507.13919: The Levers of Political Persuasion with Conversational AI",
+   "passages": [
+    "We further show that these methods increased persuasion by exploiting LLMs' unique ability to rapidly access and strategically deploy information and that, strikingly, where they increased AI persuasiveness they also systematically decreased factual accuracy.",
+    "There are widespread fears that conversational AI could soon exert unprecedented influence over human beliefs.",
+    "Here, in three large-scale experiments (N=76,977), we deployed 19 LLMs-including some post-trained explicitly for persuasion-to evaluate their persuasiveness on 707 political issues.",
+    "We then checked the factual accuracy of 466,769 resulting LLM claims.",
+    "Contrary to popular concerns, we show that the persuasive power of current and near-future AI is likely to stem more from post-training and prompting methods-which boosted persuasiveness by as much as 51% and 27% respectively-than from personalization or increasing model scale.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://researchonline.lse.ac.uk/id/eprint/130605",
+   "final_url": "https://researchonline.lse.ac.uk/id/eprint/130605/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The levers of political persuasion with conversational artificial intelligence",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-12-12"
+    },
+    {
+     "source": "DC.date",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-12-04"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "The levers of political persuasion with conversational artificial intelligence Hackenburg, K., Tappin, B.",
+    "Science, 390(6777). https://doi.org/10.1126/science.aea3884 Copy Share Abstract There are widespread fears that conversational artificial intelligence (AI) could soon exert unprecedented influence over human beliefs.",
+    "The levers of political persuasion with conversational artificial intelligence.",
+    "We further show that these methods increased persuasion by exploiting LLMs’ ability to rapidly access and strategically deploy information and that, notably, where they increased AI persuasiveness, they also systematically decreased factual accuracy.",
+    "We then checked the factual accuracy of 466,769 resulting LLM claims.",
+    "We show that the persuasive power of current and near-future AI is likely to stem more from post-training and prompting methods—which boosted persuasiveness by as much as 51 and 27%, respectively—than from personalization or increasing model scale, which had smaller effects."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.ox.ac.uk/news/2025-12-11-study-reveals-how-conversational-ai-can-exert-influence-over-political-beliefs",
+   "final_url": "https://www.ox.ac.uk/news/2025-12-11-study-reveals-how-conversational-ai-can-exert-influence-over-political-beliefs",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Study reveals how conversational AI can exert influence over political beliefs",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2025-12-11"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-05-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-06-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "A new joint study from the Oxford Internet Institute (OII) and the UK AI Security Institute (AISI) uncovers how conversational AI sways political beliefs and why it works.",
+   "passages": [
+    "Information density drives persuasiveness - Kobi Hackenburg, Oxford Internet Institute The most persuasive AI systems were those that produced information-dense arguments – responses filled with fact-checkable claims potentially relevant to the argument.",
+    "Read the full paper, 'The Levers of Political Persuasion with Conversational AI', in Science.",
+    "Persuasion comes at a cost to accuracy - The study reveals a troubling trade-off: the more persuasive a model is, the less accurate its information tends to be.",
+    "AI conversation outperforms static messaging - Conversational AI was found to be significantly more persuasive than one-way, static messages, highlighting a potential shift in how influence may operate online in the years ahead.",
+    "Our results demonstrate the remarkable persuasive power of conversational AI systems on political issues.",
+    "However, the study found that model size plays only a modest role."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://www.news.cornell.edu/stories/2025/12/ai-chatbots-can-effectively-sway-voters-either-direction",
+   "final_url": "https://news.cornell.edu/stories/2025/12/ai-chatbots-can-effectively-sway-voters-either-direction",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AI chatbots can effectively sway voters – in either direction | Cornell Chronicle",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-12-04"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "A short interaction with a chatbot can meaningfully shift a voter’s opinion about a presidential candidate or proposed policy in either direction, new Cornell research finds.",
+   "passages": [
+    "Credit: Ashley Osburn/Cornell University AI chatbots can effectively sway voters – in either direction By Patricia Waldron Cornell Ann S.",
+    "Two new papers – with experiments conducted in four countries – demonstrate that chatbots powered by large language models (LLMs) are quite effective at political persuasion, moving opposition voters’ preferences by 10 percentage points or more in many cases.",
+    "In the Science paper, Rand collaborated with colleagues at the UK AI Security Institute to investigate what makes these chatbots so persuasive.",
+    "Bowers College of Computing and Information Science, the Cornell SC Johnson College of Business and the College of Arts and Sciences, and a senior author on both papers.",
+    "On a 100-point scale, the pro-Harris AI model moved likely Trump voters 3.9 points toward Harris – an effect roughly four times larger than traditional ads tested during the 2016 and 2020 elections.",
+    "The pro-Trump AI model moved likely Harris voters 1.51 points toward Trump.In similar experiments with 1,530 Canadians and 2,118 Poles, the effect was much larger: Chatbots moved opposition voters’ attitudes and voting intentions by about 10 percentage points."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://arxiv.org/abs/2403.14380",
+   "final_url": "https://arxiv.org/abs/2403.14380",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "On the Conversational Persuasiveness of Large Language Models: A Randomized Controlled Trial",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2024-03-21"
+    },
+    {
+     "source": "citation_date",
+     "date": "2024-03-21"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-05-19"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41562-025-02194-6",
+   "crossref": {
+    "doi": "10.1038/s41562-025-02194-6",
+    "resolves": true,
+    "title": "On the conversational persuasiveness of GPT-4",
+    "container": "Nature Human Behaviour",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-5-19",
+    "authors_first3": [
+     "Salvi",
+     "Horta Ribeiro",
+     "Gallotti"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41562-026-02588-0",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {
+     "has-preprint": [
+      "10.21203/rs.3.rs-4429707/v1"
+     ]
+    }
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2403.14380: On the Conversational Persuasiveness of Large Language Models: A Randomized Controlled Trial",
+   "passages": [
+    "Early work has found that language models can generate content perceived as at least on par and often more persuasive than human-written messages.",
+    "The development and popularization of large language models (LLMs) have raised concerns that they will be used to create tailor-made, convincing arguments to push false or misleading narratives online.",
+    "In this pre-registered study, we analyze the effect of AI-driven persuasion in a controlled, harmless setting.",
+    "However, there is still limited knowledge about LLMs' persuasive capabilities in direct conversations with human counterparts and how personalization can improve their performance.",
+    "We create a web-based platform where participants engage in short, multiple-round debates with a live opponent.",
+    "Without personalization, GPT-4 still outperforms humans, but the effect is lower and statistically non-significant (p=0.31)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "url": "https://www.nature.com/articles/d41586-025-03733-x",
+   "final_url": "https://www.nature.com/articles/d41586-025-03733-x?error=cookies_not_supported&code=f5c87248-63b5-4d87-accb-329553c7bfed",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AI chatbots can persuade voters to change their minds",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-23"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-12-04"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-025-03733-x",
+   "crossref": {
+    "doi": "10.1038/d41586-025-03733-x",
+    "resolves": true,
+    "title": "AI chatbots can persuade voters to change their minds",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-12-4",
+    "authors_first3": [
+     "Vargiu",
+     "Nai"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "Conversations with AI can sway people’s political views. Concerningly, a chatbot’s facts are not always accurate, especially when it supports right-wing positions.",
+   "passages": [
+    "NEWS AND VIEWS 04 December 2025 AI chatbots can persuade voters to change their minds Conversations with AI can sway people’s political views.",
+    "Against this backdrop, the urgent question is: can the same conversational skills that make AI into helpful assistants also turn them into powerful political actors?",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,...",
+    "Rumoured ‘bombshell’ stuns scientists News Explainer 26 NOV 26 AI is ditching hallucinated references — and other bad habits News 19 NOV 26 AI is turbocharging cyberattacks — can computer scientists catch up?",
+    "AI is more persuasive than people in online debates Will AI ruin the social sciences — or revolutionize them?",
+    "Generative conversational artificial-intelligence systems, such as OpenAI’s ChatGPT, are being used to optimize tasks, plan holidays and seek advice on matters ranging from the trivial to the existential — a quiet exchange of words that is shaping how decisions are made1."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 7,
+   "url": "https://dare.uva.nl/id/083fe9f4-62f9-413e-939f-3a9f537c58a1",
+   "final_url": "https://dare.uva.nl/id/083fe9f4-62f9-413e-939f-3a9f537c58a1",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "AI chatbots can persuade voters",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-01-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-12-04"
+    }
+   ],
+   "date_ok": true,
+   "doi": "https://doi.org/10.1038/d41586-025-03733-x",
+   "crossref": {
+    "doi": "https://doi.org/10.1038/d41586-025-03733-x",
+    "resolves": true,
+    "title": "AI chatbots can persuade voters to change their minds",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-12-4",
+    "authors_first3": [
+     "Vargiu",
+     "Nai"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://www.nature.com/articles/d41586-025-03733-x",
+   "final_url": "https://www.nature.com/articles/d41586-025-03733-x?error=cookies_not_supported&code=f5c87248-63b5-4d87-accb-329553c7bfed",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AI chatbots can persuade voters to change their minds",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "dc.date",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-12-04"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-23"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-12-04"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-025-03733-x",
+   "crossref": {
+    "doi": "10.1038/d41586-025-03733-x",
+    "resolves": true,
+    "title": "AI chatbots can persuade voters to change their minds",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-12-4",
+    "authors_first3": [
+     "Vargiu",
+     "Nai"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "Conversations with AI can sway people’s political views. Concerningly, a chatbot’s facts are not always accurate, especially when it supports right-wing positions.",
+   "passages": [
+    "NEWS AND VIEWS 04 December 2025 AI chatbots can persuade voters to change their minds Conversations with AI can sway people’s political views.",
+    "Against this backdrop, the urgent question is: can the same conversational skills that make AI into helpful assistants also turn them into powerful political actors?",
+    "Rumoured ‘bombshell’ stuns scientists News Explainer 26 NOV 26 AI is ditching hallucinated references — and other bad habits News 19 NOV 26 AI is turbocharging cyberattacks — can computer scientists catch up?",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,...",
+    "AI is more persuasive than people in online debates Will AI ruin the social sciences — or revolutionize them?",
+    "Generative conversational artificial-intelligence systems, such as OpenAI’s ChatGPT, are being used to optimize tasks, plan holidays and seek advice on matters ranging from the trivial to the existential — a quiet exchange of words that is shaping how decisions are made1."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 1,
+   "url": "https://dare.uva.nl/id/083fe9f4-62f9-413e-939f-3a9f537c58a1",
+   "final_url": "https://dare.uva.nl/id/083fe9f4-62f9-413e-939f-3a9f537c58a1",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "AI chatbots can persuade voters",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2025-01-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2025-12-04"
+    }
+   ],
+   "date_ok": true,
+   "doi": "https://doi.org/10.1038/d41586-025-03733-x",
+   "crossref": {
+    "doi": "https://doi.org/10.1038/d41586-025-03733-x",
+    "resolves": true,
+    "title": "AI chatbots can persuade voters to change their minds",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2025-12-4",
+    "authors_first3": [
+     "Vargiu",
+     "Nai"
+    ],
+    "author_count": 2,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

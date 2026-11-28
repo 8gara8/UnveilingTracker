@@ -1,0 +1,375 @@
+{
+ "slug": "prime-editing-rewrites-dna-no-breaks",
+ "title": "Prime editing rewrites DNA without cutting both strands or using donor DNA",
+ "first_published": "2019-10-21",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-019-1711-4",
+   "final_url": "https://www.nature.com/articles/s41586-019-1711-4?error=cookies_not_supported&code=80d7956f-1a78-4218-addf-1bce9332637c",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Search-and-replace genome editing without double-strand breaks or donor DNA",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-11-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2019-10-21"
+    },
+    {
+     "source": "dc.date",
+     "date": "2019-10-21"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2019-10-21"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2019-10-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-10-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-08-26"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-10-10"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-10-21"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-019-1711-4",
+   "crossref": {
+    "doi": "10.1038/s41586-019-1711-4",
+    "resolves": true,
+    "title": "Search-and-replace genome editing without double-strand breaks or donor DNA",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-10-21",
+    "authors_first3": [
+     "Anzalone",
+     "Randolph",
+     "Davis"
+    ],
+    "author_count": 11,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.736778482.793567599",
+      "10.3410/f.736778482.793566505",
+      "10.3410/f.736778482.793580250"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Most genetic variants that contribute to disease1 are challenging to correct efficiently and without excess byproducts2–5. Here we describe prime editing, a versatile and precise genome editing method that directly writes new genetic information into a specified DNA site using a catalytically impair",
+   "passages": [
+    "Liu.Ethics declarations Competing interests Authors through the Broad Institute have filed patent applications on prime editing.",
+    "G.A.N acknowledges a Helen Hay Whitney postdoctoral fellowship.Author informationAuthors and AffiliationsMerkin Institute of Transformative Technologies in Healthcare, Broad Institute of Harvard and MIT, Cambridge, MA, USAAndrew V.",
+    "3 Prime editing of genomic DNA in human cells by PE1.a, pegRNAs contain a spacer sequence, an sgRNA scaffold, and a 3′ extension containing an RT template (purple), which contains the edited base(s) (red), and a primer-binding site (PBS, green).",
+    "We performed more than 175 edits in human cells, including targeted insertions, deletions, and all 12 types of point mutation, without requiring double-strand breaks or donor DNA templates.",
+    "2: Prime editing of genomic DNA in human cells by PE1 and PE2.Fig.",
+    "D.R.L. is a consultant and co-founder of Prime Medicine, Beam Therapeutics, Pairwise Plants, and Editas Medicine, companies that use genome editing."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6907074",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6907074/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Search-and-replace genome editing without double-strand breaks or donor DNA",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-10-20"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-10-21"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-019-1711-4",
+   "crossref": {
+    "doi": "10.1038/s41586-019-1711-4",
+    "resolves": true,
+    "title": "Search-and-replace genome editing without double-strand breaks or donor DNA",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-10-21",
+    "authors_first3": [
+     "Anzalone",
+     "Randolph",
+     "Davis"
+    ],
+    "author_count": 11,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.736778482.793567599",
+      "10.3410/f.736778482.793566505",
+      "10.3410/f.736778482.793580250"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Most genetic variants that contribute to disease1 are challenging to correct efficiently and without excess byproducts2–5. Here we describe prime editing, a versatile and precise genome editing method that directly writes new genetic information ...",
+   "passages": [
+    "Since an NGG PAM on either DNA strand occurs on average every ~8 bp, far less than edit-to-PAM distances that support efficient prime editing, prime editing is not substantially constrained by the availability of a nearby PAM sequence, in contrast to other precision editing methods11,15,16.",
+    "By enabling precise targeted insertions, deletions, and all 12 possible classes of point mutations without requiring DSBs or donor DNA templates, prime editing has the potential to advance the study and correction of the vast majority of pathogenic alleles.",
+    "The authors declare competing financial interests: authors through the Broad Institute have filed patent applications on prime editing.",
+    "Results Prime editing strategy Cas9 targets DNA using a guide RNA containing a spacer sequence that hybridizes to the target DNA site2–4,20,21.",
+    "We performed >175 edits in human cells including targeted insertions, deletions, and all 12 types of point mutations without requiring double-strand breaks or donor DNA templates.",
+    "To evaluate eukaryotic cell DNA repair outcomes of 3’ flaps produced by pegRNA-programmed reverse transcription in vitro, we performed in vitro prime editing on reporter plasmids, then transformed the reaction products into yeast cells (Extended Data Fig."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.nature.com/articles/s41587-020-0455-x",
+   "final_url": "https://www.nature.com/articles/s41587-020-0455-x?error=cookies_not_supported&code=16259320-4da5-4f19-8988-027c20d87abc",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Prime genome editing in rice and wheat",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-04-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-03-16"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-03-16"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-03-16"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-03-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-03-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-12-12"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-02-11"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-03-16"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41587-020-0455-x",
+   "crossref": {
+    "doi": "10.1038/s41587-020-0455-x",
+    "resolves": true,
+    "title": "Prime genome editing in rice and wheat",
+    "container": "Nature Biotechnology",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-3-16",
+    "authors_first3": [
+     "Lin",
+     "Zong",
+     "Xue"
+    ],
+    "author_count": 12,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.737558014.793573163"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Prime editors, which are CRISPR–Cas9 nickase (H840A)–reverse transcriptase fusions programmed with prime editing guide RNAs (pegRNAs), can edit bases in mammalian cells without donor DNA or double-strand breaks. We adapted prime editors for use in plants through codon, promoter, and editing-conditio",
+   "passages": [
+    "Brief Communication Published: 16 March 2020 Prime genome editing in rice and wheat Qiupeng Lin1,2 na1, Yuan Zong1 na1, Chenxiao Xue1,2 na1, Shengxing Wang1, Shuai Jin1,2, Zixu Zhu1,2, Yanpeng Wang1,2, Andrew V.",
+    "Prime genome editing in rice and wheat.",
+    "1: Frequency of prime editing in rice and wheat protoplasts.Fig.",
+    "2: Optimized prime editors for precise genome editing in rice.",
+    "D.R.L. is a consultant for and co-founder of Beam Therapeutics, Prime Medicine, Pairwise Plants, and Editas Medicine—companies that use genome editing.",
+    "We adapted prime editors for use in plants through codon, promoter, and editing-condition optimization."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7680537/",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7680537/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Engineering herbicide resistance via prime editing in rice",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-06-10"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-06-11"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1111/pbi.13399",
+   "crossref": {
+    "doi": "10.1111/pbi.13399",
+    "resolves": true,
+    "title": "Engineering herbicide resistance via prime editing in rice",
+    "container": "Plant Biotechnology Journal",
+    "publisher": "Wiley",
+    "type": "journal-article",
+    "issued": "2020-6-11",
+    "authors_first3": [
+     "Butt",
+     "Rao",
+     "Sedeek"
+    ],
+    "author_count": 6,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "brief-report"
+   },
+   "meta_description": null,
+   "passages": [
+    "(2020) Engineering herbicide resistance via prime editing in rice.",
+    "Revised 2020 May 2; Received 2020 Mar 23; Accepted 2020 May 10; Collection date 2020 Dec.Keywords: prime editing, homology‐directed repair, herbicide resistance, genome engineering © 2020 The Authors.",
+    "Open in a new tab Prime editing of OsALS for herbicide resistance. (a) Schematic representation of rice ALS locus.",
+    "We engineered herbicide resistance trait in rice via nucleotide substitutions; however, the system requires further improvements and assessments on its ability to enable diverse editing modalities for different trait engineering applications in plants.",
+    "Plant Biotechnology Journal published by Society for Experimental Biology and The Association of Applied Biologists and John Wiley & Sons Ltd.",
+    "Prime editing has several advantages over other methods, such as enabling precise sequence deletion, addition and substitution."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://breakthroughprize.org/Laureates/L3978",
+   "final_url": "https://breakthroughprize.org/Laureates/L3978",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "David R. Liu – 2025 Breakthrough Prize in Life Sciences",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://www.broadinstitute.org/news/david-liu-receives-breakthrough-prize-life-sciences",
+   "final_url": "https://www.broadinstitute.org/news/david-liu-receives-breakthrough-prize-life-sciences",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "David Liu receives Breakthrough Prize in Life Sciences",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2025-04-05"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-04-05"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-04-05"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Liu is honored for the development of base editing and prime editing, two gene editing technologies transforming medicine.",
+   "passages": [
+    "Breadcrumb Home News David Liu receives Breakthrough Prize in Life Sciences Liu is honored for the development of base editing and prime editing, two gene editing technologies transforming medicine.",
+    "Liu, who is also the Thomas Dudley Cabot Professor of the Natural Sciences at Harvard University and a Howard Hughes Medical Institute (HHMI) investigator, graduated first in his class at Harvard College in 1994.",
+    "David Liu is one of eight winners in the life sciences category, and is the second Broad scientist to win the award.",
+    "Along with Liu, this year’s recipients of the Breakthrough Prize in Life Sciences are Daniel J.",
+    "By Broad Communications April 5, 2025 Credit: Casey Atkins David Liu is a core member at the Broad Institute where he is the Richard Merkin Professor and director of the Merkin Institute for Transformative Technologies in Healthcare.",
+    "The organization has honored Liu for the development of the gene editing platforms base editing and prime editing, which can correct the vast majority of known disease-causing genetic variations and have already been used in at least 15 clinical trials, with life-saving results."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

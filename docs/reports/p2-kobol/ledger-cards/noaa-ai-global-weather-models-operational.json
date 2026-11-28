@@ -1,0 +1,98 @@
+{
+ "slug": "noaa-ai-global-weather-models-operational",
+ "title": "NOAA puts three AI global weather models into daily operation",
+ "first_published": "2025-12-17",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.noaa.gov/news-release/noaa-deploys-new-generation-of-ai-driven-global-weather-models",
+   "final_url": "https://www.noaa.gov/news-release/noaa-deploys-new-generation-of-ai-driven-global-weather-models",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "ERROR: The request could not be satisfied",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://epic.noaa.gov/noaa-deploys-new-ai-driven-global-weather-models/",
+   "final_url": "https://epic.noaa.gov/noaa-deploys-new-ai-driven-global-weather-models/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "NOAA Deploys New AI Driven Global Weather Models - Earth Prediction Innovation Center",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2026-01-05"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-01-05"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-01-05"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "NOAA has deployed a new set of operational AI driven global weather prediction models making a major advancement in forecast speed, efficiency, and accuracy while using fewer computing resources. Key highlights include the Artificial Intelligence Global Forecast System (AIGFS), the Artificial Intell",
+   "passages": [
+    "EPIC is a key member of this collaboration through the provision of software infrastructure and community engagement support.",
+    "Full details on model performance and technical background are available in the official NOAA announcement."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://wmo.int/media/news-from-members/noaa-deploys-new-generation-of-ai-driven-global-weather-models",
+   "final_url": "https://wmo.int/media/news-from-members/noaa-deploys-new-generation-of-ai-driven-global-weather-models",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "NOAA deploys new generation of AI-driven global weather models",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2025-12-19"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "NOAA has launched a groundbreaking new suite of operational, artificial intelligence (AI)-driven global weather prediction models, marking a significant advancement in forecast speed, efficiency, and accuracy. The models will provide forecasters with faster delivery of more accurate guidance, while ",
+   "passages": [
+    "NOAA deploys new generation of AI-driven global weather models News from Members 17 December 2025 NOAA has launched a groundbreaking new suite of operational, artificial intelligence (AI)-driven global weather prediction models, marking a significant advancement in forecast speed, efficiency, and accuracy.",
+    "Share: News was produced by: National Oceanic and Atmospheric Administration (NOAA) “NOAA’s strategic application of AI is a significant leap forward in American weather model innovation,” said Neil Jacobs, Ph.D., NOAA administrator.",
+    "The models will provide forecasters with faster delivery of more accurate guidance, while using a fraction of computational resources."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

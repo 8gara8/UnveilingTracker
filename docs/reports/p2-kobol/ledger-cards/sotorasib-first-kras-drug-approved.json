@@ -1,0 +1,142 @@
+{
+ "slug": "sotorasib-first-kras-drug-approved",
+ "title": "First KRAS-targeting cancer drug, sotorasib, wins FDA approval for lung cancer",
+ "first_published": "2019-10",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-019-1694-1",
+   "final_url": "https://www.nature.com/articles/s41586-019-1694-1?error=cookies_not_supported&code=c287cae6-ae4d-4985-8751-4e74b11e15ea",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The clinical KRAS(G12C) inhibitor AMG 510 drives anti-tumour immunity",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-10-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "dc.date",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-10-30"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-03-29"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-09-18"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-10-30"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-019-1694-1",
+   "crossref": {
+    "doi": "10.1038/s41586-019-1694-1",
+    "resolves": true,
+    "title": "The clinical KRAS(G12C) inhibitor AMG 510 drives anti-tumour immunity",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-10-30",
+    "authors_first3": [
+     "Canon",
+     "Rex",
+     "Saiki"
+    ],
+    "author_count": 34,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.736826727.793569226",
+      "10.3410/f.736826727.793568538"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "KRAS is the most frequently mutated oncogene in cancer and encodes a key signalling protein in tumours1,2. The KRAS(G12C) mutant has a cysteine residue that has been exploited to design covalent inhibitors that have promising preclinical activity3–5. Here we optimized a series of inhibitors, using&n",
+   "passages": [
+    "Article Published: 30 October 2019 The clinical KRAS(G12C) inhibitor AMG 510 drives anti-tumour immunity Jude Canon1, Karen Rex1 na1, Anne Y.",
+    "The clinical KRAS(G12C) inhibitor AMG 510 drives anti-tumour immunity.",
+    "Our efforts have led to the discovery of AMG 510, which is, to our knowledge, the first KRAS(G12C) inhibitor in clinical development.",
+    "1: AMG 510 exploits a cryptic groove in KRAS(G12C) to enhance potency and selectivity.Fig.",
+    "3: Clinical activity of AMG 510 in patients with lung cancer in first-in-human dose-escalation study.Fig.",
+    "L.P.V., X.Z. and R.O. developed methods, and N.K. quantified KRAS(G12C)–AMG 510 covalent adducts in cells and tumour samples."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sotorasib-kras-g12c-mutated-nsclc",
+   "final_url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sotorasib-kras-g12c-mutated-nsclc",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": "Page Not Found | FDA",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "dead"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://fda.gov/drugs/resources-information-approved-drugs/ongoing-cancer-accelerated-approvals",
+   "final_url": "https://www.fda.gov/apology_objects/abuse-detection-apology.html",
+   "status": 404,
+   "readable": false,
+   "reason": "404",
+   "title_found": null,
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "dead"
+  }
+ ]
+}

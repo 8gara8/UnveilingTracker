@@ -1,0 +1,265 @@
+{
+ "slug": "rigorous-test-electric-ammonia-claims-lithium",
+ "title": "A strict test shows most electric ammonia claims lacked proof, except lithium-mediated",
+ "first_published": "2019-05-22",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-019-1260-x",
+   "final_url": "https://www.nature.com/articles/s41586-019-1260-x?error=cookies_not_supported&code=0827df3b-2d7c-493d-9838-98d41b3ff47a",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A rigorous electrochemical ammonia synthesis protocol with quantitative isotope measurements",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-05-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2019-05-22"
+    },
+    {
+     "source": "dc.date",
+     "date": "2019-05-22"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2019-05-22"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2019-05-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-05-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-06-08"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-05-09"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-05-22"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-019-1260-x",
+   "crossref": {
+    "doi": "10.1038/s41586-019-1260-x",
+    "resolves": true,
+    "title": "A rigorous electrochemical ammonia synthesis protocol with quantitative isotope measurements",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-5-22",
+    "authors_first3": [
+     "Andersen",
+     "Čolić",
+     "Yang"
+    ],
+    "author_count": 21,
+    "update_to": [],
+    "updated_by": [
+     {
+      "doi": "10.1038/s41586-019-1625-1",
+      "type": "correction",
+      "source": "publisher"
+     }
+    ],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The electrochemical synthesis of ammonia from nitrogen under mild conditions using renewable electricity is an attractive alternative1–4 to the energy-intensive Haber–Bosch process, which dominates industrial ammonia production. However, there are considerable scientific and technical challenges5,6 ",
+   "passages": [
+    "Letter Published: 22 May 2019 A rigorous electrochemical ammonia synthesis protocol with quantitative isotope measurements Suzanne Z.",
+    "Following this protocol, we find that no ammonia is produced when using the most promising pure-metal catalysts for this reaction in aqueous media, and we successfully confirm and quantify ammonia synthesis using lithium electrodeposition in tetrahydrofuran13.",
+    "A rigorous electrochemical ammonia synthesis protocol with quantitative isotope measurements.",
+    "Here we propose a rigorous procedure using 15N2 that enables us to reliably detect and quantify the electrochemical reduction of nitrogen to ammonia.",
+    "400 MHz and 800 MHz NMR spectra were recorded on the spectrometers of the NMR Center at the Technical University of Denmark supported by the Villum Foundation.",
+    "The use of this rigorous protocol should help to prevent false positives from appearing in the literature, thus enabling the field to focus on viable pathways towards the practical electrochemical reduction of nitrogen to ammonia."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7641139",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7641139/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Identification and elimination of false positives in electrochemical nitrogen reduction studies",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-11-02"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-11-03"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41467-020-19130-z",
+   "crossref": {
+    "doi": "10.1038/s41467-020-19130-z",
+    "resolves": true,
+    "title": "Identification and elimination of false positives in electrochemical nitrogen reduction studies",
+    "container": "Nature Communications",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-11-3",
+    "authors_first3": [
+     "Choi",
+     "Suryanto",
+     "Wang"
+    ],
+    "author_count": 8,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "review-article"
+   },
+   "meta_description": "Ammonia is of emerging interest as a liquefied, renewable-energy-sourced energy carrier for global use in the future. Electrochemical reduction of N2 (NRR) is widely recognised as an alternative to the traditional Haber–Bosch production process for ...",
+   "passages": [
+    "Subject terms: Catalytic mechanisms, Electrocatalysis, Heterogeneous catalysis, Energy, Characterization and analytical techniques Discovering a sustainable route to ammonia as a fertiliser and as an energy carrier is critically important, but many recent reports on the electrochemical nitrogen reduction are false positives.",
+    "Electrochemical nitrogen reduction: Identification and elimination of contamination in electrolyte.",
+    "Our literature summary on the aqueous NRR consists of 127 recently published papers up to April 2020 which is presented in Supplementary Table 1.",
+    "Based on these criteria, we reach the unfortunate conclusion that none of the publications in Supplementary Table 1 qualifies for three greens and only one scores two greens, in Criteria I and II.",
+    "Thus, genuine nitrogen electroreduction results can only be obtained when N2 is the only possible source of ammonia formation, i.e. all NOx contaminants beyond the background are removed.",
+    "Where a high yielding NRR process has been robustly proven previously to be genuine, it can be reasonable to refer back to the earlier work for proof."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://link.springer.com/article/10.1038/s41586-022-05108-y",
+   "final_url": "https://link.springer.com/article/10.1038/s41586-022-05108-y?error=cookies_not_supported&code=c30a1ba0-62ac-4518-9de0-36329d7c6f89",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Electroreduction of nitrogen with almost 100% current-to-ammonia efficiency",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-08-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2022-07-22"
+    },
+    {
+     "source": "dc.date",
+     "date": "2022-07-22"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2022-07-22"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-07-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-07-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-11-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-07-13"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-07-22"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-022-05108-y",
+   "crossref": {
+    "doi": "10.1038/s41586-022-05108-y",
+    "resolves": true,
+    "title": "Electroreduction of nitrogen with almost 100% current-to-ammonia efficiency",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2022-7-22",
+    "authors_first3": [
+     "Du",
+     "Chatti",
+     "Hodgetts"
+    ],
+    "author_count": 8,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "In addition to its use in the fertilizer and chemical industries1, ammonia is currently seen as a potential replacement for carbon-based fuels and as a carrier for worldwide transportation of renewable energy2. Implementation of this vision requires transformation of the existing fossil-fuel-based t",
+   "passages": [
+    "The interface is generated by a high-concentration imide-based lithium-salt electrolyte, providing stabilized ammonia yield rates of 150 ± 20 nmol s−1 cm−2 and a current-to-ammonia efficiency that is close to 100%.",
+    "Shanks for his assistance with the Fourier-transform infrared attenuated total reflectance spectroscopic measurements.Author informationAuthors and AffiliationsThe ARC Centre of Excellence for Electromaterials Science, Monash University, Clayton, Victoria, AustraliaHoang-Long Du, Manjunath Chatti, Rebecca Y.",
+    "Electroreduction of nitrogen with almost 100% current-to-ammonia efficiency.",
+    "Understanding the factors determining the faradaic efficiency and rate of the lithium redox-mediated N2 reduction to ammonia.",
+    "Our study highlights the interrelation between the performance of the lithium-mediated nitrogen-reduction reaction and the physicochemical properties of the electrode–electrolyte interface.",
+    "Electron Transfer Ionic Liquids Chemical Engineering Fuel Cells Electrochemistry Electrocatalysis Electrocatalytic Nitrogen Reduction to Ammonia Data availability All data are available in the paper and its Supplementary Information."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.monash.edu/science/news-events/news/2022/monash-university-scientists-achieve-new-ammonia-breakthrough",
+   "final_url": "https://www.monash.edu/science/news-events/news/2022/monash-university-scientists-achieve-new-ammonia-breakthrough",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

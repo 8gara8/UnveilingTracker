@@ -1,0 +1,277 @@
+{
+ "slug": "phone-data-targets-cash-aid-togo",
+ "title": "Phone data and machine learning pick who gets emergency cash in Togo",
+ "first_published": "2022-03",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-022-04484-9",
+   "final_url": "https://www.nature.com/articles/s41586-022-04484-9?error=cookies_not_supported&code=53e068fa-8825-4b13-999c-e3c9a39910ba",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Machine learning and phone data can improve targeting of humanitarian aid",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-02-28"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2022-03-16"
+    },
+    {
+     "source": "dc.date",
+     "date": "2022-03-16"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2022-03-16"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2022-03-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-03-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-07-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-01-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-03-16"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-022-04484-9",
+   "crossref": {
+    "doi": "10.1038/s41586-022-04484-9",
+    "resolves": true,
+    "title": "Machine learning and phone data can improve targeting of humanitarian aid",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2022-3-16",
+    "authors_first3": [
+     "Aiken",
+     "Bellue",
+     "Karlan"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The COVID-19 pandemic has devastated many low- and middle-income countries, causing widespread food insecurity and a sharp decline in living standards1. In response to this crisis, governments and humanitarian organizations worldwide have distributed social assistance to more than 1.5 billion people",
+   "passages": [
+    "In Togo, we find that when the machine-learning model or the mobile phone data are roughly 18 months out of date, predictive accuracy decreases by 4–6% and precision drops by 10–14% (Extended Data Table 4 and Methods, ‘Temporal stability of results’).",
+    "In Togo, the government’s objective was to deliver benefits to the poorest people in the country, so our efforts focused on training a machine-learning model to target the poor.",
+    "Machine learning and phone data can improve targeting of humanitarian aid.",
+    "In such contexts, data gaps preclude governments from implementing well-targeted social assistance programmes10,11.Here we develop, implement and evaluate an approach to targeting social assistance based on machine-learning algorithms and non-traditional ‘big data’ from satellites and mobile phone networks.",
+    "1).Targeting with mobile phone dataIn the first step, we obtained public micro-estimates of the relative wealth of every 2.4 km by 2.4 km region in Togo, which were constructed by applying machine-learning algorithms to high-resolution satellite imagery16.",
+    "1: Comparing Novissi targeting to alternatives.Full size imagea, b, The performance of phone-based targeting (green) compared with alternative approaches that were feasible (red) and unfeasible (blue) in Togo in 2020."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8967719",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8967719/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Machine learning and phone data can improve targeting of humanitarian aid",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2022-03-15"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2022-03-16"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-022-04484-9",
+   "crossref": {
+    "doi": "10.1038/s41586-022-04484-9",
+    "resolves": true,
+    "title": "Machine learning and phone data can improve targeting of humanitarian aid",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2022-3-16",
+    "authors_first3": [
+     "Aiken",
+     "Bellue",
+     "Karlan"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "The COVID-19 pandemic has devastated many low- and middle-income countries, causing widespread food insecurity and a sharp decline in living standards1. In response to this crisis, governments and humanitarian organizations worldwide have ...",
+   "passages": [
+    "In Togo, we find that when the machine-learning model or the mobile phone data are roughly 18 months out of date, predictive accuracy decreases by 4–6% and precision drops by 10–14% (Extended Data Table 4 and Methods, ‘Temporal stability of results’).",
+    "The top set of rows compares the phone-based PMT to alternative targeting methods that the Government of Togo considered prior to expanding Novissi to rural areas.",
+    "Phone penetration in Togo probably increased between the field survey (2018–2019) and the Novissi expansion (October 2020); the Togolese government estimates 82% SIM card penetration44.",
+    "In Togo, the government’s objective was to deliver benefits to the poorest people in the country, so our efforts focused on training a machine-learning model to target the poor.",
+    "We find that this ‘phone expenditure’ method (AUC = 0.57 for rural Novissi and 0.63 in for the hypothetical national programme; Table 1) performs substantially worse than the machine-learning-based model (AUC = 0.70 for rural Novissi and 0.73 for the hypothetical national programme).",
+    "Targeting development aid with machine learning and mobile phone data: evidence from an anti-poverty intervention in Afghanistan."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.nber.org/papers/w29070",
+   "final_url": "https://www.nber.org/papers/w29070",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Machine Learning and Mobile Phone Data Can Improve the Targeting of Humanitarian Assistance",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-07-26"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-07-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-06-23"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-06-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.3386/w29070",
+   "crossref": {
+    "doi": "10.3386/w29070",
+    "resolves": true,
+    "title": "Machine Learning and Mobile Phone Data Can Improve the Targeting of Humanitarian Assistance",
+    "container": null,
+    "publisher": "National Bureau of Economic Research",
+    "type": "report",
+    "issued": "2021-7",
+    "authors_first3": [
+     "Aiken",
+     "Bellue",
+     "Karlan"
+    ],
+    "author_count": 5,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Founded in 1920, the NBER is a private, non-profit, non-partisan organization dedicated to conducting economic research and to disseminating research findings among academics, public policy makers, and business professionals.",
+   "passages": [
+    "Udry, and Joshua Blumenstock, \"Machine Learning and Mobile Phone Data Can Improve the Targeting of Humanitarian Assistance,\" NBER Working Paper 29070 (2021), https://doi.org/10.3386/w29070.",
+    "Here we show that data from mobile phone networks can improve the targeting of humanitarian assistance.",
+    "Relative to the geographic targeting options considered by the Government of Togo, the machine learning approach reduces errors of exclusion by 4-21%.",
+    "These results highlight the potential for new data sources to complement traditional methods for targeting humanitarian assistance, particularly in crisis settings when traditional data are missing or out of date.",
+    "Relative to methods requiring a comprehensive social registry (a hypothetical exercise; no such registry exists in Togo), the machine learning approach increases exclusion errors by 9-35%.",
+    "In response to this crisis, governments and humanitarian organizations worldwide have distributed social assistance to over 1.5 billion people."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://cega.berkeley.edu/feature/togo-cash-transfers/",
+   "final_url": "https://cega.berkeley.edu/feature/togo-cash-transfers/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Helping Design Togo’s Flagship Cash Transfer Program",
+   "title_match": false,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Machine learning, combined with digital data, can help identify poor for cash transfer delivery In response to the COVID-19 pandemic, CEGA co-Director Joshua Blumenstock helped design Togo’s...",
+   "passages": [
+    "The team leveraged the models to create initial poverty maps of rural Togo which helped inform the subsequent 2020 phone-based survey sampling strategy and provided the information needed for the Togolese government to geographically target Novissi to the 100 poorest cantons.",
+    "The sampling strategy inferred these individuals lived in rural cantons eligible for Novissi from their mobile phone data.",
+    "By incorporating this innovative targeting approach, the Togolese government provided unconditional cash transfers of $20 per month to 154,238 of its citizens in most need between December 2020 and April 2021 (around a third of the income of a Togolese earning minimum wage).",
+    "The government and the NGO GiveDirectly then transferred cash aid, delivered via mobile money, to the individual’s identified by Blumenstock’s team.",
+    "The team first began by applying machine learning algorithms to high-resolution satellite imagery to develop micro-estimates of the relative wealth of every 2.4 km by 2.4 km region in Togo.",
+    "Using these data, the team built an algorithm that could predict relative wealth in Togo at a more granular level than the original survey: the 2.4km grid predictions were an improvement over the prefecture-level representative sample collected."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://www.povertyactionlab.org/case-study/using-machine-learning-and-mobile-phone-data-improve-speed-and-cost-effectiveness-social",
+   "final_url": "https://www.povertyactionlab.org/case-study/using-machine-learning-and-mobile-phone-data-improve-speed-and-cost-effectiveness-social",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Using machine learning and mobile phone data to improve the speed and cost-effectiveness of social protection",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2026-06-16"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "In partnership with the Togolese government, researchers developed a rapid and cost-effective approach to deliver emergency cash to households in need by leveraging machine learning and mobile phone data. This approach helped expand emergency cash transfers to vulnerable rural households in Togo and",
+   "passages": [
+    "Photo Credit: Lucian Coman, Shutterstock.com During the Covid-19 pandemic, when many governments lacked up-to-date data to identify those in need, J-PAL affiliates partnered with the Togolese government to use machine learning to target emergency cash transfers.",
+    "Trained on survey, satellite, and mobile phone data to predict wealth, the approach helped identify and enroll 138,500 vulnerable recipients for emergency cash transfers, improving food security and mental health.",
+    "\"Machine learning and phone data can improve targeting of humanitarian aid.\"",
+    "Over three phases, the Novissi program registered approximately 1.6 million individuals,13 with earlier urban phases primarily relied on voter registration data and later rural expansion phases incorporated machine-learning-based targeting.",
+    "STEP-KIN is a government-led emergency cash transfer program implemented by the DRC Social Fund with support from World Bank and GiveDirectly.",
+    "This approach helped expand emergency cash transfers to vulnerable rural households in Togo and improved food security and mental health."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,231 @@
+{
+ "slug": "ebola-vaccine-ervebo-ring-trial",
+ "title": "Ebola vaccine protects in Guinea ring trial, then wins approval",
+ "first_published": "2015-07",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.fda.gov/vaccines-blood-biologics/ervebo",
+   "final_url": "https://www.fda.gov/vaccines-blood-biologics/ervebo",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "ERVEBO",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2026-04-21"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "ERVEBO® is a vaccine indicated for the prevention of disease caused by Zaire ebolavirus in individuals 18 years of age and older.",
+   "passages": [
+    "Product Information Package Insert - ERVEBOPatient Information - ERVEBODemographic Subgroup Information – ERVEBO (Ebola Zaire Vaccine, Live)Refer to Section 1.1 of the Clinical Review Memo for information about participation in the clinical trials and any analysis of demographic subgroup outcomes that is notable."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/ervebo",
+   "final_url": "https://www.ema.europa.eu/en/medicines/human/EPAR/ervebo",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Ervebo | European Medicines Agency (EMA)",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2019-12-12"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-12-12"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-08-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-12-12"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Ervebo is a vaccine to protect adults and children aged 1 year and older against Ebola virus disease caused by the Zaire Ebola virus. Ervebo contains a virus known as vesicular stomatitis virus which has been weakened and modified to contain a protein from the Zaire Ebola virus. The vesicular stomat",
+   "passages": [
+    "Other information about Ervebo Ervebo received a conditional marketing authorisation valid throughout the EU on 11 November 2019.",
+    "The European Medicines Agency therefore decided that Ervebo’s benefits are greater than its risks and that it can be authorised for use in the EU.",
+    "The study was conducted in Guinea during an Ebola outbreak and involved people who were either direct contacts or contacts of contacts of someone who had Ebola virus disease.",
+    "The benefits of Ervebo in children were investigated in a second study which evaluated the immune response triggered by the vaccine by measuring the level of antibodies against the Zaire Ebola viral protein contained in Ervebo.",
+    "Ervebo contains a virus known as vesicular stomatitis virus which has been weakened and modified to contain a protein from the Zaire Ebola virus.",
+    "Ervebo can only be obtained with a prescription and should be used in accordance with official recommendations issued at national level by public health bodies."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.ema.europa.eu/en/news/first-vaccine-protect-against-ebola",
+   "final_url": "https://www.ema.europa.eu/en/news/first-vaccine-protect-against-ebola",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "First vaccine to protect against Ebola | European Medicines Agency (EMA)",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2019-10-18"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-10-18"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-10-18"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "More than 3,000 people have been infected with the Ebola virus during the ongoing outbreak, which was declared a public health emergency of international concern by the World Health Organization (WHO) in July 2019.",
+    "EMA is working together with regulatory authorities around the world to support WHO and to advise on possible pathways for the development, evaluation and approval of medicines and vaccines to fight Ebola.",
+    "Data from clinical trials and compassionate use programs have shown that Ervebo protects against Ebola virus disease in humans following a single dose administration.",
+    "“EMA’s positive opinion for the first vaccine against Ebola virus disease demonstrates the scientific expertise in the EU that can be mobilised to reduce the impact of deadly diseases like Ebola,” said Harald Enzmann, Chair of the CHMP.",
+    "Ervebo was granted eligibility to PRIME in June 2016 for active immunisation against Ebola.",
+    "“The CHMP’s recommendation is the result of many years of collaborative global efforts to find and develop new medicines and vaccines against Ebola."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5364328",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5364328/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Efficacy and effectiveness of an rVSV-vectored vaccine in preventing Ebola virus disease: final results from the Guinea ring vaccination, open-label, cluster-randomised trial (Ebola Ça Suffit!)",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2017-02-03"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-01-31"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1016/s0140-6736(16)32621-6",
+   "crossref": {
+    "doi": "10.1016/s0140-6736(16)32621-6",
+    "resolves": true,
+    "title": "Efficacy and effectiveness of an rVSV-vectored vaccine in preventing Ebola virus disease: final results from the Guinea ring vaccination, open-label, cluster-randomised trial (Ebola Ça Suffit!)",
+    "container": "The Lancet",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2017-2",
+    "authors_first3": [
+     "Henao-Restrepo",
+     "Camacho",
+     "Longini"
+    ],
+    "author_count": 32,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "rVSV-ZEBOV is a recombinant, replication competent vesicular stomatitis virus-based candidate vaccine expressing a surface glycoprotein of Zaire Ebolavirus. We tested the effect of rVSV-ZEBOV in preventing Ebola virus disease in contacts and ...",
+   "passages": [
+    "Efficacy and effectiveness of an rVSV-vectored vaccine expressing Ebola surface glycoprotein: interim results from the Guinea ring vaccination cluster-randomised trial.",
+    "These final analyses hence support the interim report efficacy results, indicating that ring vaccination with an effective vaccine can contribute as a control strategy for future outbreaks of Ebola virus disease.",
+    "The health-care system in Guinea was strained, potential trial participants were worried about a candidate vaccine made by foreign people, and the Ebola virus disease response teams were facing security issues.",
+    "Nevertheless, the high efficacy of the rVSV-ZEBOV vaccine, as indicated by the randomised and non-randomised analysis, suggests that the Ebola ça Suffit trial itself had some contribution to foreshortening the epidemic of Ebola virus disease in west Africa by direct and indirect aversion of cases.",
+    "Final data from all trial clusters (randomised and non-randomised, with children included in the non-randomised group) showed that at 10 days or more after randomisation, there were no cases of Ebola virus disease among immediately vaccinated contacts and contacts of contacts; ie, 100% protection.",
+    "Open in a new tab Kaplan-Meier plots for all confirmed cases of Ebola virus disease among all contacts and contacts of contacts in immediate, delayed, and non-randomised clusters Arrows show time of vaccination (at day 0 or day 21)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://doi.org/10.1016/S0140-6736(15)61117-5",
+   "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0140673615611175",
+   "status": 200,
+   "readable": false,
+   "reason": "200 too little text (JS shell or empty)",
+   "title_found": "Redirecting",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2015-07-31"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1016/s0140-6736(15)61117-5",
+   "crossref": {
+    "doi": "10.1016/s0140-6736(15)61117-5",
+    "resolves": true,
+    "title": "Efficacy and effectiveness of an rVSV-vectored vaccine expressing Ebola surface glycoprotein: interim results from the Guinea ring vaccination cluster-randomised trial",
+    "container": "The Lancet",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2015-8",
+    "authors_first3": [
+     "Henao-Restrepo",
+     "Longini",
+     "Egger"
+    ],
+    "author_count": 28,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-review": [
+      "10.3410/f.725702666.793508750",
+      "10.3410/f.725702666.793509519"
+     ]
+    }
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

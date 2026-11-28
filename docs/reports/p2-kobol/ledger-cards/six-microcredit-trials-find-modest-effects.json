@@ -1,0 +1,250 @@
+{
+ "slug": "six-microcredit-trials-find-modest-effects",
+ "title": "Six trials in six countries find microcredit gains modest",
+ "first_published": "2015-01",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://dspace.mit.edu/handle/1721.1/95940",
+   "final_url": "https://dspace.mit.edu/entities/publication/fb384a6d-2c47-40e8-9476-80e887186c5a",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Six Randomized Evaluations of Microcredit: Introduction and Further Steps",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2015-01-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Causal evidence on microcredit impacts informs theory, practice, and debates about its effectiveness as a development tool. The six randomized evaluations in this volume use a variety of sampling, data collection, experimental design, and econometric strategies to identify causal effects of expanded",
+   "passages": [
+    "Six Randomized Evaluations of Microcredit: Introduction and Further Steps Download Name Banerjee_Six randomized.pdf Size567.56 KBFormatAdobe PDFChecksum (MD5) 247dedb5ca48bf4555a5197e56be7da5Author(s)Banerjee, Abhijit•Karlan, Dean S.•Zinman, JonathanDate Issued January 2015 JournalAmerican Economic Journal: Applied EconomicsPublisherAmerican Economic AssociationCitationBanerjee, Abhijit, Dean Karlan, and Jonathan Zinman.",
+    "The six randomized evaluations in this volume use a variety of sampling, data collection, experimental design, and econometric strategies to identify causal effects of expanded access to microcredit on borrowers and/or communities.",
+    "1 (January 2015): 1–21.VersionFinal published versionAbstractCausal evidence on microcredit impacts informs theory, practice, and debates about its effectiveness as a development tool.",
+    "These methods are deployed across an impressive range of locations—six countries on four continents, urban and rural areas—borrower characteristics, loan characteristics, and lender characteristics.",
+    "Summarizing and interpreting results across studies, we note a consistent pattern of modestly positive, but not transformative, effects."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.nber.org/papers/w18950",
+   "final_url": "https://www.nber.org/papers/w18950",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The Miracle of Microfinance? Evidence from a Randomized Evaluation",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2013-05-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2013-05-09"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-02-12"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2013-04-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.3386/w18950",
+   "crossref": {
+    "doi": "10.3386/w18950",
+    "resolves": true,
+    "title": "The Miracle of Microfinance? Evidence from a Randomized Evaluation",
+    "container": null,
+    "publisher": "National Bureau of Economic Research",
+    "type": "report",
+    "issued": "2013-5",
+    "authors_first3": [
+     "Duflo",
+     "Banerjee",
+     "Glennerster"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Founded in 1920, the NBER is a private, non-profit, non-partisan organization dedicated to conducting economic research and to disseminating research findings among academics, public policy makers, and business professionals.",
+   "passages": [
+    "Evidence from a Randomized Evaluation,\" NBER Working Paper 18950 (2013), https://doi.org/10.3386/w18950.",
+    "Kinnan Share X LinkedIn Facebook Bluesky Threads Email Link Working Paper 18950 DOI 10.3386/w18950 Issue Date May 2013 This paper reports on the first randomized evaluation of the impact of introducing the standard microcredit group-based lending product in a new market.",
+    "Justin Oliver at the Centre for Micro Finance and Annie Duflo at Initiatives for Poverty Action shared valuable advice and logistical support.",
+    "In 2005, half of 104 slums in Hyderabad, India were randomly selected for opening of a branch of a particular microfinance institution (Spandana) while the remainder were not, although other MFIs were free to enter those slums.",
+    "Consumption was still no different in treatment areas, and the average business was still no more profitable, although we find an increase in profits at the top end.",
+    "We found no changes in any of the development outcomes that are often believed to be affected by microfinance, including health, education, and women's empowerment."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.nber.org/papers/w20144",
+   "final_url": "https://www.nber.org/papers/w20144",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Estimating the Impact of Microcredit on Those Who Take It Up: Evidence from a Randomized Experiment in Morocco",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2014-05-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2014-05-22"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2014-04-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.3386/w20144",
+   "crossref": {
+    "doi": "10.3386/w20144",
+    "resolves": true,
+    "title": "Estimating the Impact of Microcredit on Those Who Take It Up: Evidence from a Randomized Experiment in Morocco",
+    "container": null,
+    "publisher": "National Bureau of Economic Research",
+    "type": "report",
+    "issued": "2014-5",
+    "authors_first3": [
+     "Crépon",
+     "Devoto",
+     "Duflo"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Founded in 1920, the NBER is a private, non-profit, non-partisan organization dedicated to conducting economic research and to disseminating research findings among academics, public policy makers, and business professionals.",
+   "passages": [
+    "Citation and Citation Data Copy Citation Bruno Crépon, Florencia Devoto, Esther Duflo, and William Pariente, \"Estimating the Impact of Microcredit on Those Who Take It Up: Evidence from a Randomized Experiment in Morocco,\" NBER Working Paper 20144 (2014), https://doi.org/10.3386/w20144.",
+    "Acknowledgements and Disclosures Funding for this study was provided by the Agence Française de Développement (AFD), the International Growth Centre (IGC), and the Abdul Latif Jameel Poverty Action Lab (J-PAL).",
+    "But this increase in profit was offset by a reduction in income from casual labor, so overall there was no gain in measured income or consumption.",
+    "We find suggestive evidence that these results are mainly driven by effects on borrowers, rather than by externalities on households that do not borrow.",
+    "Among households identified as more likely to borrow based on ex-ante characteristics, microcredit access led to a significant rise in investment in assets used for self-employment activities (mainly animal husbandry and agriculture), and an increase in profit."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.nber.org/papers/w19119",
+   "final_url": "https://www.nber.org/papers/w19119",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Win Some Lose Some? Evidence from a Randomized Microcredit Program Placement Experiment by Compartamos Banco",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2013-06-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2013-06-13"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2013-05-31"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.3386/w19119",
+   "crossref": {
+    "doi": "10.3386/w19119",
+    "resolves": true,
+    "title": "Win Some Lose Some? Evidence from a Randomized Microcredit Program Placement Experiment by Compartamos Banco",
+    "container": null,
+    "publisher": "National Bureau of Economic Research",
+    "type": "report",
+    "issued": "2013-6",
+    "authors_first3": [
+     "Angelucci",
+     "Karlan",
+     "Zinman"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Founded in 1920, the NBER is a private, non-profit, non-partisan organization dedicated to conducting economic research and to disseminating research findings among academics, public policy makers, and business professionals.",
+   "passages": [
+    "Evidence from a Randomized Microcredit Program Placement Experiment by Compartamos Banco,\" NBER Working Paper 19119 (2013), https://doi.org/10.3386/w19119.",
+    "We use a clustered randomized trial, and household surveys of eligible borrowers and their businesses, to estimate impacts from an expansion of group lending at 110% APR by the largest microlender in Mexico.",
+    "Average effects on a rich set of outcomes measured 18-34 months post-expansion suggest some good and little harm.",
+    "Other estimators identify heterogeneous treatment effects and effects on outcome distributions, but again yield little support for the hypothesis that microcredit causes harm."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://dspace.mit.edu/handle/1721.1/95969",
+   "final_url": "https://dspace.mit.edu/entities/publication/4a47dd4f-a124-4369-8b98-a1014770a7ed",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Estimating the Impact of Microcredit on Those Who Take It Up: Evidence from a Randomized Experiment in Morocco",
+   "title_match": false,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2015-01-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "We report results from a randomized evaluation of a microcredit program introduced in rural areas of Morocco in 2006. Thirteen percent of the households in treatment villages took a loan, and none in control villages did. Among households identified as more likely to borrow, microcredit access led t",
+   "passages": [
+    "1 (January 2015): 123–150. © 2015 American Economic AssociationVersionFinal published versionAbstractWe report results from a randomized evaluation of a microcredit program introduced in rural areas of Morocco in 2006.",
+    "Among households identified as more likely to borrow, microcredit access led to a significant rise in investment in assets used for self-employment activities, and an increase in profit, but also to a reduction in income from casual labor.",
+    "Overall there was no gain in income or consumption.",
+    "We find suggestive evidence that these results are mainly driven by effects on borrowers, rather than by externalities.Show moreMIT DepartmentMassachusetts Institute of Technology."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

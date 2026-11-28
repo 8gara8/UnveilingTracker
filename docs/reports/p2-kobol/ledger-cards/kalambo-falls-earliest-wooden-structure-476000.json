@@ -1,0 +1,261 @@
+{
+ "slug": "kalambo-falls-earliest-wooden-structure-476000",
+ "title": "Earliest known wooden structure, built at least 476,000 years ago in Zambia",
+ "first_published": "2023-09-20",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-023-06557-9",
+   "final_url": "https://www.nature.com/articles/s41586-023-06557-9?error=cookies_not_supported&code=fce28ea9-4335-4fcb-9355-860da8ccfd3b",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Evidence for the earliest structural use of wood at least 476,000 years ago",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-01-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-08-21"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-09-20"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-023-06557-9",
+   "crossref": {
+    "doi": "10.1038/s41586-023-06557-9",
+    "resolves": true,
+    "title": "Evidence for the earliest structural use of wood at least 476,000 years ago",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-9-20",
+    "authors_first3": [
+     "Barham",
+     "Duller",
+     "Candy"
+    ],
+    "author_count": 14,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Wood artefacts rarely survive from the Early Stone Age since they require exceptional conditions for preservation; consequently, we have limited information about when and how hominins used this basic raw material1. We report here on the earliest evidence for structural use of wood in the archaeolog",
+   "passages": [
+    "Waterlogged deposits at the archaeological site of Kalambo Falls, Zambia, dated by luminescence to at least 476 ± 23 kyr ago (ka), preserved two interlocking logs joined transversely by an intentionally cut notch.",
+    "Evidence for the earliest structural use of wood at least 476,000 years ago.",
+    "New investigations at Kalambo Falls, Zambia: luminescence chronology, site formation, and archaeological significance.",
+    "At Kalambo Falls, wood was recovered from Acheulean horizons in the 1950s–1960s (sites A and B), but taphonomic processes removed evidence of intentional shaping from most pieces17.",
+    "The earliest clearly modified wood object, collected in 1952 from spring deposits at Florisbad, South Africa, was associated with Middle Stone Age tools and hominin remains (Homo helmei)22.",
+    "2: Modified wood tools from site BLB, Kalambo Falls, 2019.Full size imagea, BLB5 structural element (object 1033). b, BLB3 ‘wedge’ (object 660). c, BLB2 ‘digging stick’ (object 219). d, BLB4 cut log. e, BLB4, tapered piece with single chop-mark."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.nature.com/articles/d41586-023-02858-1",
+   "final_url": "https://www.nature.com/articles/d41586-023-02858-1?error=cookies_not_supported&code=fd877652-aac8-42cb-94e0-fa15e42cc72e",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Hominins built with wood 476,000 years ago",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-18"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-09-20"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-023-02858-1",
+   "crossref": {
+    "doi": "10.1038/d41586-023-02858-1",
+    "resolves": true,
+    "title": "Hominins built with wood 476,000 years ago",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-9-20",
+    "authors_first3": [
+     "Milks"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "Ancient hand-crafted wooden structures excavated in Zambia.",
+   "passages": [
+    "NEWS AND VIEWS 20 September 2023 Hominins built with wood 476,000 years ago Understanding the timeline of technological developments sheds light on early societies.",
+    "Writing in Nature, Barham et al.1 present their discoveries of modified wood from Kalambo Falls in Zambia.",
+    "This early human had surprising survival skills that rivalled ours News 18 NOV 26 Rainforest adaptation in late Homo erectus from southern China Article 18 NOV 26 Middle–Late Pleistocene Denisovans and unresolved Homo in southern China Article 25 NOV 26 Kings of the jungle?",
+    "These include the earliest-known example of a hominin-crafted wooden structure, as well as a collection of wooden tools.",
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,...",
+    "A remarkable finding in Africa of a structure made from shaped wood provides clues about our hominin relatives."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "reaction",
+   "i": 0,
+   "url": "https://www.nature.com/articles/d41586-023-02858-1",
+   "final_url": "https://www.nature.com/articles/d41586-023-02858-1?error=cookies_not_supported&code=fd877652-aac8-42cb-94e0-fa15e42cc72e",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Hominins built with wood 476,000 years ago",
+   "title_match": null,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-09-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-18"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-09-20"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-023-02858-1",
+   "crossref": {
+    "doi": "10.1038/d41586-023-02858-1",
+    "resolves": true,
+    "title": "Hominins built with wood 476,000 years ago",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-9-20",
+    "authors_first3": [
+     "Milks"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News And Views"
+   },
+   "meta_description": "Ancient hand-crafted wooden structures excavated in Zambia.",
+   "passages": [
+    "Writing in Nature, Barham et al.1 present their discoveries of modified wood from Kalambo Falls in Zambia.",
+    "NEWS AND VIEWS 20 September 2023 Hominins built with wood 476,000 years ago Understanding the timeline of technological developments sheds light on early societies.",
+    "These include the earliest-known example of a hominin-crafted wooden structure, as well as a collection of wooden tools.",
+    "A remarkable finding in Africa of a structure made from shaped wood provides clues about our hominin relatives.",
+    "This early human had surprising survival skills that rivalled ours News 18 NOV 26 Rainforest adaptation in late Homo erectus from southern China Article 18 NOV 26 Middle–Late Pleistocene Denisovans and unresolved Homo in southern China Article 25 NOV 26 Kings of the jungle?",
+    "By Annemieke Milks ORCID: http://orcid.org/0000-0003-0779-62000 Annemieke Milks Annemieke Milks is in the Department of Archaeology, University of Reading, Reading RG6 6AB, UK."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

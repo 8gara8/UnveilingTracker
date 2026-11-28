@@ -1,0 +1,164 @@
+{
+ "slug": "entire-herculaneum-scroll-read-first-time",
+ "title": "An entire carbonised Herculaneum scroll is read for the first time",
+ "first_published": "2026-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/2606.29085",
+   "final_url": "https://arxiv.org/abs/2606.29085",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Complete virtual unwrapping and reading of a rolled Herculaneum papyrus",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2026-11-23"
+    },
+    {
+     "source": "citation_date",
+     "date": "2026-06-27"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2606.29085: Complete virtual unwrapping and reading of a rolled Herculaneum papyrus",
+   "passages": [
+    "1667, a remnant of earlier attempts at physical unrolling, we achieve the complete unwrapping and reading of the preserved writing surface, making it the first Herculaneum papyrus read completely by virtual unwrapping.",
+    "4, the source of the Vesuvius Challenge 2023 Grand Prize text, the high-resolution scan makes ink directly visible in the tomographic volume, allowing 3D ink segmentation and comparison of recovered text with visible deposits.",
+    "Here, by combining high-resolution X-ray computed microtomography ($\\mu$CT) data acquired on the BM18 beamline at the ESRF with machine-learning-assisted virtual unwrapping, we study three still-closed scrolls.",
+    "The carbonized papyrus scrolls from Herculaneum preserve the only large-scale library to survive from classical antiquity.",
+    "139, we recover title and author-attribution evidence identifying the scroll as Philodemus, On Gods, Book 8.",
+    "These results establish a basis for the ongoing, systematic recovery and scholarly study of texts preserved within the still-closed Herculaneum library."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://scrollprize.org/firstscroll",
+   "final_url": "https://scrollprize.org/firstscroll",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "An entire Herculaneum scroll has been read for the first time",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-06-25"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "PHerc. 1667, sealed since the eruption of Vesuvius in 79 AD, has been virtually unwrapped and read from beginning to end — the first Herculaneum scroll recovered in full, without ever being opened.",
+   "passages": [
+    "It is the first time the preserved text of a rolled Herculaneum scroll has been read continuously, end to end, rather than in isolated words or patches.",
+    "June 25th, 2026 Read the preprint: Complete virtual unwrapping and reading of a rolled Herculaneum papyrus (PDF) and on arXiv.",
+    "1667 — the scroll the Vesuvius Challenge community knows as Scroll 4 — without ever touching its pages.",
+    "4, the scroll the Vesuvius Challenge community knows as Scroll 1 — a higher-resolution imaging technique makes the ink directly visible inside the scroll itself, in the three-dimensional X-ray data, for the first time.",
+    "In 2023 Seales opened his lab's imaging and software technology to the Vesuvius Challenge — a public, donation-funded effort he co-founded with Nat Friedman and Daniel Gross to read the scrolls in the open — and from there a global community took up the problem.",
+    "The thoughts of the ancient world, sealed in darkness for two millennia, are coming back into the light — a whole scroll at a time."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://uknow.uky.edu/research/day-herculaneum-scrolls-began-speaking-again",
+   "final_url": "https://uknow.uky.edu/research/day-herculaneum-scrolls-began-speaking-again",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The day the Herculaneum scrolls began speaking again",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2026-06-26"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The Vesuvius Challenge has achieved a historic breakthrough in the recovery of the Herculaneum scrolls — revealing new texts, titles and authors unknown to history and ushering in a new era for the study of the ancient world.",
+   "passages": [
+    "From scanning to scholarship The breakthrough was made possible through high-resolution micro-CT scanning conducted at major international facilities, including Diamond Light Source in the United Kingdom and the European Synchrotron Radiation Facility (ESRF) in France.",
+    "“For nearly two millennia, many of these texts have been physically preserved but intellectually inaccessible,” said Brent Seales, Vesuvius Challenge co-founder and the Stanley and Karen Pigman Chair of Heritage Science at the University of Kentucky.",
+    "Vesuvius Challenge also capitalized on the increased capabilities of the first fourth-generation high-energy synchrotron at ESRF in Grenoble, France, which came online in 2020 after a 20-month shutdown and an investment of 150 million Euros from 21 nations.",
+    "NAPLES, Italy (June 25, 2026) — The Vesuvius Challenge has achieved a historic breakthrough in the recovery of the Herculaneum scrolls — revealing new texts, titles and authors unknown to history and ushering in a new era for the study of the ancient world.",
+    "In the final portion of the virtually unwrapped surface, papyrologists from the Vesuvius Challenge were able to read: Φ̣ι[λοδ]ή̣μου | περὶ θεῶν Η̅ — “Philodemus, On Gods, Book 8.”",
+    "The Vesuvius Challenge scans represent the largest dataset ever produced by ESRF."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.diamond.ac.uk/Home/News/LatestNews/2026/New-secrets-revealed-from-the-Herculaneum-scrolls.html",
+   "final_url": "https://www.diamond.ac.uk/Home/News/LatestNews/2026/New-secrets-revealed-from-the-Herculaneum-scrolls.html",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://www.esrf.fr/home/news/general/content-news/general/the-day-the-herculaneum-scrolls-began-speaking-again.html",
+   "final_url": "https://www.esrf.fr/home/news/general/content-news/general/the-day-the-herculaneum-scrolls-began-speaking-again.html",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The day the Herculaneum scrolls began speaking again",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "From Scanning to Scholarship The discovery was made possible through high-resolution micro-CT scanning conducted at major synchrotron facilities, including Diamond Light Source and the ESRF.",
+    "Share “For nearly two millennia, many of these texts have been physically preserved but intellectually inaccessible,” Brent Seales, Vesuvius Challenge co-founder and the Stanley and Karen Pigman Chair of Heritage Science at University of Kentucky, says.",
+    "The Vesuvius Challenge team has now virtually unwrapped the surviving portion of the scroll — revealing nearly 1.5 meters of continuous text and approximately 20 columns of writing.",
+    "Vesuvius Challenge capitalized on the new capabilities of ESRF’s Extremely Brilliant Source, and of the flagship beamline BM18.",
+    "The discovery was made possible through high-resolution micro-CT scanning conducted at the ESRF and Diamond Lightsource in the UK.",
+    "In the final portion of the virtually unwrapped surface, papyrologists from the Vesuvius Challenge were able to read: Φ̣ι[λοδ]ή̣μου | περὶ θεῶν Η̅ — Philodemus, On Gods, Book 8."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

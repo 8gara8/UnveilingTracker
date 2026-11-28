@@ -1,0 +1,198 @@
+{
+ "slug": "replication-nature-science-social-experiments",
+ "title": "Replication of 21 social-science experiments from Nature and Science",
+ "first_published": "2018-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41562-018-0399-z",
+   "final_url": "https://www.nature.com/articles/s41562-018-0399-z?error=cookies_not_supported&code=95e981b6-cbec-4f0c-b5df-d00c7c1f04c6",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-08-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2018-08-27"
+    },
+    {
+     "source": "dc.date",
+     "date": "2018-08-27"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2018-08-27"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2018-08-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-08-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-03-06"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-07-06"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-08-27"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41562-018-0399-z",
+   "crossref": {
+    "doi": "10.1038/s41562-018-0399-z",
+    "resolves": true,
+    "title": "Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015",
+    "container": "Nature Human Behaviour",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-8-27",
+    "authors_first3": [
+     "Camerer",
+     "Dreber",
+     "Holzmeister"
+    ],
+    "author_count": 24,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {
+     "has-preprint": [
+      "10.31235/osf.io/4hmb6"
+     ]
+    }
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Being able to replicate scientific findings is crucial for scientific progress1–15. We replicate 21 systematically selected experimental studies in the social sciences published in Nature and Science between 2010 and 201516–36. The replications follow analysis plans reviewed by the original authors ",
+   "passages": [
+    "Letter Published: 27 August 2018 Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015 Colin F.",
+    "Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015.",
+    "We replicate 21 systematically selected experimental studies in the social sciences published in Nature and Science between 2010 and 201516,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36.",
+    "Investigating variation in replicability: a ‘many labs’ replication project.",
+    "The social sense: susceptibility to others’ beliefs in human infants and adults.",
+    "Evaluating replicability of laboratory experiments in economics."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.cos.io/about/news/do-social-science-research-findings-published-in-nature-and-science-replicate",
+   "final_url": "https://www.cos.io/about/news/do-social-science-research-findings-published-in-nature-and-science-replicate",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Do social science research findings published in Nature and Science replicate?",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Do social science research findings published in Nature and Science replicate?",
+   "passages": [
+    "Today, in Nature Human Behavior, a collaborative team of five laboratories published the results of 21 high-powered replications of social science experiments published in Science and Nature, two of the most prestigious journals in science.",
+    "The team tried to replicate one main finding from every eligible experimental social science paper published between 2010 and 2015.",
+    "“This shows that increasing power substantially is not sufficient to reproduce all published findings,” said Lily Hummer of the Center for Open Science, one of the co-authors.",
+    "“To ensure high statistical power, the average sample size of the replication studies was about five times larger than the average sample size of the original studies”, said Felix Holzmeister of the University of Innsbruck, one of the project leaders.",
+    "“These results show that “statistically significant” scientific findings need to be interpreted very cautiously until they have been replicated even if published in the most prestigious journals,” said Magnus Johannesson of the Stockholm School of Economics, another of the project leaders.",
+    "Brian Nosek, executive director of the Center for Open Science, professor at the University of Virginia, and one of the co-authors, noted “Someone observing these failures to replicate might conclude that science is going in the wrong direction."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.nature.com/articles/d41586-018-06075-z",
+   "final_url": "https://www.nature.com/articles/d41586-018-06075-z?error=cookies_not_supported&code=0cfd11fc-ce40-4729-a313-d7e4057f1fa7",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "High-profile journals put to reproducibility test",
+   "title_match": "placeholder",
+   "dates_found": [
+    {
+     "source": "dc.date",
+     "date": "2018-08-27"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2018-08-27"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2018-08-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-08-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-27"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-11-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-08-27"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/d41586-018-06075-z",
+   "crossref": {
+    "doi": "10.1038/d41586-018-06075-z",
+    "resolves": true,
+    "title": "High-profile journals put to reproducibility test",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-8-27",
+    "authors_first3": [
+     "Ball"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "News"
+   },
+   "meta_description": "Researchers replicated 62% of social-behaviour findings published in Science and Nature — a result matched almost exactly by a prediction market.",
+   "passages": [
+    "Hangzhou, Zhejiang, China Westlake University Senior Careers Portfolio Development Manager Job title: Senior Careers Portfolio Development Manager Location: Shanghai, Beijing or London – hybrid working model Closing date: 31st December,...",
+    "That’s about twice the rate achieved by an earlier effort2 that examined the psychology literature more generally, but the latest result still raises questions about two out of every five papers studied."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

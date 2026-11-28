@@ -1,0 +1,156 @@
+{
+ "slug": "moral-machine-self-driving-car-choices",
+ "title": "Global online game maps moral preferences for self-driving car dilemmas",
+ "first_published": "2018-10",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-018-0637-6",
+   "final_url": "https://www.nature.com/articles/s41586-018-0637-6?error=cookies_not_supported&code=043100c8-7054-49e9-98ff-e7af6283dbc2",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The Moral Machine experiment",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-10-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2018-10-24"
+    },
+    {
+     "source": "dc.date",
+     "date": "2018-10-24"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2018-10-24"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2018-10-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-10-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-03-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-09-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2018-10-24"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-018-0637-6",
+   "crossref": {
+    "doi": "10.1038/s41586-018-0637-6",
+    "resolves": true,
+    "title": "The Moral Machine experiment",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2018-10-24",
+    "authors_first3": [
+     "Awad",
+     "Dsouza",
+     "Kim"
+    ],
+    "author_count": 8,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "With the rapid development of artificial intelligence have come concerns about how machines will make moral decisions, and the major challenge of quantifying societal expectations about the ethical principles that should guide machine behaviour. To address this challenge, we deployed the Moral Machi",
+   "passages": [
+    "Jan 30 November 2018, 21:11 Is the “Moral Machine” a Trojan Horse?byJan Nagler and Dirk HelbingHow should self-driving vehicles faced with ethical dilemmas decide?",
+    "This platform gathered 40 million decisions in ten languages from millions of people in 233 countries and territories.",
+    "This question is shaking the very foundations of human rights.In the “Moral Machine Experiment” (1), Awad et al. perform an international opinion poll on autonomous vehicles.",
+    "To address this challenge, we deployed the Moral Machine, an online experimental platform designed to explore the moral dilemmas faced by autonomous vehicles.",
+    "First, we summarize global moral preferences.",
+    "We discuss how these preferences can contribute to developing global, socially acceptable principles for machine ethics."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://dspace.mit.edu/handle/1721.1/125065",
+   "final_url": "https://dspace.mit.edu/entities/publication/c5779012-d165-4644-b276-76ab3365ca26",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The Moral Machine experiment",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2018-10-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "With the rapid development of artificial intelligence have come concerns about how machines will make moral decisions, and the major challenge of quantifying societal expectations about the ethical principles that should guide machine behaviour. To address this challenge, we deployed the Moral Machi",
+   "passages": [
+    "This platform gathered 40 million decisions in ten languages from millions of people in 233 countries and territories.",
+    "The Moral Machine experiment Download Name Moral Machine Paper.pdf Size737.39 KBFormatAdobe PDFChecksum (MD5) e1a1a7128e580aee16d67fc48bd1d24dAuthor(s)Awad, Edmond•Dsouza, Sohan•Kim, Richard•Schulz, Jonathan•Henrich, Joseph•Shariff, Azim•Bonnefon, Jean-François•Rahwan, IyadDate Issued October 2018 JournalNaturePublisherSpringer Science and Business Media LLCCitationAwad, E. et al.",
+    "To address this challenge, we deployed the Moral Machine, an online experimental platform designed to explore the moral dilemmas faced by autonomous vehicles.",
+    "First, we summarize global moral preferences.",
+    "We discuss how these preferences can contribute to developing global, socially acceptable principles for machine ethics.",
+    "Third, we report cross-cultural ethical variation, and uncover three major clusters of countries."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.media.mit.edu/publications/the-moral-machine-experiment",
+   "final_url": "https://www.media.mit.edu/publications/the-moral-machine-experiment/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The Moral Machine experiment – MIT Media Lab",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "With the rapid development of artificial intelligence have come concerns about how machines will make moral decisions, and the major challenge of quantifying s…",
+   "passages": [
+    "Massive global Moral Machine study reveals ethics preferences and regional differences via MIT News · Oct.",
+    "This platform gathered 40 million decisions in ten languages from millions of people in 233 countries and territories.",
+    "DOI: 10.1038/s41586-018-0637-6 Abstract With the rapid development of artificial intelligence have come concerns about how machines will make moral decisions, and the major challenge of quantifying societal expectations about the ethical principles that should guide machine behaviour.",
+    "To address this challenge, we deployed the Moral Machine, an online experimental platform designed to explore the moral dilemmas faced by autonomous vehicles.",
+    "First, we summarize global moral preferences.",
+    "We discuss how these preferences can contribute to developing global, socially acceptable principles for machine ethics."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

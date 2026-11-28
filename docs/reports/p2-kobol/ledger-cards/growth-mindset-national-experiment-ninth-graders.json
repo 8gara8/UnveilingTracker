@@ -1,0 +1,176 @@
+{
+ "slug": "growth-mindset-national-experiment-ninth-graders",
+ "title": "National experiment finds a short growth-mindset lesson helps some students",
+ "first_published": "2019-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6786290",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6786290/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A national experiment reveals where a growth mindset improves achievement",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-08-06"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-08-07"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-019-1466-y",
+   "crossref": {
+    "doi": "10.1038/s41586-019-1466-y",
+    "resolves": true,
+    "title": "A national experiment reveals where a growth mindset improves achievement",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-8-7",
+    "authors_first3": [
+     "Yeager",
+     "Hanselman",
+     "Walton"
+    ],
+    "author_count": 25,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "A global priority for the behavioural sciences is to develop cost-effective, scalable interventions that could improve the academic outcomes of adolescents at a population level, but no such interventions have so far been evaluated in a ...",
+   "passages": [
+    "Here we report the results of the National Study of Learning Mindsets, which examined the effects of a short, online growth mindset intervention in a nationally representative sample of high schools in the United States (Fig.",
+    "3 (8.2KB, csv) Data Availability Statement Technical documentation for the National Study of Learning Mindsets is available from ICPSR at the University of Michigan (10.3886/ICPSR37353.v1).",
+    "Notably, the study identified school contexts that sustained the effects of the growth mindset intervention: the intervention changed grades when peer norms aligned with the messages of the intervention.",
+    "The National Study of Learning Mindsets showed a Tipton generalizability index of 0.98, which is very high (see Supplementary Information section 3).",
+    "3 (8.2KB, csv) Acknowledgements This manuscript uses data from the National Study of Learning Mindsets (principal investigator, D.Y.; co-investigators: R.C., C.S.D., C.M., B.S. and G.M.W.; 10.3886/ICPSR37353.v1).",
+    "Is the National Study of Learning Mindsets nationally-representative? https://psyarxiv.com/dvmr7/ (2018)."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://doi.org/10.1038/s41586-019-1466-y",
+   "final_url": "https://www.nature.com/articles/s41586-019-1466-y?error=cookies_not_supported&code=5b0d2d05-a55d-44fb-a851-696813cd2373",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A national experiment reveals where a growth mindset improves achievement",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2019-08-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2019-08-07"
+    },
+    {
+     "source": "dc.date",
+     "date": "2019-08-07"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2019-08-07"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2019-08-07"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-08-07"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2018-05-11"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-07-07"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2019-08-07"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-019-1466-y",
+   "crossref": {
+    "doi": "10.1038/s41586-019-1466-y",
+    "resolves": true,
+    "title": "A national experiment reveals where a growth mindset improves achievement",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2019-8-7",
+    "authors_first3": [
+     "Yeager",
+     "Hanselman",
+     "Walton"
+    ],
+    "author_count": 25,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "A global priority for the behavioural sciences is to develop cost-effective, scalable interventions that could improve the academic outcomes of adolescents at a population level, but no such interventions have so far been evaluated in a population-generalizable sample. Here we show that a short (les",
+   "passages": [
+    "Data availability Technical documentation for the National Study of Learning Mindsets is available from ICPSR at the University of Michigan (https://doi.org/10.3886/ICPSR37353.v1).",
+    "1: Design of the National Study of Learning Mindsets.Full size imageBetween August and November 2015, 82% of schools delivered the intervention; the remaining 18% delivered the intervention in January or February of 2016.",
+    "Notably, the study identified school contexts that sustained the effects of the growth mindset intervention: the intervention changed grades when peer norms aligned with the messages of the intervention.",
+    "Is the National Study of Learning Mindsets nationally-representative? https://psyarxiv.com/dvmr7/ (2018).Dynarski, S.",
+    "A national experiment reveals where a growth mindset improves achievement.",
+    "Nonetheless, previous randomized evaluations, including a pre-registered replication, found that online growth mindset interventions improved grades for the targeted group of students in secondary education who previously showed lower achievement13,16,18."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.hks.harvard.edu/publications/national-experiment-reveals-where-growth-mindset-improves-achievement",
+   "final_url": "https://www.hks.harvard.edu/publications/national-experiment-reveals-where-growth-mindset-improves-achievement",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "A National Experiment Reveals Where a Growth Mindset Improves Achievement",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "A global priority for the behavioral sciences is to develop cost-effective, scalable interventions that could improve the academic outcomes of adolescents at a population level, but no such interventions have so far been evaluated in a population-generalizable sample.",
+   "passages": [
+    "Notably, the study identified school contexts that sustained the effects of the growth mindset intervention: the intervention changed grades when peer norms aligned with the messages of the intervention.",
+    "Confidence in the conclusions of this study comes from independent data collection and processing, preregistration of analyses, and corroboration of results by a blinded Bayesian analysis."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

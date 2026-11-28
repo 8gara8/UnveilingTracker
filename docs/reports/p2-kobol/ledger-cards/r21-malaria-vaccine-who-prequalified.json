@@ -1,0 +1,145 @@
+{
+ "slug": "r21-malaria-vaccine-who-prequalified",
+ "title": "R21/Matrix-M malaria vaccine protects children and gains WHO prequalification",
+ "first_published": "2021-04",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8121760",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8121760/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Efficacy of a low-dose candidate malaria vaccine, R21 in adjuvant Matrix-M, with seasonal administration to children in Burkina Faso: a randomised controlled trial",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2021-05-14"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2021-04-30"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1016/s0140-6736(21)00943-0",
+   "crossref": {
+    "doi": "10.1016/s0140-6736(21)00943-0",
+    "resolves": true,
+    "title": "Efficacy of a low-dose candidate malaria vaccine, R21 in adjuvant Matrix-M, with seasonal administration to children in Burkina Faso: a randomised controlled trial",
+    "container": "The Lancet",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2021-5",
+    "authors_first3": [
+     "Datoo",
+     "Natama",
+     "Somé"
+    ],
+    "author_count": 36,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Stalled progress in controlling Plasmodium falciparum malaria highlights the need for an effective and deployable vaccine. RTS,S/AS01, the most effective malaria vaccine candidate to date, demonstrated 56% efficacy over 12 months in African ...",
+   "passages": [
+    "Added value of this study This study reports vaccine efficacy of a novel pre-erythrocytic candidate malaria vaccine in a phase 2 trial in children living in a malaria endemic area with high transmission in Burkina Faso.",
+    "GG, LF, and JR are employees of Novavax, developers of the MM adjuvant, and US is an employee of the Serum Institute of India, codeveloper of the R21/MM vaccine.",
+    "Vaccine manufacture and supply was supported and undertaken by the Serum Institute of India and the MM adjuvant provided by Novavax.Contributors AVSH, HT, and MSD conceived and designed the trial, and AVSH was the chief investigator.",
+    "Evaluation of seasonal malaria chemoprevention in two areas of intense seasonal malaria transmission: Secondary analysis of a household-randomised, placebo-controlled trial in Houndé district, Burkina Faso and Bougouni district, Mali.",
+    "This new vaccine, R21 adjuvanted with 50 μg Matrix-M (R21/MM), administered before the malaria season, demonstrates high-level efficacy, reaching the WHO-specified efficacy goal of at least 75% in the target population of African children over 1 year.",
+    "Implications of all the available evidence These initial findings with the new R21/MM vaccine candidate appear to improve on the efficacy in children of all other malaria vaccines."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.who.int/news/item/21-12-2023-who-prequalifies-a-second-malaria-vaccine-a-significant-milestone-in-prevention-of-the-disease",
+   "final_url": "https://www.who.int/news/item/21-12-2023-who-prequalifies-a-second-malaria-vaccine-a-significant-milestone-in-prevention-of-the-disease",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "WHO prequalifies a second malaria vaccine, a significant milestone in prevention of the disease",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "WHO has added the R21/Matrix-M malaria vaccine to the list of prequalified vaccines. The prequalification means larger access to vaccines as a key tool to prevent malaria in children with it being a prerequisite for vaccine procurement by UNICEF and funding support for deployment by Gavi, the Vaccin",
+   "passages": [
+    "In October 2023, WHO recommended its use for the prevention of malaria in children following the advice of the WHO Strategic Advisory Group of Experts (SAGE) on Immunization and the Malaria Policy Advisory Group.",
+    "Both vaccines are shown to be safe and effective in clinical trials, for preventing malaria in children.",
+    "WHO has added the R21/Matrix-M malaria vaccine to its list of prequalified vaccines.",
+    "Malaria, a mosquito-borne disease, places a particularly high burden on children in the African Region, where nearly half a million children die from the disease each year.",
+    "When implemented broadly, along with other recommended malaria control interventions, they are expected to have a high public health impact.",
+    "This is another step toward ensuring a healthier, more resilient future for those who have lived for too long in fear of what malaria could do to their children."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.who.int/marshallislands/news/detail-global/02-10-2023-who-recommends-r21-matrix-m-vaccine-for-malaria-prevention-in-updated-advice-on-immunization",
+   "final_url": "https://www.who.int/marshallislands/news/detail-global/02-10-2023-who-recommends-r21-matrix-m-vaccine-for-malaria-prevention-in-updated-advice-on-immunization",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "WHO recommends R21/Matrix-M vaccine for malaria prevention in updated advice on immunization",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "The World Health Organization (WHO) has recommended a new vaccine, R21/Matrix-M, for the prevention of malaria in children. This was just one of the recommendations made at the meeting of WHO's Strategic Advisory Group of Experts (SAGE) on immunization held on 25-29 September 2023.",
+   "passages": [
+    "The World Health Organization (WHO) has recommended a new vaccine, R21/Matrix-M, for the prevention of malaria in children.",
+    "The addition of R21 to the list of WHO-recommended malaria vaccines is expected to result in sufficient vaccine supply to benefit all children living in areas where malaria is a public health risk.",
+    "WHO also issued key immunization programmatic recommendations on polio, IA2030 and recovering the immunization programme.The R21 vaccine is the second malaria vaccine recommended by WHO, following the RTS,S/AS01 vaccine, which received a WHO recommendation in 2021.",
+    "As with other new vaccines, safety monitoring will continue.Next steps for the second recommended malaria vaccine, R21/Matrix-M, include completing the ongoing WHO prequalification which would enable international procurement of the vaccine for broader rollout.",
+    "At least 28 countries in Africa plan to introduce a WHO-recommended malaria vaccine as part of their national immunization programmes.",
+    "The updated WHO recommendation for malaria vaccines was informed by the results of the WHO-coordinated Malaria Vaccine Implementation Programme, through which nearly 2 million children in Ghana, Kenya and Malawi have been reached with the RTS,S/AS01 malaria vaccine since 2019."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://www.ox.ac.uk/news/2024-02-01-new-phase-3-trial-data-confirm-uniquely-high-efficacy-and-good-safety-profile",
+   "final_url": "https://www.ox.ac.uk/news/2024-02-01-new-phase-3-trial-data-confirm-uniquely-high-efficacy-and-good-safety-profile",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

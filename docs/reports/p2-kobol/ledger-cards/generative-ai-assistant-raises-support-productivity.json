@@ -1,0 +1,173 @@
+{
+ "slug": "generative-ai-assistant-raises-support-productivity",
+ "title": "AI assistant raises customer-support productivity in a large field study",
+ "first_published": "2023-04",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nber.org/papers/w31161",
+   "final_url": "https://www.nber.org/papers/w31161",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Generative AI at Work",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-04-24"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-04-20"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-11-06"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-08-20"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-03-31"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.3386/w31161",
+   "crossref": {
+    "doi": "10.3386/w31161",
+    "resolves": true,
+    "title": "Generative AI at Work",
+    "container": null,
+    "publisher": "National Bureau of Economic Research",
+    "type": "report",
+    "issued": "2023-4",
+    "authors_first3": [
+     "Brynjolfsson",
+     "Li",
+     "Raymond"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "Founded in 1920, the NBER is a private, non-profit, non-partisan organization dedicated to conducting economic research and to disseminating research findings among academics, public policy makers, and business professionals.",
+   "passages": [
+    "Access to the tool increases productivity, as measured by issues resolved per hour, by 14% on average, including a 34% improvement for novice and low-skilled workers but with minimal impact on experienced and highly skilled workers.",
+    "In this paper, we study the staggered introduction of a generative AI-based conversational assistant using data from 5,179 customer support agents.",
+    "Our results suggest that access to generative AI can increase productivity, with large heterogeneity in effects across workers.",
+    "Raymond Customer support agents using an AI tool to guide their conversations saw a nearly 14 percent increase in productivity, with 35...",
+    "2026, 18th Annual Feldstein Lecture, Mark Duggan, \"Social Security Reform in an Era of Fiscal Deficits\" Feldstein Lecture Presenter: Mark Duggan Mark Duggan, who is currently the Wayne and Jodi Cooperman Professor of Economics at Stanford University and will soon...",
+    "We provide suggestive evidence that the AI model disseminates the best practices of more able workers and helps newer workers move down the experience curve."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://siepr.stanford.edu/publications/working-paper/generative-ai-work",
+   "final_url": "https://siepr.stanford.edu/publications/working-paper/generative-ai-work",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Generative AI at Work",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "Other",
+   "passages": [
+    "Access to the tool increases productivity, as measured by issues resolved per hour, by 14% on average, including a 34% improvement for novice and low-skilled workers but with minimal impact on experienced and highly skilled workers.",
+    "In this paper, we study the staggered introduction of a generative AI-based conversational assistant using data from 5,179 customer support agents.",
+    "Our results suggest that access to generative AI can increase productivity, with large heterogeneity in effects across workers.",
+    "We provide suggestive evidence that the AI model disseminates the best practices of more able workers and helps newer workers move down the experience curve.",
+    "In addition, we find that AI assistance improves customer sentiment, increases employee retention, and may lead to worker learning."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2302.06590",
+   "final_url": "https://arxiv.org/abs/2302.06590",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-02-13"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-02-13"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2302.06590: The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+   "passages": [
+    "This paper presents results from a controlled experiment with GitHub Copilot, an AI pair programmer.",
+    "The treatment group, with access to the AI pair programmer, completed the task 55.8% faster than the control group.",
+    "Generative AI tools hold promise to increase human productivity.",
+    "Observed heterogenous effects show promise for AI pair programmers to help people transition into software development careers.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714",
+   "final_url": "https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Study finds ChatGPT boosts worker productivity for some writing tasks",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "time[datetime]",
+     "date": "2023-07-14"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "A new MIT study highlights the potential of generative AI for certain types of writing assignments in the workplace.",
+   "passages": [
+    "Still, they believe the results show the technology’s promise — an idea supported by another of the study’s findings: Workers exposed to ChatGPT during the experiment were twice as likely to report using it in their real job two weeks after the experiment.",
+    "“What we can say for sure is generative AI is going to have a big effect on white collar work,” says Shakked Noy, a PhD student in MIT’s Department of Economics, who co-authored the paper with fellow PhD student Whitney Zhang ’21.",
+    "Close Caption: Access to the assistive chatbot ChatGPT decreased the time it took workers to complete the tasks by 40 percent, and output quality rose by 18 percent.",
+    "Access to the assistive chatbot ChatGPT decreased the time it took workers to complete the tasks by 40 percent, and output quality, as measured by independent evaluators, rose by 18 percent.",
+    "Half of participants were given access to the chatbot ChatGPT-3.5, developed by the company OpenAI, for the second assignment.",
+    "Taking the macro view The study offered a close-up look at the impact that tools like ChatGPT can have on certain writing tasks."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

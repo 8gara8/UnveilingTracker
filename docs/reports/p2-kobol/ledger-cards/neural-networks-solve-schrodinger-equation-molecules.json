@@ -1,0 +1,316 @@
+{
+ "slug": "neural-networks-solve-schrodinger-equation-molecules",
+ "title": "Two teams use neural networks to solve the Schrödinger equation for molecules",
+ "first_published": "2019-09-05",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://arxiv.org/abs/1909.02487",
+   "final_url": "https://arxiv.org/abs/1909.02487",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Ab-Initio Solution of the Many-Electron Schr\\\"odinger Equation with Deep Neural Networks",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2021-03-25"
+    },
+    {
+     "source": "citation_date",
+     "date": "2019-09-05"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-09-16"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1103/physrevresearch.2.033429",
+   "crossref": {
+    "doi": "10.1103/physrevresearch.2.033429",
+    "resolves": true,
+    "title": "<i>Ab initio</i>\n                    solution of the many-electron Schrödinger equation with deep neural networks",
+    "container": "Physical Review Research",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2020-9-16",
+    "authors_first3": [
+     "Pfau",
+     "Spencer",
+     "Matthews"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1909.02487: Ab-Initio Solution of the Many-Electron Schrödinger Equation with Deep Neural Networks",
+   "passages": [
+    "The Fermionic Neural Network is able to achieve accuracy beyond other variational quantum Monte Carlo Ansätze on a variety of atoms and small molecules.",
+    "Here we introduce a novel deep learning architecture, the Fermionic Neural Network, as a powerful wavefunction Ansatz for many-electron systems.",
+    "This demonstrates that deep neural networks can improve the accuracy of variational quantum Monte Carlo to the point where it outperforms other ab-initio quantum chemistry methods, opening the possibility of accurate direct optimization of wavefunctions for previously intractable many-electron systems.",
+    "Given access to accurate solutions of the many-electron Schrödinger equation, nearly all chemistry could be derived from first principles.",
+    "Neural networks have shown impressive power as accurate practical function approximators and promise as a compact wavefunction Ansatz for spin systems, but problems in electronic structure require wavefunctions that obey Fermi-Dirac statistics.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033429",
+   "final_url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033429",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "<i>Ab initio</i> solution of the many-electron Schrödinger equation with deep neural networks",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_date",
+     "date": "2020-09-16"
+    },
+    {
+     "source": "article:published_time",
+     "date": "2020-09-16"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-09-16"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1103/physrevresearch.2.033429",
+   "crossref": {
+    "doi": "10.1103/physrevresearch.2.033429",
+    "resolves": true,
+    "title": "<i>Ab initio</i>\n                    solution of the many-electron Schrödinger equation with deep neural networks",
+    "container": "Physical Review Research",
+    "publisher": "American Physical Society (APS)",
+    "type": "journal-article",
+    "issued": "2020-9-16",
+    "authors_first3": [
+     "Pfau",
+     "Spencer",
+     "Matthews"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": "This paper presents a deep neural network that can be used as a wavefunction Ansatz for variational quantum Monte Carlo on many-electron systems.",
+   "passages": [
+    "It is your responsibility to obtain the proper permission from the rights holder directly for these figures.Export citationExport citationChoose format for download:BibTeXEndNote (RIS)Download CitationOpen AccessAb initio solution of the many-electron Schrödinger equation with deep neural networksDavid Pfau*,†, James S.",
+    "FoulkesDeepMind, 6 Pancras Square, London N1C 4AG, United KingdomDepartment of Physics, Imperial College London, South Kensington Campus, London SW7 2AZ, United Kingdom*These authors contributed equally to this work.†pfau@google.comPDFShareXFacebookMendeleyLinkedInRedditSina WeiboPhys.",
+    "The Fermionic neural network is able to achieve accuracy beyond other variational quantum Monte Carlo Ansatz on a variety of atoms and small molecules.",
+    "Here we introduce a novel deep learning architecture, the Fermionic neural network, as a powerful wave-function Ansatz for many-electron systems.",
+    "The first [72] also augments the typical Slater-Jastrow Ansatz with a deep neural network, while physical constraints like the cusp conditions are included explicitly.",
+    "Further distribution of this work must maintain attribution to the author(s) and the published article's title, journal citation, and DOI.Published by the American Physical SocietyOutlineInformationOutlineCiting Articles (524)AbstractArticle TextINTRODUCTIONFERMIONIC NEURAL NETWORKSRESULTSANALYSISDISCUSSIONACKNOWLEDGMENTSAPPENDICESReferencesInformationPhys."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/1909.08423",
+   "final_url": "https://arxiv.org/abs/1909.08423",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Deep neural network solution of the electronic Schr\\\"odinger equation",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2020-09-23"
+    },
+    {
+     "source": "citation_date",
+     "date": "2019-09-16"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-09-23"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41557-020-0544-y",
+   "crossref": {
+    "doi": "10.1038/s41557-020-0544-y",
+    "resolves": true,
+    "title": "Deep-neural-network solution of the electronic Schrödinger equation",
+    "container": "Nature Chemistry",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-9-23",
+    "authors_first3": [
+     "Hermann",
+     "Schätzle",
+     "Noé"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 1909.08423: Deep neural network solution of the electronic Schrödinger equation",
+   "passages": [
+    "PauliNet has a multireference Hartree-Fock solution built in as a baseline, incorporates the physics of valid wave functions, and is trained using variational quantum Monte Carlo (VMC).",
+    "Here we propose PauliNet, a deep-learning wave function ansatz that achieves nearly exact solutions of the electronic Schrödinger equation.",
+    "Quantum Monte Carlo is a possible way out: it scales well to large molecules, can be parallelized, and its accuracy has, as yet, only been limited by the flexibility of the used wave function ansatz.",
+    "[New and updated results were published in Nature Chemistry, doi:https://doi.org/10.1038/s41557-020-0544-y.] The electronic Schrödinger equation describes fundamental properties of molecules and materials, but can only be solved analytically for the hydrogen atom.",
+    "PauliNet outperforms comparable state-of-the-art VMC ansatzes for atoms, diatomic molecules and a strongly-correlated hydrogen chain by a margin and is yet computationally efficient.",
+    "The numerically exact full configuration-interaction method is exponentially expensive in the number of electrons."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://link.springer.com/article/10.1038/s41557-020-0544-y",
+   "final_url": "https://link.springer.com/article/10.1038/s41557-020-0544-y?error=cookies_not_supported&code=f219af3c-9d19-472c-8149-fb1ced8d2094",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Deep-neural-network solution of the electronic Schrödinger equation",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2020-09-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2020-09-23"
+    },
+    {
+     "source": "dc.date",
+     "date": "2020-09-23"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2020-09-23"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2020-09-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-09-23"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2019-12-06"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2020-08-05"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2020-09-23"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41557-020-0544-y",
+   "crossref": {
+    "doi": "10.1038/s41557-020-0544-y",
+    "resolves": true,
+    "title": "Deep-neural-network solution of the electronic Schrödinger equation",
+    "container": "Nature Chemistry",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2020-9-23",
+    "authors_first3": [
+     "Hermann",
+     "Schätzle",
+     "Noé"
+    ],
+    "author_count": 3,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The electronic Schrödinger equation can only be solved analytically for the hydrogen atom, and the numerically exact full configuration-interaction method is exponentially expensive in the number of electrons. Quantum Monte Carlo methods are a possible way out: they scale well for large molecules, t",
+   "passages": [
+    "Here we propose PauliNet, a deep-learning wavefunction ansatz that achieves nearly exact solutions of the electronic Schrödinger equation for molecules with up to 30 electrons.",
+    "PauliNet outperforms previous state-of-the-art variational ansatzes for atoms, diatomic molecules and a strongly correlated linear H10, and matches the accuracy of highly specialized quantum chemistry methods on the transition-state energy of cyclobutadiene, while being computationally efficient.",
+    "Raw data for “Deep neural network solution of the electronic Schrödinger equation”.",
+    "Code for “Deep neural network solution of the electronic Schrödinger equation”.",
+    "Deep-neural-network solution of the electronic Schrödinger equation.",
+    "Fermionic neural-network states for ab-initio electronic structure."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://deepmind.google/discover/blog/ferminet-quantum-physics-and-chemistry-from-first-principles/",
+   "final_url": "https://deepmind.google/blog/ferminet-quantum-physics-and-chemistry-from-first-principles/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "FermiNet: Quantum physics and chemistry from first principles",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2024-08-22"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-08-22"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-10-31"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2021-11-30"
+    }
+   ],
+   "date_ok": false,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "In August 2024, we published the next phase of our work in Science. Our research proposes a solution to one of the most difficult challenges in computational quantum chemistry: understanding how mole…",
+   "passages": [
+    "Conventional VMC calculations did poorly across the board but FermiNet was among the best methods investigated, no matter the bond length.A new way to compute excited statesIn August 2024, we published the next phase of this work in Science.",
+    "While most neural networks are trained from some external data, in our case the inputs used to train the neural network are generated by the neural network itself.",
+    "We wanted to use deep neural networks to tackle more realistic problems in chemistry and condensed matter physics, and that meant including electrons in our calculations.There is just one wrinkle when dealing with electrons.",
+    "This is similar to how graph neural networks aggregate information at each layer.Unlike the Slater determinants, FermiNets are universal function approximators, at least in the limit where the neural network layers become wide enough.",
+    "That means that, if we can train these networks correctly, they should be able to fit the nearly-exact solution to the Schrödinger equation.Animation of FermiNet.",
+    "While we wanted to extend our work on FermiNet to excited states, existing methods didn't work well enough for neural networks to compete with state-of-the-art approaches.We developed a novel approach to computing excited states that’s more robust and general than prior methods."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "slug": "deepmind-cyclone-model-hurricane-center-use",
+ "title": "Google DeepMind's cyclone model is used by the US National Hurricane Center",
+ "first_published": "2025-06",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://deepmind.google/blog/how-were-supporting-better-tropical-cyclone-prediction-with-ai/",
+   "final_url": "https://deepmind.google/blog/how-were-supporting-better-tropical-cyclone-prediction-with-ai/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "How we're supporting better tropical cyclone prediction with AI",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "article:published_time",
+     "date": "2025-06-12"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2025-06-12"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": "We’re launching Weather Lab, featuring our experimental cyclone predictions, and we’re partnering with the U.S. National Hurricane Center to support their forecasts and warnings this cyclone season.",
+   "passages": [
+    "Weather Lab features our latest experimental AI-based tropical cyclone model, based on stochastic neural networks.",
+    "National Hurricane Center (NHC), who assess cyclone risks in the Atlantic and East Pacific basins, to scientifically validate our approach and outputs.NHC expert forecasters are now seeing live predictions from our experimental AI models, alongside other physics-based models and observations.",
+    "National Hurricane Center to support their forecasts and warnings this cyclone season.Tropical cyclones are extremely dangerous, endangering lives and devastating communities in their wake.",
+    "By sharing our AI weather models responsibly through Weather Lab, we’ll continue to gather important feedback from weather agency and emergency service experts about how our technology can improve official forecasts and inform life-saving decisions.",
+    "Several of our AI weather models are running in real time: WeatherNext Graph, WeatherNext Gen and our latest experimental cyclone model.",
+    "When read together, these predictions can help weather agencies and emergency service experts better anticipate a cyclone’s path and intensity."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://www.weather.gov/news/261102-AI-Hurricane-Forecasting",
+   "final_url": "https://www.weather.gov/news/261102-AI-Hurricane-Forecasting",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "AI in Hurricane Forecasting at the National Hurricane Center:",
+   "title_match": true,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [
+    "NHC has partnered directly with Google DeepMind to develop a new AI hurricane forecast model that was used experimentally during the 2025 season.",
+    "Additionally, NOAA’s Environmental Modeling Center and the European Center for Medium-Range Weather Forecasts (ECMWF) have developed AI-driven global forecast systems, both of which were also available for evaluation during the 2025 season.",
+    "How is the National Hurricane Center using AI in hurricane forecasting, especially during last year's hurricane season?",
+    "Google DeepMind (orange) and NOAA AI-GEFS (yellow) ensemble forecast systems are both displayed in NHC’s experimental cloud AWIPS system.",
+    "For more information, please contact nhc.public.affairs@noaa.gov US Dept of Commerce National Oceanic and Atmospheric Administration National Weather Service News Around NOAA 1325 East West Highway Silver Spring, MD 20910 Comments?",
+    "Thinking back to the 2025 Hurricane Season, can you give an example where AI-based tools made the forecast significantly more accurate?"
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://techpartnerships.noaa.gov/noaa-and-google-team-up-to-advance-the-use-of-ai-hurricane-and-tropical-weather-forecast-models/",
+   "final_url": "https://techpartnerships.noaa.gov/noaa-and-google-team-up-to-advance-the-use-of-ai-hurricane-and-tropical-weather-forecast-models/",
+   "status": 403,
+   "readable": false,
+   "reason": "403",
+   "title_found": "ERROR: The request could not be satisfied",
+   "title_match": null,
+   "dates_found": [],
+   "date_ok": null,
+   "doi": null,
+   "crossref": null,
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  }
+ ]
+}

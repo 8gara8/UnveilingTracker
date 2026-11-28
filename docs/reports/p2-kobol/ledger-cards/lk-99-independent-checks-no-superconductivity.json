@@ -1,0 +1,329 @@
+{
+ "slug": "lk-99-independent-checks-no-superconductivity",
+ "title": "Independent labs find LK-99 is not a room-temperature superconductor",
+ "first_published": "2023-08",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://doi.org/10.1063/5.0172755",
+   "final_url": "https://pubs.aip.org/apm/article/11/10/101128/2918237/Single-crystal-synthesis-structure-and-magnetism",
+   "status": 403,
+   "readable": false,
+   "reason": "403 Cloudflare challenge",
+   "title_found": "Just a moment...",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "crossref issued",
+     "date": "2023-10-01"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1063/5.0172755",
+   "crossref": {
+    "doi": "10.1063/5.0172755",
+    "resolves": true,
+    "title": "Single crystal synthesis, structure, and magnetism of Pb10−<i>x</i>Cu<i>x</i>(PO4)6O",
+    "container": "APL Materials",
+    "publisher": "AIP Publishing",
+    "type": "journal-article",
+    "issued": "2023-10-1",
+    "authors_first3": [
+     "Puphal",
+     "Akbar",
+     "Hepting"
+    ],
+    "author_count": 7,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": null,
+   "meta_description": null,
+   "passages": [],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "unreadable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://arxiv.org/abs/2308.06256",
+   "final_url": "https://arxiv.org/abs/2308.06256",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Single crystal synthesis, structure, and magnetism of Pb$_{10-x}$Cu$_x$(PO$_4$)$_6$O",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-08-23"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-08-11"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-10-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1063/5.0172755",
+   "crossref": {
+    "doi": "10.1063/5.0172755",
+    "resolves": true,
+    "title": "Single crystal synthesis, structure, and magnetism of Pb10−<i>x</i>Cu<i>x</i>(PO4)6O",
+    "container": "APL Materials",
+    "publisher": "AIP Publishing",
+    "type": "journal-article",
+    "issued": "2023-10-1",
+    "authors_first3": [
+     "Puphal",
+     "Akbar",
+     "Hepting"
+    ],
+    "author_count": 7,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2308.06256: Single crystal synthesis, structure, and magnetism of Pb$_{10-x}$Cu$_x$(PO$_4$)$_6$O",
+   "passages": [
+    "Keimer View a PDF of the paper titled Single crystal synthesis, structure, and magnetism of Pb$_{10-x}$Cu$_x$(PO$_4$)$_6$O, by P.",
+    "To minimize the influence of structural defects and impurity phases on the physical properties, we have synthesized phase-pure single crystals with $x \\sim 1$.",
+    "We find that the crystals are highly insulating and optically transparent.",
+    "Temperature ($T$) dependent magnetization measurements for $ 2 \\leq T \\leq 800$ K reveal the diamagnetic response characteristic of a non-magnetic insulator, as well as a small ferromagnetic component, possibly originating from frustrated exchange interactions in Cu-rich clusters in the Pb$_{10-x}$Cu$_x$(PO$_4$)$_6$O structure.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://arxiv.org/abs/2308.04353",
+   "final_url": "https://arxiv.org/abs/2308.04353",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "First order transition in Pb$_{10-x}$Cu$_x$(PO$_4$)$_6$O ($0.9<x<1.1$) containing Cu$_2$S",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-08-08"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-08-08"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-12-01"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1016/j.matt.2023.11.001",
+   "crossref": {
+    "doi": "10.1016/j.matt.2023.11.001",
+    "resolves": true,
+    "title": "First-order transition in LK-99 containing Cu2S",
+    "container": "Matter",
+    "publisher": "Elsevier BV",
+    "type": "journal-article",
+    "issued": "2023-12",
+    "authors_first3": [
+     "Zhu",
+     "Wu",
+     "Li"
+    ],
+    "author_count": 4,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2308.04353: First order transition in Pb$_{10-x}$Cu$_x$(PO$_4$)$_6$O ($0.9<x<1.1$) containing Cu$_2$S",
+   "passages": [
+    "We observed a sharp superconducting-like transition and a thermal hysteresis behavior in the resistivity and magnetic susceptibility.",
+    "However, we did not observe zero-resistivity below the transition temperature.",
+    "In this study, we investigated the transport and magnetic properties of pure Cu$_2$S and LK-99 containing Cu$_2$S.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://arxiv.org/abs/2308.03823",
+   "final_url": "https://arxiv.org/abs/2308.03823",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Synthesis and characterisation of LK-99",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-08-14"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-08-07"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2308.03823: Synthesis and characterisation of LK-99",
+   "passages": [
+    "Here we performed a systematic study on LK-99, starting from solid-state synthesis, followed by characterisation and transport measurements.",
+    "We did not observe any signatures of superconductivity in our samples of LK-99.",
+    "It belongs to lead apatite family, and was synthesised from two precursors, lanarkite (PbSO$_4\\cdot$PbO) and copper phosphide (Cu$_3$P).",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 4,
+   "url": "https://arxiv.org/abs/2308.05222",
+   "final_url": "https://arxiv.org/abs/2308.05222",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Superionic phase transition of copper(I) sulfide and its implication for purported superconductivity of LK-99",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-09-08"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-08-09"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-09-08"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1021/acs.jpcc.3c05684",
+   "crossref": {
+    "doi": "10.1021/acs.jpcc.3c05684",
+    "resolves": true,
+    "title": "Superionic Phase Transition of Copper(I) Sulfide and Its Implication for Purported Superconductivity of LK-99",
+    "container": "The Journal of Physical Chemistry C",
+    "publisher": "American Chemical Society (ACS)",
+    "type": "journal-article",
+    "issued": "2023-9-8",
+    "authors_first3": [
+     "Jain"
+    ],
+    "author_count": 1,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2308.05222: Superionic phase transition of copper(I) sulfide and its implication for purported superconductivity of LK-99",
+   "passages": [
+    "Jain View a PDF of the paper titled Superionic phase transition of copper(I) sulfide and its implication for purported superconductivity of LK-99, by Prashant K.",
+    "Copper(I) sulfide has a known phase transition at 104 degrees C from an ordered low-temperature phase to a high-temperature superionic phase.",
+    "As a result of this phase transition, copper(I) sulfide exhibits sharp transitions in electrical resistivity and heat capacity, which are expected to coincide with the temperature-induced transitions reported for LK-99.",
+    "Lee, Kim, and coworkers have recently claimed room-temperature and ambient-pressure superconductivity in a copper-doped lead apatite material named LK-99.",
+    "However, the polycrystalline material synthesized has a significant fraction of copper(I) sulfide.",
+    "This implies that LK-99 must be synthesized without any copper(I) sulfide to allow unambiguous validation of the superconducting properties of LK-99."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 5,
+   "url": "https://arxiv.org/abs/2307.12008",
+   "final_url": "https://arxiv.org/abs/2307.12008",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "The First Room-Temperature Ambient-Pressure Superconductor",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-07-22"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-07-22"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2307.12008: The First Room-Temperature Ambient-Pressure Superconductor",
+   "passages": [
+    "For the first time in the world, we succeeded in synthesizing the room-temperature superconductor ($T_c \\ge 400$ K, 127$^\\circ$C) working at ambient pressure with a modified lead-apatite (LK-99) structure.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 6,
+   "url": "https://arxiv.org/abs/2307.12037",
+   "final_url": "https://arxiv.org/abs/2307.12037",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Superconductor Pb$_{10-x}$Cu$_x$(PO$_4$)$_6$O showing levitation at room temperature and atmospheric pressure and mechanism",
+   "title_match": "partial",
+   "dates_found": [
+    {
+     "source": "citation_online_date",
+     "date": "2023-08-11"
+    },
+    {
+     "source": "citation_date",
+     "date": "2023-07-22"
+    }
+   ],
+   "date_ok": true,
+   "doi": null,
+   "crossref": null,
+   "type_found": "preprint",
+   "meta_description": "Abstract page for arXiv paper 2307.12037: Superconductor Pb$_{10-x}$Cu$_x$(PO$_4$)$_6$O showing levitation at room temperature and atmospheric pressure and mechanism",
+   "passages": [
+    "The material exhibits the Ohmic metal characteristic of Pb(6s1) above its superconducting critical temperature, $T_c$, and the levitation phenomenon as Meissner effect of a superconductor at room temperature and atmospheric pressure below $T_c$.",
+    "A material called LK-99, a modified-lead apatite crystal structure with the composition Pb$_{10-x}$Cu$_x$(PO$_4$)$_6$O ($0.9<x<1.1$), has been synthesized using the solid-state method.",
+    "The mechanism of the room-temperature $T_c$ is discussed by 1-D BR-BCS theory.",
+    "Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

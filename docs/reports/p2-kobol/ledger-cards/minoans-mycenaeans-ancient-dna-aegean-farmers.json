@@ -1,0 +1,295 @@
+{
+ "slug": "minoans-mycenaeans-ancient-dna-aegean-farmers",
+ "title": "Ancient DNA links Minoans and Mycenaeans to early Aegean farmers",
+ "first_published": "2017-08-02",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/nature23310",
+   "final_url": "https://www.nature.com/articles/nature23310?error=cookies_not_supported&code=544d20da-7351-4f07-972f-ec53167a8ed5",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Genetic origins of the Minoans and Mycenaeans",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2017-07-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2017-08-02"
+    },
+    {
+     "source": "dc.date",
+     "date": "2017-08-02"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2017-08-02"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2017-08-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-08-02"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2016-12-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2017-06-25"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-07-31"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature23310",
+   "crossref": {
+    "doi": "10.1038/nature23310",
+    "resolves": true,
+    "title": "Genetic origins of the Minoans and Mycenaeans",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2017-8",
+    "authors_first3": [
+     "Lazaridis",
+     "Mittnik",
+     "Patterson"
+    ],
+    "author_count": 34,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "New genome-wide data for ancient, Bronze Age individuals, including Minoans, Mycenaeans, and southwestern Anatolians, show that Minoans and Mycenaeans were genetically very similar yet distinct, supporting the idea of continuity but not isolation in the history of populations of the Aegean. The most",
+   "passages": [
+    "We have assembled genome-wide data from 19 ancient individuals, including Minoans from Crete, Mycenaeans from mainland Greece, and their eastern neighbours from southwestern Anatolia.",
+    "Here we show that Minoans and Mycenaeans were genetically similar, having at least three-quarters of their ancestry from the first Neolithic farmers of western Anatolia and the Aegean1,2, and most of the remainder from ancient populations related to those of the Caucasus3 and Iran4,5.",
+    "A.M., N.P., S.M., and A.Pe., performed bioinformatics analyses.Corresponding authorsCorrespondence to Iosif Lazaridis, David Reich, Johannes Krause or George Stamatoyannopoulos.Ethics declarations Competing interests The authors declare no competing financial interests.",
+    "However, the Mycenaeans differed from Minoans in deriving additional ancestry from an ultimate source related to the hunter–gatherers of eastern Europe and Siberia6,7,8, introduced via a proximal source related to the inhabitants of either the Eurasian steppe1,6,9 or Armenia4,9.",
+    "Ancient genomes link early farmers from Atapuerca in Spain to modern-day Basques.",
+    "The study of the ancient Minoans and Mycenaeans was supported by the Lucille P."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5565772",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5565772/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Genetic origins of the Minoans and Mycenaeans",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2017-08-01"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2017-07-31"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/nature23310",
+   "crossref": {
+    "doi": "10.1038/nature23310",
+    "resolves": true,
+    "title": "Genetic origins of the Minoans and Mycenaeans",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2017-8",
+    "authors_first3": [
+     "Lazaridis",
+     "Mittnik",
+     "Patterson"
+    ],
+    "author_count": 34,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "The origins of the Bronze Age Minoan and Mycenaean cultures have puzzled archaeologists for more than a century. We assembled genome-wide data from nineteen ancient individuals, including Minoans from Crete, Mycenaeans from mainland Greece, and ...",
+   "passages": [
+    "We assembled genome-wide data from nineteen ancient individuals, including Minoans from Crete, Mycenaeans from mainland Greece, and their eastern neighbours from southwestern Anatolia.",
+    "5).The Minoans and Mycenaeans, sampled from different sites in Crete and mainland Greece, were homogeneous, supporting the genetic coherency of these two groups.",
+    "We show that Minoans and Mycenaeans were genetically similar, having at least three quarters of their ancestry from the first Neolithic farmers of western Anatolia and the Aegean1,2, and most of the remainder from ancient populations like those of the Caucasus3 and Iran4,5.",
+    "Mycenaeans differ from these Minoans in sharing significantly fewer alleles with Neolithic people from the Levant, Anatolia, Greece, and mainland Europe (Extended Data Fig.",
+    "There is limited genetic evidence suggesting migrations from both the east (the area of Iran and the Caucasus), reaching Anatolia by at least ~3,800 BCE4, and the north (eastern Europe and Siberia) contributing ‘Ancient North Eurasian’ ancestry6,10 to all modern Europeans.",
+    "1b), framed to the left by ancient populations from mainland Europe and the Eurasian steppe, to the right by ancient populations from the Caucasus and Western Asia, and to the bottom by Early/Middle Neolithic farmers from Europe and Anatolia."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://doi.org/10.1038/s41559-022-01952-3",
+   "final_url": "https://www.nature.com/articles/s41559-022-01952-3?error=cookies_not_supported&code=ba0ebdfc-5c66-4210-b929-f0be99428976",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Ancient DNA reveals admixture history and endogamy in the prehistoric Aegean",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-01-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2023-01-16"
+    },
+    {
+     "source": "dc.date",
+     "date": "2023-01-16"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2023-01-16"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2023-01-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-01-16"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-05-15"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2022-11-11"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-01-16"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41559-022-01952-3",
+   "crossref": {
+    "doi": "10.1038/s41559-022-01952-3",
+    "resolves": true,
+    "title": "Ancient DNA reveals admixture history and endogamy in the prehistoric Aegean",
+    "container": "Nature Ecology &amp; Evolution",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-1-16",
+    "authors_first3": [
+     "Skourtanioti",
+     "Ringbauer",
+     "Gnecchi Ruscone"
+    ],
+    "author_count": 41,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The Neolithic and Bronze Ages were highly transformative periods for the genetic history of Europe but for the Aegean—a region fundamental to Europe’s prehistory—the biological dimensions of cultural transitions have been elucidated only to a limited extent so far. We have analysed newly generated g",
+   "passages": [
+    "Haploid genotype data for the 1240K panel are available in eigenstrat format (https://figshare.com/projects/Genotype_data_for_103_individuals_from_study_Ancient_DNA_reveals_admixture_history_and_endogamy_in_the_prehistoric_Aegean_/156152).",
+    "StockhammerDepartment of Archaeogenetics, Max Planck Institute for the Science of Human History, Jena, GermanyEirini Skourtanioti, Guido Alberto Gnecchi Ruscone, Raffaela Angelina Bianco, Marta Burri, Cäcilia Freund, Anja Furtwängler, Nuno Filipe Gomes Martins, Florian Knolle, Gunnar U.",
+    "Ancient DNA reveals admixture history and endogamy in the prehistoric Aegean.",
+    "Ancient DNA in human bones from mainland Greece and Crete.",
+    "Biological and cultural connectedness within the Aegean is also supported by the finding of consanguineous endogamy practiced at high frequencies, unprecedented in the global ancient DNA record.",
+    "We have analysed newly generated genome-wide data from 102 ancient individuals from Crete, the Greek mainland and the Aegean Islands, spanning from the Neolithic to the Iron Age."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 3,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9911347",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9911347/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Ancient DNA reveals admixture history and endogamy in the prehistoric Aegean",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2023-01-15"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2023-01-16"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41559-022-01952-3",
+   "crossref": {
+    "doi": "10.1038/s41559-022-01952-3",
+    "resolves": true,
+    "title": "Ancient DNA reveals admixture history and endogamy in the prehistoric Aegean",
+    "container": "Nature Ecology &amp; Evolution",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2023-1-16",
+    "authors_first3": [
+     "Skourtanioti",
+     "Ringbauer",
+     "Gnecchi Ruscone"
+    ],
+    "author_count": 41,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "The Neolithic and Bronze Ages were highly transformative periods for the genetic history of Europe but for the Aegean—a region fundamental to Europe’s prehistory—the biological dimensions of cultural transitions have been elucidated only to a ...",
+   "passages": [
+    "Haploid genotype data for the 1240K panel are available in eigenstrat format (https://figshare.com/projects/Genotype_data_for_103_individuals_from_study_Ancient_DNA_reveals_admixture_history_and_endogamy_in_the_prehistoric_Aegean_/156152).Code availability No new code and method were developed.",
+    "Haploid genotype data for the 1240K panel are available in eigenstrat format (https://figshare.com/projects/Genotype_data_for_103_individuals_from_study_Ancient_DNA_reveals_admixture_history_and_endogamy_in_the_prehistoric_Aegean_/156152).",
+    "Ancient DNA in human bones from mainland Greece and Crete.",
+    "Biological and cultural connectedness within the Aegean is also supported by the finding of consanguineous endogamy practiced at high frequencies, unprecedented in the global ancient DNA record.",
+    "We have analysed newly generated genome-wide data from 102 ancient individuals from Crete, the Greek mainland and the Aegean Islands, spanning from the Neolithic to the Iron Age.",
+    "Recently, Clemente and colleagues expanded the sampling scope of the BA Aegean to the northern mainland and the Aegean Islands corroborating the previous findings but also reporting higher WES-related ancestry in MBA individuals from northern Greece29."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}

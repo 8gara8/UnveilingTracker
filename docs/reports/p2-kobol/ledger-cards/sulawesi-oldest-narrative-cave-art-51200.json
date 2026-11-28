@@ -1,0 +1,237 @@
+{
+ "slug": "sulawesi-oldest-narrative-cave-art-51200",
+ "title": "Oldest known story-telling cave art found in Sulawesi, 51,200 years old",
+ "first_published": "2024-07-03",
+ "items": [
+  {
+   "role": "source",
+   "i": 0,
+   "url": "https://www.nature.com/articles/s41586-024-07541-7",
+   "final_url": "https://www.nature.com/articles/s41586-024-07541-7?error=cookies_not_supported&code=c8a53293-e7c3-4496-a838-6f2e202f724b",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Narrative cave art in Indonesia by 51,200 years ago",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-06-30"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2024-07-03"
+    },
+    {
+     "source": "dc.date",
+     "date": "2024-07-03"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2024-07-03"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2024-07-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-07-03"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2023-11-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2024-05-08"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-07-03"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-024-07541-7",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07541-7",
+    "resolves": true,
+    "title": "Narrative cave art in Indonesia by 51,200 years ago",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-7-3",
+    "authors_first3": [
+     "Oktaviana",
+     "Joannes-Boyau",
+     "Hakim"
+    ],
+    "author_count": 23,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "Previous dating research indicated that the Indonesian island of Sulawesi is host to some of the oldest known rock art1–3. That work was based on solution uranium-series (U-series) analysis of calcite deposits overlying rock art in the limestone caves of Maros-Pangkep, South Sulawesi1–3. Here we use",
+   "passages": [
+    "Painted at least 51,200 years ago, this narrative composition, which depicts human-like figures interacting with a pig, is now the earliest known surviving example of representational art, and visual storytelling, in the world3.",
+    "Data for ‘Narrative cave art in Indonesia by 51,200 years ago’.",
+    "Narrative cave art in Indonesia by 51,200 years ago.",
+    "On the basis of our dating work, it now seems that depictions of anthropomorphic figures (including therianthropes) interacting with animals appear in the Late Pleistocene cave art of Sulawesi at a frequency not seen elsewhere until tens of millennia later in Europe.",
+    "Up until now, the earliest evidence for figurative art had comprised a naturalistic painting of a Sulawesi warty pig (Sus celebensis) at Leang Tedongnge in Maros-Pangkep (Fig.",
+    "In contrast to single-figure depictions, the agency of the juxtaposed figures constituting a narrative scene allows a story to be told through images in a manner that does not require the producer of the art to be present to convey the narrative to an audience22,23,24."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 1,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11269172",
+   "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11269172/",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Narrative cave art in Indonesia by 51,200 years ago",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2024-07-02"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2024-07-03"
+    }
+   ],
+   "date_ok": true,
+   "doi": "10.1038/s41586-024-07541-7",
+   "crossref": {
+    "doi": "10.1038/s41586-024-07541-7",
+    "resolves": true,
+    "title": "Narrative cave art in Indonesia by 51,200 years ago",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2024-7-3",
+    "authors_first3": [
+     "Oktaviana",
+     "Joannes-Boyau",
+     "Hakim"
+    ],
+    "author_count": 23,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "efetch db=pmc article-type",
+    "value": "research-article"
+   },
+   "meta_description": "Previous dating research indicated that the Indonesian island of Sulawesi is host to some of the oldest known rock art1–3. That work was based on solution uranium-series (U-series) analysis of calcite deposits overlying rock art in the limestone ...",
+   "passages": [
+    "These authors contributed equally: Adhi Agus Oktaviana, Renaud Joannes-Boyau, Adam Brumm, Maxime Aubert Deceased: Pindi Setiawan Extended data is available for this paper at 10.1038/s41586-024-07541-7.Supplementary information The online version contains supplementary material available at 10.1038/s41586-024-07541-7.References 1.Aubert, M. et al.",
+    "Painted at least 51,200 years ago, this narrative composition, which depicts human-like figures interacting with a pig, is now the earliest known surviving example of representational art, and visual storytelling, in the world3.",
+    "Data for ‘Narrative cave art in Indonesia by 51,200 years ago’.",
+    "On the basis of our dating work, it now seems that depictions of anthropomorphic figures (including therianthropes) interacting with animals appear in the Late Pleistocene cave art of Sulawesi at a frequency not seen elsewhere until tens of millennia later in Europe.",
+    "Up until now, the earliest evidence for figurative art had comprised a naturalistic painting of a Sulawesi warty pig (Sus celebensis) at Leang Tedongnge in Maros-Pangkep (Fig.",
+    "Thus, we can demonstrate that this rock art scene was present at Leang Karampuang at least 51.2 ka, when the oldest dated coralloid (LK1) began to form on top of figure H2."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  },
+  {
+   "role": "source",
+   "i": 2,
+   "url": "https://www.nature.com/articles/s41586-025-09968-y",
+   "final_url": "https://www.nature.com/articles/s41586-025-09968-y?error=cookies_not_supported&code=3671c9ac-9b4c-4b82-8863-d153b7206c65",
+   "status": 200,
+   "readable": true,
+   "reason": null,
+   "title_found": "Rock art from at least 67,800 years ago in Sulawesi",
+   "title_match": true,
+   "dates_found": [
+    {
+     "source": "citation_publication_date",
+     "date": "2026-01-31"
+    },
+    {
+     "source": "citation_online_date",
+     "date": "2026-01-21"
+    },
+    {
+     "source": "dc.date",
+     "date": "2026-01-21"
+    },
+    {
+     "source": "prism.publicationDate",
+     "date": "2026-01-21"
+    },
+    {
+     "source": "ld+json datePublished",
+     "date": "2026-01-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2026-01-21"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-08-13"
+    },
+    {
+     "source": "time[datetime]",
+     "date": "2025-11-26"
+    },
+    {
+     "source": "crossref issued",
+     "date": "2026-01-21"
+    }
+   ],
+   "date_ok": false,
+   "doi": "10.1038/s41586-025-09968-y",
+   "crossref": {
+    "doi": "10.1038/s41586-025-09968-y",
+    "resolves": true,
+    "title": "Rock art from at least 67,800 years ago in Sulawesi",
+    "container": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "issued": "2026-1-21",
+    "authors_first3": [
+     "Oktaviana",
+     "Joannes-Boyau",
+     "Hakim"
+    ],
+    "author_count": 40,
+    "update_to": [],
+    "updated_by": [],
+    "relation": {}
+   },
+   "type_found": {
+    "source": "dc.type",
+    "value": "OriginalPaper"
+   },
+   "meta_description": "The Indonesian archipelago is host to some of the earliest known rock art in the world1–5. Previously, secure Pleistocene dates were reported for figurative cave art and stencils of human hands in two areas in Indonesia—the Maros-Pangkep karsts in the southwestern peninsula of the island of Sulawesi",
+   "passages": [
+    "Data for ‘Rock art from at least 67,800 years ago in Sulawesi’.",
+    "Rock art from at least 67,800 years ago in Sulawesi.",
+    "5–9 and Supplementary Table 1.Implications for early human migrationOur dating investigation in Southeast Sulawesi shows that extremely old rock art is not just concentrated in the Maros-Pangkep district in the southwestern peninsula but occurs in other parts of this large Wallacean island (about 174,000 km2).",
+    "Narrative cave art in Indonesia by 51,200 years ago.",
+    "Hand stencils with and without narrowed fingers at two new rock art sites in Sulawesi, Indonesia.",
+    "Here we describe a series of early dated rock art motifs from the southeastern portion of Sulawesi."
+   ],
+   "open_copies": [],
+   "null_url_matches": null,
+   "resolved_to": null,
+   "verdict": "usable"
+  }
+ ]
+}
