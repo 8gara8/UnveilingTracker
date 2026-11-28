@@ -1,0 +1,2816 @@
+{
+  "checked": "2026-11-28, about 13:20 to 13:55 Taipei (05:20 to 05:55 UTC), Kobol, plain GET with the snapshot headers (Accept text/html..., Accept-Language en-US, 15 s, 5 redirects, 3 MB), the run user agent, Crossref for DOIs; no OpenAlex",
+  "publishers": {
+    "nature": {
+      "change": {
+        "type_field": [
+          "citation_article_type",
+          "dc.type"
+        ],
+        "paths": [
+          [
+            "/articles/s",
+            "/articles/nature"
+          ],
+          [
+            "/articles/s",
+            "/articles/n",
+            "/articles/srep"
+          ]
+        ],
+        "deny_paths": [
+          [],
+          [
+            "/articles/nature.2"
+          ]
+        ],
+        "types": [
+          {
+            "paper": [
+              "Article",
+              "Letter",
+              "Analysis",
+              "Brief Communication",
+              "Review Article",
+              "Review"
+            ],
+            "notice": [
+              "Retraction Note",
+              "Retraction",
+              "Publisher Correction",
+              "Author Correction",
+              "Correction",
+              "Erratum",
+              "Corrigendum",
+              "Editorial Expression of Concern",
+              "Expression of Concern"
+            ],
+            "reaction": [
+              "News & Views",
+              "News and Views"
+            ]
+          },
+          {
+            "paper": [
+              "OriginalPaper",
+              "ReviewPaper",
+              "BriefCommunication",
+              "Analysis"
+            ],
+            "notice": [
+              "Erratum",
+              "Correction",
+              "Retraction",
+              "Retraction Note",
+              "Addendum",
+              "Editorial Expression of Concern",
+              "Expression of Concern"
+            ],
+            "reaction": [
+              "News And Views",
+              "Comment"
+            ]
+          }
+        ]
+      },
+      "why": "readable by plain GET. citation_article_type gives \"Article\" for research, reviews and correspondence alike (530419c, a 2016 Correspondence, is \"Article\"), so it cannot keep letters out; dc.type separates them: OriginalPaper, ReviewPaper, BriefCommunication (research), Letter (correspondence), News, Research Highlight, Book Review, Nature Podcast, Futures, Nature Index (news and features), News And Views and Comment (commentary), Erratum (notices). Old ids: nature14539 and nature16961 (/articles/nature), nphys3255, nm.4053, ncomms10235 (/articles/n...) and srep10000 (/articles/srep) are research; /articles/n covers nature and every old sister-journal id. Old news ids /articles/nature.2016.19411 (dc.type News) share the /articles/nature prefix, so deny_paths /articles/nature.2. Every current News & Views and Comment is under /articles/d41586- (12 of 12 on the News & Views and Comment lists); News & Views from 2016 use volume-number ids (/articles/540345a) and are typed BriefCommunication, so they cannot be told from research and stay unlisted (they fail the URL test for every kind). The type value is \"News And Views\" (case-insensitive equal to the seed's \"News and Views\").",
+      "proposed": {
+        "id": "nature",
+        "name": "Nature Portfolio",
+        "hosts": [
+          "www.nature.com",
+          "nature.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/articles/s",
+          "/articles/n",
+          "/articles/srep"
+        ],
+        "deny_paths": [
+          "/articles/nature.2"
+        ],
+        "reaction_paths": [
+          "/articles/d41586-"
+        ],
+        "type_field": "dc.type",
+        "types": {
+          "paper": [
+            "OriginalPaper",
+            "ReviewPaper",
+            "BriefCommunication",
+            "Analysis"
+          ],
+          "notice": [
+            "Erratum",
+            "Correction",
+            "Retraction",
+            "Retraction Note",
+            "Addendum",
+            "Editorial Expression of Concern",
+            "Expression of Concern"
+          ],
+          "reaction": [
+            "News And Views",
+            "Comment"
+          ]
+        }
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1038/530419c",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/530419c?error=cookies_not_supported&code=1f6646c2-6ccb-4361-b4eb-3afc7b7df5f5",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "Letter",
+            "prism.section": "Letter",
+            "citation_article_type": "Article"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/d41586-025-00608-z",
+          "role": "research-recent",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/d41586-025-00608-z?error=cookies_not_supported&code=5250cd1c-e813-4f96-bd97-96dbc947274e",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "News",
+            "prism.section": "News"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/nature25779",
+          "role": "notice",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/nature25779?error=cookies_not_supported&code=4e6d4f59-5800-4499-a5a9-40360ee17a13",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "Erratum",
+            "prism.section": "Erratum",
+            "citation_article_type": "Correction"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/d41586-026-03885-4",
+          "role": "d41586",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/d41586-026-03885-4?error=cookies_not_supported&code=e6cad128-9d05-4676-950d-a874b58fb9e7",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "Book Review",
+            "prism.section": "News"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/d41586-026-03800-x",
+          "role": "d41586",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/d41586-026-03800-x?error=cookies_not_supported&code=ed704916-3dcc-4b4a-bb8d-cc380dfaca24",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "Research Highlight",
+            "prism.section": "News"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/d41586-026-03801-w",
+          "role": "d41586",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/d41586-026-03801-w?error=cookies_not_supported&code=d0d3596d-3a0f-402c-95ee-b3ed2f6cbad8",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "Research Highlight",
+            "prism.section": "News"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/d41586-026-03900-8",
+          "role": "d41586",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/d41586-026-03900-8?error=cookies_not_supported&code=5c3cdf66-b854-4316-a2ba-147f4073bbfd",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "Nature Podcast",
+            "prism.section": "News"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/d41586-026-03754-0",
+          "role": "d41586",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/d41586-026-03754-0?error=cookies_not_supported&code=df926fca-273a-4d2f-836b-a0013775c9ba",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "Nature Index",
+            "prism.section": "News"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/d41586-026-03523-z",
+          "role": "d41586",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/d41586-026-03523-z?error=cookies_not_supported&code=422edd30-bdb0-46a2-b73b-d2bc680f9e50",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "Futures",
+            "prism.section": "News"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/nature14539",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/nature14539?error=cookies_not_supported&code=8ef96284-ae44-445e-b780-d891958e60d2",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "ReviewPaper",
+            "prism.section": "ReviewPaper",
+            "citation_article_type": "Article"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/nature16961",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/nature16961?error=cookies_not_supported&code=4d560960-0602-4826-9cfd-76d9dbd61e75",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "OriginalPaper",
+            "prism.section": "OriginalPaper",
+            "citation_article_type": "Article"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/nphys3255",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/nphys3255?error=cookies_not_supported&code=6b42cfef-e619-4ab5-b514-bba8dd1acecf",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "BriefCommunication",
+            "prism.section": "BriefCommunication",
+            "citation_article_type": "Article"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/nm.4053",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/nm.4053?error=cookies_not_supported&code=37fee565-329b-48b1-8dba-7c9b783dc5a5",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "OriginalPaper",
+            "prism.section": "OriginalPaper",
+            "citation_article_type": "Article"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/ncomms10235",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/ncomms10235?error=cookies_not_supported&code=41a74f1c-6401-48ee-8a6a-3eb25eac7fd6",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "OriginalPaper",
+            "prism.section": "OriginalPaper",
+            "citation_article_type": "Article"
+          }
+        },
+        {
+          "asked": "https://www.nature.com/nature/articles?type=news-and-views",
+          "role": "nv-list-2026",
+          "status": 200,
+          "final_url": "https://www.nature.com/nature/articles?type=news-and-views&error=cookies_not_supported&code=f6555310-79f4-42c2-bb67-98939195659a",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://www.nature.com/nature/articles?type=news-and-views&year=2016",
+          "role": "nv-list-2016",
+          "status": 200,
+          "final_url": "https://www.nature.com/nature/articles?type=news-and-views&year=2016&error=cookies_not_supported&code=c12200c3-74d2-4a93-8494-10c47b8c0c9c",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://www.nature.com/nature/articles?type=comment",
+          "role": "comment-list",
+          "status": 200,
+          "final_url": "https://www.nature.com/nature/articles?type=comment&error=cookies_not_supported&code=bee6fc0c-601b-490f-b61e-7b1e94d373d2",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://www.nature.com/articles/540530a",
+          "role": "nv-old",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/540530a?error=cookies_not_supported&code=2e32a549-b699-4a00-ae62-3cdb4eb2e385",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "BriefCommunication",
+            "prism.section": "BriefCommunication",
+            "citation_article_type": "Article"
+          }
+        },
+        {
+          "asked": "https://www.nature.com/articles/nature21107",
+          "role": "paper-on-nv-page",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/nature21107?error=cookies_not_supported&code=7af50373-7c46-4796-93d9-db76a3872ca8",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "BriefCommunication",
+            "prism.section": "BriefCommunication",
+            "citation_article_type": "Article"
+          }
+        },
+        {
+          "asked": "https://www.nature.com/articles/d41586-026-03491-4",
+          "role": "nv-new",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/d41586-026-03491-4?error=cookies_not_supported&code=8107ce86-5df2-4093-a588-b878adbe1007",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "News And Views",
+            "prism.section": "News",
+            "citation_article_type": "News And Views"
+          }
+        },
+        {
+          "asked": "https://www.nature.com/articles/d41586-026-03723-7",
+          "role": "comment",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/d41586-026-03723-7?error=cookies_not_supported&code=c9c3c165-422b-4bbe-bacb-923213540465",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "Comment",
+            "prism.section": "News",
+            "citation_article_type": "Comment"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/srep10000",
+          "role": "srep-old",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/srep10000?error=cookies_not_supported&code=dfe61d5e-9c76-45bf-8229-392cf4212406",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "OriginalPaper",
+            "prism.section": "OriginalPaper",
+            "citation_article_type": "Article"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/nature.2016.19411",
+          "role": "news-old",
+          "status": 200,
+          "final_url": "https://www.nature.com/articles/nature.2016.19411?error=cookies_not_supported&code=edcccd10-a351-4102-9088-91ba932490fd",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "News",
+            "prism.section": "News"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1038/517279a",
+          "role": "nv-2015",
+          "status": 404,
+          "final_url": "https://doi.org/10.1038/517279a",
+          "readable": false,
+          "block": null,
+          "types": {}
+        }
+      ]
+    },
+    "science": {
+      "change": {
+        "hosts": [
+          [
+            "www.science.org",
+            "science.org"
+          ],
+          [
+            "www.science.org",
+            "science.org",
+            "www.sciencemag.org",
+            "science.sciencemag.org"
+          ]
+        ],
+        "paths": [
+          [
+            "/doi/10.1126/",
+            "/doi/full/10.1126/",
+            "/doi/abs/10.1126/"
+          ],
+          [
+            "/doi/10.1126/",
+            "/doi/full/10.1126/",
+            "/doi/abs/10.1126/",
+            "/lookup/doi/10.1126/"
+          ]
+        ],
+        "kinds": [
+          [
+            "paper",
+            "notice",
+            "reaction"
+          ],
+          [
+            "paper",
+            "notice"
+          ]
+        ],
+        "type_field": [
+          "dc.type",
+          null
+        ],
+        "types": [
+          {
+            "paper": [
+              "Research Article",
+              "Report",
+              "Review",
+              "research-article",
+              "review-article"
+            ],
+            "notice": [
+              "Retraction",
+              "Correction",
+              "Erratum",
+              "Editorial Expression of Concern",
+              "Expression of Concern"
+            ],
+            "reaction": [
+              "Perspective"
+            ]
+          },
+          {}
+        ]
+      },
+      "why": "every page, research, Perspective, In Depth news, Editorial and notice alike, answered 403 to a plain GET (Cloudflare). a plain GET from Kobol is refused (see evidence), so the snapshot cannot read a type: type_field null, no types, no reaction kind, no reaction_paths (SPEC 4.11). Old DOIs (2015) land on www.sciencemag.org/lookup/doi/10.1126/..., also 403. The RSS feed carries dc:type (Research Article, Perspective, In Depth, Editorial...), which collect could copy into a candidate's types instead (see the report).",
+      "proposed": {
+        "id": "science",
+        "name": "Science (AAAS)",
+        "hosts": [
+          "www.science.org",
+          "science.org",
+          "www.sciencemag.org",
+          "science.sciencemag.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/doi/10.1126/",
+          "/doi/full/10.1126/",
+          "/doi/abs/10.1126/",
+          "/lookup/doi/10.1126/"
+        ],
+        "deny_paths": [
+          "/content/article/"
+        ],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1126/science.347.6217.39-e",
+          "role": "research-old",
+          "status": 403,
+          "final_url": "https://www.sciencemag.org/lookup/doi/10.1126/science.347.6217.39-e",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1126/science.adp7290",
+          "role": "research-recent",
+          "status": 403,
+          "final_url": "https://www.science.org/doi/10.1126/science.adp7290",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1126/science.aba6100",
+          "role": "notice",
+          "status": 403,
+          "final_url": "https://www.science.org/doi/10.1126/science.aba6100",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1126/science.aek0041",
+          "role": "type:Perspective",
+          "status": 403,
+          "final_url": "https://www.science.org/doi/10.1126/science.aek0041",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1126/science.aeo3726",
+          "role": "type:In Depth",
+          "status": 403,
+          "final_url": "https://www.science.org/doi/10.1126/science.aeo3726",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1126/science.aeo0595",
+          "role": "type:Editorial",
+          "status": 403,
+          "final_url": "https://www.science.org/doi/10.1126/science.aeo0595",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1126/science.adx9551",
+          "role": "type:Research Article",
+          "status": 403,
+          "final_url": "https://www.science.org/doi/10.1126/science.adx9551",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "cell-press": {
+      "change": {
+        "kinds": [
+          [
+            "paper",
+            "notice",
+            "reaction"
+          ],
+          [
+            "paper",
+            "notice"
+          ]
+        ],
+        "type_field": [
+          "citation_article_type",
+          null
+        ],
+        "types": [
+          {
+            "paper": [
+              "Article",
+              "Research Article",
+              "Short Article",
+              "Resource",
+              "Report",
+              "Review"
+            ],
+            "notice": [
+              "Retraction",
+              "Correction",
+              "Erratum",
+              "Expression of Concern"
+            ],
+            "reaction": [
+              "Preview",
+              "Commentary"
+            ]
+          },
+          {}
+        ]
+      },
+      "why": "DOIs land on linkinghub.elsevier.com/retrieve/pii/..., a 200 page that moves on by a meta refresh, not an HTTP redirect; the cell.com page itself answers 403 (bot check). a plain GET from Kobol is refused (see evidence), so the snapshot cannot read a type: type_field null, no types, no reaction kind, no reaction_paths (SPEC 4.11). The feeds carry prism:section (Article, Resource, Short article, Preview, Correction).",
+      "proposed": {
+        "id": "cell-press",
+        "name": "Cell Press",
+        "hosts": [
+          "www.cell.com",
+          "cell.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/cell/",
+          "/cell-reports/",
+          "/neuron/",
+          "/immunity/",
+          "/molecular-cell/",
+          "/current-biology/",
+          "/cell-metabolism/",
+          "/cell-stem-cell/",
+          "/cancer-cell/",
+          "/cell-systems/",
+          "/developmental-cell/",
+          "/cell-host-microbe/",
+          "/chem/",
+          "/joule/",
+          "/matter/",
+          "/med/",
+          "/patterns/",
+          "/structure/",
+          "/cell-chemical-biology/",
+          "/cell-genomics/",
+          "/cell-reports-medicine/",
+          "/cell-reports-physical-science/",
+          "/one-earth/",
+          "/iscience/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1016/j.cell.2016.10.051",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867416315161",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1016/j.cell.2024.10.023",
+          "role": "research-recent",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867424012054",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1016/j.cell.2004.09.021",
+          "role": "notice",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867404008943",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1016/j.cell.2026.10.037",
+          "role": "type:Preview",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867426013231",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1016/j.cell.2026.09.059",
+          "role": "type:Article",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867426012067",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1016/j.cell.2026.08.036",
+          "role": "type:Resource",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867426010093",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1016/j.cell.2026.10.013",
+          "role": "type:Correction",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867426012638",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://www.cell.com/cell/fulltext/S0092-8674(16)31516-1",
+          "role": "direct",
+          "status": 403,
+          "final_url": "https://www.cell.com/cell/fulltext/S0092-8674(16)31516-1",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "pnas": {
+      "change": {
+        "kinds": [
+          [
+            "paper",
+            "notice",
+            "reaction"
+          ],
+          [
+            "paper",
+            "notice"
+          ]
+        ],
+        "type_field": [
+          "dc.type",
+          null
+        ],
+        "types": [
+          {
+            "paper": [
+              "Research Article",
+              "Review",
+              "research-article",
+              "review-article"
+            ],
+            "notice": [
+              "Retraction",
+              "Correction",
+              "Erratum",
+              "Expression of Concern"
+            ],
+            "reaction": [
+              "Commentary"
+            ]
+          },
+          {}
+        ]
+      },
+      "why": "DOIs land on pnas.org/doi/... (no www), 403 to every plain GET. a plain GET from Kobol is refused (see evidence), so the snapshot cannot read a type: type_field null, no types, no reaction kind, no reaction_paths (SPEC 4.11).",
+      "proposed": {
+        "id": "pnas",
+        "name": "Proceedings of the National Academy of Sciences",
+        "hosts": [
+          "www.pnas.org",
+          "pnas.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/doi/10.1073/",
+          "/doi/full/10.1073/",
+          "/doi/abs/10.1073/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1073/pnas.1704105114",
+          "role": "research-old",
+          "status": 403,
+          "final_url": "https://pnas.org/doi/full/10.1073/pnas.1704105114",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1073/pnas.2419196122",
+          "role": "research-recent",
+          "status": 403,
+          "final_url": "https://pnas.org/doi/10.1073/pnas.2419196122",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1073/pnas.1200173109",
+          "role": "notice",
+          "status": 403,
+          "final_url": "https://pnas.org/doi/full/10.1073/pnas.1200173109",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1073/iti4726123",
+          "role": "feed",
+          "status": 403,
+          "final_url": "https://pnas.org/doi/10.1073/iti4726123",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1073/pnas.2626255123",
+          "role": "feed",
+          "status": 403,
+          "final_url": "https://pnas.org/doi/10.1073/pnas.2626255123",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "aps": {
+      "change": {
+        "hosts": [
+          [
+            "journals.aps.org"
+          ],
+          [
+            "journals.aps.org",
+            "link.aps.org"
+          ]
+        ]
+      },
+      "why": "readable; DOIs go through link.aps.org to journals.aps.org/prl/abstract/...; the pages show no type in a meta tag or label, so type_field stays null.",
+      "new_entry": {
+        "id": "aps-physics",
+        "name": "Physics (APS magazine)",
+        "hosts": [
+          "physics.aps.org"
+        ],
+        "kinds": [],
+        "paths": [],
+        "deny_paths": [],
+        "reaction_paths": [
+          "/articles/"
+        ],
+        "type_field": ".article-type",
+        "types": {
+          "reaction": [
+            "Viewpoint"
+          ]
+        },
+        "note": "Physics Viewpoints are commentary by named scientists on PRL papers; the page shows \".article-type\" = Viewpoint; Synopsis and Focus pieces (news) fit none. Optional."
+      },
+      "proposed": {
+        "id": "aps",
+        "name": "American Physical Society journals",
+        "hosts": [
+          "journals.aps.org",
+          "link.aps.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/prl/",
+          "/prx/",
+          "/prxquantum/",
+          "/prd/",
+          "/pre/",
+          "/prb/",
+          "/pra/",
+          "/prc/",
+          "/prresearch/",
+          "/prapplied/",
+          "/prfluids/",
+          "/prmaterials/",
+          "/rmp/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1103/physrevlett.117.067001",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.117.067001",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1103/physrevlett.134.176703",
+          "role": "research-recent",
+          "status": 200,
+          "final_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.176703",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1103/physrevlett.132.133601",
+          "role": "notice",
+          "status": 200,
+          "final_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.133601",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1103/physics.18.1",
+          "role": "type:Viewpoint",
+          "status": 200,
+          "final_url": "https://physics.aps.org/articles/v18/1",
+          "readable": true,
+          "block": null,
+          "types": {}
+        }
+      ]
+    },
+    "annals-of-mathematics": {
+      "change": {},
+      "why": "older DOIs land on annals.math.princeton.edu (readable, no type); DOIs from 2023 on land on projecteuclid.org/journals/annals-of-mathematics/..., which the project-euclid entry covers but answers a bot page. No change needed beyond project-euclid's.",
+      "proposed": {
+        "id": "annals-of-mathematics",
+        "name": "Annals of Mathematics",
+        "hosts": [
+          "annals.math.princeton.edu"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.4007/annals.2017.186.2.6",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://annals.math.princeton.edu/2017/186-2/p06",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.4007/annals.2026.203.3.4",
+          "role": "research-recent",
+          "status": 200,
+          "final_url": "https://projecteuclid.org/journals/annals-of-mathematics/volume-203/issue-3/An-exponential-improvement-for-diagonal-Ramsey/10.4007/annals.2026.203.3.4.full",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.4007/annals.2023.198.3.7",
+          "role": "notice",
+          "status": 200,
+          "final_url": "https://projecteuclid.org/journals/annals-of-mathematics/volume-198/issue-3/Retraction-Quasi-projectivity-of-moduli-spaces-of-polarized-varieties/10.4007/annals.2023.198.3.7.full",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "springer": {
+      "change": {
+        "type_field": [
+          null,
+          "dc.type"
+        ],
+        "types": [
+          {},
+          {
+            "paper": [
+              "OriginalPaper",
+              "ReviewPaper",
+              "BriefCommunication"
+            ],
+            "notice": [
+              "Erratum",
+              "Correction",
+              "Retraction",
+              "Retraction Note",
+              "Addendum",
+              "Expression of Concern"
+            ]
+          }
+        ]
+      },
+      "why": "link.springer.com is readable and shows dc.type as Nature does (OriginalPaper; a retraction note is dc.type Erratum with citation_article_type \"Retraction Note\"). Some 10.1007 DOIs land on www.springermedizin.de (a medical portal), which stays unlisted.",
+      "proposed": {
+        "id": "springer",
+        "name": "Springer",
+        "hosts": [
+          "link.springer.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/article/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": "dc.type",
+        "types": {
+          "paper": [
+            "OriginalPaper",
+            "ReviewPaper",
+            "BriefCommunication"
+          ],
+          "notice": [
+            "Erratum",
+            "Correction",
+            "Retraction",
+            "Retraction Note",
+            "Addendum",
+            "Expression of Concern"
+          ]
+        }
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1007/s15006-016-9010-6",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://www.springermedizin.de/zwerchfellhernie/obstipation/antidepressiva-lindern-funktionellen-reflux-nicht/11048510?fulltextView=true",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1007/s11051-025-06435-7",
+          "role": "research-recent",
+          "status": 200,
+          "final_url": "https://link.springer.com/article/10.1007/s11051-025-06435-7?error=cookies_not_supported&code=3dd374d8-9c76-4ad6-b7a8-b1c05af1d81f",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "OriginalPaper",
+            "prism.section": "OriginalPaper",
+            "citation_article_type": "Research"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1007/s12517-021-09212-7",
+          "role": "notice",
+          "status": 200,
+          "final_url": "https://link.springer.com/article/10.1007/s12517-021-09212-7?error=cookies_not_supported&code=abc49a37-deb7-49ef-a56d-f189f2a0aa8b",
+          "readable": true,
+          "block": null,
+          "types": {
+            "dc.type": "Erratum",
+            "prism.section": "Erratum",
+            "citation_article_type": "Retraction Note"
+          }
+        }
+      ]
+    },
+    "sciencedirect": {
+      "change": {},
+      "why": "DOIs land on linkinghub.elsevier.com (meta refresh), and www.sciencedirect.com answers 403. type_field stays null. See the new elsevier-linkinghub entry.",
+      "proposed": {
+        "id": "sciencedirect",
+        "name": "Elsevier ScienceDirect",
+        "hosts": [
+          "www.sciencedirect.com",
+          "sciencedirect.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/science/article/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1016/j.jcp.2016.10.068",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0021999116305769",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1016/j.jcp.2026.114746",
+          "role": "research-recent",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0021999126000963",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://www.sciencedirect.com/science/article/pii/S0021999116305769",
+          "role": "direct",
+          "status": 403,
+          "final_url": "https://www.sciencedirect.com/science/article/pii/S0021999116305769",
+          "readable": false,
+          "block": "403",
+          "types": {}
+        }
+      ]
+    },
+    "wiley": {
+      "change": {},
+      "why": "onlinelibrary.wiley.com and doi.wiley.com answer 403 (Cloudflare) to every plain GET; type_field stays null.",
+      "proposed": {
+        "id": "wiley",
+        "name": "Wiley Online Library",
+        "hosts": [
+          "onlinelibrary.wiley.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/doi/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1002/rnc.3820",
+          "role": "research-old",
+          "status": 403,
+          "final_url": "https://onlinelibrary.wiley.com/doi/10.1002/rnc.3820",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1002/ange.202504668",
+          "role": "research-recent",
+          "status": 403,
+          "final_url": "https://onlinelibrary.wiley.com/doi/10.1002/ange.202504668",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1002/14651858.cd001960.pub4",
+          "role": "notice",
+          "status": 403,
+          "final_url": "http://doi.wiley.com/10.1002/14651858.CD001960.pub4",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "ams": {
+      "change": {
+        "hosts": [
+          [
+            "www.ams.org",
+            "ams.org"
+          ],
+          [
+            "www.ams.org",
+            "ams.org",
+            "pubs.ams.org"
+          ]
+        ]
+      },
+      "why": "DOIs now land on pubs.ams.org/journals/... (through www.ams.org); readable; no type shown.",
+      "proposed": {
+        "id": "ams",
+        "name": "American Mathematical Society",
+        "hosts": [
+          "www.ams.org",
+          "ams.org",
+          "pubs.ams.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/journals/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1090/mcom/3084",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://pubs.ams.org/journals/mcom/2016-85-302/S0025-5718-2016-03084-7",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1090/tran/9325",
+          "role": "research-recent",
+          "status": 200,
+          "final_url": "https://pubs.ams.org/journals/tran/2025-378-01/S0002-9947-2024-09325-X",
+          "readable": true,
+          "block": null,
+          "types": {}
+        }
+      ]
+    },
+    "plos": {
+      "change": {
+        "type_field": [
+          null,
+          "citation_article_type"
+        ],
+        "types": [
+          {},
+          {
+            "paper": [
+              "Research Article"
+            ],
+            "notice": [
+              "Retraction",
+              "Correction",
+              "Expression of Concern"
+            ]
+          }
+        ]
+      },
+      "why": "readable; citation_article_type is \"Research Article\" on research and \"Retraction\" on a retraction notice.",
+      "proposed": {
+        "id": "plos",
+        "name": "PLOS",
+        "hosts": [
+          "journals.plos.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": "citation_article_type",
+        "types": {
+          "paper": [
+            "Research Article"
+          ],
+          "notice": [
+            "Retraction",
+            "Correction",
+            "Expression of Concern"
+          ]
+        }
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1371/journal.pntd.0006099",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0006099",
+          "readable": true,
+          "block": null,
+          "types": {
+            "citation_article_type": "Research Article"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1371/journal.pone.0314145",
+          "role": "research-recent",
+          "status": 200,
+          "final_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0314145",
+          "readable": true,
+          "block": null,
+          "types": {
+            "citation_article_type": "Research Article"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1371/journal.pone.0335095",
+          "role": "notice",
+          "status": 200,
+          "final_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0335095",
+          "readable": true,
+          "block": null,
+          "types": {
+            "citation_article_type": "Retraction"
+          }
+        }
+      ]
+    },
+    "elife": {
+      "change": {},
+      "why": "every page answers a \"Client Challenge\" page (200, JavaScript required); type_field stays null.",
+      "proposed": {
+        "id": "elife",
+        "name": "eLife",
+        "hosts": [
+          "elifesciences.org",
+          "www.elifesciences.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/articles/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.7554/elife.25783",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://elifesciences.org/articles/25783",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.7554/elife.93621",
+          "role": "research-recent",
+          "status": 200,
+          "final_url": "https://elifesciences.org/articles/93621",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.7554/elife.46993",
+          "role": "notice",
+          "status": 200,
+          "final_url": "https://elifesciences.org/articles/46993",
+          "readable": false,
+          "block": null,
+          "types": {}
+        }
+      ]
+    },
+    "nejm": {
+      "change": {},
+      "why": "403 to every plain GET, research and Perspective alike; type_field stays null.",
+      "proposed": {
+        "id": "nejm",
+        "name": "The New England Journal of Medicine",
+        "hosts": [
+          "www.nejm.org",
+          "nejm.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/doi/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1056/nejmoa1410689",
+          "role": "research-old",
+          "status": 403,
+          "final_url": "https://www.nejm.org/doi/10.1056/NEJMoa1410689",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1056/nejmc2517516",
+          "role": "research-recent",
+          "status": 403,
+          "final_url": "https://www.nejm.org/doi/10.1056/NEJMc2517516",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1056/nejm199901143400213",
+          "role": "notice",
+          "status": 403,
+          "final_url": "https://www.nejm.org/doi/abs/10.1056/NEJM199901143400213",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1056/nejmp2611049",
+          "role": "type:Perspective",
+          "status": 403,
+          "final_url": "https://www.nejm.org/doi/10.1056/NEJMp2611049",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "lancet": {
+      "change": {},
+      "why": "DOIs land on linkinghub.elsevier.com; thelancet.com pages redirect to a login callback and answer 403; type_field stays null.",
+      "proposed": {
+        "id": "lancet",
+        "name": "The Lancet",
+        "hosts": [
+          "www.thelancet.com",
+          "thelancet.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/journals/",
+          "/doi/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1016/s0140-6736(17)32282-1",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0140673617322821",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1016/s0140-6736(24)01180-2",
+          "role": "research-recent",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0140673624011802",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1016/s0140-6736(23)01175-3",
+          "role": "notice",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0140673623011753",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1016/s0140-6736(26)02160-4",
+          "role": "type:Comment",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0140673626021604",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1016/s0140-6736(26)02401-3",
+          "role": "type:World Report",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0140673626024013",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1016/s0140-6736(26)02096-9",
+          "role": "type:Articles",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0140673626020969",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1016/s0140-6736(26)02407-4",
+          "role": "type:Editorial",
+          "status": 200,
+          "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0140673626024074",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)32282-1/fulltext",
+          "role": "direct",
+          "status": 403,
+          "final_url": "https://www.thelancet.com/callback?red_uri=%2Fjournals%2Flancet%2Farticle%2FPIIS0140-6736%2817%2932282-1%2Ffulltext&code=_71-TUs4ItwhyjUZsDnkxfpCewxP8EA3l19ApRlY&state=20525674506",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "acs": {
+      "change": {},
+      "why": "403 with cf-mitigated: challenge (as K1c found for the feeds); type_field stays null.",
+      "proposed": {
+        "id": "acs",
+        "name": "American Chemical Society journals",
+        "hosts": [
+          "pubs.acs.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/doi/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1021/jacs.5b04403",
+          "role": "research-old",
+          "status": 403,
+          "final_url": "https://pubs.acs.org/doi/10.1021/jacs.5b04403",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1021/jacs.4c16426",
+          "role": "research-recent",
+          "status": 403,
+          "final_url": "https://pubs.acs.org/doi/10.1021/jacs.4c16426",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1021/ja201074e",
+          "role": "notice",
+          "status": 403,
+          "final_url": "https://pubs.acs.org/doi/10.1021/ja201074e",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "aea": {
+      "change": {
+        "hosts": [
+          [
+            "www.aeaweb.org",
+            "aeaweb.org"
+          ],
+          [
+            "www.aeaweb.org",
+            "aeaweb.org",
+            "pubs.aeaweb.org"
+          ]
+        ],
+        "paths": [
+          [
+            "/articles",
+            "/journals/"
+          ],
+          [
+            "/articles",
+            "/journals/",
+            "/doi/"
+          ]
+        ]
+      },
+      "why": "DOIs land on pubs.aeaweb.org/doi/..., which the entry did not list; 403 to a plain GET.",
+      "proposed": {
+        "id": "aea",
+        "name": "American Economic Association journals",
+        "hosts": [
+          "www.aeaweb.org",
+          "aeaweb.org",
+          "pubs.aeaweb.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/articles",
+          "/journals/",
+          "/doi/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1257/app.20140468",
+          "role": "research-old",
+          "status": 403,
+          "final_url": "https://pubs.aeaweb.org/doi/10.1257/app.20140468",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1257/aer.20231087",
+          "role": "research-recent",
+          "status": 403,
+          "final_url": "https://pubs.aeaweb.org/doi/10.1257/aer.20231087",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1257/aer.113.7.2053",
+          "role": "notice",
+          "status": 403,
+          "final_url": "https://pubs.aeaweb.org/doi/10.1257/aer.113.7.2053",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "project-euclid": {
+      "change": {
+        "hosts": [
+          [
+            "projecteuclid.org"
+          ],
+          [
+            "projecteuclid.org",
+            "link.intlpress.com"
+          ]
+        ],
+        "paths": [
+          [
+            "/journals/",
+            "/euclid."
+          ],
+          [
+            "/journals/",
+            "/euclid.",
+            "/JDetail/"
+          ]
+        ]
+      },
+      "why": "Acta Mathematica DOIs (10.4310) land on link.intlpress.com/JDetail/..., 403; projecteuclid.org answers a bot page. Both unreadable.",
+      "proposed": {
+        "id": "project-euclid",
+        "name": "Project Euclid",
+        "hosts": [
+          "projecteuclid.org",
+          "link.intlpress.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/journals/",
+          "/euclid.",
+          "/JDetail/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.4310/sdg.2017.v22.n1.a9",
+          "role": "research-old",
+          "status": 403,
+          "final_url": "https://link.intlpress.com/JDetail/1806225059188498433",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.4310/cms.241217212038",
+          "role": "research-recent",
+          "status": 403,
+          "final_url": "https://link.intlpress.com/JDetail/1869010089666473985",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "cambridge-core": {
+      "change": {},
+      "why": "readable; DOIs land on www.cambridge.org/core/journals/...; no type in a meta tag or label (only a link to \"Article type definitions\"), so type_field stays null.",
+      "proposed": {
+        "id": "cambridge-core",
+        "name": "Cambridge Core",
+        "hosts": [
+          "www.cambridge.org",
+          "cambridge.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/core/journals/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1017/jmo.2015.33",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://www.cambridge.org/core/journals/journal-of-management-and-organization/article/abs/no-longer-take-a-tree-for-the-forest-a-crosslevel-learningrelated-perspective-on-individual-innovative-behavior/E8215229752CD6C6A0ABB97F9864C000",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1017/s002221512510248x",
+          "role": "research-recent",
+          "status": 200,
+          "final_url": "https://www.cambridge.org/core/journals/journal-of-laryngology-and-otology/article/scapular-tip-free-flap-reconstruction-of-complex-midface-defects-using-electromagnetic-navigation/C97D957AFEB7680DFBEB868A097EDAB1",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1017/jfm.2026.11529",
+          "role": "notice",
+          "status": 200,
+          "final_url": "https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/dynamic-equilibrium-of-electrochemical-bubbles-growing-on-microelectrodes-retraction/BDBE092B670EF7A823A85E4E4A72926A",
+          "readable": true,
+          "block": null,
+          "types": {}
+        }
+      ]
+    },
+    "oxford-academic": {
+      "change": {},
+      "why": "403 to every plain GET.",
+      "proposed": {
+        "id": "oxford-academic",
+        "name": "Oxford Academic",
+        "hosts": [
+          "academic.oup.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1093/fmls/cqx035",
+          "role": "research-old",
+          "status": 403,
+          "final_url": "https://academic.oup.com/fmls/article/53/4/463/4158207/Writing-the-Ineffable-Postwar-Female-Employment",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1093/toxsci/kfaf114",
+          "role": "research-recent",
+          "status": 403,
+          "final_url": "https://academic.oup.com/toxsci/article/208/1/122/8231082",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1093/jge/gxz117",
+          "role": "notice",
+          "status": 403,
+          "final_url": "https://academic.oup.com/jge/advance-article/doi/10.1093/jge/gxz117/5710618",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "taylor-francis": {
+      "change": {},
+      "why": "403; one 10.1080 DOI (a journal that moved) lands on academic.oup.com.",
+      "proposed": {
+        "id": "taylor-francis",
+        "name": "Taylor & Francis Online",
+        "hosts": [
+          "www.tandfonline.com",
+          "tandfonline.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/doi/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1080/09168451.2015.1104240",
+          "role": "research-old",
+          "status": 403,
+          "final_url": "https://academic.oup.com/bbb/article/80/3/432/5939092",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1080/09592318.2026.2704772",
+          "role": "research-recent",
+          "status": 403,
+          "final_url": "https://www.tandfonline.com/doi/full/10.1080/09592318.2026.2704772",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1080/14767058.2024.2381755",
+          "role": "notice",
+          "status": 403,
+          "final_url": "https://www.tandfonline.com/doi/full/10.1080/14767058.2024.2381755",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "de-gruyter": {
+      "change": {},
+      "why": "DOIs land on www.degruyterbrill.com/document/doi/... (through www.degruyter.com), which answers 202 with an AWS WAF challenge.",
+      "proposed": {
+        "id": "de-gruyter",
+        "name": "De Gruyter",
+        "hosts": [
+          "www.degruyter.com",
+          "degruyter.com",
+          "www.degruyterbrill.com",
+          "degruyterbrill.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/document/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1515/jjzg-2016-0028",
+          "role": "research-old",
+          "status": 202,
+          "final_url": "https://www.degruyterbrill.com/document/doi/10.1515/jjzg-2016-0028/html",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1515/mgzs-2026-0023",
+          "role": "research-recent",
+          "status": 202,
+          "final_url": "https://www.degruyterbrill.com/document/doi/10.1515/mgzs-2026-0023/html",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1515/9783486820225-004",
+          "role": "notice",
+          "status": 202,
+          "final_url": "https://www.degruyterbrill.com/document/doi/10.1515/9783486820225-004/html",
+          "readable": false,
+          "block": null,
+          "types": {}
+        }
+      ]
+    },
+    "brill": {
+      "change": {},
+      "why": "brill.com/view/journals/... answers 403 (CloudFront).",
+      "proposed": {
+        "id": "brill",
+        "name": "Brill",
+        "hosts": [
+          "brill.com",
+          "www.brill.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/view/journals/",
+          "/downloadpdf/journals/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1163/15700666-12340106",
+          "role": "research-old",
+          "status": 403,
+          "final_url": "https://brill.com/view/journals/jra/47/2/article-p289_289.xml",
+          "readable": false,
+          "block": "403",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1163/27726606-bja00015",
+          "role": "research-recent",
+          "status": 403,
+          "final_url": "https://brill.com/view/journals/jct/11/2/article-p98_3.xml",
+          "readable": false,
+          "block": "403",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1163/15685349-12341340a",
+          "role": "notice",
+          "status": 403,
+          "final_url": "https://brill.com/view/journals/viv/58/4/article-p254_2.xml",
+          "readable": false,
+          "block": "403",
+          "types": {}
+        }
+      ]
+    },
+    "sage": {
+      "change": {},
+      "why": "403.",
+      "proposed": {
+        "id": "sage",
+        "name": "SAGE Journals",
+        "hosts": [
+          "journals.sagepub.com"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/doi/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1177/1032373216668183",
+          "role": "research-old",
+          "status": 403,
+          "final_url": "https://journals.sagepub.com/doi/10.1177/1032373216668183",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1177/08919887251360261",
+          "role": "research-recent",
+          "status": 403,
+          "final_url": "https://journals.sagepub.com/doi/10.1177/08919887251360261",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1177/1550147718759172",
+          "role": "notice",
+          "status": 403,
+          "final_url": "https://journals.sagepub.com/doi/10.1177/1550147718759172",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "project-muse": {
+      "change": {},
+      "why": "every DOI redirects to muse.jhu.edu/verify, a bot check, so a doi.org URL's landing is /verify, which no path admits: a MUSE DOI then fails the type check. Cite the muse.jhu.edu/article/ URL instead, or an open copy.",
+      "proposed": {
+        "id": "project-muse",
+        "name": "Project MUSE",
+        "hosts": [
+          "muse.jhu.edu"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/article/",
+          "/pub/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.1353/jqr.2016.0024",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://muse.jhu.edu/verify?url=%2Farticle%2F630221&r=1383410",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1353/jod.2026.a977944",
+          "role": "research-recent",
+          "status": 200,
+          "final_url": "https://muse.jhu.edu/verify?url=%2Farticle%2F977944&r=5204953",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1353/ncf.2024.a941902",
+          "role": "notice",
+          "status": 200,
+          "final_url": "https://muse.jhu.edu/verify?url=%2Farticle%2F941902&r=9146873",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "jstor": {
+      "change": {},
+      "why": "www.jstor.org/stable/... answers a \"Client Challenge\" page; some 10.2307 DOIs land on scholarlypublishingcollective.org (403).",
+      "new_entry_note": "scholarlypublishingcollective.org (Penn State University Press journals on Silverchair, such as Bulletin for Biblical Research) could get its own entry, kinds paper and notice, paths /, type_field null.",
+      "proposed": {
+        "id": "jstor",
+        "name": "JSTOR",
+        "hosts": [
+          "www.jstor.org",
+          "jstor.org"
+        ],
+        "kinds": [
+          "paper",
+          "notice"
+        ],
+        "paths": [
+          "/stable/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.2307/26371653",
+          "role": "research-old",
+          "status": 403,
+          "final_url": "https://scholarlypublishingcollective.org/biblical-research/article/26/2/249/253978/The-Priestly-Blessing-in-Inscription-and-Scripture",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.2307/48857613",
+          "role": "research-recent",
+          "status": 200,
+          "final_url": "https://www.jstor.org/stable/10.2307/48857613",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.2307/3579599",
+          "role": "notice",
+          "status": 200,
+          "final_url": "https://www.jstor.org/stable/3579599?origin=crossref",
+          "readable": false,
+          "block": null,
+          "types": {}
+        }
+      ]
+    },
+    "arxiv": {
+      "change": {},
+      "why": "readable; 10.48550 DOIs land on /abs/; no type (preprint).",
+      "proposed": {
+        "id": "arxiv",
+        "name": "arXiv",
+        "hosts": [
+          "arxiv.org",
+          "www.arxiv.org"
+        ],
+        "kinds": [
+          "preprint"
+        ],
+        "paths": [
+          "/abs/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://arxiv.org/abs/2611.34933",
+          "role": "abs",
+          "status": 200,
+          "final_url": "https://arxiv.org/abs/2611.34933",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.48550/arXiv.2611.34933",
+          "role": "doi",
+          "status": 200,
+          "final_url": "https://arxiv.org/abs/2611.34933",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://arxiv.org/abs/1512.03385",
+          "role": "old-abs",
+          "status": 200,
+          "final_url": "https://arxiv.org/abs/1512.03385",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://arxiv.org/html/2611.34933v1",
+          "role": "html",
+          "status": 200,
+          "final_url": "https://arxiv.org/html/2611.34933v1",
+          "readable": true,
+          "block": null,
+          "types": {}
+        }
+      ]
+    },
+    "biorxiv": {
+      "change": {
+        "paths": [
+          [
+            "/content/10.1101/"
+          ],
+          [
+            "/content/10.1101/",
+            "/content/10.64898/"
+          ]
+        ]
+      },
+      "why": "new DOIs 10.64898/... land on www.biorxiv.org/content/10.64898/...v1; old ones on /content/10.1101/; both readable.",
+      "proposed": {
+        "id": "biorxiv",
+        "name": "bioRxiv",
+        "hosts": [
+          "www.biorxiv.org",
+          "biorxiv.org"
+        ],
+        "kinds": [
+          "preprint"
+        ],
+        "paths": [
+          "/content/10.1101/",
+          "/content/10.64898/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.64898/2026.07.23.740341",
+          "role": "new-doi",
+          "status": 200,
+          "final_url": "https://www.biorxiv.org/content/10.64898/2026.07.23.740341v1",
+          "readable": true,
+          "block": null,
+          "types": {
+            "citation_article_type": "Article"
+          }
+        },
+        {
+          "asked": "https://doi.org/10.1101/2020.03.22.002386",
+          "role": "old-doi",
+          "status": 200,
+          "final_url": "https://www.biorxiv.org/content/10.1101/2020.03.22.002386v3",
+          "readable": true,
+          "block": null,
+          "types": {
+            "citation_article_type": "Article"
+          }
+        },
+        {
+          "asked": "https://www.biorxiv.org/content/10.1101/2020.03.22.002386v3.full",
+          "role": "full",
+          "status": 200,
+          "final_url": "https://www.biorxiv.org/content/10.1101/2020.03.22.002386v3.full",
+          "readable": true,
+          "block": null,
+          "types": {
+            "citation_article_type": "Article"
+          }
+        }
+      ]
+    },
+    "medrxiv": {
+      "change": {
+        "paths": [
+          [
+            "/content/10.1101/"
+          ],
+          [
+            "/content/10.1101/",
+            "/content/10.64898/"
+          ]
+        ]
+      },
+      "why": "as bioRxiv.",
+      "proposed": {
+        "id": "medrxiv",
+        "name": "medRxiv",
+        "hosts": [
+          "www.medrxiv.org",
+          "medrxiv.org"
+        ],
+        "kinds": [
+          "preprint"
+        ],
+        "paths": [
+          "/content/10.1101/",
+          "/content/10.64898/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.64898/2026.07.20.26354798",
+          "role": "new-doi",
+          "status": 200,
+          "final_url": "https://www.medrxiv.org/content/10.64898/2026.07.20.26354798v4",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.1101/2020.02.20.20025841",
+          "role": "old-doi",
+          "status": 200,
+          "final_url": "https://www.medrxiv.org/content/10.1101/2020.02.20.20025841v1",
+          "readable": true,
+          "block": null,
+          "types": {
+            "citation_article_type": "Article"
+          }
+        }
+      ]
+    },
+    "ssrn": {
+      "change": {},
+      "why": "papers.ssrn.com/sol3/papers.cfm answers 403 \"Content Blocked\" (Cloudflare).",
+      "proposed": {
+        "id": "ssrn",
+        "name": "SSRN",
+        "hosts": [
+          "papers.ssrn.com",
+          "ssrn.com",
+          "www.ssrn.com"
+        ],
+        "kinds": [
+          "preprint"
+        ],
+        "paths": [
+          "/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.2139/ssrn.2990810",
+          "role": "research-old",
+          "status": 403,
+          "final_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2990810",
+          "readable": false,
+          "block": "403",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.2139/ssrn.5184785",
+          "role": "research-recent",
+          "status": 403,
+          "final_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5184785",
+          "readable": false,
+          "block": "403",
+          "types": {}
+        }
+      ]
+    },
+    "osf-preprints": {
+      "change": {
+        "paths": [
+          [
+            "/preprints/"
+          ],
+          [
+            "/preprints/",
+            "/"
+          ]
+        ]
+      },
+      "why": "DOIs now land on osf.io/<id>_v1 (no /preprints/ prefix), a JavaScript page with no content to a plain GET. With /preprints/ alone every OSF DOI fails the URL test. \"/\" admits every OSF page as a preprint, which is broader; the alternative is to drop OSF.",
+      "proposed": {
+        "id": "osf-preprints",
+        "name": "OSF Preprints",
+        "hosts": [
+          "osf.io"
+        ],
+        "kinds": [
+          "preprint"
+        ],
+        "paths": [
+          "/preprints/",
+          "/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.31219/osf.io/bxfzp_v1",
+          "role": "research-old",
+          "status": 200,
+          "final_url": "https://osf.io/bxfzp_v1",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.31219/osf.io/b3ge7_v2",
+          "role": "research-recent",
+          "status": 200,
+          "final_url": "https://osf.io/b3ge7_v2",
+          "readable": false,
+          "block": null,
+          "types": {}
+        }
+      ]
+    },
+    "chemrxiv": {
+      "change": {},
+      "why": "chemrxiv.org/doi/full/10.26434/... answers 403 (Cloudflare).",
+      "proposed": {
+        "id": "chemrxiv",
+        "name": "ChemRxiv",
+        "hosts": [
+          "chemrxiv.org",
+          "www.chemrxiv.org"
+        ],
+        "kinds": [
+          "preprint"
+        ],
+        "paths": [
+          "/"
+        ],
+        "deny_paths": [],
+        "reaction_paths": [],
+        "type_field": null,
+        "types": {}
+      },
+      "evidence": [
+        {
+          "asked": "https://doi.org/10.26434/chemrxiv.5663623.v1",
+          "role": "research-old",
+          "status": 403,
+          "final_url": "https://chemrxiv.org/doi/full/10.26434/chemrxiv.5663623.v1",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://doi.org/10.26434/chemrxiv-2025-cg32t",
+          "role": "research-recent",
+          "status": 403,
+          "final_url": "https://chemrxiv.org/doi/full/10.26434/chemrxiv-2025-cg32t",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    }
+  },
+  "new_publishers": [
+    {
+      "id": "aps-physics",
+      "name": "Physics (APS magazine)",
+      "hosts": [
+        "physics.aps.org"
+      ],
+      "kinds": [],
+      "paths": [],
+      "deny_paths": [],
+      "reaction_paths": [
+        "/articles/"
+      ],
+      "type_field": ".article-type",
+      "types": {
+        "reaction": [
+          "Viewpoint"
+        ]
+      },
+      "note": "Physics Viewpoints are commentary by named scientists on PRL papers; the page shows \".article-type\" = Viewpoint; Synopsis and Focus pieces (news) fit none. Optional."
+    },
+    {
+      "id": "elsevier-linkinghub",
+      "name": "Elsevier article links (Cell Press, ScienceDirect, The Lancet)",
+      "hosts": [
+        "linkinghub.elsevier.com"
+      ],
+      "kinds": [
+        "paper",
+        "notice"
+      ],
+      "paths": [
+        "/retrieve/pii/"
+      ],
+      "deny_paths": [],
+      "reaction_paths": [],
+      "type_field": null,
+      "types": {},
+      "note": "every Elsevier DOI lands here (a 200 page that moves on by a meta refresh, which the snapshot does not follow), so a doi.org URL's landing must pass the URL test here; the pii covers news as well as research (Lancet World Report, Editorial), so the URL alone cannot tell them apart"
+    }
+  ],
+  "resolvers": {
+    "doi": {
+      "change": {},
+      "why": "unchanged"
+    },
+    "pubmed": {
+      "change": {},
+      "why": "pubmed.ncbi.nlm.nih.gov now answers 203 with a cookie and JavaScript check page to a plain GET, so a record page shows no type: type_field stays null. PubMed's pubtype comes from E-utilities esummary (JSON pubtype, e.g. [\"Journal Article\"]); proposing that the snapshot step read a cited PubMed URL's types from esummary by its PMID, within the pubmed feed's 3-a-second limit. refused_pubtypes News, Newspaper Article, Editorial, Comment, Interview are PubMed publication types as written.",
+      "evidence": [
+        {
+          "asked": "https://pubmed.ncbi.nlm.nih.gov/43102937/",
+          "role": "record",
+          "status": 203,
+          "final_url": "https://pubmed.ncbi.nlm.nih.gov/43102937/",
+          "readable": false,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://pubmed.ncbi.nlm.nih.gov/26819042/",
+          "role": "record-news",
+          "status": 203,
+          "final_url": "https://pubmed.ncbi.nlm.nih.gov/26819042/",
+          "readable": false,
+          "block": null,
+          "types": {}
+        }
+      ]
+    },
+    "pmc": {
+      "change": {},
+      "why": "pmc.ncbi.nlm.nih.gov/articles/PMCn/ is readable, and www.ncbi.nlm.nih.gov/pmc/articles/PMCn/ redirects to it (301). The page shows no article type in any meta tag or label (only ncbi_type fulltext), so type_field stays null and, by SPEC 4.11, a cited PMC URL then always fails the type check. E-utilities efetch db=pmc returns the JATS <article article-type=\"research-article\">; proposing that the snapshot read it there. JATS article-type values: research-article, review-article, brief-report, case-report, letter, editorial, news, article-commentary, interview, book-review, correction, retraction, expression-of-concern; the seed refused list (news, editorial, article-commentary, interview) uses exactly those names.",
+      "evidence": [
+        {
+          "asked": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6013451/",
+          "role": "new",
+          "status": 200,
+          "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6013451/",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6013451/",
+          "role": "legacy",
+          "status": 200,
+          "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6013451/",
+          "readable": true,
+          "block": null,
+          "types": {}
+        }
+      ]
+    },
+    "pmc-legacy": {
+      "change": {},
+      "why": "redirects to pmc.ncbi.nlm.nih.gov"
+    }
+  },
+  "deny_doi_prefixes": {
+    "proposed": [
+      "10.1038/scientificamerican",
+      "10.1021/cen-",
+      "10.1063/pt.",
+      "10.1038/nature.20"
+    ],
+    "dropped": [
+      "10.1056/nejm-jw."
+    ],
+    "checks": {
+      "10.1038/scientificamerican": {
+        "container": "Scientific American",
+        "sampled_in_container": 40,
+        "of_them_with_prefix": 40,
+        "examples": [
+          "10.1038/scientificamerican0815-72",
+          "10.1038/scientificamerican06011850-292f",
+          "10.1038/scientificamerican02211880-3442asupp"
+        ],
+        "container_dois_without_prefix": [],
+        "prefix_dois_in_other_containers": []
+      },
+      "10.1021/cen-": {
+        "container": "Chemical & Engineering News",
+        "sampled_in_container": 0,
+        "of_them_with_prefix": 0,
+        "examples": [],
+        "container_dois_without_prefix": [],
+        "prefix_dois_in_other_containers": [
+          "10.1021/cen-v088n039.p050 (Chemical &amp; Engineering News)",
+          "10.1021/cen-v088n039.p068 (Chemical &amp; Engineering News)",
+          "10.1021/cen-v088n039.p015 (Chemical &amp; Engineering News)"
+        ]
+      },
+      "10.1063/pt.": {
+        "container": "Physics Today",
+        "sampled_in_container": 40,
+        "of_them_with_prefix": 25,
+        "examples": [
+          "10.1063/pt.3.5157",
+          "10.1063/pt.fspd.veje",
+          "10.1063/pt.jnrr.hqgg"
+        ],
+        "container_dois_without_prefix": [
+          "10.1063/1.881118",
+          "10.1063/1.2970221",
+          "10.1063/1.2916240"
+        ],
+        "prefix_dois_in_other_containers": []
+      },
+      "10.1056/nejm-jw.": {
+        "container": "NEJM Journal Watch",
+        "sampled_in_container": 0,
+        "of_them_with_prefix": 0,
+        "examples": [],
+        "container_dois_without_prefix": [],
+        "prefix_dois_in_other_containers": []
+      },
+      "10.1038/nature.2": {
+        "container": "Nature",
+        "sampled_in_container": 40,
+        "of_them_with_prefix": 0,
+        "examples": [],
+        "container_dois_without_prefix": [
+          "10.1038/2231076a0",
+          "10.1038/159444b0",
+          "10.1038/116785b0"
+        ],
+        "prefix_dois_in_other_containers": []
+      }
+    },
+    "notes": {
+      "10.1038/scientificamerican": "confirmed: 40 of 40 Scientific American works sampled have it",
+      "10.1021/cen-": "confirmed: C&EN works are 10.1021/cen-v088n039.p050 and the like (Crossref writes the title \"Chemical &amp; Engineering News\")",
+      "10.1063/pt.": "confirmed for Physics Today from about 2017 (10.1063/pt.3.5157, 10.1063/pt.jnrr.hqgg); older Physics Today items use 10.1063/1.NNNN, a prefix shared with AIP research journals, which cannot be listed",
+      "10.1056/nejm-jw.": "not confirmed: Crossref holds no NEJM Journal Watch work under 10.1056 by title search; drop it",
+      "10.1038/nature.20": "new: Nature's old news ids, 10.1038/nature.2015.NNNNN to nature.2019.NNNNN (10.1038/nature.2016.19411 is dc.type News); no research DOI has a dot after \"nature\"",
+      "10.1038/d41586-": "not news-only, confirmed: News And Views and Comment pages are under it"
+    }
+  },
+  "registries": {
+    "github": {
+      "proposed_change": "add a deny_hosts (or exact-host) list to registry entries: docs.github.com (documentation, readable 200) holds no records; gist.github.com, api.github.com and codeload.github.com are already refused by BLOCKED_HOSTS; *.github.io is a separate domain (leanprover-community.github.io has its own entry)",
+      "evidence": [
+        {
+          "asked": "https://github.com/teorth/erdosproblems",
+          "role": "github",
+          "status": 200,
+          "final_url": "https://github.com/teorth/erdosproblems",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://docs.github.com/en/get-started",
+          "role": "docs.github",
+          "status": 200,
+          "final_url": "https://docs.github.com/en/get-started",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://gist.github.com/",
+          "role": "gist",
+          "status": 200,
+          "final_url": "https://gist.github.com/starred",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://api.github.com/",
+          "role": "api.github",
+          "status": 200,
+          "final_url": "https://api.github.com/",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://leanprover-community.github.io/mathlib4_docs/",
+          "role": "pages.github",
+          "status": 200,
+          "final_url": "https://leanprover-community.github.io/mathlib4_docs/",
+          "readable": false,
+          "block": null,
+          "types": {}
+        }
+      ]
+    },
+    "huggingface": {
+      "proposed_change": "deny_hosts discuss.huggingface.co (the forum); deny_paths /docs, /blog, /learn, /posts, /papers on huggingface.co (pages, not records); records are /datasets/<org>/<name>, /<org>/<model> and /spaces/",
+      "evidence": [
+        {
+          "asked": "https://huggingface.co/datasets/allenai/c4",
+          "role": "hf",
+          "status": 200,
+          "final_url": "https://huggingface.co/datasets/allenai/c4",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://discuss.huggingface.co/",
+          "role": "discuss.hf",
+          "status": 200,
+          "final_url": "https://discuss.huggingface.co/",
+          "readable": true,
+          "block": null,
+          "types": {}
+        },
+        {
+          "asked": "https://huggingface.co/docs",
+          "role": "hf.docs",
+          "status": 200,
+          "final_url": "https://huggingface.co/docs",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        },
+        {
+          "asked": "https://huggingface.co/blog",
+          "role": "hf.blog",
+          "status": 200,
+          "final_url": "https://huggingface.co/blog",
+          "readable": false,
+          "block": "block page",
+          "types": {}
+        }
+      ]
+    },
+    "note": "GitHub and Hugging Face pages contain the word \"captcha\" in their scripts; they are real pages (17 to 42 KB of text), not blocks"
+  },
+  "figure_hosts": {
+    "found": {
+      "media.springernature.com": "Nature research, Scientific Reports, Springer",
+      "media.nature.com": "Nature Comment pages (new: not seeded)",
+      "cdn.journals.aps.org": "APS journal pages (new)",
+      "physics.aps.org": "APS Physics Viewpoints (new)",
+      "journals.plos.org": "PLOS",
+      "static.cambridge.org": "Cambridge Core (new)",
+      "cdn.ncbi.nlm.nih.gov": "PMC article figures",
+      "www.biorxiv.org": "bioRxiv full text (.full)",
+      "cdn.rcsb.org": "RCSB structure images (also files.rcsb.org)"
+    },
+    "seeded_but_not_seen": {
+      "www.science.org": "blocked: not checkable",
+      "www.cell.com": "blocked: not checkable",
+      "www.pnas.org": "blocked: not checkable",
+      "arxiv.org": "abstract pages have no figures; the HTML version of the sampled paper had none either",
+      "www.ncbi.nlm.nih.gov": "serves none now: PMC pages moved to pmc.ncbi.nlm.nih.gov and their figures are on cdn.ncbi.nlm.nih.gov; drop it",
+      "pmc.ncbi.nlm.nih.gov": "the page host; its figures are on cdn.ncbi.nlm.nih.gov",
+      "www.medrxiv.org": "not checked on a full-text page (bioRxiv's were on www.biorxiv.org)",
+      "iiif.elifesciences.org": "blocked: not checkable"
+    },
+    "proposed": [
+      "media.springernature.com",
+      "media.nature.com",
+      "cdn.journals.aps.org",
+      "physics.aps.org",
+      "journals.plos.org",
+      "static.cambridge.org",
+      "cdn.ncbi.nlm.nih.gov",
+      "www.biorxiv.org",
+      "www.medrxiv.org",
+      "arxiv.org",
+      "cdn.rcsb.org",
+      "www.science.org",
+      "www.cell.com",
+      "www.pnas.org",
+      "iiif.elifesciences.org"
+    ]
+  },
+  "open_copies": {
+    "rule": "for a publisher whose pages refuse a plain GET, the snapshot (and so NUMBER_SOURCED and the quotes) needs another readable copy of the same paper",
+    "by_publisher": {
+      "science": "PMC author manuscripts (NIH-funded, after 6 to 12 months), the arXiv or bioRxiv preprint, or the doi.org landing record (Crossref metadata)",
+      "cell-press": "PMC (Cell Press deposits many), the bioRxiv preprint",
+      "pnas": "PMC (PNAS deposits every paper after 6 months; open-access ones at once)",
+      "nejm": "PMC for NIH-funded trials, ClinicalTrials.gov results",
+      "lancet": "PMC for open-access papers",
+      "sciencedirect": "PMC, the preprint",
+      "wiley": "PMC, the preprint",
+      "acs": "ChemRxiv is blocked too; PMC for biomedical ACS papers",
+      "elife": "PMC (eLife deposits every paper) and the bioRxiv preprint (eLife reviews preprints)",
+      "aea": "the NBER or author working paper (www.nber.org, an author page under .edu)",
+      "project-euclid": "the arXiv preprint (most Acta and Annals papers have one)",
+      "oxford-academic": "PMC for biomedical journals",
+      "taylor-francis": "PMC, author repositories",
+      "de-gruyter": "none general",
+      "brill": "none general",
+      "sage": "PMC for biomedical journals",
+      "project-muse": "none general",
+      "jstor": "none general",
+      "ssrn": "none (SSRN is itself the preprint)",
+      "chemrxiv": "none (the ChemRxiv preprint is itself blocked)",
+      "osf-preprints": "OSF serves a JavaScript page; the OSF API (api.osf.io) or the file download would be the readable copy"
+    }
+  }
+}
