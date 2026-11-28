@@ -292,6 +292,14 @@ export function injectionLike(text: string): boolean {
 }
 
 /**
+ * The text as sanitize() leaves it, before the cut (steps 1 to 6 of sanitize(), none of step 7): for a test that must see all of a long
+ * abstract, which `sanitize()` would cut at 1,000 characters (collect's AI-phrase match, SPEC §8.3).
+ */
+export function sanitizeUncut(text: string): string {
+  return clean(text);
+}
+
+/**
  * sanitize() plus its flag, for collect: the flag is read on the cleaned text before the cut, so an
  * instruction past the cut still marks the item.
  */

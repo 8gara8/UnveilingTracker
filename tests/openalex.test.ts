@@ -802,8 +802,10 @@ describe("a week", () => {
     expect(inputs[1]).toEqual({
       request: "leading_ai", week_start: MONDAY, url: urlOf(MONDAY, "leading_ai"), fetched_at: "2026-11-28T09:00:00+08:00", sha256: sha256(bodies.get("leading_ai")!),
       counts: { mathematics: 4, physics: 5, chemistry: 0, biology: 10, earth: 0, social: 0, humanities: 0 }, excluded_n: 1, unmapped_n: 1,
+      ungrouped_n: w.answers.leading_ai.ungrouped_n,
     });
-    expect(Object.keys(inputs[1]!)).toEqual(["request", "week_start", "url", "fetched_at", "sha256", "counts", "excluded_n", "unmapped_n"]);
+    expect(Object.keys(inputs[1]!)).toEqual(["request", "week_start", "url", "fetched_at", "sha256", "counts", "excluded_n", "unmapped_n", "ungrouped_n"]);
+    expect(inputs.map((r) => r.ungrouped_n)).toEqual(OPENALEX_REQUESTS.map((k) => w.answers[k].ungrouped_n));
     for (const r of inputs) expect(OpenAlexRequest.parse(r)).toEqual(r);
     expect(inputsRecord(w.answers.all_ai)).toEqual(inputs[3]);
     expect(inputs.map((r) => [r.excluded_n, r.unmapped_n])).toEqual([[3, 2], [1, 1], [30, 20], [2, 1]]);

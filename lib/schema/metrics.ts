@@ -234,6 +234,7 @@ export const OpenAlexRequest = z.strictObject({
   counts: z.record(FieldId, Count).describe("The works counted for each of our fields"),
   excluded_n: Count.describe("Works in groups that fields.json excludes"),
   unmapped_n: Count.describe("Works in groups that fields.json does not list"),
+  ungrouped_n: Count.nullable().optional().describe("Works the filter matches that no group holds, because they have no primary topic (SPEC §5.4); null when the answer gave no total, absent in a record written before the field was kept"),
 });
 
 export const CounterInput = z.strictObject({

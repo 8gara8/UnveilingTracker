@@ -387,7 +387,7 @@ export interface GroupByAnswer {
   sha256: string;
   /** The works the filter matches (`meta.count`), to check that the groups add up to it; null when the answer has none. */
   total: number | null;
-  /** Works that `total` counts and no group does: the works with no primary topic, when `total` is the ungrouped count (K1a, item 8); null when there is no total. The manifest has no place for it (a spec issue). */
+  /** Works that `total` counts and no group does: the works with no primary topic, when `total` is the ungrouped count (K1a, item 8); null when there is no total. The manifest keeps it (`OpenAlexRequest.ungrouped_n`, SPEC §4.7). */
   ungrouped_n: number | null;
   groups: Group[];
   counts: Record<FieldId, number>;
@@ -406,21 +406,35 @@ function answerOf(stored: StoredAnswer, request: OpenAlexRequestKind, weekStart:
   };
 }
 
-/** The answer to `ref` from the cache: the one whose body has `ref.sha256` when it is given (what `--recompute` asks for, from a manifest), else the newest. Null when there is none. */
+/**
+ * The answer to `ref` from the cache: the one whose body has `ref.sha256` and that was fetched at `ref.fetched_at` when they are given (what
+ * `--recompute` asks for, from a manifest: a later morning may have cached the same body again), else the newest. Null when there is none.
+ */
 export function readCachedAnswer(
   cacheDir: string,
   fields: ReadonlyMap<number, FieldId | null>,
-  ref: { request: OpenAlexRequestKind; week_start: IsoDate; url: string; sha256?: string },
+  ref: { request: OpenAlexRequestKind; week_start: IsoDate; url: string; sha256?: string; fetched_at?: string },
 ): GroupByAnswer | null {
-  const found = storedAnswers(cacheDir, ref.request, ref.week_start, ref.url).find((s) => ref.sha256 === undefined || s.sha256 === ref.sha256);
+  const found = storedAnswers(cacheDir, ref.request, ref.week_start, ref.url).find(
+    (s) => (ref.sha256 === undefined || s.sha256 === ref.sha256) && (ref.fetched_at === undefined || s.fetched_at === ref.fetched_at),
+  );
   return found ? answerOf(found, ref.request, ref.week_start, fields, true) : null;
+}
+
+/**
+ * The body of the cached answer `ref` names (its URL, its SHA-256 and the time it was fetched, all three, as the inputs manifest records them), exactly as
+ * received, for the saved reference answers (`scripts/lib/reference.ts`). Null when the cache holds no such answer, or a damaged one.
+ */
+export function readCachedBody(cacheDir: string, ref: { request: OpenAlexRequestKind; week_start: IsoDate; url: string; sha256: string; fetched_at: string }): string | null {
+  const found = storedAnswers(cacheDir, ref.request, ref.week_start, ref.url).find((s) => s.sha256 === ref.sha256 && s.fetched_at === ref.fetched_at);
+  return found ? found.body : null;
 }
 
 /** The manifest record of an answer (`content/metrics/inputs/D.json`, §4.7): its URL without any key, when, the SHA-256 and the counts used. */
 export function inputsRecord(a: GroupByAnswer): OpenAlexRequest {
   return OpenAlexRequest.parse({
     request: a.request, week_start: a.week_start, url: a.url, fetched_at: a.fetched_at, sha256: a.sha256,
-    counts: a.counts, excluded_n: a.excluded_n, unmapped_n: a.unmapped_n,
+    counts: a.counts, excluded_n: a.excluded_n, unmapped_n: a.unmapped_n, ungrouped_n: a.ungrouped_n,
   });
 }
 

@@ -14,6 +14,10 @@
     "schema:check": "tsx scripts/gen-json-schema.ts --check",
     "fixtures:gen": "tsx fixtures/src/build.ts",
     "fixtures:check": "tsx fixtures/src/build.ts --check",
+    "collect": "tsx scripts/collect.ts",
+    "sources:check": "tsx scripts/collect.ts --check-feeds",
+    "metrics": "tsx scripts/metrics.ts",
+    "backfill": "tsx scripts/backfill.ts",
     "ledger:seed": "tsx scripts/ledger-seed.ts",
     "chat": "tsx scripts/chat.ts",
     "check": "npm run typecheck && npm test && npm run schema:check && npm run fixtures:check && npm run validate:sample && npm run validate:all"

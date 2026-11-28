@@ -797,7 +797,13 @@ describe("RequestRecord, OpenAlexRequest, CounterInput and InputsManifest", () =
   it("OpenAlexRequest holds one of a week's four requests, with a count for each field", () => {
     expectValid(OpenAlexRequest, openalex());
     for (const kind of OPENALEX_REQUESTS) expectValid(OpenAlexRequest, { ...openalex(), request: kind });
-    expect(Object.keys(OpenAlexRequest.shape)).toEqual(["request", "week_start", "url", "fetched_at", "sha256", "counts", "excluded_n", "unmapped_n"]);
+    expect(Object.keys(OpenAlexRequest.shape)).toEqual(["request", "week_start", "url", "fetched_at", "sha256", "counts", "excluded_n", "unmapped_n", "ungrouped_n"]);
+    // The works with no primary topic (SPEC §4.7, §5.4): a count, null for an answer with no total, and absent in a record that never kept it.
+    expectValid(OpenAlexRequest, { ...openalex(), ungrouped_n: 133 });
+    expectValid(OpenAlexRequest, { ...openalex(), ungrouped_n: 0 });
+    expectValid(OpenAlexRequest, { ...openalex(), ungrouped_n: null });
+    expectMutationFails(OpenAlexRequest, { ...openalex(), ungrouped_n: 3 }, (r) => { r.ungrouped_n = -1; }, "ungrouped_n");
+    expectMutationFails(OpenAlexRequest, { ...openalex(), ungrouped_n: 3 }, (r) => { r.ungrouped_n = 1.5; }, "ungrouped_n");
     for (const key of Object.keys(openalex())) expectMutationFails(OpenAlexRequest, openalex(), (r) => delete r[key], key);
     expectMutationFails(OpenAlexRequest, openalex(), (r) => { r.request = "all_ai_papers"; }, "request");
     expectMutationFails(OpenAlexRequest, openalex(), (r) => { r.week_start = "2026-02-30"; }, "week_start");
