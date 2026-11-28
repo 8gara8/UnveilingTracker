@@ -1,0 +1,4903 @@
+{
+ "note": "Candidate sources of the Landmark Ledger (drafted from memory and partial search, not yet verified). Input for Kobol batch K2: URLs and titles only.",
+ "candidates": [
+  {
+   "field": "mathematics",
+   "slug": "unit-distance-conjecture-disproved",
+   "title": "AI model disproves Erdős's unit distance conjecture",
+   "first_published": "2026-05-20",
+   "subfield": "combinatorics",
+   "ai_role": "ai_solved",
+   "who": [
+    "OpenAI (internal reasoning model)",
+    "External checkers: Noga Alon, Thomas Bloom, Tim Gowers and six others",
+    "Will Sawin (explicit exponent)"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "kakeya-conjecture-three-dimensions",
+   "title": "Kakeya sets in three dimensions have full dimension",
+   "first_published": "2025-02-24",
+   "subfield": "analysis-probability",
+   "ai_role": "none",
+   "who": [
+    "Hong Wang (NYU and IHES)",
+    "Joshua Zahl (University of British Columbia, from memory)"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "sphere-packing-dimensions-8-and-24",
+   "title": "Sphere packing solved in dimensions 8 and 24",
+   "first_published": "2016-03",
+   "subfield": "geometry-topology",
+   "ai_role": "none",
+   "who": [
+    "Maryna Viazovska (dimension 8)",
+    "Henry Cohn, Abhinav Kumar, Stephen D. Miller, Danylo Radchenko and Maryna Viazovska (dimension 24)"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "polynomial-freiman-ruzsa-conjecture-proved",
+   "title": "Marton's conjecture on small doubling proved in characteristic 2",
+   "first_published": "2023-11",
+   "subfield": "combinatorics",
+   "ai_role": "none",
+   "who": [
+    "W. T. Gowers, Ben Green, Freddie Manners and Terence Tao",
+    "Lean formalisation team led by Tao with Yael Dillies, Bhavik Mehta and others"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "alphaproof-imo-2024-silver-level",
+   "title": "AlphaProof and AlphaGeometry 2 reach IMO silver-medal level",
+   "first_published": "2024-07-25",
+   "subfield": "formal-proof",
+   "ai_role": "ai_solved",
+   "who": [
+    "Google DeepMind"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "exponential-improvement-diagonal-ramsey-numbers",
+   "title": "First exponential improvement for diagonal Ramsey numbers since 1935",
+   "first_published": "2023-03",
+   "subfield": "combinatorics",
+   "ai_role": "none",
+   "who": [
+    "Marcelo Campos, Simon Griffiths, Robert Morris and Julian Sahasrabudhe"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "hodge-theory-matroids-rota-conjecture",
+   "title": "Hodge theory proves the Heron-Rota-Welsh conjecture for matroids",
+   "first_published": "2015-11",
+   "subfield": "combinatorics",
+   "ai_role": "none",
+   "who": [
+    "Karim Adiprasito, June Huh and Eric Katz"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "alphaevolve-matrix-multiplication-kissing-number",
+   "title": "AlphaEvolve finds 48-multiplication scheme for 4x4 complex matrices",
+   "first_published": "2025-05-14",
+   "subfield": "algebra",
+   "ai_role": "ai_solved",
+   "who": [
+    "Google DeepMind"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "liquid-tensor-experiment-lean-complete",
+   "title": "Lean finishes computer check of the liquid vector space theorem",
+   "first_published": "2022-07-14",
+   "subfield": "formal-proof",
+   "ai_role": "none",
+   "who": [
+    "Lean community team led by Johan Commelin",
+    "Peter Scholze and Dustin Clausen (original theorem)"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "alphatensor-matrix-multiplication-algorithms",
+   "title": "AlphaTensor finds faster matrix multiplication schemes for some sizes",
+   "first_published": "2022-10-05",
+   "subfield": "algebra",
+   "ai_role": "ai_solved",
+   "who": [
+    "Google DeepMind"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "erdos-1196-primitive-sets-ai-proof",
+   "title": "GPT-5.4 Pro proves Erdős problem 1196 on primitive sets",
+   "first_published": "2026-04",
+   "subfield": "number-theory",
+   "ai_role": "ai_solved",
+   "who": [
+    "Liam Price (prompter) with OpenAI's GPT-5.4 Pro",
+    "Write-up by Alexeev, Barreto, Li, Lichtman, Price, Shah, Tang and Tao"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "sensitivity-conjecture-proved-huang",
+   "title": "Sensitivity conjecture proved with a short matrix argument",
+   "first_published": "2019-07-01",
+   "subfield": "combinatorics",
+   "ai_role": "none",
+   "who": [
+    "Hao Huang"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "kelley-meka-three-term-progressions-bounds",
+   "title": "Kelley and Meka's strong bounds for three-term progressions",
+   "first_published": "2023-02-10",
+   "subfield": "number-theory",
+   "ai_role": "none",
+   "who": [
+    "Zander Kelley and Raghu Meka"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "gauss-lean-sphere-packing-formalisation",
+   "title": "AI completes Lean formalisation of sphere packing in dimensions 8 and 24",
+   "first_published": "2026-03",
+   "subfield": "formal-proof",
+   "ai_role": "ai_checked",
+   "who": [
+    "Math, Inc.",
+    "Sphere Packing Project maintainers (Hariharan, Birkbeck, Lee and others)",
+    "Maryna Viazovska"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "imo-2025-gold-level-ai",
+   "title": "Gemini Deep Think reaches gold-medal level at the 2025 IMO",
+   "first_published": "2025-07-21",
+   "subfield": "combinatorics",
+   "ai_role": "ai_solved",
+   "who": [
+    "Google DeepMind"
+   ]
+  },
+  {
+   "field": "mathematics",
+   "slug": "erdos-728-factorial-divisibility-ai-lean",
+   "title": "AI and Lean settle Erdős problem 728 on factorial divisibility",
+   "first_published": "2026-01",
+   "subfield": "number-theory",
+   "ai_role": "ai_solved",
+   "who": [
+    "Kevin Barreto with OpenAI's GPT-5.2 Pro and Harmonic's Aristotle",
+    "Write-up by Nat Sothanaphan"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "gw170817-neutron-star-merger-light",
+   "title": "Gravitational waves and light seen together from a neutron-star merger",
+   "first_published": "2017-10-16",
+   "subfield": "astronomy",
+   "ai_role": "none",
+   "who": [
+    "LIGO Scientific Collaboration and Virgo Collaboration",
+    "Optical follow-up teams (Swope, Las Cumbres Observatory, ePESSTO and others)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "pulsar-timing-gravitational-wave-background",
+   "title": "Four pulsar timing teams report a background of gravitational waves",
+   "first_published": "2023-06-28",
+   "subfield": "astronomy",
+   "ai_role": "none",
+   "who": [
+    "NANOGrav Collaboration",
+    "European Pulsar Timing Array with the Indian Pulsar Timing Array",
+    "Parkes Pulsar Timing Array",
+    "Chinese Pulsar Timing Array"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "jwst-confirms-galaxies-beyond-redshift-ten",
+   "title": "JWST spectra confirm very early galaxies at redshifts above 10",
+   "first_published": "2022-12-08",
+   "subfield": "astronomy",
+   "ai_role": "none",
+   "who": [
+    "JADES Collaboration (Univ. of Hertfordshire, Univ. of Cambridge, Univ. of Arizona and others)",
+    "CEERS team (NSF NOIRLab, Univ. of Texas at Austin and others)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "magic-angle-graphene-superconductivity",
+   "title": "Twisted bilayer graphene turns superconducting at a magic angle",
+   "first_published": "2018-03-05",
+   "subfield": "condensed-matter",
+   "ai_role": "none",
+   "who": [
+    "Massachusetts Institute of Technology (Jarillo-Herrero group)",
+    "Columbia University (Dean group, confirmation)",
+    "ICFO Barcelona (Efetov group, confirmation)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "loophole-free-bell-tests-2015",
+   "title": "Three teams close the loopholes in tests of Bell's theorem",
+   "first_published": "2015-08-24",
+   "subfield": "quantum",
+   "ai_role": "none",
+   "who": [
+    "Delft University of Technology (Hanson group)",
+    "University of Vienna (Zeilinger group)",
+    "National Institute of Standards and Technology (Boulder)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "macroscopic-drumheads-entangled-2021",
+   "title": "Two teams entangle pairs of vibrating drumheads",
+   "first_published": "2020-04-12",
+   "subfield": "quantum",
+   "ai_role": "none",
+   "who": [
+    "National Institute of Standards and Technology, Boulder (Teufel group)",
+    "Aalto University (Sillanpaa group)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "muon-g-2-fermilab-confirms-brookhaven",
+   "title": "Fermilab confirms the muon's magnetic moment is above the Standard Model value",
+   "first_published": "2021-04-07",
+   "subfield": "particles-nuclei",
+   "ai_role": "none",
+   "who": [
+    "Muon g-2 Collaboration (Fermilab)",
+    "Brookhaven E821 Collaboration (earlier measurement)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "weyl-semimetal-first-observed-taas",
+   "title": "Weyl fermions are observed for the first time in a crystal",
+   "first_published": "2015-02-12",
+   "subfield": "condensed-matter",
+   "ai_role": "none",
+   "who": [
+    "Princeton University (Hasan group)",
+    "Institute of Physics, Chinese Academy of Sciences (Ding and Weng, Fang groups)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "pauli-blocking-light-scattering-fermions",
+   "title": "Three teams see ultracold fermion gases turn more transparent",
+   "first_published": "2021-03-03",
+   "subfield": "atoms-optics",
+   "ai_role": "none",
+   "who": [
+    "JILA, NIST and University of Colorado Boulder (Ye group)",
+    "University of Otago (Kjaergaard group)",
+    "Massachusetts Institute of Technology (Ketterle group)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "gw150914-first-gravitational-waves",
+   "title": "LIGO detects gravitational waves from two merging black holes",
+   "first_published": "2016-02-11",
+   "subfield": "astronomy",
+   "ai_role": "none",
+   "who": [
+    "LIGO Scientific Collaboration and Virgo Collaboration"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "eht-m87-black-hole-shadow",
+   "title": "First image of a black hole's shadow, in galaxy M87",
+   "first_published": "2019-04-10",
+   "subfield": "astronomy",
+   "ai_role": "none",
+   "who": [
+    "Event Horizon Telescope Collaboration"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "h3s-superconductivity-203-kelvin",
+   "title": "Hydrogen sulfide superconducts at 203 kelvin under very high pressure",
+   "first_published": "2015-06-26",
+   "subfield": "condensed-matter",
+   "ai_role": "none",
+   "who": [
+    "Max Planck Institute for Chemistry, Mainz (Eremets group)",
+    "Jilin University (Cui group, independent magnetic evidence)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "dart-asteroid-orbit-changed",
+   "title": "A spacecraft crash changes an asteroid's orbit for the first time",
+   "first_published": "2023-03-01",
+   "subfield": "astronomy",
+   "ai_role": "none",
+   "who": [
+    "NASA and Johns Hopkins Applied Physics Laboratory (DART team)",
+    "Ground-based observers outside the DART team"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "logical-qubits-atom-array-processor",
+   "title": "A neutral-atom processor runs error-corrected logical qubits, up to 48",
+   "first_published": "2023-12-06",
+   "subfield": "quantum",
+   "ai_role": "none",
+   "who": [
+    "Harvard University, MIT and QuEra Computing (Lukin group)",
+    "Quantinuum with Microsoft (trapped-ion repeat)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "thorium-229-nuclear-clock-laser-excitation",
+   "title": "Lasers excite the thorium-229 nucleus, a step to a nuclear clock",
+   "first_published": "2024-04-18",
+   "subfield": "atoms-optics",
+   "ai_role": "none",
+   "who": [
+    "PTB, TU Wien and LMU Munich (Tiedau et al.)",
+    "University of California, Los Angeles (Elwell et al.)",
+    "JILA, NIST and University of Colorado Boulder (Zhang et al.)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "top-quark-entanglement-atlas-cms",
+   "title": "ATLAS and CMS observe quantum entanglement between top quarks",
+   "first_published": "2023-11-13",
+   "subfield": "particles-nuclei",
+   "ai_role": "none",
+   "who": [
+    "ATLAS Collaboration (CERN)",
+    "CMS Collaboration (CERN)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "sycamore-quantum-advantage-claim",
+   "title": "Google claims a quantum computer beat supercomputers at a sampling task",
+   "first_published": "2019-10-23",
+   "subfield": "quantum",
+   "ai_role": "none",
+   "who": [
+    "Google AI Quantum",
+    "University of Science and Technology of China (Zuchongzhi repeat)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "willow-error-correction-below-threshold",
+   "title": "Google's Willow chip lowers quantum errors as the code grows",
+   "first_published": "2024-08-24",
+   "subfield": "quantum",
+   "ai_role": "none",
+   "who": [
+    "Google Quantum AI",
+    "University of Science and Technology of China (Zuchongzhi repeat)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "deepmind-rl-tokamak-plasma-control",
+   "title": "Reinforcement learning controls plasma in a tokamak fusion device",
+   "first_published": "2022-02-16",
+   "subfield": "plasma-fusion",
+   "ai_role": "ai_ran",
+   "who": [
+    "Google DeepMind",
+    "EPFL Swiss Plasma Center (TCV tokamak)"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "nif-fusion-target-gain-above-one",
+   "title": "NIF fusion shot yields more energy than the laser delivered",
+   "first_published": "2022-12-13",
+   "subfield": "plasma-fusion",
+   "ai_role": "none",
+   "who": [
+    "Lawrence Livermore National Laboratory, National Ignition Facility"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "alphaqubit-neural-quantum-decoder",
+   "title": "A neural network decodes quantum errors better than hand-built decoders",
+   "first_published": "2024-11-20",
+   "subfield": "quantum",
+   "ai_role": "ai_tool",
+   "who": [
+    "Google DeepMind",
+    "Google Quantum AI"
+   ]
+  },
+  {
+   "field": "physics",
+   "slug": "gluon-amplitudes-nonzero-ai-conjecture",
+   "title": "AI conjectures a formula that shows single-minus gluon amplitudes are nonzero",
+   "first_published": "2026-02-12",
+   "subfield": "particles-nuclei",
+   "ai_role": "ai_proposed",
+   "who": [
+    "Institute for Advanced Study, Vanderbilt University, University of Cambridge and Harvard University (human authors)",
+    "OpenAI"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "boron-arsenide-high-thermal-conductivity",
+   "title": "Three teams measure very high heat conduction in boron arsenide",
+   "first_published": "2018-08",
+   "subfield": "materials",
+   "ai_role": "none",
+   "who": [
+    "University of California, Los Angeles (Yongjie Hu group)",
+    "University of Texas at Dallas with the University of Illinois (Bing Lv, David Cahill)",
+    "University of Houston with Boston College and MIT (Zhifeng Ren, David Broido, Gang Chen)"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "pet-depolymerase-enzyme-plastic-recycling",
+   "title": "An engineered enzyme breaks down PET plastic for recycling",
+   "first_published": "2020-04-08",
+   "subfield": "catalysis",
+   "ai_role": "none",
+   "who": [
+    "Toulouse Biotechnology Institute (INSA, INRAE, CNRS)",
+    "Carbios"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "ai-retrosynthesis-planning-blind-test",
+   "title": "A neural-network program plans chemical syntheses that chemists rate as equal",
+   "first_published": "2018-03-28",
+   "subfield": "synthesis",
+   "ai_role": "ai_proposed",
+   "who": [
+    "University of Munster (Marwin Segler, Mike Preuss, Mark Waller)"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "gnome-millions-of-crystal-structures-predicted",
+   "title": "Deep learning predicts 2.2 million new stable crystal structures",
+   "first_published": "2023-11-29",
+   "subfield": "materials",
+   "ai_role": "ai_proposed",
+   "who": [
+    "Google DeepMind"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "a-lab-autonomous-synthesis-new-materials",
+   "title": "An AI-guided robot lab reports making 41 new inorganic materials",
+   "first_published": "2023-11-29",
+   "subfield": "automated-labs",
+   "ai_role": "ai_ran",
+   "who": [
+    "Lawrence Berkeley National Laboratory and University of California, Berkeley (Gerbrand Ceder, Kristin Persson groups)"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "mobile-robot-chemist-photocatalyst-search",
+   "title": "A mobile robot chemist found a more active photocatalyst on its own",
+   "first_published": "2020-07-08",
+   "subfield": "automated-labs",
+   "ai_role": "ai_ran",
+   "who": [
+    "University of Liverpool (Andrew Cooper group)"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "coscientist-language-model-agent-runs-chemistry",
+   "title": "A language-model agent planned and ran chemistry experiments on its own",
+   "first_published": "2023-12-20",
+   "subfield": "automated-labs",
+   "ai_role": "ai_ran",
+   "who": [
+    "Carnegie Mellon University (Gabe Gomes group)",
+    "Emerald Cloud Lab"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "computer-planned-natural-product-syntheses",
+   "title": "Software plans the synthesis of complex natural products, and chemists make them",
+   "first_published": "2020-10",
+   "subfield": "synthesis",
+   "ai_role": "ai_proposed",
+   "who": [
+    "Institute of Organic Chemistry, Polish Academy of Sciences",
+    "Ulsan National Institute of Science and Technology (IBS Center for Soft and Living Matter)",
+    "Allchemy"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "dm21-neural-network-density-functional",
+   "title": "A neural-network density functional handles fractional electrons better",
+   "first_published": "2021-12-09",
+   "subfield": "materials",
+   "ai_role": "ai_tool",
+   "who": [
+    "Google DeepMind (James Kirkpatrick and colleagues)"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "closed-loop-machine-learning-fast-charging",
+   "title": "Closed-loop machine learning picks better fast-charging plans for batteries",
+   "first_published": "2020-02",
+   "subfield": "energy-materials",
+   "ai_role": "ai_ran",
+   "who": [
+    "Stanford University",
+    "Massachusetts Institute of Technology",
+    "Toyota Research Institute"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "active-learning-copper-aluminium-co2-catalyst",
+   "title": "Active machine learning finds a copper-aluminium catalyst for CO2 to ethylene",
+   "first_published": "2020-05",
+   "subfield": "catalysis",
+   "ai_role": "ai_proposed",
+   "who": [
+    "University of Toronto (Edward Sargent group)",
+    "Carnegie Mellon University (Zachary Ulissi group)"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "mattergen-generative-model-designs-crystals",
+   "title": "A generative AI model designs crystals; one was made in a lab",
+   "first_published": "2025-01-16",
+   "subfield": "materials",
+   "ai_role": "ai_proposed",
+   "who": [
+    "Microsoft Research AI for Science",
+    "Shenzhen Institute of Advanced Technology (synthesis and measurement)"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "fast-petase-machine-learning-plastic-enzyme",
+   "title": "Machine learning helps engineer an enzyme that breaks down PET plastic",
+   "first_published": "2022-04-27",
+   "subfield": "catalysis",
+   "ai_role": "ai_tool",
+   "who": [
+    "University of Texas at Austin (Hal Alper, Andrew Ellington groups)"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "mof-water-harvesting-from-desert-air",
+   "title": "A metal-organic framework pulls drinking water from dry desert air",
+   "first_published": "2017-04",
+   "subfield": "materials",
+   "ai_role": "none",
+   "who": [
+    "Massachusetts Institute of Technology (Evelyn Wang group)",
+    "University of California, Berkeley (Omar Yaghi group)"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "halicin-deep-learning-antibiotic-discovery",
+   "title": "Deep learning finds halicin, a new kind of antibiotic",
+   "first_published": "2020-02-20",
+   "subfield": "synthesis",
+   "ai_role": "ai_proposed",
+   "who": [
+    "Massachusetts Institute of Technology (James Collins and Regina Barzilay groups)",
+    "Broad Institute"
+   ]
+  },
+  {
+   "field": "chemistry",
+   "slug": "cyclocarbon-18-ring-made-and-imaged",
+   "title": "Chemists make and image a ring of 18 carbon atoms",
+   "first_published": "2019-08",
+   "subfield": "synthesis",
+   "ai_role": "none",
+   "who": [
+    "IBM Research Zurich",
+    "University of Oxford"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "alphafold2-casp14-protein-structure-prediction",
+   "title": "AlphaFold 2 predicts protein structures at near-experimental accuracy in CASP14",
+   "first_published": "2020-11-30",
+   "subfield": "proteins",
+   "ai_role": "ai_solved",
+   "who": [
+    "Google DeepMind"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "rentosertib-ai-drug-lung-fibrosis-trial",
+   "title": "AI-discovered drug rentosertib meets its safety goal in a phase 2a lung fibrosis trial",
+   "first_published": "2025-06",
+   "subfield": "drugs",
+   "ai_role": "ai_proposed",
+   "who": [
+    "Insilico Medicine"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "ai-flagged-baricitinib-covid-treatment",
+   "title": "AI knowledge graph flags baricitinib for COVID-19, later approved by the FDA",
+   "first_published": "2020-02-04",
+   "subfield": "drugs",
+   "ai_role": "ai_proposed",
+   "who": [
+    "BenevolentAI",
+    "Imperial College London"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "masai-trial-ai-mammography-screening-sweden",
+   "title": "AI-supported mammography screening matches double reading with less workload",
+   "first_published": "2023-08",
+   "subfield": "diagnosis",
+   "ai_role": "ai_tool",
+   "who": [
+    "Lund University and Skane University Hospital",
+    "ScreenPoint Medical (AI vendor)"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "idx-dr-first-autonomous-ai-diagnostic",
+   "title": "FDA permits marketing of first autonomous AI diagnostic, for diabetic retinopathy",
+   "first_published": "2018-04-11",
+   "subfield": "diagnosis",
+   "ai_role": "ai_ran",
+   "who": [
+    "IDx Technologies (now Digital Diagnostics)",
+    "University of Iowa"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "covid-19-mrna-vaccines-efficacy-trials",
+   "title": "mRNA COVID-19 vaccines prevent about 95 percent of cases in large trials",
+   "first_published": "2020-11-09",
+   "subfield": "infection-immunity",
+   "ai_role": "none",
+   "who": [
+    "Pfizer and BioNTech",
+    "Moderna and the US National Institutes of Health"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "crispr-sickle-cell-therapy-casgevy-approved",
+   "title": "First CRISPR gene-editing therapy for sickle cell disease reaches approval",
+   "first_published": "2020-12-05",
+   "subfield": "genomics",
+   "ai_role": "none",
+   "who": [
+    "CRISPR Therapeutics",
+    "Vertex Pharmaceuticals"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "lenacapavir-twice-yearly-hiv-prevention-injection",
+   "title": "Twice-yearly lenacapavir shots prevent HIV in a large trial of women",
+   "first_published": "2024-06",
+   "subfield": "infection-immunity",
+   "ai_role": "none",
+   "who": [
+    "Gilead Sciences",
+    "PURPOSE 1 investigators in South Africa and Uganda"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "semaglutide-obesity-step-1-trial-wegovy",
+   "title": "Weekly semaglutide lowers body weight by about 15 percent in trial",
+   "first_published": "2021-02-10",
+   "subfield": "drugs",
+   "ai_role": "none",
+   "who": [
+    "Novo Nordisk",
+    "STEP 1 trial investigators"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "trikafta-triple-therapy-cystic-fibrosis",
+   "title": "Triple drug Trikafta treats the cause of cystic fibrosis for most patients",
+   "first_published": "2019-10",
+   "subfield": "drugs",
+   "ai_role": "none",
+   "who": [
+    "Vertex Pharmaceuticals",
+    "Cystic Fibrosis Foundation (funder)"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "ebola-antibody-drugs-palm-trial-approved",
+   "title": "Ebola antibody drugs cut deaths in the PALM trial, then won approval",
+   "first_published": "2019-08-12",
+   "subfield": "infection-immunity",
+   "ai_role": "none",
+   "who": [
+    "US National Institute of Allergy and Infectious Diseases",
+    "Institut National de Recherche Biomedicale (Democratic Republic of the Congo)",
+    "Regeneron (REGN-EB3)",
+    "Ridgeback Biotherapeutics (mAb114)"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "paxlovid-nirmatrelvir-cuts-covid-hospitalisation-trial",
+   "title": "Oral nirmatrelvir with ritonavir cuts COVID-19 hospital admission and death",
+   "first_published": "2021-11",
+   "subfield": "infection-immunity",
+   "ai_role": "none",
+   "who": [
+    "Pfizer",
+    "EPIC-HR trial investigators"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "lecanemab-slows-early-alzheimers-disease-trial",
+   "title": "Lecanemab slows decline in early Alzheimer's disease in a phase 3 trial",
+   "first_published": "2022-09",
+   "subfield": "drugs",
+   "ai_role": "none",
+   "who": [
+    "Eisai",
+    "Biogen"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "zolgensma-gene-therapy-spinal-muscular-atrophy",
+   "title": "One-time gene therapy keeps infants with severe spinal muscular atrophy alive",
+   "first_published": "2017-11-02",
+   "subfield": "genomics",
+   "ai_role": "none",
+   "who": [
+    "Nationwide Children's Hospital",
+    "AveXis (Novartis)"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "luxturna-gene-therapy-inherited-blindness-approved",
+   "title": "Gene therapy improves vision in inherited retinal disease and wins FDA approval",
+   "first_published": "2017-07-14",
+   "subfield": "genomics",
+   "ai_role": "none",
+   "who": [
+    "Spark Therapeutics",
+    "Children's Hospital of Philadelphia",
+    "University of Pennsylvania"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "kymriah-car-t-childhood-leukaemia-approved",
+   "title": "First CAR-T cell therapy approved for children with relapsed leukaemia",
+   "first_published": "2017-08",
+   "subfield": "drugs",
+   "ai_role": "none",
+   "who": [
+    "Novartis",
+    "University of Pennsylvania",
+    "Children's Hospital of Philadelphia"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "rts-s-malaria-vaccine-first-approved",
+   "title": "First malaria vaccine RTS,S cuts clinical cases in African children",
+   "first_published": "2015-04-23",
+   "subfield": "infection-immunity",
+   "ai_role": "none",
+   "who": [
+    "GlaxoSmithKline",
+    "PATH Malaria Vaccine Initiative",
+    "RTS,S Clinical Trials Partnership"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "base-editing-changes-single-dna-letters",
+   "title": "Base editing changes single DNA letters without cutting both strands",
+   "first_published": "2016-04-20",
+   "subfield": "genomics",
+   "ai_role": "none",
+   "who": [
+    "David Liu's lab at Harvard University and the Broad Institute"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "development-tracked-cell-by-cell-2018",
+   "title": "Single-cell sequencing tracks development cell by cell in zebrafish, frog and flatworm",
+   "first_published": "2018-04-26",
+   "subfield": "cells",
+   "ai_role": "none",
+   "who": [
+    "Harvard-based labs (Klein, Megason and Schier groups)",
+    "Rajewsky lab, Max Delbruck Center",
+    "Reddien lab, Whitehead Institute"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "covid-ai-models-unfit-for-use",
+   "title": "Two reviews find COVID-19 prediction and AI models unfit for clinical use",
+   "first_published": "2020-04",
+   "subfield": "diagnosis",
+   "ai_role": "ai_tool",
+   "who": [
+    "COVID-PRECISE group (Maastricht University and partners)",
+    "University of Cambridge team (Roberts et al.)"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "alphafold-database-open-protein-structures",
+   "title": "AlphaFold Database opens predicted structures for over 200 million proteins",
+   "first_published": "2021-07-22",
+   "subfield": "proteins",
+   "ai_role": "ai_ran",
+   "who": [
+    "Google DeepMind",
+    "EMBL-EBI"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "personalised-base-editing-therapy-infant-kj",
+   "title": "First custom base-editing therapy treats an infant with a rare metabolic disease",
+   "first_published": "2025-05-15",
+   "subfield": "genomics",
+   "ai_role": "none",
+   "who": [
+    "Children's Hospital of Philadelphia",
+    "Penn Medicine"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "ai-designed-proteins-rfdiffusion-proteinmpnn",
+   "title": "AI tools design new proteins to order, tested in the lab",
+   "first_published": "2022-06",
+   "subfield": "proteins",
+   "ai_role": "ai_proposed",
+   "who": [
+    "Baker lab, University of Washington Institute for Protein Design"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "rosettafold-three-track-protein-structure-prediction",
+   "title": "RoseTTAFold predicts protein structures and complexes with a three-track network",
+   "first_published": "2021-06",
+   "subfield": "proteins",
+   "ai_role": "ai_solved",
+   "who": [
+    "Baker lab, University of Washington Institute for Protein Design"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "alphafold3-predicts-biomolecular-complexes",
+   "title": "AlphaFold 3 predicts how proteins, DNA, RNA and drugs fit together",
+   "first_published": "2024-05-08",
+   "subfield": "proteins",
+   "ai_role": "ai_solved",
+   "who": [
+    "Google DeepMind",
+    "Isomorphic Labs"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "alphamissense-predicts-harm-of-missense-variants",
+   "title": "AlphaMissense rates 71 million possible protein-changing DNA variants",
+   "first_published": "2023-09-19",
+   "subfield": "genomics",
+   "ai_role": "ai_tool",
+   "who": [
+    "Google DeepMind"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "complete-human-genome-sequence-t2t",
+   "title": "First complete, gap-free sequence of a human genome published",
+   "first_published": "2021-05",
+   "subfield": "genomics",
+   "ai_role": "none",
+   "who": [
+    "Telomere-to-Telomere (T2T) consortium"
+   ]
+  },
+  {
+   "field": "biology",
+   "slug": "fruit-fly-brain-wiring-map-flywire",
+   "title": "Complete wiring map of an adult fruit fly brain, neuron by neuron",
+   "first_published": "2023-06",
+   "subfield": "neuroscience",
+   "ai_role": "ai_tool",
+   "who": [
+    "FlyWire consortium (Princeton University and partners)",
+    "Cambridge and other labs (cell typing)"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "ecmwf-aifs-first-operational-ai-forecast",
+   "title": "ECMWF runs its own AI weather model as a daily operational forecast",
+   "first_published": "2025-02-25",
+   "subfield": "weather",
+   "ai_role": "ai_solved",
+   "who": [
+    "European Centre for Medium-Range Weather Forecasts (ECMWF)"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "graphcast-ai-ten-day-weather-forecast",
+   "title": "GraphCast, an AI model, makes ten-day global forecasts in under a minute",
+   "first_published": "2022-12",
+   "subfield": "weather",
+   "ai_role": "ai_solved",
+   "who": [
+    "Google DeepMind"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "pangu-weather-3d-neural-network-forecast",
+   "title": "Pangu-Weather, an AI model, forecasts global weather far faster than physics models",
+   "first_published": "2022-11",
+   "subfield": "weather",
+   "ai_role": "ai_solved",
+   "who": [
+    "Huawei Cloud"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "cfc11-unexpected-emissions-traced-to-china",
+   "title": "Ozone-damaging gas CFC-11 was being emitted again, partly from eastern China",
+   "first_published": "2018-05-16",
+   "subfield": "climate",
+   "ai_role": "none",
+   "who": [
+    "NOAA Global Monitoring Laboratory and CIRES (University of Colorado Boulder)",
+    "University of Bristol and the AGAGE network (confirming study)"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "imbie-antarctic-ice-loss-tripled",
+   "title": "Antarctica's ice loss has tripled since 2012, a joint satellite assessment finds",
+   "first_published": "2018-06-13",
+   "subfield": "oceans-polar",
+   "ai_role": "none",
+   "who": [
+    "IMBIE Team (led by Andrew Shepherd, University of Leeds, and Erik Ivins, NASA JPL)"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "german-flying-insect-biomass-decline",
+   "title": "German reserves lost about 75 percent of flying-insect weight in 27 years",
+   "first_published": "2017-10-18",
+   "subfield": "ecology",
+   "ai_role": "none",
+   "who": [
+    "Radboud University and the Entomological Society Krefeld (Hallmann et al.)",
+    "Technical University of Munich and partners (Seibold et al., confirming study)"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "insight-seismometer-maps-interior-of-mars",
+   "title": "InSight's marsquake recordings give the first measured look inside Mars",
+   "first_published": "2021-07-22",
+   "subfield": "planetary",
+   "ai_role": "none",
+   "who": [
+    "NASA InSight mission seismology teams (University of Cologne, ETH Zurich and partners)"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "climate-sensitivity-range-narrowed-multiple-evidence",
+   "title": "A 25-author assessment narrows how much warming doubled carbon dioxide brings",
+   "first_published": "2020-07-22",
+   "subfield": "climate",
+   "ai_role": "none",
+   "who": [
+    "Sherwood et al., a 25-author World Climate Research Programme assessment team led from UNSW Sydney"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "hayabusa2-ryugu-samples-carbonaceous-organic",
+   "title": "Samples from asteroid Ryugu match rare water-rich meteorites and carry organics",
+   "first_published": "2022-03",
+   "subfield": "planetary",
+   "ai_role": "none",
+   "who": [
+    "JAXA Hayabusa2 project and its initial-analysis teams (including Tohoku University)"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "camera-trap-deep-learning-wildlife",
+   "title": "Deep learning identifies and counts wild animals in camera-trap photos",
+   "first_published": "2017-03",
+   "subfield": "ecology",
+   "ai_role": "ai_tool",
+   "who": [
+    "University of Wyoming (Norouzzadeh, Clune) and the Snapshot Serengeti project (University of Minnesota, Oxford and partners)"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "bennu-samples-ammonia-nucleobases-ancient-brine",
+   "title": "Bennu samples hold ammonia, amino acids, all five nucleobases and brine salts",
+   "first_published": "2025-01-29",
+   "subfield": "planetary",
+   "ai_role": "none",
+   "who": [
+    "NASA OSIRIS-REx sample analysis teams (NASA Goddard; Smithsonian National Museum of Natural History and partners)"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "antarctic-ozone-layer-healing-emerges",
+   "title": "The Antarctic ozone hole starts to shrink after the ban on CFCs",
+   "first_published": "2016-06-30",
+   "subfield": "climate",
+   "ai_role": "none",
+   "who": [
+    "Massachusetts Institute of Technology and partners (Solomon et al.)"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "ai-maps-global-fishing-footprint",
+   "title": "AI reading ship tracks maps where the world's fishing fleet works",
+   "first_published": "2018-02-22",
+   "subfield": "oceans-polar",
+   "ai_role": "ai_tool",
+   "who": [
+    "Global Fishing Watch, Google, SkyTruth and Oceana, with the University of California Santa Barbara and Dalhousie University"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "hunga-tonga-eruption-global-waves",
+   "title": "Hunga Tonga's 2022 eruption sent pressure waves around the world several times",
+   "first_published": "2022-05",
+   "subfield": "geology",
+   "ai_role": "none",
+   "who": [
+    "University of California Santa Barbara-led international team (Matoza et al.)",
+    "University of Bath-led international team (Wright et al.)"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "new-horizons-pluto-flyby-results",
+   "title": "New Horizons gives the first close look at Pluto and its moons",
+   "first_published": "2015-07-14",
+   "subfield": "planetary",
+   "ai_role": "none",
+   "who": [
+    "NASA New Horizons team (Johns Hopkins Applied Physics Laboratory and Southwest Research Institute)"
+   ]
+  },
+  {
+   "field": "earth",
+   "slug": "gencast-ai-ensemble-weather-forecast",
+   "title": "GenCast, an AI model, makes 15-day probabilistic forecasts in minutes",
+   "first_published": "2023-12",
+   "subfield": "weather",
+   "ai_role": "ai_ran",
+   "who": [
+    "Google DeepMind"
+   ]
+  },
+  {
+   "field": "social",
+   "slug": "osc-2015-psychology-replication-project",
+   "title": "Replication of 100 psychology studies finds weaker effects than the originals",
+   "first_published": "2015-08",
+   "subfield": "replication",
+   "ai_role": "none",
+   "who": [
+    "Open Science Collaboration",
+    "Center for Open Science",
+    "University of Virginia"
+   ]
+  },
+  {
+   "field": "social",
+   "slug": "many-analysts-one-dataset-red-cards",
+   "title": "29 teams analyse one dataset and reach different answers",
+   "first_published": "2018-08",
+   "subfield": "replication",
+   "ai_role": "none",
+   "who": [
+    "29 analyst teams coordinated by Raphael Silberzahn and Eric L. Uhlmann",
+    "Center for Open Science (Brian Nosek, co-author)"
+   ]
+  },
+  {
+   "field": "social",
+   "slug": "language-models-simulate-survey-respondents",
+   "title": "Language models can imitate survey respondents from different groups",
+   "first_published": "2022-09",
+   "subfield": "surveys-experiments",
+   "ai_role": "ai_tool",
+   "who": [
+    "Brigham Young University (Lisa Argyle, Ethan Busby, Joshua Gubler, David Wingate and colleagues)"
+   ]
+  },
+  {
+   "field": "social",
+   "slug": "nudge-meta-analysis-publication-bias-dispute",
+   "title": "A nudge meta-analysis is challenged: the effect may vanish after bias correction",
+   "first_published": "2022-01",
+   "subfield": "psychology",
+   "ai_role": "none",
+   "who": [
+    "University of Geneva (Stephanie Mertens, Tobias Brosch and colleagues)",
+    "University College London and University of Amsterdam (Maximilian Maier and colleagues)",
+    "ELTE Eotvos Lorand University (Barnabas Szaszi and colleagues)"
+   ]
+  },
+  {
+   "field": "social",
+   "slug": "seshat-moralizing-gods-claim-and-dispute",
+   "title": "History database tests moralizing gods, then a dispute over missing data",
+   "first_published": "2019-03",
+   "subfield": "history-at-scale",
+   "ai_role": "none",
+   "who": [
+    "Seshat: Global History Databank (Harvey Whitehouse, Peter Turchin, Pieter Francois and colleagues)"
+   ]
+  },
+  {
+   "field": "social",
+   "slug": "meta-2020-election-feed-experiments",
+   "title": "2020 election feed experiments find little change in political attitudes",
+   "first_published": "2023-07",
+   "subfield": "politics-society",
+   "ai_role": "none",
+   "who": [
+    "US 2020 Facebook and Instagram Election Study academic team (Talia Stroud, Joshua Tucker and colleagues)",
+    "Meta"
+   ]
+  },
+  {
+   "field": "social",
+   "slug": "ultra-poor-graduation-trial-six-countries",
+   "title": "Aid bundle for the very poor raises incomes in six countries",
+   "first_published": "2015-05",
+   "subfield": "economics",
+   "ai_role": "none",
+   "who": [
+    "Abhijit Banerjee, Esther Duflo, Dean Karlan, Christopher Udry and colleagues",
+    "Innovations for Poverty Action",
+    "Abdul Latif Jameel Poverty Action Lab (J-PAL)"
+   ]
+  },
+  {
+   "field": "social",
+   "slug": "creating-moves-to-opportunity-voucher-trial",
+   "title": "Housing voucher counselling moves families to high-opportunity neighbourhoods",
+   "first_published": "2019-08",
+   "subfield": "economics",
+   "ai_role": "none",
+   "who": [
+    "Opportunity Insights at Harvard University (Peter Bergman, Raj Chetty, Stefanie DeLuca, Nathaniel Hendren, Lawrence Katz, Christopher Palmer)",
+    "Seattle Housing Authority and King County Housing Authority"
+   ]
+  },
+  {
+   "field": "social",
+   "slug": "centaur-model-predicts-human-choices",
+   "title": "A fine-tuned language model predicts human choices across psychology experiments",
+   "first_published": "2024-10",
+   "subfield": "psychology",
+   "ai_role": "ai_tool",
+   "who": [
+    "Helmholtz Munich (Marcel Binz, Eric Schulz and colleagues)"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "vesuvius-challenge-reads-herculaneum-scroll",
+   "title": "Machine-learning ink detection lets contestants read sealed Herculaneum scrolls",
+   "first_published": "2023-10",
+   "subfield": "ancient-texts",
+   "ai_role": "ai_tool",
+   "who": [
+    "Youssef Nader, Luke Farritor and Julian Schilliger (Grand Prize team)",
+    "EduceLab, University of Kentucky (W. Brent Seales)",
+    "Vesuvius Challenge"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "steppe-ancestry-reshapes-europe-ancient-dna",
+   "title": "Ancient DNA shows steppe herders reshaped Europe's ancestry about 4,500 years ago",
+   "first_published": "2015-02",
+   "subfield": "languages",
+   "ai_role": "none",
+   "who": [
+    "Wolfgang Haak, Johannes Krause, David Reich and colleagues",
+    "Morten Allentoft, Eske Willerslev and colleagues, University of Copenhagen"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "ithaca-restores-dates-greek-inscriptions",
+   "title": "Ithaca neural network restores, places and dates damaged Greek inscriptions",
+   "first_published": "2022-03",
+   "subfield": "ancient-texts",
+   "ai_role": "ai_tool",
+   "who": [
+    "Google DeepMind (Yannis Assael and colleagues)",
+    "Ca' Foscari University of Venice (Thea Sommerschield)",
+    "University of Oxford (Jonathan Prag)",
+    "Athens University of Economics and Business (John Pavlopoulos, Ion Androutsopoulos)"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "white-sands-footprints-ice-age-people",
+   "title": "Footprints at White Sands dated to about 23,000 years ago",
+   "first_published": "2021-09",
+   "subfield": "archaeology",
+   "ai_role": "none",
+   "who": [
+    "Matthew Bennett (Bournemouth University), David Bustos (US National Park Service) and Jeffrey Pigati (US Geological Survey) with colleagues"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "maya-lidar-reveals-lowland-civilisation",
+   "title": "Laser mapping reveals 60,000 hidden Maya structures in northern Guatemala",
+   "first_published": "2018-09",
+   "subfield": "archaeology",
+   "ai_role": "none",
+   "who": [
+    "Marcello Canuto, Francisco Estrada-Belli and colleagues, Tulane University, with the PACUNAM LiDAR Initiative (Guatemala)"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "jebel-irhoud-earliest-homo-sapiens",
+   "title": "Jebel Irhoud fossils put early Homo sapiens at about 300,000 years ago",
+   "first_published": "2017-06",
+   "subfield": "archaeology",
+   "ai_role": "none",
+   "who": [
+    "Max Planck Institute for Evolutionary Anthropology (Jean-Jacques Hublin, Daniel Richter)",
+    "National Institute of Archaeology and Heritage, Morocco"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "homo-naledi-new-human-species",
+   "title": "Homo naledi: a new small-brained human species from South Africa",
+   "first_published": "2015-09-10",
+   "subfield": "archaeology",
+   "ai_role": "none",
+   "who": [
+    "Lee Berger and the Rising Star Expedition team, University of the Witwatersrand"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "aeneas-latin-inscriptions-context-restoration",
+   "title": "Aeneas network finds parallels, restores and dates Latin inscriptions",
+   "first_published": "2025-07",
+   "subfield": "ancient-texts",
+   "ai_role": "ai_tool",
+   "who": [
+    "Google DeepMind",
+    "University of Oxford (Jonathan Prag)",
+    "University of Warwick (Alison Cooley)",
+    "Ca' Foscari University of Venice (Thea Sommerschield)"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "denisovan-jawbone-tibetan-plateau-xiahe",
+   "title": "Denisovan jawbone found on the Tibetan plateau, far from Siberia",
+   "first_published": "2019-05",
+   "subfield": "archaeology",
+   "ai_role": "none",
+   "who": [
+    "Lanzhou University (Fahu Chen, Dongju Zhang)",
+    "Max Planck Institute for Evolutionary Anthropology (Jean-Jacques Hublin, Frido Welker)"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "nazca-geoglyphs-ai-finds-303",
+   "title": "Deep learning helps find 303 new Nazca geoglyph figures",
+   "first_published": "2024-09",
+   "subfield": "archaeology",
+   "ai_role": "ai_proposed",
+   "who": [
+    "Yamagata University (Masato Sakai and colleagues)",
+    "IBM Research"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "en-gedi-scroll-read-without-opening",
+   "title": "Virtual unwrapping reads a burned 1,700-year-old Hebrew scroll unopened",
+   "first_published": "2016-09",
+   "subfield": "ancient-texts",
+   "ai_role": "none",
+   "who": [
+    "University of Kentucky (W. Brent Seales, Clifford Seth Parker)",
+    "Hebrew University of Jerusalem (Michael Segal, Emanuel Tov)",
+    "Israel Antiquities Authority"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "aguada-fenix-oldest-largest-maya-monument",
+   "title": "Aguada Fenix: the oldest and largest known Maya monument",
+   "first_published": "2020-06",
+   "subfield": "archaeology",
+   "ai_role": "none",
+   "who": [
+    "University of Arizona (Takeshi Inomata, Daniela Triadan)",
+    "Ibaraki University (Kazuo Aoyama)"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "upano-valley-amazon-garden-cities",
+   "title": "Laser survey finds 2,000-year-old urban settlements in the Ecuadorian Amazon",
+   "first_published": "2024-01",
+   "subfield": "archaeology",
+   "ai_role": "none",
+   "who": [
+    "French National Centre for Scientific Research (Stephen Rostain and colleagues)"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "linear-elamite-script-deciphered",
+   "title": "Linear Elamite, a 4,000-year-old Iranian script, is deciphered",
+   "first_published": "2022",
+   "subfield": "ancient-texts",
+   "ai_role": "none",
+   "who": [
+    "French National Centre for Scientific Research (Francois Desset) with Kambiz Tabibzadeh, Matthieu Kervran, Gian Pietro Basello and Gianni Marchesi"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "arad-ostraca-handwriting-analysis-literacy",
+   "title": "Handwriting analysis finds many writers in Judah's Arad letters, about 600 BCE",
+   "first_published": "2016-04",
+   "subfield": "theology",
+   "ai_role": "ai_tool",
+   "who": [
+    "Tel Aviv University (Shira Faigenbaum-Golovin, Arie Shaus, Barak Sober, Eli Piasetzky, Israel Finkelstein and colleagues)"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "akkadian-cuneiform-neural-machine-translation",
+   "title": "Neural network translates Akkadian cuneiform texts into English",
+   "first_published": "2023-05",
+   "subfield": "ancient-texts",
+   "ai_role": "ai_tool",
+   "who": [
+    "Open University of Israel (Shai Gordin)",
+    "Tel Aviv University (Omer Levy, Jonathan Berant)"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "ai-dating-dead-sea-scrolls-enoch",
+   "title": "AI handwriting model dates Dead Sea Scrolls, some older than expected",
+   "first_published": "2025-06",
+   "subfield": "ancient-texts",
+   "ai_role": "ai_tool",
+   "who": [
+    "University of Groningen (Mladen Popovic, Maruf Dhali, Lambert Schomaker)"
+   ]
+  },
+  {
+   "field": "humanities",
+   "slug": "mms-speech-models-1100-languages",
+   "title": "Meta's MMS speech models cover over 1,100 languages using Bible recordings",
+   "first_published": "2023-05",
+   "subfield": "languages",
+   "ai_role": "ai_tool",
+   "who": [
+    "Meta AI (Vineel Pratap, Michael Auli and colleagues)"
+   ]
+  }
+ ],
+ "items": [
+  {
+   "slug": "unit-distance-conjecture-disproved",
+   "i": 0,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+   "title": "OpenAI: model disproves discrete geometry conjecture"
+  },
+  {
+   "slug": "unit-distance-conjecture-disproved",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2605.20695",
+   "title": "Remarks on the disproof of the unit distance conjecture"
+  },
+  {
+   "slug": "unit-distance-conjecture-disproved",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2605.20579",
+   "title": "An explicit lower bound for the unit distance problem"
+  },
+  {
+   "slug": "unit-distance-conjecture-disproved",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://arxiv.org/abs/2605.20695",
+   "title": "Group note that checks the argument and adds reflections; the rung rests on it, so the bar is rung and not reactions.",
+   "who": "Noga Alon; Thomas Bloom; Tim Gowers; Daniel Litt; Will Sawin; Arul Shankar; Jacob Tsimerman; Victor Wang; Melanie Matchett Wood",
+   "affiliation": "Princeton (Alon, Sawin), Manchester (Bloom), Cambridge (Gowers) as named on the OpenAI page and in press; the arXiv page shows no affiliations for the others"
+  },
+  {
+   "slug": "unit-distance-conjecture-disproved",
+   "i": 1,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://arxiv.org/abs/2605.20579",
+   "title": "Independent explicit-exponent construction by a number theorist outside the AI system.",
+   "who": "Will Sawin",
+   "affiliation": "Princeton (per the OpenAI page)"
+  },
+  {
+   "slug": "kakeya-conjecture-three-dimensions",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2502.17655",
+   "title": "Volume estimates for unions of convex sets, and the Kakeya set conjecture in three dimensions"
+  },
+  {
+   "slug": "kakeya-conjecture-three-dimensions",
+   "i": 1,
+   "role": "source",
+   "kind": "checker",
+   "url": "https://mathunion.org/imu-awards/fields-medal/fields-medals-2026",
+   "title": "Fields Medals 2026 (International Mathematical Union)"
+  },
+  {
+   "slug": "kakeya-conjecture-three-dimensions",
+   "i": 2,
+   "role": "source",
+   "kind": "reaction",
+   "url": "https://terrytao.wordpress.com/2025/02/25/the-three-dimensional-kakeya-conjecture-after-wang-and-zahl/",
+   "title": "The three-dimensional Kakeya conjecture, after Wang and Zahl"
+  },
+  {
+   "slug": "kakeya-conjecture-three-dimensions",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://terrytao.wordpress.com/2025/02/25/the-three-dimensional-kakeya-conjecture-after-wang-and-zahl/",
+   "title": "Blog post explaining the Wang-Zahl proof, posted the day after the preprint.",
+   "who": "Terence Tao",
+   "affiliation": "UCLA (from memory)"
+  },
+  {
+   "slug": "sphere-packing-dimensions-8-and-24",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://annals.math.princeton.edu/2017/185-3/p07",
+   "title": "The sphere packing problem in dimension 8"
+  },
+  {
+   "slug": "sphere-packing-dimensions-8-and-24",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1603.04246",
+   "title": "The sphere packing problem in dimension 8 (arXiv)"
+  },
+  {
+   "slug": "sphere-packing-dimensions-8-and-24",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://annals.math.princeton.edu/2017/185-3/p08",
+   "title": "The sphere packing problem in dimension 24"
+  },
+  {
+   "slug": "sphere-packing-dimensions-8-and-24",
+   "i": 3,
+   "role": "source",
+   "kind": "checker",
+   "url": "https://mathunion.org/imu-awards/fields-medal/fields-medals-2022",
+   "title": "Fields Medals 2022 (International Mathematical Union)"
+  },
+  {
+   "slug": "sphere-packing-dimensions-8-and-24",
+   "i": 4,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2604.23468",
+   "title": "Progress in Formalizing Sphere Packing in Dimension 8"
+  },
+  {
+   "slug": "sphere-packing-dimensions-8-and-24",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://arxiv.org/abs/1607.02111",
+   "title": "Expository article for Nieuw Archief voor Wiskunde with an interview of the authors; not in the proof teams. Its title uses the word breakthrough.",
+   "who": "David de Laat and Frank Vallentin",
+   "affiliation": "Delft and Cologne (from memory; the page shows none)"
+  },
+  {
+   "slug": "polynomial-freiman-ruzsa-conjecture-proved",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2311.05762",
+   "title": "On a conjecture of Marton"
+  },
+  {
+   "slug": "polynomial-freiman-ruzsa-conjecture-proved",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://annals.math.princeton.edu/2025/201-2/p05",
+   "title": "On a conjecture of Marton"
+  },
+  {
+   "slug": "polynomial-freiman-ruzsa-conjecture-proved",
+   "i": 2,
+   "role": "source",
+   "kind": "proof",
+   "url": "https://github.com/teorth/pfr",
+   "title": "The Polynomial Freiman-Ruzsa Conjecture (Lean 4 project)"
+  },
+  {
+   "slug": "alphaproof-imo-2024-silver-level",
+   "i": 0,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/",
+   "title": "AI solves IMO problems at silver-medal level"
+  },
+  {
+   "slug": "alphaproof-imo-2024-silver-level",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-025-09833-y",
+   "title": "Olympiad-level formal mathematical reasoning with reinforcement learning"
+  },
+  {
+   "slug": "exponential-improvement-diagonal-ramsey-numbers",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2303.09521",
+   "title": "An exponential improvement for diagonal Ramsey"
+  },
+  {
+   "slug": "exponential-improvement-diagonal-ramsey-numbers",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://annals.math.princeton.edu/2026/203-3/p04",
+   "title": "An exponential improvement for diagonal Ramsey"
+  },
+  {
+   "slug": "exponential-improvement-diagonal-ramsey-numbers",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2407.19026",
+   "title": "Optimizing the CGMS upper bound on Ramsey numbers"
+  },
+  {
+   "slug": "exponential-improvement-diagonal-ramsey-numbers",
+   "i": 3,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2501.10852",
+   "title": "Formalising New Mathematics in Isabelle: Diagonal Ramsey"
+  },
+  {
+   "slug": "exponential-improvement-diagonal-ramsey-numbers",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://arxiv.org/abs/2407.19026",
+   "title": "Independent team that re-derived the argument and improved the constant.",
+   "who": "Gupta, Ndiaye, Norin and Wei (from memory)",
+   "affiliation": "McGill (from memory)"
+  },
+  {
+   "slug": "exponential-improvement-diagonal-ramsey-numbers",
+   "i": 1,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://arxiv.org/abs/2501.10852",
+   "title": "Machine-checked reproof of the new mathematics.",
+   "who": "Lawrence C. Paulson",
+   "affiliation": "University of Cambridge (from memory)"
+  },
+  {
+   "slug": "hodge-theory-matroids-rota-conjecture",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1511.02888",
+   "title": "Hodge theory for combinatorial geometries"
+  },
+  {
+   "slug": "hodge-theory-matroids-rota-conjecture",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://annals.math.princeton.edu/2018/188-2/p01",
+   "title": "Hodge theory for combinatorial geometries"
+  },
+  {
+   "slug": "hodge-theory-matroids-rota-conjecture",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2002.03341",
+   "title": "A semi-small decomposition of the Chow ring of a matroid"
+  },
+  {
+   "slug": "hodge-theory-matroids-rota-conjecture",
+   "i": 3,
+   "role": "source",
+   "kind": "checker",
+   "url": "https://mathunion.org/imu-awards/fields-medal/fields-medals-2022",
+   "title": "Fields Medals 2022 (International Mathematical Union)"
+  },
+  {
+   "slug": "hodge-theory-matroids-rota-conjecture",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://arxiv.org/abs/2002.03341",
+   "title": "A mostly different team reproved the result by a new route; Huh is a shared author, so this is a confirmation but not a clean outside reaction.",
+   "who": "Tom Braden, Jacob Matherne, Nicholas Proudfoot and Botong Wang (with Huh)",
+   "affiliation": "several universities (not shown on the page)"
+  },
+  {
+   "slug": "alphaevolve-matrix-multiplication-kissing-number",
+   "i": 0,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/",
+   "title": "AlphaEvolve: a Gemini-powered coding agent for designing advanced algorithms"
+  },
+  {
+   "slug": "alphaevolve-matrix-multiplication-kissing-number",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2506.13131",
+   "title": "AlphaEvolve: A coding agent for scientific and algorithmic discovery"
+  },
+  {
+   "slug": "alphaevolve-matrix-multiplication-kissing-number",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2506.13242",
+   "title": "A non-commutative algorithm for multiplying 4x4 matrices using 48 non-complex multiplications"
+  },
+  {
+   "slug": "alphaevolve-matrix-multiplication-kissing-number",
+   "i": 3,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2511.02864",
+   "title": "Mathematical exploration and discovery at scale"
+  },
+  {
+   "slug": "alphaevolve-matrix-multiplication-kissing-number",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://arxiv.org/abs/2506.13242",
+   "title": "Independent team that checked the scheme and made a rational-coefficient version within about a month.",
+   "who": "Jean-Guillaume Dumas, Clement Pernet and Alexandre Sedoglavic (names from memory)",
+   "affiliation": "French universities (from memory)"
+  },
+  {
+   "slug": "liquid-tensor-experiment-lean-complete",
+   "i": 0,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://leanprover-community.github.io/blog/posts/lte-final",
+   "title": "Completion of the Liquid Tensor Experiment"
+  },
+  {
+   "slug": "liquid-tensor-experiment-lean-complete",
+   "i": 1,
+   "role": "source",
+   "kind": "proof",
+   "url": "https://github.com/leanprover-community/lean-liquid",
+   "title": "lean-liquid (Lean project repository)"
+  },
+  {
+   "slug": "liquid-tensor-experiment-lean-complete",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://people.mpim-bonn.mpg.de/scholze/Analytic.pdf",
+   "title": "Lectures on Analytic Geometry (Clausen and Scholze)"
+  },
+  {
+   "slug": "alphatensor-matrix-multiplication-algorithms",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-022-05172-4",
+   "title": "Discovering faster matrix multiplication algorithms with reinforcement learning"
+  },
+  {
+   "slug": "alphatensor-matrix-multiplication-algorithms",
+   "i": 1,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://deepmind.google/blog/discovering-novel-algorithms-with-alphatensor/",
+   "title": "Discovering novel algorithms with AlphaTensor"
+  },
+  {
+   "slug": "alphatensor-matrix-multiplication-algorithms",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2212.01175",
+   "title": "Flip Graphs for Matrix Multiplication"
+  },
+  {
+   "slug": "alphatensor-matrix-multiplication-algorithms",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://arxiv.org/abs/2212.01175",
+   "title": "Independent method that reproduced and then improved the counts in the formats where AlphaTensor had set the record in characteristic two (link to AlphaTensor from memory).",
+   "who": "Manuel Kauers and Jakob Moosbauer",
+   "affiliation": "Johannes Kepler University Linz (per research.jku.at seen in search)"
+  },
+  {
+   "slug": "erdos-1196-primitive-sets-ai-proof",
+   "i": 0,
+   "role": "source",
+   "kind": "checker",
+   "url": "https://www.erdosproblems.com/1196",
+   "title": "Erdős Problem #1196"
+  },
+  {
+   "slug": "erdos-1196-primitive-sets-ai-proof",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2605.00301",
+   "title": "Primitive sets and von Mangoldt chains: Erdős Problem #1196 and beyond"
+  },
+  {
+   "slug": "erdos-1196-primitive-sets-ai-proof",
+   "i": 2,
+   "role": "source",
+   "kind": "reaction",
+   "url": "https://terrytao.wordpress.com/2026/05/03/primitive-sets-and-von-mangoldt-chains-erdos-problem-1196-and-beyond/",
+   "title": "Primitive sets and von Mangoldt chains: Erdős Problem #1196 and beyond"
+  },
+  {
+   "slug": "sensitivity-conjecture-proved-huang",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1907.00847",
+   "title": "Induced subgraphs of hypercubes and a proof of the Sensitivity Conjecture"
+  },
+  {
+   "slug": "sensitivity-conjecture-proved-huang",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://annals.math.princeton.edu/2019/190-3/p06",
+   "title": "Induced subgraphs of hypercubes and a proof of the Sensitivity Conjecture"
+  },
+  {
+   "slug": "sensitivity-conjecture-proved-huang",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1907.11175",
+   "title": "Huang's theorem and the exterior algebra"
+  },
+  {
+   "slug": "sensitivity-conjecture-proved-huang",
+   "i": 3,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1908.06322",
+   "title": "Majorana fermions and the Sensitivity Conjecture"
+  },
+  {
+   "slug": "sensitivity-conjecture-proved-huang",
+   "i": 4,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1912.05406",
+   "title": "On the resolution of the sensitivity conjecture"
+  },
+  {
+   "slug": "sensitivity-conjecture-proved-huang",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://arxiv.org/abs/1907.11175",
+   "title": "Supplementary note explaining where the key matrix comes from.",
+   "who": "Roman Karasev",
+   "affiliation": "Moscow Institute of Physics and Technology (from memory)"
+  },
+  {
+   "slug": "sensitivity-conjecture-proved-huang",
+   "i": 1,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://arxiv.org/abs/1908.06322",
+   "title": "Expository note aimed at physicists.",
+   "who": "Yingfei Gu and Xiao-Liang Qi",
+   "affiliation": "Stanford (from memory)"
+  },
+  {
+   "slug": "sensitivity-conjecture-proved-huang",
+   "i": 2,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://arxiv.org/abs/1912.05406",
+   "title": "Survey of four papers that mattered for the conjecture.",
+   "who": "Rohan Karthikeyan, Siddharth Sinha and Vallabh Patil",
+   "affiliation": "Delhi Technological University"
+  },
+  {
+   "slug": "kelley-meka-three-term-progressions-bounds",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2302.05537",
+   "title": "Strong Bounds for 3-Progressions"
+  },
+  {
+   "slug": "kelley-meka-three-term-progressions-bounds",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2309.02353",
+   "title": "An improvement to the Kelley-Meka bounds on three-term arithmetic progressions"
+  },
+  {
+   "slug": "kelley-meka-three-term-progressions-bounds",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://arxiv.org/abs/2309.02353",
+   "title": "Independent team that reworked and improved the method seven months later.",
+   "who": "Thomas F. Bloom and Olof Sisask",
+   "affiliation": "from memory; the page shows none"
+  },
+  {
+   "slug": "gauss-lean-sphere-packing-formalisation",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2604.23468",
+   "title": "Progress in Formalizing Sphere Packing in Dimension 8"
+  },
+  {
+   "slug": "gauss-lean-sphere-packing-formalisation",
+   "i": 1,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://leanprover-community.github.io/blog/posts/SpherePacking-1",
+   "title": "Sphere Packing project post (Lean community blog)"
+  },
+  {
+   "slug": "gauss-lean-sphere-packing-formalisation",
+   "i": 2,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://actu.epfl.ch/news/prof-viazovska-s-proofs-of-sphere-packing-formaliz/",
+   "title": "Prof. Viazovska's proofs of sphere packing formalized with AI"
+  },
+  {
+   "slug": "imo-2025-gold-level-ai",
+   "i": 0,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/",
+   "title": "Advanced version of Gemini with Deep Think officially achieves gold-medal standard at the International Mathematical Olympiad"
+  },
+  {
+   "slug": "erdos-728-factorial-divisibility-ai-lean",
+   "i": 0,
+   "role": "source",
+   "kind": "checker",
+   "url": "https://www.erdosproblems.com/728",
+   "title": "Erdős Problem #728"
+  },
+  {
+   "slug": "erdos-728-factorial-divisibility-ai-lean",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2601.07421",
+   "title": "Resolution of Erdős Problem #728: a writeup of Aristotle's Lean proof"
+  },
+  {
+   "slug": "gw170817-neutron-star-merger-light",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1103/PhysRevLett.119.161101",
+   "title": "GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral (PRL 119, 161101)"
+  },
+  {
+   "slug": "gw170817-neutron-star-merger-light",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1710.05832v1",
+   "title": "GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral (arXiv)"
+  },
+  {
+   "slug": "gw170817-neutron-star-merger-light",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/nature24303",
+   "title": "A kilonova as the electromagnetic counterpart to a gravitational-wave source (Nature 551, 75)"
+  },
+  {
+   "slug": "gw170817-neutron-star-merger-light",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/nature24291",
+   "title": "Optical emission from a kilonova following a gravitational-wave-detected neutron-star merger (Nature 551, 64)"
+  },
+  {
+   "slug": "gw170817-neutron-star-merger-light",
+   "i": 4,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1710.05452",
+   "title": "Swope Supernova Survey 2017a (SSS17a), the optical counterpart to a gravitational wave source (arXiv)"
+  },
+  {
+   "slug": "gw170817-neutron-star-merger-light",
+   "i": 5,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/nature24453",
+   "title": "Origin of the heavy elements in binary neutron-star mergers from a gravitational-wave event (Nature 551, 80)"
+  },
+  {
+   "slug": "pulsar-timing-gravitational-wave-background",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2306.16213",
+   "title": "The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background"
+  },
+  {
+   "slug": "pulsar-timing-gravitational-wave-background",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.3847/2041-8213/acdac6",
+   "title": "The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background (ApJL 951 L8)"
+  },
+  {
+   "slug": "pulsar-timing-gravitational-wave-background",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2306.16214",
+   "title": "The second data release from the European Pulsar Timing Array III. Search for gravitational wave signals"
+  },
+  {
+   "slug": "pulsar-timing-gravitational-wave-background",
+   "i": 3,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2306.16215",
+   "title": "Search for an isotropic gravitational-wave background with the Parkes Pulsar Timing Array"
+  },
+  {
+   "slug": "pulsar-timing-gravitational-wave-background",
+   "i": 4,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.3847/2041-8213/acdd02",
+   "title": "Search for an isotropic gravitational-wave background with the Parkes Pulsar Timing Array (ApJL)"
+  },
+  {
+   "slug": "pulsar-timing-gravitational-wave-background",
+   "i": 5,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2306.16216",
+   "title": "Searching for the nano-Hertz stochastic gravitational wave background with the Chinese Pulsar Timing Array Data Release I"
+  },
+  {
+   "slug": "jwst-confirms-galaxies-beyond-redshift-ten",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41550-023-01918-w",
+   "title": "Spectroscopic confirmation of four metal-poor galaxies at z = 10.3-13.2 (Nature Astronomy 7, 622)"
+  },
+  {
+   "slug": "jwst-confirms-galaxies-beyond-redshift-ten",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2212.04568",
+   "title": "Spectroscopic confirmation of four metal-poor galaxies at z=10.3-13.2 (arXiv)"
+  },
+  {
+   "slug": "jwst-confirms-galaxies-beyond-redshift-ten",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-023-06521-7",
+   "title": "Confirmation and refutation of very luminous galaxies in the early Universe (Nature 622, 707)"
+  },
+  {
+   "slug": "jwst-confirms-galaxies-beyond-redshift-ten",
+   "i": 3,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2303.15431",
+   "title": "Confirmation and refutation of very luminous galaxies in the early Universe (arXiv)"
+  },
+  {
+   "slug": "magic-angle-graphene-superconductivity",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/nature26160",
+   "title": "Unconventional superconductivity in magic-angle graphene superlattices (Nature 556, 43)"
+  },
+  {
+   "slug": "magic-angle-graphene-superconductivity",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/nature26154",
+   "title": "Correlated insulator behaviour at half-filling in magic-angle graphene superlattices (Nature 556, 80)"
+  },
+  {
+   "slug": "magic-angle-graphene-superconductivity",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1808.07865",
+   "title": "Tuning superconductivity in twisted bilayer graphene (Yankowitz et al.)"
+  },
+  {
+   "slug": "magic-angle-graphene-superconductivity",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.aav1910",
+   "title": "Tuning superconductivity in twisted bilayer graphene (Science)"
+  },
+  {
+   "slug": "magic-angle-graphene-superconductivity",
+   "i": 4,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-019-1695-0",
+   "title": "Superconductors, orbital magnets and correlated states in magic-angle bilayer graphene (Nature 574, 653)"
+  },
+  {
+   "slug": "magic-angle-graphene-superconductivity",
+   "i": 5,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://news.mit.edu/2020/mit-pablo-jarillo-herrero-wins-wolf-prize-physics-0116",
+   "title": "Pablo Jarillo-Herrero wins Wolf Prize in Physics (MIT news)"
+  },
+  {
+   "slug": "magic-angle-graphene-superconductivity",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-018-02660-4",
+   "title": "Checker read the page: Nature News and Views 'Novel electronic states seen in graphene', 5 Mar 2018, Nature 556, 37-38.",
+   "who": "Eugene J. Mele",
+   "affiliation": "Department of Physics and Astronomy, University of Pennsylvania"
+  },
+  {
+   "slug": "loophole-free-bell-tests-2015",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/nature15759",
+   "title": "Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres (Nature 526, 682)"
+  },
+  {
+   "slug": "loophole-free-bell-tests-2015",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1508.05949",
+   "title": "Experimental loophole-free violation of a Bell inequality using entangled electron spins separated by 1.3 km (arXiv)"
+  },
+  {
+   "slug": "loophole-free-bell-tests-2015",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1511.03190",
+   "title": "Significant-loophole-free test of Bell's theorem with entangled photons (Giustina et al., Vienna)"
+  },
+  {
+   "slug": "loophole-free-bell-tests-2015",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1103/PhysRevLett.115.250401",
+   "title": "Significant-Loophole-Free Test of Bell's Theorem with Entangled Photons (PRL 115, 250401)"
+  },
+  {
+   "slug": "loophole-free-bell-tests-2015",
+   "i": 4,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1511.03189",
+   "title": "A strong loophole-free test of local realism (Shalm et al., NIST)"
+  },
+  {
+   "slug": "loophole-free-bell-tests-2015",
+   "i": 5,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1103/PhysRevLett.115.250402",
+   "title": "Strong Loophole-Free Test of Local Realism (PRL 115, 250402)"
+  },
+  {
+   "slug": "macroscopic-drumheads-entangled-2021",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2004.05515",
+   "title": "Direct observation of deterministic macroscopic entanglement (Kotler et al.)"
+  },
+  {
+   "slug": "macroscopic-drumheads-entangled-2021",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.abf2998",
+   "title": "Direct observation of deterministic macroscopic entanglement (Science 372, 622)"
+  },
+  {
+   "slug": "macroscopic-drumheads-entangled-2021",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2009.12902",
+   "title": "Quantum-mechanics free subsystem with mechanical oscillators (Mercier de Lepinay et al.)"
+  },
+  {
+   "slug": "macroscopic-drumheads-entangled-2021",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.abf5389",
+   "title": "Quantum mechanics-free subsystem with mechanical oscillators (Science 372, 625)"
+  },
+  {
+   "slug": "muon-g-2-fermilab-confirms-brookhaven",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1103/PhysRevLett.126.141801",
+   "title": "Measurement of the Positive Muon Anomalous Magnetic Moment to 0.46 ppm (PRL 126, 141801)"
+  },
+  {
+   "slug": "muon-g-2-fermilab-confirms-brookhaven",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2104.03281",
+   "title": "Measurement of the Positive Muon Anomalous Magnetic Moment to 0.46 ppm (arXiv)"
+  },
+  {
+   "slug": "muon-g-2-fermilab-confirms-brookhaven",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/hep-ex/0602035",
+   "title": "Final Report of the Muon E821 Anomalous Magnetic Moment Measurement at BNL"
+  },
+  {
+   "slug": "muon-g-2-fermilab-confirms-brookhaven",
+   "i": 3,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2506.03069",
+   "title": "Measurement of the Positive Muon Anomalous Magnetic Moment to 127 ppb (final Fermilab result)"
+  },
+  {
+   "slug": "muon-g-2-fermilab-confirms-brookhaven",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-021-01172-y",
+   "title": "Checker read the page: Nature News and Views 'Prediction for magnetic moment of the muon informs a test of the standard model of particle physics', 5 May 2021, Nature 593, 44-45. It discusses the lattice-QCD theory result, not the experiment itself.",
+   "who": "Harvey B. Meyer",
+   "affiliation": "Institute for Nuclear Physics, Johannes Gutenberg University Mainz"
+  },
+  {
+   "slug": "weyl-semimetal-first-observed-taas",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1502.03807",
+   "title": "Discovery of a Weyl Fermion Semimetal and Topological Fermi Arcs (Xu et al.)"
+  },
+  {
+   "slug": "weyl-semimetal-first-observed-taas",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.aaa9297",
+   "title": "Discovery of a Weyl fermion semimetal and topological Fermi arcs (Science)"
+  },
+  {
+   "slug": "weyl-semimetal-first-observed-taas",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1502.04684",
+   "title": "Experimental discovery of Weyl semimetal TaAs (Lv et al.)"
+  },
+  {
+   "slug": "weyl-semimetal-first-observed-taas",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1103/PhysRevX.5.031013",
+   "title": "Experimental Discovery of Weyl Semimetal TaAs (PRX 5, 031013)"
+  },
+  {
+   "slug": "pauli-blocking-light-scattering-fermions",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2103.06921",
+   "title": "Pauli blocking of light scattering in degenerate fermions (Margalit, Lu, Top, Ketterle)"
+  },
+  {
+   "slug": "pauli-blocking-light-scattering-fermions",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2103.02319",
+   "title": "Observation of Pauli blocking in light scattering from quantum degenerate fermions (Deb and Kjaergaard)"
+  },
+  {
+   "slug": "pauli-blocking-light-scattering-fermions",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2103.02216",
+   "title": "Pauli blocking of atomic spontaneous decay (Sanner et al.)"
+  },
+  {
+   "slug": "pauli-blocking-light-scattering-fermions",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.abh3470",
+   "title": "Observation of Pauli blocking in light scattering from quantum degenerate fermions (Science 374, 972)"
+  },
+  {
+   "slug": "pauli-blocking-light-scattering-fermions",
+   "i": 4,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.abi6153",
+   "title": "Pauli blocking of light scattering in degenerate fermions (Science)"
+  },
+  {
+   "slug": "gw150914-first-gravitational-waves",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1103/PhysRevLett.116.061102",
+   "title": "Observation of Gravitational Waves from a Binary Black Hole Merger (PRL 116, 061102)"
+  },
+  {
+   "slug": "gw150914-first-gravitational-waves",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1602.03837",
+   "title": "Observation of Gravitational Waves from a Binary Black Hole Merger (arXiv)"
+  },
+  {
+   "slug": "gw150914-first-gravitational-waves",
+   "i": 2,
+   "role": "source",
+   "kind": "checker",
+   "url": "https://www.nobelprize.org/prizes/physics/2017/press-release/",
+   "title": "The Nobel Prize in Physics 2017 press release (Weiss, Barish, Thorne)"
+  },
+  {
+   "slug": "gw150914-first-gravitational-waves",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/nature17306",
+   "title": "Nature News and Views 'Dawn of a new astronomy', 24 Feb 2016, Nature 531, 40-41. Drafter read the page; the checker did not reopen it.",
+   "who": "M. Coleman Miller",
+   "affiliation": "Department of Astronomy and Joint Space-Science Institute, University of Maryland"
+  },
+  {
+   "slug": "eht-m87-black-hole-shadow",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.3847/2041-8213/ab0ec7",
+   "title": "First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole (ApJL 875, L1)"
+  },
+  {
+   "slug": "eht-m87-black-hole-shadow",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1906.11238",
+   "title": "First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole (arXiv)"
+  },
+  {
+   "slug": "eht-m87-black-hole-shadow",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-023-05843-w",
+   "title": "A ring-like accretion structure in M87 connecting its black hole and jet (Nature 616, 686)"
+  },
+  {
+   "slug": "eht-m87-black-hole-shadow",
+   "i": 3,
+   "role": "source",
+   "kind": "checker",
+   "url": "https://breakthroughprize.org/Laureates/1/P1/Y2020",
+   "title": "Breakthrough Prize in Fundamental Physics 2020"
+  },
+  {
+   "slug": "h3s-superconductivity-203-kelvin",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/nature14964",
+   "title": "Conventional superconductivity at 203 kelvin at high pressures in the sulfur hydride system (Nature 525, 73)"
+  },
+  {
+   "slug": "h3s-superconductivity-203-kelvin",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1506.08190",
+   "title": "Conventional superconductivity at 203 K at high pressures (arXiv)"
+  },
+  {
+   "slug": "h3s-superconductivity-203-kelvin",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://academic.oup.com/nsr/article/6/4/713/5487527",
+   "title": "High-temperature superconductivity in sulfur hydride evidenced by alternating-current magnetic susceptibility (National Science Review 6, 713)"
+  },
+  {
+   "slug": "h3s-superconductivity-203-kelvin",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1093/nsr/nwz061",
+   "title": "High-temperature superconductivity in sulfur hydride evidenced by alternating-current magnetic susceptibility (DOI)"
+  },
+  {
+   "slug": "h3s-superconductivity-203-kelvin",
+   "i": 4,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1509.03156",
+   "title": "Crystal Structure of 200 K-Superconducting Phase of Sulfur Hydride System (Einaga et al.; Nature Physics 12, 835 title: Crystal structure of the superconducting phase of sulfur hydride)"
+  },
+  {
+   "slug": "dart-asteroid-orbit-changed",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-023-05810-5",
+   "title": "Successful kinetic impact into an asteroid for planetary defence (Nature 616, 443)"
+  },
+  {
+   "slug": "dart-asteroid-orbit-changed",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-023-05805-2",
+   "title": "Orbital period change of Dimorphos due to the DART kinetic impact (Nature 616, 448)"
+  },
+  {
+   "slug": "dart-asteroid-orbit-changed",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-023-05852-9",
+   "title": "Light curves and colours of the ejecta from Dimorphos after the DART impact (Nature 616, 461)"
+  },
+  {
+   "slug": "dart-asteroid-orbit-changed",
+   "i": 3,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2303.05548",
+   "title": "Light Curves and Colors of the Ejecta from Dimorphos after the DART Impact (arXiv)"
+  },
+  {
+   "slug": "logical-qubits-atom-array-processor",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2312.03982v1",
+   "title": "Logical quantum processor based on reconfigurable atom arrays (Bluvstein et al.)"
+  },
+  {
+   "slug": "logical-qubits-atom-array-processor",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-023-06927-3",
+   "title": "Logical quantum processor based on reconfigurable atom arrays (Nature 626, 58)"
+  },
+  {
+   "slug": "logical-qubits-atom-array-processor",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2404.02280v1",
+   "title": "Demonstration of logical qubits and repeated error correction with better-than-physical error rates (Quantinuum and Microsoft)"
+  },
+  {
+   "slug": "thorium-229-nuclear-clock-laser-excitation",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2404.12311",
+   "title": "Laser excitation of the 229Th nuclear isomeric transition in a solid-state host"
+  },
+  {
+   "slug": "thorium-229-nuclear-clock-laser-excitation",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1103/PhysRevLett.132.182501",
+   "title": "Laser Excitation of the Th-229 Nucleus (PRL 132, 182501)"
+  },
+  {
+   "slug": "thorium-229-nuclear-clock-laser-excitation",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2406.18719",
+   "title": "Frequency ratio of the 229mTh nuclear isomeric transition and the 87Sr atomic clock (Zhang et al.)"
+  },
+  {
+   "slug": "top-quark-entanglement-atlas-cms",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2311.07288",
+   "title": "Observation of quantum entanglement in top-quark pairs using the ATLAS detector"
+  },
+  {
+   "slug": "top-quark-entanglement-atlas-cms",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-024-07824-z",
+   "title": "Observation of quantum entanglement with top quarks at the ATLAS detector (Nature)"
+  },
+  {
+   "slug": "top-quark-entanglement-atlas-cms",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2406.03976",
+   "title": "Observation of quantum entanglement in top quark pair production in proton-proton collisions at 13 TeV (CMS)"
+  },
+  {
+   "slug": "top-quark-entanglement-atlas-cms",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1088/1361-6633/ad7e4d",
+   "title": "Observation of quantum entanglement in top quark pair production in proton-proton collisions at 13 TeV (CMS, Reports on Progress in Physics)"
+  },
+  {
+   "slug": "sycamore-quantum-advantage-claim",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-019-1666-5",
+   "title": "Quantum supremacy using a programmable superconducting processor (Nature 574, 505)"
+  },
+  {
+   "slug": "sycamore-quantum-advantage-claim",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2106.14734",
+   "title": "Strong quantum computational advantage using a superconducting quantum processor (USTC, Zuchongzhi)"
+  },
+  {
+   "slug": "sycamore-quantum-advantage-claim",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1103/PhysRevLett.127.180501",
+   "title": "Strong Quantum Computational Advantage Using a Superconducting Quantum Processor (PRL 127, 180501)"
+  },
+  {
+   "slug": "sycamore-quantum-advantage-claim",
+   "i": 3,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2111.03011",
+   "title": "Solving the sampling problem of the Sycamore quantum circuits (Pan, Chen, Zhang)"
+  },
+  {
+   "slug": "sycamore-quantum-advantage-claim",
+   "i": 4,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1103/PhysRevLett.129.090502",
+   "title": "Solving the Sampling Problem of the Sycamore Quantum Circuits (PRL 129, 090502)"
+  },
+  {
+   "slug": "willow-error-correction-below-threshold",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2408.13687",
+   "title": "Quantum error correction below the surface code threshold (arXiv)"
+  },
+  {
+   "slug": "willow-error-correction-below-threshold",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-024-08449-y",
+   "title": "Quantum error correction below the surface code threshold (Nature)"
+  },
+  {
+   "slug": "deepmind-rl-tokamak-plasma-control",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-021-04301-9",
+   "title": "Magnetic control of tokamak plasmas through deep reinforcement learning (Nature 602, 414)"
+  },
+  {
+   "slug": "deepmind-rl-tokamak-plasma-control",
+   "i": 1,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://deepmind.google/discover/blog/accelerating-fusion-science-through-learned-plasma-control/",
+   "title": "Accelerating fusion science through learned plasma control (Google DeepMind)"
+  },
+  {
+   "slug": "deepmind-rl-tokamak-plasma-control",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-024-07024-9",
+   "title": "Avoiding fusion plasma tearing instability with deep reinforcement learning (Nature 626, 746)"
+  },
+  {
+   "slug": "deepmind-rl-tokamak-plasma-control",
+   "i": 3,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2307.11546",
+   "title": "Towards practical reinforcement learning for tokamak magnetic control"
+  },
+  {
+   "slug": "nif-fusion-target-gain-above-one",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1103/PhysRevLett.132.065102",
+   "title": "Achievement of Target Gain Larger than Unity in an Inertial Fusion Experiment (PRL 132, 065102)"
+  },
+  {
+   "slug": "nif-fusion-target-gain-above-one",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s42254-022-00547-y",
+   "title": "Nature Reviews Physics piece, 2022 (title not read)"
+  },
+  {
+   "slug": "nif-fusion-target-gain-above-one",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://eprints.whiterose.ac.uk/184381/1/Nature_news_and_views_Jan2022_final.pdf",
+   "title": "Seen in a search result; likely a commentary on the 1.3 MJ burning-plasma paper (Zylstra et al.), not on the Dec 2022 ignition shot. Content and author not read.",
+   "who": "Not read",
+   "affiliation": "White Rose eprints (author manuscript of a Nature News and Views dated Jan 2022)"
+  },
+  {
+   "slug": "alphaqubit-neural-quantum-decoder",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-024-08148-8",
+   "title": "Learning high-accuracy error decoding for quantum processors (Nature 635, 834)"
+  },
+  {
+   "slug": "alphaqubit-neural-quantum-decoder",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2512.07737",
+   "title": "A scalable and real-time neural decoder for topological quantum codes (AlphaQubit 2)"
+  },
+  {
+   "slug": "alphaqubit-neural-quantum-decoder",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-024-03557-1",
+   "title": "Nature News and Views 'Physics-AI collaboration quashes quantum errors', online 20 Nov 2024, Nature 635, 823. The drafter read it only through a media.nature.com pdf; this article address is rebuilt, not seen, and not reopened by the checker.",
+   "who": "Nadia Haider",
+   "affiliation": "QuTech, Delft University of Technology"
+  },
+  {
+   "slug": "gluon-amplitudes-nonzero-ai-conjecture",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2602.12176",
+   "title": "Single-minus gluon tree amplitudes are nonzero (Guevara, Lupsasca, Skinner, Strominger, Weil)"
+  },
+  {
+   "slug": "gluon-amplitudes-nonzero-ai-conjecture",
+   "i": 1,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://openai.com/index/new-result-theoretical-physics/",
+   "title": "OpenAI: new result in theoretical physics (13 Feb 2026)"
+  },
+  {
+   "slug": "gluon-amplitudes-nonzero-ai-conjecture",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2603.26609",
+   "title": "N=4 single-minus superamplitudes and dual superconformal symmetry (Brandhuber, Pichini, Travaglini, Wen)"
+  },
+  {
+   "slug": "gluon-amplitudes-nonzero-ai-conjecture",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://openai.com/index/new-result-theoretical-physics/",
+   "title": "Quoted in OpenAI's post (page read by the drafter) calling it journal-level work. A quote in a lab post is not a separate commentary piece.",
+   "who": "Nathaniel Craig",
+   "affiliation": "University of California, Santa Barbara"
+  },
+  {
+   "slug": "boron-arsenide-high-thermal-conductivity",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.aat5522",
+   "title": "Experimental observation of high thermal conductivity in boron arsenide (Science 361, 575)"
+  },
+  {
+   "slug": "boron-arsenide-high-thermal-conductivity",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.aat8982",
+   "title": "High thermal conductivity in cubic boron arsenide crystals (Science 361, 579)"
+  },
+  {
+   "slug": "boron-arsenide-high-thermal-conductivity",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.aat7932",
+   "title": "Unusual high thermal conductivity in boron arsenide bulk crystals (Science 361, 582)"
+  },
+  {
+   "slug": "pet-depolymerase-enzyme-plastic-recycling",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-020-2149-4",
+   "title": "An engineered PET depolymerase to break down and recycle plastic bottles (Nature 580, 216)"
+  },
+  {
+   "slug": "pet-depolymerase-enzyme-plastic-recycling",
+   "i": 1,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://www.carbios.com/en/",
+   "title": "Carbios: company site (home page only)"
+  },
+  {
+   "slug": "ai-retrosynthesis-planning-blind-test",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/nature25978",
+   "title": "Planning chemical syntheses with deep neural networks and symbolic AI (Nature 555, 604)"
+  },
+  {
+   "slug": "ai-retrosynthesis-planning-blind-test",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1708.04202",
+   "title": "Learning to Plan Chemical Syntheses (arXiv 1708.04202)"
+  },
+  {
+   "slug": "ai-retrosynthesis-planning-blind-test",
+   "i": 2,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.uni-muenster.de/news/view.php?cmdid=9457",
+   "title": "University of Munster news item on the Nature paper"
+  },
+  {
+   "slug": "ai-retrosynthesis-planning-blind-test",
+   "i": 3,
+   "role": "source",
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-018-03774-5",
+   "title": "Nature News and Views on the paper (title not shown in the search result)"
+  },
+  {
+   "slug": "ai-retrosynthesis-planning-blind-test",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://www.nature.com/articles/d41586-018-03774-5",
+   "title": "URL seen, article not read. Confirm it is a News and Views from outside the team.",
+   "who": "Author not read (Nature News and Views, 2018)",
+   "affiliation": "not read; must not be Munster or Shanghai"
+  },
+  {
+   "slug": "gnome-millions-of-crystal-structures-predicted",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-023-06735-9",
+   "title": "Scaling deep learning for materials discovery (Nature 624, 80)"
+  },
+  {
+   "slug": "gnome-millions-of-crystal-structures-predicted",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10700131",
+   "title": "Scaling deep learning for materials discovery (PubMed Central copy)"
+  },
+  {
+   "slug": "gnome-millions-of-crystal-structures-predicted",
+   "i": 2,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://deepmind.google/discover/blog/millions-of-new-materials-discovered-with-deep-learning/",
+   "title": "Google DeepMind: millions of new materials discovered with deep learning"
+  },
+  {
+   "slug": "gnome-millions-of-crystal-structures-predicted",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11044265",
+   "title": "Artificial Intelligence Driving Materials Discovery? Perspective on the Article: Scaling Deep Learning for Materials Discovery (Chem. Mater. 2024)"
+  },
+  {
+   "slug": "gnome-millions-of-crystal-structures-predicted",
+   "i": 4,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://chemrxiv.org/engage/chemrxiv/article-details/65957d349138d231611ad8f7",
+   "title": "Challenges in high-throughput inorganic material prediction and autonomous synthesis (Leeman et al.)"
+  },
+  {
+   "slug": "gnome-millions-of-crystal-structures-predicted",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11044265",
+   "title": "Chemistry of Materials Perspective, 2024. Critical. URL seen, article not read.",
+   "who": "Anthony K. Cheetham and Ram Seshadri",
+   "affiliation": "University of California, Santa Barbara (Cheetham also National University of Singapore)"
+  },
+  {
+   "slug": "gnome-millions-of-crystal-structures-predicted",
+   "i": 1,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://chemrxiv.org/engage/chemrxiv/article-details/65957d349138d231611ad8f7",
+   "title": "Analysis of A-Lab and its predicted targets, later in PRX Energy. Critical. Independent of the Berkeley and DeepMind teams. Covers GNoME only in part.",
+   "who": "Joshua Leeman, Robert Palgrave, Leslie Schoop and colleagues",
+   "affiliation": "Princeton University; University College London"
+  },
+  {
+   "slug": "a-lab-autonomous-synthesis-new-materials",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-023-06734-w",
+   "title": "An autonomous laboratory for the accelerated synthesis of novel materials (Nature 624, 86)"
+  },
+  {
+   "slug": "a-lab-autonomous-synthesis-new-materials",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10700133",
+   "title": "An autonomous laboratory for the accelerated synthesis of inorganic materials (PubMed Central copy)"
+  },
+  {
+   "slug": "a-lab-autonomous-synthesis-new-materials",
+   "i": 2,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://newscenter.lbl.gov/2023/04/17/meet-the-autonomous-lab-of-the-future/",
+   "title": "Berkeley Lab: meet the autonomous lab of the future"
+  },
+  {
+   "slug": "a-lab-autonomous-synthesis-new-materials",
+   "i": 3,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://chemrxiv.org/engage/chemrxiv/article-details/65957d349138d231611ad8f7",
+   "title": "Challenges in high-throughput inorganic material prediction and autonomous synthesis (Leeman et al.; PRX Energy 2024)"
+  },
+  {
+   "slug": "a-lab-autonomous-synthesis-new-materials",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://chemrxiv.org/engage/chemrxiv/article-details/65957d349138d231611ad8f7",
+   "title": "Re-analysis of the reported X-ray data. Argues that few or none of the reported compounds are new or correctly identified. Critical. URL seen, article not read.",
+   "who": "Joshua Leeman, Robert Palgrave, Leslie Schoop and colleagues",
+   "affiliation": "Princeton University; University College London"
+  },
+  {
+   "slug": "mobile-robot-chemist-photocatalyst-search",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-020-2442-2",
+   "title": "A mobile robotic chemist (Nature 583, 237)"
+  },
+  {
+   "slug": "mobile-robot-chemist-photocatalyst-search",
+   "i": 1,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://news.liverpool.ac.uk/2020/07/08/experiment-too-big-hire-a-mobile-robot-scientist/",
+   "title": "University of Liverpool: Experiment too big? Hire a mobile robot scientist"
+  },
+  {
+   "slug": "coscientist-language-model-agent-runs-chemistry",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-023-06792-0",
+   "title": "Autonomous chemical research with large language models (Nature 624, 570)"
+  },
+  {
+   "slug": "coscientist-language-model-agent-runs-chemistry",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10733136",
+   "title": "Autonomous chemical research with large language models (PubMed Central copy)"
+  },
+  {
+   "slug": "coscientist-language-model-agent-runs-chemistry",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2304.05332",
+   "title": "Emergent autonomous scientific research capabilities of large language models (arXiv 2304.05332)"
+  },
+  {
+   "slug": "coscientist-language-model-agent-runs-chemistry",
+   "i": 3,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.cmu.edu/chemistry/news/2023/1220_ai-coscientist-automates-discovery.html",
+   "title": "Carnegie Mellon University: AI Coscientist automates discovery"
+  },
+  {
+   "slug": "computer-planned-natural-product-syntheses",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-020-2855-y",
+   "title": "Computational planning of the synthesis of complex natural products (Nature 588, 83)"
+  },
+  {
+   "slug": "dm21-neural-network-density-functional",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.abj6511",
+   "title": "Pushing the frontiers of density functionals by solving the fractional electron problem (Science 374, 1385)"
+  },
+  {
+   "slug": "dm21-neural-network-density-functional",
+   "i": 1,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://deepmind.google/discover/blog/simulating-matter-on-the-quantum-scale-with-ai/",
+   "title": "Google DeepMind: simulating matter on the quantum scale with AI"
+  },
+  {
+   "slug": "closed-loop-machine-learning-fast-charging",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-020-1994-5",
+   "title": "Closed-loop optimization of fast-charging protocols for batteries with machine learning (Nature 578, 397)"
+  },
+  {
+   "slug": "active-learning-copper-aluminium-co2-catalyst",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-020-2242-8",
+   "title": "Accelerated discovery of CO2 electrocatalysts using active machine learning (Nature 581, 178)"
+  },
+  {
+   "slug": "mattergen-generative-model-designs-crystals",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-025-08628-5",
+   "title": "A generative model for inorganic materials design (Nature 639, 624)"
+  },
+  {
+   "slug": "fast-petase-machine-learning-plastic-enzyme",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-022-04599-z",
+   "title": "Machine learning-aided engineering of hydrolases for PET depolymerization (Nature 604, 662)"
+  },
+  {
+   "slug": "mof-water-harvesting-from-desert-air",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.aam8743",
+   "title": "Water harvesting from air with metal-organic frameworks powered by natural sunlight (Science 356, 430)"
+  },
+  {
+   "slug": "mof-water-harvesting-from-desert-air",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/sciadv.aat3198",
+   "title": "Practical water production from desert air (Science Advances 4, eaat3198)"
+  },
+  {
+   "slug": "halicin-deep-learning-antibiotic-discovery",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1016/j.cell.2020.01.021",
+   "title": "A deep learning approach to antibiotic discovery (Cell 180, 688)"
+  },
+  {
+   "slug": "cyclocarbon-18-ring-made-and-imaged",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.aay1914",
+   "title": "An sp-hybridized molecular carbon allotrope, cyclo[18]carbon (Science 365, 1299)"
+  },
+  {
+   "slug": "alphafold2-casp14-protein-structure-prediction",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-021-03819-2",
+   "title": "Highly accurate protein structure prediction with AlphaFold (Nature 596, 583)"
+  },
+  {
+   "slug": "alphafold2-casp14-protein-structure-prediction",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34265844/",
+   "title": "Highly accurate protein structure prediction with AlphaFold (PubMed 34265844)"
+  },
+  {
+   "slug": "alphafold2-casp14-protein-structure-prediction",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34559429/",
+   "title": "Assessment of prediction methods for protein structures determined by NMR in CASP14: Impact of AlphaFold2"
+  },
+  {
+   "slug": "alphafold2-casp14-protein-structure-prediction",
+   "i": 3,
+   "role": "source",
+   "kind": "checker",
+   "url": "https://predictioncenter.org/casp14/",
+   "title": "CASP14 official results, Protein Structure Prediction Center"
+  },
+  {
+   "slug": "alphafold2-casp14-protein-structure-prediction",
+   "i": 4,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.aaas.org/news/sciences-2021-breakthrough-ai-powered-protein-prediction",
+   "title": "Science's 2021 Breakthrough: AI-powered protein prediction (AAAS)"
+  },
+  {
+   "slug": "alphafold2-casp14-protein-structure-prediction",
+   "i": 5,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.nobelprize.org/prizes/chemistry/2024/press-release/",
+   "title": "Nobel Prize in Chemistry 2024 press release"
+  },
+  {
+   "slug": "alphafold2-casp14-protein-structure-prediction",
+   "i": 6,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://deepmind.google/discover/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology/",
+   "title": "AlphaFold: a solution to a 50-year-old grand challenge in biology (DeepMind, 30 Nov 2020)"
+  },
+  {
+   "slug": "rentosertib-ai-drug-lung-fibrosis-trial",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/40461817/",
+   "title": "A generative AI-discovered TNIK inhibitor for idiopathic pulmonary fibrosis: a randomized phase 2a trial"
+  },
+  {
+   "slug": "rentosertib-ai-drug-lung-fibrosis-trial",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41591-025-03743-2",
+   "title": "A generative AI-discovered TNIK inhibitor for idiopathic pulmonary fibrosis (Nature Medicine, 2025)"
+  },
+  {
+   "slug": "rentosertib-ai-drug-lung-fibrosis-trial",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41587-024-02143-0",
+   "title": "A small-molecule TNIK inhibitor targets fibrosis in preclinical and clinical models (Nature Biotechnology)"
+  },
+  {
+   "slug": "rentosertib-ai-drug-lung-fibrosis-trial",
+   "i": 3,
+   "role": "source",
+   "kind": "registry",
+   "url": "https://clinicaltrials.gov/study/NCT05938920",
+   "title": "Phase 2a study of ISM001-055 in idiopathic pulmonary fibrosis (ClinicalTrials.gov)"
+  },
+  {
+   "slug": "ai-flagged-baricitinib-covid-treatment",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1016/S0140-6736(20)30304-4",
+   "title": "Baricitinib as potential treatment for 2019-nCoV acute respiratory disease (The Lancet)"
+  },
+  {
+   "slug": "ai-flagged-baricitinib-covid-treatment",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1056/NEJMoa2031994",
+   "title": "Baricitinib plus Remdesivir for Hospitalized Adults with Covid-19 (ACTT-2, NEJM)"
+  },
+  {
+   "slug": "ai-flagged-baricitinib-covid-treatment",
+   "i": 2,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207924",
+   "title": "Drugs@FDA: Olumiant (baricitinib), NDA 207924"
+  },
+  {
+   "slug": "masai-trial-ai-mammography-screening-sweden",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37541274/",
+   "title": "Artificial intelligence-supported screen reading versus standard double reading in the Mammography Screening with Artificial Intelligence trial (MASAI) (Lancet Oncology, 2023)"
+  },
+  {
+   "slug": "masai-trial-ai-mammography-screening-sweden",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/39904652/",
+   "title": "Screening performance and characteristics of breast cancer detected in the MASAI trial (Lancet Digital Health, 2025)"
+  },
+  {
+   "slug": "masai-trial-ai-mammography-screening-sweden",
+   "i": 2,
+   "role": "source",
+   "kind": "registry",
+   "url": "https://clinicaltrials.gov/study/NCT04838756",
+   "title": "Mammography Screening with Artificial Intelligence (MASAI), ClinicalTrials.gov"
+  },
+  {
+   "slug": "idx-dr-first-autonomous-ai-diagnostic",
+   "i": 0,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-permits-marketing-artificial-intelligence-based-device-detect-certain-diabetes-related-eye",
+   "title": "FDA permits marketing of artificial intelligence-based device to detect certain diabetes-related eye problems"
+  },
+  {
+   "slug": "idx-dr-first-autonomous-ai-diagnostic",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41746-018-0040-6",
+   "title": "Pivotal trial of an autonomous AI-based diagnostic system for detection of diabetic retinopathy in primary care offices (npj Digital Medicine)"
+  },
+  {
+   "slug": "covid-19-mrna-vaccines-efficacy-trials",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33301246/",
+   "title": "Safety and Efficacy of the BNT162b2 mRNA Covid-19 Vaccine (NEJM, Polack et al.)"
+  },
+  {
+   "slug": "covid-19-mrna-vaccines-efficacy-trials",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7745181/",
+   "title": "Safety and Efficacy of the BNT162b2 mRNA Covid-19 Vaccine (PMC copy)"
+  },
+  {
+   "slug": "covid-19-mrna-vaccines-efficacy-trials",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1056/NEJMoa2035389",
+   "title": "Efficacy and Safety of the mRNA-1273 SARS-CoV-2 Vaccine (NEJM, Baden et al.)"
+  },
+  {
+   "slug": "covid-19-mrna-vaccines-efficacy-trials",
+   "i": 3,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-takes-key-action-fight-against-covid-19-issuing-emergency-use-authorization-first-covid-19",
+   "title": "FDA Takes Key Action in Fight Against COVID-19 By Issuing Emergency Use Authorization for First COVID-19 Vaccine"
+  },
+  {
+   "slug": "covid-19-mrna-vaccines-efficacy-trials",
+   "i": 4,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.fda.gov/media/144412/download",
+   "title": "Pfizer-BioNTech COVID-19 Vaccine EUA letter of authorization"
+  },
+  {
+   "slug": "covid-19-mrna-vaccines-efficacy-trials",
+   "i": 5,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.nobelprize.org/prizes/medicine/2023/press-release/",
+   "title": "Nobel Prize in Physiology or Medicine 2023 press release"
+  },
+  {
+   "slug": "crispr-sickle-cell-therapy-casgevy-approved",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33283989/",
+   "title": "CRISPR-Cas9 Gene Editing for Sickle Cell Disease and beta-Thalassemia (NEJM, Frangoul et al.)"
+  },
+  {
+   "slug": "crispr-sickle-cell-therapy-casgevy-approved",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1056/nejmoa2031054",
+   "title": "CRISPR-Cas9 Gene Editing for Sickle Cell Disease and beta-Thalassemia (NEJM 384, 252)"
+  },
+  {
+   "slug": "crispr-sickle-cell-therapy-casgevy-approved",
+   "i": 2,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease",
+   "title": "FDA Approves First Gene Therapies to Treat Patients with Sickle Cell Disease"
+  },
+  {
+   "slug": "crispr-sickle-cell-therapy-casgevy-approved",
+   "i": 3,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.aaas.org/news/aaas-fellow-receives-nobel-prize-chemistry-development-crispr",
+   "title": "AAAS Fellow Receives Nobel Prize in Chemistry for Development of CRISPR"
+  },
+  {
+   "slug": "crispr-sickle-cell-therapy-casgevy-approved",
+   "i": 4,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.science.org/content/article/and-science-s-2015-breakthrough-year",
+   "title": "And Science's 2015 Breakthrough of the Year is... (CRISPR genome editing)"
+  },
+  {
+   "slug": "lenacapavir-twice-yearly-hiv-prevention-injection",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/39046157/",
+   "title": "Twice-Yearly Lenacapavir or Daily F/TAF for HIV Prevention in Cisgender Women (NEJM, Bekker et al.)"
+  },
+  {
+   "slug": "lenacapavir-twice-yearly-hiv-prevention-injection",
+   "i": 1,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/220018Orig1s000ltr.pdf",
+   "title": "Yeztugo (lenacapavir) injection, FDA approval letter, NDA 220018"
+  },
+  {
+   "slug": "lenacapavir-twice-yearly-hiv-prevention-injection",
+   "i": 2,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.ema.europa.eu/en/documents/assessment-report/yeytuo-epar-public-assessment-report_en.pdf",
+   "title": "Yeytuo (lenacapavir) EPAR public assessment report, EMA"
+  },
+  {
+   "slug": "lenacapavir-twice-yearly-hiv-prevention-injection",
+   "i": 3,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.eurekalert.org/news-releases/1067507",
+   "title": "Science's 2024 Breakthrough of the Year (EurekAlert release)"
+  },
+  {
+   "slug": "lenacapavir-twice-yearly-hiv-prevention-injection",
+   "i": 4,
+   "role": "source",
+   "kind": "registry",
+   "url": "https://clinicaltrials.gov/study/NCT04994509",
+   "title": "PURPOSE 1 trial of lenacapavir for HIV prevention (ClinicalTrials.gov)"
+  },
+  {
+   "slug": "semaglutide-obesity-step-1-trial-wegovy",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33567185/",
+   "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity (NEJM, Wilding et al.)"
+  },
+  {
+   "slug": "semaglutide-obesity-step-1-trial-wegovy",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8089593/",
+   "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity (PMC copy)"
+  },
+  {
+   "slug": "semaglutide-obesity-step-1-trial-wegovy",
+   "i": 2,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/215256s000lbl.pdf",
+   "title": "Wegovy (semaglutide) injection label, 2021 approval, NDA 215256"
+  },
+  {
+   "slug": "semaglutide-obesity-step-1-trial-wegovy",
+   "i": 3,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://laskerfoundation.org/winners/glp-1-based-therapy-for-obesity/",
+   "title": "GLP-1-based therapy for obesity, Lasker Foundation"
+  },
+  {
+   "slug": "semaglutide-obesity-step-1-trial-wegovy",
+   "i": 4,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://aaas.org/news/sciences-2023-breakthrough-glp-1-agonists-show-promise-against-obesity-associated-disease",
+   "title": "Science's 2023 Breakthrough: GLP-1 agonists show promise against obesity-associated disease (AAAS)"
+  },
+  {
+   "slug": "trikafta-triple-therapy-cystic-fibrosis",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1056/NEJMoa1908639",
+   "title": "Elexacaftor-Tezacaftor-Ivacaftor for Cystic Fibrosis with a Single Phe508del Allele (NEJM 381, 1809)"
+  },
+  {
+   "slug": "trikafta-triple-therapy-cystic-fibrosis",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1016/S0140-6736(19)32597-8",
+   "title": "Efficacy and safety of elexacaftor plus tezacaftor plus ivacaftor in people with cystic fibrosis homozygous for F508del (The Lancet)"
+  },
+  {
+   "slug": "trikafta-triple-therapy-cystic-fibrosis",
+   "i": 2,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.niddk.nih.gov/news/archive/2019/therapies-treat-molecular-cause-cystic-fibrosis-now-approved-for-ninety-percent-people-with-disease",
+   "title": "Therapies that treat the molecular cause of cystic fibrosis now approved for ninety percent of people with the disease (NIDDK)"
+  },
+  {
+   "slug": "trikafta-triple-therapy-cystic-fibrosis",
+   "i": 3,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://directorsblog.nih.gov/2020/01/02/celebrating-biomedical-breakthroughs-in-2019/",
+   "title": "Celebrating 2019 Biomedical Breakthroughs (NIH Director's Blog)"
+  },
+  {
+   "slug": "ebola-antibody-drugs-palm-trial-approved",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1056/NEJMoa1910993",
+   "title": "A Randomized, Controlled Trial of Ebola Virus Disease Therapeutics (NEJM, PALM)"
+  },
+  {
+   "slug": "ebola-antibody-drugs-palm-trial-approved",
+   "i": 1,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://directorsblog.nih.gov/2020/01/02/celebrating-biomedical-breakthroughs-in-2019/",
+   "title": "Celebrating 2019 Biomedical Breakthroughs (NIH Director's Blog)"
+  },
+  {
+   "slug": "ebola-antibody-drugs-palm-trial-approved",
+   "i": 2,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-ebola-virus",
+   "title": "FDA Approves First Treatment for Ebola Virus (Inmazeb, REGN-EB3)"
+  },
+  {
+   "slug": "paxlovid-nirmatrelvir-cuts-covid-hospitalisation-trial",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1056/NEJMoa2118542",
+   "title": "Oral Nirmatrelvir for High-Risk, Nonhospitalized Adults with Covid-19 (NEJM, EPIC-HR)"
+  },
+  {
+   "slug": "paxlovid-nirmatrelvir-cuts-covid-hospitalisation-trial",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1056/NEJMoa2204919",
+   "title": "Nirmatrelvir Use and Severe Covid-19 Outcomes during the Omicron Surge (NEJM)"
+  },
+  {
+   "slug": "paxlovid-nirmatrelvir-cuts-covid-hospitalisation-trial",
+   "i": 2,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-antiviral-treatment-covid-19-adults",
+   "title": "FDA Approves First Oral Antiviral for Treatment of COVID-19 in Adults"
+  },
+  {
+   "slug": "lecanemab-slows-early-alzheimers-disease-trial",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1056/NEJMoa2212948",
+   "title": "Lecanemab in Early Alzheimer's Disease (NEJM, Clarity AD)"
+  },
+  {
+   "slug": "lecanemab-slows-early-alzheimers-disease-trial",
+   "i": 1,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-converts-novel-alzheimers-disease-treatment-traditional-approval",
+   "title": "FDA Converts Novel Alzheimer's Disease Treatment to Traditional Approval"
+  },
+  {
+   "slug": "zolgensma-gene-therapy-spinal-muscular-atrophy",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1056/NEJMoa1706198",
+   "title": "Single-Dose Gene-Replacement Therapy for Spinal Muscular Atrophy (NEJM)"
+  },
+  {
+   "slug": "zolgensma-gene-therapy-spinal-muscular-atrophy",
+   "i": 1,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.science.org/doi/10.1126/science.358.6370.1522",
+   "title": "The runners up (Science, 2017 Breakthrough of the Year)"
+  },
+  {
+   "slug": "zolgensma-gene-therapy-spinal-muscular-atrophy",
+   "i": 2,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-innovative-gene-therapy-treat-pediatric-patients-spinal-muscular-atrophy-rare-disease",
+   "title": "FDA approves innovative gene therapy to treat pediatric patients with spinal muscular atrophy, a rare disease and leading genetic cause of infant mortality"
+  },
+  {
+   "slug": "luxturna-gene-therapy-inherited-blindness-approved",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1016/S0140-6736(17)31868-8",
+   "title": "Efficacy and safety of voretigene neparvovec in patients with confirmed biallelic RPE65 mutations: a randomised, controlled, open-label, phase 3 trial (The Lancet)"
+  },
+  {
+   "slug": "luxturna-gene-therapy-inherited-blindness-approved",
+   "i": 1,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-novel-gene-therapy-treat-patients-rare-form-inherited-vision-loss",
+   "title": "FDA approves novel gene therapy to treat patients with a rare form of inherited vision loss"
+  },
+  {
+   "slug": "luxturna-gene-therapy-inherited-blindness-approved",
+   "i": 2,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.science.org/doi/10.1126/science.358.6370.1522",
+   "title": "The runners up (Science, 2017 Breakthrough of the Year)"
+  },
+  {
+   "slug": "kymriah-car-t-childhood-leukaemia-approved",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1056/NEJMoa1709866",
+   "title": "Tisagenlecleucel in Children and Young Adults with B-Cell Lymphoblastic Leukemia (NEJM, ELIANA)"
+  },
+  {
+   "slug": "kymriah-car-t-childhood-leukaemia-approved",
+   "i": 1,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approval-brings-first-gene-therapy-united-states",
+   "title": "FDA approval brings first gene therapy to the United States"
+  },
+  {
+   "slug": "rts-s-malaria-vaccine-first-approved",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1016/S0140-6736(15)60721-8",
+   "title": "Efficacy and safety of RTS,S/AS01 malaria vaccine with or without a booster dose in infants and children in Africa: final results of a phase 3 trial (The Lancet)"
+  },
+  {
+   "slug": "rts-s-malaria-vaccine-first-approved",
+   "i": 1,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.ema.europa.eu/en/medicines/human/EU-opinions/mosquirix",
+   "title": "Mosquirix: EU-M4all positive scientific opinion, EMA (July 2015)"
+  },
+  {
+   "slug": "base-editing-changes-single-dna-letters",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/nature17946",
+   "title": "Programmable editing of a target base in genomic DNA without double-stranded DNA cleavage (Nature)"
+  },
+  {
+   "slug": "base-editing-changes-single-dna-letters",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/nbt.3816",
+   "title": "Highly efficient RNA-guided base editing in mouse embryos (Nature Biotechnology)"
+  },
+  {
+   "slug": "base-editing-changes-single-dna-letters",
+   "i": 2,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://chembiophd.hms.harvard.edu/news/david-liu-awarded-breakthrough-prize",
+   "title": "David Liu awarded Breakthrough Prize (Harvard Medical School program page)"
+  },
+  {
+   "slug": "base-editing-changes-single-dna-letters",
+   "i": 3,
+   "role": "source",
+   "kind": "checker",
+   "url": "https://breakthroughprize.org/",
+   "title": "Breakthrough Prize, 2025 Life Sciences laureates"
+  },
+  {
+   "slug": "development-tracked-cell-by-cell-2018",
+   "i": 0,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.aaas.org/news/tracking-development-cell-cell-sciences-breakthrough-2018",
+   "title": "Tracking Development Cell by Cell is Science's Breakthrough of 2018 (AAAS)"
+  },
+  {
+   "slug": "development-tracked-cell-by-cell-2018",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.aar4362",
+   "title": "Single-cell mapping of gene expression landscapes and lineage in the zebrafish embryo (Science, Wagner et al.)"
+  },
+  {
+   "slug": "development-tracked-cell-by-cell-2018",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.aar3131",
+   "title": "Single-cell reconstruction of developmental trajectories during zebrafish embryogenesis (Science, Farrell et al.)"
+  },
+  {
+   "slug": "development-tracked-cell-by-cell-2018",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.aar5780",
+   "title": "The dynamics of gene expression in vertebrate embryogenesis at single-cell resolution (Science, Briggs et al.)"
+  },
+  {
+   "slug": "development-tracked-cell-by-cell-2018",
+   "i": 4,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.aaq1723",
+   "title": "Cell type atlas and lineage tree of a whole complex animal by single-cell transcriptomics (Science, Plass et al.)"
+  },
+  {
+   "slug": "development-tracked-cell-by-cell-2018",
+   "i": 5,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.aaq1736",
+   "title": "Cell type transcriptome atlas for the planarian Schmidtea mediterranea (Science, Fincher et al.)"
+  },
+  {
+   "slug": "covid-ai-models-unfit-for-use",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1136/bmj.m1328",
+   "title": "Prediction models for diagnosis and prognosis of covid-19: systematic review and critical appraisal (BMJ)"
+  },
+  {
+   "slug": "covid-ai-models-unfit-for-use",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s42256-021-00307-0",
+   "title": "Common pitfalls and recommendations for using machine learning to detect and prognosticate for COVID-19 using chest radiographs and CT scans (Nature Machine Intelligence)"
+  },
+  {
+   "slug": "alphafold-database-open-protein-structures",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://link.springer.com/10.1038/s41586-021-03828-1",
+   "title": "Highly accurate protein structure prediction for the human proteome (Nature 596, 590)"
+  },
+  {
+   "slug": "alphafold-database-open-protein-structures",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8387240/",
+   "title": "Highly accurate protein structure prediction for the human proteome (PMC copy)"
+  },
+  {
+   "slug": "alphafold-database-open-protein-structures",
+   "i": 2,
+   "role": "source",
+   "kind": "dataset",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "title": "AlphaFold Protein Structure Database, EMBL-EBI"
+  },
+  {
+   "slug": "alphafold-database-open-protein-structures",
+   "i": 3,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.embl.org/news/science/ai-protein-prediction-breakthrough/",
+   "title": "AI protein prediction breakthrough (EMBL)"
+  },
+  {
+   "slug": "alphafold-database-open-protein-structures",
+   "i": 4,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.ipd.uw.edu/2021/12/2021-breakthrough-of-the-year",
+   "title": "Breakthrough of the Year (Institute for Protein Design, University of Washington)"
+  },
+  {
+   "slug": "personalised-base-editing-therapy-infant-kj",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1056/NEJMoa2504747",
+   "title": "Patient-Specific In Vivo Gene Editing to Treat a Rare Genetic Disease (NEJM)"
+  },
+  {
+   "slug": "ai-designed-proteins-rfdiffusion-proteinmpnn",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.add2187",
+   "title": "Robust deep learning based protein sequence design using ProteinMPNN (Science)"
+  },
+  {
+   "slug": "ai-designed-proteins-rfdiffusion-proteinmpnn",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9997061/",
+   "title": "Robust deep learning based protein sequence design using ProteinMPNN (PMC copy)"
+  },
+  {
+   "slug": "ai-designed-proteins-rfdiffusion-proteinmpnn",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://www.biorxiv.org/content/10.1101/2022.06.03.494563.full.pdf",
+   "title": "Robust deep learning based protein sequence design using ProteinMPNN (bioRxiv, June 2022)"
+  },
+  {
+   "slug": "ai-designed-proteins-rfdiffusion-proteinmpnn",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-023-06415-8",
+   "title": "De novo design of protein structure and function with RFdiffusion (Nature 620, 1089)"
+  },
+  {
+   "slug": "ai-designed-proteins-rfdiffusion-proteinmpnn",
+   "i": 4,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10468394/",
+   "title": "De novo design of protein structure and function with RFdiffusion (PMC copy)"
+  },
+  {
+   "slug": "ai-designed-proteins-rfdiffusion-proteinmpnn",
+   "i": 5,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.nobelprize.org/prizes/chemistry/2024/press-release/",
+   "title": "Nobel Prize in Chemistry 2024 press release"
+  },
+  {
+   "slug": "rosettafold-three-track-protein-structure-prediction",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.abj8754",
+   "title": "Accurate prediction of protein structures and interactions using a three-track neural network (Science)"
+  },
+  {
+   "slug": "rosettafold-three-track-protein-structure-prediction",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7612213/",
+   "title": "Accurate prediction of protein structures and interactions using a three-track neural network (PMC copy)"
+  },
+  {
+   "slug": "rosettafold-three-track-protein-structure-prediction",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://www.biorxiv.org/content/10.1101/2021.06.14.448402v1.full.pdf+html",
+   "title": "Accurate prediction of protein structures and interactions using a 3-track network (bioRxiv, June 2021)"
+  },
+  {
+   "slug": "rosettafold-three-track-protein-structure-prediction",
+   "i": 3,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://www.ipd.uw.edu/2021/07/rosettafold-accurate-protein-structure-prediction-accessible-to-all/",
+   "title": "RoseTTAFold: accurate protein structure prediction accessible to all (Institute for Protein Design)"
+  },
+  {
+   "slug": "rosettafold-three-track-protein-structure-prediction",
+   "i": 4,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.aaas.org/news/sciences-2021-breakthrough-ai-powered-protein-prediction",
+   "title": "Science's 2021 Breakthrough: AI-powered protein prediction (AAAS)"
+  },
+  {
+   "slug": "alphafold3-predicts-biomolecular-complexes",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-024-07487-w",
+   "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3 (Nature 630, 493)"
+  },
+  {
+   "slug": "alphafold3-predicts-biomolecular-complexes",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11168924/",
+   "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3 (PMC copy)"
+  },
+  {
+   "slug": "alphafold3-predicts-biomolecular-complexes",
+   "i": 2,
+   "role": "source",
+   "kind": "notice",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11634763/",
+   "title": "Addendum: Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+  },
+  {
+   "slug": "alphamissense-predicts-harm-of-missense-variants",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37733863/",
+   "title": "Accurate proteome-wide missense variant effect prediction with AlphaMissense (Science)"
+  },
+  {
+   "slug": "alphamissense-predicts-harm-of-missense-variants",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.adg7492",
+   "title": "Accurate proteome-wide missense variant effect prediction with AlphaMissense (Science 381, eadg7492)"
+  },
+  {
+   "slug": "alphamissense-predicts-harm-of-missense-variants",
+   "i": 2,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://deepmind.google/blog/alphamissense-catalogue-of-genetic-mutations-to-help-pinpoint-the-cause-of-diseases/",
+   "title": "AlphaMissense: a catalogue of genetic mutations to help pinpoint the cause of diseases (DeepMind)"
+  },
+  {
+   "slug": "alphamissense-predicts-harm-of-missense-variants",
+   "i": 3,
+   "role": "source",
+   "kind": "dataset",
+   "url": "https://zenodo.org/records/10813168",
+   "title": "AlphaMissense predictions (Zenodo record, version v3)"
+  },
+  {
+   "slug": "complete-human-genome-sequence-t2t",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.abj6987",
+   "title": "The complete sequence of a human genome (Science 376, 44)"
+  },
+  {
+   "slug": "complete-human-genome-sequence-t2t",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-023-05896-x",
+   "title": "A draft human pangenome reference (Nature)"
+  },
+  {
+   "slug": "fruit-fly-brain-wiring-map-flywire",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-024-07558-y",
+   "title": "Neuronal wiring diagram of an adult brain (Nature)"
+  },
+  {
+   "slug": "fruit-fly-brain-wiring-map-flywire",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-024-07686-5",
+   "title": "Whole-brain annotation and multi-connectome cell typing of Drosophila (Nature)"
+  },
+  {
+   "slug": "ecmwf-aifs-first-operational-ai-forecast",
+   "i": 0,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ai-forecasts-become-operational",
+   "title": "ECMWF's AI forecasts become operational (ECMWF news item)"
+  },
+  {
+   "slug": "ecmwf-aifs-first-operational-ai-forecast",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2406.01465",
+   "title": "AIFS, ECMWF's data-driven forecasting system (arXiv, Lang et al., June 2024)"
+  },
+  {
+   "slug": "ecmwf-aifs-first-operational-ai-forecast",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2307.10128",
+   "title": "The rise of data-driven weather forecasting: a first statistical assessment of machine-learning-based weather forecasts in an operational-like context (arXiv, Ben Bouallegue et al.)"
+  },
+  {
+   "slug": "graphcast-ai-ten-day-weather-forecast",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.adi2336",
+   "title": "Learning skillful medium-range global weather forecasting (Science 382, 1416, Lam et al.)"
+  },
+  {
+   "slug": "graphcast-ai-ten-day-weather-forecast",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2212.12794",
+   "title": "GraphCast: Learning skillful medium-range global weather forecasting (arXiv)"
+  },
+  {
+   "slug": "graphcast-ai-ten-day-weather-forecast",
+   "i": 2,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://deepmind.google/discover/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/",
+   "title": "GraphCast: AI model for faster and more accurate global weather forecasting (Google DeepMind post)"
+  },
+  {
+   "slug": "graphcast-ai-ten-day-weather-forecast",
+   "i": 3,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2307.10128",
+   "title": "The rise of data-driven weather forecasting (arXiv, Ben Bouallegue et al., ECMWF)"
+  },
+  {
+   "slug": "pangu-weather-3d-neural-network-forecast",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-023-06185-3",
+   "title": "Accurate medium-range global weather forecasting with 3D neural networks (Nature 619, 533, Bi et al.)"
+  },
+  {
+   "slug": "pangu-weather-3d-neural-network-forecast",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2211.02556",
+   "title": "Pangu-Weather: a 3D high-resolution model for fast and accurate global weather forecast (arXiv)"
+  },
+  {
+   "slug": "pangu-weather-3d-neural-network-forecast",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2307.10128",
+   "title": "The rise of data-driven weather forecasting (arXiv, Ben Bouallegue et al., ECMWF)"
+  },
+  {
+   "slug": "cfc11-unexpected-emissions-traced-to-china",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-018-0106-2",
+   "title": "An unexpected and persistent increase in global emissions of ozone-depleting CFC-11 (Nature 557, 413, Montzka et al.)"
+  },
+  {
+   "slug": "cfc11-unexpected-emissions-traced-to-china",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-019-1193-4",
+   "title": "Increase in CFC-11 emissions from eastern China based on atmospheric observations (Nature 569, 546, Rigby et al.)"
+  },
+  {
+   "slug": "imbie-antarctic-ice-loss-tripled",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-018-0179-y",
+   "title": "Mass balance of the Antarctic Ice Sheet from 1992 to 2017 (Nature 558, 219, IMBIE Team)"
+  },
+  {
+   "slug": "imbie-antarctic-ice-loss-tripled",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1073/pnas.1812883116",
+   "title": "Four decades of Antarctic Ice Sheet mass balance from 1979 to 2017 (PNAS, Rignot et al.)"
+  },
+  {
+   "slug": "german-flying-insect-biomass-decline",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0185809",
+   "title": "More than 75 percent decline over 27 years in total flying insect biomass in protected areas (PLOS ONE, Hallmann et al.)"
+  },
+  {
+   "slug": "german-flying-insect-biomass-decline",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-019-1684-3",
+   "title": "Arthropod decline in grasslands and forests is associated with landscape-level drivers (Nature 574, 671, Seibold et al.)"
+  },
+  {
+   "slug": "german-flying-insect-biomass-decline",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.aax9931",
+   "title": "Meta-analysis reveals declines in terrestrial but increases in freshwater insect abundances (Science, van Klink et al.)"
+  },
+  {
+   "slug": "insight-seismometer-maps-interior-of-mars",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.abf8966",
+   "title": "Thickness and structure of the martian crust from InSight seismic data (Science, Knapmeyer-Endrun et al.)"
+  },
+  {
+   "slug": "insight-seismometer-maps-interior-of-mars",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.abf2966",
+   "title": "Upper mantle structure of Mars from InSight seismic data (Science, Khan et al.)"
+  },
+  {
+   "slug": "insight-seismometer-maps-interior-of-mars",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.abi7730",
+   "title": "Seismic detection of the martian core (Science, Staehler et al.)"
+  },
+  {
+   "slug": "insight-seismometer-maps-interior-of-mars",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1073/pnas.2217090120",
+   "title": "First observations of core-transiting seismic phases on Mars (PNAS, Irving et al.)"
+  },
+  {
+   "slug": "climate-sensitivity-range-narrowed-multiple-evidence",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1029/2019RG000678",
+   "title": "An assessment of Earth's climate sensitivity using multiple lines of evidence (Reviews of Geophysics, Sherwood et al.)"
+  },
+  {
+   "slug": "climate-sensitivity-range-narrowed-multiple-evidence",
+   "i": 1,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/",
+   "title": "IPCC Sixth Assessment Report, Working Group I, Chapter 7: The Earth's energy budget, climate feedbacks and climate sensitivity"
+  },
+  {
+   "slug": "hayabusa2-ryugu-samples-carbonaceous-organic",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.abj8624",
+   "title": "Pebbles and sand on asteroid (162173) Ryugu: in situ observation and particles returned to Earth (Science, Tachibana et al.)"
+  },
+  {
+   "slug": "hayabusa2-ryugu-samples-carbonaceous-organic",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.abn7850",
+   "title": "Samples returned from the asteroid Ryugu are similar to Ivuna-type carbonaceous meteorites (Science, Yokoyama et al.)"
+  },
+  {
+   "slug": "hayabusa2-ryugu-samples-carbonaceous-organic",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.abn9033",
+   "title": "Soluble organic molecules in samples of the carbonaceous asteroid (162173) Ryugu (Science, Naraoka et al.)"
+  },
+  {
+   "slug": "hayabusa2-ryugu-samples-carbonaceous-organic",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41550-024-02472-9",
+   "title": "Abundant ammonia and nitrogen-rich soluble organic matter in samples from asteroid (101955) Bennu (Nature Astronomy, Glavin et al.)"
+  },
+  {
+   "slug": "camera-trap-deep-learning-wildlife",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.pnas.org/doi/10.1073/pnas.1719367115",
+   "title": "Automatically identifying, counting, and describing wild animals in camera-trap images with deep learning (PNAS, Norouzzadeh et al.)"
+  },
+  {
+   "slug": "camera-trap-deep-learning-wildlife",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/1703.05830",
+   "title": "Automatically identifying, counting, and describing wild animals in camera-trap images with deep learning (arXiv)"
+  },
+  {
+   "slug": "camera-trap-deep-learning-wildlife",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1111/2041-210X.13120",
+   "title": "Machine learning to classify animal species in camera trap images: applications in ecology (Methods in Ecology and Evolution, Tabak et al.)"
+  },
+  {
+   "slug": "camera-trap-deep-learning-wildlife",
+   "i": 3,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.wildlifeinsights.org/",
+   "title": "Wildlife Insights, the camera-trap platform that uses AI to label images"
+  },
+  {
+   "slug": "bennu-samples-ammonia-nucleobases-ancient-brine",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41550-024-02472-9",
+   "title": "Abundant ammonia and nitrogen-rich soluble organic matter in samples from asteroid (101955) Bennu (Nature Astronomy, Glavin et al.)"
+  },
+  {
+   "slug": "bennu-samples-ammonia-nucleobases-ancient-brine",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-024-08495-6",
+   "title": "An evaporite sequence from ancient brine recorded in Bennu samples (Nature, McCoy et al.)"
+  },
+  {
+   "slug": "bennu-samples-ammonia-nucleobases-ancient-brine",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.abn9033",
+   "title": "Soluble organic molecules in samples of the carbonaceous asteroid (162173) Ryugu (Science, Naraoka et al.)"
+  },
+  {
+   "slug": "antarctic-ozone-layer-healing-emerges",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.aae0061",
+   "title": "Emergence of healing in the Antarctic ozone layer (Science 353, 269, Solomon et al.)"
+  },
+  {
+   "slug": "antarctic-ozone-layer-healing-emerges",
+   "i": 1,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://ozone.unep.org/science/assessment/sap",
+   "title": "Scientific Assessment of Ozone Depletion: 2018 (WMO and UNEP)"
+  },
+  {
+   "slug": "ai-maps-global-fishing-footprint",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.aao5646",
+   "title": "Tracking the global footprint of fisheries (Science 359, 904, Kroodsma et al.)"
+  },
+  {
+   "slug": "ai-maps-global-fishing-footprint",
+   "i": 1,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://globalfishingwatch.org/",
+   "title": "Global Fishing Watch (public map and data platform)"
+  },
+  {
+   "slug": "hunga-tonga-eruption-global-waves",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.abo7063",
+   "title": "Atmospheric waves and global seismoacoustic observations of the January 2022 Hunga eruption, Tonga (Science 377, 95, Matoza et al.)"
+  },
+  {
+   "slug": "hunga-tonga-eruption-global-waves",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-022-05012-5",
+   "title": "Surface-to-space atmospheric waves from Hunga Tonga-Hunga Ha'apai eruption (Nature 609, 741, Wright et al.)"
+  },
+  {
+   "slug": "new-horizons-pluto-flyby-results",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.aad1815",
+   "title": "The Pluto system: initial results from its exploration by New Horizons (Science 350, aad1815, Stern et al.)"
+  },
+  {
+   "slug": "new-horizons-pluto-flyby-results",
+   "i": 1,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://pluto.jhuapl.edu/",
+   "title": "New Horizons mission site (Johns Hopkins Applied Physics Laboratory)"
+  },
+  {
+   "slug": "gencast-ai-ensemble-weather-forecast",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-024-08252-9",
+   "title": "Probabilistic weather forecasting with machine learning (Nature, Price et al.)"
+  },
+  {
+   "slug": "gencast-ai-ensemble-weather-forecast",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2312.15796",
+   "title": "GenCast: Diffusion-based ensemble forecasting for medium-range weather (arXiv)"
+  },
+  {
+   "slug": "osc-2015-psychology-replication-project",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.aac4716",
+   "title": "Estimating the reproducibility of psychological science (Science 349, aac4716)"
+  },
+  {
+   "slug": "osc-2015-psychology-replication-project",
+   "i": 1,
+   "role": "source",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1126/science.aad7243",
+   "title": "Comment on 'Estimating the reproducibility of psychological science' (Science 351, 1037)"
+  },
+  {
+   "slug": "osc-2015-psychology-replication-project",
+   "i": 2,
+   "role": "source",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1371/journal.pone.0149794",
+   "title": "A Bayesian perspective on the Reproducibility Project: Psychology (PLOS ONE 11, e0149794)"
+  },
+  {
+   "slug": "osc-2015-psychology-replication-project",
+   "i": 3,
+   "role": "source",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1177/1745691616646366",
+   "title": "What should researchers expect when they replicate studies? A statistical view of replicability in psychological science (Perspectives on Psychological Science 11, 539)"
+  },
+  {
+   "slug": "osc-2015-psychology-replication-project",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1126/science.aad7243",
+   "title": "Comment published in Science, 2016. Critical of the replication estimate. Wilson's Virginia affiliation overlaps the finding's who list, so do not count this one toward the two.",
+   "who": "Daniel T. Gilbert, Gary King, Stephen Pettigrew, Timothy D. Wilson",
+   "affiliation": "Harvard University (Gilbert, King, Pettigrew); University of Virginia (Wilson)"
+  },
+  {
+   "slug": "osc-2015-psychology-replication-project",
+   "i": 1,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1371/journal.pone.0149794",
+   "title": "Bayesian reanalysis, PLOS ONE 2016.",
+   "who": "Alexander Etz, Joachim Vandekerckhove",
+   "affiliation": "University of California, Irvine"
+  },
+  {
+   "slug": "osc-2015-psychology-replication-project",
+   "i": 2,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1177/1745691616646366",
+   "title": "Statistical view of replicability, Perspectives on Psychological Science 2016.",
+   "who": "Prasad Patil, Roger D. Peng, Jeffrey T. Leek",
+   "affiliation": "Johns Hopkins University"
+  },
+  {
+   "slug": "many-analysts-one-dataset-red-cards",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1177/2515245917747646",
+   "title": "Many Analysts, One Data Set: Making Transparent How Variations in Analytical Choices Affect Results (Advances in Methods and Practices in Psychological Science 1, 337)"
+  },
+  {
+   "slug": "many-analysts-one-dataset-red-cards",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1016/j.obhdp.2021.02.003",
+   "title": "Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis (Organizational Behavior and Human Decision Processes 165, 228)"
+  },
+  {
+   "slug": "many-analysts-one-dataset-red-cards",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1073/pnas.2203150119",
+   "title": "Observing many researchers using the same data and hypothesis reveals a hidden universe of uncertainty (PNAS 119, e2203150119)"
+  },
+  {
+   "slug": "many-analysts-one-dataset-red-cards",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": null,
+   "title": "The influence of hidden researcher decisions in applied microeconomics (Economic Inquiry 59, 944, 2021)"
+  },
+  {
+   "slug": "language-models-simulate-survey-respondents",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1017/pan.2023.2",
+   "title": "Out of One, Many: Using Language Models to Simulate Human Samples (Political Analysis 31, 337)"
+  },
+  {
+   "slug": "language-models-simulate-survey-respondents",
+   "i": 1,
+   "role": "source",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1016/j.tics.2023.04.008",
+   "title": "Can AI language models replace human participants? (Trends in Cognitive Sciences 27, 597)"
+  },
+  {
+   "slug": "language-models-simulate-survey-respondents",
+   "i": 2,
+   "role": "source",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1017/pan.2024.5",
+   "title": "Synthetic Replacements for Human Survey Data? The Perils of Large Language Models (Political Analysis)"
+  },
+  {
+   "slug": "language-models-simulate-survey-respondents",
+   "i": 3,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2303.17548",
+   "title": "Whose Opinions Do Language Models Reflect? (ICML 2023)"
+  },
+  {
+   "slug": "language-models-simulate-survey-respondents",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1016/j.tics.2023.04.008",
+   "title": "Opinion piece in Trends in Cognitive Sciences, 2023.",
+   "who": "Danica Dillion, Niket Tandon, Yuling Gu, Kurt Gray",
+   "affiliation": "University of North Carolina at Chapel Hill; Allen Institute for AI"
+  },
+  {
+   "slug": "language-models-simulate-survey-respondents",
+   "i": 1,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1017/pan.2024.5",
+   "title": "Empirical critique in Political Analysis, 2024.",
+   "who": "James Bisbee, Joshua D. Clinton, Cassy Dorff, Brenton Kenkel, Jennifer M. Larson",
+   "affiliation": "Vanderbilt University"
+  },
+  {
+   "slug": "nudge-meta-analysis-publication-bias-dispute",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1073/pnas.2107346118",
+   "title": "The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains (PNAS 119, e2107346118)"
+  },
+  {
+   "slug": "nudge-meta-analysis-publication-bias-dispute",
+   "i": 1,
+   "role": "source",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1073/pnas.2200300119",
+   "title": "No evidence for nudging after adjusting for publication bias (PNAS 119, e2200300119)"
+  },
+  {
+   "slug": "nudge-meta-analysis-publication-bias-dispute",
+   "i": 2,
+   "role": "source",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1073/pnas.2200732119",
+   "title": "No reason to expect large and consistent effects of nudge interventions (PNAS 119, e2200732119)"
+  },
+  {
+   "slug": "nudge-meta-analysis-publication-bias-dispute",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.3982/ECTA18709",
+   "title": "RCTs to Scale: Comprehensive Evidence from Two Nudge Units (Econometrica 90, 81)"
+  },
+  {
+   "slug": "nudge-meta-analysis-publication-bias-dispute",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1073/pnas.2200300119",
+   "title": "Letter in PNAS, 2022, on the Mertens meta-analysis.",
+   "who": "Maximilian Maier, Frantisek Bartos, T. D. Stanley, David R. Shanks, Adam J. L. Harris, Eric-Jan Wagenmakers",
+   "affiliation": "University College London; University of Amsterdam"
+  },
+  {
+   "slug": "nudge-meta-analysis-publication-bias-dispute",
+   "i": 1,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1073/pnas.2200732119",
+   "title": "Letter in PNAS, 2022, on the same meta-analysis.",
+   "who": "Barnabas Szaszi, Anthony Higney, Aaron Charlton, Andrew Gelman, Ignazio Ziano, Balazs Aczel, Daniel G. Goldstein, David S. Yeager, Elizabeth Tipton",
+   "affiliation": "ELTE Eotvos Lorand University; Columbia University; University of Texas at Austin; Northwestern University"
+  },
+  {
+   "slug": "seshat-moralizing-gods-claim-and-dispute",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-019-1043-4",
+   "title": "Complex societies precede moralizing gods throughout world history (Nature 568, 226)"
+  },
+  {
+   "slug": "seshat-moralizing-gods-claim-and-dispute",
+   "i": 1,
+   "role": "source",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1038/s41586-021-03655-4",
+   "title": "Treatment of missing data determined conclusions regarding moralizing gods (Nature 595, E29)"
+  },
+  {
+   "slug": "seshat-moralizing-gods-claim-and-dispute",
+   "i": 2,
+   "role": "source",
+   "kind": "reaction",
+   "url": null,
+   "title": "Historians respond to Whitehouse et al. (2019), 'Complex societies precede moralizing gods throughout world history' (Slingerland and colleagues, 2020)"
+  },
+  {
+   "slug": "seshat-moralizing-gods-claim-and-dispute",
+   "i": 3,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1073/pnas.1708800115",
+   "title": "Quantitative historical analysis uncovers a single dimension of complexity that structures global variation in human social organization (PNAS 115, E144)"
+  },
+  {
+   "slug": "seshat-moralizing-gods-claim-and-dispute",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1038/s41586-021-03655-4",
+   "title": "Matters Arising in Nature, 2021. Co-author affiliations must be read from the page.",
+   "who": "Bruce Beheim and 14 co-authors",
+   "affiliation": "Max Planck Institute for Evolutionary Anthropology (lead author); several universities"
+  },
+  {
+   "slug": "seshat-moralizing-gods-claim-and-dispute",
+   "i": 1,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": null,
+   "title": "Historians' response to the 2019 paper, 2020. Not located; reviewer to find or drop.",
+   "who": "Edward Slingerland and colleagues",
+   "affiliation": "University of British Columbia (recalled for the first author)"
+  },
+  {
+   "slug": "meta-2020-election-feed-experiments",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.abp9364",
+   "title": "How do social media feed algorithms affect attitudes and behavior in an election campaign? (Science 381, 398)"
+  },
+  {
+   "slug": "meta-2020-election-feed-experiments",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.add8424",
+   "title": "Reshares on social media amplify political news but do not detectably affect beliefs or opinions (Science 381, 404)"
+  },
+  {
+   "slug": "meta-2020-election-feed-experiments",
+   "i": 2,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-023-06297-w",
+   "title": "Like-minded sources on Facebook are prevalent but not polarizing (Nature 620, 137)"
+  },
+  {
+   "slug": "meta-2020-election-feed-experiments",
+   "i": 3,
+   "role": "source",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1126/science.adi2430",
+   "title": "Independence by permission (Science, 2023)"
+  },
+  {
+   "slug": "meta-2020-election-feed-experiments",
+   "i": 4,
+   "role": "source",
+   "kind": "reaction",
+   "url": null,
+   "title": "Social media algorithms can curb misinformation, but do they? (Bagchi and colleagues, Science, 2024)"
+  },
+  {
+   "slug": "meta-2020-election-feed-experiments",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": "https://doi.org/10.1126/science.adi2430",
+   "title": "Published in Science alongside the studies. Wagner served as the independent rapporteur, outside the authoring team, so he is not in the finding's who list; a reviewer must still decide whether this counts as independent.",
+   "who": "Michael W. Wagner",
+   "affiliation": "University of Wisconsin-Madison"
+  },
+  {
+   "slug": "meta-2020-election-feed-experiments",
+   "i": 1,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": null,
+   "title": "Letter in Science, 2024, on algorithm changes. Located only from memory; the url must be found at seed time.",
+   "who": "Chhandak Bagchi, Filippo Menczer and colleagues",
+   "affiliation": "University of Massachusetts Amherst; Indiana University (recalled)"
+  },
+  {
+   "slug": "ultra-poor-graduation-trial-six-countries",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.1260799",
+   "title": "A multifaceted program causes lasting progress for the very poor: Evidence from six countries (Science 348, 1260799)"
+  },
+  {
+   "slug": "ultra-poor-graduation-trial-six-countries",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1093/qje/qjx003",
+   "title": "Labor Markets and Poverty in Village Economies (Quarterly Journal of Economics 132, 811)"
+  },
+  {
+   "slug": "ultra-poor-graduation-trial-six-countries",
+   "i": 2,
+   "role": "source",
+   "kind": "statement",
+   "url": "https://www.nobelprize.org/prizes/economic-sciences/2019/summary/",
+   "title": "The Prize in Economic Sciences 2019 (Nobel Prize committee)"
+  },
+  {
+   "slug": "creating-moves-to-opportunity-voucher-trial",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": null,
+   "title": "Creating Moves to Opportunity: Experimental Evidence on Barriers to Neighborhood Choice (NBER working paper 26164, 2019; American Economic Review, later)"
+  },
+  {
+   "slug": "creating-moves-to-opportunity-voucher-trial",
+   "i": 1,
+   "role": "source",
+   "kind": "statement",
+   "url": null,
+   "title": "US Department of Housing and Urban Development: Community Choice Demonstration"
+  },
+  {
+   "slug": "centaur-model-predicts-human-choices",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1038/s41586-025-09215-4",
+   "title": "A foundation model to predict and capture human cognition (Nature, 2025)"
+  },
+  {
+   "slug": "centaur-model-predicts-human-choices",
+   "i": 1,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2410.20268",
+   "title": "Centaur: a foundation model of human cognition (arXiv, October 2024)"
+  },
+  {
+   "slug": "centaur-model-predicts-human-choices",
+   "i": 2,
+   "role": "source",
+   "kind": "reaction",
+   "url": null,
+   "title": "Centaur: a model without a human mind (Bowers and colleagues, 2025)"
+  },
+  {
+   "slug": "centaur-model-predicts-human-choices",
+   "i": 3,
+   "role": "source",
+   "kind": "reaction",
+   "url": null,
+   "title": "Not Yet AlphaFold for the Mind: Evaluating Centaur as a Synthetic Participant (2025)"
+  },
+  {
+   "slug": "centaur-model-predicts-human-choices",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": null,
+   "title": "Critique of Centaur as a model of cognition. Not located.",
+   "who": "Jeffrey S. Bowers and colleagues",
+   "affiliation": "University of Bristol (recalled)"
+  },
+  {
+   "slug": "centaur-model-predicts-human-choices",
+   "i": 1,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": null,
+   "title": "Second critique, evaluating Centaur as a synthetic participant. Not located.",
+   "who": "Authors not recalled",
+   "affiliation": "Not recalled"
+  },
+  {
+   "slug": "vesuvius-challenge-reads-herculaneum-scroll",
+   "i": 0,
+   "role": "source",
+   "kind": "checker",
+   "url": "https://scrollprize.org/grandprize",
+   "title": "Vesuvius Challenge: 2023 Grand Prize awarded"
+  },
+  {
+   "slug": "vesuvius-challenge-reads-herculaneum-scroll",
+   "i": 1,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://scrollprize.org/",
+   "title": "Vesuvius Challenge prize site (first-letters and first-words announcements, October 2023)"
+  },
+  {
+   "slug": "steppe-ancestry-reshapes-europe-ancient-dna",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/nature14317",
+   "title": "Massive migration from the steppe was a source for Indo-European languages in Europe (Haak et al., Nature 2015)"
+  },
+  {
+   "slug": "steppe-ancestry-reshapes-europe-ancient-dna",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/nature14507",
+   "title": "Population genomics of Bronze Age Eurasia (Allentoft et al., Nature 2015)"
+  },
+  {
+   "slug": "steppe-ancestry-reshapes-europe-ancient-dna",
+   "i": 2,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://www.biorxiv.org/content/10.1101/013433",
+   "title": "Massive migration from the steppe is a source for Indo-European languages in Europe (bioRxiv preprint)"
+  },
+  {
+   "slug": "ithaca-restores-dates-greek-inscriptions",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-022-04448-z",
+   "title": "Restoring and attributing ancient texts using deep neural networks (Assael et al., Nature 2022)"
+  },
+  {
+   "slug": "ithaca-restores-dates-greek-inscriptions",
+   "i": 1,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://deepmind.google/discover/blog/predicting-the-past-with-ithaca/",
+   "title": "Predicting the past with Ithaca (DeepMind blog)"
+  },
+  {
+   "slug": "white-sands-footprints-ice-age-people",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.abg7586",
+   "title": "Evidence of humans in North America during the Last Glacial Maximum (Bennett et al., Science 2021)"
+  },
+  {
+   "slug": "white-sands-footprints-ice-age-people",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.adh5007",
+   "title": "Independent age estimates resolve the controversy of ancient human footprints at White Sands (Pigati et al., Science 2023)"
+  },
+  {
+   "slug": "maya-lidar-reveals-lowland-civilisation",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.aau0137",
+   "title": "Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala (Canuto et al., Science 2018)"
+  },
+  {
+   "slug": "jebel-irhoud-earliest-homo-sapiens",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/nature22336",
+   "title": "New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens (Hublin et al., Nature 2017)"
+  },
+  {
+   "slug": "jebel-irhoud-earliest-homo-sapiens",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/nature22335",
+   "title": "The age of the hominin fossils from Jebel Irhoud, Morocco, and the origins of the Middle Stone Age (Richter et al., Nature 2017)"
+  },
+  {
+   "slug": "jebel-irhoud-earliest-homo-sapiens",
+   "i": 0,
+   "role": "reaction",
+   "kind": "reaction",
+   "url": null,
+   "title": "A Nature News and Views on the two papers, June 2017 (a title like 'On the origin of our species' is recalled, but neither title nor URL is certain). One piece only; a second independent piece is needed and was not recalled.",
+   "who": "Chris Stringer and Julia Galway-Witham",
+   "affiliation": "Natural History Museum, London"
+  },
+  {
+   "slug": "homo-naledi-new-human-species",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://elifesciences.org/articles/09560",
+   "title": "Homo naledi, a new species of the genus Homo from the Dinaledi Chamber, South Africa (Berger et al., eLife 2015)"
+  },
+  {
+   "slug": "homo-naledi-new-human-species",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://elifesciences.org/articles/24231",
+   "title": "The age of Homo naledi and associated sediments in the Rising Star Cave, South Africa (Dirks et al., eLife 2017)"
+  },
+  {
+   "slug": "aeneas-latin-inscriptions-context-restoration",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-025-09292-5",
+   "title": "Contextualizing ancient texts with generative neural networks (Assael et al., Nature 2025)"
+  },
+  {
+   "slug": "aeneas-latin-inscriptions-context-restoration",
+   "i": 1,
+   "role": "source",
+   "kind": "lab_post",
+   "url": "https://predictingthepast.com/",
+   "title": "Predicting the Past: the Aeneas and Ithaca tools (DeepMind and partners)"
+  },
+  {
+   "slug": "denisovan-jawbone-tibetan-plateau-xiahe",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-019-1139-x",
+   "title": "A late Middle Pleistocene Denisovan mandible from the Tibetan Plateau (Chen et al., Nature 2019)"
+  },
+  {
+   "slug": "denisovan-jawbone-tibetan-plateau-xiahe",
+   "i": 1,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1126/science.abb6320",
+   "title": "Denisovan DNA in Late Pleistocene sediments from Baishiya Karst Cave on the Tibetan Plateau (Zhang et al., Science 2020)"
+  },
+  {
+   "slug": "nazca-geoglyphs-ai-finds-303",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.pnas.org/doi/10.1073/pnas.2407652121",
+   "title": "Nazca geoglyph discovery with AI (Sakai et al., PNAS 2024; exact title not recalled)"
+  },
+  {
+   "slug": "en-gedi-scroll-read-without-opening",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/sciadv.1601247",
+   "title": "From damage to discovery via virtual unwrapping: Reading the scroll from En-Gedi (Seales et al., Science Advances 2016)"
+  },
+  {
+   "slug": "aguada-fenix-oldest-largest-maya-monument",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.nature.com/articles/s41586-020-2343-4",
+   "title": "Monumental architecture at Aguada Fenix and the rise of Maya civilization (Inomata et al., Nature 2020)"
+  },
+  {
+   "slug": "upano-valley-amazon-garden-cities",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.science.org/doi/10.1126/science.adi6317",
+   "title": "Two thousand years of garden urbanism in the Upper Amazon (Rostain et al., Science 2024)"
+  },
+  {
+   "slug": "linear-elamite-script-deciphered",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": null,
+   "title": "The decipherment of Linear Elamite writing (Desset, Tabibzadeh, Kervran, Basello, Marchesi; Zeitschrift fuer Assyriologie 2022; title recalled loosely)"
+  },
+  {
+   "slug": "arad-ostraca-handwriting-analysis-literacy",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://www.pnas.org/doi/10.1073/pnas.1522200113",
+   "title": "Algorithmic handwriting analysis of Judah's military correspondence sheds light on composition of biblical texts (Faigenbaum-Golovin et al., PNAS 2016)"
+  },
+  {
+   "slug": "akkadian-cuneiform-neural-machine-translation",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://doi.org/10.1093/pnasnexus/pgad096",
+   "title": "Translating Akkadian to English with neural machine translation (Gutherz et al., PNAS Nexus 2023)"
+  },
+  {
+   "slug": "ai-dating-dead-sea-scrolls-enoch",
+   "i": 0,
+   "role": "source",
+   "kind": "paper",
+   "url": "https://journals.plos.org/plosone/",
+   "title": "Dating ancient manuscripts using radiocarbon and AI (Popovic, Dhali, Schomaker and colleagues; PLOS ONE 2025; title recalled loosely)"
+  },
+  {
+   "slug": "mms-speech-models-1100-languages",
+   "i": 0,
+   "role": "source",
+   "kind": "preprint",
+   "url": "https://arxiv.org/abs/2305.13516",
+   "title": "Scaling Speech Technology to 1,000+ Languages (Pratap et al., 2023)"
+  }
+ ]
+}
